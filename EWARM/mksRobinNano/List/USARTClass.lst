@@ -1,0 +1,2295 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:06:19
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\USARTClass.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\USARTClass.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
+      1          /*
+      2            Copyright (c) 2014 Makerbase & Andy Sze(andy.sze.mail@gmail.com)  All right reserved.
+      3            Copyright (c) 2011 Arduino.  All right reserved.
+      4          
+      5            This library is free software; you can redistribute it and/or
+      6            modify it under the terms of the GNU Lesser General Public
+      7            License as published by the Free Software Foundation; either
+      8            version 2.1 of the License, or (at your option) any later version.
+      9          
+     10            This library is distributed in the hope that it will be useful,
+     11            but WITHOUT ANY WARRANTY; without even the implied warranty of
+     12            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+     13            See the GNU Lesser General Public License for more details.
+     14          
+     15            You should have received a copy of the GNU Lesser General Public
+     16            License along with this library; if not, write to the Free Software
+     17            Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+     18          */
+     19          
+     20          #include <stdlib.h>
+     21          #include <stdio.h>
+     22          #include <string.h>
+     23          
+     24          #include "USARTClass.h"
+
+   \                                 In section .text, align 2
+   \   __code __interwork __softfp Print::Print()
+   \                     _ZN5PrintC1Ev: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x6041             STR      R1,[R0, #+4]
+   \   00000004   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __softfp Stream::Stream()
+   \                     _ZN6StreamC1Ev: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x.... 0x....      BL       _ZN5PrintC2Ev
+   \   00000008   0xF44F 0x707A      MOV      R0,#+1000
+   \   0000000C   0x60A0             STR      R0,[R4, #+8]
+   \   0000000E   0x4620             MOV      R0,R4
+   \   00000010   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __softfp HardwareSerial::HardwareSerial()
+   \                     _ZN14HardwareSerialC1Ev: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x.... 0x....      BL       _ZN6StreamC2Ev
+   \   00000008   0x4620             MOV      R0,R4
+   \   0000000A   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void NVIC_EnableIRQ(IRQn_Type)
+   \                     _Z14NVIC_EnableIRQ9IRQn_Type: (+1)
+   \   00000000   0x2101             MOVS     R1,#+1
+   \   00000002   0xF000 0x021F      AND      R2,R0,#0x1F
+   \   00000006   0x4091             LSLS     R1,R1,R2
+   \   00000008   0x0940             LSRS     R0,R0,#+5
+   \   0000000A   0x.... 0x....      LDR.W    R2,??DataTable10  ;; 0xe000e100
+   \   0000000E   0xF842 0x1020      STR      R1,[R2, R0, LSL #+2]
+   \   00000012   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __softfp USARTClass::operator bool()
+   \                     _ZN10USARTClasscvbEv: (+1)
+   \   00000000   0x2001             MOVS     R0,#+1
+   \   00000002   0x4770             BX       LR               ;; return
+     25          #include "Arduino.h"
+
+  #define IS_GPIO_SPEED(SPEED) (((SPEED) == GPIO_Speed_10MHz) || ((SPEED) == GPIO_Speed_2MHz) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_gpio.h",64  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_GPIO_SPEED" (declared at line
+          201 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h")
+
+  #define IS_GPIO_MODE(MODE) (((MODE) == GPIO_Mode_AIN) || ((MODE) == GPIO_Mode_IN_FLOATING) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_gpio.h",82  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_GPIO_MODE" (declared at line
+          204 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h")
+
+  #define IS_GPIO_PIN(PIN) ((((PIN) & (uint16_t)0x00) == 0x00) && ((PIN) != (uint16_t)0x00))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_gpio.h",145  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_GPIO_PIN" (declared at line
+          196 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h")
+
+  #define IS_TIM_OC_MODE(MODE) (((MODE) == TIM_OCMode_Timing) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",294  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OC_MODE" (declared at
+          line 894 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_OPM_MODE(MODE) (((MODE) == TIM_OPMode_Single) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",318  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OPM_MODE" (declared at
+          line 942 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_COUNTER_MODE(MODE) (((MODE) == TIM_CounterMode_Up) ||  \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",368  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_COUNTER_MODE" (declared
+          at line 881 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_OC_POLARITY(POLARITY) (((POLARITY) == TIM_OCPolarity_High) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",383  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OC_POLARITY" (declared at
+          line 904 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_OCN_POLARITY(POLARITY) (((POLARITY) == TIM_OCNPolarity_High) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",395  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OCN_POLARITY" (declared
+          at line 907 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_BREAK_STATE(STATE) (((STATE) == TIM_Break_Enable) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",455  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_BREAK_STATE" (declared at
+          line 1002 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_BREAK_POLARITY(POLARITY) (((POLARITY) == TIM_BreakPolarity_Low) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",467  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_BREAK_POLARITY" (declared
+          at line 1005 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_AUTOMATIC_OUTPUT_STATE(STATE) (((STATE) == TIM_AutomaticOutput_Enable) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",479  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_AUTOMATIC_OUTPUT_STATE"
+          (declared at line 1008 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_LOCK_LEVEL(LEVEL) (((LEVEL) == TIM_LOCKLevel_OFF) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",493  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_LOCK_LEVEL" (declared at
+          line 997 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_OSSI_STATE(STATE) (((STATE) == TIM_OSSIState_Enable) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",507  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OSSI_STATE" (declared at
+          line 994 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_OSSR_STATE(STATE) (((STATE) == TIM_OSSRState_Enable) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",519  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OSSR_STATE" (declared at
+          line 991 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_OCIDLE_STATE(STATE) (((STATE) == TIM_OCIdleState_Set) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",531  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OCIDLE_STATE" (declared
+          at line 910 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_OCNIDLE_STATE(STATE) (((STATE) == TIM_OCNIdleState_Set) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",543  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_OCNIDLE_STATE" (declared
+          at line 913 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_IC_POLARITY(POLARITY) (((POLARITY) == TIM_ICPolarity_Rising) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",556  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_IC_POLARITY" (declared at
+          line 929 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_IC_SELECTION(SELECTION) (((SELECTION) == TIM_ICSelection_DirectTI) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",574  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_IC_SELECTION" (declared
+          at line 933 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_ICPSC_DIV1                     ((uint16_t)0x0000) /*!< Capture performed each time an edge is detected on the capture input. */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",585  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_ICPSC_DIV1" (declared at
+          line 473 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_ICPSC_DIV2                     ((uint16_t)0x0004) /*!< Capture performed once every 2 events. */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",586  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_ICPSC_DIV2" (declared at
+          line 474 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_ICPSC_DIV4                     ((uint16_t)0x0008) /*!< Capture performed once every 4 events. */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",587  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_ICPSC_DIV4" (declared at
+          line 475 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_ICPSC_DIV8                     ((uint16_t)0x000C) /*!< Capture performed once every 8 events. */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",588  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_ICPSC_DIV8" (declared at
+          line 476 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_IT_CC1                         ((uint16_t)0x0002)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",602  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_IT_CC1" (declared at line
+          504 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_IT_CC2                         ((uint16_t)0x0004)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",603  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_IT_CC2" (declared at line
+          505 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_IT_CC3                         ((uint16_t)0x0008)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",604  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_IT_CC3" (declared at line
+          506 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_IT_CC4                         ((uint16_t)0x0010)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",605  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_IT_CC4" (declared at line
+          507 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_IT_COM                         ((uint16_t)0x0020)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",606  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_IT_COM" (declared at line
+          508 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_DMABase_CR1                    ((uint16_t)0x0000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",627  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CR1" (declared at
+          line 753 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CR2                    ((uint16_t)0x0001)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",628  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CR2" (declared at
+          line 754 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_SMCR                   ((uint16_t)0x0002)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",629  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_SMCR" (declared at
+          line 755 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_DIER                   ((uint16_t)0x0003)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",630  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_DIER" (declared at
+          line 756 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_SR                     ((uint16_t)0x0004)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",631  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_SR" (declared at
+          line 757 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_EGR                    ((uint16_t)0x0005)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",632  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_EGR" (declared at
+          line 758 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CCMR1                  ((uint16_t)0x0006)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",633  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CCMR1" (declared at
+          line 759 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CCMR2                  ((uint16_t)0x0007)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",634  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CCMR2" (declared at
+          line 760 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CCER                   ((uint16_t)0x0008)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",635  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CCER" (declared at
+          line 761 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CNT                    ((uint16_t)0x0009)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",636  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CNT" (declared at
+          line 762 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_PSC                    ((uint16_t)0x000A)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",637  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_PSC" (declared at
+          line 763 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_ARR                    ((uint16_t)0x000B)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",638  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_ARR" (declared at
+          line 764 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_RCR                    ((uint16_t)0x000C)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",639  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_RCR" (declared at
+          line 765 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CCR1                   ((uint16_t)0x000D)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",640  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CCR1" (declared at
+          line 766 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CCR2                   ((uint16_t)0x000E)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",641  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CCR2" (declared at
+          line 767 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CCR3                   ((uint16_t)0x000F)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",642  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CCR3" (declared at
+          line 768 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_CCR4                   ((uint16_t)0x0010)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",643  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_CCR4" (declared at
+          line 769 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_BDTR                   ((uint16_t)0x0011)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",644  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_BDTR" (declared at
+          line 770 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABase_DCR                    ((uint16_t)0x0012)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",645  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABase_DCR" (declared at
+          line 771 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define IS_TIM_DMA_BASE(BASE) (((BASE) == TIM_DMABase_CR1) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",646  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_DMA_BASE" (declared at
+          line 1060 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_DMABurstLength_1Transfer           ((uint16_t)0x0000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",673  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_1Transfer"
+          (declared at line 791 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_2Transfers          ((uint16_t)0x0100)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",674  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_2Transfers"
+          (declared at line 792 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_3Transfers          ((uint16_t)0x0200)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",675  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_3Transfers"
+          (declared at line 793 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_4Transfers          ((uint16_t)0x0300)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",676  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_4Transfers"
+          (declared at line 794 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_5Transfers          ((uint16_t)0x0400)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",677  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_5Transfers"
+          (declared at line 795 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_6Transfers          ((uint16_t)0x0500)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",678  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_6Transfers"
+          (declared at line 796 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_7Transfers          ((uint16_t)0x0600)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",679  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_7Transfers"
+          (declared at line 797 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_8Transfers          ((uint16_t)0x0700)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",680  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_8Transfers"
+          (declared at line 798 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_9Transfers          ((uint16_t)0x0800)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",681  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_9Transfers"
+          (declared at line 799 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_10Transfers         ((uint16_t)0x0900)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",682  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_10Transfers"
+          (declared at line 800 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_11Transfers         ((uint16_t)0x0A00)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",683  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_11Transfers"
+          (declared at line 801 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_12Transfers         ((uint16_t)0x0B00)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",684  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_12Transfers"
+          (declared at line 802 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_13Transfers         ((uint16_t)0x0C00)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",685  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_13Transfers"
+          (declared at line 803 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_14Transfers         ((uint16_t)0x0D00)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",686  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_14Transfers"
+          (declared at line 804 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_15Transfers         ((uint16_t)0x0E00)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",687  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_15Transfers"
+          (declared at line 805 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_16Transfers         ((uint16_t)0x0F00)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",688  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_16Transfers"
+          (declared at line 806 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_17Transfers         ((uint16_t)0x1000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",689  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_17Transfers"
+          (declared at line 807 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_DMABurstLength_18Transfers         ((uint16_t)0x1100)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",690  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMABurstLength_18Transfers"
+          (declared at line 808 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define IS_TIM_DMA_LENGTH(LENGTH) (((LENGTH) == TIM_DMABurstLength_1Transfer) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",691  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_DMA_LENGTH" (declared at
+          line 1080 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_DMA_CC1                        ((uint16_t)0x0200)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",718  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMA_CC1" (declared at line
+          529 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_DMA_CC2                        ((uint16_t)0x0400)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",719  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMA_CC2" (declared at line
+          530 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_DMA_CC3                        ((uint16_t)0x0800)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",720  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMA_CC3" (declared at line
+          531 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_DMA_CC4                        ((uint16_t)0x1000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",721  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMA_CC4" (declared at line
+          532 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_DMA_COM                        ((uint16_t)0x2000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",722  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_DMA_COM" (declared at line
+          533 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_DMA_SOURCE(SOURCE) ((((SOURCE) & (uint16_t)0x80FF) == 0x0000) && ((SOURCE) != 0x0000))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",724  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_DMA_SOURCE" (declared at
+          line 949 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_ITR0                        ((uint16_t)0x0000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",750  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_ITR0" (declared at line
+          737 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_ITR1                        ((uint16_t)0x0010)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",751  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_ITR1" (declared at line
+          738 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_ITR2                        ((uint16_t)0x0020)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",752  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_ITR2" (declared at line
+          739 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_ITR3                        ((uint16_t)0x0030)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",753  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_ITR3" (declared at line
+          740 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_TI1F_ED                     ((uint16_t)0x0040)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",754  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_TI1F_ED" (declared at
+          line 741 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_TI1FP1                      ((uint16_t)0x0050)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",755  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_TI1FP1" (declared at line
+          742 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_TI2FP2                      ((uint16_t)0x0060)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",756  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_TI2FP2" (declared at line
+          743 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_TS_ETRF                        ((uint16_t)0x0070)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",757  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_TS_ETRF" (declared at line
+          744 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_ENCODER_MODE(MODE) (((MODE) == TIM_EncoderMode_TI1) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",830  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_ENCODER_MODE" (declared
+          at line 945 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_EventSource_Update             ((uint16_t)0x0001)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",842  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_Update"
+          (declared at line 781 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_EventSource_CC1                ((uint16_t)0x0002)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",843  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_CC1" (declared
+          at line 782 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_EventSource_CC2                ((uint16_t)0x0004)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",844  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_CC2" (declared
+          at line 783 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_EventSource_CC3                ((uint16_t)0x0008)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",845  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_CC3" (declared
+          at line 784 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_EventSource_CC4                ((uint16_t)0x0010)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",846  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_CC4" (declared
+          at line 785 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_EventSource_COM                ((uint16_t)0x0020)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",847  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_COM" (declared
+          at line 786 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_EventSource_Trigger            ((uint16_t)0x0040)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",848  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_Trigger"
+          (declared at line 787 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define TIM_EventSource_Break              ((uint16_t)0x0080)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",849  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_EventSource_Break" (declared
+          at line 788 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define IS_TIM_EVENT_SOURCE(SOURCE) ((((SOURCE) & (uint16_t)0xFF00) == 0x0000) && ((SOURCE) != 0x0000))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",850  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_EVENT_SOURCE" (declared
+          at line 951 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_TRGO_SOURCE(SOURCE) (((SOURCE) == TIM_TRGOSource_Reset) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",919  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_TRGO_SOURCE" (declared at
+          line 1011 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_SLAVE_MODE(MODE) (((MODE) == TIM_SlaveMode_Reset) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",939  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_SLAVE_MODE" (declared at
+          line 1020 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define IS_TIM_MSM_STATE(STATE) (((STATE) == TIM_MasterSlaveMode_Enable) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",953  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_TIM_MSM_STATE" (declared at
+          line 1026 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC1                       ((uint16_t)0x0002)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",964  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC1" (declared at line
+          558 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC2                       ((uint16_t)0x0004)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",965  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC2" (declared at line
+          559 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC3                       ((uint16_t)0x0008)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",966  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC3" (declared at line
+          560 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC4                       ((uint16_t)0x0010)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",967  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC4" (declared at line
+          561 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_COM                       ((uint16_t)0x0020)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",968  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_COM" (declared at line
+          562 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC1OF                     ((uint16_t)0x0200)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",971  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC1OF" (declared at
+          line 565 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC2OF                     ((uint16_t)0x0400)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",972  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC2OF" (declared at
+          line 566 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC3OF                     ((uint16_t)0x0800)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",973  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC3OF" (declared at
+          line 567 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+
+  #define TIM_FLAG_CC4OF                     ((uint16_t)0x1000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32F10x_tim.h",974  Warning[Pe047]: 
+          incompatible redefinition of macro "TIM_FLAG_CC4OF" (declared at
+          line 568 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h")
+     26          #include "usart.h"
+     27          #include "mks_cfg.h"
+
+  #define UNUSED(x) (void) (x)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\macros.h",101  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 87 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Inc\mks_cfg.h",613  Warning[Pe083]: 
+          type qualifier specified more than once
+     28          
+     29          // Constructors ////////////////////////////////////////////////////////////////
+     30          
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __code __interwork __softfp USARTClass::subobject USARTClass(USART_TypeDef *, IRQn_Type, uint32_t, RingBuffer *)
+   \                     _ZN10USARTClassC2EP13USART_TypeDef9IRQn_TypejP10RingBuffer: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x9C04             LDR      R4,[SP, #+16]
+   \   00000006   0x9400             STR      R4,[SP, #+0]
+   \   00000008   0x.... 0x....      BL       _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
+   \   0000000C   0xBD16             POP      {R1,R2,R4,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+     31          USARTClass::USARTClass( USART_TypeDef* pUsart, IRQn_Type dwIrq, uint32_t dwId, RingBuffer* pRx_buffer )
+   \                     _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+   \   00000008   0x461F             MOV      R7,R3
+     32          {
+   \   0000000A   0x.... 0x....      BL       _ZN14HardwareSerialC2Ev
+   \   0000000E   0x.... 0x....      LDR.W    R0,??DataTable10_1
+   \   00000012   0x6020             STR      R0,[R4, #+0]
+     33            _rx_buffer = pRx_buffer ;
+   \   00000014   0x9806             LDR      R0,[SP, #+24]
+   \   00000016   0x6120             STR      R0,[R4, #+16]
+     34          
+     35            _pUsart=pUsart ;
+   \   00000018   0x6165             STR      R5,[R4, #+20]
+     36            _dwIrq=dwIrq ;
+   \   0000001A   0xF884 0x6028      STRB     R6,[R4, #+40]
+     37            _dwId=dwId ;
+   \   0000001E   0x62E7             STR      R7,[R4, #+44]
+     38          }
+   \   00000020   0x4620             MOV      R0,R4
+   \   00000022   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+     39          
+     40          // Public Methods //////////////////////////////////////////////////////////////
+     41          
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void USARTClass::begin( const uint32_t dwBaudRate )
+     43          {
+   \                     _ZN10USARTClass5beginEj: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     44          #if 0		//skyblue modidy 2016-11-29
+     45          
+     46            //Serial
+     47            if(_dwId == id_serial)
+     48            {
+     49              // AFIO clock enable
+     50          #if defined (STM32F10X_HD) || (STM32F10X_MD)
+     51              RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
+     52          #elif defined (STM32F40_41xxx)
+     53              RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+     54          #endif
+     55          
+     56              // Enable USART Clock
+     57          #if defined (STM32F10X_HD) || (STM32F10X_MD)
+     58              RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+     59          #elif defined (STM32F40_41xxx)
+     60              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+     61          #endif
+     62          
+     63          #if defined (STM32F10X_HD) || (STM32F10X_MD)
+     64              // Configure USART Rx as input floating
+     65              pinMode(RX, INPUT);
+     66          
+     67              // Configure USART Tx as alternate function push-pull
+     68              pinMode(TX, AF_OUTPUT_PUSHPULL);
+     69          #elif defined (STM32F40_41xxx)
+     70              // Configure USART Tx as alternate function push-pull
+     71              //pinMode(TX, AF_OUTPUT_PUSHPULL);
+     72              //pinMode(RX, AF_OUTPUT_PUSHPULL);
+     73          
+     74              GPIO_InitTypeDef GPIO_InitStructure;
+     75              /* Configure USART Tx and Rx as alternate function push-pull */
+     76              GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+     77              GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+     78              GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+     79              GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+     80              GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11 | GPIO_Pin_10;
+     81          
+     82              GPIO_Init(GPIOC, &GPIO_InitStructure);
+     83          
+     84              GPIO_PinAFConfig(GPIOC, GPIO_PinSource10, GPIO_AF_USART3);
+     85              GPIO_PinAFConfig(GPIOC, GPIO_PinSource11, GPIO_AF_USART3);
+     86          #endif
+     87            }
+     88            else if(_dwId == id_serial1)//Serial1
+     89            {
+     90          #ifdef STM32F10X_HD
+     91              RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_AFIO, ENABLE);
+     92              RCC_APB1PeriphClockCmd(RCC_APB1Periph_UART4, ENABLE);
+     93          #endif
+     94          #ifdef STM32F10X_MD
+     95              RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
+     96              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
+     97          #endif
+     98              pinMode(RX0, INPUT);
+     99              pinMode(TX0, AF_OUTPUT_PUSHPULL);
+    100            }
+    101            else if(_dwId == id_serial2)//Serial2
+    102            {
+    103          #ifdef STM32F10X_HD
+    104              RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO, ENABLE);
+    105              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
+    106          #endif
+    107          #ifdef STM32F10X_MD
+    108              RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO, ENABLE);
+    109              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+    110          #endif
+    111              pinMode(RX1, INPUT);
+    112              pinMode(TX1, AF_OUTPUT_PUSHPULL);
+    113            }
+    114          #ifdef STM32F10X_HD
+    115            else if(_dwId == id_serial3)//Serial3
+    116            {
+    117              RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD | RCC_APB2Periph_AFIO, ENABLE);
+    118              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+    119              pinMode(RX2, INPUT);
+    120              pinMode(TX2, AF_OUTPUT_PUSHPULL);
+    121            }
+    122          #endif
+    123          	// USART default configuration
+    124          	// USART configured as follow:
+    125          	// - BaudRate = (set baudRate as 9600 baud)
+    126          	// - Word Length = 8 Bits
+    127          	// - One Stop Bit
+    128          	// - No parity
+    129          	// - Hardware flow control disabled (RTS and CTS signals)
+    130          	// - Receive and transmit enabled
+    131          	USART_InitStructure.USART_BaudRate = dwBaudRate;
+    132          	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+    133          	USART_InitStructure.USART_StopBits = USART_StopBits_1;
+    134          	USART_InitStructure.USART_Parity = USART_Parity_No;
+    135          	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+    136          	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+    137          
+    138          	// Configure USART
+    139          	USART_Init(_pUsart, &USART_InitStructure);
+    140          
+    141            NVIC_InitTypeDef NVIC_InitStructure;
+    142          
+    143            /* Configure the NVIC Preemption Priority Bits */  
+    144            //NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
+    145            
+    146            /* Enable the USARTy Interrupt */
+    147            NVIC_InitStructure.NVIC_IRQChannel = _dwIrq;
+    148          	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = _dwId;		
+    149            NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    150            NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    151            NVIC_Init(&NVIC_InitStructure);
+    152          #endif //skyblue modidy 2016-11-29   
+    153            /* Enable USART Receive interrupts */
+    154            USART_ITConfig(_pUsart, USART_IT_RXNE, ENABLE);
+   \   00000004   0x2201             MOVS     R2,#+1
+   \   00000006   0xF240 0x5125      MOVW     R1,#+1317
+   \   0000000A   0x6960             LDR      R0,[R4, #+20]
+   \   0000000C   0x.... 0x....      BL       USART_ITConfig
+    155            // Enable UART interrupt in NVIC
+    156            NVIC_EnableIRQ( _dwIrq ) ;
+   \   00000010   0xF994 0x0028      LDRSB    R0,[R4, #+40]
+   \   00000014   0x.... 0x....      BL       _Z14NVIC_EnableIRQ9IRQn_Type
+    157          
+    158          	// Enable the USART
+    159          	USART_Cmd(_pUsart, ENABLE);
+   \   00000018   0x2101             MOVS     R1,#+1
+   \   0000001A   0x6960             LDR      R0,[R4, #+20]
+   \   0000001C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000020   0x.... 0x....      B.W      USART_Cmd
+    160               
+    161          }
+    162          
+
+   \                                 In section .text, align 2, keep-with-next
+    163          void USARTClass::end( void )
+    164          {
+    165          #if 0		//skyblue modidy 2016-11-29
+    166          
+    167            // clear any received data
+    168            _rx_buffer->_iHead = _rx_buffer->_iTail ;
+    169          
+    170            // Disable UART interrupt in NVIC
+    171            NVIC_DisableIRQ( _dwIrq ) ;
+    172          
+    173            // Wait for any outstanding data to be sent
+    174            flush();
+    175            
+    176            USART_Cmd(_pUsart, DISABLE);
+    177          
+    178            if(_dwId == id_serial)//Serial
+    179            {
+    180              // Disable USART Clock
+    181              RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, DISABLE);
+    182            }
+    183            else if(_dwId == id_serial2)//Serial2
+    184            {
+    185              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, DISABLE);
+    186            }
+    187            else if(_dwId == id_serial3)//Serial3
+    188            {
+    189              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, DISABLE);
+    190            }
+    191            else if(_dwId == id_serial1)//Serial1
+    192            {
+    193          #ifdef STM32F10X_HD
+    194              RCC_APB1PeriphClockCmd(RCC_APB1Periph_UART4, DISABLE);
+    195          #endif
+    196          #ifdef STM32F10X_MD
+    197              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, DISABLE);
+    198          #endif
+    199            }
+    200          #endif //skyblue modidy 2016-11-29    
+    201          }
+   \                     _ZN10USARTClass3endEv: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    202          
+
+   \                                 In section .text, align 2, keep-with-next
+    203          int USARTClass::available( void )
+    204          {
+    205            return (uint32_t)(SERIAL_BUFFER_SIZE + _rx_buffer->_iHead - _rx_buffer->_iTail) % SERIAL_BUFFER_SIZE ;
+   \                     _ZN10USARTClass9availableEv: (+1)
+   \   00000000   0x6900             LDR      R0,[R0, #+16]
+   \   00000002   0x6E01             LDR      R1,[R0, #+96]
+   \   00000004   0x3160             ADDS     R1,R1,#+96
+   \   00000006   0x6E40             LDR      R0,[R0, #+100]
+   \   00000008   0x1A08             SUBS     R0,R1,R0
+   \   0000000A   0x2160             MOVS     R1,#+96
+   \   0000000C   0xFBB0 0xF1F1      UDIV     R1,R0,R1
+   \   00000010   0xEB01 0x0241      ADD      R2,R1,R1, LSL #+1
+   \   00000014   0xEBA0 0x1042      SUB      R0,R0,R2, LSL #+5
+   \   00000018   0x4770             BX       LR               ;; return
+    206          }
+    207          
+
+   \                                 In section .text, align 2, keep-with-next
+    208          int USARTClass::peek( void )
+    209          {
+    210            if ( _rx_buffer->_iHead == _rx_buffer->_iTail )
+   \                     _ZN10USARTClass4peekEv: (+1)
+   \   00000000   0x6900             LDR      R0,[R0, #+16]
+   \   00000002   0x6E41             LDR      R1,[R0, #+100]
+   \   00000004   0x6E02             LDR      R2,[R0, #+96]
+   \   00000006   0x428A             CMP      R2,R1
+   \   00000008   0xD102             BNE.N    ??peek_0
+    211              return -1 ;
+   \   0000000A   0xF04F 0x30FF      MOV      R0,#-1
+   \   0000000E   0x4770             BX       LR
+    212            
+    213            
+    214          
+    215            return _rx_buffer->_aucBuffer[_rx_buffer->_iTail] ;
+   \                     ??peek_0: (+1)
+   \   00000010   0x5C08             LDRB     R0,[R1, R0]
+   \   00000012   0x4770             BX       LR               ;; return
+    216          }
+    217          
+
+   \                                 In section .text, align 2, keep-with-next
+    218          int16_t USARTClass::read( void )
+    219          {
+   \                     _ZN10USARTClass4readEv: (+1)
+   \   00000000   0xB410             PUSH     {R4}
+    220            // if the head isn't ahead of the tail, we don't have any characters
+    221            if ( _rx_buffer->_iHead == _rx_buffer->_iTail )
+   \   00000002   0x6901             LDR      R1,[R0, #+16]
+   \   00000004   0x6E4A             LDR      R2,[R1, #+100]
+   \   00000006   0x6E08             LDR      R0,[R1, #+96]
+   \   00000008   0x4290             CMP      R0,R2
+   \   0000000A   0xD102             BNE.N    ??read_0
+    222              return -1 ;
+   \   0000000C   0xF04F 0x30FF      MOV      R0,#-1
+   \   00000010   0xE009             B.N      ??read_1
+    223          
+    224            uint8_t uc = _rx_buffer->_aucBuffer[_rx_buffer->_iTail] ;
+   \                     ??read_0: (+1)
+   \   00000012   0x5C50             LDRB     R0,[R2, R1]
+    225            _rx_buffer->_iTail = (unsigned int)(_rx_buffer->_iTail + 1) % SERIAL_BUFFER_SIZE ;
+   \   00000014   0x1C52             ADDS     R2,R2,#+1
+   \   00000016   0x2360             MOVS     R3,#+96
+   \   00000018   0xFBB2 0xF3F3      UDIV     R3,R2,R3
+   \   0000001C   0xEB03 0x0443      ADD      R4,R3,R3, LSL #+1
+   \   00000020   0xEBA2 0x1244      SUB      R2,R2,R4, LSL #+5
+   \   00000024   0x664A             STR      R2,[R1, #+100]
+    226            return uc ;
+   \                     ??read_1: (+1)
+   \   00000026   0xBC10             POP      {R4}
+   \   00000028   0x4770             BX       LR               ;; return
+    227          }
+    228          
+
+   \                                 In section .text, align 2, keep-with-next
+    229          void USARTClass::flush( void )
+    230          {
+    231          #if 0
+    232            // Wait for transmission to complete
+    233            while ((_pUsart->US_CSR & US_CSR_TXRDY) != US_CSR_TXRDY)
+    234          	;
+    235          #endif
+    236            _rx_buffer->_iTail = _rx_buffer->_iHead;
+   \                     _ZN10USARTClass5flushEv: (+1)
+   \   00000000   0x6900             LDR      R0,[R0, #+16]
+   \   00000002   0x6E01             LDR      R1,[R0, #+96]
+   \   00000004   0x6641             STR      R1,[R0, #+100]
+    237          }
+   \   00000006   0x4770             BX       LR               ;; return
+    238          
+
+   \                                 In section .text, align 2, keep-with-next
+    239          size_t USARTClass::write( const uint8_t uc_data )
+    240          {
+   \                     _ZN10USARTClass5writeEh: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    241          	// Send one byte from USART
+    242          	USART_SendData(_pUsart, uc_data);
+   \   00000004   0x6960             LDR      R0,[R4, #+20]
+   \   00000006   0x.... 0x....      BL       USART_SendData
+    243                  
+    244          	// Loop until USART DR register is empty
+    245          	while(USART_GetFlagStatus(_pUsart, USART_FLAG_TXE) == RESET)
+   \                     ??write_0: (+1)
+   \   0000000A   0x2180             MOVS     R1,#+128
+   \   0000000C   0x6960             LDR      R0,[R4, #+20]
+   \   0000000E   0x.... 0x....      BL       USART_GetFlagStatus
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD0F9             BEQ.N    ??write_0
+    246          	{
+    247          	}
+    248          
+    249          	return 1;
+   \   00000016   0x2001             MOVS     R0,#+1
+   \   00000018   0xBD10             POP      {R4,PC}          ;; return
+    250          } 
+    251          
+
+   \                                 In section .text, align 2, keep-with-next
+    252          void USARTClass::IrqHandler( void )
+    253          {
+   \                     _ZN10USARTClass10IrqHandlerEv: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    254              if (USART_GetFlagStatus(_pUsart, USART_FLAG_PE) != RESET)  
+   \   00000004   0x2101             MOVS     R1,#+1
+   \   00000006   0x6960             LDR      R0,[R4, #+20]
+   \   00000008   0x.... 0x....      BL       USART_GetFlagStatus
+   \   0000000C   0x2800             CMP      R0,#+0
+   \   0000000E   0xD006             BEQ.N    ??IrqHandler_0
+    255             {  
+    256                 USART_ReceiveData(_pUsart);  
+   \   00000010   0x6960             LDR      R0,[R4, #+20]
+   \   00000012   0x.... 0x....      BL       USART_ReceiveData
+    257               USART_ClearFlag(_pUsart, USART_FLAG_PE);  
+   \   00000016   0x2101             MOVS     R1,#+1
+   \   00000018   0x6960             LDR      R0,[R4, #+20]
+   \   0000001A   0x.... 0x....      BL       USART_ClearFlag
+    258             }  
+    259                
+    260             if (USART_GetFlagStatus(_pUsart, USART_FLAG_ORE) != RESET)  
+   \                     ??IrqHandler_0: (+1)
+   \   0000001E   0x2108             MOVS     R1,#+8
+   \   00000020   0x6960             LDR      R0,[R4, #+20]
+   \   00000022   0x.... 0x....      BL       USART_GetFlagStatus
+   \   00000026   0x2800             CMP      R0,#+0
+   \   00000028   0xD006             BEQ.N    ??IrqHandler_1
+    261             {  
+    262                 USART_ReceiveData(_pUsart);  
+   \   0000002A   0x6960             LDR      R0,[R4, #+20]
+   \   0000002C   0x.... 0x....      BL       USART_ReceiveData
+    263               USART_ClearFlag(_pUsart, USART_FLAG_ORE);  
+   \   00000030   0x2108             MOVS     R1,#+8
+   \   00000032   0x6960             LDR      R0,[R4, #+20]
+   \   00000034   0x.... 0x....      BL       USART_ClearFlag
+    264             }  
+    265                
+    266              if (USART_GetFlagStatus(_pUsart, USART_FLAG_FE) != RESET)  
+   \                     ??IrqHandler_1: (+1)
+   \   00000038   0x2102             MOVS     R1,#+2
+   \   0000003A   0x6960             LDR      R0,[R4, #+20]
+   \   0000003C   0x.... 0x....      BL       USART_GetFlagStatus
+   \   00000040   0x2800             CMP      R0,#+0
+   \   00000042   0xD006             BEQ.N    ??IrqHandler_2
+    267             {  
+    268                 USART_ReceiveData(_pUsart);  
+   \   00000044   0x6960             LDR      R0,[R4, #+20]
+   \   00000046   0x.... 0x....      BL       USART_ReceiveData
+    269                USART_ClearFlag(_pUsart, USART_FLAG_FE);  
+   \   0000004A   0x2102             MOVS     R1,#+2
+   \   0000004C   0x6960             LDR      R0,[R4, #+20]
+   \   0000004E   0x.... 0x....      BL       USART_ClearFlag
+    270             }  
+    271          	
+    272          	
+    273            // Did we receive data ?
+    274            if(USART_GetITStatus(_pUsart, USART_IT_RXNE) != RESET)
+   \                     ??IrqHandler_2: (+1)
+   \   00000052   0xF240 0x5525      MOVW     R5,#+1317
+   \   00000056   0x4629             MOV      R1,R5
+   \   00000058   0x6960             LDR      R0,[R4, #+20]
+   \   0000005A   0x.... 0x....      BL       USART_GetITStatus
+   \   0000005E   0x2800             CMP      R0,#+0
+   \   00000060   0xD011             BEQ.N    ??IrqHandler_3
+    275            {
+    276              /* Read one byte from the receive data register */
+    277              uint8_t RxBuffer;
+    278              USART_ClearFlag(_pUsart, USART_FLAG_RXNE);  
+   \   00000062   0x2120             MOVS     R1,#+32
+   \   00000064   0x6960             LDR      R0,[R4, #+20]
+   \   00000066   0x.... 0x....      BL       USART_ClearFlag
+    279              USART_ClearITPendingBit(_pUsart, USART_IT_RXNE);  
+   \   0000006A   0x4629             MOV      R1,R5
+   \   0000006C   0x6960             LDR      R0,[R4, #+20]
+   \   0000006E   0x.... 0x....      BL       USART_ClearITPendingBit
+    280              RxBuffer = USART_ReceiveData(_pUsart);
+   \   00000072   0x6960             LDR      R0,[R4, #+20]
+   \   00000074   0x.... 0x....      BL       USART_ReceiveData
+    281          
+    282              _rx_buffer->store_char( RxBuffer ) ;
+   \   00000078   0x4601             MOV      R1,R0
+   \   0000007A   0xB2C9             UXTB     R1,R1
+   \   0000007C   0x6920             LDR      R0,[R4, #+16]
+   \   0000007E   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \   00000082   0x.... 0x....      B.W      _ZN10RingBuffer10store_charEh
+    283            }
+    284          
+    285            
+    286          #if 0
+    287            // Acknowledge errors
+    288            if ((status & US_CSR_OVRE) == US_CSR_OVRE ||
+    289          		  (status & US_CSR_FRAME) == US_CSR_FRAME)
+    290            {
+    291          	// TODO: error reporting outside ISR
+    292              _pUsart->US_CR |= US_CR_RSTSTA;
+    293            }
+    294          #endif
+    295          
+    296          }
+   \                     ??IrqHandler_3: (+1)
+   \   00000086   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    297          #if 0
+    298          
+    299          void USARTClass::sdPause( void )
+    300          {
+    301            int i;
+    302            uint8_t GData[16]= "G91\nG1 Z10\nG90\n";
+    303            unsigned char homeGcode1[5]="G91\n";      
+    304            for(i=0;i<15;i++)
+    305                _rx_buffer->store_char(GData[i]) ;
+    306              
+    307          }
+    308          extern int xmov_distance;
+    309          extern int ymov_distance;
+    310          extern int zmov_distance;
+    311          
+    312          void USARTClass::sdContinue( void )
+    313          {
+    314            int i;
+    315            
+    316            uint8_t GData[17]= "G91\nG1 Z-10\nG90\n";
+    317            unsigned char homeGcode1[5]="G91\n";      
+    318            for(i=0;i<16;i++)
+    319                _rx_buffer->store_char(GData[i]) ;
+    320           
+    321          }
+    322          #endif
+    323          extern char codebuff[100];
+    324          extern volatile char *codebufpoint;
+    325          
+
+   \                                 In section .text, align 2, keep-with-next
+    326          void USARTClass::MoremenuCmd(void)
+    327          {
+   \                     _ZN10USARTClass11MoremenuCmdEv: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4604             MOV      R4,R0
+    328          	uint8_t i = 0,j=0;
+   \   00000006   0x2500             MOVS     R5,#+0
+   \   00000008   0x462E             MOV      R6,R5
+    329          	
+    330          	if(*(codebufpoint) != '\0')
+   \   0000000A   0x....             LDR.N    R7,??DataTable10_2
+   \   0000000C   0x6838             LDR      R0,[R7, #+0]
+   \   0000000E   0xF990 0x0000      LDRSB    R0,[R0, #+0]
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD030             BEQ.N    ??MoremenuCmd_0
+    331          	{
+    332          		memset(codebuff,0,sizeof(codebuff));
+   \   00000016   0x.... 0x....      LDR.W    R8,??DataTable10_3
+   \   0000001A   0x2264             MOVS     R2,#+100
+   \   0000001C   0x4629             MOV      R1,R5
+   \   0000001E   0x4640             MOV      R0,R8
+   \   00000020   0x.... 0x....      BL       memset
+   \   00000024   0xE006             B.N      ??MoremenuCmd_1
+    333          		
+    334          		while((*(codebufpoint) != 0x3b)&&(i<=96))//?üá?DDò?·?o??a?áê?·??￡
+    335          		{
+    336          			codebuff[i] = *codebufpoint;
+   \                     ??MoremenuCmd_2: (+1)
+   \   00000026   0x7801             LDRB     R1,[R0, #+0]
+   \   00000028   0xF805 0x1008      STRB     R1,[R5, R8]
+    337          			i++;
+   \   0000002C   0x1C6D             ADDS     R5,R5,#+1
+   \   0000002E   0xB2ED             UXTB     R5,R5
+    338          			codebufpoint++;
+   \   00000030   0x1C40             ADDS     R0,R0,#+1
+   \   00000032   0x6038             STR      R0,[R7, #+0]
+    339          		}
+   \                     ??MoremenuCmd_1: (+1)
+   \   00000034   0x6838             LDR      R0,[R7, #+0]
+   \   00000036   0xF990 0x1000      LDRSB    R1,[R0, #+0]
+   \   0000003A   0x293B             CMP      R1,#+59
+   \   0000003C   0xD001             BEQ.N    ??MoremenuCmd_3
+   \   0000003E   0x2D61             CMP      R5,#+97
+   \   00000040   0xDBF1             BLT.N    ??MoremenuCmd_2
+    340          		
+    341          		codebuff[i] = '\n';
+   \                     ??MoremenuCmd_3: (+1)
+   \   00000042   0x210A             MOVS     R1,#+10
+   \   00000044   0xF805 0x1008      STRB     R1,[R5, R8]
+    342          		
+    343          		codebufpoint += 1;		
+   \   00000048   0x1C40             ADDS     R0,R0,#+1
+   \   0000004A   0x6038             STR      R0,[R7, #+0]
+    344          		if(USARTClass::check())
+   \   0000004C   0x4620             MOV      R0,R4
+   \   0000004E   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   00000052   0x2800             CMP      R0,#+0
+   \   00000054   0xD00B             BEQ.N    ??MoremenuCmd_4
+    345          		{
+    346          			for(j=0;j<i+1;j++)
+   \                     ??MoremenuCmd_5: (+1)
+   \   00000056   0xB2F6             UXTB     R6,R6
+   \   00000058   0x4630             MOV      R0,R6
+   \   0000005A   0x1C69             ADDS     R1,R5,#+1
+   \   0000005C   0x4288             CMP      R0,R1
+   \   0000005E   0xDA0B             BGE.N    ??MoremenuCmd_0
+    347          			{
+    348                			_rx_buffer->store_char(codebuff[j]) ;
+   \   00000060   0xF810 0x1008      LDRB     R1,[R0, R8]
+   \   00000064   0x6920             LDR      R0,[R4, #+16]
+   \   00000066   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    349          			}
+   \   0000006A   0x1C76             ADDS     R6,R6,#+1
+   \   0000006C   0xE7F3             B.N      ??MoremenuCmd_5
+    350          		}
+    351          		else
+    352          		{
+    353          			codebufpoint = codebufpoint - i - 1;
+   \                     ??MoremenuCmd_4: (+1)
+   \   0000006E   0x4268             RSBS     R0,R5,#+0
+   \   00000070   0x6839             LDR      R1,[R7, #+0]
+   \   00000072   0x1840             ADDS     R0,R0,R1
+   \   00000074   0x1E40             SUBS     R0,R0,#+1
+   \   00000076   0x6038             STR      R0,[R7, #+0]
+    354          		}
+    355          		i = 0;
+    356          	}
+    357          	
+    358          }
+   \                     ??MoremenuCmd_0: (+1)
+   \   00000078   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    359          
+
+   \                                 In section .text, align 2, keep-with-next
+    360          int USARTClass::check( void )
+    361          {
+    362            if ( _rx_buffer->_iHead == _rx_buffer->_iTail )       //?óáD??
+   \                     _ZN10USARTClass5checkEv: (+1)
+   \   00000000   0x6900             LDR      R0,[R0, #+16]
+   \   00000002   0x6E01             LDR      R1,[R0, #+96]
+   \   00000004   0x6E40             LDR      R0,[R0, #+100]
+   \   00000006   0x4281             CMP      R1,R0
+   \   00000008   0xD101             BNE.N    ??check_0
+    363              return 1 ;
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0x4770             BX       LR
+    364            else
+    365              return 0;
+   \                     ??check_0: (+1)
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x4770             BX       LR               ;; return
+    366          }
+    367          #if 1
+    368          extern uint8_t next_cnt;
+    369          extern uint8_t leveling_start_flg;
+
+   \                                 In section .text, align 2, keep-with-next
+    370          void USARTClass::Leveling_move_action(void)
+    371          {
+   \                     _ZN10USARTClass20Leveling_move_actionEv: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB08F             SUB      SP,SP,#+60
+   \   00000004   0x4604             MOV      R4,R0
+    372          	uint8_t i;
+    373          	char move_point_temp[50]={0};
+   \   00000006   0xA801             ADD      R0,SP,#+4
+   \   00000008   0x2134             MOVS     R1,#+52
+   \   0000000A   0x.... 0x....      BL       __aeabi_memclr4
+    374          
+    375              
+    376          	if(leveling_start_flg == 1)//??ê??aê?2?Dèòa??á?
+   \   0000000E   0x....             LDR.N    R0,??DataTable10_4
+   \   00000010   0x7801             LDRB     R1,[R0, #+0]
+   \   00000012   0x2901             CMP      R1,#+1
+   \   00000014   0xD11E             BNE.N    ??Leveling_move_action_0
+    377          	{
+    378          		leveling_start_flg = 0;
+   \   00000016   0x2100             MOVS     R1,#+0
+   \   00000018   0x7001             STRB     R1,[R0, #+0]
+    379          		if(USARTClass::check())
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   00000020   0x2800             CMP      R0,#+0
+   \   00000022   0xD017             BEQ.N    ??Leveling_move_action_0
+    380          		{
+    381          			memset(move_point_temp,0,sizeof(move_point_temp));
+   \   00000024   0x2232             MOVS     R2,#+50
+   \   00000026   0x2100             MOVS     R1,#+0
+   \   00000028   0xA801             ADD      R0,SP,#+4
+   \   0000002A   0x.... 0x....      BL       memset
+    382          			sprintf((char*)move_point_temp,"G28\n");
+   \   0000002E   0x.... 0x....      ADR.W    R1,`?<Constant "G28\\n">`
+   \   00000032   0xA801             ADD      R0,SP,#+4
+   \   00000034   0x.... 0x....      BL       sprintf
+    383          			for(i=0;i<strlen(move_point_temp);i++)
+   \   00000038   0x2500             MOVS     R5,#+0
+   \   0000003A   0xE005             B.N      ??Leveling_move_action_1
+    384          			{
+    385                			_rx_buffer->store_char(move_point_temp[i]) ;
+   \                     ??Leveling_move_action_2: (+1)
+   \   0000003C   0xA801             ADD      R0,SP,#+4
+   \   0000003E   0x5C29             LDRB     R1,[R5, R0]
+   \   00000040   0x6920             LDR      R0,[R4, #+16]
+   \   00000042   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    386          			}
+   \   00000046   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??Leveling_move_action_1: (+1)
+   \   00000048   0xA801             ADD      R0,SP,#+4
+   \   0000004A   0x.... 0x....      BL       strlen
+   \   0000004E   0xB2ED             UXTB     R5,R5
+   \   00000050   0x4285             CMP      R5,R0
+   \   00000052   0xD3F3             BCC.N    ??Leveling_move_action_2
+    387          		}			
+    388          	} 
+    389          
+    390          	switch(next_cnt)
+   \                     ??Leveling_move_action_0: (+1)
+   \   00000054   0x....             LDR.N    R0,??DataTable10_5
+   \   00000056   0x7800             LDRB     R0,[R0, #+0]
+   \   00000058   0x2801             CMP      R0,#+1
+   \   0000005A   0xD009             BEQ.N    ??Leveling_move_action_3
+   \   0000005C   0xF0C0 0x80CE      BCC.W    ??Leveling_move_action_4
+   \   00000060   0x2803             CMP      R0,#+3
+   \   00000062   0xD056             BEQ.N    ??Leveling_move_action_5
+   \   00000064   0xD32D             BCC.N    ??Leveling_move_action_6
+   \   00000066   0x2805             CMP      R0,#+5
+   \   00000068   0xF000 0x80A1      BEQ.W    ??Leveling_move_action_7
+   \   0000006C   0xD378             BCC.N    ??Leveling_move_action_8
+   \   0000006E   0xE0C5             B.N      ??Leveling_move_action_4
+    391          	{
+    392          	case 1:
+    393          			/*
+    394          			if(leveling_start_flg == 1)//??ê??aê?2?Dèòa??á?
+    395          			{
+    396          				leveling_start_flg = 0;
+    397          				if(USARTClass::check())
+    398          				{
+    399          					memset(move_point_temp,0,sizeof(move_point_temp));
+    400          					sprintf((char*)move_point_temp,"G28\nG91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
+    401          					for(i=0;i<strlen(move_point_temp);i++)
+    402          					{
+    403          		      			_rx_buffer->store_char(move_point_temp[i]) ;
+    404          					}
+    405          				}			
+    406          			}
+    407          			else
+    408          			*/
+    409          			{
+    410          				if(USARTClass::check())
+   \                     ??Leveling_move_action_3: (+1)
+   \   00000070   0x4620             MOV      R0,R4
+   \   00000072   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   00000076   0x2800             CMP      R0,#+0
+   \   00000078   0xF000 0x80C0      BEQ.W    ??Leveling_move_action_4
+    411          				{
+    412          					memset(move_point_temp,0,sizeof(move_point_temp));
+   \   0000007C   0x2232             MOVS     R2,#+50
+   \   0000007E   0x2100             MOVS     R1,#+0
+   \   00000080   0xA801             ADD      R0,SP,#+4
+   \   00000082   0x.... 0x....      BL       memset
+    413          					sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
+                 					^
+Warning[Pa082]: undefined behavior: the order of volatile accesses is
+          undefined in this statement
+   \   00000086   0x....             LDR.N    R0,??DataTable10_6
+   \   00000088   0xF200 0x01D2      ADDW     R1,R0,#+210
+   \   0000008C   0xF9B1 0x202E      LDRSH    R2,[R1, #+46]
+   \   00000090   0xF9B1 0x302C      LDRSH    R3,[R1, #+44]
+   \   00000094   0x9200             STR      R2,[SP, #+0]
+   \   00000096   0xF9B0 0x20D2      LDRSH    R2,[R0, #+210]
+   \   0000009A   0x.... 0x....      ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+   \   0000009E   0xA801             ADD      R0,SP,#+4
+   \   000000A0   0x.... 0x....      BL       sprintf
+    414          					for(i=0;i<strlen(move_point_temp);i++)
+   \   000000A4   0x2500             MOVS     R5,#+0
+   \                     ??Leveling_move_action_9: (+1)
+   \   000000A6   0xA801             ADD      R0,SP,#+4
+   \   000000A8   0x.... 0x....      BL       strlen
+   \   000000AC   0xB2ED             UXTB     R5,R5
+   \   000000AE   0x4285             CMP      R5,R0
+   \   000000B0   0xF080 0x80A4      BCS.W    ??Leveling_move_action_4
+    415          					{
+    416          		      			_rx_buffer->store_char(move_point_temp[i]) ;
+   \   000000B4   0xA801             ADD      R0,SP,#+4
+   \   000000B6   0x5C29             LDRB     R1,[R5, R0]
+   \   000000B8   0x6920             LDR      R0,[R4, #+16]
+   \   000000BA   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    417          					}
+   \   000000BE   0x1C6D             ADDS     R5,R5,#+1
+   \   000000C0   0xE7F1             B.N      ??Leveling_move_action_9
+    418          				}
+    419          			}
+    420          
+    421          		break;
+    422          	case 2:
+    423          		if(USARTClass::check())
+   \                     ??Leveling_move_action_6: (+1)
+   \   000000C2   0x4620             MOV      R0,R4
+   \   000000C4   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   000000C8   0x2800             CMP      R0,#+0
+   \   000000CA   0xF000 0x8097      BEQ.W    ??Leveling_move_action_4
+    424          		{
+    425          			memset(move_point_temp,0,sizeof(move_point_temp));
+   \   000000CE   0x2232             MOVS     R2,#+50
+   \   000000D0   0x2100             MOVS     R1,#+0
+   \   000000D2   0xA801             ADD      R0,SP,#+4
+   \   000000D4   0x.... 0x....      BL       memset
+    426          			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
+                 			^
+Warning[Pa082]: undefined behavior: the order of volatile accesses is
+          undefined in this statement
+   \   000000D8   0x....             LDR.N    R0,??DataTable10_6
+   \   000000DA   0xF200 0x01D2      ADDW     R1,R0,#+210
+   \   000000DE   0xF9B1 0x2032      LDRSH    R2,[R1, #+50]
+   \   000000E2   0xF9B1 0x3030      LDRSH    R3,[R1, #+48]
+   \   000000E6   0x9200             STR      R2,[SP, #+0]
+   \   000000E8   0xF9B0 0x20D2      LDRSH    R2,[R0, #+210]
+   \   000000EC   0x.... 0x....      ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+   \   000000F0   0xA801             ADD      R0,SP,#+4
+   \   000000F2   0x.... 0x....      BL       sprintf
+    427          			for(i=0;i<strlen(move_point_temp);i++)
+   \   000000F6   0x2500             MOVS     R5,#+0
+   \                     ??Leveling_move_action_10: (+1)
+   \   000000F8   0xA801             ADD      R0,SP,#+4
+   \   000000FA   0x.... 0x....      BL       strlen
+   \   000000FE   0xB2ED             UXTB     R5,R5
+   \   00000100   0x4285             CMP      R5,R0
+   \   00000102   0xD27B             BCS.N    ??Leveling_move_action_4
+    428          			{
+    429                			_rx_buffer->store_char(move_point_temp[i]) ;
+   \   00000104   0xA801             ADD      R0,SP,#+4
+   \   00000106   0x5C29             LDRB     R1,[R5, R0]
+   \   00000108   0x6920             LDR      R0,[R4, #+16]
+   \   0000010A   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    430          			}
+   \   0000010E   0x1C6D             ADDS     R5,R5,#+1
+   \   00000110   0xE7F2             B.N      ??Leveling_move_action_10
+    431          		}		
+    432          		break;
+    433          	case 3:
+    434          		if(USARTClass::check())
+   \                     ??Leveling_move_action_5: (+1)
+   \   00000112   0x4620             MOV      R0,R4
+   \   00000114   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   00000118   0x2800             CMP      R0,#+0
+   \   0000011A   0xD06F             BEQ.N    ??Leveling_move_action_4
+    435          		{
+    436          			memset(move_point_temp,0,sizeof(move_point_temp));
+   \   0000011C   0x2232             MOVS     R2,#+50
+   \   0000011E   0x2100             MOVS     R1,#+0
+   \   00000120   0xA801             ADD      R0,SP,#+4
+   \   00000122   0x.... 0x....      BL       memset
+    437          			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
+                 			^
+Warning[Pa082]: undefined behavior: the order of volatile accesses is
+          undefined in this statement
+   \   00000126   0x....             LDR.N    R0,??DataTable10_6
+   \   00000128   0xF200 0x01D2      ADDW     R1,R0,#+210
+   \   0000012C   0xF9B1 0x2036      LDRSH    R2,[R1, #+54]
+   \   00000130   0xF9B1 0x3034      LDRSH    R3,[R1, #+52]
+   \   00000134   0x9200             STR      R2,[SP, #+0]
+   \   00000136   0xF9B0 0x20D2      LDRSH    R2,[R0, #+210]
+   \   0000013A   0x.... 0x....      ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+   \   0000013E   0xA801             ADD      R0,SP,#+4
+   \   00000140   0x.... 0x....      BL       sprintf
+    438          			for(i=0;i<strlen(move_point_temp);i++)
+   \   00000144   0x2500             MOVS     R5,#+0
+   \                     ??Leveling_move_action_11: (+1)
+   \   00000146   0xA801             ADD      R0,SP,#+4
+   \   00000148   0x.... 0x....      BL       strlen
+   \   0000014C   0xB2ED             UXTB     R5,R5
+   \   0000014E   0x4285             CMP      R5,R0
+   \   00000150   0xD254             BCS.N    ??Leveling_move_action_4
+    439          			{
+    440                			_rx_buffer->store_char(move_point_temp[i]) ;
+   \   00000152   0xA801             ADD      R0,SP,#+4
+   \   00000154   0x5C29             LDRB     R1,[R5, R0]
+   \   00000156   0x6920             LDR      R0,[R4, #+16]
+   \   00000158   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    441          			}
+   \   0000015C   0x1C6D             ADDS     R5,R5,#+1
+   \   0000015E   0xE7F2             B.N      ??Leveling_move_action_11
+    442          		}		
+    443          		break;
+    444          	case 4:
+    445          		if(USARTClass::check())
+   \                     ??Leveling_move_action_8: (+1)
+   \   00000160   0x4620             MOV      R0,R4
+   \   00000162   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   00000166   0x2800             CMP      R0,#+0
+   \   00000168   0xD048             BEQ.N    ??Leveling_move_action_4
+    446          		{
+    447          			memset(move_point_temp,0,sizeof(move_point_temp));
+   \   0000016A   0x2232             MOVS     R2,#+50
+   \   0000016C   0x2100             MOVS     R1,#+0
+   \   0000016E   0xA801             ADD      R0,SP,#+4
+   \   00000170   0x.... 0x....      BL       memset
+    448          			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
+                 			^
+Warning[Pa082]: undefined behavior: the order of volatile accesses is
+          undefined in this statement
+   \   00000174   0x....             LDR.N    R0,??DataTable10_6
+   \   00000176   0xF200 0x01D2      ADDW     R1,R0,#+210
+   \   0000017A   0xF9B1 0x203A      LDRSH    R2,[R1, #+58]
+   \   0000017E   0xF9B1 0x3038      LDRSH    R3,[R1, #+56]
+   \   00000182   0x9200             STR      R2,[SP, #+0]
+   \   00000184   0xF9B0 0x20D2      LDRSH    R2,[R0, #+210]
+   \   00000188   0x.... 0x....      ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+   \   0000018C   0xA801             ADD      R0,SP,#+4
+   \   0000018E   0x.... 0x....      BL       sprintf
+    449          			for(i=0;i<strlen(move_point_temp);i++)
+   \   00000192   0x2500             MOVS     R5,#+0
+   \                     ??Leveling_move_action_12: (+1)
+   \   00000194   0xA801             ADD      R0,SP,#+4
+   \   00000196   0x.... 0x....      BL       strlen
+   \   0000019A   0xB2ED             UXTB     R5,R5
+   \   0000019C   0x4285             CMP      R5,R0
+   \   0000019E   0xD22D             BCS.N    ??Leveling_move_action_4
+    450          			{
+    451                			_rx_buffer->store_char(move_point_temp[i]) ;
+   \   000001A0   0xA801             ADD      R0,SP,#+4
+   \   000001A2   0x5C29             LDRB     R1,[R5, R0]
+   \   000001A4   0x6920             LDR      R0,[R4, #+16]
+   \   000001A6   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    452          			}
+   \   000001AA   0x1C6D             ADDS     R5,R5,#+1
+   \   000001AC   0xE7F2             B.N      ??Leveling_move_action_12
+    453          		}		
+    454          		break;
+    455          	case 5:
+    456          		if(USARTClass::check())
+   \                     ??Leveling_move_action_7: (+1)
+   \   000001AE   0x4620             MOV      R0,R4
+   \   000001B0   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   000001B4   0x2800             CMP      R0,#+0
+   \   000001B6   0xD021             BEQ.N    ??Leveling_move_action_4
+    457          		{
+    458          			memset(move_point_temp,0,sizeof(move_point_temp));
+   \   000001B8   0x2232             MOVS     R2,#+50
+   \   000001BA   0x2100             MOVS     R1,#+0
+   \   000001BC   0xA801             ADD      R0,SP,#+4
+   \   000001BE   0x.... 0x....      BL       memset
+    459          			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
+                 			^
+Warning[Pa082]: undefined behavior: the order of volatile accesses is
+          undefined in this statement
+   \   000001C2   0x....             LDR.N    R0,??DataTable10_6
+   \   000001C4   0xF200 0x01D2      ADDW     R1,R0,#+210
+   \   000001C8   0xF9B1 0x203E      LDRSH    R2,[R1, #+62]
+   \   000001CC   0xF9B1 0x303C      LDRSH    R3,[R1, #+60]
+   \   000001D0   0x9200             STR      R2,[SP, #+0]
+   \   000001D2   0xF9B0 0x20D2      LDRSH    R2,[R0, #+210]
+   \   000001D6   0x.... 0x....      ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+   \   000001DA   0xA801             ADD      R0,SP,#+4
+   \   000001DC   0x.... 0x....      BL       sprintf
+    460          			for(i=0;i<strlen(move_point_temp);i++)
+   \   000001E0   0x2500             MOVS     R5,#+0
+   \   000001E2   0xE005             B.N      ??Leveling_move_action_13
+    461          			{
+    462                			_rx_buffer->store_char(move_point_temp[i]) ;
+   \                     ??Leveling_move_action_14: (+1)
+   \   000001E4   0xA801             ADD      R0,SP,#+4
+   \   000001E6   0x5C29             LDRB     R1,[R5, R0]
+   \   000001E8   0x6920             LDR      R0,[R4, #+16]
+   \   000001EA   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    463          			}
+   \   000001EE   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??Leveling_move_action_13: (+1)
+   \   000001F0   0xA801             ADD      R0,SP,#+4
+   \   000001F2   0x.... 0x....      BL       strlen
+   \   000001F6   0xB2ED             UXTB     R5,R5
+   \   000001F8   0x4285             CMP      R5,R0
+   \   000001FA   0xD3F3             BCC.N    ??Leveling_move_action_14
+    464          		}		
+    465          		break;
+    466          	}
+    467          }
+   \                     ??Leveling_move_action_4: (+1)
+   \   000001FC   0xB00F             ADD      SP,SP,#+60
+   \   000001FE   0xBD30             POP      {R4,R5,PC}       ;; return
+    468          #endif
+    469          
+    470          extern uint8_t filamentchange_Process;
+
+   \                                 In section .text, align 2, keep-with-next
+    471          void USARTClass::filamentchange(void)
+    472          {
+   \                     _ZN10USARTClass14filamentchangeEv: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB08F             SUB      SP,SP,#+60
+   \   00000004   0x4604             MOV      R4,R0
+    473          	uint8_t i;
+    474          	char filament_temp[50]={0};
+   \   00000006   0xA801             ADD      R0,SP,#+4
+   \   00000008   0x2134             MOVS     R1,#+52
+   \   0000000A   0x.... 0x....      BL       __aeabi_memclr4
+    475          	
+    476          	switch(filamentchange_Process)
+   \   0000000E   0x....             LDR.N    R0,??DataTable10_7
+   \   00000010   0x7800             LDRB     R0,[R0, #+0]
+   \   00000012   0x2801             CMP      R0,#+1
+   \   00000014   0xD002             BEQ.N    ??filamentchange_0
+   \   00000016   0x2802             CMP      R0,#+2
+   \   00000018   0xD025             BEQ.N    ??filamentchange_1
+   \   0000001A   0xE049             B.N      ??filamentchange_2
+    477          	{
+    478          		case 1:
+    479          			if(USARTClass::check())
+   \                     ??filamentchange_0: (+1)
+   \   0000001C   0x4620             MOV      R0,R4
+   \   0000001E   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD044             BEQ.N    ??filamentchange_2
+    480          			{
+    481          				memset(filament_temp,0,sizeof(filament_temp));
+   \   00000026   0x2232             MOVS     R2,#+50
+   \   00000028   0x2100             MOVS     R1,#+0
+   \   0000002A   0xA801             ADD      R0,SP,#+4
+   \   0000002C   0x.... 0x....      BL       memset
+    482          				sprintf((char*)filament_temp,"T%d\nG91\nG1 E%d F%d\nG90\n",gCfgItems.curSprayerChoose,gCfgItems.filamentchange_load_length,gCfgItems.filamentchange_load_speed);
+   \   00000030   0x....             LDR.N    R0,??DataTable10_6
+   \   00000032   0xF100 0x019C      ADD      R1,R0,#+156
+   \   00000036   0x6C0A             LDR      R2,[R1, #+64]
+   \   00000038   0x9200             STR      R2,[SP, #+0]
+   \   0000003A   0x6C8B             LDR      R3,[R1, #+72]
+   \   0000003C   0xF990 0x209C      LDRSB    R2,[R0, #+156]
+   \   00000040   0x.... 0x....      ADR.W    R1,`?<Constant "T%d\\nG91\\nG1 E%d F%d\\nG90\\n">`
+   \   00000044   0xA801             ADD      R0,SP,#+4
+   \   00000046   0x.... 0x....      BL       sprintf
+    483          				for(i=0;i<strlen(filament_temp);i++)
+   \   0000004A   0x2500             MOVS     R5,#+0
+   \                     ??filamentchange_3: (+1)
+   \   0000004C   0xA801             ADD      R0,SP,#+4
+   \   0000004E   0x.... 0x....      BL       strlen
+   \   00000052   0xB2ED             UXTB     R5,R5
+   \   00000054   0x4285             CMP      R5,R0
+   \   00000056   0xD22B             BCS.N    ??filamentchange_2
+    484          				{
+    485          	      			_rx_buffer->store_char(filament_temp[i]) ;
+   \   00000058   0xA801             ADD      R0,SP,#+4
+   \   0000005A   0x5C29             LDRB     R1,[R5, R0]
+   \   0000005C   0x6920             LDR      R0,[R4, #+16]
+   \   0000005E   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    486          				}
+   \   00000062   0x1C6D             ADDS     R5,R5,#+1
+   \   00000064   0xE7F2             B.N      ??filamentchange_3
+    487          			}	
+    488          			break;
+    489          		case 2:
+    490          		if(USARTClass::check())
+   \                     ??filamentchange_1: (+1)
+   \   00000066   0x4620             MOV      R0,R4
+   \   00000068   0x.... 0x....      BL       _ZN10USARTClass5checkEv
+   \   0000006C   0x2800             CMP      R0,#+0
+   \   0000006E   0xD01F             BEQ.N    ??filamentchange_2
+    491          		{
+    492          			memset(filament_temp,0,sizeof(filament_temp));
+   \   00000070   0x2232             MOVS     R2,#+50
+   \   00000072   0x2100             MOVS     R1,#+0
+   \   00000074   0xA801             ADD      R0,SP,#+4
+   \   00000076   0x.... 0x....      BL       memset
+    493          			sprintf((char*)filament_temp,"T%d\nG91\nG1 E-%d F%d\nG90\n",gCfgItems.curSprayerChoose,gCfgItems.filamentchange_unload_length,gCfgItems.filamentchange_unload_speed);
+   \   0000007A   0x....             LDR.N    R0,??DataTable10_6
+   \   0000007C   0xF100 0x019C      ADD      R1,R0,#+156
+   \   00000080   0x6C4A             LDR      R2,[R1, #+68]
+   \   00000082   0x9200             STR      R2,[SP, #+0]
+   \   00000084   0x6CCB             LDR      R3,[R1, #+76]
+   \   00000086   0xF990 0x209C      LDRSB    R2,[R0, #+156]
+   \   0000008A   0x.... 0x....      ADR.W    R1,`?<Constant "T%d\\nG91\\nG1 E-%d F%d\\nG90\\n">`
+   \   0000008E   0xA801             ADD      R0,SP,#+4
+   \   00000090   0x.... 0x....      BL       sprintf
+    494          			for(i=0;i<strlen(filament_temp);i++)
+   \   00000094   0x2500             MOVS     R5,#+0
+   \   00000096   0xE005             B.N      ??filamentchange_4
+    495          			{
+    496                			_rx_buffer->store_char(filament_temp[i]) ;
+   \                     ??filamentchange_5: (+1)
+   \   00000098   0xA801             ADD      R0,SP,#+4
+   \   0000009A   0x5C29             LDRB     R1,[R5, R0]
+   \   0000009C   0x6920             LDR      R0,[R4, #+16]
+   \   0000009E   0x.... 0x....      BL       _ZN10RingBuffer10store_charEh
+    497          			}
+   \   000000A2   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??filamentchange_4: (+1)
+   \   000000A4   0xA801             ADD      R0,SP,#+4
+   \   000000A6   0x.... 0x....      BL       strlen
+   \   000000AA   0xB2ED             UXTB     R5,R5
+   \   000000AC   0x4285             CMP      R5,R0
+   \   000000AE   0xD3F3             BCC.N    ??filamentchange_5
+    498          		}			
+    499          			break;
+    500          		case 3:
+    501          			
+    502          			break;
+    503          		default:break;
+    504          	}
+    505          }
+   \                     ??filamentchange_2: (+1)
+   \   000000B0   0xB00F             ADD      SP,SP,#+60
+   \   000000B2   0xBD30             POP      {R4,R5,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \   00000000   0xE000E100         DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \   00000000   0x........         DC32     _ZTV10USARTClass+0x8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \   00000000   0x........         DC32     codebufpoint
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \   00000000   0x........         DC32     codebuff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \   00000000   0x........         DC32     leveling_start_flg
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \   00000000   0x........         DC32     next_cnt
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_7:
+   \   00000000   0x........         DC32     filamentchange_Process
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "G28\\n">`:
+   \   00000000   0x47 0x32          DC8 "G28\012"
+   \              0x38 0x0A    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`:
+   \   00000000   0x47 0x39          DC8 "G91\012G1 Z%d\012G90\012G1 X%d Y%d\012G28 Z0\012"
+   \              0x31 0x0A    
+   \              0x47 0x31    
+   \              0x20 0x5A    
+   \              0x25 0x64    
+   \              0x0A 0x47    
+   \              0x39 0x30    
+   \              0x0A 0x47    
+   \              0x31 0x20    
+   \              0x58 0x25    
+   \              0x64 0x20    
+   \              0x59 0x25    
+   \              0x64 0x0A    
+   \              0x47 0x32    
+   \              0x38 0x20    
+   \              0x5A 0x30    
+   \              0x0A 0x00    
+   \   00000022   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "T%d\\nG91\\nG1 E%d F%d\\nG90\\n">`:
+   \   00000000   0x54 0x25          DC8 "T%d\012G91\012G1 E%d F%d\012G90\012"
+   \              0x64 0x0A    
+   \              0x47 0x39    
+   \              0x31 0x0A    
+   \              0x47 0x31    
+   \              0x20 0x45    
+   \              0x25 0x64    
+   \              0x20 0x46    
+   \              0x25 0x64    
+   \              0x0A 0x47    
+   \              0x39 0x30    
+   \              0x0A 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "T%d\\nG91\\nG1 E-%d F%d\\nG90\\n">`:
+   \   00000000   0x54 0x25          DC8 "T%d\012G91\012G1 E-%d F%d\012G90\012"
+   \              0x64 0x0A    
+   \              0x47 0x39    
+   \              0x31 0x0A    
+   \              0x47 0x31    
+   \              0x20 0x45    
+   \              0x2D 0x25    
+   \              0x64 0x20    
+   \              0x46 0x25    
+   \              0x64 0x0A    
+   \              0x47 0x39    
+   \              0x30 0x0A    
+   \              0x00         
+   \   00000019   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 2
+   \   __code __interwork __softfp Print::subobject Print()
+   \                     _ZN5PrintC2Ev: (+1)
+   \   00000000   0x.... 0x....      B.W      _ZN5PrintC1Ev
+
+   \                                 In section .text, align 2
+   \   __code __interwork __softfp Stream::subobject Stream()
+   \                     _ZN6StreamC2Ev: (+1)
+   \   00000000   0x.... 0x....      B.W      _ZN6StreamC1Ev
+
+   \                                 In section .text, align 2
+   \   __code __interwork __softfp HardwareSerial::subobject HardwareSerial()
+   \                     _ZN14HardwareSerialC2Ev: (+1)
+   \   00000000   0x.... 0x....      B.W      _ZN14HardwareSerialC1Ev
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant {'\\000'}>`:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000021   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant {'\\000'}>_1`:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000021   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+    506          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   HardwareSerial::HardwareSerial()
+         8   -> Stream::subobject Stream()
+       0   HardwareSerial::subobject HardwareSerial()
+         0   -> HardwareSerial::HardwareSerial()
+       0   NVIC_EnableIRQ(IRQn_Type)
+       0   Print::Print()
+       0   Print::subobject Print()
+         0   -> Print::Print()
+       8   Stream::Stream()
+         8   -> Print::subobject Print()
+       0   Stream::subobject Stream()
+         0   -> Stream::Stream()
+      16   USARTClass::IrqHandler()
+         0   -> RingBuffer::store_char(uint8_t)
+        16   -> USART_ClearFlag
+        16   -> USART_ClearITPendingBit
+        16   -> USART_GetFlagStatus
+        16   -> USART_GetITStatus
+        16   -> USART_ReceiveData
+      72   USARTClass::Leveling_move_action()
+        72   -> RingBuffer::store_char(uint8_t)
+        72   -> USARTClass::check()
+        72   -> __aeabi_memclr4
+        72   -> memset
+        72   -> sprintf
+        72   -> strlen
+      24   USARTClass::MoremenuCmd()
+        24   -> RingBuffer::store_char(uint8_t)
+        24   -> USARTClass::check()
+        24   -> memset
+      24   USARTClass::USARTClass(USART_TypeDef *, IRQn_Type, uint32_t, RingBuffer *)
+        24   -> HardwareSerial::subobject HardwareSerial()
+       0   USARTClass::available()
+       8   USARTClass::begin(uint32_t)
+         8   -> NVIC_EnableIRQ(IRQn_Type)
+         0   -> USART_Cmd
+         8   -> USART_ITConfig
+       0   USARTClass::check()
+       0   USARTClass::end()
+      72   USARTClass::filamentchange()
+        72   -> RingBuffer::store_char(uint8_t)
+        72   -> USARTClass::check()
+        72   -> __aeabi_memclr4
+        72   -> memset
+        72   -> sprintf
+        72   -> strlen
+       0   USARTClass::flush()
+       0   USARTClass::operator bool()
+       0   USARTClass::peek()
+       4   USARTClass::read()
+      16   USARTClass::subobject USARTClass(USART_TypeDef *, IRQn_Type, uint32_t, RingBuffer *)
+        16   -> USARTClass::USARTClass(USART_TypeDef *, IRQn_Type, uint32_t, RingBuffer *)
+       8   USARTClass::write(uint8_t)
+         8   -> USART_GetFlagStatus
+         8   -> USART_SendData
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?<Constant "G28\n">
+      36  ?<Constant "G91\nG1 Z%d\nG90\nG1 X%d...">
+      24  ?<Constant "T%d\nG91\nG1 E%d F%d\nG90\n">
+      28  ?<Constant "T%d\nG91\nG1 E-%d F%d\nG90\n">
+      52  ?<Constant {'\000'}>
+      52  ?<Constant {'\000'}>_1
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+      12  HardwareSerial::HardwareSerial()
+       4  HardwareSerial::subobject HardwareSerial()
+      20  NVIC_EnableIRQ(IRQn_Type)
+       6  Print::Print()
+       4  Print::subobject Print()
+      18  Stream::Stream()
+       4  Stream::subobject Stream()
+     136  USARTClass::IrqHandler()
+     512  USARTClass::Leveling_move_action()
+     124  USARTClass::MoremenuCmd()
+      36  USARTClass::USARTClass(USART_TypeDef *, IRQn_Type, uint32_t, RingBuffer *)
+      26  USARTClass::available()
+      36  USARTClass::begin(uint32_t)
+      18  USARTClass::check()
+       2  USARTClass::end()
+     180  USARTClass::filamentchange()
+       8  USARTClass::flush()
+       4  USARTClass::operator bool()
+      20  USARTClass::peek()
+      42  USARTClass::read()
+      14  USARTClass::subobject USARTClass(USART_TypeDef *, IRQn_Type, uint32_t, RingBuffer *)
+      26  USARTClass::write(uint8_t)
+      40  -- Other
+
+ 
+   144 bytes in section .rodata
+ 1 380 bytes in section .text
+ 
+ 1 328 bytes of CODE  memory (+ 52 bytes shared)
+   104 bytes of CONST memory (+ 40 bytes shared)
+
+Errors: none
+Warnings: 109

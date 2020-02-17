@@ -1,0 +1,455 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:33
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\least_squares_fit.cpp
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\least_squares_fit.cpp
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\least_squares_fit.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\least_squares_fit.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\least_squares_fit.cpp
+      1          /**
+      2           * Marlin 3D Printer Firmware
+      3           * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+      4           *
+      5           * Based on Sprinter and grbl.
+      6           * Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+      7           *
+      8           * This program is free software: you can redistribute it and/or modify
+      9           * it under the terms of the GNU General Public License as published by
+     10           * the Free Software Foundation, either version 3 of the License, or
+     11           * (at your option) any later version.
+     12           *
+     13           * This program is distributed in the hope that it will be useful,
+     14           * but WITHOUT ANY WARRANTY; without even the implied warranty of
+     15           * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     16           * GNU General Public License for more details.
+     17           *
+     18           * You should have received a copy of the GNU General Public License
+     19           * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+     20           *
+     21           */
+     22          
+     23          /**
+     24           * Least Squares Best Fit by Roxy and Ed Williams
+     25           *
+     26           * This algorithm is high speed and has a very small code footprint.
+     27           * Its results are identical to both the Iterative Least-Squares published
+     28           * earlier by Roxy and the QR_SOLVE solution. If used in place of QR_SOLVE
+     29           * it saves roughly 10K of program memory. It also does not require all of
+     30           * coordinates to be present during the calculations. Each point can be
+     31           * probed and then discarded.
+     32           *
+     33           */
+     34          
+     35          #include "MarlinConfig.h"
+
+  #define UNUSED(x) ((void)(x))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 101 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\macros.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Inc\mks_cfg.h",613  Warning[Pe083]: 
+          type qualifier specified more than once
+     36          
+     37          #if 1//ENABLED(AUTO_BED_LEVELING_UBL) || ENABLED(AUTO_BED_LEVELING_LINEAR)
+     38          
+     39          #include "macros.h"
+     40          #include <math.h>
+     41          
+     42          #include "least_squares_fit.h"
+
+  #define strcpy_P(dest, src) strcpy((dest), (src))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
+          incompatible redefinition of macro "strcpy_P" (declared at line 93
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define strstr_P(a, b) strstr((a), (b))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
+          incompatible redefinition of macro "strstr_P" (declared at line 94
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define sprintf_P(s, f, ...) sprintf((s), (f), __VA_ARGS__)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
+          incompatible redefinition of macro "sprintf_P" (declared at line 95
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define pgm_read_word_near(addr) pgm_read_word(addr)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
+          incompatible redefinition of macro "pgm_read_word_near" (declared at
+          line 65 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+    }
+    ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
+          missing return statement at end of non-void function
+          "position_is_reachable_IS_KINEMATIC"
+     43          
+
+   \                                 In section .text, align 4, keep-with-next
+     44          int finish_incremental_LSF(struct linear_fit_data *lsf) {
+   \                     _Z22finish_incremental_LSFP15linear_fit_data: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x4606             MOV      R6,R0
+     45          
+     46            const float N = lsf->N;
+   \   00000006   0x6BB4             LDR      R4,[R6, #+56]
+     47          
+     48            if (N == 0.0)
+   \   00000008   0x4620             MOV      R0,R4
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x.... 0x....      BL       __aeabi_cfcmpeq
+   \   00000010   0xD101             BNE.N    ??finish_incremental_LSF_0
+     49              return 1;
+   \   00000012   0x2001             MOVS     R0,#+1
+   \   00000014   0xE0F9             B.N      ??finish_incremental_LSF_1
+     50          
+     51            lsf->xbar /= N;
+   \                     ??finish_incremental_LSF_0: (+1)
+   \   00000016   0x6830             LDR      R0,[R6, #+0]
+   \   00000018   0x4621             MOV      R1,R4
+   \   0000001A   0x.... 0x....      BL       __aeabi_fdiv
+   \   0000001E   0x6030             STR      R0,[R6, #+0]
+     52            lsf->ybar /= N;
+   \   00000020   0x6870             LDR      R0,[R6, #+4]
+   \   00000022   0x4621             MOV      R1,R4
+   \   00000024   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000028   0x6070             STR      R0,[R6, #+4]
+     53            lsf->zbar /= N;
+   \   0000002A   0x68B0             LDR      R0,[R6, #+8]
+   \   0000002C   0x4621             MOV      R1,R4
+   \   0000002E   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000032   0x60B0             STR      R0,[R6, #+8]
+     54            lsf->x2bar = lsf->x2bar / N - sq(lsf->xbar);
+   \   00000034   0x6837             LDR      R7,[R6, #+0]
+   \   00000036   0xF04F 0x0802      MOV      R8,#+2
+   \   0000003A   0xF04F 0x557E      MOV      R5,#+1065353216
+   \   0000003E   0x46A9             MOV      R9,R5
+   \   00000040   0xE004             B.N      ??finish_incremental_LSF_2
+   \                     ??finish_incremental_LSF_3: (+1)
+   \   00000042   0x4638             MOV      R0,R7
+   \   00000044   0x4639             MOV      R1,R7
+   \   00000046   0x.... 0x....      BL       __aeabi_fmul
+   \   0000004A   0x4607             MOV      R7,R0
+   \                     ??finish_incremental_LSF_2: (+1)
+   \   0000004C   0xEA5F 0x70C8      LSLS     R0,R8,#+31
+   \   00000050   0xD504             BPL.N    ??finish_incremental_LSF_4
+   \   00000052   0x4648             MOV      R0,R9
+   \   00000054   0x4639             MOV      R1,R7
+   \   00000056   0x.... 0x....      BL       __aeabi_fmul
+   \   0000005A   0x4681             MOV      R9,R0
+   \                     ??finish_incremental_LSF_4: (+1)
+   \   0000005C   0xEA5F 0x0858      LSRS     R8,R8,#+1
+   \   00000060   0xD1EF             BNE.N    ??finish_incremental_LSF_3
+   \   00000062   0x68F0             LDR      R0,[R6, #+12]
+   \   00000064   0x4621             MOV      R1,R4
+   \   00000066   0x.... 0x....      BL       __aeabi_fdiv
+   \   0000006A   0x4649             MOV      R1,R9
+   \   0000006C   0x.... 0x....      BL       __aeabi_fsub
+   \   00000070   0x60F0             STR      R0,[R6, #+12]
+     55            lsf->y2bar = lsf->y2bar / N - sq(lsf->ybar);
+   \   00000072   0x6877             LDR      R7,[R6, #+4]
+   \   00000074   0xF04F 0x0802      MOV      R8,#+2
+   \   00000078   0x46A9             MOV      R9,R5
+   \   0000007A   0xE004             B.N      ??finish_incremental_LSF_5
+   \                     ??finish_incremental_LSF_6: (+1)
+   \   0000007C   0x4638             MOV      R0,R7
+   \   0000007E   0x4639             MOV      R1,R7
+   \   00000080   0x.... 0x....      BL       __aeabi_fmul
+   \   00000084   0x4607             MOV      R7,R0
+   \                     ??finish_incremental_LSF_5: (+1)
+   \   00000086   0xEA5F 0x70C8      LSLS     R0,R8,#+31
+   \   0000008A   0xD504             BPL.N    ??finish_incremental_LSF_7
+   \   0000008C   0x4648             MOV      R0,R9
+   \   0000008E   0x4639             MOV      R1,R7
+   \   00000090   0x.... 0x....      BL       __aeabi_fmul
+   \   00000094   0x4681             MOV      R9,R0
+   \                     ??finish_incremental_LSF_7: (+1)
+   \   00000096   0xEA5F 0x0858      LSRS     R8,R8,#+1
+   \   0000009A   0xD1EF             BNE.N    ??finish_incremental_LSF_6
+   \   0000009C   0x6930             LDR      R0,[R6, #+16]
+   \   0000009E   0x4621             MOV      R1,R4
+   \   000000A0   0x.... 0x....      BL       __aeabi_fdiv
+   \   000000A4   0x4649             MOV      R1,R9
+   \   000000A6   0x.... 0x....      BL       __aeabi_fsub
+   \   000000AA   0x6130             STR      R0,[R6, #+16]
+     56            lsf->z2bar = lsf->z2bar / N - sq(lsf->zbar);
+   \   000000AC   0x68B7             LDR      R7,[R6, #+8]
+   \   000000AE   0xF04F 0x0802      MOV      R8,#+2
+   \   000000B2   0x46A9             MOV      R9,R5
+   \   000000B4   0xE004             B.N      ??finish_incremental_LSF_8
+   \                     ??finish_incremental_LSF_9: (+1)
+   \   000000B6   0x4638             MOV      R0,R7
+   \   000000B8   0x4639             MOV      R1,R7
+   \   000000BA   0x.... 0x....      BL       __aeabi_fmul
+   \   000000BE   0x4607             MOV      R7,R0
+   \                     ??finish_incremental_LSF_8: (+1)
+   \   000000C0   0xEA5F 0x70C8      LSLS     R0,R8,#+31
+   \   000000C4   0xD504             BPL.N    ??finish_incremental_LSF_10
+   \   000000C6   0x4648             MOV      R0,R9
+   \   000000C8   0x4639             MOV      R1,R7
+   \   000000CA   0x.... 0x....      BL       __aeabi_fmul
+   \   000000CE   0x4681             MOV      R9,R0
+   \                     ??finish_incremental_LSF_10: (+1)
+   \   000000D0   0xEA5F 0x0858      LSRS     R8,R8,#+1
+   \   000000D4   0xD1EF             BNE.N    ??finish_incremental_LSF_9
+   \   000000D6   0x6970             LDR      R0,[R6, #+20]
+   \   000000D8   0x4621             MOV      R1,R4
+   \   000000DA   0x.... 0x....      BL       __aeabi_fdiv
+   \   000000DE   0x4649             MOV      R1,R9
+   \   000000E0   0x.... 0x....      BL       __aeabi_fsub
+   \   000000E4   0x6170             STR      R0,[R6, #+20]
+     57            lsf->xybar = lsf->xybar / N - lsf->xbar * lsf->ybar;
+   \   000000E6   0x69B0             LDR      R0,[R6, #+24]
+   \   000000E8   0x4621             MOV      R1,R4
+   \   000000EA   0x.... 0x....      BL       __aeabi_fdiv
+   \   000000EE   0x4607             MOV      R7,R0
+   \   000000F0   0x6831             LDR      R1,[R6, #+0]
+   \   000000F2   0x6870             LDR      R0,[R6, #+4]
+   \   000000F4   0x.... 0x....      BL       __aeabi_fmul
+   \   000000F8   0x4601             MOV      R1,R0
+   \   000000FA   0x4638             MOV      R0,R7
+   \   000000FC   0x.... 0x....      BL       __aeabi_fsub
+   \   00000100   0x61B0             STR      R0,[R6, #+24]
+     58            lsf->yzbar = lsf->yzbar / N - lsf->ybar * lsf->zbar;
+   \   00000102   0x6A30             LDR      R0,[R6, #+32]
+   \   00000104   0x4621             MOV      R1,R4
+   \   00000106   0x.... 0x....      BL       __aeabi_fdiv
+   \   0000010A   0x4607             MOV      R7,R0
+   \   0000010C   0x6871             LDR      R1,[R6, #+4]
+   \   0000010E   0x68B0             LDR      R0,[R6, #+8]
+   \   00000110   0x.... 0x....      BL       __aeabi_fmul
+   \   00000114   0x4601             MOV      R1,R0
+   \   00000116   0x4638             MOV      R0,R7
+   \   00000118   0x.... 0x....      BL       __aeabi_fsub
+   \   0000011C   0x6230             STR      R0,[R6, #+32]
+     59            lsf->xzbar = lsf->xzbar / N - lsf->xbar * lsf->zbar;
+   \   0000011E   0x69F0             LDR      R0,[R6, #+28]
+   \   00000120   0x4621             MOV      R1,R4
+   \   00000122   0x.... 0x....      BL       __aeabi_fdiv
+   \   00000126   0x4604             MOV      R4,R0
+   \   00000128   0x6831             LDR      R1,[R6, #+0]
+   \   0000012A   0x68B0             LDR      R0,[R6, #+8]
+   \   0000012C   0x.... 0x....      BL       __aeabi_fmul
+   \   00000130   0x4601             MOV      R1,R0
+   \   00000132   0x4620             MOV      R0,R4
+   \   00000134   0x.... 0x....      BL       __aeabi_fsub
+   \   00000138   0x61F0             STR      R0,[R6, #+28]
+     60            const float DD = lsf->x2bar * lsf->y2bar - sq(lsf->xybar);
+   \   0000013A   0x69B4             LDR      R4,[R6, #+24]
+   \   0000013C   0x2702             MOVS     R7,#+2
+   \   0000013E   0xE004             B.N      ??finish_incremental_LSF_11
+   \                     ??finish_incremental_LSF_12: (+1)
+   \   00000140   0x4620             MOV      R0,R4
+   \   00000142   0x4621             MOV      R1,R4
+   \   00000144   0x.... 0x....      BL       __aeabi_fmul
+   \   00000148   0x4604             MOV      R4,R0
+   \                     ??finish_incremental_LSF_11: (+1)
+   \   0000014A   0x07F8             LSLS     R0,R7,#+31
+   \   0000014C   0xD504             BPL.N    ??finish_incremental_LSF_13
+   \   0000014E   0x4628             MOV      R0,R5
+   \   00000150   0x4621             MOV      R1,R4
+   \   00000152   0x.... 0x....      BL       __aeabi_fmul
+   \   00000156   0x4605             MOV      R5,R0
+   \                     ??finish_incremental_LSF_13: (+1)
+   \   00000158   0x087F             LSRS     R7,R7,#+1
+   \   0000015A   0xD1F1             BNE.N    ??finish_incremental_LSF_12
+   \   0000015C   0x68F1             LDR      R1,[R6, #+12]
+   \   0000015E   0x6930             LDR      R0,[R6, #+16]
+   \   00000160   0x.... 0x....      BL       __aeabi_fmul
+   \   00000164   0x4629             MOV      R1,R5
+   \   00000166   0x.... 0x....      BL       __aeabi_fsub
+   \   0000016A   0x4607             MOV      R7,R0
+     61          
+     62            if (FABS(DD) <= 1e-10 * (lsf->max_absx + lsf->max_absy))
+   \   0000016C   0xF027 0x4000      BIC      R0,R7,#0x80000000
+   \   00000170   0x.... 0x....      BL       __aeabi_f2d
+   \   00000174   0x4602             MOV      R2,R0
+   \   00000176   0x460B             MOV      R3,R1
+   \   00000178   0x4614             MOV      R4,R2
+   \   0000017A   0x461D             MOV      R5,R3
+   \   0000017C   0x6A71             LDR      R1,[R6, #+36]
+   \   0000017E   0x6AB0             LDR      R0,[R6, #+40]
+   \   00000180   0x.... 0x....      BL       __aeabi_fadd
+   \   00000184   0x.... 0x....      BL       __aeabi_f2d
+   \   00000188   0x4A21             LDR.N    R2,??finish_incremental_LSF_14  ;; 0xd9d7bdbb
+   \   0000018A   0x4B22             LDR.N    R3,??finish_incremental_LSF_14+0x4  ;; 0x3ddb7cdf
+   \   0000018C   0x.... 0x....      BL       __aeabi_dmul
+   \   00000190   0x4622             MOV      R2,R4
+   \   00000192   0x462B             MOV      R3,R5
+   \   00000194   0x.... 0x....      BL       __aeabi_cdrcmple
+   \   00000198   0xD801             BHI.N    ??finish_incremental_LSF_15
+     63              return 1;
+   \   0000019A   0x2001             MOVS     R0,#+1
+   \   0000019C   0xE035             B.N      ??finish_incremental_LSF_1
+     64          
+     65            lsf->A = (lsf->yzbar * lsf->xybar - lsf->xzbar * lsf->y2bar) / DD;
+   \                     ??finish_incremental_LSF_15: (+1)
+   \   0000019E   0x6A31             LDR      R1,[R6, #+32]
+   \   000001A0   0x69B0             LDR      R0,[R6, #+24]
+   \   000001A2   0x.... 0x....      BL       __aeabi_fmul
+   \   000001A6   0x4604             MOV      R4,R0
+   \   000001A8   0x69F1             LDR      R1,[R6, #+28]
+   \   000001AA   0x6930             LDR      R0,[R6, #+16]
+   \   000001AC   0x.... 0x....      BL       __aeabi_fmul
+   \   000001B0   0x4601             MOV      R1,R0
+   \   000001B2   0x4620             MOV      R0,R4
+   \   000001B4   0x.... 0x....      BL       __aeabi_fsub
+   \   000001B8   0x4639             MOV      R1,R7
+   \   000001BA   0x.... 0x....      BL       __aeabi_fdiv
+   \   000001BE   0x62F0             STR      R0,[R6, #+44]
+     66            lsf->B = (lsf->xzbar * lsf->xybar - lsf->yzbar * lsf->x2bar) / DD;
+   \   000001C0   0x69F1             LDR      R1,[R6, #+28]
+   \   000001C2   0x69B0             LDR      R0,[R6, #+24]
+   \   000001C4   0x.... 0x....      BL       __aeabi_fmul
+   \   000001C8   0x4604             MOV      R4,R0
+   \   000001CA   0x6A31             LDR      R1,[R6, #+32]
+   \   000001CC   0x68F0             LDR      R0,[R6, #+12]
+   \   000001CE   0x.... 0x....      BL       __aeabi_fmul
+   \   000001D2   0x4601             MOV      R1,R0
+   \   000001D4   0x4620             MOV      R0,R4
+   \   000001D6   0x.... 0x....      BL       __aeabi_fsub
+   \   000001DA   0x4639             MOV      R1,R7
+   \   000001DC   0x.... 0x....      BL       __aeabi_fdiv
+   \   000001E0   0x4604             MOV      R4,R0
+   \   000001E2   0x6334             STR      R4,[R6, #+48]
+     67            lsf->D = -(lsf->zbar + lsf->A * lsf->xbar + lsf->B * lsf->ybar);
+   \   000001E4   0x6AF1             LDR      R1,[R6, #+44]
+   \   000001E6   0x6830             LDR      R0,[R6, #+0]
+   \   000001E8   0x.... 0x....      BL       __aeabi_fmul
+   \   000001EC   0x68B1             LDR      R1,[R6, #+8]
+   \   000001EE   0x.... 0x....      BL       __aeabi_fadd
+   \   000001F2   0x4605             MOV      R5,R0
+   \   000001F4   0x6870             LDR      R0,[R6, #+4]
+   \   000001F6   0x4621             MOV      R1,R4
+   \   000001F8   0x.... 0x....      BL       __aeabi_fmul
+   \   000001FC   0x4629             MOV      R1,R5
+   \   000001FE   0x.... 0x....      BL       __aeabi_fadd
+   \   00000202   0xF080 0x4000      EOR      R0,R0,#0x80000000
+   \   00000206   0x6370             STR      R0,[R6, #+52]
+     68            return 0;
+   \   00000208   0x2000             MOVS     R0,#+0
+   \                     ??finish_incremental_LSF_1: (+1)
+   \   0000020A   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+   \   0000020E   0xBF00             Nop      
+   \                     ??finish_incremental_LSF_14:
+   \   00000210   0xD9D7BDBB         DC32     0xd9d7bdbb
+   \   00000214   0x3DDB7CDF         DC32     0x3ddb7cdf
+     69          }
+     70          
+     71          #endif // AUTO_BED_LEVELING_UBL || ENABLED(AUTO_BED_LEVELING_LINEAR)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   finish_incremental_LSF(linear_fit_data *)
+        32   -> __aeabi_cdrcmple
+        32   -> __aeabi_cfcmpeq
+        32   -> __aeabi_dmul
+        32   -> __aeabi_f2d
+        32   -> __aeabi_fadd
+        32   -> __aeabi_fdiv
+        32   -> __aeabi_fmul
+        32   -> __aeabi_fsub
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     536  finish_incremental_LSF(linear_fit_data *)
+       1  -- Other
+
+ 
+   1 byte  in section .rodata
+ 536 bytes in section .text
+ 
+ 536 bytes of CODE  memory
+   0 bytes of CONST memory (+ 1 byte shared)
+
+Errors: none
+Warnings: 7

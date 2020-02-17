@@ -1,0 +1,1071 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:06:14
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\tim.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\tim.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\tim.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\tim.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\tim.c
+      1          /**
+      2            ******************************************************************************
+      3            * File Name          : TIM.c
+      4            * Description        : This file provides code for the configuration
+      5            *                      of the TIM instances.
+      6            ******************************************************************************
+      7            *
+      8            * Copyright (c) 2018 STMicroelectronics International N.V. 
+      9            * All rights reserved.
+     10            *
+     11            * Redistribution and use in source and binary forms, with or without 
+     12            * modification, are permitted, provided that the following conditions are met:
+     13            *
+     14            * 1. Redistribution of source code must retain the above copyright notice, 
+     15            *    this list of conditions and the following disclaimer.
+     16            * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17            *    this list of conditions and the following disclaimer in the documentation
+     18            *    and/or other materials provided with the distribution.
+     19            * 3. Neither the name of STMicroelectronics nor the names of other 
+     20            *    contributors to this software may be used to endorse or promote products 
+     21            *    derived from this software without specific written permission.
+     22            * 4. This software, including modifications and/or derivative works of this 
+     23            *    software, must execute solely and exclusively on microcontroller or
+     24            *    microprocessor devices manufactured by or for STMicroelectronics.
+     25            * 5. Redistribution and use of this software other than as permitted under 
+     26            *    this license is void and will automatically terminate your rights under 
+     27            *    this license. 
+     28            *
+     29            * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
+     30            * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
+     31            * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+     32            * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+     33            * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+     34            * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+     35            * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     36            * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+     37            * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+     38            * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+     39            * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+     40            * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     41            *
+     42            ******************************************************************************
+     43            */
+     44          
+     45          /* Includes ------------------------------------------------------------------*/
+     46          #include "tim.h"
+     47          #include "Mks_variant.h"
+     48          /* USER CODE BEGIN 0 */
+
+   \                                 In section .bss, align 4
+     49          volatile uint32_t _dwTickCount=0 ;
+   \                     _dwTickCount:
+   \   00000000                      DS8 4
+
+   \                                 In section .text, align 2, keep-with-next
+     50          unsigned long millis()
+     51          {
+     52           return _dwTickCount ;
+   \                     millis: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable8
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     53          }
+     54           
+
+   \                                 In section .text, align 2, keep-with-next
+     55          unsigned int   getTick()
+     56          {
+     57          	return _dwTickCount;
+   \                     getTick: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable8
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     58          }
+     59           
+
+   \                                 In section .text, align 2, keep-with-next
+     60          unsigned int  getTickDiff(unsigned int curTick, unsigned int  lastTick)
+     61          {
+     62          	if(lastTick <= curTick)
+   \                     getTickDiff: (+1)
+   \   00000000   0x4288             CMP      R0,R1
+   \   00000002   0xD301             BCC.N    ??getTickDiff_0
+     63          	{
+     64          		return (curTick - lastTick) * TICK_CYCLE;
+   \   00000004   0x1A40             SUBS     R0,R0,R1
+   \   00000006   0x4770             BX       LR
+     65          	}
+     66          	else
+     67          	{
+     68          		return (0xffffffff - lastTick + curTick) * TICK_CYCLE;
+   \                     ??getTickDiff_0: (+1)
+   \   00000008   0xF04F 0x32FF      MOV      R2,#-1
+   \   0000000C   0x1A51             SUBS     R1,R2,R1
+   \   0000000E   0x1840             ADDS     R0,R0,R1
+   \   00000010   0x4770             BX       LR               ;; return
+     69          	}
+     70          }
+     71           
+
+   \                                 In section .bss, align 4
+     72          TIM_HandleTypeDef htim1;
+   \                     htim1:
+   \   00000000                      DS8 60
+
+   \                                 In section .bss, align 4
+     73          TIM_HandleTypeDef htim2;
+   \                     htim2:
+   \   00000000                      DS8 60
+
+   \                                 In section .bss, align 4
+     74          TIM_HandleTypeDef htim3;
+   \                     htim3:
+   \   00000000                      DS8 60
+
+   \                                 In section .bss, align 4
+     75          TIM_HandleTypeDef htim4;
+   \                     htim4:
+   \   00000000                      DS8 60
+     76          
+     77          /* TIM1 init function */
+
+   \                                 In section .text, align 2, keep-with-next
+     78          void MX_TIM1_Init(void)
+     79          {
+   \                     MX_TIM1_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB08E             SUB      SP,SP,#+56
+     80            TIM_ClockConfigTypeDef sClockSourceConfig;
+     81            TIM_MasterConfigTypeDef sMasterConfig;
+     82          	TIM_OC_InitTypeDef sConfigOC;
+     83          
+     84            htim1.Instance = TIM1;
+   \   00000004   0x....             LDR.N    R4,??DataTable8_1
+   \   00000006   0x....             LDR.N    R0,??DataTable8_2  ;; 0x40012c00
+   \   00000008   0x6020             STR      R0,[R4, #+0]
+     85            htim1.Init.Prescaler = 143;
+   \   0000000A   0x208F             MOVS     R0,#+143
+   \   0000000C   0x6060             STR      R0,[R4, #+4]
+     86            htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x60A0             STR      R0,[R4, #+8]
+     87            htim1.Init.Period = 10000;//20ms
+   \   00000012   0xF242 0x7010      MOVW     R0,#+10000
+   \   00000016   0x60E0             STR      R0,[R4, #+12]
+     88            htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x6120             STR      R0,[R4, #+16]
+     89            htim1.Init.RepetitionCounter = 0;
+   \   0000001C   0x6160             STR      R0,[R4, #+20]
+     90            if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
+   \   0000001E   0x4620             MOV      R0,R4
+   \   00000020   0x.... 0x....      BL       HAL_TIM_Base_Init
+   \   00000024   0x2800             CMP      R0,#+0
+   \   00000026   0xD001             BEQ.N    ??MX_TIM1_Init_0
+     91            {
+     92              Error_Handler();
+   \   00000028   0x.... 0x....      BL       Error_Handler
+     93            }
+     94          
+     95            sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+   \                     ??MX_TIM1_Init_0: (+1)
+   \   0000002C   0xF44F 0x5080      MOV      R0,#+4096
+   \   00000030   0x9009             STR      R0,[SP, #+36]
+     96            if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK)
+   \   00000032   0xA909             ADD      R1,SP,#+36
+   \   00000034   0x4620             MOV      R0,R4
+   \   00000036   0x.... 0x....      BL       HAL_TIM_ConfigClockSource
+   \   0000003A   0x2800             CMP      R0,#+0
+   \   0000003C   0xD001             BEQ.N    ??MX_TIM1_Init_1
+     97            {
+     98              Error_Handler();
+   \   0000003E   0x.... 0x....      BL       Error_Handler
+     99            }
+    100          
+    101            sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+   \                     ??MX_TIM1_Init_1: (+1)
+   \   00000042   0x2000             MOVS     R0,#+0
+   \   00000044   0x9000             STR      R0,[SP, #+0]
+    102            sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+   \   00000046   0x9001             STR      R0,[SP, #+4]
+    103            if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+   \   00000048   0xA900             ADD      R1,SP,#+0
+   \   0000004A   0x4620             MOV      R0,R4
+   \   0000004C   0x.... 0x....      BL       HAL_TIMEx_MasterConfigSynchronization
+   \   00000050   0x2800             CMP      R0,#+0
+   \   00000052   0xD001             BEQ.N    ??MX_TIM1_Init_2
+    104            {
+    105              Error_Handler();
+   \   00000054   0x.... 0x....      BL       Error_Handler
+    106            }
+    107          	
+    108          		sConfigOC.OCMode = TIM_OCMODE_PWM1;
+   \                     ??MX_TIM1_Init_2: (+1)
+   \   00000058   0x2060             MOVS     R0,#+96
+   \   0000005A   0x9002             STR      R0,[SP, #+8]
+    109          		sConfigOC.Pulse = 0;
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0x9003             STR      R0,[SP, #+12]
+    110          		sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+   \   00000060   0x9004             STR      R0,[SP, #+16]
+    111          		sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+   \   00000062   0x9006             STR      R0,[SP, #+24]
+    112          	 
+    113          		if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+   \   00000064   0x4602             MOV      R2,R0
+   \   00000066   0xA902             ADD      R1,SP,#+8
+   \   00000068   0x4620             MOV      R0,R4
+   \   0000006A   0x.... 0x....      BL       HAL_TIM_PWM_ConfigChannel
+   \   0000006E   0x2800             CMP      R0,#+0
+   \   00000070   0xD001             BEQ.N    ??MX_TIM1_Init_3
+    114          		{
+    115          			Error_Handler();
+   \   00000072   0x.... 0x....      BL       Error_Handler
+    116          		}
+    117           
+    118          
+    119          }
+   \                     ??MX_TIM1_Init_3: (+1)
+   \   00000076   0xB00E             ADD      SP,SP,#+56
+   \   00000078   0xBD10             POP      {R4,PC}          ;; return
+    120          /* TIM2 init function */// 1ms
+
+   \                                 In section .text, align 2, keep-with-next
+    121          void MX_TIM2_Init(void)
+    122          {
+   \                     MX_TIM2_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB086             SUB      SP,SP,#+24
+    123            TIM_ClockConfigTypeDef sClockSourceConfig;
+    124            TIM_MasterConfigTypeDef sMasterConfig;
+    125          
+    126            htim2.Instance = TIM2;
+   \   00000004   0x....             LDR.N    R4,??DataTable8_3
+   \   00000006   0xF04F 0x4080      MOV      R0,#+1073741824
+   \   0000000A   0x6020             STR      R0,[R4, #+0]
+    127            htim2.Init.Prescaler = 35;
+   \   0000000C   0x2023             MOVS     R0,#+35
+   \   0000000E   0x6060             STR      R0,[R4, #+4]
+    128            htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0x60A0             STR      R0,[R4, #+8]
+    129            htim2.Init.Period = 1000;
+   \   00000014   0xF44F 0x707A      MOV      R0,#+1000
+   \   00000018   0x60E0             STR      R0,[R4, #+12]
+    130            htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x6120             STR      R0,[R4, #+16]
+    131            if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+   \   0000001E   0x4620             MOV      R0,R4
+   \   00000020   0x.... 0x....      BL       HAL_TIM_Base_Init
+   \   00000024   0x2800             CMP      R0,#+0
+   \   00000026   0xD001             BEQ.N    ??MX_TIM2_Init_0
+    132            {
+    133              Error_Handler();
+   \   00000028   0x.... 0x....      BL       Error_Handler
+    134            }
+    135          
+    136            sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+   \                     ??MX_TIM2_Init_0: (+1)
+   \   0000002C   0xF44F 0x5080      MOV      R0,#+4096
+   \   00000030   0x9002             STR      R0,[SP, #+8]
+    137            if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+   \   00000032   0xA902             ADD      R1,SP,#+8
+   \   00000034   0x4620             MOV      R0,R4
+   \   00000036   0x.... 0x....      BL       HAL_TIM_ConfigClockSource
+   \   0000003A   0x2800             CMP      R0,#+0
+   \   0000003C   0xD001             BEQ.N    ??MX_TIM2_Init_1
+    138            {
+    139              Error_Handler();
+   \   0000003E   0x.... 0x....      BL       Error_Handler
+    140            }
+    141          
+    142            sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+   \                     ??MX_TIM2_Init_1: (+1)
+   \   00000042   0x2000             MOVS     R0,#+0
+   \   00000044   0x9000             STR      R0,[SP, #+0]
+    143            sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+   \   00000046   0x9001             STR      R0,[SP, #+4]
+    144            if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+   \   00000048   0xA900             ADD      R1,SP,#+0
+   \   0000004A   0x4620             MOV      R0,R4
+   \   0000004C   0x.... 0x....      BL       HAL_TIMEx_MasterConfigSynchronization
+   \   00000050   0x2800             CMP      R0,#+0
+   \   00000052   0xD001             BEQ.N    ??MX_TIM2_Init_2
+    145            {
+    146              Error_Handler();
+   \   00000054   0x.... 0x....      BL       Error_Handler
+    147            }
+    148          
+    149          }
+   \                     ??MX_TIM2_Init_2: (+1)
+   \   00000058   0xB006             ADD      SP,SP,#+24
+   \   0000005A   0xBD10             POP      {R4,PC}          ;; return
+    150          /* TIM3 init function */
+
+   \                                 In section .text, align 2, keep-with-next
+    151          void MX_TIM3_Init(void)
+    152          {
+   \                     MX_TIM3_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB094             SUB      SP,SP,#+80
+    153            TIM_ClockConfigTypeDef sClockSourceConfig;
+    154            TIM_MasterConfigTypeDef sMasterConfig;
+    155          	TIM_OC_InitTypeDef sConfigOC;
+    156          	TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig;
+    157          
+    158            htim3.Instance = TIM3;
+   \   00000004   0x....             LDR.N    R4,??DataTable8_4
+   \   00000006   0x....             LDR.N    R0,??DataTable8_5  ;; 0x40000400
+   \   00000008   0x6020             STR      R0,[R4, #+0]
+    159          #if defined(MKS_ROBIN)|| defined(MKS_ROBIN_MINI)   
+    160            htim3.Init.Prescaler = 28;	//???
+    161          #elif defined(MKS_ROBIN2)
+    162          	htim3.Init.Prescaler = 168;	//16 T=2ms	 168 T=20ms
+    163          #elif defined(MKS_ROBIN2MINI)	
+    164          	htim3.Init.Prescaler = 16;
+    165          #elif defined(MKS_ROBIN_NANO)
+    166          	htim3.Init.Prescaler = 12;
+   \   0000000A   0x200C             MOVS     R0,#+12
+   \   0000000C   0x6060             STR      R0,[R4, #+4]
+    167          
+    168          #endif	
+    169            //htim3.Init.Prescaler = 0;
+    170            htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x60A0             STR      R0,[R4, #+8]
+    171            //htim3.Init.Period = 0;
+    172            htim3.Init.Period = 9999;
+   \   00000012   0xF242 0x700F      MOVW     R0,#+9999
+   \   00000016   0x60E0             STR      R0,[R4, #+12]
+    173            htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x6120             STR      R0,[R4, #+16]
+    174            if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+   \   0000001C   0x4620             MOV      R0,R4
+   \   0000001E   0x.... 0x....      BL       HAL_TIM_Base_Init
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD001             BEQ.N    ??MX_TIM3_Init_0
+    175            {
+    176              Error_Handler();
+   \   00000026   0x.... 0x....      BL       Error_Handler
+    177            }
+    178          
+    179            sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+   \                     ??MX_TIM3_Init_0: (+1)
+   \   0000002A   0xF44F 0x5080      MOV      R0,#+4096
+   \   0000002E   0x9010             STR      R0,[SP, #+64]
+    180            if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+   \   00000030   0xA910             ADD      R1,SP,#+64
+   \   00000032   0x4620             MOV      R0,R4
+   \   00000034   0x.... 0x....      BL       HAL_TIM_ConfigClockSource
+   \   00000038   0x2800             CMP      R0,#+0
+   \   0000003A   0xD001             BEQ.N    ??MX_TIM3_Init_1
+    181            {
+    182              Error_Handler();
+   \   0000003C   0x.... 0x....      BL       Error_Handler
+    183            }
+    184          
+    185            sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+   \                     ??MX_TIM3_Init_1: (+1)
+   \   00000040   0x2000             MOVS     R0,#+0
+   \   00000042   0x9000             STR      R0,[SP, #+0]
+    186            sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+   \   00000044   0x9001             STR      R0,[SP, #+4]
+    187            if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+   \   00000046   0xA900             ADD      R1,SP,#+0
+   \   00000048   0x4620             MOV      R0,R4
+   \   0000004A   0x.... 0x....      BL       HAL_TIMEx_MasterConfigSynchronization
+   \   0000004E   0x2800             CMP      R0,#+0
+   \   00000050   0xD001             BEQ.N    ??MX_TIM3_Init_2
+    188            {
+    189              Error_Handler();
+   \   00000052   0x.... 0x....      BL       Error_Handler
+    190            }
+    191          	sConfigOC.OCMode = TIM_OCMODE_PWM1;
+   \                     ??MX_TIM3_Init_2: (+1)
+   \   00000056   0x2060             MOVS     R0,#+96
+   \   00000058   0x9009             STR      R0,[SP, #+36]
+    192            sConfigOC.Pulse = 0;
+   \   0000005A   0x2000             MOVS     R0,#+0
+   \   0000005C   0x900A             STR      R0,[SP, #+40]
+    193            sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+   \   0000005E   0x900B             STR      R0,[SP, #+44]
+    194            sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+   \   00000060   0x900C             STR      R0,[SP, #+48]
+    195            sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+   \   00000062   0x900D             STR      R0,[SP, #+52]
+    196            sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
+   \   00000064   0x900E             STR      R0,[SP, #+56]
+    197            sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+   \   00000066   0x900F             STR      R0,[SP, #+60]
+    198          	#if 0
+    199            if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+    200            {
+    201              Error_Handler();
+    202            }
+    203          #endif
+    204            if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
+   \   00000068   0x220C             MOVS     R2,#+12
+   \   0000006A   0xA909             ADD      R1,SP,#+36
+   \   0000006C   0x4620             MOV      R0,R4
+   \   0000006E   0x.... 0x....      BL       HAL_TIM_PWM_ConfigChannel
+   \   00000072   0x2800             CMP      R0,#+0
+   \   00000074   0xD001             BEQ.N    ??MX_TIM3_Init_3
+    205            {
+    206              Error_Handler();
+   \   00000076   0x.... 0x....      BL       Error_Handler
+    207            }
+    208          
+    209            sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
+   \                     ??MX_TIM3_Init_3: (+1)
+   \   0000007A   0x2000             MOVS     R0,#+0
+   \   0000007C   0x9002             STR      R0,[SP, #+8]
+    210            sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
+   \   0000007E   0x9003             STR      R0,[SP, #+12]
+    211            sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
+   \   00000080   0x9004             STR      R0,[SP, #+16]
+    212            sBreakDeadTimeConfig.DeadTime = 0;
+   \   00000082   0x9005             STR      R0,[SP, #+20]
+    213            sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
+   \   00000084   0x9006             STR      R0,[SP, #+24]
+    214            sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
+   \   00000086   0xF44F 0x5000      MOV      R0,#+8192
+   \   0000008A   0x9007             STR      R0,[SP, #+28]
+    215            sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
+   \   0000008C   0x2000             MOVS     R0,#+0
+   \   0000008E   0x9008             STR      R0,[SP, #+32]
+    216            if (HAL_TIMEx_ConfigBreakDeadTime(&htim3, &sBreakDeadTimeConfig) != HAL_OK)
+   \   00000090   0xA902             ADD      R1,SP,#+8
+   \   00000092   0x4620             MOV      R0,R4
+   \   00000094   0x.... 0x....      BL       HAL_TIMEx_ConfigBreakDeadTime
+   \   00000098   0x2800             CMP      R0,#+0
+   \   0000009A   0xD001             BEQ.N    ??MX_TIM3_Init_4
+    217            {
+    218              Error_Handler();
+   \   0000009C   0x.... 0x....      BL       Error_Handler
+    219            }	
+    220          	HAL_TIM_MspPostInit(&htim3);
+   \                     ??MX_TIM3_Init_4: (+1)
+   \   000000A0   0x4620             MOV      R0,R4
+   \   000000A2   0x.... 0x....      BL       HAL_TIM_MspPostInit
+    221          
+    222          }
+   \   000000A6   0xB014             ADD      SP,SP,#+80
+   \   000000A8   0xBD10             POP      {R4,PC}          ;; return
+    223          /* TIM4 init function */// 2ms
+
+   \                                 In section .text, align 2, keep-with-next
+    224          void MX_TIM4_Init(void)
+    225          {
+   \                     MX_TIM4_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB086             SUB      SP,SP,#+24
+    226            TIM_ClockConfigTypeDef sClockSourceConfig;
+    227            TIM_MasterConfigTypeDef sMasterConfig;
+    228          
+    229            htim4.Instance = TIM4;
+   \   00000004   0x....             LDR.N    R4,??DataTable8_6
+   \   00000006   0x....             LDR.N    R0,??DataTable8_7  ;; 0x40000800
+   \   00000008   0x6020             STR      R0,[R4, #+0]
+    230            htim4.Init.Prescaler = 72-1;
+   \   0000000A   0x2047             MOVS     R0,#+71
+   \   0000000C   0x6060             STR      R0,[R4, #+4]
+    231            htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x60A0             STR      R0,[R4, #+8]
+    232            htim4.Init.Period = 1000;
+   \   00000012   0xF44F 0x707A      MOV      R0,#+1000
+   \   00000016   0x60E0             STR      R0,[R4, #+12]
+    233            htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x6120             STR      R0,[R4, #+16]
+    234            if (HAL_TIM_Base_Init(&htim4) != HAL_OK)
+   \   0000001C   0x4620             MOV      R0,R4
+   \   0000001E   0x.... 0x....      BL       HAL_TIM_Base_Init
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD001             BEQ.N    ??MX_TIM4_Init_0
+    235            {
+    236              Error_Handler();
+   \   00000026   0x.... 0x....      BL       Error_Handler
+    237            }
+    238          
+    239            sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+   \                     ??MX_TIM4_Init_0: (+1)
+   \   0000002A   0xF44F 0x5080      MOV      R0,#+4096
+   \   0000002E   0x9002             STR      R0,[SP, #+8]
+    240            if (HAL_TIM_ConfigClockSource(&htim4, &sClockSourceConfig) != HAL_OK)
+   \   00000030   0xA902             ADD      R1,SP,#+8
+   \   00000032   0x4620             MOV      R0,R4
+   \   00000034   0x.... 0x....      BL       HAL_TIM_ConfigClockSource
+   \   00000038   0x2800             CMP      R0,#+0
+   \   0000003A   0xD001             BEQ.N    ??MX_TIM4_Init_1
+    241            {
+    242              Error_Handler();
+   \   0000003C   0x.... 0x....      BL       Error_Handler
+    243            }
+    244          
+    245            sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+   \                     ??MX_TIM4_Init_1: (+1)
+   \   00000040   0x2000             MOVS     R0,#+0
+   \   00000042   0x9000             STR      R0,[SP, #+0]
+    246            sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+   \   00000044   0x9001             STR      R0,[SP, #+4]
+    247            if (HAL_TIMEx_MasterConfigSynchronization(&htim4, &sMasterConfig) != HAL_OK)
+   \   00000046   0xA900             ADD      R1,SP,#+0
+   \   00000048   0x4620             MOV      R0,R4
+   \   0000004A   0x.... 0x....      BL       HAL_TIMEx_MasterConfigSynchronization
+   \   0000004E   0x2800             CMP      R0,#+0
+   \   00000050   0xD001             BEQ.N    ??MX_TIM4_Init_2
+    248            {
+    249              Error_Handler();
+   \   00000052   0x.... 0x....      BL       Error_Handler
+    250            }
+    251          
+    252          }
+   \                     ??MX_TIM4_Init_2: (+1)
+   \   00000056   0xB006             ADD      SP,SP,#+24
+   \   00000058   0xBD10             POP      {R4,PC}          ;; return
+    253          
+
+   \                                 In section .text, align 2, keep-with-next
+    254          void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
+    255          {
+   \                     HAL_TIM_Base_MspInit: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    256          
+    257            if(tim_baseHandle->Instance==TIM1)
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x....             LDR.N    R1,??DataTable8_2  ;; 0x40012c00
+   \   00000006   0x4288             CMP      R0,R1
+   \   00000008   0xD113             BNE.N    ??HAL_TIM_Base_MspInit_0
+    258            {
+    259            /* USER CODE BEGIN TIM1_MspInit 0 */
+    260          
+    261            /* USER CODE END TIM1_MspInit 0 */
+    262              /* Peripheral clock enable */
+    263              __HAL_RCC_TIM1_CLK_ENABLE();
+   \   0000000A   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   0000000C   0x6801             LDR      R1,[R0, #+0]
+   \   0000000E   0xF441 0x6100      ORR      R1,R1,#0x800
+   \   00000012   0x6001             STR      R1,[R0, #+0]
+   \   00000014   0x6800             LDR      R0,[R0, #+0]
+   \   00000016   0xF400 0x6000      AND      R0,R0,#0x800
+   \   0000001A   0x9000             STR      R0,[SP, #+0]
+   \   0000001C   0x9800             LDR      R0,[SP, #+0]
+    264          
+    265              /* Peripheral interrupt init */
+    266              HAL_NVIC_SetPriority(TIM1_BRK_IRQn, 2, 0);
+   \   0000001E   0x2200             MOVS     R2,#+0
+   \   00000020   0x2102             MOVS     R1,#+2
+   \   00000022   0x2018             MOVS     R0,#+24
+   \   00000024   0x.... 0x....      BL       HAL_NVIC_SetPriority
+    267              HAL_NVIC_EnableIRQ(TIM1_BRK_IRQn);
+   \   00000028   0x2018             MOVS     R0,#+24
+   \   0000002A   0xE8BD 0x4002      POP      {R1,LR}
+   \   0000002E   0x.... 0x....      B.W      HAL_NVIC_EnableIRQ
+    268            /* USER CODE BEGIN TIM1_MspInit 1 */
+    269          
+    270            /* USER CODE END TIM1_MspInit 1 */
+    271            }
+    272            else if(tim_baseHandle->Instance==TIM2)
+   \                     ??HAL_TIM_Base_MspInit_0: (+1)
+   \   00000032   0xF1B0 0x4F80      CMP      R0,#+1073741824
+   \   00000036   0xD113             BNE.N    ??HAL_TIM_Base_MspInit_1
+    273            {
+    274            /* USER CODE BEGIN TIM2_MspInit 0 */
+    275          
+    276            /* USER CODE END TIM2_MspInit 0 */
+    277              /* Peripheral clock enable */
+    278              __HAL_RCC_TIM2_CLK_ENABLE();
+   \   00000038   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   0000003A   0x6841             LDR      R1,[R0, #+4]
+   \   0000003C   0xF041 0x0101      ORR      R1,R1,#0x1
+   \   00000040   0x6041             STR      R1,[R0, #+4]
+   \   00000042   0x6840             LDR      R0,[R0, #+4]
+   \   00000044   0xF000 0x0001      AND      R0,R0,#0x1
+   \   00000048   0x9000             STR      R0,[SP, #+0]
+   \   0000004A   0x9800             LDR      R0,[SP, #+0]
+    279          
+    280              /* Peripheral interrupt init */
+    281              HAL_NVIC_SetPriority(TIM2_IRQn, 2, 0);
+   \   0000004C   0x2200             MOVS     R2,#+0
+   \   0000004E   0x2102             MOVS     R1,#+2
+   \   00000050   0x201C             MOVS     R0,#+28
+   \   00000052   0x.... 0x....      BL       HAL_NVIC_SetPriority
+    282              HAL_NVIC_EnableIRQ(TIM2_IRQn);
+   \   00000056   0x201C             MOVS     R0,#+28
+   \   00000058   0xE8BD 0x4002      POP      {R1,LR}
+   \   0000005C   0x.... 0x....      B.W      HAL_NVIC_EnableIRQ
+    283            /* USER CODE BEGIN TIM2_MspInit 1 */
+    284          
+    285            /* USER CODE END TIM2_MspInit 1 */
+    286            }
+    287            else if(tim_baseHandle->Instance==TIM3)
+   \                     ??HAL_TIM_Base_MspInit_1: (+1)
+   \   00000060   0x....             LDR.N    R1,??DataTable8_5  ;; 0x40000400
+   \   00000062   0x4288             CMP      R0,R1
+   \   00000064   0xD113             BNE.N    ??HAL_TIM_Base_MspInit_2
+    288            {
+    289            /* USER CODE BEGIN TIM3_MspInit 0 */
+    290          
+    291            /* USER CODE END TIM3_MspInit 0 */
+    292              /* Peripheral clock enable */
+    293              __HAL_RCC_TIM3_CLK_ENABLE();
+   \   00000066   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   00000068   0x6841             LDR      R1,[R0, #+4]
+   \   0000006A   0xF041 0x0102      ORR      R1,R1,#0x2
+   \   0000006E   0x6041             STR      R1,[R0, #+4]
+   \   00000070   0x6840             LDR      R0,[R0, #+4]
+   \   00000072   0xF000 0x0002      AND      R0,R0,#0x2
+   \   00000076   0x9000             STR      R0,[SP, #+0]
+   \   00000078   0x9800             LDR      R0,[SP, #+0]
+    294          
+    295              /* Peripheral interrupt init */
+    296              HAL_NVIC_SetPriority(TIM3_IRQn, 2, 0);
+   \   0000007A   0x2200             MOVS     R2,#+0
+   \   0000007C   0x2102             MOVS     R1,#+2
+   \   0000007E   0x201D             MOVS     R0,#+29
+   \   00000080   0x.... 0x....      BL       HAL_NVIC_SetPriority
+    297              HAL_NVIC_EnableIRQ(TIM3_IRQn);
+   \   00000084   0x201D             MOVS     R0,#+29
+   \   00000086   0xE8BD 0x4002      POP      {R1,LR}
+   \   0000008A   0x.... 0x....      B.W      HAL_NVIC_EnableIRQ
+    298            /* USER CODE BEGIN TIM3_MspInit 1 */
+    299          
+    300            /* USER CODE END TIM3_MspInit 1 */
+    301            }
+    302            else if(tim_baseHandle->Instance==TIM4)
+   \                     ??HAL_TIM_Base_MspInit_2: (+1)
+   \   0000008E   0x....             LDR.N    R1,??DataTable8_7  ;; 0x40000800
+   \   00000090   0x4288             CMP      R0,R1
+   \   00000092   0xD113             BNE.N    ??HAL_TIM_Base_MspInit_3
+    303            {
+    304            /* USER CODE BEGIN TIM4_MspInit 0 */
+    305          
+    306            /* USER CODE END TIM4_MspInit 0 */
+    307              /* Peripheral clock enable */
+    308              __HAL_RCC_TIM4_CLK_ENABLE();
+   \   00000094   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   00000096   0x6841             LDR      R1,[R0, #+4]
+   \   00000098   0xF041 0x0104      ORR      R1,R1,#0x4
+   \   0000009C   0x6041             STR      R1,[R0, #+4]
+   \   0000009E   0x6840             LDR      R0,[R0, #+4]
+   \   000000A0   0xF000 0x0004      AND      R0,R0,#0x4
+   \   000000A4   0x9000             STR      R0,[SP, #+0]
+   \   000000A6   0x9800             LDR      R0,[SP, #+0]
+    309          
+    310              /* Peripheral interrupt init */
+    311              HAL_NVIC_SetPriority(TIM4_IRQn, 2, 0);
+   \   000000A8   0x2200             MOVS     R2,#+0
+   \   000000AA   0x2102             MOVS     R1,#+2
+   \   000000AC   0x201E             MOVS     R0,#+30
+   \   000000AE   0x.... 0x....      BL       HAL_NVIC_SetPriority
+    312              HAL_NVIC_EnableIRQ(TIM4_IRQn);
+   \   000000B2   0x201E             MOVS     R0,#+30
+   \   000000B4   0xE8BD 0x4002      POP      {R1,LR}
+   \   000000B8   0x.... 0x....      B.W      HAL_NVIC_EnableIRQ
+    313            /* USER CODE BEGIN TIM4_MspInit 1 */
+    314          
+    315            /* USER CODE END TIM4_MspInit 1 */
+    316            }
+    317          }
+   \                     ??HAL_TIM_Base_MspInit_3: (+1)
+   \   000000BC   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+    318          void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
+    319          {
+    320          
+    321            GPIO_InitTypeDef GPIO_InitStruct;
+    322            if(timHandle->Instance==TIM3)
+   \                     HAL_TIM_MspPostInit: (+1)
+   \   00000000   0x6800             LDR      R0,[R0, #+0]
+   \   00000002   0x....             LDR.N    R1,??DataTable8_5  ;; 0x40000400
+   \   00000004   0x4288             CMP      R0,R1
+   \   00000006   0xD000             BEQ.N    ??HAL_TIM_MspPostInit_0
+   \   00000008   0x4770             BX       LR
+    323            {
+    324            /* USER CODE BEGIN TIM3_MspPostInit 0 */
+    325          
+    326            /* USER CODE END TIM3_MspPostInit 0 */
+    327            
+    328              /**TIM3 GPIO Configuration    
+    329              PA6     ------> TIM3_CH1
+    330              PA7     ------> TIM3_CH2 
+    331              */
+    332          #if defined(MKS_ROBINPRO)
+    333              GPIO_InitStruct.Pin = GPIO_PIN_1;
+    334              GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    335              GPIO_InitStruct.Pull = GPIO_NOPULL;
+    336              GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    337              HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    338          #elif defined(MKS_ROBIN_NANO)
+    339              GPIO_InitStruct.Pin = GPIO_PIN_1;
+   \                     ??HAL_TIM_MspPostInit_0: (+1)
+   \   0000000A   0xB500             PUSH     {LR}
+   \   0000000C   0xB085             SUB      SP,SP,#+20
+   \   0000000E   0x2002             MOVS     R0,#+2
+   \   00000010   0x9000             STR      R0,[SP, #+0]
+    340              GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \   00000012   0x9001             STR      R0,[SP, #+4]
+    341              GPIO_InitStruct.Pull = GPIO_NOPULL;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x9002             STR      R0,[SP, #+8]
+    342              GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+   \   00000018   0x2002             MOVS     R0,#+2
+   \   0000001A   0x9003             STR      R0,[SP, #+12]
+    343              HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+   \   0000001C   0xA900             ADD      R1,SP,#+0
+   \   0000001E   0x....             LDR.N    R0,??DataTable8_9  ;; 0x40010c00
+   \   00000020   0x.... 0x....      BL       HAL_GPIO_Init
+    344          //bltouch PWM管脚
+    345          		GPIO_InitStruct.Pin = TOUCH_Pin;
+   \   00000024   0xF44F 0x7080      MOV      R0,#+256
+   \   00000028   0x9000             STR      R0,[SP, #+0]
+    346          		GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \   0000002A   0x2002             MOVS     R0,#+2
+   \   0000002C   0x9001             STR      R0,[SP, #+4]
+    347          		GPIO_InitStruct.Pull = GPIO_NOPULL;
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0x9002             STR      R0,[SP, #+8]
+    348          		GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+   \   00000032   0x2002             MOVS     R0,#+2
+   \   00000034   0x9003             STR      R0,[SP, #+12]
+    349          		HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+   \   00000036   0xA900             ADD      R1,SP,#+0
+   \   00000038   0x....             LDR.N    R0,??DataTable8_10  ;; 0x40010800
+   \   0000003A   0x.... 0x....      BL       HAL_GPIO_Init
+    350          #elif defined(MKS_ROBIN2)
+    351          	GPIO_InitStruct.Pin = TOUCH_Pin|FAN_Pin;
+    352          	GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    353          	GPIO_InitStruct.Pull = GPIO_NOPULL;
+    354          	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    355          	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    356          #endif  			
+    357          
+    358            /* USER CODE BEGIN TIM3_MspPostInit 1 */
+    359          
+    360            /* USER CODE END TIM3_MspPostInit 1 */
+    361            }
+    362          
+    363          }
+   \   0000003E   0xB005             ADD      SP,SP,#+20
+   \   00000040   0xBD00             POP      {PC}             ;; return
+    364          
+
+   \                                 In section .text, align 2, keep-with-next
+    365          void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
+    366          {
+    367          
+    368            if(tim_baseHandle->Instance==TIM1)
+   \                     HAL_TIM_Base_MspDeInit: (+1)
+   \   00000000   0x6800             LDR      R0,[R0, #+0]
+   \   00000002   0x....             LDR.N    R1,??DataTable8_2  ;; 0x40012c00
+   \   00000004   0x4288             CMP      R0,R1
+   \   00000006   0xD107             BNE.N    ??HAL_TIM_Base_MspDeInit_0
+    369            {
+    370            /* USER CODE BEGIN TIM1_MspDeInit 0 */
+    371          
+    372            /* USER CODE END TIM1_MspDeInit 0 */
+    373              /* Peripheral clock disable */
+    374              __HAL_RCC_TIM1_CLK_DISABLE();
+   \   00000008   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   0000000A   0x6801             LDR      R1,[R0, #+0]
+   \   0000000C   0xF421 0x6100      BIC      R1,R1,#0x800
+   \   00000010   0x6001             STR      R1,[R0, #+0]
+    375          
+    376              /* Peripheral interrupt Deinit*/
+    377              HAL_NVIC_DisableIRQ(TIM1_BRK_IRQn);
+   \   00000012   0x2018             MOVS     R0,#+24
+   \   00000014   0x.... 0x....      B.W      HAL_NVIC_DisableIRQ
+    378          
+    379            /* USER CODE BEGIN TIM1_MspDeInit 1 */
+    380          
+    381            /* USER CODE END TIM1_MspDeInit 1 */
+    382            }
+    383            else if(tim_baseHandle->Instance==TIM2)
+   \                     ??HAL_TIM_Base_MspDeInit_0: (+1)
+   \   00000018   0xF1B0 0x4F80      CMP      R0,#+1073741824
+   \   0000001C   0xD107             BNE.N    ??HAL_TIM_Base_MspDeInit_1
+    384            {
+    385            /* USER CODE BEGIN TIM2_MspDeInit 0 */
+    386          
+    387            /* USER CODE END TIM2_MspDeInit 0 */
+    388              /* Peripheral clock disable */
+    389              __HAL_RCC_TIM2_CLK_DISABLE();
+   \   0000001E   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   00000020   0x6841             LDR      R1,[R0, #+4]
+   \   00000022   0x0849             LSRS     R1,R1,#+1
+   \   00000024   0x0049             LSLS     R1,R1,#+1
+   \   00000026   0x6041             STR      R1,[R0, #+4]
+    390          
+    391              /* Peripheral interrupt Deinit*/
+    392              HAL_NVIC_DisableIRQ(TIM2_IRQn);
+   \   00000028   0x201C             MOVS     R0,#+28
+   \   0000002A   0x.... 0x....      B.W      HAL_NVIC_DisableIRQ
+    393          
+    394            /* USER CODE BEGIN TIM2_MspDeInit 1 */
+    395          
+    396            /* USER CODE END TIM2_MspDeInit 1 */
+    397            }
+    398            else if(tim_baseHandle->Instance==TIM3)
+   \                     ??HAL_TIM_Base_MspDeInit_1: (+1)
+   \   0000002E   0x....             LDR.N    R1,??DataTable8_5  ;; 0x40000400
+   \   00000030   0x4288             CMP      R0,R1
+   \   00000032   0xD107             BNE.N    ??HAL_TIM_Base_MspDeInit_2
+    399            {
+    400            /* USER CODE BEGIN TIM3_MspDeInit 0 */
+    401          
+    402            /* USER CODE END TIM3_MspDeInit 0 */
+    403              /* Peripheral clock disable */
+    404              __HAL_RCC_TIM3_CLK_DISABLE();
+   \   00000034   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   00000036   0x6841             LDR      R1,[R0, #+4]
+   \   00000038   0xF021 0x0102      BIC      R1,R1,#0x2
+   \   0000003C   0x6041             STR      R1,[R0, #+4]
+    405          
+    406              /* Peripheral interrupt Deinit*/
+    407              HAL_NVIC_DisableIRQ(TIM3_IRQn);
+   \   0000003E   0x201D             MOVS     R0,#+29
+   \   00000040   0x.... 0x....      B.W      HAL_NVIC_DisableIRQ
+    408          
+    409            /* USER CODE BEGIN TIM3_MspDeInit 1 */
+    410          
+    411            /* USER CODE END TIM3_MspDeInit 1 */
+    412            }
+    413            else if(tim_baseHandle->Instance==TIM4)
+   \                     ??HAL_TIM_Base_MspDeInit_2: (+1)
+   \   00000044   0x....             LDR.N    R1,??DataTable8_7  ;; 0x40000800
+   \   00000046   0x4288             CMP      R0,R1
+   \   00000048   0xD107             BNE.N    ??HAL_TIM_Base_MspDeInit_3
+    414            {
+    415            /* USER CODE BEGIN TIM4_MspDeInit 0 */
+    416          
+    417            /* USER CODE END TIM4_MspDeInit 0 */
+    418              /* Peripheral clock disable */
+    419              __HAL_RCC_TIM4_CLK_DISABLE();
+   \   0000004A   0x....             LDR.N    R0,??DataTable8_8  ;; 0x40021018
+   \   0000004C   0x6841             LDR      R1,[R0, #+4]
+   \   0000004E   0xF021 0x0104      BIC      R1,R1,#0x4
+   \   00000052   0x6041             STR      R1,[R0, #+4]
+    420          
+    421              /* Peripheral interrupt Deinit*/
+    422              HAL_NVIC_DisableIRQ(TIM4_IRQn);
+   \   00000054   0x201E             MOVS     R0,#+30
+   \   00000056   0x.... 0x....      B.W      HAL_NVIC_DisableIRQ
+    423          
+    424            /* USER CODE BEGIN TIM4_MspDeInit 1 */
+    425          
+    426            /* USER CODE END TIM4_MspDeInit 1 */
+    427            }
+    428          } 
+   \                     ??HAL_TIM_Base_MspDeInit_3: (+1)
+   \   0000005A   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \   00000000   0x........         DC32     _dwTickCount
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \   00000000   0x........         DC32     htim1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \   00000000   0x40012C00         DC32     0x40012c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \   00000000   0x........         DC32     htim2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \   00000000   0x........         DC32     htim3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \   00000000   0x40000400         DC32     0x40000400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \   00000000   0x........         DC32     htim4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \   00000000   0x40000800         DC32     0x40000800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \   00000000   0x40021018         DC32     0x40021018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_9:
+   \   00000000   0x40010C00         DC32     0x40010c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_10:
+   \   00000000   0x40010800         DC32     0x40010800
+    429          
+    430          /* USER CODE BEGIN 1 */
+    431          
+    432          /* USER CODE END 1 */
+    433          
+    434          /**
+    435            * @}
+    436            */
+    437          
+    438          /**
+    439            * @}
+    440            */
+    441          
+    442          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   HAL_TIM_Base_MspDeInit
+         0   -> HAL_NVIC_DisableIRQ
+       8   HAL_TIM_Base_MspInit
+         0   -> HAL_NVIC_EnableIRQ
+         8   -> HAL_NVIC_SetPriority
+      24   HAL_TIM_MspPostInit
+        24   -> HAL_GPIO_Init
+      64   MX_TIM1_Init
+        64   -> Error_Handler
+        64   -> HAL_TIMEx_MasterConfigSynchronization
+        64   -> HAL_TIM_Base_Init
+        64   -> HAL_TIM_ConfigClockSource
+        64   -> HAL_TIM_PWM_ConfigChannel
+      32   MX_TIM2_Init
+        32   -> Error_Handler
+        32   -> HAL_TIMEx_MasterConfigSynchronization
+        32   -> HAL_TIM_Base_Init
+        32   -> HAL_TIM_ConfigClockSource
+      88   MX_TIM3_Init
+        88   -> Error_Handler
+        88   -> HAL_TIMEx_ConfigBreakDeadTime
+        88   -> HAL_TIMEx_MasterConfigSynchronization
+        88   -> HAL_TIM_Base_Init
+        88   -> HAL_TIM_ConfigClockSource
+        88   -> HAL_TIM_MspPostInit
+        88   -> HAL_TIM_PWM_ConfigChannel
+      32   MX_TIM4_Init
+        32   -> Error_Handler
+        32   -> HAL_TIMEx_MasterConfigSynchronization
+        32   -> HAL_TIM_Base_Init
+        32   -> HAL_TIM_ConfigClockSource
+       0   getTick
+       0   getTickDiff
+       0   millis
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_10
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+       4  ??DataTable8_9
+      92  HAL_TIM_Base_MspDeInit
+     190  HAL_TIM_Base_MspInit
+      66  HAL_TIM_MspPostInit
+     122  MX_TIM1_Init
+      92  MX_TIM2_Init
+     170  MX_TIM3_Init
+      90  MX_TIM4_Init
+       4  _dwTickCount
+       6  getTick
+      18  getTickDiff
+      60  htim1
+      60  htim2
+      60  htim3
+      60  htim4
+       6  millis
+
+ 
+ 244 bytes in section .bss
+ 896 bytes in section .text
+ 
+ 896 bytes of CODE memory
+ 244 bytes of DATA memory
+
+Errors: none
+Warnings: none

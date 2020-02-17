@@ -1,0 +1,1038 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:05
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\FatFs\src\diskio.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\FatFs\src\diskio.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\diskio.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\diskio.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\FatFs\src\diskio.c
+      1          /*-----------------------------------------------------------------------*/
+      2          /* Low level disk I/O module skeleton for FatFs     (C)ChaN, 2014        */
+      3          /*                                                                       */
+      4          /*   Portions COPYRIGHT 2015 STMicroelectronics                          */
+      5          /*   Portions Copyright (C) 2014, ChaN, all right reserved               */
+      6          /*-----------------------------------------------------------------------*/
+      7          /* If a working storage control module is available, it should be        */
+      8          /* attached to the FatFs via a glue function rather than modifying it.   */
+      9          /* This is an example of glue functions to attach various exsisting      */
+     10          /* storage control modules to the FatFs module with a defined API.       */
+     11          /*-----------------------------------------------------------------------*/
+     12          
+     13          /**
+     14            ******************************************************************************
+     15            * @file    diskio.c 
+     16            * @author  MCD Application Team
+     17            * @version V1.3.0
+     18            * @date    08-May-2015
+     19            * @brief   FatFs low level disk I/O module.
+     20            ******************************************************************************
+     21            * @attention
+     22            *
+     23            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     24            * You may not use this file except in compliance with the License.
+     25            * You may obtain a copy of the License at:
+     26            *
+     27            *        http://www.st.com/software_license_agreement_liberty_v2
+     28            *
+     29            * Unless required by applicable law or agreed to in writing, software 
+     30            * distributed under the License is distributed on an "AS IS" BASIS, 
+     31            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     32            * See the License for the specific language governing permissions and
+     33            * limitations under the License.
+     34            *
+     35            ******************************************************************************
+     36            */
+     37          
+     38          /* Includes ------------------------------------------------------------------*/
+     39          #include "diskio.h"
+     40          #include "ff_gen_drv.h"
+     41          #include "sdio_sdcard.h"
+
+  #define IS_NVIC_PRIORITY_GROUP(GROUP) (((GROUP) == NVIC_PriorityGroup_0) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\misc.h",152  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_NVIC_PRIORITY_GROUP"
+          (declared at line 277 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h")
+
+  #define IS_SYSTICK_CLK_SOURCE(SOURCE) (((SOURCE) == SysTick_CLKSource_HCLK) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\misc.h",174  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SYSTICK_CLK_SOURCE" (declared
+          at line 296 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h")
+
+  #define SDIO_INIT_CLK_DIV        0x166//0xB2 		//SDIO初始化频率，最大400Kh  
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",36  Warning[Pe047]: 
+          incompatible redefinition of macro "SDIO_INIT_CLK_DIV" (declared at
+          line 479 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_sdmmc.h")
+
+  #define SDIO_TRANSFER_CLK_DIV    0x07//0x02//0x01		//SDIO传输频率，最大24Mhz(4bit)。该值太小可能会导致读写文件出错 
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",37  Warning[Pe047]: 
+          incompatible redefinition of macro "SDIO_TRANSFER_CLK_DIV" (declared
+          at line 482 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_sdmmc.h")
+
+  #define SD_CMD_GO_IDLE_STATE                       ((u8)0)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",170  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_GO_IDLE_STATE" (declared
+          at line 304 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SEND_OP_COND                        ((u8)1)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",171  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SEND_OP_COND" (declared
+          at line 305 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_ALL_SEND_CID                        ((u8)2)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",172  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_ALL_SEND_CID" (declared
+          at line 306 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SET_REL_ADDR                        ((u8)3) /*!< SDIO_SEND_REL_ADDR for SD Card */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",173  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SET_REL_ADDR" (declared
+          at line 307 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SET_DSR                             ((u8)4)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",174  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SET_DSR" (declared at
+          line 308 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SDIO_SEN_OP_COND                    ((u8)5)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",175  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SDIO_SEN_OP_COND"
+          (declared at line 309 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_HS_SWITCH                           ((u8)6)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",176  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_HS_SWITCH" (declared at
+          line 311 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SEL_DESEL_CARD                      ((u8)7)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",177  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SEL_DESEL_CARD" (declared
+          at line 312 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_HS_SEND_EXT_CSD                     ((u8)8)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",178  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_HS_SEND_EXT_CSD"
+          (declared at line 313 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SEND_CSD                            ((u8)9)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",179  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SEND_CSD" (declared at
+          line 315 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SEND_CID                            ((u8)10)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",180  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SEND_CID" (declared at
+          line 316 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_READ_DAT_UNTIL_STOP                 ((u8)11) /*!< SD Card doesn't support it */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",181  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_READ_DAT_UNTIL_STOP"
+          (declared at line 317 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_STOP_TRANSMISSION                   ((u8)12)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",182  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_STOP_TRANSMISSION"
+          (declared at line 318 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SEND_STATUS                         ((u8)13)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",183  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SEND_STATUS" (declared at
+          line 319 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_HS_BUSTEST_READ                     ((u8)14)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",184  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_HS_BUSTEST_READ"
+          (declared at line 320 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_GO_INACTIVE_STATE                   ((u8)15)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",185  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_GO_INACTIVE_STATE"
+          (declared at line 321 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SET_BLOCKLEN                        ((u8)16)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",186  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SET_BLOCKLEN" (declared
+          at line 322 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_READ_SINGLE_BLOCK                   ((u8)17)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",187  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_READ_SINGLE_BLOCK"
+          (declared at line 325 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_READ_MULT_BLOCK                     ((u8)18)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",188  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_READ_MULT_BLOCK"
+          (declared at line 327 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_HS_BUSTEST_WRITE                    ((u8)19)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",189  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_HS_BUSTEST_WRITE"
+          (declared at line 329 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_WRITE_DAT_UNTIL_STOP                ((u8)20) 
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",190  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_WRITE_DAT_UNTIL_STOP"
+          (declared at line 330 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SET_BLOCK_COUNT                     ((u8)23) 
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",191  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SET_BLOCK_COUNT"
+          (declared at line 331 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_WRITE_SINGLE_BLOCK                  ((u8)24)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",192  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_WRITE_SINGLE_BLOCK"
+          (declared at line 332 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_WRITE_MULT_BLOCK                    ((u8)25)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",193  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_WRITE_MULT_BLOCK"
+          (declared at line 334 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_PROG_CID                            ((u8)26)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",194  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_PROG_CID" (declared at
+          line 335 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_PROG_CSD                            ((u8)27)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",195  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_PROG_CSD" (declared at
+          line 336 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SET_WRITE_PROT                      ((u8)28)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",196  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SET_WRITE_PROT" (declared
+          at line 337 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_CLR_WRITE_PROT                      ((u8)29)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",197  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_CLR_WRITE_PROT" (declared
+          at line 338 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SEND_WRITE_PROT                     ((u8)30)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",198  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SEND_WRITE_PROT"
+          (declared at line 339 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_ERASE_GRP_START                  ((u8)32) /*!< To set the address of the first write
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",199  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_ERASE_GRP_START"
+          (declared at line 340 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_ERASE_GRP_END                    ((u8)33) /*!< To set the address of the last write block of the
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",201  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_ERASE_GRP_END"
+          (declared at line 341 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_ERASE_GRP_START                     ((u8)35) /*!< To set the address of the first write block to be erased.
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",203  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_ERASE_GRP_START"
+          (declared at line 342 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_ERASE_GRP_END                       ((u8)36) /*!< To set the address of the last write block of the
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",206  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_ERASE_GRP_END" (declared
+          at line 344 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_ERASE                               ((u8)38)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",209  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_ERASE" (declared at line
+          346 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_FAST_IO                             ((u8)39) /*!< SD Card doesn't support it */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",210  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_FAST_IO" (declared at
+          line 347 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_GO_IRQ_STATE                        ((u8)40) /*!< SD Card doesn't support it */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",211  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_GO_IRQ_STATE" (declared
+          at line 348 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_LOCK_UNLOCK                         ((u8)42)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",212  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_LOCK_UNLOCK" (declared at
+          line 349 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_APP_CMD                             ((u8)55)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",213  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_APP_CMD" (declared at
+          line 351 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_GEN_CMD                             ((u8)56)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",214  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_GEN_CMD" (declared at
+          line 353 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_NO_CMD                              ((u8)64)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",215  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_NO_CMD" (declared at line
+          355 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_APP_SD_SET_BUSWIDTH                 ((u8)6)  /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",221  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_APP_SD_SET_BUSWIDTH"
+          (declared at line 361 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_STAUS                        ((u8)13) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",222  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_STAUS" (declared
+          at line 2841 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define SD_CMD_SD_APP_SEND_NUM_WRITE_BLOCKS        ((u8)22) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",223  Warning[Pe047]: 
+          incompatible redefinition of macro
+          "SD_CMD_SD_APP_SEND_NUM_WRITE_BLOCKS" (declared at line 364 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_OP_COND                      ((u8)41) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",224  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_OP_COND" (declared
+          at line 366 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SET_CLR_CARD_DETECT          ((u8)42) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",225  Warning[Pe047]: 
+          incompatible redefinition of macro
+          "SD_CMD_SD_APP_SET_CLR_CARD_DETECT" (declared at line 368 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SEND_SCR                     ((u8)51) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",226  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_SEND_SCR"
+          (declared at line 369 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SDIO_RW_DIRECT                      ((u8)52) /*!< For SD I/O Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",227  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SDIO_RW_DIRECT" (declared
+          at line 370 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SDIO_RW_EXTENDED                    ((u8)53) /*!< For SD I/O Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",228  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SDIO_RW_EXTENDED"
+          (declared at line 371 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_GET_MKB                      ((u8)43) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",234  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_GET_MKB" (declared
+          at line 377 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_GET_MID                      ((u8)44) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",235  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_GET_MID" (declared
+          at line 378 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SET_CER_RN1                  ((u8)45) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",236  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_SET_CER_RN1"
+          (declared at line 379 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_GET_CER_RN2                  ((u8)46) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",237  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_GET_CER_RN2"
+          (declared at line 380 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SET_CER_RES2                 ((u8)47) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",238  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_SET_CER_RES2"
+          (declared at line 381 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_GET_CER_RES1                 ((u8)48) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",239  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_GET_CER_RES1"
+          (declared at line 382 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SECURE_READ_MULTIPLE_BLOCK   ((u8)18) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",240  Warning[Pe047]: 
+          incompatible redefinition of macro
+          "SD_CMD_SD_APP_SECURE_READ_MULTIPLE_BLOCK" (declared at line 383 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SECURE_WRITE_MULTIPLE_BLOCK  ((u8)25) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",241  Warning[Pe047]: 
+          incompatible redefinition of macro
+          "SD_CMD_SD_APP_SECURE_WRITE_MULTIPLE_BLOCK" (declared at line 384 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SECURE_ERASE                 ((u8)38) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",242  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_SECURE_ERASE"
+          (declared at line 385 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_CHANGE_SECURE_AREA           ((u8)49) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",243  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_CHANGE_SECURE_AREA"
+          (declared at line 386 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define SD_CMD_SD_APP_SECURE_WRITE_MKB             ((u8)48) /*!< For SD Card only */
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",244  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_CMD_SD_APP_SECURE_WRITE_MKB"
+          (declared at line 387 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h")
+
+  #define NULL 0
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",257  Warning[Pe047]: 
+          incompatible redefinition of macro "NULL" (declared at line 22 of
+          "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+          7.0\arm\inc\c\stdio.h")
+
+  #define SD_OCR_CID_CSD_OVERWRIETE       ((u32)0x00010000)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",278  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_OCR_CID_CSD_OVERWRIETE"
+          (declared at line 2840 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+
+  #define SD_DATATIMEOUT                  ((u32)0x000FFFFF)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio_sdcard.h",310  Warning[Pe047]: 
+          incompatible redefinition of macro "SD_DATATIMEOUT" (declared at
+          line 78 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Inc\bsp_driver_sd.h")
+     42          /* Private typedef -----------------------------------------------------------*/
+     43          /* Private define ------------------------------------------------------------*/
+     44          /* Private variables ---------------------------------------------------------*/
+     45          extern Disk_drvTypeDef  disk;
+     46          
+     47          /* Private function prototypes -----------------------------------------------*/
+     48          /* Private functions ---------------------------------------------------------*/
+     49          #define USB		0
+                         ^
+Warning[Pe047]: incompatible redefinition of macro "USB" (declared at line 870
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h")
+     50          #define MMC		1
+     51          #define ATA		2
+     52          
+     53          
+     54          #define SECTOR_SIZE 512U
+     55          
+
+   \                                 In section .data, align 1
+     56          static volatile DSTATUS Stat = STA_NOINIT;	/* Disk status */
+   \                     Stat:
+   \   00000000   0x01               DC8 1
+     57          
+     58          /**
+     59            * @brief  Gets Disk Status 
+     60            * @param  pdrv: Physical drive number (0..)
+     61            * @retval DSTATUS: Operation status
+     62            */
+
+   \                                 In section .text, align 2, keep-with-next
+     63          DSTATUS disk_status (
+     64          	BYTE pdrv		/* Physical drive nmuber to identify the drive */
+     65          )
+     66          {
+     67          #if 0 
+     68            DSTATUS stat;
+     69            stat = disk.drv[pdrv]->disk_status(disk.lun[pdrv]);
+     70            return stat;
+     71          #else
+     72          	switch (pdrv) {
+   \                     disk_status: (+1)
+   \   00000000   0x1E40             SUBS     R0,R0,#+1
+   \   00000002   0x2801             CMP      R0,#+1
+   \   00000004   0xD801             BHI.N    ??disk_status_0
+     73          	case ATA :
+     74          	case MMC :		
+     75          		return 0;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x4770             BX       LR
+     76          	case USB :
+     77          
+     78          	}
+                 	^
+Warning[Pe127]: expected a statement
+     79          	return STA_NOINIT;
+   \                     ??disk_status_0: (+1)
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0x4770             BX       LR               ;; return
+     80          
+     81          #endif  	
+     82          }
+     83          
+     84          /**
+     85            * @brief  Initializes a Drive
+     86            * @param  pdrv: Physical drive number (0..)
+     87            * @retval DSTATUS: Operation status
+     88            */
+
+   \                                 In section .text, align 2, keep-with-next
+     89          DSTATUS disk_initialize (
+     90          	BYTE pdrv				/* Physical drive nmuber to identify the drive */
+     91          )
+     92          {
+   \                     disk_initialize: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     93          #if 0
+     94            DSTATUS stat = RES_OK;
+     95            
+     96            if(disk.is_initialized[pdrv] == 0)
+     97            { 
+     98              disk.is_initialized[pdrv] = 1;
+     99              stat = disk.drv[pdrv]->disk_initialize(disk.lun[pdrv]);
+    100            }
+    101            return stat;
+    102          	#else
+    103            switch (pdrv) {
+   \   00000002   0x1E40             SUBS     R0,R0,#+1
+   \   00000004   0x2801             CMP      R0,#+1
+   \   00000006   0xD803             BHI.N    ??disk_initialize_0
+    104          	case ATA :
+    105          	case MMC:
+    106                   SD_Init();
+   \   00000008   0x.... 0x....      BL       SD_Init
+    107          		return 0;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0xBD02             POP      {R1,PC}
+    108          
+    109          	case USB:
+    110          	
+    111          
+    112          		break;
+    113          	}
+    114            
+    115            return Stat;	
+   \                     ??disk_initialize_0: (+1)
+   \   00000010   0x....             LDR.N    R0,??DataTable0
+   \   00000012   0x7800             LDRB     R0,[R0, #+0]
+   \   00000014   0xBD02             POP      {R1,PC}          ;; return
+    116          	#endif
+    117          }
+    118          
+    119          /**
+    120            * @brief  Reads Sector(s) 
+    121            * @param  pdrv: Physical drive number (0..)
+    122            * @param  *buff: Data buffer to store read data
+    123            * @param  sector: Sector address (LBA)
+    124            * @param  count: Number of sectors to read (1..128)
+    125            * @retval DRESULT: Operation result
+    126            */
+
+   \                                 In section .text, align 2, keep-with-next
+    127          DRESULT disk_read (
+    128          	BYTE pdrv,		/* Physical drive nmuber to identify the drive */
+    129          	BYTE *buff,		/* Data buffer to store read data */
+    130          	DWORD sector,	        /* Sector address in LBA */
+    131          	UINT count		/* Number of sectors to read */
+    132          )
+    133          {
+   \                     disk_read: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x460C             MOV      R4,R1
+   \   00000004   0x4611             MOV      R1,R2
+   \   00000006   0x461A             MOV      R2,R3
+    134          #if 0
+    135            DRESULT res;
+    136           
+    137            res = disk.drv[pdrv]->disk_read(disk.lun[pdrv], buff, sector, count);
+    138            return res;
+    139          	#else
+    140          	DRESULT res;
+    141          	int result;
+                 	    ^
+Warning[Pe177]: variable "result" was declared but never referenced
+    142          	BYTE status = 0;
+                 	     ^
+Warning[Pe177]: variable "status" was declared but never referenced
+    143          	
+    144          	u8 errorstatus;
+    145          
+    146          	switch (pdrv) {
+   \   00000008   0x2801             CMP      R0,#+1
+   \   0000000A   0xD109             BNE.N    ??disk_read_0
+    147          	case ATA :
+    148          		break;
+    149          	case MMC :	
+    150          		errorstatus = SD_ReadDisk(buff, (uint32_t)sector ,count);
+    151          		if(errorstatus == SD_OK)	res = RES_OK;
+   \   0000000C   0xB2D2             UXTB     R2,R2
+   \   0000000E   0x4620             MOV      R0,R4
+   \   00000010   0x.... 0x....      BL       SD_ReadDisk
+   \   00000014   0x1E40             SUBS     R0,R0,#+1
+   \   00000016   0x4180             SBCS     R0,R0,R0
+   \   00000018   0x43C0             MVNS     R0,R0
+   \   0000001A   0x0FC0             LSRS     R0,R0,#+31
+    152          		else	res = RES_ERROR; 
+    153          		
+    154          		return res;
+   \   0000001C   0xB240             SXTB     R0,R0
+   \   0000001E   0xBD10             POP      {R4,PC}
+    155          
+    156          	case USB :
+    157          		
+    158          		  break;
+    159          	}
+    160          	return RES_PARERR;	
+   \                     ??disk_read_0: (+1)
+   \   00000020   0x2004             MOVS     R0,#+4
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
+    161          	#endif
+    162          }
+    163          
+    164          /**
+    165            * @brief  Writes Sector(s)  
+    166            * @param  pdrv: Physical drive number (0..)
+    167            * @param  *buff: Data to be written
+    168            * @param  sector: Sector address (LBA)
+    169            * @param  count: Number of sectors to write (1..128)
+    170            * @retval DRESULT: Operation result
+    171            */
+    172          #if _USE_WRITE == 1
+
+   \                                 In section .text, align 2, keep-with-next
+    173          DRESULT disk_write (
+    174          	BYTE pdrv,		/* Physical drive nmuber to identify the drive */
+    175          	const BYTE *buff,	/* Data to be written */
+    176          	DWORD sector,		/* Sector address in LBA */
+    177          	UINT count        	/* Number of sectors to write */
+    178          )
+    179          {
+   \                     disk_write: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x460C             MOV      R4,R1
+   \   00000004   0x4611             MOV      R1,R2
+   \   00000006   0x461A             MOV      R2,R3
+    180          #if 0
+    181            DRESULT res;
+    182            
+    183            res = disk.drv[pdrv]->disk_write(disk.lun[pdrv], buff, sector, count);
+    184            return res;
+    185          	#else
+    186          	DRESULT res;
+                 	        ^
+Warning[Pe177]: variable "res" was declared but never referenced
+    187          	int result;
+                 	    ^
+Warning[Pe177]: variable "result" was declared but never referenced
+    188          	BYTE status = 0;
+                 	     ^
+Warning[Pe177]: variable "status" was declared but never referenced
+    189          	
+    190          	u8 errorstatus;
+    191          	u8 retry=0x1f;		//写入失败的时候,重试次数
+                 	   ^
+Warning[Pe177]: variable "retry" was declared but never referenced
+    192          
+    193          	switch (pdrv) {
+   \   00000008   0x2801             CMP      R0,#+1
+   \   0000000A   0xD107             BNE.N    ??disk_write_0
+    194          	case ATA :
+    195          	
+    196          		return RES_PARERR;
+    197          
+    198          	case MMC :
+    199          			errorstatus = SD_WriteDisk((u8*)buff, sector, count);	//写入磁盘
+    200          			//转换应答值为FatFs值	
+    201          			if(errorstatus == SD_OK)	
+   \   0000000C   0xB2D2             UXTB     R2,R2
+   \   0000000E   0x4620             MOV      R0,R4
+   \   00000010   0x.... 0x....      BL       SD_WriteDisk
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??disk_write_0
+    202          			{	
+    203          				return RES_OK;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0xBD10             POP      {R4,PC}
+    204          			}
+    205          			else
+    206          			{
+    207          				break;
+    208          			}
+    209          	case USB :
+    210          	
+    211          
+    212          		break;
+    213          	}
+    214          	return RES_PARERR;	
+   \                     ??disk_write_0: (+1)
+   \   0000001C   0x2004             MOVS     R0,#+4
+   \   0000001E   0xBD10             POP      {R4,PC}          ;; return
+    215          	#endif
+    216          }
+    217          #endif /* _USE_WRITE == 1 */
+    218          
+    219          /**
+    220            * @brief  I/O control operation  
+    221            * @param  pdrv: Physical drive number (0..)
+    222            * @param  cmd: Control code
+    223            * @param  *buff: Buffer to send/receive control data
+    224            * @retval DRESULT: Operation result
+    225            */
+    226          #if _USE_IOCTL == 1
+
+   \                                 In section .text, align 2, keep-with-next
+    227          DRESULT disk_ioctl (
+    228          	BYTE pdrv,		/* Physical drive nmuber (0..) */
+    229          	BYTE cmd,		/* Control code */
+    230          	void *buff		/* Buffer to send/receive control data */
+    231          )
+    232          {
+    233          #if 0
+    234            DRESULT res;
+    235          
+    236            res = disk.drv[pdrv]->disk_ioctl(disk.lun[pdrv], cmd, buff);
+    237            return res;
+    238          	#else
+    239          DRESULT res = RES_OK;
+    240          	int result;
+    241          
+    242          	switch (pdrv) {
+   \                     disk_ioctl: (+1)
+   \   00000000   0x1E40             SUBS     R0,R0,#+1
+   \   00000002   0x2801             CMP      R0,#+1
+   \   00000004   0xD801             BHI.N    ??disk_ioctl_0
+    243          	case ATA :
+    244          
+    245          	case MMC :
+    246          	
+    247          		return 0;
+                 		       ^
+Warning[Pe188]: enumerated type mixed with another type
+
+  DRESULT res = RES_OK;
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\FatFs\src\diskio.c",239  Warning[Pe550]: 
+          variable "res" was set but never used
+
+  	int result;
+  	    ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\FatFs\src\diskio.c",240  Warning[Pe177]: 
+          variable "result" was declared but never referenced
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x4770             BX       LR
+    248          
+    249          	case USB :
+    250          
+    251          				    
+    252          			    break;
+    253          			    
+    254          			    
+    255           default:
+    256          			    res = RES_PARERR;
+    257          		  }
+    258          
+    259          	
+    260          	return RES_PARERR;	
+   \                     ??disk_ioctl_0: (+1)
+   \   0000000A   0x2004             MOVS     R0,#+4
+   \   0000000C   0x4770             BX       LR               ;; return
+    261          	#endif
+    262          }
+    263          #endif /* _USE_IOCTL == 1 */
+    264          
+    265          /**
+    266            * @brief  Gets Time from RTC 
+    267            * @param  None
+    268            * @retval Time in DWORD
+    269            */
+
+   \                                 In section .text, align 2, keep-with-next
+    270          __weak DWORD get_fattime (void)
+    271          {
+    272            return 0;
+   \                     get_fattime: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    273          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     Stat
+    274          
+    275          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+    276          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   disk_initialize
+         8   -> SD_Init
+       0   disk_ioctl
+       8   disk_read
+         8   -> SD_ReadDisk
+       0   disk_status
+       8   disk_write
+         8   -> SD_WriteDisk
+       0   get_fattime
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       1  Stat
+      22  disk_initialize
+      14  disk_ioctl
+      36  disk_read
+      14  disk_status
+      32  disk_write
+       4  get_fattime
+
+ 
+   1 byte  in section .data
+ 126 bytes in section .text
+ 
+ 126 bytes of CODE memory
+   1 byte  of DATA memory
+
+Errors: none
+Warnings: 77

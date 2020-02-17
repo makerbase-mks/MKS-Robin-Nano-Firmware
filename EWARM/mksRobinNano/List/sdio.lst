@@ -1,0 +1,551 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:52
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\sdio.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\sdio.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\sdio.c
+      1          /**
+      2            ******************************************************************************
+      3            * File Name          : SDIO.c
+      4            * Description        : This file provides code for the configuration
+      5            *                      of the SDIO instances.
+      6            ******************************************************************************
+      7            *
+      8            * Copyright (c) 2018 STMicroelectronics International N.V. 
+      9            * All rights reserved.
+     10            *
+     11            * Redistribution and use in source and binary forms, with or without 
+     12            * modification, are permitted, provided that the following conditions are met:
+     13            *
+     14            * 1. Redistribution of source code must retain the above copyright notice, 
+     15            *    this list of conditions and the following disclaimer.
+     16            * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17            *    this list of conditions and the following disclaimer in the documentation
+     18            *    and/or other materials provided with the distribution.
+     19            * 3. Neither the name of STMicroelectronics nor the names of other 
+     20            *    contributors to this software may be used to endorse or promote products 
+     21            *    derived from this software without specific written permission.
+     22            * 4. This software, including modifications and/or derivative works of this 
+     23            *    software, must execute solely and exclusively on microcontroller or
+     24            *    microprocessor devices manufactured by or for STMicroelectronics.
+     25            * 5. Redistribution and use of this software other than as permitted under 
+     26            *    this license is void and will automatically terminate your rights under 
+     27            *    this license. 
+     28            *
+     29            * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
+     30            * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
+     31            * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+     32            * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+     33            * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+     34            * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+     35            * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     36            * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+     37            * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+     38            * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+     39            * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+     40            * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     41            *
+     42            ******************************************************************************
+     43            */
+     44          
+     45          /* Includes ------------------------------------------------------------------*/
+     46          #include "sdio.h"
+     47          
+     48          #include "gpio.h"
+     49          #include "dma.h"
+     50          
+     51          /* USER CODE BEGIN 0 */
+     52          
+     53          /* USER CODE END 0 */
+     54          
+
+   \                                 In section .bss, align 4
+     55          SD_HandleTypeDef hsd;
+   \                     hsd:
+   \   00000000                      DS8 96
+
+   \                                 In section .bss, align 8
+     56          HAL_SD_CardInfoTypedef SDCardInfo;
+   \                     SDCardInfo:
+   \   00000000                      DS8 88
+
+   \                                 In section .bss, align 4
+     57          DMA_HandleTypeDef hdma_sdio;
+   \                     hdma_sdio:
+   \   00000000                      DS8 56
+     58          
+     59          /* SDIO init function */
+     60          
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void MX_SDIO_SD_Init(void)
+     62          {
+     63          
+     64            hsd.Instance = SDIO;
+   \                     MX_SDIO_SD_Init: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable3
+   \   00000002   0x....             LDR.N    R1,??DataTable3_1  ;; 0x40018000
+   \   00000004   0x6001             STR      R1,[R0, #+0]
+     65            hsd.Init.ClockEdge = SDIO_CLOCK_EDGE_RISING;
+   \   00000006   0x2100             MOVS     R1,#+0
+   \   00000008   0x6041             STR      R1,[R0, #+4]
+     66            hsd.Init.ClockBypass = SDIO_CLOCK_BYPASS_DISABLE;
+   \   0000000A   0x6081             STR      R1,[R0, #+8]
+     67            hsd.Init.ClockPowerSave = SDIO_CLOCK_POWER_SAVE_DISABLE;
+   \   0000000C   0x60C1             STR      R1,[R0, #+12]
+     68            hsd.Init.BusWide = SDIO_BUS_WIDE_1B;
+   \   0000000E   0x6101             STR      R1,[R0, #+16]
+     69            hsd.Init.HardwareFlowControl = SDIO_HARDWARE_FLOW_CONTROL_DISABLE;
+   \   00000010   0x6141             STR      R1,[R0, #+20]
+     70            hsd.Init.ClockDiv = 2;
+   \   00000012   0x2102             MOVS     R1,#+2
+   \   00000014   0x6181             STR      R1,[R0, #+24]
+     71          
+     72          }
+   \   00000016   0x4770             BX       LR               ;; return
+     73          
+
+   \                                 In section .text, align 2, keep-with-next
+     74          void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle)
+     75          {
+     76          
+     77            GPIO_InitTypeDef GPIO_InitStruct;
+     78            if(sdHandle->Instance==SDIO)
+   \                     HAL_SD_MspInit: (+1)
+   \   00000000   0x6800             LDR      R0,[R0, #+0]
+   \   00000002   0x....             LDR.N    R1,??DataTable3_1  ;; 0x40018000
+   \   00000004   0x4288             CMP      R0,R1
+   \   00000006   0xD000             BEQ.N    ??HAL_SD_MspInit_0
+   \   00000008   0x4770             BX       LR
+     79            {
+     80            /* USER CODE BEGIN SDIO_MspInit 0 */
+     81          
+     82            /* USER CODE END SDIO_MspInit 0 */
+     83              /* Peripheral clock enable */
+     84              __HAL_RCC_SDIO_CLK_ENABLE();
+   \                     ??HAL_SD_MspInit_0: (+1)
+   \   0000000A   0xB500             PUSH     {LR}
+   \   0000000C   0xB085             SUB      SP,SP,#+20
+   \   0000000E   0x....             LDR.N    R0,??DataTable3_2  ;; 0x40021014
+   \   00000010   0x6801             LDR      R1,[R0, #+0]
+   \   00000012   0xF441 0x6180      ORR      R1,R1,#0x400
+   \   00000016   0x6001             STR      R1,[R0, #+0]
+   \   00000018   0x6800             LDR      R0,[R0, #+0]
+   \   0000001A   0xF400 0x6080      AND      R0,R0,#0x400
+   \   0000001E   0x9000             STR      R0,[SP, #+0]
+   \   00000020   0x9800             LDR      R0,[SP, #+0]
+     85            
+     86              /**SDIO GPIO Configuration    
+     87              PC8     ------> SDIO_D0
+     88              PC9     ------> SDIO_D1
+     89              PC10     ------> SDIO_D2
+     90              PC11     ------> SDIO_D3
+     91              PC12     ------> SDIO_CK
+     92              PD2     ------> SDIO_CMD 
+     93              */
+     94              GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11 
+     95                                    |GPIO_PIN_12;
+   \   00000022   0xF44F 0x50F8      MOV      R0,#+7936
+   \   00000026   0x9001             STR      R0,[SP, #+4]
+     96              GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \   00000028   0x2002             MOVS     R0,#+2
+   \   0000002A   0x9002             STR      R0,[SP, #+8]
+     97              GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+   \   0000002C   0x2003             MOVS     R0,#+3
+   \   0000002E   0x9004             STR      R0,[SP, #+16]
+     98              HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+   \   00000030   0xA901             ADD      R1,SP,#+4
+   \   00000032   0x....             LDR.N    R0,??DataTable3_3  ;; 0x40011000
+   \   00000034   0x.... 0x....      BL       HAL_GPIO_Init
+     99          
+    100              GPIO_InitStruct.Pin = GPIO_PIN_2;
+   \   00000038   0x2004             MOVS     R0,#+4
+   \   0000003A   0x9001             STR      R0,[SP, #+4]
+    101              GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \   0000003C   0x2002             MOVS     R0,#+2
+   \   0000003E   0x9002             STR      R0,[SP, #+8]
+    102              GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+   \   00000040   0x2003             MOVS     R0,#+3
+   \   00000042   0x9004             STR      R0,[SP, #+16]
+    103              HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+   \   00000044   0xA901             ADD      R1,SP,#+4
+   \   00000046   0x....             LDR.N    R0,??DataTable3_4  ;; 0x40011400
+   \   00000048   0x.... 0x....      BL       HAL_GPIO_Init
+    104          
+    105              /* Peripheral DMA init*/
+    106            
+    107              hdma_sdio.Instance = DMA2_Channel4;
+   \   0000004C   0x....             LDR.N    R0,??DataTable3_5
+   \   0000004E   0x....             LDR.N    R1,??DataTable3_6  ;; 0x40020444
+   \   00000050   0x6001             STR      R1,[R0, #+0]
+    108              hdma_sdio.Init.Direction = DMA_PERIPH_TO_MEMORY;
+   \   00000052   0x2100             MOVS     R1,#+0
+   \   00000054   0x6041             STR      R1,[R0, #+4]
+    109              hdma_sdio.Init.PeriphInc = DMA_PINC_DISABLE;
+   \   00000056   0x6081             STR      R1,[R0, #+8]
+    110              hdma_sdio.Init.MemInc = DMA_MINC_ENABLE;
+   \   00000058   0x2180             MOVS     R1,#+128
+   \   0000005A   0x60C1             STR      R1,[R0, #+12]
+    111              hdma_sdio.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+   \   0000005C   0xF44F 0x7100      MOV      R1,#+512
+   \   00000060   0x6101             STR      R1,[R0, #+16]
+    112              hdma_sdio.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+   \   00000062   0xF44F 0x6100      MOV      R1,#+2048
+   \   00000066   0x6141             STR      R1,[R0, #+20]
+    113              hdma_sdio.Init.Mode = DMA_NORMAL;
+   \   00000068   0x2100             MOVS     R1,#+0
+   \   0000006A   0x6181             STR      R1,[R0, #+24]
+    114              hdma_sdio.Init.Priority = DMA_PRIORITY_LOW;
+   \   0000006C   0x61C1             STR      R1,[R0, #+28]
+    115              if (HAL_DMA_Init(&hdma_sdio) != HAL_OK)
+   \   0000006E   0x.... 0x....      BL       HAL_DMA_Init
+   \   00000072   0x2800             CMP      R0,#+0
+   \   00000074   0xD001             BEQ.N    ??HAL_SD_MspInit_1
+    116              {
+    117                Error_Handler();
+   \   00000076   0x.... 0x....      BL       Error_Handler
+    118              }
+    119          
+    120              /* Several peripheral DMA handle pointers point to the same DMA handle.
+    121               Be aware that there is only one channel to perform all the requested DMAs. */
+    122              /* Be sure to change transfer direction before calling
+    123               HAL_SD_ReadBlocks_DMA or HAL_SD_WriteBlocks_DMA. */
+    124              //__HAL_LINKDMA(sdHandle,hdmarx,hdma_sdio);
+    125              //__HAL_LINKDMA(sdHandle,hdmatx,hdma_sdio);
+    126          
+    127              /* Peripheral interrupt init */
+    128              HAL_NVIC_SetPriority(SDIO_IRQn, 3, 0);
+   \                     ??HAL_SD_MspInit_1: (+1)
+   \   0000007A   0x2200             MOVS     R2,#+0
+   \   0000007C   0x2103             MOVS     R1,#+3
+   \   0000007E   0x2031             MOVS     R0,#+49
+   \   00000080   0x.... 0x....      BL       HAL_NVIC_SetPriority
+    129              HAL_NVIC_EnableIRQ(SDIO_IRQn);
+   \   00000084   0x2031             MOVS     R0,#+49
+   \   00000086   0x.... 0x....      BL       HAL_NVIC_EnableIRQ
+    130            /* USER CODE BEGIN SDIO_MspInit 1 */
+    131          
+    132            /* USER CODE END SDIO_MspInit 1 */
+    133            }
+    134          }
+   \   0000008A   0xB005             ADD      SP,SP,#+20
+   \   0000008C   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+    135          void SD_DMA_DIR(SD_HandleTypeDef* sdHandle,uint8_t dir)
+    136          {
+   \                     SD_DMA_DIR: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    137          	//dir=1-----write sd
+    138          	//dir=0-----read sd
+    139          	if(dir)
+   \   00000004   0xF44F 0x6000      MOV      R0,#+2048
+   \   00000008   0xF44F 0x7200      MOV      R2,#+512
+   \   0000000C   0x....             LDR.N    R5,??DataTable3_5
+   \   0000000E   0x....             LDR.N    R3,??DataTable3_6  ;; 0x40020444
+   \   00000010   0x2900             CMP      R1,#+0
+   \   00000012   0x602B             STR      R3,[R5, #+0]
+   \   00000014   0xD014             BEQ.N    ??SD_DMA_DIR_0
+    140          	{
+    141              /* Peripheral DMA init*/
+    142              hdma_sdio.Instance = DMA2_Channel4;
+    143              hdma_sdio.Init.Direction = DMA_MEMORY_TO_PERIPH;
+   \   00000016   0x2110             MOVS     R1,#+16
+   \   00000018   0x6069             STR      R1,[R5, #+4]
+    144              hdma_sdio.Init.PeriphInc = DMA_PINC_DISABLE;
+   \   0000001A   0x2100             MOVS     R1,#+0
+   \   0000001C   0x60A9             STR      R1,[R5, #+8]
+    145              hdma_sdio.Init.MemInc = DMA_MINC_ENABLE;
+   \   0000001E   0x2180             MOVS     R1,#+128
+   \   00000020   0x60E9             STR      R1,[R5, #+12]
+    146              hdma_sdio.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+   \   00000022   0x612A             STR      R2,[R5, #+16]
+    147              hdma_sdio.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+   \   00000024   0x6168             STR      R0,[R5, #+20]
+    148              hdma_sdio.Init.Mode = DMA_NORMAL;
+   \   00000026   0x2000             MOVS     R0,#+0
+   \   00000028   0x61A8             STR      R0,[R5, #+24]
+    149              hdma_sdio.Init.Priority = DMA_PRIORITY_LOW;
+   \   0000002A   0x61E8             STR      R0,[R5, #+28]
+    150              if (HAL_DMA_Init(&hdma_sdio) != HAL_OK)
+   \   0000002C   0x4628             MOV      R0,R5
+   \   0000002E   0x.... 0x....      BL       HAL_DMA_Init
+   \   00000032   0x2800             CMP      R0,#+0
+   \   00000034   0xD001             BEQ.N    ??SD_DMA_DIR_1
+    151              {
+    152                Error_Handler();
+   \   00000036   0x.... 0x....      BL       Error_Handler
+    153              }
+    154          		__HAL_LINKDMA(sdHandle,hdmatx,hdma_sdio);
+   \                     ??SD_DMA_DIR_1: (+1)
+   \   0000003A   0x65E5             STR      R5,[R4, #+92]
+   \   0000003C   0x626C             STR      R4,[R5, #+36]
+   \   0000003E   0xBD31             POP      {R0,R4,R5,PC}
+    155          
+    156          	}
+    157          	else
+    158          	{
+    159              /* Peripheral DMA init*/
+    160              hdma_sdio.Instance = DMA2_Channel4;
+    161              hdma_sdio.Init.Direction = DMA_PERIPH_TO_MEMORY;
+   \                     ??SD_DMA_DIR_0: (+1)
+   \   00000040   0x2100             MOVS     R1,#+0
+   \   00000042   0x6069             STR      R1,[R5, #+4]
+    162              hdma_sdio.Init.PeriphInc = DMA_PINC_DISABLE;
+   \   00000044   0x60A9             STR      R1,[R5, #+8]
+    163              hdma_sdio.Init.MemInc = DMA_MINC_ENABLE;
+   \   00000046   0x2180             MOVS     R1,#+128
+   \   00000048   0x60E9             STR      R1,[R5, #+12]
+    164              hdma_sdio.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+   \   0000004A   0x612A             STR      R2,[R5, #+16]
+    165              hdma_sdio.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+   \   0000004C   0x6168             STR      R0,[R5, #+20]
+    166              hdma_sdio.Init.Mode = DMA_NORMAL;
+   \   0000004E   0x2000             MOVS     R0,#+0
+   \   00000050   0x61A8             STR      R0,[R5, #+24]
+    167              hdma_sdio.Init.Priority = DMA_PRIORITY_LOW;
+   \   00000052   0x61E8             STR      R0,[R5, #+28]
+    168              if (HAL_DMA_Init(&hdma_sdio) != HAL_OK)
+   \   00000054   0x4628             MOV      R0,R5
+   \   00000056   0x.... 0x....      BL       HAL_DMA_Init
+   \   0000005A   0x2800             CMP      R0,#+0
+   \   0000005C   0xD001             BEQ.N    ??SD_DMA_DIR_2
+    169              {
+    170                Error_Handler();
+   \   0000005E   0x.... 0x....      BL       Error_Handler
+    171              } 
+    172          		__HAL_LINKDMA(sdHandle,hdmarx,hdma_sdio);
+   \                     ??SD_DMA_DIR_2: (+1)
+   \   00000062   0x65A5             STR      R5,[R4, #+88]
+   \   00000064   0x626C             STR      R4,[R5, #+36]
+    173          	}
+    174          }
+   \   00000066   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    175          
+
+   \                                 In section .text, align 2, keep-with-next
+    176          void HAL_SD_MspDeInit(SD_HandleTypeDef* sdHandle)
+    177          {
+   \                     HAL_SD_MspDeInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    178          
+    179            if(sdHandle->Instance==SDIO)
+   \   00000004   0x6820             LDR      R0,[R4, #+0]
+   \   00000006   0x....             LDR.N    R1,??DataTable3_1  ;; 0x40018000
+   \   00000008   0x4288             CMP      R0,R1
+   \   0000000A   0xD118             BNE.N    ??HAL_SD_MspDeInit_0
+    180            {
+    181            /* USER CODE BEGIN SDIO_MspDeInit 0 */
+    182          
+    183            /* USER CODE END SDIO_MspDeInit 0 */
+    184              /* Peripheral clock disable */
+    185              __HAL_RCC_SDIO_CLK_DISABLE();
+   \   0000000C   0x....             LDR.N    R0,??DataTable3_2  ;; 0x40021014
+   \   0000000E   0x6801             LDR      R1,[R0, #+0]
+   \   00000010   0xF421 0x6180      BIC      R1,R1,#0x400
+   \   00000014   0x6001             STR      R1,[R0, #+0]
+    186            
+    187              /**SDIO GPIO Configuration    
+    188              PC8     ------> SDIO_D0
+    189              PC9     ------> SDIO_D1
+    190              PC10     ------> SDIO_D2
+    191              PC11     ------> SDIO_D3
+    192              PC12     ------> SDIO_CK
+    193              PD2     ------> SDIO_CMD 
+    194              */
+    195              HAL_GPIO_DeInit(GPIOC, GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11 
+    196                                    |GPIO_PIN_12);
+   \   00000016   0xF44F 0x51F8      MOV      R1,#+7936
+   \   0000001A   0x....             LDR.N    R0,??DataTable3_3  ;; 0x40011000
+   \   0000001C   0x.... 0x....      BL       HAL_GPIO_DeInit
+    197          
+    198              HAL_GPIO_DeInit(GPIOD, GPIO_PIN_2);
+   \   00000020   0x2104             MOVS     R1,#+4
+   \   00000022   0x....             LDR.N    R0,??DataTable3_4  ;; 0x40011400
+   \   00000024   0x.... 0x....      BL       HAL_GPIO_DeInit
+    199          
+    200              /* Peripheral DMA DeInit*/
+    201              HAL_DMA_DeInit(sdHandle->hdmarx);
+   \   00000028   0x6DA0             LDR      R0,[R4, #+88]
+   \   0000002A   0x.... 0x....      BL       HAL_DMA_DeInit
+    202              HAL_DMA_DeInit(sdHandle->hdmatx);
+   \   0000002E   0x6DE0             LDR      R0,[R4, #+92]
+   \   00000030   0x.... 0x....      BL       HAL_DMA_DeInit
+    203          
+    204              /* Peripheral interrupt Deinit*/
+    205              HAL_NVIC_DisableIRQ(SDIO_IRQn);
+   \   00000034   0x2031             MOVS     R0,#+49
+   \   00000036   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000003A   0x.... 0x....      B.W      HAL_NVIC_DisableIRQ
+    206          
+    207            }
+    208            /* USER CODE BEGIN SDIO_MspDeInit 1 */
+    209          
+    210            /* USER CODE END SDIO_MspDeInit 1 */
+    211          } 
+   \                     ??HAL_SD_MspDeInit_0: (+1)
+   \   0000003E   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     hsd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x40018000         DC32     0x40018000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x40021014         DC32     0x40021014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \   00000000   0x40011000         DC32     0x40011000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \   00000000   0x40011400         DC32     0x40011400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \   00000000   0x........         DC32     hdma_sdio
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \   00000000   0x40020444         DC32     0x40020444
+    212          
+    213          /* USER CODE BEGIN 1 */
+    214          
+    215          /* USER CODE END 1 */
+    216          
+    217          /**
+    218            * @}
+    219            */
+    220          
+    221          /**
+    222            * @}
+    223            */
+    224          
+    225          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   HAL_SD_MspDeInit
+         8   -> HAL_DMA_DeInit
+         8   -> HAL_GPIO_DeInit
+         0   -> HAL_NVIC_DisableIRQ
+      24   HAL_SD_MspInit
+        24   -> Error_Handler
+        24   -> HAL_DMA_Init
+        24   -> HAL_GPIO_Init
+        24   -> HAL_NVIC_EnableIRQ
+        24   -> HAL_NVIC_SetPriority
+       0   MX_SDIO_SD_Init
+      16   SD_DMA_DIR
+        16   -> Error_Handler
+        16   -> HAL_DMA_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+      64  HAL_SD_MspDeInit
+     142  HAL_SD_MspInit
+      24  MX_SDIO_SD_Init
+      88  SDCardInfo
+     104  SD_DMA_DIR
+      56  hdma_sdio
+      96  hsd
+
+ 
+ 240 bytes in section .bss
+ 362 bytes in section .text
+ 
+ 362 bytes of CODE memory
+ 240 bytes of DATA memory
+
+Errors: none
+Warnings: none

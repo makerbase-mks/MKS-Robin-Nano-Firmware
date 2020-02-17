@@ -1,0 +1,531 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:28
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\fsmc.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\fsmc.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\fsmc.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\fsmc.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\fsmc.c
+      1          /**
+      2            ******************************************************************************
+      3            * File Name          : FSMC.c
+      4            * Description        : This file provides code for the configuration
+      5            *                      of the FSMC peripheral.
+      6            ******************************************************************************
+      7            *
+      8            * Copyright (c) 2018 STMicroelectronics International N.V. 
+      9            * All rights reserved.
+     10            *
+     11            * Redistribution and use in source and binary forms, with or without 
+     12            * modification, are permitted, provided that the following conditions are met:
+     13            *
+     14            * 1. Redistribution of source code must retain the above copyright notice, 
+     15            *    this list of conditions and the following disclaimer.
+     16            * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17            *    this list of conditions and the following disclaimer in the documentation
+     18            *    and/or other materials provided with the distribution.
+     19            * 3. Neither the name of STMicroelectronics nor the names of other 
+     20            *    contributors to this software may be used to endorse or promote products 
+     21            *    derived from this software without specific written permission.
+     22            * 4. This software, including modifications and/or derivative works of this 
+     23            *    software, must execute solely and exclusively on microcontroller or
+     24            *    microprocessor devices manufactured by or for STMicroelectronics.
+     25            * 5. Redistribution and use of this software other than as permitted under 
+     26            *    this license is void and will automatically terminate your rights under 
+     27            *    this license. 
+     28            *
+     29            * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
+     30            * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
+     31            * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+     32            * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+     33            * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+     34            * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+     35            * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     36            * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+     37            * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+     38            * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+     39            * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+     40            * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     41            *
+     42            ******************************************************************************
+     43            */
+     44          /* Includes ------------------------------------------------------------------*/
+     45          #include "fsmc.h"
+     46          
+     47          #include "gpio.h"
+     48          
+     49          /* USER CODE BEGIN 0 */
+     50          
+     51          /* USER CODE END 0 */
+     52          
+
+   \                                 In section .bss, align 4
+     53          SRAM_HandleTypeDef hsram1;
+   \                     hsram1:
+   \   00000000                      DS8 68
+     54          
+     55          /* FSMC initialization function */
+
+   \                                 In section .text, align 2, keep-with-next
+     56          void MX_FSMC_Init(void)
+     57          {
+   \                     MX_FSMC_Init: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB087             SUB      SP,SP,#+28
+     58            FSMC_NORSRAM_TimingTypeDef Timing;
+     59          
+     60            /** Perform the SRAM1 memory initialization sequence
+     61            */
+     62            hsram1.Instance = FSMC_NORSRAM_DEVICE;
+   \   00000004   0x....             LDR.N    R0,??DataTable2
+   \   00000006   0xF04F 0x4120      MOV      R1,#-1610612736
+   \   0000000A   0x6001             STR      R1,[R0, #+0]
+     63            hsram1.Extended = FSMC_NORSRAM_EXTENDED_DEVICE;
+   \   0000000C   0x....             LDR.N    R1,??DataTable2_1  ;; 0xa0000104
+   \   0000000E   0x6041             STR      R1,[R0, #+4]
+     64            /* hsram1.Init */
+     65            hsram1.Init.NSBank = FSMC_NORSRAM_BANK1;
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x6081             STR      R1,[R0, #+8]
+     66            hsram1.Init.DataAddressMux = FSMC_DATA_ADDRESS_MUX_DISABLE;
+   \   00000014   0x60C1             STR      R1,[R0, #+12]
+     67            hsram1.Init.MemoryType = FSMC_MEMORY_TYPE_SRAM;
+   \   00000016   0x6101             STR      R1,[R0, #+16]
+     68            hsram1.Init.MemoryDataWidth = FSMC_NORSRAM_MEM_BUS_WIDTH_16;
+   \   00000018   0x2110             MOVS     R1,#+16
+   \   0000001A   0x6141             STR      R1,[R0, #+20]
+     69            hsram1.Init.BurstAccessMode = FSMC_BURST_ACCESS_MODE_DISABLE;
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x6181             STR      R1,[R0, #+24]
+     70            hsram1.Init.WaitSignalPolarity = FSMC_WAIT_SIGNAL_POLARITY_LOW;
+   \   00000020   0x61C1             STR      R1,[R0, #+28]
+     71            hsram1.Init.WrapMode = FSMC_WRAP_MODE_DISABLE;
+   \   00000022   0x6201             STR      R1,[R0, #+32]
+     72            hsram1.Init.WaitSignalActive = FSMC_WAIT_TIMING_BEFORE_WS;
+   \   00000024   0x6241             STR      R1,[R0, #+36]
+     73            hsram1.Init.WriteOperation = FSMC_WRITE_OPERATION_ENABLE;
+   \   00000026   0xF44F 0x5180      MOV      R1,#+4096
+   \   0000002A   0x6281             STR      R1,[R0, #+40]
+     74            hsram1.Init.WaitSignal = FSMC_WAIT_SIGNAL_DISABLE;
+   \   0000002C   0x2100             MOVS     R1,#+0
+   \   0000002E   0x62C1             STR      R1,[R0, #+44]
+     75            hsram1.Init.ExtendedMode = FSMC_EXTENDED_MODE_DISABLE;
+   \   00000030   0x6301             STR      R1,[R0, #+48]
+     76            hsram1.Init.AsynchronousWait = FSMC_ASYNCHRONOUS_WAIT_DISABLE;
+   \   00000032   0x6341             STR      R1,[R0, #+52]
+     77            hsram1.Init.WriteBurst = FSMC_WRITE_BURST_DISABLE;
+   \   00000034   0x6381             STR      R1,[R0, #+56]
+     78            /* Timing */
+     79            Timing.AddressSetupTime = 15;
+   \   00000036   0x210F             MOVS     R1,#+15
+   \   00000038   0x9100             STR      R1,[SP, #+0]
+     80            Timing.AddressHoldTime = 15;
+   \   0000003A   0x9101             STR      R1,[SP, #+4]
+     81            Timing.DataSetupTime = 255;
+   \   0000003C   0x21FF             MOVS     R1,#+255
+   \   0000003E   0x9102             STR      R1,[SP, #+8]
+     82            Timing.BusTurnAroundDuration = 15;
+   \   00000040   0x210F             MOVS     R1,#+15
+   \   00000042   0x9103             STR      R1,[SP, #+12]
+     83            Timing.CLKDivision = 16;
+   \   00000044   0x2110             MOVS     R1,#+16
+   \   00000046   0x9104             STR      R1,[SP, #+16]
+     84            Timing.DataLatency = 17;
+   \   00000048   0x2111             MOVS     R1,#+17
+   \   0000004A   0x9105             STR      R1,[SP, #+20]
+     85            Timing.AccessMode = FSMC_ACCESS_MODE_A;
+   \   0000004C   0x2100             MOVS     R1,#+0
+   \   0000004E   0x9106             STR      R1,[SP, #+24]
+     86            /* ExtTiming */
+     87          
+     88            if (HAL_SRAM_Init(&hsram1, &Timing, NULL) != HAL_OK)
+   \   00000050   0x460A             MOV      R2,R1
+   \   00000052   0xA900             ADD      R1,SP,#+0
+   \   00000054   0x.... 0x....      BL       HAL_SRAM_Init
+   \   00000058   0x2800             CMP      R0,#+0
+   \   0000005A   0xD001             BEQ.N    ??MX_FSMC_Init_0
+     89            {
+     90              Error_Handler();
+   \   0000005C   0x.... 0x....      BL       Error_Handler
+     91            }
+     92          
+     93            /** Disconnect NADV
+     94            */
+     95          
+     96            __HAL_AFIO_FSMCNADV_DISCONNECTED();
+   \                     ??MX_FSMC_Init_0: (+1)
+   \   00000060   0x....             LDR.N    R0,??DataTable2_2  ;; 0x4001001c
+   \   00000062   0x6801             LDR      R1,[R0, #+0]
+   \   00000064   0xF441 0x6180      ORR      R1,R1,#0x400
+   \   00000068   0x6001             STR      R1,[R0, #+0]
+     97          
+     98          }
+   \   0000006A   0xB007             ADD      SP,SP,#+28
+   \   0000006C   0xBD00             POP      {PC}             ;; return
+     99          
+
+   \                                 In section .bss, align 4
+    100          static uint32_t FSMC_Initialized = 0;
+   \                     FSMC_Initialized:
+   \   00000000                      DS8 4
+    101          
+
+   \                                 In section .text, align 2, keep-with-next
+    102          static void HAL_FSMC_MspInit(void){
+    103            /* USER CODE BEGIN FSMC_MspInit 0 */
+    104          
+    105            /* USER CODE END FSMC_MspInit 0 */
+    106            GPIO_InitTypeDef GPIO_InitStruct;
+    107            if (FSMC_Initialized) {
+   \                     HAL_FSMC_MspInit: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2_3
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xD000             BEQ.N    ??HAL_FSMC_MspInit_0
+   \   00000008   0x4770             BX       LR
+    108              return;
+    109            }
+    110            FSMC_Initialized = 1;
+   \                     ??HAL_FSMC_MspInit_0: (+1)
+   \   0000000A   0xB500             PUSH     {LR}
+   \   0000000C   0xB085             SUB      SP,SP,#+20
+   \   0000000E   0x2101             MOVS     R1,#+1
+   \   00000010   0x6001             STR      R1,[R0, #+0]
+    111            /* Peripheral clock enable */
+    112            __HAL_RCC_FSMC_CLK_ENABLE();
+   \   00000012   0x....             LDR.N    R0,??DataTable2_4  ;; 0x40021014
+   \   00000014   0x6801             LDR      R1,[R0, #+0]
+   \   00000016   0xF441 0x7180      ORR      R1,R1,#0x100
+   \   0000001A   0x6001             STR      R1,[R0, #+0]
+   \   0000001C   0x6800             LDR      R0,[R0, #+0]
+   \   0000001E   0xF400 0x7080      AND      R0,R0,#0x100
+   \   00000022   0x9000             STR      R0,[SP, #+0]
+   \   00000024   0x9800             LDR      R0,[SP, #+0]
+    113            
+    114            /** FSMC GPIO Configuration  
+    115            PE7   ------> FSMC_D4
+    116            PE8   ------> FSMC_D5
+    117            PE9   ------> FSMC_D6
+    118            PE10   ------> FSMC_D7
+    119            PE11   ------> FSMC_D8
+    120            PE12   ------> FSMC_D9
+    121            PE13   ------> FSMC_D10
+    122            PE14   ------> FSMC_D11
+    123            PE15   ------> FSMC_D12
+    124            PD8   ------> FSMC_D13
+    125            PD9   ------> FSMC_D14
+    126            PD10   ------> FSMC_D15
+    127            PD11   ------> FSMC_A16
+    128            PD14   ------> FSMC_D0
+    129            PD15   ------> FSMC_D1
+    130            PD0   ------> FSMC_D2
+    131            PD1   ------> FSMC_D3
+    132            PD4   ------> FSMC_NOE
+    133            PD5   ------> FSMC_NWE
+    134            PD7   ------> FSMC_NE1
+    135            */
+    136            /* GPIO_InitStruct */
+    137            GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10 
+    138                                    |GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14 
+    139                                    |GPIO_PIN_15;
+   \   00000026   0xF64F 0x7080      MOVW     R0,#+65408
+   \   0000002A   0x9001             STR      R0,[SP, #+4]
+    140            GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \   0000002C   0x2002             MOVS     R0,#+2
+   \   0000002E   0x9002             STR      R0,[SP, #+8]
+    141            GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+   \   00000030   0x2003             MOVS     R0,#+3
+   \   00000032   0x9004             STR      R0,[SP, #+16]
+    142          
+    143            HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+   \   00000034   0xA901             ADD      R1,SP,#+4
+   \   00000036   0x....             LDR.N    R0,??DataTable2_5  ;; 0x40011800
+   \   00000038   0x.... 0x....      BL       HAL_GPIO_Init
+    144          
+    145            /* GPIO_InitStruct */
+    146            GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11 
+    147                                    |GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_0|GPIO_PIN_1 
+    148                                    |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_7;
+   \   0000003C   0xF64C 0x70B3      MOVW     R0,#+53171
+   \   00000040   0x9001             STR      R0,[SP, #+4]
+    149            GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \   00000042   0x2002             MOVS     R0,#+2
+   \   00000044   0x9002             STR      R0,[SP, #+8]
+    150            GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+   \   00000046   0x2003             MOVS     R0,#+3
+   \   00000048   0x9004             STR      R0,[SP, #+16]
+    151          
+    152            HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+   \   0000004A   0xA901             ADD      R1,SP,#+4
+   \   0000004C   0x....             LDR.N    R0,??DataTable2_6  ;; 0x40011400
+   \   0000004E   0x.... 0x....      BL       HAL_GPIO_Init
+    153          
+    154            /* USER CODE BEGIN FSMC_MspInit 1 */
+    155          
+    156            /* USER CODE END FSMC_MspInit 1 */
+    157          }
+   \   00000052   0xB005             ADD      SP,SP,#+20
+   \   00000054   0xBD00             POP      {PC}             ;; return
+    158          
+
+   \                                 In section .text, align 2, keep-with-next
+    159          void HAL_SRAM_MspInit(SRAM_HandleTypeDef* sramHandle){
+    160            /* USER CODE BEGIN SRAM_MspInit 0 */
+    161          
+    162            /* USER CODE END SRAM_MspInit 0 */
+    163            HAL_FSMC_MspInit();
+   \                     HAL_SRAM_MspInit: (+1)
+   \   00000000   0x....             B.N      HAL_FSMC_MspInit
+    164            /* USER CODE BEGIN SRAM_MspInit 1 */
+    165          
+    166            /* USER CODE END SRAM_MspInit 1 */
+    167          }
+    168          
+
+   \                                 In section .bss, align 4
+    169          static uint32_t FSMC_DeInitialized = 0;
+   \                     FSMC_DeInitialized:
+   \   00000000                      DS8 4
+    170          
+
+   \                                 In section .text, align 2, keep-with-next
+    171          static void HAL_FSMC_MspDeInit(void){
+   \                     HAL_FSMC_MspDeInit: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    172            /* USER CODE BEGIN FSMC_MspDeInit 0 */
+    173          
+    174            /* USER CODE END FSMC_MspDeInit 0 */
+    175            if (FSMC_DeInitialized) {
+   \   00000002   0x....             LDR.N    R0,??DataTable2_7
+   \   00000004   0x6801             LDR      R1,[R0, #+0]
+   \   00000006   0x2900             CMP      R1,#+0
+   \   00000008   0xD112             BNE.N    ??HAL_FSMC_MspDeInit_0
+    176              return;
+    177            }
+    178            FSMC_DeInitialized = 1;
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x6001             STR      R1,[R0, #+0]
+    179            /* Peripheral clock enable */
+    180            __HAL_RCC_FSMC_CLK_DISABLE();
+   \   0000000E   0x....             LDR.N    R0,??DataTable2_4  ;; 0x40021014
+   \   00000010   0x6801             LDR      R1,[R0, #+0]
+   \   00000012   0xF421 0x7180      BIC      R1,R1,#0x100
+   \   00000016   0x6001             STR      R1,[R0, #+0]
+    181            
+    182            /** FSMC GPIO Configuration  
+    183            PE7   ------> FSMC_D4
+    184            PE8   ------> FSMC_D5
+    185            PE9   ------> FSMC_D6
+    186            PE10   ------> FSMC_D7
+    187            PE11   ------> FSMC_D8
+    188            PE12   ------> FSMC_D9
+    189            PE13   ------> FSMC_D10
+    190            PE14   ------> FSMC_D11
+    191            PE15   ------> FSMC_D12
+    192            PD8   ------> FSMC_D13
+    193            PD9   ------> FSMC_D14
+    194            PD10   ------> FSMC_D15
+    195            PD11   ------> FSMC_A16
+    196            PD14   ------> FSMC_D0
+    197            PD15   ------> FSMC_D1
+    198            PD0   ------> FSMC_D2
+    199            PD1   ------> FSMC_D3
+    200            PD4   ------> FSMC_NOE
+    201            PD5   ------> FSMC_NWE
+    202            PD7   ------> FSMC_NE1
+    203            */
+    204          
+    205            HAL_GPIO_DeInit(GPIOE, GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10 
+    206                                    |GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14 
+    207                                    |GPIO_PIN_15);
+   \   00000018   0xF64F 0x7180      MOVW     R1,#+65408
+   \   0000001C   0x....             LDR.N    R0,??DataTable2_5  ;; 0x40011800
+   \   0000001E   0x.... 0x....      BL       HAL_GPIO_DeInit
+    208          
+    209            HAL_GPIO_DeInit(GPIOD, GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11 
+    210                                    |GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_0|GPIO_PIN_1 
+    211                                    |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_7);
+   \   00000022   0xF64C 0x71B3      MOVW     R1,#+53171
+   \   00000026   0x....             LDR.N    R0,??DataTable2_6  ;; 0x40011400
+   \   00000028   0xE8BD 0x4004      POP      {R2,LR}
+   \   0000002C   0x.... 0x....      B.W      HAL_GPIO_DeInit
+   \                     ??HAL_FSMC_MspDeInit_0: (+1)
+   \   00000030   0xBD01             POP      {R0,PC}          ;; return
+    212          
+    213            /* USER CODE BEGIN FSMC_MspDeInit 1 */
+    214          
+    215            /* USER CODE END FSMC_MspDeInit 1 */
+    216          }
+    217          
+
+   \                                 In section .text, align 2, keep-with-next
+    218          void HAL_SRAM_MspDeInit(SRAM_HandleTypeDef* sramHandle){
+    219            /* USER CODE BEGIN SRAM_MspDeInit 0 */
+    220          
+    221            /* USER CODE END SRAM_MspDeInit 0 */
+    222            HAL_FSMC_MspDeInit();
+   \                     HAL_SRAM_MspDeInit: (+1)
+   \   00000000   0x....             B.N      HAL_FSMC_MspDeInit
+    223            /* USER CODE BEGIN SRAM_MspDeInit 1 */
+    224          
+    225            /* USER CODE END SRAM_MspDeInit 1 */
+    226          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     hsram1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0xA0000104         DC32     0xa0000104
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x4001001C         DC32     0x4001001c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \   00000000   0x........         DC32     FSMC_Initialized
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \   00000000   0x40021014         DC32     0x40021014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \   00000000   0x40011800         DC32     0x40011800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \   00000000   0x40011400         DC32     0x40011400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \   00000000   0x........         DC32     FSMC_DeInitialized
+    227          /**
+    228            * @}
+    229            */
+    230          
+    231          /**
+    232            * @}
+    233            */
+    234          
+    235          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   HAL_FSMC_MspDeInit
+         0   -> HAL_GPIO_DeInit
+         8   -> HAL_GPIO_DeInit
+      24   HAL_FSMC_MspInit
+        24   -> HAL_GPIO_Init
+       0   HAL_SRAM_MspDeInit
+         0   -> HAL_FSMC_MspDeInit
+       0   HAL_SRAM_MspInit
+         0   -> HAL_FSMC_MspInit
+      32   MX_FSMC_Init
+        32   -> Error_Handler
+        32   -> HAL_SRAM_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  FSMC_DeInitialized
+       4  FSMC_Initialized
+      50  HAL_FSMC_MspDeInit
+      86  HAL_FSMC_MspInit
+       2  HAL_SRAM_MspDeInit
+       2  HAL_SRAM_MspInit
+     110  MX_FSMC_Init
+      68  hsram1
+
+ 
+  76 bytes in section .bss
+ 282 bytes in section .text
+ 
+ 282 bytes of CODE memory
+  76 bytes of DATA memory
+
+Errors: none
+Warnings: none

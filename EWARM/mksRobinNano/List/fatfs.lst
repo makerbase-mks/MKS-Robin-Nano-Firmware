@@ -1,0 +1,219 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:25
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\fatfs.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\fatfs.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\fatfs.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\fatfs.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\fatfs.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file   fatfs.c
+      4            * @brief  Code for fatfs applications
+      5            ******************************************************************************
+      6            *
+      7            * Copyright (c) 2018 STMicroelectronics International N.V. 
+      8            * All rights reserved.
+      9            *
+     10            * Redistribution and use in source and binary forms, with or without 
+     11            * modification, are permitted, provided that the following conditions are met:
+     12            *
+     13            * 1. Redistribution of source code must retain the above copyright notice, 
+     14            *    this list of conditions and the following disclaimer.
+     15            * 2. Redistributions in binary form must reproduce the above copyright notice,
+     16            *    this list of conditions and the following disclaimer in the documentation
+     17            *    and/or other materials provided with the distribution.
+     18            * 3. Neither the name of STMicroelectronics nor the names of other 
+     19            *    contributors to this software may be used to endorse or promote products 
+     20            *    derived from this software without specific written permission.
+     21            * 4. This software, including modifications and/or derivative works of this 
+     22            *    software, must execute solely and exclusively on microcontroller or
+     23            *    microprocessor devices manufactured by or for STMicroelectronics.
+     24            * 5. Redistribution and use of this software other than as permitted under 
+     25            *    this license is void and will automatically terminate your rights under 
+     26            *    this license. 
+     27            *
+     28            * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
+     29            * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
+     30            * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+     31            * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+     32            * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+     33            * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+     34            * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     35            * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+     36            * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+     37            * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+     38            * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+     39            * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     40            *
+     41            ******************************************************************************
+     42            */
+     43          
+     44          #include "fatfs.h"
+     45          
+
+   \                                 In section .data, align 4
+     46          uint8_t retSD;    /* Return value for SD */
+   \                     retSD:
+   \   00000000   0x00               DC8 0
+   \   00000001   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+     47          char SD_Path[4]="1:/";  /* SD logical drive path */
+   \                     SD_Path:
+   \   00000004   0x31 0x3A          DC8 "1:/"
+   \              0x2F 0x00    
+     48          
+     49          /* USER CODE BEGIN Variables */
+     50          
+     51          /* USER CODE END Variables */    
+     52          
+
+   \                                 In section .text, align 2, keep-with-next
+     53          void MX_FATFS_Init(void) 
+     54          {
+   \                     MX_FATFS_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     55            /*## FatFS: Link the SD driver ###########################*/
+     56            //retSD = FATFS_LinkDriver(&SD_Driver, SD_Path);
+     57          	retSD = FATFS_LinkDriver_sd(&SD_Driver, SD_Path);
+   \   00000002   0x....             LDR.N    R4,??DataTable0
+   \   00000004   0x1D21             ADDS     R1,R4,#+4
+   \   00000006   0x....             LDR.N    R0,??DataTable0_1
+   \   00000008   0x.... 0x....      BL       FATFS_LinkDriver_sd
+   \   0000000C   0x7020             STRB     R0,[R4, #+0]
+     58          
+     59            /* USER CODE BEGIN Init */
+     60            /* additional user code for init */     
+     61            /* USER CODE END Init */
+     62          }
+   \   0000000E   0xBD10             POP      {R4,PC}          ;; return
+     63          
+     64          /**
+     65            * @brief  Gets Time from RTC 
+     66            * @param  None
+     67            * @retval Time in DWORD
+     68            */
+
+   \                                 In section .text, align 2, keep-with-next
+     69          DWORD get_fattime(void)
+     70          {
+     71            /* USER CODE BEGIN get_fattime */
+     72            return 0;
+   \                     get_fattime: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+     73            /* USER CODE END get_fattime */  
+     74          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     retSD
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \   00000000   0x........         DC32     SD_Driver
+     75          
+     76          /* USER CODE BEGIN Application */
+     77               
+     78          /* USER CODE END Application */
+     79          
+     80          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   MX_FATFS_Init
+         8   -> FATFS_LinkDriver_sd
+       0   get_fattime
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+      16  MX_FATFS_Init
+       4  get_fattime
+       8  retSD
+          SD_Path
+
+ 
+  8 bytes in section .data
+ 28 bytes in section .text
+ 
+ 28 bytes of CODE memory
+  8 bytes of DATA memory
+
+Errors: none
+Warnings: none

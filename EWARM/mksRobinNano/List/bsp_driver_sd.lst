@@ -1,0 +1,654 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:02
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\bsp_driver_sd.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\bsp_driver_sd.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\bsp_driver_sd.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\bsp_driver_sd.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\bsp_driver_sd.c
+      1          /**
+      2           ******************************************************************************
+      3            * @file    bsp_driver_sd.c for F1 (based on stm3210e_eval_sd.c)
+      4            * @brief   This file includes a generic uSD card driver.
+      5            ******************************************************************************
+      6            *
+      7            * Copyright (c) 2018 STMicroelectronics International N.V. 
+      8            * All rights reserved.
+      9            *
+     10            * Redistribution and use in source and binary forms, with or without 
+     11            * modification, are permitted, provided that the following conditions are met:
+     12            *
+     13            * 1. Redistribution of source code must retain the above copyright notice, 
+     14            *    this list of conditions and the following disclaimer.
+     15            * 2. Redistributions in binary form must reproduce the above copyright notice,
+     16            *    this list of conditions and the following disclaimer in the documentation
+     17            *    and/or other materials provided with the distribution.
+     18            * 3. Neither the name of STMicroelectronics nor the names of other 
+     19            *    contributors to this software may be used to endorse or promote products 
+     20            *    derived from this software without specific written permission.
+     21            * 4. This software, including modifications and/or derivative works of this 
+     22            *    software, must execute solely and exclusively on microcontroller or
+     23            *    microprocessor devices manufactured by or for STMicroelectronics.
+     24            * 5. Redistribution and use of this software other than as permitted under 
+     25            *    this license is void and will automatically terminate your rights under 
+     26            *    this license. 
+     27            *
+     28            * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
+     29            * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
+     30            * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+     31            * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+     32            * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+     33            * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+     34            * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     35            * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+     36            * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+     37            * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+     38            * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+     39            * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     40            *
+     41            ******************************************************************************
+     42            */
+     43          #define BUS_4BITS 1
+     44          /* USER CODE BEGIN 0 */
+     45          /* Includes ------------------------------------------------------------------*/
+     46          #include "bsp_driver_sd.h"
+     47          
+     48          /* Extern variables ---------------------------------------------------------*/ 
+     49            
+     50          extern SD_HandleTypeDef hsd;
+     51          extern HAL_SD_CardInfoTypedef SDCardInfo; 
+     52          
+     53          /**
+     54            * @brief  Initializes the SD card device.
+     55            * @retval SD status
+     56            */
+
+   \                                 In section .text, align 2, keep-with-next
+     57          uint8_t BSP_SD_Init(void)
+     58          {
+   \                     BSP_SD_Init: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     59            uint8_t sd_state = MSD_OK;
+     60            /* Check if the SD card is plugged in the slot */
+     61            if (BSP_SD_IsDetected() != SD_PRESENT)
+   \   00000002   0x.... 0x....      BL       BSP_SD_IsDetected
+   \   00000006   0x2801             CMP      R0,#+1
+   \   00000008   0xD001             BEQ.N    ??BSP_SD_Init_0
+     62            {
+     63              return MSD_ERROR;
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0xBD32             POP      {R1,R4,R5,PC}
+     64            }
+     65            /* HAL SD initialization */
+     66            sd_state = HAL_SD_Init(&hsd, &SDCardInfo);
+   \                     ??BSP_SD_Init_0: (+1)
+   \   0000000E   0x....             LDR.N    R4,??DataTable10
+   \   00000010   0x....             LDR.N    R1,??DataTable10_1
+   \   00000012   0x4620             MOV      R0,R4
+   \   00000014   0x.... 0x....      BL       HAL_SD_Init
+   \   00000018   0x4605             MOV      R5,R0
+     67          #ifdef BUS_4BITS
+     68            /* Configure SD Bus width */
+     69            if (sd_state == MSD_OK)
+   \   0000001A   0xB2ED             UXTB     R5,R5
+   \   0000001C   0x2D00             CMP      R5,#+0
+   \   0000001E   0xD107             BNE.N    ??BSP_SD_Init_1
+     70            {
+     71              /* Enable wide operation */
+     72              if (HAL_SD_WideBusOperation_Config(&hsd, SDIO_BUS_WIDE_4B) != SD_OK)
+   \   00000020   0xF44F 0x6100      MOV      R1,#+2048
+   \   00000024   0x4620             MOV      R0,R4
+   \   00000026   0x.... 0x....      BL       HAL_SD_WideBusOperation_Config
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD000             BEQ.N    ??BSP_SD_Init_1
+     73              {
+     74                sd_state = MSD_ERROR;
+   \   0000002E   0x2501             MOVS     R5,#+1
+     75              }
+     76              else
+     77              {
+     78                sd_state = MSD_OK;
+     79              }
+     80            }
+     81          #endif
+     82            return sd_state;
+   \                     ??BSP_SD_Init_1: (+1)
+   \   00000030   0x4628             MOV      R0,R5
+   \   00000032   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     83          }
+     84          
+     85          /**
+     86            * @brief  Configures Interrupt mode for SD detection pin.
+     87            * @retval Returns 0 in success otherwise 1. 
+     88            */
+
+   \                                 In section .text, align 2, keep-with-next
+     89          uint8_t BSP_SD_ITConfig(void)
+     90          {  
+     91            /* TBI: add user code here depending on the hardware configuration used */
+     92            
+     93            return (uint8_t)0;
+   \                     BSP_SD_ITConfig: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+     94          }
+     95          
+     96          /** @brief  SD detect IT treatment
+     97            */
+
+   \                                 In section .text, align 2, keep-with-next
+     98          void BSP_SD_DetectIT(void)
+     99          {
+    100            /* SD detect IT callback */
+    101            //BSP_SD_DetectCallback();
+    102            
+    103          }
+   \                     BSP_SD_DetectIT: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    104          
+    105          /** @brief  SD detect IT detection callback
+    106            */
+
+   \                                 In section .text, align 2, keep-with-next
+    107          __weak void BSP_SD_DetectCallback(void)
+    108          {
+    109            /* NOTE: This function Should not be modified, when the callback is needed,
+    110               the BSP_SD_DetectCallback could be implemented in the user file
+    111            */ 
+    112            
+    113          }
+   \                     BSP_SD_DetectCallback: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    114          
+    115          /**
+    116            * @brief  Reads block(s) from a specified address in an SD card, in polling mode.
+    117            * @param  pData: Pointer to the buffer that will contain the data to transmit
+    118            * @param  ReadAddr: Address from where data is to be read  
+    119            * @param  BlockSize: SD card data block size, that should be 512
+    120            * @param  NumOfBlocks: Number of SD blocks to read 
+    121            * @retval SD status
+    122            */
+
+   \                                 In section .text, align 2, keep-with-next
+    123          uint8_t BSP_SD_ReadBlocks(uint32_t *pData, uint64_t ReadAddr, uint32_t BlockSize, uint32_t NumOfBlocks)
+    124          {
+   \                     BSP_SD_ReadBlocks: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+    125            uint8_t sd_state;
+    126            if(HAL_SD_ReadBlocks(&hsd, pData, ReadAddr, BlockSize, NumOfBlocks) != SD_OK)
+   \   00000004   0x9905             LDR      R1,[SP, #+20]
+   \   00000006   0x9101             STR      R1,[SP, #+4]
+   \   00000008   0x9904             LDR      R1,[SP, #+16]
+   \   0000000A   0x9100             STR      R1,[SP, #+0]
+   \   0000000C   0x4601             MOV      R1,R0
+   \   0000000E   0x....             LDR.N    R0,??DataTable10
+   \   00000010   0x.... 0x....      BL       HAL_SD_ReadBlocks
+   \   00000014   0x1E40             SUBS     R0,R0,#+1
+   \   00000016   0x4180             SBCS     R0,R0,R0
+   \   00000018   0x43C0             MVNS     R0,R0
+   \   0000001A   0x0FC0             LSRS     R0,R0,#+31
+    127            {
+    128              sd_state = MSD_ERROR;
+    129            }
+    130            else
+    131            {
+    132              sd_state = MSD_OK;
+    133            }
+    134            return sd_state;  
+   \   0000001C   0xBD0E             POP      {R1-R3,PC}       ;; return
+    135          }
+    136          
+    137          /**
+    138            * @brief  Writes block(s) to a specified address in an SD card, in polling mode. 
+    139            * @param  pData: Pointer to the buffer that will contain the data to transmit
+    140            * @param  WriteAddr: Address from where data is to be written  
+    141            * @param  BlockSize: SD card data block size, that should be 512
+    142            * @param  NumOfBlocks: Number of SD blocks to write
+    143            * @retval SD status
+    144            */
+
+   \                                 In section .text, align 2, keep-with-next
+    145          uint8_t BSP_SD_WriteBlocks(uint32_t *pData, uint64_t WriteAddr, uint32_t BlockSize, uint32_t NumOfBlocks)
+    146          {
+   \                     BSP_SD_WriteBlocks: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+    147            uint8_t sd_state;
+    148            if(HAL_SD_WriteBlocks(&hsd, pData, WriteAddr, BlockSize, NumOfBlocks) != SD_OK)  
+   \   00000004   0x9905             LDR      R1,[SP, #+20]
+   \   00000006   0x9101             STR      R1,[SP, #+4]
+   \   00000008   0x9904             LDR      R1,[SP, #+16]
+   \   0000000A   0x9100             STR      R1,[SP, #+0]
+   \   0000000C   0x4601             MOV      R1,R0
+   \   0000000E   0x....             LDR.N    R0,??DataTable10
+   \   00000010   0x.... 0x....      BL       HAL_SD_WriteBlocks
+   \   00000014   0x1E40             SUBS     R0,R0,#+1
+   \   00000016   0x4180             SBCS     R0,R0,R0
+   \   00000018   0x43C0             MVNS     R0,R0
+   \   0000001A   0x0FC0             LSRS     R0,R0,#+31
+    149            {
+    150              sd_state = MSD_ERROR;
+    151            }
+    152            else
+    153            {
+    154              sd_state = MSD_OK;
+    155            }
+    156            return sd_state;  
+   \   0000001C   0xBD0E             POP      {R1-R3,PC}       ;; return
+    157          }
+    158          
+    159          /**
+    160            * @brief  Reads block(s) from a specified address in an SD card, in DMA mode.
+    161            * @param  pData: Pointer to the buffer that will contain the data to transmit
+    162            * @param  ReadAddr: Address from where data is to be read  
+    163            * @param  BlockSize: SD card data block size, that should be 512
+    164            * @param  NumOfBlocks: Number of SD blocks to read 
+    165            * @retval SD status
+    166            */
+
+   \                                 In section .text, align 2, keep-with-next
+    167          uint8_t BSP_SD_ReadBlocks_DMA(uint32_t *pData, uint64_t ReadAddr, uint32_t BlockSize, uint32_t NumOfBlocks)
+    168          {
+   \                     BSP_SD_ReadBlocks_DMA: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+    169            uint8_t sd_state = MSD_OK;
+   \   00000004   0x2400             MOVS     R4,#+0
+    170            
+    171            /* Read block(s) in DMA transfer mode */
+    172            if(HAL_SD_ReadBlocks_DMA(&hsd, pData, ReadAddr, BlockSize, NumOfBlocks) != SD_OK)  
+   \   00000006   0x....             LDR.N    R5,??DataTable10
+   \   00000008   0x9907             LDR      R1,[SP, #+28]
+   \   0000000A   0x9101             STR      R1,[SP, #+4]
+   \   0000000C   0x9906             LDR      R1,[SP, #+24]
+   \   0000000E   0x9100             STR      R1,[SP, #+0]
+   \   00000010   0x4601             MOV      R1,R0
+   \   00000012   0x4628             MOV      R0,R5
+   \   00000014   0x.... 0x....      BL       HAL_SD_ReadBlocks_DMA
+   \   00000018   0x2800             CMP      R0,#+0
+   \   0000001A   0xD000             BEQ.N    ??BSP_SD_ReadBlocks_DMA_0
+    173            {
+    174              sd_state = MSD_ERROR;
+   \   0000001C   0x2401             MOVS     R4,#+1
+    175            }
+    176            
+    177            /* Wait until transfer is complete */
+    178            if(sd_state == MSD_OK)
+   \                     ??BSP_SD_ReadBlocks_DMA_0: (+1)
+   \   0000001E   0x2C00             CMP      R4,#+0
+   \   00000020   0xD106             BNE.N    ??BSP_SD_ReadBlocks_DMA_1
+    179            {
+    180              if(HAL_SD_CheckReadOperation(&hsd, (uint32_t)SD_DATATIMEOUT) != SD_OK)  
+   \   00000022   0x....             LDR.N    R1,??DataTable10_2  ;; 0x5f5e100
+   \   00000024   0x4628             MOV      R0,R5
+   \   00000026   0x.... 0x....      BL       HAL_SD_CheckReadOperation
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD000             BEQ.N    ??BSP_SD_ReadBlocks_DMA_1
+    181              {
+    182                sd_state = MSD_ERROR;
+   \   0000002E   0x2401             MOVS     R4,#+1
+    183              }
+    184              else
+    185              {
+    186                sd_state = MSD_OK;
+    187              }
+    188            }
+    189            
+    190            return sd_state; 
+   \                     ??BSP_SD_ReadBlocks_DMA_1: (+1)
+   \   00000030   0x4620             MOV      R0,R4
+   \   00000032   0xBD3E             POP      {R1-R5,PC}       ;; return
+    191          }
+    192          
+    193          /**
+    194            * @brief  Writes block(s) to a specified address in an SD card, in DMA mode.
+    195            * @param  pData: Pointer to the buffer that will contain the data to transmit
+    196            * @param  WriteAddr: Address from where data is to be written  
+    197            * @param  BlockSize: SD card data block size, that should be 512
+    198            * @param  NumOfBlocks: Number of SD blocks to write 
+    199            * @retval SD status
+    200            */
+
+   \                                 In section .text, align 2, keep-with-next
+    201          uint8_t BSP_SD_WriteBlocks_DMA(uint32_t *pData, uint64_t WriteAddr, uint32_t BlockSize, uint32_t NumOfBlocks)
+    202          {
+   \                     BSP_SD_WriteBlocks_DMA: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+    203            uint8_t sd_state = MSD_OK;
+   \   00000004   0x2400             MOVS     R4,#+0
+    204            
+    205            /* Write block(s) in DMA transfer mode */
+    206            if(HAL_SD_WriteBlocks_DMA(&hsd, pData, WriteAddr, BlockSize, NumOfBlocks) != SD_OK)  
+   \   00000006   0x....             LDR.N    R5,??DataTable10
+   \   00000008   0x9907             LDR      R1,[SP, #+28]
+   \   0000000A   0x9101             STR      R1,[SP, #+4]
+   \   0000000C   0x9906             LDR      R1,[SP, #+24]
+   \   0000000E   0x9100             STR      R1,[SP, #+0]
+   \   00000010   0x4601             MOV      R1,R0
+   \   00000012   0x4628             MOV      R0,R5
+   \   00000014   0x.... 0x....      BL       HAL_SD_WriteBlocks_DMA
+   \   00000018   0x2800             CMP      R0,#+0
+   \   0000001A   0xD000             BEQ.N    ??BSP_SD_WriteBlocks_DMA_0
+    207            {
+    208              sd_state = MSD_ERROR;
+   \   0000001C   0x2401             MOVS     R4,#+1
+    209            }
+    210            
+    211            /* Wait until transfer is complete */
+    212            if(sd_state == MSD_OK)
+   \                     ??BSP_SD_WriteBlocks_DMA_0: (+1)
+   \   0000001E   0x2C00             CMP      R4,#+0
+   \   00000020   0xD106             BNE.N    ??BSP_SD_WriteBlocks_DMA_1
+    213            {
+    214              if(HAL_SD_CheckWriteOperation(&hsd, (uint32_t)SD_DATATIMEOUT) != SD_OK)  
+   \   00000022   0x....             LDR.N    R1,??DataTable10_2  ;; 0x5f5e100
+   \   00000024   0x4628             MOV      R0,R5
+   \   00000026   0x.... 0x....      BL       HAL_SD_CheckWriteOperation
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD000             BEQ.N    ??BSP_SD_WriteBlocks_DMA_1
+    215              {
+    216                sd_state = MSD_ERROR;
+   \   0000002E   0x2401             MOVS     R4,#+1
+    217              }
+    218              else
+    219              {
+    220                sd_state = MSD_OK;
+    221              }
+    222            }
+    223            
+    224            return sd_state; 
+   \                     ??BSP_SD_WriteBlocks_DMA_1: (+1)
+   \   00000030   0x4620             MOV      R0,R4
+   \   00000032   0xBD3E             POP      {R1-R5,PC}       ;; return
+    225          }
+    226          
+    227          /**
+    228            * @brief  Erases the specified memory area of the given SD card. 
+    229            * @param  StartAddr: Start byte address
+    230            * @param  EndAddr: End byte address
+    231            * @retval SD status
+    232            */
+
+   \                                 In section .text, align 2, keep-with-next
+    233          uint8_t BSP_SD_Erase(uint64_t StartAddr, uint64_t EndAddr)
+    234          {
+   \                     BSP_SD_Erase: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+    235            uint8_t sd_state;
+    236            if(HAL_SD_Erase(&hsd, StartAddr, EndAddr) != SD_OK)  
+   \   00000004   0xE9CD 0x2300      STRD     R2,R3,[SP, #+0]
+   \   00000008   0x4602             MOV      R2,R0
+   \   0000000A   0x460B             MOV      R3,R1
+   \   0000000C   0x....             LDR.N    R0,??DataTable10
+   \   0000000E   0x.... 0x....      BL       HAL_SD_Erase
+   \   00000012   0x1E40             SUBS     R0,R0,#+1
+   \   00000014   0x4180             SBCS     R0,R0,R0
+   \   00000016   0x43C0             MVNS     R0,R0
+   \   00000018   0x0FC0             LSRS     R0,R0,#+31
+    237            {
+    238              sd_state = MSD_ERROR;
+    239            }
+    240            else
+    241            {
+    242              sd_state = MSD_OK;
+    243            }
+    244            return sd_state;
+   \   0000001A   0xBD0E             POP      {R1-R3,PC}       ;; return
+    245          }
+    246          
+    247          /**
+    248            * @brief  Handles SD card interrupt request.
+    249            */
+
+   \                                 In section .text, align 2, keep-with-next
+    250          void BSP_SD_IRQHandler(void)
+    251          {
+    252            HAL_SD_IRQHandler(&hsd);
+   \                     BSP_SD_IRQHandler: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000002   0x.... 0x....      B.W      HAL_SD_IRQHandler
+    253          }
+    254          
+    255          /**
+    256            * @brief  Handles SD DMA Tx transfer interrupt request.
+    257            */
+
+   \                                 In section .text, align 2, keep-with-next
+    258          void BSP_SD_DMA_Tx_IRQHandler(void)
+    259          {
+    260            HAL_DMA_IRQHandler(hsd.hdmatx); 
+   \                     BSP_SD_DMA_Tx_IRQHandler: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000002   0x6DC0             LDR      R0,[R0, #+92]
+   \   00000004   0x.... 0x....      B.W      HAL_DMA_IRQHandler
+    261          }
+    262          
+    263          /**
+    264            * @brief  Handles SD DMA Rx transfer interrupt request.
+    265            */
+
+   \                                 In section .text, align 2, keep-with-next
+    266          void BSP_SD_DMA_Rx_IRQHandler(void)
+    267          {
+    268            HAL_DMA_IRQHandler(hsd.hdmarx);
+   \                     BSP_SD_DMA_Rx_IRQHandler: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000002   0x6D80             LDR      R0,[R0, #+88]
+   \   00000004   0x.... 0x....      B.W      HAL_DMA_IRQHandler
+    269          }
+    270          
+    271          /**
+    272            * @brief  Gets the current SD card data status.
+    273            * @retval Data transfer state.
+    274            *          This value can be one of the following values:
+    275            *            @arg  SD_TRANSFER_OK: No data transfer is acting
+    276            *            @arg  SD_TRANSFER_BUSY: Data transfer is acting
+    277            *            @arg  SD_TRANSFER_ERROR: Data transfer error 
+    278            */
+
+   \                                 In section .text, align 2, keep-with-next
+    279          HAL_SD_TransferStateTypedef BSP_SD_GetStatus(void)
+    280          {
+    281            return(HAL_SD_GetStatus(&hsd));
+   \                     BSP_SD_GetStatus: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000002   0x.... 0x....      B.W      HAL_SD_GetStatus
+    282          }
+    283          
+    284          /**
+    285            * @brief  Get SD information about specific SD card.
+    286            * @param  CardInfo: Pointer to HAL_SD_CardInfoTypedef structure
+    287            */
+
+   \                                 In section .text, align 2, keep-with-next
+    288          void BSP_SD_GetCardInfo(HAL_SD_CardInfoTypedef* CardInfo)
+    289          {
+    290            /* Get SD card Information */
+    291            HAL_SD_Get_CardInfo(&hsd, CardInfo);
+   \                     BSP_SD_GetCardInfo: (+1)
+   \   00000000   0x4601             MOV      R1,R0
+   \   00000002   0x....             LDR.N    R0,??DataTable10
+   \   00000004   0x.... 0x....      B.W      HAL_SD_Get_CardInfo
+    292          }
+    293          /* USER CODE END 0 */
+    294          
+    295          /**
+    296           * @brief  Detects if SD card is correctly plugged in the memory slot or not.
+    297           * @retval Returns if SD is detected or not
+    298           */
+
+   \                                 In section .text, align 2, keep-with-next
+    299          uint8_t BSP_SD_IsDetected(void)
+    300          {
+   \                     BSP_SD_IsDetected: (+1)
+   \   00000000   0xB081             SUB      SP,SP,#+4
+    301            __IO uint8_t status = SD_PRESENT;
+   \   00000002   0x2001             MOVS     R0,#+1
+   \   00000004   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    302          
+    303            /* USER CODE BEGIN 1 */
+    304            /* user code can be inserted here */
+    305            /* USER CODE END 1 */    	
+    306          
+    307            return status;
+   \   00000008   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   0000000C   0xB001             ADD      SP,SP,#+4
+   \   0000000E   0x4770             BX       LR               ;; return
+    308          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \   00000000   0x........         DC32     hsd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \   00000000   0x........         DC32     SDCardInfo
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \   00000000   0x05F5E100         DC32     0x5f5e100
+    309          
+    310          /* USER CODE BEGIN AdditionalCode */
+    311          /* user code can be inserted here */
+    312          /* USER CODE END AdditionalCode */
+    313          
+    314          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BSP_SD_DMA_Rx_IRQHandler
+         0   -> HAL_DMA_IRQHandler
+       0   BSP_SD_DMA_Tx_IRQHandler
+         0   -> HAL_DMA_IRQHandler
+       0   BSP_SD_DetectCallback
+       0   BSP_SD_DetectIT
+      16   BSP_SD_Erase
+        16   -> HAL_SD_Erase
+       0   BSP_SD_GetCardInfo
+         0   -> HAL_SD_Get_CardInfo
+       0   BSP_SD_GetStatus
+         0   -> HAL_SD_GetStatus
+       0   BSP_SD_IRQHandler
+         0   -> HAL_SD_IRQHandler
+       0   BSP_SD_ITConfig
+      16   BSP_SD_Init
+        16   -> BSP_SD_IsDetected
+        16   -> HAL_SD_Init
+        16   -> HAL_SD_WideBusOperation_Config
+       4   BSP_SD_IsDetected
+      16   BSP_SD_ReadBlocks
+        16   -> HAL_SD_ReadBlocks
+      24   BSP_SD_ReadBlocks_DMA
+        24   -> HAL_SD_CheckReadOperation
+        24   -> HAL_SD_ReadBlocks_DMA
+      16   BSP_SD_WriteBlocks
+        16   -> HAL_SD_WriteBlocks
+      24   BSP_SD_WriteBlocks_DMA
+        24   -> HAL_SD_CheckWriteOperation
+        24   -> HAL_SD_WriteBlocks_DMA
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       8  BSP_SD_DMA_Rx_IRQHandler
+       8  BSP_SD_DMA_Tx_IRQHandler
+       2  BSP_SD_DetectCallback
+       2  BSP_SD_DetectIT
+      28  BSP_SD_Erase
+       8  BSP_SD_GetCardInfo
+       6  BSP_SD_GetStatus
+       6  BSP_SD_IRQHandler
+       4  BSP_SD_ITConfig
+      52  BSP_SD_Init
+      16  BSP_SD_IsDetected
+      30  BSP_SD_ReadBlocks
+      52  BSP_SD_ReadBlocks_DMA
+      30  BSP_SD_WriteBlocks
+      52  BSP_SD_WriteBlocks_DMA
+
+ 
+ 316 bytes in section .text
+ 
+ 316 bytes of CODE memory
+
+Errors: none
+Warnings: none

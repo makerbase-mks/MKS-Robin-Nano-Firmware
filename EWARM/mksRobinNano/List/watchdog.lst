@@ -1,0 +1,210 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:06:21
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\watchdog.cpp
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\watchdog.cpp
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\watchdog.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\watchdog.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\watchdog.cpp
+      1          /**
+      2           * Marlin 3D Printer Firmware
+      3           * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+      4           *
+      5           * Based on Sprinter and grbl.
+      6           * Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+      7           *
+      8           * This program is free software: you can redistribute it and/or modify
+      9           * it under the terms of the GNU General Public License as published by
+     10           * the Free Software Foundation, either version 3 of the License, or
+     11           * (at your option) any later version.
+     12           *
+     13           * This program is distributed in the hope that it will be useful,
+     14           * but WITHOUT ANY WARRANTY; without even the implied warranty of
+     15           * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     16           * GNU General Public License for more details.
+     17           *
+     18           * You should have received a copy of the GNU General Public License
+     19           * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+     20           *
+     21           */
+     22          
+     23          #include "Marlin.h"
+
+  #define UNUSED(x) ((void)(x))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 101 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\macros.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Inc\mks_cfg.h",613  Warning[Pe083]: 
+          type qualifier specified more than once
+
+  #define strcpy_P(dest, src) strcpy((dest), (src))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
+          incompatible redefinition of macro "strcpy_P" (declared at line 93
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define strstr_P(a, b) strstr((a), (b))
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
+          incompatible redefinition of macro "strstr_P" (declared at line 94
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define sprintf_P(s, f, ...) sprintf((s), (f), __VA_ARGS__)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
+          incompatible redefinition of macro "sprintf_P" (declared at line 95
+          of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+  #define pgm_read_word_near(addr) pgm_read_word(addr)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
+          incompatible redefinition of macro "pgm_read_word_near" (declared at
+          line 65 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+
+    }
+    ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
+          missing return statement at end of non-void function
+          "position_is_reachable_IS_KINEMATIC"
+     24          
+     25          #if ENABLED(USE_WATCHDOG)
+     26          
+     27          #include "watchdog.h"
+     28          
+     29          // Initialize watchdog with 8s timeout, if possible. Otherwise, make it 4s.
+     30          void watchdog_init() {
+     31            #if ENABLED(WATCHDOG_DURATION_8S) && defined(WDTO_8S)
+     32              #define WDTO_NS WDTO_8S
+     33            #else
+     34              #define WDTO_NS WDTO_4S
+     35            #endif
+     36            #if ENABLED(WATCHDOG_RESET_MANUAL)
+     37              // We enable the watchdog timer, but only for the interrupt.
+     38              // Take care, as this requires the correct order of operation, with interrupts disabled.
+     39              // See the datasheet of any AVR chip for details.
+     40              wdt_reset();
+     41              cli();
+     42              _WD_CONTROL_REG = _BV(_WD_CHANGE_BIT) | _BV(WDE);
+     43              _WD_CONTROL_REG = _BV(WDIE) | (WDTO_NS & 0x07) | ((WDTO_NS & 0x08) << 2); // WDTO_NS directly does not work. bit 0-2 are consecutive in the register but the highest value bit is at bit 5
+     44                                                                                        // So worked for up to WDTO_2S
+     45              sei();
+     46              wdt_reset();
+     47            #else
+     48              wdt_enable(WDTO_NS); // The function handles the upper bit correct.
+     49            #endif
+     50            //delay(10000); // test it!
+     51          }
+     52          
+     53          //===========================================================================
+     54          //=================================== ISR ===================================
+     55          //===========================================================================
+     56          
+     57          // Watchdog timer interrupt, called if main program blocks >4sec and manual reset is enabled.
+     58          #if ENABLED(WATCHDOG_RESET_MANUAL)
+     59            ISR(WDT_vect) {
+     60              sei();  // With the interrupt driven serial we need to allow interrupts.
+     61              SERIAL_ERROR_START();
+     62              SERIAL_ERRORLNPGM("Watchdog barked, please turn off the printer.");
+     63              kill(PSTR("ERR:Watchdog")); //kill blocks //up to 16 characters so it fits on a 16x2 display
+     64              while (1); //wait for user or serial reset
+     65            }
+     66          #endif // WATCHDOG_RESET_MANUAL
+     67          
+     68          #endif // USE_WATCHDOG
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       1  -- Other
+
+ 
+ 1 byte in section .rodata
+ 
+ 0 bytes of CONST memory (+ 1 byte shared)
+
+Errors: none
+Warnings: 7

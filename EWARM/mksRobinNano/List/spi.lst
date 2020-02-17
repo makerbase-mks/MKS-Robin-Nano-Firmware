@@ -1,0 +1,660 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:54
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\spi.c
+#    Command line =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\spi.c
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        -lA
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
+#        -I
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\spi.lst
+#    Object file  =  
+#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\spi.o
+#
+###############################################################################
+
+E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\spi.c
+      1          /**
+      2            ******************************************************************************
+      3            * File Name          : SPI.c
+      4            * Description        : This file provides code for the configuration
+      5            *                      of the SPI instances.
+      6            ******************************************************************************
+      7            *
+      8            * Copyright (c) 2018 STMicroelectronics International N.V. 
+      9            * All rights reserved.
+     10            *
+     11            * Redistribution and use in source and binary forms, with or without 
+     12            * modification, are permitted, provided that the following conditions are met:
+     13            *
+     14            * 1. Redistribution of source code must retain the above copyright notice, 
+     15            *    this list of conditions and the following disclaimer.
+     16            * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17            *    this list of conditions and the following disclaimer in the documentation
+     18            *    and/or other materials provided with the distribution.
+     19            * 3. Neither the name of STMicroelectronics nor the names of other 
+     20            *    contributors to this software may be used to endorse or promote products 
+     21            *    derived from this software without specific written permission.
+     22            * 4. This software, including modifications and/or derivative works of this 
+     23            *    software, must execute solely and exclusively on microcontroller or
+     24            *    microprocessor devices manufactured by or for STMicroelectronics.
+     25            * 5. Redistribution and use of this software other than as permitted under 
+     26            *    this license is void and will automatically terminate your rights under 
+     27            *    this license. 
+     28            *
+     29            * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
+     30            * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
+     31            * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+     32            * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+     33            * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+     34            * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+     35            * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     36            * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+     37            * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+     38            * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+     39            * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+     40            * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     41            *
+     42            ******************************************************************************
+     43            */
+     44          
+     45          /* Includes ------------------------------------------------------------------*/
+     46          #include "spi.h"
+     47          
+     48          #include "gpio.h"
+     49          #include "dma.h"
+     50          #include "stm32f10x_spi.h"
+
+  #define IS_SPI_DIRECTION_MODE(MODE) (((MODE) == SPI_Direction_2Lines_FullDuplex) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",132  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DIRECTION_MODE" (declared
+          at line 466 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_MODE(MODE) (((MODE) == SPI_Mode_Master) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",146  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_MODE" (declared at line
+          459 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_DATASIZE(DATASIZE) (((DATASIZE) == SPI_DataSize_16b) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",158  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DATASIZE" (declared at
+          line 488 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_CPOL(CPOL) (((CPOL) == SPI_CPOL_Low) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",170  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPOL" (declared at line
+          496 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_CPHA(CPHA) (((CPHA) == SPI_CPHA_1Edge) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",182  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPHA" (declared at line
+          504 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_NSS(NSS) (((NSS) == SPI_NSS_Soft) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",194  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_NSS" (declared at line
+          512 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_BAUDRATE_PRESCALER(PRESCALER) (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",212  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_BAUDRATE_PRESCALER"
+          (declared at line 521 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_FIRST_BIT(BIT) (((BIT) == SPI_FirstBit_MSB) || \
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",230  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_FIRST_BIT" (declared at
+          line 535 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define SPI_FLAG_CRCERR                 ((uint16_t)0x0010)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",408  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_CRCERR" (declared at
+          line 308 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define SPI_FLAG_MODF                   ((uint16_t)0x0020)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",409  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_MODF" (declared at line
+          309 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+
+  #define IS_SPI_CRC_POLYNOMIAL(POLYNOMIAL) ((POLYNOMIAL) >= 0x1)
+          ^
+"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",425  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CRC_POLYNOMIAL" (declared
+          at line 558 of
+          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
+          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+     51          /* USER CODE BEGIN 0 */
+     52          
+     53          /* USER CODE END 0 */
+     54          
+
+   \                                 In section .bss, align 4
+     55          SPI_HandleTypeDef hspi2;
+   \                     hspi2:
+   \   00000000                      DS8 88
+
+   \                                 In section .bss, align 4
+     56          DMA_HandleTypeDef hdma_spi2_rx;
+   \                     hdma_spi2_rx:
+   \   00000000                      DS8 56
+
+   \                                 In section .bss, align 4
+     57          DMA_HandleTypeDef hdma_spi2_tx;
+   \                     hdma_spi2_tx:
+   \   00000000                      DS8 56
+     58          
+     59          /* SPI2 init function */
+
+   \                                 In section .text, align 2, keep-with-next
+     60          void MX_SPI2_Init(void)
+     61          {
+   \                     MX_SPI2_Init: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     62          
+     63            hspi2.Instance = SPI2;
+   \   00000002   0x....             LDR.N    R0,??DataTable4
+   \   00000004   0x....             LDR.N    R1,??DataTable4_1  ;; 0x40003800
+   \   00000006   0x6001             STR      R1,[R0, #+0]
+     64            hspi2.Init.Mode = SPI_MODE_MASTER;
+   \   00000008   0xF44F 0x7182      MOV      R1,#+260
+   \   0000000C   0x6041             STR      R1,[R0, #+4]
+     65            hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+   \   0000000E   0x2100             MOVS     R1,#+0
+   \   00000010   0x6081             STR      R1,[R0, #+8]
+     66            hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
+   \   00000012   0x60C1             STR      R1,[R0, #+12]
+     67            hspi2.Init.CLKPolarity = SPI_POLARITY_HIGH;
+   \   00000014   0x2102             MOVS     R1,#+2
+   \   00000016   0x6101             STR      R1,[R0, #+16]
+     68            hspi2.Init.CLKPhase = SPI_PHASE_2EDGE;
+   \   00000018   0x2101             MOVS     R1,#+1
+   \   0000001A   0x6141             STR      R1,[R0, #+20]
+     69            hspi2.Init.NSS = SPI_NSS_SOFT;
+   \   0000001C   0xF44F 0x7100      MOV      R1,#+512
+   \   00000020   0x6181             STR      R1,[R0, #+24]
+     70            hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
+   \   00000022   0x2108             MOVS     R1,#+8
+   \   00000024   0x61C1             STR      R1,[R0, #+28]
+     71            hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+   \   00000026   0x2100             MOVS     R1,#+0
+   \   00000028   0x6201             STR      R1,[R0, #+32]
+     72            hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
+   \   0000002A   0x6241             STR      R1,[R0, #+36]
+     73            hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+   \   0000002C   0x6281             STR      R1,[R0, #+40]
+     74            hspi2.Init.CRCPolynomial = 10;
+   \   0000002E   0x210A             MOVS     R1,#+10
+   \   00000030   0x62C1             STR      R1,[R0, #+44]
+     75            if (HAL_SPI_Init(&hspi2) != HAL_OK)
+   \   00000032   0x.... 0x....      BL       HAL_SPI_Init
+   \   00000036   0x2800             CMP      R0,#+0
+   \   00000038   0xD003             BEQ.N    ??MX_SPI2_Init_0
+     76            {
+     77              Error_Handler();
+   \   0000003A   0xE8BD 0x4001      POP      {R0,LR}
+   \   0000003E   0x.... 0x....      B.W      Error_Handler
+     78            }
+     79          
+     80          }
+   \                     ??MX_SPI2_Init_0: (+1)
+   \   00000042   0xBD01             POP      {R0,PC}          ;; return
+     81          
+
+   \                                 In section .text, align 2, keep-with-next
+     82          void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
+     83          {
+     84          
+     85            GPIO_InitTypeDef GPIO_InitStruct;
+     86            if(spiHandle->Instance==SPI2)
+   \                     HAL_SPI_MspInit: (+1)
+   \   00000000   0x6800             LDR      R0,[R0, #+0]
+   \   00000002   0x....             LDR.N    R1,??DataTable4_1  ;; 0x40003800
+   \   00000004   0x4288             CMP      R0,R1
+   \   00000006   0xD000             BEQ.N    ??HAL_SPI_MspInit_0
+   \   00000008   0x4770             BX       LR
+     87            {
+     88            /* USER CODE BEGIN SPI2_MspInit 0 */
+     89          
+     90            /* USER CODE END SPI2_MspInit 0 */
+     91              /* Peripheral clock enable */
+     92              __HAL_RCC_SPI2_CLK_ENABLE();
+   \                     ??HAL_SPI_MspInit_0: (+1)
+   \   0000000A   0xB510             PUSH     {R4,LR}
+   \   0000000C   0xB086             SUB      SP,SP,#+24
+   \   0000000E   0x....             LDR.N    R0,??DataTable4_2  ;; 0x4002101c
+   \   00000010   0x6801             LDR      R1,[R0, #+0]
+   \   00000012   0xF441 0x4180      ORR      R1,R1,#0x4000
+   \   00000016   0x6001             STR      R1,[R0, #+0]
+   \   00000018   0x6800             LDR      R0,[R0, #+0]
+   \   0000001A   0xF400 0x4080      AND      R0,R0,#0x4000
+   \   0000001E   0x9000             STR      R0,[SP, #+0]
+   \   00000020   0x9800             LDR      R0,[SP, #+0]
+     93            
+     94              /**SPI2 GPIO Configuration    
+     95              PB13     ------> SPI2_SCK
+     96              PB14     ------> SPI2_MISO
+     97              PB15     ------> SPI2_MOSI 
+     98              */
+     99              GPIO_InitStruct.Pin = GPIO_PIN_13|GPIO_PIN_15;
+   \   00000022   0xF44F 0x4020      MOV      R0,#+40960
+   \   00000026   0x9001             STR      R0,[SP, #+4]
+    100              GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \   00000028   0x2002             MOVS     R0,#+2
+   \   0000002A   0x9002             STR      R0,[SP, #+8]
+    101              GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+   \   0000002C   0x2003             MOVS     R0,#+3
+   \   0000002E   0x9004             STR      R0,[SP, #+16]
+    102              HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+   \   00000030   0x....             LDR.N    R4,??DataTable4_3  ;; 0x40010c00
+   \   00000032   0xA901             ADD      R1,SP,#+4
+   \   00000034   0x4620             MOV      R0,R4
+   \   00000036   0x.... 0x....      BL       HAL_GPIO_Init
+    103          
+    104              GPIO_InitStruct.Pin = GPIO_PIN_14;
+   \   0000003A   0xF44F 0x4080      MOV      R0,#+16384
+   \   0000003E   0x9001             STR      R0,[SP, #+4]
+    105              GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+   \   00000040   0x2000             MOVS     R0,#+0
+   \   00000042   0x9002             STR      R0,[SP, #+8]
+    106              GPIO_InitStruct.Pull = GPIO_NOPULL;
+   \   00000044   0x9003             STR      R0,[SP, #+12]
+    107              HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+   \   00000046   0xA901             ADD      R1,SP,#+4
+   \   00000048   0x4620             MOV      R0,R4
+   \   0000004A   0x.... 0x....      BL       HAL_GPIO_Init
+    108          #if 0
+    109              /* Peripheral DMA init*/
+    110            
+    111              hdma_spi2_rx.Instance = DMA1_Channel4;
+    112              hdma_spi2_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    113              hdma_spi2_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+    114              hdma_spi2_rx.Init.MemInc = DMA_MINC_ENABLE;
+    115              hdma_spi2_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    116              hdma_spi2_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    117              hdma_spi2_rx.Init.Mode = DMA_NORMAL;
+    118              hdma_spi2_rx.Init.Priority = DMA_PRIORITY_LOW;
+    119              if (HAL_DMA_Init(&hdma_spi2_rx) != HAL_OK)
+    120              {
+    121                Error_Handler();
+    122              }
+    123          
+    124              __HAL_LINKDMA(spiHandle,hdmarx,hdma_spi2_rx);
+    125          
+    126              hdma_spi2_tx.Instance = DMA1_Channel5;
+    127              hdma_spi2_tx.Init.Direction = DMA_MEMORY_TO_PERIPH;
+    128              hdma_spi2_tx.Init.PeriphInc = DMA_PINC_DISABLE;
+    129              hdma_spi2_tx.Init.MemInc = DMA_MINC_ENABLE;
+    130              hdma_spi2_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    131              hdma_spi2_tx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    132              hdma_spi2_tx.Init.Mode = DMA_NORMAL;
+    133              hdma_spi2_tx.Init.Priority = DMA_PRIORITY_LOW;
+    134              if (HAL_DMA_Init(&hdma_spi2_tx) != HAL_OK)
+    135              {
+    136                Error_Handler();
+    137              }
+    138          
+    139              __HAL_LINKDMA(spiHandle,hdmatx,hdma_spi2_tx);
+    140          #endif
+    141              /* Peripheral interrupt init */
+    142              //HAL_NVIC_SetPriority(SPI2_IRQn, 3, 0);
+    143              //HAL_NVIC_EnableIRQ(SPI2_IRQn);
+    144            /* USER CODE BEGIN SPI2_MspInit 1 */
+    145          
+    146            /* USER CODE END SPI2_MspInit 1 */
+    147            }
+    148          }
+   \   0000004E   0xB006             ADD      SP,SP,#+24
+   \   00000050   0xBD10             POP      {R4,PC}          ;; return
+    149          
+
+   \                                 In section .text, align 2, keep-with-next
+    150          void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
+    151          {
+   \                     HAL_SPI_MspDeInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    152          
+    153            if(spiHandle->Instance==SPI2)
+   \   00000004   0x6820             LDR      R0,[R4, #+0]
+   \   00000006   0x....             LDR.N    R1,??DataTable4_1  ;; 0x40003800
+   \   00000008   0x4288             CMP      R0,R1
+   \   0000000A   0xD114             BNE.N    ??HAL_SPI_MspDeInit_0
+    154            {
+    155            /* USER CODE BEGIN SPI2_MspDeInit 0 */
+    156          
+    157            /* USER CODE END SPI2_MspDeInit 0 */
+    158              /* Peripheral clock disable */
+    159              __HAL_RCC_SPI2_CLK_DISABLE();
+   \   0000000C   0x....             LDR.N    R0,??DataTable4_2  ;; 0x4002101c
+   \   0000000E   0x6801             LDR      R1,[R0, #+0]
+   \   00000010   0xF421 0x4180      BIC      R1,R1,#0x4000
+   \   00000014   0x6001             STR      R1,[R0, #+0]
+    160            
+    161              /**SPI2 GPIO Configuration    
+    162              PB13     ------> SPI2_SCK
+    163              PB14     ------> SPI2_MISO
+    164              PB15     ------> SPI2_MOSI 
+    165              */
+    166              HAL_GPIO_DeInit(GPIOB, GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15);
+   \   00000016   0xF44F 0x4160      MOV      R1,#+57344
+   \   0000001A   0x....             LDR.N    R0,??DataTable4_3  ;; 0x40010c00
+   \   0000001C   0x.... 0x....      BL       HAL_GPIO_DeInit
+    167          
+    168              /* Peripheral DMA DeInit*/
+    169              HAL_DMA_DeInit(spiHandle->hdmarx);
+   \   00000020   0x6C60             LDR      R0,[R4, #+68]
+   \   00000022   0x.... 0x....      BL       HAL_DMA_DeInit
+    170              HAL_DMA_DeInit(spiHandle->hdmatx);
+   \   00000026   0x6C20             LDR      R0,[R4, #+64]
+   \   00000028   0x.... 0x....      BL       HAL_DMA_DeInit
+    171          
+    172              /* Peripheral interrupt Deinit*/
+    173              HAL_NVIC_DisableIRQ(SPI2_IRQn);
+   \   0000002C   0x2024             MOVS     R0,#+36
+   \   0000002E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000032   0x.... 0x....      B.W      HAL_NVIC_DisableIRQ
+    174          
+    175            }
+    176            /* USER CODE BEGIN SPI2_MspDeInit 1 */
+    177          
+    178            /* USER CODE END SPI2_MspDeInit 1 */
+    179          } 
+   \                     ??HAL_SPI_MspDeInit_0: (+1)
+   \   00000036   0xBD10             POP      {R4,PC}          ;; return
+    180          
+    181          /* USER CODE BEGIN 1 */
+    182          //SPI1速度设置函数
+    183          //SPI速度=fAPB2/分频系数
+    184          //@ref SPI_BaudRate_Prescaler:SPI_BaudRatePrescaler_2~SPI_BaudRatePrescaler_256  
+    185          //fAPB2时钟一般为84Mhz：
+
+   \                                 In section .text, align 2, keep-with-next
+    186          void SPI2_SetSpeed(u8 SPI_BaudRatePrescaler)
+    187          {
+    188            assert_param(IS_SPI_BAUDRATE_PRESCALER(SPI_BaudRatePrescaler));//判断有效性
+    189          	SPI2->CR1&=0XFFC7;//位3-5清零，用来设置波特率
+   \                     SPI2_SetSpeed: (+1)
+   \   00000000   0x....             LDR.N    R2,??DataTable4_1  ;; 0x40003800
+   \   00000002   0x6811             LDR      R1,[R2, #+0]
+   \   00000004   0xF64F 0x73C7      MOVW     R3,#+65479
+   \   00000008   0x4019             ANDS     R1,R3,R1
+   \   0000000A   0x6011             STR      R1,[R2, #+0]
+    190          	SPI2->CR1|=SPI_BaudRatePrescaler;	//设置SPI1速度 
+   \   0000000C   0x6811             LDR      R1,[R2, #+0]
+   \   0000000E   0x4308             ORRS     R0,R0,R1
+   \   00000010   0x6010             STR      R0,[R2, #+0]
+    191          	SPI_Cmd(SPI2,ENABLE); //使能SPI1
+   \   00000012   0x2101             MOVS     R1,#+1
+   \   00000014   0x4610             MOV      R0,R2
+   \   00000016   0x.... 0x....      B.W      SPI_Cmd
+    192          } 
+    193          //SPI1 读写一个字节
+    194          //TxData:要写入的字节
+    195          //返回值:读取到的字节
+
+   \                                 In section .text, align 2, keep-with-next
+    196          u8 SPI2_ReadWriteByte(u8 TxData)
+    197          {		 			 
+   \                     SPI2_ReadWriteByte: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    198           volatile u16 retry=0;	
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \   0000000A   0x....             LDR.N    R5,??DataTable4_1  ;; 0x40003800
+    199            while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_TXE) == RESET)//等待发送区空  
+   \                     ??SPI2_ReadWriteByte_0: (+1)
+   \   0000000C   0x2102             MOVS     R1,#+2
+   \   0000000E   0x4628             MOV      R0,R5
+   \   00000010   0x.... 0x....      BL       SPI_I2S_GetFlagStatus
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD10A             BNE.N    ??SPI2_ReadWriteByte_1
+    200          	{		
+    201          		retry++;
+   \   00000018   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   0000001C   0x1C40             ADDS     R0,R0,#+1
+   \   0000001E   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    202          		if(retry>500)return 0;
+   \   00000022   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000026   0xF5B0 0x7FFA      CMP      R0,#+500
+   \   0000002A   0xDDEF             BLE.N    ??SPI2_ReadWriteByte_0
+   \   0000002C   0xE016             B.N      ??SPI2_ReadWriteByte_2
+    203          	}
+    204          	
+    205          	SPI_I2S_SendData(SPI2, TxData); //通过外设SPIx发送一个byte  数据
+   \                     ??SPI2_ReadWriteByte_1: (+1)
+   \   0000002E   0x4621             MOV      R1,R4
+   \   00000030   0x4628             MOV      R0,R5
+   \   00000032   0x.... 0x....      BL       SPI_I2S_SendData
+    206          	retry=0;	
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    207            while (SPI_I2S_GetFlagStatus(SPI2, SPI_I2S_FLAG_RXNE) == RESET) //等待接收完一个byte  
+   \                     ??SPI2_ReadWriteByte_3: (+1)
+   \   0000003C   0x2101             MOVS     R1,#+1
+   \   0000003E   0x4628             MOV      R0,R5
+   \   00000040   0x.... 0x....      BL       SPI_I2S_GetFlagStatus
+   \   00000044   0x2800             CMP      R0,#+0
+   \   00000046   0xD10B             BNE.N    ??SPI2_ReadWriteByte_4
+    208           	{
+    209          		retry++;
+   \   00000048   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   0000004C   0x1C40             ADDS     R0,R0,#+1
+   \   0000004E   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    210          		if(retry>500)return 0; 		
+   \   00000052   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000056   0xF5B0 0x7FFA      CMP      R0,#+500
+   \   0000005A   0xDDEF             BLE.N    ??SPI2_ReadWriteByte_3
+   \                     ??SPI2_ReadWriteByte_2: (+1)
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0xBD32             POP      {R1,R4,R5,PC}
+    211           	}
+    212          	return SPI_I2S_ReceiveData(SPI2); //返回通过SPIx最近接收的数据	
+   \                     ??SPI2_ReadWriteByte_4: (+1)
+   \   00000060   0x4628             MOV      R0,R5
+   \   00000062   0x.... 0x....      BL       SPI_I2S_ReceiveData
+   \   00000066   0xB2C0             UXTB     R0,R0
+   \   00000068   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    213           		    
+    214          }
+    215          
+
+   \                                 In section .text, align 2, keep-with-next
+    216          int SPI2_ReadWrite2Bytes(void)  
+    217          { 
+   \                     SPI2_ReadWrite2Bytes: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    218          	volatile u16 ans=0;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    219                  u16 temp = 0;
+    220          	temp=SPI2_ReadWriteByte(0x00);
+   \   00000008   0x.... 0x....      BL       SPI2_ReadWriteByte
+    221          	ans=temp<<8;
+   \   0000000C   0x0200             LSLS     R0,R0,#+8
+   \   0000000E   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    222          	temp=SPI2_ReadWriteByte(0x00);
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x.... 0x....      BL       SPI2_ReadWriteByte
+    223          	ans|=temp;
+   \   00000018   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \   0000001C   0x4308             ORRS     R0,R0,R1
+   \   0000001E   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    224          	ans>>=3;
+   \   00000022   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000026   0x08C0             LSRS     R0,R0,#+3
+   \   00000028   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    225          	return ans&0x0fff;
+   \   0000002C   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000030   0x0500             LSLS     R0,R0,#+20
+   \   00000032   0x0D00             LSRS     R0,R0,#+20
+   \   00000034   0xBD02             POP      {R1,PC}          ;; return
+    226          
+    227          } 
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x........         DC32     hspi2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x40003800         DC32     0x40003800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0x4002101C         DC32     0x4002101c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \   00000000   0x40010C00         DC32     0x40010c00
+    228          
+    229          /**
+    230            * @}
+    231            */
+    232          
+    233          /**
+    234            * @}
+    235            */
+    236          
+    237          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   HAL_SPI_MspDeInit
+         8   -> HAL_DMA_DeInit
+         8   -> HAL_GPIO_DeInit
+         0   -> HAL_NVIC_DisableIRQ
+      32   HAL_SPI_MspInit
+        32   -> HAL_GPIO_Init
+       8   MX_SPI2_Init
+         0   -> Error_Handler
+         8   -> HAL_SPI_Init
+       8   SPI2_ReadWrite2Bytes
+         8   -> SPI2_ReadWriteByte
+      16   SPI2_ReadWriteByte
+        16   -> SPI_I2S_GetFlagStatus
+        16   -> SPI_I2S_ReceiveData
+        16   -> SPI_I2S_SendData
+       0   SPI2_SetSpeed
+         0   -> SPI_Cmd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+      56  HAL_SPI_MspDeInit
+      82  HAL_SPI_MspInit
+      68  MX_SPI2_Init
+      54  SPI2_ReadWrite2Bytes
+     106  SPI2_ReadWriteByte
+      26  SPI2_SetSpeed
+      56  hdma_spi2_rx
+      56  hdma_spi2_tx
+      88  hspi2
+
+ 
+ 200 bytes in section .bss
+ 408 bytes in section .text
+ 
+ 408 bytes of CODE memory
+ 200 bytes of DATA memory
+
+Errors: none
+Warnings: 11

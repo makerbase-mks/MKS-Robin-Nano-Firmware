@@ -80,7 +80,7 @@ void draw_dialog_filetransfer(uint8_t WifiTransferDialogType)
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
 	
-	GUI_SetFont(&FONT_TITLE);
+	//GUI_SetFont(&FONT_TITLE);
 	if(gCfgItems.language == LANG_ENGLISH)
 	{
 		if(WifiTransferDialogType == 0)
@@ -116,7 +116,7 @@ void draw_dialog_filetransfer(uint8_t WifiTransferDialogType)
 
 	}
 	
-	GUI_SetFont(&FONT_TITLE);
+	//GUI_SetFont(&FONT_TITLE);
 	
 	hWifiFileDlgWnd = WM_CreateWindow(LCD_WIDTH * 3 / 4 , titleHeight + imgHeight / 2, LCD_WIDTH / 4 - 1, imgHeight / 2 - 1, WM_CF_SHOW, cbWifiFileDlgWin, 0);
 
@@ -198,7 +198,7 @@ void draw_filetansfer(uint8_t file_unzip_flg)
 	GUI_SetBkColor(gCfgItems.background_color);
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
-	GUI_SetFont(&FONT_TITLE);
+	//GUI_SetFont(&FONT_TITLE);
 
 	hFileTransferWnd = WM_CreateWindow(0, 0, LCD_WIDTH, LCD_HEIGHT, WM_CF_SHOW, cbFileTransferWin, 0);
 

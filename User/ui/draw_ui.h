@@ -1,9 +1,10 @@
 #ifndef _DRAW_UI_
 #define _DRAW_UI_
+#include<stdlib.h>
+
 #include "stdint.h"
-
+#include "string.h"
 #include "main.h"
-
 #include "gui.h"
 #include "button.h"
 #include "PROGBAR.h"
@@ -26,6 +27,131 @@
 #include "pic.h"
 #include "Multi_language.h"
 #include "draw_meshleveling.h"
+#include "draw_machine_para.h"
+#include "draw_ready_print.h"
+#include "draw_machine_settings.h"
+#include "draw_temperature_settings.h"
+#include "draw_motor_settings.h"
+#include "draw_machine_type.h"
+#include "draw_stroke.h"
+#include "draw_home_dir.h"
+#include "draw_endstop_type.h"
+#include "draw_filament_settings.h"
+#include "draw_levelingsettings.h"
+#include "draw_levelingPara_config.h"
+#include "draw_deltaLevelPare.h"
+#include "draw_XYZLevelPara.h"
+#include "draw_MaxFeedRate.h"
+#include "draw_steps.h"
+#include "draw_acceleration.h"
+#include "draw_jerk.h"
+#include "draw_motor_dir.h"
+#include "draw_home_speed.h"
+#include "draw_nozzle_config.h"
+#include "draw_hotbed_config.h"
+#include "draw_advanced.h"
+#include "draw_doublez.h"
+#include "draw_EnablePin_Invert.h"
+#include "draw_number_key.h"
+
+extern float delta_height;
+extern float delta_radius;
+extern float delta_diagonal_rod;
+extern float delta_calibration_radius;
+
+extern float zprobe_zoffset;
+extern void gcode_M500();
+extern void gcode_M501();
+
+typedef enum
+{
+	X_stroke,
+	Y_stroke,
+	Z_stroke,
+	X_stroke_min,
+	Y_stroke_min,
+	Z_stroke_min,
+
+	Load_Temper_limit,
+	Load_Speed,
+	Load_Length,
+	Unload_Temper_limit,
+	Unload_Speed,
+	Unload_Length,	
+
+	xoffset,
+	yoffset,
+	zoffset,
+	xyspeed,
+	zspeed,
+
+	DeltaRadius,
+	DeltaDiagonalRod,
+	PrintableRadius,
+	DeltaHeight,
+	SmoothRodOffset,
+	EffectorOffset,
+	CalibrationRadius,
+
+	Point1_x,
+	Point2_x,
+	Point3_x,
+	Point4_x,
+	Point5_x,
+
+	Point1_y,
+	Point2_y,
+	Point3_y,
+	Point4_y,
+	Point5_y,
+
+	XMaxFeedRate,
+	YMaxFeedRate,
+	ZMaxFeedRate,
+	E0MaxFeedRate,
+	E1MaxFeedRate,
+	
+	PrintAcceleration,
+	RetractAcceleration,
+	TravelAcceleration,
+	XAcceleration,
+	YAcceleration,
+	ZAcceleration,
+	E0Acceleration,
+	E1Acceleration,
+
+	XJerk,
+	YJerk,
+	ZJerk,
+	EJerk,
+
+	Xstep,
+	Ystep,
+	Zstep,
+	E0step,
+	E1step,
+
+	XYspeed,
+	Zspeed,
+
+	Nozzle_Cnt,
+	Nozzle_min,
+	Nozzle_max,
+	Extrude_min_temper,
+	Nozzle_pid_p,
+	Nozzle_pid_i,
+	Nozzle_pid_d,
+	
+	HotBed_min,
+	HotBed_max,
+	HotBed_pid_p,
+	HotBed_pid_i,
+	HotBed_pid_d
+
+}value_state;
+
+extern value_state value;
+
 /*
 typedef struct Screen_size
 {
@@ -62,8 +188,8 @@ extern uint8_t default_preview_flg;
 //**#define LCD_WIDTH	320
 //**#define LCD_HEIGHT	240
 
-#define PREVIEW_LITTLE_PIC_SIZE		40910//400*100+9*101+1
-#define PREVIEW_SIZE			202720//(PREVIEW_LITTLE_PIC_SIZE+800*200+201*9+1)
+#define PREVIEW_LITTLE_PIC_SIZE		10460//40910//400*100+9*101+1
+#define PREVIEW_SIZE			172270//202720//(PREVIEW_LITTLE_PIC_SIZE+800*200+201*9+1)
 
 #if (0)
 #define LCD_WIDTH			800
@@ -100,8 +226,27 @@ extern uint8_t default_preview_flg;
 #endif
 #if defined(MKS_ROBIN_MINI)||defined(MKS_ROBIN_NANO)
 #if defined(TFT35)
+#define VALUE_DEFAULT_X				70
+#define VALUE_DEFAULT_Y				28
+
+
 #define LCD_WIDTH			480
 #define LCD_HEIGHT		320
+
+#define MAIN_PAGE_X		32
+#define MAIN_PAGE_Y		90
+
+#define TOP_BLANK			30
+#define TOP_WIDTH			160
+
+#define ICON_GAP_H	 2
+#define ICON_GAP_V  2
+
+#define SUB_PAGE_X		2
+#define SUB_PAGE_Y		0
+
+#define SUB_BTN_X_PIXEL 	100
+#define SUB_BTN_Y_PIXEL  40
 
 #define titleHeight	36//TFT_screen.title_high
 
@@ -295,7 +440,32 @@ typedef enum
 	HARDWARE_TEST_UI,
 	WIFI_LIST_UI,
 	KEY_BOARD_UI,
-	TIPS_UI
+	TIPS_UI,
+	MACHINE_PARA_UI,
+	MACHINE_SETTINGS_UI,
+	TEMPERATURE_SETTINGS_UI,
+	MOTOR_SETTINGS_UI,
+	MACHINETYPE_UI,
+	STROKE_UI,
+	HOME_DIR_UI,
+	ENDSTOP_TYPE_UI,
+	FILAMENT_SETTINGS_UI,
+	LEVELING_SETTIGNS_UI,
+	LEVELING_PARA_UI,
+	DELTA_LEVELING_PARA_UI,
+	XYZ_LEVELING_PARA_UI,
+	MAXFEEDRATE_UI,
+	STEPS_UI,
+	ACCELERATION_UI,
+	JERK_UI,
+	MOTORDIR_UI,
+	HOMESPEED_UI,
+	NOZZLE_CONFIG_UI,
+	HOTBED_CONFIG_UI,
+	ADVANCED_UI,
+	DOUBLE_Z_UI,
+	ENABLE_INVERT_UI,
+	NUMBER_KEY_UI
 } DISP_STATE;
 
 typedef struct
@@ -354,9 +524,9 @@ extern DISP_STATE last_disp_state;
 extern DISP_STATE_STACK disp_state_stack;
 
 #if _LFN_UNICODE
-extern TCHAR curFileName[150];
+extern TCHAR curFileName[100];
 #else
-extern char curFileName[150];
+extern char curFileName[100];
 #endif
 
 

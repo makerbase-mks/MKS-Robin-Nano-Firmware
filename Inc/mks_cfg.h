@@ -299,8 +299,10 @@ EEPROM 2K byte ����
 #define EPR_PULSE_DELAY_TIME								EPR_STANDBY_TIME + 4
 #define EPR_PRINT_FINESH_COUNT								EPR_PULSE_DELAY_TIME + 2
 
+#define EPR_BED_MINTEMP			EPR_PRINT_FINESH_COUNT + 2
 
-#define EPR_END_ADDR			EPR_PRINT_FINESH_COUNT + 2
+
+#define EPR_END_ADDR			EPR_BED_MINTEMP + 2
 //#define EPR_END_ADDR EPR_PRINT_FINESH_COUNT + 2//EPR_END_ADDR=1852
 
 #if EPR_END_ADDR > 2048
@@ -330,6 +332,7 @@ typedef struct
 	float   extrude_mintemp;		//EXTRUDE_MINTEMP
 	int16_t heater_0_maxtemp;		//HEATER_0_MAXTEMP
 	int16_t bed_maxtemp;			//BED_MAXTEMP
+	int16_t bed_mintemp;			//BED_MINTEMP
 	uint8_t pidtemp;				//PIDTEMP	
 	uint8_t pidtempbed;				//PIDTEMPBED	
 	uint8_t has_temp_bed;           //HAS_TEMP_BED                  
@@ -473,6 +476,13 @@ typedef struct
 typedef struct
 {
 	volatile int8_t custom_pic_flag;
+
+		int32_t value_bk_color;
+		int32_t value_text_color;
+
+		int32_t default_bk_color;
+		int32_t default_text_color;
+
 		
 		int32_t background_color; //背景颜色
 		int32_t title_color; //标题颜色
@@ -665,6 +675,7 @@ typedef struct
 		volatile uint32_t standby_time;
 		volatile uint16_t pulseDelay;
 		volatile uint16_t print_finish_count;
+		volatile uint16_t preview_bk_color;
 
 }CFG_ITMES;
 
@@ -722,6 +733,16 @@ void epr_read_data(int pos, uint8_t* value, uint16_t size);
 #endif
 
 #endif
+
+
+
+
+
+
+
+
+
+
 
 
 

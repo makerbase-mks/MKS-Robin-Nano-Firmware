@@ -87,6 +87,7 @@
 #define WIFI_CONNECTED_TEXT_FR			"Connecté"
 #define WIFI_DISCONNECTED_TEXT_FR		"Déconnecté"
 #define WIFI_EXCEPTION_TEXT_FR			"Exception"
+#define WIFI_RECONNECT_TEXT_FR         "Reconnect"
 #define CLOUD_TEXT_FR					"Cloud"
 #define CLOUD_BIND_FR					"Lié"
 #define CLOUD_UNBIND_FR					"Délier"
@@ -235,4 +236,5 @@
 #define DIALOG_PRINT_FINISH_FR              "L'impression est terminée!"
 #define DIALOG_PRINT_TIME_FR              "Temps d'impression: "
 #define DIALOG_REPRINT_FR                 "Print again"
+#define DIALOG_WIFI_ENABLE_TIPS_FR "The wifi module is being configured,\nplease wait a moment....."
 #endif

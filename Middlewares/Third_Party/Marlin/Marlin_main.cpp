@@ -3536,7 +3536,7 @@ static void homeaxis(const AxisEnum axis) {
     }
   #endif
 
-  const int axis_home_dir =
+  int axis_home_dir =
     #if ENABLED(DUAL_X_CARRIAGE)
       (axis == X_AXIS) ? x_home_dir(active_extruder) :
     #endif
@@ -4787,7 +4787,12 @@ inline void gcode_G28(const bool always_home_all) {
     //#endif
 
     //#if ENABLED(HOME_Y_BEFORE_X)
+      //sean 19.12.16
+      #if 0
 	if(MACHINETPYE&IS_SCARA)
+	#else 
+	if(HOME_Y_BEFORE_X)
+	#endif
 	{
       // Home Y
       if (home_all || homeY) {

@@ -46,8 +46,8 @@ static void cbExtrusionWin(WM_MESSAGE * pMsg) {
 			//#if defined(TFT70)
 			//GUI_SetColor(gCfgItems.state_background_color);
 			//GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
-			GUI_SetColor(gCfgItems.state_background_color);
-			GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);	
+			//GUI_SetColor(gCfgItems.state_background_color);
+			//GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);	
 			//#elif defined(TFT35)
 			//GUI_SetColor(gCfgItems.state_background_color);
 			//GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+5, BTN_Y_PIXEL);
@@ -94,86 +94,91 @@ static void cbExtrusionWin(WM_MESSAGE * pMsg) {
 				{
 					//sprintf((char *)buf,"T%d\n",gCfgItems.curSprayerChoose);
 					//enqueue_and_echo_commands_P(PSTR(buf));
-					enqueue_and_echo_commands_P(PSTR("G91"));
-					memset(buf,0,sizeof(buf));
-					sprintf((char *)buf, "G1 E%d F%d\n", gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
-					enqueue_and_echo_commands_P(PSTR(buf));	
-					enqueue_and_echo_commands_P(PSTR("G90"));	
-					#if 0
-					//**gCfgItems.extruStep = abs(gCfgItems.extruStep);
-					//**push_cb_stack(UI_ACTION_EPOSITION);
-					//**extructAmount += gCfgItems.extruStep;
-					//**disp_extru_amount();
-					/////printf(RELATIVE_COORD_COMMAN);
-					pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)RELATIVE_COORD_COMMAN);
-					
-					if(gCfgItems.sprayerNum == 2)
-					{							
-						sprintf((char *)buf,"T%d\n",gCfgItems.curSprayerChoose);
-						pushFIFO(&gcodeCmdTxFIFO, buf);
+					if(thermalManager.current_temperature[gCfgItems.curSprayerChoose]>= EXTRUDE_MINTEMP)
+					{
+						enqueue_and_echo_commands_P(PSTR("G91"));
 						memset(buf,0,sizeof(buf));
 						sprintf((char *)buf, "G1 E%d F%d\n", gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
-						pushFIFO(&gcodeCmdTxFIFO, buf);	
+						enqueue_and_echo_commands_P(PSTR(buf));	
+						enqueue_and_echo_commands_P(PSTR("G90"));	
+						#if 0
+						//**gCfgItems.extruStep = abs(gCfgItems.extruStep);
+						//**push_cb_stack(UI_ACTION_EPOSITION);
+						//**extructAmount += gCfgItems.extruStep;
+						//**disp_extru_amount();
+						/////printf(RELATIVE_COORD_COMMAN);
+						pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)RELATIVE_COORD_COMMAN);
+						
+						if(gCfgItems.sprayerNum == 2)
+						{							
+							sprintf((char *)buf,"T%d\n",gCfgItems.curSprayerChoose);
+							pushFIFO(&gcodeCmdTxFIFO, buf);
+							memset(buf,0,sizeof(buf));
+							sprintf((char *)buf, "G1 E%d F%d\n", gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
+							pushFIFO(&gcodeCmdTxFIFO, buf);	
+						}
+						else
+						{
+							MOVE_E_COMMAN((char *)buf, gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
+							pushFIFO(&gcodeCmdTxFIFO, buf);
+						} 	
+						///////printf(buf);
+						//pushFIFO(&gcodeCmdTxFIFO, buf);
+						////////printf(ABSOLUTE_COORD_COMMAN);
+						pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)ABSOLUTE_COORD_COMMAN);
+						#endif
+
+						extructAmount += gCfgItems.extruStep;
+						disp_extru_amount();
 					}
-					else
-					{
-						MOVE_E_COMMAN((char *)buf, gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
-						pushFIFO(&gcodeCmdTxFIFO, buf);
-					} 	
-					///////printf(buf);
-					//pushFIFO(&gcodeCmdTxFIFO, buf);
-					////////printf(ABSOLUTE_COORD_COMMAN);
-					pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)ABSOLUTE_COORD_COMMAN);
-					#endif
-
-					extructAmount += gCfgItems.extruStep;
-					disp_extru_amount();
-
 					//移动后马上保存数据
 					//if(printerStaus== pr_pause)
 					//	positionSaveFlag = 1;		
 				}
 				else if(pMsg->hWinSrc == buttonStepBack.btnHandle)
 				{
-					//sprintf((char *)buf,"T%d\n",gCfgItems.curSprayerChoose);
-					//enqueue_and_echo_commands_P(PSTR(buf));
-					enqueue_and_echo_commands_P(PSTR("G91"));
-					memset(buf,0,sizeof(buf));
-					sprintf((char *)buf, "G1 E%d F%d\n", 0-gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
-					enqueue_and_echo_commands_P(PSTR(buf));	
-					enqueue_and_echo_commands_P(PSTR("G90"));	
-					#if 0
-					//**gCfgItems.extruStep = 0 - abs(gCfgItems.extruStep);
-					//**push_cb_stack(UI_ACTION_EPOSITION);
-					//**extructAmount += gCfgItems.extruStep;
-					//**disp_extru_amount();
-					//////////printf(RELATIVE_COORD_COMMAN);
-
-					pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)RELATIVE_COORD_COMMAN);
-
-					if(gCfgItems.sprayerNum == 2)
+					if(thermalManager.current_temperature[gCfgItems.curSprayerChoose]>= EXTRUDE_MINTEMP)
 					{
-						sprintf((char *)buf,"T%d\n",gCfgItems.curSprayerChoose);
-						pushFIFO(&gcodeCmdTxFIFO, buf);
+						//sprintf((char *)buf,"T%d\n",gCfgItems.curSprayerChoose);
+						//enqueue_and_echo_commands_P(PSTR(buf));
+						enqueue_and_echo_commands_P(PSTR("G91"));
 						memset(buf,0,sizeof(buf));
-						sprintf((char *)buf, "G1 E%d F%d\n",0 - gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);						
-						pushFIFO(&gcodeCmdTxFIFO, buf);
-					}
-					else
-					{
-						MOVE_E_COMMAN((char *)buf, 0 - gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
-						pushFIFO(&gcodeCmdTxFIFO, buf);
-					}					
-					////printf(buf);
-					//pushFIFO(&gcodeCmdTxFIFO, buf);
-					////////printf(ABSOLUTE_COORD_COMMAN);
-					pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)ABSOLUTE_COORD_COMMAN);
+						sprintf((char *)buf, "G1 E%d F%d\n", 0-gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
+						enqueue_and_echo_commands_P(PSTR(buf));	
+						enqueue_and_echo_commands_P(PSTR("G90"));	
+						#if 0
+						//**gCfgItems.extruStep = 0 - abs(gCfgItems.extruStep);
+						//**push_cb_stack(UI_ACTION_EPOSITION);
+						//**extructAmount += gCfgItems.extruStep;
+						//**disp_extru_amount();
+						//////////printf(RELATIVE_COORD_COMMAN);
+
+						pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)RELATIVE_COORD_COMMAN);
+
+						if(gCfgItems.sprayerNum == 2)
+						{
+							sprintf((char *)buf,"T%d\n",gCfgItems.curSprayerChoose);
+							pushFIFO(&gcodeCmdTxFIFO, buf);
+							memset(buf,0,sizeof(buf));
+							sprintf((char *)buf, "G1 E%d F%d\n",0 - gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);						
+							pushFIFO(&gcodeCmdTxFIFO, buf);
+						}
+						else
+						{
+							MOVE_E_COMMAN((char *)buf, 0 - gCfgItems.extruStep, 60 * gCfgItems.extruSpeed);
+							pushFIFO(&gcodeCmdTxFIFO, buf);
+						}					
+						////printf(buf);
+						//pushFIFO(&gcodeCmdTxFIFO, buf);
+						////////printf(ABSOLUTE_COORD_COMMAN);
+						pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)ABSOLUTE_COORD_COMMAN);
 #endif
-					extructAmount -= gCfgItems.extruStep;
-					disp_extru_amount();
-					//移动后马上保存数据
-					//if(printerStaus== pr_pause)
-					//	positionSaveFlag = 1;		
+						extructAmount -= gCfgItems.extruStep;
+						disp_extru_amount();
+						//移动后马上保存数据
+						//if(printerStaus== pr_pause)
+						//	positionSaveFlag = 1;
+					}
 				}
 				else if(pMsg->hWinSrc == buttonSprayType.btnHandle)
 				{
@@ -319,36 +324,7 @@ void draw_extrusion()
 	BUTTON_SetBitmapEx(buttonStep.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);	
 
-	BUTTON_SetBkColor(buttonStepForward.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonStepForward.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonStepForward.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonStepForward.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-	
-	BUTTON_SetBkColor(buttonStepBack.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonStepBack.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);	
-	BUTTON_SetTextColor(buttonStepBack.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonStepBack.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-	
-	BUTTON_SetBkColor(buttonStep.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonStep.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonStep.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonStep.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-	
-	BUTTON_SetBkColor(buttonSpeed.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonSpeed.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonSpeed.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonSpeed.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-	
-	BUTTON_SetBkColor(buttonSprayType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonSprayType.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonSprayType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonSprayType.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
 
-	
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
 
 	if(gCfgItems.multiple_language != 0)
 	{
@@ -449,8 +425,8 @@ void disp_sprayer_temp()
 	char buf[30] = {0};
 	char buf1[10] = {0};
 	
-	TEXT_SetTextColor(textPrintTemp, gCfgItems.state_text_color);
-	TEXT_SetBkColor(textPrintTemp, gCfgItems.state_background_color);
+	TEXT_SetTextColor(textPrintTemp, gCfgItems.title_color);
+	TEXT_SetBkColor(textPrintTemp, gCfgItems.background_color);
 #if 0
 	if(gCfgItems.curSprayerChoose<1)
 	{
@@ -477,8 +453,8 @@ void disp_extru_amount()
 	char buf[30] = {0};
 	char buf1[10] = {0};
 
-	TEXT_SetTextColor(textExtruAmount, gCfgItems.state_text_color);
-	TEXT_SetBkColor(textExtruAmount, gCfgItems.state_background_color);	
+	TEXT_SetTextColor(textExtruAmount, gCfgItems.title_color);
+	TEXT_SetBkColor(textExtruAmount, gCfgItems.background_color);	
 
 	if(extructAmount < 999 && extructAmount > -99)
 	{

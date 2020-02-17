@@ -27,7 +27,7 @@ void mkstft_ui_load()
 	{
 		epr_read_data(EPR_SCREEN_BKCOLOR,(uint8_t *)&gCfgItems.background_color,sizeof(gCfgItems.background_color)); 
 		epr_read_data(EPR_TITIL_COLOR,(uint8_t *)&gCfgItems.title_color,sizeof(gCfgItems.title_color)); 
-		epr_read_data(EPR_STATE_BKCOLOR,(uint8_t *)&gCfgItems.state_background_color,sizeof(gCfgItems.state_background_color)); 
+		//epr_read_data(EPR_STATE_BKCOLOR,(uint8_t *)&gCfgItems.state_background_color,sizeof(gCfgItems.state_background_color)); 
 		epr_read_data(EPR_STATE_TEXTCOLOR,(uint8_t *)&gCfgItems.state_text_color,sizeof(gCfgItems.state_text_color)); 
 		epr_read_data(EPR_FILENAME_BKCOLOR,(uint8_t *)&gCfgItems.filename_background_color,sizeof(gCfgItems.filename_background_color)); 
 		epr_read_data(EPR_FILENAME_TEXTCOLOR,(uint8_t *)&gCfgItems.filename_color,sizeof(gCfgItems.filename_color)); 
@@ -97,6 +97,7 @@ void mkstft_ui_load()
 	else
 	
 	*/
+	gCfgItems.preview_bk_color = rgb888_2_rgb565(gCfgItems.background_color);
 }
 
 void mkstft_ui_set_epr()
@@ -107,7 +108,7 @@ void mkstft_ui_set_epr()
 	{
 		epr_write_data(EPR_SCREEN_BKCOLOR,(uint8_t *)&gCfgItems.background_color,sizeof(gCfgItems.background_color)); 
 		epr_write_data(EPR_TITIL_COLOR,(uint8_t *)&gCfgItems.title_color,sizeof(gCfgItems.title_color)); 
-		epr_write_data(EPR_STATE_BKCOLOR,(uint8_t *)&gCfgItems.state_background_color,sizeof(gCfgItems.state_background_color)); 
+		//epr_write_data(EPR_STATE_BKCOLOR,(uint8_t *)&gCfgItems.state_background_color,sizeof(gCfgItems.state_background_color)); 
 		epr_write_data(EPR_STATE_TEXTCOLOR,(uint8_t *)&gCfgItems.state_text_color,sizeof(gCfgItems.state_text_color)); 
 		epr_write_data(EPR_FILENAME_BKCOLOR,(uint8_t *)&gCfgItems.filename_background_color,sizeof(gCfgItems.filename_background_color)); 
 		epr_write_data(EPR_FILENAME_TEXTCOLOR,(uint8_t *)&gCfgItems.filename_color,sizeof(gCfgItems.filename_color)); 
@@ -180,17 +181,23 @@ void mkstft_ui_set_epr()
 }
 void mkstft_ui_init()
 {
+		gCfgItems.value_bk_color = 0xFFFFFF;
+        	gCfgItems.value_text_color = 0x000000;
+
+        	gCfgItems.default_bk_color = 0xff5449;
+        	gCfgItems.default_text_color = 0xFFFFFF;
+			
 		gCfgItems.background_color = 0x494949;//
 		gCfgItems.title_color = 0xFFFFFF;//
-		gCfgItems.state_background_color = 0x494949;//
+		gCfgItems.state_background_color = 0x1A1A1A;//
 		gCfgItems.state_text_color = 0xFFFFFF;//
-		gCfgItems.btn_color = 0x494949;
+		gCfgItems.btn_color = 0X1A1A1A;
 		gCfgItems.btn_textcolor = 0xffffff;
-		gCfgItems.btn_state_color = 0x494949;//0x505050;
+		gCfgItems.btn_state_color = 0X1A1A1A;//0x505050;
 		gCfgItems.btn_state_textcolor = 0xffffff;
-		gCfgItems.btn_state_sel_color = 0x494949;//0x9dfcff;
+		gCfgItems.btn_state_sel_color = 0X1A1A1A;//0x9dfcff;
 		gCfgItems.btn_state_sel_textcolor = 0xFFFFFF;
-		gCfgItems.back_btn_color = 0x494949;
+		gCfgItems.back_btn_color = 0xff5449;
 		gCfgItems.back_btn_textcolor = 0xFFFFFF;
 		gCfgItems.printing_bar_color_left= 0x00ff00;
 		gCfgItems.printing_bar_color_right= 0xAAAAAA ;
@@ -738,6 +745,7 @@ void mks_PrintStatePolling()
             {
                 //stepper.synchronize();
 			    //Close_machine_display();
+			       if(card.eof());
 				print_finish_start_timer=TIMER_START;
             }
 
@@ -2172,5 +2180,21 @@ void EXTI9_5_IRQHandler(void)
 	}
   }
   sei(); // ¿ªÆô interrupts
+}
+
+
+uint16_t rgb888_2_rgb565(int32_t  color_rgb888)
+{
+	uint8_t r5,g6,b5;
+	uint16_t color_rgb565;
+	r5 = (uint8_t)((color_rgb888  & 0x00ff0000)>>19);
+	g6 = (uint8_t)((color_rgb888  & 0x0000ff00)>>10);
+	b5 = (uint8_t)((color_rgb888  & 0x000000ff)>>3);
+
+	color_rgb565 = (((uint16_t)(r5<<3) & 0x00ff)<<8);
+	color_rgb565 = color_rgb565 | (((uint16_t)(g6<<2))<<3);
+	color_rgb565 = color_rgb565 | ((uint16_t)(b5));
+
+	return color_rgb565;
 }
 

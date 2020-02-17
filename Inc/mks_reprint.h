@@ -43,7 +43,7 @@ typedef enum
 typedef struct
 {
 	char dirname[20];
-	char filename[150];
+	char filename[100];
 	float mks_pausePrint_x;	//‘›Õ£Œª÷√…Ë∂®
 	float mks_pausePrint_y;
 	float mks_pausePrint_z;
@@ -122,6 +122,8 @@ void mks_getPositionXYZE();
 extern void mkstft_ui_load();
 extern void mkstft_ui_init();
 extern void mks_manual_leveling(int16_t x,int16_t y);
+
+extern uint16_t rgb888_2_rgb565(int32_t  color_rgb888);
 
 void mks_resume_extrude_speed();
 void mks_adjust_extrude_speed();

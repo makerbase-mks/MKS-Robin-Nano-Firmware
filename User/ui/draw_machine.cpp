@@ -84,7 +84,7 @@ void draw_Machine()
 	GUI_SetBkColor(gCfgItems.background_color);
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
-	GUI_SetFont(&FONT_TITLE);
+	//GUI_SetFont(&FONT_TITLE);
 
 	//GUI_DispStringAt("准备打印->设置->机型", 0, 0);
 	GUI_DispStringAt(creat_title_text(), 0, 0);

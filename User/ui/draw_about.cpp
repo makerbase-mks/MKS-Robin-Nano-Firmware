@@ -66,7 +66,7 @@ void draw_About()
 //	int imgHeight = LCD_HEIGHT - titleHeight;	
 	
 	int i;
-	char buf[101];
+	uint8_t buf[101];
 	
 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != ABOUT_UI)
 	{
@@ -103,19 +103,14 @@ void draw_About()
 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);	
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-
-	TEXT_SetBkColor(TFT_Type_text, gCfgItems.state_background_color);
-	TEXT_SetTextColor(TFT_Type_text, gCfgItems.state_text_color);
-	TEXT_SetBkColor(TFT_Version_text, gCfgItems.state_background_color);
-	TEXT_SetTextColor(TFT_Version_text, gCfgItems.state_text_color);
-	TEXT_SetBkColor(Wifi_Ver_text, gCfgItems.state_background_color);
-	TEXT_SetTextColor(Wifi_Ver_text, gCfgItems.state_text_color);
-	TEXT_SetBkColor(Shengma_text, gCfgItems.state_background_color);
-	TEXT_SetTextColor(Shengma_text, gCfgItems.state_text_color);
+	TEXT_SetBkColor(TFT_Type_text, gCfgItems.background_color);
+	TEXT_SetTextColor(TFT_Type_text, gCfgItems.title_color);
+	TEXT_SetBkColor(TFT_Version_text, gCfgItems.background_color);
+	TEXT_SetTextColor(TFT_Version_text, gCfgItems.title_color);
+	TEXT_SetBkColor(Wifi_Ver_text, gCfgItems.background_color);
+	TEXT_SetTextColor(Wifi_Ver_text, gCfgItems.title_color);
+	TEXT_SetBkColor(Shengma_text, gCfgItems.background_color);
+	TEXT_SetTextColor(Shengma_text, gCfgItems.title_color);
 
 	
        //HAL_Delay(10);

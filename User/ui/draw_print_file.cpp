@@ -45,9 +45,9 @@ int8_t curDirLever = 0;
 DIR_OFFSET dir_offset[10];
 
 #if _LFN_UNICODE
-TCHAR curFileName[150] = "notValid";
+TCHAR curFileName[100] = "notValid";
 #else
-char curFileName[150] = "notValid";
+char curFileName[100] = "notValid";
 #endif
 
 //extern USB_OTG_CORE_HANDLE          USB_OTG_Core;
@@ -98,7 +98,8 @@ case WM_TOUCH_CHILD:
 	{
 		if(pMsg->hWinSrc == buttonPd.btnHandle)
 		{	
-		    GUI_UC_SetEncodeUTF8();
+			if((gCfgItems.language != LANG_SIMPLE_CHINESE)&&(gCfgItems.language != LANG_COMPLEX_CHINESE))
+		    		GUI_UC_SetEncodeUTF8();
 			if(dir_offset[curDirLever].cur_page_last_offset > 0)
 			{
 								
@@ -149,6 +150,7 @@ case WM_TOUCH_CHILD:
 		}
 		else if(pMsg->hWinSrc == buttonPu.btnHandle)
 		{
+			if((gCfgItems.language != LANG_SIMPLE_CHINESE)&&(gCfgItems.language != LANG_COMPLEX_CHINESE))
 			GUI_UC_SetEncodeUTF8();
 			if(dir_offset[curDirLever].curPage > 0)
 			{
@@ -210,7 +212,21 @@ case WM_TOUCH_CHILD:
 				if(choose_ret==1)draw_Set();
 				else draw_ready_print();
 				#endif
-				GUI_UC_SetEncodeUTF8();
+				//GUI_UC_SetEncodeUTF8();
+                if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+                {
+                  GUI_SetFont(&GUI_FontHZ16);
+                  BUTTON_SetDefaultFont(&GUI_FontHZ16);
+                  TEXT_SetDefaultFont(&GUI_FontHZ16);  
+                  GUI_UC_SetEncodeNone();
+                }
+                else
+                {
+                  GUI_SetFont(&FONT_TITLE);
+                  BUTTON_SetDefaultFont(&FONT_TITLE);
+                  TEXT_SetDefaultFont(&FONT_TITLE);                    
+                  GUI_UC_SetEncodeUTF8();
+                }			
 				if(gCfgItems.breakpoint_reprint_flg == 1)
 				{
 					gCfgItems.breakpoint_reprint_flg = 0;
@@ -290,7 +306,8 @@ case WM_TOUCH_CHILD:
 							#else
 							strcpy(curFileName, (const char *)card.gcodeFileList.fileName[j]);
 							#endif
-								
+							if((gCfgItems.language != LANG_SIMPLE_CHINESE)&&(gCfgItems.language != LANG_COMPLEX_CHINESE))
+								GUI_UC_SetEncodeUTF8();	
 							Clear_print_file();
 							disp_in_file_dir = 0;
 							draw_dialog(DIALOG_TYPE_PRINT_FILE);
@@ -439,6 +456,7 @@ void search_files()
 	uint32_t tick1, tick2;
 #if 1	
 //	dir_offset[curDirLever].curPage = 0;
+	if((gCfgItems.language != LANG_SIMPLE_CHINESE)&&(gCfgItems.language != LANG_COMPLEX_CHINESE))
 	GUI_UC_SetEncodeUTF8();
 
 	GUI_SetColor(gCfgItems.title_color);
@@ -463,7 +481,7 @@ void search_files()
 	GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
 	GUI_DispStringAt(file_menu.file_loading, (LCD_WIDTH-64)/2, imgHeight/2);
 
-	GUI_UC_SetEncodeNone();
+	//GUI_UC_SetEncodeNone();
 	tick1 = getTick();
 	
 	//while(1)
@@ -539,7 +557,7 @@ void search_files()
 		//buttonF[0] = BUTTON_CreateEx(0,  0, LCD_WIDTH / 4 - 1, imgHeight / 2 - 1,hPrintFileWnd, BUTTON_CF_SHOW, 0, 103);
 		//BUTTON_SetText(buttonF[0], "无文�?);
 		
-		GUI_UC_SetEncodeUTF8();
+		//GUI_UC_SetEncodeUTF8();
 		//GUI_Exec();
 		GUI_ClearRect(80, 100, 480, 300);
 		if(curDirLever == 0)
@@ -667,7 +685,7 @@ void disp_udisk_files(int seq)
 	{
 		Clear_print_file();
 	}*/
-	GUI_UC_SetEncodeUTF8();
+	//GUI_UC_SetEncodeUTF8();
 	GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
 	
 
@@ -683,9 +701,9 @@ void disp_udisk_files(int seq)
     #endif
     //#elif defined(TFT35)
     #if defined(TFT35)
-	buttonPu.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,0,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
-	buttonPd.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,OTHER_BTN_YPIEL+INTERVAL_H,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
-	buttonR.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,OTHER_BTN_YPIEL*2+INTERVAL_H*2,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+	buttonPu.btnHandle = BUTTON_CreateEx(9,255-36,140,60,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+	buttonPd.btnHandle = BUTTON_CreateEx(180,255-36,140,60,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+	buttonR.btnHandle = BUTTON_CreateEx(331,255-36,140,60,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
     #else
      buttonPu.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
      buttonPd.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*2,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
@@ -705,9 +723,9 @@ void disp_udisk_files(int seq)
 	//#elif defined(TFT35)
 	#if defined(TFT35)
 	BUTTON_SetBmpFileName(buttonR.btnHandle, "bmp_back.bin",1);
-	BUTTON_SetBitmapEx(buttonPu.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
-	BUTTON_SetBitmapEx(buttonPd.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
-	BUTTON_SetBitmapEx(buttonR.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
+	BUTTON_SetBitmapEx(buttonPu.btnHandle, 0, &bmp_struct_141x60,BMP_PIC_X, BMP_PIC_Y);
+	BUTTON_SetBitmapEx(buttonPd.btnHandle, 0, &bmp_struct_141x60,BMP_PIC_X, BMP_PIC_Y);
+	BUTTON_SetBitmapEx(buttonR.btnHandle, 0, &bmp_struct_141x60,BMP_PIC_X, BMP_PIC_Y);
     	#else
 	BUTTON_SetBmpFileName(buttonR.btnHandle, "bmp_return.bin",1);
 	BUTTON_SetBitmapEx(buttonPu.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
@@ -717,20 +735,6 @@ void disp_udisk_files(int seq)
 	
     	#endif
 	//#endif
-	BUTTON_SetBkColor(buttonPd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonPd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonPd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonPd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-	BUTTON_SetBkColor(buttonPu.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonPu.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonPu.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonPu.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-	BUTTON_SetBkColor(buttonR.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonR.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonR.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonR.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
 	
 	#if !defined(TFT35)
 
@@ -767,14 +771,18 @@ void disp_udisk_files(int seq)
 		}
 	
 		#if defined(TFT35)
-		if(i < 3)
+		if(i < 2)
 		{
-			buttonF[i].btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*i+INTERVAL_V*(i+1),  0, BTN_X_PIXEL, BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, 103 + i);
+			buttonF[i].btnHandle = BUTTON_CreateEx(226*i+9*(i+1),  17, 226, 50,hPrintFileWnd, BUTTON_CF_SHOW, 0,alloc_win_id());
 		}
+		else if(i>=2 && i<4)
+		{
+			buttonF[i].btnHandle = BUTTON_CreateEx(226*(i-2)+9*((i-2)+1),  50+17*2, 226, 50,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+		}     
 		else
 		{
-			buttonF[i].btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*(i-3)+INTERVAL_V*((i-3)+1),  BTN_Y_PIXEL+INTERVAL_H, BTN_X_PIXEL, BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, 107 + i);
-		}     
+			buttonF[i].btnHandle = BUTTON_CreateEx(226*(i-4)+9*((i-4)+1),  50*2+17*3, 226, 50,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+		}
         	#else
  		if(i <= 3)
 		{
@@ -795,7 +803,7 @@ void disp_udisk_files(int seq)
 		#if _LFN_UNICODE
 		cutFileName((TCHAR *)card.gcodeFileList.fileName[j], 16, 8,  tmpStr);
        	#else
-		cutFileName((char *)card.gcodeFileList.fileName[j], 16, 8,  (char *)tmpStr);
+		cutFileName((char *)card.gcodeFileList.fileName[j], 32, 20,  (char *)tmpStr);
         #endif        
 
 		/*tmpStr1 = (uint8_t *)strstr((uint8_t *)sd.gcodeFileList.fileName[curPage * 5 + i], "/");
@@ -834,17 +842,13 @@ void disp_udisk_files(int seq)
 			BUTTON_SetBitmapEx(buttonF[i], 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 		}
 */
-	BUTTON_SetBkColor(buttonF[i].btnHandle, BUTTON_CI_PRESSED, gCfgItems.filename_background_color);
-	BUTTON_SetBkColor(buttonF[i].btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.filename_background_color);
-	BUTTON_SetTextColor(buttonF[i].btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.filename_color);
-	BUTTON_SetTextColor(buttonF[i].btnHandle, BUTTON_CI_PRESSED,gCfgItems.filename_color);
 
 	if(card.gcodeFileList.fileAttr[j] == 1) //dir
 	//if(backup_fileAttr[i] == 1) //dir
 	{
 		//#if defined(TFT70)
 		BUTTON_SetBmpFileName(buttonF[i].btnHandle, "bmp_dir.bin",1);
-		BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+		BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_50x50,BMP_PIC_X, BMP_PIC_Y);
 		//#elif defined(TFT35)
 		//BUTTON_SetBmpFileName(buttonF[i].btnHandle, "bmp_dir.bin",1);
 		//BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_100,FILE_PRE_PIC_X_OFFSET, FILE_PRE_PIC_Y_OFFSET);		
@@ -858,7 +862,7 @@ void disp_udisk_files(int seq)
 		{
 			BUTTON_SetBmpFileNamePath(buttonF[i].btnHandle, NULL,card.gcodeFileList.fileName[j],1);
 			#if defined(TFT35)
-			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_100,FILE_PRE_PIC_X_OFFSET, FILE_PRE_PIC_Y_OFFSET);
+			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_50x50,0,0);//FILE_PRE_PIC_X_OFFSET, FILE_PRE_PIC_Y_OFFSET);
 			#endif			
 		}
 		else
@@ -866,7 +870,7 @@ void disp_udisk_files(int seq)
 		{
 			BUTTON_SetBmpFileName(buttonF[i].btnHandle, "bmp_file.bin",1);
 			#if defined(TFT35)
-			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_50x50,BMP_PIC_X, BMP_PIC_Y);
 			#endif			
 		}
 		#if defined(TFT70)
@@ -875,13 +879,14 @@ void disp_udisk_files(int seq)
 	}
 
 #endif
-		
+		BUTTON_SetTextAlign(buttonF[i].btnHandle, GUI_TA_VCENTER | GUI_CUSTOM_POS);
 		BUTTON_SetText(buttonF[i].btnHandle, (char const *)(tmpStr));
         #endif
 
 	}
 	
 	GUI_Exec();
+	if((gCfgItems.language != LANG_SIMPLE_CHINESE)&&(gCfgItems.language != LANG_COMPLEX_CHINESE))
 	GUI_UC_SetEncodeUTF8();
 
 }

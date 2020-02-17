@@ -578,7 +578,7 @@ bool CardReader::openFile(char* filename,bool silent, bool replace_current/*=tru
     char *oldP;
     boolean bFound;
     
-    char newname[150]={0};
+    char newname[100]={0};
       
 	  if(sdprinting)			return false;
 	  f_close(&curFile);

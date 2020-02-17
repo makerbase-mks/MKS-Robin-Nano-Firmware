@@ -234,21 +234,6 @@ void draw_printmore()
 	BUTTON_SetBitmapEx(morefunc6.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(morefunc7.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 
-	BUTTON_SetBkColor(morefunc1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc2.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc2.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc3.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc3.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc4.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc4.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc5.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc5.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc6.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc6.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc7.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(morefunc7.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
@@ -451,7 +436,7 @@ void draw_printmore()
     BUTTON_SetBitmapEx(buttonFan_P.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
     //BUTTON_SetBitmapEx(buttonPreHeat.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
     BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-
+#if 0
 	BUTTON_SetBkColor(buttonFan_P.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
 	BUTTON_SetBkColor(buttonFan_P.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
 	BUTTON_SetTextColor(buttonFan_P.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
@@ -472,6 +457,7 @@ void draw_printmore()
 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);    
+    #endif
     if(gCfgItems.multiple_language != 0)
     {
         BUTTON_SetText(buttonFan_P.btnHandle,printing_more_menu.fan);

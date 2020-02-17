@@ -1,11 +1,9 @@
 /******************** (C) COPYRIGHT 2009 www.armjishu.com ************************
-* File Name          : ARMJISHU_TouchScreen_ADS7843.c
-* Author             : www.armjishu.com Team
-* Version            : V3.0.1
-* Date               : 03/20/2010
+* File Name          : 
+* Author             : 
+* Version            : 
+* Date               : 
 * Description        : 
-                        ADS7843_CS   is PB1
-                        ADS7843_INT  is PC1
 *******************************************************************************/
 #include "mks_touch_screen.h"
 //#include "stm32f10x.h"

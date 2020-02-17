@@ -41,6 +41,20 @@ static void cbLanguageWin(WM_MESSAGE * pMsg) {
 			{
 				if(pMsg->hWinSrc == buttonRet.btnHandle)
 				{
+                    if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+                    {
+                      GUI_SetFont(&GUI_FontHZ16);
+                      BUTTON_SetDefaultFont(&GUI_FontHZ16);
+                      TEXT_SetDefaultFont(&GUI_FontHZ16);  
+                      GUI_UC_SetEncodeNone();
+                    }
+                    else
+                    {
+                      GUI_SetFont(&FONT_TITLE);
+                      BUTTON_SetDefaultFont(&FONT_TITLE);
+                      TEXT_SetDefaultFont(&FONT_TITLE);                    
+                      GUI_UC_SetEncodeUTF8();
+                    }				
 					last_disp_state = LANGUAGE_UI;
 					Clear_Language();
 					draw_return_ui();
@@ -213,9 +227,29 @@ void draw_Language()
 	GUI_SetBkColor(gCfgItems.background_color);
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
+    if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+    {
+      GUI_SetFont(&GUI_FontHZ16);
+      BUTTON_SetDefaultFont(&GUI_FontHZ16);
+      TEXT_SetDefaultFont(&GUI_FontHZ16);  
+      GUI_UC_SetEncodeNone();
+      GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
+      GUI_UC_SetEncodeUTF8();
+      GUI_SetFont(&FONT_TITLE);
+      BUTTON_SetDefaultFont(&FONT_TITLE);
+      TEXT_SetDefaultFont(&FONT_TITLE);
+    }
+    else
+    {
+      GUI_SetFont(&FONT_TITLE);
+      BUTTON_SetDefaultFont(&FONT_TITLE);
+      TEXT_SetDefaultFont(&FONT_TITLE);                    
+      GUI_UC_SetEncodeUTF8();
+      GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
+    }
 
 	//GUI_DispStringAt("准备打印->设置->语言", 0, 0);
-	GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
+	//GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
 	
 	hLanguageWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbLanguageWin, 0);
 
@@ -241,26 +275,7 @@ void draw_Language()
 	BUTTON_SetBitmapEx(buttonFrench.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonItaly.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-/*
-	BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-*/	
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
+
 	
 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1); 
 	
@@ -283,37 +298,6 @@ void disp_sel_item()
 			switch(gCfgItems.language)
 			{
 			case LANG_SIMPLE_CHINESE:
-
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);
-
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			
 			BUTTON_SetBmpFileName(buttonSimple_Ch.btnHandle, "bmp_simplified_cn_sel.bin",1);
 			BUTTON_SetBmpFileName(buttontraditional_Ch.btnHandle, "bmp_traditional_cn.bin",1);
 			BUTTON_SetBmpFileName(buttonEng.btnHandle, "bmp_english.bin",1);
@@ -323,36 +307,6 @@ void disp_sel_item()
 			BUTTON_SetBmpFileName(buttonItaly.btnHandle, "bmp_italy.bin",1);
 			break;
 			case LANG_COMPLEX_CHINESE:
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);
-
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			
 
 			BUTTON_SetBmpFileName(buttonSimple_Ch.btnHandle, "bmp_simplified_cn.bin",1);
 			BUTTON_SetBmpFileName(buttontraditional_Ch.btnHandle, "bmp_traditional_cn_sel.bin",1);
@@ -363,36 +317,6 @@ void disp_sel_item()
 			BUTTON_SetBmpFileName(buttonItaly.btnHandle, "bmp_italy.bin",1);
 			break;
 			case LANG_ENGLISH:
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);			
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);
-			
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			
 			BUTTON_SetBmpFileName(buttonSimple_Ch.btnHandle, "bmp_simplified_cn.bin",1);
 			BUTTON_SetBmpFileName(buttontraditional_Ch.btnHandle, "bmp_traditional_cn.bin",1);
 			BUTTON_SetBmpFileName(buttonEng.btnHandle, "bmp_english_sel.bin",1);
@@ -403,36 +327,6 @@ void disp_sel_item()
 			break;
 	
 			case LANG_RUSSIAN:
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);			
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);	
-			
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);			
-
 			BUTTON_SetBmpFileName(buttonSimple_Ch.btnHandle, "bmp_simplified_cn.bin",1);
 			BUTTON_SetBmpFileName(buttontraditional_Ch.btnHandle, "bmp_traditional_cn.bin",1);
 			BUTTON_SetBmpFileName(buttonEng.btnHandle, "bmp_english.bin",1);
@@ -441,37 +335,7 @@ void disp_sel_item()
 			BUTTON_SetBmpFileName(buttonFrench.btnHandle, "bmp_french.bin",1);	
 			BUTTON_SetBmpFileName(buttonItaly.btnHandle, "bmp_italy.bin",1);
 			break;
-			case LANG_SPANISH:
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);	
-			
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);				
+			case LANG_SPANISH:			
 			BUTTON_SetBmpFileName(buttonSimple_Ch.btnHandle, "bmp_simplified_cn.bin",1);
 			BUTTON_SetBmpFileName(buttontraditional_Ch.btnHandle, "bmp_traditional_cn.bin",1);
 			BUTTON_SetBmpFileName(buttonEng.btnHandle, "bmp_english.bin",1);
@@ -481,38 +345,7 @@ void disp_sel_item()
 			BUTTON_SetBmpFileName(buttonFrench.btnHandle, "bmp_french.bin",1);	
 			break;
 			
-			case LANG_ITALY:
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			
-
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);				
+			case LANG_ITALY:			
 			BUTTON_SetBmpFileName(buttonSimple_Ch.btnHandle, "bmp_simplified_cn.bin",1);
 			BUTTON_SetBmpFileName(buttontraditional_Ch.btnHandle, "bmp_traditional_cn.bin",1);
 			BUTTON_SetBmpFileName(buttonEng.btnHandle, "bmp_english.bin",1);
@@ -521,38 +354,7 @@ void disp_sel_item()
 			BUTTON_SetBmpFileName(buttonItaly.btnHandle, "bmp_italy_sel.bin",1);
 			BUTTON_SetBmpFileName(buttonFrench.btnHandle, "bmp_french.bin",1);	
 			break;	
-			case LANG_FRENCH:
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttontraditional_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonEng.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonRussian.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSpanish.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonItaly.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonSimple_Ch.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonFrench.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);				
+			case LANG_FRENCH:				
 			BUTTON_SetBmpFileName(buttonSimple_Ch.btnHandle, "bmp_simplified_cn.bin",1);
 			BUTTON_SetBmpFileName(buttontraditional_Ch.btnHandle, "bmp_traditional_cn.bin",1);
 			BUTTON_SetBmpFileName(buttonEng.btnHandle, "bmp_english.bin",1);

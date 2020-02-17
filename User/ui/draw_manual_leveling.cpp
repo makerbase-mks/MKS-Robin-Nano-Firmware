@@ -465,21 +465,6 @@ void draw_leveling()
 	BUTTON_SetBmpFileName(buttonleveling2.btnHandle, "bmp_leveling2.bin",1);
 	BUTTON_SetBmpFileName(buttonleveling3.btnHandle, "bmp_leveling3.bin",1);
 
-	BUTTON_SetBkColor(buttonleveling1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonleveling1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonleveling1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonleveling1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-	
-	BUTTON_SetBkColor(buttonleveling2.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonleveling2.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonleveling2.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonleveling2.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-	
-	BUTTON_SetBkColor(buttonleveling3.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonleveling3.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonleveling3.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonleveling3.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-	
 	if(gCfgItems.multiple_language != 0)
 	{
 		BUTTON_SetText(buttonleveling1.btnHandle, leveling_menu.position1);
@@ -490,10 +475,6 @@ void draw_leveling()
 	
 	if(gCfgItems.leveling_point_number>3)
 	{
-		BUTTON_SetBkColor(buttonleveling4.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonleveling4.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetTextColor(buttonleveling4.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonleveling4.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
 		
 		BUTTON_SetBmpFileName(buttonleveling4.btnHandle, "bmp_leveling4.bin",1);			
 		if(gCfgItems.multiple_language != 0)
@@ -503,11 +484,6 @@ void draw_leveling()
 	}
 	if(gCfgItems.leveling_point_number>4)
 	{
-
-		BUTTON_SetBkColor(buttonleveling5.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonleveling5.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);	
-		BUTTON_SetTextColor(buttonleveling5.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonleveling5.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);	
 		
 		BUTTON_SetBmpFileName(buttonleveling5.btnHandle, "bmp_leveling5.bin",1);	
 		
@@ -519,10 +495,6 @@ void draw_leveling()
 
 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
 
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);	
 	if(gCfgItems.multiple_language != 0)
 	{
 		BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);

@@ -72,7 +72,7 @@ extern char fullName[LONG_FILENAME_LENGTH*SD_MAX_FOLDER_DEPTH+SD_MAX_FOLDER_DEPT
 #endif
 typedef struct
 {
-	TCHAR fileName[MAX_FILES_ONE_LEVER][200];//fileName[MAX_FILES_ONE_LEVER][50];
+	TCHAR fileName[MAX_FILES_ONE_LEVER][100];//fileName[MAX_FILES_ONE_LEVER][50];
 	uint8_t fileAttr[MAX_FILES_ONE_LEVER];	//0?agcode???t?¡§o?1?a????
 	uint8_t index;
 	uint8_t listVaild;	//flag of valid

@@ -1073,8 +1073,22 @@ static void cbHardwaretestWin(WM_MESSAGE * pMsg) {
                     BED_OP=0;HEATER1_OP=0;HEATER2_OP=0;MKS_FAN_TIM = 0;
 				    mksTmp.cfg_hardware_test_enable=0;
                     last_disp_state = HARDWARE_TEST_UI;
-					GUI_UC_SetEncodeUTF8();
-					GUI_SetFont(&FONT_TITLE);
+					//GUI_UC_SetEncodeUTF8();
+					//GUI_SetFont(&FONT_TITLE);
+					if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+				    {
+				      GUI_SetFont(&GUI_FontHZ16);
+				      BUTTON_SetDefaultFont(&GUI_FontHZ16);
+				      TEXT_SetDefaultFont(&GUI_FontHZ16);  
+				      GUI_UC_SetEncodeNone();
+				    }
+				    else
+				    {
+				      GUI_SetFont(&FONT_TITLE);
+				      BUTTON_SetDefaultFont(&FONT_TITLE);
+				      TEXT_SetDefaultFont(&FONT_TITLE);                    
+				      GUI_UC_SetEncodeUTF8();
+				    }
 					Clear_Hardwaretest();
 					draw_ready_print();
 				}

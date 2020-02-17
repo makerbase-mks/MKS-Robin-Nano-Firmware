@@ -9,6 +9,7 @@
 #include "wifi_module.h"
 #include  <string.h>
 #include  "draw_set.h"
+#include "draw_wifi_list.h"
 
 #ifndef GUI_FLASH
 #define GUI_FLASH
@@ -22,9 +23,9 @@ extern int X_ADD,X_INTERVAL;   //**Í¼Æ¬¼ä¸ô
 
 
 	
-static BUTTON_STRUCT  buttonCloud,buttonRet;
+static BUTTON_STRUCT  buttonCloud,buttonRet,buttonReconnect;
 static void cbWifiWin(WM_MESSAGE * pMsg) {
-
+	char buf[6]={0};
 	struct PressEvt *press_event;
 	switch (pMsg->MsgId)
 	{
@@ -56,7 +57,21 @@ static void cbWifiWin(WM_MESSAGE * pMsg) {
 					Clear_Wifi();
 					//draw_return_ui();
 					draw_Set();
-				}			
+				}	
+				else if(pMsg->hWinSrc == buttonReconnect.btnHandle)
+				{
+					
+					buf[0] = 0xA5;
+					buf[1] = 0x07;
+					buf[2] = 0x00;
+					buf[3] = 0x00;
+					buf[4] = 0xFC;
+					raw_send_to_wifi(buf, 5);
+				
+					last_disp_state = WIFI_UI;
+					Clear_Wifi();
+					draw_Wifi_list();
+				}
 				
 			}
 			break;
@@ -89,41 +104,62 @@ void draw_Wifi()
 	
 	disp_wifi_state();
 	
-	hWifiWnd = WM_CreateWindow(BTN_X_PIXEL*2+INTERVAL_V*3 , titleHeight,BTN_X_PIXEL*2+INTERVAL_V,imgHeight, WM_CF_SHOW, cbWifiWin, 0);
+	hWifiWnd = WM_CreateWindow(0 , titleHeight+BTN_Y_PIXEL+INTERVAL_H,LCD_WIDTH,BTN_Y_PIXEL, WM_CF_SHOW, cbWifiWin, 0);
 
 	if(gCfgItems.wifi_type == ESP_WIFI)
 	{
+		
 		if((gCfgItems.wifi_type == 0x02)&&(gCfgItems.cloud_enable == 1))
 		{
-			buttonCloud.btnHandle = BUTTON_CreateEx(0,BTN_Y_PIXEL+INTERVAL_H, BTN_X_PIXEL, BTN_Y_PIXEL, hWifiWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+			buttonCloud.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0, BTN_X_PIXEL, BTN_Y_PIXEL, hWifiWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 
 			BUTTON_SetBmpFileName(buttonCloud.btnHandle, "bmp_cloud.bin",1);
 			BUTTON_SetBitmapEx(buttonCloud.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 		
-			BUTTON_SetBkColor(buttonCloud.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-			BUTTON_SetBkColor(buttonCloud.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-			BUTTON_SetTextColor(buttonCloud.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-			BUTTON_SetTextColor(buttonCloud.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);  
-		}
+			//BUTTON_SetBkColor(buttonCloud.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+			//BUTTON_SetBkColor(buttonCloud.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+			//BUTTON_SetTextColor(buttonCloud.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+			//BUTTON_SetTextColor(buttonCloud.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);  
 
+			if(gCfgItems.wifi_scan == 1)
+			{
+				buttonReconnect.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL, BTN_Y_PIXEL, hWifiWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+
+				BUTTON_SetBmpFileName(buttonReconnect.btnHandle, "bmp_wifi.bin",1);
+				BUTTON_SetBitmapEx(buttonReconnect.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+			}
+		}
+		else
+		{
+			if(gCfgItems.wifi_scan == 1)
+			{
+				buttonReconnect.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0, BTN_X_PIXEL, BTN_Y_PIXEL, hWifiWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+
+				BUTTON_SetBmpFileName(buttonReconnect.btnHandle, "bmp_wifi.bin",1);
+				BUTTON_SetBitmapEx(buttonReconnect.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+			}
+		}
+		
 	}
 	
-	buttonRet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V , BTN_Y_PIXEL+INTERVAL_H, BTN_X_PIXEL, BTN_Y_PIXEL, hWifiWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+	buttonRet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0, BTN_X_PIXEL, BTN_Y_PIXEL, hWifiWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 	
 #if VERSION_WITH_PIC	
 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
     
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);        
+	//BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+	//BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+	//BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+	//BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);        
 	if(gCfgItems.multiple_language != 0)	
 	{
 		//if(gCfgItems.wifi_type == ESP_WIFI)
 		if((gCfgItems.wifi_type == ESP_WIFI)&&(gCfgItems.cloud_enable == 1))
 			BUTTON_SetText(buttonCloud.btnHandle,wifi_menu.cloud); 
 		BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
+		if(gCfgItems.wifi_scan == 1)
+			BUTTON_SetText(buttonReconnect.btnHandle,wifi_menu.reconnect); 
 	}
 
 

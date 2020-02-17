@@ -53,10 +53,10 @@ static void cbPauseWin(WM_MESSAGE * pMsg) {
 	switch (pMsg->MsgId)
 	{
 		case WM_PAINT:
-			GUI_SetColor(gCfgItems.state_background_color);
-			GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
-			GUI_SetColor(gCfgItems.state_background_color);
-			GUI_FillRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
+			//GUI_SetColor(gCfgItems.state_background_color);
+			//GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
+			//GUI_SetColor(gCfgItems.state_background_color);
+			//GUI_FillRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
 			
 			break;
 		case WM_TOUCH:
@@ -429,11 +429,11 @@ void disp_temp_pause()
 {
 	char buf[50] = {0};
 	
-	TEXT_SetTextColor(textPrintTemp1, gCfgItems.state_text_color);
-	TEXT_SetTextColor(textPrintTemp2, gCfgItems.state_text_color);
+	TEXT_SetTextColor(textPrintTemp1, gCfgItems.title_color);
+	TEXT_SetTextColor(textPrintTemp2, gCfgItems.title_color);
 
-	TEXT_SetBkColor(textPrintTemp1, gCfgItems.state_background_color);
-	TEXT_SetBkColor(textPrintTemp2, gCfgItems.state_background_color);
+	TEXT_SetBkColor(textPrintTemp1, gCfgItems.background_color);
+	TEXT_SetBkColor(textPrintTemp2, gCfgItems.background_color);
 
 	TEXT_SetFont(textPrintTemp1,&GUI_FontHZ_fontHz14);
 	TEXT_SetFont(textPrintTemp2,&GUI_FontHZ_fontHz14);

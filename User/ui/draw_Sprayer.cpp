@@ -82,7 +82,7 @@ void draw_Sprayer()
 	GUI_SetBkColor(gCfgItems.background_color);
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
-	GUI_SetFont(&FONT_TITLE);
+	//GUI_SetFont(&FONT_TITLE);
 
 	//GUI_DispStringAt("准备打印->设置->喷头数", 0, 0);
 	GUI_DispStringAt(creat_title_text(),  X_ADD, X_INTERVAL);

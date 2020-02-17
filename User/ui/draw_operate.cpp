@@ -524,10 +524,6 @@ void draw_operate()
 		if(IsChooseAutoShutdown == 1)
 		{
 			BUTTON_SetBmpFileName(buttonAuto_Off.btnHandle, "bmp_auto_off.bin",1);
-			BUTTON_SetBkColor(buttonAuto_Off.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonAuto_Off.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);	
-			BUTTON_SetTextColor(buttonAuto_Off.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonAuto_Off.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
 			
 			if(gCfgItems.multiple_language != 0)
 			{	
@@ -538,10 +534,7 @@ void draw_operate()
 		else
 		{
 			BUTTON_SetBmpFileName(buttonAuto_Off.btnHandle, "bmp_manual_off.bin",1);
-			BUTTON_SetBkColor(buttonAuto_Off.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonAuto_Off.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetTextColor(buttonAuto_Off.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonAuto_Off.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);			
+				
 			if(gCfgItems.multiple_language != 0)
 			{	
 				BUTTON_SetText(buttonAuto_Off.btnHandle,operation_menu.manual_off);
@@ -572,7 +565,7 @@ void draw_operate()
 	}
 	
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-
+#if 0
 	BUTTON_SetBkColor(buttonTemperature.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
 	BUTTON_SetBkColor(buttonTemperature.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
 	BUTTON_SetBkColor(buttonSpeed.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
@@ -612,7 +605,7 @@ void draw_operate()
 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-
+#endif
 	if(gCfgItems.multiple_language != 0)
 	{
 		BUTTON_SetText(buttonFan.btnHandle, operation_menu.fan);
@@ -710,9 +703,22 @@ void draw_operate()
 	GUI_UC_SetEncodeNone();
 	GUI_SetFont(&GUI_FontHZ16);
 	GUI_DispStringAt(creat_title_text(), 0, 0);
-	GUI_SetFont(&FONT_TITLE);
-	GUI_UC_SetEncodeUTF8();
-	
+	//GUI_SetFont(&FONT_TITLE);
+	//GUI_UC_SetEncodeUTF8();
+    if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+    {
+      GUI_SetFont(&GUI_FontHZ16);
+      BUTTON_SetDefaultFont(&GUI_FontHZ16);
+      TEXT_SetDefaultFont(&GUI_FontHZ16);  
+      GUI_UC_SetEncodeNone();
+    }
+    else
+    {
+      GUI_SetFont(&FONT_TITLE);
+      BUTTON_SetDefaultFont(&FONT_TITLE);
+      TEXT_SetDefaultFont(&FONT_TITLE);                    
+      GUI_UC_SetEncodeUTF8();
+    }	
 	hOperateWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbOperateWin, 0);
 	
 	buttonPause.btnHandle = BUTTON_CreateEx(0, 0, LCD_WIDTH / 4 - 2, imgHeight / 2 - 1, hOperateWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
@@ -838,11 +844,11 @@ void disp_temp_operate()
 {
 	char buf[50] = {0};
 	
-	TEXT_SetTextColor(textPrintTemp1, gCfgItems.state_text_color);
-	TEXT_SetTextColor(textPrintTemp2, gCfgItems.state_text_color);
+	TEXT_SetTextColor(textPrintTemp1, gCfgItems.title_color);
+	TEXT_SetTextColor(textPrintTemp2, gCfgItems.title_color);
 
-	TEXT_SetBkColor(textPrintTemp1, gCfgItems.state_background_color);
-	TEXT_SetBkColor(textPrintTemp2, gCfgItems.state_background_color);
+	TEXT_SetBkColor(textPrintTemp1, gCfgItems.background_color);
+	TEXT_SetBkColor(textPrintTemp2, gCfgItems.background_color);
 	
 	if(mksCfg.extruders == 2)
 	{

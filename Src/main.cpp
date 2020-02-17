@@ -250,7 +250,7 @@ int main(void)
   SPI_FLASH_BufferRead((u8*)&gCfgItems.overturn_180,DISP_ROTATION_180_ADDR,1);
   
   GUI_Init();
-  Lcd_Light_ON;
+  //Lcd_Light_ON;
   DRAW_LOGO();
   Lcd_Light_ON; 
   logo_tick1 = getTick();
@@ -301,12 +301,41 @@ int main(void)
 		AT24CXX_Write(EPR_LANGUAGE,(uint8_t *)&gCfgItems.language,1);	
 	}
   }
-  GUI_SetFont(&FONT_TITLE);
+  //GUI_SetFont(&FONT_TITLE);
 
   setup();
+
+    TEXT_SetDefaultTextColor(gCfgItems.title_color);
+    GUI_SetBkColor(gCfgItems.background_color);
+    GUI_SetColor(gCfgItems.title_color);
+
+    BUTTON_SetDefaultBkColor(gCfgItems.btn_color, BUTTON_CI_UNPRESSED);
+    BUTTON_SetDefaultBkColor(gCfgItems.btn_color, BUTTON_CI_PRESSED);
+    BUTTON_SetDefaultTextColor(gCfgItems.btn_textcolor, BUTTON_CI_UNPRESSED);
+    BUTTON_SetDefaultTextColor(gCfgItems.btn_textcolor, BUTTON_CI_PRESSED);
 #endif  
+  //gCfgItems.language = LANG_SIMPLE_CHINESE;
+#if 1
+  if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+  {
+    GUI_SetFont(&GUI_FontHZ16);
+    BUTTON_SetDefaultFont(&GUI_FontHZ16);
+    TEXT_SetDefaultFont(&GUI_FontHZ16);  
+    GUI_UC_SetEncodeNone();
+  }
+  else
+  {
+    GUI_SetFont(&FONT_TITLE);
+    BUTTON_SetDefaultFont(&FONT_TITLE);
+    TEXT_SetDefaultFont(&FONT_TITLE);                    
+    GUI_UC_SetEncodeUTF8();
+  }
+
+#endif
   disp_language_init();	
-  GUI_UC_SetEncodeUTF8();
+  
+
+
   /*
   if(DeviceCode==0x9488)
   {

@@ -87,6 +87,7 @@
 #define WIFI_CONNECTED_TEXT_RU				"подключен"
 #define WIFI_DISCONNECTED_TEXT_RU			"не подключен"
 #define WIFI_EXCEPTION_TEXT_RU				"исключение"
+#define WIFI_RECONNECT_TEXT_RU         "Reconnect"
 #define CLOUD_TEXT_RU						"облако"
 #define CLOUD_BIND_RU						"соединён"
 #define CLOUD_UNBIND_RU						"не соединён"
@@ -232,4 +233,6 @@
 #define DIALOG_PRINT_FINISH_RU              "Печать завершена!"
 #define DIALOG_PRINT_TIME_RU              "Время печати: "
 #define DIALOG_REPRINT_RU                 "Print again"
+#define DIALOG_WIFI_ENABLE_TIPS_RU "The wifi module is being configured,\nplease wait a moment....."
+
 #endif

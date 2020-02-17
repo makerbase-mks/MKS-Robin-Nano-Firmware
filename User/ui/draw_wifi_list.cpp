@@ -134,8 +134,8 @@ static void cbWifiWin(WM_MESSAGE * pMsg) {
 								
 								if(wifi_link_state == WIFI_CONNECTED && strcmp((const char *)wifi_list.wifiConnectedName,(const char *)wifi_list.wifiName[wifi_list.nameIndex + i]) == 0)
 								{
-									BUTTON_SetBmpFileName(buttonN[i].btnHandle, "bmp_Check_Mark_Yellow.bin",1);
-									BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_18x14,MARK_BTN_X, (NAME_BTN_Y-1-14)/2);
+									//BUTTON_SetBmpFileName(buttonN[i].btnHandle, "bmp_Check_Mark_Yellow.bin",1);
+									//BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_18x14,MARK_BTN_X, (NAME_BTN_Y-1-14)/2);
 
 									wifi_list.nameIndex = wifi_list.nameIndex + i;
 									last_disp_state = WIFI_LIST_UI;
@@ -171,8 +171,8 @@ static void cbWifiWin(WM_MESSAGE * pMsg) {
 						{
 							if(wifi_link_state == WIFI_CONNECTED && strcmp((const char *)wifi_list.wifiConnectedName,(const char *)wifi_list.wifiName[wifi_list.nameIndex + i]) == 0)
 							{
-								BUTTON_SetBmpFileName(buttonN[i].btnHandle, "bmp_Check_Mark_Black.bin",1);
-								BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_18x14,MARK_BTN_X, (NAME_BTN_Y-1-14)/2);
+								//BUTTON_SetBmpFileName(buttonN[i].btnHandle, "bmp_Check_Mark_Black.bin",1);
+								//BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_18x14,MARK_BTN_X, (NAME_BTN_Y-1-14)/2);
 							}
 						}
 					}
@@ -219,13 +219,13 @@ void draw_Wifi_list()
 	     buttonWifiPd.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,OTHER_BTN_YPIEL+INTERVAL_H,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL, hWifiWnd, BUTTON_CF_SHOW, 0, 309);
 
 
-	BUTTON_SetBmpFileName(buttonWifiPd.btnHandle, "bmp_pageDown.bin",1);
+	BUTTON_SetBmpFileName(buttonWifiPd.btnHandle, "bmp_wifi_pageDown.bin",1);
 
-	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_back.bin",1);
+	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_wifi_back.bin",1);
 	BUTTON_SetBitmapEx(buttonWifiPd.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
 
-	BUTTON_SetBkColor(buttonWifiPd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+	/*BUTTON_SetBkColor(buttonWifiPd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
 	BUTTON_SetBkColor(buttonWifiPd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
 	BUTTON_SetTextColor(buttonWifiPd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
 	BUTTON_SetTextColor(buttonWifiPd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
@@ -234,7 +234,7 @@ void draw_Wifi_list()
 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-
+*/
 	//GUI_Exec();
 
 	    //GUI_UC_SetEncodeNone();
@@ -244,6 +244,7 @@ void draw_Wifi_list()
 	#if 1	
 		  TEXT_SetFont(Wifi_Page_text,&GUI_FontHelvetica26);
            TEXT_SetTextColor(Wifi_Page_text,gCfgItems.title_color);
+		   TEXT_SetBkColor(Wifi_Page_text,gCfgItems.background_color);
 
 	   for(i = 0; i < NUMBER_OF_PAGE; i++)
 	    {
@@ -256,7 +257,7 @@ void draw_Wifi_list()
 		BUTTON_SetTextColor(buttonN[i].btnHandle, BUTTON_CI_PRESSED,0X000000);
 	       BUTTON_SetTextColor(buttonN[i].btnHandle, BUTTON_CI_UNPRESSED,0xffffff);
 		BUTTON_SetBkColor(buttonN[i].btnHandle, BUTTON_CI_PRESSED, 0X00DFE0);
-	       BUTTON_SetBkColor(buttonN[i].btnHandle, BUTTON_CI_UNPRESSED, 0x000000);
+	       BUTTON_SetBkColor(buttonN[i].btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
 	       
         	BUTTON_SetBmpFileName(buttonN[i].btnHandle, NULL,1);
 	    }
@@ -345,14 +346,14 @@ void disp_wifi_list(void)
 			
 			if(wifi_link_state == WIFI_CONNECTED && strcmp((const char *)wifi_list.wifiConnectedName,(const char *)wifi_list.wifiName[j]) == 0)
 			{
-				BUTTON_SetBmpFileName(buttonN[i].btnHandle, "bmp_Check_Mark_Yellow.bin",1);
-				BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_18x14,MARK_BTN_X, (NAME_BTN_Y-1-14)/2);
+				//BUTTON_SetBmpFileName(buttonN[i].btnHandle, "bmp_Check_Mark_Yellow.bin",1);
+				//BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_18x14,MARK_BTN_X, (NAME_BTN_Y-1-14)/2);
 	       		BUTTON_SetTextColor(buttonN[i].btnHandle, BUTTON_CI_UNPRESSED,0X00DFE0);
 			}
 			else
 			{
 				//BUTTON_SetBmpFileName(buttonN[i].btnHandle, "bmp_Check_Mark_None.bin",1);
-				BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_0x0,0,0);
+				//BUTTON_SetBitmapEx(buttonN[i].btnHandle, 0, &bmp_struct_0x0,0,0);
 				BUTTON_SetTextColor(buttonN[i].btnHandle, BUTTON_CI_UNPRESSED,0Xffffff);
 			}
 		}

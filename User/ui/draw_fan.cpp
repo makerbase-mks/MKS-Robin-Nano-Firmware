@@ -34,8 +34,8 @@ static void cbFanWin(WM_MESSAGE * pMsg) {
 			//#if defined(TFT70)
 			//GUI_SetColor(gCfgItems.state_background_color);
 			//GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
-			GUI_SetColor(gCfgItems.state_background_color);
-			GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);;
+			//GUI_SetColor(gCfgItems.state_background_color);
+			//GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);;
 			//#elif defined(TFT35)
 			//GUI_SetColor(gCfgItems.state_background_color);
 			//GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+5, BTN_Y_PIXEL);
@@ -281,38 +281,6 @@ void draw_fan()
 	BUTTON_SetBitmapEx(buttonOff.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 
-	BUTTON_SetBkColor(buttonAdd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonAdd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonAdd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonAdd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-	
-	BUTTON_SetBkColor(buttonDec.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonDec.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonDec.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonDec.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-	
-
-	BUTTON_SetBkColor(buttonOpen.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonOpen.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonOpen.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonOpen.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-	
-	BUTTON_SetBkColor(buttonHalf.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonHalf.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonHalf.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonHalf.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-	
-
-	BUTTON_SetBkColor(buttonOff.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonOff.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonOff.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonOff.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-	
   	if(gCfgItems.multiple_language != 0)	
   	{
 		BUTTON_SetText(buttonAdd.btnHandle, fan_menu.add);
@@ -335,10 +303,10 @@ void disp_fan_speed()
 {
 	char buf[20] = {0};
 	char buf1[10] = {0};
-	TEXT_SetTextColor(TextFanSpeed, gCfgItems.state_text_color);
-	TEXT_SetBkColor(TextFanSpeed, gCfgItems.state_background_color);
-	TEXT_SetTextColor(TextFanValue, gCfgItems.state_text_color);
-	TEXT_SetBkColor(TextFanValue, gCfgItems.state_background_color);
+	TEXT_SetTextColor(TextFanSpeed, gCfgItems.title_color);
+	TEXT_SetBkColor(TextFanSpeed, gCfgItems.background_color);
+	TEXT_SetTextColor(TextFanValue, gCfgItems.title_color);
+	TEXT_SetBkColor(TextFanValue, gCfgItems.background_color);
 
 	sprintf(buf, fan_menu.state);
 	#if 0

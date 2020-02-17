@@ -465,6 +465,11 @@ void CardReader::mksEepromRefresh()
 
 //DEFAULT_Kp
 	eprBurnValue(">DEFAULT_Kp",&thermalManager.Kp);
+//sean 19.12.27
+#if 0
+	eprBurnValue(">DEFAULT_Ki",&thermalManager.Ki);
+	eprBurnValue(">DEFAULT_Kd",&thermalManager.Kd);
+#else 
 //DEFAULT_Ki
 	tmp_index = (char *)strstr(cfg_buf, ">DEFAULT_Ki");
 	if(tmp_index)
@@ -481,6 +486,7 @@ void CardReader::mksEepromRefresh()
 		mksGetParameter(tmp_index);	
 		thermalManager.Kd = scalePID_d(atof(cmd_code));
 		}
+#endif
 #if 1//def USE_MKS_WIFI 
 /*wifi paras*/	
 	tmp_index = (char *)strstr(cfg_buf, ">CFG_WIFI_MODE");
@@ -558,6 +564,7 @@ void CardReader::mksEepromRefresh()
 	tmp_index = (char *)strstr(cfg_buf, ">CFG_CLOUD_PORT");
 	if(tmp_index)
 	{
+	#if 0
 		if( (strcmp((const char *)(&tmp_index[strlen(">CFG_CLOUD_PORT")]), "0") > 0) &&(strcmp((const char *)(&tmp_index[strlen(">CFG_CLOUD_PORT")]), "99999") < 0))
 		{
 			gCfgItems.cloud_port = atoi((char *)(&tmp_index[strlen(">CFG_CLOUD_PORT")]));
@@ -565,12 +572,26 @@ void CardReader::mksEepromRefresh()
 		else					
 			gCfgItems.cloud_port = 10086;
 		cfg_cloud_flag = 1;
+        #endif
+        tmp_index += strlen(">CFG_CLOUD_PORT");
+        mksGetParameter(tmp_index);
+        gCfgItems.cloud_port = atoi(cmd_code);
+		if((gCfgItems.cloud_port < 0) || (gCfgItems.cloud_port > 99999))
+		{
+			gCfgItems.cloud_port = 10086;
+		} 
+        cfg_cloud_flag = 1;
 	}
 	
 #endif        
 
  //DEFAULT_bedKp
 	eprBurnValue(">DEFAULT_bedKp",&thermalManager.bedKp);
+//sean 19.12.27
+#if 0
+	eprBurnValue(">DEFAULT_bedKi",&thermalManager.bedKi);
+	eprBurnValue(">DEFAULT_bedKd",&thermalManager.bedKd);
+#else 
 //DEFAULT_bedKi
 	tmp_index = (char *)strstr(cfg_buf, ">DEFAULT_bedKi");
 	if(tmp_index)
@@ -587,7 +608,7 @@ void CardReader::mksEepromRefresh()
 		mksGetParameter(tmp_index);	
 		thermalManager.bedKd = scalePID_d(atof(cmd_code));
 		}
-
+#endif
          
  //Z_PROBE_OFFSET_FROM_EXTRUDER
 	eprBurnValue(">Z_PROBE_OFFSET_FROM_EXTRUDER",&zprobe_zoffset);
@@ -646,6 +667,8 @@ void CardReader::mksEepromRefresh()
 	eprBurnValue(">HEATER_0_MAXTEMP", &mksCfg.heater_0_maxtemp, EPR_HEATER_0_MAXTEMP);
 //BED_MAXTEMP  
 	eprBurnValue(">BED_MAXTEMP", &mksCfg.bed_maxtemp, EPR_BED_MAXTEMP);
+	eprBurnValue(">BED_MINTEMP", &mksCfg.bed_mintemp, EPR_BED_MINTEMP);
+	
 //PIDTEMP 
 	eprBurnValue(">PIDTEMPE", &mksCfg.pidtemp, EPR_PIDTEMP);
 //PIDTEMPBED  
@@ -792,20 +815,20 @@ void CardReader::mksEepromRefresh()
 	hexBurnValue(">cfg_background_color",&gCfgItems.background_color,EPR_SCREEN_BKCOLOR);
 	hexBurnValue(">cfg_title_color",&gCfgItems.title_color,EPR_TITIL_COLOR);
 	
-	hexBurnValue(">cfg_state_bkcolor",&gCfgItems.state_background_color,EPR_STATE_BKCOLOR);
-	hexBurnValue(">cfg_state_textcolor",&gCfgItems.state_text_color,EPR_STATE_TEXTCOLOR);
-	hexBurnValue(">cfg_filename_bkcolor",&gCfgItems.filename_background_color,EPR_FILENAME_BKCOLOR);
-	hexBurnValue(">cfg_filename_textcolor",&gCfgItems.filename_color,EPR_FILENAME_TEXTCOLOR);
+	//hexBurnValue(">cfg_state_bkcolor",&gCfgItems.state_background_color,EPR_STATE_BKCOLOR);
+	//hexBurnValue(">cfg_state_textcolor",&gCfgItems.state_text_color,EPR_STATE_TEXTCOLOR);
+	//hexBurnValue(">cfg_filename_bkcolor",&gCfgItems.filename_background_color,EPR_FILENAME_BKCOLOR);
+	//hexBurnValue(">cfg_filename_textcolor",&gCfgItems.filename_color,EPR_FILENAME_TEXTCOLOR);
 	hexBurnValue(">cfg_btn_bkcolor",&gCfgItems.btn_color,EPR_BTN_BKCOLOR);
 	hexBurnValue(">cfg_btn_textcolor",&gCfgItems.btn_textcolor,EPR_BTN_TEXTCOLOR);
-	hexBurnValue(">cfg_state_btn_bkcolor",&gCfgItems.btn_state_color,EPR_STATE_BTN_BKCOLOR);
-	hexBurnValue(">cfg_state_btn_textcolor",&gCfgItems.btn_state_textcolor,EPR_STATE_BTN_TEXTCOLOR);	
+	//hexBurnValue(">cfg_state_btn_bkcolor",&gCfgItems.btn_state_color,EPR_STATE_BTN_BKCOLOR);
+	//hexBurnValue(">cfg_state_btn_textcolor",&gCfgItems.btn_state_textcolor,EPR_STATE_BTN_TEXTCOLOR);	
 	hexBurnValue(">cfg_back_btn_bkcolor",&gCfgItems.back_btn_color,EPR_BACK_BTN_BKCOLOR);
 	hexBurnValue(">cfg_back_btn_textcolor",&gCfgItems.back_btn_textcolor,EPR_BACK_BTN_TEXTCOLOR);
-	hexBurnValue(">cfg_sel_btn_bkcolor",&gCfgItems.btn_state_sel_color,EPR_SEL_BTN_BKCOLOR);
-	hexBurnValue(">cfg_sel_btn_textcolor",&gCfgItems.btn_state_sel_textcolor,EPR_SEL_BTN_TEXTCOLOR);
-	hexBurnValue(">cfg_dialog_btn_bkcolor",&gCfgItems.dialog_btn_color,EPR_DIALOG_BTN_BKCOLOR);
-	hexBurnValue(">cfg_dialog_btn_textcolor",&gCfgItems.dialog_btn_textcolor,EPR_DIALOG_BTN_TEXTCOLOR);
+	//hexBurnValue(">cfg_sel_btn_bkcolor",&gCfgItems.btn_state_sel_color,EPR_SEL_BTN_BKCOLOR);
+	//hexBurnValue(">cfg_sel_btn_textcolor",&gCfgItems.btn_state_sel_textcolor,EPR_SEL_BTN_TEXTCOLOR);
+	//hexBurnValue(">cfg_dialog_btn_bkcolor",&gCfgItems.dialog_btn_color,EPR_DIALOG_BTN_BKCOLOR);
+	//hexBurnValue(">cfg_dialog_btn_textcolor",&gCfgItems.dialog_btn_textcolor,EPR_DIALOG_BTN_TEXTCOLOR);
 
 	eprBurnValue(">cfg_insert_det_module", (uint8_t *)&gCfgItems.insert_det_module, EPR_INSERT_DET_MODULE_TYPE);
 	eprBurnValue(">cfg_have_ups_device", (uint8_t *)&gCfgItems.have_ups, EPR_HAS_UPS);
@@ -1013,6 +1036,8 @@ void CardReader::mksReset()
 
       mksCfg.extrude_mintemp = 170;
       mksCfg.bed_maxtemp = 150;
+	  mksCfg.bed_mintemp = 5;
+	 
 	  thermalManager.extrude_min_temp = 170;
 
 	  //robinPlus add
@@ -1274,6 +1299,8 @@ void CardReader::mksLoad()
 	heater_mintemp[1] = mksCfg.heater_1_mintemp;
 #endif    
     epr_read_data((int)EPR_BED_MAXTEMP, (uint8_t*)&mksCfg.bed_maxtemp, sizeof(mksCfg.bed_maxtemp));
+    epr_read_data((int)EPR_BED_MINTEMP, (uint8_t*)&mksCfg.bed_mintemp, sizeof(mksCfg.bed_mintemp));
+
 	
 	
     AT24CXX_Read((uint16_t)EPR_PIDTEMP,&mksCfg.pidtemp,1);

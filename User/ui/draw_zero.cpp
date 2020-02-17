@@ -169,7 +169,7 @@ void draw_Zero()
 	BUTTON_SetBmpFileName(buttonDisable.btnHandle, "bmp_function1.bin",1);
 	BUTTON_SetBitmapEx(buttonDisable.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 	
-	BUTTON_SetBmpFileName(buttonAllZero.btnHandle, "bmp_zeroA.bin",1);
+	BUTTON_SetBmpFileName(buttonAllZero.btnHandle, "bmp_zero.bin",1);
 	BUTTON_SetBmpFileName(buttonXZero.btnHandle, "bmp_zeroX.bin",1);
 	BUTTON_SetBmpFileName(buttonYZero.btnHandle, "bmp_zeroY.bin",1);
 	BUTTON_SetBmpFileName(buttonZZero.btnHandle, "bmp_zeroZ.bin",1);
@@ -183,38 +183,6 @@ void draw_Zero()
 
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 
-	BUTTON_SetBkColor(buttonAllZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonAllZero.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonAllZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonAllZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-	BUTTON_SetBkColor(buttonXZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonXZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonXZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonXZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-	BUTTON_SetBkColor(buttonYZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonYZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonYZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonYZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-	BUTTON_SetBkColor(buttonZZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonZZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonZZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonZZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-
-
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-#if 1
-	BUTTON_SetBkColor(buttonDisable.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonDisable.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonDisable.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonDisable.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-#endif
 	if(gCfgItems.multiple_language != 0)
 	{
 			BUTTON_SetText(buttonXZero.btnHandle,home_menu.home_x);

@@ -119,6 +119,9 @@ extern WIFI_PARA wifiPara;
 extern IP_PARA ipPara;
 extern CLOUD_PARA cloud_para;
 
+extern uint8_t command_send_flag;
+extern uint8_t gcode_preview_over;
+
 //extern USB_OTG_CORE_HANDLE          USB_OTG_Core;
 //extern USBH_HOST                     USB_Host;
 
@@ -1181,10 +1184,27 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 							preview_gcode_prehandle(curFileName);
 							#endif
 							draw_printing();
-							if(card.openFile(curFileName, true))
+							/*if(card.openFile(curFileName, true))
 							{
 								card.startFileprint();
 								once_flag = 0;
+							}*/
+							if(gcode_preview_over != 1)
+							{
+								if(card.openFile(curFileName, true))
+								{
+								    feedrate_percentage = 100;
+					                            saved_feedrate_percentage = feedrate_percentage;
+					                            planner.flow_percentage[0] = 100;
+					                            planner.e_factor[0]= planner.flow_percentage[0]*0.01;
+					                            if(mksCfg.extruders==2)
+					                            {
+					                                planner.flow_percentage[1] = 100;
+					                                planner.e_factor[1]= planner.flow_percentage[1]*0.01;  
+					                            }                            
+									card.startFileprint();
+									once_flag = 0;
+								}
 							}
 
 							
@@ -1449,7 +1469,7 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 					if((mksReprint.mks_printer_state == MKS_WORKING) || (mksReprint.mks_printer_state == MKS_PAUSED))
 					{
 						memset(tempBuf,0,sizeof(tempBuf));
-						if(strlen((char *)curFileName) > 100)
+						if(strlen((char *)curFileName) > (100-1))
 						{
 							return;
 						}
@@ -1478,7 +1498,8 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 					{
 						wifi_ret_ack();
 						send_to_wifi("M997 PAUSE\r\n", strlen("M997 PAUSE\r\n"));
-					}								
+					}		
+					if(command_send_flag==0)get_wifi_list_command_send();
 					break;
 
 				case 998:
@@ -1645,6 +1666,17 @@ static int32_t charAtArray(const uint8_t *_array, uint32_t _arrayLen, uint8_t _c
 	return -1;
 }
 
+void get_wifi_list_command_send()
+{
+	char buf[6]={0};
+	buf[0] = 0xA5;
+	buf[1] = 0x07;
+	buf[2] = 0x00;
+	buf[3] = 0x00;
+	buf[4] = 0xFC;
+	raw_send_to_wifi(buf, 5);
+}
+
 static void net_msg_handle(uint8_t * msg, uint16_t msgLen)
 {
 	int wifiNameLen, wifiKeyLen, hostLen, id_len, ver_len;
@@ -1763,11 +1795,15 @@ static void wifi_list_msg_handle(uint8_t * msg, uint16_t msgLen)
 	
 	if(msgLen <= 0)
 		return;
+	if(disp_state == KEY_BOARD_UI)
+		return;
 
 	wifi_list.getNameNum = msg[0];
 
 	if(wifi_list.getNameNum < 20)
 	{
+		command_send_flag=1;
+		
 		memset(wifi_list.wifiName,0,sizeof(wifi_list.wifiName));
 		
 		wifi_name_num = wifi_list.getNameNum;

@@ -237,10 +237,10 @@ void draw_bind()
 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 	
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);	
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);	
+	//BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+	//BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);	
+	//BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+	//BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);	
 
 #endif
 	if(gCfgItems.multiple_language != 0)
@@ -258,10 +258,9 @@ void draw_bind()
 
 void disp_bind_state()
 {
-	TEXT_SetTextColor(bind_or_not, gCfgItems.state_text_color);
-	TEXT_SetBkColor(bind_or_not,  gCfgItems.state_background_color);
+	TEXT_SetTextColor(bind_or_not, gCfgItems.title_color);
+	TEXT_SetBkColor(bind_or_not,  gCfgItems.background_color);
 
-	
 	if(cloud_para.state != 0x12)
 	{
 		unbinding_flag = 0;

@@ -163,37 +163,11 @@ void draw_meshleveling()
 	BUTTON_SetBitmapEx(buttonZadd.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonZdec.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonZstep.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-    
-	BUTTON_SetBkColor(buttonZadd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonZadd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonZadd.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonZadd.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-    BUTTON_SetBkColor(buttonZdec.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-    BUTTON_SetBkColor(buttonZdec.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-    BUTTON_SetTextColor(buttonZdec.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-    BUTTON_SetTextColor(buttonZdec.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-    BUTTON_SetBkColor(buttonZstep.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-    BUTTON_SetBkColor(buttonZstep.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-    BUTTON_SetTextColor(buttonZstep.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-    BUTTON_SetTextColor(buttonZstep.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-    BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-    BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-    BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-    BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-    BUTTON_SetBkColor(buttonMesh.btnHandle, BUTTON_CI_PRESSED, gCfgItems.dialog_btn_color);
-    BUTTON_SetBkColor(buttonMesh.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.dialog_btn_color);
-    BUTTON_SetTextColor(buttonMesh.btnHandle, BUTTON_CI_PRESSED, gCfgItems.dialog_btn_textcolor);
-    BUTTON_SetTextColor(buttonMesh.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.dialog_btn_textcolor);
-
-	TEXT_SetBkColor(LevelingMsg,gCfgItems.state_background_color);
-	TEXT_SetBkColor(Zpos,gCfgItems.state_background_color); 
-	TEXT_SetTextColor(LevelingMsg,gCfgItems.state_text_color);
-	TEXT_SetTextColor(Zpos,gCfgItems.state_text_color);
+	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);   
+	TEXT_SetBkColor(LevelingMsg,gCfgItems.background_color);
+	TEXT_SetBkColor(Zpos,gCfgItems.background_color); 
+	TEXT_SetTextColor(LevelingMsg,gCfgItems.title_color);
+	TEXT_SetTextColor(Zpos,gCfgItems.title_color);
 
     disp_zpos();
 

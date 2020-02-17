@@ -28,8 +28,8 @@ static void cbZoffsetWin(WM_MESSAGE * pMsg) {
 	switch (pMsg->MsgId)
 	{
 		case WM_PAINT:
-			GUI_SetColor(gCfgItems.state_background_color);
-			GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);
+			//GUI_SetColor(gCfgItems.state_background_color);
+			//GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);
 
 			break;
 		case WM_TOUCH:
@@ -169,10 +169,10 @@ void draw_Zoffset()
 	textZoffset = TEXT_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,(BTN_Y_PIXEL-60)/2,BTN_X_PIXEL*2+INTERVAL_V,30, hZoffsetWnd, WM_CF_SHOW, TEXT_CF_HCENTER,	GUI_ID_TEXT1, "Extruder1");
 	textZoffsetValue = TEXT_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,(BTN_Y_PIXEL-60)/2+30, BTN_X_PIXEL*2+INTERVAL_V,30, hZoffsetWnd, WM_CF_SHOW, TEXT_CF_HCENTER,	GUI_ID_TEXT1, "0/0");
 
-	TEXT_SetBkColor(textZoffset,gCfgItems.state_background_color);
-	TEXT_SetBkColor(textZoffsetValue,gCfgItems.state_background_color); 
-	TEXT_SetTextColor(textZoffset,gCfgItems.state_text_color);
-	TEXT_SetTextColor(textZoffsetValue,gCfgItems.state_text_color);
+	TEXT_SetBkColor(textZoffset,gCfgItems.background_color);
+	TEXT_SetBkColor(textZoffsetValue,gCfgItems.background_color); 
+	TEXT_SetTextColor(textZoffset,gCfgItems.title_color);
+	TEXT_SetTextColor(textZoffsetValue,gCfgItems.title_color);
 
 	disp_step_zoffset();
 	disp_zoffset();
@@ -203,18 +203,7 @@ void disp_step_zoffset()
 
 	if(gCfgItems.stepZoffset*100 == 1)
 	{
-		BUTTON_SetBkColor(buttonStep01.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-		BUTTON_SetBkColor(buttonStep01.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);
-		BUTTON_SetTextColor(buttonStep01.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-		BUTTON_SetTextColor(buttonStep01.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-		BUTTON_SetBkColor(buttonStep05.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonStep05.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetTextColor(buttonStep05.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonStep05.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetBkColor(buttonStep1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonStep1.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetTextColor(buttonStep1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonStep1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
+		
 	
 		BUTTON_SetBmpFileName(buttonStep01.btnHandle, "bmp_step001_zoffset_sel.bin",1);
 		BUTTON_SetBmpFileName(buttonStep05.btnHandle, "bmp_step01_zoffset.bin",1);
@@ -222,18 +211,7 @@ void disp_step_zoffset()
 	}
 	else if(gCfgItems.stepZoffset*100 == 10)
 	{
-		BUTTON_SetBkColor(buttonStep01.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonStep01.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetTextColor(buttonStep01.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonStep01.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetBkColor(buttonStep05.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-		BUTTON_SetBkColor(buttonStep05.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);
-		BUTTON_SetTextColor(buttonStep05.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-		BUTTON_SetTextColor(buttonStep05.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-		BUTTON_SetBkColor(buttonStep1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonStep1.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetTextColor(buttonStep1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonStep1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
+		
 		
 		BUTTON_SetBmpFileName(buttonStep01.btnHandle, "bmp_step001_zoffset.bin",1);
 		BUTTON_SetBmpFileName(buttonStep05.btnHandle, "bmp_step01_zoffset_sel.bin",1);
@@ -242,18 +220,7 @@ void disp_step_zoffset()
 	}
 	else if(gCfgItems.stepZoffset*100 == 100)
 	{
-		BUTTON_SetBkColor(buttonStep01.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonStep01.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetTextColor(buttonStep01.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonStep01.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetBkColor(buttonStep05.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetBkColor(buttonStep05.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-		BUTTON_SetTextColor(buttonStep05.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-		BUTTON_SetTextColor(buttonStep05.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);		
-		BUTTON_SetBkColor(buttonStep1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-		BUTTON_SetBkColor(buttonStep1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);
-		BUTTON_SetTextColor(buttonStep1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-		BUTTON_SetTextColor(buttonStep1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
+		
 		
 		BUTTON_SetBmpFileName(buttonStep01.btnHandle, "bmp_step001_zoffset.bin",1);
 		BUTTON_SetBmpFileName(buttonStep05.btnHandle, "bmp_step01_zoffset.bin",1);
@@ -279,10 +246,10 @@ void disp_zoffset()
 	char buf[20] = {0};
 	char buf1[20] = {0};
 	
-	TEXT_SetBkColor(textZoffset,gCfgItems.state_background_color);
-	TEXT_SetBkColor(textZoffsetValue,gCfgItems.state_background_color); 
-	TEXT_SetTextColor(textZoffset,gCfgItems.state_text_color);
-	TEXT_SetTextColor(textZoffsetValue,gCfgItems.state_text_color);
+	TEXT_SetBkColor(textZoffset,gCfgItems.background_color);
+	TEXT_SetBkColor(textZoffsetValue,gCfgItems.background_color); 
+	TEXT_SetTextColor(textZoffset,gCfgItems.title_color);
+	TEXT_SetTextColor(textZoffsetValue,gCfgItems.title_color);
 	
 	sprintf(buf1,"z offset");
 	sprintf(buf, "%.2f",gCfgItems.Zoffset);

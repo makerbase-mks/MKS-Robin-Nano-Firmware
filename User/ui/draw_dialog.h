@@ -27,12 +27,15 @@
 #define DIALOG_TYPE_FILAMENT_NO_PRESS		18
 #define DIALOG_TYPE_FINISH_PRINT        19
 
+#define WIFI_ENABLE_TIPS 20
+
 #if defined(__cplusplus)
 extern "C" {     /* Make sure we have C-declarations in C++ programs */
 #endif
 
 extern void draw_dialog(uint8_t type);
 extern void Clear_dialog(void);
+extern void wifi_scan_handle();
 #if defined(__cplusplus)
 }    /* Make sure we have C-declarations in C++ programs */
 #endif

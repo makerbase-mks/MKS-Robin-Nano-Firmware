@@ -561,4 +561,6 @@ void do_blocking_move_to_xy(const float &x, const float &y, const float &fr_mm_s
 
 #endif // CARTESIAN
 
+extern void gcode_M501();
+
 #endif // MARLIN_H

@@ -33,10 +33,10 @@ extern GUI_CONST_STORAGE GUI_FONT GUI_FontHelvetica36;
 
 extern char buf_to_wifi[256];
 
-char digital_key_value[27]={'1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
+const char digital_key_value[27]={'1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
 						   '-', '|', ':', ';', '(', ')', '$', '&', '@', '\"',
 						   '.', ' ', ' ', ' ', ' ', ' ',0x00};
-char symbol_key_value[27]={',', '?', '!', '\'', '[', ']', '#', '{', '}', '%',
+const char symbol_key_value[27]={',', '?', '!', '\'', '[', ']', '#', '{', '}', '%',
 						   '^', '*', '+', '=', '_', '\\', '/', '~', '<', '>',
 						    ' ', ' ', ' ', ' ', ' ', ' ',0x00};
 #define VALUE_DISP_HEIGHT 60
@@ -478,15 +478,15 @@ void draw_Keyboard()
 
     buttonJoint.btnHandle = BUTTON_CreateEx(LCD_WIDTH-80-10,10,80,40, hKeyboardWnd, BUTTON_CF_SHOW, 0, 310);
 
-    BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-    BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+    BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.background_color);
+    BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
     BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_BK_COLOR);
     BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
     BUTTON_SetBmpFileName(buttonRet.btnHandle,"bmp_keyboard_return.bin",1);
     BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct_32x21,(KEY_WIDTH-32)/2, (KEY_HEIGHT-21)/2);
     
-    BUTTON_SetBkColor(buttonJoint.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-    BUTTON_SetBkColor(buttonJoint.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+    BUTTON_SetBkColor(buttonJoint.btnHandle, BUTTON_CI_PRESSED, gCfgItems.background_color);
+    BUTTON_SetBkColor(buttonJoint.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
 	
 							
     //if(enter_state.join_state == JOIN_STATE_OK)
@@ -508,8 +508,8 @@ void draw_Keyboard()
     BUTTON_SetText(buttonJoint.btnHandle, keyboard_menu.apply);
 
     buttonPassword.btnHandle = BUTTON_CreateEx(10,10,LCD_WIDTH-100,40, hKeyboardWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-    BUTTON_SetBkColor(buttonPassword.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-    BUTTON_SetBkColor(buttonPassword.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+    BUTTON_SetBkColor(buttonPassword.btnHandle, BUTTON_CI_PRESSED, gCfgItems.background_color);
+    BUTTON_SetBkColor(buttonPassword.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
     BUTTON_SetTextColor(buttonPassword.btnHandle, BUTTON_CI_PRESSED, 0x3f3f3f);
     BUTTON_SetTextColor(buttonPassword.btnHandle, BUTTON_CI_UNPRESSED,0x3f3f3f);
     BUTTON_SetTextAlign(buttonPassword.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER);
@@ -524,28 +524,28 @@ void draw_Keyboard()
     buttonArrow.btnHandle = BUTTON_CreateEx(0,VALUE_DISP_HEIGHT+1,FIRST_LINE_WIDTH,KEY_HEIGHT, hKeyboardWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
     
     BUTTON_SetBkColor(buttonLetter.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_BK_COLOR);
-    BUTTON_SetBkColor(buttonLetter.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+    BUTTON_SetBkColor(buttonLetter.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
     BUTTON_SetTextColor(buttonLetter.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_TEXT_COLOR);
     BUTTON_SetTextColor(buttonLetter.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.btn_textcolor);
     BUTTON_SetTextAlign(buttonLetter.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER);
     BUTTON_SetBmpFileName(buttonLetter.btnHandle,NULL,1);
     
     BUTTON_SetBkColor(buttonDigital.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_BK_COLOR);
-    BUTTON_SetBkColor(buttonDigital.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+    BUTTON_SetBkColor(buttonDigital.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
     BUTTON_SetTextColor(buttonDigital.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_TEXT_COLOR);
     BUTTON_SetTextColor(buttonDigital.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.btn_textcolor);
     BUTTON_SetTextAlign(buttonDigital.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER);
     BUTTON_SetBmpFileName(buttonDigital.btnHandle,NULL,1);
     
     BUTTON_SetBkColor(buttonSymbol.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_BK_COLOR);
-    BUTTON_SetBkColor(buttonSymbol.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+    BUTTON_SetBkColor(buttonSymbol.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
     BUTTON_SetTextColor(buttonSymbol.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_TEXT_COLOR);
     BUTTON_SetTextColor(buttonSymbol.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.btn_textcolor);
     BUTTON_SetTextAlign(buttonSymbol.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER);
     BUTTON_SetBmpFileName(buttonSymbol.btnHandle,NULL,1);
     
     BUTTON_SetBkColor(buttonArrow.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_BK_COLOR);
-    BUTTON_SetBkColor(buttonArrow.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+    BUTTON_SetBkColor(buttonArrow.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
     BUTTON_SetTextColor(buttonArrow.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_TEXT_COLOR);
     BUTTON_SetTextColor(buttonArrow.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.btn_textcolor);
     BUTTON_SetTextAlign(buttonArrow.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER);

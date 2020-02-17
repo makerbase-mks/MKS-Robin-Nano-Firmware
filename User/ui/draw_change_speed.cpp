@@ -32,14 +32,14 @@ static void cbChangeSpeedWin(WM_MESSAGE * pMsg) {
 	switch (pMsg->MsgId)
 	{
 		case WM_PAINT:
-			GUI_SetColor(gCfgItems.state_background_color);
+			//GUI_SetColor(gCfgItems.state_background_color);
 			//#if defined(TFT70)
 			//GUI_SetColor(gCfgItems.state_text_color);
 			//GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
 			
 			//GUI_FillRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
 			//#elif defined(TFT35)
-			GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);
+			//GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);
 			//#endif
 			break;
 		case WM_TOUCH:
@@ -273,7 +273,7 @@ void draw_changeSpeed()
 	BUTTON_SetBitmapEx(buttonExtruct.btnHandle,0,&bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonStep.btnHandle,0,&bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle,0,&bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-	
+#if 0	
 	BUTTON_SetBkColor(buttonInc.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
 	BUTTON_SetBkColor(buttonInc.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
 	BUTTON_SetTextColor(buttonInc.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
@@ -288,7 +288,7 @@ void draw_changeSpeed()
 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-	
+#endif	
 	if(gCfgItems.multiple_language != 0)
 	{
 		BUTTON_SetText(buttonInc.btnHandle, speed_menu.add);
@@ -318,10 +318,10 @@ void disp_print_speed()
 	char buf[30] = {0};
 	char buf1[30] = {0};
 
-	TEXT_SetTextColor(textPrintSpeed, gCfgItems.state_text_color);
-	TEXT_SetBkColor(textPrintSpeed, gCfgItems.state_background_color);
-	TEXT_SetTextColor(textSpeedVal, gCfgItems.state_text_color);
-	TEXT_SetBkColor(textSpeedVal, gCfgItems.state_background_color);	
+	TEXT_SetTextColor(textPrintSpeed, gCfgItems.title_color);
+	TEXT_SetBkColor(textPrintSpeed, gCfgItems.background_color);
+	TEXT_SetTextColor(textSpeedVal, gCfgItems.title_color);
+	TEXT_SetBkColor(textSpeedVal, gCfgItems.background_color);	
 	
 	if(speedType ==  0)	//move
 	{
@@ -348,32 +348,14 @@ void disp_speed_type()
 			BUTTON_SetBmpFileName(buttonMove.btnHandle, "bmp_mov_changeSpeed.bin",1);			
 			BUTTON_SetBitmapEx(buttonExtruct.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 			BUTTON_SetBitmapEx(buttonMove.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-			
-			BUTTON_SetBkColor(buttonExtruct.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonExtruct.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonMove.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonMove.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);		
-			
-			BUTTON_SetTextColor(buttonExtruct.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonExtruct.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonMove.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonMove.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);					
+							
 			break;
 
 		default:
 			BUTTON_SetBmpFileName(buttonMove.btnHandle, "bmp_mov_sel.bin",1);
 			BUTTON_SetBmpFileName(buttonExtruct.btnHandle, "bmp_speed_extruct.bin",1);
 			BUTTON_SetBitmapEx(buttonMove.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-			BUTTON_SetBitmapEx(buttonExtruct.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-			BUTTON_SetBkColor(buttonExtruct.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-			BUTTON_SetBkColor(buttonExtruct.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);	
-			BUTTON_SetBkColor(buttonMove.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_color);
-			BUTTON_SetBkColor(buttonMove.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_color);	
-			
-			BUTTON_SetTextColor(buttonExtruct.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-			BUTTON_SetTextColor(buttonExtruct.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);	
-			BUTTON_SetTextColor(buttonMove.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_sel_textcolor);
-			BUTTON_SetTextColor(buttonMove.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_sel_textcolor);			
+			BUTTON_SetBitmapEx(buttonExtruct.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);		
 			break;
 	}
 		
@@ -387,11 +369,6 @@ void disp_speed_type()
 
 void disp_step_speed()
 {
-	BUTTON_SetBkColor(buttonStep.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonStep.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonStep.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonStep.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
 	if(gCfgItems.stepPrintSpeed == 1)
 	{
 		BUTTON_SetBmpFileName(buttonStep.btnHandle, "bmp_step1_percent.bin",1);     							

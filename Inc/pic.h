@@ -16,6 +16,19 @@ extern GUI_BITMAP bmp_struct_50;
 extern GUI_BITMAP bmp_struct_100;
 extern GUI_BITMAP bmp_struct_150;
 extern GUI_BITMAP bmp_struct_117x25;
+
+extern GUI_BITMAP bmp_struct70X40;
+extern GUI_BITMAP bmp_struct90X40;
+extern GUI_BITMAP bmp_struct26X26;
+extern GUI_BITMAP bmp_struct90X30;
+extern GUI_BITMAP bmp_struct68X40;
+extern GUI_BITMAP bmp_struct68X90;
+extern GUI_BITMAP bmp_struct144X40;
+extern GUI_BITMAP bmp_struct70X28;
+
+extern GUI_BITMAP bmp_struct10x17;
+extern GUI_BITMAP bmp_struct_50x50;
+extern GUI_BITMAP bmp_struct_141x60;
 #endif
 extern uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part);
 extern uint8_t have_pre_pic(char *path);

@@ -861,11 +861,29 @@ void draw_printing()
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
 
+
 	GUI_UC_SetEncodeNone();
 	GUI_SetFont(&GUI_FontHZ16);
 	GUI_DispStringAt(creat_title_text(),  TITLE_XPOS, TITLE_YPOS);
-	GUI_SetFont(&FONT_TITLE);
-	GUI_UC_SetEncodeUTF8();
+	//GUI_SetFont(&FONT_TITLE);
+	//GUI_UC_SetEncodeUTF8();
+
+    if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+    {
+      GUI_SetFont(&GUI_FontHZ16);
+      BUTTON_SetDefaultFont(&GUI_FontHZ16);
+      TEXT_SetDefaultFont(&GUI_FontHZ16);  
+      GUI_UC_SetEncodeNone();
+    }
+    else
+    {
+      GUI_SetFont(&FONT_TITLE);
+      BUTTON_SetDefaultFont(&FONT_TITLE);
+      TEXT_SetDefaultFont(&FONT_TITLE);                    
+      GUI_UC_SetEncodeUTF8();
+    }
+
+    
 #if defined(TFT35)
 		hPrintingWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbPrintingWin, 0);
 		
@@ -923,7 +941,7 @@ void draw_printing()
 		}
 		BUTTON_SetBmpFileName(buttonFanstate.btnHandle, "bmp_fan_state.bin",0);
 		
-		BUTTON_SetBmpFileName(buttonPrintSpeed.btnHandle, "bmp_speed_state.bin",0);
+		//BUTTON_SetBmpFileName(buttonPrintSpeed.btnHandle, "bmp_speed_state.bin",0);
 		
 		//BUTTON_SetBmpFileName(buttonZpos.btnHandle, "bmp_zpos.bin",0);
 		BUTTON_SetBitmapEx(buttonTime.btnHandle, 0, &bmp_struct_50, 0, 0);
@@ -938,7 +956,7 @@ void draw_printing()
 			BUTTON_SetBitmapEx(buttonBedstate.btnHandle, 0, &bmp_struct_50, 0, 0);
 		}
 		BUTTON_SetBitmapEx(buttonFanstate.btnHandle, 0, &bmp_struct_50, 0, 0);
-		BUTTON_SetBitmapEx(buttonPrintSpeed.btnHandle, 0, &bmp_struct_50, 0, 0);
+		//BUTTON_SetBitmapEx(buttonPrintSpeed.btnHandle, 0, &bmp_struct_50, 0, 0);
 		BUTTON_SetBitmapEx(buttonZpos.btnHandle, 0, &bmp_struct_50, 0, 0);
 		if(gCfgItems.standby_mode==1 && mksReprint.mks_printer_state == MKS_REPRINTED && button_disp_pause_state==1)
 		{
@@ -947,7 +965,6 @@ void draw_printing()
 		else
 		{
 			if((mksReprint.mks_printer_state == MKS_REPRINTING)
-				||(mksReprint.mks_printer_state == MKS_REPRINTED)
 				||(mksReprint.mks_printer_state == MKS_PAUSING)
 				||(mksReprint.mks_printer_state == MKS_PAUSED))
 			{
@@ -982,20 +999,20 @@ void draw_printing()
 	
 		//TEXT_SetBkColor(Printing_speed,  gCfgItems.state_background_color);
 		//TEXT_SetTextColor(Printing_speed, gCfgItems.state_text_color);
-		TEXT_SetBkColor(Zpos,  gCfgItems.state_background_color);
-		TEXT_SetTextColor(Zpos, gCfgItems.state_text_color);
-		TEXT_SetBkColor(printTimeLeft,	gCfgItems.state_background_color);
-		TEXT_SetTextColor(printTimeLeft, gCfgItems.state_text_color);	
-		TEXT_SetBkColor(E1_Temp,  gCfgItems.state_background_color);
-		TEXT_SetTextColor(E1_Temp, gCfgItems.state_text_color);
-		if(mksCfg.extruders == 2 && gCfgItems.singleNozzle == 0){
-			TEXT_SetBkColor(E2_Temp,  gCfgItems.state_background_color);
-			TEXT_SetTextColor(E2_Temp, gCfgItems.state_text_color);
-		}
-		TEXT_SetBkColor(Bed_Temp,  gCfgItems.state_background_color);
-		TEXT_SetTextColor(Bed_Temp, gCfgItems.state_text_color);
-		TEXT_SetBkColor(Fan_Pwm,  gCfgItems.state_background_color);
-		TEXT_SetTextColor(Fan_Pwm, gCfgItems.state_text_color);
+		TEXT_SetBkColor(Zpos,  gCfgItems.background_color);
+		TEXT_SetTextColor(Zpos, gCfgItems.title_color);
+		TEXT_SetBkColor(printTimeLeft,	gCfgItems.background_color);
+		TEXT_SetTextColor(printTimeLeft, gCfgItems.title_color);	
+		TEXT_SetBkColor(E1_Temp,  gCfgItems.background_color);
+		TEXT_SetTextColor(E1_Temp, gCfgItems.title_color);
+        if(mksCfg.extruders == 2 && gCfgItems.singleNozzle == 0){
+		    TEXT_SetBkColor(E2_Temp,  gCfgItems.background_color);
+		    TEXT_SetTextColor(E2_Temp, gCfgItems.title_color);
+        }
+		TEXT_SetBkColor(Bed_Temp,  gCfgItems.background_color);
+		TEXT_SetTextColor(Bed_Temp, gCfgItems.title_color);
+		TEXT_SetBkColor(Fan_Pwm,  gCfgItems.background_color);
+		TEXT_SetTextColor(Fan_Pwm, gCfgItems.title_color);
 		//TEXT_SetBkColor(Autoclose,	gCfgItems.state_background_color);
 		//TEXT_SetTextColor(Autoclose, gCfgItems.state_text_color);
 		
@@ -1008,7 +1025,6 @@ void draw_printing()
 			BUTTON_SetText(buttonStop.btnHandle,printing_menu.stop);
 			//if((mksReprint.mks_printer_state == MKS_REPRINTING)||(mksReprint.mks_printer_state == MKS_PAUSING))
             if((mksReprint.mks_printer_state == MKS_REPRINTING)
-                ||(mksReprint.mks_printer_state == MKS_REPRINTED)
                 ||(mksReprint.mks_printer_state == MKS_PAUSING)
                 ||(mksReprint.mks_printer_state == MKS_PAUSED))
 
@@ -1115,10 +1131,10 @@ void disp_print_time()		//disp timer -- skyblue
 {
 	char buf[30] = {0};
 	
-	TEXT_SetBkColor(printTimeLeft,  gCfgItems.state_background_color);
-	TEXT_SetTextColor(printTimeLeft, gCfgItems.state_text_color);
-	TEXT_SetBkColor(Zpos,gCfgItems.state_background_color);
-	TEXT_SetTextColor(Zpos,gCfgItems.state_text_color);
+	TEXT_SetBkColor(printTimeLeft,  gCfgItems.background_color);
+	TEXT_SetTextColor(printTimeLeft, gCfgItems.title_color);
+	TEXT_SetBkColor(Zpos,gCfgItems.background_color);
+	TEXT_SetTextColor(Zpos,gCfgItems.title_color);
 		
 	//TEXT_SetFont(printTimeLeft, &FONT_TITLE);
 	//TEXT_SetFont(Zpos, &FONT_TITLE);
@@ -1140,8 +1156,8 @@ void disp_print_time()
 {
 	char buf[30] = {0};
 	
-	TEXT_SetTextColor(printTimeLeft, gCfgItems.state_text_color);
-	TEXT_SetBkColor(printTimeLeft,  gCfgItems.state_background_color);
+	TEXT_SetTextColor(printTimeLeft, gCfgItems.title_color);
+	TEXT_SetBkColor(printTimeLeft,  gCfgItems.background_color);
 	memset(buf, 0, sizeof(buf));
 	sprintf(buf, "T: %d%d:%d%d:%d%d  Z:%0.2f", print_time.hours/10, print_time.hours%10, print_time.minutes/10, print_time.minutes%10,  print_time.seconds/10, print_time.seconds%10,current_position[Z_AXIS]);
 	//sprintf(buf, "ok nums:  %d%d%d:%d%d", wan,qian, bai,shi,ge);
@@ -1187,22 +1203,20 @@ void disp_sprayer_tem_printing()
 	//if(gCfgItems.sprayerNum == 2)
 	{		
 		
-		TEXT_SetBkColor(E1_Temp,  gCfgItems.state_background_color);
-		TEXT_SetTextColor(E1_Temp, gCfgItems.state_text_color);
-		
+		TEXT_SetBkColor(E1_Temp,  gCfgItems.background_color);
+		TEXT_SetTextColor(E1_Temp, gCfgItems.title_color);
+
+
 		memset(buf, 0, sizeof(buf));
 		sprintf(buf, printing_menu.temp1, (int)thermalManager.current_temperature[0], (int)thermalManager.target_temperature[0]);
 		TEXT_SetText(E1_Temp, buf);	
-
-		if(mksCfg.extruders == 2 && gCfgItems.singleNozzle == 0){
-			TEXT_SetBkColor(E2_Temp,gCfgItems.state_background_color);
-			TEXT_SetTextColor(E2_Temp,gCfgItems.state_text_color);
-
-			memset(buf,0,sizeof(buf));
-			sprintf(buf, printing_menu.temp2, (int)thermalManager.current_temperature[1], (int)thermalManager.target_temperature[1]);
-			TEXT_SetText(E2_Temp, buf);
-		}
-		
+	    if(mksCfg.extruders == 2 && gCfgItems.singleNozzle == 0){
+           TEXT_SetBkColor(E2_Temp,gCfgItems.background_color);
+           TEXT_SetTextColor(E2_Temp,gCfgItems.title_color);
+		   memset(buf,0,sizeof(buf));
+		   sprintf(buf, printing_menu.temp2, (int)thermalManager.current_temperature[1], (int)thermalManager.target_temperature[1]);
+		   TEXT_SetText(E2_Temp, buf);
+        }
 	}
 	#if 0
 	else
@@ -1300,8 +1314,8 @@ void disp_bed_temp_printing()
 
 	//if(gCfgItems.custom_bed_flag == 1)
 	{
-		TEXT_SetBkColor(Bed_Temp,  gCfgItems.state_background_color);
-		TEXT_SetTextColor(Bed_Temp, gCfgItems.state_text_color);
+		TEXT_SetBkColor(Bed_Temp,  gCfgItems.background_color);
+		TEXT_SetTextColor(Bed_Temp, gCfgItems.title_color);
 		//TEXT_SetFont(Bed_Temp, &FONT_TITLE);
 
 		
@@ -1335,8 +1349,8 @@ void disp_fan_speed_printing()
 {
 	char buf[30] = {0};
 	
-	TEXT_SetBkColor(Fan_Pwm,  gCfgItems.state_background_color);
-	TEXT_SetTextColor(Fan_Pwm, gCfgItems.state_text_color);
+	TEXT_SetBkColor(Fan_Pwm,  gCfgItems.background_color);
+	TEXT_SetTextColor(Fan_Pwm, gCfgItems.title_color);
 	//TEXT_SetFont(Fan_Pwm, &FONT_TITLE);
 
 

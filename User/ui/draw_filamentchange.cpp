@@ -170,22 +170,22 @@ static void cbFilamentChangeWin(WM_MESSAGE * pMsg) {
 					temperature_change_frequency=1;
 					filament_unload_heat_flg=1;
 					if((thermalManager.target_temperature[gCfgItems.curSprayerChoose] > 0)
-						&&((abs((int)((int)thermalManager.target_temperature[gCfgItems.curSprayerChoose] - gCfgItems.filament_unload_limit_temper))<=1)
-						||((int)thermalManager.target_temperature[gCfgItems.curSprayerChoose] > gCfgItems.filament_unload_limit_temper)))
+						&&((abs((int)((int)thermalManager.target_temperature[gCfgItems.curSprayerChoose] - thermalManager.current_temperature[gCfgItems.curSprayerChoose]))<=1)
+						||((int)thermalManager.current_temperature[gCfgItems.curSprayerChoose] >= gCfgItems.filament_unload_limit_temper)))
 					{
 						last_disp_state = FILAMENTCHANGE_UI;
 						Clear_FilamentChange();
-						draw_dialog(DIALOG_TYPE_FILAMENT_UNLOAD_COMPLETED);
+						draw_dialog(DIALOG_TYPE_FILAMENT_HEAT_UNLOAD_COMPLETED);
 					}
 					else
 					{
 						last_disp_state = FILAMENTCHANGE_UI;
 						Clear_FilamentChange();
 						draw_dialog(DIALOG_TYPE_FILAMENT_UNLOAD_HEAT);
-						if(thermalManager.target_temperature[gCfgItems.curSprayerChoose]<gCfgItems.filament_load_limit_temper)
+						if(thermalManager.target_temperature[gCfgItems.curSprayerChoose]<gCfgItems.filament_unload_limit_temper)
 						{
 							memset(buf,0,sizeof(buf));
-							sprintf(buf,"M104 T%d S%d\n",gCfgItems.curSprayerChoose,gCfgItems.filament_load_limit_temper);
+							sprintf(buf,"M104 T%d S%d\n",gCfgItems.curSprayerChoose,gCfgItems.filament_unload_limit_temper);
 							enqueue_and_echo_commands_P(PSTR(buf));
 						}
 						filament_sprayer_temp();
@@ -274,27 +274,6 @@ void draw_FilamentChange()
 	BUTTON_SetBitmapEx(buttonFilamentChangeIn.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonFilamentChangeOut.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-
-	BUTTON_SetBkColor(buttonFilamentChangeIn.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonFilamentChangeIn.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonFilamentChangeIn.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonFilamentChangeIn.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-	
-	BUTTON_SetBkColor(buttonFilamentChangeOut.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonFilamentChangeOut.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonFilamentChangeOut.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonFilamentChangeOut.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-	
-
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-
-	BUTTON_SetBkColor(buttonSprayType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonSprayType.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonSprayType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonSprayType.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
 	
 	textExtruTemp = TEXT_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,(BTN_Y_PIXEL-90)/2,BTN_X_PIXEL*2+INTERVAL_V,60, hFilamentChangeWnd, WM_CF_SHOW, TEXT_CF_HCENTER|TEXT_CF_VCENTER,GUI_ID_TEXT2, " ");
 	//textExtruMsg = TEXT_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,(BTN_Y_PIXEL-30)/2+30, BTN_X_PIXEL*2+INTERVAL_V,30, hFilamentChangeWnd, WM_CF_SHOW, TEXT_CF_HCENTER|TEXT_CF_VCENTER,GUI_ID_TEXT1, " ");
@@ -326,8 +305,8 @@ void disp_filament_sprayer_temp()
 	int8_t buf[30] = {0};
 	int8_t buf1[20] = {0};
 
-	TEXT_SetTextColor(textExtruTemp, gCfgItems.state_text_color);
-	TEXT_SetBkColor(textExtruTemp, gCfgItems.state_background_color);
+	TEXT_SetTextColor(textExtruTemp, gCfgItems.title_color);
+	TEXT_SetBkColor(textExtruTemp, gCfgItems.background_color);
 	//TEXT_SetTextAlign(textExtruTemp,  GUI_TA_VERTICAL| GUI_TA_HCENTER);
 	sprintf((char*)buf,"E%d: ",gCfgItems.curSprayerChoose+1);
 	sprintf((char*)buf1, filament_menu.stat_temp, (int)thermalManager.current_temperature[gCfgItems.curSprayerChoose],(int)thermalManager.target_temperature[gCfgItems.curSprayerChoose]);

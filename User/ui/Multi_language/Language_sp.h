@@ -87,6 +87,7 @@
 #define WIFI_CONNECTED_TEXT_SP				"Conectado"
 #define WIFI_DISCONNECTED_TEXT_SP			"Desconectado"
 #define WIFI_EXCEPTION_TEXT_SP				"Excepción"
+#define WIFI_RECONNECT_TEXT_SP         "Reconnect"
 #define CLOUD_TEXT_SP						"Nube"
 #define CLOUD_BIND_SP						"Atado"
 #define CLOUD_UNBIND_SP					    "Sin atar"
@@ -235,4 +236,5 @@
 #define DIALOG_PRINT_FINISH_SP              "¡La impresión está completa!"
 #define DIALOG_PRINT_TIME_SP              "Tiempo de impresión: "
 #define DIALOG_REPRINT_SP                 "Print again"
+#define DIALOG_WIFI_ENABLE_TIPS_SP "The wifi module is being configured,\nplease wait a moment....."
 #endif

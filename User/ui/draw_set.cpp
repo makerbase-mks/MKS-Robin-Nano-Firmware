@@ -33,6 +33,8 @@ extern uint8_t Get_Temperature_Flg;
 extern volatile uint8_t get_temp_flag;
 extern GUI_FLASH const GUI_FONT GUI_FontHZ_fontHz18;
 
+extern uint8_t command_send_flag;
+
 extern volatile char *codebufpoint;
 extern char cmd_code[201];
 extern int X_ADD,X_INTERVAL;   //**Í¼Æ¬¼ä¸ô
@@ -40,7 +42,7 @@ extern uint32_t choose_ret;
 extern uint8_t disp_in_file_dir;
 	
 static BUTTON_STRUCT buttonDisk, buttonVarify, buttonMachine, buttonConnect, buttonWifi, buttonLanguage, buttonAbout, buttonFunction_1,buttonFunction_2,buttonFunction_3,buttonRet,buttonFilamentChange,buttonFan,buttonBreakpoint;
-static BUTTON_STRUCT buttonMoto_off;
+static BUTTON_STRUCT buttonMoto_off,buttonMachinePara;
 static void cbSetWin(WM_MESSAGE * pMsg) {
 
 	uint16_t i=0;
@@ -105,6 +107,12 @@ static void cbSetWin(WM_MESSAGE * pMsg) {
 				{
 					last_disp_state = SET_UI;
 					Clear_Set();
+                    
+                    GUI_SetFont(&FONT_TITLE);
+                    BUTTON_SetDefaultFont(&FONT_TITLE);
+                    TEXT_SetDefaultFont(&FONT_TITLE);                    
+                    GUI_UC_SetEncodeUTF8();
+                    
 					draw_Language();
 				}
                 
@@ -119,16 +127,36 @@ static void cbSetWin(WM_MESSAGE * pMsg) {
 				{
 					if(gCfgItems.wifi_scan == 1)
 					{
-						buf[0] = 0xA5;
-						buf[1] = 0x07;
-						buf[2] = 0x00;
-						buf[3] = 0x00;
-						buf[4] = 0xFC;
-						raw_send_to_wifi(buf, 5);
-					
-						last_disp_state = SET_UI;
-						Clear_Set();
-						draw_Wifi_list();
+						if(wifi_link_state == WIFI_CONNECTED && wifiPara.mode != 0x01)
+						{
+							//wifi_list.nameIndex = wifi_list.nameIndex + i;
+							last_disp_state = SET_UI;
+							Clear_Set();
+							//draw_WifiConnected();
+							draw_Wifi();
+						}
+						else
+						{
+							if(command_send_flag == 1)
+							{
+								buf[0] = 0xA5;
+								buf[1] = 0x07;
+								buf[2] = 0x00;
+								buf[3] = 0x00;
+								buf[4] = 0xFC;
+								raw_send_to_wifi(buf, 5);
+							
+								last_disp_state = SET_UI;
+								Clear_Set();
+								draw_Wifi_list();
+							}
+							else
+							{
+								last_disp_state = SET_UI;
+								Clear_Set();
+								draw_dialog(WIFI_ENABLE_TIPS);
+							}
+						}
 					}
 					else 
 					{
@@ -198,7 +226,13 @@ static void cbSetWin(WM_MESSAGE * pMsg) {
                     gCfgItems.breakpoint_flg=1;
 					disp_in_file_dir = 1;
 					draw_print_file();
-				}			
+				}
+				else if(pMsg->hWinSrc == buttonMachinePara.btnHandle)
+                {
+                    last_disp_state = SET_UI;
+                    Clear_Set();
+                    draw_MachinePara();
+                }			
 			#endif
 			}
 			break;
@@ -260,11 +294,13 @@ void draw_Set()
 		else
 		{
 			buttonBreakpoint.btnHandle  = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL, hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-	        if(gCfgItems.func_btn1_display_flag != 0)
-	            buttonFunction_1.btnHandle  =  BUTTON_CreateEx(INTERVAL_V, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+			buttonMachinePara.btnHandle  =  BUTTON_CreateEx(INTERVAL_V, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+			if(gCfgItems.func_btn1_display_flag != 0)
+	             buttonFunction_1.btnHandle  =  BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+			
 			if(gCfgItems.multiple_language !=0)
 			{
-				buttonLanguage.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+				buttonLanguage.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
 			}		
 		}
 	}
@@ -295,11 +331,12 @@ void draw_Set()
 		else
 		{
 			buttonBreakpoint.btnHandle  = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0,BTN_X_PIXEL, BTN_Y_PIXEL, hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-	        if(gCfgItems.func_btn1_display_flag != 0)
-	            buttonFunction_1.btnHandle  =  BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,0,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+			buttonMachinePara.btnHandle  =  BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,0,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+	        	if(gCfgItems.func_btn1_display_flag != 0)
+	             buttonFunction_1.btnHandle  =  BUTTON_CreateEx(INTERVAL_V, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
 			if(gCfgItems.multiple_language !=0)
 			{
-				buttonLanguage.btnHandle = BUTTON_CreateEx(INTERVAL_V, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+				buttonLanguage.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
 			}		
 		}
 	}
@@ -316,7 +353,14 @@ void draw_Set()
 	BUTTON_SetBmpFileName(buttonWifi.btnHandle, "bmp_wifi.bin",1);
 	BUTTON_SetBmpFileName(buttonFan.btnHandle, "bmp_fan.bin",1);
 	BUTTON_SetBmpFileName(buttonAbout.btnHandle, "bmp_about.bin",1);
-	
+	if(gCfgItems.display_style != 0){
+		BUTTON_SetBmpFileName(buttonMachinePara.btnHandle, "bmp_machine_para.bin",1);
+		BUTTON_SetBitmapEx(buttonMachinePara.btnHandle,0,&bmp_struct,BMP_PIC_X,BMP_PIC_Y);
+		if(gCfgItems.multiple_language != 0)
+		{
+	        	BUTTON_SetText(buttonMachinePara.btnHandle, set_menu.machine_para);
+		}
+	}
 	BUTTON_SetBmpFileName(buttonFilamentChange.btnHandle, "bmp_filamentchange.bin",1);
 	BUTTON_SetBmpFileName(buttonBreakpoint.btnHandle, "bmp_breakpoint.bin",1);
 	if(gCfgItems.func_btn1_display_flag != 0)
@@ -341,6 +385,7 @@ void draw_Set()
 
 	//BUTTON_SetBkColor(buttonDisk.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
 	//BUTTON_SetBkColor(buttonDisk.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+	#if 0
 	if(gCfgItems.wifi_btn_state == 0){
 	BUTTON_SetBkColor(buttonWifi.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
 	BUTTON_SetBkColor(buttonWifi.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);}
@@ -362,11 +407,7 @@ void draw_Set()
 	    BUTTON_SetBkColor(buttonLanguage.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
 	    BUTTON_SetBkColor(buttonLanguage.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
     }
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);	
-	
-	//BUTTON_SetTextColor(buttonDisk.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	//BUTTON_SetTextColor(buttonDisk.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+
 	if(gCfgItems.wifi_btn_state == 0)
 		{
 	BUTTON_SetTextColor(buttonWifi.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
@@ -388,10 +429,8 @@ void draw_Set()
     {
 	    BUTTON_SetTextColor(buttonLanguage.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
 	    BUTTON_SetTextColor(buttonLanguage.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-    }
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);	
-	
+    }	
+	#endif
 	if(gCfgItems.multiple_language != 0)
 	{
 		//BUTTON_SetText(buttonDisk.btnHandle, set_menu.filesys);

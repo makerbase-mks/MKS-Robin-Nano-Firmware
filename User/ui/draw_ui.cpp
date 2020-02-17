@@ -38,6 +38,7 @@
 #include "tim.h"
 //#include "mks_tft_com.h"
 #include "draw_manual_leveling.h"
+#include "Configuration.h"
 //#include "mks_tft_reprint.h"
 #include "configuration_adv.h"
 #include "types.h"
@@ -61,6 +62,8 @@
 #include "draw_Tips.h"
 #include "wifi_module.h"
 //Screen TFT_screen;
+
+value_state value;
 
 static float zpos_bak = -1;
 extern volatile uint8_t temper_error_flg;
@@ -115,10 +118,10 @@ static  BUTTON_STRUCT button4;//button1, button2, button3, button4;
 
 extern GUI_FLASH const GUI_FONT GUI_FontHZ_fontHz18;
 #if _LFN_UNICODE
-extern TCHAR curFileName[150];
+extern TCHAR curFileName[100];
 //TCHAR curFileName[150];
 #else
-extern char curFileName[150];
+extern char curFileName[100];
 //char curFileName[150];
 #endif
 
@@ -376,6 +379,9 @@ char *getDispText(int index)
 		case WIFI_LIST_UI:
 			strcpy(TitleText, list_menu.title);			
 			break;
+        case MACHINE_PARA_UI:
+            strcpy(TitleText, MachinePara_menu.title);
+            break;
 		default:
 			break;
 	}
@@ -602,7 +608,81 @@ void clear_cur_ui()
 	case TIPS_UI:
 		Clear_Tips();
 		break;
-
+	case MACHINE_PARA_UI:
+		Clear_MachinePara();
+		break;
+    case MACHINE_SETTINGS_UI:
+        Clear_MachineSettings();
+        break;
+    case TEMPERATURE_SETTINGS_UI:
+        Clear_TemperatureSettings();
+        break;
+     case MOTOR_SETTINGS_UI:
+        Clear_MotorSettings();
+        break;  
+     case MACHINETYPE_UI:
+        Clear_MachineType();
+        break; 
+     case STROKE_UI:
+        Clear_Stroke();
+        break;  
+     case HOME_DIR_UI:
+        Clear_HomeDir();
+        break;
+     case ENDSTOP_TYPE_UI:
+        Clear_EndstopType();
+        break;
+     case FILAMENT_SETTINGS_UI:
+        Clear_FilamentSettings();
+        break;
+     case LEVELING_SETTIGNS_UI:
+        Clear_LevelingSettings();
+        break;  
+     case LEVELING_PARA_UI:
+        Clear_LevelingPara();
+        break;        
+     case DELTA_LEVELING_PARA_UI:
+        Clear_DeltaLevelPara();
+        break;
+     case XYZ_LEVELING_PARA_UI:
+        Clear_XYZLevelPara();
+        break; 
+     case MAXFEEDRATE_UI:
+        Clear_MaxFeedRate();
+        break;  
+     case STEPS_UI:
+        Clear_Steps();
+        break;
+     case ACCELERATION_UI:
+        Clear_Acceleration();
+        break;
+     case JERK_UI:
+        Clear_Jerk();
+        break;
+     case MOTORDIR_UI:
+        Clear_MotorDir();
+        break;
+     case HOMESPEED_UI:
+        Clear_HomeSpeed();
+        break;
+     case NOZZLE_CONFIG_UI:
+        Clear_NozzleConfig();
+        break;
+     case HOTBED_CONFIG_UI:
+        Clear_HotbedConfig();
+		break; 
+    case ADVANCED_UI:
+        Clear_Advanced();
+        break;   
+    case DOUBLE_Z_UI:
+        Clear_DoubleZ();
+        break;
+    case ENABLE_INVERT_UI:
+        Clear_EnableInvert();
+        break;  
+    case NUMBER_KEY_UI:
+        Clear_NumberKey();
+        break;
 		default:
 			break;
 	}
@@ -746,10 +826,81 @@ void draw_return_ui()
 		case TIPS_UI:
 			draw_Tips();
 			break;
-		case DIALOG_UI:
-			draw_dialog(DialogType);
-			break;
-				
+		case MACHINE_PARA_UI:
+			draw_MachinePara();
+			break;	
+        case MACHINE_SETTINGS_UI:
+            draw_MachineSettings();
+            break;  
+        case TEMPERATURE_SETTINGS_UI:
+            draw_TemperatureSettings();
+            break; 
+         case MOTOR_SETTINGS_UI:
+            draw_MotorSettings();
+            break;
+         case MACHINETYPE_UI:
+            draw_MachineType();
+            break; 
+         case STROKE_UI:
+            draw_Stroke();
+            break;  
+         case HOME_DIR_UI:
+            draw_HomeDir();
+            break;
+         case ENDSTOP_TYPE_UI:
+            draw_EndstopType();
+            break;  
+         case FILAMENT_SETTINGS_UI:
+            draw_FilamentSettings();
+            break;
+         case LEVELING_SETTIGNS_UI:
+            draw_LevelingSettings();
+            break;
+         case LEVELING_PARA_UI:
+            draw_LevelingPara();
+            break;
+         case DELTA_LEVELING_PARA_UI:
+            draw_DeltaLevelPara();
+            break;
+         case XYZ_LEVELING_PARA_UI:
+            draw_XYZLevelPara();
+            break;
+         case MAXFEEDRATE_UI:
+            draw_MaxFeedRate();
+            break;
+         case STEPS_UI:
+            draw_Steps();
+            break;
+         case ACCELERATION_UI:
+            draw_Acceleration();
+            break;
+         case JERK_UI:
+            draw_Jerk();
+            break;  
+         case MOTORDIR_UI:
+            draw_MotorDir();
+            break;
+         case HOMESPEED_UI:
+            draw_HomeSpeed();
+            break;
+        case NOZZLE_CONFIG_UI:
+            draw_NozzleConfig();
+            break;  
+        case HOTBED_CONFIG_UI:
+            draw_HotbedConfig();
+            break;
+        case ADVANCED_UI:
+            draw_Advanced();
+            break;
+        case DOUBLE_Z_UI:
+            draw_DoubleZ();
+            break;   
+        case ENABLE_INVERT_UI:
+            draw_EnableInvert();
+            break;
+        case NUMBER_KEY_UI:
+            draw_NumberKey();
+            break;            
 			default:
 				break;
 		}
@@ -814,13 +965,16 @@ void gui_view_init()
 	GUI_SetFont(&FONT_TITLE);
 	BUTTON_SetDefaultFont(&FONT_TITLE);
 	TEXT_SetDefaultFont(&FONT_TITLE);
+    TEXT_SetDefaultTextColor(gCfgItems.title_color);
+    //TEXT_SetDefaultBKColor(gCfgItems.background_color);
 	GUI_SetBkColor(gCfgItems.background_color);
+    GUI_SetColor(gCfgItems.title_color);
 	BUTTON_SetDefaultTextAlign(GUI_TA_BOTTOM | GUI_TA_HCENTER);
 
-	BUTTON_SetDefaultBkColor(gCfgItems.background_color, BUTTON_CI_UNPRESSED);
-	BUTTON_SetDefaultBkColor(gCfgItems.background_color, BUTTON_CI_PRESSED);
-	BUTTON_SetDefaultTextColor(gCfgItems.title_color, BUTTON_CI_UNPRESSED);
-	BUTTON_SetDefaultTextColor(gCfgItems.title_color, BUTTON_CI_PRESSED);
+	BUTTON_SetDefaultBkColor(gCfgItems.btn_color, BUTTON_CI_UNPRESSED);
+	BUTTON_SetDefaultBkColor(gCfgItems.btn_color, BUTTON_CI_PRESSED);
+	BUTTON_SetDefaultTextColor(gCfgItems.btn_textcolor, BUTTON_CI_UNPRESSED);
+	BUTTON_SetDefaultTextColor(gCfgItems.btn_textcolor, BUTTON_CI_PRESSED);
 	if(gCfgItems.button_3d_effect_flag != 1)
 	{
 		WIDGET_SetDefaultEffect(&WIDGET_Effect_Simple);
@@ -1114,6 +1268,7 @@ void GUI_RefreshPage()
 			break;
 		case DIALOG_UI:
 			filament_dialog_handle();
+			wifi_scan_handle();
 			break;		
 		case MESHLEVELING_UI:
             disp_zpos();
@@ -1545,88 +1700,108 @@ void gcode_preview(FIL *file,int xpos_pixel,int ypos_pixel)
 	int res;
 	
 	//memset(bmp_public_buf,0,sizeof(bmp_public_buf));
-	f_lseek(file, (PREVIEW_LITTLE_PIC_SIZE+To_pre_view)+size*row+8);
-	//ress = f_read(file, buff_pic, size, &read);
-	//if(ress == FR_OK)
+	res = f_open(file, curFileName, FA_OPEN_EXISTING | FA_READ);//	
+	if(res == FR_OK)
 	{
-      	LCD_setWindowArea(xpos_pixel, ypos_pixel+row, 200,1);
-		LCD_WriteRAM_Prepare(); 
-		j=0;
-		i=0;
-		
-		while(1)
+		f_lseek(file, (PREVIEW_LITTLE_PIC_SIZE+To_pre_view)+size*row+8);
+		//ress = f_read(file, buff_pic, size, &read);
+		//if(ress == FR_OK)
 		{
-			f_read(file, buff_pic, 400, &read);
-			for(i=0;i<400;)
-			{
-				bmp_public_buf[j]= ascii2dec_test1((char*)&buff_pic[i])<<4|ascii2dec_test1((char*)&buff_pic[i+1]);
-				//bmp_public_buf[j]= ascii2dec_test1((char*)&buff_pic[8+i])<<4|ascii2dec_test1((char*)&buff_pic[8+i+1]);
-				i+=2;
-				j++;
-			}
+	      	LCD_setWindowArea(xpos_pixel, ypos_pixel+row, 200,1);
+			LCD_WriteRAM_Prepare(); 
+			j=0;
+			i=0;
 			
-			//if(i>800)break;
-			//#if defined(TFT70)
-			//if(j>400)
-			//{
-			//	f_read(file, buff_pic, 1, &read);
-			//	break;
-			//}				
-			//#elif defined(TFT35)
-			if(j>=400)
+			while(1)
 			{
-				//f_read(file, buff_pic, 1, &read);
-				break;
-			}				
-			//#endif
-
-		}
-		for(i=0;i<400;)
-		{
-			p_index = (uint16_t *)(&bmp_public_buf[i]); 					
-	    	LCD_WriteRAM(*p_index);
-			i=i+2;
-		}
-		if(row<20)
-		{
-			SPI_FLASH_SectorErase(BAK_VIEW_ADDR+row*4096);
-		}
-		SPI_FLASH_BufferWrite(bmp_public_buf, BAK_VIEW_ADDR+row*400, 400);
-		row++;
-		if(row >= 200)
-		{
-			size = 809;
-			row = 0;
-			
-			gcode_preview_over = 0;
-			//flash_preview_begin = 1;
-
-			f_close(file);
-
-			if(gCurFileState.file_open_flag != 0xaa)
-			{
-				
-			
-				reset_file_info();
-				
-				res = f_open(file, curFileName, FA_OPEN_EXISTING | FA_READ);
-
-				if(res == FR_OK)
+				f_read(file, buff_pic, 400, &read);
+				for(i=0;i<400;)
 				{
-					f_lseek(file,PREVIEW_SIZE+To_pre_view);
-					gCurFileState.file_open_flag = 0xaa;
-
-					//bakup_file_path((uint8_t *)curFileName, strlen(curFileName));
-
-					srcfp = file;
-
-					mksReprint.mks_printer_state = MKS_WORKING;
-
-					once_flag = 0;
+					bmp_public_buf[j]= ascii2dec_test1((char*)&buff_pic[i])<<4|ascii2dec_test1((char*)&buff_pic[i+1]);
+					//bmp_public_buf[j]= ascii2dec_test1((char*)&buff_pic[8+i])<<4|ascii2dec_test1((char*)&buff_pic[8+i+1]);
+					i+=2;
+					j++;
 				}
 				
-			}			
+				//if(i>800)break;
+				//#if defined(TFT70)
+				//if(j>400)
+				//{
+				//	f_read(file, buff_pic, 1, &read);
+				//	break;
+				//}				
+				//#elif defined(TFT35)
+				if(j>=400)
+				{
+					//f_read(file, buff_pic, 1, &read);
+					break;
+				}				
+				//#endif
+
+			}
+			for(i=0;i<400;)
+			{
+				p_index = (uint16_t *)(&bmp_public_buf[i]); 
+				if(*p_index == 0x0000)*p_index=gCfgItems.preview_bk_color;
+		    	LCD_WriteRAM(*p_index);
+				i=i+2;
+			}
+			if(row<20)
+			{
+				SPI_FLASH_SectorErase(BAK_VIEW_ADDR+row*4096);
+			}
+			SPI_FLASH_BufferWrite(bmp_public_buf, BAK_VIEW_ADDR+row*400, 400);
+			row++;
+			if(row >= 200)
+			{
+				size = 809;
+				row = 0;
+				
+				gcode_preview_over = 0;
+				//flash_preview_begin = 1;
+
+				f_close(file);
+
+				/*if(gCurFileState.file_open_flag != 0xaa)
+				{
+					
+				
+					reset_file_info();
+					
+					res = f_open(file, curFileName, FA_OPEN_EXISTING | FA_READ);
+
+					if(res == FR_OK)
+					{
+						f_lseek(file,PREVIEW_SIZE+To_pre_view);
+						gCurFileState.file_open_flag = 0xaa;
+
+						//bakup_file_path((uint8_t *)curFileName, strlen(curFileName));
+
+						srcfp = file;
+
+						mksReprint.mks_printer_state = MKS_WORKING;
+
+						once_flag = 0;
+					}
+					
+				}	*/	
+				if(card.openFile(curFileName, true))
+				{
+				    feedrate_percentage = 100;
+	                            saved_feedrate_percentage = feedrate_percentage;
+	                            planner.flow_percentage[0] = 100;
+	                            planner.e_factor[0]= planner.flow_percentage[0]*0.01;
+	                            if(mksCfg.extruders==2)
+	                            {
+	                                planner.flow_percentage[1] = 100;
+	                                planner.e_factor[1]= planner.flow_percentage[1]*0.01;  
+	                            }                            
+					card.startFileprint();
+					once_flag = 0;
+				}
+			}
 		}
+		f_close(file);
 	}
 #endif
 }

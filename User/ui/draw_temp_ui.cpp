@@ -73,7 +73,7 @@ void draw_temp()
 	GUI_SetBkColor(gCfgItems.background_color);
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
-	GUI_SetFont(&FONT_TITLE);
+	//GUI_SetFont(&FONT_TITLE);
 
 	GUI_DispStringAt("准备打印:设置:温度", 0, 0);
 	

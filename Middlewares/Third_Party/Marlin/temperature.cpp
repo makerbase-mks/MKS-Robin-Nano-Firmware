@@ -677,7 +677,7 @@ void Temperature::max_temp_error(const int8_t e) {
   if(HAS_TEMP_BED)
   {
     _temp_error(e, PSTR(MSG_T_MAXTEMP), e >= 0 ? PSTR(MSG_ERR_MAXTEMP) : PSTR(MSG_ERR_MAXTEMP_BED));
-    temper_error_type=1;
+    //temper_error_type=1;
   }
   //#else
   else
@@ -686,8 +686,10 @@ void Temperature::max_temp_error(const int8_t e) {
     #if HOTENDS == 1
       UNUSED(e);
     #endif
-    temper_error_type=2;
+    //temper_error_type=2;
    }
+   if(e>=0)temper_error_type=2;
+   else temper_error_type=1;
   //#endif
 }
 void Temperature::min_temp_error(const int8_t e) {
@@ -695,7 +697,7 @@ void Temperature::min_temp_error(const int8_t e) {
   if(HAS_TEMP_BED)
   {
     _temp_error(e, PSTR(MSG_T_MINTEMP), e >= 0 ? PSTR(MSG_ERR_MINTEMP) : PSTR(MSG_ERR_MINTEMP_BED));
-    temper_error_type=3;
+    //temper_error_type=3;
   }
   //#else
   else
@@ -704,8 +706,10 @@ void Temperature::min_temp_error(const int8_t e) {
     #if HOTENDS == 1
       UNUSED(e);
     #endif
-    temper_error_type=4;
+    //temper_error_type=4;
   }
+  if(e>=0)temper_error_type=4;
+   else temper_error_type=3;
   //#endif
 }
 
@@ -1218,7 +1222,21 @@ void Temperature::init() {
     MCUCR = _BV(JTD);
     MCUCR = _BV(JTD);
   #endif
+  //sean 19.12.30
+  #if 1
+	  minttemp_raw[0] = HEATER_0_RAW_LO_TEMP;//ARRAY_BY_HOTENDS( , HEATER_1_RAW_LO_TEMP , HEATER_2_RAW_LO_TEMP, HEATER_3_RAW_LO_TEMP, HEATER_4_RAW_LO_TEMP);
+	  minttemp_raw[1] = HEATER_1_RAW_LO_TEMP;
+	  maxttemp_raw[0] = HEATER_0_RAW_HI_TEMP;// ARRAY_BY_HOTENDS( , HEATER_1_RAW_HI_TEMP , HEATER_2_RAW_HI_TEMP, HEATER_3_RAW_HI_TEMP, HEATER_4_RAW_HI_TEMP);
+	  maxttemp_raw[1] = HEATER_1_RAW_HI_TEMP; 
 
+	  #ifdef BED_MINTEMP
+	  bed_minttemp_raw = HEATER_BED_RAW_LO_TEMP;
+	  #endif
+
+	  #ifdef BED_MAXTEMP
+	   bed_maxttemp_raw = HEATER_BED_RAW_HI_TEMP;
+	  #endif
+  #endif
   // Finish init of mult hotend arrays
   HOTEND_LOOP() maxttemp[e] = maxttemp[0];
 

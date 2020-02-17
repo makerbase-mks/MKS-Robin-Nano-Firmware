@@ -2,6 +2,7 @@
 #include "gui.h"
 #include "pic.h"
 #include "ff.h"
+#include "mks_cfg.h"
 
 
 
@@ -75,6 +76,93 @@ GUI_BITMAP bmp_struct = {
  ,GUI_DRAW_BMPM565
 };
 
+GUI_BITMAP bmp_struct10x17 = {
+  10,
+  17,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+
+GUI_BITMAP bmp_struct70X40 = {
+  70,
+  40,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+GUI_BITMAP bmp_struct90X30 = {
+  90,
+  30,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+
+GUI_BITMAP bmp_struct70X28 = {
+  70,
+  28,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+
+GUI_BITMAP bmp_struct90X40 = {
+  90,
+  40,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+GUI_BITMAP bmp_struct68X40 = {
+  68,
+  40,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+GUI_BITMAP bmp_struct68X90 = {
+  68,
+  20,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+
+GUI_BITMAP bmp_struct144X40 = {
+  144,
+  10,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+
+GUI_BITMAP bmp_struct26X26 = {
+  26,
+  26,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+
 GUI_BITMAP bmp_struct_92 = {
   117,
   23,
@@ -123,7 +211,24 @@ GUI_BITMAP bmp_struct_117x25 = {
   NULL  /* Pointer to palette */
  ,GUI_DRAW_BMPM565
 };
-
+GUI_BITMAP bmp_struct_50x50 = {
+  50,
+  50,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
+GUI_BITMAP bmp_struct_141x60 = {
+  140,
+  15,
+  160, /* BytesPerLine */
+  16, /* BitsPerPixel */
+  (unsigned char *)bmp_public_buf,  /* Pointer to picture data */
+  NULL  /* Pointer to palette */
+ ,GUI_DRAW_BMPM565
+};
 #endif
 FIL TEST_FIL;
 
@@ -194,15 +299,15 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 {
 #if 1
 	uint16_t *p_index;
-	int i=0,j=0,k=0;
+	int i=0,j=0,k=0,h=0;
 	char re;
 	UINT read;
-	char temp_test[200];
+	char temp_test[100];
 	int row_1=0;
   uint32_t *ps3,*ps4; 
 	int pre_sread_cnt;
-	if(part ==0)
-	{
+	//if(part ==0)
+	//{
 		re = f_open(&TEST_FIL,path, FA_OPEN_EXISTING | FA_READ);//huaping.gcode
 
 		if(re == FR_OK)
@@ -219,17 +324,25 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 					
 					while(1)
 					{
-						f_read(&TEST_FIL,&temp_test,200,&read);
-						for(i=0;i<200;)
+						f_read(&TEST_FIL,&temp_test,100,&read);
+						for(i=0;i<100;)
 						{
-							bmp_public_buf[row_1*200+100*k+j] = (char)(ascii2dec_test(&temp_test[i])<<4|ascii2dec_test(&temp_test[i+1]));
+							bmp_public_buf[row_1*100+50*k+j] = (char)(ascii2dec_test(&temp_test[i])<<4|ascii2dec_test(&temp_test[i+1]));
+							
 							j++;
 							i+=2;
 						}
+						
 						k++;
 						j=0;
-						if(k*100>=200)
+						if(k*50>=100)
 						{
+							for(h=0;h<100;)
+							{
+								p_index = (uint16_t *)(&bmp_public_buf[row_1*100+h]); 
+								if(*p_index == 0x0000)*p_index=gCfgItems.preview_bk_color;
+								h+=2;
+							}
 							k=0;
 							row_1++;
 							f_read(&TEST_FIL,&temp_test,9,&read);
@@ -239,14 +352,14 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 							break;
 						}
 					}		
-					//f_close(&TEST_FIL);
+					f_close(&TEST_FIL);
 					return 1;
 			}
 		}
 		f_close(&TEST_FIL);
 		return 0;
-	}
-	else
+	//}
+	/*else
 	{
 		//memset(bmp_public_buf,0,(xsize_small*ysize_small*2));
 		f_lseek(&TEST_FIL,pre_sread_cnt2+8+part*(40900>>2));
@@ -275,7 +388,7 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 		}		
 		if(part == 3)f_close(&TEST_FIL);
 		return 1;
-	}
+	}*/
 #endif
 }
 #endif

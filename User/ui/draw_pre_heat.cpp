@@ -34,12 +34,7 @@ static void cbPreHeatWin(WM_MESSAGE * pMsg) {
 	switch (pMsg->MsgId)
 	{
 		case WM_PAINT:
-			GUI_SetColor(gCfgItems.state_background_color);
-			//#if defined(TFT70)
-			GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+INTERVAL_V*3-1, BTN_Y_PIXEL-1);
-			//#elif defined(TFT35)
-			//GUI_FillRect(BTN_X_PIXEL+INTERVAL_V*2, 0, BTN_X_PIXEL *3+5, BTN_Y_PIXEL);
-			//#endif
+
 			break;
 		case WM_TOUCH:
 		 	
@@ -336,39 +331,6 @@ void draw_preHeat()
 	BUTTON_SetBitmapEx(buttonOff.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 
-	BUTTON_SetBkColor(buttonInc.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonInc.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color	);
-	BUTTON_SetTextColor(buttonInc.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonInc.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-	
-	BUTTON_SetBkColor(buttonDec.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-	BUTTON_SetBkColor(buttonDec.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-	BUTTON_SetTextColor(buttonDec.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-	BUTTON_SetTextColor(buttonDec.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-
-	BUTTON_SetBkColor(buttonTempType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonTempType.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonTempType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonTempType.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-	BUTTON_SetBkColor(buttondegree.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttondegree.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttondegree.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttondegree.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-	BUTTON_SetBkColor(buttonOff.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonOff.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonOff.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonOff.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-
-
-
 	if(gCfgItems.multiple_language != 0)
 	{
 		BUTTON_SetText(buttonInc.btnHandle, preheat_menu.add);
@@ -382,10 +344,10 @@ void draw_preHeat()
 	textDesireTemp = TEXT_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,(BTN_Y_PIXEL-60)/2,BTN_X_PIXEL*2+INTERVAL_V,30, hPreHeatWnd, WM_CF_SHOW, TEXT_CF_HCENTER,	GUI_ID_TEXT1, "Extruder1");
 	textDesireValue = TEXT_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,(BTN_Y_PIXEL-60)/2+30, BTN_X_PIXEL*2+INTERVAL_V,30, hPreHeatWnd, WM_CF_SHOW, TEXT_CF_HCENTER,	GUI_ID_TEXT1, "0/0");
 
-	TEXT_SetBkColor(textDesireTemp,gCfgItems.state_background_color);
-	TEXT_SetBkColor(textDesireValue,gCfgItems.state_background_color); 
-	TEXT_SetTextColor(textDesireTemp,gCfgItems.state_text_color);
-	TEXT_SetTextColor(textDesireValue,gCfgItems.state_text_color);
+	TEXT_SetBkColor(textDesireTemp,gCfgItems.background_color);
+	TEXT_SetBkColor(textDesireValue,gCfgItems.background_color); 
+	TEXT_SetTextColor(textDesireTemp,gCfgItems.title_color);
+	TEXT_SetTextColor(textDesireValue,gCfgItems.title_color);
 	if(gCfgItems.singleNozzle == 1)
 		gCfgItems.curSprayerChoose = 0;
 	else
@@ -416,10 +378,10 @@ void Clear_preHeat()
 
 void disp_step_heat()
 {
-	BUTTON_SetBkColor(buttondegree.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttondegree.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttondegree.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttondegree.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
+	BUTTON_SetBkColor(buttondegree.btnHandle, BUTTON_CI_PRESSED, gCfgItems.background_color);
+	BUTTON_SetBkColor(buttondegree.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
+	BUTTON_SetTextColor(buttondegree.btnHandle, BUTTON_CI_PRESSED, gCfgItems.title_color);
+	BUTTON_SetTextColor(buttondegree.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.title_color);
 
 	if(gCfgItems.stepHeat == 1)
 		BUTTON_SetBmpFileName(buttondegree.btnHandle, "bmp_step1_degree.bin",1);
@@ -445,10 +407,10 @@ void disp_desire_temp()
 	char buf[20] = {0};
 	char buf1[20] = {0};
 	
-	TEXT_SetBkColor(textDesireTemp,gCfgItems.state_background_color);
-	TEXT_SetBkColor(textDesireValue,gCfgItems.state_background_color); 
-	TEXT_SetTextColor(textDesireTemp,gCfgItems.state_text_color);
-	TEXT_SetTextColor(textDesireValue,gCfgItems.state_text_color);
+	TEXT_SetBkColor(textDesireTemp,gCfgItems.background_color);
+	TEXT_SetBkColor(textDesireValue,gCfgItems.background_color); 
+	TEXT_SetTextColor(textDesireTemp,gCfgItems.title_color);
+	TEXT_SetTextColor(textDesireValue,gCfgItems.title_color);
 	
 
 	if(gCfgItems.curTempType == 0)
@@ -507,10 +469,10 @@ void disp_desire_temp()
 
 void disp_temp_type()
 {
-	BUTTON_SetBkColor(buttonTempType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetBkColor(buttonTempType.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-	BUTTON_SetTextColor(buttonTempType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-	BUTTON_SetTextColor(buttonTempType.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
+	BUTTON_SetBkColor(buttonTempType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.background_color);
+	BUTTON_SetBkColor(buttonTempType.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
+	BUTTON_SetTextColor(buttonTempType.btnHandle, BUTTON_CI_PRESSED, gCfgItems.title_color);
+	BUTTON_SetTextColor(buttonTempType.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.title_color);
 
 	if(gCfgItems.curTempType == 0)
 	{	

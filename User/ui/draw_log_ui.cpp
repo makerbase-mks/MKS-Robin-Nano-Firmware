@@ -111,7 +111,7 @@ void draw_Connect()
 	GUI_SetBkColor(gCfgItems.background_color);
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
-	GUI_SetFont(&FONT_TITLE);
+	//GUI_SetFont(&FONT_TITLE);
 
 	//GUI_DispStringAt("正在打印->设置->连接", 0, 0);
 	GUI_DispStringAt(creat_title_text(),  X_ADD, X_INTERVAL);

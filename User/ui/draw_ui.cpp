@@ -137,6 +137,8 @@ static volatile uint8_t fan_move_flag;
 //extern FILE_PRINT_STATE gCurFileState ;
 extern uint8_t fan_change_flag;
 
+extern uint8_t DialogType;
+
 
 //PR_STATUS printerStaus = pr_idle;
 
@@ -483,7 +485,7 @@ void disp_sel_lang()
 }
 
 
-extern uint8_t DialogType;
+
 void clear_cur_ui()
 {
 	last_disp_state = disp_state_stack._disp_state[disp_state_stack._disp_index];
@@ -900,7 +902,10 @@ void draw_return_ui()
             break;
         case NUMBER_KEY_UI:
             draw_NumberKey();
-            break;            
+            break;  
+	case DIALOG_UI:
+            draw_dialog(DialogType);
+            break;
 			default:
 				break;
 		}

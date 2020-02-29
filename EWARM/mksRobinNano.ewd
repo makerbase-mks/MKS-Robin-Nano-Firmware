@@ -3,7 +3,7 @@
 <project>
   <fileVersion>2</fileVersion>
   <configuration>
-    <name>mksRobin2</name>
+    <name>mksRobinNano</name>
     <toolchain>
       <name>ARM</name>
     </toolchain>

@@ -701,9 +701,9 @@ void disp_udisk_files(int seq)
     #endif
     //#elif defined(TFT35)
     #if defined(TFT35)
-	buttonPu.btnHandle = BUTTON_CreateEx(9,255-36,140,60,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
-	buttonPd.btnHandle = BUTTON_CreateEx(180,255-36,140,60,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
-	buttonR.btnHandle = BUTTON_CreateEx(331,255-36,140,60,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+	buttonPu.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,0,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+	buttonPd.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,OTHER_BTN_YPIEL+INTERVAL_H,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
+	buttonR.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,OTHER_BTN_YPIEL*2+INTERVAL_H*2,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
     #else
      buttonPu.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
      buttonPd.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*2,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
@@ -723,9 +723,10 @@ void disp_udisk_files(int seq)
 	//#elif defined(TFT35)
 	#if defined(TFT35)
 	BUTTON_SetBmpFileName(buttonR.btnHandle, "bmp_back.bin",1);
-	BUTTON_SetBitmapEx(buttonPu.btnHandle, 0, &bmp_struct_141x60,BMP_PIC_X, BMP_PIC_Y);
-	BUTTON_SetBitmapEx(buttonPd.btnHandle, 0, &bmp_struct_141x60,BMP_PIC_X, BMP_PIC_Y);
-	BUTTON_SetBitmapEx(buttonR.btnHandle, 0, &bmp_struct_141x60,BMP_PIC_X, BMP_PIC_Y);
+	//BUTTON_SetBmpFileName(buttonR.btnHandle, "bmp_return.bin",1);
+	BUTTON_SetBitmapEx(buttonPu.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
+	BUTTON_SetBitmapEx(buttonPd.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
+	BUTTON_SetBitmapEx(buttonR.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
     	#else
 	BUTTON_SetBmpFileName(buttonR.btnHandle, "bmp_return.bin",1);
 	BUTTON_SetBitmapEx(buttonPu.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
@@ -771,18 +772,14 @@ void disp_udisk_files(int seq)
 		}
 	
 		#if defined(TFT35)
-		if(i < 2)
+		if(i < 3)
 		{
-			buttonF[i].btnHandle = BUTTON_CreateEx(226*i+9*(i+1),  17, 226, 50,hPrintFileWnd, BUTTON_CF_SHOW, 0,alloc_win_id());
+			buttonF[i].btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*i+INTERVAL_V*(i+1),  0, BTN_X_PIXEL, BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, 103 + i);
 		}
-		else if(i>=2 && i<4)
-		{
-			buttonF[i].btnHandle = BUTTON_CreateEx(226*(i-2)+9*((i-2)+1),  50+17*2, 226, 50,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-		}     
 		else
 		{
-			buttonF[i].btnHandle = BUTTON_CreateEx(226*(i-4)+9*((i-4)+1),  50*2+17*3, 226, 50,hPrintFileWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-		}
+			buttonF[i].btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*(i-3)+INTERVAL_V*((i-3)+1),  BTN_Y_PIXEL+INTERVAL_H, BTN_X_PIXEL, BTN_Y_PIXEL,hPrintFileWnd, BUTTON_CF_SHOW, 0, 107 + i);
+		}     
         	#else
  		if(i <= 3)
 		{
@@ -803,7 +800,7 @@ void disp_udisk_files(int seq)
 		#if _LFN_UNICODE
 		cutFileName((TCHAR *)card.gcodeFileList.fileName[j], 16, 8,  tmpStr);
        	#else
-		cutFileName((char *)card.gcodeFileList.fileName[j], 32, 20,  (char *)tmpStr);
+		cutFileName((char *)card.gcodeFileList.fileName[j], 16, 8,  (char *)tmpStr);
         #endif        
 
 		/*tmpStr1 = (uint8_t *)strstr((uint8_t *)sd.gcodeFileList.fileName[curPage * 5 + i], "/");
@@ -848,7 +845,7 @@ void disp_udisk_files(int seq)
 	{
 		//#if defined(TFT70)
 		BUTTON_SetBmpFileName(buttonF[i].btnHandle, "bmp_dir.bin",1);
-		BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_50x50,BMP_PIC_X, BMP_PIC_Y);
+		BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 		//#elif defined(TFT35)
 		//BUTTON_SetBmpFileName(buttonF[i].btnHandle, "bmp_dir.bin",1);
 		//BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_100,FILE_PRE_PIC_X_OFFSET, FILE_PRE_PIC_Y_OFFSET);		
@@ -862,7 +859,7 @@ void disp_udisk_files(int seq)
 		{
 			BUTTON_SetBmpFileNamePath(buttonF[i].btnHandle, NULL,card.gcodeFileList.fileName[j],1);
 			#if defined(TFT35)
-			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_50x50,0,0);//FILE_PRE_PIC_X_OFFSET, FILE_PRE_PIC_Y_OFFSET);
+			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_100,FILE_PRE_PIC_X_OFFSET, FILE_PRE_PIC_Y_OFFSET);
 			#endif			
 		}
 		else
@@ -870,7 +867,7 @@ void disp_udisk_files(int seq)
 		{
 			BUTTON_SetBmpFileName(buttonF[i].btnHandle, "bmp_file.bin",1);
 			#if defined(TFT35)
-			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct_50x50,BMP_PIC_X, BMP_PIC_Y);
+			BUTTON_SetBitmapEx(buttonF[i].btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 			#endif			
 		}
 		#if defined(TFT70)
@@ -879,7 +876,7 @@ void disp_udisk_files(int seq)
 	}
 
 #endif
-		BUTTON_SetTextAlign(buttonF[i].btnHandle, GUI_TA_VCENTER | GUI_CUSTOM_POS);
+		
 		BUTTON_SetText(buttonF[i].btnHandle, (char const *)(tmpStr));
         #endif
 

@@ -168,7 +168,7 @@ static void cbKeyboardWin(WM_MESSAGE * pMsg) {
 				else if(pMsg->hWinSrc == buttondel2.btnHandle)
 				{
 					BUTTON_SetBmpFileName(buttondel2.btnHandle, "bmp_backspace_white.bin",1);
-                           		BUTTON_SetBitmapEx(buttondel2.btnHandle, 0, &bmp_struct_32x21,18, 11);
+                           		BUTTON_SetBitmapEx(buttondel2.btnHandle, 0, &bmp_struct_32x21,(FIRST_LINE_WIDTH-32)/2, (KEY_HEIGHT-21)/2);
 					if(key_value_calc.cnt > 0)
 			              {   
 			                   key_value_calc.cnt--;  
@@ -405,13 +405,13 @@ static void cbKeyboardWin(WM_MESSAGE * pMsg) {
 	               {
 	               	if(keyboard_stype == UPPER_CASE_LETTER)
 	               	{
-	               		BUTTON_SetBmpFileName(buttonArrow.btnHandle,"bmp_Toggle_Down_Arrow_Black.bin",1);
-    					BUTTON_SetBitmapEx(buttonArrow.btnHandle, 0, &bmp_struct_28x21,(FIRST_LINE_WIDTH-28)/2, (KEY_HEIGHT-21)/2);
+	               		//BUTTON_SetBmpFileName(buttonArrow.btnHandle,"bmp_Toggle_Down_Arrow_Black.bin",1);
+    					//BUTTON_SetBitmapEx(buttonArrow.btnHandle, 0, &bmp_struct_28x21,(FIRST_LINE_WIDTH-28)/2, (KEY_HEIGHT-21)/2);
 	               	}
 	                     else if(keyboard_stype == LOWER_CASE_LETTER)
 	                     {
-	                     	BUTTON_SetBmpFileName(buttonArrow.btnHandle,"bmp_Toggle_Up_Arrow_Black.bin",1);
-    					BUTTON_SetBitmapEx(buttonArrow.btnHandle, 0, &bmp_struct_28x21,(FIRST_LINE_WIDTH-28)/2, (KEY_HEIGHT-21)/2);
+	                     	//BUTTON_SetBmpFileName(buttonArrow.btnHandle,"bmp_Toggle_Up_Arrow_Black.bin",1);
+    					//BUTTON_SetBitmapEx(buttonArrow.btnHandle, 0, &bmp_struct_28x21,(FIRST_LINE_WIDTH-28)/2, (KEY_HEIGHT-21)/2);
 	                     }
 	               }
 			  else
@@ -449,12 +449,7 @@ void draw_Keyboard()
     GUI_SetColor(gCfgItems.title_color);
     GUI_Clear();
 
-	keyboard_menu.apply=MANUAL_IP_APPLY_EN;
-	keyboard_menu.password=TEXT_WIFI_PASSWORD_EN;
-	keyboard_menu.space = TEXT_WIFI_SAPCE_EN;
-	   keyboard_menu.letter = TEXT_WIFI_LETTER_EN;
-	   keyboard_menu.digital = TEXT_WIFI_DIGITAL_EN;
-	   keyboard_menu.symbol = TEXT_WIFI_SYMBOL_EN;
+	
 	   //keyboard_menu.pointBold = TEXT_WIFI_POINT_BOLD_EN;
 
 	   //keyboard_menu.joining = TEXT_WIFI_JOINING_EN;
@@ -544,9 +539,9 @@ void draw_Keyboard()
     BUTTON_SetTextAlign(buttonSymbol.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER);
     BUTTON_SetBmpFileName(buttonSymbol.btnHandle,NULL,1);
     
-    BUTTON_SetBkColor(buttonArrow.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_BK_COLOR);
+    BUTTON_SetBkColor(buttonArrow.btnHandle, BUTTON_CI_PRESSED, gCfgItems.background_color);
     BUTTON_SetBkColor(buttonArrow.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.background_color);
-    BUTTON_SetTextColor(buttonArrow.btnHandle, BUTTON_CI_PRESSED, BUTTON_PRESS_TEXT_COLOR);
+    BUTTON_SetTextColor(buttonArrow.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
     BUTTON_SetTextColor(buttonArrow.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.btn_textcolor);
     BUTTON_SetTextAlign(buttonArrow.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER);
     BUTTON_SetBmpFileName(buttonArrow.btnHandle,"bmp_Toggle_Down_Arrow_White.bin",1);

@@ -34,6 +34,7 @@
 #include "mks_reprint.h"
 #include "draw_wifi_list.h"
 #include<cstring>
+#include "ff.h"	
 
 extern CardReader card;
 
@@ -110,7 +111,7 @@ volatile ESP_SEND_STATE espSendState = ESP_SEND_IDLE;
 #endif
 
 
-
+static bool need_ok_later = false;
 
 
 
@@ -998,6 +999,7 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 			{
 				
 				case 20: //print sd / udisk file
+					if(mksReprint.mks_printer_state == MKS_IDLE)
 					{								
 							
 						int index = 0;
@@ -1227,24 +1229,20 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 							
 							//MX_I2C1_Init(400000);
 						}
-						else if(mksReprint.mks_printer_state == MKS_REPRINTED)
+						else if(mksReprint.mks_printer_state == MKS_REPRINTING)
 						{
 							pause_resum = 1;
-							mksReprint.mks_printer_state = MKS_WORKING;
+							mksReprint.mks_printer_state = MKS_REPRINTED;
 							clear_cur_ui();
 							start_print_time();
-                            				#if defined
+                            			#if 1
 							if(from_flash_pic==1)
 								flash_preview_begin = 1;
 							else
 								default_preview_flg = 1;							
 							
-							//draw_printing();
+							draw_printing();
 							#endif
-                            draw_printing();
-							
-							
-							//MX_I2C1_Init(400000);
 						}		
 					}
 					send_to_wifi("ok\r\n", strlen("ok\r\n"));
@@ -1283,7 +1281,7 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 				case 26:
 					/*stop print file*/						
 					//if((printerStaus == pr_working) || (printerStaus == pr_pause))
-					if((mksReprint.mks_printer_state == MKS_WORKING) || (mksReprint.mks_printer_state == MKS_PAUSED) || (mksReprint.mks_printer_state == MKS_REPRINTED))
+					if((mksReprint.mks_printer_state == MKS_WORKING) || (mksReprint.mks_printer_state == MKS_PAUSED) || (mksReprint.mks_printer_state == MKS_REPRINTING))
 					{
 						stop_print_time();							
 
@@ -1306,7 +1304,7 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 				case 27:
 					/*report print rate*/
 					//if((printerStaus == pr_working) || (printerStaus == pr_pause))
-					if((mksReprint.mks_printer_state == MKS_WORKING) || (mksReprint.mks_printer_state == MKS_PAUSED)|| (mksReprint.mks_printer_state == MKS_REPRINTED))
+					if((mksReprint.mks_printer_state == MKS_WORKING) || (mksReprint.mks_printer_state == MKS_PAUSED)|| (mksReprint.mks_printer_state == MKS_REPRINTING))
 					{
 						print_rate = gCurFileState.totalSend;//get_printing_rate(srcfp);
 						/*
@@ -1424,13 +1422,13 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 					
 					//???????????
 					//pushFIFO(&gcodeCmdTxFIFO,(unsigned char *)GET_CUR_TEM_COMMAND);
-					enqueue_and_echo_commands_P(PSTR("M105\n"));
+					enqueue_and_echo_commands_P(PSTR("M105"));
 					//usart2Data.prWaitStatus = pr_wait_idle;
 					
 					break;
-
-				case 110:
 					#if tan
+				case 110:
+					
 					if((gCfgItems.wifi_type == HLK_WIFI) && (wifi_link_state == WIFI_WAIT_TRANS_START))
 					{
 						
@@ -1447,7 +1445,7 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 						
 					}
 					else
-					#endif
+					
 					{
 						strcat((char *)cmd_line, "\n");
 						//pushFIFO(&gcodeCmdTxFIFO, cmd_line);
@@ -1455,6 +1453,7 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 						send_to_wifi("ok\r\n", strlen("ok\r\n"));
 					}
 					break;
+					#endif
 				case 992:
 					if((mksReprint.mks_printer_state == MKS_WORKING) || (mksReprint.mks_printer_state == MKS_PAUSED))
 					{
@@ -1494,7 +1493,7 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 						wifi_ret_ack();
 						send_to_wifi("M997 PAUSE\r\n", strlen("M997 PAUSE\r\n"));
 					}
-					else if(mksReprint.mks_printer_state == MKS_REPRINTED)
+					else if(mksReprint.mks_printer_state == MKS_REPRINTING)
 					{
 						wifi_ret_ack();
 						send_to_wifi("M997 PAUSE\r\n", strlen("M997 PAUSE\r\n"));
@@ -1549,12 +1548,12 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 						}
 					}
 					#endif
-                    if(commands_in_queue < BUFSIZE)
+                /*    if(commands_in_queue < BUFSIZE)
                     {
 				        enqueue_and_echo_commands_P(PSTR((char*)cmd_line));
 					    send_to_wifi("ok\r\n", strlen("ok\r\n"));                    
                     }
-                    else
+                    else*/
                     {
     					uint32_t left;
 
@@ -1574,8 +1573,13 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
     								espGcodeFifo.w =  (espGcodeFifo.w + 1) % WIFI_GCODE_BUFFER_SIZE;
     								index++;
     							}
+							if(left - WIFI_GCODE_BUFFER_LEAST_SIZE >= strlen((const char *)cmd_line))
+								send_to_wifi("ok\r\n", strlen("ok\r\n"));   
+							else
+								need_ok_later = true;
+							
     						}
-                            send_to_wifi("ok\r\n", strlen("ok\r\n"));  
+                            		
     					}
                      }
 					break;
@@ -1619,12 +1623,12 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
 				}
 				#endif
 				uint32_t left_g;
-                if(commands_in_queue < BUFSIZE)
+               /* if(commands_in_queue < BUFSIZE)
                 {
 				    enqueue_and_echo_commands_P(PSTR((char*)cmd_line));
 					send_to_wifi("ok\r\n", strlen("ok\r\n"));                    
                 }
-                else
+                else*/
                 {
     				if(serial_wait_tick > 5)
     				{
@@ -1642,8 +1646,16 @@ static void wifi_gcode_exec(uint8_t *cmd_line)
     							espGcodeFifo.w =  (espGcodeFifo.w + 1) % WIFI_GCODE_BUFFER_SIZE;
     							index++;
     						}
+						if(left_g - WIFI_GCODE_BUFFER_LEAST_SIZE >= strlen((const char *)cmd_line))
+							send_to_wifi("ok\r\n", strlen("ok\r\n"));  
+						else
+							need_ok_later = true;
+						
     					}
-                        send_to_wifi("ok\r\n", strlen("ok\r\n"));  
+					
+				
+						
+                        
     				}	
                  }
 			}
@@ -1912,13 +1924,78 @@ static void gcode_msg_handle(uint8_t * msg, uint16_t msgLen)
 	}
 }
 
+//sean 2020.02.17
+//start
+void utf8_2_gbk(uint8_t *source,uint8_t Len)
+{
+	uint8_t  i=0,char_i=0,char_byte_num=0;
+	uint16_t  u16_h,u16_m,u16_l,u16_value;
+	uint8_t FileName_unicode[30];
+	
+ 	memset(FileName_unicode, 0, sizeof(FileName_unicode));
+	
+	while(1)
+	{
+		char_byte_num = source[i] & 0xF0;
+		if(source[i] < 0X80)
+		{
+			//ASCII --1byte
+			FileName_unicode[char_i] = source[i];
+			i += 1;
+			char_i += 1;
+		}
+		else if(char_byte_num == 0XC0 || char_byte_num == 0XD0)
+		{
+			//--2byte
+			
+			u16_h = (((uint16_t)source[i] <<8) & 0x1f00) >> 2;
+			u16_l = ((uint16_t)source[i+1] & 0x003f);
+			u16_value = (u16_h | u16_l);
+			u16_value=ff_convert(u16_value,0);
+			FileName_unicode[char_i] = (uint8_t)((u16_value & 0xff00) >> 8);
+			FileName_unicode[char_i + 1] = (uint8_t)(u16_value & 0x00ff);
+			i += 2;
+			char_i += 2;
+		}
+		else if(char_byte_num == 0XE0)
+		{
+			//--3byte
+			u16_h = (((uint16_t)source[i] <<8 ) & 0x0f00) << 4;
+			u16_m = (((uint16_t)source[i+1] << 8) & 0x3f00) >> 2;
+			u16_l = ((uint16_t)source[i+2] & 0x003f);
+			u16_value = (u16_h | u16_m | u16_l);
+			u16_value=ff_convert(u16_value,0);
+			FileName_unicode[char_i] = (uint8_t)((u16_value & 0xff00) >> 8);
+			FileName_unicode[char_i + 1] = (uint8_t)(u16_value & 0x00ff);
+			i += 3;
+			char_i += 2;
+		}
+		else if(char_byte_num == 0XF0)
+		{
+			//--4byte ²»³£¼û
+			i += 4;
+			//char_i += 3;
+		}
+		else
+		{
+			break;
+		}
+		if(i >= Len || i >= 255)break;
+	}
+	//memset(source, 0, sizeof(source));
+	memcpy(source, FileName_unicode, sizeof(FileName_unicode));
+}
+//end
+
 char saveFilePath[50];
 
 static void file_first_msg_handle(uint8_t * msg, uint16_t msgLen)
 {
+	
 	uint8_t fileNameLen = *msg;
 	
 	FRESULT res;
+	
 		
 	if(msgLen != fileNameLen + 5)
 	{
@@ -1929,6 +2006,8 @@ static void file_first_msg_handle(uint8_t * msg, uint16_t msgLen)
 	memset(file_writer.saveFileName, 0, sizeof(file_writer.saveFileName));
 
 	memcpy(file_writer.saveFileName, msg + 5, fileNameLen);
+
+	utf8_2_gbk(file_writer.saveFileName,fileNameLen);
 
 	memset(file_writer.write_buf, 0, sizeof(file_writer.write_buf));
 
@@ -1982,6 +2061,7 @@ static void file_first_msg_handle(uint8_t * msg, uint16_t msgLen)
 		wifiTransError.start_tick = getWifiTick();	
 		
 		draw_dialog(DIALOG_TYPE_UPLOAD_FILE);
+		
 		return;
 	}
 
@@ -2022,6 +2102,7 @@ static void file_fragment_msg_handle(uint8_t * msg, uint16_t msgLen)
 
 		upload_result = 2; 
 		
+		
 	}
 	else
 	{
@@ -2033,6 +2114,7 @@ static void file_fragment_msg_handle(uint8_t * msg, uint16_t msgLen)
 			wifi_link_state = WIFI_CONNECTED;	
 
 			upload_result = 2; 
+			
 
 			return;
 		}
@@ -3112,6 +3194,13 @@ void wifi_rcv_handle()
 				}
 				getDataF = 1;
 			}
+			if(need_ok_later &&  (commands_in_queue < BUFSIZE))
+			{
+				need_ok_later = false;
+				send_to_wifi("ok\r\n", strlen("ok\r\n"));   
+			}
+			
+					
 		}
 
 		if(getDataF == 1)
@@ -3140,6 +3229,7 @@ void wifi_rcv_handle()
 					
 					
 					draw_dialog(DIALOG_TYPE_UPLOAD_FILE);
+
 
 				}
 			}

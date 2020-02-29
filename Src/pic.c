@@ -302,12 +302,12 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 	int i=0,j=0,k=0,h=0;
 	char re;
 	UINT read;
-	char temp_test[100];
+	char temp_test[200];
 	int row_1=0;
   uint32_t *ps3,*ps4; 
 	int pre_sread_cnt;
-	//if(part ==0)
-	//{
+	if(part ==0)
+	{
 		re = f_open(&TEST_FIL,path, FA_OPEN_EXISTING | FA_READ);//huaping.gcode
 
 		if(re == FR_OK)
@@ -324,22 +324,20 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 					
 					while(1)
 					{
-						f_read(&TEST_FIL,&temp_test,100,&read);
-						for(i=0;i<100;)
+						f_read(&TEST_FIL,&temp_test,200,&read);
+						for(i=0;i<200;)
 						{
-							bmp_public_buf[row_1*100+50*k+j] = (char)(ascii2dec_test(&temp_test[i])<<4|ascii2dec_test(&temp_test[i+1]));
-							
+							bmp_public_buf[row_1*200+100*k+j] = (char)(ascii2dec_test(&temp_test[i])<<4|ascii2dec_test(&temp_test[i+1]));
 							j++;
 							i+=2;
 						}
-						
 						k++;
 						j=0;
-						if(k*50>=100)
+						if(k*100>=200)
 						{
-							for(h=0;h<100;)
+							for(h=0;h<200;)
 							{
-								p_index = (uint16_t *)(&bmp_public_buf[row_1*100+h]); 
+								p_index = (uint16_t *)(&bmp_public_buf[row_1*200+h]); 
 								if(*p_index == 0x0000)*p_index=gCfgItems.preview_bk_color;
 								h+=2;
 							}
@@ -352,14 +350,14 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 							break;
 						}
 					}		
-					f_close(&TEST_FIL);
+					//f_close(&TEST_FIL);
 					return 1;
 			}
 		}
 		f_close(&TEST_FIL);
 		return 0;
-	//}
-	/*else
+	}
+	else
 	{
 		//memset(bmp_public_buf,0,(xsize_small*ysize_small*2));
 		f_lseek(&TEST_FIL,pre_sread_cnt2+8+part*(40900>>2));
@@ -377,6 +375,12 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 			j=0;
 			if(k*100>=200)
 			{
+				for(h=0;h<200;)
+				{
+					p_index = (uint16_t *)(&bmp_public_buf[row_1*200+h]); 
+					if(*p_index == 0x0000)*p_index=gCfgItems.preview_bk_color;
+					h+=2;
+				}
 				k=0;
 				row_1++;
 				f_read(&TEST_FIL,&temp_test,9,&read);
@@ -388,7 +392,7 @@ uint8_t drawicon_preview(char *path,int xsize_small,int ysize_small,uint8_t part
 		}		
 		if(part == 3)f_close(&TEST_FIL);
 		return 1;
-	}*/
+	}
 #endif
 }
 #endif

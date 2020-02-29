@@ -285,10 +285,11 @@ void draw_Set()
 	                
 			}
 			
-			if(gCfgItems.func_btn1_display_flag != 0)
+			/*if(gCfgItems.func_btn1_display_flag != 0)
 			{
 				buttonFunction_1.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
-			}
+			}*/
+			buttonMachinePara.btnHandle  =  BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 				
 		}
 		else
@@ -322,10 +323,11 @@ void draw_Set()
 	                	buttonLanguage.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());//alloc_win_id());
 			}
 			
-			if(gCfgItems.func_btn1_display_flag != 0)
+			/*if(gCfgItems.func_btn1_display_flag != 0)
 			{
 				buttonFunction_1.btnHandle  =  BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-			}
+			}*/
+			buttonMachinePara.btnHandle  =  BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hSetWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 				
 		}
 		else
@@ -353,18 +355,20 @@ void draw_Set()
 	BUTTON_SetBmpFileName(buttonWifi.btnHandle, "bmp_wifi.bin",1);
 	BUTTON_SetBmpFileName(buttonFan.btnHandle, "bmp_fan.bin",1);
 	BUTTON_SetBmpFileName(buttonAbout.btnHandle, "bmp_about.bin",1);
-	if(gCfgItems.display_style != 0){
+	//if(gCfgItems.display_style != 0){
 		BUTTON_SetBmpFileName(buttonMachinePara.btnHandle, "bmp_machine_para.bin",1);
 		BUTTON_SetBitmapEx(buttonMachinePara.btnHandle,0,&bmp_struct,BMP_PIC_X,BMP_PIC_Y);
 		if(gCfgItems.multiple_language != 0)
 		{
 	        	BUTTON_SetText(buttonMachinePara.btnHandle, set_menu.machine_para);
 		}
-	}
+	//}
 	BUTTON_SetBmpFileName(buttonFilamentChange.btnHandle, "bmp_filamentchange.bin",1);
 	BUTTON_SetBmpFileName(buttonBreakpoint.btnHandle, "bmp_breakpoint.bin",1);
-	if(gCfgItems.func_btn1_display_flag != 0)
+	if(gCfgItems.display_style != 0){
+		if(gCfgItems.func_btn1_display_flag != 0)
 		BUTTON_SetBmpFileName(buttonFunction_1.btnHandle, "bmp_function1.bin",1);
+	}
     if(gCfgItems.multiple_language !=0)
 	    BUTTON_SetBmpFileName(buttonLanguage.btnHandle, "bmp_language.bin",1);
 	
@@ -377,9 +381,11 @@ void draw_Set()
 	BUTTON_SetBitmapEx(buttonAbout.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonFilamentChange.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonBreakpoint.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+	if(gCfgItems.display_style != 0){
 	if(gCfgItems.func_btn1_display_flag != 0)
 		BUTTON_SetBitmapEx(buttonFunction_1.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-    if(gCfgItems.multiple_language !=0)
+	}
+	if(gCfgItems.multiple_language !=0)
 	    BUTTON_SetBitmapEx(buttonLanguage.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 
@@ -440,9 +446,11 @@ void draw_Set()
 		BUTTON_SetText(buttonFilamentChange.btnHandle, set_menu.filament);
 		BUTTON_SetText(buttonAbout.btnHandle, set_menu.about);
 		BUTTON_SetText(buttonBreakpoint.btnHandle, set_menu.breakpoint);
+		if(gCfgItems.display_style != 0){
 		if(gCfgItems.func_btn1_display_flag != 0)
 			BUTTON_SetText(buttonFunction_1.btnHandle, set_menu.motoroff);
-        if(gCfgItems.multiple_language !=0)
+		}
+		if(gCfgItems.multiple_language !=0)
 		    BUTTON_SetText(buttonLanguage.btnHandle, set_menu.language);
 		BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
 	}

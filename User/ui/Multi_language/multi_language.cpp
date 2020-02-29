@@ -1,5 +1,6 @@
 #include "draw_ui.h"
 #include "Multi_language.h"
+#include "wifi_list.h"
 
 
 //********************************************//
@@ -322,18 +323,35 @@ void disp_language_init()
 	zoffset_menu.step01 = ZOFFSET_STEP01;
 	zoffset_menu.step1 = ZOFFSET_STEP1;
 
-    machine_menu.key_0 = "0";
-    machine_menu.key_1 = "1";
-    machine_menu.key_2 = "2";
-    machine_menu.key_3 = "3";
-    machine_menu.key_4 = "4";
-    machine_menu.key_5 = "5";
-    machine_menu.key_6 = "6";
-    machine_menu.key_7 = "7";
-    machine_menu.key_8 = "8";
-    machine_menu.key_9 = "9";
-    machine_menu.key_point= ".";
-	machine_menu.negative="-";
+    machine_menu.key_0 = KEYBOARD_KEY0_EN;
+    machine_menu.key_1 = KEYBOARD_KEY1_EN;
+    machine_menu.key_2 = KEYBOARD_KEY2_EN;
+    machine_menu.key_3 = KEYBOARD_KEY3_EN;
+    machine_menu.key_4 = KEYBOARD_KEY4_EN;
+    machine_menu.key_5 = KEYBOARD_KEY5_EN;
+    machine_menu.key_6 = KEYBOARD_KEY6_EN;
+    machine_menu.key_7 = KEYBOARD_KEY7_EN;
+    machine_menu.key_8 = KEYBOARD_KEY8_EN;
+    machine_menu.key_9 = KEYBOARD_KEY9_EN;
+    machine_menu.key_point= KEYBOARD_KEY_POINT_EN;
+	machine_menu.negative=KEYBOARD_KEY_NEGATIVE_EN;
+
+	//wifi-list
+	list_menu.title=TEXT_WIFI_MENU_TITLE_EN;
+	list_menu.file_pages = FILE_PAGES_EN;
+	//keyboard
+	keyboard_menu.apply=MANUAL_IP_APPLY_EN;
+	keyboard_menu.password=TEXT_WIFI_PASSWORD_EN;
+	keyboard_menu.space = TEXT_WIFI_SAPCE_EN;
+      keyboard_menu.letter = TEXT_WIFI_LETTER_EN;
+      keyboard_menu.digital = TEXT_WIFI_DIGITAL_EN;
+      keyboard_menu.symbol = TEXT_WIFI_SYMBOL_EN;
+      //tips
+      tips_menu.pointBold = TEXT_WIFI_POINT_BOLD_EN;
+	   tips_menu.joining = TEXT_WIFI_JOINING_EN;
+	   tips_menu.failedJoin = TEXT_WIFI_FAILED_JOIN_EN;
+	   tips_menu.wifiConected = TEXT_WIFI_WIFI_CONECTED_EN;
+      
 
     machine_setting_disp();
     

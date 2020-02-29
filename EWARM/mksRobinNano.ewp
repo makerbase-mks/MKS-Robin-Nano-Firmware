@@ -311,6 +311,8 @@
           <state>$PROJ_DIR$/../Drivers/STM32F1xx_HAL_Driver/Inc</state>
           <state>$PROJ_DIR$/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy</state>
           <state>$PROJ_DIR$/../Middlewares/Third_Party/FatFs/src/drivers</state>
+          <state>$PROJ_DIR$/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc</state>
+          <state>$PROJ_DIR$/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc</state>
           <state>$PROJ_DIR$/../Drivers/CMSIS/Device/ST/STM32F1xx/Include</state>
           <state>$PROJ_DIR$/../Middlewares/Third_Party/FatFs/src</state>
           <state>$PROJ_DIR$/../Middlewares/Third_Party/Marlin</state>
@@ -320,12 +322,12 @@
           <state>$PROJ_DIR$/../Drivers/BSP/Components/w25qxx</state>
           <state>$PROJ_DIR$/../Drivers/BSP/Components/lcd</state>
           <state>$PROJ_DIR$/../Drivers/STM32F10x_StdPeriph_Driver/inc</state>
+          <state>$PROJ_DIR$/../Drivers/libstmf4/include</state>
           <state>$PROJ_DIR$/../Middlewares/arduino/stm32/cores/arduino</state>
           <state>$PROJ_DIR$/../User/ui</state>
           <state>$PROJ_DIR$/../User/ui/Multi_language</state>
           <state>$PROJ_DIR$/../User/ui/QRENCODE</state>
-          <state>$PROJ_DIR$/../Middlewares</state>
-          <state>$PROJ_DIR$/../Middlewares/GUI</state>
+          <state>$PROJ_DIR$\..\Middlewares\GUI</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -613,7 +615,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>Robin_Nano35.bin</state>
+          <state>Robin_nano35.bin</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -667,7 +669,7 @@
         </option>
         <option>
           <name>IlinkOutputFile</name>
-          <state>Robin_nano35.out</state>
+          <state>mksRobinNano.out</state>
         </option>
         <option>
           <name>IlinkDebugInfoEnable</name>
@@ -779,7 +781,7 @@
         </option>
         <option>
           <name>IlinkAdditionalLibs</name>
-          <state></state>
+          <state>$PROJ_DIR$\..\Middlewares\GUI\GUI.a</state>
         </option>
         <option>
           <name>IlinkOverrideProgramEntryLabel</name>
@@ -953,7 +955,7 @@
         </option>
         <option>
           <name>IarchiveOutput</name>
-          <state>E:\Robin_Nano_SVN\NANO_V1.0.5&#x5F00;&#x6e90;&#x4ee3;&#x7801;&#x6574;&#x7406;\EWARM\mksRobin2/Exe\mksRobin2.a</state>
+          <state>E:\code\Robin_Nano_SVN\branches\robin_nano35&#x6e90;&#x7801;\Robin_nano35_V2.0.0&#x5F00;&#x6e90;&#x4ee3;&#x7801;&#x6574;&#x7406;\mksRobin_Nano\EWARM\mksRobinNano/Exe\mksRobinNano.a</state>
         </option>
       </data>
     </settings>
@@ -969,6 +971,12 @@
       <name>EWARM</name>
       <file>
         <name>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar\startup_stm32f103xe.s</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f407xx.s</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
       </file>
     </group>
     <group>
@@ -1168,6 +1176,12 @@
           <name>$PROJ_DIR$\..\User\ui\draw_zero.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\User\ui\Multi_language\Font24_MS.c</name>
+          <excluded>
+            <configuration>mksRobinNano</configuration>
+          </excluded>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\User\ui\Multi_language\fontHz14.c</name>
         </file>
         <file>
@@ -1211,6 +1225,12 @@
         <name>$PROJ_DIR$\..\Src\ili9320.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\Src\iwdg.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Src\main.cpp</name>
       </file>
       <file>
@@ -1232,6 +1252,12 @@
         <name>$PROJ_DIR$\..\Src\rtc.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\Src\sdio.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Src\sdio_sdcard.c</name>
       </file>
       <file>
@@ -1244,6 +1270,18 @@
         <name>$PROJ_DIR$\..\Src\stm32f1xx_it.cpp</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\Src\stm32f4xx_hal_msp.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Src\stm32f4xx_it.cpp</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Src\string_deal.c</name>
       </file>
       <file>
@@ -1251,6 +1289,18 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Src\usart.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Src\usb_host.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Src\usbh_conf.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Src\wifi_module.cpp</name>
@@ -1285,6 +1335,12 @@
       <file>
         <name>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\system_stm32f1xx.c</name>
       </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
     </group>
     <group>
       <name>libstmf1</name>
@@ -1302,6 +1358,27 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</name>
+      </file>
+    </group>
+    <group>
+      <name>libstmf4</name>
+      <excluded>
+        <configuration>mksRobinNano</configuration>
+      </excluded>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\libstmf4\source\misc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\libstmf4\source\stm32f4xx_fsmc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\libstmf4\source\stm32f4xx_gpio.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\libstmf4\source\stm32f4xx_spi.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\libstmf4\source\stm32f4xx_usart.c</name>
       </file>
     </group>
     <group>
@@ -1376,6 +1453,105 @@
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_sdmmc.c</name>
       </file>
     </group>
+    <group>
+      <name>STM32F4xx_HAL_Driver</name>
+      <excluded>
+        <configuration>mksRobinNano</configuration>
+      </excluded>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_hcd.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_iwdg.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sram.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_sdmmc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c</name>
+      </file>
+    </group>
   </group>
   <group>
     <name>Middlewares</name>
@@ -1409,10 +1585,28 @@
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\option\mycc936.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\drivers\sd_diskio.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\option\syscall.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\drivers\usbh_diskio.c</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
       </file>
     </group>
     <group>
@@ -1469,6 +1663,12 @@
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\Marlin\printcounter.cpp</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\Marlin\qr_solve.cpp</name>
+        <excluded>
+          <configuration>mksRobinNano</configuration>
+        </excluded>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\Marlin\serial.cpp</name>
       </file>
       <file>
@@ -1511,10 +1711,34 @@
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\Marlin\watchdog.cpp</name>
       </file>
     </group>
+    <group>
+      <name>USB_Host_Library</name>
+      <excluded>
+        <configuration>mksRobinNano</configuration>
+      </excluded>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Host_Library\Core\Src\usbh_core.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Host_Library\Core\Src\usbh_ctlreq.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Host_Library\Core\Src\usbh_ioreq.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Host_Library\Class\MSC\Src\usbh_msc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Host_Library\Class\MSC\Src\usbh_msc_bot.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Host_Library\Class\MSC\Src\usbh_msc_scsi.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\ST\STM32_USB_Host_Library\Core\Src\usbh_pipes.c</name>
+      </file>
+    </group>
   </group>
-  <file>
-    <name>$PROJ_DIR$\..\Middlewares\GUI\GUI.a</name>
-  </file>
 </project>
 
 

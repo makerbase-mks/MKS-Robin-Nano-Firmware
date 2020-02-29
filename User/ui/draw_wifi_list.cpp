@@ -207,7 +207,7 @@ void draw_Wifi_list()
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
 
-	list_menu.title=TEXT_WIFI_MENU_TITLE_EN;
+	
 
 	GUI_DispStringAt(creat_title_text(),  TITLE_XPOS, TITLE_YPOS);
 	
@@ -219,9 +219,9 @@ void draw_Wifi_list()
 	     buttonWifiPd.btnHandle = BUTTON_CreateEx(OTHER_BTN_XPIEL*3+INTERVAL_V*4,OTHER_BTN_YPIEL+INTERVAL_H,OTHER_BTN_XPIEL,OTHER_BTN_YPIEL, hWifiWnd, BUTTON_CF_SHOW, 0, 309);
 
 
-	BUTTON_SetBmpFileName(buttonWifiPd.btnHandle, "bmp_wifi_pageDown.bin",1);
+	BUTTON_SetBmpFileName(buttonWifiPd.btnHandle, "bmp_pageDown.bin",1);
 
-	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_wifi_back.bin",1);
+	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_back.bin",1);
 	BUTTON_SetBitmapEx(buttonWifiPd.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct_92,BMP_PIC_X, BMP_PIC_Y);
 
@@ -299,7 +299,7 @@ void disp_wifi_list(void)
 	//int8_t buf[WIFI_NAME_BUFFER_SIZE] = {0};
 	uint8_t i,j;
 	
-	list_menu.file_pages = FILE_PAGES_EN;
+	
 
 	if(wifi_list.getPage >= 2)
 	{

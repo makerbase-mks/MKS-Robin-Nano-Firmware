@@ -63,11 +63,7 @@ void draw_Tips()
 	GUI_SetColor(gCfgItems.title_color);
 	GUI_Clear();
 
-	   tips_menu.pointBold = TEXT_WIFI_POINT_BOLD_EN;
-
-	   tips_menu.joining = TEXT_WIFI_JOINING_EN;
-	   tips_menu.failedJoin = TEXT_WIFI_FAILED_JOIN_EN;
-	   tips_menu.wifiConected = TEXT_WIFI_WIFI_CONECTED_EN;
+	   
 	
 	hTipsWnd = WM_CreateWindow(0,0, LCD_WIDTH, LCD_HEIGHT, WM_CF_SHOW, cbTipsWin, 0);
 

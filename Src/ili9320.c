@@ -1,11 +1,12 @@
 /**
   ******************************************************************************
-  * @file    
-  * @author  
+  * @file    stm3210e_eval_lcd.c
+  * @author  ARMJISHU Application Team
   * @version 
   * @date    
-  * @brief   
-  *          
+  * @brief   This file includes the LCD driver for AM-240320L8TNQW00H 
+  *          (LCD_ILI9320) and AM-240320LDTNQW00H (LCD_SPFD5408B) Liquid Crystal
+  *          Display Module of STM3210E-EVAL board.
   ******************************************************************************
   * @attention
   *

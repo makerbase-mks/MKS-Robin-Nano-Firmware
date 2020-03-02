@@ -9,7 +9,9 @@ Include Nano-firmware-v2.x.x and Nano-firmware-v1.x.x, can run on MKS Robin Nano
 - Need to power off and restart for the parameters to be effective
 - More suitable for 3D printer manufacturers and users who often do not modify parameters
 
-# [How to build and update it](https://github.com/makerbase-mks/MKS-Robin-Nano-Firmware/wiki/How-to-build-update-nano-firmware)
+# How to build and update it
+- Get [firmware bin](https://github.com/makerbase-mks/MKS-Robin-Nano) file
+- To compile the source code(https://github.com/makerbase-mks/MKS-Robin-Nano-Firmware/wiki/How-to-build-update-nano-firmware)
 
 # [How to buy the MKS Robin Nano board](https://pt.aliexpress.com/item/33013776323.html?spm=a2g03.12010612.8148356.1.6065788ea0s5gT)
 ![MKS Robin Nano](https://github.com/makerbase-mks/MKS-Robin-Nano-Firmware/blob/Nano-firmware-v2.x.x/Picture/MKS_Robin_Nano.png)

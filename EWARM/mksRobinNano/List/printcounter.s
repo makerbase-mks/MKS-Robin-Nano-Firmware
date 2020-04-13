@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:48
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:15
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\printcounter.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\printcounter.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\printcounter.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\printcounter.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\printcounter.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\printcounter.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -104,7 +101,6 @@
         EXTERN sprintf
 
         PUBLIC _Z14serialprintPGMPKc
-        PUBLIC _ZN10duration_tC1ERKj
         PUBLIC _ZN12PrintCounter13deltaDurationEv
         PUBLIC _ZN12PrintCounter15incFilamentUsedERKd
         PUBLIC _ZN12PrintCounter4stopEv
@@ -118,11 +114,6 @@
         PUBLIC _ZN12PrintCounter9showStatsEv
         PUBLIC _ZN12PrintCounterC1Ev
         PUBLIC _ZN12PrintCounterC2Ev
-        PUBLIC _ZNK10duration_t3dayEv
-        PUBLIC _ZNK10duration_t4hourEv
-        PUBLIC _ZNK10duration_t4yearEv
-        PUBLIC _ZNK10duration_t6minuteEv
-        PUBLIC _ZNK10duration_t6secondEv
         PUBLIC _ZNK10duration_t8toStringEPc
         PUBLIC _ZTI5Print
         PUBLIC _ZZNK10duration_t8toStringEPcEs
@@ -162,15 +153,17 @@
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _ZN12PrintCounterC2Ev
-          CFI FunCall _ZN12PrintCounterC1Ev
+          CFI NoCalls
         THUMB
 // __code __interwork __softfp PrintCounter::subobject PrintCounter()
 _ZN12PrintCounterC2Ev:
-        Nop      
+        PUSH     {R4,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock0
-        REQUIRE _ZN12PrintCounterC1Ev
-        ;; // Fall through to label PrintCounter::PrintCounter()
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\printcounter.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\printcounter.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -201,28 +194,40 @@ _ZN12PrintCounterC2Ev:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN12PrintCounterC1Ev
+          CFI NoCalls
         THUMB
 //   27 PrintCounter::PrintCounter(): super() {
 _ZN12PrintCounterC1Ev:
         PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
+          CFI EndBlock cfiBlock1
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock2 Using cfiCommon0
+          CFI NoFunction
           CFI CFA R13+8
+          CFI R4 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
         MOV      R4,R0
-          CFI FunCall _ZN9StopwatchC2Ev
+          CFI FunCall _ZN12PrintCounterC2Ev _ZN9StopwatchC2Ev
+          CFI FunCall _ZN12PrintCounterC1Ev _ZN9StopwatchC2Ev
         BL       _ZN9StopwatchC2Ev
 //   28   this->loadStats();
         MOV      R0,R4
-          CFI FunCall _ZN12PrintCounter9loadStatsEv
+          CFI FunCall _ZN12PrintCounterC2Ev _ZN12PrintCounter9loadStatsEv
+          CFI FunCall _ZN12PrintCounterC1Ev _ZN12PrintCounter9loadStatsEv
         BL       _ZN12PrintCounter9loadStatsEv
 //   29 }
         MOV      R0,R4
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock1
+          CFI EndBlock cfiBlock2
 //   30 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _ZN12PrintCounter13deltaDurationEv
         THUMB
 //   31 millis_t PrintCounter::deltaDuration() {
@@ -246,12 +251,12 @@ _ZN12PrintCounter13deltaDurationEv:
 //   38   return this->lastDuration - tmp;
         SUBS     R0,R0,R5
         POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock2
+          CFI EndBlock cfiBlock3
 //   39 }
 //   40 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN12PrintCounter8isLoadedEv
           CFI NoCalls
         THUMB
@@ -260,49 +265,49 @@ _ZN12PrintCounter13deltaDurationEv:
 _ZN12PrintCounter8isLoadedEv:
         LDRB     R0,[R0, #+44]
         BX       LR               ;; return
-          CFI EndBlock cfiBlock3
+          CFI EndBlock cfiBlock4
 //   43 }
 //   44 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function _ZN12PrintCounter15incFilamentUsedERKd
         THUMB
 //   45 void PrintCounter::incFilamentUsed(double const &amount) {
 _ZN12PrintCounter15incFilamentUsedERKd:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        MOV      R4,R0
-        MOV      R5,R1
+        MOV      R6,R0
 //   46   #if ENABLED(DEBUG_PRINTCOUNTER)
 //   47     PrintCounter::debug(PSTR("incFilamentUsed"));
 //   48   #endif
 //   49 
 //   50   // Refuses to update data if object is not loaded
 //   51   if (!this->isLoaded()) return;
-          CFI FunCall _ZN12PrintCounter8isLoadedEv
-        BL       _ZN12PrintCounter8isLoadedEv
-        CMP      R0,#+0
-        BEQ.N    ??incFilamentUsed_0
+        LDRB     R0,[R6, #+44]
+        CBZ.N    R0,??incFilamentUsed_0
 //   52 
 //   53   this->data.filamentUsed += amount; // mm
-        LDRD     R2,R3,[R4, #+32]
-        LDRD     R0,R1,[R5, #+0]
+        LDRD     R4,R5,[R6, #+32]
+        LDRD     R2,R3,[R1, #+0]
+        MOV      R0,R4
+        MOV      R1,R5
           CFI FunCall __aeabi_dadd
         BL       __aeabi_dadd
-        STRD     R0,R1,[R4, #+32]
+        STRD     R0,R1,[R6, #+32]
 //   54 }
 ??incFilamentUsed_0:
-        POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock4
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock5
 //   55 
 //   56 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _ZN12PrintCounter9initStatsEv
         THUMB
 //   57 void PrintCounter::initStats() {
@@ -329,12 +334,13 @@ _ZN12PrintCounter9initStatsEv:
 //   67 	this->data.longestPrint=0;
         STR      R2,[R1, #+8]
 //   68 	this->data.filamentUsed=0.0;
-        MOV      R3,R2
-        STRD     R2,R3,[R1, #+16]
+        STRD     R2,R2,[R1, #+16]
 //   69 
 //   70   this->saveStats();
-          CFI FunCall _ZN12PrintCounter9saveStatsEv
-        BL       _ZN12PrintCounter9saveStatsEv
+        MOVS     R0,#+51
+        MOVS     R2,#+24
+          CFI FunCall AT24CXX_Write
+        BL       AT24CXX_Write
 //   71   //eeprom_write_byte((uint8_t *) this->address, 0x16);
 //   72   uint8_t eppr_w=0x16;
         MOVS     R0,#+22
@@ -347,11 +353,11 @@ _ZN12PrintCounter9initStatsEv:
         BL       AT24CXX_Write
 //   74 }
         POP      {R0,PC}          ;; return
-          CFI EndBlock cfiBlock5
+          CFI EndBlock cfiBlock6
 //   75 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN12PrintCounter9loadStatsEv
         THUMB
 //   76 void PrintCounter::loadStats() {
@@ -408,30 +414,24 @@ _ZN12PrintCounter9loadStatsEv:
         STRB     R0,[R4, #+44]
 //   99 }
         POP      {R0,R1,R4,PC}    ;; return
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock7
 //  100 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function _ZN12PrintCounter9saveStatsEv
+          CFI NoCalls
         THUMB
 //  101 void PrintCounter::saveStats() {
-_ZN12PrintCounter9saveStatsEv:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
 //  102   #if ENABLED(DEBUG_PRINTCOUNTER)
 //  103     PrintCounter::debug(PSTR("saveStats"));
 //  104   #endif
 //  105 
 //  106   // Refuses to save data if object is not loaded
 //  107   if (!this->isLoaded()) return;
-          CFI FunCall _ZN12PrintCounter8isLoadedEv
-        BL       _ZN12PrintCounter8isLoadedEv
-        CMP      R0,#+0
-        BEQ.N    ??saveStats_0
+_ZN12PrintCounter9saveStatsEv:
+        LDRB     R1,[R0, #+44]
+        CBZ.N    R1,??saveStats_0
 //  108 
 //  109   // Saves the struct to EEPROM
 //  110   //eeprom_update_block(&this->data,
@@ -440,38 +440,29 @@ _ZN12PrintCounter9saveStatsEv:
 //  113 	uint16_t MemAddress =this->address + sizeof(uint8_t);
 //  114 	uint16_t* pBuffer = &(this->data.totalPrints); //????§??data??§?é11|¨??|¨??§2?§??????§oy?Y
 //  115 	AT24CXX_Write(MemAddress,(uint8_t*)pBuffer,BufferSize);  
-        MOVS     R2,#+24
-        ADD      R1,R4,#+16
-        MOVS     R0,#+51
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall AT24CXX_Write
-        B.W      AT24CXX_Write
-          CFI R4 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        ADD      R1,R0,#+16
+        B.N      ?Subroutine1
 ??saveStats_0:
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock7
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock8
 //  116 }
 //  117 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN12PrintCounter9showStatsEv
         THUMB
 //  118 void PrintCounter::showStats() {
 _ZN12PrintCounter9showStatsEv:
-        PUSH     {R4-R6,LR}
+        PUSH     {R4-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        SUB      SP,SP,#+32
-          CFI CFA R13+48
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+20
+        SUB      SP,SP,#+36
+          CFI CFA R13+56
         MOV      R5,R0
 //  119   char buffer[21];
 //  120   duration_t elapsed;
@@ -491,8 +482,8 @@ _ZN12PrintCounter9showStatsEv:
         BL       _Z14serialprintPGMPKc
 //  125   SERIAL_ECHO(this->data.totalPrints);
         LDR.N    R4,??DataTable9_1
-        MOVS     R2,#+10
         LDRH     R1,[R5, #+16]
+        MOVS     R2,#+10
         MOV      R0,R4
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
@@ -502,8 +493,8 @@ _ZN12PrintCounter9showStatsEv:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 //  128   SERIAL_ECHO(this->data.finishedPrints);
-        MOVS     R2,#+10
         LDRH     R1,[R5, #+18]
+        MOVS     R2,#+10
         MOV      R0,R4
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
@@ -517,8 +508,7 @@ _ZN12PrintCounter9showStatsEv:
         MOV      R0,R5
           CFI FunCall _ZN9Stopwatch9isRunningEv
         BL       _ZN9Stopwatch9isRunningEv
-        CMP      R0,#+0
-        BNE.N    ??showStats_0
+        CBNZ.N   R0,??showStats_0
         MOV      R0,R5
           CFI FunCall _ZN9Stopwatch8isPausedEv
         BL       _ZN9Stopwatch8isPausedEv
@@ -526,11 +516,11 @@ _ZN12PrintCounter9showStatsEv:
 ??showStats_0:
         MOVS     R0,#+1
 ??showStats_1:
-        MOVS     R2,#+10
         LDRH     R1,[R5, #+16]
         LDRH     R3,[R5, #+18]
         SUBS     R1,R1,R3
         SUBS     R1,R1,R0
+        MOVS     R2,#+10
         MOV      R0,R4
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
@@ -541,16 +531,20 @@ _ZN12PrintCounter9showStatsEv:
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  135   SERIAL_PROTOCOLPGM(MSG_STATS);
-        MOV      R0,R6
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        MOV      R7,R6
+        B.N      ??showStats_2
+??showStats_3:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??showStats_2:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??showStats_3
 //  136 
 //  137   elapsed = this->data.printTime;
-        ADD      R1,R5,#+20
-        ADD      R0,SP,#+0
-          CFI FunCall _ZN10duration_tC1ERKj
-        BL       _ZN10duration_tC1ERKj
-        LDR      R0,[SP, #+0]
+        LDR      R0,[R5, #+20]
         STR      R0,[SP, #+4]
 //  138   elapsed.toString(buffer);
         ADD      R1,SP,#+8
@@ -559,9 +553,17 @@ _ZN12PrintCounter9showStatsEv:
         BL       _ZNK10duration_t8toStringEPc
 //  139 
 //  140   SERIAL_ECHOPGM("Total time: ");
-        ADR.W    R0,`?<Constant "Total time: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R7,`?<Constant "Total time: ">`
+        B.N      ??showStats_4
+??showStats_5:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??showStats_4:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??showStats_5
 //  141   SERIAL_ECHO(buffer);
         ADD      R1,SP,#+8
         MOV      R0,R4
@@ -575,11 +577,7 @@ _ZN12PrintCounter9showStatsEv:
 //  147   #endif
 //  148 
 //  149   elapsed = this->data.longestPrint;
-        ADD      R1,R5,#+24
-        ADD      R0,SP,#+0
-          CFI FunCall _ZN10duration_tC1ERKj
-        BL       _ZN10duration_tC1ERKj
-        LDR      R0,[SP, #+0]
+        LDR      R0,[R5, #+24]
         STR      R0,[SP, #+4]
 //  150   elapsed.toString(buffer);
         ADD      R1,SP,#+8
@@ -588,9 +586,17 @@ _ZN12PrintCounter9showStatsEv:
         BL       _ZNK10duration_t8toStringEPc
 //  151 
 //  152   SERIAL_ECHOPGM(", Longest job: ");
-        ADR.W    R0,`?<Constant ", Longest job: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R7,`?<Constant ", Longest job: ">`
+        B.N      ??showStats_6
+??showStats_7:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??showStats_6:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??showStats_7
 //  153   SERIAL_ECHO(buffer);
         ADD      R1,SP,#+8
         MOV      R0,R4
@@ -605,23 +611,35 @@ _ZN12PrintCounter9showStatsEv:
 //  160 
 //  161   SERIAL_EOL();
         MOVS     R1,#+10
+        B.N      ??showStats_8
+??showStats_9:
+        UXTB     R1,R1
+??showStats_8:
         MOV      R0,R4
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??showStats_9
 //  162   SERIAL_PROTOCOLPGM(MSG_STATS);
-        MOV      R0,R6
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
 //  163 
 //  164   SERIAL_ECHOPGM("Filament used: ");
-        ADR.W    R0,`?<Constant "Filament used: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R6,`?<Constant "Filament used: ">`
+        B.N      ??showStats_10
+??showStats_11:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??showStats_10:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??showStats_11
 //  165   SERIAL_ECHO(this->data.filamentUsed / 1000);
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        LDRD     R0,R1,[R5, #+32]
         MOVS     R2,#+0
+        LDRD     R0,R1,[R5, #+32]
         LDR.N    R3,??DataTable9_2  ;; 0x408f4000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
@@ -631,9 +649,17 @@ _ZN12PrintCounter9showStatsEv:
           CFI FunCall _ZN5Print5printEdi
         BL       _ZN5Print5printEdi
 //  166   SERIAL_ECHOPGM("m");
-        ADR.N    R0,??DataTable9  ;; "m"
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.N    R5,??DataTable9  ;; "m"
+        B.N      ??showStats_12
+??showStats_13:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??showStats_12:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BNE.N    ??showStats_13
 //  167 
 //  168   SERIAL_EOL();
         MOVS     R1,#+10
@@ -641,25 +667,24 @@ _ZN12PrintCounter9showStatsEv:
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  169 }
-        ADD      SP,SP,#+32
-          CFI CFA R13+16
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock8
+        ADD      SP,SP,#+36
+          CFI CFA R13+20
+        POP      {R4-R7,PC}       ;; return
+          CFI EndBlock cfiBlock9
 //  170 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _ZN12PrintCounter4tickEv
         THUMB
 //  171 void PrintCounter::tick() {
 _ZN12PrintCounter4tickEv:
-        PUSH     {R3-R7,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
         MOV      R4,R0
 //  172   if (!this->isRunning()) return;
           CFI FunCall _ZN9Stopwatch9isRunningEv
@@ -668,8 +693,7 @@ _ZN12PrintCounter4tickEv:
         BEQ.N    ??tick_0
         LDR.N    R5,??DataTable9_3
         LDRB     R0,[R5, #+0]
-        CMP      R0,#+0
-        BNE.N    ??tick_1
+        CBNZ.N   R0,??tick_1
         MOVS     R0,#+1
         STRB     R0,[R5, #+0]
 //  173 
@@ -679,8 +703,7 @@ _ZN12PrintCounter4tickEv:
         STR      R0,[R5, #+8]
 ??tick_1:
         LDRB     R0,[R5, #+1]
-        CMP      R0,#+0
-        BNE.N    ??tick_2
+        CBNZ.N   R0,??tick_2
         MOVS     R0,#+1
         STRB     R0,[R5, #+1]
 //  175                   eeprom_last = millis();
@@ -694,8 +717,7 @@ _ZN12PrintCounter4tickEv:
         BL       HAL_GetTick
         MOV      R6,R0
         LDRB     R0,[R5, #+2]
-        CMP      R0,#+0
-        BNE.N    ??tick_3
+        CBNZ.N   R0,??tick_3
         MOVS     R0,#+1
         STRB     R0,[R5, #+2]
 //  178 
@@ -707,8 +729,8 @@ _ZN12PrintCounter4tickEv:
 //  182   if (now - update_last >= i) {
 ??tick_3:
         LDR      R0,[R5, #+8]
-        SUBS     R0,R6,R0
         LDRH     R1,[R5, #+4]
+        SUBS     R0,R6,R0
         CMP      R0,R1
         BCC.N    ??tick_4
 //  183     #if ENABLED(DEBUG_PRINTCOUNTER)
@@ -716,18 +738,17 @@ _ZN12PrintCounter4tickEv:
 //  185     #endif
 //  186 
 //  187     this->data.printTime += this->deltaDuration();
-        LDR      R7,[R4, #+20]
         MOV      R0,R4
           CFI FunCall _ZN12PrintCounter13deltaDurationEv
         BL       _ZN12PrintCounter13deltaDurationEv
-        ADDS     R0,R0,R7
+        LDR      R1,[R4, #+20]
+        ADDS     R0,R0,R1
         STR      R0,[R4, #+20]
 //  188     update_last = now;
         STR      R6,[R5, #+8]
 ??tick_4:
         LDRB     R0,[R5, #+3]
-        CMP      R0,#+0
-        BNE.N    ??tick_5
+        CBNZ.N   R0,??tick_5
         MOVS     R0,#+1
         STRB     R0,[R5, #+3]
 //  189   }
@@ -739,34 +760,33 @@ _ZN12PrintCounter4tickEv:
 //  193   if (now - eeprom_last >= j) {
 ??tick_5:
         LDR      R0,[R5, #+12]
-        SUBS     R0,R6,R0
         LDR      R1,[R5, #+16]
+        SUBS     R0,R6,R0
         CMP      R0,R1
         BCC.N    ??tick_0
 //  194     eeprom_last = now;
         STR      R6,[R5, #+12]
 //  195     this->saveStats();
-        MOV      R0,R4
-        POP      {R1,R4-R7,LR}
+        LDRB     R0,[R4, #+44]
+        CBZ.N    R0,??tick_0
+        ADD      R1,R4,#+16
+        POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
-          CFI R7 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall _ZN12PrintCounter9saveStatsEv
-        B.N      _ZN12PrintCounter9saveStatsEv
-          CFI R4 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -8)
+        B.N      ?Subroutine1
+          CFI R4 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+24
+          CFI CFA R13+16
 //  196   }
 //  197 }
 ??tick_0:
-        POP      {R0,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock9
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock10
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -798,6 +818,18 @@ _ZN12PrintCounter4tickEv:
 ??DataTable9_4:
         DC32     0x36ee80
 
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock11 Using cfiCommon0
+          CFI NoFunction
+        THUMB
+?Subroutine1:
+        MOVS     R2,#+24
+        MOVS     R0,#+51
+          CFI FunCall _ZN12PrintCounter9saveStatsEv AT24CXX_Write
+          CFI FunCall _ZN12PrintCounter4tickEv AT24CXX_Write
+        B.W      AT24CXX_Write
+          CFI EndBlock cfiBlock11
+
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 // __absolute unsigned char PrintCounter::tick()::_ZGVupdate_last
 ??_ZGVupdate_last:
@@ -814,7 +846,7 @@ _ZN12PrintCounter4tickEv:
 //  199 // @Override
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN12PrintCounter5startEv
         THUMB
 //  200 bool PrintCounter::start() {
@@ -838,11 +870,9 @@ _ZN12PrintCounter5startEv:
         MOV      R0,R4
           CFI FunCall _ZN9Stopwatch5startEv
         BL       _ZN9Stopwatch5startEv
-        CMP      R0,#+0
-        BEQ.N    ??start_0
+        CBZ.N    R0,??start_0
 //  208     if (!paused) {
-        CMP      R5,#+0
-        BNE.N    ??start_1
+        CBNZ.N   R5,??start_1
 //  209       this->data.totalPrints++;
         LDRH     R0,[R4, #+16]
         ADDS     R0,R0,#+1
@@ -854,20 +884,18 @@ _ZN12PrintCounter5startEv:
 //  212     return true;
 ??start_1:
         MOVS     R0,#+1
-        POP      {R1,R4,R5,PC}
 //  213   }
 //  214 
 //  215   return false;
 ??start_0:
-        MOVS     R0,#+0
         POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock12
 //  216 }
 //  217 
 //  218 // @Override
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function _ZN12PrintCounter4stopEv
         THUMB
 //  219 bool PrintCounter::stop() {
@@ -885,51 +913,54 @@ _ZN12PrintCounter4stopEv:
 //  224   if (super::stop()) {
           CFI FunCall _ZN9Stopwatch4stopEv
         BL       _ZN9Stopwatch4stopEv
-        CMP      R0,#+0
-        BEQ.N    ??stop_0
+        CBZ.N    R0,??stop_0
 //  225     this->data.finishedPrints++;
         LDRH     R0,[R4, #+18]
         ADDS     R0,R0,#+1
         STRH     R0,[R4, #+18]
 //  226     this->data.printTime += this->deltaDuration();
-        LDR      R5,[R4, #+20]
         MOV      R0,R4
           CFI FunCall _ZN12PrintCounter13deltaDurationEv
         BL       _ZN12PrintCounter13deltaDurationEv
-        ADDS     R0,R0,R5
+        LDR      R1,[R4, #+20]
+        ADDS     R0,R0,R1
         STR      R0,[R4, #+20]
 //  227 
 //  228     if (this->duration() > this->data.longestPrint)
         MOV      R0,R4
           CFI FunCall _ZN9Stopwatch8durationEv
         BL       _ZN9Stopwatch8durationEv
-        LDR      R1,[R4, #+24]
+        ADD      R5,R4,#+20
+        LDR      R1,[R5, #+4]
         CMP      R1,R0
         BCS.N    ??stop_1
 //  229       this->data.longestPrint = this->duration();
         MOV      R0,R4
           CFI FunCall _ZN9Stopwatch8durationEv
         BL       _ZN9Stopwatch8durationEv
-        STR      R0,[R4, #+24]
+        STR      R0,[R5, #+4]
 //  230 
 //  231     this->saveStats();
 ??stop_1:
-        MOV      R0,R4
-          CFI FunCall _ZN12PrintCounter9saveStatsEv
-        BL       _ZN12PrintCounter9saveStatsEv
+        LDRB     R0,[R5, #+24]
+        CBZ.N    R0,??stop_2
+        MOVS     R2,#+24
+        ADD      R1,R4,#+16
+        MOVS     R0,#+51
+          CFI FunCall AT24CXX_Write
+        BL       AT24CXX_Write
 //  232     return true;
+??stop_2:
         MOVS     R0,#+1
-        POP      {R1,R4,R5,PC}
 //  233   }
 //  234   else return false;
 ??stop_0:
-        MOVS     R0,#+0
         POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock13
 //  235 }
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function _ZN12PrintCounter5resetEv
         THUMB
 _ZN12PrintCounter5resetEv:
@@ -943,7 +974,7 @@ _ZN12PrintCounter5resetEv:
         MOVS     R0,#+0
         STR      R0,[R4, #+40]
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock12
+          CFI EndBlock cfiBlock14
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -993,271 +1024,138 @@ _ZN12PrintCounter5resetEv:
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function _Z14serialprintPGMPKc
         THUMB
 // __interwork __softfp void serialprintPGM(char const *)
 _Z14serialprintPGMPKc:
-        PUSH     {R4,LR}
+        PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
         MOV      R4,R0
-        B.N      ??serialprintPGM_0
-??serialprintPGM_1:
+        LDR.N    R5,??serialprintPGM_0
+        B.N      ??serialprintPGM_1
+??serialprintPGM_2:
         UXTB     R1,R1
-        LDR.N    R0,??serialprintPGM_2
+        MOV      R0,R5
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-??serialprintPGM_0:
+??serialprintPGM_1:
         LDRSB    R1,[R4], #+1
         MOVS     R0,R1
-        BNE.N    ??serialprintPGM_1
-        POP      {R4,PC}          ;; return
+        BNE.N    ??serialprintPGM_2
+        POP      {R0,R4,R5,PC}    ;; return
+        Nop      
         DATA
-??serialprintPGM_2:
+??serialprintPGM_0:
         DC32     Serial3
-          CFI EndBlock cfiBlock13
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN10duration_tC1ERKj
-          CFI Block cfiBlock14 Using cfiCommon0
-          CFI Function _ZN10duration_tC1ERKj
-          CFI NoCalls
-        THUMB
-// __code __interwork __softfp duration_t::duration_t(uint32_t const &)
-_ZN10duration_tC1ERKj:
-        LDR      R1,[R1, #+0]
-        STR      R1,[R0, #+0]
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock14
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZNK10duration_t4yearEv
-          CFI Block cfiBlock15 Using cfiCommon0
-          CFI Function _ZNK10duration_t4yearEv
-        THUMB
-// __interwork __softfp uint8_t duration_t::year() const
-_ZNK10duration_t4yearEv:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-          CFI FunCall _ZNK10duration_t3dayEv
-        BL       _ZNK10duration_t3dayEv
-        MOVW     R1,#+365
-        SDIV     R0,R0,R1
-        UXTB     R0,R0
-        POP      {R1,PC}          ;; return
           CFI EndBlock cfiBlock15
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZNK10duration_t3dayEv
-          CFI Block cfiBlock16 Using cfiCommon0
-          CFI Function _ZNK10duration_t3dayEv
-        THUMB
-// __interwork __softfp uint16_t duration_t::day() const
-_ZNK10duration_t3dayEv:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-          CFI FunCall _ZNK10duration_t4hourEv
-        BL       _ZNK10duration_t4hourEv
-        MOVS     R1,#+24
-        UDIV     R0,R0,R1
-        UXTH     R0,R0
-        POP      {R1,PC}          ;; return
-          CFI EndBlock cfiBlock16
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZNK10duration_t4hourEv
-          CFI Block cfiBlock17 Using cfiCommon0
-          CFI Function _ZNK10duration_t4hourEv
-        THUMB
-// __interwork __softfp uint32_t duration_t::hour() const
-_ZNK10duration_t4hourEv:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-          CFI FunCall _ZNK10duration_t6minuteEv
-        BL       _ZNK10duration_t6minuteEv
-        MOVS     R1,#+60
-        UDIV     R0,R0,R1
-        POP      {R1,PC}          ;; return
-          CFI EndBlock cfiBlock17
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZNK10duration_t6minuteEv
-          CFI Block cfiBlock18 Using cfiCommon0
-          CFI Function _ZNK10duration_t6minuteEv
-        THUMB
-// __interwork __softfp uint32_t duration_t::minute() const
-_ZNK10duration_t6minuteEv:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-          CFI FunCall _ZNK10duration_t6secondEv
-        BL       _ZNK10duration_t6secondEv
-        MOVS     R1,#+60
-        UDIV     R0,R0,R1
-        POP      {R1,PC}          ;; return
-          CFI EndBlock cfiBlock18
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZNK10duration_t6secondEv
-          CFI Block cfiBlock19 Using cfiCommon0
-          CFI Function _ZNK10duration_t6secondEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp uint32_t duration_t::second() const
-_ZNK10duration_t6secondEv:
-        LDR      R0,[R0, #+0]
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock19
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZNK10duration_t8toStringEPc
-          CFI Block cfiBlock20 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function _ZNK10duration_t8toStringEPc
         THUMB
 // __interwork __softfp void duration_t::toString(char *) const
 _ZNK10duration_t8toStringEPc:
-        PUSH     {R4-R10,LR}
+        PUSH     {R4-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R10 Frame(CFA, -8)
-          CFI R9 Frame(CFA, -12)
-          CFI R8 Frame(CFA, -16)
-          CFI R7 Frame(CFA, -20)
-          CFI R6 Frame(CFA, -24)
-          CFI R5 Frame(CFA, -28)
-          CFI R4 Frame(CFA, -32)
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+20
+        MOV      R2,R0
+        SUB      SP,SP,#+12
           CFI CFA R13+32
-        SUB      SP,SP,#+16
-          CFI CFA R13+48
-        MOV      R7,R0
-        MOV      R4,R1
-          CFI FunCall _ZNK10duration_t4yearEv
-        BL       _ZNK10duration_t4yearEv
-        MOV      R5,R0
-        MOV      R0,R7
-          CFI FunCall _ZNK10duration_t3dayEv
-        BL       _ZNK10duration_t3dayEv
-        MOVW     R1,#+365
-        SDIV     R1,R0,R1
-        MOVW     R2,#+365
-        MLS      R6,R2,R1,R0
-        MOV      R0,R7
-          CFI FunCall _ZNK10duration_t4hourEv
-        BL       _ZNK10duration_t4hourEv
+        MOV      R0,R1
+        LDR      R1,[R2, #+0]
+        MOVS     R3,#+60
+        UDIV     R1,R1,R3
+        UDIV     R3,R1,R3
         MOVS     R1,#+24
-        UDIV     R1,R0,R1
-        ADD      R2,R1,R1, LSL #+1
-        SUB      R8,R0,R2, LSL #+3
-        MOV      R0,R7
-          CFI FunCall _ZNK10duration_t6minuteEv
-        BL       _ZNK10duration_t6minuteEv
-        MOV      R9,#+60
-        MOV      R1,R9
-        UDIV     R1,R0,R1
-        MLS      R10,R9,R1,R0
-        MOV      R0,R7
-          CFI FunCall _ZNK10duration_t6secondEv
-        BL       _ZNK10duration_t6secondEv
-        MOV      R1,R9
-        UDIV     R1,R0,R1
-        MLS      R2,R9,R1,R0
-        CMP      R5,#+0
-        BEQ.N    ??toString_0
-        STR      R2,[SP, #+8]
-        STR      R10,[SP, #+4]
-        STR      R8,[SP, #+0]
-        MOV      R3,R6
-        MOV      R2,R5
+        UDIV     R5,R3,R1
+        UXTH     R4,R5
+        MOVW     R1,#+365
+        SDIV     R6,R4,R1
+        MOVW     R7,#+365
+        UXTB     R1,R6
+        MLS      R4,R7,R6,R4
+        ADD      R6,R5,R5, LSL #+1
+        SUB      R5,R3,R6, LSL #+3
+        LDR      R3,[R2, #+0]
+        MOVS     R2,#+60
+        UDIV     R6,R3,R2
+        UDIV     R2,R6,R2
+        RSB      R7,R2,R2, LSL #+4
+        SUB      R2,R6,R7, LSL #+2
+        RSB      R7,R6,R6, LSL #+4
+        SUB      R3,R3,R7, LSL #+2
+        CBZ.N    R1,??toString_0
+        STR      R2,[SP, #+4]
+        STR      R3,[SP, #+8]
+        MOV      R2,R1
+        STR      R5,[SP, #+0]
+        MOV      R3,R4
         LDR.N    R1,??toString_1
-        MOV      R0,R4
-          CFI FunCall sprintf
-        BL       sprintf
         B.N      ??toString_2
 ??toString_0:
-        CMP      R6,#+0
-        BEQ.N    ??toString_3
-        STR      R2,[SP, #+4]
-        STR      R10,[SP, #+0]
-        MOV      R3,R8
-        MOV      R2,R6
+        CBZ.N    R4,??toString_3
+        STR      R3,[SP, #+4]
+        STR      R2,[SP, #+0]
+        MOV      R3,R5
+        MOV      R2,R4
         LDR.N    R1,??toString_1+0x4
-        MOV      R0,R4
-          CFI FunCall sprintf
-        BL       sprintf
         B.N      ??toString_2
 ??toString_3:
-        CMP      R8,#+0
-        BEQ.N    ??toString_4
-        STR      R2,[SP, #+0]
-        MOV      R3,R10
-        MOV      R2,R8
+        CBZ.N    R5,??toString_4
         LDR.N    R1,??toString_1+0x8
-        MOV      R0,R4
+        STR      R3,[SP, #+0]
+        MOV      R3,R2
+        MOV      R2,R5
+??toString_2:
           CFI FunCall sprintf
         BL       sprintf
-        B.N      ??toString_2
-??toString_4:
-        CMP      R10,#+0
-        BEQ.N    ??toString_5
-        MOV      R3,R2
-        MOV      R2,R10
-        LDR.N    R1,??toString_1+0xC
-        MOV      R0,R4
-        ADD      SP,SP,#+16
+        ADD      SP,SP,#+12
+          CFI CFA R13+20
+        POP      {R4-R7,PC}
           CFI CFA R13+32
-        POP      {R4-R10,LR}
+??toString_4:
+        CBZ.N    R2,??toString_5
+        ADD      SP,SP,#+12
+          CFI CFA R13+20
+        POP      {R4-R7,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        LDR.N    R1,??toString_1+0xC
           CFI FunCall sprintf
         B.W      sprintf
-          CFI R4 Frame(CFA, -32)
-          CFI R5 Frame(CFA, -28)
-          CFI R6 Frame(CFA, -24)
-          CFI R7 Frame(CFA, -20)
-          CFI R8 Frame(CFA, -16)
-          CFI R9 Frame(CFA, -12)
-          CFI R10 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+48
+          CFI CFA R13+32
 ??toString_5:
         LDR.N    R1,??toString_1+0x10
-        MOV      R0,R4
-        ADD      SP,SP,#+16
-          CFI CFA R13+32
-        POP      {R4-R10,LR}
+        ADD      SP,SP,#+12
+          CFI CFA R13+20
+        POP      {R4-R7,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOV      R2,R3
           CFI FunCall sprintf
         B.W      sprintf
-          CFI R4 Frame(CFA, -32)
-          CFI R5 Frame(CFA, -28)
-          CFI R6 Frame(CFA, -24)
-          CFI R7 Frame(CFA, -20)
-          CFI R8 Frame(CFA, -16)
-          CFI R9 Frame(CFA, -12)
-          CFI R10 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+48
-??toString_2:
-        POP      {R0-R10,PC}      ;; return
         Nop      
         DATA
 ??toString_1:
@@ -1266,7 +1164,7 @@ _ZNK10duration_t8toStringEPc:
         DC32     _ZZNK10duration_t8toStringEPcEs_1
         DC32     _ZZNK10duration_t8toStringEPcEs_2
         DC32     _ZZNK10duration_t8toStringEPcEs_3
-          CFI EndBlock cfiBlock20
+          CFI EndBlock cfiBlock16
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1352,9 +1250,9 @@ _ZZNK10duration_t8toStringEPcEs_3:
 // 
 //    20 bytes in section .bss
 //    63 bytes in section .rodata
-// 1 160 bytes in section .text
+// 1 090 bytes in section .text
 // 
-// 828 bytes of CODE  memory (+ 332 bytes shared)
+// 878 bytes of CODE  memory (+ 212 bytes shared)
 //   2 bytes of CONST memory (+  61 bytes shared)
 //  20 bytes of DATA  memory
 //

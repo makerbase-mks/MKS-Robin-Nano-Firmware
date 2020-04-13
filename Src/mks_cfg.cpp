@@ -827,8 +827,8 @@ void CardReader::mksEepromRefresh()
 	hexBurnValue(">cfg_back_btn_textcolor",&gCfgItems.back_btn_textcolor,EPR_BACK_BTN_TEXTCOLOR);
 	//hexBurnValue(">cfg_sel_btn_bkcolor",&gCfgItems.btn_state_sel_color,EPR_SEL_BTN_BKCOLOR);
 	//hexBurnValue(">cfg_sel_btn_textcolor",&gCfgItems.btn_state_sel_textcolor,EPR_SEL_BTN_TEXTCOLOR);
-	//hexBurnValue(">cfg_dialog_btn_bkcolor",&gCfgItems.dialog_btn_color,EPR_DIALOG_BTN_BKCOLOR);
-	//hexBurnValue(">cfg_dialog_btn_textcolor",&gCfgItems.dialog_btn_textcolor,EPR_DIALOG_BTN_TEXTCOLOR);
+	hexBurnValue(">cfg_dialog_btn_bkcolor",&gCfgItems.dialog_btn_color,EPR_DIALOG_BTN_BKCOLOR);
+	hexBurnValue(">cfg_dialog_btn_textcolor",&gCfgItems.dialog_btn_textcolor,EPR_DIALOG_BTN_TEXTCOLOR);
 
 	eprBurnValue(">cfg_insert_det_module", (uint8_t *)&gCfgItems.insert_det_module, EPR_INSERT_DET_MODULE_TYPE);
 	eprBurnValue(">cfg_have_ups_device", (uint8_t *)&gCfgItems.have_ups, EPR_HAS_UPS);
@@ -918,7 +918,8 @@ void CardReader::mksEepromRefresh()
 
 	eprBurnValue(">PULSE_DELAY", (int16_t *)&gCfgItems.pulseDelay, EPR_PULSE_DELAY_TIME);
 	eprBurnValue(">PRINT_FINISHED_COUNT", (int16_t *)&gCfgItems.print_finish_count, EPR_PRINT_FINESH_COUNT);
-	
+
+	eprBurnValue(">Z_SAFE_HOMING", &mksCfg.z_save_homing, EPR_Z_SAVE_HOMING);
 
 /*------------------------MKS 新增参数配置 end---------------------------------*/
         
@@ -1196,6 +1197,9 @@ void CardReader::mksReset()
     mksCfg.y_enable_on=0;
     mksCfg.z_enable_on=0;
     mksCfg.e_enable_on=0;
+
+    mksCfg.z_save_homing = 0;
+	
 	//mkstft_ui_init();
 
 }
@@ -1552,6 +1556,8 @@ void CardReader::mksLoad()
     AT24CXX_Read((uint16_t)EPR_Y_ENABLE_ON,&mksCfg.y_enable_on,1);
     AT24CXX_Read((uint16_t)EPR_Z_ENABLE_ON,&mksCfg.z_enable_on,1);
     AT24CXX_Read((uint16_t)EPR_E_ENABLE_ON,&mksCfg.e_enable_on,1);
+
+    AT24CXX_Read((uint16_t)EPR_Z_SAVE_HOMING,&mksCfg.z_save_homing,1);
     
 	mkstft_ui_load();
 	

@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:06:11
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:21
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stopwatch.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stopwatch.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stopwatch.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stopwatch.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\stopwatch.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\stopwatch.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -128,15 +125,13 @@
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _ZN9StopwatchC2Ev
-          CFI FunCall _ZN9StopwatchC1Ev
+          CFI NoCalls
         THUMB
 // __code __interwork __softfp Stopwatch::subobject Stopwatch()
 _ZN9StopwatchC2Ev:
-        Nop      
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock0
-        REQUIRE _ZN9StopwatchC1Ev
-        ;; // Fall through to label Stopwatch::Stopwatch()
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stopwatch.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stopwatch.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -166,26 +161,38 @@ _ZN9StopwatchC2Ev:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN9StopwatchC1Ev
+          CFI NoCalls
         THUMB
 //   26 Stopwatch::Stopwatch() {
 _ZN9StopwatchC1Ev:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-//   27   this->reset();
-          CFI FunCall _ZN9Stopwatch5resetEv
-        BL       _ZN9Stopwatch5resetEv
-//   28 }
-        MOV      R0,R4
-        POP      {R4,PC}          ;; return
+        Nop      
           CFI EndBlock cfiBlock1
-//   29 
+//   27   this->reset();
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock2 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN9Stopwatch5resetEv
+          CFI NoCalls _ZN9StopwatchC1Ev
+          CFI NoCalls _ZN9StopwatchC2Ev
+        THUMB
+?Subroutine0:
+        MOVS     R1,#+0
+        STRB     R1,[R0, #+0]
+        STR      R1,[R0, #+8]
+        STR      R1,[R0, #+12]
+        STR      R1,[R0, #+4]
+//   28 }
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock2
+//   29 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _ZN9Stopwatch4stopEv
+          CFI NoCalls
         THUMB
 //   30 bool Stopwatch::stop() {
 _ZN9Stopwatch4stopEv:
@@ -199,38 +206,29 @@ _ZN9Stopwatch4stopEv:
 //   33   #endif
 //   34 
 //   35   if (this->isRunning() || this->isPaused()) {
-          CFI FunCall _ZN9Stopwatch9isRunningEv
-        BL       _ZN9Stopwatch9isRunningEv
-        CMP      R0,#+0
-        BNE.N    ??stop_0
-        MOV      R0,R4
-          CFI FunCall _ZN9Stopwatch8isPausedEv
-        BL       _ZN9Stopwatch8isPausedEv
-        CMP      R0,#+0
-        BEQ.N    ??stop_1
+        LDRSB    R0,[R4, #+0]
+        CMP      R0,#+1
+        IT       NE 
+        CMPNE    R0,#+2
+        BEQ.N    ??stop_0
 //   36     this->state = STOPPED;
-??stop_0:
-        MOVS     R0,#+0
-        STRB     R0,[R4, #+0]
 //   37     this->stopTimestamp = millis();
-          CFI FunCall HAL_GetTick
-        BL       HAL_GetTick
-        STR      R0,[R4, #+12]
 //   38     return true;
-        MOVS     R0,#+1
-        POP      {R4,PC}
 //   39   }
 //   40   else return false;
-??stop_1:
         MOVS     R0,#+0
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock2
+        POP      {R4,PC}
+??stop_0:
+        MOVS     R0,#+0
+        B.N      ?Subroutine1
+          CFI EndBlock cfiBlock3
 //   41 }
 //   42 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN9Stopwatch5pauseEv
+          CFI NoCalls
         THUMB
 //   43 bool Stopwatch::pause() {
 _ZN9Stopwatch5pauseEv:
@@ -244,31 +242,43 @@ _ZN9Stopwatch5pauseEv:
 //   46   #endif
 //   47 
 //   48   if (this->isRunning()) {
-          CFI FunCall _ZN9Stopwatch9isRunningEv
-        BL       _ZN9Stopwatch9isRunningEv
-        CMP      R0,#+0
+        LDRSB    R0,[R4, #+0]
+        CMP      R0,#+1
         BEQ.N    ??pause_0
 //   49     this->state = PAUSED;
-        MOVS     R0,#+2
-        STRB     R0,[R4, #+0]
 //   50     this->stopTimestamp = millis();
-          CFI FunCall HAL_GetTick
-        BL       HAL_GetTick
-        STR      R0,[R4, #+12]
 //   51     return true;
-        MOVS     R0,#+1
-        POP      {R4,PC}
 //   52   }
 //   53   else return false;
-??pause_0:
         MOVS     R0,#+0
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock3
+        POP      {R4,PC}
+??pause_0:
+        MOVS     R0,#+2
+          CFI EndBlock cfiBlock4
+        REQUIRE ?Subroutine1
+        ;; // Fall through to label ?Subroutine1
 //   54 }
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock5 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+8
+          CFI R4 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine1:
+        STRB     R0,[R4, #+0]
+          CFI FunCall _ZN9Stopwatch4stopEv HAL_GetTick
+          CFI FunCall _ZN9Stopwatch5pauseEv HAL_GetTick
+        BL       HAL_GetTick
+        STR      R0,[R4, #+12]
+        MOVS     R0,#+1
+        POP      {R4,PC}          ;; return
+          CFI EndBlock cfiBlock5
 //   55 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _ZN9Stopwatch5startEv
         THUMB
 //   56 bool Stopwatch::start() {
@@ -283,28 +293,30 @@ _ZN9Stopwatch5startEv:
 //   59   #endif
 //   60 
 //   61   if (!this->isRunning()) {
-          CFI FunCall _ZN9Stopwatch9isRunningEv
-        BL       _ZN9Stopwatch9isRunningEv
-        CMP      R0,#+0
-        BNE.N    ??start_0
+        LDRSB    R0,[R4, #+0]
+        CMP      R0,#+1
+        BEQ.N    ??start_0
 //   62     if (this->isPaused()) this->accumulator = this->duration();
-        MOV      R0,R4
-          CFI FunCall _ZN9Stopwatch8isPausedEv
-        BL       _ZN9Stopwatch8isPausedEv
-        CMP      R0,#+0
-        MOV      R0,R4
+        CMP      R0,#+2
         BEQ.N    ??start_1
-          CFI FunCall _ZN9Stopwatch8durationEv
-        BL       _ZN9Stopwatch8durationEv
-        STR      R0,[R4, #+4]
-        B.N      ??start_2
 //   63     else this->reset();
+        MOVS     R0,#+0
+        STRB     R0,[R4, #+0]
+        STR      R0,[R4, #+8]
+        STR      R0,[R4, #+12]
+        B.N      ??start_2
 ??start_1:
-          CFI FunCall _ZN9Stopwatch5resetEv
-        BL       _ZN9Stopwatch5resetEv
+        LDR      R1,[R4, #+12]
+        LDR      R2,[R4, #+8]
+        LDR      R0,[R4, #+4]
+        SUBS     R1,R1,R2
+        MOV      R2,#+1000
+        UDIV     R1,R1,R2
+        ADDS     R0,R1,R0
+??start_2:
+        STR      R0,[R4, #+4]
 //   64 
 //   65     this->state = RUNNING;
-??start_2:
         MOVS     R0,#+1
         STRB     R0,[R4, #+0]
 //   66     this->startTimestamp = millis();
@@ -319,12 +331,12 @@ _ZN9Stopwatch5startEv:
 ??start_0:
         MOVS     R0,#+0
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock4
+          CFI EndBlock cfiBlock6
 //   70 }
 //   71 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN9Stopwatch5resetEv
           CFI NoCalls
         THUMB
@@ -335,21 +347,16 @@ _ZN9Stopwatch5startEv:
 //   76 
 //   77   this->state = STOPPED;
 _ZN9Stopwatch5resetEv:
-        MOVS     R1,#+0
-        STRB     R1,[R0, #+0]
+        B.N      ?Subroutine0
+          CFI EndBlock cfiBlock7
 //   78   this->startTimestamp = 0;
-        STR      R1,[R0, #+8]
 //   79   this->stopTimestamp = 0;
-        STR      R1,[R0, #+12]
 //   80   this->accumulator = 0;
-        STR      R1,[R0, #+4]
 //   81 }
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock5
 //   82 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function _ZN9Stopwatch9isRunningEv
           CFI NoCalls
         THUMB
@@ -358,18 +365,15 @@ _ZN9Stopwatch5resetEv:
 _ZN9Stopwatch9isRunningEv:
         LDRSB    R0,[R0, #+0]
         CMP      R0,#+1
-        BNE.N    ??isRunning_0
-        MOVS     R0,#+1
-        BX       LR
-??isRunning_0:
-        MOVS     R0,#+0
+        IT       NE 
+        MOVNE    R0,#+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock8
 //   85 }
 //   86 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN9Stopwatch8isPausedEv
           CFI NoCalls
         THUMB
@@ -384,12 +388,12 @@ _ZN9Stopwatch8isPausedEv:
 ??isPaused_0:
         MOVS     R0,#+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock7
+          CFI EndBlock cfiBlock9
 //   89 }
 //   90 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _ZN9Stopwatch8durationEv
         THUMB
 //   91 millis_t Stopwatch::duration() {
@@ -401,16 +405,12 @@ _ZN9Stopwatch8durationEv:
         MOV      R4,R0
 //   92   return (((this->isRunning()) ? millis() : this->stopTimestamp)
 //   93           - this->startTimestamp) / 1000UL + this->accumulator;
-          CFI FunCall _ZN9Stopwatch9isRunningEv
-        BL       _ZN9Stopwatch9isRunningEv
-        CMP      R0,#+0
-        BEQ.N    ??duration_0
+        LDRSB    R0,[R4, #+0]
+        CMP      R0,#+1
+        ITE      NE 
+        LDRNE    R0,[R4, #+12]
           CFI FunCall HAL_GetTick
-        BL       HAL_GetTick
-        B.N      ??duration_1
-??duration_0:
-        LDR      R0,[R4, #+12]
-??duration_1:
+        BLEQ     HAL_GetTick
         LDR      R1,[R4, #+8]
         SUBS     R0,R0,R1
         MOV      R1,#+1000
@@ -418,24 +418,21 @@ _ZN9Stopwatch8durationEv:
         LDR      R1,[R4, #+4]
         ADDS     R0,R1,R0
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock10
 //   94 }
 //   95 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _ZN9Stopwatch7getTimeEPmS0_S0_
           CFI NoCalls
         THUMB
 //   96 void Stopwatch::getTime(millis_t *accu,millis_t *startTime,millis_t *stopTime)
 //   97 {
-_ZN9Stopwatch7getTimeEPmS0_S0_:
-        PUSH     {R4}
-          CFI R4 Frame(CFA, -4)
-          CFI CFA R13+4
 //   98 	*accu = accumulator;
-        LDR      R4,[R0, #+4]
-        STR      R4,[R1, #+0]
+_ZN9Stopwatch7getTimeEPmS0_S0_:
+        LDR      R12,[R0, #+4]
+        STR      R12,[R1, #+0]
 //   99 	*startTime = startTimestamp;
         LDR      R1,[R0, #+8]
         STR      R1,[R2, #+0]
@@ -443,15 +440,12 @@ _ZN9Stopwatch7getTimeEPmS0_S0_:
         LDR      R0,[R0, #+12]
         STR      R0,[R3, #+0]
 //  101 }
-        POP      {R4}
-          CFI R4 SameValue
-          CFI CFA R13+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock11
 //  102 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN9Stopwatch7setTimeEmmm
           CFI NoCalls
         THUMB
@@ -469,7 +463,7 @@ _ZN9Stopwatch7setTimeEmmm:
         STRB     R1,[R0, #+0]
 //  109 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock12
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -504,9 +498,9 @@ _ZTI5Print:
 //  121 #endif
 // 
 //   1 byte  in section .rodata
-// 250 bytes in section .text
+// 230 bytes in section .text
 // 
-// 250 bytes of CODE  memory
+// 230 bytes of CODE  memory
 //   0 bytes of CONST memory (+ 1 byte shared)
 //
 //Errors: none

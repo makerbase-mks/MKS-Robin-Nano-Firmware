@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:25
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:43
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\endstops.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\endstops.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\endstops.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\endstops.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\endstops.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\endstops.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -109,13 +106,7 @@
         PUBLIC _Z11Y_MOVE_TESTv
         PUBLIC _Z11Z_AXIS_HEADv
         PUBLIC _Z11Z_MOVE_TESTv
-        PUBLIC _Z14serialprintPGMPKc
-        PUBLIC _ZN7Stepper15motor_directionE8AxisEnum
-        PUBLIC _ZN7Stepper18kill_current_blockEv
-        PUBLIC _ZN7Stepper21triggered_position_mmE8AxisEnum
         PUBLIC _ZN8Endstops12report_stateEv
-        PUBLIC _ZN8Endstops14hit_on_purposeEv
-        PUBLIC _ZN8Endstops15enable_globallyEb
         PUBLIC _ZN8Endstops15z_probe_enabledE
         PUBLIC _ZN8Endstops16enabled_globallyE
         PUBLIC _ZN8Endstops16endstop_hit_bitsE
@@ -126,7 +117,6 @@
         PUBLIC _ZN8Endstops4initEv
         PUBLIC _ZN8Endstops6updateEv
         PUBLIC _ZN8Endstops7enabledE
-        PUBLIC _ZN8EndstopsC1Ev
         PUBLIC _ZTI5Print
         PUBLIC endstops
         
@@ -157,7 +147,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\endstops.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\endstops.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -236,12 +226,15 @@ _ZN8Endstops16old_endstop_bitsE:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock0 Using cfiCommon0
           CFI Function __sti__routine
+          CFI NoCalls
         THUMB
 // static __intrinsic __interwork __softfp void __sti__routine()
 __sti__routine:
         LDR.W    R0,??DataTable27
-          CFI FunCall _ZN8EndstopsC1Ev
-        B.W      _ZN8EndstopsC1Ev
+        MOVS     R1,#+0
+        STRB     R1,[R0, #+0]
+        STRB     R1,[R0, #+1]
+        BX       LR               ;; return
           CFI EndBlock cfiBlock0
 //   55 #endif
 //   56 
@@ -385,10 +378,12 @@ _ZN8Endstops4initEv:
         THUMB
 //  181 void Endstops::report_state() {
 _ZN8Endstops12report_stateEv:
-        PUSH     {R4,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
 //  182   if (endstop_hit_bits) {
         LDR.W    R4,??DataTable27_1
         LDRSB    R0,[R4, #+0]
@@ -414,88 +409,119 @@ _ZN8Endstops12report_stateEv:
 //  200     #define ENDSTOP_HIT_TEST_Z() _ENDSTOP_HIT_TEST(Z,'Z')
 //  201 
 //  202     SERIAL_ECHO_START();
-        LDR.W    R0,??DataTable27_2
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R5,??DataTable27_2
+        LDR.W    R6,??DataTable27_3
+        B.N      ??report_state_1
+??report_state_2:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_state_1:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_state_2
 //  203     SERIAL_ECHOPGM(MSG_ENDSTOPS_HIT);
-        ADR.W    R0,`?<Constant "endstops hit: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R5,`?<Constant "endstops hit: ">`
+        B.N      ??report_state_3
+??report_state_4:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_state_3:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_state_4
 //  204     ENDSTOP_HIT_TEST_X();
         LDRSB    R0,[R4, #+0]
+        LDR.W    R5,??DataTable27_4
+        LDR.W    R6,??DataTable27_5
         LSLS     R0,R0,#+31
-        BMI.N    ??report_state_1
+        BMI.N    ??report_state_5
         LDRSB    R0,[R4, #+0]
         LSLS     R0,R0,#+27
-        BPL.N    ??report_state_2
-??report_state_1:
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper21triggered_position_mmE8AxisEnum
-        BL       _ZN7Stepper21triggered_position_mmE8AxisEnum
+        BPL.N    ??report_state_6
+??report_state_5:
+        LDR      R0,[R6, #+0]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        LDR      R1,[R5, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R1,R0
-        ADR.N    R0,??DataTable20  ;; " X:"
+        ADR.N    R0,??DataTable18  ;; " X:"
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //  205     ENDSTOP_HIT_TEST_Y();
-??report_state_2:
+??report_state_6:
         LDRSB    R0,[R4, #+0]
         LSLS     R0,R0,#+30
-        BMI.N    ??report_state_3
+        BMI.N    ??report_state_7
         LDRSB    R0,[R4, #+0]
         LSLS     R0,R0,#+26
-        BPL.N    ??report_state_4
-??report_state_3:
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper21triggered_position_mmE8AxisEnum
-        BL       _ZN7Stepper21triggered_position_mmE8AxisEnum
+        BPL.N    ??report_state_8
+??report_state_7:
+        LDR      R0,[R6, #+4]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        LDR      R1,[R5, #+4]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R1,R0
-        ADR.N    R0,??DataTable20_1  ;; " Y:"
+        ADR.N    R0,??DataTable19  ;; " Y:"
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //  206     ENDSTOP_HIT_TEST_Z();
-??report_state_4:
+??report_state_8:
         LDRSB    R0,[R4, #+0]
         LSLS     R0,R0,#+29
-        BMI.N    ??report_state_5
+        BMI.N    ??report_state_9
         LDRSB    R0,[R4, #+0]
         LSLS     R0,R0,#+25
-        BPL.N    ??report_state_6
-??report_state_5:
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper21triggered_position_mmE8AxisEnum
-        BL       _ZN7Stepper21triggered_position_mmE8AxisEnum
+        BPL.N    ??report_state_10
+??report_state_9:
+        LDR      R0,[R6, #+8]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        LDR      R1,[R5, #+8]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R1,R0
-        ADR.N    R0,??DataTable20_2  ;; " Z:"
+        ADR.N    R0,??DataTable19_1  ;; " Z:"
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //  207 
 //  208     //#if ENABLED(Z_MIN_PROBE_ENDSTOP)
 //  209 	 if(Z_MIN_PROBE_PIN_MODE == Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)
-??report_state_6:
-        LDR.W    R0,??DataTable27_3
+??report_state_10:
+        LDR.W    R0,??DataTable27_6
         LDRB     R0,[R0, #+153]
         CMP      R0,#+2
-        BNE.N    ??report_state_7
+        BNE.N    ??report_state_11
 //  210 	 {	
 //  211       #define P_AXIS Z_AXIS
 //  212       if (TEST(endstop_hit_bits, Z_MIN_PROBE)) _ENDSTOP_HIT_ECHO(P, 'P');
         LDRSB    R0,[R4, #+0]
         LSLS     R0,R0,#+28
-        BPL.N    ??report_state_7
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper21triggered_position_mmE8AxisEnum
-        BL       _ZN7Stepper21triggered_position_mmE8AxisEnum
+        BPL.N    ??report_state_11
+        LDR      R0,[R6, #+8]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        LDR      R1,[R5, #+8]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R1,R0
-        ADR.N    R0,??DataTable20_3  ;; " P:"
+        ADR.N    R0,??DataTable20  ;; " P:"
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //  213 	 }
 //  214     //#endif
 //  215 	
 //  216     SERIAL_EOL();
-??report_state_7:
+??report_state_11:
         MOVS     R1,#+10
-        LDR.W    R0,??DataTable27_4
+        LDR.W    R0,??DataTable27_3
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  217 
@@ -504,15 +530,8 @@ _ZN8Endstops12report_stateEv:
 //  220     #endif
 //  221 
 //  222     hit_on_purpose();
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN8Endstops14hit_on_purposeEv
-        B.W      _ZN8Endstops14hit_on_purposeEv
-          CFI R4 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        MOVS     R0,#+0
+        STRB     R0,[R4, #+0]
 //  223 
 //  224     #if ENABLED(ABORT_ON_ENDSTOP_HIT_FEATURE_ENABLED) && ENABLED(SDSUPPORT)
 //  225       if (stepper.abort_on_endstop_hit) {
@@ -525,8 +544,14 @@ _ZN8Endstops12report_stateEv:
 //  232   }
 //  233 } // Endstops::report_state
 ??report_state_0:
-        POP      {R4,PC}          ;; return
+        POP      {R4-R6,PC}       ;; return
           CFI EndBlock cfiBlock2
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18:
+        DC8      " X:"
 //  234 
 
         SECTION `.text`:CODE:NOROOT(1)
@@ -535,56 +560,65 @@ _ZN8Endstops12report_stateEv:
         THUMB
 //  235 void Endstops::M119() {
 _ZN8Endstops4M119Ev:
-        PUSH     {R4-R10,LR}
+        PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R10 Frame(CFA, -8)
-          CFI R9 Frame(CFA, -12)
-          CFI R8 Frame(CFA, -16)
-          CFI R7 Frame(CFA, -20)
-          CFI R6 Frame(CFA, -24)
-          CFI R5 Frame(CFA, -28)
-          CFI R4 Frame(CFA, -32)
+          CFI R9 Frame(CFA, -8)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
           CFI CFA R13+32
 //  236   SERIAL_PROTOCOLLNPGM(MSG_M119_REPORT);
-        ADR.W    R0,`?<Constant "Reporting endstop sta...">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R4,`?<Constant "Reporting endstop sta...">`
+        LDR.W    R8,??DataTable27_3
+        B.N      ??M119_0
+??M119_1:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_0:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_1
 //  237   #define ES_REPORT(AXIS) do{ \ 
 //  238     SERIAL_PROTOCOLPGM(MSG_##AXIS); \ 
 //  239     SERIAL_PROTOCOLLN(((READ(AXIS##_PIN)^AXIS##_ENDSTOP_INVERTING) ? MSG_ENDSTOP_HIT : MSG_ENDSTOP_OPEN)); \ 
 //  240   }while(0)
 //  241   #if HAS_X_MIN
 //  242   if(mksCfg.use_xmin_plug){
-        LDR.W    R4,??DataTable27_4
-        ADR.W    R5,`?<Constant "open">`
-        ADR.W    R6,`?<Constant "TRIGGERED">`
-        LDR.W    R7,??DataTable27_5
-        LDR.W    R8,??DataTable27_6
-        LDR.W    R10,??DataTable27_3
-        LDRB     R0,[R10, #+128]
-        CMP      R0,#+0
-        BEQ.N    ??M119_0
+        LDR.W    R6,??DataTable27_6
+        LDRB     R0,[R6, #+128]
+        CBZ.N    R0,??M119_2
 //  243     ES_REPORT(X_MIN);
-        ADR.W    R0,`?<Constant "x_min: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+6]
-        LDR      R0,[R7, #+12]
+        ADR.W    R4,`?<Constant "x_min: ">`
+        B.N      ??M119_3
+??M119_4:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_3:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_4
+        LDR.W    R0,??DataTable27_7
+        LDRH     R1,[R0, #+6]
+        LDR.W    R0,??DataTable27_8
+        LDR      R0,[R0, #+12]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R10, #+55]
+        LDRB     R1,[R6, #+57]
         TEQ      R1,R0
-        BEQ.N    ??M119_1
-        MOV      R1,R6
-        B.N      ??M119_2
-??M119_1:
-        MOV      R1,R5
-??M119_2:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  244   	}
@@ -594,33 +628,39 @@ _ZN8Endstops4M119Ev:
 //  248   #endif
 //  249   #if HAS_X_MAX
 //  250   if(mksCfg.use_xmax_plug){
-??M119_0:
-        ADDW     R9,R10,#+55
-        ADD      R10,R10,#+128
-        LDRB     R0,[R10, #+3]
-        CMP      R0,#+0
-        BEQ.N    ??M119_3
+??M119_2:
+        ADD      R4,R6,#+128
+        LDRB     R0,[R4, #+3]
+        CBZ.N    R0,??M119_5
 //  251     ES_REPORT(X_MAX);
-        ADR.W    R0,`?<Constant "x_max: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+6]
-        LDR      R0,[R7, #+12]
+        ADR.W    R7,`?<Constant "x_max: ">`
+        B.N      ??M119_6
+??M119_7:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_6:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_7
+        LDR.W    R0,??DataTable27_7
+        LDRH     R1,[R0, #+6]
+        LDR.W    R0,??DataTable27_8
+        LDR      R0,[R0, #+12]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+3]
+        ADD      R1,R6,#+57
+        LDRB     R1,[R1, #+3]
         TEQ      R1,R0
-        BEQ.N    ??M119_4
-        MOV      R1,R6
-        B.N      ??M119_5
-??M119_4:
-        MOV      R1,R5
-??M119_5:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  252   	}
@@ -630,31 +670,38 @@ _ZN8Endstops4M119Ev:
 //  256   #endif
 //  257   #if HAS_Y_MIN
 //  258   if(mksCfg.use_ymin_plug){  
-??M119_3:
-        LDRB     R0,[R10, #+1]
-        CMP      R0,#+0
-        BEQ.N    ??M119_6
+??M119_5:
+        LDRB     R0,[R4, #+1]
+        CBZ.N    R0,??M119_8
 //  259     ES_REPORT(Y_MIN);
-        ADR.W    R0,`?<Constant "y_min: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+16]
-        LDR      R0,[R7, #+32]
+        ADR.W    R7,`?<Constant "y_min: ">`
+        B.N      ??M119_9
+??M119_10:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_9:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_10
+        LDR.W    R0,??DataTable27_7
+        LDRH     R1,[R0, #+16]
+        LDR.W    R0,??DataTable27_8
+        LDR      R0,[R0, #+32]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+1]
+        ADD      R1,R6,#+57
+        LDRB     R1,[R1, #+1]
         TEQ      R1,R0
-        BEQ.N    ??M119_7
-        MOV      R1,R6
-        B.N      ??M119_8
-??M119_7:
-        MOV      R1,R5
-??M119_8:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  260   	}
@@ -664,31 +711,38 @@ _ZN8Endstops4M119Ev:
 //  264   #endif
 //  265   #if HAS_Y_MAX
 //  266 if(mksCfg.use_ymax_plug){   
-??M119_6:
-        LDRB     R0,[R10, #+4]
-        CMP      R0,#+0
-        BEQ.N    ??M119_9
+??M119_8:
+        LDRB     R0,[R4, #+4]
+        CBZ.N    R0,??M119_11
 //  267     ES_REPORT(Y_MAX);
-        ADR.W    R0,`?<Constant "y_max: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+16]
-        LDR      R0,[R7, #+32]
+        ADR.W    R7,`?<Constant "y_max: ">`
+        B.N      ??M119_12
+??M119_13:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_12:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_13
+        LDR.W    R0,??DataTable27_7
+        LDRH     R1,[R0, #+16]
+        LDR.W    R0,??DataTable27_8
+        LDR      R0,[R0, #+32]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+4]
+        ADD      R1,R6,#+57
+        LDRB     R1,[R1, #+4]
         TEQ      R1,R0
-        BEQ.N    ??M119_10
-        MOV      R1,R6
-        B.N      ??M119_11
-??M119_10:
-        MOV      R1,R5
-??M119_11:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  268 }
@@ -698,93 +752,113 @@ _ZN8Endstops4M119Ev:
 //  272   #endif
 //  273   #if HAS_Z_MIN
 //  274 if(mksCfg.use_zmin_plug){  
-??M119_9:
-        LDRB     R0,[R10, #+2]
-        CMP      R0,#+0
-        BEQ.N    ??M119_12
+??M119_11:
+        LDRB     R0,[R4, #+2]
+        CBZ.N    R0,??M119_14
 //  275     ES_REPORT(Z_MIN);
-        ADR.W    R0,`?<Constant "z_min: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+26]
-        LDR      R0,[R7, #+52]
+        ADR.W    R7,`?<Constant "z_min: ">`
+        B.N      ??M119_15
+??M119_16:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_15:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_16
+        LDR.W    R0,??DataTable27_7
+        LDRH     R1,[R0, #+26]
+        LDR.W    R0,??DataTable27_8
+        LDR      R0,[R0, #+52]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+2]
+        ADD      R1,R6,#+57
+        LDRB     R1,[R1, #+2]
         TEQ      R1,R0
-        BEQ.N    ??M119_13
-        MOV      R1,R6
-        B.N      ??M119_14
-??M119_13:
-        MOV      R1,R5
-??M119_14:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  276 }
 //  277   #endif
 //  278   #if HAS_Z2_MIN
 //  279     ES_REPORT(Z2_MIN);
-??M119_12:
-        ADR.W    R0,`?<Constant "z2_min: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+26]
+??M119_14:
+        ADR.W    R7,`?<Constant "z2_min: ">`
+        B.N      ??M119_17
+??M119_18:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_17:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_18
+        LDR.W    R7,??DataTable27_8
+        LDR.W    R5,??DataTable27_7
         LDR      R0,[R7, #+52]
+        LDRH     R1,[R5, #+26]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+2]
+        ADDW     R6,R6,#+57
+        LDRB     R1,[R6, #+2]
         TEQ      R1,R0
-        BEQ.N    ??M119_15
-        MOV      R1,R6
-        B.N      ??M119_16
-??M119_15:
-        MOV      R1,R5
-??M119_16:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  280   #endif
 //  281   #if HAS_Z_MAX
 //  282 	if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)  
-        LDRB     R0,[R10, #+25]
+        LDRB     R0,[R4, #+25]
         CMP      R0,#+2
-        BEQ.N    ??M119_17
+        ITT      NE 
 //  283 	{
 //  284 		if(mksCfg.use_zmax_plug)
-        LDRB     R0,[R10, #+5]
-        CMP      R0,#+0
-        BEQ.N    ??M119_17
+        LDRBNE   R0,[R4, #+5]
+        CMPNE    R0,#+0
+        BEQ.N    ??M119_19
 //  285 		{   
 //  286     		ES_REPORT(Z_MAX);
-        ADR.W    R0,`?<Constant "z_max: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+28]
+        ADR.W    R9,`?<Constant "z_max: ">`
+        B.N      ??M119_20
+??M119_21:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_20:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_21
+        LDRH     R1,[R5, #+28]
         LDR      R0,[R7, #+56]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+5]
+        LDRB     R1,[R6, #+5]
         TEQ      R1,R0
-        BEQ.N    ??M119_18
-        MOV      R1,R6
-        B.N      ??M119_19
-??M119_18:
-        MOV      R1,R5
-??M119_19:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  287 		}
@@ -792,75 +866,85 @@ _ZN8Endstops4M119Ev:
 //  289   #endif
 //  290   #if HAS_Z2_MAX
 //  291     ES_REPORT(Z2_MAX);
-??M119_17:
-        ADR.W    R0,`?<Constant "z2_max: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDRH     R1,[R8, #+28]
+??M119_19:
+        ADR.W    R9,`?<Constant "z2_max: ">`
+        B.N      ??M119_22
+??M119_23:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_22:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_23
+        LDRH     R1,[R5, #+28]
         LDR      R0,[R7, #+56]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+5]
+        LDRB     R1,[R6, #+5]
         TEQ      R1,R0
-        BEQ.N    ??M119_20
-        MOV      R1,R6
-        B.N      ??M119_21
-??M119_20:
-        MOV      R1,R5
-??M119_21:
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  292   #endif
 //  293   //#if ENABLED(Z_MIN_PROBE_ENDSTOP)
 //  294     if(Z_MIN_PROBE_PIN_MODE == Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)
-        LDRB     R0,[R10, #+25]
+        LDRB     R0,[R4, #+25]
         CMP      R0,#+2
-        BNE.N    ??M119_22
+        BNE.N    ??M119_24
 //  295    	{
 //  296     	SERIAL_PROTOCOLPGM(MSG_Z_PROBE);
-        ADR.W    R0,`?<Constant "z_probe: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R4,`?<Constant "z_probe: ">`
+        B.N      ??M119_25
+??M119_26:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??M119_25:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??M119_26
 //  297     	SERIAL_PROTOCOLLN(((READ(Z_MIN_PROBE_PIN)^Z_MIN_PROBE_ENDSTOP_INVERTING) ? MSG_ENDSTOP_HIT : MSG_ENDSTOP_OPEN));
-        LDRH     R1,[R8, #+28]
+        LDRH     R1,[R5, #+28]
         LDR      R0,[R7, #+56]
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R9, #+6]
+        LDRB     R1,[R6, #+6]
         TEQ      R1,R0
-        BEQ.N    ??M119_23
-        MOV      R5,R6
-??M119_23:
-        MOV      R1,R5
-        MOV      R0,R4
+        ITE      NE 
+        ADRNE.W  R1,`?<Constant "TRIGGERED">`
+        ADREQ.W  R1,`?<Constant "open">`
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
-        MOVS     R1,#+10
-        MOV      R0,R4
-        POP      {R4-R10,LR}
+        MOV      R0,R8
+        POP      {R2,R4-R9,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
           CFI R8 SameValue
           CFI R9 SameValue
-          CFI R10 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R1,#+10
           CFI FunCall _ZN10USARTClass5writeEh
         B.W      _ZN10USARTClass5writeEh
-          CFI R4 Frame(CFA, -32)
-          CFI R5 Frame(CFA, -28)
-          CFI R6 Frame(CFA, -24)
-          CFI R7 Frame(CFA, -20)
-          CFI R8 Frame(CFA, -16)
-          CFI R9 Frame(CFA, -12)
-          CFI R10 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+32
 //  298     }
@@ -870,9 +954,21 @@ _ZN8Endstops4M119Ev:
 //  302     SERIAL_PROTOCOLLN(((READ(FIL_RUNOUT_PIN)^FIL_RUNOUT_INVERTING) ? MSG_ENDSTOP_HIT : MSG_ENDSTOP_OPEN));
 //  303   #endif
 //  304 } // Endstops::M119
-??M119_22:
-        POP      {R4-R10,PC}      ;; return
+??M119_24:
+        POP      {R0,R4-R9,PC}    ;; return
           CFI EndBlock cfiBlock3
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable19:
+        DC8      " Y:"
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable19_1:
+        DC8      " Z:"
 //  305 
 //  306 #if ENABLED(X_DUAL_ENDSTOPS)
 //  307   void Endstops::test_dual_x_endstops(const EndstopEnum es1, const EndstopEnum es2) {
@@ -899,57 +995,46 @@ _ZN8Endstops4M119Ev:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
+          CFI NoCalls
         THUMB
 //  327   void Endstops::test_dual_z_endstops(const EndstopEnum es1, const EndstopEnum es2) {
-_ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_:
-        PUSH     {R3,R4}
-          CFI R4 Frame(CFA, -4)
-          CFI CFA R13+8
 //  328     byte z_test = TEST_ENDSTOP(es1) | (TEST_ENDSTOP(es2) << 1); // bit 0 for Z, bit 1 for Z2
+_ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_:
         LDR.W    R2,??DataTable27_1
         LDRH     R3,[R2, #+2]
-        LDRH     R4,[R2, #+4]
-        ANDS     R3,R4,R3
-        ASR      R4,R3,R0
-        ASR      R0,R3,R1
+        LDRH     R12,[R2, #+4]
+        AND      R3,R12,R3
+        LSR      R12,R3,R0
+        LSR      R0,R3,R1
         AND      R0,R0,#0x1
-        LSRS     R1,R4,#+1
+        LSRS     R1,R12,#+1
         ADCS     R0,R0,R0
         UXTB     R0,R0
 //  329     if (z_test && stepper.current_block->steps[Z_AXIS] > 0) {
-        CMP      R0,#+0
-        BEQ.N    ??test_dual_z_endstops_0
-        LDR.W    R1,??DataTable27_7
+        CBZ.N    R0,??test_dual_z_endstops_0
+        LDR.W    R1,??DataTable27_9
         LDR      R1,[R1, #+0]
-        LDR      R1,[R1, #+12]
-        CMP      R1,#+1
+        LDR      R3,[R1, #+12]
+        CMP      R3,#+1
         BLT.N    ??test_dual_z_endstops_0
 //  330       SBI(endstop_hit_bits, Z_MIN);
-        LDRB     R1,[R2, #+0]
-        ORR      R1,R1,#0x4
-        STRB     R1,[R2, #+0]
+        LDRB     R3,[R2, #+0]
+        ORR      R3,R3,#0x4
+        STRB     R3,[R2, #+0]
 //  331       if (!stepper.performing_homing || (z_test == 0x3))  //if not performing home or if both endstops were trigged during homing...
-        LDR.W    R1,??DataTable27_8
-        LDRB     R1,[R1, #+0]
-        CMP      R1,#+0
-        BEQ.N    ??test_dual_z_endstops_1
-        CMP      R0,#+3
+        LDR.W    R2,??DataTable27_10
+        LDRB     R2,[R2, #+0]
+        CMP      R2,#+0
+        IT       NE 
+        CMPNE    R0,#+3
         BNE.N    ??test_dual_z_endstops_0
 //  332         stepper.kill_current_block();
-??test_dual_z_endstops_1:
-        POP      {R0,R4}
-          CFI R4 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN7Stepper18kill_current_blockEv
-        B.W      _ZN7Stepper18kill_current_blockEv
-          CFI R4 Frame(CFA, -4)
-          CFI CFA R13+8
+        LDR      R0,[R1, #+20]
+        LDR.W    R1,??DataTable27_11
+        STR      R0,[R1, #+0]
 //  333     }
 //  334   }
 ??test_dual_z_endstops_0:
-        POP      {R0,R4}
-          CFI R4 SameValue
-          CFI CFA R13+0
         BX       LR               ;; return
           CFI EndBlock cfiBlock4
 
@@ -957,24 +1042,6 @@ _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable20:
-        DC8      " X:"
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_1:
-        DC8      " Y:"
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_2:
-        DC8      " Z:"
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_3:
         DC8      " P:"
 //  335 #endif
 //  336 
@@ -987,211 +1054,132 @@ _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock5 Using cfiCommon0
           CFI Function _Z11X_MOVE_TESTv
+          CFI NoCalls
         THUMB
 //  342 bool  X_MOVE_TEST()
 //  343 {
 _Z11X_MOVE_TESTv:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        LDR.W    R0,??DataTable27_3
-        LDRSH    R0,[R0, #+88]
-        MOVS     R1,#+60
-        TST      R0,R1
-        BEQ.W    ??X_MOVE_TEST_0
+        LDR.W    R0,??DataTable27_6
+        LDRSH    R1,[R0, #+88]
+        MOVS     R0,#+60
+        TST      R1,R0
+        BEQ.N    ??X_MOVE_TEST_0
 //  344     bool D_temp;
 //  345 	if(MACHINETPYE & CORE_IS_XY || MACHINETPYE & CORE_IS_XZ)
 //  346 	{
 //  347 		if(MACHINETPYE & COREXY || MACHINETPYE & COREXZ)
-        MOVS     R1,#+20
-        TST      R0,R1
+        LDR.W    R0,??DataTable27_12
+        LDRB     R0,[R0, #+0]
+        MOVS     R2,#+20
+        TST      R1,R2
         BEQ.N    ??X_MOVE_TEST_1
 //  348 		{
 //  349 	          if(MACHINETPYE & CORE_IS_XY)
-        MOVS     R1,#+12
-        TST      R0,R1
+        MOVS     R2,#+12
+        TST      R1,R2
         BEQ.N    ??X_MOVE_TEST_2
 //  350 	            D_temp = (stepper.motor_direction(A_AXIS) == stepper.motor_direction(B_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??X_MOVE_TEST_3
-        MOVS     R1,#+1
-        B.N      ??X_MOVE_TEST_4
-??X_MOVE_TEST_3:
-        MOVS     R1,#+0
-        B.N      ??X_MOVE_TEST_4
+        AND      R1,R0,#0x1
+        LSRS     R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R1,R0
+        B.N      ??X_MOVE_TEST_3
 //  351 	          else if(MACHINETPYE & CORE_IS_XZ)
 ??X_MOVE_TEST_2:
-        MOVS     R1,#+48
-        TST      R0,R1
-        BEQ.N    ??X_MOVE_TEST_5
+        LSRS     R2,R0,#+2
+        MOVS     R3,#+48
+        AND      R2,R2,#0x1
+        TST      R1,R3
+        IT       EQ 
 //  352 	            D_temp = (stepper.motor_direction(A_AXIS) == stepper.motor_direction(C_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??X_MOVE_TEST_6
-        MOVS     R1,#+1
-        B.N      ??X_MOVE_TEST_4
-??X_MOVE_TEST_6:
-        MOVS     R1,#+0
-        B.N      ??X_MOVE_TEST_4
 //  353 	          else
 //  354 	            D_temp = (stepper.motor_direction(B_AXIS) == stepper.motor_direction(C_AXIS));
-??X_MOVE_TEST_5:
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??X_MOVE_TEST_7
-        MOVS     R1,#+1
-        B.N      ??X_MOVE_TEST_4
-??X_MOVE_TEST_7:
-        MOVS     R1,#+0
+        LSREQ    R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R0,R2
+??X_MOVE_TEST_3:
+        ITE      EQ 
+        MOVEQ    R1,#+1
+        MOVNE    R1,#+0
 //  355 	          return  ( S_(1) != S_(2) || (S_(1) > 0 && D_temp) );
-??X_MOVE_TEST_4:
-        LDR.W    R0,??DataTable27_9
+        LDR.W    R0,??DataTable27_13
+        LDR.W    R3,??DataTable27_9
         LDRB     R2,[R0, #+16]
-        LDR.W    R3,??DataTable27_7
         LDR      R3,[R3, #+0]
-        ADD      R2,R3,R2, LSL #+2
-        LDR      R2,[R2, #+4]
         LDRB     R0,[R0, #+17]
+        ADD      R2,R3,R2, LSL #+2
         ADD      R0,R3,R0, LSL #+2
+        LDR      R2,[R2, #+4]
         LDR      R0,[R0, #+4]
         CMP      R2,R0
-        BNE.N    ??X_MOVE_TEST_8
+        BNE.N    ??X_MOVE_TEST_4
         CMP      R2,#+1
-        BLT.N    ??X_MOVE_TEST_9
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        POP      {R4,PC}
-??X_MOVE_TEST_8:
-        MOVS     R0,#+1
-        POP      {R4,PC}
-??X_MOVE_TEST_9:
-        MOVS     R0,#+0
-        POP      {R4,PC}
+        BLT.N    ??X_MOVE_TEST_5
+        B.N      ??X_MOVE_TEST_6
 //  356 		}
 //  357 		else
 //  358 		{
 //  359               if(MACHINETPYE & CORE_IS_XY)
 ??X_MOVE_TEST_1:
-        MOVS     R1,#+12
-        TST      R0,R1
-        BEQ.N    ??X_MOVE_TEST_10
+        MOVS     R2,#+12
+        TST      R1,R2
+        BEQ.N    ??X_MOVE_TEST_7
 //  360                 D_temp = (stepper.motor_direction(A_AXIS) != stepper.motor_direction(B_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??X_MOVE_TEST_11
-        MOVS     R1,#+1
-        B.N      ??X_MOVE_TEST_12
-??X_MOVE_TEST_11:
-        MOVS     R1,#+0
-        B.N      ??X_MOVE_TEST_12
+        AND      R1,R0,#0x1
+        LSRS     R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R1,R0
+        B.N      ??X_MOVE_TEST_8
 //  361               else if(MACHINETPYE & CORE_IS_XZ)
-??X_MOVE_TEST_10:
-        MOVS     R1,#+48
-        TST      R0,R1
-        BEQ.N    ??X_MOVE_TEST_13
+??X_MOVE_TEST_7:
+        LSRS     R2,R0,#+2
+        MOVS     R3,#+48
+        AND      R2,R2,#0x1
+        TST      R1,R3
+        IT       EQ 
 //  362                 D_temp = (stepper.motor_direction(A_AXIS) != stepper.motor_direction(C_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??X_MOVE_TEST_14
-        MOVS     R1,#+1
-        B.N      ??X_MOVE_TEST_12
-??X_MOVE_TEST_14:
-        MOVS     R1,#+0
-        B.N      ??X_MOVE_TEST_12
 //  363               else
 //  364                 D_temp = (stepper.motor_direction(B_AXIS) != stepper.motor_direction(C_AXIS));
-??X_MOVE_TEST_13:
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??X_MOVE_TEST_15
-        MOVS     R1,#+1
-        B.N      ??X_MOVE_TEST_12
-??X_MOVE_TEST_15:
-        MOVS     R1,#+0
+        LSREQ    R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R0,R2
+??X_MOVE_TEST_8:
+        ITE      NE 
+        MOVNE    R1,#+1
+        MOVEQ    R1,#+0
 //  365               return  ( S_(1) != S_(2) || (S_(1) > 0 && D_temp) );
-??X_MOVE_TEST_12:
-        LDR.W    R0,??DataTable27_9
+        LDR.W    R0,??DataTable27_13
+        LDR.W    R3,??DataTable27_9
         LDRB     R2,[R0, #+16]
-        LDR.W    R3,??DataTable27_7
         LDR      R3,[R3, #+0]
-        ADD      R2,R3,R2, LSL #+2
-        LDR      R2,[R2, #+4]
         LDRB     R0,[R0, #+17]
+        ADD      R2,R3,R2, LSL #+2
         ADD      R0,R3,R0, LSL #+2
+        LDR      R2,[R2, #+4]
         LDR      R0,[R0, #+4]
         CMP      R2,R0
-        BNE.N    ??X_MOVE_TEST_16
+        BNE.N    ??X_MOVE_TEST_4
         CMP      R2,#+1
-        BLT.N    ??X_MOVE_TEST_17
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        POP      {R4,PC}
-??X_MOVE_TEST_16:
-        MOVS     R0,#+1
-        POP      {R4,PC}
-??X_MOVE_TEST_17:
-        MOVS     R0,#+0
-        POP      {R4,PC}
+        BLT.N    ??X_MOVE_TEST_5
 //  366 		}
 //  367 	}
+??X_MOVE_TEST_6:
+        B.N      ?Subroutine0
 //  368 	else
 //  369 	{
 //  370 		return (stepper.current_block->steps[X_AXIS] > 0);
 ??X_MOVE_TEST_0:
-        LDR.W    R0,??DataTable27_7
+        LDR.W    R0,??DataTable27_9
         LDR      R0,[R0, #+0]
         LDR      R0,[R0, #+4]
         CMP      R0,#+1
-        BLT.N    ??X_MOVE_TEST_18
+        BLT.N    ??X_MOVE_TEST_5
+??X_MOVE_TEST_4:
         MOVS     R0,#+1
-        POP      {R4,PC}
-??X_MOVE_TEST_18:
+        BX       LR
+??X_MOVE_TEST_5:
         MOVS     R0,#+0
-        POP      {R4,PC}          ;; return
+        BX       LR               ;; return
           CFI EndBlock cfiBlock5
 //  371 	}
 //  372 }
@@ -1205,7 +1193,7 @@ _Z11X_MOVE_TESTv:
 //  374 {
 //  375 	if(MACHINETPYE & CORE_IS_XY || MACHINETPYE & CORE_IS_XZ)
 _Z11X_AXIS_HEADv:
-        LDR.W    R0,??DataTable27_3
+        LDR.W    R0,??DataTable27_6
         LDRB     R0,[R0, #+88]
         MOVS     R1,#+60
         TST      R0,R1
@@ -1225,222 +1213,158 @@ _Z11X_AXIS_HEADv:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _Z11Y_MOVE_TESTv
+          CFI NoCalls
         THUMB
 //  381 bool Y_MOVE_TEST()
 //  382  {
 _Z11Y_MOVE_TESTv:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        LDR.W    R0,??DataTable27_3
-        LDRSH    R0,[R0, #+88]
-        MOVS     R1,#+204
-        TST      R0,R1
-        BEQ.W    ??Y_MOVE_TEST_0
+        LDR.W    R0,??DataTable27_6
+        LDRSH    R1,[R0, #+88]
+        MOVS     R0,#+204
+        TST      R1,R0
+        BEQ.N    ??Y_MOVE_TEST_0
 //  383     bool D_temp;
 //  384 
 //  385 	if(MACHINETPYE & CORE_IS_XY || MACHINETPYE & CORE_IS_YZ)
 //  386 	{
 //  387 		if(MACHINETPYE & COREYX || MACHINETPYE & COREYZ)
-        MOVS     R1,#+72
-        TST      R0,R1
+        LDR.W    R0,??DataTable27_12
+        LDRB     R0,[R0, #+0]
+        MOVS     R2,#+72
+        TST      R1,R2
         BEQ.N    ??Y_MOVE_TEST_1
 //  388 		{
 //  389 	          if(MACHINETPYE & CORE_IS_XY)
-        MOVS     R1,#+12
-        TST      R0,R1
+        MOVS     R2,#+12
+        TST      R1,R2
         BEQ.N    ??Y_MOVE_TEST_2
 //  390 	            D_temp = (stepper.motor_direction(A_AXIS) == stepper.motor_direction(B_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??Y_MOVE_TEST_3
-        MOVS     R1,#+1
-        B.N      ??Y_MOVE_TEST_4
-??Y_MOVE_TEST_3:
-        MOVS     R1,#+0
-        B.N      ??Y_MOVE_TEST_4
+        AND      R1,R0,#0x1
+        LSRS     R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R1,R0
+        B.N      ??Y_MOVE_TEST_3
 //  391 	          else if(MACHINETPYE & CORE_IS_XZ)
 ??Y_MOVE_TEST_2:
-        MOVS     R1,#+48
-        TST      R0,R1
-        BEQ.N    ??Y_MOVE_TEST_5
+        LSRS     R2,R0,#+2
+        MOVS     R3,#+48
+        AND      R2,R2,#0x1
+        TST      R1,R3
+        IT       EQ 
 //  392 	            D_temp = (stepper.motor_direction(A_AXIS) == stepper.motor_direction(C_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??Y_MOVE_TEST_6
-        MOVS     R1,#+1
-        B.N      ??Y_MOVE_TEST_4
-??Y_MOVE_TEST_6:
-        MOVS     R1,#+0
-        B.N      ??Y_MOVE_TEST_4
 //  393 	          else
 //  394 	            D_temp = (stepper.motor_direction(B_AXIS) == stepper.motor_direction(C_AXIS));
-??Y_MOVE_TEST_5:
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??Y_MOVE_TEST_7
-        MOVS     R1,#+1
-        B.N      ??Y_MOVE_TEST_4
-??Y_MOVE_TEST_7:
-        MOVS     R1,#+0
+        LSREQ    R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R0,R2
+??Y_MOVE_TEST_3:
+        ITE      EQ 
+        MOVEQ    R1,#+1
+        MOVNE    R1,#+0
 //  395                           
 //  396 			  return( S_(1) != S_(2) || (S_(1) > 0 && D_temp) );
-??Y_MOVE_TEST_4:
-        LDR.W    R0,??DataTable27_9
+        LDR.W    R0,??DataTable27_13
+        LDR.W    R3,??DataTable27_9
         LDRB     R2,[R0, #+16]
-        LDR.W    R3,??DataTable27_7
         LDR      R3,[R3, #+0]
-        ADD      R2,R3,R2, LSL #+2
-        LDR      R2,[R2, #+4]
         LDRB     R0,[R0, #+17]
+        ADD      R2,R3,R2, LSL #+2
         ADD      R0,R3,R0, LSL #+2
+        LDR      R2,[R2, #+4]
         LDR      R0,[R0, #+4]
         CMP      R2,R0
-        BNE.N    ??Y_MOVE_TEST_8
+        BNE.N    ??Y_MOVE_TEST_4
         CMP      R2,#+1
-        BLT.N    ??Y_MOVE_TEST_9
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        POP      {R4,PC}
-??Y_MOVE_TEST_8:
-        MOVS     R0,#+1
-        POP      {R4,PC}
-??Y_MOVE_TEST_9:
-        MOVS     R0,#+0
-        POP      {R4,PC}
+        BLT.N    ??Y_MOVE_TEST_5
+        B.N      ??Y_MOVE_TEST_6
 //  397 		}
 //  398 		else
 //  399 		{
 //  400               if(MACHINETPYE & CORE_IS_XY)
 ??Y_MOVE_TEST_1:
-        MOVS     R1,#+12
-        TST      R0,R1
-        BEQ.N    ??Y_MOVE_TEST_10
+        MOVS     R2,#+12
+        TST      R1,R2
+        BEQ.N    ??Y_MOVE_TEST_7
 //  401                 D_temp = (stepper.motor_direction(A_AXIS) != stepper.motor_direction(B_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??Y_MOVE_TEST_11
-        MOVS     R1,#+1
-        B.N      ??Y_MOVE_TEST_12
-??Y_MOVE_TEST_11:
-        MOVS     R1,#+0
-        B.N      ??Y_MOVE_TEST_12
+        AND      R1,R0,#0x1
+        LSRS     R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R1,R0
+        B.N      ??Y_MOVE_TEST_8
 //  402               else if(MACHINETPYE & CORE_IS_XZ)
-??Y_MOVE_TEST_10:
-        MOVS     R1,#+48
-        TST      R0,R1
-        BEQ.N    ??Y_MOVE_TEST_13
+??Y_MOVE_TEST_7:
+        LSRS     R2,R0,#+2
+        MOVS     R3,#+48
+        AND      R2,R2,#0x1
+        TST      R1,R3
+        IT       EQ 
 //  403                 D_temp = (stepper.motor_direction(A_AXIS) != stepper.motor_direction(C_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??Y_MOVE_TEST_14
-        MOVS     R1,#+1
-        B.N      ??Y_MOVE_TEST_12
-??Y_MOVE_TEST_14:
-        MOVS     R1,#+0
-        B.N      ??Y_MOVE_TEST_12
 //  404               else
 //  405                 D_temp = (stepper.motor_direction(B_AXIS) != stepper.motor_direction(C_AXIS));
-??Y_MOVE_TEST_13:
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??Y_MOVE_TEST_15
-        MOVS     R1,#+1
-        B.N      ??Y_MOVE_TEST_12
-??Y_MOVE_TEST_15:
-        MOVS     R1,#+0
+        LSREQ    R0,R0,#+1
+        AND      R0,R0,#0x1
+        CMP      R0,R2
+??Y_MOVE_TEST_8:
+        ITE      NE 
+        MOVNE    R1,#+1
+        MOVEQ    R1,#+0
 //  406                           
 //  407 			  return( S_(1) != S_(2) || (S_(1) > 0 && D_temp) );
-??Y_MOVE_TEST_12:
-        LDR.W    R0,??DataTable27_9
+        LDR.W    R0,??DataTable27_13
+        LDR.W    R3,??DataTable27_9
         LDRB     R2,[R0, #+16]
-        LDR.W    R3,??DataTable27_7
         LDR      R3,[R3, #+0]
-        ADD      R2,R3,R2, LSL #+2
-        LDR      R2,[R2, #+4]
         LDRB     R0,[R0, #+17]
+        ADD      R2,R3,R2, LSL #+2
         ADD      R0,R3,R0, LSL #+2
+        LDR      R2,[R2, #+4]
         LDR      R0,[R0, #+4]
         CMP      R2,R0
-        BNE.N    ??Y_MOVE_TEST_16
+        BNE.N    ??Y_MOVE_TEST_4
         CMP      R2,#+1
-        BLT.N    ??Y_MOVE_TEST_17
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        POP      {R4,PC}
-??Y_MOVE_TEST_16:
-        MOVS     R0,#+1
-        POP      {R4,PC}
-??Y_MOVE_TEST_17:
-        MOVS     R0,#+0
-        POP      {R4,PC}
+        BLT.N    ??Y_MOVE_TEST_5
 //  408 		}
 //  409 		
 //  410 	}
+??Y_MOVE_TEST_6:
+        B.N      ?Subroutine0
 //  411 	else
 //  412 	{
 //  413 		return(stepper.current_block->steps[Y_AXIS] > 0);
 ??Y_MOVE_TEST_0:
-        LDR.W    R0,??DataTable27_7
+        LDR.W    R0,??DataTable27_9
         LDR      R0,[R0, #+0]
         LDR      R0,[R0, #+8]
         CMP      R0,#+1
-        BLT.N    ??Y_MOVE_TEST_18
+        BLT.N    ??Y_MOVE_TEST_5
+??Y_MOVE_TEST_4:
         MOVS     R0,#+1
-        POP      {R4,PC}
-??Y_MOVE_TEST_18:
+        BX       LR
+??Y_MOVE_TEST_5:
         MOVS     R0,#+0
-        POP      {R4,PC}          ;; return
+        BX       LR               ;; return
           CFI EndBlock cfiBlock7
 //  414 	}
 //  415   }
-//  416   
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock8 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _Z11Y_MOVE_TESTv
+          CFI NoCalls _Z11Z_MOVE_TESTv
+          CFI NoCalls _Z11X_MOVE_TESTv
+        THUMB
+?Subroutine0:
+        SUBS     R0,R1,#+1
+        SBCS     R0,R0,R0
+        MVNS     R0,R0
+        LSRS     R0,R0,#+31
+        BX       LR
+          CFI EndBlock cfiBlock8
+//  416   
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _Z11Y_AXIS_HEADv
           CFI NoCalls
         THUMB
@@ -1448,7 +1372,7 @@ _Z11Y_MOVE_TESTv:
 //  418   {
 //  419 	  if(MACHINETPYE & CORE_IS_XY || MACHINETPYE & CORE_IS_YZ)
 _Z11Y_AXIS_HEADv:
-        LDR.W    R0,??DataTable27_3
+        LDR.W    R0,??DataTable27_6
         LDRB     R0,[R0, #+88]
         MOVS     R1,#+204
         TST      R0,R1
@@ -1461,228 +1385,147 @@ _Z11Y_AXIS_HEADv:
 ??Y_AXIS_HEAD_0:
         MOVS     R0,#+1
         BX       LR               ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock9
 //  423   }
 //  424  /*----------------------------------------*/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _Z11Z_MOVE_TESTv
+          CFI NoCalls
         THUMB
 //  425   bool	Z_MOVE_TEST()
 //  426   {
 _Z11Z_MOVE_TESTv:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        LDR.W    R0,??DataTable27_3
+        LDR.W    R0,??DataTable27_6
         LDRSH    R0,[R0, #+88]
         MOVS     R1,#+240
         TST      R0,R1
-        BEQ.W    ??Z_MOVE_TEST_0
+        BEQ.N    ??Z_MOVE_TEST_0
 //  427     bool D_temp;
 //  428 
 //  429 	if(MACHINETPYE & CORE_IS_XZ || MACHINETPYE & CORE_IS_YZ)
 //  430 	{
 //  431 		if(MACHINETPYE & COREZX || MACHINETPYE & COREZY)
+        LDR.W    R2,??DataTable27_12
+        LDRB     R2,[R2, #+0]
+        MOVS     R3,#+160
         AND      R1,R0,#0xC
-        MOVS     R2,#+160
-        TST      R0,R2
+        TST      R0,R3
         BEQ.N    ??Z_MOVE_TEST_1
 //  432 		{
 //  433 		      if(MACHINETPYE & CORE_IS_XY)
-        CMP      R1,#+0
-        BEQ.N    ??Z_MOVE_TEST_2
+        CBZ.N    R1,??Z_MOVE_TEST_2
 //  434 		        D_temp = (stepper.motor_direction(A_AXIS) == stepper.motor_direction(B_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??Z_MOVE_TEST_3
-        MOVS     R1,#+1
-        B.N      ??Z_MOVE_TEST_4
-??Z_MOVE_TEST_3:
-        MOVS     R1,#+0
-        B.N      ??Z_MOVE_TEST_4
+        LSRS     R1,R2,#+1
+        AND      R0,R2,#0x1
+        AND      R1,R1,#0x1
+        B.N      ??Z_MOVE_TEST_3
 //  435 		      else if(MACHINETPYE & CORE_IS_XZ)
 ??Z_MOVE_TEST_2:
-        MOVS     R1,#+48
-        TST      R0,R1
-        BEQ.N    ??Z_MOVE_TEST_5
+        LSRS     R1,R2,#+2
+        MOVS     R3,#+48
+        AND      R1,R1,#0x1
+        TST      R0,R3
+        ITEE     NE 
 //  436 		        D_temp = (stepper.motor_direction(A_AXIS) == stepper.motor_direction(C_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??Z_MOVE_TEST_6
-        MOVS     R1,#+1
-        B.N      ??Z_MOVE_TEST_4
-??Z_MOVE_TEST_6:
-        MOVS     R1,#+0
-        B.N      ??Z_MOVE_TEST_4
+        ANDNE    R0,R2,#0x1
 //  437 		      else
 //  438 		        D_temp = (stepper.motor_direction(B_AXIS) == stepper.motor_direction(C_AXIS));
-??Z_MOVE_TEST_5:
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BNE.N    ??Z_MOVE_TEST_7
-        MOVS     R1,#+1
-        B.N      ??Z_MOVE_TEST_4
-??Z_MOVE_TEST_7:
-        MOVS     R1,#+0
+        LSREQ    R0,R2,#+1
+        ANDEQ    R0,R0,#0x1
+??Z_MOVE_TEST_3:
+        CMP      R0,R1
+        ITE      EQ 
+        MOVEQ    R1,#+1
+        MOVNE    R1,#+0
 //  439                           
 //  440 			  return( S_(1) != S_(2) || (S_(1) > 0 && D_temp) );
-??Z_MOVE_TEST_4:
-        LDR.W    R0,??DataTable27_9
+        LDR.W    R0,??DataTable27_13
+        LDR.W    R3,??DataTable27_9
         LDRB     R2,[R0, #+16]
-        LDR.W    R3,??DataTable27_7
         LDR      R3,[R3, #+0]
-        ADD      R2,R3,R2, LSL #+2
-        LDR      R2,[R2, #+4]
         LDRB     R0,[R0, #+17]
+        ADD      R2,R3,R2, LSL #+2
         ADD      R0,R3,R0, LSL #+2
+        LDR      R2,[R2, #+4]
         LDR      R0,[R0, #+4]
         CMP      R2,R0
-        BNE.N    ??Z_MOVE_TEST_8
+        BNE.N    ??Z_MOVE_TEST_4
         CMP      R2,#+1
-        BLT.N    ??Z_MOVE_TEST_9
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        POP      {R4,PC}
-??Z_MOVE_TEST_8:
-        MOVS     R0,#+1
-        POP      {R4,PC}
-??Z_MOVE_TEST_9:
-        MOVS     R0,#+0
-        POP      {R4,PC}
+        BLT.N    ??Z_MOVE_TEST_5
+        B.N      ??Z_MOVE_TEST_6
 //  441 		}
 //  442 		else
 //  443 		{
 //  444 	          if(MACHINETPYE & CORE_IS_XY)
 ??Z_MOVE_TEST_1:
-        CMP      R1,#+0
-        BEQ.N    ??Z_MOVE_TEST_10
+        CBZ.N    R1,??Z_MOVE_TEST_7
 //  445 	            D_temp = (stepper.motor_direction(A_AXIS) != stepper.motor_direction(B_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??Z_MOVE_TEST_11
-        MOVS     R1,#+1
-        B.N      ??Z_MOVE_TEST_12
-??Z_MOVE_TEST_11:
-        MOVS     R1,#+0
-        B.N      ??Z_MOVE_TEST_12
+        LSRS     R1,R2,#+1
+        AND      R0,R2,#0x1
+        AND      R1,R1,#0x1
+        B.N      ??Z_MOVE_TEST_8
 //  446 	          else if(MACHINETPYE & CORE_IS_XZ)
-??Z_MOVE_TEST_10:
-        MOVS     R1,#+48
-        TST      R0,R1
-        BEQ.N    ??Z_MOVE_TEST_13
+??Z_MOVE_TEST_7:
+        LSRS     R1,R2,#+2
+        MOVS     R3,#+48
+        AND      R1,R1,#0x1
+        TST      R0,R3
+        ITEE     NE 
 //  447 	            D_temp = (stepper.motor_direction(A_AXIS) != stepper.motor_direction(C_AXIS));
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??Z_MOVE_TEST_14
-        MOVS     R1,#+1
-        B.N      ??Z_MOVE_TEST_12
-??Z_MOVE_TEST_14:
-        MOVS     R1,#+0
-        B.N      ??Z_MOVE_TEST_12
+        ANDNE    R0,R2,#0x1
 //  448 	          else
 //  449 	            D_temp = (stepper.motor_direction(B_AXIS) != stepper.motor_direction(C_AXIS));
-??Z_MOVE_TEST_13:
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        MOV      R4,R0
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R4,R0
-        BEQ.N    ??Z_MOVE_TEST_15
-        MOVS     R1,#+1
-        B.N      ??Z_MOVE_TEST_12
-??Z_MOVE_TEST_15:
-        MOVS     R1,#+0
+        LSREQ    R0,R2,#+1
+        ANDEQ    R0,R0,#0x1
+??Z_MOVE_TEST_8:
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R1,#+1
+        MOVEQ    R1,#+0
 //  450                           
 //  451 			  return( S_(1) != S_(2) || (S_(1) > 0 && D_temp) );
-??Z_MOVE_TEST_12:
-        LDR.W    R0,??DataTable27_9
+        LDR.W    R0,??DataTable27_13
+        LDR.W    R3,??DataTable27_9
         LDRB     R2,[R0, #+16]
-        LDR.W    R3,??DataTable27_7
         LDR      R3,[R3, #+0]
-        ADD      R2,R3,R2, LSL #+2
-        LDR      R2,[R2, #+4]
         LDRB     R0,[R0, #+17]
+        ADD      R2,R3,R2, LSL #+2
         ADD      R0,R3,R0, LSL #+2
+        LDR      R2,[R2, #+4]
         LDR      R0,[R0, #+4]
         CMP      R2,R0
-        BNE.N    ??Z_MOVE_TEST_16
+        BNE.N    ??Z_MOVE_TEST_4
         CMP      R2,#+1
-        BLT.N    ??Z_MOVE_TEST_17
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        POP      {R4,PC}
-??Z_MOVE_TEST_16:
-        MOVS     R0,#+1
-        POP      {R4,PC}
-??Z_MOVE_TEST_17:
-        MOVS     R0,#+0
-        POP      {R4,PC}
+        BLT.N    ??Z_MOVE_TEST_5
 //  452 		}
 //  453 		
 //  454 	}
+??Z_MOVE_TEST_6:
+        B.N      ?Subroutine0
 //  455 	else
 //  456 	{
 //  457 		return(stepper.current_block->steps[Z_AXIS] > 0);
 ??Z_MOVE_TEST_0:
-        LDR.W    R0,??DataTable27_7
+        LDR.W    R0,??DataTable27_9
         LDR      R0,[R0, #+0]
         LDR      R0,[R0, #+12]
         CMP      R0,#+1
-        BLT.N    ??Z_MOVE_TEST_18
+        BLT.N    ??Z_MOVE_TEST_5
+??Z_MOVE_TEST_4:
         MOVS     R0,#+1
-        POP      {R4,PC}
-??Z_MOVE_TEST_18:
+        BX       LR
+??Z_MOVE_TEST_5:
         MOVS     R0,#+0
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock9
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock10
 //  458 	}
 //  459   }
 //  460   
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _Z11Z_AXIS_HEADv
           CFI NoCalls
         THUMB
@@ -1690,7 +1533,7 @@ _Z11Z_MOVE_TESTv:
 //  462   {
 //  463     if(MACHINETPYE & CORE_IS_XZ || MACHINETPYE & CORE_IS_YZ)
 _Z11Z_AXIS_HEADv:
-        LDR.W    R0,??DataTable27_3
+        LDR.W    R0,??DataTable27_6
         LDRB     R0,[R0, #+88]
         MOVS     R1,#+240
         TST      R0,R1
@@ -1703,13 +1546,18 @@ _Z11Z_AXIS_HEADv:
 ??Z_AXIS_HEAD_0:
         MOVS     R0,#+2
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 //  467   }
+//  468 
+//  469   /*----------------------------------------*/  
+//  470 
+//  471 // Check endstops - Called from ISR!
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN8Endstops6updateEv
         THUMB
+//  472 void Endstops::update() {
 _ZN8Endstops6updateEv:
         PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
@@ -1719,865 +1567,6 @@ _ZN8Endstops6updateEv:
           CFI R5 Frame(CFA, -20)
           CFI R4 Frame(CFA, -24)
           CFI CFA R13+24
-        LDR.W    R4,??DataTable27_1
-        LDR.W    R5,??DataTable27_3
-          CFI FunCall _Z11X_MOVE_TESTv
-        BL       _Z11X_MOVE_TESTv
-        CMP      R0,#+0
-        BEQ.N    ??update_0
-          CFI FunCall _Z11X_AXIS_HEADv
-        BL       _Z11X_AXIS_HEADv
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R0,#+0
-        BEQ.N    ??update_1
-        LDRB     R0,[R5, #+128]
-        CMP      R0,#+0
-        BEQ.N    ??update_0
-        LDR.W    R0,??DataTable27_6
-        LDRH     R1,[R0, #+6]
-        LDR.W    R0,??DataTable27_5
-        LDR      R0,[R0, #+12]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R5, #+55]
-        CMP      R0,R1
-        BEQ.N    ??update_2
-        MOVS     R0,#+1
-        B.N      ??update_3
-??update_2:
-        MOVS     R0,#+0
-??update_3:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x1
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+31
-        BPL.N    ??update_0
-        LDR.W    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+4]
-        CMP      R0,#+1
-        BLT.N    ??update_0
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x1
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-        B.N      ??update_0
-??update_1:
-        ADD      R0,R5,#+128
-        LDRB     R0,[R0, #+3]
-        CMP      R0,#+0
-        BEQ.N    ??update_0
-        LDR.W    R0,??DataTable27_6
-        LDRH     R1,[R0, #+6]
-        LDR.W    R0,??DataTable27_5
-        LDR      R0,[R0, #+12]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADD      R1,R5,#+55
-        LDRB     R1,[R1, #+3]
-        CMP      R0,R1
-        BEQ.N    ??update_4
-        MOVS     R0,#+1
-        B.N      ??update_5
-??update_4:
-        MOVS     R0,#+0
-??update_5:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x10
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+27
-        BPL.N    ??update_0
-        LDR.W    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+4]
-        CMP      R0,#+1
-        BLT.N    ??update_0
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x10
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-??update_0:
-          CFI FunCall _Z11Y_MOVE_TESTv
-        BL       _Z11Y_MOVE_TESTv
-        CMP      R0,#+0
-        BEQ.N    ??update_6
-          CFI FunCall _Z11Y_AXIS_HEADv
-        BL       _Z11Y_AXIS_HEADv
-        ADD      R6,R5,#+128
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R0,#+0
-        BEQ.N    ??update_7
-        LDRB     R0,[R6, #+1]
-        CMP      R0,#+0
-        BEQ.N    ??update_6
-        LDR.N    R0,??DataTable27_6
-        LDRH     R1,[R0, #+16]
-        LDR.N    R0,??DataTable27_5
-        LDR      R0,[R0, #+32]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADD      R1,R5,#+55
-        LDRB     R1,[R1, #+1]
-        CMP      R0,R1
-        BEQ.N    ??update_8
-        MOVS     R0,#+1
-        B.N      ??update_9
-??update_8:
-        MOVS     R0,#+0
-??update_9:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x2
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+30
-        BPL.N    ??update_6
-        LDR.N    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+8]
-        CMP      R0,#+1
-        BLT.N    ??update_6
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x2
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-        B.N      ??update_6
-??update_7:
-        LDRB     R0,[R6, #+4]
-        CMP      R0,#+0
-        BEQ.N    ??update_6
-        LDR.N    R0,??DataTable27_6
-        LDRH     R1,[R0, #+16]
-        LDR.N    R0,??DataTable27_5
-        LDR      R0,[R0, #+32]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADD      R1,R5,#+55
-        LDRB     R1,[R1, #+4]
-        CMP      R0,R1
-        BEQ.N    ??update_10
-        MOVS     R0,#+1
-        B.N      ??update_11
-??update_10:
-        MOVS     R0,#+0
-??update_11:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x20
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+26
-        BPL.N    ??update_6
-        LDR.N    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+8]
-        CMP      R0,#+1
-        BLT.N    ??update_6
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x20
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-??update_6:
-          CFI FunCall _Z11Z_MOVE_TESTv
-        BL       _Z11Z_MOVE_TESTv
-        CMP      R0,#+0
-        BEQ.W    ??update_12
-          CFI FunCall _Z11Z_AXIS_HEADv
-        BL       _Z11Z_AXIS_HEADv
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R0,#+0
-        BEQ.W    ??update_13
-        LDRB     R0,[R5, #+258]
-        CMP      R0,#+1
-        BNE.N    ??update_14
-        LDR.N    R7,??DataTable27_5
-        LDR.W    R8,??DataTable27_6
-        LDRH     R1,[R8, #+26]
-        LDR      R0,[R7, #+52]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADDW     R6,R5,#+55
-        LDRB     R1,[R6, #+2]
-        CMP      R0,R1
-        BEQ.N    ??update_15
-        MOVS     R0,#+1
-        B.N      ??update_16
-??update_15:
-        MOVS     R0,#+0
-??update_16:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x4
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        ADD      R1,R5,#+258
-        LDRB     R1,[R1, #+1]
-        CMP      R1,#+1
-        BNE.N    ??update_17
-        LDRH     R1,[R8, #+28]
-        LDR      R0,[R7, #+56]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R6, #+5]
-        CMP      R0,R1
-        BEQ.N    ??update_18
-        MOVS     R0,#+1
-        B.N      ??update_19
-??update_18:
-        MOVS     R0,#+0
-??update_19:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x800
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        B.N      ??update_20
-??update_17:
-        MOV      R1,R0
-        UXTB     R1,R1
-        LSRS     R1,R1,#+2
-        AND      R1,R1,#0x1
-        RSBS     R1,R1,#+0
-        EORS     R1,R0,R1
-        AND      R1,R1,#0x800
-        EORS     R0,R1,R0
-        STRH     R0,[R4, #+2]
-??update_20:
-        MOVS     R1,#+11
-        MOVS     R0,#+2
-          CFI FunCall _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
-        BL       _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
-        B.N      ??update_21
-??update_14:
-        ADD      R0,R5,#+128
-        LDRB     R0,[R0, #+25]
-        CMP      R0,#+1
-        BNE.N    ??update_22
-        LDRB     R0,[R4, #+1]
-        CMP      R0,#+0
-        BEQ.N    ??update_21
-        LDR.N    R0,??DataTable27_6
-        LDRH     R1,[R0, #+26]
-        LDR.N    R0,??DataTable27_5
-        LDR      R0,[R0, #+52]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADD      R1,R5,#+55
-        LDRB     R1,[R1, #+2]
-        CMP      R0,R1
-        BEQ.N    ??update_23
-        MOVS     R0,#+1
-        B.N      ??update_24
-??update_23:
-        MOVS     R0,#+0
-??update_24:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x4
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+29
-        BPL.N    ??update_21
-        LDR.N    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+12]
-        CMP      R0,#+1
-        BLT.N    ??update_21
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x4
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-        B.N      ??update_21
-??update_22:
-        LDR.N    R0,??DataTable27_6
-        LDRH     R1,[R0, #+26]
-        LDR.N    R0,??DataTable27_5
-        LDR      R0,[R0, #+52]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADD      R1,R5,#+55
-        LDRB     R1,[R1, #+2]
-        CMP      R0,R1
-        BEQ.N    ??update_25
-        MOVS     R0,#+1
-        B.N      ??update_26
-??update_25:
-        MOVS     R0,#+0
-??update_26:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x4
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+29
-        BPL.N    ??update_21
-        LDR.N    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+12]
-        CMP      R0,#+1
-        BLT.N    ??update_21
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x4
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-??update_21:
-        ADD      R0,R5,#+128
-        LDRB     R0,[R0, #+25]
-        CMP      R0,#+2
-        BNE.W    ??update_12
-        LDRB     R0,[R4, #+1]
-        CMP      R0,#+0
-        BEQ.W    ??update_12
-        LDR.N    R0,??DataTable27_6
-        LDRH     R1,[R0, #+28]
-        LDR.N    R0,??DataTable27_5
-        LDR      R0,[R0, #+56]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADD      R1,R5,#+55
-        LDRB     R1,[R1, #+6]
-        CMP      R0,R1
-        BEQ.N    ??update_27
-        MOVS     R0,#+1
-        B.N      ??update_28
-??update_27:
-        MOVS     R0,#+0
-??update_28:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x8
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+28
-        BPL.N    ??update_29
-        LDR.N    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+12]
-        CMP      R0,#+1
-        BLT.N    ??update_29
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x8
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-??update_29:
-        LDRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+28
-        BPL.N    ??update_12
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x8
-        STRB     R0,[R4, #+0]
-        B.N      ??update_12
-??update_13:
-        ADD      R6,R5,#+128
-        LDRB     R0,[R6, #+25]
-        CMP      R0,#+2
-        BEQ.N    ??update_12
-        LDRB     R1,[R6, #+5]
-        CMP      R1,#+0
-        BEQ.N    ??update_12
-        LDRB     R1,[R5, #+258]
-        CMP      R1,#+1
-        BNE.N    ??update_30
-        LDR.N    R7,??DataTable27_5
-        LDR.W    R8,??DataTable27_6
-        LDRH     R1,[R8, #+28]
-        LDR      R0,[R7, #+56]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADDW     R6,R5,#+55
-        LDRB     R1,[R6, #+5]
-        CMP      R0,R1
-        BEQ.N    ??update_31
-        MOVS     R0,#+1
-        B.N      ??update_32
-??update_31:
-        MOVS     R0,#+0
-??update_32:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x40
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        ADD      R1,R5,#+258
-        LDRB     R1,[R1, #+1]
-        CMP      R1,#+0
-        BEQ.N    ??update_33
-        LDRH     R1,[R8, #+28]
-        LDR      R0,[R7, #+56]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        LDRB     R1,[R6, #+5]
-        CMP      R0,R1
-        BEQ.N    ??update_34
-        MOVS     R0,#+1
-        B.N      ??update_35
-??update_34:
-        MOVS     R0,#+0
-??update_35:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x1000
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        B.N      ??update_36
-??update_33:
-        MOV      R1,R0
-        UXTB     R1,R1
-        LSRS     R1,R1,#+6
-        AND      R1,R1,#0x1
-        RSBS     R1,R1,#+0
-        EORS     R1,R0,R1
-        AND      R1,R1,#0x1000
-        EORS     R0,R1,R0
-        STRH     R0,[R4, #+2]
-??update_36:
-        MOVS     R1,#+12
-        MOVS     R0,#+6
-          CFI FunCall _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
-        BL       _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
-        B.N      ??update_12
-??update_30:
-        CMP      R0,#+2
-        BEQ.N    ??update_12
-        LDR.N    R0,??DataTable27_6
-        LDRH     R1,[R0, #+28]
-        LDR.N    R0,??DataTable27_5
-        LDR      R0,[R0, #+56]
-          CFI FunCall HAL_GPIO_ReadPin
-        BL       HAL_GPIO_ReadPin
-        ADD      R1,R5,#+55
-        LDRB     R1,[R1, #+5]
-        CMP      R0,R1
-        BEQ.N    ??update_37
-        MOVS     R0,#+1
-        B.N      ??update_38
-??update_37:
-        MOVS     R0,#+0
-??update_38:
-        LDRH     R1,[R4, #+2]
-        RSBS     R0,R0,#+0
-        EORS     R0,R1,R0
-        AND      R0,R0,#0x40
-        EORS     R0,R0,R1
-        STRH     R0,[R4, #+2]
-        LDRH     R1,[R4, #+4]
-        ANDS     R0,R1,R0
-        LSLS     R0,R0,#+25
-        BPL.N    ??update_12
-        LDR.N    R0,??DataTable27_7
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+12]
-        CMP      R0,#+1
-        BLT.N    ??update_12
-        LDRB     R0,[R4, #+0]
-        ORR      R0,R0,#0x40
-        STRB     R0,[R4, #+0]
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
-        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
-??update_12:
-        LDRH     R0,[R4, #+2]
-        STRH     R0,[R4, #+4]
-        POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock11
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27:
-        DC32     endstops
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_1:
-        DC32     _ZN8Endstops16endstop_hit_bitsE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_2:
-        DC32     echomagic
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_3:
-        DC32     mksCfg
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_4:
-        DC32     Serial3
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_5:
-        DC32     gArrayGpioPort
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_6:
-        DC32     gArrayGpioPin
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_7:
-        DC32     _ZN7Stepper13current_blockE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_8:
-        DC32     _ZN7Stepper17performing_homingE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable27_9:
-        DC32     mksTmp
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "endstops hit: ">`:
-        DC8 "endstops hit: "
-        DC8 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "Reporting endstop sta...">`:
-        DC8 "Reporting endstop status\012"
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "x_min: ">`:
-        DC8 "x_min: "
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "TRIGGERED">`:
-        DC8 "TRIGGERED"
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "open">`:
-        DC8 "open"
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "x_max: ">`:
-        DC8 "x_max: "
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "y_min: ">`:
-        DC8 "y_min: "
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "y_max: ">`:
-        DC8 "y_max: "
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "z_min: ">`:
-        DC8 "z_min: "
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "z2_min: ">`:
-        DC8 "z2_min: "
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "z_max: ">`:
-        DC8 "z_max: "
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "z2_max: ">`:
-        DC8 "z2_max: "
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "z_probe: ">`:
-        DC8 "z_probe: "
-        DC8 0, 0
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock12 Using cfiCommon0
-          CFI Function _Z14serialprintPGMPKc
-        THUMB
-// __interwork __softfp void serialprintPGM(char const *)
-_Z14serialprintPGMPKc:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-        B.N      ??serialprintPGM_0
-??serialprintPGM_1:
-        UXTB     R1,R1
-        LDR.N    R0,??serialprintPGM_2
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-??serialprintPGM_0:
-        LDRSB    R1,[R4], #+1
-        MOVS     R0,R1
-        BNE.N    ??serialprintPGM_1
-        POP      {R4,PC}          ;; return
-        DATA
-??serialprintPGM_2:
-        DC32     Serial3
-          CFI EndBlock cfiBlock12
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Stepper15motor_directionE8AxisEnum
-          CFI Block cfiBlock13 Using cfiCommon0
-          CFI Function _ZN7Stepper15motor_directionE8AxisEnum
-          CFI NoCalls
-        THUMB
-// __interwork __softfp bool Stepper::motor_direction(AxisEnum)
-_ZN7Stepper15motor_directionE8AxisEnum:
-        LDR.N    R1,??motor_direction_0
-        LDRB     R1,[R1, #+0]
-        MOVS     R2,#+1
-        LSL      R0,R2,R0
-        ANDS     R1,R0,R1
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        BX       LR               ;; return
-        DATA
-??motor_direction_0:
-        DC32     _ZN7Stepper19last_direction_bitsE
-          CFI EndBlock cfiBlock13
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Stepper18kill_current_blockEv
-          CFI Block cfiBlock14 Using cfiCommon0
-          CFI Function _ZN7Stepper18kill_current_blockEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Stepper::kill_current_block()
-_ZN7Stepper18kill_current_blockEv:
-        LDR.N    R0,??kill_current_block_0
-        LDR      R0,[R0, #+0]
-        LDR      R0,[R0, #+20]
-        LDR.N    R1,??kill_current_block_0+0x4
-        STR      R0,[R1, #+0]
-        BX       LR               ;; return
-        DATA
-??kill_current_block_0:
-        DC32     _ZN7Stepper13current_blockE
-        DC32     _ZN7Stepper21step_events_completedE
-          CFI EndBlock cfiBlock14
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Stepper21triggered_position_mmE8AxisEnum
-          CFI Block cfiBlock15 Using cfiCommon0
-          CFI Function _ZN7Stepper21triggered_position_mmE8AxisEnum
-        THUMB
-// __interwork __softfp float Stepper::triggered_position_mm(AxisEnum)
-_ZN7Stepper21triggered_position_mmE8AxisEnum:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-        LDR.N    R0,??triggered_position_mm_0
-        LDR      R0,[R0, R4, LSL #+2]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        LDR.N    R1,??triggered_position_mm_0+0x4
-        LDR      R1,[R1, R4, LSL #+2]
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fmul
-        B.W      __aeabi_fmul
-        DATA
-??triggered_position_mm_0:
-        DC32     _ZN7Stepper18endstops_trigstepsE
-        DC32     _ZN7Planner11steps_to_mmE
-          CFI EndBlock cfiBlock15
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN8EndstopsC1Ev
-          CFI Block cfiBlock16 Using cfiCommon0
-          CFI Function _ZN8EndstopsC1Ev
-        THUMB
-// __code __interwork __softfp Endstops::Endstops()
-_ZN8EndstopsC1Ev:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-        MOVS     R0,#+0
-          CFI FunCall _ZN8Endstops15enable_globallyEb
-        BL       _ZN8Endstops15enable_globallyEb
-        MOV      R0,R4
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock16
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN8Endstops15enable_globallyEb
-          CFI Block cfiBlock17 Using cfiCommon0
-          CFI Function _ZN8Endstops15enable_globallyEb
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Endstops::enable_globally(bool)
-_ZN8Endstops15enable_globallyEb:
-        LDR.N    R1,??enable_globally_0
-        STRB     R0,[R1, #+0]
-        STRB     R0,[R1, #+1]
-        BX       LR               ;; return
-        DATA
-??enable_globally_0:
-        DC32     _ZN8Endstops7enabledE
-          CFI EndBlock cfiBlock17
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN8Endstops14hit_on_purposeEv
-          CFI Block cfiBlock18 Using cfiCommon0
-          CFI Function _ZN8Endstops14hit_on_purposeEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Endstops::hit_on_purpose()
-_ZN8Endstops14hit_on_purposeEv:
-        MOVS     R0,#+0
-        LDR.N    R1,??hit_on_purpose_0
-        STRB     R0,[R1, #+0]
-        BX       LR               ;; return
-        DATA
-??hit_on_purpose_0:
-        DC32     _ZN8Endstops16endstop_hit_bitsE
-          CFI EndBlock cfiBlock18
-
-        SECTION `.init_array`:CODE:ROOT(2)
-        SECTION_TYPE SHT_INIT_ARRAY, 0
-        DATA
-        DC32    RELOC_ARM_TARGET1 __sti__routine
-
-        SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-        DC32 0
-
-        SECTION __DLIB_PERTHREAD:DATA:REORDER:NOROOT(0)
-        SECTION_TYPE SHT_PROGBITS, 0
-
-        SECTION __DLIB_PERTHREAD_init:DATA:REORDER:NOROOT(0)
-        SECTION_TYPE SHT_PROGBITS, 0
-
-        SECTION `.rodata`:CONST:REORDER:NOROOT(0)
-        SECTION_GROUP _ZTI5Print
-// __absolute char const <Typeinfo for Print>
-_ZTI5Print:
-        DATA
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " X:">`:
-        DC8 " X:"
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " Y:">`:
-        DC8 " Y:"
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " Z:">`:
-        DC8 " Z:"
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " P:">`:
-        DC8 " P:"
-
-        END
-//  468 
-//  469   /*----------------------------------------*/  
-//  470 
-//  471 // Check endstops - Called from ISR!
-//  472 void Endstops::update() {
 //  473 
 //  474   #define _ENDSTOP(AXIS, MINMAX) AXIS ##_## MINMAX
 //  475   #define _ENDSTOP_PIN(AXIS, MINMAX) AXIS ##_## MINMAX ##_PIN
@@ -2703,7 +1692,24 @@ _ZTI5Print:
 //  595    * Check and update endstops according to conditions
 //  596    */
 //  597   if (X_MOVE_TEST()) {
+        LDR.W    R4,??DataTable27_1
+        LDR.W    R8,??DataTable27_6
+          CFI FunCall _Z11X_MOVE_TESTv
+        BL       _Z11X_MOVE_TESTv
+        CMP      R0,#+0
+        BEQ.N    ??update_0
 //  598     if (stepper.motor_direction(X_AXIS_HEAD())) { // -direction
+        LDRB     R0,[R8, #+88]
+        MOVS     R1,#+60
+        TST      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+4
+        MOVEQ    R0,#+0
+        LDR.W    R1,??DataTable27_12
+        LDRB     R1,[R1, #+0]
+        LSR      R0,R1,R0
+        LSLS     R0,R0,#+31
+        BMI.N    ??update_1
 //  599       #if HAS_X_MIN
 //  600         #if ENABLED(X_DUAL_ENDSTOPS)
 //  601           UPDATE_ENDSTOP_BIT(X, MIN);
@@ -2731,7 +1737,80 @@ _ZTI5Print:
 //  623           test_dual_x_endstops(X_MAX, X2_MAX);
 //  624         #else
 //  625 		if(mksCfg.use_xmax_plug)
+        ADD      R0,R8,#+128
+        LDRB     R0,[R0, #+3]
+        CMP      R0,#+0
+        BEQ.N    ??update_0
 //  626           if (X_MIN_TEST) UPDATE_ENDSTOP(X, MAX);
+        LDR.W    R0,??DataTable27_7
+        LDRH     R1,[R0, #+6]
+        LDR.W    R0,??DataTable27_8
+        LDR      R0,[R0, #+12]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        ADD      R1,R8,#+57
+        LDRB     R1,[R1, #+3]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        B.N      ??update_2
+??update_1:
+        LDRB     R0,[R8, #+128]
+        CMP      R0,#+0
+        BEQ.N    ??update_0
+        LDR.W    R0,??DataTable27_7
+        LDRH     R1,[R0, #+6]
+        LDR.W    R0,??DataTable27_8
+        LDR      R0,[R0, #+12]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDRB     R1,[R8, #+57]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x1
+        EORS     R0,R0,R1
+        STRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+31
+        BPL.N    ??update_0
+        LDR.N    R0,??DataTable27_9
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+4]
+        CMP      R0,#+1
+        BLT.N    ??update_0
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x1
+        B.N      ??update_3
+??update_2:
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x10
+        EORS     R0,R0,R1
+        STRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+27
+        BPL.N    ??update_0
+        LDR.N    R0,??DataTable27_9
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+4]
+        CMP      R0,#+1
+        BLT.N    ??update_0
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x10
+??update_3:
+        STRB     R0,[R4, #+0]
+        MOVS     R0,#+0
+          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
+        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
 //  627         #endif
 //  628 
 //  629       #endif
@@ -2739,7 +1818,24 @@ _ZTI5Print:
 //  631   }
 //  632 
 //  633   if (Y_MOVE_TEST()) {
+??update_0:
+          CFI FunCall _Z11Y_MOVE_TESTv
+        BL       _Z11Y_MOVE_TESTv
+        CMP      R0,#+0
+        BEQ.N    ??update_4
 //  634     if (stepper.motor_direction(Y_AXIS_HEAD())) { // -direction
+        LDRB     R0,[R8, #+88]
+        MOVS     R1,#+204
+        TST      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+5
+        MOVEQ    R0,#+1
+        LDR.N    R2,??DataTable27_12
+        LDRB     R2,[R2, #+0]
+        LSR      R0,R2,R0
+        ADD      R1,R8,#+128
+        LSLS     R0,R0,#+31
+        BMI.N    ??update_5
 //  635       #if HAS_Y_MIN
 //  636         #if ENABLED(Y_DUAL_ENDSTOPS)
 //  637           UPDATE_ENDSTOP_BIT(Y, MIN);
@@ -2767,14 +1863,103 @@ _ZTI5Print:
 //  659           test_dual_y_endstops(Y_MAX, Y2_MAX);
 //  660         #else
 //  661 		if(mksCfg.use_ymax_plug)
+        LDRB     R0,[R1, #+4]
+        CMP      R0,#+0
+        BEQ.N    ??update_4
 //  662           UPDATE_ENDSTOP(Y, MAX);
+        LDR.N    R0,??DataTable27_7
+        LDRH     R1,[R0, #+16]
+        LDR.N    R0,??DataTable27_8
+        LDR      R0,[R0, #+32]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        ADD      R1,R8,#+57
+        LDRB     R1,[R1, #+4]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        B.N      ??update_6
+??update_5:
+        LDRB     R0,[R1, #+1]
+        CMP      R0,#+0
+        BEQ.N    ??update_4
+        LDR.N    R0,??DataTable27_7
+        LDRH     R1,[R0, #+16]
+        LDR.N    R0,??DataTable27_8
+        LDR      R0,[R0, #+32]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        ADD      R1,R8,#+57
+        LDRB     R1,[R1, #+1]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x2
+        EORS     R0,R0,R1
+        STRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+30
+        BPL.N    ??update_4
+        LDR.N    R0,??DataTable27_9
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+8]
+        CMP      R0,#+1
+        BLT.N    ??update_4
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x2
+        B.N      ??update_7
+??update_6:
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x20
+        EORS     R0,R0,R1
+        STRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+26
+        BPL.N    ??update_4
+        LDR.N    R0,??DataTable27_9
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+8]
+        CMP      R0,#+1
+        BLT.N    ??update_4
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x20
+??update_7:
+        STRB     R0,[R4, #+0]
+        MOVS     R0,#+1
+          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
+        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
 //  663         #endif
 //  664       #endif
 //  665     }
 //  666   }
 //  667 
 //  668   if (Z_MOVE_TEST()) {
+??update_4:
+          CFI FunCall _Z11Z_MOVE_TESTv
+        BL       _Z11Z_MOVE_TESTv
+        CMP      R0,#+0
+        BEQ.W    ??update_8
 //  669     if (stepper.motor_direction(Z_AXIS_HEAD())) { // Z -direction. Gantry down, bed up.
+        LDRB     R0,[R8, #+88]
+        MOVS     R1,#+240
+        TST      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+6
+        MOVEQ    R0,#+2
+        LDR.N    R1,??DataTable27_12
+        LDRB     R1,[R1, #+0]
+        LSR      R0,R1,R0
+        LSLS     R0,R0,#+31
+        BMI.N    ??update_9
 //  670       #if HAS_Z_MIN
 //  671         //#if ENABLED(Z_DUAL_ENDSTOPS)
 //  672         if(Z_DUAL_ENDSTOPS==1)
@@ -2826,23 +2011,234 @@ _ZTI5Print:
 //  718     else { // Z +direction. Gantry up, bed down.
 //  719       #if HAS_Z_MAX
 //  720 	  	 if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)  
+        ADD      R1,R8,#+128
+        LDRB     R0,[R1, #+25]
+        CMP      R0,#+2
+        ITT      NE 
 //  721 	  	{
 //  722 		  	if(mksCfg.use_zmax_plug)
+        LDRBNE   R0,[R1, #+5]
+        CMPNE    R0,#+0
+        BEQ.W    ??update_8
 //  723 	      	{
 //  724 		        // Check both Z dual endstops
 //  725 		        //#if ENABLED(Z_DUAL_ENDSTOPS)
 //  726 		        if(Z_DUAL_ENDSTOPS==1)
+        LDR.N    R7,??DataTable27_8
+        LDR.N    R6,??DataTable27_7
+        LDRB     R2,[R8, #+258]
+        LDR      R0,[R7, #+56]
+        LDRH     R1,[R6, #+28]
+        ADDW     R5,R8,#+57
+        CMP      R2,#+1
+        BNE.W    ??update_10
 //  727                 {      
 //  728 		          UPDATE_ENDSTOP_BIT(Z, MAX);
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDRB     R1,[R5, #+5]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        B.N      ??update_11
+??update_9:
+        LDRB     R0,[R8, #+258]
+        CMP      R0,#+1
+        BNE.N    ??update_12
+        LDR.N    R7,??DataTable27_8
+        LDR.N    R6,??DataTable27_7
+        LDR      R0,[R7, #+52]
+        LDRH     R1,[R6, #+26]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        ADDW     R5,R8,#+57
+        LDRB     R1,[R5, #+2]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x4
+        EORS     R0,R0,R1
+        ADD      R1,R8,#+258
+        STRH     R0,[R4, #+2]
+        LDRB     R1,[R1, #+1]
+        CMP      R1,#+1
+        BNE.N    ??update_13
+        LDRH     R1,[R6, #+28]
+        LDR      R0,[R7, #+56]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDRB     R1,[R5, #+5]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x800
+        EORS     R0,R0,R1
+        B.N      ??update_14
+??update_13:
+        LSLS     R1,R0,#+24
+        LSRS     R1,R1,#+26
+        AND      R1,R1,#0x1
+        RSBS     R1,R1,#+0
+        EORS     R1,R0,R1
+        AND      R1,R1,#0x800
+        EORS     R0,R1,R0
+??update_14:
+        STRH     R0,[R4, #+2]
+        MOVS     R1,#+11
+        MOVS     R0,#+2
+          CFI FunCall _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
+        BL       _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
+        B.N      ??update_15
+??update_12:
+        ADD      R0,R8,#+128
+        LDRB     R0,[R0, #+25]
+        CMP      R0,#+1
+        ITT      EQ 
+        LDRBEQ   R0,[R4, #+1]
+        CMPEQ    R0,#+0
+        BEQ.N    ??update_15
+        LDR.N    R0,??DataTable27_7
+        LDRH     R1,[R0, #+26]
+        LDR.N    R0,??DataTable27_8
+        LDR      R0,[R0, #+52]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        ADD      R1,R8,#+57
+        LDRB     R1,[R1, #+2]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x4
+        EORS     R0,R0,R1
+        STRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+29
+        BPL.N    ??update_15
+        LDR.N    R0,??DataTable27_9
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+12]
+        CMP      R0,#+1
+        BLT.N    ??update_15
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x4
+        STRB     R0,[R4, #+0]
+        MOVS     R0,#+2
+          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
+        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
+??update_15:
+        ADD      R0,R8,#+128
+        LDRB     R0,[R0, #+25]
+        CMP      R0,#+2
+        BNE.N    ??update_8
+        LDRB     R0,[R4, #+1]
+        CMP      R0,#+0
+        BEQ.N    ??update_8
+        LDR.N    R0,??DataTable27_7
+        LDRH     R1,[R0, #+28]
+        LDR.N    R0,??DataTable27_8
+        LDR      R0,[R0, #+56]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        ADD      R1,R8,#+57
+        LDRB     R1,[R1, #+6]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x8
+        EORS     R0,R0,R1
+        STRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+28
+        BPL.N    ??update_8
+        LDR.N    R0,??DataTable27_9
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+12]
+        CMP      R0,#+1
+        BLT.N    ??update_16
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x8
+        STRB     R0,[R4, #+0]
+        MOVS     R0,#+2
+          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
+        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
+??update_16:
+        LDRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+28
+        BPL.N    ??update_8
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x8
+        STRB     R0,[R4, #+0]
+        B.N      ??update_8
+??update_11:
+        RSBS     R0,R0,#+0
+        LDRH     R1,[R4, #+2]
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x40
+        EORS     R0,R0,R1
 //  729 		          //#if HAS_Z2_MAX
 //  730                   if(mksCfg.z2_endstop!=0)
+        ADD      R1,R8,#+258
+        STRH     R0,[R4, #+2]
+        LDRB     R1,[R1, #+1]
+        CBZ.N    R1,??update_17
 //  731 			UPDATE_ENDSTOP_BIT(Z2, MAX);
+        LDRH     R1,[R6, #+28]
+        LDR      R0,[R7, #+56]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDRB     R1,[R5, #+5]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x1000
+        EORS     R0,R0,R1
+        B.N      ??update_18
 //  732                     //UPDATE_ENDSTOP_BIT_Z2_MIN;
 //  733                    else
 //  734 		          //#else
 //  735 		            COPY_BIT(current_endstop_bits, Z_MAX, Z2_MAX);
+??update_17:
+        LSLS     R1,R0,#+24
+        LSRS     R1,R1,#+30
+        AND      R1,R1,#0x1
+        RSBS     R1,R1,#+0
+        EORS     R1,R0,R1
+        AND      R1,R1,#0x1000
+        EORS     R0,R1,R0
+??update_18:
+        STRH     R0,[R4, #+2]
 //  736 		          //#endif
 //  737 		          test_dual_z_endstops(Z_MAX, Z2_MAX);
+        MOVS     R1,#+12
+        MOVS     R0,#+6
+          CFI FunCall _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
+        BL       _ZN8Endstops20test_dual_z_endstopsE11EndstopEnumS0_
+        B.N      ??update_8
 //  738 		        // If this pin is not hijacked for the bed probe
 //  739 		        // then it belongs to the Z endstop
 //  740 		        //#elif DISABLED(Z_MIN_PROBE_ENDSTOP) || Z_MAX_PIN != Z_MIN_PROBE_PIN
@@ -2852,6 +2248,35 @@ _ZTI5Print:
 //  744                 {      
 //  745 				  if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)		//mks
 //  746 		          	UPDATE_ENDSTOP(Z, MAX);
+??update_10:
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDRB     R1,[R5, #+5]
+        CMP      R0,R1
+        ITE      NE 
+        MOVNE    R0,#+1
+        MOVEQ    R0,#+0
+        LDRH     R1,[R4, #+2]
+        RSBS     R0,R0,#+0
+        EORS     R0,R1,R0
+        AND      R0,R0,#0x40
+        EORS     R0,R0,R1
+        STRH     R0,[R4, #+2]
+        LDRH     R1,[R4, #+4]
+        ANDS     R0,R1,R0
+        LSLS     R0,R0,#+25
+        BPL.N    ??update_8
+        LDR.N    R0,??DataTable27_9
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+12]
+        CMP      R0,#+1
+        BLT.N    ??update_8
+        LDRB     R0,[R4, #+0]
+        ORR      R0,R0,#0x40
+        STRB     R0,[R4, #+0]
+        MOVS     R0,#+2
+          CFI FunCall _ZN7Stepper17endstop_triggeredE8AxisEnum
+        BL       _ZN7Stepper17endstop_triggeredE8AxisEnum
 //  747                 }
 //  748 		        //#endif
 //  749 	  		}
@@ -2861,16 +2286,235 @@ _ZTI5Print:
 //  753   }
 //  754 
 //  755   old_endstop_bits = current_endstop_bits;
+??update_8:
+        LDRH     R0,[R4, #+2]
+        STRH     R0,[R4, #+4]
 //  756 
 //  757 } // Endstops::update()
+        POP      {R4-R8,PC}       ;; return
+          CFI EndBlock cfiBlock12
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27:
+        DC32     _ZN8Endstops7enabledE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_1:
+        DC32     _ZN8Endstops16endstop_hit_bitsE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_2:
+        DC32     echomagic
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_3:
+        DC32     Serial3
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_4:
+        DC32     _ZN7Planner11steps_to_mmE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_5:
+        DC32     _ZN7Stepper18endstops_trigstepsE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_6:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_7:
+        DC32     gArrayGpioPin
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_8:
+        DC32     gArrayGpioPort
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_9:
+        DC32     _ZN7Stepper13current_blockE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_10:
+        DC32     _ZN7Stepper17performing_homingE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_11:
+        DC32     _ZN7Stepper21step_events_completedE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_12:
+        DC32     _ZN7Stepper19last_direction_bitsE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable27_13:
+        DC32     mksTmp
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "endstops hit: ">`:
+        DC8 "endstops hit: "
+        DC8 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "Reporting endstop sta...">`:
+        DC8 "Reporting endstop status\012"
+        DC8 0, 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "x_min: ">`:
+        DC8 "x_min: "
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "TRIGGERED">`:
+        DC8 "TRIGGERED"
+        DC8 0, 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "open">`:
+        DC8 "open"
+        DC8 0, 0, 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "x_max: ">`:
+        DC8 "x_max: "
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "y_min: ">`:
+        DC8 "y_min: "
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "y_max: ">`:
+        DC8 "y_max: "
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "z_min: ">`:
+        DC8 "z_min: "
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "z2_min: ">`:
+        DC8 "z2_min: "
+        DC8 0, 0, 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "z_max: ">`:
+        DC8 "z_max: "
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "z2_max: ">`:
+        DC8 "z2_max: "
+        DC8 0, 0, 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "z_probe: ">`:
+        DC8 "z_probe: "
+        DC8 0, 0
+
+        SECTION `.init_array`:CODE:ROOT(2)
+        SECTION_TYPE SHT_INIT_ARRAY, 0
+        DATA
+        DC32    RELOC_ARM_TARGET1 __sti__routine
+
+        SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+        DC32 0
+
+        SECTION __DLIB_PERTHREAD:DATA:REORDER:NOROOT(0)
+        SECTION_TYPE SHT_PROGBITS, 0
+
+        SECTION __DLIB_PERTHREAD_init:DATA:REORDER:NOROOT(0)
+        SECTION_TYPE SHT_PROGBITS, 0
+
+        SECTION `.rodata`:CONST:REORDER:NOROOT(0)
+        SECTION_GROUP _ZTI5Print
+// __absolute char const <Typeinfo for Print>
+_ZTI5Print:
+        DATA
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " X:">`:
+        DC8 " X:"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " Y:">`:
+        DC8 " Y:"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " Z:">`:
+        DC8 " Z:"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " P:">`:
+        DC8 " P:"
+
+        END
 // 
 //    12 bytes in section .bss
 //     4 bytes in section .init_array
 //    17 bytes in section .rodata
-// 3 282 bytes in section .text
+// 2 912 bytes in section .text
 // 
-// 3 136 bytes of CODE  memory (+ 150 bytes shared)
-//    16 bytes of CONST memory (+   1 byte  shared)
+// 2 916 bytes of CODE  memory
+//    16 bytes of CONST memory (+ 1 byte shared)
 //    12 bytes of DATA  memory
 //
 //Errors: none

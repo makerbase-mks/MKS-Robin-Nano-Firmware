@@ -1,80 +1,78 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:06
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:03
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_bind.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_bind.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_bind.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_bind.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\draw_bind.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_bind.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
         RTMODEL "__CPP_Language", "EC++"
         RTMODEL "__SystemLibrary", "DLib"
         RTMODEL "__dlib_file_descriptor", "1"
+        RTMODEL "__dlib_full_locale_support", "1"
         AAPCS BASE,INTERWORK
         PRESERVE8
         REQUIRE8
@@ -89,7 +87,6 @@
         EXTERN BUTTON_SetBmpFileName
         EXTERN BUTTON_SetText
         EXTERN BUTTON_SetTextAlign
-        EXTERN BUTTON_SetTextColor
         EXTERN EncodeData
         EXTERN GUI_Clear
         EXTERN GUI_DispStringAt
@@ -155,7 +152,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_bind.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_bind.cpp
 //    1 #include "stm32f1xx.h"
 //    2 #include "gui.h"
 //    3 #include "button.h"
@@ -202,12 +199,13 @@ _Z9cbBindWinP10WM_MESSAGE:
         BNE.N    ??cbBindWin_0
         BX       LR
 ??cbBindWin_0:
-        PUSH     {R7,LR}
+        PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
         CMP      R1,#+13
-        BEQ.N    ??cbBindWin_1
-        CMP      R1,#+15
+        IT       NE 
+        CMPNE    R1,#+15
         BEQ.N    ??cbBindWin_1
         CMP      R1,#+38
         BNE.N    ??cbBindWin_2
@@ -233,10 +231,10 @@ _Z9cbBindWinP10WM_MESSAGE:
         BNE.N    ??cbBindWin_1
 //   53 			{
 //   54 				if(pMsg->hWinSrc == buttonReleaseBind.btnHandle)
+        LDR.W    R4,??DataTable7_1
         LDRSH    R0,[R0, #+6]
-        LDR.W    R1,??DataTable7_1
-        LDRSH    R2,[R1, #+32]
-        CMP      R0,R2
+        LDRSH    R1,[R4, #+32]
+        CMP      R0,R1
         BNE.N    ??cbBindWin_3
 //   55 				{
 //   56 					if(cloud_para.state == 0x12)
@@ -246,15 +244,27 @@ _Z9cbBindWinP10WM_MESSAGE:
         BNE.N    ??cbBindWin_1
 //   57 					{			
 //   58 						Clear_Bind();
-          CFI FunCall Clear_Bind
-        BL       Clear_Bind
+        LDR.W    R0,??DataTable7_3
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+4]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbBindWin_4
+        LDRSH    R0,[R4, #+4]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //   59 						draw_dialog(DIALOG_TYPE_UNBIND);
-        MOVS     R0,#+8
-        POP      {R1,LR}
+??cbBindWin_4:
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R0,#+8
           CFI FunCall draw_dialog
         B.W      draw_dialog
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //   60 					}
@@ -262,19 +272,31 @@ _Z9cbBindWinP10WM_MESSAGE:
 //   62 				}
 //   63 				else if(pMsg->hWinSrc == buttonRet.btnHandle)
 ??cbBindWin_3:
-        LDRSH    R1,[R1, #+8]
+        LDRSH    R1,[R4, #+8]
         CMP      R0,R1
         BNE.N    ??cbBindWin_1
 //   64 				{
 //   65 					Clear_Bind();
-          CFI FunCall Clear_Bind
-        BL       Clear_Bind
+        LDR.N    R0,??DataTable7_3
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+4]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbBindWin_5
+        LDRSH    R0,[R4, #+4]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //   66 					draw_return_ui();
-        POP      {R0,LR}
+??cbBindWin_5:
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall draw_return_ui
         B.W      draw_return_ui
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //   67 					
@@ -286,17 +308,19 @@ _Z9cbBindWinP10WM_MESSAGE:
 //   73 		default:
 //   74 			WM_DefaultProc(pMsg);
 ??cbBindWin_2:
-        POP      {R1,LR}
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall WM_DefaultProc
         B.W      WM_DefaultProc
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //   75 		}
 //   76 	}
 ??cbBindWin_1:
-        POP      {R0,PC}          ;; return
+        POP      {R4,PC}          ;; return
           CFI EndBlock cfiBlock0
 //   77 
 
@@ -312,13 +336,13 @@ cloud_unbind:
           CFI CFA R13+8
 //   80 	package_to_wifi(WIFI_CLOUD_UNBIND, (char *)0, 0);
         MOVS     R2,#+0
-        MOV      R1,R2
+        MOVS     R1,#+0
         MOVS     R0,#+5
           CFI FunCall _Z15package_to_wifi13WIFI_RET_TYPEPci
         BL       _Z15package_to_wifi13WIFI_RET_TYPEPci
 //   81 	unbinding_flag = 1;
-        MOVS     R0,#+1
         LDR.N    R1,??DataTable7_1
+        MOVS     R0,#+1
         STRB     R0,[R1, #+0]
 //   82 }
         POP      {R0,PC}          ;; return
@@ -341,21 +365,23 @@ cloud_unbind:
 //   93 void DISPLAY_RENCODE_TO_TFT(u8 *qrcode_data)
 //   94 {
 _Z22DISPLAY_RENCODE_TO_TFTPh:
-        PUSH     {R3-R7,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
 //   95 	u8 i,j;
 //   96 	u16 x,y,p;
 //   97 
 //   98 	if(id_mark ==0)
         LDR.N    R4,??DataTable7_1
         LDRB     R1,[R4, #+1]
-        CMP      R1,#+0
-        BNE.N    ??DISPLAY_RENCODE_TO_TFT_0
+        CBNZ.N   R1,??DISPLAY_RENCODE_TO_TFT_0
 //   99 	{
 //  100 		EncodeData((char *)qrcode_data);
           CFI FunCall EncodeData
@@ -393,7 +419,7 @@ _Z22DISPLAY_RENCODE_TO_TFTPh:
         BL       GUI_SetColor
 //  113 	
 //  114 	if(m_nSymbleSize*2>QRCODE_WIDTH)	
-        LDR.N    R4,??DataTable7_3
+        LDR.N    R4,??DataTable7_4
         LDR      R0,[R4, #+0]
         LSLS     R1,R0,#+1
         CMP      R1,#+161
@@ -404,23 +430,20 @@ _Z22DISPLAY_RENCODE_TO_TFTPh:
 //  118 	
 //  119 	for(i=0;i<40;i++)
         MOVS     R1,#+0
-        B.N      ??DISPLAY_RENCODE_TO_TFT_2
-??DISPLAY_RENCODE_TO_TFT_3:
-        ADDS     R1,R1,#+1
-        UXTB     R1,R1
-??DISPLAY_RENCODE_TO_TFT_2:
-        CMP      R1,#+40
-        BGE.N    ??DISPLAY_RENCODE_TO_TFT_4
 //  120 	{
 //  121 		if((m_nSymbleSize*i*2) > QRCODE_WIDTH)	break;
+??DISPLAY_RENCODE_TO_TFT_2:
         MUL      R2,R1,R0
         LSLS     R2,R2,#+1
         CMP      R2,#+161
-        BLT.N    ??DISPLAY_RENCODE_TO_TFT_3
+        ITTT     LT 
 //  122 	}
+        ADDLT    R1,R1,#+1
+        UXTBLT   R1,R1
+        CMPLT    R1,#+40
+        BLT.N    ??DISPLAY_RENCODE_TO_TFT_2
 //  123 	
 //  124 	p=(i-1)*2;//???
-??DISPLAY_RENCODE_TO_TFT_4:
         SUBS     R0,R1,#+1
         LSLS     R5,R0,#+1
         UXTH     R5,R5
@@ -431,55 +454,57 @@ _Z22DISPLAY_RENCODE_TO_TFTPh:
 //  129 	
 //  130 	for(i=0;i<m_nSymbleSize;i++)
         MOVS     R6,#+0
-        B.N      ??DISPLAY_RENCODE_TO_TFT_5
+        B.N      ??DISPLAY_RENCODE_TO_TFT_3
 //  131 	{
 //  132 		for(j=0;j<m_nSymbleSize;j++)
 //  133 		{
 //  134 			//USART1_SendData(m_byModuleData[j][i]);
 //  135 			if(m_byModuleData[i][j]==1)
-??DISPLAY_RENCODE_TO_TFT_6:
-        MOVS     R0,#+21
-        LDR.N    R1,??DataTable7_4
-        MLA      R0,R0,R6,R1
-        LDRB     R0,[R7, R0]
+??DISPLAY_RENCODE_TO_TFT_4:
+        LDRB     R0,[R7, R8]
         CMP      R0,#+1
-        BNE.N    ??DISPLAY_RENCODE_TO_TFT_7
+        BNE.N    ??DISPLAY_RENCODE_TO_TFT_5
 //  136 				GUI_FillRect(x+p*i,y+p*j,x+p*(i+1)-1,y+p*(j+1)-1);
         ADDS     R0,R7,#+1
         MULS     R0,R0,R5
         ADD      R3,R0,#+109
-        ADDS     R0,R6,#+1
-        MULS     R0,R0,R5
-        ADD      R2,R0,#+89
         MUL      R0,R7,R5
         ADD      R1,R0,#+110
-        MUL      R0,R6,R5
-        ADDS     R0,R0,#+90
+        MOV      R2,R9
+        MOV      R0,R10
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  137 
 //  138 		}
-??DISPLAY_RENCODE_TO_TFT_7:
-        ADDS     R7,R7,#+1
-        UXTB     R7,R7
-??DISPLAY_RENCODE_TO_TFT_8:
+??DISPLAY_RENCODE_TO_TFT_5:
+        ADDS     R0,R7,#+1
+        UXTB     R7,R0
+??DISPLAY_RENCODE_TO_TFT_6:
         LDR      R0,[R4, #+0]
         CMP      R7,R0
-        BLT.N    ??DISPLAY_RENCODE_TO_TFT_6
+        BLT.N    ??DISPLAY_RENCODE_TO_TFT_4
         ADDS     R6,R6,#+1
         UXTB     R6,R6
-??DISPLAY_RENCODE_TO_TFT_5:
+??DISPLAY_RENCODE_TO_TFT_3:
         LDR      R0,[R4, #+0]
         CMP      R6,R0
         BGE.N    ??DISPLAY_RENCODE_TO_TFT_1
+        ADDS     R0,R6,#+1
+        MULS     R0,R0,R5
+        ADD      R9,R0,#+89
+        MUL      R0,R6,R5
+        ADD      R10,R0,#+90
+        MOVS     R0,#+21
+        LDR.N    R1,??DataTable7_5
         MOVS     R7,#+0
-        B.N      ??DISPLAY_RENCODE_TO_TFT_8
+        MLA      R8,R0,R6,R1
+        B.N      ??DISPLAY_RENCODE_TO_TFT_6
 //  139 			
 //  140 	}
 //  141 	
 //  142 }
 ??DISPLAY_RENCODE_TO_TFT_1:
-        POP      {R0,R4-R7,PC}    ;; return
+        POP      {R4-R10,PC}      ;; return
           CFI EndBlock cfiBlock2
 //  143 
 //  144 
@@ -493,15 +518,12 @@ _Z22DISPLAY_RENCODE_TO_TFTPh:
 //  146 void draw_bind()
 //  147 {
 draw_bind:
-        PUSH     {R4-R7,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+20
-        SUB      SP,SP,#+20
-          CFI CFA R13+40
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
 //  148 		
 //  149 //	int titleHeight = 30;
 //  150 
@@ -512,8 +534,10 @@ draw_bind:
 //  155 	int i;
 //  156 
 //  157 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != BIND_UI)
-        LDR.N    R0,??DataTable7_5
+        LDR.N    R0,??DataTable7_6
         LDRSB    R1,[R0, #+100]
+        SUB      SP,SP,#+24
+          CFI CFA R13+40
         LDRSB    R2,[R1, R0]
         CMP      R2,#+30
         BEQ.N    ??draw_bind_0
@@ -529,18 +553,17 @@ draw_bind:
 //  162 	disp_state = BIND_UI;
 ??draw_bind_0:
         MOVS     R0,#+30
-        LDR.N    R1,??DataTable7_6
-        STRB     R0,[R1, #+0]
+        LDR.N    R1,??DataTable7_7
 //  163 	//GUI_Clear();	
 //  164 	
 //  165 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R4,??DataTable7_7
-        LDR      R0,[R4, #+4]
+        LDR.N    R4,??DataTable7_3
+        STRB     R0,[R1, #+0]
+        LDR      R0,[R4, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  166 	GUI_SetColor(gCfgItems.title_color);
-        ADDS     R5,R4,#+4
-        LDR      R0,[R5, #+4]
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  167 	GUI_Clear();
@@ -560,7 +583,7 @@ draw_bind:
           CFI FunCall creat_title_text
         BL       creat_title_text
         MOVS     R2,#+0
-        MOV      R1,R2
+        MOVS     R1,#+0
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  179 	
@@ -580,18 +603,16 @@ draw_bind:
 //  193 	hBindWnd = WM_CreateWindow(BTN_X_PIXEL*3+INTERVAL_V*4 , titleHeight, BTN_X_PIXEL, imgHeight, WM_CF_SHOW, cbBindWin, 0);
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOV      R3,#+284
         LDR.N    R0,??DataTable7_8
         STR      R0,[SP, #+4]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOV      R3,#+284
-        MOVS     R2,#+117
         MOVS     R1,#+36
         MOVW     R0,#+359
           CFI FunCall WM_CreateWindow
         BL       WM_CreateWindow
-        LDR.N    R6,??DataTable7_1
-        STRH     R0,[R6, #+4]
 //  194 	
 //  195 	//if(gCfgItems.cloud_enable)
 //  196 	
@@ -603,7 +624,9 @@ draw_bind:
         MOVS     R1,#+14
         STR      R1,[SP, #+8]
         MOVS     R1,#+2
+        LDR.N    R5,??DataTable7_1
         STR      R1,[SP, #+4]
+        STRH     R0,[R5, #+4]
         STR      R0,[SP, #+0]
         MOVS     R3,#+25
         MOVS     R2,#+117
@@ -611,7 +634,7 @@ draw_bind:
         MOVS     R0,#+0
           CFI FunCall TEXT_CreateEx
         BL       TEXT_CreateEx
-        STRH     R0,[R6, #+6]
+        STRH     R0,[R5, #+6]
 //  198 
 //  199 	//TEXT_SetTextAlign(bind_or_not, GUI_TA_VCENTER | GUI_TA_HCENTER);
 //  200 	
@@ -619,38 +642,38 @@ draw_bind:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+4]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, #+4]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+0
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+8]
+        STRH     R0,[R5, #+8]
 //  202 
 //  203 
 //  204 	buttonReleaseBind.btnHandle = BUTTON_CreateEx(0 , 50, BTN_X_PIXEL, 40, hBindWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+40
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+4]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+40
-        MOVS     R2,#+117
         MOVS     R1,#+50
+        LDRSH    R0,[R5, #+4]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+0
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+32]
+        STRH     R0,[R5, #+32]
 //  205 /*
 //  206 	if(gCfgItems.language == LANG_ENGLISH)
 //  207 	{		
@@ -678,91 +701,70 @@ draw_bind:
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  227 	BUTTON_SetTextAlign(buttonReleaseBind.btnHandle, GUI_TA_VCENTER | GUI_TA_HCENTER);		
+        LDRSH    R0,[R5, #+32]
         MOVS     R1,#+14
-        LDRSH    R0,[R6, #+32]
           CFI FunCall BUTTON_SetTextAlign
         BL       BUTTON_SetTextAlign
 //  228 	BUTTON_SetBkColor(buttonReleaseBind.btnHandle, BUTTON_CI_UNPRESSED, GUI_BLUE);
+        LDRSH    R0,[R5, #+32]
         MOV      R2,#+16711680
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+32]
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  229 	BUTTON_SetBkColor(buttonReleaseBind.btnHandle, BUTTON_CI_PRESSED, GUI_LIGHTBLUE);
+        LDRSH    R0,[R5, #+32]
         LDR.N    R2,??DataTable7_9  ;; 0xff8080
         MOVS     R1,#+1
-        LDRSH    R0,[R6, #+32]
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  230 	
 //  231 	
 //  232 	
 //  233 	DISPLAY_RENCODE_TO_TFT((u8 *)cloud_para.id);
-        LDR.N    R7,??DataTable7_2
-        ADD      R0,R7,#+104
+        LDR.N    R6,??DataTable7_2
+        ADD      R0,R6,#+104
           CFI FunCall _Z22DISPLAY_RENCODE_TO_TFTPh
         BL       _Z22DISPLAY_RENCODE_TO_TFTPh
 //  234 	GUI_DispStringAt((const char *)cloud_para.id, 45, 275);
         MOVW     R2,#+275
         MOVS     R1,#+45
-        ADD      R0,R7,#+104
+        ADD      R0,R6,#+104
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  235 	
 //  236 #if VERSION_WITH_PIC	
 //  237 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R5, #+8]
         ADR.W    R1,`?<Constant "bmp_return.bin">`
-        LDRSH    R0,[R6, #+8]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  238 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
         LDR.N    R0,??DataTable7_10
+        LDR.N    R2,??DataTable7_11
         LDRSB    R0,[R0, #+0]
         STR      R0,[SP, #+0]
-        LDR.N    R0,??DataTable7_11
-        LDRSB    R3,[R0, #+0]
-        LDR.N    R2,??DataTable7_12
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+8]
+        LDR.N    R0,??DataTable7_12
+        LDRSB    R3,[R0, #+0]
+        LDRSH    R0,[R5, #+8]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  239 	
-//  240 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+8]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  241 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);	
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+8]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  242 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+8]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  243 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);	
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+8]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
+//  240 	//BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+//  241 	//BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);	
+//  242 	//BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+//  243 	//BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);	
 //  244 
 //  245 #endif
 //  246 	if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_bind_1
+        LDRB     R0,[R4, #+463]
+        CBZ.N    R0,??draw_bind_1
 //  247 	{
 //  248 		BUTTON_SetText(buttonRet.btnHandle,common_menu.text_back);
         LDR.N    R0,??DataTable7_13
         LDR      R1,[R0, #+0]
-        LDRSH    R0,[R6, #+8]
+        LDRSH    R0,[R5, #+8]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
 //  249 	}
@@ -771,13 +773,13 @@ draw_bind:
 ??draw_bind_1:
         LDR.N    R0,??DataTable7_14
         LDR      R1,[R0, #+4]
-        LDRSH    R0,[R6, #+32]
+        LDRSH    R0,[R5, #+32]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
 //  252 	disp_bind_state();
-        ADD      SP,SP,#+20
-          CFI CFA R13+20
-        POP      {R4-R7,LR}
+        ADD      SP,SP,#+24
+          CFI CFA R13+16
+        POP      {R4-R6,LR}
           CFI EndBlock cfiBlock3
         REQUIRE disp_bind_state
         ;; // Fall through to label disp_bind_state
@@ -800,167 +802,145 @@ disp_bind_state:
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-//  261 	TEXT_SetTextColor(bind_or_not, gCfgItems.state_text_color);
+//  261 	TEXT_SetTextColor(bind_or_not, gCfgItems.title_color);
         LDR.N    R4,??DataTable7_1
-        LDR.N    R5,??DataTable7_7
-        LDR      R1,[R5, #+16]
+        LDR.N    R5,??DataTable7_3
         LDRSH    R0,[R4, #+6]
+        LDR      R1,[R5, #+24]
           CFI FunCall TEXT_SetTextColor
         BL       TEXT_SetTextColor
-//  262 	TEXT_SetBkColor(bind_or_not,  gCfgItems.state_background_color);
-        LDR      R1,[R5, #+12]
+//  262 	TEXT_SetBkColor(bind_or_not,  gCfgItems.background_color);
+        LDR      R1,[R5, #+20]
         LDRSH    R0,[R4, #+6]
           CFI FunCall TEXT_SetBkColor
         BL       TEXT_SetBkColor
 //  263 
-//  264 	
-//  265 	if(cloud_para.state != 0x12)
+//  264 	if(cloud_para.state != 0x12)
         LDR.N    R5,??DataTable7_2
         LDRSB    R0,[R5, #+0]
         CMP      R0,#+18
         BEQ.N    ??disp_bind_state_0
-//  266 	{
-//  267 		unbinding_flag = 0;
+//  265 	{
+//  266 		unbinding_flag = 0;
         MOVS     R0,#+0
         STRB     R0,[R4, #+0]
-//  268 	}
-//  269 	if(unbinding_flag)
-??disp_bind_state_0:
+??disp_bind_state_1:
+        LDRSB    R1,[R5, #+0]
         LDRSH    R0,[R4, #+6]
-        LDR.N    R1,??DataTable7_14
-        LDRB     R2,[R4, #+0]
-        CMP      R2,#+0
+        LDR.N    R2,??DataTable7_14
+        CMP      R1,#+16
+        BNE.N    ??disp_bind_state_2
+//  267 	}
+//  268 	if(unbinding_flag)
+//  269 	{
+//  270 		TEXT_SetText(bind_or_not, cloud_menu.unbinding);
+//  271 		WM_DisableWindow(buttonReleaseBind.btnHandle);
+//  272 	}
+//  273 	else
+//  274 	{
+//  275 		if(cloud_para.state == 0x10)
+//  276 		{
+//  277 			TEXT_SetText(bind_or_not,cloud_menu.disconnected);
+        LDR      R1,[R2, #+32]
+        B.N      ??disp_bind_state_3
+//  278 		}
+??disp_bind_state_0:
+        LDRB     R0,[R4, #+0]
+        CMP      R0,#+0
         BEQ.N    ??disp_bind_state_1
-//  270 	{
-//  271 		TEXT_SetText(bind_or_not, cloud_menu.unbinding);
-        LDR      R1,[R1, #+8]
+        LDR.N    R0,??DataTable7_14
+        LDR      R1,[R0, #+8]
+        LDRSH    R0,[R4, #+6]
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
-//  272 		WM_DisableWindow(buttonReleaseBind.btnHandle);
         LDRSH    R0,[R4, #+32]
           CFI FunCall WM_DisableWindow
         BL       WM_DisableWindow
-        B.N      ??disp_bind_state_2
-//  273 	}
-??disp_bind_state_1:
-        LDRSB    R2,[R5, #+0]
-        CMP      R2,#+16
-        BNE.N    ??disp_bind_state_3
-//  274 	else
-//  275 	{
-//  276 		if(cloud_para.state == 0x10)
-//  277 		{
-//  278 			TEXT_SetText(bind_or_not,cloud_menu.disconnected);
-        LDR      R1,[R1, #+32]
-          CFI FunCall TEXT_SetText
-        BL       TEXT_SetText
-        B.N      ??disp_bind_state_2
-//  279 		}
-//  280 		else if(cloud_para.state == 0x11)
-??disp_bind_state_3:
-        CMP      R2,#+17
-        BNE.N    ??disp_bind_state_4
-//  281 		{
-//  282 			TEXT_SetText(bind_or_not, cloud_menu.unbinded);
-        LDR      R1,[R1, #+12]
-          CFI FunCall TEXT_SetText
-        BL       TEXT_SetText
-        B.N      ??disp_bind_state_2
-//  283 		}
-//  284 		else if(cloud_para.state == 0x12)
-??disp_bind_state_4:
-        CMP      R2,#+18
-        BNE.N    ??disp_bind_state_5
-//  285 		{
-//  286 			TEXT_SetText(bind_or_not, cloud_menu.binded);
-        LDR      R1,[R1, #+24]
-          CFI FunCall TEXT_SetText
-        BL       TEXT_SetText
-        B.N      ??disp_bind_state_2
-//  287 		}
-//  288 		else
-//  289 		{
-//  290 			TEXT_SetText(bind_or_not, cloud_menu.disable);
-??disp_bind_state_5:
-        LDR      R1,[R1, #+28]
-          CFI FunCall TEXT_SetText
-        BL       TEXT_SetText
-//  291 		}
-//  292 	}
-//  293 
-//  294 	
-//  295 	if((cloud_para.state == 0x12) && (unbinding_flag == 0))
+        B.N      ??disp_bind_state_4
+//  279 		else if(cloud_para.state == 0x11)
 ??disp_bind_state_2:
+        CMP      R1,#+17
+        IT       EQ 
+//  280 		{
+//  281 			TEXT_SetText(bind_or_not, cloud_menu.unbinded);
+        LDREQ    R1,[R2, #+12]
+        BEQ.N    ??disp_bind_state_3
+//  282 		}
+//  283 		else if(cloud_para.state == 0x12)
+        CMP      R1,#+18
+        ITE      EQ 
+//  284 		{
+//  285 			TEXT_SetText(bind_or_not, cloud_menu.binded);
+        LDREQ    R1,[R2, #+24]
+//  286 		}
+//  287 		else
+//  288 		{
+//  289 			TEXT_SetText(bind_or_not, cloud_menu.disable);
+        LDRNE    R1,[R2, #+28]
+??disp_bind_state_3:
+          CFI FunCall TEXT_SetText
+        BL       TEXT_SetText
+//  290 		}
+//  291 	}
+//  292 
+//  293 	
+//  294 	if((cloud_para.state == 0x12) && (unbinding_flag == 0))
+??disp_bind_state_4:
         LDRSB    R0,[R5, #+0]
         CMP      R0,#+18
-        BNE.N    ??disp_bind_state_6
-        LDRB     R0,[R4, #+0]
-        CMP      R0,#+0
-        BNE.N    ??disp_bind_state_6
-//  296 	{
-//  297 		WM_EnableWindow(buttonReleaseBind.btnHandle);
+        ITT      EQ 
+        LDRBEQ   R0,[R4, #+0]
+        CMPEQ    R0,#+0
+        BNE.N    ??disp_bind_state_5
+//  295 	{
+//  296 		WM_EnableWindow(buttonReleaseBind.btnHandle);
         LDRSH    R0,[R4, #+32]
           CFI FunCall WM_EnableWindow
         BL       WM_EnableWindow
-        B.N      ??disp_bind_state_7
-//  298 		
-//  299 	}
-//  300 	else// if(WM_IsWindow(buttonReleaseBind))
-//  301 	{
-//  302 		//BUTTON_Delete(buttonReleaseBind);
-//  303 		WM_DisableWindow(buttonReleaseBind.btnHandle);
-??disp_bind_state_6:
+        B.N      ??disp_bind_state_6
+//  297 		
+//  298 	}
+//  299 	else// if(WM_IsWindow(buttonReleaseBind))
+//  300 	{
+//  301 		//BUTTON_Delete(buttonReleaseBind);
+//  302 		WM_DisableWindow(buttonReleaseBind.btnHandle);
+??disp_bind_state_5:
         LDRSH    R0,[R4, #+32]
           CFI FunCall WM_DisableWindow
         BL       WM_DisableWindow
-//  304 	}
+//  303 	}
+//  304 	
 //  305 	
-//  306 	
-//  307 
-//  308 	if(cloud_para.id[0] != 0)
-??disp_bind_state_7:
+//  306 
+//  307 	if(cloud_para.id[0] != 0)
+??disp_bind_state_6:
         LDRSB    R0,[R5, #+104]
-        CMP      R0,#+0
-        BEQ.N    ??disp_bind_state_8
-//  309 	{		
-//  310 		
-//  311 		if(id_mark == 0)
+        CBZ.N    R0,??disp_bind_state_7
+//  308 	{		
+//  309 		
+//  310 		if(id_mark == 0)
         LDRB     R0,[R4, #+1]
-        CMP      R0,#+0
-        BNE.N    ??disp_bind_state_9
-//  312 		{
-//  313 			DISPLAY_RENCODE_TO_TFT((u8 *)cloud_para.id);
+        CBNZ.N   R0,??disp_bind_state_8
+//  311 		{
+//  312 			DISPLAY_RENCODE_TO_TFT((u8 *)cloud_para.id);
         ADD      R0,R5,#+104
           CFI FunCall _Z22DISPLAY_RENCODE_TO_TFTPh
         BL       _Z22DISPLAY_RENCODE_TO_TFTPh
-//  314 			GUI_DispStringAt((const char *)cloud_para.id, 10, 200);
-        MOVS     R2,#+200
-        MOVS     R1,#+10
+//  313 			GUI_DispStringAt((const char *)cloud_para.id, 10, 200);
         ADD      R0,R5,#+104
-        POP      {R3-R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall GUI_DispStringAt
-        B.W      GUI_DispStringAt
-          CFI R4 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
-//  315 		}
-//  316 
-//  317 		
-//  318 	}
-//  319 	else
-//  320 		id_mark = 0;
-??disp_bind_state_8:
-        MOVS     R0,#+0
+        B.N      ?Subroutine0
+//  314 		}
+//  315 
+//  316 		
+//  317 	}
+//  318 	else
+//  319 		id_mark = 0;
+??disp_bind_state_7:
         STRB     R0,[R4, #+1]
+//  320 	
 //  321 	
-//  322 	
-//  323 }
-??disp_bind_state_9:
+//  322 }
+??disp_bind_state_8:
         POP      {R0,R4,R5,PC}    ;; return
           CFI EndBlock cfiBlock4
 
@@ -974,112 +954,116 @@ unbinding_flag:
         DS8 2
         DS8 24
         DS8 24
-//  324 
-//  325 static char last_cloud_state = 0;
+//  323 
+//  324 static char last_cloud_state = 0;
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock5 Using cfiCommon0
           CFI Function refresh_bind_ui
         THUMB
-//  326 void refresh_bind_ui()
-//  327 {
+//  325 void refresh_bind_ui()
+//  326 {
 refresh_bind_ui:
         PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-//  328 	if((last_cloud_state != cloud_para.state) || unbinding_flag)
+//  327 	if((last_cloud_state != cloud_para.state) || unbinding_flag)
         LDR.N    R4,??DataTable7_2
         LDR.N    R5,??DataTable7_1
-        LDRSB    R0,[R5, #+2]
         LDRSB    R1,[R4, #+0]
+        LDRSB    R0,[R5, #+2]
         CMP      R0,R1
-        BNE.N    ??refresh_bind_ui_0
-        LDRB     R0,[R5, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??refresh_bind_ui_1
-//  329 	{
-//  330 		disp_bind_state();
-??refresh_bind_ui_0:
+        ITT      EQ 
+        LDRBEQ   R0,[R5, #+0]
+        CMPEQ    R0,#+0
+        BEQ.N    ??refresh_bind_ui_0
+//  328 	{
+//  329 		disp_bind_state();
           CFI FunCall disp_bind_state
         BL       disp_bind_state
-//  331 		last_cloud_state = cloud_para.state;
+//  330 		last_cloud_state = cloud_para.state;
         LDRB     R0,[R4, #+0]
         STRB     R0,[R5, #+2]
-//  332 	}
-//  333 	if(cloud_para.id[0] != 0)
-??refresh_bind_ui_1:
+//  331 	}
+//  332 	if(cloud_para.id[0] != 0)
+??refresh_bind_ui_0:
         LDRSB    R0,[R4, #+104]
-        CMP      R0,#+0
-        BEQ.N    ??refresh_bind_ui_2
-//  334 	{		
-//  335 		
-//  336 		if(id_mark == 0)
+        CBZ.N    R0,??refresh_bind_ui_1
+//  333 	{		
+//  334 		
+//  335 		if(id_mark == 0)
         LDRB     R0,[R5, #+1]
-        CMP      R0,#+0
-        BNE.N    ??refresh_bind_ui_3
-//  337 		{
-//  338 			DISPLAY_RENCODE_TO_TFT((u8 *)cloud_para.id);
+        CBNZ.N   R0,??refresh_bind_ui_2
+//  336 		{
+//  337 			DISPLAY_RENCODE_TO_TFT((u8 *)cloud_para.id);
         ADD      R0,R4,#+104
           CFI FunCall _Z22DISPLAY_RENCODE_TO_TFTPh
         BL       _Z22DISPLAY_RENCODE_TO_TFTPh
-//  339 			GUI_DispStringAt((const char *)cloud_para.id, 10, 200);
-        MOVS     R2,#+200
-        MOVS     R1,#+10
+//  338 			GUI_DispStringAt((const char *)cloud_para.id, 10, 200);
         ADD      R0,R4,#+104
-        POP      {R3-R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall GUI_DispStringAt
-        B.W      GUI_DispStringAt
-          CFI R4 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
-//  340 		}
-//  341 
-//  342 		
-//  343 	}
-//  344 	else
-//  345 		id_mark = 0;
-??refresh_bind_ui_2:
-        MOVS     R0,#+0
+        B.N      ?Subroutine0
+//  339 		}
+//  340 
+//  341 		
+//  342 	}
+//  343 	else
+//  344 		id_mark = 0;
+??refresh_bind_ui_1:
         STRB     R0,[R5, #+1]
-//  346 }
-??refresh_bind_ui_3:
+//  345 }
+??refresh_bind_ui_2:
         POP      {R0,R4,R5,PC}    ;; return
           CFI EndBlock cfiBlock5
-//  347 
-//  348 
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock6 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+16
+          CFI R4 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
+        POP      {R3-R5,LR}
+          CFI CFA R13+0
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R14 SameValue
+        MOVS     R2,#+200
+        MOVS     R1,#+10
+          CFI FunCall disp_bind_state GUI_DispStringAt
+          CFI FunCall refresh_bind_ui GUI_DispStringAt
+        B.W      GUI_DispStringAt
+          CFI EndBlock cfiBlock6
+//  346 
+//  347 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function Clear_Bind
         THUMB
-//  349 void Clear_Bind()
-//  350 {
+//  348 void Clear_Bind()
+//  349 {
 Clear_Bind:
         PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-//  351 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R0,??DataTable7_7
-        LDR      R0,[R0, #+4]
+//  350 	GUI_SetBkColor(gCfgItems.background_color);
+        LDR.N    R0,??DataTable7_3
+        LDR      R0,[R0, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
-//  352 	if(WM_IsWindow(hBindWnd))
+//  351 	if(WM_IsWindow(hBindWnd))
         LDR.N    R4,??DataTable7_1
         LDRSH    R0,[R4, #+4]
           CFI FunCall WM_IsWindow
         BL       WM_IsWindow
-        CMP      R0,#+0
-        BEQ.N    ??Clear_Bind_0
-//  353 	{
-//  354 		WM_DeleteWindow(hBindWnd);
+        CBZ.N    R0,??Clear_Bind_0
+//  352 	{
+//  353 		WM_DeleteWindow(hBindWnd);
         LDRSH    R0,[R4, #+4]
         POP      {R4,LR}
           CFI R4 SameValue
@@ -1090,14 +1074,14 @@ Clear_Bind:
           CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
-//  355 	//	GUI_Exec();
-//  356 	}
-//  357 	
-//  358 	//GUI_Clear();
-//  359 }
+//  354 	//	GUI_Exec();
+//  355 	}
+//  356 	
+//  357 	//GUI_Clear();
+//  358 }
 ??Clear_Bind_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock7
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1121,31 +1105,31 @@ Clear_Bind:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable7_3:
-        DC32     m_nSymbleSize
+        DC32     gCfgItems
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable7_4:
-        DC32     m_byModuleData
+        DC32     m_nSymbleSize
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable7_5:
-        DC32     disp_state_stack
+        DC32     m_byModuleData
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable7_6:
-        DC32     disp_state
+        DC32     disp_state_stack
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable7_7:
-        DC32     gCfgItems
+        DC32     disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1169,13 +1153,13 @@ Clear_Bind:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable7_11:
-        DC32     BMP_PIC_X
+        DC32     bmp_struct
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable7_12:
-        DC32     bmp_struct
+        DC32     BMP_PIC_X
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1213,15 +1197,15 @@ Clear_Bind:
         DC8 ""
 
         END
+//  359 
 //  360 
 //  361 
-//  362 
 // 
 //    56 bytes in section .bss
 //     1 byte  in section .rodata
-// 1 066 bytes in section .text
+// 1 038 bytes in section .text
 // 
-// 1 066 bytes of CODE  memory
+// 1 038 bytes of CODE  memory
 //     1 byte  of CONST memory
 //    56 bytes of DATA  memory
 //

@@ -261,7 +261,9 @@ void disp_language_init()
 	move_menu.y_dec = AXIS_Y_DEC_TEXT;
 	move_menu.z_add = AXIS_Z_ADD_TEXT;
 	move_menu.z_dec = AXIS_Z_DEC_TEXT;
-	
+
+	move_menu.step_001mm = TEXT_001MM;
+	move_menu.step_005mm = TEXT_005MM;
 	move_menu.step_01mm = TEXT_01MM;
 	move_menu.step_1mm = TEXT_1MM;
 	move_menu.step_10mm = TEXT_10MM;
@@ -354,6 +356,8 @@ void disp_language_init()
       
 
     machine_setting_disp();
+
+	operation_menu.babystep = TEXT_BABY_STEP_EN;
     
 	switch(gCfgItems.language)
 	{

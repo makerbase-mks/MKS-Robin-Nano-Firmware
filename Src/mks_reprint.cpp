@@ -2198,3 +2198,16 @@ uint16_t rgb888_2_rgb565(int32_t  color_rgb888)
 	return color_rgb565;
 }
 
+void excute_m290(char *g_command)
+{
+	memset(mksReprint.command_queue,0,MAX_CMD_SIZE);
+	strcpy(mksReprint.command_queue,g_command);
+	parser.parse(mksReprint.command_queue);
+	gcode_M290();
+}
+
+void excute_m500()
+{
+	gcode_M500();
+}
+

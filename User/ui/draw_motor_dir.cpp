@@ -1,6 +1,7 @@
 #include "gui.h"
 #include "button.h"
 #include "draw_ui.h"
+#include "stepper.h"
 
 #ifndef GUI_FLASH
 #define GUI_FLASH
@@ -97,6 +98,10 @@ static void cbMotorDirWin(WM_MESSAGE * pMsg) {
 						if(gCfgItems.multiple_language != 0)
 							BUTTON_SetText(XMotorDir.btnHandle, machine_menu.Invert_1);//反向
 					}
+					if((stepper.last_direction_bits & (1<<X_AXIS)) == 0)
+						stepper.last_direction_bits = stepper.last_direction_bits |(1<<X_AXIS);
+					else
+						stepper.last_direction_bits = stepper.last_direction_bits & (~(1<<X_AXIS));
     				epr_write_data(EPR_INVERT_X_DIR, &mksCfg.invert_x_dir,1);
     			}
     			else if(pMsg->hWinSrc == YMotorDir.btnHandle)
@@ -115,6 +120,10 @@ static void cbMotorDirWin(WM_MESSAGE * pMsg) {
 						if(gCfgItems.multiple_language != 0)
 							BUTTON_SetText(YMotorDir.btnHandle, machine_menu.Invert_1);//反向
 					}
+					if((stepper.last_direction_bits & (1<<Y_AXIS)) == 0)
+						stepper.last_direction_bits = stepper.last_direction_bits |(1<<Y_AXIS);
+					else
+						stepper.last_direction_bits = stepper.last_direction_bits & (~(1<<Y_AXIS));
     				epr_write_data(EPR_INVERT_Y_DIR, &mksCfg.invert_y_dir,1);
 
     				
@@ -135,6 +144,10 @@ static void cbMotorDirWin(WM_MESSAGE * pMsg) {
 						if(gCfgItems.multiple_language != 0)
 							BUTTON_SetText(ZMotorDir.btnHandle, machine_menu.Invert_1);//反向
 					}
+					if((stepper.last_direction_bits & (1<<Z_AXIS)) == 0)
+						stepper.last_direction_bits = stepper.last_direction_bits |(1<<Z_AXIS);
+					else
+						stepper.last_direction_bits = stepper.last_direction_bits & (~(1<<Z_AXIS));
     				epr_write_data(EPR_INVERT_Z_DIR, &mksCfg.invert_z_dir,1);
 
     		
@@ -155,6 +168,10 @@ static void cbMotorDirWin(WM_MESSAGE * pMsg) {
 						if(gCfgItems.multiple_language != 0)
 							BUTTON_SetText(E0MotorDir.btnHandle, machine_menu.Invert_1);//反向
 					}
+					if((stepper.last_direction_bits & (1<<E_AXIS)) == 0)
+						stepper.last_direction_bits = stepper.last_direction_bits |(1<<E_AXIS);
+					else
+						stepper.last_direction_bits = stepper.last_direction_bits & (~(1<<E_AXIS));
     				epr_write_data(EPR_INVERT_E0_DIR, &mksCfg.invert_e0_dir,1);
 
 
@@ -176,6 +193,10 @@ static void cbMotorDirWin(WM_MESSAGE * pMsg) {
 						if(gCfgItems.multiple_language != 0)
 							BUTTON_SetText(E1MotorDir.btnHandle, machine_menu.Invert_1);//反向
 					}
+					if((stepper.last_direction_bits & (1<<E_AXIS)) == 0)
+						stepper.last_direction_bits = stepper.last_direction_bits |(1<<E_AXIS);
+					else
+						stepper.last_direction_bits = stepper.last_direction_bits & (~(1<<E_AXIS));
     				epr_write_data(EPR_INVERT_E1_DIR, &mksCfg.invert_e1_dir,1);
 
 

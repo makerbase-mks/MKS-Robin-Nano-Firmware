@@ -222,14 +222,14 @@
    * DELTA should ignore Z_SAFE_HOMING and SLOWDOWN
    */
   #if 1//ENABLED(DELTA)
-    #undef Z_SAFE_HOMING
+    //#undef Z_SAFE_HOMING
     #undef SLOWDOWN
   #endif
 
   /**
    * Safe Homing Options
    */
-  #if ENABLED(Z_SAFE_HOMING)
+  #if 0//ENABLED(Z_SAFE_HOMING)
     #ifndef Z_SAFE_HOMING_X_POINT
       #define Z_SAFE_HOMING_X_POINT X_CENTER
     #endif

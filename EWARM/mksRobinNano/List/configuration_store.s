@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:03
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:23:58
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\configuration_store.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\configuration_store.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\configuration_store.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\configuration_store.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\configuration_store.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\configuration_store.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -165,8 +162,6 @@
         EXTERN hotend_offset
         EXTERN malloc
         EXTERN memcmp
-        EXTERN memcpy
-        EXTERN memset
         EXTERN mksCfg
         EXTERN strncmp
         EXTERN z_endstop_adj
@@ -175,8 +170,6 @@
 
         PUBLIC _Z14serialprintPGMPKc
         PUBLIC _Z16ubl_invalid_sloti
-        PUBLIC _Z17serial_echopair_PPKct
-        PUBLIC _ZN11Temperature9updatePIDEv
         PUBLIC _ZN14MarlinSettings10store_meshEa
         PUBLIC _ZN14MarlinSettings10write_dataERiPKhtPt
         PUBLIC _ZN14MarlinSettings11postprocessEv
@@ -189,7 +182,6 @@
         PUBLIC _ZN14MarlinSettings6reportEb
         PUBLIC _ZN14MarlinSettings9load_meshEaPv
         PUBLIC _ZN14MarlinSettings9read_dataERiPhtPt
-        PUBLIC _ZN8Endstops15enable_globallyEb
         PUBLIC _ZTI5Print
         PUBLIC new_z_fade_height
         PUBLIC settings
@@ -221,7 +213,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\configuration_store.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\configuration_store.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -421,79 +413,40 @@ settings:
 //  193 
 //  194 #include "Marlin.h"
 
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _Z17serial_echopair_PPKct
-          CFI Block cfiBlock0 Using cfiCommon0
-          CFI Function _Z17serial_echopair_PPKct
-          CFI FunCall _Z17serial_echopair_PPKci
-        THUMB
-// __interwork __softfp void serial_echopair_P(char const *, uint16_t)
-_Z17serial_echopair_PPKct:
-        B.W      _Z17serial_echopair_PPKci
-          CFI EndBlock cfiBlock0
-
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _Z14serialprintPGMPKc
         THUMB
 // __interwork __softfp void serialprintPGM(char const *)
 _Z14serialprintPGMPKc:
-        PUSH     {R4,LR}
+        PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
         MOV      R4,R0
-        B.N      ??serialprintPGM_0
-??serialprintPGM_1:
+        LDR.N    R5,??serialprintPGM_0
+        B.N      ??serialprintPGM_1
+??serialprintPGM_2:
         UXTB     R1,R1
-        LDR.N    R0,??serialprintPGM_2
+        MOV      R0,R5
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-??serialprintPGM_0:
+??serialprintPGM_1:
         LDRSB    R1,[R4], #+1
         MOVS     R0,R1
-        BNE.N    ??serialprintPGM_1
-        POP      {R4,PC}          ;; return
-        DATA
-??serialprintPGM_2:
-        DC32     Serial3
-          CFI EndBlock cfiBlock1
-//  195 #include "language.h"
-//  196 #include "endstops.h"
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN8Endstops15enable_globallyEb
-          CFI Block cfiBlock2 Using cfiCommon0
-          CFI Function _ZN8Endstops15enable_globallyEb
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Endstops::enable_globally(bool)
-_ZN8Endstops15enable_globallyEb:
-        LDR.N    R1,??enable_globally_0
-        STRB     R0,[R1, #+0]
-        LDR.N    R1,??enable_globally_0+0x4
-        STRB     R0,[R1, #+0]
-        BX       LR               ;; return
+        BNE.N    ??serialprintPGM_2
+        POP      {R0,R4,R5,PC}    ;; return
         Nop      
         DATA
-??enable_globally_0:
-        DC32     _ZN8Endstops7enabledE
-        DC32     _ZN8Endstops16enabled_globallyE
-          CFI EndBlock cfiBlock2
+??serialprintPGM_0:
+        DC32     Serial3
+          CFI EndBlock cfiBlock0
+//  195 #include "language.h"
+//  196 #include "endstops.h"
 //  197 #include "planner.h"
 //  198 #include "temperature.h"
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN11Temperature9updatePIDEv
-          CFI Block cfiBlock3 Using cfiCommon0
-          CFI Function _ZN11Temperature9updatePIDEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Temperature::updatePID()
-_ZN11Temperature9updatePIDEv:
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock3
 //  199 //#include "ultralcd.h"
 //  200 #include "cardreader.h"
 //  201 #include "stepper.h"
@@ -525,7 +478,7 @@ _ZN11Temperature9updatePIDEv:
 //  227  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN14MarlinSettings11postprocessEv
         THUMB
 //  228 void MarlinSettings::postprocess() {
@@ -536,14 +489,14 @@ _ZN14MarlinSettings11postprocessEv:
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        SUB      SP,SP,#+16
-          CFI CFA R13+32
 //  229   const float oldpos[] = { current_position[X_AXIS], current_position[Y_AXIS], current_position[Z_AXIS] };
         LDR.W    R4,??DataTable98_1
         LDR      R0,[R4, #+0]
+        LDR      R1,[R4, #+4]
+        SUB      SP,SP,#+16
+          CFI CFA R13+32
         STR      R0,[SP, #+0]
         ADD      R0,SP,#+0
-        LDR      R1,[R4, #+4]
         STR      R1,[R0, #+4]
         LDR      R1,[R4, #+8]
         STR      R1,[R0, #+8]
@@ -558,29 +511,22 @@ _ZN14MarlinSettings11postprocessEv:
 //  236   //#if ENABLED(DELTA)
 //  237   if(MACHINETPYE == DELTA)
         LDR.W    R5,??DataTable98_2
-        ADD      R6,R5,#+52
-        LDRSH    R0,[R6, #+36]
+        ADDW     R6,R5,#+66
+        LDRSH    R0,[R6, #+22]
         CMP      R0,#+2
-        BNE.N    ??postprocess_0
+        IT       EQ 
 //  238     recalc_delta_settings();
           CFI FunCall _Z21recalc_delta_settingsv
-        BL       _Z21recalc_delta_settingsv
+        BLEQ     _Z21recalc_delta_settingsv
 //  239   //#endif
 //  240 
 //  241   //#if ENABLED(PIDTEMP)
 //  242   if(PIDTEMP){
-??postprocess_0:
-        LDRB     R0,[R5, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??postprocess_1
 //  243     thermalManager.updatePID();
-          CFI FunCall _ZN11Temperature9updatePIDEv
-        BL       _ZN11Temperature9updatePIDEv
 //  244   }//#endif
 //  245 
 //  246   #if 1//DISABLED(NO_VOLUMETRICS)
 //  247     planner.calculate_volumetric_multipliers();
-??postprocess_1:
           CFI FunCall _ZN7Planner32calculate_volumetric_multipliersEv
         BL       _ZN7Planner32calculate_volumetric_multipliersEv
 //  248   #else
@@ -591,32 +537,30 @@ _ZN14MarlinSettings11postprocessEv:
 //  253   #if HAS_HOME_OFFSET || ENABLED(DUAL_X_CARRIAGE)
 //  254     // Software endstops depend on home_offset
 //  255     LOOP_XYZ(i) update_software_endstops((AxisEnum)i);
-        MOVS     R5,#+0
-        B.N      ??postprocess_2
-??postprocess_3:
-        MOV      R0,R5
-        SXTB     R0,R0
+        MOVS     R0,#+0
           CFI FunCall _Z24update_software_endstops8AxisEnum
         BL       _Z24update_software_endstops8AxisEnum
-        ADDS     R5,R5,#+1
-??postprocess_2:
-        CMP      R5,#+3
-        BLT.N    ??postprocess_3
+        MOVS     R0,#+1
+          CFI FunCall _Z24update_software_endstops8AxisEnum
+        BL       _Z24update_software_endstops8AxisEnum
+        MOVS     R0,#+2
+          CFI FunCall _Z24update_software_endstops8AxisEnum
+        BL       _Z24update_software_endstops8AxisEnum
 //  256   #endif
 //  257 
 //  258   //#if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
 //  259   if((MACHINETPYE != DELTA) && (BED_LEVELING_METHOD&HAS_FADE))
-        LDRSH    R0,[R6, #+36]
+        LDRSH    R0,[R6, #+22]
         CMP      R0,#+2
-        BEQ.N    ??postprocess_4
-        LDRB     R0,[R6, #+12]
+        BEQ.N    ??postprocess_0
+        LDRB     R0,[R5, #+66]
         LSLS     R0,R0,#+27
-        BPL.N    ??postprocess_4
+        BPL.N    ??postprocess_0
 //  260   {
 //  261     set_z_fade_height(new_z_fade_height, false); // false = no report
-        MOVS     R1,#+0
         LDR.W    R0,??DataTable98_3
         LDR      R0,[R0, #+4]
+        MOVS     R1,#+0
           CFI FunCall _Z17set_z_fade_heightfb
         BL       _Z17set_z_fade_heightfb
 //  262   }
@@ -624,7 +568,7 @@ _ZN14MarlinSettings11postprocessEv:
 //  264 
 //  265   #if 1 //ENABLED(AUTO_BED_LEVELING_BILINEAR)
 //  266     refresh_bed_level();
-??postprocess_4:
+??postprocess_0:
           CFI FunCall _Z17refresh_bed_levelv
         BL       _Z17refresh_bed_levelv
 //  267     //set_bed_leveling_enabled(leveling_is_on);
@@ -647,15 +591,16 @@ _ZN14MarlinSettings11postprocessEv:
         ADD      R0,SP,#+0
           CFI FunCall memcmp
         BL       memcmp
-        CMP      R0,#+0
-        BEQ.N    ??postprocess_5
+        CBZ.N    R0,??postprocess_1
 //  280     report_current_position();
           CFI FunCall _Z23report_current_positionv
         BL       _Z23report_current_positionv
 //  281 }
-??postprocess_5:
-        POP      {R0-R6,PC}       ;; return
-          CFI EndBlock cfiBlock4
+??postprocess_1:
+        ADD      SP,SP,#+16
+          CFI CFA R13+16
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock1
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 //  282 
@@ -685,7 +630,7 @@ new_z_fade_height:
 //  299 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function _ZN14MarlinSettings10write_dataERiPKhtPt
         THUMB
 //  300   void MarlinSettings::write_data(int &pos, const uint8_t *value, uint16_t size, uint16_t *crc) {
@@ -698,18 +643,16 @@ _ZN14MarlinSettings10write_dataERiPKhtPt:
           CFI R5 Frame(CFA, -20)
           CFI R4 Frame(CFA, -24)
           CFI CFA R13+24
+//  301     if (eeprom_error) return;
+        LDR.W    R7,??DataTable98_3
         SUB      SP,SP,#+8
           CFI CFA R13+32
         MOV      R4,R0
+        LDRB     R0,[R7, #+0]
         MOV      R5,R1
         MOV      R6,R2
-        MOV      R7,R3
-//  301     if (eeprom_error) return;
-        LDR.W    R8,??DataTable98_3
-        LDRB     R0,[R8, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??write_data_0
-        B.N      ??write_data_1
+        MOV      R8,R3
+        CBZ.N    R0,??write_data_0
 //  302     while (size--) {
 //  303       //uint8_t * const p = (uint8_t * const)pos;
 //  304       uint8_t eppr_r;
@@ -731,76 +674,68 @@ _ZN14MarlinSettings10write_dataERiPKhtPt:
 //  320         	}
 //  321       	}
 //  322       crc16(crc, &v, 1);
-??write_data_2:
+//  323       pos++;
+//  324       value++;
+//  325     };
+//  326   }
+        POP      {R0,R1,R4-R8,PC}
+??write_data_1:
         MOVS     R2,#+1
         ADD      R1,SP,#+0
-        MOV      R0,R7
+        MOV      R0,R8
           CFI FunCall _Z5crc16PtPKvt
         BL       _Z5crc16PtPKvt
-//  323       pos++;
         LDR      R0,[R4, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[R4, #+0]
-//  324       value++;
         ADDS     R5,R5,#+1
 ??write_data_0:
-        MOV      R0,R6
-        SUBS     R6,R0,#+1
-        UXTH     R0,R0
-        CMP      R0,#+0
-        BEQ.N    ??write_data_1
+        UXTH     R6,R6
+        CBZ.N    R6,??write_data_2
         LDRB     R0,[R5, #+0]
         STRB     R0,[SP, #+0]
+        SUBS     R6,R6,#+1
+        LDR      R0,[R4, #+0]
         MOVS     R2,#+1
         ADD      R1,SP,#+1
-        LDR      R0,[R4, #+0]
         UXTH     R0,R0
           CFI FunCall AT24CXX_Read
         BL       AT24CXX_Read
         LDRB     R0,[SP, #+0]
         LDRB     R1,[SP, #+1]
         CMP      R0,R1
-        BEQ.N    ??write_data_2
+        BEQ.N    ??write_data_1
+        LDR      R0,[R4, #+0]
         MOVS     R2,#+1
         ADD      R1,SP,#+0
-        LDR      R0,[R4, #+0]
         UXTH     R0,R0
           CFI FunCall AT24CXX_Write
         BL       AT24CXX_Write
+        LDR      R0,[R4, #+0]
         MOVS     R2,#+1
         ADD      R1,SP,#+1
-        LDR      R0,[R4, #+0]
         UXTH     R0,R0
           CFI FunCall AT24CXX_Read
         BL       AT24CXX_Read
         LDRB     R0,[SP, #+1]
         LDRB     R1,[SP, #+0]
         CMP      R0,R1
-        BEQ.N    ??write_data_2
+        BEQ.N    ??write_data_1
         LDR.W    R0,??DataTable98_4
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
-        ADR.W    R0,`?<Constant "Error writing to EEPR...">`
+        LDR.W    R0,??DataTable98_5
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
         MOVS     R0,#+1
-        STRB     R0,[R8, #+0]
-//  325     };
-//  326   }
-??write_data_1:
+        STRB     R0,[R7, #+0]
+??write_data_2:
         POP      {R0,R1,R4-R8,PC}  ;; return
-          CFI EndBlock cfiBlock5
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "Error writing to EEPR...">`:
-        DC8 "Error writing to EEPROM!\012"
-        DC8 0, 0
+          CFI EndBlock cfiBlock2
 //  327 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _ZN14MarlinSettings9read_dataERiPhtPt
         THUMB
 //  328   void MarlinSettings::read_data(int &pos, uint8_t* value, uint16_t size, uint16_t *crc) {
@@ -813,22 +748,21 @@ _ZN14MarlinSettings9read_dataERiPhtPt:
           CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
         MOV      R4,R0
-        MOV      R5,R1
-        MOV      R6,R2
-        MOV      R7,R3
 //  329     if (eeprom_error) return;
         LDR.W    R0,??DataTable98_3
         LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BNE.N    ??read_data_0
+        MOV      R5,R1
+        MOV      R6,R2
+        MOV      R7,R3
+        CBNZ.N   R0,??read_data_0
 //  330     do {
 //  331       //uint8_t c = eeprom_read_byte((unsigned char*)pos);
 //  332       uint8_t c;
 //  333       AT24CXX_Read((uint16_t)pos,&c,1);      
 ??read_data_1:
+        LDR      R0,[R4, #+0]
         MOVS     R2,#+1
         ADD      R1,SP,#+0
-        LDR      R0,[R4, #+0]
         UXTH     R0,R0
           CFI FunCall AT24CXX_Read
         BL       AT24CXX_Read
@@ -843,59 +777,61 @@ _ZN14MarlinSettings9read_dataERiPhtPt:
         BL       _Z5crc16PtPKvt
 //  336       pos++;
         LDR      R0,[R4, #+0]
-        ADDS     R0,R0,#+1
-        STR      R0,[R4, #+0]
 //  337       value++;
 //  338     } while (--size);
         SUBS     R6,R6,#+1
+        ADDS     R0,R0,#+1
         UXTH     R6,R6
+        STR      R0,[R4, #+0]
         CMP      R6,#+0
         BNE.N    ??read_data_1
 //  339   }
 ??read_data_0:
         POP      {R0,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock3
 //  340 
 //  341   /**
 //  342    * M500 - Store Configuration
 //  343    */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN14MarlinSettings4saveEv
         THUMB
 //  344   bool MarlinSettings::save() {
 _ZN14MarlinSettings4saveEv:
-        PUSH     {R4-R9,LR}
+        PUSH     {R4-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R9 Frame(CFA, -8)
-          CFI R8 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -24)
-          CFI R4 Frame(CFA, -28)
-          CFI CFA R13+28
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+36
         SUB      SP,SP,#+100
-          CFI CFA R13+128
+          CFI CFA R13+136
 //  345     float dummy = 0.0f;
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
 //  346     char ver[4] = "000";
         ADD      R0,SP,#+84
         ADR.W    R1,`?<Constant "000">`
-        LDR      R2,[R1, #0]
-        STR      R2,[R0, #+0]
 //  347 
 //  348     uint16_t working_crc = 0;
-        MOVS     R0,#+0
-        STRH     R0,[SP, #+0]
 //  349 
 //  350     EEPROM_START();
-        STR      R0,[SP, #+4]
 //  351 
 //  352     eeprom_error = false;
-        LDR.W    R4,??DataTable98_3
-        STRB     R0,[R4, #+0]
+        LDR.W    R8,??DataTable98_3
+        LDR      R2,[R1, #0]
+        STR      R2,[R0, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[SP, #+0]
+        STR      R0,[SP, #+4]
+        STRB     R0,[R8, #+0]
 //  353 
 //  354     EEPROM_WRITE(ver);     // invalidate data first
         ADD      R3,SP,#+0
@@ -910,15 +846,15 @@ _ZN14MarlinSettings4saveEv:
         STR      R0,[SP, #+4]
 //  356 
 //  357     working_crc = 0; // clear before first "real data"
-        MOVS     R0,#+0
-        STRH     R0,[SP, #+0]
 //  358 
 //  359     const uint8_t esteppers = COUNT(planner.axis_steps_per_mm) - XYZ;
-        MOVS     R0,#+2
-        STRB     R0,[SP, #+13]
 //  360     EEPROM_WRITE(esteppers);
         ADD      R3,SP,#+0
+        MOVS     R0,#+0
+        STRH     R0,[SP, #+0]
         MOVS     R2,#+1
+        MOVS     R0,#+2
+        STRB     R0,[SP, #+13]
         ADD      R1,SP,#+13
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -927,21 +863,21 @@ _ZN14MarlinSettings4saveEv:
 //  362     EEPROM_WRITE(planner.axis_steps_per_mm);
         ADD      R3,SP,#+0
         MOVS     R2,#+20
-        LDR.W    R1,??DataTable98_5
+        LDR.W    R1,??DataTable98_6
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  363     EEPROM_WRITE(planner.max_feedrate_mm_s);
         ADD      R3,SP,#+0
         MOVS     R2,#+20
-        LDR.W    R1,??DataTable98_6
+        LDR.W    R1,??DataTable98_7
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  364     EEPROM_WRITE(planner.max_acceleration_mm_per_s2);
         ADD      R3,SP,#+0
         MOVS     R2,#+20
-        LDR.W    R1,??DataTable98_7
+        LDR.W    R1,??DataTable98_8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -949,49 +885,49 @@ _ZN14MarlinSettings4saveEv:
 //  366     EEPROM_WRITE(planner.acceleration);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_8
+        LDR.W    R1,??DataTable98_9
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  367     EEPROM_WRITE(planner.retract_acceleration);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_9
+        LDR.W    R1,??DataTable98_10
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  368     EEPROM_WRITE(planner.travel_acceleration);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_10
+        LDR.W    R1,??DataTable98_11
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  369     EEPROM_WRITE(planner.min_feedrate_mm_s);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_11
+        LDR.W    R1,??DataTable98_12
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  370     EEPROM_WRITE(planner.min_travel_feedrate_mm_s);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_12
+        LDR.W    R1,??DataTable98_13
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  371     EEPROM_WRITE(planner.min_segment_time_us);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_13
+        LDR.W    R1,??DataTable98_14
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  372     EEPROM_WRITE(planner.max_jerk);
         ADD      R3,SP,#+0
         MOVS     R2,#+16
-        LDR.W    R1,??DataTable98_14
+        LDR.W    R1,??DataTable98_15
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -1001,47 +937,42 @@ _ZN14MarlinSettings4saveEv:
 //  376     EEPROM_WRITE(home_offset);
         ADD      R3,SP,#+0
         MOVS     R2,#+12
-        LDR.W    R1,??DataTable98_15
+        LDR.W    R1,??DataTable98_16
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  377 
 //  378     #if HOTENDS > 1
 //  379       hotend_offset[X_AXIS][1]=mksCfg.hotnd_offset_x;
-        LDR.W    R7,??DataTable98_16
         LDR.W    R5,??DataTable98_2
+        LDR.W    R7,??DataTable98_17
         LDR      R0,[R5, #+248]
         STR      R0,[R7, #+4]
 //  380       hotend_offset[Y_AXIS][1]=mksCfg.hotnd_offset_y;
         ADD      R6,R5,#+248
-        LDR      R0,[R6, #+4]
-        STR      R0,[R7, #+12]
 //  381       // Skip hotend 0 which must be 0
 //  382       for (uint8_t e = 1; e < HOTENDS; e++)
-        MOV      R8,#+1
-        B.N      ??save_0
 //  383         LOOP_XYZ(i) EEPROM_WRITE(hotend_offset[i][e]);
-??save_1:
         ADD      R3,SP,#+0
+        LDR      R0,[R6, #+4]
+        STR      R0,[R7, #+12]
         MOVS     R2,#+4
-        ADD      R0,R7,R0, LSL #+3
-        ADD      R1,R0,R8, LSL #+2
+        ADDS     R1,R7,#+4
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        ADD      R9,R9,#+1
-??save_2:
-        UXTB     R9,R9
-        MOV      R0,R9
-        CMP      R0,#+3
-        BLT.N    ??save_1
-        ADD      R8,R8,#+1
-        UXTB     R8,R8
-??save_0:
-        CMP      R8,#+2
-        BGE.N    ??save_3
-        MOV      R9,#+0
-        B.N      ??save_2
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,R7,#+12
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,R7,#+20
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  384     #endif
 //  385 
 //  386     //
@@ -1050,8 +981,7 @@ _ZN14MarlinSettings4saveEv:
 //  389 
 //  390     #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
 //  391       const float zfh = planner.z_fade_height;
-??save_3:
-        LDR.W    R0,??DataTable98_17
+        LDR.W    R0,??DataTable98_18
         LDR      R0,[R0, #+0]
         STR      R0,[SP, #+80]
 //  392     #else
@@ -1071,10 +1001,10 @@ _ZN14MarlinSettings4saveEv:
 //  400 
 //  401     //#if ENABLED(MESH_BED_LEVELING)
 //  402     if(BED_LEVELING_METHOD & MESH_BED_LEVELING)
-        ADD      R7,R5,#+52
+        ADDW     R7,R5,#+54
         LDRB     R0,[R7, #+12]
         LSLS     R0,R0,#+26
-        BPL.N    ??save_4
+        BPL.N    ??save_0
 //  403     {
 //  404       // Compile time test that sizeof(mbl.z_values) is as expected
 //  405       //static_assert(
@@ -1083,21 +1013,21 @@ _ZN14MarlinSettings4saveEv:
 //  408      // );
 //  409       const uint8_t mesh_num_x = GRID_MAX_POINTS_X, mesh_num_y = GRID_MAX_POINTS_Y;
         LDRB     R0,[R5, #+96]
+//  410       EEPROM_WRITE(mbl.has_mesh);
+        LDR.W    R1,??DataTable98_19
         STRB     R0,[SP, #+3]
+        ADD      R3,SP,#+0
         ADD      R0,R5,#+96
+        MOVS     R2,#+1
         LDRB     R0,[R0, #+1]
         STRB     R0,[SP, #+2]
-//  410       EEPROM_WRITE(mbl.has_mesh);
-        ADD      R3,SP,#+0
-        MOVS     R2,#+1
-        LDR.W    R1,??DataTable98_18
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  411       EEPROM_WRITE(mbl.z_offset);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_19
+        LDR.W    R1,??DataTable98_20
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -1118,27 +1048,27 @@ _ZN14MarlinSettings4saveEv:
 //  414       EEPROM_WRITE(mbl.z_values);
         ADD      R3,SP,#+0
         MOV      R2,#+576
-        LDR.W    R1,??DataTable98_20
+        LDR.W    R1,??DataTable98_21
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_5
+        B.N      ??save_1
 //  415     }
 //  416     //#else // For disabled MBL write a default mesh
 //  417     else
 //  418     {
 //  419       const bool leveling_is_on = false;
-??save_4:
+??save_0:
         MOVS     R0,#+0
         STRB     R0,[SP, #+2]
 //  420       dummy = 0.0f;
         STR      R0,[SP, #+8]
 //  421       const uint8_t mesh_num_x = 3, mesh_num_y = 3;
+//  422       EEPROM_WRITE(leveling_is_on);
+        ADD      R3,SP,#+0
         MOVS     R0,#+3
         STRB     R0,[SP, #+3]
         STRB     R0,[SP, #+12]
-//  422       EEPROM_WRITE(leveling_is_on);
-        ADD      R3,SP,#+0
         MOVS     R2,#+1
         ADD      R1,SP,#+2
         ADD      R0,SP,#+4
@@ -1166,21 +1096,16 @@ _ZN14MarlinSettings4saveEv:
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  426       for (uint8_t q = mesh_num_x * mesh_num_y; q--;) EEPROM_WRITE(dummy);
-        MOV      R8,#+9
-        B.N      ??save_6
-??save_7:
+        MOVS     R4,#+9
+??save_2:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_6:
-        MOV      R0,R8
-        SUB      R8,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_7
+        SUBS     R4,R4,#+1
+        BNE.N    ??save_2
 //  427     }
 //  428     //#endif // MESH_BED_LEVELING
 //  429 
@@ -1188,10 +1113,10 @@ _ZN14MarlinSettings4saveEv:
 //  431       const float zprobe_zoffset = 0;
 //  432     #endif
 //  433     EEPROM_WRITE(zprobe_zoffset);
-??save_5:
+??save_1:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_21
+        LDR.W    R1,??DataTable98_22
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -1205,40 +1130,35 @@ _ZN14MarlinSettings4saveEv:
         LDRB     R0,[R7, #+12]
         MOVS     R1,#+6
         TST      R0,R1
-        BEQ.N    ??save_8
+        BEQ.N    ??save_3
 //  441     {
 //  442       EEPROM_WRITE(planner.bed_level_matrix);
         ADD      R3,SP,#+0
         MOVS     R2,#+36
-        LDR.W    R1,??DataTable98_22
+        LDR.W    R1,??DataTable98_23
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_9
+        B.N      ??save_4
 //  443     }
 //  444     else
 //  445     {
 //  446     //#else
 //  447       dummy = 0.0;
-??save_8:
+??save_3:
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
 //  448       for (uint8_t q = 9; q--;) EEPROM_WRITE(dummy);
-        MOV      R8,#+9
-        B.N      ??save_10
-??save_11:
+        MOVS     R4,#+9
+??save_5:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_10:
-        MOV      R0,R8
-        SUB      R8,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_11
+        SUBS     R4,R4,#+1
+        BNE.N    ??save_5
 //  449     }
 //  450     //#endif
 //  451 
@@ -1248,10 +1168,10 @@ _ZN14MarlinSettings4saveEv:
 //  455 
 //  456     //#if ENABLED(AUTO_BED_LEVELING_BILINEAR)
 //  457     if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_BILINEAR)
-??save_9:
+??save_4:
         LDRB     R0,[R7, #+12]
         LSLS     R0,R0,#+28
-        BPL.N    ??save_12
+        BPL.N    ??save_6
 //  458     {
 //  459       // Compile time test that sizeof(z_values) is as expected
 //  460       //static_assert(
@@ -1261,12 +1181,12 @@ _ZN14MarlinSettings4saveEv:
 //  464       const uint8_t grid_max_x = GRID_MAX_POINTS_X, grid_max_y = GRID_MAX_POINTS_Y;
         LDRB     R0,[R5, #+96]
         STRB     R0,[SP, #+3]
-        ADD      R0,R5,#+96
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[SP, #+2]
 //  465       EEPROM_WRITE(grid_max_x);            // 1 byte
         ADD      R3,SP,#+0
+        ADD      R0,R5,#+96
         MOVS     R2,#+1
+        LDRB     R0,[R0, #+1]
+        STRB     R0,[SP, #+2]
         ADD      R1,SP,#+3
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -1281,44 +1201,43 @@ _ZN14MarlinSettings4saveEv:
 //  467       EEPROM_WRITE(bilinear_grid_spacing); // 2 ints
         ADD      R3,SP,#+0
         MOVS     R2,#+8
-        LDR.W    R1,??DataTable98_23
+        LDR.W    R1,??DataTable98_24
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  468       EEPROM_WRITE(bilinear_start);        // 2 ints
         ADD      R3,SP,#+0
         MOVS     R2,#+8
-        LDR.W    R1,??DataTable98_24
+        LDR.W    R1,??DataTable98_25
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  469       EEPROM_WRITE(z_values);              // 9-256 floats
         ADD      R3,SP,#+0
         MOV      R2,#+576
-        LDR.W    R1,??DataTable98_25
+        LDR.W    R1,??DataTable98_26
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_13
+        B.N      ??save_7
 //  470     }
 //  471     //#else
 //  472     else
 //  473     {
 //  474       // For disabled Bilinear Grid write an empty 3x3 grid
 //  475       const uint8_t grid_max_x = 3, grid_max_y = 3;
-??save_12:
+??save_6:
         MOVS     R0,#+3
         STRB     R0,[SP, #+2]
         STRB     R0,[SP, #+3]
 //  476       const int bilinear_start[2] = { 0 }, bilinear_grid_spacing[2] = { 0 };
-        ADD      R0,SP,#+64
         MOVS     R1,#+0
-        MOV      R2,R1
+        ADD      R0,SP,#+64
+        MOVS     R2,#+0
         STM      R0!,{R1,R2}
         STM      R0!,{R1,R2}
 //  477       dummy = 0.0f;
-        MOV      R0,R1
-        STR      R0,[SP, #+8]
+        STR      R1,[SP, #+8]
 //  478       EEPROM_WRITE(grid_max_x);
         ADD      R3,SP,#+0
         MOVS     R2,#+1
@@ -1348,59 +1267,51 @@ _ZN14MarlinSettings4saveEv:
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  482       for (uint16_t q = grid_max_x * grid_max_y; q--;) EEPROM_WRITE(dummy);
-        MOV      R8,#+9
-        B.N      ??save_14
-??save_15:
+        MOVS     R4,#+9
+??save_8:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_14:
-        MOV      R0,R8
-        SUB      R8,R0,#+1
-        UXTH     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_15
+        SUBS     R4,R4,#+1
+        BNE.N    ??save_8
 //  483     }
 //  484     //#endif // AUTO_BED_LEVELING_BILINEAR
 //  485 
 //  486     //#if ENABLED(AUTO_BED_LEVELING_UBL)
 //  487     if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_UBL)
-??save_13:
+??save_7:
         LDRB     R0,[R7, #+12]
         LSLS     R0,R0,#+27
-        BPL.N    ??save_16
+        BPL.N    ??save_9
 //  488     {
 //  489       EEPROM_WRITE(planner.leveling_active);
-        ADD      R3,SP,#+0
-        MOVS     R2,#+1
-        LDR.W    R1,??DataTable98_26
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-//  490       EEPROM_WRITE(ubl.storage_slot);
         ADD      R3,SP,#+0
         MOVS     R2,#+1
         LDR.W    R1,??DataTable98_27
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_17
+//  490       EEPROM_WRITE(ubl.storage_slot);
+        ADD      R3,SP,#+0
+        MOVS     R2,#+1
+        LDR.W    R1,??DataTable98_28
+        B.N      ??save_10
 //  491     }
 //  492     //#else
 //  493     else
 //  494     {
 //  495       const bool ubl_active = false;
-??save_16:
+??save_9:
         MOVS     R0,#+0
         STRB     R0,[SP, #+3]
 //  496       const int8_t storage_slot = -1;
-        MOV      R0,#-1
-        STRB     R0,[SP, #+2]
 //  497       EEPROM_WRITE(ubl_active);
         ADD      R3,SP,#+0
+        MOV      R0,#-1
+        STRB     R0,[SP, #+2]
         MOVS     R2,#+1
         ADD      R1,SP,#+3
         ADD      R0,SP,#+4
@@ -1410,6 +1321,7 @@ _ZN14MarlinSettings4saveEv:
         ADD      R3,SP,#+0
         MOVS     R2,#+1
         ADD      R1,SP,#+2
+??save_10:
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -1419,70 +1331,66 @@ _ZN14MarlinSettings4saveEv:
 //  502     // 11 floats for DELTA / [XYZ]_DUAL_ENDSTOPS
 //  503     //#if ENABLED(DELTA)
 //  504     if(MACHINETPYE & DELTA)
-??save_17:
-        LDRB     R0,[R7, #+36]
+        LDRB     R0,[R7, #+34]
         LSLS     R0,R0,#+30
-        BPL.N    ??save_18
+        BPL.N    ??save_11
 //  505     {
 //  506       EEPROM_WRITE(delta_height);              // 1 float
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_28
+        LDR.W    R1,??DataTable98_29
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  507       EEPROM_WRITE(delta_endstop_adj);         // 3 floats
         ADD      R3,SP,#+0
         MOVS     R2,#+12
-        LDR.W    R1,??DataTable98_29
+        LDR.W    R1,??DataTable98_30
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  508       EEPROM_WRITE(delta_radius);              // 1 float
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_30
+        LDR.W    R1,??DataTable98_31
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  509       EEPROM_WRITE(delta_diagonal_rod);        // 1 float
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_31
+        LDR.W    R1,??DataTable98_32
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  510       EEPROM_WRITE(delta_segments_per_second); // 1 float
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_32
+        LDR.W    R1,??DataTable98_33
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  511       EEPROM_WRITE(delta_calibration_radius);  // 1 float
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable98_33
+        LDR.W    R1,??DataTable98_34
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  512       EEPROM_WRITE(delta_tower_angle_trim);    // 3 floats
         ADD      R3,SP,#+0
         MOVS     R2,#+12
-        LDR.W    R1,??DataTable99
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_19
+        LDR.W    R1,??DataTable98_35
+        B.N      ??save_12
 //  513     }
 //  514     else
 //  515     {
 //  516     //#if ENABLED(X_DUAL_ENDSTOPS) || ENABLED(Y_DUAL_ENDSTOPS) || ENABLED(Z_DUAL_ENDSTOPS)
 //  517       if(Z_DUAL_ENDSTOPS==1)
-??save_18:
+??save_11:
         LDRB     R0,[R6, #+10]
         CMP      R0,#+1
-        BNE.N    ??save_20
+        BNE.N    ??save_13
 //  518       {
 //  519           // Write dual endstops in X, Y, Z order. Unused = 0.0
 //  520           dummy = 0.0f;
@@ -1517,85 +1425,110 @@ _ZN14MarlinSettings4saveEv:
         LDRB     R0,[R6, #+10]
         CMP      R0,#+1
         ADD      R3,SP,#+0
-        BNE.N    ??save_21
+        ITTEE    EQ 
 //  535             EEPROM_WRITE(z_endstop_adj);             // 1 float
-        MOVS     R2,#+4
-        LDR.W    R1,??DataTable99_1
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_22
+        MOVEQ    R2,#+4
+        LDREQ.W  R1,??DataTable98_36
 //  536           //#else
 //  537           else
 //  538             EEPROM_WRITE(dummy);
-??save_21:
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
+        MOVNE    R2,#+4
+        ADDNE    R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  539           //#endif
 //  540 
 //  541           for (uint8_t q = 8; q--;) EEPROM_WRITE(dummy);
-??save_22:
-        MOVS     R6,#+8
-??save_23:
-        MOV      R0,R6
-        SUBS     R6,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BEQ.N    ??save_19
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_23
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+??save_12:
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        B.N      ??save_14
 //  542       }
 //  543     //#else
 //  544       else
 //  545       {
 //  546         dummy = 0.0f;
-??save_20:
+??save_13:
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
 //  547         for (uint8_t q = 11; q--;) EEPROM_WRITE(dummy);
         MOVS     R6,#+11
-        B.N      ??save_24
-??save_25:
+??save_15:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_24:
-        MOV      R0,R6
-        SUBS     R6,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_25
+        SUBS     R6,R6,#+1
+        BNE.N    ??save_15
 //  548       }
 //  549     //#endif
 //  550     }
 //  551 
 //  552     #if DISABLED(ULTIPANEL)
 //  553       constexpr int lcd_preheat_hotend_temp[2] = { PREHEAT_1_TEMP_HOTEND, PREHEAT_2_TEMP_HOTEND },
-??save_19:
-        ADD      R0,SP,#+72
+??save_14:
         ADR.W    R1,`?<Constant {180, 240}>`
         LDM      R1!,{R2,R3}
-        STM      R0!,{R2,R3}
+        ADD      R0,SP,#+72
 //  554                     lcd_preheat_bed_temp[2] = { PREHEAT_1_TEMP_BED, PREHEAT_2_TEMP_BED },
-        ADD      R0,SP,#+64
         ADR.W    R1,`?<Constant {70, 110}>`
-        LDM      R1!,{R2,R3}
         STM      R0!,{R2,R3}
+        LDM      R1!,{R2,R3}
+        ADD      R0,SP,#+64
 //  555                     lcd_preheat_fan_speed[2] = { PREHEAT_1_FAN_SPEED, PREHEAT_2_FAN_SPEED };
-        ADD      R0,SP,#+88
         MOVS     R1,#+0
-        MOV      R2,R1
+        STM      R0!,{R2,R3}
+        ADD      R0,SP,#+88
+        MOVS     R2,#+0
         STM      R0!,{R1,R2}
 //  556     #endif
 //  557 
@@ -1622,21 +1555,48 @@ _ZN14MarlinSettings4saveEv:
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  561 
 //  562     for (uint8_t e = 0; e < MAX_EXTRUDERS; e++) {
-        MOVS     R6,#+0
-        B.N      ??save_26
+        MOVS     R6,#+2
+        LDR.N    R7,??DataTable98_37  ;; 0x453b8000
+        LDR.W    R9,??DataTable98_38
+        LDR.W    R10,??DataTable98_39
+        LDR.W    R11,??DataTable98_40
+        MOV      R4,#+1065353216
 //  563 
 //  564       //#if ENABLED(PIDTEMP)
 //  565       if(PIDTEMP)
+??save_16:
+        LDRB     R0,[R5, #+54]
+        CBZ.N    R0,??save_17
 //  566       {
 //  567         if (e < HOTENDS) {
 //  568           EEPROM_WRITE(PID_PARAM(Kp, e));
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        MOV      R1,R11
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  569           EEPROM_WRITE(PID_PARAM(Ki, e));
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        MOV      R1,R10
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  570           EEPROM_WRITE(PID_PARAM(Kd, e));
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        MOV      R1,R9
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  571           #if ENABLED(PID_EXTRUSION_SCALING)
 //  572             EEPROM_WRITE(PID_PARAM(Kc, e));
 //  573           #else
 //  574             dummy = 1.0f; // 1.0 = default kc
+        STR      R4,[SP, #+8]
 //  575             EEPROM_WRITE(dummy);
+        B.N      ??save_18
 //  576           #endif
 //  577         }
 //  578       }
@@ -1644,81 +1604,46 @@ _ZN14MarlinSettings4saveEv:
 //  580       //#endif // !PIDTEMP
 //  581         {
 //  582           dummy = DUMMY_PID_VALUE; // When read, will not change the existing value
+??save_17:
+        STR      R7,[SP, #+8]
 //  583           EEPROM_WRITE(dummy); // Kp
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  584           dummy = 0.0f;
-//  585           for (uint8_t q = 3; q--;) EEPROM_WRITE(dummy); // Ki, Kd, Kc
-??save_27:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_28:
-        MOV      R0,R7
-        SUBS     R7,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_27
-??save_29:
-        ADDS     R6,R6,#+1
-??save_26:
-        UXTB     R6,R6
-        MOV      R0,R6
-        CMP      R0,#+2
-        BGE.N    ??save_30
-        LDRB     R1,[R5, #+52]
-        CMP      R1,#+0
-        BEQ.N    ??save_31
-        CMP      R0,#+2
-        BGE.N    ??save_29
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        LDR.W    R1,??DataTable99_2
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        LDR.W    R1,??DataTable99_3
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        LDR.W    R1,??DataTable99_4
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        MOV      R0,#+1065353216
-        STR      R0,[SP, #+8]
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_29
-??save_31:
-        LDR.W    R0,??DataTable100  ;; 0x453b8000
-        STR      R0,[SP, #+8]
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
-        MOVS     R7,#+3
-        B.N      ??save_28
+//  585           for (uint8_t q = 3; q--;) EEPROM_WRITE(dummy); // Ki, Kd, Kc
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+??save_18:
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  586         }
 //  587 
 //  588     } // Hotends Loop
+        SUBS     R6,R6,#+1
+        BNE.N    ??save_16
 //  589 
 //  590     #if DISABLED(PID_EXTRUSION_SCALING)
 //  591       int lpq_len = 20;
-??save_30:
         MOVS     R0,#+20
         STR      R0,[SP, #+60]
 //  592     #endif
@@ -1732,51 +1657,52 @@ _ZN14MarlinSettings4saveEv:
 //  594 
 //  595     //#if DISABLED(PIDTEMPBED)
 //  596     if(!PIDTEMP)
-        LDRB     R0,[R5, #+52]
-        CMP      R0,#+0
-        BNE.N    ??save_32
+        LDRB     R0,[R5, #+54]
+        CBNZ.N   R0,??save_19
 //  597      {
 //  598       dummy = DUMMY_PID_VALUE;
-        LDR.W    R0,??DataTable100  ;; 0x453b8000
-        STR      R0,[SP, #+8]
+        STR      R7,[SP, #+8]
 //  599       for (uint8_t q = 3; q--;) EEPROM_WRITE(dummy);
-        MOVS     R5,#+3
-??save_33:
-        MOV      R0,R5
-        SUBS     R5,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BEQ.N    ??save_34
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-        B.N      ??save_33
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        B.N      ??save_20
 //  600      }
 //  601     //#else
 //  602     else
 //  603     {
 //  604       EEPROM_WRITE(thermalManager.bedKp);
-??save_32:
+??save_19:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable101
+        LDR.N    R1,??DataTable98_41
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  605       EEPROM_WRITE(thermalManager.bedKi);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable101_1
+        LDR.N    R1,??DataTable98_42
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  606       EEPROM_WRITE(thermalManager.bedKd);
         ADD      R3,SP,#+0
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable101_2
+        LDR.N    R1,??DataTable98_43
+??save_20:
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -1785,7 +1711,6 @@ _ZN14MarlinSettings4saveEv:
 //  609 
 //  610     #if !HAS_LCD_CONTRAST
 //  611       const uint16_t lcd_contrast = 32;
-??save_34:
         MOVS     R0,#+32
         STRH     R0,[SP, #+56]
 //  612     #endif
@@ -1802,32 +1727,32 @@ _ZN14MarlinSettings4saveEv:
         MOVS     R0,#+0
         STRB     R0,[SP, #+2]
 //  617       const float retract_length = 3,
-        LDR.W    R0,??DataTable101_3  ;; 0x40400000
-        STR      R0,[SP, #+52]
 //  618                   retract_feedrate_mm_s = 45,
-        LDR.W    R0,??DataTable101_4  ;; 0x42340000
-        STR      R0,[SP, #+48]
 //  619                   retract_zlift = 0,
-        MOVS     R0,#+0
-        STR      R0,[SP, #+44]
 //  620                   retract_recover_length = 0,
-        STR      R0,[SP, #+40]
 //  621                   retract_recover_feedrate_mm_s = 0,
-        STR      R0,[SP, #+36]
 //  622                   swap_retract_length = 13,
-        LDR.W    R0,??DataTable101_5  ;; 0x41500000
-        STR      R0,[SP, #+32]
 //  623                   swap_retract_recover_length = 0,
-        MOVS     R0,#+0
-        STR      R0,[SP, #+28]
 //  624                   swap_retract_recover_feedrate_mm_s = 8;
-        MOV      R0,#+1090519040
-        STR      R0,[SP, #+24]
 //  625     #endif
 //  626     EEPROM_WRITE(autoretract_enabled);
         ADD      R3,SP,#+0
+        LDR.N    R0,??DataTable98_44  ;; 0x40400000
+        STR      R0,[SP, #+52]
         MOVS     R2,#+1
+        LDR.N    R0,??DataTable98_45  ;; 0x42340000
+        STR      R0,[SP, #+48]
         ADD      R1,SP,#+2
+        MOVS     R0,#+0
+        STR      R0,[SP, #+44]
+        STR      R0,[SP, #+40]
+        STR      R0,[SP, #+36]
+        LDR.N    R0,??DataTable98_46  ;; 0x41500000
+        STR      R0,[SP, #+32]
+        MOVS     R0,#+0
+        STR      R0,[SP, #+28]
+        MOV      R0,#+1090519040
+        STR      R0,[SP, #+24]
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -1896,23 +1821,26 @@ _ZN14MarlinSettings4saveEv:
 //  641       EEPROM_WRITE(parser.volumetric_enabled);
         ADD      R3,SP,#+0
         MOVS     R2,#+1
-        LDR.W    R1,??DataTable102_1
+        LDR.N    R1,??DataTable98_47
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  642 
 //  643       // Save filament sizes
 //  644       for (uint8_t q = 0; q < MAX_EXTRUDERS; q++) {
-        MOVS     R5,#+0
-        B.N      ??save_35
+        LDR.N    R5,??DataTable98_48
 //  645         if (q < COUNT(planner.filament_size)) dummy = planner.filament_size[q];
-??save_36:
-        BCS.N    ??save_37
-        LDR.W    R0,??DataTable102_2
-        LDR      R0,[R0, R5, LSL #+2]
+        LDR      R0,[R5, #+0]
         STR      R0,[SP, #+8]
 //  646         EEPROM_WRITE(dummy);
-??save_37:
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        LDR      R0,[R5, #+4]
+        STR      R0,[SP, #+8]
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
@@ -1920,10 +1848,6 @@ _ZN14MarlinSettings4saveEv:
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  647       }
-        ADDS     R5,R5,#+1
-??save_35:
-        CMP      R5,#+2
-        BLT.N    ??save_36
 //  648 
 //  649     #endif
 //  650 
@@ -2002,20 +1926,15 @@ _ZN14MarlinSettings4saveEv:
         STRH     R0,[SP, #+18]
 //  722       for (uint8_t q = 11; q--;) EEPROM_WRITE(val);
         MOVS     R5,#+11
-        B.N      ??save_38
-??save_39:
+??save_21:
         ADD      R3,SP,#+0
         MOVS     R2,#+2
         ADD      R1,SP,#+18
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_38:
-        MOV      R0,R5
-        SUBS     R5,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_39
+        SUBS     R5,R5,#+1
+        BNE.N    ??save_21
 //  723     #endif
 //  724 
 //  725     //
@@ -2040,21 +1959,18 @@ _ZN14MarlinSettings4saveEv:
         MOVS     R0,#+0
         STRH     R0,[SP, #+16]
 //  744       for (uint8_t q = 2; q--;) EEPROM_WRITE(thrs);
-        MOVS     R5,#+2
-        B.N      ??save_40
-??save_41:
         ADD      R3,SP,#+0
         MOVS     R2,#+2
         ADD      R1,SP,#+16
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_40:
-        MOV      R0,R5
-        SUBS     R5,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_41
+        ADD      R3,SP,#+0
+        MOVS     R2,#+2
+        ADD      R1,SP,#+16
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  745     #endif
 //  746 
 //  747     //
@@ -2091,21 +2007,24 @@ _ZN14MarlinSettings4saveEv:
         MOVS     R0,#+0
         STR      R0,[SP, #+20]
 //  764       for (uint8_t q = 3; q--;) EEPROM_WRITE(dummyui32);
-        MOVS     R5,#+3
-        B.N      ??save_42
-??save_43:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+20
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_42:
-        MOV      R0,R5
-        SUBS     R5,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_43
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+20
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+20
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  765     #endif
 //  766 
 //  767     //
@@ -2120,28 +2039,23 @@ _ZN14MarlinSettings4saveEv:
         STR      R0,[SP, #+8]
 //  775       for (uint8_t q = 27; q--;) 
         MOVS     R5,#+27
-        B.N      ??save_44
 //  776       {
 //  777         EEPROM_WRITE(dummy);//48784//11186
-??save_45:
+??save_22:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        SUBS     R5,R5,#+1
 //  778         //SERIAL_ECHOPAIR("q:",q);
 //  779         //SERIAL_ECHOPAIR(" offset:",eeprom_index);
 //  780         //SERIAL_ECHOPAIR(" dummy:",dummy);
 //  781         //SERIAL_ECHOPAIR(" CRC:",working_crc);
 //  782         //SERIAL_EOL();
 //  783       }
-??save_44:
-        MOV      R0,R5
-        SUBS     R5,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_45
+        BNE.N    ??save_22
 //  784     #endif
 //  785 
 //  786     //
@@ -2157,43 +2071,45 @@ _ZN14MarlinSettings4saveEv:
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
 //  796       for (uint8_t q = 3; q--;) EEPROM_WRITE(dummy);
-        MOVS     R5,#+3
-        B.N      ??save_46
-??save_47:
         ADD      R3,SP,#+0
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
-??save_46:
-        MOV      R0,R5
-        SUBS     R5,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??save_47
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        ADD      R3,SP,#+0
+        MOVS     R2,#+4
+        ADD      R1,SP,#+8
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
+        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
 //  797     #endif
 //  798 
 //  799     if (!eeprom_error) {
-        LDRB     R0,[R4, #+0]
-        CMP      R0,#+0
-        BNE.N    ??save_48
+        LDRB     R0,[R8, #+0]
+        CBNZ.N   R0,??save_23
 //  800       const int eeprom_size = eeprom_index;
-        LDR      R5,[SP, #+4]
 //  801 
 //  802       const uint16_t final_crc = working_crc;
         LDRH     R0,[SP, #+0]
-        STRH     R0,[SP, #+14]
+        LDR      R5,[SP, #+4]
 //  803 
 //  804       // Write the EEPROM header
 //  805       eeprom_index = EEPROM_OFFSET;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  806 
 //  807       EEPROM_WRITE(version);
+        LDR.N    R1,??DataTable98_49
+        STRH     R0,[SP, #+14]
         ADD      R3,SP,#+0
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
         MOVS     R2,#+4
-        ADR.W    R1,version
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
         BL       _ZN14MarlinSettings10write_dataERiPKhtPt
@@ -2218,7 +2134,7 @@ _ZN14MarlinSettings4saveEv:
         BL       _Z17serial_echopair_PPKci
 //  814         SERIAL_ECHOPAIR(" bytes; crc ", (uint32_t)final_crc);
         LDRH     R1,[SP, #+14]
-        ADR.W    R0,`?<Constant " bytes; crc ">`
+        LDR.N    R0,??DataTable98_50
           CFI FunCall _Z17serial_echopair_PPKcj
         BL       _Z17serial_echopair_PPKcj
 //  815         SERIAL_ECHOLNPGM(")");
@@ -2234,13 +2150,13 @@ _ZN14MarlinSettings4saveEv:
 //  822     #endif
 //  823 
 //  824     return !eeprom_error;
-??save_48:
-        LDRB     R0,[R4, #+0]
+??save_23:
+        LDRB     R0,[R8, #+0]
         EOR      R0,R0,#0x1
         ADD      SP,SP,#+100
-          CFI CFA R13+28
-        POP      {R4-R9,PC}       ;; return
-          CFI EndBlock cfiBlock7
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock4
 //  825   }
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -2277,175 +2193,277 @@ _ZN14MarlinSettings4saveEv:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_5:
-        DC32     _ZN7Planner17axis_steps_per_mmE
+        DC32     `?<Constant "Error writing to EEPR...">`
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_6:
-        DC32     _ZN7Planner17max_feedrate_mm_sE
+        DC32     _ZN7Planner17axis_steps_per_mmE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_7:
-        DC32     _ZN7Planner26max_acceleration_mm_per_s2E
+        DC32     _ZN7Planner17max_feedrate_mm_sE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_8:
-        DC32     _ZN7Planner12accelerationE
+        DC32     _ZN7Planner26max_acceleration_mm_per_s2E
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_9:
-        DC32     _ZN7Planner20retract_accelerationE
+        DC32     _ZN7Planner12accelerationE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_10:
-        DC32     _ZN7Planner19travel_accelerationE
+        DC32     _ZN7Planner20retract_accelerationE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_11:
-        DC32     _ZN7Planner17min_feedrate_mm_sE
+        DC32     _ZN7Planner19travel_accelerationE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_12:
-        DC32     _ZN7Planner24min_travel_feedrate_mm_sE
+        DC32     _ZN7Planner17min_feedrate_mm_sE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_13:
-        DC32     _ZN7Planner19min_segment_time_usE
+        DC32     _ZN7Planner24min_travel_feedrate_mm_sE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_14:
-        DC32     _ZN7Planner8max_jerkE
+        DC32     _ZN7Planner19min_segment_time_usE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_15:
-        DC32     home_offset
+        DC32     _ZN7Planner8max_jerkE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_16:
-        DC32     hotend_offset
+        DC32     home_offset
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_17:
-        DC32     _ZN7Planner13z_fade_heightE
+        DC32     hotend_offset
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_18:
-        DC32     _ZN17mesh_bed_leveling8has_meshE
+        DC32     _ZN7Planner13z_fade_heightE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_19:
-        DC32     _ZN17mesh_bed_leveling8z_offsetE
+        DC32     _ZN17mesh_bed_leveling8has_meshE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_20:
-        DC32     _ZN17mesh_bed_leveling8z_valuesE
+        DC32     _ZN17mesh_bed_leveling8z_offsetE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_21:
-        DC32     zprobe_zoffset
+        DC32     _ZN17mesh_bed_leveling8z_valuesE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_22:
-        DC32     _ZN7Planner16bed_level_matrixE
+        DC32     zprobe_zoffset
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_23:
-        DC32     bilinear_grid_spacing
+        DC32     _ZN7Planner16bed_level_matrixE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_24:
-        DC32     bilinear_start
+        DC32     bilinear_grid_spacing
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_25:
-        DC32     z_values
+        DC32     bilinear_start
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_26:
-        DC32     _ZN7Planner15leveling_activeE
+        DC32     z_values
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_27:
-        DC32     _ZN20unified_bed_leveling12storage_slotE
+        DC32     _ZN7Planner15leveling_activeE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_28:
-        DC32     delta_height
+        DC32     _ZN20unified_bed_leveling12storage_slotE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_29:
-        DC32     delta_endstop_adj
+        DC32     delta_height
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_30:
-        DC32     delta_radius
+        DC32     delta_endstop_adj
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_31:
-        DC32     delta_diagonal_rod
+        DC32     delta_radius
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_32:
-        DC32     delta_segments_per_second
+        DC32     delta_diagonal_rod
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable98_33:
+        DC32     delta_segments_per_second
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_34:
         DC32     delta_calibration_radius
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_35:
+        DC32     delta_tower_angle_trim
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_36:
+        DC32     z_endstop_adj
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_37:
+        DC32     0x453b8000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_38:
+        DC32     _ZN11Temperature2KdE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_39:
+        DC32     _ZN11Temperature2KiE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_40:
+        DC32     _ZN11Temperature2KpE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_41:
+        DC32     _ZN11Temperature5bedKpE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_42:
+        DC32     _ZN11Temperature5bedKiE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_43:
+        DC32     _ZN11Temperature5bedKdE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_44:
+        DC32     0x40400000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_45:
+        DC32     0x42340000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_46:
+        DC32     0x41500000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_47:
+        DC32     _ZN11GCodeParser18volumetric_enabledE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_48:
+        DC32     _ZN7Planner13filament_sizeE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_49:
+        DC32     version
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable98_50:
+        DC32     `?<Constant " bytes; crc ">`
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -2476,34 +2494,35 @@ _ZN14MarlinSettings4saveEv:
 //  828    * M501 - Retrieve Configuration
 //  829    */
 
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+        SECTION `.text`:CODE:NOROOT(2)
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function _ZN14MarlinSettings4loadEv
         THUMB
 //  830   bool MarlinSettings::load() {
 _ZN14MarlinSettings4loadEv:
-        PUSH     {R4-R10,LR}
+        PUSH     {R4-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R10 Frame(CFA, -8)
-          CFI R9 Frame(CFA, -12)
-          CFI R8 Frame(CFA, -16)
-          CFI R7 Frame(CFA, -20)
-          CFI R6 Frame(CFA, -24)
-          CFI R5 Frame(CFA, -28)
-          CFI R4 Frame(CFA, -32)
-          CFI CFA R13+32
-        SUB      SP,SP,#+144
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+36
+        SUB      SP,SP,#+140
           CFI CFA R13+176
 //  831     uint16_t working_crc = 0;
         MOVS     R0,#+0
-        STRH     R0,[SP, #+0]
+        STRH     R0,[SP, #+2]
 //  832 
 //  833     EEPROM_START();
         STR      R0,[SP, #+4]
 //  834 
 //  835     char stored_ver[4];
 //  836     EEPROM_READ(stored_ver);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+20
         ADD      R0,SP,#+4
@@ -2512,27 +2531,25 @@ _ZN14MarlinSettings4loadEv:
 //  837 
 //  838     uint16_t stored_crc;
 //  839     EEPROM_READ(stored_crc);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+2
         ADD      R1,SP,#+18
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
+        MOVS     R2,#+3
+        ADD      R1,SP,#+20
+        LDR.W    R0,??load_0
 //  840 
 //  841     // Version has to match or defaults are used
 //  842     if (strncmp(version, stored_ver, 3) != 0) {
-        ADR.W    R4,version
-        MOVS     R2,#+3
-        ADD      R1,SP,#+20
-        MOV      R0,R4
           CFI FunCall strncmp
         BL       strncmp
-        CMP      R0,#+0
-        BEQ.N    ??load_0
+        CBZ.N    R0,??load_1
 //  843       if (stored_ver[0] != 'V') {
         LDRSB    R0,[SP, #+20]
         CMP      R0,#+86
-        BEQ.N    ??load_1
+        BEQ.N    ??load_2
 //  844         stored_ver[0] = '?';
         MOVS     R0,#+63
         STRB     R0,[SP, #+20]
@@ -2542,37 +2559,37 @@ _ZN14MarlinSettings4loadEv:
 //  846       }
 //  847       #if ENABLED(EEPROM_CHITCHAT)
 //  848         SERIAL_ECHO_START();
-??load_1:
-        LDR.W    R0,??DataTable103_1
+??load_2:
+        LDR.W    R0,??load_0+0x4
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 //  849         SERIAL_ECHOPGM("EEPROM version mismatch ");
-        ADR.W    R0,`?<Constant "EEPROM version mismatch ">`
+        LDR.W    R0,??load_0+0x8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 //  850         SERIAL_ECHOPAIR("(EEPROM=", stored_ver);
         ADD      R1,SP,#+20
-        ADR.W    R0,`?<Constant "(EEPROM=">`
+        LDR.W    R0,??load_0+0xC
           CFI FunCall _Z17serial_echopair_PPKcS0_
         BL       _Z17serial_echopair_PPKcS0_
 //  851         SERIAL_ECHOLNPGM(" Marlin=" EEPROM_VERSION ")");
-        ADR.W    R0,`?<Constant " Marlin=V47)\\n">`
+        LDR.W    R0,??load_0+0x10
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 //  852       #endif
 //  853       card.mksReset();
-        LDR.W    R0,??DataTable103_2
+        LDR.W    R0,??load_0+0x14
           CFI FunCall _ZN10CardReader8mksResetEv
         BL       _ZN10CardReader8mksResetEv
 //  854       reset();
           CFI FunCall _ZN14MarlinSettings5resetEv
         BL       _ZN14MarlinSettings5resetEv
-        B.W      ??load_2
+        B.W      ??load_3
 //  855     }
 //  856     else {
 //  857         card.mksLoad();
-??load_0:
-        LDR.W    R0,??DataTable103_2
+??load_1:
+        LDR.W    R0,??load_0+0x14
           CFI FunCall _ZN10CardReader7mksLoadEv
         BL       _ZN10CardReader7mksLoadEv
 //  858         
@@ -2584,14 +2601,14 @@ _ZN14MarlinSettings4loadEv:
 //  862       #endif
 //  863 
 //  864       working_crc = 0;  // Init to 0. Accumulated by EEPROM_READ
-        STRH     R0,[SP, #+0]
+        STRH     R0,[SP, #+2]
 //  865 
 //  866       // Number of esteppers may change
 //  867       uint8_t esteppers;
 //  868       EEPROM_READ(esteppers);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+2
+        ADD      R1,SP,#+1
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -2603,22 +2620,19 @@ _ZN14MarlinSettings4loadEv:
 //  874       // Get only the number of E stepper parameters previously stored
 //  875       // Any steppers added later are set to their defaults
 //  876       const float def1[] = DEFAULT_AXIS_STEPS_PER_UNIT, def2[] = DEFAULT_MAX_FEEDRATE;
-        ADD      R0,SP,#+120
-        ADR.W    R1,`?<Constant {(8.05999984E+1F), (8.0400001522E+1`
-        MOVS     R2,#+20
-          CFI FunCall __aeabi_memcpy4
-        BL       __aeabi_memcpy4
-        ADD      R0,SP,#+100
-        ADR.W    R1,`?<Constant {(200.0F), (200.0F), (4.0F), (70.0F`
-        MOVS     R2,#+20
-          CFI FunCall __aeabi_memcpy4
-        BL       __aeabi_memcpy4
+        LDR.W    R1,??load_0+0x18
+        LDM      R1!,{R2-R6}
+        ADD      R0,SP,#+116
+        LDR.W    R1,??load_0+0x1C
+        STM      R0!,{R2-R6}
+        LDM      R1!,{R2-R6}
+        ADD      R0,SP,#+96
 //  877       const uint32_t def3[] = DEFAULT_MAX_ACCELERATION;
-        ADD      R0,SP,#+80
-        ADR.W    R1,`?<Constant {1000, 1000, 100, 1000, 1000}>`
-        MOVS     R2,#+20
-          CFI FunCall __aeabi_memcpy4
-        BL       __aeabi_memcpy4
+        LDR.W    R1,??load_0+0x20
+        STM      R0!,{R2-R6}
+        LDM      R1!,{R2-R6}
+        ADD      R0,SP,#+76
+        STM      R0!,{R2-R6}
 //  878      /*
 //  879       float tmp1[XYZ + esteppers], tmp2[XYZ + esteppers];
 //  880       uint32_t tmp3[XYZ + esteppers];
@@ -2630,170 +2644,148 @@ _ZN14MarlinSettings4loadEv:
 //  886       float *tmp2 = NULL;
 //  887       uint32_t *tmp3 = NULL;
 //  888       tmp1 = (float *)malloc((XYZ + esteppers) * sizeof(float));
-        LDRB     R0,[SP, #+2]
+        LDRB     R0,[SP, #+1]
+        ADDS     R0,R0,#+3
+        LSLS     R0,R0,#+2
+          CFI FunCall malloc
+        BL       malloc
+        STR      R0,[SP, #+24]
+//  889       tmp2 = (float *)malloc((XYZ + esteppers) * sizeof(float));
+        LDRB     R0,[SP, #+1]
+        ADDS     R0,R0,#+3
+        LSLS     R0,R0,#+2
+          CFI FunCall malloc
+        BL       malloc
+        MOV      R4,R0
+//  890       tmp3 = (uint32_t *)malloc((XYZ + esteppers) * sizeof(uint32_t));
+        LDRB     R0,[SP, #+1]
         ADDS     R0,R0,#+3
         LSLS     R0,R0,#+2
           CFI FunCall malloc
         BL       malloc
         MOV      R5,R0
-//  889       tmp2 = (float *)malloc((XYZ + esteppers) * sizeof(float));
-        LDRB     R0,[SP, #+2]
-        ADDS     R0,R0,#+3
-        LSLS     R0,R0,#+2
-          CFI FunCall malloc
-        BL       malloc
-        MOV      R6,R0
-//  890       tmp3 = (uint32_t *)malloc((XYZ + esteppers) * sizeof(uint32_t));
-        LDRB     R0,[SP, #+2]
-        ADDS     R0,R0,#+3
-        LSLS     R0,R0,#+2
-          CFI FunCall malloc
-        BL       malloc
-        MOV      R7,R0
 //  891       read_data(eeprom_index, (uint8_t *)tmp1, (XYZ + esteppers) * sizeof(float),&working_crc);
-        ADD      R3,SP,#+0
-        LDRB     R0,[SP, #+2]
+        LDRB     R0,[SP, #+1]
+        LDR      R1,[SP, #+24]
         ADDS     R0,R0,#+3
         LSLS     R2,R0,#+2
+        ADD      R3,SP,#+2
+        UXTH     R2,R2
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
+        BL       _ZN14MarlinSettings9read_dataERiPhtPt
+//  892       read_data(eeprom_index, (uint8_t *)tmp2, (XYZ + esteppers) * sizeof(float),&working_crc);
+        LDRB     R0,[SP, #+1]
+        ADDS     R0,R0,#+3
+        LSLS     R2,R0,#+2
+        ADD      R3,SP,#+2
+        UXTH     R2,R2
+        MOV      R1,R4
+        ADD      R0,SP,#+4
+          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
+        BL       _ZN14MarlinSettings9read_dataERiPhtPt
+//  893       read_data(eeprom_index, (uint8_t *)tmp3, (XYZ + esteppers) * sizeof(uint32_t),&working_crc);
+        LDRB     R0,[SP, #+1]
+        ADDS     R0,R0,#+3
+        LSLS     R2,R0,#+2
+        ADD      R3,SP,#+2
         UXTH     R2,R2
         MOV      R1,R5
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
-//  892       read_data(eeprom_index, (uint8_t *)tmp2, (XYZ + esteppers) * sizeof(float),&working_crc);
-        ADD      R3,SP,#+0
-        LDRB     R0,[SP, #+2]
-        ADDS     R0,R0,#+3
-        LSLS     R2,R0,#+2
-        UXTH     R2,R2
-        MOV      R1,R6
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-//  893       read_data(eeprom_index, (uint8_t *)tmp3, (XYZ + esteppers) * sizeof(uint32_t),&working_crc);
-        ADD      R3,SP,#+0
-        LDRB     R0,[SP, #+2]
-        ADDS     R0,R0,#+3
-        LSLS     R2,R0,#+2
-        UXTH     R2,R2
-        MOV      R1,R7
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  894       
 //  895       LOOP_XYZE_N(i) {
+        LDRB     R10,[SP, #+1]
+        LDR      R1,[SP, #+24]
+        LDR.W    R3,??load_0+0x24
+        LDR.W    R12,??load_0+0x28
+        LDR.W    R9,??load_0+0x2C
         MOVS     R0,#+0
-        B.N      ??load_3
+        ADD      R2,SP,#+116
+        MOV      R6,R4
+        ADD      R7,SP,#+96
+        MOV      LR,R5
+        ADD      R8,SP,#+76
+        ADD      R10,R10,#+3
 //  896         planner.axis_steps_per_mm[i]          = i < XYZ + esteppers ? tmp1[i] : def1[i < COUNT(def1) ? i : COUNT(def1) - 1];
-//  897         planner.max_feedrate_mm_s[i]          = i < XYZ + esteppers ? tmp2[i] : def2[i < COUNT(def2) ? i : COUNT(def2) - 1];
-//  898         planner.max_acceleration_mm_per_s2[i] = i < XYZ + esteppers ? tmp3[i] : def3[i < COUNT(def3) ? i : COUNT(def3) - 1];
 ??load_4:
-        MOVS     R1,#+4
-??load_5:
-        ADD      R2,SP,#+80
-        LDR      R1,[R2, R1, LSL #+2]
-??load_6:
-        LDR.W    R2,??DataTable104
-        STR      R1,[R2, R0, LSL #+2]
-        ADDS     R0,R0,#+1
-        UXTB     R0,R0
-??load_3:
-        CMP      R0,#+5
-        BGE.N    ??load_7
-        LDRB     R1,[SP, #+2]
-        ADDS     R1,R1,#+3
-        CMP      R0,R1
-        BGE.N    ??load_8
-        LDR      R2,[R5, R0, LSL #+2]
-        B.N      ??load_9
-??load_8:
-        CMP      R0,#+5
-        BCS.N    ??load_10
-        MOV      R2,R0
-        B.N      ??load_11
-??load_10:
-        MOVS     R2,#+4
-??load_11:
-        ADD      R3,SP,#+120
-        LDR      R2,[R3, R2, LSL #+2]
-??load_9:
-        LDR.W    R3,??DataTable104_1
-        STR      R2,[R3, R0, LSL #+2]
-        CMP      R0,R1
-        BGE.N    ??load_12
-        LDR      R2,[R6, R0, LSL #+2]
-        B.N      ??load_13
-??load_12:
-        CMP      R0,#+5
-        BCS.N    ??load_14
-        MOV      R2,R0
-        B.N      ??load_15
-??load_14:
-        MOVS     R2,#+4
-??load_15:
-        ADD      R3,SP,#+100
-        LDR      R2,[R3, R2, LSL #+2]
-??load_13:
-        LDR.W    R3,??DataTable104_2
-        STR      R2,[R3, R0, LSL #+2]
-        CMP      R0,R1
-        BGE.N    ??load_16
-        LDR      R1,[R7, R0, LSL #+2]
-        B.N      ??load_6
-??load_16:
-        CMP      R0,#+5
-        BCS.N    ??load_4
-        MOV      R1,R0
-        B.N      ??load_5
+        CMP      R0,R10
+        ITE      LT 
+        LDRLT    R11,[R1, #+0]
+        LDRGE    R11,[R2, #+0]
+        STR      R11,[R3, #+0]
+//  897         planner.max_feedrate_mm_s[i]          = i < XYZ + esteppers ? tmp2[i] : def2[i < COUNT(def2) ? i : COUNT(def2) - 1];
+        CMP      R0,R10
+        ITE      LT 
+        LDRLT    R11,[R6, #+0]
+        LDRGE    R11,[R7, #+0]
+        STR      R11,[R12, #+0]
+//  898         planner.max_acceleration_mm_per_s2[i] = i < XYZ + esteppers ? tmp3[i] : def3[i < COUNT(def3) ? i : COUNT(def3) - 1];
+        CMP      R0,R10
+        ITE      LT 
+        LDRLT    R11,[LR, #+0]
+        LDRGE    R11,[R8, #+0]
 //  899       }
+        ADDS     R0,R0,#+1
+        ADDS     R7,R7,#+4
+        ADDS     R6,R6,#+4
+        ADDS     R3,R3,#+4
+        ADDS     R2,R2,#+4
+        ADDS     R1,R1,#+4
+        STR      R11,[R9], #+4
+        ADD      R8,R8,#+4
+        ADD      LR,LR,#+4
+        ADD      R12,R12,#+4
+        CMP      R0,#+5
+        BLT.N    ??load_4
 //  900 
 //  901       EEPROM_READ(planner.acceleration);
-??load_7:
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_3
+        LDR.W    R1,??load_0+0x30
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  902       EEPROM_READ(planner.retract_acceleration);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_4
+        LDR.W    R1,??load_0+0x34
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  903       EEPROM_READ(planner.travel_acceleration);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_5
+        LDR.W    R1,??load_0+0x38
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  904       EEPROM_READ(planner.min_feedrate_mm_s);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_6
+        LDR.W    R1,??load_0+0x3C
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  905       EEPROM_READ(planner.min_travel_feedrate_mm_s);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_7
+        LDR.W    R1,??load_0+0x40
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  906       EEPROM_READ(planner.min_segment_time_us);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_8
+        LDR.W    R1,??load_0+0x44
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  907       EEPROM_READ(planner.max_jerk);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+16
-        LDR.W    R1,??DataTable104_9
+        LDR.W    R1,??load_0+0x48
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -2806,9 +2798,9 @@ _ZN14MarlinSettings4loadEv:
 //  914         float home_offset[XYZ];
 //  915       #endif
 //  916       EEPROM_READ(home_offset);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+12
-        LDR.W    R1,??DataTable104_10
+        LDR.W    R1,??load_0+0x4C
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -2820,31 +2812,81 @@ _ZN14MarlinSettings4loadEv:
 //  922       #if HOTENDS > 1
 //  923         // Skip hotend 0 which must be 0
 //  924         for (uint8_t e = 1; e < HOTENDS; e++)
-        MOV      R8,#+1
-        B.N      ??load_17
+        LDR.W    R6,??load_0+0x50
 //  925           LOOP_XYZ(i) EEPROM_READ(hotend_offset[i][e]);
-??load_18:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_11
-        ADD      R0,R1,R0, LSL #+3
-        ADD      R1,R0,R8, LSL #+2
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        ADD      R9,R9,#+1
-??load_19:
-        UXTB     R9,R9
-        MOV      R0,R9
-        CMP      R0,#+3
-        BLT.N    ??load_18
-        ADD      R8,R8,#+1
-        UXTB     R8,R8
-??load_17:
-        CMP      R8,#+2
-        BGE.N    ??load_20
-        MOV      R9,#+0
-        B.N      ??load_19
+        LDR.W    R8,??load_0+0x54
+        MOVS     R7,#+0
+??load_5:
+        MOV      R9,R8
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_6
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R9, #+0]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R9, #+1]!
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R9, #+1]!
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R9, #+1]!
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_6:
+        ADDS     R7,R7,#+1
+        ADD      R8,R8,#+8
+        CMP      R7,#+3
+        BLT.N    ??load_5
 //  926       #endif
 //  927 
 //  928       //
@@ -2853,30 +2895,27 @@ _ZN14MarlinSettings4loadEv:
 //  931 
 //  932       //#if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
 //  933       if((MACHINETPYE != DELTA) && (BED_LEVELING_METHOD&HAS_FADE))
-??load_20:
-        LDR.W    R9,??DataTable104_12
-        ADD      R8,R9,#+52
-        LDRSH    R0,[R8, #+36]
+        LDR.W    R8,??load_0+0x58
+        ADDW     R7,R8,#+54
+        LDRSH    R0,[R7, #+34]
         CMP      R0,#+2
-        BEQ.N    ??load_21
-        LDRB     R0,[R8, #+12]
+        BEQ.N    ??load_7
+        LDRB     R0,[R7, #+12]
         LSLS     R0,R0,#+27
-        BPL.N    ??load_21
+        BPL.N    ??load_7
 //  934         EEPROM_READ(new_z_fade_height);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_13
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_22
+        ADDS     R1,R6,#+4
+        B.N      ??load_8
 //  935       //#else
 //  936       else
 //  937         EEPROM_READ(dummy);
-??load_21:
-        ADD      R3,SP,#+0
+??load_7:
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+8
+??load_8:
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -2889,91 +2928,147 @@ _ZN14MarlinSettings4loadEv:
 //  944       bool leveling_is_on;
 //  945       uint8_t mesh_num_x, mesh_num_y;
 //  946       EEPROM_READ(leveling_is_on);
-??load_22:
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+15
+        ADD      R1,SP,#+16
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  947       EEPROM_READ(dummy);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  948       EEPROM_READ(mesh_num_x);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+14
+        ADD      R1,SP,#+15
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  949       EEPROM_READ(mesh_num_y);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+13
+        ADD      R1,SP,#+14
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  950 
 //  951       //#if ENABLED(MESH_BED_LEVELING)
 //  952       if(BED_LEVELING_METHOD == MESH_BED_LEVELING) {
-        LDRB     R0,[R8, #+12]
+        LDRB     R0,[R7, #+12]
         CMP      R0,#+32
-        BNE.N    ??load_23
+        BNE.N    ??load_9
 //  953         mbl.has_mesh = leveling_is_on;
-        LDRB     R0,[SP, #+15]
-        LDR.W    R1,??DataTable104_14
+        LDRB     R0,[SP, #+16]
+        LDR.W    R1,??load_0+0x5C
         STRB     R0,[R1, #+0]
 //  954         mbl.z_offset = dummy;
+        LDR.W    R1,??load_0+0x60
         LDR      R0,[SP, #+8]
-        LDR.W    R1,??DataTable104_15
         STR      R0,[R1, #+0]
 //  955         if (mesh_num_x == GRID_MAX_POINTS_X && mesh_num_y == GRID_MAX_POINTS_Y) {
-        LDRB     R0,[SP, #+14]
-        LDRB     R1,[R9, #+96]
+        LDRB     R1,[R8, #+96]
+        LDRB     R0,[SP, #+15]
         CMP      R0,R1
-        BNE.N    ??load_24
-        LDRB     R0,[SP, #+13]
-        ADD      R1,R9,#+96
-        LDRB     R1,[R1, #+1]
-        CMP      R0,R1
-        BNE.N    ??load_24
+        ITTTT    EQ 
+        LDRBEQ   R0,[SP, #+14]
+        ADDEQ    R1,R8,#+96
+        LDRBEQ   R1,[R1, #+1]
+        CMPEQ    R0,R1
+        BNE.N    ??load_10
 //  956           // EEPROM data fits the current mesh
 //  957           EEPROM_READ(mbl.z_values);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOV      R2,#+576
-        LDR.W    R1,??DataTable104_16
+        LDR.W    R1,??load_0+0x64
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_25
+        B.N      ??load_11
 //  958         }
 //  959         else {
 //  960           // EEPROM data is stale
 //  961           mbl.reset();
-??load_24:
+??load_10:
           CFI FunCall _ZN17mesh_bed_leveling5resetEv
         BL       _ZN17mesh_bed_leveling5resetEv
 //  962           for (uint16_t q = mesh_num_x * mesh_num_y; q--;) EEPROM_READ(dummy);
-        LDRB     R0,[SP, #+14]
-        LDRB     R1,[SP, #+13]
-        MUL      R10,R1,R0
-??load_26:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTH     R0,R0
+        LDRB     R0,[SP, #+15]
+        LDRB     R1,[SP, #+14]
+        MUL      R9,R1,R0
+??load_12:
+        UXTH     R0,R9
         CMP      R0,#+0
-        BEQ.N    ??load_25
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_26
+        BEQ.W    ??load_11
+        SUB      R9,R0,#+1
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_12
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        B.N      ??load_12
 //  963         }
 //  964       }
 //  965       //#else
@@ -2981,24 +3076,81 @@ _ZN14MarlinSettings4loadEv:
 //  967       {
 //  968         // MBL is disabled - skip the stored data
 //  969         for (uint16_t q = mesh_num_x * mesh_num_y; q--;) EEPROM_READ(dummy);
-??load_23:
-        LDRB     R0,[SP, #+14]
-        LDRB     R1,[SP, #+13]
-        MUL      R10,R1,R0
-        B.N      ??load_27
-??load_28:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_27:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTH     R0,R0
+??load_9:
+        LDRB     R0,[SP, #+15]
+        LDRB     R1,[SP, #+14]
+        MUL      R9,R1,R0
+        B.N      ??load_13
+??load_14:
+        SUB      R9,R0,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BNE.N    ??load_28
+        BNE.N    ??load_13
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_13:
+        UXTH     R0,R9
+        CMP      R0,#+0
+        BNE.N    ??load_14
 //  970       }
 //  971       //#endif // MESH_BED_LEVELING
 //  972 
@@ -3006,10 +3158,10 @@ _ZN14MarlinSettings4loadEv:
 //  974         float zprobe_zoffset;
 //  975       #endif
 //  976       EEPROM_READ(zprobe_zoffset);
-??load_25:
-        ADD      R3,SP,#+0
+??load_11:
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_17
+        LDR.W    R1,??load_15
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -3020,39 +3172,94 @@ _ZN14MarlinSettings4loadEv:
 //  981 
 //  982       //#if ABL_PLANAR
 //  983       if(BED_LEVELING_METHOD&ABL_PLANAR)
-        LDRB     R0,[R8, #+12]
+        LDRB     R0,[R7, #+12]
         MOVS     R1,#+6
         TST      R0,R1
-        BEQ.N    ??load_29
+        BEQ.N    ??load_16
 //  984       {
 //  985         EEPROM_READ(planner.bed_level_matrix);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+36
-        LDR.W    R1,??DataTable104_18
+        LDR.W    R1,??load_15+0x4
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_30
+        B.N      ??load_17
 //  986       }
 //  987       else//#else
 //  988       {
 //  989         for (uint8_t q = 9; q--;) EEPROM_READ(dummy);
-??load_29:
-        MOV      R10,#+9
-        B.N      ??load_31
-??load_32:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_31:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTB     R0,R0
+??load_16:
+        MOV      R9,#+9
+??load_18:
+        SUB      R9,R9,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BNE.N    ??load_32
+        BNE.N    ??load_19
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_19:
+        CMP      R9,#+0
+        BNE.N    ??load_18
 //  990       }
 //  991       //#endif
 //  992 
@@ -3062,63 +3269,63 @@ _ZN14MarlinSettings4loadEv:
 //  996 
 //  997       uint8_t grid_max_x, grid_max_y;
 //  998       EEPROM_READ(grid_max_x);                       // 1 byte
-??load_30:
-        ADD      R3,SP,#+0
+??load_17:
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+12
+        ADD      R1,SP,#+13
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 //  999       EEPROM_READ(grid_max_y);                       // 1 byte
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+3
+        ADD      R1,SP,#+12
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1000       int bgs[2], bs[2];
 // 1001       //#if ENABLED(AUTO_BED_LEVELING_BILINEAR)
 // 1002       if(BED_LEVELING_METHOD == AUTO_BED_LEVELING_BILINEAR)
-        LDRB     R0,[R8, #+12]
+        LDRB     R0,[R7, #+12]
         CMP      R0,#+8
-        BNE.N    ??load_33
+        BNE.W    ??load_20
 // 1003       {
 // 1004         if (grid_max_x == GRID_MAX_POINTS_X && grid_max_y == GRID_MAX_POINTS_Y) {
-        LDRB     R0,[SP, #+12]
-        LDRB     R1,[R9, #+96]
+        LDRB     R0,[SP, #+13]
+        LDRB     R1,[R8, #+96]
         CMP      R0,R1
-        BNE.N    ??load_34
-        LDRB     R0,[SP, #+3]
-        ADD      R1,R9,#+96
-        LDRB     R1,[R1, #+1]
-        CMP      R0,R1
-        BNE.N    ??load_34
+        ITTTT    EQ 
+        LDRBEQ   R0,[SP, #+12]
+        ADDEQ    R1,R8,#+96
+        LDRBEQ   R1,[R1, #+1]
+        CMPEQ    R0,R1
+        BNE.N    ??load_21
 // 1005           set_bed_leveling_enabled(false);
         MOVS     R0,#+0
           CFI FunCall _Z24set_bed_leveling_enabledb
         BL       _Z24set_bed_leveling_enabledb
 // 1006           EEPROM_READ(bilinear_grid_spacing);        // 2 ints
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        LDR.W    R1,??DataTable104_19
+        LDR.W    R1,??DataTable99
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1007           EEPROM_READ(bilinear_start);               // 2 ints
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        LDR.W    R1,??DataTable104_20
+        LDR.W    R1,??DataTable99_1
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1008           EEPROM_READ(z_values);                     // 9 to 256 floats
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOV      R2,#+576
-        LDR.W    R1,??DataTable104_21
+        LDR.W    R1,??DataTable99_2
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_35
+        B.N      ??load_22
 // 1009         }
 // 1010         else // EEPROM data is stale
 // 1011       //#endif // AUTO_BED_LEVELING_BILINEAR
@@ -3126,74 +3333,188 @@ _ZN14MarlinSettings4loadEv:
 // 1013           // Skip past disabled (or stale) Bilinear Grid data
 // 1014           //int bgs[2], bs[2];
 // 1015           EEPROM_READ(bgs);
-??load_34:
-        ADD      R3,SP,#+0
+??load_21:
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        ADD      R1,SP,#+48
+        ADD      R1,SP,#+44
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1016           EEPROM_READ(bs);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        ADD      R1,SP,#+40
+        ADD      R1,SP,#+36
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1017           for (uint16_t q = grid_max_x * grid_max_y; q--;) EEPROM_READ(dummy);
-        LDRB     R0,[SP, #+12]
-        LDRB     R1,[SP, #+3]
-        MUL      R10,R1,R0
-??load_36:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTH     R0,R0
+        LDRB     R0,[SP, #+13]
+        LDRB     R1,[SP, #+12]
+        MUL      R9,R1,R0
+??load_23:
+        UXTH     R0,R9
         CMP      R0,#+0
-        BEQ.N    ??load_35
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_36
+        BEQ.W    ??load_22
+        SUB      R9,R0,#+1
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_23
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        B.N      ??load_23
 // 1018         }
 // 1019       }
 // 1020       else
 // 1021 	  {
 // 1022          EEPROM_READ(bgs);
-??load_33:
-        ADD      R3,SP,#+0
+??load_20:
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        ADD      R1,SP,#+48
+        ADD      R1,SP,#+44
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1023          EEPROM_READ(bs);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        ADD      R1,SP,#+40
+        ADD      R1,SP,#+36
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1024          for (uint16_t q = grid_max_x * grid_max_y; q--;) EEPROM_READ(dummy);
-        LDRB     R0,[SP, #+12]
-        LDRB     R1,[SP, #+3]
-        MUL      R10,R1,R0
-        B.N      ??load_37
-??load_38:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_37:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTH     R0,R0
+        LDRB     R0,[SP, #+13]
+        LDRB     R1,[SP, #+12]
+        MUL      R9,R1,R0
+        B.N      ??load_24
+??load_25:
+        SUB      R9,R0,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BNE.N    ??load_38
+        BNE.N    ??load_24
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_24:
+        UXTH     R0,R9
+        CMP      R0,#+0
+        BNE.N    ??load_25
 // 1025 	  }
 // 1026 
 // 1027       //
@@ -3202,39 +3523,37 @@ _ZN14MarlinSettings4loadEv:
 // 1030 
 // 1031       //#if ENABLED(AUTO_BED_LEVELING_UBL)
 // 1032        if(BED_LEVELING_METHOD == AUTO_BED_LEVELING_UBL)	{
-??load_35:
-        LDRB     R0,[R8, #+12]
+??load_22:
+        LDRB     R0,[R7, #+12]
         CMP      R0,#+16
-        ADD      R3,SP,#+0
-        BNE.N    ??load_39
+        ADD      R3,SP,#+2
+        BNE.N    ??load_26
 // 1033         EEPROM_READ(planner.leveling_active);
         MOVS     R2,#+1
-        LDR.W    R1,??DataTable104_22
+        LDR.W    R1,??DataTable101
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1034         EEPROM_READ(ubl.storage_slot);}
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        LDR.W    R1,??DataTable104_23
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_40
+        LDR.W    R1,??DataTable101_1
+        B.N      ??load_27
 // 1035       //#else
 // 1036       else{
 // 1037         uint8_t dummyui8;
 // 1038         EEPROM_READ(dummyb);
-??load_39:
+??load_26:
         MOVS     R2,#+1
-        ADD      R1,SP,#+16
+        ADD      R1,SP,#+17
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1039         EEPROM_READ(dummyui8);}
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+17
+        ADD      R1,SP,#+0
+??load_27:
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -3246,76 +3565,75 @@ _ZN14MarlinSettings4loadEv:
 // 1045 
 // 1046       //#if ENABLED(DELTA)
 // 1047       if(MACHINETPYE == DELTA)	{
-??load_40:
-        LDRSH    R0,[R8, #+36]
+        LDRSH    R0,[R7, #+34]
         CMP      R0,#+2
-        BNE.N    ??load_41
+        BNE.N    ??load_28
 // 1048         EEPROM_READ(delta_height);              // 1 float
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_24
+        LDR.W    R1,??DataTable101_2
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1049         EEPROM_READ(delta_endstop_adj);         // 3 floats
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+12
-        LDR.W    R1,??DataTable104_25
+        LDR.W    R1,??DataTable101_3
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1050         EEPROM_READ(delta_radius);              // 1 float
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_26
+        LDR.W    R1,??DataTable101_4
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1051         EEPROM_READ(delta_diagonal_rod);        // 1 float
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_27
+        LDR.W    R1,??DataTable101_5
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1052         EEPROM_READ(delta_segments_per_second); // 1 float
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_28
+        LDR.W    R1,??DataTable101_6
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1053         EEPROM_READ(delta_calibration_radius);  // 1 float
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable104_29
+        LDR.W    R1,??DataTable101_7
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1054         EEPROM_READ(delta_tower_angle_trim);    // 3 floats
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+12
-        LDR.W    R1,??DataTable99
+        LDR.W    R1,??DataTable101_8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_42
+        B.N      ??load_29
 // 1055         }
 // 1056         else
 // 1057         {
 // 1058       
 // 1059       //#elif ENABLED(X_DUAL_ENDSTOPS) || ENABLED(Y_DUAL_ENDSTOPS) || ENABLED(Z_DUAL_ENDSTOPS)
 // 1060             if(Z_DUAL_ENDSTOPS==1)
-??load_41:
-        LDRB     R0,[R9, #+258]
+??load_28:
+        LDRB     R0,[R8, #+258]
         CMP      R0,#+1
-        BNE.N    ??load_43
+        BNE.N    ??load_30
 // 1061             {
 // 1062                 #if ENABLED(X_DUAL_ENDSTOPS)
 // 1063                   EEPROM_READ(x_endstop_adj);             // 1 float
 // 1064                 #else
 // 1065                   EEPROM_READ(dummy);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
@@ -3326,7 +3644,7 @@ _ZN14MarlinSettings4loadEv:
 // 1068                   EEPROM_READ(y_endstop_adj);             // 1 float
 // 1069                 #else
 // 1070                   EEPROM_READ(dummy);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
@@ -3335,65 +3653,171 @@ _ZN14MarlinSettings4loadEv:
 // 1071                 #endif
 // 1072                 //#if ENABLED(Z_DUAL_ENDSTOPS)
 // 1073                 if(Z_DUAL_ENDSTOPS==1)
-        LDRB     R0,[R9, #+258]
+        LDRB     R0,[R8, #+258]
         CMP      R0,#+1
-        ADD      R3,SP,#+0
-        BNE.N    ??load_44
+        ADD      R3,SP,#+2
+        ITTEE    EQ 
 // 1074                   EEPROM_READ(z_endstop_adj);             // 1 float
-        MOVS     R2,#+4
-        LDR.W    R1,??DataTable99_1
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_45
+        MOVEQ    R2,#+4
+        LDREQ.W  R1,??DataTable102_1
 // 1075                 //#else
 // 1076                 else
 // 1077                   EEPROM_READ(dummy);
-??load_44:
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
+        MOVNE    R2,#+4
+        ADDNE    R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1078                 //#endif
 // 1079 
 // 1080                 for (uint8_t q=8; q--;) EEPROM_READ(dummy);
-??load_45:
-        MOV      R10,#+8
-??load_46:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTB     R0,R0
+        MOV      R9,#+8
+??load_31:
+        SUB      R9,R9,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BEQ.N    ??load_42
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_46
+        BNE.N    ??load_32
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_32:
+        CMP      R9,#+0
+        BNE.N    ??load_31
+        B.N      ??load_29
 // 1081 
 // 1082           //#else
 // 1083             }
 // 1084             else
 // 1085                 for (uint8_t q=11; q--;) EEPROM_READ(dummy);
-??load_43:
-        MOV      R10,#+11
-        B.N      ??load_47
-??load_48:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_47:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTB     R0,R0
+??load_30:
+        MOV      R9,#+11
+??load_33:
+        SUB      R9,R9,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BNE.N    ??load_48
+        BNE.N    ??load_34
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_34:
+        CMP      R9,#+0
+        BNE.N    ??load_33
 // 1086       }
 // 1087       //#endif
 // 1088 
@@ -3405,24 +3829,24 @@ _ZN14MarlinSettings4loadEv:
 // 1094         int lcd_preheat_hotend_temp[2], lcd_preheat_bed_temp[2], lcd_preheat_fan_speed[2];
 // 1095       #endif
 // 1096       EEPROM_READ(lcd_preheat_hotend_temp); // 2 floats
-??load_42:
-        ADD      R3,SP,#+0
+??load_29:
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        ADD      R1,SP,#+72
+        ADD      R1,SP,#+68
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1097       EEPROM_READ(lcd_preheat_bed_temp);    // 2 floats
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        ADD      R1,SP,#+64
+        ADD      R1,SP,#+60
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1098       EEPROM_READ(lcd_preheat_fan_speed);   // 2 floats
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+8
-        ADD      R1,SP,#+56
+        ADD      R1,SP,#+52
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -3438,106 +3862,449 @@ _ZN14MarlinSettings4loadEv:
 // 1108 
 // 1109       //#if ENABLED(PIDTEMP)
 // 1110       if(PIDTEMP){
-        LDRB     R0,[R9, #+52]
+        LDRB     R0,[R8, #+54]
         CMP      R0,#+0
-        BEQ.N    ??load_49
+        BEQ.W    ??load_35
 // 1111         for (uint8_t e = 0; e < MAX_EXTRUDERS; e++) {
-        MOV      R9,#+0
-        B.N      ??load_50
+        MOV      R8,#+2
+        LDR.W    R9,??DataTable103
+        LDR.W    R10,??DataTable103_1  ;; 0x453b8000
 // 1112           EEPROM_READ(dummy); // Kp
+??load_36:
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_37
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
 // 1113           if (e < HOTENDS && dummy != DUMMY_PID_VALUE) {
+??load_37:
+        MOV      R1,R10
+        LDR      R0,[SP, #+8]
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.W    ??load_38
 // 1114             // do not need to scale PID values as the values in EEPROM are already scaled
 // 1115             PID_PARAM(Kp, e) = dummy;
+        STR      R0,[R9, #+0]
 // 1116             EEPROM_READ(PID_PARAM(Ki, e));
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_39
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDR.W    R11,??DataTable103_2
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+0]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+1]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+2]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+3]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
 // 1117             EEPROM_READ(PID_PARAM(Kd, e));
+??load_39:
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_40
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDR.W    R11,??DataTable103_3
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+0]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+1]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+2]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R11, #+3]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
 // 1118             #if ENABLED(PID_EXTRUSION_SCALING)
 // 1119               EEPROM_READ(PID_PARAM(Kc, e));
 // 1120             #else
 // 1121               EEPROM_READ(dummy);
+??load_40:
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.W    ??load_41
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        B.N      ??load_41
 // 1122             #endif
 // 1123           }
 // 1124           else {
 // 1125             for (uint8_t q=3; q--;) EEPROM_READ(dummy); // Ki, Kd, Kc
-??load_51:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_52:
-        MOV      R0,R10
-        SUB      R10,R0,#+1
-        UXTB     R0,R0
+??load_38:
+        MOV      R11,#+3
+??load_42:
+        SUB      R11,R11,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BNE.N    ??load_51
-??load_53:
-        ADD      R9,R9,#+1
-??load_50:
-        UXTB     R9,R9
-        MOV      R10,R9
-        CMP      R10,#+2
-        BGE.N    ??load_54
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        CMP      R10,#+2
-        BGE.N    ??load_55
-        LDR      R0,[SP, #+8]
-        LDR.W    R1,??DataTable100  ;; 0x453b8000
-          CFI FunCall __aeabi_cfcmpeq
-        BL       __aeabi_cfcmpeq
-        BEQ.N    ??load_55
-        LDR.N    R1,??DataTable99_2
-        STR      R0,[R1, #+0]
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        LDR.N    R1,??DataTable99_3
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        LDR.N    R1,??DataTable99_4
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_53
-??load_55:
-        MOV      R10,#+3
-        B.N      ??load_52
+        BNE.N    ??load_43
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_43:
+        CMP      R11,#+0
+        BNE.N    ??load_42
 // 1126           }
 // 1127         }
+??load_41:
+        SUBS     R8,R8,#+1
+        BEQ.N    ??load_44
+        B.N      ??load_36
 // 1128       }
 // 1129       //#else // !PIDTEMP
 // 1130       else
 // 1131         // 4 x 4 = 16 slots for PID parameters
 // 1132         for (uint8_t q = MAX_EXTRUDERS * 4; q--;) EEPROM_READ(dummy);  // Kp, Ki, Kd, Kc
-??load_49:
-        MOV      R9,#+8
-        B.N      ??load_56
-??load_57:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_56:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
+??load_35:
+        MOV      R8,#+8
+??load_45:
+        SUB      R8,R8,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BNE.N    ??load_57
+        BNE.N    ??load_46
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_46:
+        CMP      R8,#+0
+        BNE.N    ??load_45
 // 1133       //#endif // !PIDTEMP
 // 1134 
 // 1135       //
@@ -3548,10 +4315,10 @@ _ZN14MarlinSettings4loadEv:
 // 1140         int lpq_len;
 // 1141       #endif
 // 1142       EEPROM_READ(lpq_len);
-??load_54:
-        ADD      R3,SP,#+0
+??load_44:
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        ADD      R1,SP,#+36
+        ADD      R1,SP,#+32
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -3562,12 +4329,12 @@ _ZN14MarlinSettings4loadEv:
 // 1147 
 // 1148       //#if ENABLED(PIDTEMPBED)
 // 1149       if(PIDTEMPBED)
-        LDRB     R0,[R8, #+1]
+        LDRB     R0,[R7, #+1]
         CMP      R0,#+0
-        BEQ.N    ??load_58
+        BEQ.N    ??load_47
 // 1150       {
 // 1151         EEPROM_READ(dummy); // bedKp
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
@@ -3575,50 +4342,135 @@ _ZN14MarlinSettings4loadEv:
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1152         if (dummy != DUMMY_PID_VALUE) {
         LDR      R0,[SP, #+8]
-        LDR.W    R1,??DataTable100  ;; 0x453b8000
+        LDR.W    R1,??DataTable103_1  ;; 0x453b8000
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
-        BEQ.N    ??load_59
+        BEQ.W    ??load_48
 // 1153           thermalManager.bedKp = dummy;
-        LDR.W    R1,??DataTable101
+        LDR.W    R1,??DataTable104
         STR      R0,[R1, #+0]
 // 1154           EEPROM_READ(thermalManager.bedKi);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable101_1
+        LDR.W    R1,??DataTable104_1
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1155           EEPROM_READ(thermalManager.bedKd);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
-        LDR.W    R1,??DataTable101_2
+        LDR.W    R1,??DataTable104_2
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        B.N      ??load_59
+        B.N      ??load_48
+        Nop      
+        DATA
+??load_0:
+        DC32     version
+        DC32     echomagic
+        DC32     `?<Constant "EEPROM version mismatch ">`
+        DC32     `?<Constant "(EEPROM=">`
+        DC32     `?<Constant " Marlin=V47)\\n">`
+        DC32     card
+        DC32     `?<Constant {(8.05999984E+1F), (8.0400001522E+1`
+        DC32     `?<Constant {(200.0F), (200.0F), (4.0F), (70.0F`
+        DC32     `?<Constant {1000, 1000, 100, 1000, 1000}>`
+        DC32     _ZN7Planner17axis_steps_per_mmE
+        DC32     _ZN7Planner17max_feedrate_mm_sE
+        DC32     _ZN7Planner26max_acceleration_mm_per_s2E
+        DC32     _ZN7Planner12accelerationE
+        DC32     _ZN7Planner20retract_accelerationE
+        DC32     _ZN7Planner19travel_accelerationE
+        DC32     _ZN7Planner17min_feedrate_mm_sE
+        DC32     _ZN7Planner24min_travel_feedrate_mm_sE
+        DC32     _ZN7Planner19min_segment_time_usE
+        DC32     _ZN7Planner8max_jerkE
+        DC32     home_offset
+        DC32     _ZN14MarlinSettings12eeprom_errorE
+        DC32     hotend_offset+0x4
+        DC32     mksCfg
+        DC32     _ZN17mesh_bed_leveling8has_meshE
+        DC32     _ZN17mesh_bed_leveling8z_offsetE
+        DC32     _ZN17mesh_bed_leveling8z_valuesE
+        THUMB
 // 1156         }
 // 1157       }
 // 1158       //#else
 // 1159       else
 // 1160       {
 // 1161         for (uint8_t q=3; q--;) EEPROM_READ(dummy); // bedKp, bedKi, bedKd
-??load_58:
-        MOV      R9,#+3
-        B.N      ??load_60
-??load_61:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_60:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
+??load_47:
+        MOV      R8,#+3
+??load_49:
+        SUB      R8,R8,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        BNE.N    ??load_61
+        BNE.N    ??load_50
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_50:
+        CMP      R8,#+0
+        BNE.N    ??load_49
 // 1162       }
 // 1163       //#endif
 // 1164 
@@ -3630,10 +4482,10 @@ _ZN14MarlinSettings4loadEv:
 // 1170         uint16_t lcd_contrast;
 // 1171       #endif
 // 1172       EEPROM_READ(lcd_contrast);
-??load_59:
-        ADD      R3,SP,#+0
+??load_48:
+        ADD      R3,SP,#+2
         MOVS     R2,#+2
-        ADD      R1,SP,#+32
+        ADD      R1,SP,#+28
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
@@ -3654,28 +4506,83 @@ _ZN14MarlinSettings4loadEv:
 // 1187         EEPROM_READ(swap_retract_recover_feedrate_mm_s);
 // 1188       #else
 // 1189         EEPROM_READ(dummyb);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        ADD      R1,SP,#+16
+        ADD      R1,SP,#+17
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1190         for (uint8_t q=8; q--;) EEPROM_READ(dummy);
-        MOV      R9,#+8
-        B.N      ??load_62
-??load_63:
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_62:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
+        MOV      R8,#+8
+??load_51:
+        SUB      R8,R8,#+1
+        LDRB     R0,[R6, #+0]
         CMP      R0,#+0
-        ADD      R3,SP,#+0
-        BNE.N    ??load_63
+        BNE.N    ??load_52
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_52:
+        CMP      R8,#+0
+        BNE.N    ??load_51
 // 1191       #endif
 // 1192 
 // 1193       //
@@ -3684,35 +4591,89 @@ _ZN14MarlinSettings4loadEv:
 // 1196       #if DISABLED(NO_VOLUMETRICS)
 // 1197 
 // 1198         EEPROM_READ(parser.volumetric_enabled);
+        ADD      R3,SP,#+2
         MOVS     R2,#+1
-        LDR.W    R1,??DataTable102_1
+        LDR.W    R1,??report_0+0x8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1199 
 // 1200         for (uint8_t q = 0; q < MAX_EXTRUDERS; q++) {
-        MOV      R9,#+0
-        B.N      ??load_64
+        LDR.W    R8,??report_0+0xC
+        MOV      R9,#+2
 // 1201           EEPROM_READ(dummy);
-??load_65:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
+??load_53:
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_54
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
 // 1202           if (q < COUNT(planner.filament_size)) planner.filament_size[q] = dummy;
-        CMP      R9,#+2
-        BCS.N    ??load_66
-        LDR      R0,[SP, #+8]
-        LDR.W    R1,??DataTable102_2
-        STR      R0,[R1, R9, LSL #+2]
 // 1203         }
-??load_66:
-        ADD      R9,R9,#+1
-??load_64:
-        CMP      R9,#+2
-        BLT.N    ??load_65
+??load_54:
+        SUBS     R9,R9,#+1
+        LDR      R0,[SP, #+8]
+        STR      R0,[R8], #+4
+        BNE.N    ??load_53
 // 1204 
 // 1205       #endif
 // 1206 
@@ -3768,21 +4729,41 @@ _ZN14MarlinSettings4loadEv:
 // 1256         #endif
 // 1257       #else
 // 1258         for (uint8_t q = 11; q--;) EEPROM_READ(val);
-        MOV      R9,#+11
-        B.N      ??load_67
-??load_68:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+2
-        ADD      R1,SP,#+26
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_67:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??load_68
+        MOV      R8,#+11
+??load_55:
+        SUB      R8,R8,#+1
+        LDRB     R0,[R6, #+0]
+        CBNZ.N   R0,??load_56
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_56:
+        CMP      R8,#+0
+        BNE.N    ??load_55
 // 1259       #endif
 // 1260 
 // 1261       /*
@@ -3808,19 +4789,40 @@ _ZN14MarlinSettings4loadEv:
 // 1281         #endif
 // 1282       #else
 // 1283         for (uint8_t q = 0; q < 2; q++) EEPROM_READ(thrs);
-        MOV      R9,#+0
-        B.N      ??load_69
-??load_70:
-        MOVS     R2,#+2
-        ADD      R1,SP,#+24
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-        ADD      R9,R9,#+1
-??load_69:
-        CMP      R9,#+2
-        ADD      R3,SP,#+0
-        BLT.N    ??load_70
+        MOV      R8,#+2
+??load_57:
+        LDRB     R0,[R6, #+0]
+        CBNZ.N   R0,??load_58
+        MOVS     R2,#+1
+        LDR      R0,[SP, #+4]
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_58:
+        SUBS     R8,R8,#+1
+        BNE.N    ??load_57
 // 1284       #endif
 // 1285 
 // 1286       //
@@ -3832,13 +4834,14 @@ _ZN14MarlinSettings4loadEv:
 // 1292         EEPROM_READ(planner.advance_ed_ratio);
 // 1293       #else
 // 1294         EEPROM_READ(dummy);
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
           CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
         BL       _ZN14MarlinSettings9read_dataERiPhtPt
 // 1295         EEPROM_READ(dummy);
-        ADD      R3,SP,#+0
+        ADD      R3,SP,#+2
         MOVS     R2,#+4
         ADD      R1,SP,#+8
         ADD      R0,SP,#+4
@@ -3855,21 +4858,67 @@ _ZN14MarlinSettings4loadEv:
 // 1304       #else
 // 1305         uint32_t dummyui32;
 // 1306         for (uint8_t q = 3; q--;) EEPROM_READ(dummyui32);
-        MOV      R9,#+3
-        B.N      ??load_71
-??load_72:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+28
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_71:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??load_72
+        MOV      R8,#+3
+??load_59:
+        SUB      R8,R8,#+1
+        LDRB     R0,[R6, #+0]
+        CBNZ.N   R0,??load_60
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_60:
+        CMP      R8,#+0
+        BNE.N    ??load_59
 // 1307       #endif
 // 1308 
 // 1309       //
@@ -3881,29 +4930,84 @@ _ZN14MarlinSettings4loadEv:
 // 1315         EEPROM_READ(coordinate_system);                  // 27 floats
 // 1316       #else
 // 1317         for (uint8_t q = 27; q--;) 
-        MOV      R9,#+27
-        B.N      ??load_73
+        MOV      R8,#+27
+??load_61:
+        SUB      R8,R8,#+1
 // 1318         {
 // 1319             EEPROM_READ(dummy);
-??load_74:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
+        LDRB     R0,[R6, #+0]
+        CMP      R0,#+0
+        BNE.N    ??load_62
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
 // 1320             //SERIAL_ECHOPAIR("q:",q);
 // 1321             //SERIAL_ECHOPAIR(" offset:",eeprom_index);
 // 1322             //SERIAL_ECHOPAIR(" dummy:",dummy);
 // 1323             //SERIAL_ECHOPAIR(" CRC:",working_crc);
 // 1324             //SERIAL_EOL();
 // 1325         }
-??load_73:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??load_74
+??load_62:
+        CMP      R8,#+0
+        BNE.N    ??load_61
 // 1326       #endif
 // 1327 
 // 1328       //
@@ -3921,40 +5025,95 @@ _ZN14MarlinSettings4loadEv:
 // 1340         #endif
 // 1341       #else
 // 1342         for (uint8_t q = 3; q--;) EEPROM_READ(dummy);
-        MOV      R9,#+3
-        B.N      ??load_75
-??load_76:
-        ADD      R3,SP,#+0
-        MOVS     R2,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
-??load_75:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
+        MOV      R8,#+3
+??load_63:
+        LDRB     R0,[R6, #+0]
+        SUB      R8,R8,#+1
         CMP      R0,#+0
-        BNE.N    ??load_76
+        BNE.N    ??load_64
+        LDR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+8]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+9]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+10]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R0
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[SP, #+11]
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+4]
+??load_64:
+        CMP      R8,#+0
+        BNE.N    ??load_63
 // 1343       #endif
 // 1344 
 // 1345       if (working_crc == stored_crc) {
-        LDR.W    R9,??DataTable104_30
-        LDRH     R0,[SP, #+0]
+        LDRH     R0,[SP, #+2]
         LDRH     R1,[SP, #+18]
+        LDR.W    R8,??DataTable104_3
         CMP      R0,R1
-        BNE.N    ??load_77
+        BNE.N    ??load_65
 // 1346         postprocess();
           CFI FunCall _ZN14MarlinSettings11postprocessEv
         BL       _ZN14MarlinSettings11postprocessEv
 // 1347         #if ENABLED(EEPROM_CHITCHAT)
 // 1348           SERIAL_ECHO_START();
-        LDR.W    R0,??DataTable103_1
+        LDR.W    R0,??DataTable104_4
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1349           SERIAL_ECHO(version);
-        MOV      R1,R4
-        MOV      R0,R9
+        ADR.W    R1,version
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
 // 1350           SERIAL_ECHOPAIR(" stored settings retrieved (", eeprom_index - (EEPROM_OFFSET));
@@ -3963,7 +5122,7 @@ _ZN14MarlinSettings4loadEv:
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1351           SERIAL_ECHOPAIR(" bytes; crc ", (uint32_t)working_crc);
-        LDRH     R1,[SP, #+0]
+        LDRH     R1,[SP, #+2]
         ADR.W    R0,`?<Constant " bytes; crc ">`
           CFI FunCall _Z17serial_echopair_PPKcj
         BL       _Z17serial_echopair_PPKcj
@@ -3971,14 +5130,20 @@ _ZN14MarlinSettings4loadEv:
         ADR.N    R0,??DataTable102  ;; 0x29, 0x0A, 0x00, 0x00
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
-        B.N      ??load_78
+        B.N      ??load_66
+        Nop      
+        DATA
+??load_15:
+        DC32     zprobe_zoffset
+        DC32     _ZN7Planner16bed_level_matrixE
+        THUMB
 // 1353         #endif
 // 1354       }
 // 1355       else {
 // 1356         #if ENABLED(EEPROM_CHITCHAT)
 // 1357           SERIAL_ERROR_START();
-??load_77:
-        LDR.W    R0,??DataTable104_31
+??load_65:
+        LDR.W    R0,??DataTable104_5
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1358           SERIAL_ERRORPGM("EEPROM CRC mismatch - (stored) ");
@@ -3986,9 +5151,9 @@ _ZN14MarlinSettings4loadEv:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1359           SERIAL_ERROR(stored_crc);
-        MOVS     R2,#+10
         LDRH     R1,[SP, #+18]
-        MOV      R0,R9
+        MOVS     R2,#+10
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
 // 1360           SERIAL_ERRORPGM(" != ");
@@ -3996,9 +5161,9 @@ _ZN14MarlinSettings4loadEv:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1361           SERIAL_ERROR(working_crc);
+        LDRH     R1,[SP, #+2]
         MOVS     R2,#+10
-        LDRH     R1,[SP, #+0]
-        MOV      R0,R9
+        MOV      R0,R8
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
 // 1362           SERIAL_ERRORLNPGM(" (calculated)!");
@@ -4013,16 +5178,15 @@ _ZN14MarlinSettings4loadEv:
 // 1366 
 // 1367       //#if ENABLED(AUTO_BED_LEVELING_UBL)
 // 1368       if(BED_LEVELING_METHOD == AUTO_BED_LEVELING_UBL) 	{
-??load_78:
-        LDRB     R0,[R8, #+12]
+??load_66:
+        LDRB     R0,[R7, #+12]
         CMP      R0,#+16
-        BNE.N    ??load_79
+        BNE.N    ??load_67
 // 1369         meshes_begin = (eeprom_index + 32) & 0xFFF8;  // Pad the end of configuration data so it
         LDR      R0,[SP, #+4]
         ADDS     R0,R0,#+32
         BIC      R0,R0,#0x7
-        LDR.W    R1,??DataTable105
-        STRH     R0,[R1, #+2]
+        STRH     R0,[R6, #+2]
 // 1370                                                       // can float up or down a little bit without
 // 1371                                                       // disrupting the mesh data
 // 1372         ubl.report_state();
@@ -4032,11 +5196,10 @@ _ZN14MarlinSettings4loadEv:
 // 1374         if (!ubl.sanity_check()) {
           CFI FunCall _ZN20unified_bed_leveling12sanity_checkEv
         BL       _ZN20unified_bed_leveling12sanity_checkEv
-        CMP      R0,#+0
-        BNE.N    ??load_80
+        CBNZ.N   R0,??load_68
 // 1375           SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R9
+        MOV      R0,R8
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1376           #if ENABLED(EEPROM_CHITCHAT)
@@ -4047,13 +5210,13 @@ _ZN14MarlinSettings4loadEv:
         ADR.W    R0,`?<Constant " initialized.\\n\\n">`
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
-        B.N      ??load_81
+        B.N      ??load_69
 // 1379           #endif
 // 1380         }
 // 1381         else {
 // 1382           #if ENABLED(EEPROM_CHITCHAT)
 // 1383             SERIAL_PROTOCOLPGM("?Can't enable ");
-??load_80:
+??load_68:
         ADR.W    R0,`?<Constant "?Can\\'t enable ">`
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
@@ -4061,7 +5224,7 @@ _ZN14MarlinSettings4loadEv:
           CFI FunCall _ZN20unified_bed_leveling9echo_nameEv
         BL       _ZN20unified_bed_leveling9echo_nameEv
 // 1385             SERIAL_PROTOCOLLNPGM(".");
-        ADR.N    R0,??DataTable103  ;; 0x2E, 0x0A, 0x00, 0x00
+        ADR.N    R0,??DataTable102_2  ;; 0x2E, 0x0A, 0x00, 0x00
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1386           #endif
@@ -4071,36 +5234,35 @@ _ZN14MarlinSettings4loadEv:
 // 1388         }
 // 1389 
 // 1390         if (ubl.storage_slot >= 0) {
-??load_81:
-        LDR.W    R4,??DataTable104_23
-        LDRSB    R0,[R4, #+0]
+??load_69:
+        LDR.N    R6,??DataTable101_1
+        LDRSB    R0,[R6, #+0]
         CMP      R0,#+0
-        BMI.N    ??load_82
+        BMI.N    ??load_70
 // 1391           load_mesh(ubl.storage_slot);
         MOVS     R1,#+0
           CFI FunCall _ZN14MarlinSettings9load_meshEaPv
         BL       _ZN14MarlinSettings9load_meshEaPv
 // 1392           #if ENABLED(EEPROM_CHITCHAT)
 // 1393             SERIAL_ECHOPAIR("Mesh ", ubl.storage_slot);
-        LDRSB    R1,[R4, #+0]
+        LDRSB    R1,[R6, #+0]
         ADR.W    R0,`?<Constant "Mesh ">`
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1394             SERIAL_ECHOLNPGM(" loaded from storage.");
         ADR.W    R0,`?<Constant " loaded from storage.\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??load_79
+        B.N      ??load_71
 // 1395           #endif
 // 1396         }
 // 1397         else {
 // 1398           ubl.reset();
-??load_82:
+??load_70:
           CFI FunCall _ZN20unified_bed_leveling5resetEv
         BL       _ZN20unified_bed_leveling5resetEv
 // 1399           #if ENABLED(EEPROM_CHITCHAT)
 // 1400             SERIAL_ECHOLNPGM("UBL System reset()");
         ADR.W    R0,`?<Constant "UBL System reset()\\n">`
+??load_71:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1401           #endif
@@ -4108,23 +5270,23 @@ _ZN14MarlinSettings4loadEv:
 // 1403         }
 // 1404       //#endif
 // 1405       free(tmp1);
-??load_79:
-        MOV      R0,R5
+??load_67:
+        LDR      R0,[SP, #+24]
           CFI FunCall free
         BL       free
 // 1406       free(tmp2);
-        MOV      R0,R6
+        MOV      R0,R4
           CFI FunCall free
         BL       free
 // 1407       free(tmp3);
-        MOV      R0,R7
+        MOV      R0,R5
           CFI FunCall free
         BL       free
 // 1408     }
 // 1409 
 // 1410     #if ENABLED(EEPROM_CHITCHAT) && DISABLED(DISABLE_M503)
 // 1411       report();
-??load_2:
+??load_3:
         MOVS     R0,#+0
           CFI FunCall _ZN14MarlinSettings6reportEb
         BL       _ZN14MarlinSettings6reportEb
@@ -4134,86 +5296,35 @@ _ZN14MarlinSettings4loadEv:
         LDR.W    R0,??DataTable105
         LDRB     R0,[R0, #+0]
         EOR      R0,R0,#0x1
-        ADD      SP,SP,#+144
-          CFI CFA R13+32
-        POP      {R4-R10,PC}      ;; return
-          CFI EndBlock cfiBlock8
+        ADD      SP,SP,#+140
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock5
 // 1415   }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable99:
-        DC32     delta_tower_angle_trim
+        DC32     bilinear_grid_spacing
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable99_1:
-        DC32     z_endstop_adj
+        DC32     bilinear_start
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable99_2:
-        DC32     _ZN11Temperature2KpE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable99_3:
-        DC32     _ZN11Temperature2KiE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable99_4:
-        DC32     _ZN11Temperature2KdE
+        DC32     z_values
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 version:
         DC8 "V47"
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "EEPROM version mismatch ">`:
-        DC8 "EEPROM version mismatch "
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "(EEPROM=">`:
-        DC8 "(EEPROM="
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant " Marlin=V47)\\n">`:
-        DC8 " Marlin=V47)\012"
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant {(8.05999984E+1F), (8.0400001522E+1`:
-        DC32 42A13333H, 42A0CCCDH, 43C80000H, 42B40000H, 42B40000H
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant {(200.0F), (200.0F), (4.0F), (70.0F`:
-        DC32 43480000H, 43480000H, 40800000H, 428C0000H, 428C0000H
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant {1000, 1000, 100, 1000, 1000}>`:
-        DC32 1000, 1000, 100, 1000, 1000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -4286,7 +5397,7 @@ version:
 // 1419     #if ENABLED(EEPROM_CHITCHAT)
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _Z16ubl_invalid_sloti
         THUMB
 // 1420       void ubl_invalid_slot(const int s) {
@@ -4301,27 +5412,21 @@ _Z16ubl_invalid_sloti:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1422         SERIAL_PROTOCOL(s);
+        LDR.W    R0,??DataTable104_3
         MOVS     R2,#+10
         MOV      R1,R4
-        LDR.W    R0,??DataTable104_30
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
 // 1423         SERIAL_PROTOCOLLNPGM(" mesh slots available.");
-        ADR.W    R0,`?<Constant " mesh slots available.\\n">`
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        ADR.W    R0,`?<Constant " mesh slots available.\\n">`
           CFI FunCall _Z14serialprintPGMPKc
         B.W      _Z14serialprintPGMPKc
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock6
 // 1424       }
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable100:
-        DC32     0x453b8000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -4338,7 +5443,7 @@ _Z16ubl_invalid_sloti:
 // 1426 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN14MarlinSettings15calc_num_meshesEv
           CFI NoCalls
         THUMB
@@ -4361,67 +5466,98 @@ _ZN14MarlinSettings15calc_num_meshesEv:
         UDIV     R0,R0,R1
         UXTH     R0,R0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock7
 // 1433     }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable101:
-        DC32     _ZN11Temperature5bedKpE
+        DC32     _ZN7Planner15leveling_activeE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable101_1:
-        DC32     _ZN11Temperature5bedKiE
+        DC32     _ZN20unified_bed_leveling12storage_slotE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable101_2:
-        DC32     _ZN11Temperature5bedKdE
+        DC32     delta_height
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable101_3:
-        DC32     0x40400000
+        DC32     delta_endstop_adj
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable101_4:
-        DC32     0x42340000
+        DC32     delta_radius
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable101_5:
-        DC32     0x41500000
+        DC32     delta_diagonal_rod
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable101_6:
+        DC32     delta_segments_per_second
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable101_7:
+        DC32     delta_calibration_radius
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable101_8:
+        DC32     delta_tower_angle_trim
 // 1434 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function _ZN14MarlinSettings10store_meshEa
         THUMB
 // 1435     void MarlinSettings::store_mesh(const int8_t slot) {
 _ZN14MarlinSettings10store_meshEa:
-        PUSH     {R2-R4,LR}
+        PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+16
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
         MOV      R4,R0
 // 1436 
 // 1437       //#if ENABLED(AUTO_BED_LEVELING_UBL)
 // 1438       if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_UBL){
-        LDR.N    R0,??DataTable104_12
-        LDRB     R0,[R0, #+64]
+        LDR.W    R0,??DataTable104_6
+        LDRB     R0,[R0, #+66]
+        SUB      SP,SP,#+8
+          CFI CFA R13+32
         LSLS     R0,R0,#+27
-        BPL.N    ??store_mesh_0
+        BPL.W    ??store_mesh_0
 // 1439         const uint16_t a = calc_num_meshes();
-          CFI FunCall _ZN14MarlinSettings15calc_num_meshesEv
-        BL       _ZN14MarlinSettings15calc_num_meshesEv
+        LDR.W    R5,??DataTable104_7
+        LDRSH    R0,[R5, #+2]
+        CMP      R0,#+1
+        ITEEE    LT 
+        MOVLT    R0,#+0
+        RSBGE    R0,R0,#+1920
+        MOVGE    R1,#+576
+        UDIVGE   R0,R0,R1
+        UXTH     R0,R0
 // 1440         if (!WITHIN(slot, 0, a - 1)) {
         CMP      R4,#+0
         BMI.N    ??store_mesh_1
@@ -4439,8 +5575,8 @@ _ZN14MarlinSettings10store_meshEa:
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1444             SERIAL_PROTOCOLPAIR(" meshes_end=", meshes_end);
-        MOV      R1,#+1920
         ADR.W    R0,`?<Constant " meshes_end=">`
+        MOV      R1,#+1920
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1445             SERIAL_PROTOCOLLNPAIR(" slot=", slot);
@@ -4448,7 +5584,7 @@ _ZN14MarlinSettings10store_meshEa:
         ADR.W    R0,`?<Constant " slot=">`
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
-        LDR.N    R4,??DataTable104_30
+        LDR.W    R4,??DataTable104_3
         MOVS     R1,#+10
         MOV      R0,R4
           CFI FunCall _ZN10USARTClass5writeEh
@@ -4456,42 +5592,87 @@ _ZN14MarlinSettings10store_meshEa:
 // 1446             SERIAL_EOL();
         MOVS     R1,#+10
         MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
+        B.N      ??store_mesh_3
 // 1447           #endif
 // 1448           return;
-        POP      {R0,R1,R4,PC}
 // 1449         }
 // 1450 
 // 1451         uint16_t crc = 0;
 ??store_mesh_2:
         MOVS     R0,#+0
-        STRH     R0,[SP, #+4]
+        STRH     R0,[SP, #+2]
 // 1452         int pos = meshes_end - (slot + 1) * sizeof(ubl.z_values);
+// 1453 
+// 1454         write_data(pos, (uint8_t *)&ubl.z_values, sizeof(ubl.z_values), &crc);
+        MOV      R7,#+576
         ADDS     R0,R4,#+1
         ADD      R1,R0,R0, LSL #+3
         LSLS     R0,R1,#+6
-        RSB      R0,R0,#+1920
-        STR      R0,[SP, #+0]
-// 1453 
-// 1454         write_data(pos, (uint8_t *)&ubl.z_values, sizeof(ubl.z_values), &crc);
-        ADD      R3,SP,#+4
-        MOV      R2,#+576
-        LDR.W    R1,??DataTable105_6
-        ADD      R0,SP,#+0
-          CFI FunCall _ZN14MarlinSettings10write_dataERiPKhtPt
-        BL       _ZN14MarlinSettings10write_dataERiPKhtPt
+        RSB      R6,R0,#+1920
+        LDRB     R0,[R5, #+0]
+        LDR.W    R8,??DataTable104_8
+        CBNZ.N   R0,??store_mesh_4
+??store_mesh_5:
+        LDRB     R0,[R8, #+0]
+        STRB     R0,[SP, #+0]
+        SUBS     R7,R7,#+1
+        MOVS     R2,#+1
+        ADD      R1,SP,#+1
+        UXTH     R0,R6
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        LDRB     R1,[SP, #+1]
+        CMP      R0,R1
+        BEQ.N    ??store_mesh_6
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R6
+          CFI FunCall AT24CXX_Write
+        BL       AT24CXX_Write
+        MOVS     R2,#+1
+        ADD      R1,SP,#+1
+        UXTH     R0,R6
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+1]
+        LDRB     R1,[SP, #+0]
+        CMP      R0,R1
+        BNE.N    ??store_mesh_7
+??store_mesh_6:
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        ADDS     R6,R6,#+1
+        UXTH     R7,R7
+        ADD      R8,R8,#+1
+        CMP      R7,#+0
+        BNE.N    ??store_mesh_5
+        B.N      ??store_mesh_4
+??store_mesh_7:
+        LDR.N    R0,??DataTable104_4
+          CFI FunCall _Z14serialprintPGMPKc
+        BL       _Z14serialprintPGMPKc
+        ADR.W    R0,`?<Constant "Error writing to EEPR...">`
+          CFI FunCall _Z14serialprintPGMPKc
+        BL       _Z14serialprintPGMPKc
+        MOVS     R0,#+1
+        STRB     R0,[R5, #+0]
 // 1455 
 // 1456         // Write crc to MAT along with other data, or just tack on to the beginning or end
 // 1457 
 // 1458         #if ENABLED(EEPROM_CHITCHAT)
 // 1459           SERIAL_PROTOCOLLNPAIR("Mesh saved in slot ", slot);
+??store_mesh_4:
         MOV      R1,R4
         ADR.W    R0,`?<Constant "Mesh saved in slot ">`
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
+        LDR.N    R0,??DataTable104_3
         MOVS     R1,#+10
-        LDR.N    R0,??DataTable104_30
+??store_mesh_3:
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1460         #endif
@@ -4504,8 +5685,8 @@ _ZN14MarlinSettings10store_meshEa:
 // 1467       //#endif
 // 1468     }
 ??store_mesh_0:
-        POP      {R0,R1,R4,PC}    ;; return
-          CFI EndBlock cfiBlock11
+        POP      {R0,R1,R4-R8,PC}  ;; return
+          CFI EndBlock cfiBlock8
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -4517,13 +5698,13 @@ _ZN14MarlinSettings10store_meshEa:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable102_1:
-        DC32     _ZN11GCodeParser18volumetric_enabledE
+        DC32     z_endstop_adj
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable102_2:
-        DC32     _ZN7Planner13filament_sizeE
+        DC8      0x2E, 0x0A, 0x00, 0x00
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -4549,42 +5730,56 @@ _ZN14MarlinSettings10store_meshEa:
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
+`?<Constant "Error writing to EEPR...">`:
+        DC8 "Error writing to EEPROM!\012"
+        DC8 0, 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
 `?<Constant "Mesh saved in slot ">`:
         DC8 "Mesh saved in slot "
 // 1469 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN14MarlinSettings9load_meshEaPv
         THUMB
 // 1470     void MarlinSettings::load_mesh(const int8_t slot, void * const into/*=NULL*/) {
 _ZN14MarlinSettings9load_meshEaPv:
-        PUSH     {R4,R5,LR}
+        PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
-        SUB      SP,SP,#+12
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
-        MOV      R5,R0
-        MOV      R4,R1
+        MOV      R4,R0
 // 1471 
 // 1472       //#if ENABLED(AUTO_BED_LEVELING_UBL)
 // 1473       if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_UBL){
-        LDR.N    R0,??DataTable104_12
-        LDRB     R0,[R0, #+64]
+        LDR.N    R0,??DataTable104_6
+        LDRB     R0,[R0, #+66]
+        MOV      R5,R1
         LSLS     R0,R0,#+27
         BPL.N    ??load_mesh_0
 // 1474 
 // 1475         const uint16_t a = settings.calc_num_meshes();
-          CFI FunCall _ZN14MarlinSettings15calc_num_meshesEv
-        BL       _ZN14MarlinSettings15calc_num_meshesEv
+        LDR.N    R1,??DataTable104_7
+        LDRSH    R0,[R1, #+2]
+        CMP      R0,#+1
+        ITEEE    LT 
+        MOVLT    R0,#+0
+        RSBGE    R0,R0,#+1920
+        MOVGE    R2,#+576
+        UDIVGE   R0,R0,R2
+        UXTH     R0,R0
 // 1476 
 // 1477         if (!WITHIN(slot, 0, a - 1)) {
-        CMP      R5,#+0
+        CMP      R4,#+0
         BMI.N    ??load_mesh_1
-        SUBS     R1,R0,#+1
-        CMP      R1,R5
+        SUBS     R2,R0,#+1
+        CMP      R2,R4
         BGE.N    ??load_mesh_2
 // 1478           #if ENABLED(EEPROM_CHITCHAT)
 // 1479             ubl_invalid_slot(a);
@@ -4593,42 +5788,54 @@ _ZN14MarlinSettings9load_meshEaPv:
         BL       _Z16ubl_invalid_sloti
 // 1480           #endif
 // 1481           return;
-        POP      {R0-R2,R4,R5,PC}
+        POP      {R0,R4-R7,PC}
 // 1482         }
 // 1483 
 // 1484         uint16_t crc = 0;
 ??load_mesh_2:
         MOVS     R0,#+0
-        STRH     R0,[SP, #+4]
+        STRH     R0,[SP, #+2]
 // 1485         int pos = meshes_end - (slot + 1) * sizeof(ubl.z_values);
-        ADDS     R0,R5,#+1
-        ADD      R1,R0,R0, LSL #+3
-        LSLS     R0,R1,#+6
-        RSB      R0,R0,#+1920
-        STR      R0,[SP, #+0]
+        ADDS     R0,R4,#+1
+        ADD      R2,R0,R0, LSL #+3
+        LSLS     R0,R2,#+6
+        RSB      R6,R0,#+1920
 // 1486         uint8_t * const dest = into ? (uint8_t*)into : (uint8_t*)&ubl.z_values;
-        CMP      R4,#+0
-        BNE.N    ??load_mesh_3
-        LDR.W    R4,??DataTable105_6
+        CBNZ.N   R5,??load_mesh_3
+        LDR.N    R5,??DataTable104_8
 // 1487         read_data(pos, dest, sizeof(ubl.z_values), &crc);
 ??load_mesh_3:
-        ADD      R3,SP,#+4
-        MOV      R2,#+576
-        MOV      R1,R4
-        ADD      R0,SP,#+0
-          CFI FunCall _ZN14MarlinSettings9read_dataERiPhtPt
-        BL       _ZN14MarlinSettings9read_dataERiPhtPt
+        LDRB     R0,[R1, #+0]
+        MOV      R7,#+576
+        CBNZ.N   R0,??load_mesh_4
+??load_mesh_5:
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        UXTH     R0,R6
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[SP, #+0]
+        STRB     R0,[R5], #+1
+        MOVS     R2,#+1
+        ADD      R1,SP,#+0
+        ADD      R0,SP,#+2
+          CFI FunCall _Z5crc16PtPKvt
+        BL       _Z5crc16PtPKvt
+        ADDS     R6,R6,#+1
+        SUBS     R7,R7,#+1
+        BNE.N    ??load_mesh_5
 // 1488 
 // 1489         // Compare crc with crc from MAT, or read from end
 // 1490 
 // 1491         #if ENABLED(EEPROM_CHITCHAT)
 // 1492           SERIAL_PROTOCOLLNPAIR("Mesh loaded from slot ", slot);
-        MOV      R1,R5
+??load_mesh_4:
+        MOV      R1,R4
         ADR.W    R0,`?<Constant "Mesh loaded from slot ">`
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
+        LDR.N    R0,??DataTable104_3
         MOVS     R1,#+10
-        LDR.N    R0,??DataTable104_30
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1493         #endif
@@ -4641,26 +5848,32 @@ _ZN14MarlinSettings9load_meshEaPv:
 // 1500       //#endif
 // 1501     }
 ??load_mesh_0:
-        POP      {R0-R2,R4,R5,PC}  ;; return
-          CFI EndBlock cfiBlock12
+        POP      {R0,R4-R7,PC}    ;; return
+          CFI EndBlock cfiBlock9
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable103:
-        DC8      0x2E, 0x0A, 0x00, 0x00
+        DC32     _ZN11Temperature2KpE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable103_1:
-        DC32     echomagic
+        DC32     0x453b8000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable103_2:
-        DC32     card
+        DC32     _ZN11Temperature2KiE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable103_3:
+        DC32     _ZN11Temperature2KdE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -4689,108 +5902,96 @@ _ZN14MarlinSettings9load_meshEaPv:
 // 1520  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _ZN14MarlinSettings5resetEv
         THUMB
 // 1521 void MarlinSettings::reset() {
 _ZN14MarlinSettings5resetEv:
-        PUSH     {R4-R7,LR}
+        PUSH     {R4-R7,R9,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+20
-        SUB      SP,SP,#+52
-          CFI CFA R13+72
+          CFI R9 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
 // 1522   static const float tmp1[] PROGMEM = DEFAULT_AXIS_STEPS_PER_UNIT, tmp2[] PROGMEM = DEFAULT_MAX_FEEDRATE;
 // 1523   static const uint32_t tmp3[] PROGMEM = DEFAULT_MAX_ACCELERATION;
 // 1524   LOOP_XYZE_N(i) {
-        MOVS     R0,#+0
-        B.N      ??reset_0
+        LDR.W    R2,??DataTable105_6
 // 1525     planner.axis_steps_per_mm[i]          = tmp1[i < COUNT(tmp1) ? i : COUNT(tmp1) - 1];//pgm_read_float(&tmp1[i < COUNT(tmp1) ? i : COUNT(tmp1) - 1]);
+        LDR.W    R3,??DataTable105_7  ;; 0x42a13333
+        LDR.W    R0,??DataTable105_8
+        LDR.W    R1,??DataTable105_9
 // 1526     planner.max_feedrate_mm_s[i]          = tmp2[i < COUNT(tmp2) ? i : COUNT(tmp2) - 1];//pgm_read_float(&tmp2[i < COUNT(tmp2) ? i : COUNT(tmp2) - 1]);
 // 1527     planner.max_acceleration_mm_per_s2[i] = tmp3[i < COUNT(tmp3) ? i : COUNT(tmp3) - 1];//pgm_read_dword_near(&tmp3[i < COUNT(tmp3) ? i : COUNT(tmp3) - 1]);
-??reset_1:
-        MOVS     R1,#+4
-??reset_2:
-        ADR.W    R2,??tmp3
-        LDR      R1,[R2, R1, LSL #+2]
-        LDR.N    R2,??DataTable104
-        STR      R1,[R2, R0, LSL #+2]
-        ADDS     R0,R0,#+1
-??reset_0:
-        CMP      R0,#+5
-        BGE.N    ??reset_3
-        BCS.N    ??reset_4
-        MOV      R1,R0
-        B.N      ??reset_5
-??reset_4:
-        MOVS     R1,#+4
-??reset_5:
-        ADR.W    R2,??tmp1
-        LDR      R1,[R2, R1, LSL #+2]
-        LDR.N    R2,??DataTable104_1
-        STR      R1,[R2, R0, LSL #+2]
-        CMP      R0,#+5
-        BCS.N    ??reset_6
-        MOV      R1,R0
-        B.N      ??reset_7
-??reset_6:
-        MOVS     R1,#+4
-??reset_7:
-        ADR.W    R2,??tmp2
-        LDR      R1,[R2, R1, LSL #+2]
-        LDR.N    R2,??DataTable104_2
-        STR      R1,[R2, R0, LSL #+2]
-        CMP      R0,#+5
-        BCS.N    ??reset_1
-        MOV      R1,R0
-        B.N      ??reset_2
+        LDR.W    R5,??DataTable105_10  ;; 0x42a0cccd
+        STR      R3,[R2, #+0]
+        STR      R5,[R2, #+4]
+        SUB      SP,SP,#+56
+          CFI CFA R13+80
+        LDR.W    R3,??DataTable105_11  ;; 0x43480000
+        STR      R3,[R1, #+0]
+        STR      R3,[R1, #+4]
+        MOV      R4,#+1000
+        LDR.W    R3,??DataTable105_12  ;; 0x43c80000
+        LDR.W    R5,??DataTable105_13  ;; 0x428c0000
+        STR      R3,[R2, #+8]
+        STR      R5,[R1, #+12]
+        MOV      R3,#+1082130432
+        STR      R3,[R1, #+8]
+        STR      R5,[R1, #+16]
+        MOVS     R3,#+100
+        STR      R4,[R0, #+0]
+        STR      R4,[R0, #+4]
+        STR      R3,[R0, #+8]
+        STR      R4,[R0, #+12]
+        STR      R4,[R0, #+16]
 // 1528   }
 // 1529 
 // 1530   planner.acceleration = DEFAULT_ACCELERATION;
-??reset_3:
-        LDR.W    R0,??DataTable105_7  ;; 0x447a0000
-        LDR.N    R1,??DataTable104_3
-        STR      R0,[R1, #+0]
+        LDR.W    R1,??DataTable105_14
+        LDR.W    R0,??DataTable105_15  ;; 0x447a0000
+        LDR.W    R3,??DataTable105_16  ;; 0x42b40000
 // 1531   planner.retract_acceleration = DEFAULT_RETRACT_ACCELERATION;
-        LDR.N    R1,??DataTable104_4
-        STR      R0,[R1, #+0]
 // 1532   planner.travel_acceleration = DEFAULT_TRAVEL_ACCELERATION;
-        LDR.N    R1,??DataTable104_5
-        STR      R0,[R1, #+0]
 // 1533   planner.min_feedrate_mm_s = DEFAULT_MINIMUMFEEDRATE;
-        MOVS     R0,#+0
-        LDR.N    R1,??DataTable104_6
-        STR      R0,[R1, #+0]
 // 1534   planner.min_travel_feedrate_mm_s = DEFAULT_MINTRAVELFEEDRATE;
-        LDR.N    R1,??DataTable104_7
-        STR      R0,[R1, #+0]
 // 1535   planner.min_segment_time_us = DEFAULT_MINSEGMENTTIME;
-        MOVW     R0,#+20000
-        LDR.N    R1,??DataTable104_8
-        STR      R0,[R1, #+0]
 // 1536   planner.max_jerk[X_AXIS] = DEFAULT_XJERK;
-        LDR.N    R0,??DataTable104_9
-        LDR.W    R4,??DataTable105_8  ;; 0x41200000
-        STR      R4,[R0, #+0]
+        LDR.W    R4,??DataTable105_17  ;; 0x41200000
+        STR      R0,[R1, #+0]
+        STR      R3,[R2, #+12]
+        STR      R3,[R2, #+16]
+        LDR.W    R1,??DataTable105_18
+        STR      R0,[R1, #+0]
+        LDR.W    R1,??DataTable105_19
+        STR      R0,[R1, #+0]
+        MOVS     R0,#+0
+        LDR.W    R1,??DataTable105_20
+        STR      R0,[R1, #+0]
+        LDR.W    R1,??DataTable105_21
+        STR      R0,[R1, #+0]
+        MOVW     R0,#+20000
+        LDR.W    R1,??DataTable105_22
+        STR      R0,[R1, #+0]
 // 1537   planner.max_jerk[Y_AXIS] = DEFAULT_YJERK;
-        STR      R4,[R0, #+4]
 // 1538   planner.max_jerk[Z_AXIS] = DEFAULT_ZJERK;
-        LDR.W    R1,??DataTable105_9  ;; 0x3e99999a
+        LDR.W    R1,??DataTable105_23  ;; 0x3e99999a
+        LDR.W    R0,??DataTable105_24
         STR      R1,[R0, #+8]
+        STR      R4,[R0, #+0]
+        STR      R4,[R0, #+4]
 // 1539   planner.max_jerk[E_AXIS] = DEFAULT_EJERK;
-        LDR.W    R1,??DataTable105_10  ;; 0x40a00000
+        LDR.W    R1,??DataTable105_25  ;; 0x40a00000
         STR      R1,[R0, #+12]
 // 1540 
 // 1541   #if HAS_HOME_OFFSET
 // 1542     ZERO(home_offset);
-        MOVS     R2,#+12
-        MOVS     R1,#+0
-        LDR.N    R0,??DataTable104_10
-          CFI FunCall memset
-        BL       memset
+        MOVS     R1,#+12
+        LDR.W    R0,??DataTable105_26
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 // 1543   #endif
 // 1544 
 // 1545   #if HOTENDS > 1
@@ -4804,16 +6005,13 @@ _ZN14MarlinSettings5resetEv:
 // 1553       #endif
 // 1554     };
         ADD      R0,SP,#+24
-        MOVS     R1,#+24
-          CFI FunCall __aeabi_memclr4
-        BL       __aeabi_memclr4
-        LDR.N    R5,??DataTable104_12
-        ADD      R0,SP,#+24
+        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R3,R1
+        STM      R0!,{R1-R3}
+        STM      R0!,{R1-R3}
+        LDR.N    R5,??DataTable104_6
         LDR      R1,[R5, #+248]
-        STR      R1,[R0, #+4]
-        ADD      R6,R5,#+248
-        LDR      R1,[R6, #+4]
-        STR      R1,[R0, #+12]
 // 1555   #if 0
 // 1556     static_assert(
 // 1557       tmp4[X_AXIS][0] == 0 && tmp4[Y_AXIS][0] == 0 && tmp4[Z_AXIS][0] == 0,
@@ -4821,27 +6019,30 @@ _ZN14MarlinSettings5resetEv:
 // 1559     );
 // 1560   #endif
 // 1561     LOOP_XYZ(i) HOTEND_LOOP() hotend_offset[i][e] = tmp4[i][e];
-        MOVS     R0,#+0
-        B.N      ??reset_8
-??reset_9:
-        LDR.N    R2,??DataTable104_11
-        ADD      R2,R2,R0, LSL #+3
-        ADD      R3,SP,#+24
-        ADD      R3,R3,R0, LSL #+3
-        LDR      R3,[R3, R1, LSL #+2]
-        STR      R3,[R2, R1, LSL #+2]
-        ADDS     R1,R1,#+1
-        SXTB     R1,R1
-??reset_10:
-        LDRB     R2,[R5, #+247]
-        CMP      R1,R2
-        BLT.N    ??reset_9
-        ADDS     R0,R0,#+1
-??reset_8:
-        CMP      R0,#+3
-        BGE.N    ??reset_11
-        MOVS     R1,#+0
-        B.N      ??reset_10
+        LDRB     R3,[R5, #+247]
+        ADD      R0,SP,#+24
+        ADD      R7,R5,#+248
+        STR      R1,[R0, #+4]
+        MOVS     R2,#+3
+        LDR      R1,[R7, #+4]
+        STR      R1,[R0, #+12]
+        ADD      R1,SP,#+24
+        LDR.W    R0,??DataTable105_27
+??reset_0:
+        MOV      R12,#+0
+        B.N      ??reset_1
+??reset_2:
+        LDR      R6,[R1, R12, LSL #+2]
+        STR      R6,[R0, R12, LSL #+2]
+        ADD      R6,R12,#+1
+        SXTB     R12,R6
+??reset_1:
+        CMP      R12,R3
+        BLT.N    ??reset_2
+        ADDS     R1,R1,#+8
+        ADDS     R0,R0,#+8
+        SUBS     R2,R2,#+1
+        BNE.N    ??reset_0
 // 1562   #endif
 // 1563 
 // 1564   //
@@ -4850,85 +6051,83 @@ _ZN14MarlinSettings5resetEv:
 // 1567 
 // 1568   //#if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
 // 1569   if((MACHINETPYE != DELTA) && (BED_LEVELING_METHOD&HAS_FADE))
-??reset_11:
-        ADD      R7,R5,#+52
-        LDRSH    R0,[R7, #+36]
-        CMP      R0,#+2
-        BEQ.N    ??reset_12
-        LDRB     R0,[R7, #+12]
-        LSLS     R0,R0,#+27
-        BPL.N    ??reset_12
+        ADD      R9,R5,#+80
+        ADDW     R6,R5,#+54
+        LDRSH    R1,[R9, #+8]
+        LDRB     R0,[R6, #+12]
+        CMP      R1,#+2
+        BEQ.N    ??reset_3
+        LSLS     R1,R0,#+27
+        BPL.N    ??reset_3
 // 1570     new_z_fade_height = 0.0;
-        MOVS     R0,#+0
-        LDR.W    R1,??DataTable105
-        STR      R0,[R1, #+4]
+        LDR.N    R2,??DataTable104_7
+        MOVS     R1,#+0
+        STR      R1,[R2, #+4]
 // 1571   //#endif
 // 1572 
 // 1573   //#if HAS_LEVELING
 // 1574   if(BED_LEVELING_METHOD&HAS_LEVELING)
-??reset_12:
-        LDRB     R0,[R7, #+12]
+??reset_3:
         MOVS     R1,#+62
         TST      R0,R1
-        BEQ.N    ??reset_13
+        IT       NE 
 // 1575     reset_bed_level();
           CFI FunCall _Z15reset_bed_levelv
-        BL       _Z15reset_bed_levelv
+        BLNE     _Z15reset_bed_levelv
 // 1576   //#endif
 // 1577 
 // 1578   #if HAS_BED_PROBE
 // 1579     zprobe_zoffset = Z_PROBE_OFFSET_FROM_EXTRUDER;
-??reset_13:
-        LDR.W    R0,??DataTable105_11  ;; 0x3f4ccccd
-        LDR.N    R1,??DataTable104_17
+        LDR.W    R1,??DataTable105_28
+        LDR.W    R0,??DataTable105_29  ;; 0x3f4ccccd
         STR      R0,[R1, #+0]
 // 1580   #endif
 // 1581 
 // 1582   //#if ENABLED(DELTA)
 // 1583   if(MACHINETPYE == DELTA) {
-        LDRSH    R0,[R7, #+36]
+        LDRSH    R0,[R9, #+8]
         CMP      R0,#+2
-        BNE.N    ??reset_14
+        BNE.N    ??reset_4
 // 1584     const float adj[ABC] = DELTA_ENDSTOP_ADJ,
         ADD      R0,SP,#+12
         MOVS     R1,#+0
-        MOV      R2,R1
+        MOVS     R2,#+0
         MOV      R3,R1
         STM      R0!,{R1-R3}
 // 1585                 dta[ABC] = DELTA_TOWER_ANGLE_TRIM;
         ADD      R0,SP,#+0
         STM      R0!,{R1-R3}
 // 1586     delta_height = DELTA_HEIGHT;
-        LDR      R0,[R7, #+28]
-        LDR.N    R1,??DataTable104_24
+        LDR      R0,[R5, #+80]
+        LDR.W    R1,??DataTable105_30
         STR      R0,[R1, #+0]
 // 1587     COPY(delta_endstop_adj, adj);
         MOVS     R2,#+12
         ADD      R1,SP,#+12
-        LDR.N    R0,??DataTable104_25
-          CFI FunCall memcpy
-        BL       memcpy
+        LDR.W    R0,??DataTable105_31
+          CFI FunCall __aeabi_memcpy4
+        BL       __aeabi_memcpy4
 // 1588     delta_radius = DELTA_RADIUS;
+        LDR.W    R1,??DataTable105_32
         MOVS     R0,#+0
-        LDR.N    R1,??DataTable104_26
         STR      R0,[R1, #+0]
 // 1589     delta_diagonal_rod = DELTA_DIAGONAL_ROD;
-        LDR.N    R1,??DataTable104_27
-        STR      R0,[R1, #+0]
 // 1590     delta_segments_per_second = DELTA_SEGMENTS_PER_SECOND;
-        LDR.N    R1,??DataTable104_28
-        STR      R0,[R1, #+0]
 // 1591     delta_calibration_radius = DELTA_CALIBRATION_RADIUS;
-        LDR.N    R1,??DataTable104_29
-        STR      R0,[R1, #+0]
 // 1592     COPY(delta_tower_angle_trim, dta);
         MOVS     R2,#+12
+        LDR.W    R1,??DataTable105_33
+        STR      R0,[R1, #+0]
+        LDR.W    R1,??DataTable105_34
+        STR      R0,[R1, #+0]
+        LDR.W    R1,??DataTable105_35
+        STR      R0,[R1, #+0]
         ADD      R1,SP,#+0
-        LDR.W    R0,??DataTable105_12
-          CFI FunCall memcpy
-        BL       memcpy
-        B.N      ??reset_15
+        LDR.W    R0,??DataTable105_36
+          CFI FunCall __aeabi_memcpy4
+        BL       __aeabi_memcpy4
 // 1593   }
+        B.N      ??reset_5
 // 1594   else
 // 1595   {
 // 1596  // #if ENABLED(X_DUAL_ENDSTOPS) || ENABLED(Y_DUAL_ENDSTOPS) || ENABLED(Z_DUAL_ENDSTOPS)
@@ -4961,17 +6160,17 @@ _ZN14MarlinSettings5resetEv:
 // 1623       );
 // 1624     #endif
 // 1625     if(Z_DUAL_ENDSTOPS==1)
-??reset_14:
-        LDRB     R0,[R6, #+10]
+??reset_4:
+        LDRB     R0,[R7, #+10]
         CMP      R0,#+1
-        BNE.N    ??reset_15
+        BNE.N    ??reset_5
 // 1626     {
 // 1627        if(Z_DUAL_ENDSTOPS_ADJUSTMENT!=0)
 // 1628         z_endstop_adj =  Z_DUAL_ENDSTOPS_ADJUSTMENT;
 // 1629        else
 // 1630         z_endstop_adj =  0;
+        LDR.W    R1,??DataTable105_37
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable105_13
         STR      R0,[R1, #+0]
 // 1631     }
 // 1632   //#endif
@@ -4988,25 +6187,24 @@ _ZN14MarlinSettings5resetEv:
 // 1643 
 // 1644   //#if ENABLED(PIDTEMP)
 // 1645   if(PIDTEMP) {
-??reset_15:
-        LDRB     R0,[R5, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??reset_16
+??reset_5:
+        LDRB     R0,[R5, #+54]
+        CBZ.N    R0,??reset_6
 // 1646     #if ENABLED(PID_PARAMS_PER_HOTEND) && HOTENDS > 1
 // 1647       HOTEND_LOOP()
 // 1648     #endif
 // 1649     {
 // 1650       PID_PARAM(Kp, e) = DEFAULT_Kp;
-        LDR.W    R0,??DataTable105_14  ;; 0x41b1999a
-        LDR.W    R1,??DataTable105_15
+        LDR.W    R1,??DataTable105_38
+        LDR.W    R0,??DataTable105_39  ;; 0x41b1999a
         STR      R0,[R1, #+0]
 // 1651       PID_PARAM(Ki, e) = scalePID_i(DEFAULT_Ki);
-        LDR.W    R0,??DataTable105_16  ;; 0x3e3531a6
-        LDR.W    R1,??DataTable105_17
+        LDR.W    R1,??DataTable105_40
+        LDR.W    R0,??DataTable105_41  ;; 0x3e3531a6
         STR      R0,[R1, #+0]
 // 1652       PID_PARAM(Kd, e) = scalePID_d(DEFAULT_Kd);
-        LDR.W    R0,??DataTable105_18  ;; 0x442df340
-        LDR.W    R1,??DataTable105_19
+        LDR.W    R1,??DataTable105_42
+        LDR.W    R0,??DataTable105_43  ;; 0x442df340
         STR      R0,[R1, #+0]
 // 1653       #if ENABLED(PID_EXTRUSION_SCALING)
 // 1654         PID_PARAM(Kc, e) = DEFAULT_Kc;
@@ -5020,20 +6218,19 @@ _ZN14MarlinSettings5resetEv:
 // 1662 
 // 1663   //#if ENABLED(PIDTEMPBED)
 // 1664   if(PIDTEMPBED) {
-??reset_16:
-        LDRB     R0,[R7, #+1]
-        CMP      R0,#+0
-        BEQ.N    ??reset_17
+??reset_6:
+        LDRB     R0,[R6, #+1]
+        CBZ.N    R0,??reset_7
 // 1665     thermalManager.bedKp = DEFAULT_bedKp;
-        LDR.W    R0,??DataTable105_20
-        STR      R4,[R0, #+0]
+        LDR.N    R0,??DataTable104
 // 1666     thermalManager.bedKi = scalePID_i(DEFAULT_bedKi);
-        LDR.W    R0,??DataTable105_21  ;; 0x3b76f5eb
-        LDR.W    R1,??DataTable105_22
+        LDR.N    R1,??DataTable104_1
+        STR      R4,[R0, #+0]
+        LDR.W    R0,??DataTable105_44  ;; 0x3b76f5eb
         STR      R0,[R1, #+0]
 // 1667     thermalManager.bedKd = scalePID_d(DEFAULT_bedKd);
-        LDR.W    R0,??DataTable105_23  ;; 0x44e90070
-        LDR.W    R1,??DataTable105_24
+        LDR.N    R1,??DataTable104_2
+        LDR.W    R0,??DataTable105_45  ;; 0x44e90070
         STR      R0,[R1, #+0]
 // 1668   }
 // 1669   //#endif
@@ -5063,21 +6260,16 @@ _ZN14MarlinSettings5resetEv:
 // 1693         false
 // 1694       #endif
 // 1695     ;
-??reset_17:
+??reset_7:
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable105_25
+        LDR.W    R1,??DataTable105_46
         STRB     R0,[R1, #+0]
 // 1696     for (uint8_t q = 0; q < COUNT(planner.filament_size); q++)
-        LDR.W    R1,??DataTable105_26  ;; 0x40400000
-        LDR.W    R2,??DataTable105_27
-        B.N      ??reset_18
+        LDR.W    R1,??DataTable105_47  ;; 0x40400000
+        LDR.W    R0,??DataTable105_48
 // 1697       planner.filament_size[q] = DEFAULT_NOMINAL_FILAMENT_DIA;
-??reset_19:
-        STR      R1,[R2, R0, LSL #+2]
-        ADDS     R0,R0,#+1
-??reset_18:
-        CMP      R0,#+2
-        BCC.N    ??reset_19
+        STR      R1,[R0, #+0]
+        STR      R1,[R0, #+4]
 // 1698 
 // 1699   #endif
 // 1700 
@@ -5089,8 +6281,10 @@ _ZN14MarlinSettings5resetEv:
 // 1706     #endif
 // 1707   );
         MOVS     R0,#+0
-          CFI FunCall _ZN8Endstops15enable_globallyEb
-        BL       _ZN8Endstops15enable_globallyEb
+        LDR.W    R1,??DataTable105_49
+        STRB     R0,[R1, #+0]
+        LDR.W    R1,??DataTable105_50
+        STRB     R0,[R1, #+0]
 // 1708 
 // 1709   #if X_IS_TRINAMIC
 // 1710     stepperX.setCurrent(X_CURRENT, R_SENSE, HOLD_MULTIPLIER);
@@ -5166,7 +6360,7 @@ _ZN14MarlinSettings5resetEv:
 // 1778 
 // 1779   #if ENABLED(EEPROM_CHITCHAT)
 // 1780     SERIAL_ECHO_START();
-        LDR.W    R0,??DataTable105_28
+        LDR.N    R0,??DataTable104_4
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1781     SERIAL_ECHOLNPGM("Hardcoded Default Settings Loaded");
@@ -5175,220 +6369,242 @@ _ZN14MarlinSettings5resetEv:
         BL       _Z14serialprintPGMPKc
 // 1782   #endif
 // 1783 }
-        ADD      SP,SP,#+52
-          CFI CFA R13+20
-        POP      {R4-R7,PC}       ;; return
-          CFI EndBlock cfiBlock13
+        ADD      SP,SP,#+56
+          CFI CFA R13+24
+        POP      {R4-R7,R9,PC}    ;; return
+          CFI EndBlock cfiBlock10
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable104:
-        DC32     _ZN7Planner26max_acceleration_mm_per_s2E
+        DC32     _ZN11Temperature5bedKpE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable104_1:
-        DC32     _ZN7Planner17axis_steps_per_mmE
+        DC32     _ZN11Temperature5bedKiE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable104_2:
-        DC32     _ZN7Planner17max_feedrate_mm_sE
+        DC32     _ZN11Temperature5bedKdE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable104_3:
-        DC32     _ZN7Planner12accelerationE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_4:
-        DC32     _ZN7Planner20retract_accelerationE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_5:
-        DC32     _ZN7Planner19travel_accelerationE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_6:
-        DC32     _ZN7Planner17min_feedrate_mm_sE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_7:
-        DC32     _ZN7Planner24min_travel_feedrate_mm_sE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_8:
-        DC32     _ZN7Planner19min_segment_time_usE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_9:
-        DC32     _ZN7Planner8max_jerkE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_10:
-        DC32     home_offset
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_11:
-        DC32     hotend_offset
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_12:
-        DC32     mksCfg
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_13:
-        DC32     _ZN14MarlinSettings12eeprom_errorE+0x4
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_14:
-        DC32     _ZN17mesh_bed_leveling8has_meshE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_15:
-        DC32     _ZN17mesh_bed_leveling8z_offsetE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_16:
-        DC32     _ZN17mesh_bed_leveling8z_valuesE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_17:
-        DC32     zprobe_zoffset
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_18:
-        DC32     _ZN7Planner16bed_level_matrixE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_19:
-        DC32     bilinear_grid_spacing
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_20:
-        DC32     bilinear_start
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_21:
-        DC32     z_values
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_22:
-        DC32     _ZN7Planner15leveling_activeE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_23:
-        DC32     _ZN20unified_bed_leveling12storage_slotE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_24:
-        DC32     delta_height
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_25:
-        DC32     delta_endstop_adj
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_26:
-        DC32     delta_radius
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_27:
-        DC32     delta_diagonal_rod
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_28:
-        DC32     delta_segments_per_second
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_29:
-        DC32     delta_calibration_radius
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable104_30:
         DC32     Serial3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable104_31:
+??DataTable104_4:
+        DC32     echomagic
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable104_5:
         DC32     errormagic
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??tmp3:
-        DC32 1000, 1000, 100, 1000, 1000
+??DataTable104_6:
+        DC32     mksCfg
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable104_7:
+        DC32     _ZN14MarlinSettings12eeprom_errorE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable104_8:
+        DC32     _ZN20unified_bed_leveling8z_valuesE
+
+        SECTION `.rodata`:CONST:REORDER:NOROOT(0)
+        SECTION_GROUP _ZTI5Print
+// __absolute char const <Typeinfo for Print>
+_ZTI5Print:
+        DATA
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {{(0.0F), (0.0F)}, {(0.0F), (0.0F)}`:
+        DC32 0H, 0H, 0H, 0H, 0H
+        DC8 0, 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {(0.0F), (0.0F), (0.0F)}>`:
+        DC32 0H, 0H, 0H
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {(0.0F), (0.0F), (0.0F)}>_1`:
+        DC32 0H, 0H, 0H
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {0}>`:
+        DC32 0
+        DC8 0, 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {0}>_1`:
+        DC32 0
+        DC8 0, 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {0, 0}>`:
+        DC32 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant ")\\n">`:
+        DC8 ")\012"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "EEPROM version mismatch ">`:
+        DC8 "EEPROM version mismatch "
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "(EEPROM=">`:
+        DC8 "(EEPROM="
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " Marlin=V47)\\n">`:
+        DC8 " Marlin=V47)\012"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {(8.05999984E+1F), (8.0400001522E+1`:
+        DC32 42A13333H, 42A0CCCDH, 43C80000H, 42B40000H, 42B40000H
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {(200.0F), (200.0F), (4.0F), (70.0F`:
+        DC32 43480000H, 43480000H, 40800000H, 428C0000H, 428C0000H
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {1000, 1000, 100, 1000, 1000}>`:
+        DC32 1000, 1000, 100, 1000, 1000
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant ".\\n">`:
+        DC8 ".\012"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " Y">`:
+        DC8 " Y"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " Z">`:
+        DC8 " Z"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " E">`:
+        DC8 " E"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " R">`:
+        DC8 " R"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " T">`:
+        DC8 " T"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " B">`:
+        DC8 " B"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " X">`:
+        DC8 " X"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant ":\\n">`:
+        DC8 ":\012"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " H">`:
+        DC8 " H"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " S">`:
+        DC8 " S"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " P">`:
+        DC8 " P"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " I">`:
+        DC8 " I"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant " D">`:
+        DC8 " D"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
         DATA
 ??tmp1:
         DC32 42A13333H, 42A0CCCDH, 43C80000H, 42B40000H, 42B40000H
 
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION `.rodata`:CONST:NOROOT(2)
         DATA
 ??tmp2:
         DC32 43480000H, 43480000H, 40800000H, 428C0000H, 428C0000H
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+??tmp3:
+        DC32 1000, 1000, 100, 1000, 1000
 // 1784 
 // 1785 #if DISABLED(DISABLE_M503)
 // 1786 
@@ -5401,7 +6617,7 @@ _ZN14MarlinSettings5resetEv:
 // 1793    */
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _ZN14MarlinSettings6reportEb
         THUMB
 // 1794   void MarlinSettings::report(const bool forReplay) {
@@ -5425,11 +6641,11 @@ _ZN14MarlinSettings6reportEb:
 // 1797      * Announce current units, in case inches are being displayed
 // 1798      */
 // 1799     CONFIG_ECHO_START;
-        LDR.W    R5,??DataTable105_28
-        BNE.N    ??report_0
-        MOV      R0,R5
+        LDR.W    R8,??DataTable105_51
+        ITT      EQ 
+        MOVEQ    R0,R8
           CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        BLEQ     _Z14serialprintPGMPKc
 // 1800     #if ENABLED(INCH_MODE_SUPPORT)
 // 1801       #define LINEAR_UNIT(N) (float(N) / parser.linear_unit_factor)
 // 1802       #define VOLUMETRIC_UNIT(N) (float(N) / (parser.volumetric_enabled ? parser.volumetric_unit_factor : parser.linear_unit_factor))
@@ -5441,7 +6657,6 @@ _ZN14MarlinSettings6reportEb:
 // 1808       #define LINEAR_UNIT(N) (N)
 // 1809       #define VOLUMETRIC_UNIT(N) (N)
 // 1810       SERIAL_ECHOLNPGM("  G21    ; Units in mm");
-??report_0:
         ADR.W    R0,`?<Constant "  G21    ; Units in mm\\n">`
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
@@ -5466,9 +6681,9 @@ _ZN14MarlinSettings6reportEb:
 // 1829     #endif
 // 1830 
 // 1831     SERIAL_EOL();
-        LDR.W    R6,??DataTable105_29
+        LDR.W    R9,??DataTable105_52
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1832 
@@ -5478,10 +6693,9 @@ _ZN14MarlinSettings6reportEb:
 // 1836        * Volumetric extrusion M200
 // 1837        */
 // 1838       if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_1
+        CBNZ.N   R4,??report_1
 // 1839         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1840         SERIAL_ECHOPGM("Filament settings:");
@@ -5489,16 +6703,15 @@ _ZN14MarlinSettings6reportEb:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1841         if (parser.volumetric_enabled)
-        LDR.W    R0,??DataTable105_25
+        LDR.W    R0,??report_0+0x8
         LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??report_2
+        CBZ.N    R0,??report_2
 // 1842           SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-        B.N      ??report_1
+        B.N      ??report_3
 // 1843         else
 // 1844           SERIAL_ECHOLNPGM(" Disabled");
 ??report_2:
@@ -5508,29 +6721,26 @@ _ZN14MarlinSettings6reportEb:
 // 1845       }
 // 1846 
 // 1847       CONFIG_ECHO_START;
-??report_1:
-        CMP      R4,#+0
-        BNE.N    ??report_3
-        MOV      R0,R5
+??report_3:
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1848       SERIAL_ECHOPAIR("  M200 D", LINEAR_UNIT(planner.filament_size[0]));
-??report_3:
-        LDR.W    R7,??DataTable105_27
-        LDR      R1,[R7, #+0]
+??report_1:
+        LDR.W    R7,??report_0+0xC
         ADR.W    R0,`?<Constant "  M200 D">`
+        LDR      R1,[R7, #+0]
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1849       SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1850       #if EXTRUDERS > 1
 // 1851         CONFIG_ECHO_START;
-        CMP      R4,#+0
-        BNE.N    ??report_4
-        MOV      R0,R5
+        CBNZ.N   R4,??report_4
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1852         SERIAL_ECHOPAIR("  M200 T1 D", LINEAR_UNIT(planner.filament_size[1]));
@@ -5541,7 +6751,7 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z17serial_echopair_PPKcf
 // 1853         SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1854         #if EXTRUDERS > 2
@@ -5562,14 +6772,12 @@ _ZN14MarlinSettings6reportEb:
 // 1869       #endif // EXTRUDERS > 1
 // 1870 
 // 1871       if (!parser.volumetric_enabled) {
-        LDR.W    R0,??DataTable105_25
+        LDR.W    R0,??report_0+0x8
         LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BNE.N    ??report_5
+        CBNZ.N   R0,??report_5
 // 1872         CONFIG_ECHO_START;
-        CMP      R4,#+0
-        BNE.N    ??report_6
-        MOV      R0,R5
+        CBNZ.N   R4,??report_6
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1873         SERIAL_ECHOLNPGM("  M200 D0");
@@ -5583,10 +6791,9 @@ _ZN14MarlinSettings6reportEb:
 // 1877 
 // 1878     if (!forReplay) {
 ??report_5:
-        CMP      R4,#+0
-        BNE.N    ??report_7
+        CBNZ.N   R4,??report_7
 // 1879       CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1880       SERIAL_ECHOLNPGM("Steps per unit:");
@@ -5595,29 +6802,26 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 1881     }
 // 1882     CONFIG_ECHO_START;
-??report_7:
-        CMP      R4,#+0
-        BNE.N    ??report_8
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1883     SERIAL_ECHOPAIR("  M92 X", LINEAR_UNIT(planner.axis_steps_per_mm[X_AXIS]));
-??report_8:
-        LDR.W    R7,??DataTable105_30
-        LDR      R1,[R7, #+0]
+??report_7:
+        LDR.W    R5,??DataTable105_6
         ADR.W    R0,`?<Constant "  M92 X">`
+        LDR      R1,[R5, #+0]
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1884     SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(planner.axis_steps_per_mm[Y_AXIS]));
-        ADR.W    R10,??report_9   ;; 0x20, 0x59, 0x00, 0x00
-        LDR      R1,[R7, #+4]
+        LDR      R1,[R5, #+4]
+        ADR.W    R10,??report_8   ;; 0x20, 0x59, 0x00, 0x00
         MOV      R0,R10
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1885     SERIAL_ECHOPAIR(" Z", LINEAR_UNIT(planner.axis_steps_per_mm[Z_AXIS]));
-        ADR.W    R9,??report_9+0x4  ;; 0x20, 0x5A, 0x00, 0x00
-        LDR      R1,[R7, #+8]
-        MOV      R0,R9
+        ADR.N    R6,??report_0    ;; 0x20, 0x5A, 0x00, 0x00
+        LDR      R1,[R5, #+8]
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1886     #if DISABLED(DISTINCT_E_FACTORS)
@@ -5625,48 +6829,52 @@ _ZN14MarlinSettings6reportEb:
 // 1888     #endif
 // 1889     SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1890     #if ENABLED(DISTINCT_E_FACTORS)
 // 1891       CONFIG_ECHO_START;
-        CMP      R4,#+0
-        BNE.N    ??report_10
-        MOV      R0,R5
+        CBNZ.N   R4,??report_9
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1892       for (uint8_t i = 0; i < E_STEPPERS; i++) {
-??report_10:
-        MOV      R8,#+0
-        B.N      ??report_11
+??report_9:
+        ADR.W    R11,`?<Constant "  M92 T">`
+        ADR.N    R7,??report_0+0x4  ;; 0x20, 0x45, 0x00, 0x00
 // 1893         SERIAL_ECHOPAIR("  M92 T", (int)i);
-??report_12:
-        MOV      R1,R8
-        ADR.W    R0,`?<Constant "  M92 T">`
+        MOVS     R1,#+0
+        MOV      R0,R11
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1894         SERIAL_ECHOLNPAIR(" E", VOLUMETRIC_UNIT(planner.axis_steps_per_mm[E_AXIS + i]));
-        ADD      R0,R7,R8, LSL #+2
-        LDR      R1,[R0, #+12]
-        ADR.N    R0,??report_9+0x8  ;; 0x20, 0x45, 0x00, 0x00
+        LDR      R1,[R5, #+12]
+        MOV      R0,R7
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R1,#+1
+        MOV      R0,R11
+          CFI FunCall _Z17serial_echopair_PPKci
+        BL       _Z17serial_echopair_PPKci
+        LDR      R1,[R5, #+16]
+        MOV      R0,R7
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1895       }
-        ADD      R8,R8,#+1
-??report_11:
-        CMP      R8,#+2
-        BLT.N    ??report_12
 // 1896     #endif
 // 1897 
 // 1898     if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_13
+        CBNZ.N   R4,??report_10
 // 1899       CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1900       SERIAL_ECHOLNPGM("Maximum feedrates (units/s):");
@@ -5675,27 +6883,24 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 1901     }
 // 1902     CONFIG_ECHO_START;
-??report_13:
-        CMP      R4,#+0
-        BNE.N    ??report_14
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1903     SERIAL_ECHOPAIR("  M203 X", LINEAR_UNIT(planner.max_feedrate_mm_s[X_AXIS]));
-??report_14:
-        LDR.W    R7,??DataTable105_31
-        LDR      R1,[R7, #+0]
+??report_10:
+        LDR.W    R5,??DataTable105_9
         ADR.W    R0,`?<Constant "  M203 X">`
+        LDR      R1,[R5, #+0]
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1904     SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(planner.max_feedrate_mm_s[Y_AXIS]));
-        LDR      R1,[R7, #+4]
+        LDR      R1,[R5, #+4]
         MOV      R0,R10
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1905     SERIAL_ECHOPAIR(" Z", LINEAR_UNIT(planner.max_feedrate_mm_s[Z_AXIS]));
-        LDR      R1,[R7, #+8]
-        MOV      R0,R9
+        LDR      R1,[R5, #+8]
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1906     #if DISABLED(DISTINCT_E_FACTORS)
@@ -5703,48 +6908,51 @@ _ZN14MarlinSettings6reportEb:
 // 1908     #endif
 // 1909     SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1910     #if ENABLED(DISTINCT_E_FACTORS)
 // 1911       CONFIG_ECHO_START;
-        CMP      R4,#+0
-        BNE.N    ??report_15
-        MOV      R0,R5
+        CBNZ.N   R4,??report_11
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1912       for (uint8_t i = 0; i < E_STEPPERS; i++) {
-??report_15:
-        MOV      R8,#+0
-        B.N      ??report_16
+??report_11:
+        ADR.W    R11,`?<Constant "  M203 T">`
 // 1913         SERIAL_ECHOPAIR("  M203 T", (int)i);
-??report_17:
-        MOV      R1,R8
-        ADR.W    R0,`?<Constant "  M203 T">`
+        MOVS     R1,#+0
+        MOV      R0,R11
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1914         SERIAL_ECHOLNPAIR(" E", VOLUMETRIC_UNIT(planner.max_feedrate_mm_s[E_AXIS + i]));
-        ADD      R0,R7,R8, LSL #+2
-        LDR      R1,[R0, #+12]
-        ADR.N    R0,??report_9+0x8  ;; 0x20, 0x45, 0x00, 0x00
+        LDR      R1,[R5, #+12]
+        MOV      R0,R7
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R1,#+1
+        MOV      R0,R11
+          CFI FunCall _Z17serial_echopair_PPKci
+        BL       _Z17serial_echopair_PPKci
+        LDR      R1,[R5, #+16]
+        MOV      R0,R7
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1915       }
-        ADD      R8,R8,#+1
-??report_16:
-        CMP      R8,#+2
-        BLT.N    ??report_17
 // 1916     #endif
 // 1917 
 // 1918     if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_18
+        CBNZ.N   R4,??report_12
 // 1919       CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1920       SERIAL_ECHOLNPGM("Maximum Acceleration (units/s2):");
@@ -5753,27 +6961,24 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 1921     }
 // 1922     CONFIG_ECHO_START;
-??report_18:
-        CMP      R4,#+0
-        BNE.N    ??report_19
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1923     SERIAL_ECHOPAIR("  M201 X", LINEAR_UNIT(planner.max_acceleration_mm_per_s2[X_AXIS]));
-??report_19:
-        LDR.W    R7,??DataTable105_32
-        LDR      R1,[R7, #+0]
+??report_12:
+        LDR.W    R5,??DataTable105_8
         ADR.W    R0,`?<Constant "  M201 X">`
+        LDR      R1,[R5, #+0]
           CFI FunCall _Z17serial_echopair_PPKcm
         BL       _Z17serial_echopair_PPKcm
 // 1924     SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(planner.max_acceleration_mm_per_s2[Y_AXIS]));
-        LDR      R1,[R7, #+4]
+        LDR      R1,[R5, #+4]
         MOV      R0,R10
           CFI FunCall _Z17serial_echopair_PPKcm
         BL       _Z17serial_echopair_PPKcm
 // 1925     SERIAL_ECHOPAIR(" Z", LINEAR_UNIT(planner.max_acceleration_mm_per_s2[Z_AXIS]));
-        LDR      R1,[R7, #+8]
-        MOV      R0,R9
+        LDR      R1,[R5, #+8]
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcm
         BL       _Z17serial_echopair_PPKcm
 // 1926     #if DISABLED(DISTINCT_E_FACTORS)
@@ -5781,48 +6986,51 @@ _ZN14MarlinSettings6reportEb:
 // 1928     #endif
 // 1929     SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1930     #if ENABLED(DISTINCT_E_FACTORS)
 // 1931       CONFIG_ECHO_START;
-        CMP      R4,#+0
-        BNE.N    ??report_20
-        MOV      R0,R5
+        CBNZ.N   R4,??report_13
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1932       for (uint8_t i = 0; i < E_STEPPERS; i++) {
-??report_20:
-        MOV      R8,#+0
-        B.N      ??report_21
+??report_13:
+        ADR.W    R11,`?<Constant "  M201 T">`
 // 1933         SERIAL_ECHOPAIR("  M201 T", (int)i);
-??report_22:
-        MOV      R1,R8
-        ADR.W    R0,`?<Constant "  M201 T">`
+        MOVS     R1,#+0
+        MOV      R0,R11
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1934         SERIAL_ECHOLNPAIR(" E", VOLUMETRIC_UNIT(planner.max_acceleration_mm_per_s2[E_AXIS + i]));
-        ADD      R0,R7,R8, LSL #+2
-        LDR      R1,[R0, #+12]
-        ADR.N    R0,??report_9+0x8  ;; 0x20, 0x45, 0x00, 0x00
+        LDR      R1,[R5, #+12]
+        MOV      R0,R7
           CFI FunCall _Z17serial_echopair_PPKcm
         BL       _Z17serial_echopair_PPKcm
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R1,#+1
+        MOV      R0,R11
+          CFI FunCall _Z17serial_echopair_PPKci
+        BL       _Z17serial_echopair_PPKci
+        LDR      R1,[R5, #+16]
+        MOV      R0,R7
+          CFI FunCall _Z17serial_echopair_PPKcm
+        BL       _Z17serial_echopair_PPKcm
+        MOVS     R1,#+10
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1935       }
-        ADD      R8,R8,#+1
-??report_21:
-        CMP      R8,#+2
-        BLT.N    ??report_22
 // 1936     #endif
 // 1937 
 // 1938     if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_23
+        CBNZ.N   R4,??report_14
 // 1939       CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1940       SERIAL_ECHOLNPGM("Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>");
@@ -5831,42 +7039,38 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 1941     }
 // 1942     CONFIG_ECHO_START;
-??report_23:
-        CMP      R4,#+0
-        BNE.N    ??report_24
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1943     SERIAL_ECHOPAIR("  M204 P", LINEAR_UNIT(planner.acceleration));
-??report_24:
-        LDR.W    R0,??DataTable105_33
+??report_14:
+        LDR.W    R0,??DataTable105_14
         LDR      R1,[R0, #+0]
         ADR.W    R0,`?<Constant "  M204 P">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
-        LDR.W    R0,??DataTable105_34
+        LDR.W    R0,??DataTable105_18
         LDR      R1,[R0, #+0]
-        ADR.N    R0,??report_25   ;; 0x20, 0x52, 0x00, 0x00
+        ADR.N    R0,??report_15   ;; 0x20, 0x52, 0x00, 0x00
 // 1944     SERIAL_ECHOPAIR(" R", LINEAR_UNIT(planner.retract_acceleration));
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1945     SERIAL_ECHOLNPAIR(" T", LINEAR_UNIT(planner.travel_acceleration));
-        ADR.N    R7,??report_25+0x4  ;; 0x20, 0x54, 0x00, 0x00
-        LDR.W    R0,??DataTable105_35
+        LDR.W    R0,??DataTable105_19
         LDR      R1,[R0, #+0]
-        MOV      R0,R7
+        ADR.N    R5,??report_15+0x4  ;; 0x20, 0x54, 0x00, 0x00
+        MOV      R0,R5
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1946 
 // 1947     if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_26
+        CBNZ.N   R4,??report_16
 // 1948       CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1949       SERIAL_ECHOLNPGM("Advanced: S<min_feedrate> T<min_travel_feedrate> B<min_segment_time_us> X<max_xy_jerk> Z<max_z_jerk> E<max_e_jerk>");
@@ -5875,70 +7079,65 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 1950     }
 // 1951     CONFIG_ECHO_START;
-??report_26:
-        CMP      R4,#+0
-        BNE.N    ??report_27
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1952     SERIAL_ECHOPAIR("  M205 S", LINEAR_UNIT(planner.min_feedrate_mm_s));
-??report_27:
-        LDR.W    R0,??DataTable105_36
+??report_16:
+        LDR.W    R0,??DataTable105_20
         LDR      R1,[R0, #+0]
         ADR.W    R0,`?<Constant "  M205 S">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1953     SERIAL_ECHOPAIR(" T", LINEAR_UNIT(planner.min_travel_feedrate_mm_s));
-        LDR.W    R0,??DataTable105_37
+        LDR.W    R0,??DataTable105_21
         LDR      R1,[R0, #+0]
-        MOV      R0,R7
+        MOV      R0,R5
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
-        LDR.W    R0,??DataTable105_38
+        LDR.W    R0,??DataTable105_22
         LDR      R1,[R0, #+0]
-        ADR.N    R0,??report_25+0x8  ;; 0x20, 0x42, 0x00, 0x00
+        ADR.N    R0,??report_15+0x8  ;; 0x20, 0x42, 0x00, 0x00
 // 1954     SERIAL_ECHOPAIR(" B", planner.min_segment_time_us);
           CFI FunCall _Z17serial_echopair_PPKcj
         BL       _Z17serial_echopair_PPKcj
-        LDR.W    R7,??DataTable105_39
-        LDR      R1,[R7, #+0]
-        ADR.N    R0,??report_25+0xC  ;; 0x20, 0x58, 0x00, 0x00
+        LDR.W    R5,??DataTable105_24
+        LDR      R1,[R5, #+0]
+        ADR.N    R0,??report_15+0xC  ;; 0x20, 0x58, 0x00, 0x00
 // 1955     SERIAL_ECHOPAIR(" X", LINEAR_UNIT(planner.max_jerk[X_AXIS]));
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1956     SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(planner.max_jerk[Y_AXIS]));
-        LDR      R1,[R7, #+4]
+        LDR      R1,[R5, #+4]
         MOV      R0,R10
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1957     SERIAL_ECHOPAIR(" Z", LINEAR_UNIT(planner.max_jerk[Z_AXIS]));
-        LDR      R1,[R7, #+8]
-        MOV      R0,R9
+        LDR      R1,[R5, #+8]
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1958     SERIAL_ECHOLNPAIR(" E", LINEAR_UNIT(planner.max_jerk[E_AXIS]));
-        LDR      R1,[R7, #+12]
-        ADR.N    R0,??report_9+0x8  ;; 0x20, 0x45, 0x00, 0x00
+        LDR      R1,[R5, #+12]
+        MOV      R0,R7
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
+        LDR.W    R0,??DataTable105_53
+        STR      R0,[SP, #+4]
+        LDRSH    R0,[R0, #+34]
+        CMP      R0,#+2
+        BEQ.N    ??report_17
 // 1959 
 // 1960     //#if HAS_M206_COMMAND
 // 1961     if(MACHINETPYE != DELTA){
-        LDR.W    R11,??DataTable105_40
-        ADD      R0,R11,#+52
-        STR      R0,[SP, #+4]
-        LDRSH    R0,[R0, #+36]
-        CMP      R0,#+2
-        BEQ.N    ??report_28
 // 1962       if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_29
+        CBNZ.N   R4,??report_18
 // 1963         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1964         SERIAL_ECHOLNPGM("Home offset:");
@@ -5947,17 +7146,14 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 1965       }
 // 1966       CONFIG_ECHO_START;
-??report_29:
-        CMP      R4,#+0
-        BNE.N    ??report_30
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1967       SERIAL_ECHOPAIR("  M206 X", LINEAR_UNIT(home_offset[X_AXIS]));
-??report_30:
-        LDR.W    R7,??DataTable105_41
-        LDR      R1,[R7, #+0]
+??report_18:
+        LDR.W    R7,??DataTable105_26
         ADR.W    R0,`?<Constant "  M206 X">`
+        LDR      R1,[R7, #+0]
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1968       SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(home_offset[Y_AXIS]));
@@ -5967,11 +7163,11 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z17serial_echopair_PPKcf
 // 1969       SERIAL_ECHOLNPAIR(" Z", LINEAR_UNIT(home_offset[Z_AXIS]));
         LDR      R1,[R7, #+8]
-        MOV      R0,R9
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 1970     }
@@ -5979,11 +7175,10 @@ _ZN14MarlinSettings6reportEb:
 // 1972 
 // 1973     #if HOTENDS > 1
 // 1974       if (!forReplay) {
-??report_28:
-        CMP      R4,#+0
-        BNE.N    ??report_31
+??report_17:
+        CBNZ.N   R4,??report_19
 // 1975         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1976         SERIAL_ECHOLNPGM("Hotend offsets:");
@@ -5992,31 +7187,24 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 1977       }
 // 1978       CONFIG_ECHO_START;
-??report_31:
-        CMP      R4,#+0
-        BNE.N    ??report_32
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 1979       for (uint8_t e = 1; e < HOTENDS; e++) {
-??report_32:
-        MOVS     R7,#+1
-        LDR.W    R8,??DataTable105_42
-        B.N      ??report_33
+??report_19:
+        LDR.W    R7,??DataTable105_27
 // 1980         SERIAL_ECHOPAIR("  M218 T", (int)e);
-??report_34:
-        MOV      R1,R7
         ADR.W    R0,`?<Constant "  M218 T">`
+        MOVS     R1,#+1
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 1981         SERIAL_ECHOPAIR(" X", LINEAR_UNIT(hotend_offset[X_AXIS][e]));
-        LDR      R1,[R8, R7, LSL #+2]
-        ADR.N    R0,??report_25+0xC  ;; 0x20, 0x58, 0x00, 0x00
+        LDR      R1,[R7, #+4]
+        ADR.N    R0,??report_15+0xC  ;; 0x20, 0x58, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 1982         SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(hotend_offset[Y_AXIS][e]));
-        ADD      R0,R8,R7, LSL #+2
-        LDR      R1,[R0, #+8]
+        LDR      R1,[R7, #+12]
         MOV      R0,R10
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
@@ -6025,19 +7213,14 @@ _ZN14MarlinSettings6reportEb:
 // 1985         #endif
 // 1986         SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-// 1987       }
-        ADDS     R7,R7,#+1
-        UXTB     R7,R7
-??report_33:
-        CMP      R7,#+2
-        BLT.N    ??report_34
         LDR      R0,[SP, #+4]
         LDRB     R0,[R0, #+12]
         CMP      R0,#+32
-        BNE.N    ??report_35
+        BNE.N    ??report_20
+// 1987       }
 // 1988     #endif
 // 1989 
 // 1990     /**
@@ -6049,73 +7232,69 @@ _ZN14MarlinSettings6reportEb:
 // 1996       if(BED_LEVELING_METHOD == MESH_BED_LEVELING)    {
 // 1997 
 // 1998         if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_36
+        CBNZ.N   R4,??report_21
 // 1999           CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2000           SERIAL_ECHOLNPGM("Mesh Bed Leveling:");
         ADR.W    R0,`?<Constant "Mesh Bed Leveling:\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??report_36
+        B.N      ??report_22
 // 2001         }
 // 2002       }
 // 2003       //#elif ENABLED(AUTO_BED_LEVELING_UBL)
 // 2004       else if (BED_LEVELING_METHOD == AUTO_BED_LEVELING_UBL)    {
-??report_35:
+??report_20:
         CMP      R0,#+16
-        BNE.N    ??report_37
+        BNE.N    ??report_23
 // 2005 
 // 2006         if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_36
+        CBNZ.N   R4,??report_21
 // 2007           CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2008           ubl.echo_name();
           CFI FunCall _ZN20unified_bed_leveling9echo_nameEv
         BL       _ZN20unified_bed_leveling9echo_nameEv
 // 2009           SERIAL_ECHOLNPGM(":");
-        ADR.N    R0,??report_38   ;; 0x3A, 0x0A, 0x00, 0x00
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??report_36
+        ADR.N    R0,??report_15+0x10  ;; 0x3A, 0x0A, 0x00, 0x00
+        B.N      ??report_22
 // 2010         }
 // 2011       }
 // 2012       //#elif HAS_ABL
 // 2013       else if(BED_LEVELING_METHOD == HAS_ABL)
-??report_37:
+??report_23:
         CMP      R0,#+30
-        BNE.N    ??report_36
+        IT       EQ 
 // 2014       {
 // 2015         if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_36
+        CMPEQ    R4,#+0
+        BNE.N    ??report_21
 // 2016           CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2017           SERIAL_ECHOLNPGM("Auto Bed Leveling:");
         ADR.W    R0,`?<Constant "Auto Bed Leveling:\\n">`
+??report_22:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
+        B.N      ??report_24
 // 2018         }
 // 2019       }
 // 2020       //#endif
 // 2021 
 // 2022       CONFIG_ECHO_START;
-??report_36:
-        CMP      R4,#+0
-        BNE.N    ??report_39
-        MOV      R0,R5
+??report_21:
+        CBNZ.N   R4,??report_25
+??report_24:
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2023       SERIAL_ECHOPAIR("  M420 S", planner.leveling_active ? 1 : 0);
-??report_39:
-        LDR.W    R0,??DataTable105_43
+??report_25:
+        LDR.W    R0,??DataTable105_54
         LDRB     R1,[R0, #+0]
         ADR.W    R0,`?<Constant "  M420 S">`
           CFI FunCall _Z17serial_echopair_PPKci
@@ -6123,137 +7302,168 @@ _ZN14MarlinSettings6reportEb:
 // 2024       //#if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
 // 2025       if((MACHINETPYE != DELTA) && (BED_LEVELING_METHOD&HAS_FADE))	//mks_delta
         LDR      R0,[SP, #+4]
-        LDRSH    R0,[R0, #+36]
+        LDRSH    R0,[R0, #+34]
         CMP      R0,#+2
-        BEQ.N    ??report_40
+        BEQ.N    ??report_26
         LDR      R0,[SP, #+4]
         LDRB     R0,[R0, #+12]
         LSLS     R0,R0,#+27
-        BPL.N    ??report_40
+        BPL.N    ??report_26
 // 2026         SERIAL_ECHOPAIR(" Z", LINEAR_UNIT(planner.z_fade_height));
-        LDR.W    R0,??DataTable105_44
+        LDR.W    R0,??DataTable105_55
         LDR      R1,[R0, #+0]
-        MOV      R0,R9
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2027       //#endif
 // 2028       SERIAL_EOL();
-??report_40:
+??report_26:
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
         LDR      R0,[SP, #+4]
         LDRB     R0,[R0, #+12]
         CMP      R0,#+32
-        BNE.N    ??report_41
+        BNE.N    ??report_27
 // 2029 
 // 2030       //#if ENABLED(MESH_BED_LEVELING)
 // 2031       if(BED_LEVELING_METHOD == MESH_BED_LEVELING)    {
 // 2032 
 // 2033         for (uint8_t py = 0; py < GRID_MAX_POINTS_Y; py++) {
-        MOV      R8,#+0
-        B.N      ??report_42
+        MOVS     R5,#+0
+        B.N      ??report_28
         Nop      
         DATA
-??report_9:
+??report_8:
         DC8      0x20, 0x59, 0x00, 0x00
-        DC8      0x20, 0x5A, 0x00, 0x00
-        DC8      0x20, 0x45, 0x00, 0x00
         THUMB
+??report_29:
+        ADDS     R0,R5,#+1
+        UXTB     R5,R0
+??report_28:
+        LDR.W    R0,??DataTable105_56
+        LDRB     R0,[R0, #+97]
+        CMP      R5,R0
+        BGE.N    ??report_30
 // 2034           for (uint8_t px = 0; px < GRID_MAX_POINTS_X; px++) {
-// 2035             CONFIG_ECHO_START;
-??report_43:
-        CMP      R4,#+0
-        BNE.N    ??report_44
-        MOV      R0,R5
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 2036             SERIAL_ECHOPAIR("  G29 S3 X", (int)px + 1);
-??report_44:
-        ADDS     R1,R7,#+1
-        ADR.W    R0,`?<Constant "  G29 S3 X">`
-          CFI FunCall _Z17serial_echopair_PPKci
-        BL       _Z17serial_echopair_PPKci
-// 2037             SERIAL_ECHOPAIR(" Y", (int)py + 1);
-        ADD      R1,R8,#+1
-        MOV      R0,R10
-          CFI FunCall _Z17serial_echopair_PPKci
-        BL       _Z17serial_echopair_PPKci
-// 2038             SERIAL_ECHOPGM(" Z");
+        ADDS     R0,R5,#+1
+        MOVS     R7,#+0
+        STR      R0,[SP, #+8]
+        B.N      ??report_31
+??report_32:
+        UXTB     R1,R1
         MOV      R0,R9
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_33:
+        LDRSB    R1,[R11], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_32
+// 2035             CONFIG_ECHO_START;
+// 2036             SERIAL_ECHOPAIR("  G29 S3 X", (int)px + 1);
+// 2037             SERIAL_ECHOPAIR(" Y", (int)py + 1);
+// 2038             SERIAL_ECHOPGM(" Z");
 // 2039             SERIAL_PROTOCOL_F(LINEAR_UNIT(mbl.z_values[px][py]), 5);
         MOVS     R0,#+5
         STR      R0,[SP, #+0]
         ADD      R0,R7,R7, LSL #+1
-        LDR.W    R1,??DataTable105_45
-        ADD      R0,R1,R0, LSL #+4
-        LDR      R0,[R0, R8, LSL #+2]
+        LDR.W    R1,??DataTable105_57
+        LSLS     R0,R0,#+4
+        ADD      R1,R1,R5, LSL #+2
+        LDR      R0,[R0, R1]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R2,R0
         MOV      R3,R1
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN5Print5printEdi
         BL       _ZN5Print5printEdi
 // 2040             SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-// 2041           }
         ADDS     R7,R7,#+1
         UXTB     R7,R7
-??report_45:
-        LDRB     R0,[R11, #+96]
+??report_31:
+        LDR.W    R0,??DataTable105_56
+        LDRB     R0,[R0, #+96]
         CMP      R7,R0
-        BLT.N    ??report_43
-        ADD      R8,R8,#+1
-        UXTB     R8,R8
-??report_42:
-        LDRB     R0,[R11, #+97]
-        CMP      R8,R0
-        BGE.N    ??report_46
-        MOVS     R7,#+0
-        B.N      ??report_45
+        BGE.N    ??report_29
+        CBNZ.N   R4,??report_34
+        MOV      R11,R8
+        B.N      ??report_35
+        DATA
+??report_0:
+        DC8      0x20, 0x5A, 0x00, 0x00
+        DC8      0x20, 0x45, 0x00, 0x00
+        DC32     _ZN11GCodeParser18volumetric_enabledE
+        DC32     _ZN7Planner13filament_sizeE
+        THUMB
+??report_36:
+        UXTB     R1,R1
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_35:
+        LDRSB    R1,[R11], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_36
+??report_34:
+        ADDS     R1,R7,#+1
+        ADR.W    R0,`?<Constant "  G29 S3 X">`
+          CFI FunCall _Z17serial_echopair_PPKci
+        BL       _Z17serial_echopair_PPKci
+        LDR      R1,[SP, #+8]
+        MOV      R0,R10
+          CFI FunCall _Z17serial_echopair_PPKci
+        BL       _Z17serial_echopair_PPKci
+        MOV      R11,R6
+        B.N      ??report_33
+// 2041           }
 // 2042         }
 // 2043       }
 // 2044       //#elif ENABLED(AUTO_BED_LEVELING_UBL)
 // 2045       else if(BED_LEVELING_METHOD == AUTO_BED_LEVELING_UBL)   {
-??report_41:
+??report_27:
         CMP      R0,#+16
-        BNE.N    ??report_46
+        IT       EQ 
 // 2046 
 // 2047         if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_46
+        CMPEQ    R4,#+0
+        BNE.N    ??report_30
 // 2048           SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 2049           ubl.report_state();
           CFI FunCall _ZN20unified_bed_leveling12report_stateEv
         BL       _ZN20unified_bed_leveling12report_stateEv
 // 2050           SERIAL_ECHOLNPAIR("\nActive Mesh Slot: ", ubl.storage_slot);
-        LDR.N    R0,??DataTable105_46
-        LDRSB    R1,[R0, #+0]
+        LDR.W    R0,??DataTable105_58
+        LDRSB    R1,[R0, R4]
         ADR.W    R0,`?<Constant "\\nActive Mesh Slot: ">`
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
+        LDR.N    R0,??DataTable105
+        LDRSH    R0,[R0, #+2]
+        CMP      R0,#+1
+        ITEEE    LT 
 // 2051           SERIAL_ECHOPAIR("EEPROM can hold ", calc_num_meshes());
-          CFI FunCall _ZN14MarlinSettings15calc_num_meshesEv
-        BL       _ZN14MarlinSettings15calc_num_meshesEv
-        MOV      R1,R0
+        MOVLT    R1,#+0
+        RSBGE    R0,R0,#+1920
+        MOVGE    R1,#+576
+        UDIVGE   R1,R0,R1
+        UXTH     R1,R1
         ADR.W    R0,`?<Constant "EEPROM can hold ">`
-          CFI FunCall _Z17serial_echopair_PPKct
-        BL       _Z17serial_echopair_PPKct
+          CFI FunCall _Z17serial_echopair_PPKci
+        BL       _Z17serial_echopair_PPKci
 // 2052           SERIAL_ECHOLNPGM(" meshes.\n");
         ADR.W    R0,`?<Constant " meshes.\\n\\n">`
           CFI FunCall _Z14serialprintPGMPKc
@@ -6266,16 +7476,15 @@ _ZN14MarlinSettings6reportEb:
 // 2058 
 // 2059     //#if ENABLED(DELTA)
 // 2060     if(MACHINETPYE == DELTA)	{
-??report_46:
+??report_30:
         LDR      R0,[SP, #+4]
-        LDRSH    R0,[R0, #+36]
+        LDRSH    R0,[R0, #+34]
         CMP      R0,#+2
-        BNE.N    ??report_47
+        BNE.N    ??report_37
 // 2061       if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_48
+        CBNZ.N   R4,??report_38
 // 2062         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2063         SERIAL_ECHOLNPGM("Endstop adjustment:");
@@ -6284,17 +7493,14 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 2064       }
 // 2065       CONFIG_ECHO_START;
-??report_48:
-        CMP      R4,#+0
-        BNE.N    ??report_49
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2066       SERIAL_ECHOPAIR("  M666 X", LINEAR_UNIT(delta_endstop_adj[X_AXIS]));
-??report_49:
-        LDR.N    R7,??DataTable105_47
-        LDR      R1,[R7, #+0]
+??report_38:
+        LDR.N    R7,??DataTable105_31
         ADR.W    R0,`?<Constant "  M666 X">`
+        LDR      R1,[R7, #+0]
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2067       SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(delta_endstop_adj[Y_AXIS]));
@@ -6304,18 +7510,17 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z17serial_echopair_PPKcf
 // 2068       SERIAL_ECHOLNPAIR(" Z", LINEAR_UNIT(delta_endstop_adj[Z_AXIS]));
         LDR      R1,[R7, #+8]
-        MOV      R0,R9
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 2069       if (!forReplay) {
-        CMP      R4,#+0
-        BNE.N    ??report_50
+        CBNZ.N   R4,??report_39
 // 2070         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2071         SERIAL_ECHOLNPGM("Delta settings: L<diagonal_rod> R<radius> H<height> S<segments_per_s> B<calibration radius> XYZ<tower angle corrections>");
@@ -6324,47 +7529,44 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 2072       }
 // 2073       CONFIG_ECHO_START;
-??report_50:
-        CMP      R4,#+0
-        BNE.N    ??report_51
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2074       SERIAL_ECHOPAIR("  M665 L", LINEAR_UNIT(delta_diagonal_rod));
-??report_51:
-        LDR.N    R0,??DataTable105_48
+??report_39:
+        LDR.N    R0,??DataTable105_33
         LDR      R1,[R0, #+0]
         ADR.W    R0,`?<Constant "  M665 L">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2075       SERIAL_ECHOPAIR(" R", LINEAR_UNIT(delta_radius));
-        LDR.N    R0,??DataTable105_49
+        LDR.N    R0,??DataTable105_32
         LDR      R1,[R0, #+0]
-        ADR.N    R0,??report_25   ;; 0x20, 0x52, 0x00, 0x00
+        ADR.N    R0,??report_15   ;; 0x20, 0x52, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2076       SERIAL_ECHOPAIR(" H", LINEAR_UNIT(delta_height));
-        LDR.N    R0,??DataTable105_50
+        LDR.N    R0,??DataTable105_30
         LDR      R1,[R0, #+0]
         ADR.N    R0,??DataTable105_1  ;; 0x20, 0x48, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2077       SERIAL_ECHOPAIR(" S", delta_segments_per_second);
-        LDR.N    R0,??DataTable105_51
+        LDR.N    R0,??DataTable105_34
         LDR      R1,[R0, #+0]
         ADR.N    R0,??DataTable105_2  ;; 0x20, 0x53, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2078       SERIAL_ECHOPAIR(" B", LINEAR_UNIT(delta_calibration_radius));
-        LDR.N    R0,??DataTable105_52
+        LDR.N    R0,??DataTable105_35
         LDR      R1,[R0, #+0]
-        ADR.N    R0,??report_25+0x8  ;; 0x20, 0x42, 0x00, 0x00
+        ADR.N    R0,??report_15+0x8  ;; 0x20, 0x42, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2079       SERIAL_ECHOPAIR(" X", LINEAR_UNIT(delta_tower_angle_trim[A_AXIS]));
-        LDR.N    R7,??DataTable105_12
+        LDR.N    R7,??DataTable105_36
         LDR      R1,[R7, #+0]
-        ADR.N    R0,??report_25+0xC  ;; 0x20, 0x58, 0x00, 0x00
+        ADR.N    R0,??report_15+0xC  ;; 0x20, 0x58, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2080       SERIAL_ECHOPAIR(" Y", LINEAR_UNIT(delta_tower_angle_trim[B_AXIS]));
@@ -6374,32 +7576,28 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z17serial_echopair_PPKcf
 // 2081       SERIAL_ECHOPAIR(" Z", LINEAR_UNIT(delta_tower_angle_trim[C_AXIS]));
         LDR      R1,[R7, #+8]
-        MOV      R0,R9
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2082       SERIAL_EOL();
-        MOVS     R1,#+10
-        MOV      R0,R6
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        B.N      ??report_52
+        B.N      ??report_40
         DATA
-??report_25:
+??report_15:
         DC8      0x20, 0x52, 0x00, 0x00
         DC8      0x20, 0x54, 0x00, 0x00
         DC8      0x20, 0x42, 0x00, 0x00
         DC8      0x20, 0x58, 0x00, 0x00
+        DC8      0x3A, 0x0A, 0x00, 0x00
         THUMB
 // 2083     }
 // 2084     else
 // 2085     {
 // 2086     //#if ENABLED(X_DUAL_ENDSTOPS) || ENABLED(Y_DUAL_ENDSTOPS) || ENABLED(Z_DUAL_ENDSTOPS)
 // 2087       if (!forReplay) {
-??report_47:
-        CMP      R4,#+0
-        BNE.N    ??report_53
+??report_37:
+        CBNZ.N   R4,??report_41
 // 2088         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2089         SERIAL_ECHOLNPGM("Endstop adjustment:");
@@ -6408,14 +7606,11 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 2090       }
 // 2091       CONFIG_ECHO_START;
-??report_53:
-        CMP      R4,#+0
-        BNE.N    ??report_54
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2092       SERIAL_ECHOPGM("  M666");
-??report_54:
+??report_41:
         ADR.W    R0,`?<Constant "  M666">`
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
@@ -6427,20 +7622,21 @@ _ZN14MarlinSettings6reportEb:
 // 2098       #endif
 // 2099       //#if ENABLED(Z_DUAL_ENDSTOPS)
 // 2100       if(Z_DUAL_ENDSTOPS==1)
-        LDRB     R0,[R11, #+258]
+        LDR.N    R0,??DataTable105_56
+        LDRB     R0,[R0, #+258]
         CMP      R0,#+1
-        BNE.N    ??report_55
+        BNE.N    ??report_40
 // 2101         SERIAL_ECHOPAIR(" Z", LINEAR_UNIT(z_endstop_adj));
-        LDR.N    R0,??DataTable105_13
+        LDR.N    R0,??DataTable105_37
         LDR      R1,[R0, #+0]
-        MOV      R0,R9
+        MOV      R0,R6
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2102       //#endif
 // 2103       SERIAL_EOL();
-??report_55:
+??report_40:
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 2104     
@@ -6463,21 +7659,19 @@ _ZN14MarlinSettings6reportEb:
 // 2121 
 // 2122     //#if HAS_PID_HEATING
 // 2123     if(HAS_PID_HEATING) {
-??report_52:
-        LDRB     R0,[R11, #+52]
+        LDR.N    R0,??DataTable105_56
+        LDRB     R0,[R0, #+54]
         CMP      R0,#+0
-        BNE.N    ??report_56
-        LDR      R0,[SP, #+4]
-        LDRB     R0,[R0, #+1]
-        CMP      R0,#+0
-        BEQ.W    ??report_57
+        ITTT     EQ 
+        LDREQ    R0,[SP, #+4]
+        LDRBEQ   R0,[R0, #+1]
+        CMPEQ    R0,#+0
+        BEQ.W    ??report_42
 // 2124 
 // 2125       if (!forReplay) {
-??report_56:
-        CMP      R4,#+0
-        BNE.N    ??report_58
+        CBNZ.N   R4,??report_43
 // 2126         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2127         SERIAL_ECHOLNPGM("PID settings:");
@@ -6487,48 +7681,46 @@ _ZN14MarlinSettings6reportEb:
 // 2128       }
 // 2129       //#if ENABLED(PIDTEMP)
 // 2130       if(PIDTEMP){
-??report_58:
-        LDRB     R0,[R11, #+52]
+??report_43:
+        LDR.N    R0,??DataTable105_56
+        LDRB     R0,[R0, #+54]
         CMP      R0,#+0
-        BEQ.N    ??report_59
+        BEQ.N    ??report_44
 // 2131         #if HOTENDS > 1
 // 2132           if (forReplay) {
         CMP      R4,#+0
-        BEQ.N    ??report_60
+        BEQ.N    ??report_45
 // 2133             HOTEND_LOOP() {
         MOVS     R7,#+0
-??report_61:
-        MOV      R0,R7
-        SXTB     R0,R0
-        LDRB     R1,[R11, #+247]
+        LDR.N    R5,??DataTable105_59  ;; 0x88e368f1
+        LDR.N    R6,??DataTable105_60  ;; 0x3fc4f8b5
+        LDR.W    R11,??DataTable105_38
+        ADR.W    R10,`?<Constant "  M301 E">`
+??report_46:
+        LDR.N    R1,??DataTable105_56
+        LDRB     R1,[R1, #+247]
+        SXTB     R0,R7
         CMP      R0,R1
-        BGE.N    ??report_59
+        BGE.N    ??report_44
 // 2134               CONFIG_ECHO_START;
-        CMP      R4,#+0
-        BNE.N    ??report_62
-        MOV      R0,R5
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
 // 2135               SERIAL_ECHOPAIR("  M301 E", e);
-??report_62:
         SXTB     R7,R7
         MOV      R1,R7
-        ADR.W    R0,`?<Constant "  M301 E">`
+        MOV      R0,R10
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
 // 2136               SERIAL_ECHOPAIR(" P", PID_PARAM(Kp, e));
-        LDR.N    R0,??DataTable105_15
-        LDR      R1,[R0, #+0]
+        LDR      R1,[R11, #+0]
         ADR.N    R0,??DataTable105_3  ;; 0x20, 0x50, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2137               SERIAL_ECHOPAIR(" I", unscalePID_i(PID_PARAM(Ki, e)));
-        LDR.N    R0,??DataTable105_17
+        LDR.N    R0,??DataTable105_40
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable105_53  ;; 0x88e368f1
-        LDR.N    R3,??DataTable105_54  ;; 0x3fc4f8b5
+        MOV      R2,R5
+        MOV      R3,R6
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         MOV      R2,R0
@@ -6537,12 +7729,12 @@ _ZN14MarlinSettings6reportEb:
           CFI FunCall _Z17serial_echopair_PPKcd
         BL       _Z17serial_echopair_PPKcd
 // 2138               SERIAL_ECHOPAIR(" D", unscalePID_d(PID_PARAM(Kd, e)));
-        LDR.N    R0,??DataTable105_19
+        LDR.N    R0,??DataTable105_42
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable105_53  ;; 0x88e368f1
-        LDR.N    R3,??DataTable105_54  ;; 0x3fc4f8b5
+        MOV      R2,R5
+        MOV      R3,R6
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         MOV      R2,R0
@@ -6556,39 +7748,35 @@ _ZN14MarlinSettings6reportEb:
 // 2142               #endif
 // 2143               SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 2144             }
         ADDS     R7,R7,#+1
-        B.N      ??report_61
-        DATA
-??report_38:
-        DC8      0x3A, 0x0A, 0x00, 0x00
-        THUMB
+        B.N      ??report_46
 // 2145           }
 // 2146           else
 // 2147         #endif // HOTENDS > 1
 // 2148         // !forReplay || HOTENDS == 1
 // 2149         {
 // 2150           CONFIG_ECHO_START;
-??report_60:
-        MOV      R0,R5
+??report_45:
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2151           SERIAL_ECHOPAIR("  M301 P", PID_PARAM(Kp, 0)); // for compatibility with hosts, only echo values for E0
-        LDR.N    R0,??DataTable105_15
+        LDR.N    R0,??DataTable105_38
         LDR      R1,[R0, #+0]
         ADR.W    R0,`?<Constant "  M301 P">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2152           SERIAL_ECHOPAIR(" I", unscalePID_i(PID_PARAM(Ki, 0)));
-        LDR.N    R0,??DataTable105_17
+        LDR.N    R0,??DataTable105_40
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable105_53  ;; 0x88e368f1
-        LDR.N    R3,??DataTable105_54  ;; 0x3fc4f8b5
+        LDR.N    R2,??DataTable105_59  ;; 0x88e368f1
+        LDR.N    R3,??DataTable105_60  ;; 0x3fc4f8b5
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         MOV      R2,R0
@@ -6597,12 +7785,12 @@ _ZN14MarlinSettings6reportEb:
           CFI FunCall _Z17serial_echopair_PPKcd
         BL       _Z17serial_echopair_PPKcd
 // 2153           SERIAL_ECHOPAIR(" D", unscalePID_d(PID_PARAM(Kd, 0)));
-        LDR.N    R0,??DataTable105_19
+        LDR.N    R0,??DataTable105_42
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable105_53  ;; 0x88e368f1
-        LDR.N    R3,??DataTable105_54  ;; 0x3fc4f8b5
+        LDR.N    R2,??DataTable105_59  ;; 0x88e368f1
+        LDR.N    R3,??DataTable105_60  ;; 0x3fc4f8b5
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         MOV      R2,R0
@@ -6616,7 +7804,7 @@ _ZN14MarlinSettings6reportEb:
 // 2157           #endif
 // 2158           SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 2159         }
@@ -6625,31 +7813,29 @@ _ZN14MarlinSettings6reportEb:
 // 2162 
 // 2163       //#if ENABLED(PIDTEMPBED)
 // 2164       if(PIDTEMPBED) {
-??report_59:
+??report_44:
         LDR      R0,[SP, #+4]
         LDRB     R0,[R0, #+1]
-        CMP      R0,#+0
-        BEQ.N    ??report_63
+        CBZ.N    R0,??report_47
 // 2165         CONFIG_ECHO_START;
-        CMP      R4,#+0
-        BNE.N    ??report_64
-        MOV      R0,R5
+        CBNZ.N   R4,??report_48
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2166         SERIAL_ECHOPAIR("  M304 P", thermalManager.bedKp);
-??report_64:
-        LDR.N    R0,??DataTable105_20
+??report_48:
+        LDR.N    R0,??DataTable105_61
         LDR      R1,[R0, #+0]
         ADR.W    R0,`?<Constant "  M304 P">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 // 2167         SERIAL_ECHOPAIR(" I", unscalePID_i(thermalManager.bedKi));
-        LDR.N    R0,??DataTable105_22
+        LDR.N    R0,??DataTable105_62
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable105_53  ;; 0x88e368f1
-        LDR.N    R3,??DataTable105_54  ;; 0x3fc4f8b5
+        LDR.N    R2,??DataTable105_59  ;; 0x88e368f1
+        LDR.N    R3,??DataTable105_60  ;; 0x3fc4f8b5
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         MOV      R2,R0
@@ -6658,12 +7844,12 @@ _ZN14MarlinSettings6reportEb:
           CFI FunCall _Z17serial_echopair_PPKcd
         BL       _Z17serial_echopair_PPKcd
 // 2168         SERIAL_ECHOPAIR(" D", unscalePID_d(thermalManager.bedKd));
-        LDR.N    R0,??DataTable105_24
+        LDR.N    R0,??DataTable105_63
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable105_53  ;; 0x88e368f1
-        LDR.N    R3,??DataTable105_54  ;; 0x3fc4f8b5
+        LDR.N    R2,??DataTable105_59  ;; 0x88e368f1
+        LDR.N    R3,??DataTable105_60  ;; 0x3fc4f8b5
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         MOV      R2,R0
@@ -6673,7 +7859,7 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z17serial_echopair_PPKcd
 // 2169         SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 // 2170       }
@@ -6725,11 +7911,10 @@ _ZN14MarlinSettings6reportEb:
 // 2216      */
 // 2217     #if HAS_BED_PROBE
 // 2218       if (!forReplay) {
-??report_63:
-        CMP      R4,#+0
-        BNE.N    ??report_65
+??report_47:
+        CBNZ.N   R4,??report_49
 // 2219         CONFIG_ECHO_START;
-        MOV      R0,R5
+        MOV      R0,R8
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 // 2220         SERIAL_ECHOLNPGM("Z-Probe Offset (mm):");
@@ -6738,21 +7923,24 @@ _ZN14MarlinSettings6reportEb:
         BL       _Z14serialprintPGMPKc
 // 2221       }
 // 2222       CONFIG_ECHO_START;
-??report_65:
-        CMP      R4,#+0
-        BNE.N    ??report_66
-        MOV      R0,R5
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        B.N      ??report_50
+??report_51:
+        UXTB     R1,R1
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_50:
+        LDRSB    R1,[R8], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_51
 // 2223       SERIAL_ECHOLNPAIR("  M851 Z", LINEAR_UNIT(zprobe_zoffset));
-??report_66:
-        LDR.N    R0,??DataTable105_55
+??report_49:
+        LDR.N    R0,??DataTable105_28
         LDR      R1,[R0, #+0]
         ADR.W    R0,`?<Constant "  M851 Z">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        MOV      R0,R6
+        MOV      R0,R9
         ADD      SP,SP,#+12
           CFI CFA R13+36
         POP      {R4-R11,LR}
@@ -6766,6 +7954,7 @@ _ZN14MarlinSettings6reportEb:
           CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R1,#+10
           CFI FunCall _ZN10USARTClass5writeEh
         B.W      _ZN10USARTClass5writeEh
           CFI R4 Frame(CFA, -36)
@@ -6895,9 +8084,11 @@ _ZN14MarlinSettings6reportEb:
 // 2338     #endif
 // 2339   }
 // 2340     }
-??report_57:
-        POP      {R0-R2,R4-R11,PC}  ;; return
-          CFI EndBlock cfiBlock14
+??report_42:
+        ADD      SP,SP,#+12
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock11
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -6939,301 +8130,349 @@ _ZN14MarlinSettings6reportEb:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable105_6:
-        DC32     _ZN20unified_bed_leveling8z_valuesE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_7:
-        DC32     0x447a0000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_8:
-        DC32     0x41200000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_9:
-        DC32     0x3e99999a
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_10:
-        DC32     0x40a00000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_11:
-        DC32     0x3f4ccccd
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_12:
-        DC32     delta_tower_angle_trim
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_13:
-        DC32     z_endstop_adj
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_14:
-        DC32     0x41b1999a
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_15:
-        DC32     _ZN11Temperature2KpE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_16:
-        DC32     0x3e3531a6
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_17:
-        DC32     _ZN11Temperature2KiE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_18:
-        DC32     0x442df340
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_19:
-        DC32     _ZN11Temperature2KdE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_20:
-        DC32     _ZN11Temperature5bedKpE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_21:
-        DC32     0x3b76f5eb
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_22:
-        DC32     _ZN11Temperature5bedKiE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_23:
-        DC32     0x44e90070
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_24:
-        DC32     _ZN11Temperature5bedKdE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_25:
-        DC32     _ZN11GCodeParser18volumetric_enabledE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_26:
-        DC32     0x40400000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_27:
-        DC32     _ZN7Planner13filament_sizeE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_28:
-        DC32     echomagic
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_29:
-        DC32     Serial3
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_30:
         DC32     _ZN7Planner17axis_steps_per_mmE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_31:
-        DC32     _ZN7Planner17max_feedrate_mm_sE
+??DataTable105_7:
+        DC32     0x42a13333
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_32:
+??DataTable105_8:
         DC32     _ZN7Planner26max_acceleration_mm_per_s2E
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_33:
+??DataTable105_9:
+        DC32     _ZN7Planner17max_feedrate_mm_sE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_10:
+        DC32     0x42a0cccd
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_11:
+        DC32     0x43480000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_12:
+        DC32     0x43c80000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_13:
+        DC32     0x428c0000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_14:
         DC32     _ZN7Planner12accelerationE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_34:
+??DataTable105_15:
+        DC32     0x447a0000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_16:
+        DC32     0x42b40000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_17:
+        DC32     0x41200000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_18:
         DC32     _ZN7Planner20retract_accelerationE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_35:
+??DataTable105_19:
         DC32     _ZN7Planner19travel_accelerationE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_36:
+??DataTable105_20:
         DC32     _ZN7Planner17min_feedrate_mm_sE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_37:
+??DataTable105_21:
         DC32     _ZN7Planner24min_travel_feedrate_mm_sE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_38:
+??DataTable105_22:
         DC32     _ZN7Planner19min_segment_time_usE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_39:
+??DataTable105_23:
+        DC32     0x3e99999a
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_24:
         DC32     _ZN7Planner8max_jerkE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_40:
-        DC32     mksCfg
+??DataTable105_25:
+        DC32     0x40a00000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_41:
+??DataTable105_26:
         DC32     home_offset
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_42:
+??DataTable105_27:
         DC32     hotend_offset
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_43:
-        DC32     _ZN7Planner15leveling_activeE
+??DataTable105_28:
+        DC32     zprobe_zoffset
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_44:
-        DC32     _ZN7Planner13z_fade_heightE
+??DataTable105_29:
+        DC32     0x3f4ccccd
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_45:
-        DC32     _ZN17mesh_bed_leveling8z_valuesE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_46:
-        DC32     _ZN20unified_bed_leveling12storage_slotE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_47:
-        DC32     delta_endstop_adj
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_48:
-        DC32     delta_diagonal_rod
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_49:
-        DC32     delta_radius
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable105_50:
+??DataTable105_30:
         DC32     delta_height
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_51:
+??DataTable105_31:
+        DC32     delta_endstop_adj
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_32:
+        DC32     delta_radius
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_33:
+        DC32     delta_diagonal_rod
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_34:
         DC32     delta_segments_per_second
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable105_52:
+??DataTable105_35:
         DC32     delta_calibration_radius
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
+??DataTable105_36:
+        DC32     delta_tower_angle_trim
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_37:
+        DC32     z_endstop_adj
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_38:
+        DC32     _ZN11Temperature2KpE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_39:
+        DC32     0x41b1999a
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_40:
+        DC32     _ZN11Temperature2KiE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_41:
+        DC32     0x3e3531a6
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_42:
+        DC32     _ZN11Temperature2KdE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_43:
+        DC32     0x442df340
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_44:
+        DC32     0x3b76f5eb
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_45:
+        DC32     0x44e90070
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_46:
+        DC32     _ZN11GCodeParser18volumetric_enabledE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_47:
+        DC32     0x40400000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_48:
+        DC32     _ZN7Planner13filament_sizeE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_49:
+        DC32     _ZN8Endstops7enabledE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_50:
+        DC32     _ZN8Endstops16enabled_globallyE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_51:
+        DC32     echomagic
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_52:
+        DC32     Serial3
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
 ??DataTable105_53:
-        DC32     0x88e368f1
+        DC32     mksCfg+0x36
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable105_54:
-        DC32     0x3fc4f8b5
+        DC32     _ZN7Planner15leveling_activeE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable105_55:
-        DC32     zprobe_zoffset
+        DC32     _ZN7Planner13z_fade_heightE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_56:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_57:
+        DC32     _ZN17mesh_bed_leveling8z_valuesE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_58:
+        DC32     _ZN20unified_bed_leveling12storage_slotE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_59:
+        DC32     0x88e368f1
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_60:
+        DC32     0x3fc4f8b5
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_61:
+        DC32     _ZN11Temperature5bedKpE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_62:
+        DC32     _ZN11Temperature5bedKiE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable105_63:
+        DC32     _ZN11Temperature5bedKdE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -7570,146 +8809,16 @@ _ZN14MarlinSettings6reportEb:
         SECTION __DLIB_PERTHREAD_init:DATA:REORDER:NOROOT(0)
         SECTION_TYPE SHT_PROGBITS, 0
 
-        SECTION `.rodata`:CONST:REORDER:NOROOT(0)
-        SECTION_GROUP _ZTI5Print
-// __absolute char const <Typeinfo for Print>
-_ZTI5Print:
-        DATA
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant {{(0.0F), (0.0F)}, {(0.0F), (0.0F)}`:
-        DC32 0H, 0H, 0H, 0H, 0H
-        DC8 0, 0, 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant {(0.0F), (0.0F), (0.0F)}>`:
-        DC32 0H, 0H, 0H
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant {(0.0F), (0.0F), (0.0F)}>_1`:
-        DC32 0H, 0H, 0H
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant {0}>`:
-        DC32 0
-        DC8 0, 0, 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant {0}>_1`:
-        DC32 0
-        DC8 0, 0, 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant {0, 0}>`:
-        DC32 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant ")\\n">`:
-        DC8 ")\012"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant ".\\n">`:
-        DC8 ".\012"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " Y">`:
-        DC8 " Y"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " Z">`:
-        DC8 " Z"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " E">`:
-        DC8 " E"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " R">`:
-        DC8 " R"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " T">`:
-        DC8 " T"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " B">`:
-        DC8 " B"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " X">`:
-        DC8 " X"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant ":\\n">`:
-        DC8 ":\012"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " H">`:
-        DC8 " H"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " S">`:
-        DC8 " S"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " P">`:
-        DC8 " P"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " I">`:
-        DC8 " I"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant " D">`:
-        DC8 " D"
-        DC8 0
-
         END
 // 2341 #endif // !DISABLE_M503
 // 
-//    12 bytes in section .bss
-//   133 bytes in section .rodata
-// 9 392 bytes in section .text
+//     12 bytes in section .bss
+//    309 bytes in section .rodata
+// 12 272 bytes in section .text
 // 
-// 9 338 bytes of CODE  memory (+ 54 bytes shared)
-//   132 bytes of CONST memory (+  1 byte  shared)
-//    12 bytes of DATA  memory
+// 12 240 bytes of CODE  memory (+ 32 bytes shared)
+//    308 bytes of CONST memory (+  1 byte  shared)
+//     12 bytes of DATA  memory
 //
 //Errors: none
 //Warnings: 38

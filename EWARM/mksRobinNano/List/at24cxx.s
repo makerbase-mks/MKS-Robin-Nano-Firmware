@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:01
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:23:54
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\BSP\Components\at24cxx\at24cxx.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\BSP\Components\at24cxx\at24cxx.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\BSP\Components\at24cxx\at24cxx.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\BSP\Components\at24cxx\at24cxx.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\at24cxx.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\at24cxx.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -131,7 +128,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\BSP\Components\at24cxx\at24cxx.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\BSP\Components\at24cxx\at24cxx.cpp
 //    1 
 //    2 #include "at24cxx.h"
 //    3 #include "sys.h"
@@ -174,18 +171,16 @@ delayCnt:
         THUMB
 //   31 void delay_us(uint32_t nus)
 //   32 {
-//   33       while(nus--)
 _Z8delay_usj:
-??delay_us_0:
-        MOV      R1,R0
-        SUBS     R0,R1,#+1
-        CMP      R1,#+0
-        BEQ.N    ??delay_us_1
+        CBZ.N    R0,??delay_us_0
+        LDR.W    R1,??DataTable8
+//   33       while(nus--)
 //   34       {
 //   35         delayCnt = 5;  //10,8,6 -ok          
-        LDR.N    R1,??DataTable9
+??delay_us_1:
         MOVS     R2,#+5
         STRH     R2,[R1, #+0]
+        SUBS     R0,R0,#+1
 //   36         while(delayCnt--);
 ??delay_us_2:
         LDRH     R2,[R1, #+0]
@@ -193,8 +188,9 @@ _Z8delay_usj:
         STRH     R3,[R1, #+0]
         CMP      R2,#+0
         BNE.N    ??delay_us_2
-        B.N      ??delay_us_0
 //   37       }
+        CMP      R0,#+0
+        BNE.N    ??delay_us_1
 //   38  /*
 //   39 	u32 temp;	    	 
 //   40 	SysTick->LOAD=nus*fac_us; 					//时间加载	  		 
@@ -208,7 +204,7 @@ _Z8delay_usj:
 //   48 	SysTick->VAL =0X00;      		        //清空计数器	 
 //   49    */     
 //   50 }
-??delay_us_1:
+??delay_us_0:
         BX       LR               ;; return
           CFI EndBlock cfiBlock0
 //   51 //延时nms
@@ -225,29 +221,27 @@ _Z8delay_usj:
         THUMB
 //   57 void delay_ms(uint16_t nms)
 //   58 {	 
+_Z8delay_mst:
+        CBZ.N    R0,??delay_ms_0
+        LDR.N    R1,??DataTable8
+        MOVW     R2,#+5000
 //   59 
 //   60       while(nms--)
-_Z8delay_mst:
-??delay_ms_0:
-        MOV      R1,R0
-        SUBS     R0,R1,#+1
-        UXTH     R1,R1
-        CMP      R1,#+0
-        BEQ.N    ??delay_ms_1
 //   61       {
 //   62         delayCnt = 5000;        //10000,8000,6000 -ok          
-        LDR.N    R1,??DataTable9
-        MOVW     R2,#+5000
+??delay_ms_1:
         STRH     R2,[R1, #+0]
+        SUBS     R0,R0,#+1
 //   63         while(delayCnt--);
 ??delay_ms_2:
-        LDRH     R2,[R1, #+0]
-        SUBS     R3,R2,#+1
-        STRH     R3,[R1, #+0]
-        CMP      R2,#+0
+        LDRH     R3,[R1, #+0]
+        SUB      R12,R3,#+1
+        STRH     R12,[R1, #+0]
+        CMP      R3,#+0
         BNE.N    ??delay_ms_2
-        B.N      ??delay_ms_0
 //   64       }
+        CMP      R0,#+0
+        BNE.N    ??delay_ms_1
 //   65   
 //   66 	/*u32 temp;		   
 //   67 	SysTick->LOAD=(u32)nms*fac_ms;				//时间加载(SysTick->LOAD为24bit)
@@ -261,7 +255,7 @@ _Z8delay_mst:
 //   75 	SysTick->VAL =0X00;       					//清空计数器	
 //   76 */
 //   77 }
-??delay_ms_1:
+??delay_ms_0:
         BX       LR               ;; return
           CFI EndBlock cfiBlock1
 //   78 //初始化IIC接口
@@ -269,15 +263,19 @@ _Z8delay_mst:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock2 Using cfiCommon0
           CFI Function AT24CXX_Init
-          CFI FunCall IIC_Init
+          CFI NoCalls
         THUMB
 //   79 void AT24CXX_Init(void)
+AT24CXX_Init:
+        PUSH     {R4,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
+        B.N      ?Subroutine0
+          CFI EndBlock cfiBlock2
 //   80 {
 //   81         //delay_init();
 //   82 	IIC_Init();
-AT24CXX_Init:
-        B.N      IIC_Init
-          CFI EndBlock cfiBlock2
 //   83 }
 //   84 //在AT24CXX指定地址读出一个数据
 //   85 //ReadAddr:开始读数的地址  
@@ -317,8 +315,7 @@ AT24CXX_ReadOneByte:
           CFI FunCall IIC_Wait_Ack
         BL       IIC_Wait_Ack
 //  100     IIC_Send_Byte(ReadAddr%256);   //发送低地址
-        MOV      R0,R4
-        UXTB     R0,R0
+        UXTB     R0,R4
           CFI FunCall IIC_Send_Byte
         BL       IIC_Send_Byte
 //  101 	IIC_Wait_Ack();	    
@@ -387,8 +384,7 @@ AT24CXX_WriteOneByte:
           CFI FunCall IIC_Wait_Ack
         BL       IIC_Wait_Ack
 //  125     IIC_Send_Byte(WriteAddr%256);   //发送低地址
-        MOV      R0,R4
-        UXTB     R0,R0
+        UXTB     R0,R4
           CFI FunCall IIC_Send_Byte
         BL       IIC_Send_Byte
 //  126 	IIC_Wait_Ack(); 	 										  		   
@@ -406,12 +402,12 @@ AT24CXX_WriteOneByte:
         BL       IIC_Stop
 //  130 	//delay_ms(10);	 
 //  131 	delay_ms(5);	 //5-ok;3-ok;2-ok;1-bad;
-        MOVS     R0,#+5
         POP      {R1,R4,R5,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R0,#+5
           CFI FunCall _Z8delay_mst
         B.N      _Z8delay_mst
           CFI EndBlock cfiBlock4
@@ -438,28 +434,26 @@ AT24CXX_WriteLenByte:
           CFI CFA R13+24
         MOV      R4,R0
         MOV      R5,R1
-        MOV      R6,R2
+        MOVS     R6,R2
 //  140 	uint8_t t;
 //  141 	for(t=0;t<Len;t++)
+        BEQ.N    ??AT24CXX_WriteLenByte_0
         MOVS     R7,#+0
-        B.N      ??AT24CXX_WriteLenByte_0
 //  142 	{
 //  143 		AT24CXX_WriteOneByte(WriteAddr+t,(DataToWrite>>(8*t))&0xff);
 ??AT24CXX_WriteLenByte_1:
-        LSLS     R0,R7,#+3
-        LSR      R1,R5,R0
+        LSR      R1,R5,R7
         UXTB     R1,R1
-        ADDS     R0,R7,R4
-        UXTH     R0,R0
+        UXTH     R0,R4
           CFI FunCall AT24CXX_WriteOneByte
         BL       AT24CXX_WriteOneByte
 //  144 	}												    
-        ADDS     R7,R7,#+1
-        UXTB     R7,R7
-??AT24CXX_WriteLenByte_0:
-        CMP      R7,R6
-        BLT.N    ??AT24CXX_WriteLenByte_1
+        ADDS     R7,R7,#+8
+        ADDS     R4,R4,#+1
+        SUBS     R6,R6,#+1
+        BNE.N    ??AT24CXX_WriteLenByte_1
 //  145 }
+??AT24CXX_WriteLenByte_0:
         POP      {R0,R4-R7,PC}    ;; return
           CFI EndBlock cfiBlock5
 //  146 
@@ -476,41 +470,36 @@ AT24CXX_WriteLenByte:
 //  152 uint32_t AT24CXX_ReadLenByte(uint16_t ReadAddr,uint8_t Len)
 //  153 {  	
 AT24CXX_ReadLenByte:
-        PUSH     {R3-R7,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
-        MOV      R4,R0
-        MOV      R5,R1
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
+        MOV      R4,R1
 //  154 	uint8_t t;
 //  155 	uint32_t temp=0;
-        MOVS     R6,#+0
+        MOVS     R5,#+0
 //  156 	for(t=0;t<Len;t++)
-        MOV      R7,R6
-        B.N      ??AT24CXX_ReadLenByte_0
+        CBZ.N    R4,??AT24CXX_ReadLenByte_0
+        ADDS     R0,R4,R0
+        SUBS     R6,R0,#+1
 //  157 	{
 //  158 		temp<<=8;
 //  159 		temp+=AT24CXX_ReadOneByte(ReadAddr+Len-t-1); 	 				   
 ??AT24CXX_ReadLenByte_1:
-        ADDS     R0,R5,R4
-        SUBS     R0,R0,R7
-        SUBS     R0,R0,#+1
-        UXTH     R0,R0
+        UXTH     R0,R6
           CFI FunCall AT24CXX_ReadOneByte
         BL       AT24CXX_ReadOneByte
-        ADD      R6,R0,R6, LSL #+8
 //  160 	}
-        ADDS     R7,R7,#+1
-??AT24CXX_ReadLenByte_0:
-        UXTB     R7,R7
-        CMP      R7,R5
-        BCC.N    ??AT24CXX_ReadLenByte_1
+        SUBS     R6,R6,#+1
+        ADD      R5,R0,R5, LSL #+8
+        SUBS     R4,R4,#+1
+        BNE.N    ??AT24CXX_ReadLenByte_1
 //  161 	return temp;												    
-        MOV      R0,R6
-        POP      {R1,R4-R7,PC}    ;; return
+??AT24CXX_ReadLenByte_0:
+        MOV      R0,R5
+        POP      {R4-R6,PC}       ;; return
           CFI EndBlock cfiBlock6
 //  162 }
 //  163 //检查AT24CXX是否正常
@@ -536,17 +525,32 @@ AT24CXX_Check:
           CFI FunCall AT24CXX_ReadOneByte
         BL       AT24CXX_ReadOneByte
         CMP      R0,#+85
-        BNE.N    ??AT24CXX_Check_0
-        MOVS     R0,#+0
-        POP      {R1,PC}
+        BEQ.N    ??AT24CXX_Check_0
 //  173 	else//排除第一次初始化的情况
 //  174 	{
 //  175 		AT24CXX_WriteOneByte(255,0X55);
-??AT24CXX_Check_0:
-        MOVS     R1,#+85
+          CFI FunCall IIC_Start
+        BL       IIC_Start
+        MOVS     R0,#+160
+          CFI FunCall IIC_Send_Byte
+        BL       IIC_Send_Byte
+          CFI FunCall IIC_Wait_Ack
+        BL       IIC_Wait_Ack
         MOVS     R0,#+255
-          CFI FunCall AT24CXX_WriteOneByte
-        BL       AT24CXX_WriteOneByte
+          CFI FunCall IIC_Send_Byte
+        BL       IIC_Send_Byte
+          CFI FunCall IIC_Wait_Ack
+        BL       IIC_Wait_Ack
+        MOVS     R0,#+85
+          CFI FunCall IIC_Send_Byte
+        BL       IIC_Send_Byte
+          CFI FunCall IIC_Wait_Ack
+        BL       IIC_Wait_Ack
+          CFI FunCall IIC_Stop
+        BL       IIC_Stop
+        MOVS     R0,#+5
+          CFI FunCall _Z8delay_mst
+        BL       _Z8delay_mst
 //  176 	    temp=AT24CXX_ReadOneByte(255);	  
 //  177 		if(temp==0X55)return 0;
         MOVS     R0,#+255
@@ -554,6 +558,7 @@ AT24CXX_Check:
         BL       AT24CXX_ReadOneByte
         CMP      R0,#+85
         BNE.N    ??AT24CXX_Check_1
+??AT24CXX_Check_0:
         MOVS     R0,#+0
         POP      {R1,PC}
 //  178 	}
@@ -588,13 +593,12 @@ AT24CXX_Read:
         MOV      R4,R0
         MOV      R5,R1
         MOVS     R6,R2
-        B.N      ??AT24CXX_Read_0
+        BEQ.N    ??AT24CXX_Read_0
 //  191 	while(NumToRead)
 //  192 	{
 //  193 		*pBuffer++=AT24CXX_ReadOneByte(ReadAddr++);	
 ??AT24CXX_Read_1:
-        MOV      R0,R4
-        UXTH     R0,R0
+        UXTH     R0,R4
           CFI FunCall AT24CXX_ReadOneByte
         BL       AT24CXX_ReadOneByte
         ADDS     R4,R4,#+1
@@ -602,9 +606,9 @@ AT24CXX_Read:
 //  194 		NumToRead--;
         SUBS     R6,R6,#+1
 //  195 	}
-??AT24CXX_Read_0:
         BNE.N    ??AT24CXX_Read_1
 //  196 }  
+??AT24CXX_Read_0:
         POP      {R4-R6,PC}       ;; return
           CFI EndBlock cfiBlock8
 //  197 //在AT24CXX里面的指定地址开始写入指定个数的数据
@@ -630,27 +634,24 @@ AT24CXX_Write:
           CFI CFA R13+16
         MOV      R4,R0
         MOV      R5,R1
-        MOV      R6,R2
-        B.N      ??AT24CXX_Write_0
+        MOVS     R6,R2
+        BEQ.N    ??AT24CXX_Write_0
 //  206 	while(NumToWrite--)
 //  207 	{
 //  208 		AT24CXX_WriteOneByte(WriteAddr,*pBuffer);
 ??AT24CXX_Write_1:
         LDRB     R1,[R5], #+1
-        MOV      R0,R4
-        UXTH     R0,R0
+        UXTH     R0,R4
           CFI FunCall AT24CXX_WriteOneByte
         BL       AT24CXX_WriteOneByte
 //  209 		WriteAddr++;
         ADDS     R4,R4,#+1
 //  210 		pBuffer++;
+        SUBS     R6,R6,#+1
 //  211 	}
-??AT24CXX_Write_0:
-        MOV      R0,R6
-        SUBS     R6,R0,#+1
-        CMP      R0,#+0
         BNE.N    ??AT24CXX_Write_1
 //  212 }
+??AT24CXX_Write_0:
         POP      {R4-R6,PC}       ;; return
           CFI EndBlock cfiBlock9
 //  213 
@@ -659,13 +660,25 @@ AT24CXX_Write:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock10 Using cfiCommon0
           CFI Function IIC_Init
+          CFI NoCalls
         THUMB
 //  215 void IIC_Init(void)
-//  216 {		
 IIC_Init:
-        PUSH     {R0-R4,LR}
-          CFI R14 Frame(CFA, -4)
+        PUSH     {R4,LR}
+          CFI EndBlock cfiBlock10
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock11 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+8
           CFI R4 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+//  216 {		
+?Subroutine0:
+        SUB      SP,SP,#+16
           CFI CFA R13+24
 //  217 	GPIO_InitTypeDef GPIO_InitStruct;
 //  218 
@@ -678,25 +691,29 @@ IIC_Init:
 //  221 	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
         STR      R0,[SP, #+12]
 //  222 	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-        LDR.N    R4,??DataTable9_1  ;; 0x40010c00
         ADD      R1,SP,#+0
+        LDR.N    R4,??DataTable8_1  ;; 0x40010c00
         MOV      R0,R4
-          CFI FunCall HAL_GPIO_Init
+          CFI FunCall AT24CXX_Init HAL_GPIO_Init
+          CFI FunCall IIC_Init HAL_GPIO_Init
         BL       HAL_GPIO_Init
 //  223 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6|GPIO_PIN_7, GPIO_PIN_SET);
         MOVS     R2,#+1
         MOVS     R1,#+192
         MOV      R0,R4
-          CFI FunCall HAL_GPIO_WritePin
+          CFI FunCall AT24CXX_Init HAL_GPIO_WritePin
+          CFI FunCall IIC_Init HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  224 	
 //  225 }
-        POP      {R0-R4,PC}       ;; return
-          CFI EndBlock cfiBlock10
+        ADD      SP,SP,#+16
+          CFI CFA R13+8
+        POP      {R4,PC}          ;; return
+          CFI EndBlock cfiBlock11
 //  226 //产生IIC起始信号
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function IIC_Start
         THUMB
 //  227 void IIC_Start(void)
@@ -707,7 +724,8 @@ IIC_Start:
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 //  229 	SDA_OUT();     //sda线输出
-        LDR.N    R0,??DataTable9_1  ;; 0x40010c00
+        LDR.N    R0,??DataTable8_1  ;; 0x40010c00
+        LDR.N    R4,??DataTable8_2  ;; 0x42218198
         LDR      R1,[R0, #+0]
         LSLS     R1,R1,#+4
         LSRS     R1,R1,#+4
@@ -716,7 +734,6 @@ IIC_Start:
         ORR      R1,R1,#0x30000000
         STR      R1,[R0, #+0]
 //  230 	IIC_SDA=1;	  	  
-        LDR.N    R4,??DataTable9_2  ;; 0x42218198
         MOVS     R0,#+1
         STR      R0,[R4, #+4]
 //  231 	IIC_SCL=1;
@@ -730,18 +747,14 @@ IIC_Start:
         STR      R0,[R4, #+4]
 //  234 	delay_us(4);
         MOVS     R0,#+4
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
+        B.N      ??Subroutine2_0
+          CFI EndBlock cfiBlock12
 //  235 	IIC_SCL=0;//钳住I2C总线，准备发送或接收数据 
-        MOVS     R0,#+0
-        STR      R0,[R4, #+0]
 //  236 }	  
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock11
 //  237 //产生IIC停止信号
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function IIC_Stop
         THUMB
 //  238 void IIC_Stop(void)
@@ -752,7 +765,8 @@ IIC_Stop:
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 //  240 	SDA_OUT();//sda线输出
-        LDR.N    R0,??DataTable9_1  ;; 0x40010c00
+        LDR.N    R0,??DataTable8_1  ;; 0x40010c00
+        LDR.N    R4,??DataTable8_2  ;; 0x42218198
         LDR      R1,[R0, #+0]
         LSLS     R1,R1,#+4
         LSRS     R1,R1,#+4
@@ -761,7 +775,6 @@ IIC_Stop:
         ORR      R1,R1,#0x30000000
         STR      R1,[R0, #+0]
 //  241 	IIC_SCL=0;
-        LDR.N    R4,??DataTable9_2  ;; 0x42218198
         MOVS     R0,#+0
         STR      R0,[R4, #+0]
 //  242 	IIC_SDA=0;//STOP:when CLK is high DATA change form low to high
@@ -783,28 +796,26 @@ IIC_Stop:
           CFI CFA R13+0
           CFI FunCall _Z8delay_usj
         B.N      _Z8delay_usj
-          CFI EndBlock cfiBlock12
+          CFI EndBlock cfiBlock13
 //  247 }
 //  248 //等待应答信号到来
 //  249 //返回值：1，接收应答失败
 //  250 //        0，接收应答成功
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function IIC_Wait_Ack
         THUMB
 //  251 uint8_t IIC_Wait_Ack(void)
 //  252 {
 IIC_Wait_Ack:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
 //  253 	uint8_t ucErrTime=0;
-        MOVS     R4,#+0
 //  254 	SDA_IN();      //SDA设置为输入  
-        LDR.N    R0,??DataTable9_1  ;; 0x40010c00
+        LDR.N    R0,??DataTable8_1  ;; 0x40010c00
         LDR      R1,[R0, #+0]
         LSLS     R1,R1,#+4
         LSRS     R1,R1,#+4
@@ -814,50 +825,49 @@ IIC_Wait_Ack:
         STR      R1,[R0, #+0]
 //  255 	IIC_SDA=1;delay_us(1);	   
         MOVS     R0,#+1
-        LDR.N    R1,??DataTable9_3  ;; 0x4221819c
+        LDR.N    R1,??DataTable8_3  ;; 0x4221819c
         STR      R0,[R1, #+0]
           CFI FunCall _Z8delay_usj
         BL       _Z8delay_usj
 //  256 	IIC_SCL=1;delay_us(1);	 
-        LDR.N    R5,??DataTable9_4  ;; 0x4221811c
         MOVS     R0,#+1
-        STR      R0,[R5, #+124]
+        LDR.N    R4,??DataTable8_4  ;; 0x4221811c
+        STR      R0,[R4, #+124]
           CFI FunCall _Z8delay_usj
         BL       _Z8delay_usj
+        MOVS     R0,#+251
 //  257 	while(READ_SDA)
 ??IIC_Wait_Ack_0:
-        LDR      R0,[R5, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??IIC_Wait_Ack_1
+        LDR      R1,[R4, #+0]
+        CBZ.N    R1,??IIC_Wait_Ack_1
 //  258 	{
 //  259 		ucErrTime++;
-        ADDS     R4,R4,#+1
 //  260 		if(ucErrTime>250)
-        UXTB     R4,R4
-        CMP      R4,#+251
-        BLT.N    ??IIC_Wait_Ack_0
+        SUBS     R0,R0,#+1
+        BNE.N    ??IIC_Wait_Ack_0
 //  261 		{
 //  262 			IIC_Stop();
           CFI FunCall IIC_Stop
         BL       IIC_Stop
 //  263 			return 1;
         MOVS     R0,#+1
-        POP      {R1,R4,R5,PC}
+        POP      {R4,PC}
 //  264 		}
 //  265 	}
 //  266 	IIC_SCL=0;//时钟输出0 	   
 ??IIC_Wait_Ack_1:
         MOVS     R0,#+0
-        STR      R0,[R5, #+124]
+        STR      R0,[R4, #+124]
 //  267 	return 0;  
-        POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock13
+        POP      {R4,PC}          ;; return
+          CFI EndBlock cfiBlock14
 //  268 } 
 //  269 //产生ACK应答
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function IIC_Ack
+          CFI NoCalls
         THUMB
 //  270 void IIC_Ack(void)
 //  271 {
@@ -867,11 +877,11 @@ IIC_Ack:
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 //  272 	IIC_SCL=0;
-        LDR.N    R4,??DataTable9_2  ;; 0x42218198
+        LDR.N    R4,??DataTable8_2  ;; 0x42218198
         MOVS     R0,#+0
         STR      R0,[R4, #+0]
 //  273 	SDA_OUT();
-        LDR.N    R0,??DataTable9_1  ;; 0x40010c00
+        LDR.N    R0,??DataTable8_1  ;; 0x40010c00
         LDR      R1,[R0, #+0]
         LSLS     R1,R1,#+4
         LSRS     R1,R1,#+4
@@ -881,29 +891,19 @@ IIC_Ack:
         STR      R1,[R0, #+0]
 //  274 	IIC_SDA=0;
         MOVS     R0,#+0
-        STR      R0,[R4, #+4]
+        B.N      ?Subroutine1
+          CFI EndBlock cfiBlock15
 //  275 	delay_us(2);
-        MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
 //  276 	IIC_SCL=1;
-        MOVS     R0,#+1
-        STR      R0,[R4, #+0]
 //  277 	delay_us(2);
-        MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
 //  278 	IIC_SCL=0;
-        MOVS     R0,#+0
-        STR      R0,[R4, #+0]
 //  279 }
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock14
 //  280 //不产生ACK应答		    
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function IIC_NAck
+          CFI NoCalls
         THUMB
 //  281 void IIC_NAck(void)
 //  282 {
@@ -913,11 +913,11 @@ IIC_NAck:
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 //  283 	IIC_SCL=0;
-        LDR.N    R4,??DataTable9_2  ;; 0x42218198
+        LDR.N    R4,??DataTable8_2  ;; 0x42218198
         MOVS     R0,#+0
         STR      R0,[R4, #+0]
 //  284 	SDA_OUT();
-        LDR.N    R0,??DataTable9_1  ;; 0x40010c00
+        LDR.N    R0,??DataTable8_1  ;; 0x40010c00
         LDR      R1,[R0, #+0]
         LSLS     R1,R1,#+4
         LSRS     R1,R1,#+4
@@ -927,106 +927,164 @@ IIC_NAck:
         STR      R1,[R0, #+0]
 //  285 	IIC_SDA=1;
         MOVS     R0,#+1
-        STR      R0,[R4, #+4]
+          CFI EndBlock cfiBlock16
+        REQUIRE ?Subroutine1
+        ;; // Fall through to label ?Subroutine1
 //  286 	delay_us(2);
-        MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
 //  287 	IIC_SCL=1;
+//  288 	delay_us(2);
+//  289 	IIC_SCL=0;
+//  290 }					 				     
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock17 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+8
+          CFI R4 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine1:
+        STR      R0,[R4, #+4]
+        MOVS     R0,#+2
+          CFI FunCall IIC_Ack _Z8delay_usj
+          CFI FunCall IIC_NAck _Z8delay_usj
+        BL       _Z8delay_usj
         MOVS     R0,#+1
         STR      R0,[R4, #+0]
-//  288 	delay_us(2);
         MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
+          CFI EndBlock cfiBlock17
+        REQUIRE ??Subroutine2_0
+        ;; // Fall through to label ??Subroutine2_0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock18 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+8
+          CFI R4 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+          CFI FunCall IIC_Start _Z8delay_usj
+          CFI FunCall IIC_Ack _Z8delay_usj
+          CFI FunCall IIC_NAck _Z8delay_usj
+        THUMB
+??Subroutine2_0:
         BL       _Z8delay_usj
-//  289 	IIC_SCL=0;
         MOVS     R0,#+0
         STR      R0,[R4, #+0]
-//  290 }					 				     
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock15
+          CFI EndBlock cfiBlock18
 //  291 //IIC发送一个字节
 //  292 //返回从机有无应答
 //  293 //1，有应答
 //  294 //0，无应答			  
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock19 Using cfiCommon0
           CFI Function IIC_Send_Byte
+          CFI NoCalls
         THUMB
 //  295 void IIC_Send_Byte(uint8_t txd)
 //  296 {                        
 IIC_Send_Byte:
-        PUSH     {R4-R6,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        MOV      R4,R0
+        PUSH     {R4-R6}
+          CFI R6 Frame(CFA, -4)
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+12
 //  297     uint8_t t;   
 //  298 	SDA_OUT(); 	    
-        LDR.N    R0,??DataTable9_1  ;; 0x40010c00
-        LDR      R1,[R0, #+0]
-        LSLS     R1,R1,#+4
-        LSRS     R1,R1,#+4
-        STR      R1,[R0, #+0]
-        LDR      R1,[R0, #+0]
-        ORR      R1,R1,#0x30000000
-        STR      R1,[R0, #+0]
+        LDR.N    R1,??DataTable8_1  ;; 0x40010c00
+        LDR.N    R3,??DataTable8
+        LDR      R2,[R1, #+0]
+        LSLS     R2,R2,#+4
+        LSRS     R2,R2,#+4
+        STR      R2,[R1, #+0]
+        LDR      R2,[R1, #+0]
+        ORR      R2,R2,#0x30000000
+        STR      R2,[R1, #+0]
 //  299     IIC_SCL=0;//拉低时钟开始数据传输
-        LDR.N    R5,??DataTable9_2  ;; 0x42218198
-        MOVS     R0,#+0
-        STR      R0,[R5, #+0]
+        MOVS     R2,#+0
+        LDR.N    R1,??DataTable8_2  ;; 0x42218198
+        STR      R2,[R1, #+0]
 //  300     for(t=0;t<8;t++)
-        MOV      R6,R0
-        B.N      ??IIC_Send_Byte_0
+        MOVS     R2,#+8
 //  301     {              
 //  302         //IIC_SDA=(txd&0x80)>>7;
 //  303 		if((txd&0x80)>>7)
-??IIC_Send_Byte_1:
-        UXTB     R4,R4
-        LSRS     R0,R4,#+7
-        SUBS     R1,R0,#+1
-        SBCS     R1,R1,R1
-        MVNS     R1,R1
-        LSRS     R1,R1,#+31
-        STR      R1,[R5, #+4]
+??IIC_Send_Byte_0:
+        UXTB     R0,R0
+        LSRS     R4,R0,#+7
+        SUBS     R5,R4,#+1
+        SBCS     R5,R5,R5
+        MVNS     R5,R5
+        LSRS     R5,R5,#+31
+        STR      R5,[R1, #+4]
 //  304 			IIC_SDA=1;
 //  305 		else
 //  306 			IIC_SDA=0;
 //  307 		txd<<=1; 	  
-        LSLS     R4,R4,#+1
+        LSLS     R0,R0,#+1
 //  308 		delay_us(2);   //对TEA5767这三个延时都是必须的
-        MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
+        MOVS     R4,#+2
+??IIC_Send_Byte_1:
+        MOVS     R5,#+5
+        STRH     R5,[R3, #+0]
+        SUBS     R4,R4,#+1
+??IIC_Send_Byte_2:
+        LDRH     R5,[R3, #+0]
+        SUBS     R6,R5,#+1
+        STRH     R6,[R3, #+0]
+        CMP      R5,#+0
+        BNE.N    ??IIC_Send_Byte_2
+        CMP      R4,#+0
+        BNE.N    ??IIC_Send_Byte_1
 //  309 		IIC_SCL=1;
-        MOVS     R0,#+1
-        STR      R0,[R5, #+0]
+        MOVS     R4,#+1
+        STR      R4,[R1, #+0]
 //  310 		delay_us(2); 
-        MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
+        MOVS     R4,#+2
+??IIC_Send_Byte_3:
+        MOVS     R5,#+5
+        STRH     R5,[R3, #+0]
+        SUBS     R4,R4,#+1
+??IIC_Send_Byte_4:
+        LDRH     R5,[R3, #+0]
+        SUBS     R6,R5,#+1
+        STRH     R6,[R3, #+0]
+        CMP      R5,#+0
+        BNE.N    ??IIC_Send_Byte_4
+        CMP      R4,#+0
+        BNE.N    ??IIC_Send_Byte_3
 //  311 		IIC_SCL=0;	
-        MOVS     R0,#+0
-        STR      R0,[R5, #+0]
+        STR      R4,[R1, #+0]
 //  312 		delay_us(2);
-        MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
+        MOVS     R4,#+2
+??IIC_Send_Byte_5:
+        MOVS     R5,#+5
+        STRH     R5,[R3, #+0]
+        SUBS     R4,R4,#+1
+??IIC_Send_Byte_6:
+        LDRH     R5,[R3, #+0]
+        SUBS     R6,R5,#+1
+        STRH     R6,[R3, #+0]
+        CMP      R5,#+0
+        BNE.N    ??IIC_Send_Byte_6
+        CMP      R4,#+0
+        BNE.N    ??IIC_Send_Byte_5
 //  313     }	 
-        ADDS     R6,R6,#+1
-??IIC_Send_Byte_0:
-        CMP      R6,#+8
-        BLT.N    ??IIC_Send_Byte_1
+        SUBS     R2,R2,#+1
+        BNE.N    ??IIC_Send_Byte_0
 //  314 } 	    
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock16
+        POP      {R4-R6}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI CFA R13+0
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock19
 //  315 //读1个字节，ack=1时，发送ACK，ack=0，发送nACK   
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock17 Using cfiCommon0
+          CFI Block cfiBlock20 Using cfiCommon0
           CFI Function IIC_Read_Byte
         THUMB
 //  316 uint8_t IIC_Read_Byte(unsigned char ack)
@@ -1039,99 +1097,108 @@ IIC_Read_Byte:
           CFI R5 Frame(CFA, -16)
           CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
-        MOV      R4,R0
 //  318 	unsigned char i,receive=0;
-        MOVS     R5,#+0
 //  319 	SDA_IN();//SDA设置为输入
-        LDR.N    R0,??DataTable9_1  ;; 0x40010c00
-        LDR      R1,[R0, #+0]
-        LSLS     R1,R1,#+4
-        LSRS     R1,R1,#+4
-        STR      R1,[R0, #+0]
-        LDR      R1,[R0, #+0]
-        ORR      R1,R1,#0x80000000
-        STR      R1,[R0, #+0]
+        LDR.N    R1,??DataTable8_1  ;; 0x40010c00
+        LDR.N    R3,??DataTable8
+        LDR      R2,[R1, #+0]
+        LSLS     R2,R2,#+4
+        LSRS     R2,R2,#+4
+        STR      R2,[R1, #+0]
+        MOVS     R4,#+0
+        LDR      R2,[R1, #+0]
+        ORR      R2,R2,#0x80000000
+        STR      R2,[R1, #+0]
 //  320     for(i=0;i<8;i++ )
-        MOV      R6,R5
-        LDR.N    R7,??DataTable9_4  ;; 0x4221811c
-        B.N      ??IIC_Read_Byte_0
+        MOVS     R1,#+8
+        LDR.N    R2,??DataTable8_4  ;; 0x4221811c
 //  321 	{
 //  322         IIC_SCL=0; 
-??IIC_Read_Byte_1:
-        MOVS     R0,#+0
-        STR      R0,[R7, #+124]
-//  323         delay_us(2);
-        MOVS     R0,#+2
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
-//  324 		IIC_SCL=1;
-        MOVS     R0,#+1
-        STR      R0,[R7, #+124]
-//  325         receive<<=1;
-        LSLS     R5,R5,#+1
-//  326         if(READ_SDA)receive++;   
-        LDR      R0,[R7, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??IIC_Read_Byte_2
-        ADDS     R5,R5,#+1
-//  327 		delay_us(1); 
-??IIC_Read_Byte_2:
-        MOVS     R0,#+1
-          CFI FunCall _Z8delay_usj
-        BL       _Z8delay_usj
-//  328     }					 
-        ADDS     R6,R6,#+1
 ??IIC_Read_Byte_0:
-        CMP      R6,#+8
-        BLT.N    ??IIC_Read_Byte_1
+        MOVS     R5,#+0
+        STR      R5,[R2, #+124]
+//  323         delay_us(2);
+        MOVS     R5,#+2
+??IIC_Read_Byte_1:
+        MOVS     R6,#+5
+        STRH     R6,[R3, #+0]
+        SUBS     R5,R5,#+1
+??IIC_Read_Byte_2:
+        LDRH     R6,[R3, #+0]
+        SUBS     R7,R6,#+1
+        STRH     R7,[R3, #+0]
+        CMP      R6,#+0
+        BNE.N    ??IIC_Read_Byte_2
+        CMP      R5,#+0
+        BNE.N    ??IIC_Read_Byte_1
+//  324 		IIC_SCL=1;
+        MOVS     R5,#+1
+        STR      R5,[R2, #+124]
+//  325         receive<<=1;
+        LSLS     R4,R4,#+1
+//  326         if(READ_SDA)receive++;   
+        LDR      R5,[R2, #+0]
+        CBZ.N    R5,??IIC_Read_Byte_3
+        ADDS     R4,R4,#+1
+//  327 		delay_us(1); 
+??IIC_Read_Byte_3:
+        MOVS     R5,#+5
+        STRH     R5,[R3, #+0]
+??IIC_Read_Byte_4:
+        LDRH     R5,[R3, #+0]
+        SUBS     R6,R5,#+1
+        STRH     R6,[R3, #+0]
+        CMP      R5,#+0
+        BNE.N    ??IIC_Read_Byte_4
+//  328     }					 
+        SUBS     R1,R1,#+1
+        BNE.N    ??IIC_Read_Byte_0
 //  329     if (!ack)
-        CMP      R4,#+0
-        BNE.N    ??IIC_Read_Byte_3
+        CBNZ.N   R0,??IIC_Read_Byte_5
 //  330         IIC_NAck();//发送nACK
           CFI FunCall IIC_NAck
         BL       IIC_NAck
-        B.N      ??IIC_Read_Byte_4
+        B.N      ??IIC_Read_Byte_6
 //  331     else
 //  332         IIC_Ack(); //发送ACK   
-??IIC_Read_Byte_3:
+??IIC_Read_Byte_5:
           CFI FunCall IIC_Ack
         BL       IIC_Ack
 //  333     return receive;
-??IIC_Read_Byte_4:
-        MOV      R0,R5
-        UXTB     R0,R0
+??IIC_Read_Byte_6:
+        UXTB     R0,R4
         POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock17
+          CFI EndBlock cfiBlock20
 //  334 }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable9:
+??DataTable8:
         DC32     delayCnt
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable9_1:
+??DataTable8_1:
         DC32     0x40010c00
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable9_2:
+??DataTable8_2:
         DC32     0x42218198
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable9_3:
+??DataTable8_3:
         DC32     0x4221819c
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable9_4:
+??DataTable8_4:
         DC32     0x4221811c
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
@@ -1151,9 +1218,9 @@ IIC_Read_Byte:
 //  337 
 // 
 //   2 bytes in section .bss
-// 866 bytes in section .text
+// 902 bytes in section .text
 // 
-// 866 bytes of CODE memory
+// 902 bytes of CODE memory
 //   2 bytes of DATA memory
 //
 //Errors: none

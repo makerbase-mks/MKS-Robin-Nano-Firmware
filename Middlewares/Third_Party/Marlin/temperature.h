@@ -472,9 +472,13 @@ class Temperature {
     #if ENABLED(BABYSTEPPING)
 
       static void babystep_axis(const AxisEnum axis, const int16_t distance) {
+        
         if (axis_known_position[axis]) {
-          #if IS_CORE
+          //#if IS_CORE
+          if(MACHINETPYE&IS_CORE)
+          {
             #if ENABLED(BABYSTEP_XY)
+		#if 0
               switch (axis) {
                 case CORE_AXIS_1: // X on CoreXY and CoreXZ, Y on CoreYZ
                   babystepsTodo[CORE_AXIS_1] += distance * 2;
@@ -488,16 +492,63 @@ class Temperature {
                   babystepsTodo[NORMAL_AXIS] += distance;
                   break;
               }
+		#else
+                if(axis == CORE_AXIS_1) // X on CoreXY and CoreXZ, Y on CoreYZ
+                {
+                  babystepsTodo[CORE_AXIS_1] += distance * 2;
+                  babystepsTodo[CORE_AXIS_2] += distance * 2;
+                }
+                if(axis ==  CORE_AXIS_2) // Y on CoreXY, Z on CoreXZ and CoreYZ
+                {
+                  babystepsTodo[CORE_AXIS_1] += CORESIGN(distance * 2);
+                  babystepsTodo[CORE_AXIS_2] -= CORESIGN(distance * 2);
+                }
+                if(axis ==  NORMAL_AXIS) // Z on CoreXY, Y on CoreXZ, X on CoreYZ
+                {
+                  babystepsTodo[NORMAL_AXIS] += distance;
+                }
+		#endif
             #elif CORE_IS_XZ || CORE_IS_YZ
               // Only Z stepping needs to be handled here
+              #if 0
               babystepsTodo[CORE_AXIS_1] += CORESIGN(distance * 2);
               babystepsTodo[CORE_AXIS_2] -= CORESIGN(distance * 2);
+		#else
+		switch(CORE_AXIS_1){
+			case 0:
+				babystepsTodo[0] += CORESIGN(distance * 2);
+				break;
+			case 1:
+				babystepsTodo[1] += CORESIGN(distance * 2);
+				break;
+			case 2:
+				babystepsTodo[2] += CORESIGN(distance * 2);
+				break;
+			default:break;
+		}
+		
+		switch(CORE_AXIS_2){
+			case 0:
+				babystepsTodo[0] += CORESIGN(distance * 2);
+				break;
+			case 1:
+				babystepsTodo[1] += CORESIGN(distance * 2);
+				break;
+			case 2:
+				babystepsTodo[2] += CORESIGN(distance * 2);
+				break;
+			default:break;
+		}
+		
+		#endif
             #else
               babystepsTodo[Z_AXIS] += distance;
             #endif
-          #else
+          }
+          else
+          {
             babystepsTodo[axis] += distance;
-          #endif
+          }
         }
       }
 
@@ -614,3 +665,6 @@ class Temperature {
 extern Temperature thermalManager;
 
 #endif // TEMPERATURE_H
+
+
+

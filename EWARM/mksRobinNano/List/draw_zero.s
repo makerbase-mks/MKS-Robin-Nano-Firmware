@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:24
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:42
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_zero.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_zero.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_zero.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_zero.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\draw_zero.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_zero.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -86,10 +83,8 @@
         EXTERN BMP_PIC_Y
         EXTERN BUTTON_CreateEx
         EXTERN BUTTON_SetBitmapEx
-        EXTERN BUTTON_SetBkColor
         EXTERN BUTTON_SetBmpFileName
         EXTERN BUTTON_SetText
-        EXTERN BUTTON_SetTextColor
         EXTERN GUI_Clear
         EXTERN GUI_DispStringAt
         EXTERN GUI_SetBkColor
@@ -141,7 +136,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_zero.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_zero.cpp
 //    1 #include "gui.h"
 //    2 #include "button.h"
 //    3 #include "PROGBAR.h"
@@ -164,8 +159,6 @@ hZeroWnd:
         DS8 2
         DS8 24
         DS8 24
-        DS8 24
-        DS8 24
 //   16 //extern TFT_FIFO gcodeCmdTxFIFO;		//gcode 指令发送队列
 //   17 //extern TFT_FIFO gcodeCmdRxFIFO;		//gcode	指令接收队列
 //   18 extern int X_ADD,X_INTERVAL;   //**图片间隔
@@ -177,12 +170,16 @@ hZeroWnd:
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 //   24 static BUTTON_STRUCT buttonAllZero, buttonXZero, buttonYZero, buttonZZero, buttonRet,buttonQuickstop,buttonDisable;
-buttonZZero:
+buttonYZero:
         DS8 24
         DS8 24
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
-buttonDisable:
+buttonRet:
+        DS8 24
+        DS8 24
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
         DS8 24
 //   25 
 
@@ -200,12 +197,13 @@ _Z9cbZeroWinP10WM_MESSAGE:
         BNE.N    ??cbZeroWin_0
         BX       LR
 ??cbZeroWin_0:
-        PUSH     {R7,LR}
+        PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
         CMP      R1,#+13
-        BEQ.N    ??cbZeroWin_1
-        CMP      R1,#+15
+        IT       NE 
+        CMPNE    R1,#+15
         BEQ.N    ??cbZeroWin_1
         CMP      R1,#+38
         BNE.N    ??cbZeroWin_2
@@ -231,30 +229,44 @@ _Z9cbZeroWinP10WM_MESSAGE:
         BNE.N    ??cbZeroWin_1
 //   47 			{
 //   48 				if(pMsg->hWinSrc == buttonRet.btnHandle)
+        LDR.N    R1,??DataTable13_2
         LDRSH    R0,[R0, #+6]
-        LDR.W    R1,??DataTable13
-        LDRSH    R2,[R1, #+24]
+        LDRSH    R2,[R1, #+0]
+        LDR.N    R4,??DataTable13_3
         CMP      R0,R2
         BNE.N    ??cbZeroWin_3
 //   49 				{
 //   50 					Clear_Zero();
-          CFI FunCall Clear_Zero
-        BL       Clear_Zero
+        LDR.N    R0,??DataTable13_4
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbZeroWin_4
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
+??cbZeroWin_4:
+          CFI FunCall GUI_Clear
+        BL       GUI_Clear
 //   51 					draw_return_ui();
-        POP      {R0,LR}
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall draw_return_ui
         B.W      draw_return_ui
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //   52 				}
 //   53 				else if(pMsg->hWinSrc == buttonAllZero.btnHandle)
 ??cbZeroWin_3:
-        LDR.W    R2,??DataTable13_1
-        LDRSH    R3,[R2, #+4]
-        CMP      R0,R3
-        BNE.N    ??cbZeroWin_4
+        LDRSH    R2,[R4, #+4]
+        CMP      R0,R2
+        IT       EQ 
 //   54 				{
 //   55 				//if(printer_state >= PRINTER_CONNECT_OK)
 //   56 					{												
@@ -262,20 +274,13 @@ _Z9cbZeroWinP10WM_MESSAGE:
 //   58 						//pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)HOME_A_COMMAND);
 //   59 					}
 //   60 					enqueue_and_echo_commands_P(PSTR("G28"));
-        ADR.N    R0,??DataTable11  ;; "G28"
-        POP      {R1,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z27enqueue_and_echo_commands_PPKc
-        B.W      _Z27enqueue_and_echo_commands_PPKc
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        ADREQ.N  R0,??DataTable13  ;; "G28"
+        BEQ.N    ??cbZeroWin_5
 //   61 				}
 //   62 				else if(pMsg->hWinSrc == buttonXZero.btnHandle)
-??cbZeroWin_4:
-        LDRSH    R3,[R2, #+28]
-        CMP      R0,R3
-        BNE.N    ??cbZeroWin_5
+        LDRSH    R2,[R4, #+28]
+        CMP      R0,R2
+        IT       EQ 
 //   63 				{
 //   64 				//if(printer_state >= PRINTER_CONNECT_OK)
 //   65 					{											
@@ -283,20 +288,14 @@ _Z9cbZeroWinP10WM_MESSAGE:
 //   67 						//pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)HOME_X_COMMAND);
 //   68 					}
 //   69 					enqueue_and_echo_commands_P(PSTR("G28 X0"));
-        ADR.W    R0,`?<Constant "G28 X0">`
-        POP      {R1,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z27enqueue_and_echo_commands_PPKc
-        B.W      _Z27enqueue_and_echo_commands_PPKc
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        ADREQ.W  R0,`?<Constant "G28 X0">`
+        BEQ.N    ??cbZeroWin_5
 //   70 				}
 //   71 				else if(pMsg->hWinSrc == buttonYZero.btnHandle)
-??cbZeroWin_5:
-        LDRSH    R3,[R2, #+52]
+        LDR.N    R2,??DataTable13_5
+        LDRSH    R3,[R2, #+0]
         CMP      R0,R3
-        BNE.N    ??cbZeroWin_6
+        IT       EQ 
 //   72 				{
 //   73 				//if(printer_state >= PRINTER_CONNECT_OK)
 //   74 					{												
@@ -304,20 +303,13 @@ _Z9cbZeroWinP10WM_MESSAGE:
 //   76 						//pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)HOME_Y_COMMAND);
 //   77 					}
 //   78 				enqueue_and_echo_commands_P(PSTR("G28 Y0"));
-        ADR.W    R0,`?<Constant "G28 Y0">`
-        POP      {R1,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z27enqueue_and_echo_commands_PPKc
-        B.W      _Z27enqueue_and_echo_commands_PPKc
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        ADREQ.W  R0,`?<Constant "G28 Y0">`
+        BEQ.N    ??cbZeroWin_5
 //   79 				}
 //   80 				else if(pMsg->hWinSrc == buttonZZero.btnHandle)
-??cbZeroWin_6:
-        LDRSH    R1,[R1, #+0]
-        CMP      R0,R1
-        BNE.N    ??cbZeroWin_7
+        LDRSH    R2,[R2, #+24]
+        CMP      R0,R2
+        IT       EQ 
 //   81 				{
 //   82 				//if(printer_state >= PRINTER_CONNECT_OK)
 //   83 					{												
@@ -325,20 +317,11 @@ _Z9cbZeroWinP10WM_MESSAGE:
 //   85 						//pushFIFO(&gcodeCmdTxFIFO, (unsigned char *)HOME_Z_COMMAND);
 //   86 					}
 //   87 				enqueue_and_echo_commands_P(PSTR("G28 Z0"));
-        ADR.W    R0,`?<Constant "G28 Z0">`
-        POP      {R1,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z27enqueue_and_echo_commands_PPKc
-        B.W      _Z27enqueue_and_echo_commands_PPKc
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        ADREQ.W  R0,`?<Constant "G28 Z0">`
+        BEQ.N    ??cbZeroWin_5
 //   88 				}
 //   89 				else if(pMsg->hWinSrc == buttonQuickstop.btnHandle)
-??cbZeroWin_7:
-        LDRSH    R1,[R2, #+76]
-        CMP      R0,R1
-        BEQ.N    ??cbZeroWin_1
+        CBZ.N    R0,??cbZeroWin_1
 //   90 				{
 //   91 #if tan_mask
 //   92 				//if(printer_state >= PRINTER_CONNECT_OK)
@@ -357,18 +340,20 @@ _Z9cbZeroWinP10WM_MESSAGE:
 //  105 #endif
 //  106 				}	
 //  107 				else if(pMsg->hWinSrc == buttonDisable.btnHandle)
-        LDR.W    R1,??DataTable13_2
-        LDRSH    R1,[R1, #+0]
+        LDRSH    R1,[R1, #+24]
         CMP      R0,R1
         BNE.N    ??cbZeroWin_1
 //  108 				{
 //  109 					enqueue_and_echo_commands_P(PSTR("M84"));
-        ADR.N    R0,??DataTable12  ;; "M84"
-        POP      {R1,LR}
+        ADR.N    R0,??DataTable13_1  ;; "M84"
+??cbZeroWin_5:
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall _Z27enqueue_and_echo_commands_PPKc
         B.W      _Z27enqueue_and_echo_commands_PPKc
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //  110 				}
@@ -378,24 +363,20 @@ _Z9cbZeroWinP10WM_MESSAGE:
 //  114 		default:
 //  115 			WM_DefaultProc(pMsg);
 ??cbZeroWin_2:
-        POP      {R1,LR}
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall WM_DefaultProc
         B.W      WM_DefaultProc
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //  116 		}
 //  117 	}
 ??cbZeroWin_1:
-        POP      {R0,PC}          ;; return
+        POP      {R4,PC}          ;; return
           CFI EndBlock cfiBlock0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable11:
-        DC8      "G28"
 //  118 
 //  119 
 
@@ -406,25 +387,24 @@ _Z9cbZeroWinP10WM_MESSAGE:
 //  120 void draw_Zero()
 //  121 {	
 draw_Zero:
-        PUSH     {R4-R11,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+36
-        SUB      SP,SP,#+20
-          CFI CFA R13+56
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
 //  122 	
 //  123 	int i;
 //  124 
 //  125 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != ZERO_UI)
-        LDR.N    R0,??DataTable13_3
+        LDR.N    R0,??DataTable13_6
         LDRSB    R1,[R0, #+100]
+        SUB      SP,SP,#+16
+          CFI CFA R13+48
         LDRSB    R2,[R1, R0]
         CMP      R2,#+13
         BEQ.N    ??draw_Zero_0
@@ -440,17 +420,16 @@ draw_Zero:
 //  130 	disp_state = ZERO_UI;
 ??draw_Zero_0:
         MOVS     R0,#+13
-        LDR.N    R1,??DataTable13_4
-        STRB     R0,[R1, #+0]
+        LDR.N    R1,??DataTable13_7
 //  131 		
 //  132 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R4,??DataTable13_5
-        LDR      R0,[R4, #+4]
+        LDR.N    R4,??DataTable13_4
+        STRB     R0,[R1, #+0]
+        LDR      R0,[R4, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  133 	GUI_SetColor(gCfgItems.title_color);
-        ADDS     R5,R4,#+4
-        LDR      R0,[R5, #+4]
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  134 	GUI_Clear();
@@ -466,55 +445,55 @@ draw_Zero:
         BL       GUI_DispStringAt
 //  137 	
 //  138 	hZeroWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbZeroWin, 0);
-        LDR.N    R6,??DataTable13_1
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
-        LDR.N    R0,??DataTable13_6
+        MOV      R3,#+284
+        LDR.N    R0,??DataTable13_8
+        LDR.N    R5,??DataTable13_3
         STR      R0,[SP, #+4]
+        MOV      R2,#+480
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOV      R3,#+284
-        MOV      R2,#+480
         MOVS     R1,#+36
         MOVS     R0,#+0
           CFI FunCall WM_CreateWindow
         BL       WM_CreateWindow
-        STRH     R0,[R6, #+0]
+        STRH     R0,[R5, #+0]
 //  139 
 //  140 	buttonAllZero.btnHandle = BUTTON_CreateEx(INTERVAL_V, 0,BTN_X_PIXEL, BTN_Y_PIXEL, hZeroWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+4]
+        STRH     R0,[R5, #+4]
 //  141 	buttonXZero.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2, 0,BTN_X_PIXEL, BTN_Y_PIXEL, hZeroWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+121
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+28]
+        STRH     R0,[R5, #+28]
 //  142 	buttonYZero.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0,BTN_X_PIXEL, BTN_Y_PIXEL, hZeroWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
@@ -523,34 +502,34 @@ draw_Zero:
         STR      R0,[SP, #+8]
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
         MOVS     R3,#+140
+        LDRSH    R0,[R5, #+0]
+        LDR.N    R6,??DataTable13_5
+        STR      R0,[SP, #+0]
         MOVS     R2,#+117
         MOVS     R1,#+0
         MOVS     R0,#+240
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+52]
+        STRH     R0,[R6, #+0]
 //  143 	buttonZZero.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL, hZeroWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
-        LDR.N    R7,??DataTable13
-        MOVW     R8,#+359
         STR      R0,[SP, #+12]
+        MOVW     R8,#+359
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R3,#+140
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
         MOVS     R2,#+117
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R1,#+0
         MOV      R0,R8
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R7, #+0]
+        STRH     R0,[R6, #+24]
 //  144 	buttonRet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hZeroWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
@@ -559,15 +538,16 @@ draw_Zero:
         STR      R0,[SP, #+8]
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
         MOVS     R3,#+140
+        LDRSH    R0,[R5, #+0]
+        LDR.N    R7,??DataTable13_2
+        STR      R0,[SP, #+0]
         MOVS     R2,#+117
         MOVS     R1,#+142
         MOV      R0,R8
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R7, #+24]
+        STRH     R0,[R7, #+0]
 //  145 	
 //  146 #if 0
 //  147 	if(gCfgItems.quickstop_display_flg == 1)
@@ -595,310 +575,156 @@ draw_Zero:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        LDR.W    R8,??DataTable13_2
-        STRH     R0,[R8, #+0]
+        STRH     R0,[R7, #+24]
 //  169 	BUTTON_SetBmpFileName(buttonDisable.btnHandle, "bmp_function1.bin",1);
         MOVS     R2,#+1
         ADR.W    R1,`?<Constant "bmp_function1.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  170 	BUTTON_SetBitmapEx(buttonDisable.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDR.W    R9,??DataTable13_7
-        LDR.W    R10,??DataTable13_8
-        LDR.W    R11,??DataTable13_9
-        LDRSB    R0,[R11, #+0]
+        LDR.W    R10,??DataTable13_9
+        LDR.W    R9,??DataTable13_10
+        LDRSB    R0,[R10, #+0]
+        LDR.W    R8,??DataTable13_11
+        LDRSB    R3,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R10, #+0]
-        MOV      R2,R9
+        MOV      R2,R8
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  171 	
-//  172 	BUTTON_SetBmpFileName(buttonAllZero.btnHandle, "bmp_zeroA.bin",1);
+//  172 	BUTTON_SetBmpFileName(buttonAllZero.btnHandle, "bmp_zero.bin",1);
+        LDRSH    R0,[R5, #+4]
+        ADR.W    R1,`?<Constant "bmp_zero.bin">`
         MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_zeroA.bin">`
-        LDRSH    R0,[R6, #+4]
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  173 	BUTTON_SetBmpFileName(buttonXZero.btnHandle, "bmp_zeroX.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R5, #+28]
         ADR.W    R1,`?<Constant "bmp_zeroX.bin">`
-        LDRSH    R0,[R6, #+28]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  174 	BUTTON_SetBmpFileName(buttonYZero.btnHandle, "bmp_zeroY.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R6, #+0]
         ADR.W    R1,`?<Constant "bmp_zeroY.bin">`
-        LDRSH    R0,[R6, #+52]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  175 	BUTTON_SetBmpFileName(buttonZZero.btnHandle, "bmp_zeroZ.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R6, #+24]
         ADR.W    R1,`?<Constant "bmp_zeroZ.bin">`
-        LDRSH    R0,[R7, #+0]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  176 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R7, #+0]
         ADR.W    R1,`?<Constant "bmp_return.bin">`
-        LDRSH    R0,[R7, #+24]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  177 	
 //  178 	BUTTON_SetBitmapEx(buttonAllZero.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R11, #+0]
+        LDRSB    R0,[R10, #+0]
+        LDRSB    R3,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R10, #+0]
-        MOV      R2,R9
+        MOV      R2,R8
+        LDRSH    R0,[R5, #+4]
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  179 	BUTTON_SetBitmapEx(buttonXZero.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R11, #+0]
+        LDRSB    R0,[R10, #+0]
+        LDRSB    R3,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R10, #+0]
-        MOV      R2,R9
+        MOV      R2,R8
+        LDRSH    R0,[R5, #+28]
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  180 	BUTTON_SetBitmapEx(buttonYZero.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R11, #+0]
+        LDRSB    R0,[R10, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R10, #+0]
-        MOV      R2,R9
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+52]
+        LDRSB    R3,[R9, #+0]
+        LDRSH    R0,[R6, R1]
+        MOV      R2,R8
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  181 	BUTTON_SetBitmapEx(buttonZZero.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R11, #+0]
+        LDRSB    R0,[R10, #+0]
+        LDRSB    R3,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R10, #+0]
-        MOV      R2,R9
+        MOV      R2,R8
+        LDRSH    R0,[R6, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R7, #+0]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  182 	
 //  183 
 //  184 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R11, #+0]
+        LDRSB    R0,[R10, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R10, #+0]
-        MOV      R2,R9
         MOVS     R1,#+0
-        LDRSH    R0,[R7, #+24]
+        LDRSB    R3,[R9, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R8
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  185 
-//  186 	BUTTON_SetBkColor(buttonAllZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-        LDR      R2,[R5, #+32]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  187 	BUTTON_SetBkColor(buttonAllZero.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-        LDR      R2,[R5, #+32]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  188 	BUTTON_SetTextColor(buttonAllZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-        LDR      R2,[R5, #+36]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  189 	BUTTON_SetTextColor(buttonAllZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-        LDR      R2,[R5, #+36]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  190 
-//  191 	BUTTON_SetBkColor(buttonXZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  192 	BUTTON_SetBkColor(buttonXZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  193 	BUTTON_SetTextColor(buttonXZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  194 	BUTTON_SetTextColor(buttonXZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  195 
-//  196 	BUTTON_SetBkColor(buttonYZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  197 	BUTTON_SetBkColor(buttonYZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  198 	BUTTON_SetTextColor(buttonYZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  199 	BUTTON_SetTextColor(buttonYZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  200 
-//  201 	BUTTON_SetBkColor(buttonZZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  202 	BUTTON_SetBkColor(buttonZZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  203 	BUTTON_SetTextColor(buttonZZero.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  204 	BUTTON_SetTextColor(buttonZZero.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  205 
-//  206 
-//  207 
-//  208 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  209 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  210 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  211 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  212 #if 1
-//  213 	BUTTON_SetBkColor(buttonDisable.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+1
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  214 	BUTTON_SetBkColor(buttonDisable.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  215 	BUTTON_SetTextColor(buttonDisable.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+1
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  216 	BUTTON_SetTextColor(buttonDisable.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  217 #endif
-//  218 	if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_Zero_1
-//  219 	{
-//  220 			BUTTON_SetText(buttonXZero.btnHandle,home_menu.home_x);
-        LDR.N    R4,??DataTable13_10
+//  186 	if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R4, #+463]
+        CBZ.N    R0,??draw_Zero_1
+//  187 	{
+//  188 			BUTTON_SetText(buttonXZero.btnHandle,home_menu.home_x);
+        LDR.N    R4,??DataTable13_12
+        LDRSH    R0,[R5, #+28]
         LDR      R1,[R4, #+8]
-        LDRSH    R0,[R6, #+28]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  221 			BUTTON_SetText(buttonYZero.btnHandle,home_menu.home_y);
+//  189 			BUTTON_SetText(buttonYZero.btnHandle,home_menu.home_y);
         LDR      R1,[R4, #+12]
-        LDRSH    R0,[R6, #+52]
+        LDRSH    R0,[R6, #+0]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  222 			BUTTON_SetText(buttonZZero.btnHandle,home_menu.home_z);
+//  190 			BUTTON_SetText(buttonZZero.btnHandle,home_menu.home_z);
         LDR      R1,[R4, #+16]
+        LDRSH    R0,[R6, #+24]
+          CFI FunCall BUTTON_SetText
+        BL       BUTTON_SetText
+//  191 			BUTTON_SetText(buttonAllZero.btnHandle,home_menu.home_all);
+        LDR      R1,[R4, #+4]
+        LDRSH    R0,[R5, #+4]
+          CFI FunCall BUTTON_SetText
+        BL       BUTTON_SetText
+//  192 			//if(gCfgItems.quickstop_display_flg == 1)
+//  193 			//	BUTTON_SetText(buttonQuickstop.btnHandle,home_menu.stopmove);
+//  194 			BUTTON_SetText(buttonRet.btnHandle,common_menu.text_back);
+        LDR.N    R0,??DataTable13_13
+        LDR      R1,[R0, #+0]
         LDRSH    R0,[R7, #+0]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  223 			BUTTON_SetText(buttonAllZero.btnHandle,home_menu.home_all);
-        LDR      R1,[R4, #+4]
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetText
-        BL       BUTTON_SetText
-//  224 			//if(gCfgItems.quickstop_display_flg == 1)
-//  225 			//	BUTTON_SetText(buttonQuickstop.btnHandle,home_menu.stopmove);
-//  226 			BUTTON_SetText(buttonRet.btnHandle,common_menu.text_back);
-        LDR.N    R0,??DataTable13_11
-        LDR      R1,[R0, #+0]
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetText
-        BL       BUTTON_SetText
-//  227 			BUTTON_SetText(buttonDisable.btnHandle, set_menu.motoroff);
-        LDR.N    R0,??DataTable13_12
+//  195 			BUTTON_SetText(buttonDisable.btnHandle, set_menu.motoroff);
+        LDR.N    R0,??DataTable13_14
         LDR      R1,[R0, #+28]
-        LDRSH    R0,[R8, #+0]
-        ADD      SP,SP,#+20
-          CFI CFA R13+36
-        POP      {R4-R11,LR}
+        LDRSH    R0,[R7, #+24]
+        ADD      SP,SP,#+16
+          CFI CFA R13+32
+        POP      {R4-R10,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
@@ -906,75 +732,66 @@ draw_Zero:
           CFI R8 SameValue
           CFI R9 SameValue
           CFI R10 SameValue
-          CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall BUTTON_SetText
         B.W      BUTTON_SetText
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -32)
+          CFI R5 Frame(CFA, -28)
+          CFI R6 Frame(CFA, -24)
+          CFI R7 Frame(CFA, -20)
+          CFI R8 Frame(CFA, -16)
+          CFI R9 Frame(CFA, -12)
+          CFI R10 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+56
-//  228 	}
-//  229 
-//  230 
-//  231 	#endif
-//  232 	
-//  233 	//GUI_Exec();
-//  234 
-//  235 
-//  236 	
-//  237 }
+          CFI CFA R13+48
+//  196 	}
+//  197 
+//  198 
+//  199 	#endif
+//  200 	
+//  201 	//GUI_Exec();
+//  202 
+//  203 
+//  204 	
+//  205 }
 ??draw_Zero_1:
-        ADD      SP,SP,#+20
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
+        ADD      SP,SP,#+16
+          CFI CFA R13+32
+        POP      {R4-R10,PC}      ;; return
           CFI EndBlock cfiBlock1
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable12:
-        DC8      "M84"
-//  238 
+//  206 
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock2 Using cfiCommon0
           CFI Function Clear_Zero
         THUMB
-//  239 void Clear_Zero()
-//  240 {
+//  207 void Clear_Zero()
+//  208 {
 Clear_Zero:
         PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-//  241 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R0,??DataTable13_5
-        LDR      R0,[R0, #+4]
+//  209 	GUI_SetBkColor(gCfgItems.background_color);
+        LDR.N    R0,??DataTable13_4
+        LDR      R0,[R0, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
-//  242 	if(WM_IsWindow(hZeroWnd))
-        LDR.N    R4,??DataTable13_1
+//  210 	if(WM_IsWindow(hZeroWnd))
+        LDR.N    R4,??DataTable13_3
         LDRSH    R0,[R4, #+0]
           CFI FunCall WM_IsWindow
         BL       WM_IsWindow
-        CMP      R0,#+0
-        BEQ.N    ??Clear_Zero_0
-//  243 	{
-//  244 		WM_DeleteWindow(hZeroWnd);
+        CBZ.N    R0,??Clear_Zero_0
+//  211 	{
+//  212 		WM_DeleteWindow(hZeroWnd);
         LDRSH    R0,[R4, #+0]
           CFI FunCall WM_DeleteWindow
         BL       WM_DeleteWindow
-//  245 		//GUI_Exec();
-//  246 	}
-//  247 	GUI_Clear();
+//  213 		//GUI_Exec();
+//  214 	}
+//  215 	GUI_Clear();
 ??Clear_Zero_0:
         POP      {R4,LR}
           CFI R4 SameValue
@@ -983,61 +800,61 @@ Clear_Zero:
           CFI FunCall GUI_Clear
         B.W      GUI_Clear
           CFI EndBlock cfiBlock2
-//  248 }
+//  216 }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13:
-        DC32     buttonZZero
+        DC8      "G28"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_1:
-        DC32     hZeroWnd
+        DC8      "M84"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_2:
-        DC32     buttonDisable
+        DC32     buttonRet
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_3:
-        DC32     disp_state_stack
+        DC32     hZeroWnd
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_4:
-        DC32     disp_state
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable13_5:
         DC32     gCfgItems
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
+??DataTable13_5:
+        DC32     buttonYZero
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
 ??DataTable13_6:
-        DC32     _Z9cbZeroWinP10WM_MESSAGE
+        DC32     disp_state_stack
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_7:
-        DC32     bmp_struct
+        DC32     disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_8:
-        DC32     BMP_PIC_X
+        DC32     _Z9cbZeroWinP10WM_MESSAGE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1049,18 +866,30 @@ Clear_Zero:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_10:
-        DC32     home_menu
+        DC32     BMP_PIC_X
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_11:
-        DC32     common_menu
+        DC32     bmp_struct
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable13_12:
+        DC32     home_menu
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable13_13:
+        DC32     common_menu
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable13_14:
         DC32     set_menu
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -1094,9 +923,9 @@ Clear_Zero:
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-`?<Constant "bmp_zeroA.bin">`:
-        DC8 "bmp_zeroA.bin"
-        DC8 0, 0
+`?<Constant "bmp_zero.bin">`:
+        DC8 "bmp_zero.bin"
+        DC8 0, 0, 0
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1155,14 +984,14 @@ _ZTI5Print:
         DC8 "M84"
 
         END
-//  249 
-//  250 
+//  217 
+//  218 
 // 
 //   172 bytes in section .bss
 //     9 bytes in section .rodata
-// 1 316 bytes in section .text
+// 1 004 bytes in section .text
 // 
-// 1 316 bytes of CODE  memory
+// 1 004 bytes of CODE  memory
 //     8 bytes of CONST memory (+ 1 byte shared)
 //   172 bytes of DATA  memory
 //

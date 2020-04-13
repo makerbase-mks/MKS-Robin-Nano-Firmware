@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:49
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:16
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\QRENCODE\QR_Encode.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\QRENCODE\QR_Encode.c
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\QRENCODE\QR_Encode.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\QRENCODE\QR_Encode.c
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
 //        Workbench 7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\QR_Encode.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\QR_Encode.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -80,8 +77,8 @@
 
         #define SHT_PROGBITS 0x1
 
-        EXTERN memmove
-        EXTERN memset
+        EXTERN __aeabi_memclr4
+        EXTERN __aeabi_memmove
         EXTERN strlen
 
         PUBLIC AlphabetToBinaly
@@ -189,7 +186,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\QRENCODE\QR_Encode.c
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\QRENCODE\QR_Encode.c
 //    1 #include "string.h"
 //    2 #include <integer.h>
 //    3 //#include "stm32f40x.h"
@@ -1016,66 +1013,52 @@ byRSExp:
 //  585 const BYTE nIndicatorLen8Bit[]	   = { 8, 16, 16};
 //  586 const BYTE nIndicatorLenKanji[]	   = { 8, 10, 12};
 //  587 
-
-        SECTION `.bss`:DATA:REORDER:NOROOT(2)
 //  588 int m_nSymbleSize;
-m_nSymbleSize:
-        DS8 4
-//  589 BYTE m_byModuleData[MAX_MODULESIZE][MAX_MODULESIZE];
-//  590 
-//  591 int m_ncDataCodeWordBit;
-m_ncDataCodeWordBit:
-        DS8 4
-//  592 BYTE m_byDataCodeWord[MAX_DATACODEWORD];
-//  593 
-//  594 int m_ncDataBlock;
-//  595 BYTE m_byBlockMode[MAX_DATACODEWORD];
-//  596 BYTE m_nBlockLength[MAX_DATACODEWORD];
-//  597 
-//  598 int m_ncAllCodeWord; 
-m_ncAllCodeWord:
-        DS8 4
-//  599 BYTE m_byAllCodeWord[MAX_ALLCODEWORD]; 
-//  600 BYTE m_byRSWork[MAX_CODEBLOCK];
-//  601 
-//  602 int m_nLevel;	
-m_nLevel:
-        DS8 4
-//  603 int m_nVersion;	
-m_nVersion:
-        DS8 4
-//  604 bool m_bAutoExtent;	
-//  605 int m_nMaskingNo;
-m_nMaskingNo:
-        DS8 4
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//  589 BYTE m_byModuleData[MAX_MODULESIZE][MAX_MODULESIZE];
 m_byModuleData:
         DS8 444
+//  590 
+//  591 int m_ncDataCodeWordBit;
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//  592 BYTE m_byDataCodeWord[MAX_DATACODEWORD];
 m_byDataCodeWord:
         DS8 400
+//  593 
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//  594 int m_ncDataBlock;
+//  595 BYTE m_byBlockMode[MAX_DATACODEWORD];
 m_byBlockMode:
         DS8 400
+//  596 BYTE m_nBlockLength[MAX_DATACODEWORD];
 m_nBlockLength:
         DS8 400
 m_ncDataBlock:
         DS8 4
+//  597 
+//  598 int m_ncAllCodeWord; 
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//  599 BYTE m_byAllCodeWord[MAX_ALLCODEWORD]; 
 m_byAllCodeWord:
         DS8 400
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//  600 BYTE m_byRSWork[MAX_CODEBLOCK];
 m_byRSWork:
         DS8 156
+//  601 
+//  602 int m_nLevel;	
+//  603 int m_nVersion;	
 
         SECTION `.bss`:DATA:REORDER:NOROOT(0)
+//  604 bool m_bAutoExtent;	
 m_bAutoExtent:
         DS8 1
+//  605 int m_nMaskingNo;
 //  606 
 //  607 //编码数据
 //  608 //lpsSource 源数据
@@ -1098,48 +1081,46 @@ EncodeData:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+36
-        SUB      SP,SP,#+28
-          CFI CFA R13+64
-        MOV      R8,R0
 //  611 	int i, j, nVersion=1, bAutoExtent=1, ncSource;
 //  612 	int ncLength, nEncodeVersion, ncDataCodeWord, ncTerminater;
 //  613 	BYTE byPaddingCode = 0xec;
-        MOVS     R7,#+236
 //  614 	int nDataCwIndex = 0, ncBlock1, ncBlock2, ncBlockSum; 
-        MOVS     R4,#+0
 //  615 	int nBlockNo = 0, ncDataCw1, ncDataCw2;
-        MOV      R5,R4
+        LDR.W    R1,??DataTable40
+        MOVS     R4,#+0
+        SUB      SP,SP,#+28
+          CFI CFA R13+64
+        MOV      R5,R0
+        MOVS     R6,#+0
+        STR      R4,[R1, #+20]
 //  616 	int ncRSCw1, ncRSCw2;
 //  617 
 //  618 	ncSource = 0;
 //  619 	m_nLevel = 0;
-        LDR.W    R6,??DataTable45
-        MOV      R0,R4
-        STR      R0,[R6, #+12]
 //  620 	m_nMaskingNo = 0;
-        STR      R0,[R6, #+20]
+        STR      R4,[R1, #+28]
 //  621 
 //  622 	ncLength = ncSource > 0 ? ncSource : strlen(lpsSource);//计算要编码的数据的长度
-        MOV      R0,R8
           CFI FunCall strlen
         BL       strlen
 //  623 	//uprintf("ncLength = %d\n",ncLength);
 //  624 	if (ncLength == 0)
-        CMP      R0,#+0
-        BEQ.N    ??EncodeData_0
+        CBZ.N    R0,??EncodeData_0
 //  625 		return FALSE; 
 //  626 
 //  627 	nEncodeVersion = GetEncodeVersion(nVersion, lpsSource, ncLength);//计算编码数据需要的版本
         MOV      R2,R0
-        MOV      R1,R8
+        MOV      R1,R5
         MOVS     R0,#+1
           CFI FunCall GetEncodeVersion
         BL       GetEncodeVersion
 //  628 	//uprintf("nEncodeVersion = %d\n",nEncodeVersion);
 //  629 	if (nEncodeVersion == 0)
-        CMP      R0,#+0
-        BEQ.N    ??EncodeData_0
+        CBNZ.N   R0,??EncodeData_1
 //  630 		return FALSE; 
+??EncodeData_0:
+        MOVS     R0,#+0
+        B.N      ?Subroutine0
 //  631 
 //  632 	if (nVersion == 0)
 //  633 	{
@@ -1148,17 +1129,18 @@ EncodeData:
 //  636 	else
 //  637 	{
 //  638 		if (nEncodeVersion <= nVersion)
+??EncodeData_1:
         CMP      R0,#+2
-        BGE.N    ??EncodeData_1
+        IT       LT 
 //  639 		{
 //  640 			m_nVersion = nVersion;
-        MOVS     R0,#+1
-        STR      R0,[R6, #+16]
+        MOVLT    R0,#+1
 //  641 		}
 //  642 		else
 //  643 		{
 //  644 			if (bAutoExtent)
 //  645 				m_nVersion = nEncodeVersion; 
+        LDR.W    R1,??DataTable40
 //  646 			else
 //  647 				return FALSE; 
 //  648 		}
@@ -1166,313 +1148,324 @@ EncodeData:
 //  650 	//uprintf("m_nVersion = %d\n",m_nVersion);
 //  651 	
 //  652 	ncDataCodeWord = QR_VersonInfo[m_nVersion].ncDataCodeWord[m_nLevel];
-??EncodeData_2:
-        MOV      R8,#+74
-        LDR.W    R9,??DataTable45_1
-        LDR      R0,[R6, #+16]
-        MLA      R10,R8,R0,R9
-        LDR      R0,[R6, #+12]
-        ADD      R0,R10,R0, LSL #+1
-        LDRH     R0,[R0, #+4]
-        STR      R0,[SP, #+4]
+        LDR.W    R8,??DataTable40_1
+        STR      R0,[R1, #+24]
+        MOVS     R5,#+74
+        LDR      R0,[R1, #+24]
+        MLA      R7,R5,R0,R8
+        LDRH     R0,[R7, #+4]
+        STR      R0,[SP, #+12]
 //  653 
 //  654 	ncTerminater = min(4, (ncDataCodeWord * 8) - m_ncDataCodeWordBit);
-        LDR      R0,[R6, #+4]
-        LDR      R1,[SP, #+4]
+        LDR      R0,[R1, #+12]
+        LDR      R1,[SP, #+12]
         RSB      R2,R0,R1, LSL #+3
         CMP      R2,#+5
-        BLT.N    ??EncodeData_3
-        MOVS     R2,#+4
-        B.N      ??EncodeData_3
-??EncodeData_1:
-        STR      R0,[R6, #+16]
-        B.N      ??EncodeData_2
-??EncodeData_0:
-        MOV      R0,R4
-        B.N      ??EncodeData_4
+        ITE      GE 
+        MOVGE    R2,#+4
 //  655 
 //  656 	if (ncTerminater > 0)
-??EncodeData_3:
-        CMP      R2,#+1
-        BLT.N    ??EncodeData_5
+        CMPLT    R2,#+1
+        BLT.N    ??EncodeData_2
 //  657 		m_ncDataCodeWordBit = SetBitStream(m_ncDataCodeWordBit, 0, ncTerminater);
-        MOV      R1,R4
+        MOVS     R1,#+0
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
+        LDR.W    R1,??DataTable40
+        STR      R0,[R1, #+12]
 //  658 
 //  659 	for (i = (m_ncDataCodeWordBit + 7) / 8; i < ncDataCodeWord; ++i)
-??EncodeData_5:
-        LDR      R0,[R6, #+4]
+??EncodeData_2:
+        LDR.W    R0,??DataTable40
+        LDR      R0,[R0, #+12]
         ADDS     R0,R0,#+7
         ASRS     R1,R0,#+2
         ADD      R0,R0,R1, LSR #+29
+        LDR      R1,[SP, #+12]
         ASRS     R0,R0,#+3
-        B.N      ??EncodeData_6
+        CMP      R0,R1
+        BGE.N    ??EncodeData_3
+        LDR.W    R1,??DataTable41
+        LDR      R2,[SP, #+12]
+        ADDS     R1,R0,R1
+        SUBS     R0,R2,R0
+        MOVS     R2,#+236
+        STRB     R2,[R1, #+0]
+        B.N      ??EncodeData_4
 //  660 	{
 //  661 		m_byDataCodeWord[i] = byPaddingCode;
+??EncodeData_5:
+        STRB     R2,[R1, #+0]
 //  662 
 //  663 		byPaddingCode = (BYTE)(byPaddingCode == 0xec ? 0x11 : 0xec);
-??EncodeData_7:
-        MOVS     R7,#+236
-??EncodeData_8:
-        ADDS     R0,R0,#+1
+        CMP      R2,#+236
+        BNE.N    ??EncodeData_6
+??EncodeData_4:
+        MOVS     R2,#+17
+        B.N      ??EncodeData_7
 ??EncodeData_6:
-        LDR      R1,[SP, #+4]
-        CMP      R0,R1
-        BGE.N    ??EncodeData_9
-        LDR.W    R1,??DataTable45_2
-        STRB     R7,[R0, R1]
-        CMP      R7,#+236
-        BNE.N    ??EncodeData_7
-        MOVS     R7,#+17
-        B.N      ??EncodeData_8
+        MOVS     R2,#+236
 //  664 	}
+??EncodeData_7:
+        ADDS     R1,R1,#+1
+        SUBS     R0,R0,#+1
+        BNE.N    ??EncodeData_5
 //  665 
 //  666 	m_ncAllCodeWord = QR_VersonInfo[m_nVersion].ncAllCodeWord;
-??EncodeData_9:
-        LDRH     R2,[R10, #+2]
-        STR      R2,[R6, #+8]
+??EncodeData_3:
+        LDRH     R1,[R7, #+2]
+        LDR.W    R0,??DataTable40
 //  667 	memset(m_byAllCodeWord, 0, m_ncAllCodeWord);
-        LDR.W    R7,??DataTable45_3
-        MOV      R1,R4
+        LDR.W    R7,??DataTable41_1
+        STR      R1,[R0, #+16]
         MOV      R0,R7
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 //  668 
 //  669 	ncBlock1 = QR_VersonInfo[m_nVersion].RS_BlockInfo1[m_nLevel].ncRSBlock;
-        LDR      R0,[R6, #+12]
+        LDR.W    R0,??DataTable40
+        LDR      R0,[R0, #+20]
         ADD      R1,R0,R0, LSL #+1
-        LDR      R0,[R6, #+16]
-        MLA      R0,R8,R0,R9
+        LDR.W    R0,??DataTable40
+        LDR      R0,[R0, #+24]
+        MLA      R0,R5,R0,R8
         ADD      R0,R0,R1, LSL #+1
-        LDRH     R1,[R0, #+26]
-        STR      R1,[SP, #+12]
+        LDRH     R5,[R0, #+26]
 //  670 	ncBlock2 = QR_VersonInfo[m_nVersion].RS_BlockInfo2[m_nLevel].ncRSBlock;
         LDRH     R1,[R0, #+50]
         STR      R1,[SP, #+8]
 //  671 	ncBlockSum = ncBlock1 + ncBlock2;
-        LDR      R1,[SP, #+12]
-        LDR      R2,[SP, #+8]
-        ADD      R8,R2,R1
+        ADDS     R1,R1,R5
+        STR      R1,[SP, #+4]
 //  672 
 //  673 	ncDataCw1 = QR_VersonInfo[m_nVersion].RS_BlockInfo1[m_nLevel].ncDataCodeWord;
-        LDRH     R9,[R0, #+30]
 //  674 	ncDataCw2 = QR_VersonInfo[m_nVersion].RS_BlockInfo2[m_nLevel].ncDataCodeWord;
-        LDRH     R1,[R0, #+54]
-        STR      R1,[SP, #+0]
 //  675 
 //  676 	for (i = 0; i < ncBlock1; ++i)
-        MOV      R2,R4
-        B.N      ??EncodeData_10
+        CMP      R5,#+1
+        LDRH     R8,[R0, #+30]
+        LDRH     R1,[R0, #+54]
+        STR      R1,[SP, #+0]
+        BLT.N    ??EncodeData_8
+        MOV      R2,R5
+        LDR.W    R9,??DataTable41
 //  677 	{
 //  678 		for (j = 0; j < ncDataCw1; ++j)
+??EncodeData_9:
+        MOVS     R1,#+0
+        CMP      R8,#+1
+        BLT.N    ??EncodeData_10
+        ADD      R3,R4,R9
 //  679 		{
 //  680 			m_byAllCodeWord[(ncBlockSum * j) + nBlockNo] = m_byDataCodeWord[nDataCwIndex++];
 ??EncodeData_11:
-        MLA      R3,R1,R8,R5
-        LDR.W    R12,??DataTable45_2
-        LDRB     R12,[R4, R12]
-        STRB     R12,[R3, R7]
+        LDR      R12,[SP, #+4]
+        LDRB     LR,[R3], #+1
+        MLA      R12,R1,R12,R6
         ADDS     R4,R4,#+1
+        STRB     LR,[R12, R7]
 //  681 		}
         ADDS     R1,R1,#+1
-??EncodeData_12:
-        CMP      R1,R9
+        CMP      R1,R8
         BLT.N    ??EncodeData_11
 //  682 
 //  683 		++nBlockNo;
-        ADDS     R5,R5,#+1
-        ADDS     R2,R2,#+1
 ??EncodeData_10:
-        LDR      R1,[SP, #+12]
-        CMP      R2,R1
-        BGE.N    ??EncodeData_13
-        MOVS     R1,#+0
-        B.N      ??EncodeData_12
+        ADDS     R6,R6,#+1
 //  684 	}
+        SUBS     R2,R2,#+1
+        BNE.N    ??EncodeData_9
 //  685 
 //  686 	for (i = 0; i < ncBlock2; ++i)
-??EncodeData_13:
-        MOVS     R2,#+0
-        B.N      ??EncodeData_14
+??EncodeData_8:
+        LDR      R1,[SP, #+8]
+        CMP      R1,#+1
+        BLT.N    ??EncodeData_12
+        LDR      R1,[SP, #+4]
+        LDR      R3,[SP, #+8]
+        LDR.W    R9,??DataTable41
+        MLA      R2,R8,R1,R7
 //  687 	{
 //  688 		for (j = 0; j < ncDataCw2; ++j)
+??EncodeData_13:
+        LDR      R12,[SP, #+0]
+        MOVS     R1,#+0
+        CMP      R12,#+1
+        BLT.N    ??EncodeData_14
 //  689 		{
 //  690 			if (j < ncDataCw1)
+??EncodeData_15:
+        LDRB     R12,[R4, R9]
+        ADDS     R4,R4,#+1
+        CMP      R1,R8
+        ITTTE    LT 
 //  691 			{
 //  692 				m_byAllCodeWord[(ncBlockSum * j) + nBlockNo] = m_byDataCodeWord[nDataCwIndex++];
+        LDRLT    LR,[SP, #+4]
+        MLALT    LR,R1,LR,R6
+        STRBLT   R12,[LR, R7]
 //  693 			}
 //  694 			else
 //  695 			{
 //  696 				m_byAllCodeWord[(ncBlockSum * ncDataCw1) + i]  = m_byDataCodeWord[nDataCwIndex++];
+        STRBGE   R12,[R2, #+0]
 //  697 			}	
 //  698 		}
+        LDR      R12,[SP, #+0]
+        ADDS     R1,R1,#+1
+        CMP      R1,R12
+        BLT.N    ??EncodeData_15
 //  699 
 //  700 		++nBlockNo;
-??EncodeData_15:
-        ADDS     R5,R5,#+1
-        ADDS     R2,R2,#+1
 ??EncodeData_14:
-        LDR      R1,[SP, #+8]
-        CMP      R2,R1
-        BGE.N    ??EncodeData_16
-        MOVS     R1,#+0
-        B.N      ??EncodeData_17
-??EncodeData_18:
-        MLA      R12,R9,R8,R2
-        STRB     R3,[R12, R7]
-??EncodeData_19:
-        ADDS     R1,R1,#+1
-??EncodeData_17:
-        LDR      R3,[SP, #+0]
-        CMP      R1,R3
-        BGE.N    ??EncodeData_15
-        LDR.W    R3,??DataTable45_2
-        LDRB     R3,[R4, R3]
-        ADDS     R4,R4,#+1
-        CMP      R1,R9
-        BGE.N    ??EncodeData_18
-        MLA      R12,R1,R8,R5
-        STRB     R3,[R12, R7]
-        B.N      ??EncodeData_19
+        ADDS     R6,R6,#+1
 //  701 	}
+        ADDS     R2,R2,#+1
+        SUBS     R3,R3,#+1
+        BNE.N    ??EncodeData_13
 //  702 
 //  703 	ncRSCw1 = QR_VersonInfo[m_nVersion].RS_BlockInfo1[m_nLevel].ncAllCodeWord - ncDataCw1;
-??EncodeData_16:
+??EncodeData_12:
         LDRH     R1,[R0, #+28]
-        SUB      R1,R1,R9
+        SUB      R1,R1,R8
         STR      R1,[SP, #+20]
 //  704 	ncRSCw2 = QR_VersonInfo[m_nVersion].RS_BlockInfo2[m_nLevel].ncAllCodeWord - ncDataCw2;
-        LDRH     R0,[R0, #+52]
-        LDR      R1,[SP, #+0]
-        SUBS     R0,R0,R1
-        STR      R0,[SP, #+16]
 //  705 
 //  706 	nDataCwIndex = 0;
         MOVS     R4,#+0
+        LDRH     R0,[R0, #+52]
+        LDR      R1,[SP, #+0]
+        SUBS     R0,R0,R1
 //  707 	nBlockNo = 0;
-        MOV      R5,R4
+        MOVS     R6,#+0
+        STR      R0,[SP, #+16]
 //  708 
 //  709 	for (i = 0; i < ncBlock1; ++i)
-        MOV      R10,R4
-        LDR.W    R11,??DataTable46
-        B.N      ??EncodeData_20
+        CMP      R5,#+1
+        BLT.N    ??EncodeData_16
+        LDR      R10,[SP, #+12]
+        LDR.W    R11,??DataTable41_2
+        LDR.W    R9,??DataTable41
 //  710 	{
 //  711 		memset(m_byRSWork, 0, sizeof(m_byRSWork));
+??EncodeData_17:
+        MOVS     R1,#+153
+        MOV      R0,R11
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 //  712 
 //  713 		memmove(m_byRSWork, m_byDataCodeWord + nDataCwIndex, ncDataCw1);
+        MOV      R2,R8
+        ADD      R1,R4,R9
+        MOV      R0,R11
+          CFI FunCall __aeabi_memmove
+        BL       __aeabi_memmove
 //  714 
 //  715 		GetRSCodeWord(m_byRSWork, ncDataCw1, ncRSCw1);
-//  716 
-//  717 		for (j = 0; j < ncRSCw1; ++j)
-//  718 		{
-//  719 			m_byAllCodeWord[ncDataCodeWord + (ncBlockSum * j) + nBlockNo] = m_byRSWork[j];
-??EncodeData_21:
-        LDR      R0,[SP, #+4]
-        MLA      R0,R1,R8,R0
-        ADDS     R0,R5,R0
-        LDRB     R2,[R1, R11]
-        STRB     R2,[R0, R7]
-//  720 		}
-        ADDS     R1,R1,#+1
-??EncodeData_22:
-        LDR      R0,[SP, #+20]
-        CMP      R1,R0
-        BLT.N    ??EncodeData_21
-//  721 
-//  722 		nDataCwIndex += ncDataCw1;
-        ADD      R4,R9,R4
-//  723 		++nBlockNo;
-        ADDS     R5,R5,#+1
-        ADD      R10,R10,#+1
-??EncodeData_20:
-        LDR      R0,[SP, #+12]
-        CMP      R10,R0
-        BGE.N    ??EncodeData_23
-        MOVS     R2,#+153
-        MOVS     R1,#+0
-        MOV      R0,R11
-          CFI FunCall memset
-        BL       memset
-        MOV      R2,R9
-        LDR.W    R0,??DataTable45_2
-        ADDS     R1,R4,R0
-        MOV      R0,R11
-          CFI FunCall memmove
-        BL       memmove
         LDR      R2,[SP, #+20]
-        MOV      R1,R9
+        MOV      R1,R8
         MOV      R0,R11
           CFI FunCall GetRSCodeWord
         BL       GetRSCodeWord
+//  716 
+//  717 		for (j = 0; j < ncRSCw1; ++j)
+        LDR      R0,[SP, #+20]
         MOVS     R1,#+0
-        B.N      ??EncodeData_22
+        CMP      R0,#+1
+        BLT.N    ??EncodeData_18
+        MOV      R0,R11
+//  718 		{
+//  719 			m_byAllCodeWord[ncDataCodeWord + (ncBlockSum * j) + nBlockNo] = m_byRSWork[j];
+??EncodeData_19:
+        LDR      R2,[SP, #+4]
+        LDRB     R3,[R0], #+1
+        MLA      R2,R1,R2,R10
+//  720 		}
+        ADDS     R1,R1,#+1
+        STRB     R3,[R2, R7]
+        LDR      R2,[SP, #+20]
+        CMP      R1,R2
+        BLT.N    ??EncodeData_19
+//  721 
+//  722 		nDataCwIndex += ncDataCw1;
+//  723 		++nBlockNo;
+??EncodeData_18:
+        ADDS     R6,R6,#+1
+        ADD      R4,R8,R4
 //  724 	}
+        ADD      R10,R10,#+1
+        SUBS     R5,R5,#+1
+        BNE.N    ??EncodeData_17
 //  725 
 //  726 	for (i = 0; i < ncBlock2; ++i)
-??EncodeData_23:
-        MOV      R9,#+0
-        B.N      ??EncodeData_24
+??EncodeData_16:
+        LDR      R0,[SP, #+8]
+        CMP      R0,#+1
+        BLT.N    ??EncodeData_20
+        LDR      R0,[SP, #+12]
+        LDR.W    R11,??DataTable41_2
+        LDR.W    R9,??DataTable41
+        ADDS     R5,R6,R0
+        LDR      R6,[SP, #+8]
 //  727 	{
 //  728 		memset(m_byRSWork, 0, sizeof(m_byRSWork));
+??EncodeData_21:
+        MOVS     R1,#+153
+        MOV      R0,R11
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 //  729 
 //  730 		memmove(m_byRSWork, m_byDataCodeWord + nDataCwIndex, ncDataCw2);
+        LDR      R2,[SP, #+0]
+        ADD      R1,R4,R9
+        MOV      R0,R11
+          CFI FunCall __aeabi_memmove
+        BL       __aeabi_memmove
 //  731 
 //  732 		GetRSCodeWord(m_byRSWork, ncDataCw2, ncRSCw2);
-//  733 
-//  734 		for (j = 0; j < ncRSCw2; ++j)
-//  735 		{
-//  736 			m_byAllCodeWord[ncDataCodeWord + (ncBlockSum * j) + nBlockNo] = m_byRSWork[j];
-??EncodeData_25:
-        LDR      R0,[SP, #+4]
-        MLA      R0,R1,R8,R0
-        ADDS     R0,R5,R0
-        LDRB     R2,[R1, R11]
-        STRB     R2,[R0, R7]
-//  737 		}
-        ADDS     R1,R1,#+1
-??EncodeData_26:
-        LDR      R0,[SP, #+16]
-        CMP      R1,R0
-        BLT.N    ??EncodeData_25
-//  738 
-//  739 		nDataCwIndex += ncDataCw2;
-        LDR      R0,[SP, #+0]
-        ADDS     R4,R0,R4
-//  740 		++nBlockNo;
-        ADDS     R5,R5,#+1
-        ADD      R9,R9,#+1
-??EncodeData_24:
-        LDR      R0,[SP, #+8]
-        CMP      R9,R0
-        BGE.N    ??EncodeData_27
-        MOVS     R2,#+153
-        MOVS     R1,#+0
-        MOV      R0,R11
-          CFI FunCall memset
-        BL       memset
-        LDR      R2,[SP, #+0]
-        LDR.W    R0,??DataTable45_2
-        ADDS     R1,R4,R0
-        MOV      R0,R11
-          CFI FunCall memmove
-        BL       memmove
         LDR      R2,[SP, #+16]
         LDR      R1,[SP, #+0]
         MOV      R0,R11
           CFI FunCall GetRSCodeWord
         BL       GetRSCodeWord
+//  733 
+//  734 		for (j = 0; j < ncRSCw2; ++j)
+        LDR      R0,[SP, #+16]
         MOVS     R1,#+0
-        B.N      ??EncodeData_26
+        CMP      R0,#+1
+        BLT.N    ??EncodeData_22
+        MOV      R0,R11
+//  735 		{
+//  736 			m_byAllCodeWord[ncDataCodeWord + (ncBlockSum * j) + nBlockNo] = m_byRSWork[j];
+??EncodeData_23:
+        LDR      R2,[SP, #+4]
+        LDRB     R3,[R0], #+1
+        MLA      R2,R1,R2,R5
+//  737 		}
+        ADDS     R1,R1,#+1
+        STRB     R3,[R2, R7]
+        LDR      R2,[SP, #+16]
+        CMP      R1,R2
+        BLT.N    ??EncodeData_23
+//  738 
+//  739 		nDataCwIndex += ncDataCw2;
+??EncodeData_22:
+        LDR      R0,[SP, #+0]
+        ADDS     R4,R0,R4
+//  740 		++nBlockNo;
 //  741 	}
+        ADDS     R5,R5,#+1
+        SUBS     R6,R6,#+1
+        BNE.N    ??EncodeData_21
 //  742 
 //  743 	m_nSymbleSize = m_nVersion * 4 + 17;
-??EncodeData_27:
-        LDR      R0,[R6, #+16]
+??EncodeData_20:
+        LDR.W    R0,??DataTable40
+        LDR.W    R1,??DataTable40
+        LDR      R0,[R0, #+24]
         LSLS     R0,R0,#+2
         ADDS     R0,R0,#+17
-        STR      R0,[R6, #+0]
+        STR      R0,[R1, #+8]
 //  744 
 //  745 	FormatModule();
           CFI FunCall FormatModule
@@ -1480,12 +1473,32 @@ EncodeData:
 //  746 
 //  747 	return TRUE;
         MOVS     R0,#+1
-??EncodeData_4:
+          CFI EndBlock cfiBlock0
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+//  748 }
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls EncodeData
+          CFI NoCalls EncodeSourceData
+          CFI CFA R13+64
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
         ADD      SP,SP,#+28
           CFI CFA R13+36
         POP      {R4-R11,PC}      ;; return
-          CFI EndBlock cfiBlock0
-//  748 }
+          CFI EndBlock cfiBlock1
 //  749 //每个版本长度字段的位数
 //  750 //nVersion	版本
 //  751 //lpsSource	源数据
@@ -1500,7 +1513,7 @@ EncodeData:
 //  760 */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function GetEncodeVersion
         THUMB
 //  761 int GetEncodeVersion(int nVersion, char *lpsSource, int ncLength)
@@ -1517,134 +1530,144 @@ GetEncodeVersion:
         MOV      R5,R2
 //  763 	int nVerGroup = nVersion >= 27 ? QR_VRESION_L : (nVersion >= 10 ? QR_VRESION_M : QR_VRESION_S);
         CMP      R0,#+27
-        BLT.N    ??GetEncodeVersion_0
-        MOVS     R6,#+2
-        B.N      ??GetEncodeVersion_1
-??GetEncodeVersion_0:
+        IT       GE 
+        MOVGE    R6,#+2
+        BGE.N    ??GetEncodeVersion_0
         CMP      R0,#+10
-        BLT.N    ??GetEncodeVersion_2
-        MOVS     R6,#+1
-        B.N      ??GetEncodeVersion_1
-??GetEncodeVersion_2:
-        MOVS     R6,#+0
-        B.N      ??GetEncodeVersion_1
+        ITE      GE 
+        MOVGE    R6,#+1
+        MOVLT    R6,#+0
 //  764 	int i, j;
 //  765 
 //  766 	for (i = nVerGroup; i <= QR_VRESION_L; ++i)
-??GetEncodeVersion_3:
-        ADDS     R6,R6,#+1
-??GetEncodeVersion_1:
-        CMP      R6,#+3
-        BGE.N    ??GetEncodeVersion_4
 //  767 	{
 //  768 		if (EncodeSourceData(lpsSource, ncLength, i))
+??GetEncodeVersion_0:
         MOV      R2,R6
         MOV      R1,R5
         MOV      R0,R4
           CFI FunCall EncodeSourceData
         BL       EncodeSourceData
         CMP      R0,#+0
-        BEQ.N    ??GetEncodeVersion_3
+        BEQ.N    ??GetEncodeVersion_1
 //  769 		{
 //  770 			if (i == QR_VRESION_S)
-        CMP      R6,#+0
-        BNE.N    ??GetEncodeVersion_5
+        CBNZ.N   R6,??GetEncodeVersion_2
 //  771 			{
 //  772 				for (j = 1; j <= 9; ++j)
+        LDR.W    R2,??DataTable40
+        LDR.W    R3,??DataTable40_1
+        LDR      R1,[R2, #+20]
+        ADD      R1,R3,R1, LSL #+1
+        ADDW     R7,R1,#+78
+        LDR      R1,[R2, #+12]
         MOVS     R0,#+1
-        LDR.W    R7,??DataTable45_1
-??GetEncodeVersion_6:
-        CMP      R0,#+10
-        BGE.N    ??GetEncodeVersion_3
+        ADDS     R1,R1,#+7
 //  773 				{
 //  774 					if ((m_ncDataCodeWordBit + 7) / 8 <= QR_VersonInfo[j].ncDataCodeWord[m_nLevel])
-        LDR.W    R1,??DataTable45
-        LDR      R2,[R1, #+4]
-        ADDS     R2,R2,#+7
-        LDR      R1,[R1, #+12]
-        MOVS     R3,#+74
-        MLA      R3,R3,R0,R7
-        ADD      R1,R3,R1, LSL #+1
-        LDRH     R1,[R1, #+4]
-        ASRS     R3,R2,#+2
-        ADD      R2,R2,R3, LSR #+29
-        CMP      R1,R2, ASR #+3
-        BGE.N    ??GetEncodeVersion_7
+??GetEncodeVersion_3:
+        ASRS     R2,R1,#+2
+        ADD      R2,R1,R2, LSR #+29
+        ASRS     R3,R2,#+3
+        LDRH     R2,[R7], #+74
+        CMP      R2,R3
+        ITTT     LT 
+        ADDLT    R0,R0,#+1
+        LDRHLT   R2,[R7], #+74
+        CMPLT    R2,R3
+        ITTT     LT 
+        ADDLT    R0,R0,#+1
+        LDRHLT   R2,[R7], #+74
+        CMPLT    R2,R3
+        BGE.N    ??GetEncodeVersion_4
 //  775 						return j;
 //  776 				}
         ADDS     R0,R0,#+1
-        B.N      ??GetEncodeVersion_6
+        CMP      R0,#+10
+        BLT.N    ??GetEncodeVersion_3
+        B.N      ??GetEncodeVersion_1
 //  777 			}
 //  778 			else if (i == QR_VRESION_M)
-??GetEncodeVersion_5:
+??GetEncodeVersion_2:
         CMP      R6,#+1
-        BNE.N    ??GetEncodeVersion_8
+        BNE.N    ??GetEncodeVersion_5
 //  779 			{
 //  780 				for (j = 10; j <= 26; ++j)
-        MOVS     R0,#+10
-        LDR.W    R7,??DataTable45_1
-??GetEncodeVersion_9:
-        CMP      R0,#+27
-        BGE.N    ??GetEncodeVersion_3
+        LDR.W    R2,??DataTable40
 //  781 				{
 //  782 					if ((m_ncDataCodeWordBit + 7) / 8 <= QR_VersonInfo[j].ncDataCodeWord[m_nLevel])
-        LDR.W    R1,??DataTable45
-        LDR      R2,[R1, #+4]
-        ADDS     R2,R2,#+7
-        LDR      R1,[R1, #+12]
-        MOVS     R3,#+74
-        MLA      R3,R3,R0,R7
-        ADD      R1,R3,R1, LSL #+1
-        LDRH     R1,[R1, #+4]
-        ASRS     R3,R2,#+2
-        ADD      R2,R2,R3, LSR #+29
-        CMP      R1,R2, ASR #+3
-        BGE.N    ??GetEncodeVersion_7
+        LDR.W    R7,??DataTable40_1
+        LDR      R1,[R2, #+12]
+        LDR      R2,[R2, #+20]
+        ADD      R2,R7,R2, LSL #+1
+        ADDS     R1,R1,#+7
+        ASRS     R3,R1,#+2
+        LDRH     R7,[R2, #+744]
+        MOVS     R0,#+10
+        ADD      R3,R1,R3, LSR #+29
+        CMP      R7,R3, ASR #+3
+        BGE.N    ??GetEncodeVersion_4
+        MOVS     R0,#+11
+        ADDW     R2,R2,#+818
+??GetEncodeVersion_6:
+        LDRH     R7,[R2], #+74
+        CMP      R7,R3, ASR #+3
+        ITTT     LT 
+        ADDLT    R0,R0,#+1
+        LDRHLT   R7,[R2], #+74
+        CMPLT    R7,R3, ASR #+3
+        BGE.N    ??GetEncodeVersion_4
 //  783 						return j;
 //  784 				}
         ADDS     R0,R0,#+1
-        B.N      ??GetEncodeVersion_9
+        CMP      R0,#+27
+        BLT.N    ??GetEncodeVersion_6
+        B.N      ??GetEncodeVersion_1
 //  785 			}
 //  786 			else if (i == QR_VRESION_L)
-??GetEncodeVersion_8:
+??GetEncodeVersion_5:
         CMP      R6,#+2
-        BNE.N    ??GetEncodeVersion_3
+        BNE.N    ??GetEncodeVersion_1
 //  787 			{
 //  788 				for (j = 27; j <= 40; ++j)
+        LDR.W    R2,??DataTable40
+        LDR.W    R3,??DataTable40_1
+        LDR      R1,[R2, #+20]
+        ADD      R1,R3,R1, LSL #+1
+        ADDW     R7,R1,#+2002
+        LDR      R1,[R2, #+12]
         MOVS     R0,#+27
-        LDR.W    R7,??DataTable45_1
-        B.N      ??GetEncodeVersion_10
-??GetEncodeVersion_11:
-        ADDS     R0,R0,#+1
-??GetEncodeVersion_10:
-        CMP      R0,#+41
-        BGE.N    ??GetEncodeVersion_3
+        ADDS     R1,R1,#+7
 //  789 				{
 //  790 					if ((m_ncDataCodeWordBit + 7) / 8 <= QR_VersonInfo[j].ncDataCodeWord[m_nLevel])
-        LDR.W    R1,??DataTable45
-        LDR      R2,[R1, #+4]
-        ADDS     R2,R2,#+7
-        LDR      R1,[R1, #+12]
-        MOVS     R3,#+74
-        MLA      R3,R3,R0,R7
-        ADD      R1,R3,R1, LSL #+1
-        LDRH     R1,[R1, #+4]
-        ASRS     R3,R2,#+2
-        ADD      R2,R2,R3, LSR #+29
-        CMP      R1,R2, ASR #+3
-        BLT.N    ??GetEncodeVersion_11
+??GetEncodeVersion_7:
+        ASRS     R2,R1,#+2
+        ADD      R2,R1,R2, LSR #+29
+        ASRS     R3,R2,#+3
+        LDRH     R2,[R7], #+74
+        CMP      R2,R3
+        ITTT     LT 
 //  791 						return j;
-        POP      {R1,R4-R7,PC}
+        ADDLT    R0,R0,#+1
+        LDRHLT   R2,[R7], #+74
+        CMPLT    R2,R3
+        BGE.N    ??GetEncodeVersion_4
 //  792 				}
+        ADDS     R0,R0,#+1
+        CMP      R0,#+41
+        BLT.N    ??GetEncodeVersion_7
 //  793 			}
 //  794 		}
 //  795 	}
+??GetEncodeVersion_1:
+        ADDS     R6,R6,#+1
+        CMP      R6,#+3
+        BLT.N    ??GetEncodeVersion_0
 //  796 	return 0;
-??GetEncodeVersion_4:
         MOVS     R0,#+0
-??GetEncodeVersion_7:
+??GetEncodeVersion_4:
         POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock1
+          CFI EndBlock cfiBlock2
 //  797 }
 //  798 //模式指标，编码模式
 //  799 //lpsSource 源数据
@@ -1653,13 +1676,13 @@ GetEncodeVersion:
 //  802 //bool EncodeSourceData(char *lpsSource, int ncLength, int nVerGroup)
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function EncodeSourceData
         THUMB
 //  803 int EncodeSourceData(char *lpsSource, int ncLength, int nVerGroup)
 //  804 {
 EncodeSourceData:
-        PUSH     {R2,R4-R11,LR}
+        PUSH     {R0,R2,R4-R11,LR}
           CFI R14 Frame(CFA, -4)
           CFI R11 Frame(CFA, -8)
           CFI R10 Frame(CFA, -12)
@@ -1669,31 +1692,30 @@ EncodeSourceData:
           CFI R6 Frame(CFA, -28)
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        SUB      SP,SP,#+24
+          CFI CFA R13+44
+        SUB      SP,SP,#+20
           CFI CFA R13+64
-        MOV      R4,R0
-        MOV      R9,R1
 //  805 	int i, j;
 //  806 	int ncSrcBits, ncDstBits;
 //  807 	int nBlock = 0;
-        MOVS     R6,#+0
 //  808 	int ncComplete = 0; 
-        MOV      R7,R6
 //  809 	WORD wBinCode;
 //  810 
 //  811 	memset(m_nBlockLength, 0, sizeof(m_nBlockLength));
-        LDR.W    R5,??DataTable48
-        MOV      R2,#+400
-        MOV      R1,R6
-        ADD      R0,R5,#+400
-          CFI FunCall memset
-        BL       memset
+        LDR.W    R4,??DataTable44
+        MOV      R6,R1
+        MOVS     R5,#+0
+        ADD      R0,R4,#+400
+        STR      R5,[SP, #+4]
+        STR      R0,[SP, #+16]
+        MOV      R1,#+400
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 //  812 
 //  813 	for (m_ncDataBlock = i = 0; i < ncLength; ++i)
-        MOV      R8,R6
-        MOV      R0,R6
-        STR      R0,[R5, #+800]
+        MOVS     R0,#+0
+        STR      R0,[R4, #+800]
+        SUBS     R1,R6,#+1
         B.N      ??EncodeSourceData_0
 //  814 	{
 //  815 		BYTE byMode;
@@ -1706,88 +1728,119 @@ EncodeSourceData:
 //  822 			byMode = QR_MODE_NUMERAL;			//数字
 //  823 		else if (IsAlphabetData(lpsSource[i]))
 //  824 			byMode = QR_MODE_ALPHABET;			//字符
+??EncodeSourceData_1:
+        MOVS     R2,#+1
 //  825 		else
 //  826 			byMode = QR_MODE_8BIT;				//字节
-??EncodeSourceData_1:
-        MOVS     R0,#+2
 //  827 
 //  828 		if (i == 0)
 ??EncodeSourceData_2:
-        CMP      R8,#+0
-        BNE.N    ??EncodeSourceData_3
+        CBNZ.N   R0,??EncodeSourceData_3
 //  829 			m_byBlockMode[0] = byMode;			//
-        STRB     R0,[R5, #+0]
+        STRB     R2,[R4, #+0]
 //  830 
 //  831 		if (m_byBlockMode[m_ncDataBlock] != byMode)//如果前后两个数据的模式不一样
 ??EncodeSourceData_3:
-        LDR      R1,[R5, #+800]
-        LDRB     R2,[R1, R5]
-        CMP      R2,R0
+        LDR      R3,[R4, #+800]
+        LDRB     R7,[R3, R4]
+        CMP      R7,R2
         BEQ.N    ??EncodeSourceData_4
 //  832 			m_byBlockMode[++m_ncDataBlock] = byMode;
-        ADDS     R1,R1,#+1
-        STR      R1,[R5, #+800]
-        STRB     R0,[R1, R5]
+        ADDS     R3,R3,#+1
+        STR      R3,[R4, #+800]
+        STRB     R2,[R3, R4]
 //  833 
 //  834 		++m_nBlockLength[m_ncDataBlock];
 ??EncodeSourceData_4:
-        LDR      R1,[R5, #+800]
-        ADDS     R1,R1,R5
-        LDRB     R2,[R1, #+400]
-        ADDS     R2,R2,#+1
-        STRB     R2,[R1, #+400]
+        LDR      R3,[R4, #+800]
+        ADDS     R3,R3,R4
+        LDRB     R7,[R3, #+400]
+        ADDS     R7,R7,#+1
+        STRB     R7,[R3, #+400]
 //  835 
 //  836 		if (byMode == QR_MODE_KANJI)//如果是日文模式，那么前后2个字节为一个汉字
-        CMP      R0,#+3
+        CMP      R2,#+3
         BNE.N    ??EncodeSourceData_5
 //  837 		{
 //  838 			++m_nBlockLength[m_ncDataBlock];
-        ADDS     R0,R2,#+1
-        STRB     R0,[R1, #+400]
+        ADDS     R2,R7,#+1
+        STRB     R2,[R3, #+400]
 //  839 			++i;
-        ADD      R8,R8,#+1
+        ADDS     R0,R0,#+1
 //  840 		}
 ??EncodeSourceData_5:
-        ADD      R8,R8,#+1
+        ADDS     R0,R0,#+1
 ??EncodeSourceData_0:
-        CMP      R8,R9
+        CMP      R0,R6
         BGE.N    ??EncodeSourceData_6
-        SUB      R0,R9,#+1
-        CMP      R8,R0
+        LDR      R2,[SP, #+20]
+        LDRSB    R2,[R0, R2]
+        UXTB     R3,R2
+        CMP      R0,R1
         BGE.N    ??EncodeSourceData_7
-        ADD      R0,R8,R4
-        LDRB     R1,[R0, #+1]
-        LDRB     R0,[R8, R4]
-          CFI FunCall IsKanjiData
-        BL       IsKanjiData
-        CMP      R0,#+0
-        BEQ.N    ??EncodeSourceData_7
-        MOVS     R0,#+3
-        B.N      ??EncodeSourceData_2
+        LDR      R7,[SP, #+20]
+        ADDS     R7,R0,R7
+        SUB      LR,R3,#+129
+        LDRB     R7,[R7, #+1]
+        CMP      LR,#+31
+        ITT      CS 
+        SUBCS    LR,R3,#+224
+        CMPCS    LR,#+12
+        BCS.N    ??EncodeSourceData_7
+        CMP      R7,#+64
+        BLT.N    ??EncodeSourceData_7
+        UXTB     R12,R2
+        CMP      R12,#+159
+        BNE.N    ??EncodeSourceData_8
+        CMP      R7,#+253
+        BLT.N    ??EncodeSourceData_9
 ??EncodeSourceData_7:
-        LDRB     R0,[R8, R4]
-          CFI FunCall IsNumeralData
-        BL       IsNumeralData
-        CMP      R0,#+0
-        BEQ.N    ??EncodeSourceData_8
-        MOV      R0,R6
+        SUB      R7,R3,#+48
+        CMP      R7,#+10
+        BCS.N    ??EncodeSourceData_10
+        MOVS     R2,#+0
         B.N      ??EncodeSourceData_2
 ??EncodeSourceData_8:
-        LDRB     R0,[R8, R4]
-          CFI FunCall IsAlphabetData
-        BL       IsAlphabetData
-        CMP      R0,#+0
+        CMP      R12,#+235
+        BNE.N    ??EncodeSourceData_9
+        CMP      R7,#+192
+        BGE.N    ??EncodeSourceData_7
+??EncodeSourceData_9:
+        MOVS     R2,#+3
+        B.N      ??EncodeSourceData_2
+??EncodeSourceData_10:
+        SUBS     R3,R3,#+65
+        CMP      R3,#+26
+        BCC.N    ??EncodeSourceData_1
+        UXTB     R2,R2
+        CMP      R2,#+32
+        IT       NE 
+        CMPNE    R2,#+36
         BEQ.N    ??EncodeSourceData_1
-        MOVS     R0,#+1
+        CMP      R2,#+37
+        IT       NE 
+        CMPNE    R2,#+42
+        BEQ.N    ??EncodeSourceData_1
+        CMP      R2,#+43
+        IT       NE 
+        CMPNE    R2,#+45
+        BEQ.N    ??EncodeSourceData_1
+        CMP      R2,#+46
+        ITT      NE 
+        CMPNE    R2,#+47
+        CMPNE    R2,#+58
+        BEQ.N    ??EncodeSourceData_1
+        MOVS     R2,#+2
         B.N      ??EncodeSourceData_2
 //  841 	}
 //  842 
 //  843 	++m_ncDataBlock;
 ??EncodeSourceData_6:
-        LDR      R0,[R5, #+800]
+        LDR      R0,[R4, #+800]
         ADDS     R0,R0,#+1
-        STR      R0,[R5, #+800]
-        B.N      ??EncodeSourceData_9
+??EncodeSourceData_11:
+        STR      R0,[R4, #+800]
+        B.N      ??EncodeSourceData_12
 //  844 
 //  845 	while (nBlock < m_ncDataBlock - 1)
 //  846 	{
@@ -1906,306 +1959,265 @@ EncodeSourceData:
 //  959 		}
 //  960 
 //  961 		++nBlock; 
-??EncodeSourceData_10:
-        ADDS     R6,R6,#+1
-??EncodeSourceData_9:
-        LDR      R0,[R5, #+800]
-        SUBS     R0,R0,#+1
-        STR      R0,[SP, #+12]
-        CMP      R6,R0
-        BGE.W    ??EncodeSourceData_11
-        MOV      R8,R7
-        LDRB     R0,[R6, R5]
+??EncodeSourceData_13:
+        ADDS     R5,R5,#+1
+??EncodeSourceData_12:
+        LDR      R0,[R4, #+800]
+        SUBS     R6,R0,#+1
+        CMP      R5,R6
+        BGE.W    ??EncodeSourceData_14
+        LDRB     R0,[R5, R4]
         STRB     R0,[SP, #+0]
         CMP      R0,#+0
-        BNE.N    ??EncodeSourceData_12
-        ADDS     R0,R6,R5
-        LDRB     R0,[R0, #+1]
-        CMP      R0,#+1
-        BEQ.N    ??EncodeSourceData_13
-??EncodeSourceData_12:
+        ITTT     EQ 
+        ADDEQ    R0,R5,R4
+        LDRBEQ   R0,[R0, #+1]
+        CMPEQ    R0,#+1
+        BEQ.N    ??EncodeSourceData_15
         LDRB     R0,[SP, #+0]
         CMP      R0,#+1
-        BNE.N    ??EncodeSourceData_10
-        ADDS     R0,R6,R5
+        ITTT     EQ 
+        ADDEQ    R0,R5,R4
+        LDRBEQ   R0,[R0, #+1]
+        CMPEQ    R0,#+0
+        BNE.N    ??EncodeSourceData_13
+??EncodeSourceData_15:
+        ADDS     R0,R5,R4
+        ADDW     R7,R0,#+399
+        LDR      R2,[SP, #+24]
+        LDRB     R1,[R7, #+1]
+        LDRB     R0,[SP, #+0]
+          CFI FunCall GetBitLength
+        BL       GetBitLength
+        LDRB     R8,[R7, #+2]
+        LDR      R2,[SP, #+24]
+        MOV      R11,R0
+        ADDS     R0,R5,R4
+        MOV      R1,R8
         LDRB     R0,[R0, #+1]
-        CMP      R0,#+0
-        BNE.N    ??EncodeSourceData_10
-??EncodeSourceData_13:
-        ADDS     R0,R6,R5
-        ADDW     R0,R0,#+399
+          CFI FunCall GetBitLength
+        BL       GetBitLength
+        LDR      R2,[SP, #+24]
         STR      R0,[SP, #+8]
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[SP, #+5]
-        STR      R0,[SP, #+16]
-        LDR      R2,[SP, #+24]
-        MOV      R1,R0
-        LDRB     R0,[SP, #+0]
-          CFI FunCall GetBitLength
-        BL       GetBitLength
-        MOV      R10,R0
-        LDR      R0,[SP, #+8]
-        LDRB     R0,[R0, #+2]
-        STRB     R0,[SP, #+4]
-        MOV      R9,R0
-        LDR      R2,[SP, #+24]
-        MOV      R1,R9
-        ADDS     R0,R6,R5
-        LDRB     R0,[R0, #+1]
-          CFI FunCall GetBitLength
-        BL       GetBitLength
-        ADD      R11,R0,R10
-        LDR      R2,[SP, #+24]
-        LDR      R0,[SP, #+16]
-        ADD      R1,R9,R0
+        LDRB     R0,[R7, #+1]
+        ADD      R1,R8,R0
         MOVS     R0,#+1
           CFI FunCall GetBitLength
         BL       GetBitLength
         MOV      R10,R0
-        CMP      R10,R11
-        BGE.N    ??EncodeSourceData_10
-        CMP      R6,#+1
-        BLT.N    ??EncodeSourceData_14
-        ADDS     R0,R6,R5
+        LDR      R0,[SP, #+8]
+        ADD      R0,R0,R11
+        CMP      R10,R0
+        BGE.N    ??EncodeSourceData_13
+        CMP      R5,#+1
+        BLT.N    ??EncodeSourceData_16
+        ADDS     R0,R5,R4
         LDRB     R0,[R0, #-1]
         CMP      R0,#+2
-        BNE.N    ??EncodeSourceData_14
-        LDR      R2,[SP, #+24]
-        ADDS     R0,R6,R5
+        BNE.N    ??EncodeSourceData_16
+        ADDS     R0,R5,R4
+        LDRB     R1,[R7, #+1]
         LDRB     R0,[R0, #+399]
-        LDR      R1,[SP, #+16]
+        LDR      R2,[SP, #+24]
         ADDS     R1,R1,R0
         MOVS     R0,#+2
           CFI FunCall GetBitLength
         BL       GetBitLength
         MOV      R11,R0
+        ADDS     R0,R5,R4
         LDR      R2,[SP, #+24]
-        MOV      R1,R9
-        ADDS     R0,R6,R5
         LDRB     R0,[R0, #+1]
+        MOV      R1,R8
           CFI FunCall GetBitLength
         BL       GetBitLength
         ADD      R11,R0,R11
-        LDR      R2,[SP, #+24]
-        ADDS     R0,R6,R5
+        ADDS     R0,R5,R4
         LDRB     R1,[R0, #+399]
+        LDR      R2,[SP, #+24]
         MOVS     R0,#+2
           CFI FunCall GetBitLength
         BL       GetBitLength
         ADD      R0,R0,R10
         CMP      R0,R11
-        BGE.N    ??EncodeSourceData_15
-        MOV      R11,R7
-        B.N      ??EncodeSourceData_15
-??EncodeSourceData_14:
-        MOV      R11,R7
-??EncodeSourceData_15:
-        LDR      R0,[R5, #+800]
+        BGE.N    ??EncodeSourceData_17
+??EncodeSourceData_16:
+        MOV      R11,#+0
+??EncodeSourceData_17:
+        LDR      R0,[R4, #+800]
         SUBS     R0,R0,#+2
-        STR      R0,[SP, #+20]
-        CMP      R6,R0
-        BGE.N    ??EncodeSourceData_16
-        ADDS     R0,R6,R5
+        STR      R0,[SP, #+8]
+        CMP      R5,R0
+        BGE.N    ??EncodeSourceData_18
+        ADDS     R0,R5,R4
         ADDS     R0,R0,#+1
         LDRB     R0,[R0, #+1]
         CMP      R0,#+2
-        BNE.N    ??EncodeSourceData_16
+        BNE.N    ??EncodeSourceData_18
         LDR      R2,[SP, #+24]
-        LDR      R1,[SP, #+16]
+        LDRB     R1,[R7, #+1]
         LDRB     R0,[SP, #+0]
           CFI FunCall GetBitLength
         BL       GetBitLength
-        LDR      R1,[SP, #+8]
-        LDRB     R1,[R1, #+3]
-        STR      R1,[SP, #+16]
-        STR      R0,[SP, #+0]
         LDR      R2,[SP, #+24]
-        LDR      R0,[SP, #+16]
-        ADD      R1,R0,R9
+        STR      R0,[SP, #+0]
+        LDRB     R0,[R7, #+3]
+        ADD      R1,R0,R8
         MOVS     R0,#+2
           CFI FunCall GetBitLength
         BL       GetBitLength
         LDR      R1,[SP, #+0]
-        ADD      R9,R0,R1
         LDR      R2,[SP, #+24]
-        LDR      R1,[SP, #+16]
+        ADD      R9,R0,R1
+        LDRB     R1,[R7, #+3]
         MOVS     R0,#+2
           CFI FunCall GetBitLength
         BL       GetBitLength
         ADD      R0,R0,R10
         CMP      R0,R9
-        BGE.N    ??EncodeSourceData_17
-        MOV      R9,R7
-        B.N      ??EncodeSourceData_17
-??EncodeSourceData_16:
-        MOV      R9,R7
-??EncodeSourceData_17:
-        CMP      R11,#+0
-        BEQ.N    ??EncodeSourceData_18
-        CMP      R9,#+0
-        BEQ.N    ??EncodeSourceData_18
-        CMP      R11,R9
         BGE.N    ??EncodeSourceData_19
-        MOV      R8,#-1
-        B.N      ??EncodeSourceData_20
-??EncodeSourceData_19:
-        MOV      R8,#+1
-        B.N      ??EncodeSourceData_20
 ??EncodeSourceData_18:
         CMP      R11,#+0
-        BEQ.N    ??EncodeSourceData_21
-        MOV      R8,#-1
-        B.N      ??EncodeSourceData_20
-??EncodeSourceData_21:
-        CMP      R9,#+0
-        BEQ.N    ??EncodeSourceData_20
-        MOV      R8,#+1
-??EncodeSourceData_20:
-        CMP      R8,#+0
-        BEQ.N    ??EncodeSourceData_22
-        CMN      R8,#+1
-        BNE.N    ??EncodeSourceData_23
-        ADDS     R0,R6,R5
-        LDRB     R0,[R0, #+399]
-        LDRB     R1,[SP, #+5]
-        ADDS     R0,R1,R0
-        ADDS     R1,R6,R5
-        STRB     R0,[R1, #+399]
-        MOV      R8,R6
-??EncodeSourceData_24:
-        LDR      R0,[SP, #+12]
-        CMP      R8,R0
-        BGE.W    ??EncodeSourceData_25
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[R8, R5]
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+401]
-        ADD      R1,R8,R5
-        STRB     R0,[R1, #+400]
-        ADD      R8,R8,#+1
-        B.N      ??EncodeSourceData_24
-??EncodeSourceData_23:
-        MOVS     R0,#+2
-        ADDS     R1,R6,R5
-        STRB     R0,[R1, #+1]
-        LDRB     R0,[SP, #+4]
-        LDR      R1,[SP, #+8]
-        LDRB     R1,[R1, #+3]
-        ADDS     R0,R1,R0
-        LDR      R1,[SP, #+8]
-        STRB     R0,[R1, #+2]
-        ADD      R8,R6,#+2
-??EncodeSourceData_26:
-        LDR      R0,[SP, #+12]
-        CMP      R8,R0
-        BGE.N    ??EncodeSourceData_25
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[R8, R5]
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+401]
-        ADD      R1,R8,R5
-        STRB     R0,[R1, #+400]
-        ADD      R8,R8,#+1
-        B.N      ??EncodeSourceData_26
-??EncodeSourceData_22:
-        LDR      R0,[SP, #+20]
-        CMP      R6,R0
-        BGE.N    ??EncodeSourceData_27
-        ADDS     R0,R6,R5
+        BNE.N    ??EncodeSourceData_20
+        LDR      R0,[SP, #+8]
+        CMP      R5,R0
+        BGE.N    ??EncodeSourceData_21
+        ADDS     R0,R5,R4
         ADDS     R0,R0,#+1
         LDRB     R0,[R0, #+1]
         CMP      R0,#+1
-        BNE.N    ??EncodeSourceData_27
-        LDRB     R0,[SP, #+4]
-        LDR      R1,[SP, #+8]
-        LDRB     R1,[R1, #+3]
-        ADDS     R0,R1,R0
-        LDR      R1,[SP, #+8]
-        STRB     R0,[R1, #+2]
-        ADD      R8,R6,#+2
-        B.N      ??EncodeSourceData_28
-??EncodeSourceData_29:
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[R8, R5]
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+401]
-        ADD      R1,R8,R5
-        STRB     R0,[R1, #+400]
-        ADD      R8,R8,#+1
-??EncodeSourceData_28:
-        LDR      R0,[SP, #+12]
-        CMP      R8,R0
-        BLT.N    ??EncodeSourceData_29
-        STR      R0,[R5, #+800]
-??EncodeSourceData_27:
+        BNE.N    ??EncodeSourceData_21
+        LDRB     R0,[R7, #+3]
+        ADD      R0,R0,R8
+        STRB     R0,[R7, #+2]
+        ADDS     R0,R5,#+2
+        CMP      R0,R6
+        BGE.N    ??EncodeSourceData_22
+        ADDS     R1,R0,R4
+        ADDS     R0,R0,R4
+        SUBS     R2,R6,R5
+        ADD      R0,R0,#+400
+        SUBS     R2,R2,#+2
+??EncodeSourceData_23:
+        SUBS     R2,R2,#+1
+        LDRB     R3,[R1, #+1]
+        STRB     R3,[R1], #+1
+        LDRB     R3,[R0, #+1]
+        STRB     R3,[R0], #+1
+        BNE.N    ??EncodeSourceData_23
+??EncodeSourceData_22:
+        STR      R6,[R4, #+800]
+??EncodeSourceData_21:
         MOVS     R0,#+1
-        STRB     R0,[R6, R5]
-        LDR      R0,[SP, #+8]
-        LDRB     R0,[R0, #+1]
-        LDR      R1,[SP, #+8]
-        LDRB     R1,[R1, #+2]
+        STRB     R0,[R5, R4]
+        LDRB     R1,[R7, #+2]
+        LDRB     R0,[R7, #+1]
         ADDS     R0,R1,R0
-        LDR      R1,[SP, #+8]
-        STRB     R0,[R1, #+1]
-        ADD      R8,R6,#+1
-        B.N      ??EncodeSourceData_30
-??EncodeSourceData_31:
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[R8, R5]
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+401]
-        ADD      R1,R8,R5
-        STRB     R0,[R1, #+400]
-        ADD      R8,R8,#+1
-??EncodeSourceData_30:
-        LDR      R0,[R5, #+800]
-        SUBS     R0,R0,#+1
-        CMP      R8,R0
-        BLT.N    ??EncodeSourceData_31
-        STR      R0,[R5, #+800]
-        CMP      R6,#+1
-        BLT.W    ??EncodeSourceData_9
-        ADDS     R1,R6,R5
-        LDRB     R1,[R1, #-1]
-        CMP      R1,#+1
-        BNE.W    ??EncodeSourceData_9
-        ADDS     R1,R6,R5
-        LDRB     R1,[R1, #+399]
-        LDR      R2,[SP, #+8]
-        LDRB     R2,[R2, #+1]
-        ADDS     R1,R2,R1
-        ADDS     R2,R6,R5
-        STRB     R1,[R2, #+399]
-        MOV      R8,R6
-        B.N      ??EncodeSourceData_32
-??EncodeSourceData_33:
-        ADD      R1,R8,R5
-        LDRB     R1,[R1, #+1]
-        STRB     R1,[R8, R5]
-        ADD      R1,R8,R5
-        LDRB     R1,[R1, #+401]
-        ADD      R2,R8,R5
-        STRB     R1,[R2, #+400]
-        ADD      R8,R8,#+1
-??EncodeSourceData_32:
-        SUBS     R1,R0,#+1
-        CMP      R8,R1
-        BLT.N    ??EncodeSourceData_33
+        STRB     R0,[R7, #+1]
+        ADDS     R0,R5,#+1
+        LDR      R2,[R4, #+800]
+        SUBS     R1,R2,#+1
+        CMP      R0,R1
+        BGE.N    ??EncodeSourceData_24
+        ADDS     R3,R0,R4
+        ADDS     R0,R0,R4
+        SUBS     R2,R2,R5
+        ADD      R0,R0,#+400
+        SUBS     R2,R2,#+2
 ??EncodeSourceData_25:
-        LDR      R0,[R5, #+800]
+        SUBS     R2,R2,#+1
+        LDRB     R6,[R3, #+1]
+        STRB     R6,[R3], #+1
+        LDRB     R6,[R0, #+1]
+        STRB     R6,[R0], #+1
+        BNE.N    ??EncodeSourceData_25
+??EncodeSourceData_24:
+        STR      R1,[R4, #+800]
+        CMP      R5,#+1
+        BLT.W    ??EncodeSourceData_12
+        ADDS     R0,R5,R4
+        LDRB     R0,[R0, #-1]
+        CMP      R0,#+1
+        BNE.W    ??EncodeSourceData_12
+        ADDS     R0,R5,R4
+        LDRB     R2,[R7, #+1]
+        LDRB     R0,[R0, #+399]
+        ADDS     R0,R2,R0
+        ADDS     R2,R5,R4
+        STRB     R0,[R2, #+399]
+        SUBS     R0,R1,#+1
+        CMP      R5,R0
+        BGE.N    ??EncodeSourceData_26
+        ADDS     R1,R5,R4
+        ADD      R2,R2,#+400
+        SUBS     R0,R0,R5
+??EncodeSourceData_27:
         SUBS     R0,R0,#+1
-        STR      R0,[R5, #+800]
-        B.N      ??EncodeSourceData_9
+        LDRB     R3,[R1, #+1]
+        STRB     R3,[R1], #+1
+        LDRB     R3,[R2, #+1]
+        STRB     R3,[R2], #+1
+        BNE.N    ??EncodeSourceData_27
+??EncodeSourceData_26:
+        LDR      R0,[R4, #+800]
+        SUBS     R0,R0,#+1
+        B.N      ??EncodeSourceData_11
+??EncodeSourceData_19:
+        CMP      R11,#+0
+        BEQ.N    ??EncodeSourceData_28
+        CMP      R9,#+0
+        BEQ.N    ??EncodeSourceData_20
+        CMP      R11,R9
+        BGE.N    ??EncodeSourceData_29
+??EncodeSourceData_20:
+        ADDS     R0,R5,R4
+        LDRB     R1,[R7, #+1]
+        LDRB     R0,[R0, #+399]
+        ADDS     R0,R1,R0
+        ADDS     R1,R5,R4
+        SUBS     R2,R6,R5
+        STRB     R0,[R1, #+399]
+        ADD      R1,R1,#+400
+        ADDS     R0,R5,R4
+??EncodeSourceData_30:
+        SUBS     R2,R2,#+1
+        LDRB     R3,[R0, #+1]
+        STRB     R3,[R0], #+1
+        LDRB     R3,[R1, #+1]
+        STRB     R3,[R1], #+1
+        BNE.N    ??EncodeSourceData_30
+        B.N      ??EncodeSourceData_26
+??EncodeSourceData_28:
+        CMP      R9,#+0
+        BEQ.N    ??EncodeSourceData_21
+??EncodeSourceData_29:
+        ADDS     R1,R5,R4
+        MOVS     R0,#+2
+        STRB     R0,[R1, #+1]
+        LDRB     R0,[R7, #+3]
+        ADD      R0,R0,R8
+        STRB     R0,[R7, #+2]
+        ADDS     R0,R5,#+2
+        CMP      R0,R6
+        BGE.N    ??EncodeSourceData_26
+        ADDS     R1,R0,R4
+        ADDS     R0,R0,R4
+        SUBS     R2,R6,R5
+        ADD      R0,R0,#+400
+        SUBS     R2,R2,#+2
+??EncodeSourceData_31:
+        LDRB     R3,[R1, #+1]
+        STRB     R3,[R1], #+1
+        SUBS     R2,R2,#+1
+        LDRB     R3,[R0, #+1]
+        STRB     R3,[R0], #+1
+        BNE.N    ??EncodeSourceData_31
+        B.N      ??EncodeSourceData_26
 //  962 	}
 //  963 
 //  964 	nBlock = 0;
-??EncodeSourceData_11:
-        MOV      R6,R7
-        B.N      ??EncodeSourceData_34
+??EncodeSourceData_14:
+        MOVS     R6,#+0
+        B.N      ??EncodeSourceData_32
 //  965 
 //  966 	while (nBlock < m_ncDataBlock - 1)
 //  967 	{//合并2个部分数据
@@ -2267,177 +2279,176 @@ EncodeSourceData:
 // 1023 		}
 // 1024 
 // 1025 		++nBlock; 
-??EncodeSourceData_35:
+??EncodeSourceData_33:
         ADDS     R6,R6,#+1
-??EncodeSourceData_34:
-        LDR      R8,[R5, #+800]
-        SUB      R9,R8,#+1
-        CMP      R6,R9
-        BGE.W    ??EncodeSourceData_36
-        ADDS     R0,R6,R5
-        ADDW     R0,R0,#+399
-        STR      R0,[SP, #+0]
-        LDRB     R10,[R0, #+1]
+??EncodeSourceData_32:
+        LDR      R7,[R4, #+800]
+        SUB      R8,R7,#+1
+        CMP      R6,R8
+        BGE.W    ??EncodeSourceData_34
+        ADDS     R0,R6,R4
+        ADDW     R10,R0,#+399
+        LDRB     R5,[R10, #+1]
         LDR      R2,[SP, #+24]
-        MOV      R1,R10
-        LDRB     R0,[R6, R5]
+        LDRB     R0,[R6, R4]
+        MOV      R1,R5
           CFI FunCall GetBitLength
         BL       GetBitLength
-        MOV      R11,R0
+        MOV      R9,R0
+        ADDS     R0,R6,R4
+        LDRB     R10,[R10, #+2]
         LDR      R2,[SP, #+24]
-        LDR      R0,[SP, #+0]
-        LDRB     R1,[R0, #+2]
-        ADDS     R0,R6,R5
         LDRB     R0,[R0, #+1]
+        MOV      R1,R10
           CFI FunCall GetBitLength
         BL       GetBitLength
-        ADD      R11,R0,R11
+        ADD      R9,R0,R9
         LDR      R2,[SP, #+24]
-        LDR      R0,[SP, #+0]
-        LDRB     R0,[R0, #+2]
-        ADD      R1,R0,R10
+        ADD      R1,R10,R5
         MOVS     R0,#+2
           CFI FunCall GetBitLength
         BL       GetBitLength
         MOV      R10,R0
         CMP      R6,#+1
+        BLT.N    ??EncodeSourceData_35
+        ADDS     R0,R6,R4
+        LDRB     R0,[R0, #-1]
+        CMP      R0,#+2
+        BNE.N    ??EncodeSourceData_35
+        LDR      R0,[SP, #+24]
+        ADR.W    R1,nIndicatorLen8Bit
+        LDRB     R0,[R0, R1]
+        SUB      R0,R10,R0
+        SUB      R10,R0,#+4
+??EncodeSourceData_35:
+        SUBS     R0,R7,#+2
+        CMP      R6,R0
+        BGE.N    ??EncodeSourceData_36
+        ADDS     R0,R6,R4
+        LDRB     R0,[R0, #+2]
+        CMP      R0,#+2
+        BNE.N    ??EncodeSourceData_36
+        LDR      R0,[SP, #+24]
+        ADR.W    R1,nIndicatorLen8Bit
+        LDRB     R0,[R0, R1]
+        SUB      R0,R10,R0
+        SUB      R10,R0,#+4
+??EncodeSourceData_36:
+        CMP      R10,R9
+        BGE.N    ??EncodeSourceData_33
+        CMP      R6,#+1
         BLT.N    ??EncodeSourceData_37
-        ADDS     R0,R6,R5
+        ADDS     R0,R6,R4
         LDRB     R0,[R0, #-1]
         CMP      R0,#+2
         BNE.N    ??EncodeSourceData_37
-        LDR      R0,[SP, #+24]
-        ADR.W    R1,nIndicatorLen8Bit
-        LDRB     R0,[R0, R1]
-        SUB      R0,R10,R0
-        SUB      R10,R0,#+4
+        ADDS     R0,R6,R4
+        ADDS     R1,R6,R4
+        LDRB     R0,[R0, #+399]
+        ADDS     R0,R5,R0
+        STRB     R0,[R1, #+399]
+        ADD      R1,R1,#+400
+        ADDS     R0,R6,R4
+        SUB      R2,R8,R6
+??EncodeSourceData_38:
+        SUBS     R2,R2,#+1
+        LDRB     R3,[R0, #+1]
+        STRB     R3,[R0], #+1
+        LDRB     R3,[R1, #+1]
+        STRB     R3,[R1], #+1
+        BNE.N    ??EncodeSourceData_38
+        STR      R8,[R4, #+800]
+        SUBS     R6,R6,#+1
 ??EncodeSourceData_37:
-        SUB      R0,R8,#+2
+        LDR      R1,[R4, #+800]
+        SUBS     R0,R1,#+2
         CMP      R6,R0
-        BGE.N    ??EncodeSourceData_38
-        ADDS     R0,R6,R5
+        BGE.N    ??EncodeSourceData_39
+        ADDS     R0,R6,R4
         LDRB     R0,[R0, #+2]
         CMP      R0,#+2
-        BNE.N    ??EncodeSourceData_38
-        LDR      R0,[SP, #+24]
-        ADR.W    R1,nIndicatorLen8Bit
-        LDRB     R0,[R0, R1]
-        SUB      R0,R10,R0
-        SUB      R10,R0,#+4
-??EncodeSourceData_38:
-        CMP      R10,R11
-        BGE.N    ??EncodeSourceData_35
-        CMP      R6,#+1
-        BLT.N    ??EncodeSourceData_39
-        ADDS     R0,R6,R5
-        LDRB     R0,[R0, #-1]
-        CMP      R0,#+2
         BNE.N    ??EncodeSourceData_39
-        ADDS     R0,R6,R5
-        LDRB     R0,[R0, #+399]
-        LDR      R1,[SP, #+0]
-        LDRB     R1,[R1, #+1]
-        ADDS     R0,R1,R0
-        ADDS     R1,R6,R5
-        STRB     R0,[R1, #+399]
-        MOV      R8,R6
-        B.N      ??EncodeSourceData_40
-??EncodeSourceData_41:
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[R8, R5]
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+401]
-        ADD      R1,R8,R5
-        STRB     R0,[R1, #+400]
-        ADD      R8,R8,#+1
-??EncodeSourceData_40:
-        CMP      R8,R9
-        BLT.N    ??EncodeSourceData_41
-        STR      R9,[R5, #+800]
-        SUBS     R6,R6,#+1
-??EncodeSourceData_39:
-        LDR      R0,[R5, #+800]
-        SUBS     R1,R0,#+2
-        CMP      R6,R1
-        BGE.N    ??EncodeSourceData_42
-        ADDS     R1,R6,R5
-        LDRB     R1,[R1, #+2]
-        CMP      R1,#+2
-        BNE.N    ??EncodeSourceData_42
-        ADDS     R1,R6,R5
-        ADD      R1,R1,#+400
-        LDRB     R2,[R1, #+1]
-        LDRB     R3,[R1, #+2]
+        ADDS     R0,R6,R4
+        ADD      R0,R0,#+400
+        LDRB     R2,[R0, #+1]
+        LDRB     R3,[R0, #+2]
         ADDS     R2,R3,R2
-        STRB     R2,[R1, #+1]
-        ADD      R8,R6,#+2
-        B.N      ??EncodeSourceData_43
-??EncodeSourceData_44:
-        ADD      R1,R8,R5
-        LDRB     R1,[R1, #+1]
-        STRB     R1,[R8, R5]
-        ADD      R1,R8,R5
-        LDRB     R1,[R1, #+401]
-        ADD      R2,R8,R5
-        STRB     R1,[R2, #+400]
-        ADD      R8,R8,#+1
-??EncodeSourceData_43:
-        SUBS     R1,R0,#+1
-        CMP      R8,R1
-        BLT.N    ??EncodeSourceData_44
-        STR      R1,[R5, #+800]
-??EncodeSourceData_42:
+        STRB     R2,[R0, #+1]
+        ADDS     R0,R6,#+2
+        SUBS     R1,R1,#+1
+        CMP      R0,R1
+        BGE.N    ??EncodeSourceData_40
+        ADDS     R2,R0,R4
+        ADDS     R0,R0,R4
+        SUBS     R3,R1,R6
+        ADD      R0,R0,#+400
+        SUBS     R3,R3,#+2
+??EncodeSourceData_41:
+        SUBS     R3,R3,#+1
+        LDRB     R5,[R2, #+1]
+        STRB     R5,[R2], #+1
+        LDRB     R5,[R0, #+1]
+        STRB     R5,[R0], #+1
+        BNE.N    ??EncodeSourceData_41
+??EncodeSourceData_40:
+        STR      R1,[R4, #+800]
+??EncodeSourceData_39:
         MOVS     R0,#+2
-        STRB     R0,[R6, R5]
-        ADDS     R0,R6,R5
-        LDRB     R0,[R0, #+400]
-        ADDS     R1,R6,R5
+        STRB     R0,[R6, R4]
+        ADDS     R1,R6,R4
+        ADDS     R0,R6,R4
         ADD      R1,R1,#+400
+        LDRB     R0,[R0, #+400]
         LDRB     R1,[R1, #+1]
         ADDS     R0,R1,R0
-        ADDS     R1,R6,R5
+        ADDS     R1,R6,R4
         STRB     R0,[R1, #+400]
-        ADD      R8,R6,#+1
-        B.N      ??EncodeSourceData_45
-??EncodeSourceData_46:
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+1]
-        STRB     R0,[R8, R5]
-        ADD      R0,R8,R5
-        LDRB     R0,[R0, #+401]
-        ADD      R1,R8,R5
-        STRB     R0,[R1, #+400]
-        ADD      R8,R8,#+1
-??EncodeSourceData_45:
-        LDR      R0,[R5, #+800]
-        SUBS     R0,R0,#+1
-        CMP      R8,R0
-        BLT.N    ??EncodeSourceData_46
-        STR      R0,[R5, #+800]
+        ADDS     R0,R6,#+1
+        LDR      R1,[R4, #+800]
+        SUBS     R2,R1,#+1
+        CMP      R0,R2
+        BGE.N    ??EncodeSourceData_42
+        ADDS     R3,R0,R4
+        ADDS     R0,R0,R4
+        SUBS     R1,R1,R6
+        ADD      R0,R0,#+400
+        SUBS     R1,R1,#+2
+??EncodeSourceData_43:
+        LDRB     R5,[R3, #+1]
+        STRB     R5,[R3], #+1
+        SUBS     R1,R1,#+1
+        LDRB     R5,[R0, #+1]
+        STRB     R5,[R0], #+1
+        BNE.N    ??EncodeSourceData_43
+??EncodeSourceData_42:
+        STR      R2,[R4, #+800]
         CMP      R6,#+1
-        BLT.W    ??EncodeSourceData_34
+        BLT.W    ??EncodeSourceData_32
         SUBS     R6,R6,#+1
-        B.N      ??EncodeSourceData_34
+        B.N      ??EncodeSourceData_32
 // 1026 	}
 // 1027 
 // 1028 	m_ncDataCodeWordBit = 0; 
-??EncodeSourceData_36:
-        LDR.W    R6,??DataTable45
-        MOV      R0,R7
-        STR      R0,[R6, #+4]
+??EncodeSourceData_34:
+        LDR.W    R5,??DataTable40
 // 1029 
 // 1030 	memset(m_byDataCodeWord, 0, MAX_DATACODEWORD);
-        MOV      R2,#+400
-        MOV      R1,R0
-        LDR.W    R0,??DataTable45_2
-          CFI FunCall memset
-        BL       memset
+        LDR.W    R6,??DataTable41
+        MOVS     R0,#+0
+        STR      R0,[R5, #+12]
+        MOV      R1,#+400
+        MOV      R0,R6
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 // 1031 
 // 1032 	for (i = 0; i < m_ncDataBlock && m_ncDataCodeWordBit != -1; ++i)
-        MOV      R0,R7
-        STR      R0,[SP, #+8]
-        B.N      ??EncodeSourceData_47
+        MOVS     R0,#+0
+        STR      R0,[SP, #+12]
+        STR      R4,[SP, #+8]
+        MOVS     R7,#+1
+        LDR      R0,[SP, #+16]
+        STR      R0,[SP, #+0]
+        B.N      ??EncodeSourceData_44
 // 1033 	{
 // 1034 		if (m_byBlockMode[i] == QR_MODE_NUMERAL)
 // 1035 		{//如果数据块是数字模式
@@ -2521,225 +2532,560 @@ EncodeSourceData:
 // 1113 			for (j = 0; j < m_nBlockLength[i] / 2; ++j)
 // 1114 			{
 // 1115 				WORD wBinCode = KanjiToBinaly((WORD)(((BYTE)lpsSource[ncComplete + (j * 2)] << 8) + (BYTE)lpsSource[ncComplete + (j * 2) + 1]));
-??EncodeSourceData_48:
-        ADD      R0,R7,R9, LSL #+1
-        LDRSB    R1,[R0, R4]
-        UXTB     R1,R1
-        ADDS     R0,R0,R4
-        LDRSB    R0,[R0, #+1]
-        UXTB     R0,R0
-        ADD      R0,R0,R1, LSL #+8
-        UXTH     R0,R0
-          CFI FunCall KanjiToBinaly
-        BL       KanjiToBinaly
 // 1116 
 // 1117 				m_ncDataCodeWordBit = SetBitStream(m_ncDataCodeWordBit, wBinCode, 13);
-        MOVS     R2,#+13
-        MOV      R1,R0
-        LDR      R0,[R6, #+4]
-          CFI FunCall SetBitStream
-        BL       SetBitStream
-        STR      R0,[R6, #+4]
 // 1118 			}
-        ADD      R9,R9,#+1
-??EncodeSourceData_49:
-        CMP      R9,R10
-        BLT.N    ??EncodeSourceData_48
 // 1119 
 // 1120 			ncComplete += m_nBlockLength[i];
-??EncodeSourceData_50:
-        ADD      R7,R8,R7
+??EncodeSourceData_45:
+        LDR      R1,[SP, #+0]
+        LDR      R0,[SP, #+4]
+        ADDS     R1,R1,#+1
+        STR      R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        LDRB     R1,[R1, #+0]
+        ADDS     R0,R1,R0
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+12]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+12]
         LDR      R0,[SP, #+8]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+8]
-??EncodeSourceData_47:
-        LDR      R0,[R6, #+4]
-        LDR      R1,[SP, #+8]
-        LDR      R2,[R5, #+800]
+??EncodeSourceData_44:
+        LDR      R1,[SP, #+12]
+        LDR      R2,[R4, #+800]
+        LDR      R0,[R5, #+12]
         CMP      R1,R2
-        BGE.W    ??EncodeSourceData_51
+        BGE.W    ??EncodeSourceData_46
         CMN      R0,#+1
-        BEQ.W    ??EncodeSourceData_51
-        ADDS     R1,R1,R5
-        LDRB     R8,[R1, #+400]
+        BEQ.W    ??EncodeSourceData_47
         LDR      R1,[SP, #+8]
-        LDRB     R1,[R1, R5]
+        LDRB     R1,[R1, #+0]
         CMP      R1,#+0
-        BNE.N    ??EncodeSourceData_52
+        BNE.W    ??EncodeSourceData_48
         MOVS     R2,#+4
         MOVS     R1,#+1
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
         LDR      R1,[SP, #+24]
         ADR.W    R2,nIndicatorLenNumeral
         LDRB     R2,[R1, R2]
-        MOV      R1,R8
+        LDR      R1,[SP, #+0]
+        LDRB     R1,[R1, #+0]
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
-        MOV      R9,#+0
-        B.N      ??EncodeSourceData_53
-??EncodeSourceData_54:
-        SUBS     R0,R1,#+1
-        CMP      R9,R0
-        BNE.N    ??EncodeSourceData_55
-        MOVS     R2,#+4
-        ADD      R0,R9,R7
-        LDRSB    R0,[R0, R4]
-        SUB      R1,R0,#+48
-        UXTH     R1,R1
-        LDR      R0,[R6, #+4]
-          CFI FunCall SetBitStream
-        BL       SetBitStream
-        STR      R0,[R6, #+4]
-??EncodeSourceData_55:
-        ADD      R9,R9,#+3
-??EncodeSourceData_53:
-        MOV      R1,R8
-        CMP      R9,R1
-        BGE.N    ??EncodeSourceData_50
-        SUBS     R0,R1,#+2
-        CMP      R9,R0
-        BGE.N    ??EncodeSourceData_56
-        ADD      R1,R9,R7
-        ADDS     R0,R1,R4
-        MOVS     R2,#+10
-        LDRSB    R1,[R1, R4]
-        MOVS     R3,#+100
-        LDRSB    R12,[R0, #+1]
-        ADD      LR,R12,R12, LSL #+2
-        LSL      R12,LR,#+1
-        MLA      R1,R3,R1,R12
-        LDRSB    R0,[R0, #+2]
-        ADDS     R0,R0,R1
-        MOVW     R1,#+5328
-        SUBS     R1,R0,R1
-        UXTH     R1,R1
-        LDR      R0,[R6, #+4]
-          CFI FunCall SetBitStream
-        BL       SetBitStream
-        STR      R0,[R6, #+4]
-        B.N      ??EncodeSourceData_55
-??EncodeSourceData_56:
-        BNE.N    ??EncodeSourceData_54
-        ADD      R1,R9,R7
-        MOVS     R2,#+7
-        LDRSB    R0,[R1, R4]
-        ADD      R3,R0,R0, LSL #+2
-        ADDS     R0,R1,R4
-        LDRSB    R0,[R0, #+1]
-        ADD      R0,R0,R3, LSL #+1
-        SUB      R1,R0,#+528
-        UXTH     R1,R1
-        LDR      R0,[R6, #+4]
-          CFI FunCall SetBitStream
-        BL       SetBitStream
-        STR      R0,[R6, #+4]
-        B.N      ??EncodeSourceData_55
+        LDR      R2,[SP, #+20]
+        STR      R0,[R5, #+12]
+        MOVS     R1,#+0
+        LDR      R0,[SP, #+4]
+        ADDS     R2,R0,R2
+        B.N      ??EncodeSourceData_49
+??EncodeSourceData_50:
+        MOV      R9,#-1
+??EncodeSourceData_51:
+        STR      R9,[R5, #+12]
 ??EncodeSourceData_52:
+        ADDS     R1,R1,#+3
+        ADDS     R2,R2,#+3
+??EncodeSourceData_49:
+        LDR      R0,[SP, #+0]
+        LDRB     R0,[R0, #+0]
+        CMP      R1,R0
+        BGE.N    ??EncodeSourceData_45
+        SUBS     R3,R0,#+2
+        CMP      R1,R3
+        BGE.N    ??EncodeSourceData_53
+        LDRSB    R12,[R2, #+1]
+        LDRSB    R0,[R2, #+0]
+        ADD      LR,R12,R12, LSL #+2
+        MOVS     R3,#+100
+        LSL      R12,LR,#+1
+        MLA      R0,R3,R0,R12
+        LDRSB    R3,[R2, #+2]
+        LDR      R12,[R5, #+12]
+        ADDS     R0,R3,R0
+        MOVW     R3,#+5328
+        SUBS     R3,R0,R3
+        CMN      R12,#+1
+        BEQ.N    ??EncodeSourceData_54
+        ADD      LR,R12,#+10
+        CMP      LR,#+3200
+        BGT.N    ??EncodeSourceData_54
+        MOV      R8,#+0
+        MOV      R9,R12
+??EncodeSourceData_55:
+        RSB      R0,R8,#+9
+        LSL      R10,R7,R0
+        UXTH     R0,R3
+        TST      R0,R10
+        BEQ.N    ??EncodeSourceData_56
+        ASR      R0,R9,#+2
+        ADD      R0,R9,R0, LSR #+29
+        ASRS     R0,R0,#+3
+        ADD      R11,R8,R12
+        SUB      R11,R11,R0, LSL #+3
+        LDRB     R10,[R0, R6]
+        RSB      R11,R11,#+7
+        LSL      R11,R7,R11
+        ORR      R10,R11,R10
+        STRB     R10,[R0, R6]
+??EncodeSourceData_56:
+        ADD      R8,R8,#+1
+        ADD      R9,R9,#+1
+        CMP      R8,#+10
+        BLT.N    ??EncodeSourceData_55
+        B.N      ??EncodeSourceData_57
+??EncodeSourceData_54:
+        MOV      LR,#-1
+??EncodeSourceData_57:
+        STR      LR,[R5, #+12]
+        B.N      ??EncodeSourceData_52
+??EncodeSourceData_53:
+        BNE.N    ??EncodeSourceData_58
+        LDRSB    R0,[R2, #+0]
+        LDR      R12,[R5, #+12]
+        ADD      R3,R0,R0, LSL #+2
+        LDRSB    R0,[R2, R7]
+        ADD      R0,R0,R3, LSL #+1
+        SUB      R3,R0,#+528
+        CMN      R12,#+1
+        BEQ.N    ??EncodeSourceData_59
+        ADD      LR,R12,#+7
+        CMP      LR,#+3200
+        BGT.N    ??EncodeSourceData_59
+        MOV      R8,#+0
+        MOV      R9,R12
+??EncodeSourceData_60:
+        RSB      R0,R8,#+6
+        LSL      R10,R7,R0
+        UXTH     R0,R3
+        TST      R0,R10
+        BEQ.N    ??EncodeSourceData_61
+        ASR      R0,R9,#+2
+        ADD      R0,R9,R0, LSR #+29
+        ASRS     R0,R0,#+3
+        ADD      R11,R8,R12
+        SUB      R11,R11,R0, LSL #+3
+        LDRB     R10,[R0, R6]
+        RSB      R11,R11,#+7
+        LSL      R11,R7,R11
+        ORR      R10,R11,R10
+        STRB     R10,[R0, R6]
+??EncodeSourceData_61:
+        ADD      R8,R8,#+1
+        ADD      R9,R9,#+1
+        CMP      R8,#+7
+        BLT.N    ??EncodeSourceData_60
+        B.N      ??EncodeSourceData_57
+??EncodeSourceData_59:
+        MOV      LR,#-1
+        B.N      ??EncodeSourceData_57
+??EncodeSourceData_58:
+        SUBS     R0,R0,#+1
+        CMP      R1,R0
+        BNE.W    ??EncodeSourceData_52
+        LDRSB    R0,[R2, #+0]
+        LDR      R12,[R5, #+12]
+        SUB      R3,R0,#+48
+        CMN      R12,#+1
+        BEQ.W    ??EncodeSourceData_50
+        ADD      R9,R12,#+4
+        CMP      R9,#+3200
+        BGT.W    ??EncodeSourceData_50
+        MOV      LR,#+0
+        MOV      R8,R12
+??EncodeSourceData_62:
+        RSB      R0,LR,#+3
+        LSL      R10,R7,R0
+        UXTH     R0,R3
+        TST      R0,R10
+        BEQ.N    ??EncodeSourceData_63
+        ASR      R0,R8,#+2
+        ADD      R0,R8,R0, LSR #+29
+        ASRS     R0,R0,#+3
+        ADD      R11,LR,R12
+        SUB      R11,R11,R0, LSL #+3
+        LDRB     R10,[R0, R6]
+        RSB      R11,R11,#+7
+        LSL      R11,R7,R11
+        ORR      R10,R11,R10
+        STRB     R10,[R0, R6]
+??EncodeSourceData_63:
+        ADD      LR,LR,#+1
+        ADD      R8,R8,#+1
+        CMP      LR,#+4
+        BLT.N    ??EncodeSourceData_62
+        B.N      ??EncodeSourceData_51
+??EncodeSourceData_48:
         CMP      R1,#+1
-        BNE.N    ??EncodeSourceData_57
+        BNE.W    ??EncodeSourceData_64
         MOVS     R2,#+4
         MOVS     R1,#+2
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
         LDR      R1,[SP, #+24]
         ADR.W    R2,nIndicatorLenAlphabet
         LDRB     R2,[R1, R2]
-        MOV      R1,R8
+        LDR      R1,[SP, #+0]
+        LDRB     R1,[R1, #+0]
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
-        MOV      R9,#+0
-        B.N      ??EncodeSourceData_58
-??EncodeSourceData_59:
-          CFI FunCall AlphabetToBinaly
-        BL       AlphabetToBinaly
-        MOV      R1,R0
-        MOVS     R2,#+6
-        MOV      R0,R11
-          CFI FunCall SetBitStream
-        BL       SetBitStream
-        STR      R0,[R6, #+4]
-??EncodeSourceData_60:
-        ADD      R9,R9,#+2
-??EncodeSourceData_58:
-        MOV      R1,R8
-        CMP      R9,R1
-        BGE.W    ??EncodeSourceData_50
-        ADD      R10,R9,R7
-        LDRSB    R0,[R10, R4]
-        LDR      R11,[R6, #+4]
-        SUBS     R1,R1,#+1
-        CMP      R9,R1
+        LDR      R2,[SP, #+20]
+        STR      R0,[R5, #+12]
+        MOVS     R1,#+0
+        LDR      R0,[SP, #+4]
+        ADDS     R3,R0,R2
+        B.N      ??EncodeSourceData_65
+??EncodeSourceData_66:
+        MOV      R0,#-1
+??EncodeSourceData_67:
+        STR      R0,[R5, #+12]
+        ADDS     R1,R1,#+2
+        ADDS     R3,R3,#+2
+??EncodeSourceData_65:
+        LDR      R0,[SP, #+0]
+        LDRB     R0,[R0, #+0]
+        CMP      R1,R0
+        BGE.W    ??EncodeSourceData_45
+        LDRSB    R2,[R3, #+0]
+        SUBS     R0,R0,#+1
+        CMP      R1,R0
+        UXTB     R2,R2
+        SUB      R0,R2,#+48
+        BGE.W    ??EncodeSourceData_68
+        CMP      R0,#+10
+        BCC.N    ??EncodeSourceData_69
+        SUB      R0,R2,#+65
+        CMP      R0,#+26
+        IT       CC 
+        SUBCC    R0,R2,#+55
+        BCC.N    ??EncodeSourceData_69
+        CMP      R2,#+32
+        IT       EQ 
+        MOVEQ    R0,#+36
+        BEQ.N    ??EncodeSourceData_69
+        CMP      R2,#+36
+        IT       EQ 
+        MOVEQ    R0,#+37
+        BEQ.N    ??EncodeSourceData_69
+        CMP      R2,#+37
+        IT       EQ 
+        MOVEQ    R0,#+38
+        BEQ.N    ??EncodeSourceData_69
+        CMP      R2,#+42
+        IT       EQ 
+        MOVEQ    R0,#+39
+        BEQ.N    ??EncodeSourceData_69
+        CMP      R2,#+43
+        IT       EQ 
+        MOVEQ    R0,#+40
+        BEQ.N    ??EncodeSourceData_69
+        CMP      R2,#+45
+        IT       EQ 
+        MOVEQ    R0,#+41
+        BEQ.N    ??EncodeSourceData_69
+        CMP      R2,#+46
+        IT       EQ 
+        MOVEQ    R0,#+42
+        BEQ.N    ??EncodeSourceData_69
+        CMP      R2,#+47
+        ITE      EQ 
+        MOVEQ    R0,#+43
+        MOVNE    R0,#+44
+??EncodeSourceData_69:
+        LDRB     R2,[R3, #+1]
+        SUB      LR,R2,#+48
+        CMP      LR,#+10
+        IT       CC 
+        SUBCC    R2,R2,#+48
+        BCC.N    ??EncodeSourceData_70
+        SUB      R12,R2,#+65
+        CMP      R12,#+26
+        IT       CC 
+        SUBCC    R2,R2,#+55
+        BCC.N    ??EncodeSourceData_70
+        CMP      R2,#+32
+        IT       EQ 
+        MOVEQ    R2,#+36
+        BEQ.N    ??EncodeSourceData_70
+        CMP      R2,#+36
+        IT       EQ 
+        MOVEQ    R2,#+37
+        BEQ.N    ??EncodeSourceData_70
+        CMP      R2,#+37
+        IT       EQ 
+        MOVEQ    R2,#+38
+        BEQ.N    ??EncodeSourceData_70
+        CMP      R2,#+42
+        IT       EQ 
+        MOVEQ    R2,#+39
+        BEQ.N    ??EncodeSourceData_70
+        CMP      R2,#+43
+        IT       EQ 
+        MOVEQ    R2,#+40
+        BEQ.N    ??EncodeSourceData_70
+        CMP      R2,#+45
+        IT       EQ 
+        MOVEQ    R2,#+41
+        BEQ.N    ??EncodeSourceData_70
+        CMP      R2,#+46
+        IT       EQ 
+        MOVEQ    R2,#+42
+        BEQ.N    ??EncodeSourceData_70
+        CMP      R2,#+47
+        ITE      EQ 
+        MOVEQ    R2,#+43
+        MOVNE    R2,#+44
+??EncodeSourceData_70:
+        LDR      LR,[R5, #+12]
         UXTB     R0,R0
-        BGE.N    ??EncodeSourceData_59
-          CFI FunCall AlphabetToBinaly
-        BL       AlphabetToBinaly
-        MOVS     R1,#+45
-        STR      R0,[SP, #+0]
-        STR      R1,[SP, #+4]
-        ADD      R0,R10,R4
-        LDRB     R0,[R0, #+1]
-          CFI FunCall AlphabetToBinaly
-        BL       AlphabetToBinaly
-        LDR      R1,[SP, #+4]
-        LDR      R2,[SP, #+0]
-        MLA      R1,R1,R2,R0
-        MOVS     R2,#+11
-        UXTH     R1,R1
-        MOV      R0,R11
-          CFI FunCall SetBitStream
-        BL       SetBitStream
-        STR      R0,[R6, #+4]
-        B.N      ??EncodeSourceData_60
-??EncodeSourceData_57:
+        MOV      R12,#+45
+        UXTB     R2,R2
+        MLA      R12,R12,R0,R2
+        CMN      LR,#+1
+        BEQ.N    ??EncodeSourceData_66
+        ADD      R0,LR,#+11
+        CMP      R0,#+3200
+        BGT.N    ??EncodeSourceData_66
+        MOV      R8,#+0
+        MOV      R9,LR
+??EncodeSourceData_71:
+        RSB      R2,R8,#+10
+        LSL      R10,R7,R2
+        UXTH     R2,R12
+        TST      R2,R10
+        BEQ.N    ??EncodeSourceData_72
+        ASR      R2,R9,#+2
+        ADD      R2,R9,R2, LSR #+29
+        ASRS     R2,R2,#+3
+        ADD      R11,R8,LR
+        SUB      R11,R11,R2, LSL #+3
+        LDRB     R10,[R2, R6]
+        RSB      R11,R11,#+7
+        LSL      R11,R7,R11
+        ORR      R10,R11,R10
+        STRB     R10,[R2, R6]
+??EncodeSourceData_72:
+        ADD      R8,R8,#+1
+        ADD      R9,R9,#+1
+        CMP      R8,#+11
+        BLT.N    ??EncodeSourceData_71
+        B.N      ??EncodeSourceData_67
+??EncodeSourceData_68:
+        CMP      R0,#+10
+        IT       CC 
+        SUBCC    R9,R2,#+48
+        BCC.N    ??EncodeSourceData_73
+        SUB      R0,R2,#+65
+        CMP      R0,#+26
+        IT       CC 
+        SUBCC    R9,R2,#+55
+        BCC.N    ??EncodeSourceData_73
+        CMP      R2,#+32
+        IT       EQ 
+        MOVEQ    R9,#+36
+        BEQ.N    ??EncodeSourceData_73
+        CMP      R2,#+36
+        IT       EQ 
+        MOVEQ    R9,#+37
+        BEQ.N    ??EncodeSourceData_73
+        CMP      R2,#+37
+        IT       EQ 
+        MOVEQ    R9,#+38
+        BEQ.N    ??EncodeSourceData_73
+        CMP      R2,#+42
+        IT       EQ 
+        MOVEQ    R9,#+39
+        BEQ.N    ??EncodeSourceData_73
+        CMP      R2,#+43
+        IT       EQ 
+        MOVEQ    R9,#+40
+        BEQ.N    ??EncodeSourceData_73
+        CMP      R2,#+45
+        IT       EQ 
+        MOVEQ    R9,#+41
+        BEQ.N    ??EncodeSourceData_73
+        CMP      R2,#+46
+        IT       EQ 
+        MOVEQ    R9,#+42
+        BEQ.N    ??EncodeSourceData_73
+        CMP      R2,#+47
+        ITE      EQ 
+        MOVEQ    R9,#+43
+        MOVNE    R9,#+44
+??EncodeSourceData_73:
+        LDR      R12,[R5, #+12]
+        UXTB     R9,R9
+        CMN      R12,#+1
+        BEQ.W    ??EncodeSourceData_66
+        ADD      R0,R12,#+6
+        CMP      R0,#+3200
+        BGT.W    ??EncodeSourceData_66
+        MOV      LR,#+0
+        MOV      R8,R12
+??EncodeSourceData_74:
+        RSB      R2,LR,#+5
+        LSL      R2,R7,R2
+        TST      R9,R2
+        BEQ.N    ??EncodeSourceData_75
+        ASR      R2,R8,#+2
+        ADD      R2,R8,R2, LSR #+29
+        ASRS     R2,R2,#+3
+        ADD      R11,LR,R12
+        SUB      R11,R11,R2, LSL #+3
+        LDRB     R10,[R2, R6]
+        RSB      R11,R11,#+7
+        LSL      R11,R7,R11
+        ORR      R10,R11,R10
+        STRB     R10,[R2, R6]
+??EncodeSourceData_75:
+        ADD      LR,LR,#+1
+        ADD      R8,R8,#+1
+        CMP      LR,#+6
+        BLT.N    ??EncodeSourceData_74
+        B.N      ??EncodeSourceData_67
+??EncodeSourceData_64:
         CMP      R1,#+2
-        BNE.N    ??EncodeSourceData_61
+        BNE.N    ??EncodeSourceData_76
         MOVS     R2,#+4
-        MOV      R1,R2
+        MOVS     R1,#+4
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
         LDR      R1,[SP, #+24]
         ADR.W    R2,nIndicatorLen8Bit
         LDRB     R2,[R1, R2]
-        MOV      R1,R8
+        LDR      R1,[SP, #+0]
+        LDRB     R1,[R1, #+0]
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
-        MOV      R9,#+0
-??EncodeSourceData_62:
-        CMP      R9,R8
-        BGE.W    ??EncodeSourceData_50
-        MOVS     R2,#+8
-        ADD      R0,R9,R7
-        LDRSB    R1,[R0, R4]
-        UXTH     R1,R1
-        LDR      R0,[R6, #+4]
-          CFI FunCall SetBitStream
-        BL       SetBitStream
-        STR      R0,[R6, #+4]
-        ADD      R9,R9,#+1
-        B.N      ??EncodeSourceData_62
-??EncodeSourceData_61:
+        LDR      R2,[SP, #+20]
+        STR      R0,[R5, #+12]
+        MOVS     R1,#+0
+        LDR      R0,[SP, #+4]
+        ADDS     R2,R0,R2
+        B.N      ??EncodeSourceData_77
+??EncodeSourceData_78:
+        MOV      R9,#-1
+??EncodeSourceData_79:
+        STR      R9,[R5, #+12]
+        ADDS     R1,R1,#+1
+        ADDS     R2,R2,#+1
+??EncodeSourceData_77:
+        LDR      R0,[SP, #+0]
+        LDRB     R0,[R0, #+0]
+        CMP      R1,R0
+        BGE.W    ??EncodeSourceData_45
+        LDR      R12,[R5, #+12]
+        LDRSB    R3,[R2, #+0]
+        CMN      R12,#+1
+        BEQ.N    ??EncodeSourceData_78
+        ADD      R9,R12,#+8
+        CMP      R9,#+3200
+        BGT.N    ??EncodeSourceData_78
+        MOV      LR,#+0
+        MOV      R8,R12
+??EncodeSourceData_80:
+        RSB      R0,LR,#+7
+        LSL      R10,R7,R0
+        UXTH     R0,R3
+        TST      R0,R10
+        BEQ.N    ??EncodeSourceData_81
+        ASR      R0,R8,#+2
+        ADD      R0,R8,R0, LSR #+29
+        ASRS     R0,R0,#+3
+        ADD      R11,LR,R12
+        SUB      R11,R11,R0, LSL #+3
+        LDRB     R10,[R0, R6]
+        RSB      R11,R11,#+7
+        LSL      R11,R7,R11
+        ORR      R10,R11,R10
+        STRB     R10,[R0, R6]
+??EncodeSourceData_81:
+        ADD      LR,LR,#+1
+        ADD      R8,R8,#+1
+        CMP      LR,#+8
+        BLT.N    ??EncodeSourceData_80
+        B.N      ??EncodeSourceData_79
+??EncodeSourceData_76:
         MOVS     R2,#+4
         MOVS     R1,#+8
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
-        LSR      R10,R8,#+1
         LDR      R1,[SP, #+24]
         ADR.W    R2,nIndicatorLenKanji
         LDRB     R2,[R1, R2]
-        MOV      R1,R10
+        LDR      R1,[SP, #+0]
+        LDRB     R1,[R1, #+0]
+        LSRS     R1,R1,#+1
           CFI FunCall SetBitStream
         BL       SetBitStream
-        STR      R0,[R6, #+4]
-        MOV      R9,#+0
-        B.N      ??EncodeSourceData_49
+        STR      R0,[R5, #+12]
+        MOVS     R1,#+0
+        LDR      R0,[SP, #+4]
+        LDR      R2,[SP, #+20]
+        ADDS     R2,R0,R2
+        B.N      ??EncodeSourceData_82
+??EncodeSourceData_83:
+        MOV      R9,#-1
+??EncodeSourceData_84:
+        STR      R9,[R5, #+12]
+        ADDS     R1,R1,#+1
+        ADDS     R2,R2,#+2
+??EncodeSourceData_82:
+        LDR      R0,[SP, #+0]
+        LDRB     R0,[R0, #+0]
+        CMP      R1,R0, LSR #+1
+        BGE.W    ??EncodeSourceData_45
+        LDRSB    R0,[R2, #+0]
+        LDRSB    R3,[R2, R7]
+        UXTB     R0,R0
+        UXTB     R3,R3
+        ADD      R0,R3,R0, LSL #+8
+        UXTH     R0,R0
+        LDR.W    R3,??DataTable52  ;; 0xffff7ec0
+        ADDS     R3,R3,R0
+        MOVW     R12,#+7869
+        CMP      R3,R12
+        ITTE     CC 
+        ADDCC    R0,R0,#+32256
+        ADDCC    R0,R0,#+192
+        ADDCS    R0,R0,#+16064
+        UXTH     R0,R0
+        LSRS     R3,R0,#+8
+        ADD      R12,R3,R3, LSL #+1
+        UXTB     R0,R0
+        ADD      R3,R0,R12, LSL #+6
+        LDR      R12,[R5, #+12]
+        CMN      R12,#+1
+        BEQ.N    ??EncodeSourceData_83
+        ADD      R9,R12,#+13
+        CMP      R9,#+3200
+        BGT.N    ??EncodeSourceData_83
+        MOV      LR,#+0
+        MOV      R8,R12
+??EncodeSourceData_85:
+        RSB      R0,LR,#+12
+        LSL      R10,R7,R0
+        UXTH     R0,R3
+        TST      R0,R10
+        BEQ.N    ??EncodeSourceData_86
+        ASR      R0,R8,#+2
+        ADD      R0,R8,R0, LSR #+29
+        ASRS     R0,R0,#+3
+        ADD      R11,LR,R12
+        SUB      R11,R11,R0, LSL #+3
+        LDRB     R10,[R0, R6]
+        RSB      R11,R11,#+7
+        LSL      R11,R7,R11
+        ORR      R10,R11,R10
+        STRB     R10,[R0, R6]
+??EncodeSourceData_86:
+        ADD      LR,LR,#+1
+        ADD      R8,R8,#+1
+        CMP      LR,#+13
+        BLT.N    ??EncodeSourceData_85
+        B.N      ??EncodeSourceData_84
 // 1121 		}
 // 1122 //		else
 // 1123 //		{//中文模式
@@ -2759,24 +3105,34 @@ EncodeSourceData:
 // 1137 	}
 // 1138 
 // 1139 	return (m_ncDataCodeWordBit != -1);
-??EncodeSourceData_51:
+??EncodeSourceData_46:
         CMN      R0,#+1
-        BEQ.N    ??EncodeSourceData_63
-        MOVS     R0,#+1
-        B.N      ??EncodeSourceData_64
-??EncodeSourceData_63:
+        IT       NE 
+        MOVNE    R0,#+1
+        BNE.N    ??EncodeSourceData_87
+??EncodeSourceData_47:
         MOVS     R0,#+0
-??EncodeSourceData_64:
-        ADD      SP,SP,#+28
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
-          CFI EndBlock cfiBlock2
+??EncodeSourceData_87:
+        B.W      ?Subroutine0
+          CFI EndBlock cfiBlock3
 // 1140 	//return TRUE;
 // 1141 }
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable40:
+        DC32     ??byPattern
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable40_1:
+        DC32     QR_VersonInfo
 // 1142 //获取bit长度
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function GetBitLength
           CFI NoCalls
         THUMB
@@ -2786,8 +3142,7 @@ EncodeSourceData:
 // 1146 
 // 1147 	switch (nMode)
 GetBitLength:
-        CMP      R0,#+0
-        BEQ.N    ??GetBitLength_0
+        CBZ.N    R0,??GetBitLength_0
         CMP      R0,#+2
         BEQ.N    ??GetBitLength_1
         BCC.N    ??GetBitLength_2
@@ -2802,25 +3157,20 @@ GetBitLength:
         LDRB     R0,[R2, R0]
         ADD      R2,R3,R3, LSL #+2
         ADD      R0,R0,R2, LSL #+1
-        ADDS     R0,R0,#+4
 // 1151 		switch (ncData % 3)
         ADD      R2,R3,R3, LSL #+1
+        ADDS     R0,R0,#+4
         SUBS     R1,R1,R2
         CMP      R1,#+1
         BEQ.N    ??GetBitLength_4
         CMP      R1,#+2
-        BEQ.N    ??GetBitLength_5
-        BX       LR
+        BNE.N    ??GetBitLength_5
 // 1152 		{
 // 1153 			case 1:
 // 1154 				ncBits += 4;
-??GetBitLength_4:
-        ADDS     R0,R0,#+4
 // 1155 				break;
-        BX       LR
 // 1156 			case 2:
 // 1157 				ncBits += 7;
-??GetBitLength_5:
         ADDS     R0,R0,#+7
 // 1158 				break;
         BX       LR
@@ -2833,18 +3183,17 @@ GetBitLength:
 // 1165 	case QR_MODE_ALPHABET:
 // 1166 		ncBits = 4 + nIndicatorLenAlphabet[nVerGroup] + (11 * (ncData / 2)) + (6 * (ncData % 2));
 ??GetBitLength_2:
-        ADD      R0,R1,R1, LSR #+31
-        ASRS     R0,R0,#+1
         ADR.W    R3,nIndicatorLenAlphabet
         LDRB     R2,[R2, R3]
+        ADD      R0,R1,R1, LSR #+31
+        ASRS     R0,R0,#+1
         MOVS     R3,#+11
         MLA      R2,R3,R0,R2
         SUB      R0,R1,R0, LSL #+1
         ADD      R1,R0,R0, LSL #+1
         ADD      R0,R2,R1, LSL #+1
-        ADDS     R0,R0,#+4
+        B.N      ??GetBitLength_4
 // 1167 		break;
-        BX       LR
 // 1168 
 // 1169 	case QR_MODE_8BIT:
 // 1170 		ncBits = 4 + nIndicatorLen8Bit[nVerGroup] + (8 * ncData);
@@ -2852,9 +3201,8 @@ GetBitLength:
         ADR.W    R0,nIndicatorLen8Bit
         LDRB     R0,[R2, R0]
         ADD      R0,R0,R1, LSL #+3
-        ADDS     R0,R0,#+4
+        B.N      ??GetBitLength_4
 // 1171 		break;
-        BX       LR
 // 1172 
 // 1173 	default:
 // 1174 		//ncBits = 4 + nIndicatorLenKanji[nVerGroup] + (13 * (ncData / 2));//本程序写法？
@@ -2864,13 +3212,15 @@ GetBitLength:
         LDRB     R0,[R2, R0]
         MOVS     R2,#+13
         MLA      R0,R2,R1,R0
+??GetBitLength_4:
         ADDS     R0,R0,#+4
 // 1176 		break;
 // 1177 	}
 // 1178 
 // 1179 	return ncBits;
+??GetBitLength_5:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock3
+          CFI EndBlock cfiBlock4
 // 1180 }
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -2899,7 +3249,7 @@ nIndicatorLenKanji:
 // 1181 //设置bit流
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function SetBitStream
           CFI NoCalls
         THUMB
@@ -2925,54 +3275,73 @@ SetBitStream:
 // 1187 		return -1;
 ??SetBitStream_0:
         MOV      R0,#-1
-        B.N      ??SetBitStream_2
+        POP      {R4-R8,PC}
 // 1188 
 // 1189 	for (i = 0; i < ncData; ++i)
 ??SetBitStream_1:
-        MOVS     R4,#+0
-        LDR.W    R12,??DataTable45_2
-        B.N      ??SetBitStream_3
+        MOVS     R5,#+0
+        CMP      R2,#+1
+        BLT.N    ??SetBitStream_2
+        MOV      R6,R0
+        LDR.W    R8,??DataTable41
+        MOV      R12,#+1
 // 1190 	{
 // 1191 		if (wData & (1 << (ncData - i - 1)))
-??SetBitStream_4:
-        MOVS     R5,#+1
-        SUBS     R6,R2,R4
-        SUBS     R6,R6,#+1
-        LSL      R6,R5,R6
-        MOV      R7,R1
-        TST      R7,R6
-        BEQ.N    ??SetBitStream_5
+??SetBitStream_3:
+        SUBS     R4,R2,R5
+        SUBS     R4,R4,#+1
+        LSL      LR,R12,R4
+        TST      R1,LR
+        BEQ.N    ??SetBitStream_4
 // 1192 		{
 // 1193 			m_byDataCodeWord[(nIndex + i) / 8] |= 1 << (7 - ((nIndex + i) % 8));
-        ADDS     R6,R4,R0
-        ASRS     R7,R6,#+2
-        ADD      R7,R6,R7, LSR #+29
-        ASRS     R7,R7,#+3
-        LDRB     LR,[R7, R12]
-        SUB      R8,R6,R7, LSL #+3
-        RSB      R8,R8,#+7
-        LSL      R5,R5,R8
-        ORR      R5,R5,LR
-        STRB     R5,[R7, R12]
+        ASRS     R4,R6,#+2
+        ADD      R4,R6,R4, LSR #+29
+        ASRS     R4,R4,#+3
+        ADDS     R7,R5,R0
+        SUB      R7,R7,R4, LSL #+3
+        LDRB     LR,[R4, R8]
+        RSB      R7,R7,#+7
+        LSL      R7,R12,R7
+        ORR      LR,R7,LR
+        STRB     LR,[R4, R8]
 // 1194 		}
 // 1195 	}
-??SetBitStream_5:
-        ADDS     R4,R4,#+1
-??SetBitStream_3:
-        CMP      R4,R2
-        BLT.N    ??SetBitStream_4
+??SetBitStream_4:
+        ADDS     R5,R5,#+1
+        ADDS     R6,R6,#+1
+        CMP      R5,R2
+        BLT.N    ??SetBitStream_3
 // 1196 
 // 1197 	return nIndex + ncData;
-        MOV      R0,R3
 ??SetBitStream_2:
+        MOV      R0,R3
         POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock4
+          CFI EndBlock cfiBlock5
 // 1198 }
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable41:
+        DC32     m_byDataCodeWord
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable41_1:
+        DC32     m_byAllCodeWord
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable41_2:
+        DC32     m_byRSWork
 // 1199 //是不是数字编码信息
 // 1200 //是返回TRUE，否返回FALSE
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function IsNumeralData
           CFI NoCalls
         THUMB
@@ -2991,13 +3360,13 @@ IsNumeralData:
 ??IsNumeralData_0:
         MOVS     R0,#+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock5
+          CFI EndBlock cfiBlock6
 // 1207 }
 // 1208 //是否是字符编码信息
 // 1209 //是返回TRUE，否返回FALSE
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function IsAlphabetData
           CFI NoCalls
         THUMB
@@ -3005,36 +3374,34 @@ IsNumeralData:
 // 1211 {
 // 1212 	if (c >= '0' && c <= '9')
 IsAlphabetData:
-        MOV      R1,R0
-        SUB      R2,R1,#+48
+        SUB      R2,R0,#+48
         CMP      R2,#+10
-        BCC.N    ??IsAlphabetData_0
+        ITT      CS 
 // 1213 		return TRUE;
 // 1214 
 // 1215 	if (c >= 'A' && c <= 'Z')
-        SUBS     R1,R1,#+65
-        CMP      R1,#+26
+        SUBCS    R1,R0,#+65
+        CMPCS    R1,#+26
         BCC.N    ??IsAlphabetData_0
 // 1216 		return TRUE;
 // 1217 
 // 1218 	if (c == ' ' || c == '$' || c == '%' || c == '*' || c == '+' || c == '-' || c == '.' || c == '/' || c == ':')
         CMP      R0,#+32
-        BEQ.N    ??IsAlphabetData_0
-        CMP      R0,#+36
+        IT       NE 
+        CMPNE    R0,#+36
         BEQ.N    ??IsAlphabetData_0
         CMP      R0,#+37
-        BEQ.N    ??IsAlphabetData_0
-        CMP      R0,#+42
+        IT       NE 
+        CMPNE    R0,#+42
         BEQ.N    ??IsAlphabetData_0
         CMP      R0,#+43
-        BEQ.N    ??IsAlphabetData_0
-        CMP      R0,#+45
+        IT       NE 
+        CMPNE    R0,#+45
         BEQ.N    ??IsAlphabetData_0
         CMP      R0,#+46
-        BEQ.N    ??IsAlphabetData_0
-        CMP      R0,#+47
-        BEQ.N    ??IsAlphabetData_0
-        CMP      R0,#+58
+        ITT      NE 
+        CMPNE    R0,#+47
+        CMPNE    R0,#+58
         BNE.N    ??IsAlphabetData_1
 // 1219 		return TRUE;
 ??IsAlphabetData_0:
@@ -3045,13 +3412,13 @@ IsAlphabetData:
 ??IsAlphabetData_1:
         MOVS     R0,#+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock7
 // 1222 }
 // 1223 //是否中文汉字信息
 // 1224 //是返回TRUE，否返回FALSE
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function IsKanjiData
           CFI NoCalls
         THUMB
@@ -3060,43 +3427,41 @@ IsAlphabetData:
 // 1227 
 // 1228 	if (((c1 >= 0x81 && c1 <= 0x9f) || (c1 >= 0xe0 && c1 <= 0xeb)) && (c2 >= 0x40))
 IsKanjiData:
-        MOV      R2,R0
-        SUB      R3,R2,#+129
+        SUB      R3,R0,#+129
         CMP      R3,#+31
-        BCC.N    ??IsKanjiData_0
-        SUBS     R2,R2,#+224
-        CMP      R2,#+12
-        BCS.N    ??IsKanjiData_1
-??IsKanjiData_0:
+        ITT      CS 
+        SUBCS    R2,R0,#+224
+        CMPCS    R2,#+12
+        BCS.N    ??IsKanjiData_0
         CMP      R1,#+64
-        BLT.N    ??IsKanjiData_1
+        BLT.N    ??IsKanjiData_0
 // 1229 	{
 // 1230 		if ((c1 == 0x9f && c2 > 0xfc) || (c1 == 0xeb && c2 > 0xbf))
         CMP      R0,#+159
-        BNE.N    ??IsKanjiData_2
+        BNE.N    ??IsKanjiData_1
         CMP      R1,#+253
-        BGE.N    ??IsKanjiData_1
-??IsKanjiData_2:
-        CMP      R0,#+235
-        BNE.N    ??IsKanjiData_3
-        CMP      R1,#+192
-        BGE.N    ??IsKanjiData_1
+        BLT.N    ??IsKanjiData_2
 // 1231 			return FALSE;
 // 1232 
 // 1233 		return TRUE;
-??IsKanjiData_3:
-        MOVS     R0,#+1
-        BX       LR
 // 1234 	}
 // 1235 	return FALSE;
-??IsKanjiData_1:
+??IsKanjiData_0:
         MOVS     R0,#+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock7
+??IsKanjiData_1:
+        CMP      R0,#+235
+        BNE.N    ??IsKanjiData_2
+        CMP      R1,#+192
+        BGE.N    ??IsKanjiData_0
+??IsKanjiData_2:
+        MOVS     R0,#+1
+        BX       LR
+          CFI EndBlock cfiBlock8
 // 1236 }
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function IsChineseData
           CFI NoCalls
         THUMB
@@ -3107,32 +3472,31 @@ IsKanjiData:
 IsChineseData:
         SUB      R2,R0,#+161
         CMP      R2,#+9
-        BCC.N    ??IsChineseData_0
-        SUBS     R0,R0,#+176
-        CMP      R0,#+75
-        BCS.N    ??IsChineseData_1
+        ITT      CS 
+        SUBCS    R0,R0,#+176
+        CMPCS    R0,#+75
+        BCS.N    ??IsChineseData_0
 // 1241 	{
 // 1242 		if(c2 >= 0xa1 && c2 <= 0xfe)	return TRUE;
-??IsChineseData_0:
         CMP      R1,#+161
-        BLT.N    ??IsChineseData_1
+        BLT.N    ??IsChineseData_0
         CMP      R1,#+255
-        BEQ.N    ??IsChineseData_1
+        BEQ.N    ??IsChineseData_0
         MOVS     R0,#+1
         BX       LR
 // 1243 	}
 // 1244 	return FALSE;
-??IsChineseData_1:
+??IsChineseData_0:
         MOVS     R0,#+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock9
 // 1245 }
 // 1246 
 // 1247 
 // 1248 //字母表信息转化
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function AlphabetToBinaly
           CFI NoCalls
         THUMB
@@ -3140,20 +3504,18 @@ IsChineseData:
 // 1250 {
 // 1251 	if (c >= '0' && c <= '9') return (unsigned char)(c - '0');
 AlphabetToBinaly:
-        MOV      R1,R0
-        SUB      R2,R1,#+48
+        SUB      R2,R0,#+48
         CMP      R2,#+10
-        BCS.N    ??AlphabetToBinaly_0
-        SUBS     R0,R0,#+48
-        UXTB     R0,R0
-        BX       LR
+        IT       CC 
+        SUBCC    R0,R0,#+48
+        BCC.N    ??AlphabetToBinaly_0
 // 1252 
 // 1253 	if (c >= 'A' && c <= 'Z') return (unsigned char)(c - 'A' + 10);
-??AlphabetToBinaly_0:
-        SUBS     R1,R1,#+65
+        SUB      R1,R0,#+65
         CMP      R1,#+26
         BCS.N    ??AlphabetToBinaly_1
         SUBS     R0,R0,#+55
+??AlphabetToBinaly_0:
         UXTB     R0,R0
         BX       LR
 // 1254 
@@ -3217,7 +3579,7 @@ AlphabetToBinaly:
 ??AlphabetToBinaly_9:
         MOVS     R0,#+44
         BX       LR               ;; return
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock10
 // 1272 }
 // 1273 //日文中文信息转化
 // 1274 //日文和汉字的编码会减去一个值。
@@ -3227,7 +3589,7 @@ AlphabetToBinaly:
 // 1278 //然后再加上后两个16进制位，最后转成13bit的编码。
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function KanjiToBinaly
           CFI NoCalls
         THUMB
@@ -3235,22 +3597,19 @@ AlphabetToBinaly:
 // 1280 {
 // 1281 	if (wc >= 0x8140 && wc <= 0x9ffc)
 KanjiToBinaly:
-        LDR.W    R1,??DataTable55  ;; 0xffff7ec0
+        LDR.W    R1,??DataTable52  ;; 0xffff7ec0
         ADDS     R1,R1,R0
         MOVW     R2,#+7869
         CMP      R1,R2
-        BCS.N    ??KanjiToBinaly_0
+        ITTE     CC 
 // 1282 		wc -= 0x8140;
-        ADD      R0,R0,#+32256
-        ADDS     R0,R0,#+192
-        B.N      ??KanjiToBinaly_1
+        ADDCC    R0,R0,#+32256
+        ADDCC    R0,R0,#+192
 // 1283 	else
 // 1284 		wc -= 0xc140;
-??KanjiToBinaly_0:
-        ADD      R0,R0,#+16064
+        ADDCS    R0,R0,#+16064
 // 1285 
 // 1286 	return (WORD)(((wc >> 8) * 0xc0) + (wc & 0x00ff));
-??KanjiToBinaly_1:
         UXTH     R0,R0
         LSRS     R1,R0,#+8
         ADD      R2,R1,R1, LSL #+1
@@ -3258,7 +3617,7 @@ KanjiToBinaly:
         ADD      R0,R0,R2, LSL #+6
         UXTH     R0,R0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 // 1287 }
 // 1288 /*
 // 1289 二、中文汉字的与日文汉字转换步骤相似：
@@ -3277,7 +3636,7 @@ KanjiToBinaly:
 // 1302 */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function ChineseToBinaly
           CFI NoCalls
         THUMB
@@ -3289,162 +3648,140 @@ ChineseToBinaly:
         ADD      R2,R1,R1, LSL #+1
         UXTB     R1,R0
         ADD      R1,R1,R2, LSL #+5
-        LDR.W    R2,??DataTable55_1  ;; 0xffff5e5f
+        LDR.W    R2,??DataTable53  ;; 0xffff5e5f
         ADDS     R0,R2,R0
         MOVW     R2,#+2142
         CMP      R0,R2
-        BCS.N    ??ChineseToBinaly_0
+        ITE      CC 
 // 1306 	{
 // 1307 		return (WORD)((((wc >> 8)-0xa1) * 0x60) + ((wc & 0x00ff)-0xa1));
-        MOVW     R0,#+15617
-        SUBS     R0,R1,R0
-        UXTH     R0,R0
-        BX       LR
+        MOVWCC   R0,#+15617
 // 1308 	}
 // 1309 	if(wc >= 0xb0a1 && wc <= 0xf9fe)
 // 1310 	{
 // 1311 		return (WORD)((((wc >> 8)-0xa6) * 0x60) + ((wc & 0x00ff)-0xa1));
 // 1312 	}
 // 1313 	return (WORD)((((wc >> 8)-0xa6) * 0x60) + ((wc & 0x00ff)-0xa1));
-??ChineseToBinaly_0:
-        MOVW     R0,#+16097
+        MOVWCS   R0,#+16097
         SUBS     R0,R1,R0
         UXTH     R0,R0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock12
 // 1314 }
 // 1315 //纠错码
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function GetRSCodeWord
           CFI NoCalls
         THUMB
 // 1316 void GetRSCodeWord(BYTE *lpbyRSWork, int ncDataCodeWord, int ncRSCodeWord)
 // 1317 {
-GetRSCodeWord:
-        PUSH     {R4-R7}
-          CFI R7 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
 // 1318 	int i, j;
 // 1319 
 // 1320 	for (i = 0; i < ncDataCodeWord ; ++i)
-        MOVS     R3,#+0
-        ADR.W    R12,byExpToInt
-        B.N      ??GetRSCodeWord_0
+GetRSCodeWord:
+        CMP      R1,#+1
+        BGE.N    ??GetRSCodeWord_0
+        BX       LR
+??GetRSCodeWord_0:
+        PUSH     {R4-R11,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+36
+        ADDS     R4,R2,R1
+        MOV      R3,R1
+        SUBS     R4,R4,#+1
+        ADR.W    R8,byExpToInt
+        LDR.W    R9,??DataTable53_1
+        ADR.W    R10,byIntToExp
 // 1321 	{
 // 1322 		if (lpbyRSWork[0] != 0)
+??GetRSCodeWord_1:
+        LDRB     R5,[R0, #+0]
+        CMP      R5,#+0
+        BEQ.N    ??GetRSCodeWord_2
 // 1323 		{
 // 1324 			BYTE nExpFirst = byIntToExp[lpbyRSWork[0]]; 
+        LDRB     R12,[R5, R10]
 // 1325 
 // 1326 			for (j = 0; j < ncRSCodeWord; ++j)
+        MOV      LR,#+0
+        CMP      R2,#+1
+        BLT.N    ??GetRSCodeWord_3
+        MOV      R5,R0
 // 1327 			{
 // 1328 				BYTE nExpElement = (BYTE)(((int)(byRSExp[ncRSCodeWord][j] + nExpFirst)) % 255);
+??GetRSCodeWord_4:
+        LDR      R6,[R9, R2, LSL #+2]
 // 1329 
 // 1330 				lpbyRSWork[j] = (BYTE)(lpbyRSWork[j + 1] ^ byExpToInt[nExpElement]);
+        LDRB     R7,[R5, #+1]
+        LDRB     R6,[LR, R6]
+        ADD      R6,R12,R6
+        MOV      R11,#+255
+        SDIV     R11,R6,R11
+        ADD      R6,R11,R6
+        UXTB     R6,R6
 // 1331 			}
+        ADD      LR,LR,#+1
+        LDRB     R6,[R6, R8]
+        EORS     R6,R6,R7
+        STRB     R6,[R5], #+1
+        CMP      LR,R2
+        BLT.N    ??GetRSCodeWord_4
 // 1332 
 // 1333 			for (j = ncRSCodeWord; j < ncDataCodeWord + ncRSCodeWord - 1; ++j)
+??GetRSCodeWord_3:
+        ADDS     R5,R2,R1
+        SUBS     R5,R5,#+1
+        CMP      R2,R5
+        BGE.N    ??GetRSCodeWord_5
+        ADD      R12,R2,R0
+        SUB      LR,R1,#+1
 // 1334 				lpbyRSWork[j] = lpbyRSWork[j + 1];
+??GetRSCodeWord_6:
+        LDRB     R5,[R12, #+1]
+        STRB     R5,[R12], #+1
+        SUBS     LR,LR,#+1
+        BNE.N    ??GetRSCodeWord_6
+        B.N      ??GetRSCodeWord_5
 // 1335 		}
 // 1336 		else
 // 1337 		{
 // 1338 			for (j = 0; j < ncDataCodeWord + ncRSCodeWord - 1; ++j)
-// 1339 				lpbyRSWork[j] = lpbyRSWork[j + 1];
-??GetRSCodeWord_1:
-        ADDS     R5,R4,R0
-        LDRB     R5,[R5, #+1]
-        STRB     R5,[R4, R0]
-        ADDS     R4,R4,#+1
 ??GetRSCodeWord_2:
-        ADDS     R5,R2,R1
-        SUBS     R5,R5,#+1
-        CMP      R4,R5
-        BLT.N    ??GetRSCodeWord_1
-??GetRSCodeWord_3:
-        ADDS     R3,R3,#+1
-??GetRSCodeWord_0:
-        CMP      R3,R1
-        BGE.N    ??GetRSCodeWord_4
-        LDRB     R4,[R0, #+0]
-        CMP      R4,#+0
-        BEQ.N    ??GetRSCodeWord_5
-        ADR.W    R5,byIntToExp
-        LDRB     R4,[R4, R5]
-        MOVS     R5,#+0
-        B.N      ??GetRSCodeWord_6
+        CMP      R4,#+1
+        BLT.N    ??GetRSCodeWord_5
+        MOV      R12,R0
+        MOV      LR,R4
+// 1339 				lpbyRSWork[j] = lpbyRSWork[j + 1];
 ??GetRSCodeWord_7:
-        LDR.W    R6,??DataTable55_2
-        LDR      R6,[R6, R2, LSL #+2]
-        LDRB     R6,[R5, R6]
-        ADDS     R6,R4,R6
-        MOVS     R7,#+255
-        SDIV     R7,R6,R7
-        RSB      R7,R7,R7, LSL #+8
-        SUBS     R6,R6,R7
-        ADDS     R7,R5,R0
-        LDRB     R7,[R7, #+1]
-        UXTB     R6,R6
-        LDRB     R6,[R6, R12]
-        EORS     R6,R6,R7
-        STRB     R6,[R5, R0]
-        ADDS     R5,R5,#+1
-??GetRSCodeWord_6:
-        CMP      R5,R2
-        BLT.N    ??GetRSCodeWord_7
-        MOV      R4,R2
-??GetRSCodeWord_8:
-        ADDS     R5,R2,R1
-        SUBS     R5,R5,#+1
-        CMP      R4,R5
-        BGE.N    ??GetRSCodeWord_3
-        ADDS     R5,R4,R0
-        LDRB     R5,[R5, #+1]
-        STRB     R5,[R4, R0]
-        ADDS     R4,R4,#+1
-        B.N      ??GetRSCodeWord_8
-??GetRSCodeWord_5:
-        MOVS     R4,#+0
-        B.N      ??GetRSCodeWord_2
+        LDRB     R5,[R12, #+1]
+        STRB     R5,[R12], #+1
+        SUBS     LR,LR,#+1
+        BNE.N    ??GetRSCodeWord_7
 // 1340 		}
 // 1341 	}
+??GetRSCodeWord_5:
+        SUBS     R3,R3,#+1
+        BNE.N    ??GetRSCodeWord_1
 // 1342 }
-??GetRSCodeWord_4:
-        POP      {R4-R7}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI CFA R13+0
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock12
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock13
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable45:
-        DC32     m_nSymbleSize
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable45_1:
-        DC32     QR_VersonInfo
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable45_2:
-        DC32     m_byDataCodeWord
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable45_3:
-        DC32     m_byAllCodeWord
+??DataTable44:
+        DC32     m_byBlockMode
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -3495,29 +3832,29 @@ byIntToExp:
 // 1344 //详见http://coolshell.cn/articles/10590.html#jtss-tsina
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function FormatModule
         THUMB
 // 1345 void FormatModule(void)
 // 1346 {
 FormatModule:
-        PUSH     {R3-R7,LR}
+        PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
           CFI CFA R13+24
 // 1347 	int i, j;
 // 1348 	int nMinPenalty, nPenalty;
 // 1349 
 // 1350 	memset(m_byModuleData, 0, sizeof(m_byModuleData));
-        LDR.W    R4,??DataTable55_3
-        MOVW     R2,#+441
-        MOVS     R1,#+0
+        LDR.W    R4,??DataTable53_2
+        MOVW     R1,#+441
         MOV      R0,R4
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 // 1351 
 // 1352 	SetFunctionModule();	//首先把回字图案花在三个角上
           CFI FunCall SetFunctionModule
@@ -3528,34 +3865,33 @@ FormatModule:
         BL       SetCodeWordPattern
 // 1355 
 // 1356 	if (m_nMaskingNo == -1)
-        LDR.W    R5,??DataTable55_4
-        LDR      R0,[R5, #+20]
+        LDR.W    R5,??DataTable53_3
+        LDR      R0,[R5, #+28]
         CMN      R0,#+1
         BNE.N    ??FormatModule_0
 // 1357 	{
 // 1358 		m_nMaskingNo = 0;
-        MOVS     R0,#+0
-        STR      R0,[R5, #+20]
+        MOVS     R6,#+0
 // 1359 
 // 1360 		SetMaskingPattern(m_nMaskingNo); 
+        MOVS     R0,#+0
           CFI FunCall SetMaskingPattern
         BL       SetMaskingPattern
 // 1361 		SetFormatInfoPattern(m_nMaskingNo); 
-        MOVS     R0,#+0
+        MOV      R0,R6
           CFI FunCall SetFormatInfoPattern
         BL       SetFormatInfoPattern
 // 1362 
 // 1363 		nMinPenalty = CountPenalty();
           CFI FunCall CountPenalty
         BL       CountPenalty
-        MOV      R6,R0
+        MOV      R8,R0
 // 1364 
 // 1365 		for (i = 1; i <= 7; ++i)
         MOVS     R7,#+1
-        B.N      ??FormatModule_1
 // 1366 		{
 // 1367 			SetMaskingPattern(i); 
-??FormatModule_2:
+??FormatModule_1:
         MOV      R0,R7
           CFI FunCall SetMaskingPattern
         BL       SetMaskingPattern
@@ -3569,73 +3905,62 @@ FormatModule:
         BL       CountPenalty
 // 1371 
 // 1372 			if (nPenalty < nMinPenalty)
-        CMP      R0,R6
-        BGE.N    ??FormatModule_3
+        CMP      R0,R8
+        ITT      LT 
 // 1373 			{
 // 1374 				nMinPenalty = nPenalty;
-        MOV      R6,R0
+        MOVLT    R8,R0
 // 1375 				m_nMaskingNo = i;
-        STR      R7,[R5, #+20]
+        MOVLT    R6,R7
 // 1376 			}
 // 1377 		}
-??FormatModule_3:
         ADDS     R7,R7,#+1
-??FormatModule_1:
+        STR      R6,[R5, #+28]
         CMP      R7,#+8
-        BLT.N    ??FormatModule_2
+        BLT.N    ??FormatModule_1
 // 1378 	}
 // 1379 
 // 1380 	SetMaskingPattern(m_nMaskingNo); 
 ??FormatModule_0:
-        LDR      R6,[R5, #+20]
-        MOV      R0,R6
+        LDR      R0,[R5, #+28]
           CFI FunCall SetMaskingPattern
         BL       SetMaskingPattern
 // 1381 	SetFormatInfoPattern(m_nMaskingNo); 
-        MOV      R0,R6
+        LDR      R0,[R5, #+28]
           CFI FunCall SetFormatInfoPattern
         BL       SetFormatInfoPattern
 // 1382 
 // 1383 	for (i = 0; i < m_nSymbleSize; ++i)
-        MOVS     R0,#+0
-        B.N      ??FormatModule_4
+        LDR      R0,[R5, #+8]
+        CMP      R0,#+1
+        BLT.N    ??FormatModule_2
+        MOV      R1,R0
+??FormatModule_3:
+        MOV      R2,R4
+        MOV      R3,R0
 // 1384 	{
 // 1385 		for (j = 0; j < m_nSymbleSize; ++j)
 // 1386 		{
 // 1387 			m_byModuleData[i][j] = (BYTE)((m_byModuleData[i][j] & 0x11) != 0);
-??FormatModule_5:
-        MOVS     R1,#+21
-        MLA      R1,R1,R0,R4
-        LDRB     R2,[R3, R1]
-        AND      R7,R2,#0x11
-        SUBS     R2,R7,#+1
-        SBCS     R2,R2,R2
-        MVNS     R2,R2
-        LSRS     R2,R2,#+31
-        STRB     R2,[R3, R1]
-// 1388 		}
-        ADDS     R3,R3,#+1
-??FormatModule_6:
-        CMP      R3,R6
-        BLT.N    ??FormatModule_5
-        ADDS     R0,R0,#+1
 ??FormatModule_4:
-        LDR      R6,[R5, #+0]
-        CMP      R0,R6
-        BGE.N    ??FormatModule_7
-        MOVS     R3,#+0
-        B.N      ??FormatModule_6
+        LDRB     R5,[R2, #+0]
+        AND      R6,R5,#0x11
+        SUBS     R5,R6,#+1
+        SBCS     R5,R5,R5
+        MVNS     R5,R5
+        LSRS     R5,R5,#+31
+        STRB     R5,[R2], #+1
+// 1388 		}
+        SUBS     R3,R3,#+1
+        BNE.N    ??FormatModule_4
 // 1389 	}
+        ADDW     R4,R4,#+21
+        SUBS     R1,R1,#+1
+        BNE.N    ??FormatModule_3
 // 1390 }
-??FormatModule_7:
-        POP      {R0,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock13
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable46:
-        DC32     m_byRSWork
+??FormatModule_2:
+        POP      {R4-R8,PC}       ;; return
+          CFI EndBlock cfiBlock14
 // 1391 //设置功能性模块信息
 // 1392 //Position Detection Pattern	用于标记二维码举行大小
 // 1393 //Separators for Postion Detection Patterns	三个就可以标记一个矩形
@@ -3643,204 +3968,297 @@ FormatModule:
 // 1395 //Alignment Patterns 只有Version 2以上（包括Version2）的二维码需要这个东东，同样是为了定位用的。
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function SetFunctionModule
         THUMB
 // 1396 void SetFunctionModule(void)
 // 1397 {
 SetFunctionModule:
-        PUSH     {R3-R9,LR}
+        PUSH     {R4-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R9 Frame(CFA, -8)
-          CFI R8 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -24)
-          CFI R4 Frame(CFA, -28)
-          CFI CFA R13+32
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+36
+        SUB      SP,SP,#+12
+          CFI CFA R13+48
 // 1398 	int i, j;
 // 1399 
 // 1400 	SetFinderPattern(0, 0);					//三个回字坐标
         MOVS     R1,#+0
-        MOV      R0,R1
+        MOVS     R0,#+0
           CFI FunCall SetFinderPattern
         BL       SetFinderPattern
-// 1401 	SetFinderPattern(m_nSymbleSize - 7, 0);	
-        LDR.W    R4,??DataTable53
-        LDR      R5,[R4, #+0]
-        SUBS     R6,R5,#+7
+        LDR.W    R0,??DataTable53_3
+        LDR      R0,[R0, #+8]
+        SUBS     R4,R0,#+7
         MOVS     R1,#+0
-        MOV      R0,R6
+        MOV      R0,R4
+// 1401 	SetFinderPattern(m_nSymbleSize - 7, 0);	
           CFI FunCall SetFinderPattern
         BL       SetFinderPattern
 // 1402 	SetFinderPattern(0, m_nSymbleSize - 7);	
-        MOV      R1,R6
+        MOV      R1,R4
         MOVS     R0,#+0
           CFI FunCall SetFinderPattern
         BL       SetFinderPattern
 // 1403 
 // 1404 	for (i = 0; i < 8; ++i)
-        MOVS     R1,#+0
-        MOVS     R7,#+32
-        B.N      ??SetFunctionModule_0
+        LDR.W    R0,??DataTable53_3
+        LDR.W    R4,??DataTable53_2
+        LDR      R0,[R0, #+8]
+        MOVS     R2,#+21
+        MLA      R0,R2,R0,R4
+        LDR.W    R2,??DataTable53_3
+        LDR      R2,[R2, #+8]
+        ADDS     R2,R2,R4
+        ADDW     R1,R4,#+147
+        SUB      R3,R0,#+168
+        ADDW     R5,R2,#+139
+        ADDW     R6,R4,#+7
+        SUB      R7,R0,#+161
+        SUB      R12,R2,#+8
+        MOV      LR,#+4
+        MOV      R8,#+32
 // 1405 	{
 // 1406 		m_byModuleData[i][7] = m_byModuleData[7][i] = '\x20';
-??SetFunctionModule_1:
-        LDR.W    R0,??DataTable55_3
-        MOV      R2,R7
-        ADDS     R3,R1,R0
-        STRB     R2,[R3, #+147]
-        MOVS     R3,#+21
-        MLA      R2,R3,R1,R0
-        MOV      R6,R7
-        STRB     R6,[R2, #+7]
-// 1407 		m_byModuleData[m_nSymbleSize - 8][i] = m_byModuleData[m_nSymbleSize - 8 + i][7] = '\x20';
-        ADDS     R6,R1,R5
-        MLA      R12,R3,R6,R0
-        STRB     R7,[R12, #-161]
-        MLA      R3,R3,R5,R0
-        ADDS     R3,R1,R3
-        STRB     R7,[R3, #-168]
-// 1408 		m_byModuleData[i][m_nSymbleSize - 8] = m_byModuleData[7][m_nSymbleSize - 8 + i] = '\x20';
-        MOV      R3,R7
-        ADDS     R0,R6,R0
-        STRB     R3,[R0, #+139]
-        MOV      R0,R3
-        ADDS     R2,R5,R2
-        STRB     R0,[R2, #-8]
-// 1409 	}
-        ADDS     R1,R1,#+1
 ??SetFunctionModule_0:
-        CMP      R1,#+8
-        BLT.N    ??SetFunctionModule_1
+        STRB     R8,[R1], #+1
+        STRB     R8,[R6], #+21
+// 1407 		m_byModuleData[m_nSymbleSize - 8][i] = m_byModuleData[m_nSymbleSize - 8 + i][7] = '\x20';
+        STRB     R8,[R7], #+21
+        STRB     R8,[R3], #+1
+// 1408 		m_byModuleData[i][m_nSymbleSize - 8] = m_byModuleData[7][m_nSymbleSize - 8 + i] = '\x20';
+        STRB     R8,[R5], #+1
+        STRB     R8,[R12], #+21
+        STRB     R8,[R1], #+1
+        STRB     R8,[R6], #+21
+        STRB     R8,[R7], #+21
+        STRB     R8,[R3], #+1
+        STRB     R8,[R5], #+1
+        STRB     R8,[R12], #+21
+// 1409 	}
+        SUBS     LR,LR,#+1
+        BNE.N    ??SetFunctionModule_0
 // 1410 
 // 1411 	for (i = 0; i < 9; ++i)
-        MOVS     R1,#+0
-        MOV      R2,R7
-        B.N      ??SetFunctionModule_2
+        ADD      R1,R4,#+168
+        ADD      R3,R4,#+8
+        MOVS     R5,#+3
+        MOVS     R6,#+32
 // 1412 	{
 // 1413 		m_byModuleData[i][8] = m_byModuleData[8][i] = '\x20';
-??SetFunctionModule_3:
-        LDR.W    R0,??DataTable55_3
-        ADDS     R3,R1,R0
-        STRB     R2,[R3, #+168]
-        MOVS     R3,#+21
-        MLA      R0,R3,R1,R0
-        STRB     R2,[R0, #+8]
+??SetFunctionModule_1:
+        STRB     R8,[R1], #+1
+        STRB     R8,[R3], #+21
+        STRB     R8,[R1], #+1
+        STRB     R8,[R3], #+21
+        STRB     R8,[R1], #+1
+        STRB     R8,[R3], #+21
 // 1414 	}
-        ADDS     R1,R1,#+1
-??SetFunctionModule_2:
-        CMP      R1,#+9
-        BLT.N    ??SetFunctionModule_3
+        SUBS     R5,R5,#+1
+        BNE.N    ??SetFunctionModule_1
 // 1415 
 // 1416 	for (i = 0; i < 8; ++i)
-        MOVS     R1,#+0
-        MOV      R3,R2
-        B.N      ??SetFunctionModule_4
 // 1417 	{
 // 1418 		m_byModuleData[m_nSymbleSize - 8 + i][8] = m_byModuleData[8][m_nSymbleSize - 8 + i] = '\x20';
-??SetFunctionModule_5:
-        ADDS     R2,R1,R5
-        LDR.W    R0,??DataTable55_3
-        ADDS     R6,R2,R0
-        STRB     R3,[R6, #+160]
-        MOVS     R6,#+21
-        MLA      R0,R6,R2,R0
-        STRB     R3,[R0, #-160]
+        STRB     R8,[R2, #+160]
+        ADD      R1,R2,#+160
+        STRB     R8,[R0, #-160]
+        STRB     R8,[R1, #+1]
+        STRB     R8,[R0, #-139]
+        STRB     R8,[R1, #+2]
+        STRB     R8,[R0, #-118]
+        STRB     R8,[R1, #+3]
+        STRB     R8,[R0, #-97]
+        STRB     R8,[R1, #+4]
+        STRB     R8,[R0, #-76]
+        STRB     R8,[R1, #+5]
+        STRB     R8,[R0, #-55]
+        STRB     R8,[R1, #+6]
+        STRB     R8,[R0, #-34]
+        STRB     R8,[R1, #+7]
+        STRB     R8,[R0, #-13]
 // 1419 	}
-        ADDS     R1,R1,#+1
-??SetFunctionModule_4:
-        CMP      R1,#+8
-        BLT.N    ??SetFunctionModule_5
 // 1420 
 // 1421 	SetVersionPattern();	//版本信息
           CFI FunCall SetVersionPattern
         BL       SetVersionPattern
 // 1422 
 // 1423 	for (i = 0; i < QR_VersonInfo[m_nVersion].ncAlignPoint; ++i)
-        MOVS     R6,#+0
-        B.N      ??SetFunctionModule_6
+        MOVS     R1,#+0
+        LDR.W    R0,??DataTable53_3
+        ADR.W    R3,QR_VersonInfo
+        LDR      R0,[R0, #+24]
+        MOVS     R2,#+74
+        MLA      R0,R2,R0,R3
+        STR      R0,[SP, #+0]
+        ADDW     R3,R0,#+14
+        MOVS     R2,#+1
+        B.N      ??SetFunctionModule_2
+??SetFunctionModule_3:
+        ADDS     R1,R1,#+1
+        ADDS     R3,R3,#+2
+??SetFunctionModule_2:
+        LDR      R0,[SP, #+0]
+        LDRH     R0,[R0, #+12]
+        STR      R0,[SP, #+4]
+        CMP      R1,R0
+        BGE.W    ??SetFunctionModule_4
 // 1424 	{
 // 1425 		SetAlignmentPattern(QR_VersonInfo[m_nVersion].nAlignPoint[i], 6);//小回字
-// 1426 		SetAlignmentPattern(6, QR_VersonInfo[m_nVersion].nAlignPoint[i]);
-// 1427 
-// 1428 		for (j = 0; j < QR_VersonInfo[m_nVersion].ncAlignPoint; ++j)
-// 1429 		{
-// 1430 			SetAlignmentPattern(QR_VersonInfo[m_nVersion].nAlignPoint[i], QR_VersonInfo[m_nVersion].nAlignPoint[j]);
+        LDRH     R5,[R3, #+0]
+        MOVS     R0,#+21
+        MLA      R0,R0,R5,R4
+        LDRB     R0,[R0, #+6]
+        LSLS     R0,R0,#+26
+        BMI.N    ??SetFunctionModule_5
+        SUBS     R5,R5,#+2
+        MOVS     R6,#+0
+        LDR.W    R7,??DataTable53_3
+??SetFunctionModule_6:
+        MOVS     R0,#+21
+        ADD      LR,R6,R4
+        MLA      R0,R0,R5,LR
+        MOV      R12,#+0
+        ADD      LR,R0,#+4
 ??SetFunctionModule_7:
-        ADD      R0,R7,R9, LSL #+1
-        LDRH     R1,[R0, #+14]
-        LDRH     R0,[R8, #+14]
-          CFI FunCall SetAlignmentPattern
-        BL       SetAlignmentPattern
-// 1431 		}
-        ADD      R9,R9,#+1
-??SetFunctionModule_8:
-        LDRH     R0,[R7, #+12]
-        CMP      R9,R0
+        LDRB     R0,[R7, #+0]
+        RSB      R8,R12,#+4
+        LSL      R8,R2,R8
+        TST      R0,R8
+        ITE      NE 
+        MOVNE    R0,#+48
+        MOVEQ    R0,#+32
+        ADD      R12,R12,#+1
+        STRB     R0,[LR], #+21
+        CMP      R12,#+5
         BLT.N    ??SetFunctionModule_7
         ADDS     R6,R6,#+1
-??SetFunctionModule_6:
-        LDR      R0,[R4, #+16]
-        MOVS     R1,#+74
-        ADR.W    R2,QR_VersonInfo
-        MLA      R7,R1,R0,R2
-        LDRH     R0,[R7, #+12]
-        CMP      R6,R0
-        BGE.N    ??SetFunctionModule_9
-        ADD      R8,R7,R6, LSL #+1
-        LDRH     R9,[R8, #+14]
-        MOVS     R1,#+6
-        MOV      R0,R9
-          CFI FunCall SetAlignmentPattern
-        BL       SetAlignmentPattern
-        MOV      R1,R9
-        MOVS     R0,#+6
-          CFI FunCall SetAlignmentPattern
-        BL       SetAlignmentPattern
+        ADDS     R7,R7,#+1
+        CMP      R6,#+5
+        BLT.N    ??SetFunctionModule_6
+// 1426 		SetAlignmentPattern(6, QR_VersonInfo[m_nVersion].nAlignPoint[i]);
+??SetFunctionModule_5:
+        LDRH     R0,[R3, #+0]
+        ADDS     R5,R0,R4
+        LDRB     R5,[R5, #+126]
+        LSLS     R5,R5,#+26
+        BMI.N    ??SetFunctionModule_8
+        ADDS     R0,R0,R4
+        ADDW     R5,R0,#+82
+        LDR.W    R6,??DataTable53_3
+        MOVS     R7,#+5
+??SetFunctionModule_9:
+        MOV      R12,#+0
+??SetFunctionModule_10:
+        LDRB     R0,[R6, #+0]
+        RSB      LR,R12,#+4
+        LSL      LR,R2,LR
+        TST      R0,LR
+        ITE      NE 
+        MOVNE    R0,#+48
+        MOVEQ    R0,#+32
+        ADD      R12,R12,#+1
+        STRB     R0,[R5], #+21
+        CMP      R12,#+5
+        BLT.N    ??SetFunctionModule_10
+        ADDS     R6,R6,#+1
+        SUBS     R5,R5,#+104
+        SUBS     R7,R7,#+1
+        BNE.N    ??SetFunctionModule_9
+// 1427 
+// 1428 		for (j = 0; j < QR_VersonInfo[m_nVersion].ncAlignPoint; ++j)
+??SetFunctionModule_8:
+        LDR      R0,[SP, #+0]
+        MOVS     R5,#+0
+        ADDW     R6,R0,#+14
+        B.N      ??SetFunctionModule_11
+// 1429 		{
+??SetFunctionModule_12:
+        ADD      R9,R9,#+1
+        STRB     R0,[R10], #+21
+        CMP      R9,#+5
+        BLT.N    ??SetFunctionModule_13
+        ADD      LR,LR,#+1
+        ADD      R8,R8,#+1
+        CMP      LR,#+5
+        BLT.N    ??SetFunctionModule_14
+// 1430 			SetAlignmentPattern(QR_VersonInfo[m_nVersion].nAlignPoint[i], QR_VersonInfo[m_nVersion].nAlignPoint[j]);
+??SetFunctionModule_15:
+        ADDS     R5,R5,#+1
+        ADDS     R6,R6,#+2
+??SetFunctionModule_11:
+        LDR      R0,[SP, #+4]
+        CMP      R5,R0
+        BGE.N    ??SetFunctionModule_3
+        LDRH     R7,[R3, #+0]
+        LDRH     R12,[R6, #+0]
+        MOVS     R0,#+21
+        MLA      R0,R0,R7,R4
+        LDRB     R0,[R12, R0]
+        LSLS     R0,R0,#+26
+        BMI.N    ??SetFunctionModule_15
+        SUBS     R7,R7,#+2
+        SUB      R12,R12,#+2
+        MOV      LR,#+0
+        LDR.W    R8,??DataTable53_3
+??SetFunctionModule_14:
+        ADD      R10,LR,R12
+        MOVS     R0,#+21
+        ADD      R10,R10,R4
         MOV      R9,#+0
-        B.N      ??SetFunctionModule_8
+        MLA      R10,R0,R7,R10
+??SetFunctionModule_13:
+        LDRB     R0,[R8, #+0]
+        RSB      R11,R9,#+4
+        LSL      R11,R2,R11
+        TST      R0,R11
+        ITE      NE 
+        MOVNE    R0,#+48
+        MOVEQ    R0,#+32
+        B.N      ??SetFunctionModule_12
+// 1431 		}
 // 1432 	}
 // 1433 
 // 1434 	for (i = 8; i <= m_nSymbleSize - 9; ++i)
-??SetFunctionModule_9:
-        MOVS     R1,#+8
-        B.N      ??SetFunctionModule_10
+??SetFunctionModule_4:
+        LDR.W    R1,??DataTable53_3
+        LDR      R1,[R1, #+8]
+        MOVS     R0,#+8
+        SUBS     R1,R1,#+9
+        CMP      R1,#+8
+        BLT.N    ??SetFunctionModule_16
+        ADDW     R2,R4,#+134
+        ADDW     R3,R4,#+174
 // 1435 	{
 // 1436 		m_byModuleData[i][6] = (i % 2) == 0 ? '\x30' : '\x20';
+??SetFunctionModule_17:
+        ADD      R4,R0,R0, LSR #+31
+        ASRS     R4,R4,#+1
+        SUBS     R4,R0,R4, LSL #+1
+        ITE      EQ 
+        MOVEQ    R4,#+48
+        MOVNE    R4,#+32
+        STRB     R4,[R3, #+0]
 // 1437 		m_byModuleData[6][i] = (i % 2) == 0 ? '\x30' : '\x20';
-??SetFunctionModule_11:
-        MOVS     R2,#+32
-??SetFunctionModule_12:
-        ADDS     R0,R1,R0
-        STRB     R2,[R0, #+126]
-        ADDS     R1,R1,#+1
-??SetFunctionModule_10:
-        SUB      R0,R5,#+9
-        CMP      R0,R1
-        BLT.N    ??SetFunctionModule_13
-        ADD      R0,R1,R1, LSR #+31
-        ASRS     R0,R0,#+1
-        SUBS     R2,R1,R0, LSL #+1
-        BNE.N    ??SetFunctionModule_14
-        MOVS     R3,#+48
-        B.N      ??SetFunctionModule_15
-??SetFunctionModule_14:
-        MOVS     R3,#+32
-??SetFunctionModule_15:
-        LDR.W    R0,??DataTable55_3
-        MOVS     R4,#+21
-        MLA      R4,R4,R1,R0
-        STRB     R3,[R4, #+6]
-        CMP      R2,#+0
-        BNE.N    ??SetFunctionModule_11
-        MOVS     R2,#+48
-        B.N      ??SetFunctionModule_12
 // 1438 	}
+        ADDS     R0,R0,#+1
+        STRB     R4,[R2], #+1
+        ADDW     R3,R3,#+21
+        CMP      R1,R0
+        BGE.N    ??SetFunctionModule_17
 // 1439 }
-??SetFunctionModule_13:
-        POP      {R0,R4-R9,PC}    ;; return
-          CFI EndBlock cfiBlock14
+??SetFunctionModule_16:
+        ADD      SP,SP,#+12
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock15
 // 1440 //设置大回字信息
 // 1441 // O X X X X X X X
 // 1442 // O X O O O O O X
@@ -3851,19 +4269,21 @@ SetFunctionModule:
 // 1447 // O X X X X X X X
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function SetFinderPattern
           CFI NoCalls
         THUMB
 // 1448 void SetFinderPattern(int x, int y)
 // 1449 {
 SetFinderPattern:
-        PUSH     {R4-R7}
-          CFI R7 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
+        PUSH     {R4-R8,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
 // 1450 	static BYTE byPattern[] = {0x7f,  
 // 1451 							   0x41,  
 // 1452 							   0x5d,  
@@ -3874,64 +4294,41 @@ SetFinderPattern:
 // 1457 	int i, j;
 // 1458 
 // 1459 	for (i = 0; i < 7; ++i)
-        MOVS     R2,#+0
-        MOVS     R7,#+21
-        LDR.W    R12,??DataTable55_3
-        B.N      ??SetFinderPattern_0
-??SetFinderPattern_1:
-        ADDS     R2,R2,#+1
-??SetFinderPattern_0:
-        CMP      R2,#+7
-        BGE.N    ??SetFinderPattern_2
+        MOVS     R3,#+0
+        LDR.W    R4,??DataTable53_4
+        LDR.W    R8,??DataTable53_2
+        MOVS     R5,#+1
+        MOVS     R6,#+21
 // 1460 	{
 // 1461 		for (j = 0; j < 7; ++j)
-        MOVS     R3,#+0
-        B.N      ??SetFinderPattern_3
+??SetFinderPattern_0:
+        ADDS     R2,R3,R1
+        ADD      R2,R2,R8
+        MOV      R12,#+0
+        MLA      LR,R6,R0,R2
 // 1462 		{
 // 1463 			m_byModuleData[x + j][y + i] = (byPattern[i] & (1 << (6 - j))) ? '\x30' : '\x20'; 
-??SetFinderPattern_4:
-        MOVS     R4,#+32
-??SetFinderPattern_5:
-        ADDS     R5,R2,R1
-        ADDS     R6,R3,R0
-        MLA      R6,R7,R6,R12
-        STRB     R4,[R5, R6]
-        ADDS     R3,R3,#+1
-??SetFinderPattern_3:
-        CMP      R3,#+7
-        BGE.N    ??SetFinderPattern_1
-        LDR.W    R4,??DataTable55_5
-        LDRB     R4,[R2, R4]
-        MOVS     R5,#+1
-        RSB      R6,R3,#+6
-        LSLS     R5,R5,R6
-        TST      R4,R5
-        BEQ.N    ??SetFinderPattern_4
-        MOVS     R4,#+48
-        B.N      ??SetFinderPattern_5
+??SetFinderPattern_1:
+        LDRB     R2,[R4, #+0]
+        RSB      R7,R12,#+6
+        LSL      R7,R5,R7
+        TST      R2,R7
+        ITE      NE 
+        MOVNE    R2,#+48
+        MOVEQ    R2,#+32
 // 1464 		}
+        ADD      R12,R12,#+1
+        STRB     R2,[LR], #+21
+        CMP      R12,#+7
+        BLT.N    ??SetFinderPattern_1
 // 1465 	}
+        ADDS     R3,R3,#+1
+        ADDS     R4,R4,#+1
+        CMP      R3,#+7
+        BLT.N    ??SetFinderPattern_0
 // 1466 }
-??SetFinderPattern_2:
-        POP      {R4-R7}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI CFA R13+0
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock15
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable48:
-        DC32     m_byBlockMode
-
-        SECTION `.data`:DATA:REORDER:NOROOT(2)
-??byPattern:
-        DATA
-        DC8 127, 65, 93, 93, 93, 65, 127, 0
+        POP      {R4-R8,PC}       ;; return
+          CFI EndBlock cfiBlock16
 // 1467 //设置小回字信息
 // 1468 //Alignment Patterns 只有Version 2以上（包括Version2）的二维码需要这个东东，同样是为了定位用的。
 // 1469 //Alignment Patterns是除了3个大的回字，较小的回字
@@ -3942,19 +4339,21 @@ SetFinderPattern:
 // 1474 // O O O X X X X X
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock17 Using cfiCommon0
           CFI Function SetAlignmentPattern
           CFI NoCalls
         THUMB
 // 1475 void SetAlignmentPattern(int x, int y)
 // 1476 {
 SetAlignmentPattern:
-        PUSH     {R4-R7}
-          CFI R7 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
+        PUSH     {R4-R8,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
 // 1477 	static BYTE byPattern[] = {0x1f,  
 // 1478 							   0x11,  
 // 1479 							   0x15, 
@@ -3963,11 +4362,11 @@ SetAlignmentPattern:
 // 1482 	int i, j;
 // 1483 
 // 1484 	if (m_byModuleData[x][y] & 0x20)
-        MOVS     R2,#+21
-        LDR.W    R3,??DataTable55_3
-        MLA      R4,R2,R0,R3
-        LDRB     R4,[R1, R4]
-        LSLS     R4,R4,#+26
+        MOVS     R3,#+21
+        LDR.W    R8,??DataTable53_2
+        MLA      R2,R3,R0,R8
+        LDRB     R2,[R1, R2]
+        LSLS     R2,R2,#+26
         BMI.N    ??SetAlignmentPattern_0
 // 1485 		return; 
 // 1486 
@@ -3976,60 +4375,66 @@ SetAlignmentPattern:
         SUBS     R1,R1,#+2
 // 1488 
 // 1489 	for (i = 0; i < 5; ++i)
-        MOVS     R4,#+0
-        B.N      ??SetAlignmentPattern_1
-??SetAlignmentPattern_2:
-        ADDS     R4,R4,#+1
-??SetAlignmentPattern_1:
-        CMP      R4,#+5
-        BGE.N    ??SetAlignmentPattern_0
+        MOVS     R5,#+0
+        LDR.W    R6,??DataTable53_3
+        MOVS     R7,#+1
 // 1490 	{
 // 1491 		for (j = 0; j < 5; ++j)
-        MOVS     R5,#+0
-        B.N      ??SetAlignmentPattern_3
+??SetAlignmentPattern_1:
+        ADDS     R2,R5,R1
+        ADD      R2,R2,R8
+        MOV      R12,#+0
+        MLA      LR,R3,R0,R2
 // 1492 		{
 // 1493 			m_byModuleData[x + j][y + i] = (byPattern[i] & (1 << (4 - j))) ? '\x30' : '\x20'; 
-??SetAlignmentPattern_4:
-        MOVS     R6,#+32
-??SetAlignmentPattern_5:
-        ADDS     R7,R4,R1
-        ADD      R12,R5,R0
-        MLA      R12,R2,R12,R3
-        STRB     R6,[R7, R12]
-        ADDS     R5,R5,#+1
-??SetAlignmentPattern_3:
-        CMP      R5,#+5
-        BGE.N    ??SetAlignmentPattern_2
-        LDR.W    R6,??DataTable55_6
-        LDRB     R6,[R4, R6]
-        MOVS     R7,#+1
-        RSB      R12,R5,#+4
-        LSL      R7,R7,R12
-        TST      R6,R7
-        BEQ.N    ??SetAlignmentPattern_4
-        MOVS     R6,#+48
-        B.N      ??SetAlignmentPattern_5
+??SetAlignmentPattern_2:
+        LDRB     R2,[R6, #+0]
+        RSB      R4,R12,#+4
+        LSL      R4,R7,R4
+        TST      R2,R4
+        ITE      NE 
+        MOVNE    R2,#+48
+        MOVEQ    R2,#+32
 // 1494 		}
+        ADD      R12,R12,#+1
+        STRB     R2,[LR], #+21
+        CMP      R12,#+5
+        BLT.N    ??SetAlignmentPattern_2
 // 1495 	}
+        ADDS     R5,R5,#+1
+        ADDS     R6,R6,#+1
+        CMP      R5,#+5
+        BLT.N    ??SetAlignmentPattern_1
 // 1496 }
 ??SetAlignmentPattern_0:
-        POP      {R4-R7}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI CFA R13+0
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock16
+        POP      {R4-R8,PC}       ;; return
+          CFI EndBlock cfiBlock17
+
+        SECTION `.data`:DATA:REORDER:NOROOT(2)
+??byPattern:
+        DATA
+        DC8 31, 17, 21, 17, 31, 0, 0, 0
+m_nSymbleSize:
+        DC8 0, 0, 0, 0
+m_ncDataCodeWordBit:
+        DC8 0, 0, 0, 0
+m_ncAllCodeWord:
+        DC8 0, 0, 0, 0
+m_nLevel:
+        DC8 0, 0, 0, 0
+m_nVersion:
+        DC8 0, 0, 0, 0
+m_nMaskingNo:
+        DC8 0, 0, 0, 0
 
         SECTION `.data`:DATA:REORDER:NOROOT(2)
 ??byPattern_1:
         DATA
-        DC8 31, 17, 21, 17, 31, 0, 0, 0
+        DC8 127, 65, 93, 93, 93, 65, 127, 0
 // 1497 //设置版本，在 >= Version 7以上，需要预留两块3 x 6的区域存放一些版本信息。
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock17 Using cfiCommon0
+          CFI Block cfiBlock18 Using cfiCommon0
           CFI Function SetVersionPattern
           CFI NoCalls
         THUMB
@@ -4040,102 +4445,87 @@ SetAlignmentPattern:
 // 1502 
 // 1503 	if (m_nVersion <= 6)//在 >= Version 7以上，需要预留两块3 x 6的区域存放一些版本信息。
 SetVersionPattern:
-        LDR.W    R0,??DataTable53
-        LDR      R1,[R0, #+16]
-        CMP      R1,#+7
+        LDR.W    R3,??DataTable53_3
+        LDR      R0,[R3, #+24]
+        CMP      R0,#+7
         BGE.N    ??SetVersionPattern_0
         BX       LR
 // 1504 		return;
 // 1505 
 // 1506 	nVerData = m_nVersion << 12;
 ??SetVersionPattern_0:
-        PUSH     {R4-R7}
-          CFI R7 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        LSLS     R1,R1,#+12
-        MOV      R2,R1
+        PUSH     {R4-R7,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+20
+        LSLS     R1,R0,#+12
 // 1507 
 // 1508 	for (i = 0; i < 6; ++i)
-        MOVS     R3,#+0
-        B.N      ??SetVersionPattern_1
+        MOVS     R2,#+0
+        MOVW     R4,#+7973
 // 1509 	{
 // 1510 		if (nVerData & (1 << (17 - i)))
-??SetVersionPattern_2:
-        RSB      R4,R3,#+17
-        ASR      R4,R2,R4
-        LSLS     R4,R4,#+31
-        BPL.N    ??SetVersionPattern_3
+??SetVersionPattern_1:
+        RSB      R5,R2,#+17
+        ASR      R5,R1,R5
+        LSLS     R5,R5,#+31
+        BPL.N    ??SetVersionPattern_2
 // 1511 		{
 // 1512 			nVerData ^= (0x1f25 << (5 - i));
-        MOVW     R4,#+7973
-        RSB      R5,R3,#+5
-        LSLS     R4,R4,R5
-        EORS     R2,R4,R2
+        RSB      R5,R2,#+5
+        LSL      R5,R4,R5
+        EORS     R1,R5,R1
 // 1513 		}
 // 1514 	}
-??SetVersionPattern_3:
-        ADDS     R3,R3,#+1
-??SetVersionPattern_1:
-        CMP      R3,#+6
-        BLT.N    ??SetVersionPattern_2
+??SetVersionPattern_2:
+        ADDS     R2,R2,#+1
+        CMP      R2,#+6
+        BLT.N    ??SetVersionPattern_1
 // 1515 
 // 1516 	nVerData += m_nVersion << 12;
-        ADDS     R1,R1,R2
 // 1517 
 // 1518 	for (i = 0; i < 6; ++i)
+        LDR      R3,[R3, #+8]
+        LDR.W    R4,??DataTable53_2
+        ADD      R0,R1,R0, LSL #+12
+        ADDS     R5,R3,R4
+        MOVS     R1,#+0
         MOVS     R2,#+0
+        SUBS     R5,R5,#+11
         MOVS     R6,#+21
-        LDR.W    R7,??DataTable55_3
-        B.N      ??SetVersionPattern_4
-??SetVersionPattern_5:
-        ADDS     R2,R2,#+1
-??SetVersionPattern_4:
-        CMP      R2,#+6
-        BGE.N    ??SetVersionPattern_6
 // 1519 	{
 // 1520 		for (j = 0; j < 3; ++j)
-        MOVS     R3,#+0
-        B.N      ??SetVersionPattern_7
+??SetVersionPattern_3:
+        ADDS     R7,R1,R4
+        MLA      R7,R6,R3,R7
+        SUBS     R7,R7,#+231
+        MOV      R12,#+3
 // 1521 		{
 // 1522 			m_byModuleData[m_nSymbleSize - 11 + j][i] = m_byModuleData[i][m_nSymbleSize - 11 + j] =
 // 1523 			(nVerData & (1 << (i * 3 + j))) ? '\x30' : '\x20';
-??SetVersionPattern_8:
-        MOVS     R4,#+32
-??SetVersionPattern_9:
-        LDR      R5,[R0, #+0]
-        ADDS     R5,R3,R5
-        MLA      R12,R6,R2,R7
-        ADD      R12,R5,R12
-        STRB     R4,[R12, #-11]
-        MLA      R5,R6,R5,R7
-        ADDS     R5,R2,R5
-        STRB     R4,[R5, #-231]
-        ADDS     R3,R3,#+1
-??SetVersionPattern_7:
-        CMP      R3,#+3
-        BGE.N    ??SetVersionPattern_5
-        ADD      R4,R2,R2, LSL #+1
-        ADDS     R4,R3,R4
-        ASR      R4,R1,R4
-        LSLS     R4,R4,#+31
-        BPL.N    ??SetVersionPattern_8
-        MOVS     R4,#+48
-        B.N      ??SetVersionPattern_9
+??SetVersionPattern_4:
+        ASR      LR,R0,R2
+        LSLS     LR,LR,#+31
+        ITE      MI 
+        MOVMI    LR,#+48
+        MOVPL    LR,#+32
+        STRB     LR,[R5], #+1
 // 1524 		}
+        ADDS     R2,R2,#+1
+        STRB     LR,[R7], #+21
+        SUBS     R12,R12,#+1
+        BNE.N    ??SetVersionPattern_4
 // 1525 	}
+        ADDS     R1,R1,#+1
+        ADDW     R5,R5,#+18
+        CMP      R1,#+6
+        BLT.N    ??SetVersionPattern_3
 // 1526 }
-??SetVersionPattern_6:
-        POP      {R4-R7}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI CFA R13+0
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock17
+        POP      {R4-R7,PC}       ;; return
+          CFI EndBlock cfiBlock18
 // 1527 //如果你以为我们可以开始画图，你就错了。
 // 1528 //二维码的混乱技术还没有玩完，它还要把数据码和纠错码的各个codewords交替放在一起。
 // 1529 //如何交替呢，规则如下：
@@ -4143,7 +4533,7 @@ SetVersionPattern:
 // 1531 //然后再取第一块的第二个，如此类推。如：上述示例中的Data Codewords如下
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock18 Using cfiCommon0
+          CFI Block cfiBlock19 Using cfiCommon0
           CFI Function SetCodeWordPattern
           CFI NoCalls
         THUMB
@@ -4161,161 +4551,202 @@ SetCodeWordPattern:
           CFI R4 Frame(CFA, -32)
           CFI CFA R13+32
 // 1534 	int x = m_nSymbleSize;
-        LDR.N    R1,??DataTable53
-        LDR      R2,[R1, #+0]
-        MOV      R12,R2
+        LDR.W    R0,??DataTable53_3
+        LDR      R1,[R0, #+8]
 // 1535 	int y = m_nSymbleSize - 1;
-        SUBS     R3,R2,#+1
-        MOV      R6,R3
 // 1536 
 // 1537 	int nCoef_x = 1; 
-        MOVS     R5,#+1
 // 1538 	int nCoef_y = 1; 
-        MOV      R7,R5
 // 1539 
 // 1540 	int i, j;
 // 1541 
 // 1542 	for (i = 0; i < m_ncAllCodeWord; ++i)
-        MOVS     R4,#+0
-        B.N      ??SetCodeWordPattern_0
-??SetCodeWordPattern_1:
-        ADDS     R4,R4,#+1
-??SetCodeWordPattern_0:
-        LDR      R0,[R1, #+8]
-        CMP      R4,R0
-        BGE.N    ??SetCodeWordPattern_2
+        LDR      R5,[R0, #+16]
+        SUBS     R2,R1,#+1
+        MOVS     R3,#+1
+        MOV      R6,R1
+        MOV      R4,R2
+        MOV      R8,R3
+        CMP      R5,#+1
+        BLT.N    ??SetCodeWordPattern_0
+        LDR.W    R7,??DataTable53_5
+        MOV      R12,R3
 // 1543 	{
 // 1544 		for (j = 0; j < 8; ++j)
+??SetCodeWordPattern_1:
         MOV      LR,#+0
-        B.N      ??SetCodeWordPattern_3
 // 1545 		{
 // 1546 			do
 // 1547 			{
 // 1548 				x += nCoef_x;
+??SetCodeWordPattern_2:
+        ADDS     R6,R3,R6
 // 1549 				nCoef_x *= -1;
+        RSBS     R3,R3,#+0
 // 1550 
 // 1551 				if (nCoef_x < 0)
+        BPL.N    ??SetCodeWordPattern_3
 // 1552 				{
 // 1553 					y += nCoef_y;
+        ADDS     R4,R8,R4
 // 1554 
 // 1555 					if (y < 0 || y == m_nSymbleSize)
+        BMI.N    ??SetCodeWordPattern_4
+        CMP      R4,R1
+        BNE.N    ??SetCodeWordPattern_3
 // 1556 					{
 // 1557 						y = (y < 0) ? 0 : m_nSymbleSize - 1;
+??SetCodeWordPattern_4:
+        CMP      R4,#+0
+        ITE      MI 
+        MOVMI    R4,#+0
+        MOVPL    R4,R2
 // 1558 						nCoef_y *= -1;
 // 1559 
 // 1560 						x -= 2;
+        SUBS     R6,R6,#+2
+        RSB      R8,R8,#+0
 // 1561 
 // 1562 						if (x == 6) 
+        CMP      R6,#+6
+        IT       EQ 
 // 1563 							--x;
+        MOVEQ    R6,#+5
 // 1564 					}
 // 1565 				}
 // 1566 			}
 // 1567 			while (m_byModuleData[x][y] & 0x20); 
+??SetCodeWordPattern_3:
+        MOVS     R0,#+21
+        LDR.W    R9,??DataTable53_2
+        MLA      R9,R0,R6,R9
+        LDRB     R0,[R4, R9]
+        LSLS     R0,R0,#+26
+        BMI.N    ??SetCodeWordPattern_2
 // 1568 
 // 1569 			m_byModuleData[x][y] = (m_byAllCodeWord[i] & (1 << (7 - j))) ? '\x02' : '\x00';
-??SetCodeWordPattern_4:
-        MOVS     R0,#+0
-??SetCodeWordPattern_5:
-        STRB     R0,[R6, R8]
-        ADD      LR,LR,#+1
-??SetCodeWordPattern_3:
-        CMP      LR,#+8
-        BGE.N    ??SetCodeWordPattern_1
-??SetCodeWordPattern_6:
-        ADD      R12,R5,R12
-        RSBS     R5,R5,#+0
-        BPL.N    ??SetCodeWordPattern_7
-        ADDS     R6,R7,R6
-        BMI.N    ??SetCodeWordPattern_8
-        CMP      R6,R2
-        BNE.N    ??SetCodeWordPattern_7
-??SetCodeWordPattern_8:
-        CMP      R6,#+0
-        BPL.N    ??SetCodeWordPattern_9
-        MOVS     R6,#+0
-        B.N      ??SetCodeWordPattern_10
-??SetCodeWordPattern_9:
-        MOV      R6,R3
-??SetCodeWordPattern_10:
-        RSBS     R7,R7,#+0
-        SUB      R12,R12,#+2
-        CMP      R12,#+6
-        BNE.N    ??SetCodeWordPattern_7
-        MOV      R12,#+5
-??SetCodeWordPattern_7:
-        MOVS     R0,#+21
-        LDR.W    R8,??DataTable55_3
-        MLA      R8,R0,R12,R8
-        LDRB     R0,[R6, R8]
-        LSLS     R0,R0,#+26
-        BMI.N    ??SetCodeWordPattern_6
-        LDR.W    R0,??DataTable55_7
-        LDRB     R0,[R4, R0]
-        MOV      R9,#+1
+        LDRB     R0,[R7, #+0]
         RSB      R10,LR,#+7
-        LSL      R9,R9,R10
-        TST      R0,R9
-        BEQ.N    ??SetCodeWordPattern_4
-        MOVS     R0,#+2
-        B.N      ??SetCodeWordPattern_5
+        LSL      R10,R12,R10
+        TST      R0,R10
+        ITE      NE 
+        MOVNE    R0,#+2
+        MOVEQ    R0,#+0
+        STRB     R0,[R4, R9]
 // 1570 		}
+        ADD      LR,LR,#+1
+        CMP      LR,#+8
+        BLT.N    ??SetCodeWordPattern_2
 // 1571 	}
+        ADDS     R7,R7,#+1
+        SUBS     R5,R5,#+1
+        BNE.N    ??SetCodeWordPattern_1
 // 1572 }
-??SetCodeWordPattern_2:
+??SetCodeWordPattern_0:
         POP      {R4-R10,PC}      ;; return
-          CFI EndBlock cfiBlock18
+          CFI EndBlock cfiBlock19
 // 1573 //设置遮蔽信息
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock19 Using cfiCommon0
+          CFI Block cfiBlock20 Using cfiCommon0
           CFI Function SetMaskingPattern
           CFI NoCalls
         THUMB
 // 1574 void SetMaskingPattern(int nPatternNo)
 // 1575 {
-SetMaskingPattern:
-        PUSH     {R4-R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+20
 // 1576 	int i, j;
 // 1577 	bool bMask;
 // 1578 	for (i = 0; i < m_nSymbleSize; ++i)
+SetMaskingPattern:
+        LDR.W    R2,??DataTable53_3
+        LDR      R2,[R2, #+8]
         MOVS     R1,#+0
-        B.N      ??SetMaskingPattern_1
-??SetMaskingPattern_2:
-        ADDS     R1,R1,#+1
+        CMP      R2,#+1
+        BGE.N    ??SetMaskingPattern_1
+        BX       LR
 ??SetMaskingPattern_1:
-        LDR.N    R2,??DataTable53
-        LDR      R2,[R2, #+0]
-        CMP      R1,R2
-        BGE.W    ??SetMaskingPattern_3
+        PUSH     {R4-R11,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+36
+        LDR.W    R3,??DataTable53_2
+        MOVS     R4,#+0
+        B.N      ??SetMaskingPattern_2
+??SetMaskingPattern_3:
+        MOVS     R4,#+0
+??SetMaskingPattern_2:
+        ADD      R6,R1,R1, LSR #+31
+        ASR      R9,R6,#+1
+        MOV      R5,R1
+        ADD      R8,R1,R3
+        SUB      R12,R1,R9, LSL #+1
 // 1579 	{
 // 1580 		for (j = 0; j < m_nSymbleSize; ++j)
-        MOVS     R3,#+0
-        B.N      ??SetMaskingPattern_4
 // 1581 		{
 // 1582 			if (! (m_byModuleData[j][i] & 0x20)) 
+??SetMaskingPattern_4:
+        LDRB     LR,[R8, #+0]
+        LSLS     R6,LR,#+26
+        BMI.N    ??SetMaskingPattern_5
 // 1583 			{
 // 1584 				switch (nPatternNo)
+        CMP      R0,#+6
+        BHI.N    ??SetMaskingPattern_6
+        TBB      [PC, R0]
+        DATA
+??SetMaskingPattern_0:
+        DC8      0x4,0x9,0xC,0x13
+        DC8      0x1A,0x22,0x31,0x0
+        THUMB
 // 1585 				{
 // 1586 				case 0:
 // 1587 					bMask = ((i + j) % 2 == 0)?TRUE:FALSE;
+??SetMaskingPattern_7:
+        ADD      R7,R5,R5, LSR #+31
+        ADDS     R6,R4,R1
+        ASRS     R7,R7,#+1
+        B.N      ??SetMaskingPattern_8
 // 1588 					break;
 // 1589 
 // 1590 				case 1:
 // 1591 					bMask = (i % 2 == 0)?TRUE:FALSE;
+??SetMaskingPattern_9:
+        SUBS     R7,R12,#+1
+        B.N      ??SetMaskingPattern_10
 // 1592 					break;
 // 1593 
 // 1594 				case 2:
 // 1595 					bMask = (j % 3 == 0)?TRUE:FALSE;
+??SetMaskingPattern_11:
+        MOVS     R6,#+3
+        SDIV     R6,R4,R6
+        ADD      R6,R6,R6, LSL #+1
+        SUBS     R6,R4,R6
+        B.N      ??SetMaskingPattern_12
 // 1596 					break;
 // 1597 
 // 1598 				case 3:
 // 1599 					bMask = ((i + j) % 3 == 0)?TRUE:FALSE;
+??SetMaskingPattern_13:
+        MOVS     R6,#+3
+        SDIV     R6,R5,R6
+        ADD      R6,R6,R6, LSL #+1
+        SUBS     R6,R5,R6
+        B.N      ??SetMaskingPattern_12
+??SetMaskingPattern_14:
+        MOVS     R6,#+3
+        SDIV     R6,R4,R6
+        ADD      R6,R6,R9
+        ADD      R7,R6,R6, LSR #+31
+        ASRS     R7,R7,#+1
+        B.N      ??SetMaskingPattern_8
 // 1600 					break;
 // 1601 
 // 1602 				case 4:
@@ -4324,427 +4755,334 @@ SetMaskingPattern:
 // 1605 
 // 1606 				case 5:
 // 1607 					bMask = (((i * j) % 2) + ((i * j) % 3) == 0)?TRUE:FALSE;
+??SetMaskingPattern_15:
+        MUL      R6,R4,R1
+        ADD      R7,R6,R6, LSR #+31
+        SUB      R7,R6,R7, ASR #+1
+        MOV      R10,#+3
+        SDIV     R6,R6,R10
+        ADD      R6,R6,R6, LSL #+1
+        RSB      R6,R6,R7, LSL #+1
+        B.N      ??SetMaskingPattern_12
 // 1608 					break;
 // 1609 
 // 1610 				case 6:
 // 1611 					bMask = ((((i * j) % 2) + ((i * j) % 3)) % 2 == 0)?TRUE:FALSE;
+??SetMaskingPattern_16:
+        MUL      R6,R4,R1
+        ADD      R7,R6,R6, LSR #+31
+        SUB      R11,R6,R7, ASR #+1
+        MOVS     R7,#+3
+        SDIV     R7,R6,R7
+        ADD      R7,R7,R7, LSL #+1
+        RSB      R10,R7,R11, LSL #+1
+        ADD      R6,R10,R10, LSR #+31
+        SUB      R6,R11,R6, ASR #+1
+        RSB      R7,R7,R6, LSL #+1
+        SUBS     R7,R7,#+1
+        B.N      ??SetMaskingPattern_10
 // 1612 					break;
 // 1613 
 // 1614 				default: 
 // 1615 					bMask = ((((i * j) % 3) + ((i + j) % 2)) % 2 == 0)?TRUE:FALSE;
-// 1616 					break;
-// 1617 				}
-// 1618 
-// 1619 				m_byModuleData[j][i] = (BYTE)((m_byModuleData[j][i] & 0xfe) | (((m_byModuleData[j][i] & 0x02) > 1) ^ bMask));
-??SetMaskingPattern_5:
-        MOVS     R6,#+0
 ??SetMaskingPattern_6:
-        AND      R5,R5,#0xFE
-        EORS     R6,R7,R6
-        ORRS     R5,R6,R5
-        STRB     R5,[R1, R4]
-??SetMaskingPattern_7:
-        ADDS     R3,R3,#+1
-??SetMaskingPattern_4:
-        CMP      R3,R2
-        BGE.N    ??SetMaskingPattern_2
-        MOVS     R4,#+21
-        LDR.W    R5,??DataTable55_3
-        MLA      R4,R4,R3,R5
-        LDRB     R5,[R1, R4]
-        LSLS     R6,R5,#+26
-        BMI.N    ??SetMaskingPattern_7
-        MOV      R6,R0
-        CMP      R6,#+6
-        BHI.N    ??SetMaskingPattern_8
-        TBB      [PC, R6]
-        DATA
-??SetMaskingPattern_0:
-        DC8      0x4,0xF,0x19,0x24
-        DC8      0x30,0x41,0x54,0x0
-        THUMB
-??SetMaskingPattern_9:
-        ADDS     R6,R3,R1
-        ADD      R7,R6,R6, LSR #+31
-        ASRS     R7,R7,#+1
-        SUB      R6,R6,R7, LSL #+1
-        MOV      R7,R6
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
-        B.N      ??SetMaskingPattern_10
-??SetMaskingPattern_11:
-        ADD      R6,R1,R1, LSR #+31
-        ASRS     R6,R6,#+1
-        SUB      R6,R1,R6, LSL #+1
-        MOV      R7,R6
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
-        B.N      ??SetMaskingPattern_10
-??SetMaskingPattern_12:
-        MOVS     R6,#+3
-        SDIV     R6,R3,R6
-        ADD      R6,R6,R6, LSL #+1
-        SUBS     R6,R3,R6
-        MOV      R7,R6
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
-        B.N      ??SetMaskingPattern_10
-??SetMaskingPattern_13:
-        ADDS     R6,R3,R1
+        MUL      R6,R4,R1
         MOVS     R7,#+3
         SDIV     R7,R6,R7
         ADD      R7,R7,R7, LSL #+1
         SUBS     R6,R6,R7
-        MOV      R7,R6
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
-        B.N      ??SetMaskingPattern_10
-??SetMaskingPattern_14:
-        ADD      R6,R1,R1, LSR #+31
-        MOVS     R7,#+3
-        SDIV     R7,R3,R7
-        ADD      R6,R7,R6, ASR #+1
-        ADD      R7,R6,R6, LSR #+31
+        ADDS     R6,R1,R6
+        ADD      R7,R5,R5, LSR #+31
+        ADDS     R6,R4,R6
         ASRS     R7,R7,#+1
-        SUB      R6,R6,R7, LSL #+1
-        MOV      R7,R6
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
-        B.N      ??SetMaskingPattern_10
-??SetMaskingPattern_15:
-        MUL      R6,R3,R1
-        ADD      R7,R6,R6, LSR #+31
-        SUB      R7,R6,R7, ASR #+1
-        MOV      R12,#+3
-        SDIV     R6,R6,R12
-        ADD      R6,R6,R6, LSL #+1
-        RSB      R6,R6,R7, LSL #+1
-        MOV      R7,R6
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
-        B.N      ??SetMaskingPattern_10
-??SetMaskingPattern_16:
-        MUL      R6,R3,R1
-        ADD      R7,R6,R6, LSR #+31
-        SUB      R7,R6,R7, ASR #+1
-        MOV      R12,#+3
-        SDIV     R12,R6,R12
-        ADD      R12,R12,R12, LSL #+1
-        RSB      LR,R12,R7, LSL #+1
-        ADD      LR,LR,LR, LSR #+31
-        SUB      R7,R7,LR, ASR #+1
-        RSB      R7,R12,R7, LSL #+1
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
-        B.N      ??SetMaskingPattern_10
+        SUB      R10,R6,R7, LSL #+1
+        ADD      R10,R10,R10, LSR #+31
+        ADD      R7,R7,R10, ASR #+1
 ??SetMaskingPattern_8:
-        MUL      R7,R3,R1
-        ADDS     R6,R3,R1
-        MOV      R12,#+3
-        SDIV     R12,R7,R12
-        ADD      R12,R12,R12, LSL #+1
-        SUB      R7,R7,R12
-        ADDS     R7,R1,R7
-        ADDS     R7,R3,R7
-        ADD      R12,R6,R6, LSR #+31
-        ASR      R12,R12,#+1
-        SUB      LR,R7,R12, LSL #+1
-        ADD      LR,LR,LR, LSR #+31
-        ADD      R12,R12,LR, ASR #+1
-        SUB      R7,R7,R12, LSL #+1
-        SUBS     R7,R7,#+1
-        SBCS     R7,R7,R7
-        LSRS     R7,R7,#+31
+        SUB      R6,R6,R7, LSL #+1
+??SetMaskingPattern_12:
+        SUBS     R7,R6,#+1
 ??SetMaskingPattern_10:
-        AND      R6,R5,#0x2
+        SBCS     R7,R7,R7
+// 1616 					break;
+// 1617 				}
+// 1618 
+// 1619 				m_byModuleData[j][i] = (BYTE)((m_byModuleData[j][i] & 0xfe) | (((m_byModuleData[j][i] & 0x02) > 1) ^ bMask));
+        AND      R6,LR,#0x2
         CMP      R6,#+2
-        BLT.W    ??SetMaskingPattern_5
-        MOVS     R6,#+1
-        B.N      ??SetMaskingPattern_6
+        ITE      GE 
+        MOVGE    R6,#+1
+        MOVLT    R6,#+0
+        AND      LR,LR,#0xFE
+        EORS     R6,R6,R7, LSR #+31
+        ORR      LR,R6,LR
+        STRB     LR,[R8, #+0]
 // 1620 			}
 // 1621 		}
+??SetMaskingPattern_5:
+        ADDS     R4,R4,#+1
+        ADDS     R5,R5,#+1
+        ADDW     R8,R8,#+21
+        CMP      R4,R2
+        BLT.W    ??SetMaskingPattern_4
 // 1622 	}
+        ADDS     R1,R1,#+1
+        CMP      R1,R2
+        BLT.W    ??SetMaskingPattern_3
 // 1623 }
-??SetMaskingPattern_3:
-        POP      {R4-R7,PC}       ;; return
-          CFI EndBlock cfiBlock19
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock20
 // 1624 //设置格式化信息 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock20 Using cfiCommon0
+          CFI Block cfiBlock21 Using cfiCommon0
           CFI Function SetFormatInfoPattern
           CFI NoCalls
         THUMB
 // 1625 void SetFormatInfoPattern(int nPatternNo)
 // 1626 {
 SetFormatInfoPattern:
-        PUSH     {R4-R6}
-          CFI R6 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
+        PUSH     {R4,R5}
+          CFI R5 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
 // 1627 	int nFormatInfo;
 // 1628 	int i;
 // 1629 	int nFormatData;
 // 1630 
 // 1631 	switch (m_nLevel)
-        LDR.N    R1,??DataTable53
-        LDR      R2,[R1, #+12]
-        CMP      R2,#+0
-        BEQ.N    ??SetFormatInfoPattern_0
+        LDR.W    R1,??DataTable53_3
+        LDR      R2,[R1, #+20]
+        CBZ.N    R2,??SetFormatInfoPattern_0
         CMP      R2,#+2
         BEQ.N    ??SetFormatInfoPattern_1
-        BCS.N    ??SetFormatInfoPattern_2
+        ITE      CC 
 // 1632 	{
 // 1633 	case QR_LEVEL_M:
 // 1634 		nFormatInfo = 0x00; 
-        MOVS     R2,#+0
+        MOVCC    R2,#+0
 // 1635 		break;
-        B.N      ??SetFormatInfoPattern_3
 // 1636 
 // 1637 	case QR_LEVEL_L:
 // 1638 		nFormatInfo = 0x08; 
-??SetFormatInfoPattern_0:
-        MOVS     R2,#+8
 // 1639 		break;
-        B.N      ??SetFormatInfoPattern_3
 // 1640 
 // 1641 	case QR_LEVEL_Q:
 // 1642 		nFormatInfo = 0x18; 
-??SetFormatInfoPattern_1:
-        MOVS     R2,#+24
 // 1643 		break;
-        B.N      ??SetFormatInfoPattern_3
 // 1644 
 // 1645 	default: 
 // 1646 		nFormatInfo = 0x10; 
-??SetFormatInfoPattern_2:
-        MOVS     R2,#+16
+        MOVCS    R2,#+16
+        B.N      ??SetFormatInfoPattern_2
+??SetFormatInfoPattern_0:
+        MOVS     R2,#+8
+        B.N      ??SetFormatInfoPattern_2
+??SetFormatInfoPattern_1:
+        MOVS     R2,#+24
 // 1647 		break;
 // 1648 	}
 // 1649 
 // 1650 	nFormatInfo += nPatternNo;
-??SetFormatInfoPattern_3:
+??SetFormatInfoPattern_2:
         ADDS     R0,R0,R2
 // 1651 
 // 1652 	nFormatData = nFormatInfo << 10;
-        LSLS     R0,R0,#+10
-        MOV      R2,R0
+        LSLS     R2,R0,#+10
 // 1653 
 // 1654 	for (i = 0; i < 5; ++i)
         MOVS     R3,#+0
-        B.N      ??SetFormatInfoPattern_4
+        MOVW     R4,#+1335
 // 1655 	{
 // 1656 		if (nFormatData & (1 << (14 - i)))
-??SetFormatInfoPattern_5:
-        RSB      R4,R3,#+14
-        ASR      R4,R2,R4
-        LSLS     R4,R4,#+31
-        BPL.N    ??SetFormatInfoPattern_6
+??SetFormatInfoPattern_3:
+        RSB      R5,R3,#+14
+        ASR      R5,R2,R5
+        LSLS     R5,R5,#+31
+        BPL.N    ??SetFormatInfoPattern_4
 // 1657 		{
 // 1658 			nFormatData ^= (0x0537 << (4 - i)); 
-        MOVW     R4,#+1335
         RSB      R5,R3,#+4
-        LSLS     R4,R4,R5
-        EORS     R2,R4,R2
+        LSL      R5,R4,R5
+        EORS     R2,R5,R2
 // 1659 		}
 // 1660 	}
-??SetFormatInfoPattern_6:
-        ADDS     R3,R3,#+1
 ??SetFormatInfoPattern_4:
+        ADDS     R3,R3,#+1
         CMP      R3,#+5
-        BLT.N    ??SetFormatInfoPattern_5
+        BLT.N    ??SetFormatInfoPattern_3
 // 1661 
 // 1662 	nFormatData += nFormatInfo << 10;
 // 1663 
 // 1664 	nFormatData ^= 0x5412;
-        ADDS     R0,R0,R2
+        ADD      R0,R2,R0, LSL #+10
         EOR      R0,R0,#0x5400
-        EOR      R0,R0,#0x12
 // 1665 
 // 1666 	for (i = 0; i <= 5; ++i)
+        LDR.W    R2,??DataTable53_2
+        EOR      R0,R0,#0x12
         MOVS     R3,#+0
-        B.N      ??SetFormatInfoPattern_7
+        ADD      R4,R2,#+168
 // 1667 		m_byModuleData[8][i] = (nFormatData & (1 << i)) ? '\x30' : '\x20';
-??SetFormatInfoPattern_8:
-        MOVS     R4,#+32
-??SetFormatInfoPattern_9:
-        ADDS     R2,R3,R2
-        STRB     R4,[R2, #+168]
+??SetFormatInfoPattern_5:
+        ASR      R5,R0,R3
+        LSLS     R5,R5,#+31
+        ITE      MI 
+        MOVMI    R5,#+48
+        MOVPL    R5,#+32
+        STRB     R5,[R4, #+0]
         ADDS     R3,R3,#+1
-??SetFormatInfoPattern_7:
-        LDR.W    R2,??DataTable55_3
+        ASR      R5,R0,R3
+        LSLS     R5,R5,#+31
+        ITE      MI 
+        MOVMI    R5,#+48
+        MOVPL    R5,#+32
+        STRB     R5,[R4, #+1]
+        ADDS     R3,R3,#+1
+        ADDS     R4,R4,#+2
         CMP      R3,#+6
-        BGE.N    ??SetFormatInfoPattern_10
-        ASR      R4,R0,R3
-        LSLS     R4,R4,#+31
-        BPL.N    ??SetFormatInfoPattern_8
-        MOVS     R4,#+48
-        B.N      ??SetFormatInfoPattern_9
+        BLT.N    ??SetFormatInfoPattern_5
 // 1668 
 // 1669 	m_byModuleData[8][7] = (nFormatData & (1 << 6)) ? '\x30' : '\x20';
-??SetFormatInfoPattern_10:
-        ADDW     R3,R2,#+155
-        LSLS     R4,R0,#+25
-        BPL.N    ??SetFormatInfoPattern_11
-        MOVS     R4,#+48
-        STRB     R4,[R3, #+20]
-        B.N      ??SetFormatInfoPattern_12
-??SetFormatInfoPattern_11:
-        MOVS     R4,#+32
-        STRB     R4,[R3, #+20]
+        LSLS     R3,R0,#+25
+        ITE      MI 
+        MOVMI    R3,#+48
+        MOVPL    R3,#+32
+        ADDW     R4,R2,#+155
+        STRB     R3,[R4, #+20]
 // 1670 	m_byModuleData[8][8] = (nFormatData & (1 << 7)) ? '\x30' : '\x20';
-??SetFormatInfoPattern_12:
-        LSLS     R4,R0,#+24
-        BPL.N    ??SetFormatInfoPattern_13
-        MOVS     R4,#+48
-        STRB     R4,[R3, #+21]
-        B.N      ??SetFormatInfoPattern_14
-??SetFormatInfoPattern_13:
-        MOVS     R4,#+32
-        STRB     R4,[R3, #+21]
+        LSLS     R3,R0,#+24
+        ITE      MI 
+        MOVMI    R3,#+48
+        MOVPL    R3,#+32
+        STRB     R3,[R4, #+21]
 // 1671 	m_byModuleData[7][8] = (nFormatData & (1 << 8)) ? '\x30' : '\x20';
-??SetFormatInfoPattern_14:
         LSLS     R3,R0,#+23
-        BPL.N    ??SetFormatInfoPattern_15
-        MOVS     R3,#+48
-        STRB     R3,[R2, #+155]
-        B.N      ??SetFormatInfoPattern_16
-??SetFormatInfoPattern_15:
-        MOVS     R3,#+32
+        ITE      MI 
+        MOVMI    R3,#+48
+        MOVPL    R3,#+32
         STRB     R3,[R2, #+155]
 // 1672 
 // 1673 	for (i = 9; i <= 14; ++i)
-??SetFormatInfoPattern_16:
+        ADD      R4,R2,#+92
         MOVS     R3,#+9
-        B.N      ??SetFormatInfoPattern_17
 // 1674 		m_byModuleData[14 - i][8] = (nFormatData & (1 << i)) ? '\x30' : '\x20';
-??SetFormatInfoPattern_18:
-        MOVS     R4,#+32
-??SetFormatInfoPattern_19:
-        MVN      R5,#+20
-        MLA      R5,R5,R3,R2
-        STRB     R4,[R5, #+302]
+??SetFormatInfoPattern_6:
+        ASR      R5,R0,R3
+        LSLS     R5,R5,#+31
+        ITE      MI 
+        MOVMI    R5,#+48
+        MOVPL    R5,#+32
+        STRB     R5,[R4, #+21]
         ADDS     R3,R3,#+1
-??SetFormatInfoPattern_17:
+        ASR      R5,R0,R3
+        LSLS     R5,R5,#+31
+        ITE      MI 
+        MOVMI    R5,#+48
+        MOVPL    R5,#+32
+        ADDS     R3,R3,#+1
+        STRB     R5,[R4], #-42
         CMP      R3,#+15
-        BGE.N    ??SetFormatInfoPattern_20
-        ASR      R4,R0,R3
-        LSLS     R4,R4,#+31
-        BPL.N    ??SetFormatInfoPattern_18
-        MOVS     R4,#+48
-        B.N      ??SetFormatInfoPattern_19
+        BLT.N    ??SetFormatInfoPattern_6
 // 1675 
 // 1676 	for (i = 0; i <= 7; ++i)
-??SetFormatInfoPattern_20:
+        LDR      R1,[R1, #+8]
+        MOVS     R4,#+21
+        MLA      R4,R4,R1,R2
         MOVS     R3,#+0
-        MOVS     R6,#+21
-        B.N      ??SetFormatInfoPattern_21
+        SUBS     R4,R4,#+34
 // 1677 		m_byModuleData[m_nSymbleSize - 1 - i][8] = (nFormatData & (1 << i)) ? '\x30' : '\x20';
-??SetFormatInfoPattern_22:
-        MOVS     R4,#+32
-??SetFormatInfoPattern_23:
-        LDR      R5,[R1, #+0]
-        SUBS     R5,R5,#+1
-        SUBS     R5,R5,R3
-        MLA      R5,R6,R5,R2
-        STRB     R4,[R5, #+8]
+??SetFormatInfoPattern_7:
+        ASR      R5,R0,R3
+        LSLS     R5,R5,#+31
+        ITE      MI 
+        MOVMI    R5,#+48
+        MOVPL    R5,#+32
+        STRB     R5,[R4, #+21]
         ADDS     R3,R3,#+1
-??SetFormatInfoPattern_21:
+        ASR      R5,R0,R3
+        LSLS     R5,R5,#+31
+        ITE      MI 
+        MOVMI    R5,#+48
+        MOVPL    R5,#+32
+        ADDS     R3,R3,#+1
+        STRB     R5,[R4], #-42
         CMP      R3,#+8
-        BGE.N    ??SetFormatInfoPattern_24
-        ASR      R4,R0,R3
-        LSLS     R4,R4,#+31
-        BPL.N    ??SetFormatInfoPattern_22
-        MOVS     R4,#+48
-        B.N      ??SetFormatInfoPattern_23
+        BLT.N    ??SetFormatInfoPattern_7
 // 1678 
 // 1679 	m_byModuleData[8][m_nSymbleSize - 8] = '\x30';
-??SetFormatInfoPattern_24:
-        LDR      R1,[R1, #+0]
-        MOVS     R3,#+48
-        ADDS     R4,R1,R2
-        STRB     R3,[R4, #+160]
+        ADDS     R1,R1,R2
+        MOVS     R2,#+48
+        STRB     R2,[R1, #+160]
 // 1680 
 // 1681 	for (i = 8; i <= 14; ++i)
-        MOVS     R3,#+8
-        B.N      ??SetFormatInfoPattern_25
+        ADDW     R1,R1,#+161
+        MOVS     R2,#+8
 // 1682 		m_byModuleData[8][m_nSymbleSize - 15 + i] = (nFormatData & (1 << i)) ? '\x30' : '\x20';
-??SetFormatInfoPattern_26:
-        MOVS     R4,#+32
-??SetFormatInfoPattern_27:
-        ADDS     R5,R3,R1
-        ADDS     R5,R5,R2
-        STRB     R4,[R5, #+153]
-        ADDS     R3,R3,#+1
-??SetFormatInfoPattern_25:
-        CMP      R3,#+15
-        BGE.N    ??SetFormatInfoPattern_28
-        ASR      R4,R0,R3
-        LSLS     R4,R4,#+31
-        BPL.N    ??SetFormatInfoPattern_26
-        MOVS     R4,#+48
-        B.N      ??SetFormatInfoPattern_27
+??SetFormatInfoPattern_8:
+        ASR      R3,R0,R2
+        LSLS     R3,R3,#+31
+        ITE      MI 
+        MOVMI    R3,#+48
+        MOVPL    R3,#+32
+        ADDS     R2,R2,#+1
+        STRB     R3,[R1], #+1
+        CMP      R2,#+15
+        BLT.N    ??SetFormatInfoPattern_8
 // 1683 }
-??SetFormatInfoPattern_28:
-        POP      {R4-R6}
+        POP      {R4,R5}
           CFI R4 SameValue
           CFI R5 SameValue
-          CFI R6 SameValue
           CFI CFA R13+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock20
+          CFI EndBlock cfiBlock21
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable53:
-        DC32     m_nSymbleSize
+??DataTable52:
+        DC32     0xffff7ec0
 // 1684 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock21 Using cfiCommon0
+          CFI Block cfiBlock22 Using cfiCommon0
           CFI Function CountPenalty
           CFI NoCalls
         THUMB
 // 1685 int CountPenalty(void)
 // 1686 {
 CountPenalty:
-        PUSH     {R4-R8,LR}
+        PUSH     {R2-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+44
 // 1687 	int nPenalty = 0;
-        MOVS     R2,#+0
 // 1688 	int i, j, k;
 // 1689 	int nCount = 0, s_nCount;
-        MOV      R0,R2
+        LDR.W    R1,??DataTable53_3
+        LDR      R1,[R1, #+8]
+        MOVS     R2,#+0
+        MOVS     R0,#+0
+        CMP      R1,#+1
+        BLT.N    ??CountPenalty_0
+        LDR.W    R12,??DataTable53_2
+        MOV      R3,R12
+        MOV      R8,R1
+        SUBS     R5,R1,#+4
 // 1690 
 // 1691 	for (i = 0; i < m_nSymbleSize; ++i)
-        MOV      R7,R0
-        B.N      ??CountPenalty_0
-??CountPenalty_1:
-        ADDS     R7,R7,#+1
-??CountPenalty_0:
-        LDR.W    R1,??DataTable55_4
-        LDR      R1,[R1, #+0]
-        CMP      R7,R1
-        BGE.N    ??CountPenalty_2
 // 1692 	{
 // 1693 		for (j = 0; j < m_nSymbleSize - 4; ++j)
-        MOV      R3,R0
-        B.N      ??CountPenalty_3
+??CountPenalty_1:
+        MOVS     R4,#+0
+        B.N      ??CountPenalty_2
 // 1694 		{
 // 1695 			int nCount = 1;
 // 1696 
@@ -4752,66 +5090,61 @@ CountPenalty:
 // 1698 			{
 // 1699 				if (((m_byModuleData[i][j] & 0x11) == 0) == ((m_byModuleData[i][k] & 0x11) == 0))
 // 1700 					++nCount;
-??CountPenalty_4:
-        ADD      R12,R12,#+1
+??CountPenalty_3:
+        ADDS     R7,R7,#+1
         ADDS     R6,R6,#+1
-??CountPenalty_5:
+??CountPenalty_4:
         CMP      R6,R1
-        BGE.N    ??CountPenalty_6
-        MOVS     R4,#+21
-        LDR.W    R5,??DataTable55_3
-        MLA      R4,R4,R7,R5
-        LDRB     R5,[R3, R4]
-        AND      LR,R5,#0x11
-        SUBS     R5,LR,#+1
-        SBCS     R5,R5,R5
-        LSRS     R5,R5,#+31
-        LDRB     R4,[R6, R4]
-        AND      LR,R4,#0x11
-        SUBS     R4,LR,#+1
-        SBCS     R4,R4,R4
-        CMP      R5,R4, LSR #+31
-        BEQ.N    ??CountPenalty_4
+        BGE.N    ??CountPenalty_5
+        LDRB     R9,[R4, R3]
+        AND      R10,R9,#0x11
+        SUBS     R9,R10,#+1
+        LDRB     R10,[LR], #+1
+        SBC      R9,R9,R9
+        AND      R11,R10,#0x11
+        SUBS     R10,R11,#+1
+        LSR      R9,R9,#+31
+        SBC      R10,R10,R10
+        CMP      R9,R10, LSR #+31
+        BEQ.N    ??CountPenalty_3
 // 1701 				else
 // 1702 					break;
 // 1703 			}
 // 1704 
 // 1705 			if (nCount >= 5)
-??CountPenalty_6:
-        CMP      R12,#+5
-        BLT.N    ??CountPenalty_7
+??CountPenalty_5:
+        CMP      R7,#+5
+        ITT      GE 
 // 1706 			{
 // 1707 				nPenalty += 3 + (nCount - 5);
-        SUB      R3,R12,#+2
-        ADDS     R2,R3,R2
+        SUBGE    R4,R7,#+2
+        ADDGE    R2,R4,R2
 // 1708 			}
 // 1709 
 // 1710 			j = k - 1;
-??CountPenalty_7:
-        MOV      R3,R6
-??CountPenalty_3:
-        SUBS     R4,R1,#+4
-        CMP      R3,R4
-        BGE.N    ??CountPenalty_1
-        MOV      R12,#+1
-        ADDS     R6,R3,#+1
-        B.N      ??CountPenalty_5
+        MOV      R4,R6
+??CountPenalty_2:
+        CMP      R4,R5
+        BGE.N    ??CountPenalty_6
+        ADDS     R6,R4,#+1
+        MOVS     R7,#+1
+        ADD      LR,R6,R3
+        B.N      ??CountPenalty_4
 // 1711 		}
 // 1712 	}
+??CountPenalty_6:
+        ADDW     R3,R3,#+21
+        SUBS     R8,R8,#+1
+        BNE.N    ??CountPenalty_1
+        MOVS     R3,#+0
+        MOV      R8,#+21
 // 1713 
 // 1714 	for (i = 0; i < m_nSymbleSize; ++i)
-??CountPenalty_2:
-        MOV      R7,R0
-        B.N      ??CountPenalty_8
-??CountPenalty_9:
-        ADDS     R7,R7,#+1
-??CountPenalty_8:
-        CMP      R7,R1
-        BGE.N    ??CountPenalty_10
 // 1715 	{
 // 1716 		for (j = 0; j < m_nSymbleSize - 4; ++j)
-        MOV      R3,R0
-        B.N      ??CountPenalty_11
+??CountPenalty_7:
+        MOVS     R4,#+0
+        B.N      ??CountPenalty_8
 // 1717 		{
 // 1718 			int nCount = 1;
 // 1719 
@@ -4819,130 +5152,134 @@ CountPenalty:
 // 1721 			{
 // 1722 				if (((m_byModuleData[j][i] & 0x11) == 0) == ((m_byModuleData[k][i] & 0x11) == 0))
 // 1723 					++nCount;
-??CountPenalty_12:
-        ADD      R12,R12,#+1
+??CountPenalty_9:
+        ADDS     R7,R7,#+1
         ADDS     R6,R6,#+1
-??CountPenalty_13:
+??CountPenalty_10:
         CMP      R6,R1
-        BGE.N    ??CountPenalty_14
-        MOVS     R4,#+21
-        LDR.W    R5,??DataTable55_3
-        MLA      LR,R4,R3,R5
-        LDRB     LR,[R7, LR]
-        AND      R8,LR,#0x11
-        SUBS     LR,R8,#+1
-        SBC      LR,LR,LR
-        LSR      LR,LR,#+31
-        MLA      R4,R4,R6,R5
-        LDRB     R4,[R7, R4]
-        AND      R5,R4,#0x11
-        SUBS     R4,R5,#+1
-        SBCS     R4,R4,R4
-        CMP      LR,R4, LSR #+31
-        BEQ.N    ??CountPenalty_12
+        BGE.N    ??CountPenalty_11
+        ADD      R9,R3,R12
+        LDRB     R9,[R4, R9]
+        AND      R10,R9,#0x11
+        SUBS     R9,R10,#+1
+        LDRB     R10,[LR], #+21
+        SBC      R9,R9,R9
+        AND      R11,R10,#0x11
+        SUBS     R10,R11,#+1
+        LSR      R9,R9,#+31
+        SBC      R10,R10,R10
+        CMP      R9,R10, LSR #+31
+        BEQ.N    ??CountPenalty_9
 // 1724 				else
 // 1725 					break;
 // 1726 			}
 // 1727 
 // 1728 			if (nCount >= 5)
-??CountPenalty_14:
-        CMP      R12,#+5
-        BLT.N    ??CountPenalty_15
+??CountPenalty_11:
+        CMP      R7,#+5
+        ITT      GE 
 // 1729 			{
 // 1730 				nPenalty += 3 + (nCount - 5);
-        SUB      R3,R12,#+2
-        ADDS     R2,R3,R2
+        SUBGE    R4,R7,#+2
+        ADDGE    R2,R4,R2
 // 1731 			}
 // 1732 
 // 1733 			j = k - 1;
-??CountPenalty_15:
-        MOV      R3,R6
-??CountPenalty_11:
-        SUBS     R4,R1,#+4
-        CMP      R3,R4
-        BGE.N    ??CountPenalty_9
-        MOV      R12,#+1
-        ADDS     R6,R3,#+1
-        B.N      ??CountPenalty_13
+        MOV      R4,R6
+??CountPenalty_8:
+        CMP      R4,R5
+        BGE.N    ??CountPenalty_12
+        ADDS     R6,R4,#+1
+        ADD      LR,R3,R12
+        MOVS     R7,#+1
+        MLA      LR,R8,R6,LR
+        MUL      R4,R8,R4
+        B.N      ??CountPenalty_10
 // 1734 		}
 // 1735 	}
+??CountPenalty_12:
+        ADDS     R3,R3,#+1
+        CMP      R3,R1
+        BLT.N    ??CountPenalty_7
 // 1736 
 // 1737 	for (i = 0; i < m_nSymbleSize - 1; ++i)
-??CountPenalty_10:
-        MOV      R6,R0
-        SUBS     R7,R1,#+1
-        B.N      ??CountPenalty_16
+??CountPenalty_0:
+        SUBS     R3,R1,#+1
+        CMP      R3,#+1
+        BLT.N    ??CountPenalty_13
+        LDR.N    R4,??DataTable53_2
+        MOV      R5,R3
+??CountPenalty_14:
+        MOV      R6,R4
+        ADDW     R8,R4,#+21
+        MOV      R12,R3
 // 1738 	{
 // 1739 		for (j = 0; j < m_nSymbleSize - 1; ++j)
 // 1740 		{
 // 1741 			if ((((m_byModuleData[i][j] & 0x11) == 0) == ((m_byModuleData[i + 1][j]		& 0x11) == 0)) &&
 // 1742 				(((m_byModuleData[i][j] & 0x11) == 0) == ((m_byModuleData[i]	[j + 1] & 0x11) == 0)) &&
 // 1743 				(((m_byModuleData[i][j] & 0x11) == 0) == ((m_byModuleData[i + 1][j + 1] & 0x11) == 0)))
-??CountPenalty_17:
-        MOVS     R4,#+21
-        LDR.N    R5,??DataTable55_3
-        MLA      R4,R4,R6,R5
-        LDRB     R5,[R3, R4]
-        AND      R12,R5,#0x11
-        SUBS     R5,R12,#+1
-        SBCS     R5,R5,R5
-        LSRS     R5,R5,#+31
-        ADD      R12,R3,R4
-        LDRB     R12,[R12, #+21]
-        AND      LR,R12,#0x11
-        SUBS     R12,LR,#+1
-        SBC      R12,R12,R12
-        CMP      R5,R12, LSR #+31
-        BNE.N    ??CountPenalty_18
-        LDRB     R5,[R3, R4]
-        AND      R12,R5,#0x11
-        SUBS     R5,R12,#+1
-        SBCS     R5,R5,R5
-        LSRS     R5,R5,#+31
-        ADD      R12,R3,R4
-        LDRB     R12,[R12, #+1]
-        AND      LR,R12,#0x11
-        SUBS     R12,LR,#+1
-        SBC      R12,R12,R12
-        CMP      R5,R12, LSR #+31
-        BNE.N    ??CountPenalty_18
-        LDRB     R5,[R3, R4]
-        AND      R12,R5,#0x11
-        SUBS     R5,R12,#+1
-        SBCS     R5,R5,R5
-        LSRS     R5,R5,#+31
-        ADDS     R4,R3,R4
-        LDRB     R4,[R4, #+22]
-        AND      R12,R4,#0x11
-        SUBS     R4,R12,#+1
-        SBCS     R4,R4,R4
-        CMP      R5,R4, LSR #+31
-        BNE.N    ??CountPenalty_18
+??CountPenalty_15:
+        LDRB     LR,[R6, #+0]
+        AND      R7,LR,#0x11
+        SUBS     LR,R7,#+1
+        LDRB     R7,[R8, #+0]
+        SBC      LR,LR,LR
+        AND      R9,R7,#0x11
+        SUBS     R7,R9,#+1
+        LSR      LR,LR,#+31
+        SBCS     R7,R7,R7
+        CMP      LR,R7, LSR #+31
+        BNE.N    ??CountPenalty_16
+        LDRB     R7,[R6, #+1]
+        AND      R9,R7,#0x11
+        SUBS     R7,R9,#+1
+        SBCS     R7,R7,R7
+        CMP      LR,R7, LSR #+31
+        BNE.N    ??CountPenalty_16
+        LDRB     R7,[R8, #+1]
+        AND      R9,R7,#0x11
+        SUBS     R7,R9,#+1
+        SBCS     R7,R7,R7
+        CMP      LR,R7, LSR #+31
+        IT       EQ 
 // 1744 			{
 // 1745 				nPenalty += 3;
-        ADDS     R2,R2,#+3
+        ADDEQ    R2,R2,#+3
 // 1746 			}
 // 1747 		}
-??CountPenalty_18:
-        ADDS     R3,R3,#+1
-??CountPenalty_19:
-        CMP      R3,R7
-        BLT.N    ??CountPenalty_17
-        ADDS     R6,R6,#+1
 ??CountPenalty_16:
-        CMP      R6,R7
-        BGE.N    ??CountPenalty_20
-        MOV      R3,R0
-        B.N      ??CountPenalty_19
+        ADDS     R6,R6,#+1
+        ADD      R8,R8,#+1
+        SUBS     R12,R12,#+1
+        BNE.N    ??CountPenalty_15
 // 1748 	}
+        ADDW     R4,R4,#+21
+        SUBS     R5,R5,#+1
+        BNE.N    ??CountPenalty_14
 // 1749 
 // 1750 	for (i = 0; i < m_nSymbleSize; ++i)
-??CountPenalty_20:
-        MOV      R6,R0
-        MOV      R12,#+17
-        B.N      ??CountPenalty_21
+??CountPenalty_13:
+        CMP      R1,#+1
+        BLT.W    ??CountPenalty_17
+        SUB      R5,R1,#+10
+        STR      R5,[SP, #+4]
+        MOV      R3,R1
+        LDR.W    R12,??DataTable53_2
+        SUB      R5,R1,#+9
+        MOV      R8,R12
+        STR      R5,[SP, #+0]
+        SUB      R10,R1,#+8
+        SUB      R9,R1,#+7
+        SUBS     R7,R1,#+6
 // 1751 	{
 // 1752 		for (j = 0; j < m_nSymbleSize - 6; ++j)
+??CountPenalty_18:
+        MOVS     R4,#+0
+        CMP      R7,#+1
+        BLT.N    ??CountPenalty_19
+        MOV      R5,R8
+        B.N      ??CountPenalty_20
 // 1753 		{
 // 1754 			if (((j == 0) ||				 (! (m_byModuleData[i][j - 1] & 0x11))) && // 柧 傑偨偼 僔儞儃儖奜
 // 1755 											 (   m_byModuleData[i][j]     & 0x11)   && // 埫 - 1
@@ -4953,50 +5290,39 @@ CountPenalty:
 // 1760 											 (! (m_byModuleData[i][j + 5] & 0x11))  && // 柧 - 1
 // 1761 											 (   m_byModuleData[i][j + 6] & 0x11)   && // 埫 - 1
 // 1762 				((j == m_nSymbleSize - 7) || (! (m_byModuleData[i][j + 7] & 0x11))))   // 柧 傑偨偼 僔儞儃儖奜
-??CountPenalty_22:
-        MOVS     R4,#+21
-        LDR.N    R5,??DataTable55_3
-        MLA      R4,R4,R6,R5
-        CMP      R3,#+0
-        BEQ.N    ??CountPenalty_23
-        ADDS     R5,R3,R4
-        SUBS     R5,R5,#+4
-        LDRB     R5,[R5, #+3]
-        MOV      R7,R12
-        TST      R5,R7
-        BNE.N    ??CountPenalty_24
-??CountPenalty_23:
-        LDRB     R5,[R3, R4]
-        MOV      R7,R12
-        TST      R5,R7
-        BEQ.N    ??CountPenalty_24
-        ADDS     R5,R3,R4
-        LDRB     R5,[R5, #+1]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_24
-        ADDS     R5,R3,R4
-        ADDS     R5,R5,#+1
-        LDRB     R7,[R5, #+1]
-        TST      R7,R12
-        BEQ.N    ??CountPenalty_24
-        LDRB     R7,[R5, #+2]
-        TST      R7,R12
-        BEQ.N    ??CountPenalty_24
-        LDRB     R7,[R5, #+3]
-        TST      R7,R12
-        BEQ.N    ??CountPenalty_24
-        LDRB     R7,[R5, #+4]
-        TST      R7,R12
-        BNE.N    ??CountPenalty_24
-        LDRB     R7,[R5, #+5]
-        TST      R7,R12
-        BEQ.N    ??CountPenalty_24
-        SUBS     R7,R1,#+7
-        CMP      R3,R7
-        BEQ.N    ??CountPenalty_25
-        LDRB     R7,[R5, #+6]
-        TST      R7,R12
-        BNE.N    ??CountPenalty_24
+??CountPenalty_21:
+        CMP      R4,#+0
+        ITT      NE 
+        LDRBNE   R6,[R5, #-1]
+        TSTNE    R6,LR
+        BNE.N    ??CountPenalty_22
+??CountPenalty_20:
+        LDRB     R6,[R5, #+0]
+        MOV      LR,#+17
+        TST      R6,LR
+        BEQ.N    ??CountPenalty_22
+        LDRB     R6,[R5, #+1]
+        TST      R6,LR
+        BNE.N    ??CountPenalty_22
+        LDRB     R6,[R5, #+2]
+        TST      R6,LR
+        ITTTT    NE 
+        LDRBNE   R6,[R5, #+3]
+        TSTNE    R6,LR
+        LDRBNE   R6,[R5, #+4]
+        TSTNE    R6,LR
+        BEQ.N    ??CountPenalty_22
+        LDRB     R6,[R5, #+5]
+        TST      R6,LR
+        BNE.N    ??CountPenalty_22
+        LDRB     R6,[R5, #+6]
+        TST      R6,LR
+        BEQ.N    ??CountPenalty_22
+        CMP      R4,R9
+        ITT      NE 
+        LDRBNE   R6,[R5, #+7]
+        TSTNE    R6,LR
+        BNE.N    ??CountPenalty_22
 // 1763 			{
 // 1764 				if (((j < 2 || ! (m_byModuleData[i][j - 2] & 0x11)) && 
 // 1765 					 (j < 3 || ! (m_byModuleData[i][j - 3] & 0x11)) &&
@@ -5004,81 +5330,77 @@ CountPenalty:
 // 1767 					((j >= m_nSymbleSize - 8  || ! (m_byModuleData[i][j + 8]  & 0x11)) &&
 // 1768 					 (j >= m_nSymbleSize - 9  || ! (m_byModuleData[i][j + 9]  & 0x11)) &&
 // 1769 					 (j >= m_nSymbleSize - 10 || ! (m_byModuleData[i][j + 10] & 0x11))))
+        CMP      R4,#+2
+        BLT.N    ??CountPenalty_23
+        LDRB     R6,[R5, #-2]
+        TST      R6,LR
+        BNE.N    ??CountPenalty_24
+??CountPenalty_23:
+        CMP      R4,#+3
+        BLT.N    ??CountPenalty_25
+        LDRB     R6,[R5, #-3]
+        TST      R6,LR
+        BNE.N    ??CountPenalty_24
 ??CountPenalty_25:
-        CMP      R3,#+2
+        CMP      R4,#+4
         BLT.N    ??CountPenalty_26
-        ADDS     R7,R3,R4
-        SUBS     R7,R7,#+4
-        LDRB     R7,[R7, #+2]
-        TST      R7,R12
-        BNE.N    ??CountPenalty_27
-??CountPenalty_26:
-        CMP      R3,#+3
-        BLT.N    ??CountPenalty_28
-        ADDS     R7,R3,R4
-        SUBS     R7,R7,#+4
-        LDRB     R7,[R7, #+1]
-        TST      R7,R12
-        BNE.N    ??CountPenalty_27
-??CountPenalty_28:
-        CMP      R3,#+4
-        BLT.N    ??CountPenalty_29
-        ADDS     R4,R3,R4
-        LDRB     R4,[R4, #-4]
-        MOV      R7,R12
-        TST      R4,R7
-        BEQ.N    ??CountPenalty_29
+        LDRB     R6,[R5, #-4]
+        TST      R6,LR
+        BEQ.N    ??CountPenalty_26
+??CountPenalty_24:
+        CMP      R4,R10
+        BGE.N    ??CountPenalty_27
+        LDRB     R6,[R5, #+8]
+        TST      R6,LR
+        BNE.N    ??CountPenalty_22
 ??CountPenalty_27:
-        SUB      R4,R1,#+8
-        CMP      R3,R4
-        BGE.N    ??CountPenalty_30
-        LDRB     R4,[R5, #+7]
-        MOV      R7,R12
-        TST      R4,R7
-        BNE.N    ??CountPenalty_24
-??CountPenalty_30:
-        SUB      R4,R1,#+9
-        CMP      R3,R4
-        BGE.N    ??CountPenalty_31
-        LDRB     R4,[R5, #+8]
-        MOV      R7,R12
-        TST      R4,R7
-        BNE.N    ??CountPenalty_24
-??CountPenalty_31:
-        SUB      R4,R1,#+10
-        CMP      R3,R4
-        BGE.N    ??CountPenalty_29
-        LDRB     R4,[R5, #+9]
-        MOV      R5,R12
-        TST      R4,R5
-        BNE.N    ??CountPenalty_24
+        LDR      R6,[SP, #+0]
+        CMP      R4,R6
+        BGE.N    ??CountPenalty_28
+        LDRB     R6,[R5, #+9]
+        TST      R6,LR
+        BNE.N    ??CountPenalty_22
+??CountPenalty_28:
+        LDR      R6,[SP, #+4]
+        CMP      R4,R6
+        BGE.N    ??CountPenalty_26
+        LDRB     R6,[R5, #+10]
+        TST      R6,LR
+        BNE.N    ??CountPenalty_22
 // 1770 				{
 // 1771 					nPenalty += 40;
-??CountPenalty_29:
+??CountPenalty_26:
         ADDS     R2,R2,#+40
 // 1772 				}
 // 1773 			}
 // 1774 		}
-??CountPenalty_24:
-        ADDS     R3,R3,#+1
-??CountPenalty_32:
-        SUBS     R4,R1,#+6
-        CMP      R3,R4
-        BLT.N    ??CountPenalty_22
-        ADDS     R6,R6,#+1
-??CountPenalty_21:
-        CMP      R6,R1
-        BGE.N    ??CountPenalty_33
-        MOV      R3,R0
-        B.N      ??CountPenalty_32
+??CountPenalty_22:
+        ADDS     R4,R4,#+1
+        ADDS     R5,R5,#+1
+        CMP      R4,R7
+        BLT.N    ??CountPenalty_21
 // 1775 	}
+??CountPenalty_19:
+        ADDW     R8,R8,#+21
+        SUBS     R3,R3,#+1
+        BNE.N    ??CountPenalty_18
+        SUB      R5,R1,#+10
+        STR      R5,[SP, #+4]
+        SUB      LR,R12,#+84
+        SUB      R5,R1,#+9
+        STR      R5,[SP, #+0]
+        MOV      R11,#+17
 // 1776 
 // 1777 	for (i = 0; i < m_nSymbleSize; ++i)
-??CountPenalty_33:
-        MOV      R6,R0
-        B.N      ??CountPenalty_34
 // 1778 	{
 // 1779 		for (j = 0; j < m_nSymbleSize - 6; ++j)
+??CountPenalty_29:
+        MOVS     R4,#+0
+        CMP      R7,#+1
+        BLT.N    ??CountPenalty_30
+        MOV      R5,LR
+        ADD      R6,R3,R12
+        B.N      ??CountPenalty_31
 // 1780 		{
 // 1781 			if (((j == 0) ||				 (! (m_byModuleData[j - 1][i] & 0x11))) && // 柧 傑偨偼 僔儞儃儖奜
 // 1782 											 (   m_byModuleData[j]    [i] & 0x11)   && // 埫 - 1
@@ -5089,53 +5411,38 @@ CountPenalty:
 // 1787 											 (! (m_byModuleData[j + 5][i] & 0x11))  && // 柧 - 1
 // 1788 											 (   m_byModuleData[j + 6][i] & 0x11)   && // 埫 - 1
 // 1789 				((j == m_nSymbleSize - 7) || (! (m_byModuleData[j + 7][i] & 0x11))))   // 柧 傑偨偼 僔儞儃儖奜
-??CountPenalty_35:
-        MOVS     R4,#+21
-        LDR.N    R5,??DataTable55_3
-        MLA      R4,R4,R3,R5
-        CMP      R3,#+0
-        BEQ.N    ??CountPenalty_36
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #-21]
-        MOV      R7,R12
-        TST      R5,R7
-        BNE.N    ??CountPenalty_37
-??CountPenalty_36:
-        LDRB     R5,[R6, R4]
-        MOV      R7,R12
-        TST      R5,R7
-        BEQ.N    ??CountPenalty_37
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+21]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_37
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+42]
-        TST      R5,R7
-        BEQ.N    ??CountPenalty_37
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+63]
-        TST      R5,R7
-        BEQ.N    ??CountPenalty_37
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+84]
-        TST      R5,R7
-        BEQ.N    ??CountPenalty_37
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+105]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_37
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+126]
-        TST      R5,R7
-        BEQ.N    ??CountPenalty_37
-        SUBS     R5,R1,#+7
-        CMP      R3,R5
-        BEQ.N    ??CountPenalty_38
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+147]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_37
+??CountPenalty_32:
+        CMP      R4,#+0
+        ITT      NE 
+        LDRBNE   R8,[R5, #+63]
+        TSTNE    R8,R11
+        BNE.N    ??CountPenalty_33
+??CountPenalty_31:
+        LDRB     R8,[R6, #+0]
+        TST      R8,R11
+        BEQ.N    ??CountPenalty_33
+        LDRB     R8,[R5, #+105]
+        TST      R8,R11
+        BNE.N    ??CountPenalty_33
+        LDRB     R8,[R5, #+126]
+        TST      R8,R11
+        ITTTT    NE 
+        LDRBNE   R8,[R5, #+147]
+        TSTNE    R8,R11
+        LDRBNE   R8,[R5, #+168]
+        TSTNE    R8,R11
+        BEQ.N    ??CountPenalty_33
+        LDRB     R8,[R5, #+189]
+        TST      R8,R11
+        BNE.N    ??CountPenalty_33
+        LDRB     R8,[R5, #+210]
+        TST      R8,R11
+        BEQ.N    ??CountPenalty_33
+        CMP      R4,R9
+        ITT      NE 
+        LDRBNE   R8,[R5, #+231]
+        TSTNE    R8,R11
+        BNE.N    ??CountPenalty_33
 // 1790 			{
 // 1791 				if (((j < 2 || ! (m_byModuleData[j - 2][i] & 0x11)) && 
 // 1792 					 (j < 3 || ! (m_byModuleData[j - 3][i] & 0x11)) &&
@@ -5143,146 +5450,157 @@ CountPenalty:
 // 1794 					((j >= m_nSymbleSize - 8  || ! (m_byModuleData[j + 8][i]  & 0x11)) &&
 // 1795 					 (j >= m_nSymbleSize - 9  || ! (m_byModuleData[j + 9][i]  & 0x11)) &&
 // 1796 					 (j >= m_nSymbleSize - 10 || ! (m_byModuleData[j + 10][i] & 0x11))))
+        CMP      R4,#+2
+        BLT.N    ??CountPenalty_34
+        LDRB     R8,[R5, #+42]
+        TST      R8,R11
+        BNE.N    ??CountPenalty_35
+??CountPenalty_34:
+        CMP      R4,#+3
+        BLT.N    ??CountPenalty_36
+        LDRB     R8,[R5, #+21]
+        TST      R8,R11
+        BNE.N    ??CountPenalty_35
+??CountPenalty_36:
+        CMP      R4,#+4
+        BLT.N    ??CountPenalty_37
+        LDRB     R8,[R5, #+0]
+        TST      R8,R11
+        BEQ.N    ??CountPenalty_37
+??CountPenalty_35:
+        CMP      R4,R10
+        BGE.N    ??CountPenalty_38
+        LDRB     R8,[R5, #+252]
+        TST      R8,R11
+        BNE.N    ??CountPenalty_33
 ??CountPenalty_38:
-        CMP      R3,#+2
-        BLT.N    ??CountPenalty_39
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #-42]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_40
+        LDR      R8,[SP, #+0]
+        CMP      R4,R8
+        BGE.N    ??CountPenalty_39
+        LDRB     R8,[R5, #+273]
+        TST      R8,R11
+        BNE.N    ??CountPenalty_33
 ??CountPenalty_39:
-        CMP      R3,#+3
-        BLT.N    ??CountPenalty_41
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #-63]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_40
-??CountPenalty_41:
-        CMP      R3,#+4
-        BLT.N    ??CountPenalty_42
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #-84]
-        TST      R5,R7
-        BEQ.N    ??CountPenalty_42
-??CountPenalty_40:
-        SUB      R5,R1,#+8
-        CMP      R3,R5
-        BGE.N    ??CountPenalty_43
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+168]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_37
-??CountPenalty_43:
-        SUB      R5,R1,#+9
-        CMP      R3,R5
-        BGE.N    ??CountPenalty_44
-        ADDS     R5,R6,R4
-        LDRB     R5,[R5, #+189]
-        TST      R5,R7
-        BNE.N    ??CountPenalty_37
-??CountPenalty_44:
-        SUB      R5,R1,#+10
-        CMP      R3,R5
-        BGE.N    ??CountPenalty_42
-        ADDS     R4,R6,R4
-        LDRB     R4,[R4, #+210]
-        MOV      R5,R7
-        TST      R4,R5
-        BNE.N    ??CountPenalty_37
+        LDR      R8,[SP, #+4]
+        CMP      R4,R8
+        BGE.N    ??CountPenalty_37
+        LDRB     R8,[R5, #+294]
+        TST      R8,R11
+        BNE.N    ??CountPenalty_33
 // 1797 				{
 // 1798 					nPenalty += 40;
-??CountPenalty_42:
+??CountPenalty_37:
         ADDS     R2,R2,#+40
 // 1799 				}
 // 1800 			}
 // 1801 		}
-??CountPenalty_37:
-        ADDS     R3,R3,#+1
-??CountPenalty_45:
-        SUBS     R4,R1,#+6
-        CMP      R3,R4
-        BLT.N    ??CountPenalty_35
-        ADDS     R6,R6,#+1
-??CountPenalty_34:
-        CMP      R6,R1
-        BGE.N    ??CountPenalty_46
-        MOV      R3,R0
-        B.N      ??CountPenalty_45
+??CountPenalty_33:
+        ADDS     R4,R4,#+1
+        ADDW     R6,R6,#+21
+        ADDW     R5,R5,#+21
+        CMP      R4,R7
+        BLT.N    ??CountPenalty_32
 // 1802 	}
+??CountPenalty_30:
+        ADDS     R3,R3,#+1
+        ADD      LR,LR,#+1
+        CMP      R3,R1
+        BLT.N    ??CountPenalty_29
+        MOV      R4,R1
+??CountPenalty_40:
+        MOV      R5,R12
+        MOV      R6,R1
 // 1803 
 // 1804 	for (i = 0; i < m_nSymbleSize; ++i)
-??CountPenalty_46:
-        MOV      R4,R0
-        B.N      ??CountPenalty_47
 // 1805 	{
 // 1806 		for (j = 0; j < m_nSymbleSize; ++j)
 // 1807 		{
 // 1808 			if (! (m_byModuleData[i][j] & 0x11))
-??CountPenalty_48:
-        MOVS     R5,#+21
-        LDR.N    R6,??DataTable55_3
-        MLA      R5,R5,R4,R6
-        LDRB     R5,[R3, R5]
-        MOV      R6,R12
-        TST      R5,R6
-        BNE.N    ??CountPenalty_49
+??CountPenalty_41:
+        LDRB     R3,[R5, #+0]
+        TST      R3,R11
+        IT       EQ 
 // 1809 			{
 // 1810 				++nCount;
-        ADDS     R0,R0,#+1
+        ADDEQ    R0,R0,#+1
 // 1811 			}
 // 1812 		}
-??CountPenalty_49:
-        ADDS     R3,R3,#+1
-??CountPenalty_50:
-        CMP      R3,R1
-        BLT.N    ??CountPenalty_48
-        ADDS     R4,R4,#+1
-??CountPenalty_47:
-        CMP      R4,R1
-        BGE.N    ??CountPenalty_51
-        MOVS     R3,#+0
-        B.N      ??CountPenalty_50
+        ADDS     R5,R5,#+1
+        SUBS     R6,R6,#+1
+        BNE.N    ??CountPenalty_41
 // 1813 	}
+        ADDW     R12,R12,#+21
+        SUBS     R4,R4,#+1
+        BNE.N    ??CountPenalty_40
 // 1814 	
 // 1815 	if( (50 - ((nCount * 100) / (m_nSymbleSize * m_nSymbleSize))) > 0)
-??CountPenalty_51:
+??CountPenalty_17:
         MOVS     R3,#+100
         MULS     R0,R3,R0
         MULS     R1,R1,R1
         SDIV     R0,R0,R1
         RSB      R1,R0,#+50
         CMP      R1,#+1
-        BGE.N    ??CountPenalty_52
+        IT       LT 
 // 1816 		s_nCount = 50 - ((nCount * 100) / (m_nSymbleSize * m_nSymbleSize));
 // 1817 	else
 // 1818 		s_nCount = 0 - (50 - ((nCount * 100) / (m_nSymbleSize * m_nSymbleSize)));
-        SUB      R1,R0,#+50
+        SUBLT    R1,R0,#+50
 // 1819 	nPenalty += (s_nCount / 5) * 10;
 // 1820 
 // 1821 	return nPenalty;
-??CountPenalty_52:
         MOVS     R0,#+5
         SDIV     R0,R1,R0
         ADD      R1,R0,R0, LSL #+2
         ADD      R0,R2,R1, LSL #+1
-        POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock21
+        POP      {R1,R2,R4-R11,PC}  ;; return
+          CFI EndBlock cfiBlock22
 // 1822 }
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable53:
+        DC32     0xffff5e5f
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable53_1:
+        DC32     byRSExp
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable53_2:
+        DC32     m_byModuleData
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable53_3:
+        DC32     ??byPattern
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable53_4:
+        DC32     ??byPattern_1
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable53_5:
+        DC32     m_byAllCodeWord
 // 1823 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock22 Using cfiCommon0
+          CFI Block cfiBlock23 Using cfiCommon0
           CFI Function Print_2DCode
           CFI NoCalls
         THUMB
 // 1824 void Print_2DCode(void)
 // 1825 {
-Print_2DCode:
-        PUSH     {R4-R6}
-          CFI R6 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
 // 1826 	int i,j,k,x,y,z,size,mod;
 // 1827 	BYTE bit_h,bit_v,print_num;//print_buff[1024];
 // 1828 	BYTE print_buff[256];
@@ -5293,20 +5611,11 @@ Print_2DCode:
 // 1833 	bit_v = 2;
 // 1834 
 // 1835 	size = m_nSymbleSize/bit_v;
-        LDR.N    R0,??DataTable55_4
-        LDR      R0,[R0, #+0]
-        ADD      R1,R0,R0, LSR #+31
-        ASRS     R1,R1,#+1
 // 1836 	mod = m_nSymbleSize%bit_v;
-        SUB      R2,R0,R1, LSL #+1
 // 1837 
 // 1838 	print_num = bit_h * m_nSymbleSize;
-        LSLS     R3,R0,#+2
-        UXTB     R3,R3
 // 1839 	
 // 1840 	for(i=0; i<size; i++)
-        MOVS     R4,#+0
-        B.N      ??Print_2DCode_0
 // 1841 	{	
 // 1842 		print_buff[0] = 0x1b;
 // 1843 		print_buff[1] = 0x2a;
@@ -5347,41 +5656,12 @@ Print_2DCode:
 // 1878 		}
 // 1879 		
 // 1880 		for(z=0;z<(print_num+4);z++);
-??Print_2DCode_1:
-        ADDS     R5,R5,#+1
-??Print_2DCode_2:
-        CMP      R5,R6
-        BLT.N    ??Print_2DCode_1
-        ADDS     R4,R4,#+1
-??Print_2DCode_0:
-        CMP      R4,R1
-        BGE.N    ??Print_2DCode_3
-        MOVS     R5,#+0
-        B.N      ??Print_2DCode_4
-??Print_2DCode_5:
-        ADDS     R6,R6,#+1
-??Print_2DCode_6:
-        CMP      R6,#+3
-        BLT.N    ??Print_2DCode_5
-        ADDS     R5,R5,#+1
-??Print_2DCode_4:
-        CMP      R5,R0
-        BGE.N    ??Print_2DCode_7
-        MOVS     R6,#+0
-        B.N      ??Print_2DCode_6
-??Print_2DCode_7:
-        MOVS     R5,#+0
-        ADDS     R6,R3,#+4
-        B.N      ??Print_2DCode_2
 // 1881 //--		ser_send_char(1,print_buff[z]);
 // 1882 		
 // 1883 //--		SendCmd(3, 0x1b, 0x4a, 0);	
 // 1884 	}
 // 1885 	
 // 1886 	if(mod !=0)
-??Print_2DCode_3:
-        CMP      R2,#+0
-        BEQ.N    ??Print_2DCode_8
 // 1887 	{
 // 1888 		print_buff[0] = 0x1b;
 // 1889 		print_buff[1] = 0x2a;
@@ -5390,8 +5670,6 @@ Print_2DCode:
 // 1892 		x = 4;
 // 1893 		
 // 1894 		for(j=0;j<m_nSymbleSize;j++)
-        MOVS     R5,#+0
-        B.N      ??Print_2DCode_9
 // 1895 		{
 // 1896 			i = size * bit_v;				
 // 1897 			if(m_byModuleData[j][i] == 1)
@@ -5409,30 +5687,10 @@ Print_2DCode:
 // 1909 			{
 // 1910 				print_buff[x] = print_buff[x-1];
 // 1911 				x++;	
-??Print_2DCode_10:
-        ADDS     R6,R6,#+1
-??Print_2DCode_11:
-        CMP      R6,#+3
-        BLT.N    ??Print_2DCode_10
-        ADDS     R5,R5,#+1
-??Print_2DCode_9:
-        CMP      R5,R0
-        BGE.N    ??Print_2DCode_12
-        MOVS     R6,#+0
-        B.N      ??Print_2DCode_11
 // 1912 			}
 // 1913 		}
 // 1914 
 // 1915 		for(z=0;z<(print_num+4);z++);
-??Print_2DCode_12:
-        MOVS     R5,#+0
-        ADDS     R0,R3,#+4
-        B.N      ??Print_2DCode_13
-??Print_2DCode_14:
-        ADDS     R5,R5,#+1
-??Print_2DCode_13:
-        CMP      R5,R0
-        BLT.N    ??Print_2DCode_14
 // 1916 //--		ser_send_char(1,print_buff[z]);
 // 1917 		
 // 1918 //--		SendCmd(3, 0x1b, 0x4a, 0);
@@ -5440,62 +5698,9 @@ Print_2DCode:
 // 1920 
 // 1921 //--	SendCmd(3, 0x1b, 0x4a, 25);
 // 1922 }
-??Print_2DCode_8:
-        POP      {R4-R6}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI CFA R13+0
+Print_2DCode:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock22
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55:
-        DC32     0xffff7ec0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55_1:
-        DC32     0xffff5e5f
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55_2:
-        DC32     byRSExp
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55_3:
-        DC32     m_byModuleData
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55_4:
-        DC32     m_nSymbleSize
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55_5:
-        DC32     ??byPattern
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55_6:
-        DC32     ??byPattern_1
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable55_7:
-        DC32     m_byAllCodeWord
+          CFI EndBlock cfiBlock23
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -5607,14 +5812,14 @@ QR_VersonInfo:
 
         END
 // 
-// 2 229 bytes in section .bss
-//   292 bytes in section .data
-// 1 232 bytes in section .rodata
-// 9 328 bytes in section .text
+//  2 205 bytes in section .bss
+//    316 bytes in section .data
+//  1 232 bytes in section .rodata
+// 10 468 bytes in section .text
 // 
-// 9 328 bytes of CODE  memory
-// 1 232 bytes of CONST memory
-// 2 521 bytes of DATA  memory
+// 10 468 bytes of CODE  memory
+//  1 232 bytes of CONST memory
+//  2 521 bytes of DATA  memory
 //
 //Errors: none
 //Warnings: none

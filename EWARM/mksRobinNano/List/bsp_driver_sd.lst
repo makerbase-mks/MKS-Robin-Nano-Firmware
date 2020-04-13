@@ -1,80 +1,77 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:02
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:23:55
 # Copyright 1999-2014 IAR Systems AB.
 #
 #    Cpu mode     =  thumb
 #    Endian       =  little
 #    Source file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\bsp_driver_sd.c
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\bsp_driver_sd.c
 #    Command line =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\bsp_driver_sd.c
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\bsp_driver_sd.c
 #        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 #        MKS_ROBIN_NANO -D TFT35 -lC
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        -lA
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        --diag_suppress Pa050 -o
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
 #        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\INC\c\DLib_Config_Full.h" -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-#        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
 #        Workbench 7.0\arm\CMSIS\Include\"
 #    List file    =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\bsp_driver_sd.lst
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\bsp_driver_sd.lst
 #    Object file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\bsp_driver_sd.o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\bsp_driver_sd.o
 #
 ###############################################################################
 
-E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\bsp_driver_sd.c
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\bsp_driver_sd.c
       1          /**
       2           ******************************************************************************
       3            * @file    bsp_driver_sd.c for F1 (based on stm3210e_eval_sd.c)
@@ -140,36 +137,35 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
      59            uint8_t sd_state = MSD_OK;
      60            /* Check if the SD card is plugged in the slot */
      61            if (BSP_SD_IsDetected() != SD_PRESENT)
-   \   00000002   0x.... 0x....      BL       BSP_SD_IsDetected
-   \   00000006   0x2801             CMP      R0,#+1
-   \   00000008   0xD001             BEQ.N    ??BSP_SD_Init_0
+   \   00000002   0x2001             MOVS     R0,#+1
+   \   00000004   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \   00000008   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   0000000C   0x2801             CMP      R0,#+1
+   \   0000000E   0xD001             BEQ.N    ??BSP_SD_Init_0
      62            {
      63              return MSD_ERROR;
-   \   0000000A   0x2001             MOVS     R0,#+1
-   \   0000000C   0xBD32             POP      {R1,R4,R5,PC}
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0xBD32             POP      {R1,R4,R5,PC}
      64            }
      65            /* HAL SD initialization */
      66            sd_state = HAL_SD_Init(&hsd, &SDCardInfo);
    \                     ??BSP_SD_Init_0: (+1)
-   \   0000000E   0x....             LDR.N    R4,??DataTable10
-   \   00000010   0x....             LDR.N    R1,??DataTable10_1
-   \   00000012   0x4620             MOV      R0,R4
-   \   00000014   0x.... 0x....      BL       HAL_SD_Init
-   \   00000018   0x4605             MOV      R5,R0
+   \   00000014   0x....             LDR.N    R4,??DataTable8
+   \   00000016   0x....             LDR.N    R1,??DataTable8_1
+   \   00000018   0x4620             MOV      R0,R4
+   \   0000001A   0x.... 0x....      BL       HAL_SD_Init
      67          #ifdef BUS_4BITS
      68            /* Configure SD Bus width */
      69            if (sd_state == MSD_OK)
-   \   0000001A   0xB2ED             UXTB     R5,R5
-   \   0000001C   0x2D00             CMP      R5,#+0
-   \   0000001E   0xD107             BNE.N    ??BSP_SD_Init_1
+   \   0000001E   0xB2C5             UXTB     R5,R0
+   \   00000020   0xB935             CBNZ.N   R5,??BSP_SD_Init_1
      70            {
      71              /* Enable wide operation */
      72              if (HAL_SD_WideBusOperation_Config(&hsd, SDIO_BUS_WIDE_4B) != SD_OK)
-   \   00000020   0xF44F 0x6100      MOV      R1,#+2048
-   \   00000024   0x4620             MOV      R0,R4
-   \   00000026   0x.... 0x....      BL       HAL_SD_WideBusOperation_Config
-   \   0000002A   0x2800             CMP      R0,#+0
-   \   0000002C   0xD000             BEQ.N    ??BSP_SD_Init_1
+   \   00000022   0xF44F 0x6100      MOV      R1,#+2048
+   \   00000026   0x4620             MOV      R0,R4
+   \   00000028   0x.... 0x....      BL       HAL_SD_WideBusOperation_Config
+   \   0000002C   0xB100             CBZ.N    R0,??BSP_SD_Init_1
      73              {
      74                sd_state = MSD_ERROR;
    \   0000002E   0x2501             MOVS     R5,#+1
@@ -251,12 +247,9 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
    \   00000008   0x9904             LDR      R1,[SP, #+16]
    \   0000000A   0x9100             STR      R1,[SP, #+0]
    \   0000000C   0x4601             MOV      R1,R0
-   \   0000000E   0x....             LDR.N    R0,??DataTable10
+   \   0000000E   0x....             LDR.N    R0,??DataTable8
    \   00000010   0x.... 0x....      BL       HAL_SD_ReadBlocks
-   \   00000014   0x1E40             SUBS     R0,R0,#+1
-   \   00000016   0x4180             SBCS     R0,R0,R0
-   \   00000018   0x43C0             MVNS     R0,R0
-   \   0000001A   0x0FC0             LSRS     R0,R0,#+31
+   \   00000014   0x....             B.N      ?Subroutine0
     127            {
     128              sd_state = MSD_ERROR;
     129            }
@@ -265,8 +258,16 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     132              sd_state = MSD_OK;
     133            }
     134            return sd_state;  
-   \   0000001C   0xBD0E             POP      {R1-R3,PC}       ;; return
     135          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x1E40             SUBS     R0,R0,#+1
+   \   00000002   0x4180             SBCS     R0,R0,R0
+   \   00000004   0x43C0             MVNS     R0,R0
+   \   00000006   0x0FC0             LSRS     R0,R0,#+31
+   \   00000008   0xB003             ADD      SP,SP,#+12
+   \   0000000A   0xBD00             POP      {PC}             ;; return
     136          
     137          /**
     138            * @brief  Writes block(s) to a specified address in an SD card, in polling mode. 
@@ -290,12 +291,10 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
    \   00000008   0x9904             LDR      R1,[SP, #+16]
    \   0000000A   0x9100             STR      R1,[SP, #+0]
    \   0000000C   0x4601             MOV      R1,R0
-   \   0000000E   0x....             LDR.N    R0,??DataTable10
+   \   0000000E   0x....             LDR.N    R0,??DataTable8
    \   00000010   0x.... 0x....      BL       HAL_SD_WriteBlocks
-   \   00000014   0x1E40             SUBS     R0,R0,#+1
-   \   00000016   0x4180             SBCS     R0,R0,R0
-   \   00000018   0x43C0             MVNS     R0,R0
-   \   0000001A   0x0FC0             LSRS     R0,R0,#+31
+   \   00000014                      REQUIRE ?Subroutine0
+   \   00000014                      ;; // Fall through to label ?Subroutine0
     149            {
     150              sd_state = MSD_ERROR;
     151            }
@@ -304,7 +303,6 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     154              sd_state = MSD_OK;
     155            }
     156            return sd_state;  
-   \   0000001C   0xBD0E             POP      {R1-R3,PC}       ;; return
     157          }
     158          
     159          /**
@@ -323,40 +321,35 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
    \   00000000   0xB530             PUSH     {R4,R5,LR}
    \   00000002   0xB083             SUB      SP,SP,#+12
     169            uint8_t sd_state = MSD_OK;
-   \   00000004   0x2400             MOVS     R4,#+0
     170            
     171            /* Read block(s) in DMA transfer mode */
     172            if(HAL_SD_ReadBlocks_DMA(&hsd, pData, ReadAddr, BlockSize, NumOfBlocks) != SD_OK)  
-   \   00000006   0x....             LDR.N    R5,??DataTable10
-   \   00000008   0x9907             LDR      R1,[SP, #+28]
-   \   0000000A   0x9101             STR      R1,[SP, #+4]
+   \   00000004   0x....             LDR.N    R5,??DataTable8
+   \   00000006   0x9907             LDR      R1,[SP, #+28]
+   \   00000008   0x9101             STR      R1,[SP, #+4]
+   \   0000000A   0x2400             MOVS     R4,#+0
    \   0000000C   0x9906             LDR      R1,[SP, #+24]
    \   0000000E   0x9100             STR      R1,[SP, #+0]
    \   00000010   0x4601             MOV      R1,R0
    \   00000012   0x4628             MOV      R0,R5
    \   00000014   0x.... 0x....      BL       HAL_SD_ReadBlocks_DMA
-   \   00000018   0x2800             CMP      R0,#+0
-   \   0000001A   0xD000             BEQ.N    ??BSP_SD_ReadBlocks_DMA_0
+   \   00000018   0xB920             CBNZ.N   R0,??BSP_SD_ReadBlocks_DMA_0
     173            {
     174              sd_state = MSD_ERROR;
-   \   0000001C   0x2401             MOVS     R4,#+1
     175            }
     176            
     177            /* Wait until transfer is complete */
     178            if(sd_state == MSD_OK)
-   \                     ??BSP_SD_ReadBlocks_DMA_0: (+1)
-   \   0000001E   0x2C00             CMP      R4,#+0
-   \   00000020   0xD106             BNE.N    ??BSP_SD_ReadBlocks_DMA_1
     179            {
     180              if(HAL_SD_CheckReadOperation(&hsd, (uint32_t)SD_DATATIMEOUT) != SD_OK)  
-   \   00000022   0x....             LDR.N    R1,??DataTable10_2  ;; 0x5f5e100
-   \   00000024   0x4628             MOV      R0,R5
-   \   00000026   0x.... 0x....      BL       HAL_SD_CheckReadOperation
-   \   0000002A   0x2800             CMP      R0,#+0
-   \   0000002C   0xD000             BEQ.N    ??BSP_SD_ReadBlocks_DMA_1
+   \   0000001A   0x....             LDR.N    R1,??DataTable8_2  ;; 0x5f5e100
+   \   0000001C   0x4628             MOV      R0,R5
+   \   0000001E   0x.... 0x....      BL       HAL_SD_CheckReadOperation
+   \   00000022   0xB100             CBZ.N    R0,??BSP_SD_ReadBlocks_DMA_1
     181              {
     182                sd_state = MSD_ERROR;
-   \   0000002E   0x2401             MOVS     R4,#+1
+   \                     ??BSP_SD_ReadBlocks_DMA_0: (+1)
+   \   00000024   0x2401             MOVS     R4,#+1
     183              }
     184              else
     185              {
@@ -366,9 +359,14 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     189            
     190            return sd_state; 
    \                     ??BSP_SD_ReadBlocks_DMA_1: (+1)
-   \   00000030   0x4620             MOV      R0,R4
-   \   00000032   0xBD3E             POP      {R1-R5,PC}       ;; return
+   \   00000026   0x....             B.N      ?Subroutine1
     191          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \   00000000   0x4620             MOV      R0,R4
+   \   00000002   0xB003             ADD      SP,SP,#+12
+   \   00000004   0xBD30             POP      {R4,R5,PC}       ;; return
     192          
     193          /**
     194            * @brief  Writes block(s) to a specified address in an SD card, in DMA mode.
@@ -386,40 +384,35 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
    \   00000000   0xB530             PUSH     {R4,R5,LR}
    \   00000002   0xB083             SUB      SP,SP,#+12
     203            uint8_t sd_state = MSD_OK;
-   \   00000004   0x2400             MOVS     R4,#+0
     204            
     205            /* Write block(s) in DMA transfer mode */
     206            if(HAL_SD_WriteBlocks_DMA(&hsd, pData, WriteAddr, BlockSize, NumOfBlocks) != SD_OK)  
-   \   00000006   0x....             LDR.N    R5,??DataTable10
-   \   00000008   0x9907             LDR      R1,[SP, #+28]
-   \   0000000A   0x9101             STR      R1,[SP, #+4]
+   \   00000004   0x....             LDR.N    R5,??DataTable8
+   \   00000006   0x9907             LDR      R1,[SP, #+28]
+   \   00000008   0x9101             STR      R1,[SP, #+4]
+   \   0000000A   0x2400             MOVS     R4,#+0
    \   0000000C   0x9906             LDR      R1,[SP, #+24]
    \   0000000E   0x9100             STR      R1,[SP, #+0]
    \   00000010   0x4601             MOV      R1,R0
    \   00000012   0x4628             MOV      R0,R5
    \   00000014   0x.... 0x....      BL       HAL_SD_WriteBlocks_DMA
-   \   00000018   0x2800             CMP      R0,#+0
-   \   0000001A   0xD000             BEQ.N    ??BSP_SD_WriteBlocks_DMA_0
+   \   00000018   0xB920             CBNZ.N   R0,??BSP_SD_WriteBlocks_DMA_0
     207            {
     208              sd_state = MSD_ERROR;
-   \   0000001C   0x2401             MOVS     R4,#+1
     209            }
     210            
     211            /* Wait until transfer is complete */
     212            if(sd_state == MSD_OK)
-   \                     ??BSP_SD_WriteBlocks_DMA_0: (+1)
-   \   0000001E   0x2C00             CMP      R4,#+0
-   \   00000020   0xD106             BNE.N    ??BSP_SD_WriteBlocks_DMA_1
     213            {
     214              if(HAL_SD_CheckWriteOperation(&hsd, (uint32_t)SD_DATATIMEOUT) != SD_OK)  
-   \   00000022   0x....             LDR.N    R1,??DataTable10_2  ;; 0x5f5e100
-   \   00000024   0x4628             MOV      R0,R5
-   \   00000026   0x.... 0x....      BL       HAL_SD_CheckWriteOperation
-   \   0000002A   0x2800             CMP      R0,#+0
-   \   0000002C   0xD000             BEQ.N    ??BSP_SD_WriteBlocks_DMA_1
+   \   0000001A   0x....             LDR.N    R1,??DataTable8_2  ;; 0x5f5e100
+   \   0000001C   0x4628             MOV      R0,R5
+   \   0000001E   0x.... 0x....      BL       HAL_SD_CheckWriteOperation
+   \   00000022   0xB100             CBZ.N    R0,??BSP_SD_WriteBlocks_DMA_1
     215              {
     216                sd_state = MSD_ERROR;
-   \   0000002E   0x2401             MOVS     R4,#+1
+   \                     ??BSP_SD_WriteBlocks_DMA_0: (+1)
+   \   00000024   0x2401             MOVS     R4,#+1
     217              }
     218              else
     219              {
@@ -429,8 +422,8 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     223            
     224            return sd_state; 
    \                     ??BSP_SD_WriteBlocks_DMA_1: (+1)
-   \   00000030   0x4620             MOV      R0,R4
-   \   00000032   0xBD3E             POP      {R1-R5,PC}       ;; return
+   \   00000026                      REQUIRE ?Subroutine1
+   \   00000026                      ;; // Fall through to label ?Subroutine1
     225          }
     226          
     227          /**
@@ -451,12 +444,9 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
    \   00000004   0xE9CD 0x2300      STRD     R2,R3,[SP, #+0]
    \   00000008   0x4602             MOV      R2,R0
    \   0000000A   0x460B             MOV      R3,R1
-   \   0000000C   0x....             LDR.N    R0,??DataTable10
+   \   0000000C   0x....             LDR.N    R0,??DataTable8
    \   0000000E   0x.... 0x....      BL       HAL_SD_Erase
-   \   00000012   0x1E40             SUBS     R0,R0,#+1
-   \   00000014   0x4180             SBCS     R0,R0,R0
-   \   00000016   0x43C0             MVNS     R0,R0
-   \   00000018   0x0FC0             LSRS     R0,R0,#+31
+   \   00000012   0x....             B.N      ?Subroutine0
     237            {
     238              sd_state = MSD_ERROR;
     239            }
@@ -465,7 +455,6 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     242              sd_state = MSD_OK;
     243            }
     244            return sd_state;
-   \   0000001A   0xBD0E             POP      {R1-R3,PC}       ;; return
     245          }
     246          
     247          /**
@@ -477,7 +466,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     251          {
     252            HAL_SD_IRQHandler(&hsd);
    \                     BSP_SD_IRQHandler: (+1)
-   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000000   0x....             LDR.N    R0,??DataTable8
    \   00000002   0x.... 0x....      B.W      HAL_SD_IRQHandler
     253          }
     254          
@@ -490,7 +479,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     259          {
     260            HAL_DMA_IRQHandler(hsd.hdmatx); 
    \                     BSP_SD_DMA_Tx_IRQHandler: (+1)
-   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000000   0x....             LDR.N    R0,??DataTable8
    \   00000002   0x6DC0             LDR      R0,[R0, #+92]
    \   00000004   0x.... 0x....      B.W      HAL_DMA_IRQHandler
     261          }
@@ -504,7 +493,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     267          {
     268            HAL_DMA_IRQHandler(hsd.hdmarx);
    \                     BSP_SD_DMA_Rx_IRQHandler: (+1)
-   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000000   0x....             LDR.N    R0,??DataTable8
    \   00000002   0x6D80             LDR      R0,[R0, #+88]
    \   00000004   0x.... 0x....      B.W      HAL_DMA_IRQHandler
     269          }
@@ -523,7 +512,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     280          {
     281            return(HAL_SD_GetStatus(&hsd));
    \                     BSP_SD_GetStatus: (+1)
-   \   00000000   0x....             LDR.N    R0,??DataTable10
+   \   00000000   0x....             LDR.N    R0,??DataTable8
    \   00000002   0x.... 0x....      B.W      HAL_SD_GetStatus
     282          }
     283          
@@ -539,7 +528,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     291            HAL_SD_Get_CardInfo(&hsd, CardInfo);
    \                     BSP_SD_GetCardInfo: (+1)
    \   00000000   0x4601             MOV      R1,R0
-   \   00000002   0x....             LDR.N    R0,??DataTable10
+   \   00000002   0x....             LDR.N    R0,??DataTable8
    \   00000004   0x.... 0x....      B.W      HAL_SD_Get_CardInfo
     292          }
     293          /* USER CODE END 0 */
@@ -569,15 +558,15 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
     308          }
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable10:
+   \                     ??DataTable8:
    \   00000000   0x........         DC32     hsd
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable10_1:
+   \                     ??DataTable8_1:
    \   00000000   0x........         DC32     SDCardInfo
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable10_2:
+   \                     ??DataTable8_2:
    \   00000000   0x05F5E100         DC32     0x5f5e100
     309          
     310          /* USER CODE BEGIN AdditionalCode */
@@ -606,7 +595,6 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
          0   -> HAL_SD_IRQHandler
        0   BSP_SD_ITConfig
       16   BSP_SD_Init
-        16   -> BSP_SD_IsDetected
         16   -> HAL_SD_Init
         16   -> HAL_SD_WideBusOperation_Config
        4   BSP_SD_IsDetected
@@ -626,29 +614,31 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
 
    Bytes  Function/Label
    -----  --------------
-       4  ??DataTable10
-       4  ??DataTable10_1
-       4  ??DataTable10_2
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+      12  ?Subroutine0
+       6  ?Subroutine1
        8  BSP_SD_DMA_Rx_IRQHandler
        8  BSP_SD_DMA_Tx_IRQHandler
        2  BSP_SD_DetectCallback
        2  BSP_SD_DetectIT
-      28  BSP_SD_Erase
+      20  BSP_SD_Erase
        8  BSP_SD_GetCardInfo
        6  BSP_SD_GetStatus
        6  BSP_SD_IRQHandler
        4  BSP_SD_ITConfig
       52  BSP_SD_Init
       16  BSP_SD_IsDetected
-      30  BSP_SD_ReadBlocks
-      52  BSP_SD_ReadBlocks_DMA
-      30  BSP_SD_WriteBlocks
-      52  BSP_SD_WriteBlocks_DMA
+      22  BSP_SD_ReadBlocks
+      40  BSP_SD_ReadBlocks_DMA
+      20  BSP_SD_WriteBlocks
+      38  BSP_SD_WriteBlocks_DMA
 
  
- 316 bytes in section .text
+ 282 bytes in section .text
  
- 316 bytes of CODE memory
+ 282 bytes of CODE memory
 
 Errors: none
 Warnings: none

@@ -1,80 +1,78 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:44
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:10
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\User\ui\Multi_language\multi_language.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\multi_language.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\User\ui\Multi_language\multi_language.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\multi_language.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\multi_language.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\multi_language.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
         RTMODEL "__CPP_Language", "EC++"
         RTMODEL "__SystemLibrary", "DLib"
         RTMODEL "__dlib_file_descriptor", "1"
+        RTMODEL "__dlib_full_locale_support", "1"
         AAPCS BASE,INTERWORK
         PRESERVE8
         REQUIRE8
@@ -82,8 +80,15 @@
         #define SHT_PROGBITS 0x1
 
         EXTERN gCfgItems
+        EXTERN keyboard_menu
+        EXTERN list_menu
+        EXTERN tips_menu
 
+        PUBLIC MachinePara_menu
+        PUBLIC MachineSettings_menu
+        PUBLIC TemperatureSettings_menu
         PUBLIC _Z18disp_language_initv
+        PUBLIC _Z20machine_setting_dispv
         PUBLIC about_menu
         PUBLIC cloud_menu
         PUBLIC common_menu
@@ -96,6 +101,7 @@
         PUBLIC home_menu
         PUBLIC language_menu
         PUBLIC leveling_menu
+        PUBLIC machine_menu
         PUBLIC main_menu
         PUBLIC more_menu
         PUBLIC move_menu
@@ -138,90 +144,87 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35‘¥¬Î\robin_nano35_v1.0.4_source\User\ui\Multi_language\multi_language.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\multi_language.cpp
 //    1 #include "draw_ui.h"
 //    2 #include "Multi_language.h"
-//    3 
+//    3 #include "wifi_list.h"
 //    4 
-//    5 //********************************************//
-//    6 //Ê≥®ÊÑèÔºöÁî±‰∫éÊòæÁ§∫Â≠óÁ¨¶ÁöÑÁºñÁ†ÅÈóÆÈ¢òÔºåÊâÄ‰ª•‰ª•‰∏ã‰∏≠ÊñáÂ≠ó‰ΩìÂøÖÈ°ªÈááÁî®ANSIÊâìÂºÄÂíå‰øùÂ≠ò„ÄÇ
+//    5 
+//    6 //********************************************//
 //    7 //”…”⁄œ÷ µ◊÷∑˚±‡¬ÎŒ Ã‚£¨À˘“‘“‘œ¬÷–Œƒ◊÷±ÿ–Î“‘ANSI±Í◊º∏Ò Ωœ‘ æ
 //    8 //"’˝‘⁄¥Ú”°""≤Ÿ◊˜""‘›Õ£"»˝∏ˆΩÁ√Êµƒ±ÍÃ‚¿∏÷ª◊ˆ"÷–”¢«–ªª"°£
-//    9 //"Ê≠£Âú®ÊâìÂç∞""Êìç‰Ωú""ÊöÇÂÅú"‰∏â‰∏™ÁïåÈù¢ÁöÑÊ†áÈ¢òÊ†èÂè™ÂÅö‚Äú‰∏≠Ëã±ÊñáÂàáÈù¢‚Äù
-//   10 #define PRINTING_GBK							"’˝‘⁄¥Ú”°"
-//   11 #define PRINTING_OPERATION_GBK				"≤Ÿ◊˜"
-//   12 #define PRINTING_PAUSE_GBK						"‘›Õ£"
-//   13 
-//   14 #define PRINTING_OTHER_LANGUGE				"Printing"
-//   15 #define PRINTING_OPERATION_OTHER_LANGUGE		"Operation"
-//   16 #define PRINTING_PAUSE_OTHER_LANGUGE			"Pause"
-//   17 
-//   18 #define PRINTING_SP				"Imprimiendo"
-//   19 #define PRINTING_AJUSTES_SP		"Ajustes"
-//   20 #define PRINTING_PAUSAR_SP			"Pausar"
-//   21 //*********************************************//
+//    9 #define PRINTING_GBK							"’˝‘⁄¥Ú”°"
+//   10 #define PRINTING_OPERATION_GBK				"≤Ÿ◊˜"
+//   11 #define PRINTING_PAUSE_GBK						"‘›Õ£"
+//   12 
+//   13 #define PRINTING_OTHER_LANGUGE				"Printing"
+//   14 #define PRINTING_OPERATION_OTHER_LANGUGE		"Operation"
+//   15 #define PRINTING_PAUSE_OTHER_LANGUGE			"Pause"
+//   16 
+//   17 #define PRINTING_SP				"Imprimiendo"
+//   18 #define PRINTING_AJUSTES_SP		"Ajustes"
+//   19 #define PRINTING_PAUSAR_SP			"Pausar"
+//   20 //*********************************************//
+//   21 
 //   22 
-//   23 
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
-//   24 common_menu_def common_menu;
-//   25 main_menu_def main_menu;
-//   26 preheat_menu_def preheat_menu;
-//   27 move_menu_def move_menu;
-//   28 home_menu_def home_menu;
-//   29 file_menu_def file_menu;
-//   30 extrude_menu_def extrude_menu;
-//   31 leveling_menu_def leveling_menu;
-//   32 set_menu_def set_menu;
-//   33 more_menu_def more_menu;
-//   34 wifi_menu_def wifi_menu;
-//   35 cloud_menu_def cloud_menu;
-//   36 about_menu_def about_menu;
-//   37 fan_menu_def fan_menu;
-//   38 filament_menu_def filament_menu;
+//   23 common_menu_def common_menu;
+//   24 main_menu_def main_menu;
+//   25 preheat_menu_def preheat_menu;
+//   26 move_menu_def move_menu;
+//   27 home_menu_def home_menu;
+//   28 file_menu_def file_menu;
+//   29 extrude_menu_def extrude_menu;
+//   30 leveling_menu_def leveling_menu;
+//   31 set_menu_def set_menu;
+//   32 more_menu_def more_menu;
+//   33 wifi_menu_def wifi_menu;
+//   34 cloud_menu_def cloud_menu;
+//   35 about_menu_def about_menu;
+//   36 fan_menu_def fan_menu;
+//   37 filament_menu_def filament_menu;
 filament_menu:
         DS8 92
 extrude_menu:
         DS8 68
-//   39 printing_menu_def printing_menu;
-//   40 operation_menu_def operation_menu;
-//   41 pause_menu_def pause_menu;
-//   42 speed_menu_def speed_menu;
-//   43 printing_more_menu_def printing_more_menu;
-//   44 dialog_menu_def dialog_menu;
-//   45 language_menu_def language_menu;
+//   38 printing_menu_def printing_menu;
+//   39 operation_menu_def operation_menu;
+//   40 pause_menu_def pause_menu;
+//   41 speed_menu_def speed_menu;
+//   42 printing_more_menu_def printing_more_menu;
+//   43 dialog_menu_def dialog_menu;
+//   44 language_menu_def language_menu;
+//   45 print_file_dialog_menu_def print_file_dialog_menu;
+print_file_dialog_menu:
+        DS8 64
 language_menu:
         DS8 64
-//   46 print_file_dialog_menu_def print_file_dialog_menu;
-print_file_dialog_menu:
-        DS8 60
+operation_menu:
+        DS8 56
 preheat_menu:
         DS8 56
 main_menu:
-        DS8 48
-operation_menu:
         DS8 52
-speed_menu:
-        DS8 44
 move_menu:
-        DS8 44
-set_menu:
-        DS8 44
+        DS8 52
 wifi_menu:
+        DS8 48
+speed_menu:
         DS8 44
 cloud_menu:
         DS8 44
 printing_menu:
         DS8 36
-//   47 filesys_menu_def filesys_menu;
-//   48 zoffset_menu_def zoffset_menu;
-//   49 tool_menu_def tool_menu;
+//   46 filesys_menu_def filesys_menu;
+//   47 zoffset_menu_def zoffset_menu;
+//   48 tool_menu_def tool_menu;
 tool_menu:
         DS8 40
 fan_menu:
         DS8 36
 common_menu:
-        DS8 28
+        DS8 36
 file_menu:
         DS8 28
 pause_menu:
@@ -242,21 +245,1447 @@ more_menu:
         DS8 12
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
+set_menu:
+        DS8 48
+//   49 MachinePara_menu_def MachinePara_menu;
+MachinePara_menu:
+        DS8 20
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
 dialog_menu:
         DS8 32
-//   50 
-//   51 
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//   50 MachineSettings_menu_def MachineSettings_menu;
+MachineSettings_menu:
+        DS8 32
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//   51 TemperatureSettings_menu_def TemperatureSettings_menu;
+TemperatureSettings_menu:
+        DS8 20
 //   52 
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
+//   53 machine_common_def machine_menu;
+machine_menu:
+        DS8 656
+//   54 
 
         SECTION `.text`:CODE:NOROOT(2)
           CFI Block cfiBlock0 Using cfiCommon0
-          CFI Function _Z18disp_language_initv
+          CFI Function _Z20machine_setting_dispv
           CFI NoCalls
         THUMB
-//   53 void disp_language_init()
-//   54 {
+//   55 void machine_setting_disp()
+//   56 {
+_Z20machine_setting_dispv:
+        PUSH     {R4-R7}
+          CFI R7 Frame(CFA, -4)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
+//   57     //ª˙∆˜≤Œ ˝
+//   58     MachinePara_menu.title = MACHINE_PARA_TITLE_EN;
+        LDR.W    R0,??DataTable1002_2
+        LDR.W    R1,??DataTable1002_3
+//   59     MachinePara_menu.MachineSetting = MACHINE_TYPE_CNOFIG_EN;
+//   60     MachinePara_menu.TemperatureSetting=TEMPERATURE_CONFIG_EN;
+//   61     MachinePara_menu.MotorSetting=MOTOR_CONFIG_EN;
+//   62     MachinePara_menu.AdvanceSetting=ADVANCE_CONFIG_EN;
+//   63 
+//   64     machine_menu.default_value = DEFAULT_EN;
+        LDR.W    R2,??DataTable1002_4
+//   65     machine_menu.next=NEXT_EN;
+//   66     machine_menu.previous=PREVIOUS_EN;
+//   67 
+//   68     machine_menu.MachineConfigTitle = MACHINE_CONFIG_TITLE_EN;
+//   69     machine_menu.MachineType=MACHINE_TYPE_EN;
+//   70     machine_menu.Stroke=MACHINE_STROKE_EN;
+//   71     machine_menu.HomeDir=MACHINE_HOMEDIR_EN;
+//   72     machine_menu.EndStopType=MACHINE_ENDSTOP_TYPE_EN;
+//   73     machine_menu.FilamentConf=MACHINE_FILAMENT_CONFIG_EN;
+//   74     machine_menu.LevelingConf=MACHINE_LEVELING_CONFIG_EN;
+        LDR.W    R3,??DataTable1002_5
+//   75 
+//   76     machine_menu.MachineTypeConfTitle = MACHINE_TYPE_CONFIG_TITLE_EN;
+        LDR.W    R4,??DataTable1002_6
+        STR      R1,[R0, #+48]
+        LDR.W    R1,??DataTable1002_7
+        STR      R1,[R0, #+52]
+        LDR.W    R1,??DataTable1002_8
+        STR      R1,[R0, #+56]
+        LDR.W    R1,??DataTable1002_9
+        STR      R1,[R0, #+60]
+        LDR.W    R1,??DataTable1002_10
+        STR      R1,[R0, #+64]
+        LDR.W    R1,??DataTable1002_11
+        STR      R4,[R1, #+40]
+        STR      R2,[R1, #+0]
+        STR      R3,[R1, #+36]
+//   77     machine_menu.xyz=MACHINE_TYPE_XYZ_EN;
+//   78     machine_menu.delta=MACHINE_TYPE_DELTA_EN;
+//   79     machine_menu.corexy=MACHINE_TYPE_COREXY_EN;
+//   80 
+//   81     machine_menu.StrokeConfTitle=MACHINE_STROKE_CONF_TITLE_EN;
+//   82     machine_menu.xStroke=X_MAX_LENGTH_EN;
+//   83     machine_menu.yStroke=Y_MAX_LENGTH_EN;
+//   84     machine_menu.zStroke=Z_MAX_LENGTH_EN;
+//   85 	
+//   86     machine_menu.xmin=X_MIN_LENGTH_EN;
+//   87     machine_menu.ymin=Y_MIN_LENGTH_EN;
+//   88     machine_menu.zmin=Z_MIN_LENGTH_EN;
+//   89 
+//   90     machine_menu.HomeDirConfTitle=HOME_DIR_CONF_TITLE_EN;
+//   91     machine_menu.xHomeDir=HOME_DIR_X_EN;
+//   92     machine_menu.yHomeDir=HOME_DIR_Y_EN;
+//   93     machine_menu.zHomeDir=HOME_DIR_Z_EN;
+//   94     machine_menu.min=HOME_MIN_EN;
+//   95     machine_menu.max=HOME_MAX_EN;
+//   96 
+//   97     machine_menu.EndstopConfTitle=ENDSTOP_CONF_TITLE_EN;
+//   98     machine_menu.xEndstop_min=MIN_ENDSTOP_X_EN;
+//   99     machine_menu.yEndstop_min=MIN_ENDSTOP_Y_EN;
+//  100     machine_menu.zEndstop_min=MIN_ENDSTOP_Z_EN;
+//  101     machine_menu.xEndstop_max=MAX_ENDSTOP_X_EN;
+//  102     machine_menu.yEndstop_max=MAX_ENDSTOP_Y_EN;
+//  103     machine_menu.zEndstop_max=MAX_ENDSTOP_Z_EN;            
+//  104     machine_menu.FilamentEndstop=ENDSTOP_FIL_EN;
+//  105     machine_menu.LevelingEndstop=ENDSTOP_LEVEL_EN;
+//  106     machine_menu.opened=ENDSTOP_OPENED_EN;
+//  107     machine_menu.closed=ENDSTOP_CLOSED_EN;
+//  108 
+//  109     machine_menu.FilamentConfTitle=FILAMENT_CONF_TITLE_EN;
+//  110     machine_menu.InTemperature=FILAMENT_IN_TEMPERATURE_EN;
+//  111     machine_menu.InLength=FILAMENT_IN_LENGTH_EN;
+//  112     machine_menu.InSpeed=FILAMENT_IN_SPEED_EN;
+//  113     machine_menu.OutTemperature=FILAMENT_OUT_TEMPERATURE_EN;
+//  114     machine_menu.OutLength=FILAMENT_OUT_LENGTH_EN;
+//  115     machine_menu.OutSpeed=FILAMENT_OUT_SPEED_EN;
+//  116 
+//  117     machine_menu.LevelingParaConfTitle=LEVELING_CONF_TITLE_EN;
+        STR      R3,[R1, #+180]
+//  118     machine_menu.LevelingParaConf=LEVELING_PARA_CONF_EN;
+        STR      R3,[R1, #+184]
+        LDR.W    R4,??DataTable1002_12
+        LDR.W    R2,??DataTable1002_13
+        STR      R4,[R1, #+44]
+        STR      R2,[R1, #+4]
+        LDR.W    R4,??DataTable1002_14
+        LDR.W    R2,??DataTable1002_15
+        STR      R4,[R1, #+48]
+        STR      R2,[R1, #+8]
+        LDR.W    R4,??DataTable1002_16
+        LDR.W    R2,??DataTable1002_17
+        STR      R4,[R1, #+52]
+        STR      R2,[R1, #+12]
+        LDR.W    R4,??DataTable1002_18
+        LDR.W    R2,??DataTable1002_19
+        STR      R4,[R1, #+56]
+        STR      R2,[R1, #+16]
+        LDR.W    R4,??DataTable1002_20
+        LDR.W    R2,??DataTable1002_21
+        STR      R4,[R1, #+60]
+        STR      R2,[R1, #+20]
+        LDR.W    R4,??DataTable1002_22
+        LDR.W    R2,??DataTable1002_23
+        STR      R4,[R1, #+64]
+        STR      R2,[R1, #+24]
+        LDR.W    R4,??DataTable1002_24
+        LDR.W    R2,??DataTable1002_25
+        STR      R4,[R1, #+68]
+        STR      R2,[R1, #+28]
+        LDR.W    R4,??DataTable1002_26
+        LDR.W    R2,??DataTable1002_27
+        STR      R4,[R1, #+72]
+        STR      R2,[R1, #+32]
+        STR      R2,[R1, #+152]
+        LDR.W    R4,??DataTable1002_28
+        LDR.W    R2,??DataTable1002_29
+        STR      R4,[R1, #+76]
+        STR      R2,[R1, #+156]
+        LDR.W    R4,??DataTable1002_30
+        LDR.W    R2,??DataTable1002_31
+        STR      R4,[R1, #+80]
+        STR      R2,[R1, #+160]
+        LDR.W    R4,??DataTable1002_32
+        LDR.W    R2,??DataTable1002_33
+        STR      R4,[R1, #+84]
+        STR      R2,[R1, #+164]
+        LDR.W    R4,??DataTable1002_34
+        LDR.W    R2,??DataTable1002_35
+        STR      R4,[R1, #+88]
+        STR      R2,[R1, #+168]
+        LDR.W    R4,??DataTable1002_36
+        LDR.W    R2,??DataTable1002_37
+        STR      R4,[R1, #+92]
+        STR      R2,[R1, #+172]
+        LDR.W    R4,??DataTable1002_38
+        LDR.W    R2,??DataTable1002_39
+        STR      R4,[R1, #+96]
+        STR      R2,[R1, #+176]
+        ADR.N    R4,??machine_setting_disp_0  ;; "MIN"
+        STR      R4,[R1, #+100]
+        ADR.N    R4,??machine_setting_disp_0+0x4  ;; "MAX"
+//  119     machine_menu.DeltaLevelConf=LEVELING_DELTA_EN;
+        LDR.W    R2,??DataTable1002_40
+        STR      R4,[R1, #+104]
+        STR      R2,[R1, #+188]
+        LDR.W    R4,??DataTable1002_41
+//  120     machine_menu.XYZLevelconf=LEVELING_XYZ_EN;
+        LDR.W    R2,??DataTable1002_42
+        STR      R4,[R1, #+108]
+        STR      R2,[R1, #+192]
+        LDR.W    R4,??DataTable1002_43
+//  121 
+//  122     machine_menu.LevelingSubConfTitle=LEVELING_PARA_CONF_TITLE_EN;
+        LDR.W    R2,??DataTable1002_44
+        STR      R4,[R1, #+112]
+        STR      R2,[R1, #+196]
+        LDR.W    R4,??DataTable1002_45
+//  123     machine_menu.AutoLevelEnable=AUTO_LEVELING_ENABLE_EN;
+        LDR.W    R2,??DataTable1002_46
+        STR      R4,[R1, #+116]
+        STR      R2,[R1, #+200]
+        LDR.W    R4,??DataTable1002_47
+//  124     machine_menu.BLtouchEnable=BLTOUCH_LEVELING_ENABLE_EN;
+        LDR.W    R2,??DataTable1002_48
+        STR      R4,[R1, #+120]
+        STR      R2,[R1, #+204]
+        LDR.W    R4,??DataTable1002_49
+//  125     machine_menu.ProbePort=PROBE_PORT_EN;
+        LDR.W    R2,??DataTable1002_50
+        STR      R4,[R1, #+124]
+        STR      R2,[R1, #+208]
+        LDR.W    R4,??DataTable1002_51
+//  126     machine_menu.ProbeXoffset=PROBE_X_OFFSET_EN;
+        LDR.W    R2,??DataTable1002_52
+        STR      R4,[R1, #+128]
+        STR      R2,[R1, #+212]
+        LDR.W    R4,??DataTable1002_53
+//  127     machine_menu.ProbeYoffset=PROBE_Y_OFFSET_EN;
+        LDR.W    R2,??DataTable1002_54
+        STR      R4,[R1, #+132]
+        STR      R2,[R1, #+216]
+        LDR.W    R4,??DataTable1002_55
+//  128     machine_menu.ProbeZoffset=PROBE_Z_OFFSET_EN;
+        LDR.W    R2,??DataTable1002_56
+        STR      R4,[R1, #+136]
+        STR      R2,[R1, #+220]
+        LDR.W    R4,??DataTable1002_57
+//  129     machine_menu.ProbeXYspeed=PROBE_XY_SPEED_EN;
+        LDR.W    R2,??DataTable1002_58
+        STR      R4,[R1, #+140]
+        STR      R2,[R1, #+224]
+        LDR.N    R4,??DataTable1002_59
+//  130     machine_menu.ProbeZspeed=PROBE_Z_SPEED_EN;
+        LDR.N    R2,??DataTable1002_60
+        STR      R4,[R1, #+144]
+        STR      R2,[R1, #+228]
+//  131     machine_menu.enable = ENABLE_EN;
+        ADR.N    R2,??machine_setting_disp_0+0x8  ;; "YES"
+        LDR.N    R4,??DataTable1002_61
+        STR      R4,[R1, #+148]
+        STR      R2,[R1, #+232]
+//  132     machine_menu.disable = DISABLE_EN;
+        ADR.N    R3,??machine_setting_disp_0+0xC  ;; 0x4E, 0x4F, 0x00, 0x00
+//  133     machine_menu.z_min = Z_MIN_EN;
+        LDR.N    R4,??DataTable1002_62
+//  134     machine_menu.z_max = Z_MAX_EN;
+//  135 
+//  136     machine_menu.LevelingSubDeltaConfTitle=DELTA_LEVEL_CONF_TITLE_EN;
+//  137     machine_menu.MachineRadius=DELTA_MACHINE_RADIUS_EN;
+//  138     machine_menu.DiagonalRod=DELTA_DIAGONAL_ROD_EN;
+//  139     machine_menu.PrintableRadius=DELTA_PRINT_RADIUS_EN;
+//  140     machine_menu.DeltaHeight=DELTA_HEIGHT_EN;
+//  141     machine_menu.SmoothRodOffset=SMOOTH_ROD_OFFSET_EN;
+//  142     machine_menu.EffectorOffset=EFFECTOR_OFFSET_EN;
+//  143     machine_menu.CalibrationRadius=CALIBRATION_RADIUS_EN;
+//  144 
+//  145     machine_menu.LevelingSubXYZConfTitle=XYZ_LEVEL_CONF_TITLE_EN;
+//  146     //machine_menu.Level_positon=PROBE_REACH_MAX_LEFT_EN;
+//  147     //machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_EN;
+//  148     //machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_EN;
+//  149    // machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_EN;
+//  150 
+//  151     machine_menu.TemperatureConfTitle=TEMPERATURE_CONF_TITLE_EN;
+//  152     machine_menu.NozzleConf=NOZZLE_CONF_EN;
+//  153     machine_menu.HotBedConf=HOTBED_CONF_EN;
+//  154     machine_menu.PreheatTemperConf=PREHEAT_TEMPER_EN;
+//  155 
+//  156     machine_menu.NozzleConfTitle=NOZZLE_CONF_TITLE_EN;
+//  157     machine_menu.NozzleCnt=NOZZLECNT_EN;
+//  158     machine_menu.NozzleType=NOZZLE_TYPE_EN;
+//  159     machine_menu.NozzleAdjustType=NOZZLE_ADJUST_TYPE_EN;
+//  160     machine_menu.NozzleMinTemperature=NOZZLE_MIN_TEMPERATURE_EN;
+        LDR.N    R5,??DataTable1002_63
+//  161     machine_menu.NozzleMaxTemperature=NOZZLE_MAX_TEMPERATURE_EN;
+        LDR.N    R6,??DataTable1002_64
+//  162     machine_menu.Extrude_Min_Temper=EXTRUD_MIN_TEMPER_EN;
+        LDR.N    R7,??DataTable1002_65
+        STR      R4,[R1, #+240]
+        STR      R7,[R1, #+324]
+        STR      R3,[R1, #+236]
+        STR      R5,[R1, #+316]
+        STR      R6,[R1, #+320]
+//  163 
+//  164     machine_menu.HotbedEnable=HOTBED_ENABLE_EN;
+//  165     machine_menu.HotbedConfTitle=HOTBED_CONF_TITLE_EN;
+//  166     machine_menu.HotbedAjustType=HOTBED_ADJUST_EN;
+//  167     machine_menu.HotbedMinTemperature=HOTBED_MIN_TEMPERATURE_EN;
+        STR      R5,[R1, #+340]
+//  168     machine_menu.HotbedMaxTemperature=HOTBED_MAX_TEMPERATURE_EN;
+        STR      R6,[R1, #+344]
+        LDR.N    R4,??DataTable1002_66
+        LDR.N    R7,??DataTable1002_67
+        STR      R4,[R1, #+244]
+        STR      R7,[R1, #+328]
+        LDR.N    R4,??DataTable1002_68
+        LDR.N    R7,??DataTable1002_69
+        STR      R4,[R1, #+248]
+        STR      R7,[R1, #+332]
+        LDR.N    R4,??DataTable1002_70
+        STR      R4,[R1, #+252]
+        LDR.N    R4,??DataTable1002_71
+        STR      R4,[R1, #+256]
+        LDR.N    R4,??DataTable1002_72
+        STR      R4,[R1, #+260]
+        LDR.N    R4,??DataTable1002_73
+        STR      R4,[R1, #+264]
+        LDR.N    R4,??DataTable1002_74
+        STR      R4,[R1, #+268]
+        LDR.N    R4,??DataTable1002_75
+        STR      R4,[R1, #+272]
+        LDR.N    R4,??DataTable1002_76
+        STR      R4,[R1, #+276]
+        LDR.N    R4,??DataTable1002_77
+        STR      R4,[R1, #+280]
+        LDR.N    R4,??DataTable1002_78
+        STR      R4,[R1, #+284]
+        LDR.N    R4,??DataTable1002_79
+        STR      R4,[R1, #+288]
+        LDR.N    R4,??DataTable1002_80
+        STR      R4,[R1, #+292]
+        LDR.N    R4,??DataTable1002_81
+        STR      R4,[R1, #+296]
+        LDR.N    R4,??DataTable1002_82
+        STR      R4,[R1, #+304]
+        LDR.N    R4,??DataTable1002_83
+        STR      R4,[R1, #+300]
+        LDR.N    R4,??DataTable1002_84
+        STR      R4,[R1, #+308]
+        LDR.N    R4,??DataTable1002_85
+        STR      R4,[R1, #+312]
+        STR      R4,[R1, #+336]
+//  169 
+//  170     machine_menu.MotorConfTitle=MOTOR_CONF_TITLE_EN;
+        LDR.N    R4,??DataTable1002_86
+        STR      R4,[R1, #+348]
+//  171     machine_menu.MaxFeedRateConf=MAXFEEDRATE_CONF_EN;
+        LDR.N    R4,??DataTable1002_87
+        STR      R4,[R1, #+352]
+//  172     machine_menu.AccelerationConf=ACCELERATION_CONF_EN;
+        LDR.N    R4,??DataTable1002_88
+        STR      R4,[R1, #+356]
+//  173     machine_menu.JerkConf=JERKCONF_EN;
+        LDR.N    R4,??DataTable1002_89
+        STR      R4,[R1, #+360]
+//  174     machine_menu.StepsConf=STEPSCONF_EN;
+        LDR.N    R4,??DataTable1002_90
+        STR      R4,[R1, #+364]
+//  175     machine_menu.MotorDirConf=MOTORDIRCONF_EN;
+        LDR.N    R4,??DataTable1002_91
+        STR      R4,[R1, #+368]
+//  176     machine_menu.HomeFeedRateConf=HOMEFEEDRATECONF_EN;
+        LDR.N    R4,??DataTable1002_92
+        STR      R4,[R1, #+372]
+//  177 
+//  178     machine_menu.MaxFeedRateConfTitle=MAXFEEDRATE_CONF_TITLE_EN;
+        LDR.N    R4,??DataTable1002_93
+        STR      R4,[R1, #+376]
+//  179     machine_menu.XMaxFeedRate=X_MAXFEEDRATE_EN;
+        LDR.N    R4,??DataTable1002_94
+        STR      R4,[R1, #+380]
+//  180     machine_menu.YMaxFeedRate=Y_MAXFEEDRATE_EN;
+        LDR.N    R4,??DataTable1002_95
+        STR      R4,[R1, #+384]
+//  181     machine_menu.ZMaxFeedRate=Z_MAXFEEDRATE_EN;
+        LDR.N    R4,??DataTable1002_96
+        STR      R4,[R1, #+388]
+//  182     machine_menu.E0MaxFeedRate=E0_MAXFEEDRATE_EN;
+        LDR.N    R4,??DataTable1002_97
+        STR      R4,[R1, #+392]
+//  183     machine_menu.E1MaxFeedRate=E1_MAXFEEDRATE_EN;
+        LDR.N    R4,??DataTable1002_98
+        STR      R4,[R1, #+396]
+//  184 
+//  185     machine_menu.AccelerationConfTitle=ACCELERATION_CONF_TITLE_EN;
+        LDR.N    R4,??DataTable1002_99
+        STR      R4,[R1, #+400]
+//  186     machine_menu.PrintAcceleration=PRINT_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_100
+        STR      R4,[R1, #+404]
+//  187     machine_menu.RetractAcceleration=RETRACT_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_101
+        STR      R4,[R1, #+408]
+//  188     machine_menu.TravelAcceleration=TRAVEL_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_102
+        STR      R4,[R1, #+412]
+//  189     machine_menu.X_Acceleration=X_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_103
+        STR      R4,[R1, #+416]
+//  190     machine_menu.Y_Acceleration=Y_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_104
+        STR      R4,[R1, #+420]
+//  191     machine_menu.Z_Acceleration=Z_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_105
+        STR      R4,[R1, #+424]
+//  192     machine_menu.E0_Acceleration=E0_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_106
+        STR      R4,[R1, #+428]
+//  193     machine_menu.E1_Acceleration=E1_ACCELERATION_EN;
+        LDR.N    R4,??DataTable1002_107
+        STR      R4,[R1, #+432]
+//  194 
+//  195     machine_menu.JerkConfTitle=JERK_CONF_TITLE_EN;
+        LDR.N    R4,??DataTable1002_108
+        STR      R4,[R1, #+436]
+//  196     machine_menu.X_Jerk=X_JERK_EN;
+        LDR.N    R4,??DataTable1002_109
+        STR      R4,[R1, #+440]
+//  197     machine_menu.Y_Jerk=Y_JERK_EN;
+        LDR.N    R4,??DataTable1002_110
+        STR      R4,[R1, #+444]
+//  198     machine_menu.Z_Jerk=Z_JERK_EN;
+        LDR.N    R4,??DataTable1002_111
+        STR      R4,[R1, #+448]
+//  199     machine_menu.E_Jerk=E_JERK_EN;
+        LDR.N    R4,??DataTable1002_112
+        STR      R4,[R1, #+452]
+//  200 
+//  201     machine_menu.StepsConfTitle=STEPS_CONF_TITLE_EN;
+        LDR.N    R4,??DataTable1002_113
+        STR      R4,[R1, #+456]
+//  202     machine_menu.X_Steps=X_STEPS_EN;
+        LDR.N    R4,??DataTable1002_114
+        STR      R4,[R1, #+460]
+//  203     machine_menu.Y_Steps=Y_STEPS_EN;
+        LDR.N    R4,??DataTable1002_115
+        STR      R4,[R1, #+464]
+//  204     machine_menu.Z_Steps=Z_STEPS_EN;
+        LDR.N    R4,??DataTable1002_116
+        STR      R4,[R1, #+468]
+//  205     machine_menu.E0_Steps=E0_STEPS_EN;
+        LDR.N    R4,??DataTable1002_117
+        STR      R4,[R1, #+472]
+//  206     machine_menu.E1_Steps=E1_STEPS_EN;
+        LDR.N    R4,??DataTable1002_118
+        STR      R4,[R1, #+476]
+//  207 
+//  208     machine_menu.MotorDirConfTitle=MOTORDIR_CONF_TITLE_EN;
+        LDR.N    R4,??DataTable1002_119
+        STR      R4,[R1, #+480]
+//  209     machine_menu.X_MotorDir=X_MOTORDIR_EN;
+        LDR.N    R4,??DataTable1002_120
+        STR      R4,[R1, #+484]
+//  210     machine_menu.Y_MotorDir=Y_MOTORDIR_EN;
+        LDR.N    R4,??DataTable1002_121
+        STR      R4,[R1, #+488]
+//  211     machine_menu.Z_MotorDir=Z_MOTORDIR_EN;
+        LDR.N    R4,??DataTable1002_122
+        STR      R4,[R1, #+492]
+//  212     machine_menu.E0_MotorDir=E0_MOTORDIR_EN;
+        LDR.N    R4,??DataTable1002_123
+//  213     machine_menu.E1_MotorDir=E1_MOTORDIR_EN;
+//  214     machine_menu.Invert_0=INVERT_P_EN;
+        STR      R2,[R1, #+508]
+        STR      R4,[R1, #+496]
+//  215     machine_menu.Invert_1=INVERT_N_EN;
+        STR      R3,[R1, #+504]
+//  216 
+//  217     machine_menu.HomeFeedRateConfTitle=HOMEFEEDRATE_CONF_TITLE_EN;
+        LDR.N    R2,??DataTable1002_124
+        LDR.N    R4,??DataTable1002_125
+//  218     machine_menu.XY_HomeFeedRate=X_HOMESPEED_EN;
+//  219     //machine_menu.Y_HomeFeedRate=Y_HOMESPEED_EN;
+//  220     machine_menu.Z_HomeFeedRate=Z_HOMESPEED_EN;
+//  221 
+//  222     machine_menu.AdvancedConfTitle=ADVANCED_CONF_TITLE_EN;
+//  223     machine_menu.PwrOffDection=PWROFF_DECTION_EN;
+//  224     machine_menu.PwrOffAfterPrint=PWROFF_AFTER_PRINT_EN;
+//  225     machine_menu.HaveUps=HAVE_UPS_EN;
+//  226     machine_menu.Z2andZ2Endstop=Z2_AND_Z2ENDSTOP_CONF_EN;
+//  227     machine_menu.EnablePinsInvert=ENABLE_PINS_CONF_EN;
+        LDR.N    R3,??DataTable1002_126
+        STR      R2,[R1, #+512]
+        STR      R4,[R1, #+500]
+        STR      R3,[R1, #+548]
+        LDR.N    R2,??DataTable1002_127
+        STR      R2,[R1, #+516]
+        LDR.N    R2,??DataTable1002_128
+        STR      R2,[R1, #+524]
+        LDR.N    R2,??DataTable1002_129
+        STR      R2,[R1, #+528]
+        LDR.N    R2,??DataTable1002_130
+        STR      R2,[R1, #+532]
+        LDR.N    R2,??DataTable1002_131
+        STR      R2,[R1, #+536]
+        LDR.N    R2,??DataTable1002_132
+        STR      R2,[R1, #+540]
+        LDR.N    R2,??DataTable1002_133
+        STR      R2,[R1, #+544]
+//  228 
+//  229     machine_menu.Z2ConfTitle=Z2_AND_Z2ENDSTOP_CONF_TITLE_EN;
+        STR      R2,[R1, #+552]
+//  230     machine_menu.Z2Enable=Z2_ENABLE_EN;
+        LDR.N    R2,??DataTable1002_134
+        STR      R2,[R1, #+556]
+//  231     machine_menu.Z2EndstopEnable=Z2_ENDSTOP_EN;
+        LDR.N    R2,??DataTable1002_135
+        STR      R2,[R1, #+560]
+//  232     machine_menu.Z2Port=Z2_PORT_EN;
+        LDR.N    R2,??DataTable1002_136
+        STR      R2,[R1, #+564]
+//  233 
+//  234     machine_menu.EnablePinsInvertTitle=ENABLE_PINS_CONF_TITLE_EN;
+        LDR.N    R2,??DataTable1002_137
+        STR      R2,[R1, #+568]
+//  235     machine_menu.XInvert=X_ENABLE_PINS_INVERT_EN;
+        LDR.N    R2,??DataTable1002_138
+        STR      R2,[R1, #+572]
+//  236     machine_menu.YInvert=Y_ENABLE_PINS_INVERT_EN;
+        LDR.N    R2,??DataTable1002_139
+        STR      R2,[R1, #+576]
+//  237     machine_menu.ZInvert=Z_ENABLE_PINS_INVERT_EN;
+        LDR.N    R2,??DataTable1002_140
+        STR      R2,[R1, #+580]
+//  238     machine_menu.EInvert=E_ENABLE_PINS_INVERT_EN;
+        LDR.N    R2,??DataTable1002_141
+        STR      R2,[R1, #+584]
+//  239 
+//  240     machine_menu.key_back = KEY_BACK_EN;
+        ADR.N    R2,??DataTable1002  ;; "Del"
+        STR      R2,[R1, #+632]
+//  241     machine_menu.key_rest = KEY_REST_EN;
+        LDR.N    R2,??DataTable1002_142
+        STR      R2,[R1, #+636]
+//  242     machine_menu.key_confirm = KEY_CONFIRM_EN;
+        LDR.N    R2,??DataTable1002_143
+        STR      R2,[R1, #+640]
+//  243     //
+//  244 
+//  245     set_menu.machine_para = MACHINE_PARA_EN;
+        LDR.N    R2,??DataTable1002_144
+        STR      R2,[R0, #+40]
+//  246 
+//  247 	machine_menu.high_level = MOTOR_EN_HIGH_LEVEL_EN;
+        LDR.N    R0,??DataTable1002_145
+        STR      R0,[R1, #+652]
+//  248 	machine_menu.low_level = MOTOR_EN_LOW_LEVEL_EN;
+        ADR.N    R0,??DataTable1002_1  ;; "Low"
+        STR      R0,[R1, #+648]
+//  249 
+//  250 }
+        POP      {R4-R7}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI CFA R13+0
+        BX       LR               ;; return
+        DATA
+??machine_setting_disp_0:
+        DC8      "MIN"
+        DC8      "MAX"
+        DC8      "YES"
+        DC8      0x4E, 0x4F, 0x00, 0x00
+          CFI EndBlock cfiBlock0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002:
+        DC8      "Del"
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_1:
+        DC8      "Low"
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_2:
+        DC32     set_menu
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_3:
+        DC32     `?<Constant "Machine settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_4:
+        DC32     `?<Constant "Default">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_5:
+        DC32     `?<Constant "Leveling settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_6:
+        DC32     `?<Constant "Machine Settings>Mach...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_7:
+        DC32     `?<Constant "Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_8:
+        DC32     `?<Constant "Temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_9:
+        DC32     `?<Constant "Motor">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_10:
+        DC32     `?<Constant "Adavance">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_11:
+        DC32     machine_menu
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_12:
+        DC32     `?<Constant "XYZ Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_13:
+        DC32     `?<Constant "Next">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_14:
+        DC32     `?<Constant "Delta Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_15:
+        DC32     `?<Constant "Previous">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_16:
+        DC32     `?<Constant "Corexy Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_17:
+        DC32     `?<Constant "Machine Settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_18:
+        DC32     `?<Constant "Machine Settings>Mach...">_1`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_19:
+        DC32     `?<Constant "Machine type">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_20:
+        DC32     `?<Constant "X-axis maximum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_21:
+        DC32     `?<Constant "Machine Size">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_22:
+        DC32     `?<Constant "Y-axis maximum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_23:
+        DC32     `?<Constant "Home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_24:
+        DC32     `?<Constant "Z-axis maximum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_25:
+        DC32     `?<Constant "Endstop type">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_26:
+        DC32     `?<Constant "X-axis minimum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_27:
+        DC32     `?<Constant "Filament settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_28:
+        DC32     `?<Constant "Y-axis minimum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_29:
+        DC32     `?<Constant "Load temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_30:
+        DC32     `?<Constant "Z-axis minimum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_31:
+        DC32     `?<Constant "Load length">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_32:
+        DC32     `?<Constant "Machine Settings>Home...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_33:
+        DC32     `?<Constant "Load speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_34:
+        DC32     `?<Constant "X-axis home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_35:
+        DC32     `?<Constant "Unload temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_36:
+        DC32     `?<Constant "Y-axis home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_37:
+        DC32     `?<Constant "Unload length">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_38:
+        DC32     `?<Constant "Z-axis home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_39:
+        DC32     `?<Constant "Unload speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_40:
+        DC32     `?<Constant "delta machine leveling">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_41:
+        DC32     `?<Constant "Machine Settings>Ends...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_42:
+        DC32     `?<Constant "Manual leveling coord...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_43:
+        DC32     `?<Constant "X-axis minimum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_44:
+        DC32     `?<Constant "leveling setting">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_45:
+        DC32     `?<Constant "Y-axis minimum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_46:
+        DC32     `?<Constant "Enable auto leveling">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_47:
+        DC32     `?<Constant "Z-axis minimum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_48:
+        DC32     `?<Constant "Enable BLtouch">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_49:
+        DC32     `?<Constant "X axis maximum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_50:
+        DC32     `?<Constant "Probe connector">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_51:
+        DC32     `?<Constant "Y axis maximum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_52:
+        DC32     `?<Constant "Probe x axis offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_53:
+        DC32     `?<Constant "Z axis maximum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_54:
+        DC32     `?<Constant "Probe y axis offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_55:
+        DC32     `?<Constant "Filament sensor">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_56:
+        DC32     `?<Constant "Probe z axis offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_57:
+        DC32     `?<Constant "Leveling sensor">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_58:
+        DC32     `?<Constant "Probe xy axis speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_59:
+        DC32     `?<Constant "Open">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_60:
+        DC32     `?<Constant "Probe z axis speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_61:
+        DC32     `?<Constant "Close">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_62:
+        DC32     `?<Constant "ZMin">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_63:
+        DC32     `?<Constant "lowest temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_64:
+        DC32     `?<Constant "Maximum temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_65:
+        DC32     `?<Constant "Minimum extrusion tem...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_66:
+        DC32     `?<Constant "ZMax">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_67:
+        DC32     `?<Constant "Enable heatbed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_68:
+        DC32     `?<Constant "Delta Machine settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_69:
+        DC32     `?<Constant "Machine Settings>Hotb...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_70:
+        DC32     `?<Constant "Machine Radius">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_71:
+        DC32     `?<Constant "Machine rod length">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_72:
+        DC32     `?<Constant "Print radius">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_73:
+        DC32     `?<Constant "Print height">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_74:
+        DC32     `?<Constant "Slider offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_75:
+        DC32     `?<Constant "Effector offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_76:
+        DC32     `?<Constant "Leveling radius">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_77:
+        DC32     `?<Constant "Cartesian Machine Set...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_78:
+        DC32     `?<Constant "Machine Settings>Temp...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_79:
+        DC32     `?<Constant "Nozzle settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_80:
+        DC32     `?<Constant "Hotbed settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_81:
+        DC32     `?<Constant "Preset temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_82:
+        DC32     `?<Constant "Machine Settings>Nozz...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_83:
+        DC32     `?<Constant "Number of nozzles">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_84:
+        DC32     `?<Constant "E0 Temperature type">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_85:
+        DC32     `?<Constant "PID thermostat">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_86:
+        DC32     `?<Constant "Machine Settings>Moto...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_87:
+        DC32     `?<Constant "Maximum speed settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_88:
+        DC32     `?<Constant "Acceleration settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_89:
+        DC32     `?<Constant "Jerk settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_90:
+        DC32     `?<Constant "Steps settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_91:
+        DC32     `?<Constant "Motor direction settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_92:
+        DC32     `?<Constant "Home speed setting">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_93:
+        DC32     `?<Constant "Machine Settings>Maxi...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_94:
+        DC32     `?<Constant "X axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_95:
+        DC32     `?<Constant "Y axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_96:
+        DC32     `?<Constant "Z axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_97:
+        DC32     `?<Constant "E0 axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_98:
+        DC32     `?<Constant "E1 axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_99:
+        DC32     `?<Constant "Machine Settings>Acce...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_100:
+        DC32     `?<Constant "Print acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_101:
+        DC32     `?<Constant "Retraction acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_102:
+        DC32     `?<Constant "Travel acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_103:
+        DC32     `?<Constant "X-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_104:
+        DC32     `?<Constant "Y-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_105:
+        DC32     `?<Constant "Z-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_106:
+        DC32     `?<Constant "E0-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_107:
+        DC32     `?<Constant "E1-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_108:
+        DC32     `?<Constant "Machine Settings>Jerk...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_109:
+        DC32     `?<Constant "X-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_110:
+        DC32     `?<Constant "Y-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_111:
+        DC32     `?<Constant "J-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_112:
+        DC32     `?<Constant "E-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_113:
+        DC32     `?<Constant "Machine Settings>Step...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_114:
+        DC32     `?<Constant "X-axis steps">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_115:
+        DC32     `?<Constant "Y-axis stepS">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_116:
+        DC32     `?<Constant "Z-axis stepS">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_117:
+        DC32     `?<Constant "E0-axis steps">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_118:
+        DC32     `?<Constant "E1-axis steps">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_119:
+        DC32     `?<Constant "Machine Settings>Moto...">_1`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_120:
+        DC32     `?<Constant "X-axis motor directio...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_121:
+        DC32     `?<Constant "Y-axis motor directio...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_122:
+        DC32     `?<Constant "Z-axis motor directio...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_123:
+        DC32     `?<Constant "E0-axis motor directi...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_124:
+        DC32     `?<Constant "Machine Settings>Home...">_1`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_125:
+        DC32     `?<Constant "E1-axis motor directi...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_126:
+        DC32     `?<Constant "Enable pins level set...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_127:
+        DC32     `?<Constant "XY-axis Home speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_128:
+        DC32     `?<Constant "Z-axis Home speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_129:
+        DC32     `?<Constant "Machine Settings>Advance">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_130:
+        DC32     `?<Constant "power off dection module">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_131:
+        DC32     `?<Constant "Auto Shutdown after p...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_132:
+        DC32     `?<Constant "Has UPS power supply">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_133:
+        DC32     `?<Constant "Z2 Settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_134:
+        DC32     `?<Constant "Z2 Enable">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_135:
+        DC32     `?<Constant "Z2_EndStop Enable">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_136:
+        DC32     `?<Constant "Z2 Connector">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_137:
+        DC32     `?<Constant "ENABLE_PINS_LEVEL">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_138:
+        DC32     `?<Constant "X_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_139:
+        DC32     `?<Constant "Y_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_140:
+        DC32     `?<Constant "Z_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_141:
+        DC32     `?<Constant "E_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_142:
+        DC32     `?<Constant "Rest">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_143:
+        DC32     `?<Constant "Confirm">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_144:
+        DC32     `?<Constant "Machine\\nsettings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1002_145:
+        DC32     `?<Constant "High">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function _Z18disp_language_initv
+        THUMB
+//  251 void disp_language_init()
+//  252 {
 _Z18disp_language_initv:
-        PUSH     {R4-R11,LR}
+        PUSH     {R3-R11,LR}
           CFI R14 Frame(CFA, -4)
           CFI R11 Frame(CFA, -8)
           CFI R10 Frame(CFA, -12)
@@ -266,1192 +1695,355 @@ _Z18disp_language_initv:
           CFI R6 Frame(CFA, -28)
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
-          CFI CFA R13+36
-//   55 	preheat_menu.value_state= TEXT_VALUE;
-        LDR.W    R0,??disp_language_init_1
-        LDR.W    R1,??disp_language_init_1+0x4
-        STR      R1,[R0, #+332]
-//   56 	preheat_menu.step_1c= TEXT_1C;
-        LDR.W    R2,??disp_language_init_1+0x8
-        STR      R2,[R0, #+316]
-//   57 	preheat_menu.step_5c= TEXT_5C;
-        LDR.W    R2,??disp_language_init_1+0xC
-        STR      R2,[R0, #+320]
-//   58 	preheat_menu.step_10c= TEXT_10C;
-        LDR.W    R2,??disp_language_init_1+0x10
-        STR      R2,[R0, #+324]
-//   59 
-//   60 	move_menu.x_add = AXIS_X_ADD_TEXT;
-        ADR.N    R2,??disp_language_init_2  ;; 0x58, 0x2B, 0x00, 0x00
-        STR      R2,[R0, #+488]
-//   61 	move_menu.x_dec = AXIS_X_DEC_TEXT;
-        ADR.N    R2,??disp_language_init_2+0x4  ;; 0x58, 0x2D, 0x00, 0x00
-        STR      R2,[R0, #+492]
-//   62 	move_menu.y_add = AXIS_Y_ADD_TEXT;
-        ADR.N    R2,??disp_language_init_2+0x8  ;; 0x59, 0x2B, 0x00, 0x00
-        STR      R2,[R0, #+496]
-//   63 	move_menu.y_dec = AXIS_Y_DEC_TEXT;
-        ADR.N    R2,??disp_language_init_2+0xC  ;; 0x59, 0x2D, 0x00, 0x00
-        STR      R2,[R0, #+500]
-//   64 	move_menu.z_add = AXIS_Z_ADD_TEXT;
-        ADR.N    R2,??disp_language_init_2+0x10  ;; 0x5A, 0x2B, 0x00, 0x00
-        STR      R2,[R0, #+504]
-//   65 	move_menu.z_dec = AXIS_Z_DEC_TEXT;
-        ADR.N    R2,??disp_language_init_3  ;; 0x5A, 0x2D, 0x00, 0x00
-        STR      R2,[R0, #+508]
-//   66 	
-//   67 	move_menu.step_01mm = TEXT_01MM;
-        LDR.W    R2,??disp_language_init_1+0x14
-        STR      R2,[R0, #+512]
-//   68 	move_menu.step_1mm = TEXT_1MM;
-        ADR.N    R3,??disp_language_init_3+0x4  ;; "1mm"
-        STR      R3,[R0, #+516]
-//   69 	move_menu.step_10mm = TEXT_10MM;
-        LDR.W    R4,??disp_language_init_1+0x18
-        STR      R4,[R0, #+520]
-//   70 
-//   71 	home_menu.home_x= HOME_X_TEXT;
-        ADR.N    R5,??disp_language_init_3+0x8  ;; "X"
-        STR      R5,[R0, #+864]
-//   72 	home_menu.home_y= HOME_Y_TEXT;
-        ADR.N    R5,??disp_language_init_3+0xC  ;; "Y"
-        STR      R5,[R0, #+868]
-//   73 	home_menu.home_z= HOME_Z_TEXT;
-        ADR.N    R5,??disp_language_init_3+0x10  ;; "Z"
-        STR      R5,[R0, #+872]
-//   74 	home_menu.home_all= HOME_ALL_TEXT;
-        ADR.N    R5,??disp_language_init_3+0x14  ;; "All"
-        STR      R5,[R0, #+860]
-//   75 
-//   76 	extrude_menu.temp_value = TEXT_VALUE_T;
-        LDR.W    R5,??disp_language_init_1+0x1C
-        STR      R5,[R0, #+152]
-//   77 	extrude_menu.count_value_mm= TEXT_VALUE_mm;
-        LDR.W    R5,??disp_language_init_1+0x20
-        STR      R5,[R0, #+140]
-//   78 	extrude_menu.count_value_cm= TEXT_VALUE_cm;
-        LDR.W    R5,??disp_language_init_1+0x24
-        STR      R5,[R0, #+144]
-//   79 	extrude_menu.count_value_m= TEXT_VALUE_m;
-        LDR.W    R5,??disp_language_init_1+0x28
-        STR      R5,[R0, #+148]
-//   80 	extrude_menu.step_1mm = EXTRUDE_1MM_TEXT;
-        STR      R3,[R0, #+112]
-//   81 	extrude_menu.step_5mm = EXTRUDE_5MM_TEXT;
-        ADR.N    R5,??disp_language_init_3+0x18  ;; "5mm"
-        STR      R5,[R0, #+116]
-//   82 	extrude_menu.step_10mm = EXTRUDE_10MM_TEXT;
-        STR      R4,[R0, #+120]
-//   83 
-//   84 	fan_menu.full = FAN_OPEN_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x2C
-        STR      R4,[R0, #+748]
-//   85 	fan_menu.half = FAN_HALF_TEXT;
-        ADR.N    R4,??disp_language_init_3+0x1C  ;; "50%"
-        STR      R4,[R0, #+752]
-//   86 	fan_menu.off = FAN_CLOSE_TEXT;
-        ADR.N    R4,??disp_language_init_3+0x20  ;; 0x30, 0x25, 0x00, 0x00
-        STR      R4,[R0, #+756]
-//   87 
-//   88 	speed_menu.step_1percent = STEP_1PERCENT;
-        ADR.N    R4,??disp_language_init_3+0x24  ;; 0x31, 0x25, 0x00, 0x00
-        STR      R4,[R0, #+460]
-//   89 	speed_menu.step_5percent = STEP_5PERCENT;
-        ADR.N    R4,??disp_language_init_3+0x28  ;; 0x35, 0x25, 0x00, 0x00
-        STR      R4,[R0, #+464]
-//   90 	speed_menu.step_10percent = STEP_10PERCENT;
-        ADR.N    R4,??disp_language_init_3+0x2C  ;; "10%"
-        STR      R4,[R0, #+468]
-//   91 
-//   92 	language_menu.chinese_s = LANGUAGE_S_CN;
-        LDR.W    R4,??disp_language_init_1+0x30
-        STR      R4,[R0, #+164]
-//   93 	language_menu.chinese_t = LANGUAGE_T_CN;
-        LDR.W    R4,??disp_language_init_1+0x34
-        STR      R4,[R0, #+168]
-//   94 	language_menu.english = LANGUAGE_EN;
-        LDR.W    R4,??disp_language_init_1+0x38
-        STR      R4,[R0, #+172]
-//   95 	language_menu.russian = LANGUAGE_RU;
-        LDR.W    R4,??disp_language_init_1+0x3C
-        STR      R4,[R0, #+176]
-//   96 	language_menu.spanish = LANGUAGE_SP;
-        LDR.W    R4,??disp_language_init_1+0x40
-        STR      R4,[R0, #+192]
-//   97 	language_menu.german = LANGUAGE_GE;
-        LDR.W    R4,??disp_language_init_1+0x44
-        STR      R4,[R0, #+188]
-//   98 	language_menu.japan = LANGUAGE_JP;
-        LDR.W    R4,??disp_language_init_1+0x48
-        STR      R4,[R0, #+180]
-//   99 	language_menu.korean = LANGUAGE_KR;
-        LDR.W    R4,??disp_language_init_1+0x4C
-        STR      R4,[R0, #+196]
-//  100 	language_menu.portuguese = LANGUAGE_PR;
-        LDR.W    R4,??disp_language_init_1+0x50
-        STR      R4,[R0, #+208]
-//  101 	language_menu.italy = LANGUAGE_IT;
-        LDR.W    R4,??disp_language_init_1+0x54
-        STR      R4,[R0, #+184]
-//  102 	language_menu.brazil = LANGUAGE_BR;
-        LDR.W    R4,??disp_language_init_1+0x58
-        STR      R4,[R0, #+204]
-//  103 	language_menu.french = LANGUAGE_FR;
-        LDR.W    R4,??disp_language_init_1+0x5C
-        STR      R4,[R0, #+200]
-//  104     
-//  105 	about_menu.type_name= ABOUT_TYPE_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x60
-        STR      R4,[R0, #+916]
-//  106 	about_menu.firmware_v= ABOUT_VERSION_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x64
-        STR      R4,[R0, #+920]
-//  107 	//about_menu.wifi = ABOUT_WIFI_TEXT;	
-//  108 
-//  109 	wifi_menu.ip = WIFI_IP_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x68
-        STR      R4,[R0, #+576]
-        LDR.W    R4,??disp_language_init_1+0x6C
-        STR      R4,[R0, #+580]
-//  110 	wifi_menu.wifi = WIFI_NAME_TEXT;
-//  111 	wifi_menu.key = WIFI_KEY_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x70
-        STR      R4,[R0, #+584]
-//  112 	wifi_menu.state_ap = WIFI_STATE_AP_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x74
-        STR      R4,[R0, #+588]
-//  113 	wifi_menu.state_sta = WIFI_STATE_STA_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x78
-        STR      R4,[R0, #+592]
-//  114 	wifi_menu.connected = WIFI_CONNECTED_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x7C
-        STR      R4,[R0, #+600]
-        LDR.W    R4,??disp_language_init_1+0x80
-        STR      R4,[R0, #+604]
-//  115 	wifi_menu.disconnected = WIFI_DISCONNECTED_TEXT;
-//  116 	wifi_menu.exception = WIFI_EXCEPTION_TEXT;
-        LDR.W    R4,??disp_language_init_1+0x84
-        STR      R4,[R0, #+608]
-//  117 
-//  118 	printing_menu.temp1 = TEXT_VALUE;
-        STR      R1,[R0, #+668]
-//  119 	printing_menu.temp2 = TEXT_VALUE;
-        STR      R1,[R0, #+672]
-//  120 	printing_menu.bed_temp = TEXT_VALUE;
-        STR      R1,[R0, #+676]
-//  121 
-//  122 	filament_menu.stat_temp = TEXT_VALUE;
+          CFI CFA R13+40
+//  253 	preheat_menu.value_state= TEXT_VALUE;
+        LDR.N    R4,??disp_language_init_0+0x84
+//  254 	preheat_menu.step_1c= TEXT_1C;
+//  255 	preheat_menu.step_5c= TEXT_5C;
+//  256 	preheat_menu.step_10c= TEXT_10C;
+//  257 
+//  258 	move_menu.x_add = AXIS_X_ADD_TEXT;
+//  259 	move_menu.x_dec = AXIS_X_DEC_TEXT;
+//  260 	move_menu.y_add = AXIS_Y_ADD_TEXT;
+//  261 	move_menu.y_dec = AXIS_Y_DEC_TEXT;
+//  262 	move_menu.z_add = AXIS_Z_ADD_TEXT;
+//  263 	move_menu.z_dec = AXIS_Z_DEC_TEXT;
+//  264 
+//  265 	move_menu.step_001mm = TEXT_001MM;
+//  266 	move_menu.step_005mm = TEXT_005MM;
+//  267 	move_menu.step_01mm = TEXT_01MM;
+//  268 	move_menu.step_1mm = TEXT_1MM;
+//  269 	move_menu.step_10mm = TEXT_10MM;
+        LDR.N    R5,??disp_language_init_0+0x88
+        STR      R5,[R4, #+496]
+//  270 
+//  271 	home_menu.home_x= HOME_X_TEXT;
+//  272 	home_menu.home_y= HOME_Y_TEXT;
+//  273 	home_menu.home_z= HOME_Z_TEXT;
+//  274 	home_menu.home_all= HOME_ALL_TEXT;
+//  275 
+//  276 	extrude_menu.temp_value = TEXT_VALUE_T;
+//  277 	extrude_menu.count_value_mm= TEXT_VALUE_mm;
+//  278 	extrude_menu.count_value_cm= TEXT_VALUE_cm;
+//  279 	extrude_menu.count_value_m= TEXT_VALUE_m;
+//  280 	extrude_menu.step_1mm = EXTRUDE_1MM_TEXT;
+//  281 	extrude_menu.step_5mm = EXTRUDE_5MM_TEXT;
+//  282 	extrude_menu.step_10mm = EXTRUDE_10MM_TEXT;
+        STR      R5,[R4, #+120]
+        ADR.N    R1,??disp_language_init_0  ;; 0x58, 0x2B, 0x00, 0x00
+//  283 
+//  284 	fan_menu.full = FAN_OPEN_TEXT;
+        LDR.N    R5,??disp_language_init_0+0x8C
+        LDR.N    R0,??disp_language_init_0+0x90
+        LDR.N    R6,??disp_language_init_0+0x94
+        LDR.W    R11,??disp_language_init_0+0x98
+        LDR.W    R8,??disp_language_init_0+0x9C
+        LDR.N    R2,??disp_language_init_0+0xA0
+        LDR.W    R7,??disp_language_init_1
+        STR      R5,[R4, #+728]
+        STR      R1,[R4, #+456]
+//  285 	fan_menu.half = FAN_HALF_TEXT;
+        ADR.N    R5,??disp_language_init_0+0x4  ;; "50%"
+        STR      R5,[R4, #+732]
+        ADR.N    R1,??disp_language_init_0+0x8  ;; 0x58, 0x2D, 0x00, 0x00
+//  286 	fan_menu.off = FAN_CLOSE_TEXT;
+        ADR.N    R5,??disp_language_init_0+0xC  ;; 0x30, 0x25, 0x00, 0x00
+        STR      R5,[R4, #+736]
+        STR      R1,[R4, #+460]
+//  287 
+//  288 	speed_menu.step_1percent = STEP_1PERCENT;
+        ADR.N    R5,??disp_language_init_0+0x10  ;; 0x31, 0x25, 0x00, 0x00
+        STR      R5,[R4, #+572]
+        ADR.N    R1,??disp_language_init_0+0x14  ;; 0x59, 0x2B, 0x00, 0x00
+//  289 	speed_menu.step_5percent = STEP_5PERCENT;
+        ADR.N    R5,??disp_language_init_0+0x18  ;; 0x35, 0x25, 0x00, 0x00
+        STR      R5,[R4, #+576]
+        STR      R1,[R4, #+464]
+//  290 	speed_menu.step_10percent = STEP_10PERCENT;
+        ADR.N    R5,??disp_language_init_0+0x1C  ;; "10%"
+        STR      R5,[R4, #+580]
+        ADR.N    R1,??disp_language_init_0+0x20  ;; 0x59, 0x2D, 0x00, 0x00
+//  291 
+//  292 	language_menu.chinese_s = LANGUAGE_S_CN;
+        LDR.N    R5,??disp_language_init_0+0xA4
+        STR      R5,[R4, #+228]
+        STR      R1,[R4, #+468]
+        STR      R0,[R4, #+392]
+        STR      R6,[R4, #+376]
+        STR      R11,[R4, #+380]
+        STR      R8,[R4, #+384]
+        ADR.N    R1,??disp_language_init_0+0x24  ;; 0x5A, 0x2B, 0x00, 0x00
+//  293 	language_menu.chinese_t = LANGUAGE_T_CN;
+        LDR.N    R5,??disp_language_init_0+0xA8
+        STR      R5,[R4, #+232]
+        STR      R1,[R4, #+472]
+        ADR.N    R1,??disp_language_init_0+0x28  ;; 0x5A, 0x2D, 0x00, 0x00
+//  294 	language_menu.english = LANGUAGE_EN;
+        LDR.N    R5,??disp_language_init_0+0xAC
+        STR      R5,[R4, #+236]
+        STR      R1,[R4, #+476]
+        STR      R2,[R4, #+484]
+        ADR.N    R3,??disp_language_init_0+0x2C  ;; "1mm"
+//  295 	language_menu.russian = LANGUAGE_RU;
+        LDR.N    R5,??disp_language_init_0+0xB0
+        LDR.N    R1,??disp_language_init_0+0xB4
+        LDR.N    R2,??disp_language_init_0+0xB8
+        STR      R5,[R4, #+240]
+        STR      R1,[R4, #+480]
+        STR      R2,[R4, #+488]
+        STR      R3,[R4, #+492]
+        ADR.W    R12,??disp_language_init_0+0x30  ;; "X"
+//  296 	language_menu.spanish = LANGUAGE_SP;
+        LDR.W    R5,??disp_language_init_1+0x4
+        STR      R5,[R4, #+256]
+//  297 	language_menu.german = LANGUAGE_GE;
+//  298 	language_menu.japan = LANGUAGE_JP;
+//  299 	language_menu.korean = LANGUAGE_KR;
+//  300 	language_menu.portuguese = LANGUAGE_PR;
+//  301 	language_menu.italy = LANGUAGE_IT;
+//  302 	language_menu.brazil = LANGUAGE_BR;
+//  303 	language_menu.french = LANGUAGE_FR;
+//  304     
+//  305 	about_menu.type_name= ABOUT_TYPE_TEXT;
+//  306 	about_menu.firmware_v= ABOUT_VERSION_TEXT;
+//  307 	//about_menu.wifi = ABOUT_WIFI_TEXT;	
+//  308 
+//  309 	wifi_menu.ip = WIFI_IP_TEXT;
+//  310 	wifi_menu.wifi = WIFI_NAME_TEXT;
+//  311 	wifi_menu.key = WIFI_KEY_TEXT;
+//  312 	wifi_menu.state_ap = WIFI_STATE_AP_TEXT;
+//  313 	wifi_menu.state_sta = WIFI_STATE_STA_TEXT;
+//  314 	wifi_menu.connected = WIFI_CONNECTED_TEXT;
+//  315 	wifi_menu.disconnected = WIFI_DISCONNECTED_TEXT;
+//  316 	wifi_menu.exception = WIFI_EXCEPTION_TEXT;
+//  317 
+//  318 	printing_menu.temp1 = TEXT_VALUE;
+//  319 	printing_menu.temp2 = TEXT_VALUE;
+//  320 	printing_menu.bed_temp = TEXT_VALUE;
+//  321 
+//  322 	filament_menu.stat_temp = TEXT_VALUE;
+//  323 
+//  324 	zoffset_menu.step001 = ZOFFSET_STEP001;
+        STR      R1,[R4, #+976]
+        STR      R12,[R4, #+852]
+        ADR.W    R12,??disp_language_init_0+0x34  ;; "Y"
+        LDR.W    R5,??disp_language_init_1+0x8
+        STR      R5,[R4, #+252]
+//  325 	zoffset_menu.step01 = ZOFFSET_STEP01;
+//  326 	zoffset_menu.step1 = ZOFFSET_STEP1;
+//  327 
+//  328     machine_menu.key_0 = KEYBOARD_KEY0_EN;
+        ADR.N    R1,??disp_language_init_0+0x38  ;; "0"
+        LDR.W    R5,??disp_language_init_1+0xC
+        STR      R5,[R4, #+244]
+        STR      R12,[R4, #+856]
+        ADR.W    R12,??disp_language_init_0+0x3C  ;; "Z"
+        LDR.W    R5,??disp_language_init_1+0x10
+        STR      R5,[R4, #+260]
+        STR      R7,[R4, #+152]
+        STR      R12,[R4, #+860]
+        ADR.W    R12,??disp_language_init_0+0x40  ;; "All"
+        LDR.W    R5,??disp_language_init_1+0x14
+        LDR.W    R7,??disp_language_init_1+0x18
+        STR      R5,[R4, #+272]
+        STR      R7,[R4, #+140]
+        STR      R12,[R4, #+848]
+        STR      R3,[R4, #+112]
+        ADR.W    R12,??disp_language_init_0+0x44  ;; "5mm"
+        LDR.N    R5,??disp_language_init_0+0xBC
+        LDR.N    R7,??disp_language_init_0+0xC0
+        STR      R5,[R4, #+248]
+        STR      R7,[R4, #+144]
+        STR      R12,[R4, #+116]
+        STR      R0,[R4, #+648]
+        STR      R0,[R4, #+652]
+        STR      R0,[R4, #+656]
+        STR      R0,[R4, #+24]
+        STR      R2,[R4, #+980]
+        STR      R3,[R4, #+984]
+        LDR.N    R5,??disp_language_init_0+0xC4
+        LDR.N    R7,??disp_language_init_0+0xC8
+        STR      R5,[R4, #+268]
+        STR      R7,[R4, #+148]
+        LDR.N    R5,??disp_language_init_0+0xCC
+        STR      R5,[R4, #+264]
+        LDR.N    R5,??disp_language_init_0+0xD0
+        STR      R5,[R4, #+904]
+        LDR.N    R5,??disp_language_init_0+0xD4
+        STR      R5,[R4, #+908]
+        LDR.N    R5,??disp_language_init_0+0xD8
+        STR      R5,[R4, #+508]
+        LDR.N    R5,??disp_language_init_0+0xDC
+        STR      R5,[R4, #+512]
+        LDR.N    R5,??disp_language_init_0+0xE0
+        STR      R5,[R4, #+516]
+        LDR.N    R5,??disp_language_init_0+0xE4
+        STR      R5,[R4, #+520]
+        LDR.N    R5,??disp_language_init_0+0xE8
+        STR      R5,[R4, #+524]
+        LDR.N    R5,??disp_language_init_0+0xEC
+        STR      R5,[R4, #+532]
+        LDR.N    R5,??disp_language_init_0+0xF0
+        STR      R5,[R4, #+536]
+        LDR.N    R5,??disp_language_init_0+0xF4
+        STR      R5,[R4, #+540]
+        LDR.N    R5,??disp_language_init_0+0xF8
+        STR      R1,[R5, #+624]
+//  329     machine_menu.key_1 = KEYBOARD_KEY1_EN;
+        ADR.N    R1,??disp_language_init_0+0x48  ;; "1"
+        STR      R1,[R5, #+588]
+//  330     machine_menu.key_2 = KEYBOARD_KEY2_EN;
+        ADR.N    R1,??disp_language_init_0+0x4C  ;; "2"
+        STR      R1,[R5, #+592]
+//  331     machine_menu.key_3 = KEYBOARD_KEY3_EN;
+        ADR.N    R1,??disp_language_init_0+0x50  ;; "3"
+        STR      R1,[R5, #+596]
+//  332     machine_menu.key_4 = KEYBOARD_KEY4_EN;
+        ADR.N    R1,??disp_language_init_0+0x54  ;; "4"
+        STR      R1,[R5, #+600]
+//  333     machine_menu.key_5 = KEYBOARD_KEY5_EN;
+        ADR.N    R1,??disp_language_init_0+0x58  ;; "5"
+        STR      R1,[R5, #+604]
+//  334     machine_menu.key_6 = KEYBOARD_KEY6_EN;
+        ADR.N    R1,??disp_language_init_0+0x5C  ;; "6"
+        STR      R1,[R5, #+608]
+//  335     machine_menu.key_7 = KEYBOARD_KEY7_EN;
+        ADR.N    R1,??disp_language_init_0+0x60  ;; "7"
+        STR      R1,[R5, #+612]
+//  336     machine_menu.key_8 = KEYBOARD_KEY8_EN;
+        ADR.N    R1,??disp_language_init_0+0x64  ;; "8"
+        STR      R1,[R5, #+616]
+//  337     machine_menu.key_9 = KEYBOARD_KEY9_EN;
+        ADR.N    R1,??disp_language_init_0+0x68  ;; "9"
+        STR      R1,[R5, #+620]
+//  338     machine_menu.key_point= KEYBOARD_KEY_POINT_EN;
+        ADR.N    R1,??disp_language_init_0+0x6C  ;; "."
+        STR      R1,[R5, #+628]
+//  339 	machine_menu.negative=KEYBOARD_KEY_NEGATIVE_EN;
+        ADR.N    R1,??disp_language_init_0+0x70  ;; "-"
+        STR      R1,[R5, #+644]
+//  340 
+//  341 	//wifi-list
+//  342 	list_menu.title=TEXT_WIFI_MENU_TITLE_EN;
+        LDR.N    R2,??disp_language_init_0+0xFC
+        LDR.N    R1,??disp_language_init_0+0x100
+//  343 	list_menu.file_pages = FILE_PAGES_EN;
+        STR      R0,[R1, #+4]
+        STR      R2,[R1, #+0]
+//  344 	//keyboard
+//  345 	keyboard_menu.apply=MANUAL_IP_APPLY_EN;
+        LDR.N    R0,??disp_language_init_0+0x104
+        LDR.N    R1,??disp_language_init_0+0x108
+        STR      R1,[R0, #+4]
+//  346 	keyboard_menu.password=TEXT_WIFI_PASSWORD_EN;
+        LDR.N    R1,??disp_language_init_0+0x10C
+        STR      R1,[R0, #+8]
+//  347 	keyboard_menu.space = TEXT_WIFI_SAPCE_EN;
+        LDR.N    R1,??disp_language_init_0+0x110
         STR      R1,[R0, #+24]
-//  123 
-//  124 	zoffset_menu.step001 = ZOFFSET_STEP001;
-        LDR.W    R1,??disp_language_init_1+0x88
-        STR      R1,[R0, #+988]
-//  125 	zoffset_menu.step01 = ZOFFSET_STEP01;
-        STR      R2,[R0, #+992]
-//  126 	zoffset_menu.step1 = ZOFFSET_STEP1;
-        STR      R3,[R0, #+996]
-//  127 
-//  128 	
-//  129 		
-//  130 	switch(gCfgItems.language)
-        LDR.W    R1,??disp_language_init_1+0x8C
-        LDRSB    R1,[R1, #+184]
-        SUBS     R1,R1,#+1
-        CMP      R1,#+11
-        BHI.W    ??disp_language_init_4
-        TBH      [PC, R1, LSL #+1]
+//  348       keyboard_menu.letter = TEXT_WIFI_LETTER_EN;
+        ADR.N    R1,??disp_language_init_0+0x74  ;; "abc"
+        STR      R1,[R0, #+12]
+//  349       keyboard_menu.digital = TEXT_WIFI_DIGITAL_EN;
+        ADR.N    R1,??disp_language_init_0+0x78  ;; "123"
+        STR      R1,[R0, #+16]
+//  350       keyboard_menu.symbol = TEXT_WIFI_SYMBOL_EN;
+        ADR.N    R1,??disp_language_init_0+0x7C  ;; "#+="
+        STR      R1,[R0, #+20]
+//  351       //tips
+//  352       tips_menu.pointBold = TEXT_WIFI_POINT_BOLD_EN;
+        ADR.N    R1,??disp_language_init_0+0x80  ;; "`"
+        LDR.N    R0,??disp_language_init_0+0x114
+        STR      R1,[R0, #+0]
+//  353 	   tips_menu.joining = TEXT_WIFI_JOINING_EN;
+        LDR.N    R1,??disp_language_init_0+0x118
+        STR      R1,[R0, #+4]
+//  354 	   tips_menu.failedJoin = TEXT_WIFI_FAILED_JOIN_EN;
+        LDR.N    R1,??disp_language_init_0+0x11C
+        STR      R1,[R0, #+8]
+//  355 	   tips_menu.wifiConected = TEXT_WIFI_WIFI_CONECTED_EN;
+        LDR.N    R1,??disp_language_init_0+0x120
+        STR      R1,[R0, #+12]
+//  356       
+//  357 
+//  358     machine_setting_disp();
+          CFI FunCall _Z20machine_setting_dispv
+        BL       _Z20machine_setting_dispv
+//  359 
+//  360 	operation_menu.babystep = TEXT_BABY_STEP_EN;
+        LDR.N    R0,??disp_language_init_0+0x124
+        STR      R0,[R4, #+340]
+//  361     
+//  362 	switch(gCfgItems.language)
+        LDR.N    R0,??disp_language_init_0+0x128
+        LDRSB    R0,[R0, #+200]
+        CMP      R0,#+1
+        BEQ.W    ??disp_language_init_2
+        CMP      R0,#+2
+        BEQ.W    ??disp_language_init_3
+        CMP      R0,#+6
+        BEQ.W    ??disp_language_init_4
+        CMP      R0,#+7
+        BEQ.W    ??disp_language_init_5
+        CMP      R0,#+10
+        BEQ.W    ??disp_language_init_6
+        CMP      R0,#+12
+        BEQ.W    ??disp_language_init_7
+        B.W      ??disp_language_init_8
+        Nop      
         DATA
 ??disp_language_init_0:
-        DC16     0xC,0x231,0x483,0x10F3
-        DC16     0x10F3,0xCA7,0x77B,0x10F3
-        DC16     0x10F3,0xA3F,0x10F3,0xF23
-        THUMB
-//  131 	{
-//  132 		case LANG_SIMPLE_CHINESE:
-//  133 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_CN;
-??disp_language_init_5:
-        LDR.W    R1,??disp_language_init_1+0x90
-        STR      R1,[R0, #+776]
-//  134 			common_menu.text_back=BACK_TEXT_CN;
-        LDR.W    R1,??disp_language_init_1+0x94
-        STR      R1,[R0, #+772]
-//  135 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_CN;
-        LDR.W    R1,??disp_language_init_1+0x98
-        STR      R1,[R0, #+780]
-//  136 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_CN;
-        LDR.W    R1,??disp_language_init_6+0x8
-        STR      R1,[R0, #+784]
-//  137 			common_menu.print_special_title = PRINTING_GBK;
-        LDR.W    R1,??disp_language_init_6+0xC
-        STR      R1,[R0, #+788]
-//  138 			common_menu.pause_special_title = PRINTING_PAUSE_GBK;
-        LDR.W    R1,??disp_language_init_6+0x10
-        STR      R1,[R0, #+792]
-//  139 			common_menu.operate_special_title = PRINTING_OPERATION_GBK;			
-        LDR.W    R1,??disp_language_init_6+0x14
-        STR      R1,[R0, #+796]
-//  140 			//÷˜“≥√Ê
-//  141 			main_menu.title=TITLE_READYPRINT_CN;
-        LDR.W    R1,??disp_language_init_6+0x18
-        STR      R1,[R0, #+340]
-//  142 			main_menu.preheat=PREHEAT_TEXT_CN;
-        LDR.W    LR,??disp_language_init_6+0x1C
-        STR      LR,[R0, #+344]
-//  143 			main_menu.move=MOVE_TEXT_CN;
-        LDR.W    R5,??disp_language_init_6+0x20
-        STR      R5,[R0, #+348]
-//  144 			main_menu.home=HOME_TEXT_CN;
-        LDR.W    R3,??disp_language_init_6+0x24
-        STR      R3,[R0, #+352]
-//  145 			main_menu.print=PRINT_TEXT_CN;
-        LDR.W    R1,??disp_language_init_6+0x28
-        STR      R1,[R0, #+356]
-//  146 			main_menu.extrude=EXTRUDE_TEXT_CN;
-        LDR.W    R6,??disp_language_init_6+0x2C
-        STR      R6,[R0, #+360]
-//  147 			main_menu.leveling=LEVELING_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0x30
-        STR      R4,[R0, #+364]
-//  148 			main_menu.autoleveling=AUTO_LEVELING_TEXT_CN;
-        LDR.W    R12,??disp_language_init_6+0x34
-        STR      R12,[R0, #+368]
-//  149 			main_menu.fan = FAN_TEXT_CN;
-        LDR.W    R7,??disp_language_init_6+0x38
-        STR      R7,[R0, #+372]
-//  150 			main_menu.set=SET_TEXT_CN;
-        LDR.W    R9,??disp_language_init_6+0x3C
-        STR      R9,[R0, #+376]
-//  151 			main_menu.more=MORE_TEXT_CN;
-        LDR.W    R1,??disp_language_init_6+0x40
-        STR      R1,[R0, #+384]
-//  152 			main_menu.tool = TOOL_TEXT_CN;
-        LDR.W    R2,??disp_language_init_6+0x44
-        STR      R2,[R0, #+380]
-//  153 			//TOOL
-//  154 			tool_menu.title = TOOL_TEXT_CN;
-        STR      R2,[R0, #+696]
-//  155 			tool_menu.preheat = TOOL_PREHEAT_CN;
-        STR      LR,[R0, #+700]
-//  156 			tool_menu.extrude = TOOL_EXTRUDE_CN;
-        STR      R6,[R0, #+704]
-//  157 			tool_menu.move = TOOL_MOVE_CN;
-        STR      R5,[R0, #+708]
-//  158 			tool_menu.home= TOOL_HOME_CN;
-        STR      R3,[R0, #+712]
-//  159 			tool_menu.leveling = TOOL_LEVELING_CN;
-        STR      R4,[R0, #+716]
-//  160             tool_menu.autoleveling = TOOL_AUTO_LEVELING_CN;
-        STR      R12,[R0, #+720]
-//  161 			tool_menu.filament = TOOL_FILAMENT_CN;
-        LDR.W    R12,??disp_language_init_6+0x48
-        STR      R12,[R0, #+724]
-//  162 			tool_menu.more = TOOL_MORE_CN;
-        STR      R1,[R0, #+728]
-//  163 			//‘§»»
-//  164 			preheat_menu.adjust_title = TITLE_ADJUST_CN;
-        LDR.W    R2,??disp_language_init_6+0x4C
-        STR      R2,[R0, #+284]
-//  165 			preheat_menu.title=TITLE_PREHEAT_CN;
-        STR      LR,[R0, #+288]
-//  166 			preheat_menu.add=ADD_TEXT_CN;
-        LDR.W    R2,??disp_language_init_6+0x50
-        STR      R2,[R0, #+292]
-        LDR.W    LR,??disp_language_init_6+0x54
-        STR      LR,[R0, #+296]
-//  167 			preheat_menu.dec=DEC_TEXT_CN;
-//  168 			preheat_menu.ext1=EXTRUDER_1_TEXT_CN;
-        LDR.W    LR,??disp_language_init_6+0x58
-        STR      LR,[R0, #+300]
-//  169 			preheat_menu.ext2=EXTRUDER_2_TEXT_CN;
-        LDR.W    R8,??disp_language_init_6+0x5C
-        STR      R8,[R0, #+304]
-//  170 			preheat_menu.hotbed=HEATBED_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0x60
-        STR      R10,[R0, #+308]
-//  171 			preheat_menu.off=CLOSE_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0x64
-        STR      R10,[R0, #+312]
-//  172 			//“∆∂Ø
-//  173 			move_menu.title = MOVE_TEXT_CN;
-        STR      R5,[R0, #+484]
-//  174 			//πÈ¡„
-//  175 			home_menu.title=TITLE_HOME_CN;
-        STR      R3,[R0, #+856]
-//  176 			home_menu.stopmove = HOME_STOPMOVE_CN;
-        LDR.W    R3,??disp_language_init_6+0x68
-        STR      R3,[R0, #+876]
-//  177 			//Œƒº˛ƒø¬º
-//  178 			file_menu.title=TITLE_CHOOSEFILE_CN;
-        LDR.W    R3,??disp_language_init_6+0x6C
-        STR      R3,[R0, #+800]
-        LDR.W    R3,??disp_language_init_6+0x70
-        STR      R3,[R0, #+804]
-        LDR.W    R3,??disp_language_init_6+0x74
-        STR      R3,[R0, #+808]
-//  179 			file_menu.page_up=PAGE_UP_TEXT_CN;
-//  180 			file_menu.page_down=PAGE_DOWN_TEXT_CN;
-//  181 			file_menu.file_loading = FILE_LOADING_CN;
-        LDR.W    R3,??disp_language_init_6+0x78
-        STR      R3,[R0, #+816]
-//  182 			file_menu.no_file = NO_FILE_CN;
-        LDR.W    R3,??disp_language_init_6+0x7C
-        STR      R3,[R0, #+820]
-//  183 			file_menu.no_file_and_check = NO_FILE_CN;//NO_FILE_AND_CHECK_CN;
-        STR      R3,[R0, #+824]
-//  184 			//º∑≥ˆ
-//  185 			extrude_menu.title=TITLE_EXTRUDE_CN;
-        STR      R6,[R0, #+92]
-        LDR.W    R3,??disp_language_init_6+0x80
-        STR      R3,[R0, #+96]
-//  186 			extrude_menu.in=EXTRUDER_IN_TEXT_CN;
-//  187 			extrude_menu.out=EXTRUDER_OUT_TEXT_CN;
-        LDR.W    R3,??disp_language_init_6+0x84
-        STR      R3,[R0, #+100]
-//  188 			extrude_menu.ext1=EXTRUDER_1_TEXT_CN;
-        STR      LR,[R0, #+104]
-//  189 			extrude_menu.ext2=EXTRUDER_2_TEXT_CN;
-        STR      R8,[R0, #+108]
-//  190 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0x88
-        STR      R10,[R0, #+124]
-//  191 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0x8C
-        STR      R10,[R0, #+128]
-//  192 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0x90
-        STR      R10,[R0, #+132]
-        LDR.W    R10,??disp_language_init_6+0x94
-        STR      R10,[R0, #+156]
-//  193 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_CN;
-//  194 			//µ˜∆Ω
-//  195 			leveling_menu.title=TITLE_LEVELING_CN;
-        STR      R4,[R0, #+884]
-//  196 			leveling_menu.position1=LEVELING_POINT1_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0x98
-        STR      R4,[R0, #+888]
-//  197 			leveling_menu.position2=LEVELING_POINT2_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0x9C
-        STR      R4,[R0, #+892]
-//  198 			leveling_menu.position3=LEVELING_POINT3_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0xA0
-        STR      R4,[R0, #+896]
-//  199 			leveling_menu.position4=LEVELING_POINT4_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0xA4
-        STR      R4,[R0, #+900]
-//  200 			leveling_menu.position5=LEVELING_POINT5_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0xA8
-        STR      R4,[R0, #+904]
-//  201 			//…Ë÷√
-//  202 			set_menu.title=TITLE_SET_CN;
-        STR      R9,[R0, #+528]
-//  203 			set_menu.filesys=FILESYS_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0xAC
-        STR      R10,[R0, #+532]
-//  204 			set_menu.wifi=WIFI_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0xB0
-        STR      R4,[R0, #+536]
-//  205 			set_menu.about=ABOUT_TEXT_CN;
-        LDR.W    R9,??disp_language_init_6+0xB4
-        STR      R9,[R0, #+540]
-//  206 			set_menu.fan=FAN_TEXT_CN;
-        STR      R7,[R0, #+544]
-//  207 			set_menu.filament=FILAMENT_TEXT_CN;
-        STR      R12,[R0, #+548]
-//  208 			set_menu.breakpoint=BREAK_POINT_TEXT_CN;
-        LDR.W    R11,??disp_language_init_6+0xB8
-        STR      R11,[R0, #+552]
-//  209 			set_menu.motoroff=MOTOR_OFF_TEXT_CN;
-        LDR.W    R11,??disp_language_init_6+0xBC
-        STR      R11,[R0, #+556]
-//  210 			set_menu.language=LANGUAGE_TEXT_CN;
-        LDR.W    R11,??disp_language_init_6+0xC0
-        STR      R11,[R0, #+564]
-//  211 			//Œƒº˛œµÕ≥
-//  212 			filesys_menu.title = TITLE_FILESYS_CN;
-        STR      R10,[R0, #+1004]
-//  213 			filesys_menu.sd_sys = SD_CARD_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0xC4
-        STR      R10,[R0, #+1012]
-//  214 			filesys_menu.usb_sys = U_DISK_TEXT_CN;
-        LDR.W    R10,??disp_language_init_6+0xC8
-        STR      R10,[R0, #+1016]
-//  215 			//∏¸∂‡
-//  216 			more_menu.title = TITLE_MORE_CN;
-        STR      R1,[R0, #+1024]
-//  217 			more_menu.zoffset = ZOFFSET_CN;
-        LDR.W    R10,??disp_language_init_6+0xCC
-        STR      R10,[R0, #+1028]
-//  218 			//WIFI
-//  219 			wifi_menu.title=WIFI_TEXT;
-        STR      R4,[R0, #+572]
-//  220 			//wifi_menu.key = WIFI_KEY_TEXT_CN;
-//  221 			//wifi_menu.ip = WIFI_IP_TEXT_CN;
-//  222 			//wifi_menu.state= WIFI_STA_TEXT_CN;
-//  223 			wifi_menu.cloud= CLOUD_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0xD0
-        STR      R4,[R0, #+596]
-//  224 			//CLOUD
-//  225 			cloud_menu.title = TITLE_CLOUD_TEXT_CN;
-        STR      R4,[R0, #+616]
-//  226 			cloud_menu.bind = CLOUD_BINDED_CN;
-        LDR.W    R4,??disp_language_init_6+0xD4
-        B.N      ??disp_language_init_7
-        Nop      
-        DATA
-??disp_language_init_2:
         DC8      0x58, 0x2B, 0x00, 0x00
+        DC8      "50%"
         DC8      0x58, 0x2D, 0x00, 0x00
+        DC8      0x30, 0x25, 0x00, 0x00
+        DC8      0x31, 0x25, 0x00, 0x00
         DC8      0x59, 0x2B, 0x00, 0x00
+        DC8      0x35, 0x25, 0x00, 0x00
+        DC8      "10%"
         DC8      0x59, 0x2D, 0x00, 0x00
         DC8      0x5A, 0x2B, 0x00, 0x00
-        THUMB
-??disp_language_init_7:
-        STR      R4,[R0, #+632]
-//  227 			cloud_menu.binded = CLOUD_BINDED_CN;
-        STR      R4,[R0, #+640]
-//  228 			cloud_menu.unbind = CLOUD_UNBIND_CN;
-        LDR.W    R4,??disp_language_init_6+0xD8
-        STR      R4,[R0, #+620]
-//  229 			cloud_menu.unbinding = CLOUD_UNBINDED_CN;
-        LDR.W    R4,??disp_language_init_6+0xDC
-        B.N      ??disp_language_init_8
-        Nop      
-        DATA
-??disp_language_init_3:
         DC8      0x5A, 0x2D, 0x00, 0x00
         DC8      "1mm"
         DC8      "X",0x0,0x0
         DC8      "Y",0x0,0x0
+        DC8      "0",0x0,0x0
         DC8      "Z",0x0,0x0
         DC8      "All"
         DC8      "5mm"
-        DC8      "50%"
-        DC8      0x30, 0x25, 0x00, 0x00
-        DC8      0x31, 0x25, 0x00, 0x00
-        DC8      0x35, 0x25, 0x00, 0x00
-        DC8      "10%"
-        THUMB
-??disp_language_init_8:
-        STR      R4,[R0, #+624]
-//  230 			cloud_menu.disconnected = CLOUD_DISCONNECTED_CN;
-        LDR.W    R4,??disp_language_init_6+0xE0
-        STR      R4,[R0, #+648]
-//  231 			cloud_menu.disable = CLOUD_DISABLE_CN;
-        LDR.W    R4,??disp_language_init_6+0xE4
-        STR      R4,[R0, #+644]
-//  232 			//πÿ”⁄
-//  233 			about_menu.title = ABOUT_TEXT_CN;
-        STR      R9,[R0, #+912]
-//  234 			about_menu.type = ABOUT_TYPE_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0xE8
-        STR      R4,[R0, #+924]
-//  235 			about_menu.version = ABOUT_VERSION_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0xEC
-        STR      R4,[R0, #+928]
-//  236 			about_menu.wifi = ABOUT_WIFI_TEXT_CN;	
-        LDR.W    R4,??disp_language_init_6+0xF0
-        STR      R4,[R0, #+932]
-//  237 
-//  238 			//∑Á…»
-//  239 			fan_menu.title = FAN_TEXT_CN;
-        STR      R7,[R0, #+736]
-//  240 			fan_menu.add = FAN_ADD_TEXT_CN;
-        STR      R2,[R0, #+740]
-//  241 			fan_menu.dec = FAN_DEC_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0x54
-        STR      R4,[R0, #+744]
-//  242 			fan_menu.state = FAN_TIPS1_TEXT_CN;
-        STR      R7,[R0, #+764]
-//  243 			//ªª¡œ
-//  244 			filament_menu.title = TITLE_FILAMENT_CN;
-        STR      R12,[R0, #+0]
-//  245 			filament_menu.in = FILAMENT_IN_TEXT_CN;
-        LDR.W    R4,??disp_language_init_6+0x80
-        STR      R4,[R0, #+4]
-//  246 			filament_menu.out = FILAMENT_OUT_TEXT_CN;
-        STR      R3,[R0, #+8]
-//  247 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_CN;
-        STR      LR,[R0, #+12]
-//  248 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_CN;
-        STR      R8,[R0, #+16]
-//  249 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_CN;
-        LDR.W    R3,??disp_language_init_6+0xF4
-        STR      R3,[R0, #+28]
-//  250 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0xF8
-        STR      R3,[R0, #+52]
-//  251 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0xFC
-        STR      R3,[R0, #+60]
-//  252 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0x100
-        STR      R3,[R0, #+68]
-//  253 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0x104
-        STR      R3,[R0, #+76]
-//  254 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0x108
-        STR      R3,[R0, #+56]
-//  255 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0x10C
-        STR      R3,[R0, #+64]
-//  256 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0x110
-        STR      R3,[R0, #+72]
-//  257 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_CN;
-        LDR.W    R3,??disp_language_init_6+0x114
-        STR      R3,[R0, #+80]
-//  258 
-//  259 
-//  260 			//”Ô—‘
-//  261 			language_menu.title = TITLE_LANGUAGE_CN;
-        STR      R11,[R0, #+160]
-//  262 			language_menu.next = PAGE_DOWN_TEXT_CN;
-        LDR.W    R3,??disp_language_init_6+0x74
-        STR      R3,[R0, #+212]
-//  263 			language_menu.up = PAGE_UP_TEXT_CN;
-        LDR.W    R3,??disp_language_init_6+0x70
-        STR      R3,[R0, #+216]
-//  264 			
-//  265 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-//  266 			printing_menu.title = TITLE_PRINTING_CN;
-        LDR.W    R3,??disp_language_init_6+0x118
-        STR      R3,[R0, #+660]
-//  267 			printing_menu.option = PRINTING_OPERATION_CN;
-        LDR.W    R3,??disp_language_init_6+0x11C
-        STR      R3,[R0, #+664]
-//  268 			printing_menu.stop = PRINTING_STOP_CN;
-        LDR.W    R4,??disp_language_init_6+0x120
-        STR      R4,[R0, #+692]
-//  269 			printing_menu.pause = PRINTING_PAUSE_CN;
-        LDR.W    LR,??disp_language_init_6+0x124
-        STR      LR,[R0, #+684]
-//  270 			printing_menu.resume = PRINTING_RESUME_CN;
-        LDR.W    R8,??disp_language_init_6+0x128
-        STR      R8,[R0, #+688]
-//  271 
-//  272 			//≤Ÿ◊˜ΩÁ√Ê
-//  273 			operation_menu.title = TITLE_OPERATION_CN;
-        STR      R3,[R0, #+388]
-//  274 			operation_menu.pause = PRINTING_PAUSE_CN;
-        STR      LR,[R0, #+392]
-//  275 			operation_menu.stop = PRINTING_STOP_CN;
-        STR      R4,[R0, #+396]
-//  276 			operation_menu.temp = PRINTING_TEMP_CN;
-        LDR.W    R3,??disp_language_init_6+0x94
-        STR      R3,[R0, #+400]
-//  277 			operation_menu.fan = FAN_TEXT_CN;
-        STR      R7,[R0, #+404]
-//  278 			operation_menu.filament= FILAMENT_TEXT_CN;
-        STR      R12,[R0, #+408]
-//  279 			operation_menu.extr = PRINTING_EXTRUDER_CN;
-        STR      R6,[R0, #+412]
-//  280 			operation_menu.speed = PRINTING_CHANGESPEED_CN;
-        LDR.W    R3,??disp_language_init_6+0x12C
-        STR      R3,[R0, #+416]
-//  281 			operation_menu.more = PRINTING_MORE_CN;
-        STR      R1,[R0, #+424]
-//  282 			operation_menu.move = PRINTING_MOVE_CN;
-        STR      R5,[R0, #+420]
-//  283 			operation_menu.auto_off = AUTO_SHUTDOWN_CN;
-        LDR.W    R9,??disp_language_init_6+0x130
-        STR      R9,[R0, #+428]
-//  284 			operation_menu.manual_off = MANUAL_SHUTDOWN_CN;			
-        LDR.W    R11,??disp_language_init_6+0x134
-        STR      R11,[R0, #+432]
-//  285 			//‘›Õ£ΩÁ√Ê
-//  286 			pause_menu.title= TITLE_PAUSE_CN;
-        STR      LR,[R0, #+828]
-//  287 			pause_menu.resume = PRINTING_RESUME_CN;
-        STR      R8,[R0, #+832]
-//  288 			pause_menu.stop = PRINTING_STOP_CN;
-        STR      R4,[R0, #+836]
-//  289 			pause_menu.extrude = PRINTING_EXTRUDER_CN;
-        STR      R6,[R0, #+840]
-//  290 			pause_menu.move = PRINTING_MOVE_CN;
-        STR      R5,[R0, #+844]
-//  291 			pause_menu.filament= FILAMENT_TEXT_CN;
-        STR      R12,[R0, #+848]
-//  292 			pause_menu.more = PRINTING_MORE_CN;
-        STR      R1,[R0, #+852]
-//  293 
-//  294 			//±‰ÀŸΩÁ√Ê
-//  295 			speed_menu.title = PRINTING_CHANGESPEED_CN;
-        STR      R3,[R0, #+440]
-//  296 			speed_menu.add = ADD_TEXT_CN;
-        STR      R2,[R0, #+444]
-//  297 			speed_menu.dec = DEC_TEXT_CN;
-        LDR.W    R12,??disp_language_init_6+0x54
-        STR      R12,[R0, #+448]
-//  298 			speed_menu.move = MOVE_SPEED_CN;
-        STR      R5,[R0, #+456]
-//  299 			speed_menu.extrude = EXTRUDER_SPEED_CN;
-        STR      R6,[R0, #+452]
-//  300 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_CN;
-        LDR.W    R5,??disp_language_init_6+0x138
-        STR      R5,[R0, #+480]
-//  301 			speed_menu.move_speed = MOVE_SPEED_STATE_CN;
-        LDR.W    R5,??disp_language_init_6+0x13C
-        STR      R5,[R0, #+476]
-//  302 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-//  303 			printing_more_menu.title = TITLE_MORE_CN;
-        STR      R1,[R0, #+948]
-//  304 			printing_more_menu.fan = FAN_TEXT_CN;
-        STR      R7,[R0, #+952]
-//  305 			printing_more_menu.auto_close = AUTO_SHUTDOWN_CN;
-        STR      R9,[R0, #+956]
-//  306 			printing_more_menu.manual = MANUAL_SHUTDOWN_CN;
-        STR      R11,[R0, #+960]
-//  307 			printing_more_menu.speed = PRINTING_CHANGESPEED_CN;
-        STR      R3,[R0, #+968]
-//  308 			printing_more_menu.temp = PRINTING_TEMP_CN;
-        LDR.W    R1,??disp_language_init_6+0x94
-        STR      R1,[R0, #+964]
-//  309 
-//  310 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_CN;
-//  311 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_CN;
-        LDR.W    R1,??disp_language_init_6+0x140
-        STR      R1,[R0, #+228]
-//  312 			print_file_dialog_menu.cancle = DIALOG_CANCLE_CN;
-        LDR.W    R1,??disp_language_init_6+0x144
-        STR      R1,[R0, #+232]
-//  313 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_CN;
-        LDR.W    R1,??disp_language_init_6+0x148
-        STR      R1,[R0, #+236]
-//  314 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_CN;
-        LDR.W    R1,??disp_language_init_6+0x14C
-        STR      R1,[R0, #+240]
-//  315 			print_file_dialog_menu.retry = DIALOG_RETRY_CN;
-        LDR.W    R1,??disp_language_init_6+0x150
-        STR      R1,[R0, #+244]
-//  316 			print_file_dialog_menu.stop = DIALOG_STOP_CN;
-        STR      R4,[R0, #+248]
-//  317 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_CN;	
-        LDR.W    R1,??disp_language_init_6+0x154
-        STR      R1,[R0, #+252]
-//  318 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_CN;
-        LDR.W    R1,??disp_language_init_6+0x158
-        STR      R1,[R0, #+256]
-//  319 
-//  320 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_CN;
-        LDR.W    R1,??disp_language_init_6+0x15C
-        STR      R1,[R0, #+264]
-//  321             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_CN;
-        LDR.W    R1,??disp_language_init_6+0x160
-        STR      R1,[R0, #+268]
-//  322 
-//  323 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_CN;
-        LDR.W    R1,??disp_language_init_6+0x164
-        STR      R1,[R0, #+272]
-//  324 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_CN;
-        LDR.W    R1,??disp_language_init_6+0x168
-        STR      R1,[R0, #+276]
-//  325 			print_file_dialog_menu.reprint=DIALOG_REPRINT_CN;
-        LDR.W    R1,??disp_language_init_6+0x16C
-        STR      R1,[R0, #+280]
-//  326 
-//  327 			//ZOFFSET
-//  328 			zoffset_menu.title = TITLE_ZOFFSET_CN;
-        STR      R10,[R0, #+976]
-//  329 			zoffset_menu.inc = ZOFFSET_INC_CN;
-        STR      R2,[R0, #+980]
-//  330 			zoffset_menu.dec = ZOFFSET_DEC_CN;
-        MOV      R1,R12
-        STR      R1,[R0, #+984]
-//  331 			break;
-        B.W      ??disp_language_init_4
-//  332 #if 1            
-//  333 		#if 1
-//  334 		case LANG_COMPLEX_CHINESE:
-//  335 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_T_CN;
-??disp_language_init_9:
-        LDR.W    R1,??disp_language_init_6+0x170
-        STR      R1,[R0, #+776]
-//  336 			common_menu.text_back=BACK_TEXT_T_CN;
-        LDR.W    R1,??disp_language_init_1+0x94
-        STR      R1,[R0, #+772]
-//  337 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x174
-        STR      R1,[R0, #+780]
-//  338 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x178
-        STR      R1,[R0, #+784]
-//  339 			common_menu.print_special_title = PRINTING_GBK;
-        LDR.W    R1,??disp_language_init_6+0xC
-        STR      R1,[R0, #+788]
-//  340 			common_menu.pause_special_title = PRINTING_PAUSE_GBK;
-        LDR.W    R1,??disp_language_init_6+0x10
-        STR      R1,[R0, #+792]
-//  341 			common_menu.operate_special_title = PRINTING_OPERATION_GBK;			
-        LDR.W    R1,??disp_language_init_6+0x14
-        STR      R1,[R0, #+796]
-//  342 			//÷˜“≥√Ê
-//  343 			main_menu.title=TITLE_READYPRINT_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x17C
-        STR      R1,[R0, #+340]
-//  344 			main_menu.preheat=PREHEAT_TEXT_T_CN;
-        LDR.W    LR,??disp_language_init_6+0x180
-        STR      LR,[R0, #+344]
-//  345 			main_menu.move=MOVE_TEXT_T_CN;
-        LDR.W    R5,??disp_language_init_6+0x184
-        STR      R5,[R0, #+348]
-//  346 			main_menu.home=HOME_TEXT_T_CN;
-        LDR.W    R3,??disp_language_init_6+0x24
-        STR      R3,[R0, #+352]
-//  347 			main_menu.print=PRINT_TEXT_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x28
-        STR      R1,[R0, #+356]
-//  348 			main_menu.extrude=EXTRUDE_TEXT_T_CN;
-        LDR.W    R6,??disp_language_init_6+0x188
-        STR      R6,[R0, #+360]
-//  349 			main_menu.leveling=LEVELING_TEXT_T_CN;
-        LDR.W    R12,??disp_language_init_6+0x18C
-        STR      R12,[R0, #+364]
-//  350 			main_menu.autoleveling=AUTO_LEVELING_TEXT_T_CN;
-        LDR.W    R8,??disp_language_init_6+0x190
-        STR      R8,[R0, #+368]
-//  351 			main_menu.fan = FAN_TEXT_T_CN;
-        LDR.W    R7,??disp_language_init_6+0x194
-        STR      R7,[R0, #+372]
-//  352 			main_menu.set=SET_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_6+0x198
-        STR      R4,[R0, #+376]
-//  353 			main_menu.more=MORE_TEXT_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x40
-        STR      R1,[R0, #+384]
-//  354 			main_menu.tool = TOOL_TEXT_T_CN;
-        LDR.W    R2,??disp_language_init_6+0x44
-        STR      R2,[R0, #+380]
-//  355 			//TOOL
-//  356 			tool_menu.title = TOOL_TEXT_T_CN;
-        STR      R2,[R0, #+696]
-//  357 			tool_menu.preheat = TOOL_PREHEAT_T_CN;
-        STR      LR,[R0, #+700]
-//  358 			tool_menu.extrude = TOOL_EXTRUDE_T_CN;
-        STR      R6,[R0, #+704]
-//  359 			tool_menu.move = TOOL_MOVE_T_CN;
-        STR      R5,[R0, #+708]
-//  360 			tool_menu.home= TOOL_HOME_T_CN;
-        STR      R3,[R0, #+712]
-//  361 			tool_menu.leveling = TOOL_LEVELING_T_CN;
-        STR      R12,[R0, #+716]
-//  362             tool_menu.autoleveling = TOOL_AUTO_LEVELING_T_CN;
-        STR      R8,[R0, #+720]
-//  363 			tool_menu.filament = TOOL_FILAMENT_T_CN;
-        LDR.W    R12,??disp_language_init_6+0x19C
-        STR      R12,[R0, #+724]
-//  364 			tool_menu.more = TOOL_MORE_T_CN;			
-        STR      R1,[R0, #+728]
-//  365 			//‘§»»
-//  366 			preheat_menu.adjust_title = TITLE_ADJUST_T_CN;
-        LDR.W    R2,??disp_language_init_6+0x1A0
-        STR      R2,[R0, #+284]
-//  367 			preheat_menu.title=TITLE_PREHEAT_T_CN;
-        STR      LR,[R0, #+288]
-//  368 			preheat_menu.add=ADD_TEXT_T_CN;
-        LDR.W    R2,??disp_language_init_6+0x50
-        STR      R2,[R0, #+292]
-        LDR.W    LR,??disp_language_init_6+0x1A4
-        STR      LR,[R0, #+296]
-//  369 			preheat_menu.dec=DEC_TEXT_T_CN;
-//  370 			preheat_menu.ext1=EXTRUDER_1_TEXT_T_CN;
-        LDR.W    LR,??disp_language_init_6+0x1A8
-        STR      LR,[R0, #+300]
-//  371 			preheat_menu.ext2=EXTRUDER_2_TEXT_T_CN;
-        LDR.W    R8,??disp_language_init_6+0x1AC
-        STR      R8,[R0, #+304]
-//  372 			preheat_menu.hotbed=HEATBED_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_6+0x1B0
-        STR      R9,[R0, #+308]
-//  373 			preheat_menu.off=CLOSE_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_6+0x1B4
-        STR      R9,[R0, #+312]
-//  374 			//“∆∂Ø
-//  375 			move_menu.title = MOVE_TEXT_T_CN;
-        STR      R5,[R0, #+484]
-//  376 			more_menu.zoffset = ZOFFSET_T_CN;
-        LDR.W    R10,??disp_language_init_6+0xCC
-        STR      R10,[R0, #+1028]
-//  377 			//πÈ¡„
-//  378 			home_menu.title=TITLE_HOME_T_CN;
-        STR      R3,[R0, #+856]
-//  379 			home_menu.stopmove = HOME_STOPMOVE_T_CN;
-        LDR.W    R3,??disp_language_init_6+0x68
-        STR      R3,[R0, #+876]
-//  380 			//Œƒº˛ƒø¬º
-//  381 			file_menu.title=TITLE_CHOOSEFILE_T_CN;
-        LDR.W    R3,??disp_language_init_10
-        STR      R3,[R0, #+800]
-        LDR.W    R3,??disp_language_init_10+0x4
-        STR      R3,[R0, #+804]
-        LDR.W    R3,??disp_language_init_10+0x8
-        STR      R3,[R0, #+808]
-//  382 			file_menu.page_up=PAGE_UP_TEXT_T_CN;
-//  383 			file_menu.page_down=PAGE_DOWN_TEXT_T_CN;
-//  384 			file_menu.file_loading = FILE_LOADING_T_CN;
-        LDR.W    R3,??disp_language_init_10+0xC
-        STR      R3,[R0, #+816]
-//  385 			file_menu.no_file = NO_FILE_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x10
-        STR      R3,[R0, #+820]
-//  386 			file_menu.no_file_and_check = NO_FILE_T_CN;//NO_FILE_AND_CHECK_T_CN;
-        STR      R3,[R0, #+824]
-//  387 			//º∑≥ˆ
-//  388 			extrude_menu.title=TITLE_EXTRUDE_T_CN;
-        STR      R6,[R0, #+92]
-        LDR.W    R3,??disp_language_init_10+0x14
-        STR      R3,[R0, #+96]
-//  389 			extrude_menu.in=EXTRUDER_IN_TEXT_T_CN;
-//  390 			extrude_menu.out=EXTRUDER_OUT_TEXT_T_CN;
-        LDR.W    R3,??disp_language_init_6+0x84
-        STR      R3,[R0, #+100]
-//  391 			extrude_menu.ext1=EXTRUDER_1_TEXT_T_CN;
-        STR      LR,[R0, #+104]
-//  392 			extrude_menu.ext2=EXTRUDER_2_TEXT_T_CN;
-        STR      R8,[R0, #+108]
-//  393 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_6+0x88
-        STR      R9,[R0, #+124]
-//  394 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_6+0x8C
-        STR      R9,[R0, #+128]
-//  395 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_6+0x90
-        STR      R9,[R0, #+132]
-        LDR.W    R9,??disp_language_init_10+0x18
-        STR      R9,[R0, #+156]
-//  396 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_T_CN;
-//  397 			//µ˜∆Ω
-//  398 			leveling_menu.title=TITLE_LEVELING_CN;
-        LDR.W    R9,??disp_language_init_6+0x30
-        STR      R9,[R0, #+884]
-//  399 			leveling_menu.position1=LEVELING_POINT1_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x1C
-        STR      R9,[R0, #+888]
-//  400 			leveling_menu.position2=LEVELING_POINT2_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x20
-        STR      R9,[R0, #+892]
-//  401 			leveling_menu.position3=LEVELING_POINT3_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x24
-        STR      R9,[R0, #+896]
-//  402 			leveling_menu.position4=LEVELING_POINT4_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x28
-        STR      R9,[R0, #+900]
-//  403 			leveling_menu.position5=LEVELING_POINT5_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x2C
-        STR      R9,[R0, #+904]
-//  404 			//…Ë÷√
-//  405 			set_menu.title=TITLE_SET_T_CN;
-        STR      R4,[R0, #+528]
-//  406 			set_menu.filesys=FILESYS_TEXT_T_CN;
-        LDR.W    R11,??disp_language_init_10+0x30
-        STR      R11,[R0, #+532]
-//  407 			set_menu.wifi=WIFI_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_6+0xB0
-        STR      R4,[R0, #+536]
-        LDR.W    R9,??disp_language_init_10+0x34
-        STR      R9,[R0, #+540]
-//  408 			set_menu.about=ABOUT_TEXT_T_CN;
-//  409 			set_menu.fan=FAN_TEXT_T_CN;
-        STR      R7,[R0, #+544]
-//  410 			set_menu.filament=FILAMENT_TEXT_T_CN;
-        STR      R12,[R0, #+548]
-//  411 			set_menu.breakpoint=BREAK_POINT_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x38
-        STR      R9,[R0, #+552]
-//  412 			set_menu.motoroff=MOTOR_OFF_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x3C
-        STR      R9,[R0, #+556]
-//  413 			set_menu.language=LANGUAGE_TEXT_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x40
-        STR      R9,[R0, #+564]
-//  414 			//Œƒº˛œµÕ≥
-//  415 			filesys_menu.title = TITLE_FILESYS_T_CN;
-        STR      R11,[R0, #+1004]
-//  416 			filesys_menu.sd_sys = SD_CARD_TEXT_T_CN;
-        LDR.W    R11,??disp_language_init_6+0xC4
-        STR      R11,[R0, #+1012]
-//  417 			filesys_menu.usb_sys = U_DISK_TEXT_T_CN;
-        LDR.W    R11,??disp_language_init_10+0x44
-        STR      R11,[R0, #+1016]
-//  418 			//∏¸∂‡
-//  419 			more_menu.title = TITLE_MORE_T_CN;
-        STR      R1,[R0, #+1024]
-//  420 			//WIFI
-//  421 			wifi_menu.title=WIFI_TEXT;
-        STR      R4,[R0, #+572]
-//  422 			//wifi_menu.key = WIFI_KEY_TEXT_CN;
-//  423 			//wifi_menu.ip = WIFI_IP_TEXT_CN;
-//  424 			//wifi_menu.state= WIFI_STA_TEXT_CN;
-//  425 			wifi_menu.cloud= CLOUD_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_10+0x48
-        STR      R4,[R0, #+596]
-//  426 			//CLOUD
-//  427 			cloud_menu.title = TITLE_CLOUD_TEXT_T_CN;
-        STR      R4,[R0, #+616]
-//  428 			cloud_menu.bind = CLOUD_BINDED_T_CN;
-        LDR.W    R4,??disp_language_init_10+0x4C
-        STR      R4,[R0, #+632]
-//  429 			cloud_menu.binded = CLOUD_BINDED_T_CN;
-        STR      R4,[R0, #+640]
-//  430 			cloud_menu.unbind = CLOUD_UNBIND_T_CN;
-        LDR.W    R4,??disp_language_init_10+0x50
-        STR      R4,[R0, #+620]
-//  431 			cloud_menu.unbinding = CLOUD_UNBINDED_T_CN;
-        LDR.W    R4,??disp_language_init_10+0x54
-        STR      R4,[R0, #+624]
-//  432 			cloud_menu.disconnected = CLOUD_DISCONNECTED_T_CN;
-        LDR.W    R4,??disp_language_init_10+0x58
-        STR      R4,[R0, #+648]
-//  433 			cloud_menu.disable = CLOUD_DISABLE_T_CN;
-        LDR.W    R4,??disp_language_init_6+0xE4
-        STR      R4,[R0, #+644]
-//  434 			//πÿ”⁄
-//  435 			about_menu.title = ABOUT_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_10+0x34
-        STR      R4,[R0, #+912]
-//  436 			about_menu.type = ABOUT_TYPE_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_6+0xE8
-        STR      R4,[R0, #+924]
-//  437 			about_menu.version = ABOUT_VERSION_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_6+0xEC
-        STR      R4,[R0, #+928]
-//  438 			about_menu.wifi = ABOUT_WIFI_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_6+0xF0
-        STR      R4,[R0, #+932]
-//  439 
-//  440 			//∑Á…»
-//  441 			fan_menu.title = FAN_TEXT_T_CN;
-        STR      R7,[R0, #+736]
-//  442 			fan_menu.add = FAN_ADD_TEXT_T_CN;
-        STR      R2,[R0, #+740]
-//  443 			fan_menu.dec = FAN_DEC_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_6+0x1A4
-        STR      R4,[R0, #+744]
-//  444 			fan_menu.state = FAN_TIPS1_TEXT_T_CN;
-        STR      R7,[R0, #+764]
-//  445 			//ªª¡œ
-//  446 			filament_menu.title = TITLE_FILAMENT_T_CN;
-        STR      R12,[R0, #+0]
-//  447 			filament_menu.in = FILAMENT_IN_TEXT_T_CN;
-        LDR.W    R4,??disp_language_init_10+0x14
-        STR      R4,[R0, #+4]
-//  448 			filament_menu.out = FILAMENT_OUT_TEXT_T_CN;
-        STR      R3,[R0, #+8]
-//  449 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_T_CN;
-        STR      LR,[R0, #+12]
-//  450 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_T_CN;
-        STR      R8,[R0, #+16]
-//  451 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x5C
-        STR      R3,[R0, #+28]
-//  452 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x60
-        STR      R3,[R0, #+52]
-//  453 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x64
-        STR      R3,[R0, #+60]
-//  454 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x68
-        STR      R3,[R0, #+68]
-//  455 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x6C
-        STR      R3,[R0, #+76]
-//  456 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x70
-        STR      R3,[R0, #+56]
-//  457 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x74
-        STR      R3,[R0, #+64]
-//  458 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x78
-        STR      R3,[R0, #+72]
-//  459 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x7C
-        STR      R3,[R0, #+80]
-//  460 
-//  461 
-//  462 			//”Ô—‘
-//  463 			language_menu.title = TITLE_LANGUAGE_T_CN;
-        STR      R9,[R0, #+160]
-//  464 			language_menu.next = PAGE_DOWN_TEXT_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x8
-        STR      R3,[R0, #+212]
-//  465 			language_menu.up = PAGE_UP_TEXT_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x4
-        STR      R3,[R0, #+216]
-//  466 			
-//  467 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-//  468 			printing_menu.title = TITLE_PRINTING_T_CN;
-        LDR.W    R3,??disp_language_init_6+0x118
-        STR      R3,[R0, #+660]
-//  469 			printing_menu.option = PRINTING_OPERATION_T_CN;
-        LDR.W    R3,??disp_language_init_6+0x11C
-        STR      R3,[R0, #+664]
-//  470 			printing_menu.stop = PRINTING_STOP_T_CN;
-        LDR.W    R4,??disp_language_init_6+0x120
-        STR      R4,[R0, #+692]
-//  471 			printing_menu.pause = PRINTING_PAUSE_T_CN;
-        LDR.W    LR,??disp_language_init_10+0x80
-        STR      LR,[R0, #+684]
-//  472 			printing_menu.resume = PRINTING_RESUME_T_CN;
-        LDR.W    R8,??disp_language_init_10+0x84
-        STR      R8,[R0, #+688]
-//  473 
-//  474 			//≤Ÿ◊˜ΩÁ√Ê
-//  475 			operation_menu.title = TITLE_OPERATION_T_CN;
-        STR      R3,[R0, #+388]
-//  476 			operation_menu.pause = PRINTING_PAUSE_T_CN;
-        STR      LR,[R0, #+392]
-//  477 			operation_menu.stop = PRINTING_STOP_T_CN;
-        STR      R4,[R0, #+396]
-//  478 			operation_menu.temp = PRINTING_TEMP_T_CN;
-        LDR.W    R3,??disp_language_init_10+0x18
-        STR      R3,[R0, #+400]
-//  479 			operation_menu.fan = FAN_TEXT_T_CN;
-        STR      R7,[R0, #+404]
-//  480 			operation_menu.extr = PRINTING_EXTRUDER_T_CN;
-        STR      R6,[R0, #+412]
-//  481 			operation_menu.speed = PRINTING_CHANGESPEED_T_CN;			
-        LDR.W    R3,??disp_language_init_10+0x88
-        STR      R3,[R0, #+416]
-//  482 			operation_menu.filament= FILAMENT_TEXT_T_CN;
-        STR      R12,[R0, #+408]
-//  483 			operation_menu.more = PRINTING_MORE_T_CN;
-        STR      R1,[R0, #+424]
-//  484 			operation_menu.move = PRINTING_MOVE_T_CN;
-        STR      R5,[R0, #+420]
-//  485 			operation_menu.auto_off = AUTO_SHUTDOWN_T_CN;
-        LDR.W    R9,??disp_language_init_10+0x8C
-        STR      R9,[R0, #+428]
-//  486 			operation_menu.manual_off = MANUAL_SHUTDOWN_T_CN;			
-        LDR.W    R11,??disp_language_init_10+0x90
-        STR      R11,[R0, #+432]
-//  487 			//‘›Õ£ΩÁ√Ê
-//  488 			pause_menu.title= TITLE_PAUSE_T_CN;
-        STR      LR,[R0, #+828]
-//  489 			pause_menu.resume = PRINTING_RESUME_T_CN;
-        STR      R8,[R0, #+832]
-//  490 			pause_menu.stop = PRINTING_STOP_T_CN;
-        STR      R4,[R0, #+836]
-//  491 			pause_menu.extrude = PRINTING_EXTRUDER_T_CN;
-        STR      R6,[R0, #+840]
-//  492 			pause_menu.move = PRINTING_MOVE_T_CN;
-        STR      R5,[R0, #+844]
-//  493 			pause_menu.filament= FILAMENT_TEXT_T_CN;
-        STR      R12,[R0, #+848]
-//  494 			pause_menu.more = PRINTING_MORE_T_CN;
-        STR      R1,[R0, #+852]
-//  495 
-//  496 			//±‰ÀŸΩÁ√Ê
-//  497 			speed_menu.title = PRINTING_CHANGESPEED_T_CN;
-        STR      R3,[R0, #+440]
-//  498 			speed_menu.add = ADD_TEXT_T_CN;
-        STR      R2,[R0, #+444]
-//  499 			speed_menu.dec = DEC_TEXT_T_CN;
-        LDR.W    R12,??disp_language_init_6+0x1A4
-        STR      R12,[R0, #+448]
-//  500 			speed_menu.move = MOVE_SPEED_T_CN;
-        STR      R5,[R0, #+456]
-//  501 			speed_menu.extrude = EXTRUDER_SPEED_T_CN;
-        STR      R6,[R0, #+452]
-//  502 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_T_CN;
-        LDR.W    R5,??disp_language_init_10+0x94
-        STR      R5,[R0, #+480]
-//  503 			speed_menu.move_speed = MOVE_SPEED_STATE_T_CN;
-        LDR.W    R5,??disp_language_init_10+0x98
-        STR      R5,[R0, #+476]
-//  504 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-//  505 			printing_more_menu.title = TITLE_MORE_T_CN;
-        STR      R1,[R0, #+948]
-//  506 			printing_more_menu.fan = FAN_TEXT_T_CN;
-        STR      R7,[R0, #+952]
-//  507 			printing_more_menu.auto_close = AUTO_SHUTDOWN_T_CN;
-        STR      R9,[R0, #+956]
-//  508 			printing_more_menu.manual = MANUAL_SHUTDOWN_T_CN;
-        STR      R11,[R0, #+960]
-//  509 			printing_more_menu.speed = PRINTING_CHANGESPEED_T_CN;
-        STR      R3,[R0, #+968]
-//  510 			printing_more_menu.temp = PRINTING_TEMP_T_CN;
-        LDR.W    R1,??disp_language_init_10+0x18
-        STR      R1,[R0, #+964]
-//  511 
-//  512 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_CN;
-//  513 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_T_CN;
-        LDR.W    R1,??disp_language_init_10+0x9C
-        STR      R1,[R0, #+228]
-//  514 			print_file_dialog_menu.cancle = DIALOG_CANCLE_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x144
-        STR      R1,[R0, #+232]
-//  515 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x148
-        STR      R1,[R0, #+236]
-//  516 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x14C
-        STR      R1,[R0, #+240]
-//  517 			print_file_dialog_menu.retry = DIALOG_RETRY_T_CN;
-        LDR.W    R1,??disp_language_init_10+0xA0
-        STR      R1,[R0, #+244]
-//  518 			print_file_dialog_menu.stop = DIALOG_STOP_T_CN;
-        STR      R4,[R0, #+248]
-//  519 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_T_CN;		
-        LDR.W    R1,??disp_language_init_10+0xA4
-        STR      R1,[R0, #+252]
-//  520 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_T_CN;
-        LDR.W    R1,??disp_language_init_10+0xA8
-        STR      R1,[R0, #+256]
-//  521 
-//  522 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_T_CN;
-        LDR.W    R1,??disp_language_init_10+0xAC
-        STR      R1,[R0, #+264]
-//  523             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_T_CN;
-        LDR.W    R1,??disp_language_init_10+0xB0
-        STR      R1,[R0, #+268]
-//  524 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_T_CN;
-        LDR.W    R1,??disp_language_init_6+0x164
-        STR      R1,[R0, #+272]
-//  525 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_T_CN;
-        LDR.W    R1,??disp_language_init_10+0xB4
-        STR      R1,[R0, #+276]
-//  526 			print_file_dialog_menu.reprint=DIALOG_REPRINT_T_CN;
-        LDR.W    R1,??disp_language_init_10+0xB8
-        STR      R1,[R0, #+280]
-//  527 			//ZOFFSET
-//  528 			zoffset_menu.title = TITLE_ZOFFSET_T_CN;
-        STR      R10,[R0, #+976]
-//  529 			zoffset_menu.inc = ZOFFSET_INC_T_CN;
-        STR      R2,[R0, #+980]
-//  530 			zoffset_menu.dec = ZOFFSET_DEC_T_CN;			
-        MOV      R1,R12
-        STR      R1,[R0, #+984]
-//  531 			break;
-        B.W      ??disp_language_init_4
-        Nop      
-        DATA
-??disp_language_init_1:
+        DC8      "1",0x0,0x0
+        DC8      "2",0x0,0x0
+        DC8      "3",0x0,0x0
+        DC8      "4",0x0,0x0
+        DC8      "5",0x0,0x0
+        DC8      "6",0x0,0x0
+        DC8      "7",0x0,0x0
+        DC8      "8",0x0,0x0
+        DC8      "9",0x0,0x0
+        DC8      ".",0x0,0x0
+        DC8      "-",0x0,0x0
+        DC8      "abc"
+        DC8      "123"
+        DC8      "#+="
+        DC8      "`",0x0,0x0
         DC32     filament_menu
+        DC32     `?<Constant "10mm">`
+        DC32     `?<Constant "100%">`
         DC32     `?<Constant "%d/%d">`
         DC32     `?<Constant "1\\342\\204\\203">`
         DC32     `?<Constant "5\\342\\204\\203">`
         DC32     `?<Constant "10\\342\\204\\203">`
-        DC32     `?<Constant "0.1mm">`
-        DC32     `?<Constant "10mm">`
-        DC32     `?<Constant ": %d\\342\\204\\203">`
-        DC32     `?<Constant ": %dmm">`
-        DC32     `?<Constant ": %dcm">`
-        DC32     `?<Constant ": %dm">`
-        DC32     `?<Constant "100%">`
+        DC32     `?<Constant "0.05mm">`
         DC32     `?<Constant "\\347\\256\\200\\344\\275\\223">`
         DC32     `?<Constant "\\347\\271\\201\\344\\275\\223">`
         DC32     `?<Constant "English">`
         DC32     `?<Constant "\\321\\200\\321\\203\\321\\201\\321\\201\\3`
-        DC32     `?<Constant "espa\\303\\261ol">`
-        DC32     `?<Constant "Deutsch">`
-        DC32     `?<Constant "\\346\\227\\245\\346\\234\\254\\350\\252\\2`
-        DC32     `?<Constant "Korean">`
-        DC32     `?<Constant "portugu\\303\\252s">`
+        DC32     `?<Constant "0.01mm">`
+        DC32     `?<Constant "0.1mm">`
         DC32     `?<Constant "Italia">`
+        DC32     `?<Constant ": %dcm">`
         DC32     `?<Constant "Brazil">`
+        DC32     `?<Constant ": %dm">`
         DC32     `?<Constant "fran\\303\\247ais">`
         DC32     `?<Constant "MKS Robin Nano">`
         DC32     `?<Constant "1.0.3">`
@@ -1463,570 +2055,2299 @@ _Z18disp_language_initv:
         DC32     `?<Constant "Connected">`
         DC32     `?<Constant "Disconnected">`
         DC32     `?<Constant "Exception">`
-        DC32     `?<Constant "0.01mm">`
+        DC32     machine_menu
+        DC32     `?<Constant "WI-FI">`
+        DC32     list_menu
+        DC32     keyboard_menu
+        DC32     `?<Constant "Join >">`
+        DC32     `?<Constant "Password">`
+        DC32     `?<Constant "space">`
+        DC32     tips_menu
+        DC32     `?<Constant "Joining\\nNetwork...">`
+        DC32     `?<Constant "Failed to\\nJoin Wi-Fi">`
+        DC32     `?<Constant "Wi-Fi\\nConnected">`
+        DC32     `?<Constant "Babystep">`
         DC32     gCfgItems
+        THUMB
+??disp_language_init_2:
+        LDR.W    R7,??disp_language_init_9
+        LDR.W    R0,??disp_language_init_1+0x1C
+//  363 	{
+//  364 		case LANG_SIMPLE_CHINESE:
+//  365             //ª˙∆˜≤Œ ˝
+//  366             MachinePara_menu.title = MACHINE_PARA_TITLE_CN;
+//  367             MachinePara_menu.MachineSetting = MACHINE_TYPE_CNOFIG_CN;
+//  368             MachinePara_menu.TemperatureSetting=TEMPERATURE_CONFIG_CN;
+//  369             MachinePara_menu.MotorSetting=MOTOR_CONFIG_CN;
+//  370             MachinePara_menu.AdvanceSetting=ADVANCE_CONFIG_CN;
+//  371 
+//  372             machine_menu.default_value = DEFAULT_CN;
+//  373             machine_menu.next=NEXT_CN;
+//  374             machine_menu.previous=PREVIOUS_CN;
+//  375 
+//  376             machine_menu.MachineConfigTitle = MACHINE_CONFIG_TITLE_CN;
+//  377             machine_menu.MachineType=MACHINE_TYPE_CN;
+//  378             machine_menu.Stroke=MACHINE_STROKE_CN;
+//  379             machine_menu.HomeDir=MACHINE_HOMEDIR_CN;
+//  380             machine_menu.EndStopType=MACHINE_ENDSTOP_TYPE_CN;
+//  381             machine_menu.FilamentConf=MACHINE_FILAMENT_CONFIG_CN;
+//  382             machine_menu.LevelingConf=MACHINE_LEVELING_CONFIG_CN;
+        LDR.W    R1,??disp_language_init_1+0x20
+//  383 
+//  384             machine_menu.MachineTypeConfTitle = MACHINE_TYPE_CONFIG_TITLE_CN;
+        LDR.W    R2,??disp_language_init_1+0x24
+//  385             machine_menu.xyz=MACHINE_TYPE_XYZ_CN;
+//  386             machine_menu.delta=MACHINE_TYPE_DELTA_CN;
+//  387             machine_menu.corexy=MACHINE_TYPE_COREXY_CN;
+//  388 
+//  389             machine_menu.StrokeConfTitle=MACHINE_STROKE_CONF_TITLE_CN;
+//  390             machine_menu.xStroke=X_MAX_LENGTH_CN;
+//  391             machine_menu.yStroke=Y_MAX_LENGTH_CN;
+//  392             machine_menu.zStroke=Z_MAX_LENGTH_CN;
+//  393 			
+//  394 	    machine_menu.xmin=X_MIN_LENGTH_CN;
+//  395 	    machine_menu.ymin=Y_MIN_LENGTH_CN;
+//  396 	    machine_menu.zmin=Z_MIN_LENGTH_CN;
+//  397 
+//  398             machine_menu.HomeDirConfTitle=HOME_DIR_CONF_TITLE_CN;
+//  399             machine_menu.xHomeDir=HOME_DIR_X_CN;
+//  400             machine_menu.yHomeDir=HOME_DIR_Y_CN;
+//  401             machine_menu.zHomeDir=HOME_DIR_Z_CN;
+//  402             machine_menu.min=HOME_MIN_CN;
+//  403             machine_menu.max=HOME_MAX_CN;
+//  404 
+//  405             machine_menu.EndstopConfTitle=ENDSTOP_CONF_TITLE_CN;
+//  406             machine_menu.xEndstop_min=MIN_ENDSTOP_X_CN;
+//  407             machine_menu.yEndstop_min=MIN_ENDSTOP_Y_CN;
+//  408             machine_menu.zEndstop_min=MIN_ENDSTOP_Z_CN;
+//  409             machine_menu.xEndstop_max=MAX_ENDSTOP_X_CN;
+//  410             machine_menu.yEndstop_max=MAX_ENDSTOP_Y_CN;
+//  411             machine_menu.zEndstop_max=MAX_ENDSTOP_Z_CN;            
+//  412             machine_menu.FilamentEndstop=ENDSTOP_FIL_CN;
+//  413             machine_menu.LevelingEndstop=ENDSTOP_LEVEL_CN;
+//  414             machine_menu.opened=ENDSTOP_OPENED_CN;
+//  415             machine_menu.closed=ENDSTOP_CLOSED_CN;
+//  416 
+//  417             machine_menu.FilamentConfTitle=FILAMENT_CONF_TITLE_CN;
+//  418             machine_menu.InTemperature=FILAMENT_IN_TEMPERATURE_CN;
+//  419             machine_menu.InLength=FILAMENT_IN_LENGTH_CN;
+//  420             machine_menu.InSpeed=FILAMENT_IN_SPEED_CN;
+//  421             machine_menu.OutTemperature=FILAMENT_OUT_TEMPERATURE_CN;
+//  422             machine_menu.OutLength=FILAMENT_OUT_LENGTH_CN;
+//  423             machine_menu.OutSpeed=FILAMENT_OUT_SPEED_CN;
+//  424                         
+//  425             machine_menu.LevelingParaConfTitle=LEVELING_CONF_TITLE_CN;
+//  426             machine_menu.LevelingParaConf=LEVELING_PARA_CONF_CN;
+//  427             machine_menu.DeltaLevelConf=LEVELING_DELTA_CN;
+//  428             machine_menu.XYZLevelconf=LEVELING_XYZ_CN;
+//  429 
+//  430             machine_menu.LevelingSubConfTitle=LEVELING_PARA_CONF_TITLE_CN;
+//  431             machine_menu.AutoLevelEnable=AUTO_LEVELING_ENABLE_CN;
+        LDR.W    R9,??disp_language_init_1+0x28
+        STR      R0,[R7, #+48]
+        LDR.W    R0,??disp_language_init_1+0x2C
+        STR      R0,[R7, #+52]
+        LDR.W    R0,??disp_language_init_1+0x30
+        STR      R0,[R7, #+56]
+        LDR.W    R0,??disp_language_init_1+0x34
+        STR      R0,[R7, #+60]
+        LDR.W    R0,??disp_language_init_1+0x38
+        STR      R0,[R7, #+64]
+        STR      R2,[R5, #+40]
+        STR      R1,[R5, #+36]
+        LDR.W    R0,??disp_language_init_1+0x3C
+        LDR.W    R2,??disp_language_init_1+0x40
+        STR      R0,[R5, #+0]
+        STR      R2,[R5, #+44]
+        STR      R1,[R5, #+180]
+        LDR.W    R0,??disp_language_init_1+0x44
+        LDR.W    R2,??disp_language_init_1+0x48
+        STR      R0,[R5, #+4]
+        STR      R2,[R5, #+48]
+        STR      R1,[R5, #+184]
+        LDR.W    R0,??disp_language_init_1+0x4C
+        LDR.W    R2,??disp_language_init_1+0x50
+        STR      R0,[R5, #+8]
+        STR      R2,[R5, #+52]
+        STR      R9,[R5, #+200]
+        LDR.W    R0,??disp_language_init_1+0x54
+        LDR.W    R2,??disp_language_init_1+0x58
+        STR      R0,[R5, #+12]
+        STR      R2,[R5, #+56]
+        LDR.W    R0,??disp_language_init_1+0x5C
+        LDR.W    R2,??disp_language_init_1+0x60
+        STR      R0,[R5, #+16]
+        STR      R2,[R5, #+60]
+        LDR.W    R0,??disp_language_init_1+0x64
+        LDR.W    R2,??disp_language_init_1+0x68
+        STR      R0,[R5, #+20]
+        STR      R2,[R5, #+64]
+        LDR.W    R0,??disp_language_init_1+0x6C
+        LDR.W    R2,??disp_language_init_1+0x70
+        STR      R0,[R5, #+24]
+        STR      R2,[R5, #+68]
+        LDR.W    R0,??disp_language_init_1+0x74
+        LDR.W    R2,??disp_language_init_1+0x78
+        STR      R0,[R5, #+28]
+        STR      R2,[R5, #+72]
+        LDR.W    R0,??disp_language_init_1+0x7C
+        LDR.W    R2,??disp_language_init_1+0x80
+        STR      R0,[R5, #+32]
+        STR      R2,[R5, #+76]
+        STR      R0,[R5, #+152]
+        LDR.W    R2,??disp_language_init_1+0x84
+        LDR.W    R0,??disp_language_init_1+0x88
+        STR      R2,[R5, #+80]
+        STR      R0,[R5, #+156]
+        LDR.W    R2,??disp_language_init_1+0x8C
+        LDR.W    R0,??disp_language_init_1+0x90
+        STR      R2,[R5, #+84]
+        STR      R0,[R5, #+160]
+        LDR.W    R2,??disp_language_init_1+0x94
+        LDR.W    R0,??disp_language_init_1+0x98
+        STR      R2,[R5, #+88]
+        STR      R0,[R5, #+164]
+        LDR.W    R2,??disp_language_init_1+0x9C
+        LDR.W    R0,??disp_language_init_1+0xA0
+        STR      R2,[R5, #+92]
+        STR      R0,[R5, #+168]
+        LDR.W    R2,??disp_language_init_1+0xA4
+        LDR.W    R0,??disp_language_init_1+0xA8
+        STR      R2,[R5, #+96]
+        STR      R0,[R5, #+172]
+        ADR.N    R2,??disp_language_init_10  ;; "MIN"
+        LDR.W    R0,??disp_language_init_11
+        STR      R2,[R5, #+100]
+        STR      R0,[R5, #+176]
+        ADR.N    R2,??disp_language_init_10+0x4  ;; "MAX"
+        LDR.W    R0,??disp_language_init_1+0xAC
+        STR      R2,[R5, #+104]
+        STR      R0,[R5, #+188]
+        LDR.W    R2,??disp_language_init_1+0xB0
+        LDR.W    R0,??disp_language_init_1+0xB4
+        STR      R2,[R5, #+108]
+        STR      R0,[R5, #+192]
+        LDR.W    R2,??disp_language_init_1+0xB8
+        LDR.W    R0,??disp_language_init_1+0xBC
+        STR      R2,[R5, #+112]
+        STR      R0,[R5, #+196]
+        LDR.W    R2,??disp_language_init_1+0xC0
+//  432             machine_menu.BLtouchEnable=BLTOUCH_LEVELING_ENABLE_CN;
+        LDR.W    R0,??disp_language_init_1+0xC4
+        STR      R2,[R5, #+116]
+        STR      R0,[R5, #+204]
+        LDR.W    R2,??disp_language_init_1+0xC8
+//  433             machine_menu.ProbePort=PROBE_PORT_CN;
+        LDR.W    R0,??disp_language_init_1+0xCC
+        STR      R2,[R5, #+120]
+        STR      R0,[R5, #+208]
+        LDR.W    R2,??disp_language_init_1+0xD0
+//  434             machine_menu.ProbeXoffset=PROBE_X_OFFSET_CN;
+        LDR.W    R0,??disp_language_init_1+0xD4
+        STR      R2,[R5, #+124]
+        STR      R0,[R5, #+212]
+        LDR.W    R2,??disp_language_init_1+0xD8
+//  435             machine_menu.ProbeYoffset=PROBE_Y_OFFSET_CN;
+        LDR.W    R0,??disp_language_init_12
+        STR      R2,[R5, #+128]
+        STR      R0,[R5, #+216]
+        LDR.W    R2,??disp_language_init_1+0xDC
+//  436             machine_menu.ProbeZoffset=PROBE_Z_OFFSET_CN;
+        LDR.W    R0,??disp_language_init_12+0x4
+        STR      R2,[R5, #+132]
+        STR      R0,[R5, #+220]
+        LDR.W    R2,??disp_language_init_1+0xE0
+//  437             machine_menu.ProbeXYspeed=PROBE_XY_SPEED_CN;
+        LDR.W    R0,??disp_language_init_1+0xE4
+        STR      R2,[R5, #+136]
+        STR      R0,[R5, #+224]
+        LDR.W    R2,??disp_language_init_1+0xE8
+//  438             machine_menu.ProbeZspeed=PROBE_Z_SPEED_CN;
+        LDR.W    R0,??disp_language_init_1+0xEC
+        STR      R2,[R5, #+140]
+        STR      R0,[R5, #+228]
+//  439             machine_menu.enable = ENABLE_CN;
+        ADR.N    R0,??disp_language_init_13  ;; "ÊòØ"
+        LDR.W    R2,??disp_language_init_1+0xF0
+        STR      R2,[R5, #+144]
+        STR      R0,[R5, #+232]
+//  440             machine_menu.disable = DISABLE_CN;
+        ADR.N    R0,??disp_language_init_13+0x4  ;; "Âê¶"
+        LDR.W    R2,??disp_language_init_1+0xF4
+        STR      R2,[R5, #+148]
+        STR      R0,[R5, #+236]
+//  441             machine_menu.z_min = Z_MIN_CN;
+        LDR.W    R0,??disp_language_init_1+0xF8
+//  442             machine_menu.z_max = Z_MAX_CN;
+//  443 
+//  444             machine_menu.LevelingSubDeltaConfTitle=DELTA_LEVEL_CONF_TITLE_CN;
+//  445             machine_menu.MachineRadius=DELTA_MACHINE_RADIUS_CN;
+//  446             machine_menu.DiagonalRod=DELTA_DIAGONAL_ROD_CN;
+//  447             machine_menu.PrintableRadius=DELTA_PRINT_RADIUS_CN;
+//  448             machine_menu.DeltaHeight=DELTA_HEIGHT_CN;
+//  449             machine_menu.SmoothRodOffset=SMOOTH_ROD_OFFSET_CN;
+//  450             machine_menu.EffectorOffset=EFFECTOR_OFFSET_CN;
+//  451             machine_menu.CalibrationRadius=CALIBRATION_RADIUS_CN;
+//  452 
+//  453             machine_menu.LevelingSubXYZConfTitle=XYZ_LEVEL_CONF_TITLE_CN;
+//  454             //machine_menu.ProbeMaxLeft=PROBE_REACH_MAX_LEFT_CN;
+//  455             //machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_CN;
+//  456             //machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_CN;
+//  457             //machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_CN;
+//  458 
+//  459             machine_menu.TemperatureConfTitle=TEMPERATURE_CONF_TITLE_CN;
+//  460             machine_menu.NozzleConf=NOZZLE_CONF_CN;
+//  461             machine_menu.HotBedConf=HOTBED_CONF_CN;
+//  462 			machine_menu.PreheatTemperConf=PREHEAT_TEMPER_CN;
+//  463 
+//  464             machine_menu.NozzleConfTitle=NOZZLE_CONF_TITLE_CN;
+//  465             machine_menu.NozzleCnt=NOZZLECNT_CN;
+//  466             machine_menu.NozzleType=NOZZLE_TYPE_CN;
+//  467             machine_menu.NozzleAdjustType=NOZZLE_ADJUST_TYPE_CN;
+//  468             machine_menu.NozzleMinTemperature=NOZZLE_MIN_TEMPERATURE_CN;
+        LDR.W    R1,??disp_language_init_1+0xFC
+//  469             machine_menu.NozzleMaxTemperature=NOZZLE_MAX_TEMPERATURE_CN;
+        LDR.W    R2,??disp_language_init_1+0x100
+//  470 			machine_menu.Extrude_Min_Temper=EXTRUD_MIN_TEMPER_CN;
+        LDR.W    R3,??disp_language_init_1+0x104
+        STR      R0,[R5, #+240]
+        STR      R3,[R5, #+324]
+        STR      R1,[R5, #+316]
+        STR      R2,[R5, #+320]
+//  471 
+//  472 	     machine_menu.HotbedEnable=HOTBED_ENABLE_CN;
+//  473             machine_menu.HotbedConfTitle=HOTBED_CONF_TITLE_CN;
+//  474             machine_menu.HotbedAjustType=HOTBED_ADJUST_CN;
+//  475             machine_menu.HotbedMinTemperature=HOTBED_MIN_TEMPERATURE_CN;
+        STR      R1,[R5, #+340]
+//  476             machine_menu.HotbedMaxTemperature=HOTBED_MAX_TEMPERATURE_CN;
+        STR      R2,[R5, #+344]
+        LDR.W    R0,??disp_language_init_1+0x108
+        LDR.W    R3,??disp_language_init_1+0x10C
+        STR      R0,[R5, #+244]
+        STR      R3,[R5, #+328]
+        LDR.W    R0,??disp_language_init_1+0x110
+        LDR.W    R3,??disp_language_init_1+0x114
+        STR      R0,[R5, #+248]
+        STR      R3,[R5, #+332]
+        LDR.W    R0,??disp_language_init_1+0x118
+        STR      R0,[R5, #+252]
+        LDR.W    R0,??disp_language_init_1+0x11C
+        STR      R0,[R5, #+256]
+        LDR.W    R0,??disp_language_init_1+0x120
+        STR      R0,[R5, #+260]
+        LDR.W    R0,??disp_language_init_1+0x124
+        STR      R0,[R5, #+264]
+        LDR.W    R0,??disp_language_init_1+0x128
+        STR      R0,[R5, #+268]
+        LDR.W    R0,??disp_language_init_1+0x12C
+        STR      R0,[R5, #+272]
+        LDR.W    R0,??disp_language_init_1+0x130
+        STR      R0,[R5, #+276]
+        LDR.W    R0,??disp_language_init_1+0x134
+        STR      R0,[R5, #+280]
+        LDR.W    R0,??disp_language_init_1+0x138
+        STR      R0,[R5, #+284]
+        LDR.W    R0,??disp_language_init_1+0x13C
+        STR      R0,[R5, #+288]
+        LDR.W    R0,??disp_language_init_1+0x140
+        STR      R0,[R5, #+292]
+        LDR.W    R0,??disp_language_init_1+0x144
+        STR      R0,[R5, #+296]
+        LDR.W    R0,??disp_language_init_1+0x148
+        STR      R0,[R5, #+304]
+        LDR.W    R0,??disp_language_init_1+0x14C
+        STR      R0,[R5, #+300]
+        LDR.W    R0,??disp_language_init_1+0x150
+        STR      R0,[R5, #+308]
+        LDR.W    R0,??disp_language_init_1+0x154
+        STR      R0,[R5, #+312]
+        STR      R0,[R5, #+336]
+//  477 
+//  478             machine_menu.MotorConfTitle=MOTOR_CONF_TITLE_CN;
+        LDR.W    R0,??disp_language_init_1+0x158
+        STR      R0,[R5, #+348]
+//  479             machine_menu.MaxFeedRateConf=MAXFEEDRATE_CONF_CN;
+        LDR.W    R0,??disp_language_init_1+0x15C
+        STR      R0,[R5, #+352]
+//  480             machine_menu.AccelerationConf=ACCELERATION_CONF_CN;
+        LDR.W    R0,??disp_language_init_1+0x160
+        STR      R0,[R5, #+356]
+//  481             machine_menu.JerkConf=JERKCONF_CN;
+        LDR.W    R0,??disp_language_init_1+0x164
+        STR      R0,[R5, #+360]
+//  482             machine_menu.StepsConf=STEPSCONF_CN;
+        LDR.W    R0,??disp_language_init_1+0x168
+        STR      R0,[R5, #+364]
+//  483             machine_menu.MotorDirConf=MOTORDIRCONF_CN;
+        LDR.W    R0,??disp_language_init_1+0x16C
+        STR      R0,[R5, #+368]
+//  484             machine_menu.HomeFeedRateConf=HOMEFEEDRATECONF_CN;
+        LDR.W    R0,??disp_language_init_1+0x170
+        STR      R0,[R5, #+372]
+//  485 
+//  486             machine_menu.MaxFeedRateConfTitle=MAXFEEDRATE_CONF_TITLE_CN;
+        LDR.W    R0,??disp_language_init_1+0x174
+        STR      R0,[R5, #+376]
+//  487             machine_menu.XMaxFeedRate=X_MAXFEEDRATE_CN;
+        LDR.W    R0,??disp_language_init_1+0x178
+        STR      R0,[R5, #+380]
+//  488             machine_menu.YMaxFeedRate=Y_MAXFEEDRATE_CN;
+        LDR.W    R0,??disp_language_init_1+0x17C
+        STR      R0,[R5, #+384]
+//  489             machine_menu.ZMaxFeedRate=Z_MAXFEEDRATE_CN;
+        LDR.W    R0,??disp_language_init_1+0x180
+        STR      R0,[R5, #+388]
+//  490             machine_menu.E0MaxFeedRate=E0_MAXFEEDRATE_CN;
+        LDR.W    R0,??disp_language_init_1+0x184
+        STR      R0,[R5, #+392]
+//  491             machine_menu.E1MaxFeedRate=E1_MAXFEEDRATE_CN;
+        LDR.W    R0,??disp_language_init_1+0x188
+        STR      R0,[R5, #+396]
+//  492 
+//  493             machine_menu.AccelerationConfTitle=ACCELERATION_CONF_TITLE_CN;
+        LDR.W    R0,??disp_language_init_1+0x18C
+        STR      R0,[R5, #+400]
+//  494             machine_menu.PrintAcceleration=PRINT_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x190
+        STR      R0,[R5, #+404]
+//  495             machine_menu.RetractAcceleration=RETRACT_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x194
+        STR      R0,[R5, #+408]
+//  496             machine_menu.TravelAcceleration=TRAVEL_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x198
+        STR      R0,[R5, #+412]
+//  497             machine_menu.X_Acceleration=X_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x19C
+        STR      R0,[R5, #+416]
+//  498             machine_menu.Y_Acceleration=Y_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x1A0
+        STR      R0,[R5, #+420]
+//  499             machine_menu.Z_Acceleration=Z_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x1A4
+        STR      R0,[R5, #+424]
+//  500             machine_menu.E0_Acceleration=E0_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x1A8
+        STR      R0,[R5, #+428]
+//  501             machine_menu.E1_Acceleration=E1_ACCELERATION_CN;
+        LDR.W    R0,??disp_language_init_1+0x1AC
+        STR      R0,[R5, #+432]
+//  502 
+//  503             machine_menu.JerkConfTitle=JERK_CONF_TITLE_CN;
+        LDR.W    R0,??disp_language_init_1+0x1B0
+        STR      R0,[R5, #+436]
+//  504             machine_menu.X_Jerk=X_JERK_CN;
+        LDR.W    R0,??disp_language_init_1+0x1B4
+        STR      R0,[R5, #+440]
+//  505             machine_menu.Y_Jerk=Y_JERK_CN;
+        LDR.W    R0,??disp_language_init_1+0x1B8
+        STR      R0,[R5, #+444]
+//  506             machine_menu.Z_Jerk=Z_JERK_CN;
+        LDR.W    R0,??disp_language_init_1+0x1BC
+        STR      R0,[R5, #+448]
+//  507             machine_menu.E_Jerk=E_JERK_CN;
+        LDR.W    R0,??disp_language_init_1+0x1C0
+        STR      R0,[R5, #+452]
+//  508 
+//  509             machine_menu.StepsConfTitle=STEPS_CONF_TITLE_CN;
+        LDR.W    R0,??disp_language_init_1+0x1C4
+        STR      R0,[R5, #+456]
+//  510             machine_menu.X_Steps=X_STEPS_CN;
+        LDR.W    R0,??disp_language_init_1+0x1C8
+        STR      R0,[R5, #+460]
+//  511             machine_menu.Y_Steps=Y_STEPS_CN;
+        LDR.W    R0,??disp_language_init_1+0x1CC
+        STR      R0,[R5, #+464]
+//  512             machine_menu.Z_Steps=Z_STEPS_CN;
+        LDR.W    R0,??disp_language_init_1+0x1D0
+        STR      R0,[R5, #+468]
+//  513             machine_menu.E0_Steps=E0_STEPS_CN;
+        LDR.W    R0,??disp_language_init_1+0x1D4
+        STR      R0,[R5, #+472]
+//  514             machine_menu.E1_Steps=E1_STEPS_CN;
+        LDR.W    R0,??disp_language_init_1+0x1D8
+        STR      R0,[R5, #+476]
+//  515 
+//  516             machine_menu.MotorDirConfTitle=MOTORDIR_CONF_TITLE_CN;
+        LDR.W    R0,??disp_language_init_1+0x1DC
+        STR      R0,[R5, #+480]
+//  517             machine_menu.X_MotorDir=X_MOTORDIR_CN;
+        LDR.W    R0,??disp_language_init_1+0x1E0
+        STR      R0,[R5, #+484]
+//  518             machine_menu.Y_MotorDir=Y_MOTORDIR_CN;
+        LDR.W    R0,??disp_language_init_1+0x1E4
+        STR      R0,[R5, #+488]
+//  519             machine_menu.Z_MotorDir=Z_MOTORDIR_CN;
+        LDR.W    R0,??disp_language_init_1+0x1E8
+        STR      R0,[R5, #+492]
+//  520             machine_menu.E0_MotorDir=E0_MOTORDIR_CN;
+        LDR.W    R0,??disp_language_init_1+0x1EC
+        STR      R0,[R5, #+496]
+//  521             machine_menu.E1_MotorDir=E1_MOTORDIR_CN;
+        LDR.W    R0,??disp_language_init_1+0x1F0
+//  522             machine_menu.Invert_0=INVERT_P_CN;
+//  523             machine_menu.Invert_1=INVERT_N_CN;
+//  524 
+//  525             machine_menu.HomeFeedRateConfTitle=HOMEFEEDRATE_CONF_TITLE_CN;
+//  526             machine_menu.XY_HomeFeedRate=X_HOMESPEED_CN;
+//  527             //machine_menu.Y_HomeFeedRate=Y_HOMESPEED_CN;
+//  528             machine_menu.Z_HomeFeedRate=Z_HOMESPEED_CN;
+//  529           
+//  530             machine_menu.AdvancedConfTitle=ADVANCED_CONF_TITLE_CN;
+//  531             machine_menu.PwrOffDection=PWROFF_DECTION_CN;
+//  532             machine_menu.PwrOffAfterPrint=PWROFF_AFTER_PRINT_CN;
+//  533             machine_menu.HaveUps=HAVE_UPS_CN;
+//  534             machine_menu.Z2andZ2Endstop=Z2_AND_Z2ENDSTOP_CONF_CN;
+//  535             machine_menu.EnablePinsInvert=ENABLE_PINS_CONF_CN;
+//  536 
+//  537             machine_menu.Z2ConfTitle=Z2_AND_Z2ENDSTOP_CONF_TITLE_CN;
+//  538             machine_menu.Z2Enable=Z2_ENABLE_CN;
+//  539             machine_menu.Z2EndstopEnable=Z2_ENDSTOP_CN;
+//  540             machine_menu.Z2Port=Z2_PORT_CN;
+//  541 
+//  542             machine_menu.EnablePinsInvertTitle=ENABLE_PINS_CONF_TITLE_CN;
+//  543             machine_menu.XInvert=X_ENABLE_PINS_INVERT_CN;
+//  544             machine_menu.YInvert=Y_ENABLE_PINS_INVERT_CN;
+//  545             machine_menu.ZInvert=Z_ENABLE_PINS_INVERT_CN;
+//  546             machine_menu.EInvert=E_ENABLE_PINS_INVERT_CN;
+//  547 
+//  548             machine_menu.key_back = KEY_BACK_CN;
+//  549             machine_menu.key_rest = KEY_REST_CN;
+//  550             machine_menu.key_confirm = KEY_CONFIRM_CN;
+//  551 
+//  552 			machine_menu.high_level = MOTOR_EN_HIGH_LEVEL_CN;
+//  553 			machine_menu.low_level = MOTOR_EN_LOW_LEVEL_CN;
+//  554             //
+//  555 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_CN;
+//  556 			common_menu.text_back=BACK_TEXT_CN;
+//  557 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_CN;
+//  558 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_CN;
+//  559 			common_menu.print_special_title = PRINTING_GBK;
+//  560 			common_menu.pause_special_title = PRINTING_PAUSE_GBK;
+//  561 			common_menu.operate_special_title = PRINTING_OPERATION_GBK;			
+//  562 			//÷˜“≥√Ê
+//  563 			main_menu.title=TITLE_READYPRINT_CN;
+//  564 			main_menu.preheat=PREHEAT_TEXT_CN;
+        LDR.W    R10,??disp_language_init_1+0x1F4
+//  565 			main_menu.move=MOVE_TEXT_CN;
+//  566 			main_menu.home=HOME_TEXT_CN;
+        LDR.W    R2,??disp_language_init_1+0x1F8
+//  567 			main_menu.print=PRINT_TEXT_CN;
+//  568 			main_menu.extrude=EXTRUDE_TEXT_CN;
+        LDR.W    R3,??disp_language_init_1+0x1FC
+//  569 			main_menu.leveling=LEVELING_TEXT_CN;
+//  570 			main_menu.autoleveling=AUTO_LEVELING_TEXT_CN;
+//  571 			main_menu.fan = FAN_TEXT_CN;
+        LDR.W    R12,??disp_language_init_1+0x200
+//  572 			main_menu.set=SET_TEXT_CN;
+        LDR.W    LR,??disp_language_init_1+0x204
+//  573 			main_menu.more=MORE_TEXT_CN;
+        LDR.W    R1,??disp_language_init_1+0x208
+        STR      R0,[R5, #+500]
+        STR      R9,[R4, #+428]
+        STR      R10,[R4, #+404]
+        STR      R2,[R4, #+412]
+        STR      R3,[R4, #+420]
+        STR      R12,[R4, #+432]
+        STR      LR,[R4, #+436]
+        STR      R1,[R4, #+444]
+//  574 			main_menu.tool = TOOL_TEXT_CN;
+//  575 			//TOOL
+//  576 			tool_menu.title = TOOL_TEXT_CN;
+//  577 			tool_menu.preheat = TOOL_PREHEAT_CN;
+        STR      R10,[R4, #+680]
+//  578 			tool_menu.extrude = TOOL_EXTRUDE_CN;
+        STR      R3,[R4, #+684]
+//  579 			tool_menu.move = TOOL_MOVE_CN;
+//  580 			tool_menu.home= TOOL_HOME_CN;
+        STR      R2,[R4, #+692]
+//  581 			tool_menu.leveling = TOOL_LEVELING_CN;
+//  582             tool_menu.autoleveling = TOOL_AUTO_LEVELING_CN;
+        STR      R9,[R4, #+700]
+//  583 			tool_menu.filament = TOOL_FILAMENT_CN;
+//  584 			tool_menu.more = TOOL_MORE_CN;
+        STR      R1,[R4, #+708]
+//  585 			//‘§»»
+//  586 			preheat_menu.adjust_title = TITLE_ADJUST_CN;
+//  587 			preheat_menu.title=TITLE_PREHEAT_CN;
+        STR      R10,[R4, #+348]
+//  588 			preheat_menu.add=ADD_TEXT_CN;
+//  589 			preheat_menu.dec=DEC_TEXT_CN;
+//  590 			preheat_menu.ext1=EXTRUDER_1_TEXT_CN;
+//  591 			preheat_menu.ext2=EXTRUDER_2_TEXT_CN;
+//  592 			preheat_menu.hotbed=HEATBED_TEXT_CN;
+//  593 			preheat_menu.off=CLOSE_TEXT_CN;
+//  594 
+//  595         	preheat_menu.value_state= TEXT_VALUE_CN;
+//  596         	preheat_menu.step_1c= TEXT_1C_CN;
+        STR      R6,[R4, #+376]
+//  597         	preheat_menu.step_5c= TEXT_5C_CN;
+        STR      R11,[R4, #+380]
+//  598         	preheat_menu.step_10c= TEXT_10C_CN;            
+        STR      R8,[R4, #+384]
+//  599 			//“∆∂Ø
+//  600 			move_menu.title = MOVE_TEXT_CN;
+//  601 			//πÈ¡„
+//  602 			home_menu.title=TITLE_HOME_CN;
+        STR      R2,[R4, #+844]
+        LDR.W    R0,??disp_language_init_1+0x20C
+        LDR.W    R9,??disp_language_init_1+0x210
+        LDR.W    R6,??disp_language_init_1+0x214
+//  603 			home_menu.stopmove = HOME_STOPMOVE_CN;
+        LDR.W    R2,??disp_language_init_1+0x218
+        STR      R0,[R5, #+508]
+        STR      R9,[R4, #+356]
+        STR      R6,[R4, #+452]
+        STR      R2,[R4, #+864]
+        LDR.W    R0,??disp_language_init_1+0x21C
+        LDR.W    R9,??disp_language_init_1+0x220
+//  604 			//Œƒº˛ƒø¬º
+//  605 			file_menu.title=TITLE_CHOOSEFILE_CN;
+        LDR.W    R2,??disp_language_init_1+0x224
+        STR      R0,[R5, #+504]
+        STR      R9,[R4, #+360]
+        STR      R2,[R4, #+788]
+        LDR.W    R0,??disp_language_init_1+0x228
+        LDR.W    R9,??disp_language_init_1+0x22C
+//  606 			file_menu.page_up=PAGE_UP_TEXT_CN;
+        LDR.W    R2,??disp_language_init_1+0x4C
+        STR      R0,[R5, #+512]
+        STR      R9,[R4, #+364]
+        STR      R2,[R4, #+792]
+        LDR.W    R0,??disp_language_init_1+0x230
+        LDR.W    R9,??disp_language_init_1+0x234
+        STR      R0,[R5, #+516]
+        STR      R9,[R4, #+368]
+        LDR.W    R0,??disp_language_init_1+0x238
+        LDR.W    R9,??disp_language_init_1+0x23C
+        STR      R0,[R5, #+524]
+        STR      R9,[R4, #+372]
+        LDR.W    R0,??disp_language_init_1+0x240
+        LDR.W    R9,??disp_language_init_1+0x244
+        STR      R0,[R5, #+528]
+        STR      R9,[R4, #+392]
+        LDR.W    R0,??disp_language_init_1+0x248
+        STR      R0,[R5, #+532]
+        LDR.W    R0,??disp_language_init_1+0x24C
+        STR      R0,[R5, #+536]
+        LDR.W    R0,??disp_language_init_1+0x250
+        STR      R0,[R5, #+540]
+        LDR.W    R0,??disp_language_init_1+0x254
+        STR      R0,[R5, #+544]
+        LDR.W    R0,??disp_language_init_1+0x258
+        STR      R0,[R5, #+548]
+        LDR.W    R0,??disp_language_init_1+0x25C
+        B.N      ??disp_language_init_14
+        DATA
+??disp_language_init_10:
+        DC8      "MIN"
+        DC8      "MAX"
+        THUMB
+??disp_language_init_14:
+        STR      R0,[R5, #+552]
+        LDR.W    R0,??disp_language_init_1+0x260
+        STR      R0,[R5, #+556]
+        LDR.W    R0,??disp_language_init_1+0x264
+        STR      R0,[R5, #+560]
+        LDR.W    R0,??disp_language_init_1+0x268
+        STR      R0,[R5, #+564]
+        LDR.W    R0,??disp_language_init_1+0x26C
+        STR      R0,[R5, #+568]
+        LDR.W    R0,??disp_language_init_1+0x270
+        STR      R0,[R5, #+572]
+        LDR.W    R0,??disp_language_init_1+0x274
+        STR      R0,[R5, #+576]
+        LDR.W    R0,??disp_language_init_1+0x278
+        STR      R0,[R5, #+580]
+        LDR.W    R0,??disp_language_init_1+0x27C
+        STR      R0,[R5, #+584]
+        LDR.W    R0,??disp_language_init_1+0x280
+        STR      R0,[R5, #+632]
+        LDR.W    R0,??disp_language_init_1+0x284
+        STR      R0,[R5, #+636]
+        LDR.W    R0,??disp_language_init_1+0x288
+        STR      R0,[R5, #+640]
+        ADR.N    R0,??disp_language_init_15  ;; "È´ò"
+        STR      R0,[R5, #+652]
+        ADR.N    R0,??disp_language_init_15+0x4  ;; "‰Ωé"
+        STR      R0,[R5, #+648]
+        LDR.W    R5,??disp_language_init_1+0x28C
+        LDR.W    R0,??disp_language_init_1+0x290
+        STR      R0,[R4, #+756]
+        STR      R5,[R4, #+424]
+        STR      R5,[R4, #+696]
+        LDR.W    R0,??disp_language_init_1+0x294
+        STR      R0,[R4, #+752]
+        LDR.W    R0,??disp_language_init_1+0x298
+        STR      R0,[R4, #+760]
+        LDR.W    R0,??disp_language_init_1+0x29C
+        B.N      ??disp_language_init_16
+        Nop      
+        DATA
+??disp_language_init_13:
+        DC8      "ÊòØ"
+        DC8      "Âê¶"
+        THUMB
+??disp_language_init_16:
+        STR      R0,[R4, #+764]
+        LDR.W    R0,??disp_language_init_1+0x2A0
+        STR      R0,[R4, #+768]
+        LDR.W    R0,??disp_language_init_1+0x2A4
+        STR      R0,[R4, #+772]
+        LDR.W    R0,??disp_language_init_1+0x2A8
+        STR      R0,[R4, #+776]
+        LDR.W    R0,??disp_language_init_1+0x2AC
+        STR      R0,[R4, #+400]
+        LDR.W    R0,??disp_language_init_1+0x214
+        STR      R0,[R4, #+408]
+        LDR.W    R0,??disp_language_init_1+0x2B0
+        STR      R0,[R4, #+416]
+        LDR.W    R0,??disp_language_init_1+0x2B4
+        STR      R0,[R4, #+440]
+        STR      R0,[R4, #+676]
+        LDR.W    R0,??disp_language_init_1+0x214
+        STR      R0,[R4, #+688]
+        LDR.W    R0,??disp_language_init_1+0x2B8
+        STR      R0,[R4, #+704]
+        LDR.W    R0,??disp_language_init_1+0x2BC
+        STR      R0,[R4, #+344]
+        LDR.W    R0,??disp_language_init_1+0x2C0
+        STR      R0,[R4, #+352]
+//  607 			file_menu.page_down=PAGE_DOWN_TEXT_CN;
+//  608 			file_menu.file_loading = FILE_LOADING_CN;
+//  609 			file_menu.no_file = NO_FILE_CN;
+//  610 			file_menu.no_file_and_check = NO_FILE_CN;//NO_FILE_AND_CHECK_CN;
+//  611 			//º∑≥ˆ
+//  612 			extrude_menu.title=TITLE_EXTRUDE_CN;
+//  613 			extrude_menu.in=EXTRUDER_IN_TEXT_CN;
+//  614 			extrude_menu.out=EXTRUDER_OUT_TEXT_CN;
+//  615 			extrude_menu.ext1=EXTRUDER_1_TEXT_CN;
+//  616 			extrude_menu.ext2=EXTRUDER_2_TEXT_CN;
+//  617 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_CN;
+//  618 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_CN;
+//  619 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_CN;
+//  620 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_CN;
+//  621             extrude_menu.temp_value = EXTRUDE_TEXT_VALUE_T_CN;
+//  622 			//µ˜∆Ω
+//  623 			leveling_menu.title=TITLE_LEVELING_CN;
+        STR      R5,[R4, #+872]
+        STR      R3,[R4, #+92]
+//  624 			leveling_menu.position1=LEVELING_POINT1_TEXT_CN;
+//  625 			leveling_menu.position2=LEVELING_POINT2_TEXT_CN;
+//  626 			leveling_menu.position3=LEVELING_POINT3_TEXT_CN;
+//  627 			leveling_menu.position4=LEVELING_POINT4_TEXT_CN;
+//  628 			leveling_menu.position5=LEVELING_POINT5_TEXT_CN;
+//  629 			//…Ë÷√
+//  630 			set_menu.title=TITLE_SET_CN;
+        STR      LR,[R7, #+0]
+        LDR.W    R6,??disp_language_init_1+0x220
+        LDR.W    R5,??disp_language_init_1+0x2C4
+        LDR.N    R2,??disp_language_init_1+0x44
+        LDR.W    R8,??disp_language_init_1+0x2C8
+        LDR.W    R11,??disp_language_init_1
+//  631 			set_menu.filesys=FILESYS_TEXT_CN;
+        LDR.W    R9,??disp_language_init_1+0x2CC
+//  632 			set_menu.wifi=WIFI_TEXT_CN;
+//  633 			set_menu.about=ABOUT_TEXT_CN;
+//  634 			set_menu.fan=FAN_TEXT_CN;
+//  635 			set_menu.filament=FILAMENT_TEXT_CN;
+        LDR.W    LR,??disp_language_init_1+0x2B8
+//  636 			set_menu.breakpoint=BREAK_POINT_TEXT_CN;
+//  637 			set_menu.motoroff=MOTOR_OFF_TEXT_CN;
+//  638 			set_menu.language=LANGUAGE_TEXT_CN;
+//  639             set_menu.machine_para = MACHINE_PARA_CN;
+        LDR.W    R10,??disp_language_init_1+0x1C
+        STR      R6,[R4, #+104]
+        STR      R5,[R4, #+876]
+        STR      R2,[R4, #+796]
+        STR      R8,[R4, #+96]
+        STR      R11,[R4, #+152]
+        STR      R9,[R7, #+4]
+        LDR.W    R6,??disp_language_init_1+0x22C
+        LDR.W    R5,??disp_language_init_1+0x2D0
+        LDR.W    R2,??disp_language_init_1+0x2D4
+        LDR.W    R11,??disp_language_init_1+0x2D8
+        STR      R6,[R4, #+108]
+        STR      R5,[R4, #+880]
+        STR      R2,[R4, #+804]
+        STR      R11,[R7, #+8]
+        LDR.W    R6,??disp_language_init_1+0x2DC
+        LDR.W    R5,??disp_language_init_1+0x2E0
+        LDR.W    R2,??disp_language_init_1+0x2E4
+        STR      R6,[R4, #+124]
+        STR      R5,[R4, #+884]
+        STR      R2,[R4, #+808]
+        STR      R2,[R4, #+812]
+        LDR.W    R6,??disp_language_init_1+0x2E8
+        LDR.W    R5,??disp_language_init_1+0x2EC
+        LDR.W    R2,??disp_language_init_1+0x2F0
+        STR      R6,[R4, #+128]
+        STR      R5,[R4, #+888]
+        STR      R2,[R4, #+100]
+        LDR.W    R6,??disp_language_init_1+0x2F4
+        LDR.W    R5,??disp_language_init_1+0x2F8
+        STR      R6,[R4, #+132]
+        STR      R5,[R4, #+892]
+        LDR.W    R6,??disp_language_init_1+0x2FC
+        LDR.W    R5,??disp_language_init_1+0x300
+        STR      R6,[R4, #+156]
+        STR      R5,[R7, #+12]
+//  640             
+//  641 			//Œƒº˛œµÕ≥
+//  642 			filesys_menu.title = TITLE_FILESYS_CN;
+//  643 			filesys_menu.sd_sys = SD_CARD_TEXT_CN;
+//  644 			filesys_menu.usb_sys = U_DISK_TEXT_CN;
+//  645 			//∏¸∂‡
+//  646 			more_menu.title = TITLE_MORE_CN;
+//  647 			more_menu.zoffset = ZOFFSET_CN;
+//  648 			//WIFI
+//  649 			wifi_menu.title=WIFI_TEXT;
+//  650 			//wifi_menu.key = WIFI_KEY_TEXT_CN;
+//  651 			//wifi_menu.ip = WIFI_IP_TEXT_CN;
+//  652 			//wifi_menu.state= WIFI_STA_TEXT_CN;
+//  653 			wifi_menu.cloud= CLOUD_TEXT_CN;
+//  654 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_CN;
+//  655 			//CLOUD
+//  656 			cloud_menu.title = TITLE_CLOUD_TEXT_CN;
+//  657 			cloud_menu.bind = CLOUD_BINDED_CN;
+//  658 			cloud_menu.binded = CLOUD_BINDED_CN;
+//  659 			cloud_menu.unbind = CLOUD_UNBIND_CN;
+//  660 			cloud_menu.unbinding = CLOUD_UNBINDED_CN;
+//  661 			cloud_menu.disconnected = CLOUD_DISCONNECTED_CN;
+//  662 			cloud_menu.disable = CLOUD_DISABLE_CN;
+//  663 			//πÿ”⁄
+//  664 			about_menu.title = ABOUT_TEXT_CN;
+//  665 			about_menu.type = ABOUT_TYPE_TEXT_CN;
+//  666 			about_menu.version = ABOUT_VERSION_TEXT_CN;
+//  667 			about_menu.wifi = ABOUT_WIFI_TEXT_CN;	
+//  668 
+//  669 			//∑Á…»
+//  670 			fan_menu.title = FAN_TEXT_CN;
+//  671 			fan_menu.add = FAN_ADD_TEXT_CN;
+//  672 			fan_menu.dec = FAN_DEC_TEXT_CN;
+//  673 			fan_menu.state = FAN_TIPS1_TEXT_CN;
+//  674 			//ªª¡œ
+//  675 			filament_menu.title = TITLE_FILAMENT_CN;
+//  676 			filament_menu.in = FILAMENT_IN_TEXT_CN;
+//  677 			filament_menu.out = FILAMENT_OUT_TEXT_CN;
+        STR      R2,[R4, #+8]
+        STR      LR,[R7, #+20]
+        STR      R12,[R7, #+16]
+        STR      R10,[R7, #+40]
+        STR      R9,[R4, #+992]
+        STR      R1,[R4, #+1012]
+        STR      R11,[R4, #+504]
+        STR      R5,[R4, #+900]
+        STR      R12,[R4, #+716]
+        STR      R0,[R4, #+720]
+        STR      R12,[R4, #+744]
+        STR      R8,[R4, #+4]
+//  678 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_CN;
+        LDR.W    R2,??disp_language_init_1+0x220
+        LDR.W    LR,??disp_language_init_1+0x304
+        LDR.W    R9,??disp_language_init_1+0x308
+        LDR.W    R5,??disp_language_init_1+0x30C
+        STR      R2,[R4, #+12]
+        STR      LR,[R7, #+24]
+        STR      R9,[R4, #+548]
+        STR      R5,[R4, #+912]
+//  679 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_CN;
+        LDR.W    R2,??disp_language_init_1+0x22C
+        LDR.W    LR,??disp_language_init_1+0x310
+        LDR.W    R5,??disp_language_init_1+0x314
+        STR      R2,[R4, #+16]
+        STR      LR,[R7, #+28]
+        STR      R5,[R4, #+916]
+//  680 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_CN;
+        LDR.W    R2,??disp_language_init_1+0x318
+        LDR.W    LR,??disp_language_init_1+0x31C
+        LDR.W    R5,??disp_language_init_1+0x320
+        STR      R2,[R4, #+28]
+        STR      LR,[R7, #+36]
+        STR      R5,[R4, #+920]
+//  681 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_CN;
+//  682 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_CN;
+//  683 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_CN;
+//  684 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_CN;
+//  685 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_CN;
+//  686 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_CN;
+//  687 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_CN;
+//  688 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_CN;
+//  689 
+//  690 
+//  691 			//”Ô—‘
+//  692 			language_menu.title = TITLE_LANGUAGE_CN;
+        STR      LR,[R4, #+224]
+        LDR.W    R2,??disp_language_init_1+0x324
+        LDR.W    R7,??disp_language_init_1+0x328
+        LDR.W    R5,??disp_language_init_1+0x210
+        STR      R2,[R4, #+52]
+        STR      R7,[R4, #+1000]
+        STR      R5,[R4, #+724]
+        LDR.W    R2,??disp_language_init_1+0x32C
+        LDR.W    R7,??disp_language_init_1+0x330
+        LDR.W    R5,??disp_language_init_1+0x2B8
+        STR      R2,[R4, #+60]
+        STR      R7,[R4, #+1004]
+        STR      R5,[R4, #+0]
+        LDR.W    R2,??disp_language_init_1+0x334
+        B.N      ??disp_language_init_17
+        Nop      
+        DATA
+??disp_language_init_15:
+        DC8      "È´ò"
+        DC8      "‰Ωé"
+        THUMB
+??disp_language_init_17:
+        LDR.W    R7,??disp_language_init_18+0x8
+        STR      R2,[R4, #+68]
+        STR      R7,[R4, #+1016]
+        LDR.W    R2,??disp_language_init_1+0x338
+        LDR.W    R7,??disp_language_init_1+0x33C
+        STR      R2,[R4, #+76]
+        STR      R7,[R4, #+528]
+        STR      R7,[R4, #+596]
+        LDR.W    R2,??disp_language_init_1+0x340
+        LDR.W    R7,??disp_language_init_1+0x344
+        STR      R2,[R4, #+56]
+        STR      R7,[R4, #+612]
+        STR      R7,[R4, #+620]
+        LDR.W    R2,??disp_language_init_1+0x348
+        LDR.W    R7,??disp_language_init_1+0x34C
+        STR      R2,[R4, #+64]
+        STR      R7,[R4, #+600]
+        LDR.W    R2,??disp_language_init_1+0x350
+        LDR.W    R7,??disp_language_init_1+0x354
+        STR      R2,[R4, #+72]
+        STR      R7,[R4, #+604]
+        LDR.W    R2,??disp_language_init_1+0x358
+        LDR.W    R7,??disp_language_init_1+0x35C
+        STR      R2,[R4, #+80]
+        STR      R7,[R4, #+628]
+//  693 			language_menu.next = PAGE_DOWN_TEXT_CN;
+        LDR.N    R2,??disp_language_init_1+0x44
+        LDR.W    R7,??disp_language_init_1+0x360
+        STR      R2,[R4, #+276]
+        STR      R7,[R4, #+624]
+//  694 			language_menu.up = PAGE_UP_TEXT_CN;
+        LDR.N    R2,??disp_language_init_1+0x4C
+//  695 			
+//  696 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+//  697 			printing_menu.title = TITLE_PRINTING_CN;
+//  698 			printing_menu.option = PRINTING_OPERATION_CN;
+        LDR.W    R7,??disp_language_init_1+0x364
+        STR      R2,[R4, #+280]
+        STR      R7,[R4, #+644]
+        LDR.W    R2,??disp_language_init_1+0x368
+        STR      R2,[R4, #+640]
+//  699 			printing_menu.stop = PRINTING_STOP_CN;
+        LDR.W    R2,??disp_language_init_1+0x36C
+//  700 			printing_menu.pause = PRINTING_PAUSE_CN;
+//  701 			printing_menu.resume = PRINTING_RESUME_CN;
+//  702 
+//  703 			//≤Ÿ◊˜ΩÁ√Ê
+//  704 			operation_menu.title = TITLE_OPERATION_CN;
+//  705 			operation_menu.pause = PRINTING_PAUSE_CN;
+//  706 			operation_menu.stop = PRINTING_STOP_CN;
+//  707 			operation_menu.temp = PRINTING_TEMP_CN;
+//  708 			operation_menu.fan = FAN_TEXT_CN;
+//  709 			operation_menu.filament= FILAMENT_TEXT_CN;
+//  710 			operation_menu.extr = PRINTING_EXTRUDER_CN;
+//  711 			operation_menu.speed = PRINTING_CHANGESPEED_CN;
+//  712 			operation_menu.more = PRINTING_MORE_CN;
+        STR      R1,[R4, #+324]
+//  713 			operation_menu.move = PRINTING_MOVE_CN;
+//  714 			operation_menu.auto_off = AUTO_SHUTDOWN_CN;
+//  715 			operation_menu.manual_off = MANUAL_SHUTDOWN_CN;			
+//  716 			//‘›Õ£ΩÁ√Ê
+//  717 			pause_menu.title= TITLE_PAUSE_CN;
+//  718 			pause_menu.resume = PRINTING_RESUME_CN;
+//  719 			pause_menu.stop = PRINTING_STOP_CN;
+//  720 			pause_menu.extrude = PRINTING_EXTRUDER_CN;
+//  721 			pause_menu.move = PRINTING_MOVE_CN;
+//  722 			pause_menu.filament= FILAMENT_TEXT_CN;
+//  723 			pause_menu.more = PRINTING_MORE_CN;
+        STR      R1,[R4, #+840]
+//  724 
+//  725 			//±‰ÀŸΩÁ√Ê
+//  726 			speed_menu.title = PRINTING_CHANGESPEED_CN;
+//  727 			speed_menu.add = ADD_TEXT_CN;
+//  728 			speed_menu.dec = DEC_TEXT_CN;
+//  729 			speed_menu.move = MOVE_SPEED_CN;
+//  730 			speed_menu.extrude = EXTRUDER_SPEED_CN;
+//  731 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_CN;
+//  732 			speed_menu.move_speed = MOVE_SPEED_STATE_CN;
+//  733 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+//  734 			printing_more_menu.title = TITLE_MORE_CN;
+        STR      R1,[R4, #+936]
+        STR      R2,[R4, #+672]
+        STR      R7,[R4, #+288]
+        STR      R2,[R4, #+296]
+        STR      R6,[R4, #+300]
+        STR      R12,[R4, #+304]
+        STR      R3,[R4, #+312]
+        STR      R2,[R4, #+824]
+        STR      R3,[R4, #+828]
+        STR      R0,[R4, #+556]
+        STR      R3,[R4, #+564]
+//  735 			printing_more_menu.fan = FAN_TEXT_CN;
+        STR      R12,[R4, #+940]
+//  736 			printing_more_menu.auto_close = AUTO_SHUTDOWN_CN;
+//  737 			printing_more_menu.manual = MANUAL_SHUTDOWN_CN;
+//  738 			printing_more_menu.speed = PRINTING_CHANGESPEED_CN;
+//  739 			printing_more_menu.temp = PRINTING_TEMP_CN;
+        STR      R6,[R4, #+952]
+//  740 
+//  741 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_CN;
+//  742 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_CN;
+//  743 			print_file_dialog_menu.cancle = DIALOG_CANCLE_CN;
+//  744 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_CN;
+//  745 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_CN;
+//  746 			print_file_dialog_menu.retry = DIALOG_RETRY_CN;
+//  747 			print_file_dialog_menu.stop = DIALOG_STOP_CN;
+        STR      R2,[R4, #+184]
+        LDR.N    R1,??disp_language_init_1+0x288
+        LDR.W    R5,??disp_language_init_1+0x370
+        LDR.W    LR,??disp_language_init_1+0x374
+        LDR.N    R7,??disp_language_init_1+0x2B8
+        LDR.W    R8,??disp_language_init_1+0x214
+        LDR.W    R9,??disp_language_init_1+0x378
+        LDR.W    R3,??disp_language_init_1+0x37C
+//  748 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_CN;	
+//  749 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_CN;
+//  750 
+//  751 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_CN;
+//  752             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_CN;
+//  753 
+//  754 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_CN;
+//  755 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_CN;
+//  756 			print_file_dialog_menu.reprint=DIALOG_REPRINT_CN;
+        LDR.W    R2,??disp_language_init_1+0x380
+        STR      R1,[R4, #+164]
+        STR      R5,[R4, #+664]
+        STR      LR,[R4, #+668]
+        STR      R5,[R4, #+292]
+        STR      R7,[R4, #+308]
+        STR      R8,[R4, #+320]
+        STR      R9,[R4, #+332]
+        STR      R5,[R4, #+816]
+        STR      LR,[R4, #+820]
+        STR      R3,[R4, #+592]
+        STR      R9,[R4, #+948]
+        STR      R2,[R4, #+216]
+        LDR.W    R1,??disp_language_init_19
+        LDR.W    R7,??disp_language_init_19+0x4
+        LDR.W    R8,??disp_language_init_19+0x8
+        LDR.N    R5,??disp_language_init_1+0x214
+        LDR.W    R3,??disp_language_init_19+0xC
+//  757 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_CN;
+        LDR.W    R2,??disp_language_init_19+0x10
+        STR      R1,[R4, #+168]
+        STR      R5,[R4, #+832]
+        STR      R7,[R4, #+316]
+        STR      R8,[R4, #+328]
+        STR      R7,[R4, #+552]
+        STR      R3,[R4, #+588]
+        STR      R8,[R4, #+944]
+        STR      R7,[R4, #+956]
+        STR      R2,[R4, #+220]
+        LDR.W    R1,??disp_language_init_19+0x14
+        LDR.N    R5,??disp_language_init_1+0x2B8
+//  758 
+//  759 			//ZOFFSET
+//  760 			zoffset_menu.title = TITLE_ZOFFSET_CN;
+//  761 			zoffset_menu.inc = ZOFFSET_INC_CN;
+//  762 			zoffset_menu.dec = ZOFFSET_DEC_CN;
+        LDR.N    R2,??disp_language_init_1+0x210
+        STR      R1,[R4, #+172]
+        STR      R5,[R4, #+836]
+        LDR.W    R1,??disp_language_init_19+0x18
+        LDR.N    R5,??disp_language_init_1+0x210
+        STR      R1,[R4, #+176]
+        STR      R5,[R4, #+560]
+        LDR.W    R1,??disp_language_init_19+0x1C
+        LDR.N    R5,??disp_language_init_1+0x214
+        STR      R1,[R4, #+180]
+        STR      R5,[R4, #+568]
+        LDR.W    R1,??disp_language_init_19+0x20
+        STR      R1,[R4, #+188]
+        LDR.W    R1,??disp_language_init_19+0x24
+        STR      R1,[R4, #+192]
+        LDR.W    R1,??disp_language_init_19+0x28
+        STR      R1,[R4, #+200]
+        LDR.W    R1,??disp_language_init_19+0x2C
+        STR      R1,[R4, #+204]
+        LDR.W    R1,??disp_language_init_19+0x30
+        STR      R1,[R4, #+208]
+        LDR.W    R1,??disp_language_init_19+0x34
+//  763 			break;
+        B.W      ??disp_language_init_20
+        Nop      
+        DATA
+??disp_language_init_1:
+        DC32     `?<Constant ": %d\\342\\204\\203">`
+        DC32     `?<Constant "espa\\303\\261ol">`
+        DC32     `?<Constant "Deutsch">`
+        DC32     `?<Constant "\\346\\227\\245\\346\\234\\254\\350\\252\\2`
+        DC32     `?<Constant "Korean">`
+        DC32     `?<Constant "portugu\\303\\252s">`
+        DC32     `?<Constant ": %dmm">`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2`
+        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263\\350\\256\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_2`
+        DC32     `?<Constant "\\350\\207\\252\\345\\212\\250\\350\\260\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\350\\256\\2`
+        DC32     `?<Constant "\\346\\270\\251\\345\\272\\246\\350\\256\\2`
+        DC32     `?<Constant "\\347\\224\\265\\346\\234\\272\\350\\256\\2`
+        DC32     `?<Constant "\\351\\253\\230\\347\\272\\247\\350\\256\\2`
+        DC32     `?<Constant "\\351\\273\\230\\350\\256\\244\\345\\200\\2`
+        DC32     `?<Constant "XYZ\\346\\234\\272\\345\\236\\213">`
+        DC32     `?<Constant "\\344\\270\\213\\344\\270\\200\\351\\241\\2`
+        DC32     `?<Constant "Delta\\346\\234\\272\\345\\236\\213">`
+        DC32     `?<Constant "\\344\\270\\212\\344\\270\\200\\351\\241\\2`
+        DC32     `?<Constant "Corexy\\346\\234\\272\\345\\236\\213">`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_1`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_3`
+        DC32     `?<Constant "\\346\\234\\272\\345\\236\\213\\351\\200\\2`
+        DC32     `?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\244\\`
+        DC32     `?<Constant "\\350\\241\\214\\347\\250\\213\\350\\256\\2`
+        DC32     `?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\244\\`
+        DC32     `?<Constant "\\345\\275\\222\\351\\233\\266\\346\\226\\2`
+        DC32     `?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\244\\`
+        DC32     `?<Constant "\\351\\231\\220\\344\\275\\215\\345\\274\\2`
+        DC32     `?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\260\\`
+        DC32     `?<Constant "\\346\\215\\242\\346\\226\\231\\350\\256\\2`
+        DC32     `?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\260\\`
+        DC32     `?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\260\\`
+        DC32     `?<Constant "\\350\\277\\233\\346\\226\\231\\346\\270\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_4`
+        DC32     `?<Constant "\\350\\277\\233\\346\\226\\231\\351\\225\\2`
+        DC32     `?<Constant "X\\350\\275\\264\\345\\275\\222\\351\\233\\`
+        DC32     `?<Constant "\\350\\277\\233\\346\\226\\231\\351\\200\\2`
+        DC32     `?<Constant "Y\\350\\275\\264\\345\\275\\222\\351\\233\\`
+        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231\\346\\270\\2`
+        DC32     `?<Constant "Z\\350\\275\\264\\345\\275\\222\\351\\233\\`
+        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231\\351\\225\\2`
+        DC32     `?<Constant "delta\\346\\234\\272\\345\\236\\213\\350\\`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_5`
+        DC32     `?<Constant "\\346\\211\\213\\345\\212\\250\\350\\260\\2`
+        DC32     `?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\260\\_1`
+        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263\\345\\217\\2`
+        DC32     `?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\260\\_1`
+        DC32     `?<Constant "\\345\\220\\257\\345\\212\\250BLtouch">`
+        DC32     `?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\260\\_1`
+        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263\\346\\216\\2`
+        DC32     `?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\244\\_1`
+        DC32     `?<Constant "\\346\\216\\242\\351\\222\\210X\\346\\226\\`
+        DC32     `?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\244\\_1`
+        DC32     `?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\244\\_1`
+        DC32     `?<Constant "\\346\\226\\255\\346\\226\\231\\345\\274\\2`
+        DC32     `?<Constant "\\346\\216\\242\\351\\222\\210XY\\346\\226`
+        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263\\345\\274\\2`
+        DC32     `?<Constant "\\346\\216\\242\\351\\222\\210Z\\346\\226\\_1`
+        DC32     `?<Constant "\\345\\270\\270\\345\\274\\200">`
+        DC32     `?<Constant "\\345\\270\\270\\351\\227\\255">`
+        DC32     `?<Constant "ZMin">`
+        DC32     `?<Constant "\\346\\234\\200\\344\\275\\216\\346\\270\\2`
+        DC32     `?<Constant "\\346\\234\\200\\351\\253\\230\\346\\270\\2`
+        DC32     `?<Constant "\\346\\234\\200\\344\\275\\216\\346\\214\\2`
+        DC32     `?<Constant "ZMax">`
+        DC32     `?<Constant "\\344\\275\\277\\350\\203\\275\\347\\203\\2`
+        DC32     `?<Constant "Delta\\346\\234\\272\\345\\231\\250\\345\\`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_8`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\215\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\346\\235\\2`
+        DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\345\\215\\2`
+        DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\351\\253\\2`
+        DC32     `?<Constant "\\346\\273\\221\\345\\235\\227\\345\\201\\2`
+        DC32     `?<Constant "\\346\\225\\210\\345\\272\\224\\345\\231\\2`
+        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263\\345\\215\\2`
+        DC32     `?<Constant "XYZ\\346\\234\\272\\345\\231\\250\\345\\21`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_6`
+        DC32     `?<Constant "\\345\\226\\267\\345\\244\\264\\350\\256\\2`
+        DC32     `?<Constant "\\347\\203\\255\\345\\272\\212\\350\\256\\2`
+        DC32     `?<Constant "\\351\\242\\204\\350\\256\\276\\346\\270\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_7`
+        DC32     `?<Constant "\\345\\226\\267\\345\\244\\264\\346\\225\\2`
+        DC32     `?<Constant "E0\\346\\270\\251\\346\\204\\237\\347\\261`
+        DC32     `?<Constant "PID\\350\\260\\203\\346\\270\\251">`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_9`
+        DC32     `?<Constant "\\346\\234\\200\\345\\244\\247\\351\\200\\2`
+        DC32     `?<Constant "\\345\\212\\240\\351\\200\\237\\345\\272\\2`
+        DC32     `?<Constant "\\347\\252\\201\\345\\217\\230\\351\\200\\2`
+        DC32     `?<Constant "\\350\\204\\211\\345\\206\\262\\350\\256\\2`
+        DC32     `?<Constant "\\347\\224\\265\\346\\234\\272\\346\\226\\2`
+        DC32     `?<Constant "\\345\\275\\222\\351\\233\\266\\351\\200\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_10`
+        DC32     `?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\244\\_2`
+        DC32     `?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\244\\_2`
+        DC32     `?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\244\\_2`
+        DC32     `?<Constant "E0\\350\\275\\264\\346\\234\\200\\345\\244`
+        DC32     `?<Constant "E1\\350\\275\\264\\346\\234\\200\\345\\244`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_11`
+        DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\345\\212\\2`
+        DC32     `?<Constant "\\345\\233\\236\\346\\212\\275\\345\\212\\2`
+        DC32     `?<Constant "\\347\\251\\272\\350\\275\\275\\345\\212\\2`
+        DC32     `?<Constant "X\\350\\275\\264\\345\\212\\240\\351\\200\\`
+        DC32     `?<Constant "Y\\350\\275\\264\\345\\212\\240\\351\\200\\`
+        DC32     `?<Constant "Z\\350\\275\\264\\345\\212\\240\\351\\200\\`
+        DC32     `?<Constant "E0\\350\\275\\264\\345\\212\\240\\351\\200`
+        DC32     `?<Constant "E1\\350\\275\\264\\345\\212\\240\\351\\200`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_12`
+        DC32     `?<Constant "X\\350\\275\\264\\347\\252\\201\\345\\217\\`
+        DC32     `?<Constant "Y\\350\\275\\264\\347\\252\\201\\345\\217\\`
+        DC32     `?<Constant "Z\\350\\275\\264\\347\\252\\201\\345\\217\\`
+        DC32     `?<Constant "E\\350\\275\\264\\347\\252\\201\\345\\217\\`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_13`
+        DC32     `?<Constant "X\\350\\275\\264\\350\\204\\211\\345\\206\\`
+        DC32     `?<Constant "Y\\350\\275\\264\\350\\204\\211\\345\\206\\`
+        DC32     `?<Constant "Z\\350\\275\\264\\350\\204\\211\\345\\206\\`
+        DC32     `?<Constant "E0\\350\\275\\264\\350\\204\\211\\345\\206`
+        DC32     `?<Constant "E1\\350\\275\\264\\350\\204\\211\\345\\206`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_14`
+        DC32     `?<Constant "X\\350\\275\\264\\347\\224\\265\\346\\234\\`
+        DC32     `?<Constant "Y\\350\\275\\264\\347\\224\\265\\346\\234\\`
+        DC32     `?<Constant "Z\\350\\275\\264\\347\\224\\265\\346\\234\\`
+        DC32     `?<Constant "E0\\350\\275\\264\\347\\224\\265\\346\\234`
+        DC32     `?<Constant "E1\\350\\275\\264\\347\\224\\265\\346\\234`
+        DC32     `?<Constant "\\351\\242\\204\\347\\203\\255">`
+        DC32     `?<Constant "\\345\\233\\236\\351\\233\\266">`
+        DC32     `?<Constant "\\346\\214\\244\\345\\207\\272">`
+        DC32     `?<Constant "\\351\\243\\216\\346\\211\\207">`
+        DC32     `?<Constant "\\350\\256\\276\\347\\275\\256">`
+        DC32     `?<Constant "\\346\\233\\264\\345\\244\\232">`
+        DC32     `?<Constant "\\346\\255\\243\\345\\220\\221">`
+        DC32     `?<Constant "\\345\\207\\217\\345\\260\\221">`
+        DC32     `?<Constant "\\347\\247\\273\\345\\212\\250">`
+        DC32     `?<Constant "\\346\\200\\245\\345\\201\\234">`
+        DC32     `?<Constant "\\345\\217\\215\\345\\220\\221">`
+        DC32     `?<Constant "\\345\\226\\267\\345\\244\\2641">`
+        DC32     `?<Constant "\\351\\200\\211\\346\\213\\251\\346\\226\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_15`
+        DC32     `?<Constant "\\345\\226\\267\\345\\244\\2642">`
+        DC32     `?<Constant "XY\\350\\275\\264\\345\\275\\222\\351\\233`
+        DC32     `?<Constant "\\347\\203\\255\\345\\272\\212">`
+        DC32     `?<Constant "Z\\350\\275\\264\\345\\275\\222\\351\\233\\_1`
+        DC32     `?<Constant "\\345\\205\\263\\351\\227\\255">`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_16`
+        DC32     `?<Constant "%d\\342\\204\\203/%d\\342\\204\\203">`
+        DC32     `?<Constant "\\346\\226\\255\\347\\224\\265\\346\\243\\2`
+        DC32     `?<Constant "\\345\\220\\257\\345\\212\\250\\346\\211\\2`
+        DC32     `?<Constant "\\346\\234\\272\\345\\231\\250\\351\\205\\2`
+        DC32     `?<Constant "\\345\\217\\214Z\\350\\275\\264\\345\\217\\`
+        DC32     `?<Constant "\\347\\224\\265\\346\\234\\272\\344\\275\\2`
+        DC32     `?<Constant "\\345\\217\\214z\\345\\217\\214\\351\\231\\`
+        DC32     `?<Constant "\\345\\220\\257\\347\\224\\250Z2\\350\\275`
+        DC32     `?<Constant "\\345\\220\\257\\347\\224\\250Z2\\351\\231`
+        DC32     `?<Constant "Z2\\351\\231\\220\\344\\275\\215\\346\\216`
+        DC32     `?<Constant "\\347\\224\\265\\346\\234\\272\\344\\275\\2_1`
+        DC32     `?<Constant "X\\350\\275\\264\\347\\224\\265\\346\\234\\_1`
+        DC32     `?<Constant "Y\\350\\275\\264\\347\\224\\265\\346\\234\\_1`
+        DC32     `?<Constant "Z\\350\\275\\264\\347\\224\\265\\346\\234\\_1`
+        DC32     `?<Constant "E\\350\\275\\264\\347\\224\\265\\346\\234\\`
+        DC32     `?<Constant "\\351\\200\\200\\346\\240\\274">`
+        DC32     `?<Constant "\\351\\207\\215\\347\\275\\256">`
+        DC32     `?<Constant "\\347\\241\\256\\345\\256\\232">`
+        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263">`
         DC32     `?<Constant "\\347\\241\\256\\350\\256\\244">`
         DC32     `?<Constant "\\350\\277\\224\\345\\233\\236">`
         DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\345\\205\\2`
-        THUMB
-??disp_language_init_11:
-        LDR.W    R1,??disp_language_init_10+0xBC
-        STR      R1,[R0, #+776]
-//  532 		case LANG_ENGLISH:
-//  533 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_EN;
-//  534 			common_menu.text_back=BACK_TEXT_EN;
-        LDR.W    R1,??disp_language_init_10+0xC0
-        STR      R1,[R0, #+772]
-//  535 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_EN;
-        LDR.W    R1,??disp_language_init_10+0xC4
-        STR      R1,[R0, #+780]
-//  536 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_EN;
-        LDR.W    R1,??disp_language_init_10+0xC8
-        STR      R1,[R0, #+784]
-//  537 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
-        LDR.W    R1,??disp_language_init_10+0xCC
-        STR      R1,[R0, #+788]
-//  538 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
-        LDR.W    R2,??disp_language_init_10+0xD0
-        STR      R2,[R0, #+792]
-        LDR.W    R3,??disp_language_init_10+0xD4
-        STR      R3,[R0, #+796]
-//  539 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;			
-//  540 			//÷˜“≥√Ê
-//  541 			main_menu.title=TITLE_READYPRINT_EN;
-        LDR.W    R3,??disp_language_init_10+0xD8
-        STR      R3,[R0, #+340]
-//  542 			main_menu.preheat=PREHEAT_TEXT_EN;
-        LDR.W    R12,??disp_language_init_10+0xDC
-        STR      R12,[R0, #+344]
-//  543 			main_menu.move=MOVE_TEXT_EN;
-        LDR.W    R3,??disp_language_init_10+0xE0
-        STR      R3,[R0, #+348]
-//  544 			main_menu.home=HOME_TEXT_EN;
-        LDR.W    R9,??disp_language_init_10+0xE4
-        STR      R9,[R0, #+352]
-//  545 			main_menu.print=PRINT_TEXT_EN;
-        STR      R1,[R0, #+356]
-//  546 			main_menu.extrude=EXTRUDE_TEXT_EN;
-        LDR.W    R4,??disp_language_init_10+0xE8
-        STR      R4,[R0, #+360]
-//  547 			main_menu.leveling=LEVELING_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0xEC
-        STR      R8,[R0, #+364]
-//  548 			main_menu.autoleveling=AUTO_LEVELING_TEXT_EN;
-        LDR.W    R7,??disp_language_init_10+0xF0
-        STR      R7,[R0, #+368]
-//  549 			main_menu.fan = FAN_TEXT_EN;
-        ADR.N    R5,??disp_language_init_12  ;; "Fan"
-        STR      R5,[R0, #+372]
-//  550 			main_menu.set=SET_TEXT_EN;
-        LDR.W    R10,??disp_language_init_10+0xF4
-        STR      R10,[R0, #+376]
-//  551 			main_menu.more=MORE_TEXT_EN;
-        LDR.W    R6,??disp_language_init_10+0xF8
-        STR      R6,[R0, #+384]
-//  552 			main_menu.tool = TOOL_TEXT_EN;
-        LDR.W    LR,??disp_language_init_10+0xFC
-        STR      LR,[R0, #+380]
-//  553 			//TOOL
-//  554 			tool_menu.title = TOOL_TEXT_EN;
-        STR      LR,[R0, #+696]
-//  555 			tool_menu.preheat = TOOL_PREHEAT_EN;
-        STR      R12,[R0, #+700]
-//  556 			tool_menu.extrude = TOOL_EXTRUDE_EN;
-        STR      R4,[R0, #+704]
-//  557 			tool_menu.move = TOOL_MOVE_EN;
-        STR      R3,[R0, #+708]
-//  558 			tool_menu.home= TOOL_HOME_EN;
-        STR      R9,[R0, #+712]
-//  559 			tool_menu.leveling = TOOL_LEVELING_EN;
-        STR      R8,[R0, #+716]
-//  560             tool_menu.autoleveling = TOOL_AUTO_LEVELING_EN;
-        STR      R7,[R0, #+720]
-//  561 			tool_menu.filament = TOOL_FILAMENT_EN;
-        LDR.W    R7,??disp_language_init_10+0x100
-        STR      R7,[R0, #+724]
-//  562 			tool_menu.more = TOOL_MORE_EN;			
-        STR      R6,[R0, #+728]
-//  563 			//‘§»»
-//  564 			preheat_menu.adjust_title = TITLE_ADJUST_EN;
-        LDR.W    LR,??disp_language_init_10+0x104
-        STR      LR,[R0, #+284]
-//  565 			preheat_menu.title=TITLE_PREHEAT_EN;
-        STR      R12,[R0, #+288]
-        ADR.W    R12,??disp_language_init_12+0x4  ;; "Add"
-        STR      R12,[R0, #+292]
-        ADR.W    R12,??disp_language_init_6  ;; "Dec"
-        STR      R12,[R0, #+296]
-//  566 			preheat_menu.add=ADD_TEXT_EN;
-//  567 			preheat_menu.dec=DEC_TEXT_EN;
-//  568 			preheat_menu.ext1=EXTRUDER_1_TEXT_EN;
-        LDR.W    R12,??disp_language_init_10+0x108
-        STR      R12,[R0, #+300]
-//  569 			preheat_menu.ext2=EXTRUDER_2_TEXT_EN;
-        LDR.W    LR,??disp_language_init_10+0x10C
-        STR      LR,[R0, #+304]
-//  570 			preheat_menu.hotbed=HEATBED_TEXT_EN;
-        LDR.W    R11,??disp_language_init_10+0x110
-        STR      R11,[R0, #+308]
-//  571 			preheat_menu.off=CLOSE_TEXT_EN;
-        LDR.W    R11,??disp_language_init_10+0x114
-        STR      R11,[R0, #+312]
-//  572 			//“∆∂Ø
-//  573 			move_menu.title = TITLE_MOVE_EN;
-        STR      R3,[R0, #+484]
-//  574 			//πÈ¡„
-//  575 			home_menu.title=TITLE_HOME_EN;
-        STR      R9,[R0, #+856]
-//  576 			home_menu.stopmove = HOME_STOPMOVE_EN;
-        LDR.W    R9,??disp_language_init_10+0x118
-        STR      R9,[R0, #+876]
-//  577 			//Œƒº˛ƒø¬º
-//  578 			file_menu.title=TITLE_CHOOSEFILE_EN;
-        LDR.W    R9,??disp_language_init_10+0x11C
-        STR      R9,[R0, #+800]
-        LDR.W    R9,??disp_language_init_10+0x120
-        STR      R9,[R0, #+804]
-        LDR.W    R9,??disp_language_init_10+0x124
-        STR      R9,[R0, #+808]
-//  579 			file_menu.page_up=PAGE_UP_TEXT_EN;
-//  580 			file_menu.page_down=PAGE_DOWN_TEXT_EN;
-//  581 			file_menu.file_loading = FILE_LOADING_EN;
-        LDR.W    R9,??disp_language_init_10+0x128
-        STR      R9,[R0, #+816]
-//  582 			file_menu.no_file = NO_FILE_EN;
-        LDR.W    R9,??disp_language_init_10+0x12C
-        STR      R9,[R0, #+820]
-//  583 			file_menu.no_file_and_check = NO_FILE_EN;//NO_FILE_AND_CHECK_EN;			
-        STR      R9,[R0, #+824]
-//  584 			//º∑≥ˆ
-//  585 			extrude_menu.title=TITLE_EXTRUDE_EN;
-        STR      R4,[R0, #+92]
-//  586 			extrude_menu.in=EXTRUDER_IN_TEXT_EN;
-        ADR.W    R9,??disp_language_init_12+0x8  ;; 0x49, 0x6E, 0x00, 0x00
-        STR      R9,[R0, #+96]
-//  587 			extrude_menu.out=EXTRUDER_OUT_TEXT_EN;
-        ADR.W    R9,??disp_language_init_12+0xC  ;; "Out"
-        STR      R9,[R0, #+100]
-//  588 			extrude_menu.ext1=EXTRUDER_1_TEXT_EN;
-        STR      R12,[R0, #+104]
-//  589 			extrude_menu.ext2=EXTRUDER_2_TEXT_EN;
-        STR      LR,[R0, #+108]
-//  590 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_EN;
-        ADR.W    R9,??disp_language_init_12+0x10  ;; "Low"
-        STR      R9,[R0, #+124]
-//  591 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_EN;
-        LDR.W    R9,??disp_language_init_10+0x130
-        STR      R9,[R0, #+128]
-//  592 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_EN;
-        LDR.W    R9,??disp_language_init_10+0x134
-        STR      R9,[R0, #+132]
-//  593 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_EN;
-        LDR.W    R9,??disp_language_init_10+0x138
-        STR      R9,[R0, #+156]
-//  594 			//µ˜∆Ω
-//  595 			leveling_menu.title=TITLE_LEVELING_EN;
-        STR      R8,[R0, #+884]
-//  596 			leveling_menu.position1=LEVELING_POINT1_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0x13C
-        STR      R8,[R0, #+888]
-//  597 			leveling_menu.position2=LEVELING_POINT2_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0x140
-        STR      R8,[R0, #+892]
-//  598 			leveling_menu.position3=LEVELING_POINT3_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0x144
-        STR      R8,[R0, #+896]
-//  599 			leveling_menu.position4=LEVELING_POINT4_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0x148
-        STR      R8,[R0, #+900]
-//  600 			leveling_menu.position5=LEVELING_POINT5_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0x14C
-        STR      R8,[R0, #+904]
-//  601 			//…Ë÷√
-//  602 			set_menu.title=TITLE_SET_EN;
-        STR      R10,[R0, #+528]
-//  603 			set_menu.filesys=FILESYS_TEXT_EN;
-        LDR.W    R11,??disp_language_init_10+0x150
-        STR      R11,[R0, #+532]
-//  604 			set_menu.wifi=WIFI_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0x154
-        STR      R8,[R0, #+536]
-//  605 			set_menu.about=ABOUT_TEXT_EN;
-        LDR.W    R8,??disp_language_init_10+0x158
-        STR      R8,[R0, #+540]
-//  606 			set_menu.fan=FAN_TEXT_EN;
-        STR      R5,[R0, #+544]
-//  607 			set_menu.filament=FILAMENT_TEXT_EN;
-        STR      R7,[R0, #+548]
-//  608 			set_menu.breakpoint=BREAK_POINT_TEXT_EN;
-        LDR.W    R9,??disp_language_init_10+0x15C
-        STR      R9,[R0, #+552]
-//  609 			set_menu.motoroff=MOTOR_OFF_TEXT_EN;
-        LDR.W    R9,??disp_language_init_10+0x160
-        STR      R9,[R0, #+556]
-//  610 			set_menu.language=LANGUAGE_TEXT_EN;
-        LDR.W    R9,??disp_language_init_10+0x164
-        STR      R9,[R0, #+564]
-//  611 			//∏¸∂‡
-//  612 			more_menu.title = TITLE_MORE_EN;
-        STR      R6,[R0, #+1024]
-//  613 			more_menu.zoffset = ZOFFSET_EN;
-        LDR.W    R10,??disp_language_init_6+0xCC
-        STR      R10,[R0, #+1028]
-//  614 			//Œƒº˛œµÕ≥
-//  615 			filesys_menu.title = TITLE_FILESYS_EN;
-        STR      R11,[R0, #+1004]
-//  616 			filesys_menu.sd_sys = SD_CARD_TEXT_EN;
-        ADR.W    R11,??disp_language_init_12+0x14  ;; 0x53, 0x44, 0x00, 0x00
-        STR      R11,[R0, #+1012]
-//  617 			filesys_menu.usb_sys = U_DISK_TEXT_EN;
-        ADR.W    R11,??disp_language_init_12+0x18  ;; "USB"
-        STR      R11,[R0, #+1016]
-//  618 			//WIFI
-//  619 			wifi_menu.title=WIFI_TEXT;
-        LDR.W    R11,??disp_language_init_6+0xB0
-        STR      R11,[R0, #+572]
-//  620 			//wifi_menu.key = WIFI_KEY_TEXT_EN;
-//  621 			//wifi_menu.ip = WIFI_IP_TEXT_EN;
-//  622 			//wifi_menu.state= WIFI_STA_TEXT_EN;
-//  623 			wifi_menu.cloud= CLOUD_TEXT_EN;
-        LDR.W    R11,??disp_language_init_13+0x4
-        STR      R11,[R0, #+596]
-//  624 
-//  625 			cloud_menu.title = TITLE_CLOUD_TEXT_EN;
-        STR      R11,[R0, #+616]
-//  626 			cloud_menu.bind = CLOUD_BINDED_EN;
-        LDR.W    R11,??disp_language_init_13+0x8
-        STR      R11,[R0, #+632]
-//  627 			cloud_menu.binded = CLOUD_BINDED_EN;
-        STR      R11,[R0, #+640]
-//  628 			cloud_menu.unbind = CLOUD_UNBIND_EN;
-        LDR.W    R11,??disp_language_init_10+0x168
-        STR      R11,[R0, #+620]
-//  629 			cloud_menu.unbinding = CLOUD_UNBINDED_EN;
-        LDR.W    R11,??disp_language_init_13+0xC
-        STR      R11,[R0, #+624]
-//  630 			cloud_menu.disconnected = CLOUD_DISCONNECTED_EN;
-        LDR.W    R11,??disp_language_init_13+0x10
-        STR      R11,[R0, #+648]
-//  631 			cloud_menu.disable = CLOUD_DISABLE_EN;
-        LDR.W    R11,??disp_language_init_13+0x14
-        STR      R11,[R0, #+644]
-//  632 			//πÿ”⁄
-//  633 			about_menu.title = TITLE_ABOUT_EN;
-        STR      R8,[R0, #+912]
-//  634 			about_menu.type = ABOUT_TYPE_TEXT_EN;
-        LDR.W    R8,??disp_language_init_6+0xE8
-        STR      R8,[R0, #+924]
-//  635 			about_menu.version = ABOUT_VERSION_TEXT_EN;
-        LDR.W    R8,??disp_language_init_6+0xEC
-        STR      R8,[R0, #+928]
-//  636 			about_menu.wifi = ABOUT_WIFI_TEXT_EN;			
-        LDR.W    R8,??disp_language_init_13+0x18
-        STR      R8,[R0, #+932]
-//  637 			//∑Á…»
-//  638 			fan_menu.title = TITLE_FAN_EN;
-        STR      R5,[R0, #+736]
-//  639 			fan_menu.add = FAN_ADD_TEXT_EN;
-        ADR.W    R8,??disp_language_init_12+0x4  ;; "Add"
-        STR      R8,[R0, #+740]
-//  640 			fan_menu.dec = FAN_DEC_TEXT_EN;
-        ADR.W    R8,??disp_language_init_6  ;; "Dec"
-        STR      R8,[R0, #+744]
-//  641 			fan_menu.state = FAN_TIPS1_TEXT_EN;
-        ADR.W    R8,??disp_language_init_6+0x4  ;; "FAN"
-        STR      R8,[R0, #+764]
-//  642 			//ªª¡œ
-//  643 			filament_menu.title = TITLE_FILAMENT_EN;
-        STR      R7,[R0, #+0]
-//  644 			filament_menu.in = FILAMENT_IN_TEXT_EN;
-        LDR.W    R8,??disp_language_init_13+0x1C
-        STR      R8,[R0, #+4]
-//  645 			filament_menu.out = FILAMENT_OUT_TEXT_EN;
-        LDR.W    R8,??disp_language_init_13+0x20
-        STR      R8,[R0, #+8]
-//  646 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_EN;
-        STR      R12,[R0, #+12]
-//  647 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_EN;
-        STR      LR,[R0, #+16]
-//  648 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_EN;
-        LDR.W    R12,??disp_language_init_13+0x24
-        STR      R12,[R0, #+28]
-//  649 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_EN;
-        LDR.W    R12,??disp_language_init_13+0x28
-        STR      R12,[R0, #+52]
-//  650 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_EN;
-        LDR.W    LR,??disp_language_init_13+0x2C
-        STR      LR,[R0, #+60]
-//  651 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_EN;
-        LDR.W    LR,??disp_language_init_13+0x30
-        STR      LR,[R0, #+68]
-//  652 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_EN;
-        LDR.W    LR,??disp_language_init_13+0x34
-        STR      LR,[R0, #+76]
-//  653 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_EN;
-        STR      R12,[R0, #+56]
-//  654 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_EN;
-        LDR.W    R12,??disp_language_init_13+0x38
-        STR      R12,[R0, #+64]
-//  655 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_EN;
-        LDR.W    R12,??disp_language_init_13+0x3C
-        STR      R12,[R0, #+72]
-//  656 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_EN;
-        LDR.W    R12,??disp_language_init_13+0x40
-        STR      R12,[R0, #+80]
-//  657 
-//  658 			//”Ô—‘
-//  659 			language_menu.title = TITLE_LANGUAGE_EN;
-        STR      R9,[R0, #+160]
-//  660 			language_menu.next = PAGE_DOWN_TEXT_EN;
-        LDR.W    R12,??disp_language_init_10+0x124
-        STR      R12,[R0, #+212]
-//  661 			language_menu.up = PAGE_UP_TEXT_EN;			
-        LDR.W    R12,??disp_language_init_10+0x120
-        STR      R12,[R0, #+216]
-//  662 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-//  663 			printing_menu.title = TITLE_PRINTING_EN;
-        STR      R1,[R0, #+660]
-//  664 			printing_menu.option = PRINTING_OPERATION_EN;
-        LDR.W    R1,??disp_language_init_13+0x44
-        STR      R1,[R0, #+664]
-//  665 			printing_menu.stop = PRINTING_STOP_EN;
-        LDR.W    LR,??disp_language_init_13+0x48
-        STR      LR,[R0, #+692]
-//  666 			printing_menu.pause = PRINTING_PAUSE_EN;
-        STR      R2,[R0, #+684]
-//  667 			printing_menu.resume = PRINTING_RESUME_EN;
-        LDR.W    R9,??disp_language_init_13+0x4C
-        STR      R9,[R0, #+688]
-//  668 
-//  669 			//≤Ÿ◊˜ΩÁ√Ê
-//  670 			operation_menu.title = TITLE_OPERATION_EN;
-        LDR.W    R1,??disp_language_init_10+0xD4
-        STR      R1,[R0, #+388]
-//  671 			operation_menu.pause = PRINTING_PAUSE_EN;
-        STR      R2,[R0, #+392]
-//  672 			operation_menu.stop = PRINTING_STOP_EN;
-        STR      LR,[R0, #+396]
-//  673 			operation_menu.temp = PRINTING_TEMP_EN;
-        LDR.W    R1,??disp_language_init_13+0x50
-        STR      R1,[R0, #+400]
-//  674 			operation_menu.fan = FAN_TEXT_EN;
-        STR      R5,[R0, #+404]
-//  675 			operation_menu.extr = PRINTING_EXTRUDER_EN;
-        STR      R4,[R0, #+412]
-//  676 			operation_menu.speed = PRINTING_CHANGESPEED_EN;			
-        LDR.W    R8,??disp_language_init_13+0x54
-        STR      R8,[R0, #+416]
-//  677 			operation_menu.filament= FILAMENT_TEXT_EN;
-        STR      R7,[R0, #+408]
-//  678 			operation_menu.more = PRINTING_MORE_EN;
-        STR      R6,[R0, #+424]
-//  679 			operation_menu.move = PRINTING_MOVE_EN;
-        STR      R3,[R0, #+420]
-//  680 			operation_menu.auto_off = AUTO_SHUTDOWN_EN;
-        LDR.W    R12,??disp_language_init_13+0x58
-        STR      R12,[R0, #+428]
-//  681 			operation_menu.manual_off = MANUAL_SHUTDOWN_EN;			
-        LDR.W    R11,??disp_language_init_13+0x5C
-        STR      R11,[R0, #+432]
-//  682 			//‘›Õ£ΩÁ√Ê
-//  683 			pause_menu.title= TITLE_PAUSE_EN;
-        STR      R2,[R0, #+828]
-//  684 			pause_menu.resume = PRINTING_RESUME_EN;
-        STR      R9,[R0, #+832]
-//  685 			pause_menu.stop = PRINTING_STOP_EN;
-        STR      LR,[R0, #+836]
-//  686 			pause_menu.extrude = PRINTING_EXTRUDER_EN;
-        STR      R4,[R0, #+840]
-//  687 			pause_menu.move = PRINTING_MOVE_EN;
-        STR      R3,[R0, #+844]
-//  688 			pause_menu.filament = FILAMENT_TEXT_EN;
-        STR      R7,[R0, #+848]
-//  689 			pause_menu.more = PRINTING_MORE_EN;
-        STR      R6,[R0, #+852]
-//  690 
-//  691 			//±‰ÀŸΩÁ√Ê
-//  692 			speed_menu.title = TITLE_CHANGESPEED_EN;
-        STR      R8,[R0, #+440]
-//  693 			speed_menu.add = ADD_TEXT_EN;
-        ADR.N    R2,??disp_language_init_12+0x4  ;; "Add"
-        STR      R2,[R0, #+444]
-//  694 			speed_menu.dec = DEC_TEXT_EN;
-        ADR.N    R2,??disp_language_init_6  ;; "Dec"
-        STR      R2,[R0, #+448]
-//  695 			speed_menu.move = MOVE_SPEED_EN;
-        STR      R3,[R0, #+456]
-//  696 			speed_menu.extrude = EXTRUDER_SPEED_EN;
-        STR      R4,[R0, #+452]
-//  697 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_EN;
-        LDR.W    R2,??disp_language_init_13+0x60
-        STR      R2,[R0, #+480]
-//  698 			speed_menu.move_speed = MOVE_SPEED_STATE_EN;
-        LDR.W    R2,??disp_language_init_13+0x64
-        STR      R2,[R0, #+476]
-//  699 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-//  700 			printing_more_menu.title = TITLE_MORE_EN;
-        STR      R6,[R0, #+948]
-//  701 			printing_more_menu.fan = FAN_TEXT_EN;
-        STR      R5,[R0, #+952]
-//  702 			printing_more_menu.auto_close = AUTO_SHUTDOWN_EN;
-        STR      R12,[R0, #+956]
-//  703 			printing_more_menu.manual = MANUAL_SHUTDOWN_EN;
-        STR      R11,[R0, #+960]
-//  704 			printing_more_menu.speed = PRINTING_CHANGESPEED_EN;
-        STR      R8,[R0, #+968]
-//  705 			printing_more_menu.temp = PRINTING_TEMP_EN;
-        STR      R1,[R0, #+964]
-//  706 
-//  707 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_EN;
-//  708 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_EN;
-        LDR.W    R1,??disp_language_init_10+0xBC
-        STR      R1,[R0, #+228]
-//  709 			print_file_dialog_menu.cancle = DIALOG_CANCLE_EN;
-        LDR.W    R1,??disp_language_init_13+0x68
-        STR      R1,[R0, #+232]
-//  710 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_EN;
-        LDR.W    R1,??disp_language_init_13+0x6C
-        STR      R1,[R0, #+236]
-//  711 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_EN;
-        LDR.W    R1,??disp_language_init_13+0x70
-        STR      R1,[R0, #+240]
-//  712 			print_file_dialog_menu.retry = DIALOG_RETRY_EN;
-        LDR.W    R1,??disp_language_init_13+0x74
-        STR      R1,[R0, #+244]
-//  713 			print_file_dialog_menu.stop = DIALOG_STOP_EN;
-        STR      LR,[R0, #+248]
-//  714 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_EN;	
-        LDR.W    R1,??disp_language_init_13+0x78
-        STR      R1,[R0, #+252]
-//  715 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_EN;
-        LDR.W    R1,??disp_language_init_13+0x7C
-        STR      R1,[R0, #+256]
-//  716 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_EN;
-        LDR.W    R1,??disp_language_init_13+0x80
-        STR      R1,[R0, #+264]
-//  717             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_EN;
-        LDR.W    R1,??disp_language_init_13+0x84
-        STR      R1,[R0, #+268]
-//  718 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_EN;
-        LDR.W    R1,??disp_language_init_13+0x88
-        STR      R1,[R0, #+272]
-//  719 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_EN;
-        LDR.W    R1,??disp_language_init_13+0x8C
-        STR      R1,[R0, #+276]
-//  720 			print_file_dialog_menu.reprint=DIALOG_REPRINT_EN;
-        LDR.W    R1,??disp_language_init_13+0x90
-        STR      R1,[R0, #+280]
-//  721 			//ZOFFSET
-//  722 			zoffset_menu.title = TITLE_ZOFFSET_EN;
-        STR      R10,[R0, #+976]
-//  723 			zoffset_menu.inc = ZOFFSET_INC_EN;
-        ADR.N    R1,??disp_language_init_12+0x4  ;; "Add"
-        B.N      ??disp_language_init_14
-        Nop      
-        DATA
-??disp_language_init_12:
-        DC8      "Fan"
-        DC8      "Add"
-        DC8      0x49, 0x6E, 0x00, 0x00
-        DC8      "Out"
-        DC8      "Low"
-        DC8      0x53, 0x44, 0x00, 0x00
-        DC8      "USB"
-        THUMB
-??disp_language_init_14:
-        STR      R1,[R0, #+980]
-//  724 			zoffset_menu.dec = ZOFFSET_DEC_EN;				
-        ADR.N    R1,??disp_language_init_6  ;; "Dec"
-        STR      R1,[R0, #+984]
-//  725 			break;
-        B.W      ??disp_language_init_4
-        Nop      
-        DATA
-??disp_language_init_6:
-        DC8      "Dec"
-        DC8      "FAN"
         DC32     `?<Constant "\\350\\247\\243\\351\\231\\244\\347\\273\\2`
         DC32     `?<Constant "\\325\\375\\324\\332\\264\\362\\323\\241">`
         DC32     `?<Constant "\\324\\335\\315\\243">`
         DC32     `?<Constant "\\262\\331\\327\\367">`
         DC32     `?<Constant "\\345\\207\\206\\345\\244\\207\\346\\211\\2`
-        DC32     `?<Constant "\\351\\242\\204\\347\\203\\255">`
-        DC32     `?<Constant "\\347\\247\\273\\345\\212\\250">`
-        DC32     `?<Constant "\\345\\233\\236\\351\\233\\266">`
         DC32     `?<Constant "\\346\\211\\223\\345\\215\\260">`
-        DC32     `?<Constant "\\346\\214\\244\\345\\207\\272">`
-        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263">`
-        DC32     `?<Constant "\\350\\207\\252\\345\\212\\250\\350\\260\\2`
-        DC32     `?<Constant "\\351\\243\\216\\346\\211\\207">`
-        DC32     `?<Constant "\\350\\256\\276\\347\\275\\256">`
-        DC32     `?<Constant "\\346\\233\\264\\345\\244\\232">`
         DC32     `?<Constant "\\345\\267\\245\\345\\205\\267">`
         DC32     `?<Constant "\\346\\215\\242\\346\\226\\231">`
         DC32     `?<Constant "\\350\\260\\203\\346\\225\\264">`
         DC32     `?<Constant "\\345\\242\\236\\345\\212\\240">`
-        DC32     `?<Constant "\\345\\207\\217\\345\\260\\221">`
-        DC32     `?<Constant "\\345\\226\\267\\345\\244\\2641">`
-        DC32     `?<Constant "\\345\\226\\267\\345\\244\\2642">`
-        DC32     `?<Constant "\\347\\203\\255\\345\\272\\212">`
-        DC32     `?<Constant "\\345\\205\\263\\351\\227\\255">`
-        DC32     `?<Constant "\\346\\200\\245\\345\\201\\234">`
-        DC32     `?<Constant "\\351\\200\\211\\346\\213\\251\\346\\226\\2`
-        DC32     `?<Constant "\\344\\270\\212\\344\\270\\200\\351\\241\\2`
-        DC32     `?<Constant "\\344\\270\\213\\344\\270\\200\\351\\241\\2`
-        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\350\\275\\2`
-        DC32     `?<Constant "\\346\\227\\240\\346\\226\\207\\344\\273\\2`
-        DC32     `?<Constant "\\350\\277\\233\\346\\226\\231">`
-        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231">`
-        DC32     `?<Constant "\\344\\275\\216\\351\\200\\237">`
-        DC32     `?<Constant "\\345\\270\\270\\351\\200\\237">`
-        DC32     `?<Constant "\\351\\253\\230\\351\\200\\237">`
-        DC32     `?<Constant "\\346\\270\\251\\345\\272\\246">`
         DC32     `?<Constant "\\347\\254\\254\\344\\270\\200\\347\\202\\2`
-        DC32     `?<Constant "\\347\\254\\254\\344\\272\\214\\347\\202\\2`
-        DC32     `?<Constant "\\347\\254\\254\\344\\270\\211\\347\\202\\2`
-        DC32     `?<Constant "\\347\\254\\254\\345\\233\\233\\347\\202\\2`
-        DC32     `?<Constant "\\347\\254\\254\\344\\272\\224\\347\\202\\2`
+        DC32     `?<Constant "\\350\\277\\233\\346\\226\\231">`
         DC32     `?<Constant "\\346\\226\\207\\344\\273\\266\\347\\263\\2`
+        DC32     `?<Constant "\\347\\254\\254\\344\\272\\214\\347\\202\\2`
+        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\350\\275\\2`
         DC32     `?<Constant "WIFI">`
+        DC32     `?<Constant "\\344\\275\\216\\351\\200\\237">`
+        DC32     `?<Constant "\\347\\254\\254\\344\\270\\211\\347\\202\\2`
+        DC32     `?<Constant "\\346\\227\\240\\346\\226\\207\\344\\273\\2`
+        DC32     `?<Constant "\\345\\270\\270\\351\\200\\237">`
+        DC32     `?<Constant "\\347\\254\\254\\345\\233\\233\\347\\202\\2`
+        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231">`
+        DC32     `?<Constant "\\351\\253\\230\\351\\200\\237">`
+        DC32     `?<Constant "\\347\\254\\254\\344\\272\\224\\347\\202\\2`
+        DC32     `?<Constant "\\346\\270\\251\\345\\272\\246">`
         DC32     `?<Constant "\\345\\205\\263\\344\\272\\216">`
         DC32     `?<Constant "\\346\\226\\255\\347\\202\\271\\347\\273\\2`
-        DC32     `?<Constant "\\345\\205\\263\\351\\227\\255\\347\\224\\2`
-        DC32     `?<Constant "\\350\\257\\255\\350\\250\\200">`
-        DC32     `?<Constant "SD\\345\\215\\241">`
-        DC32     `?<Constant "U\\347\\233\\230">`
-        DC32     `?<Constant "Z Offset">`
-        DC32     `?<Constant "\\344\\272\\221\\346\\234\\215\\345\\212\\2`
-        DC32     `?<Constant "\\345\\267\\262\\347\\273\\221\\345\\256\\2`
-        DC32     `?<Constant "\\350\\247\\243\\347\\273\\221">`
-        DC32     `?<Constant "\\346\\234\\252\\347\\273\\221\\345\\256\\2`
-        DC32     `?<Constant "\\346\\234\\252\\350\\277\\236\\346\\216\\2`
-        DC32     `?<Constant "\\345\\267\\262\\347\\246\\201\\347\\224\\2`
+        DC32     `?<Constant "\\351\\207\\215\\346\\226\\260\\350\\277\\2`
         DC32     `?<Constant "Type: ">`
+        DC32     `?<Constant "\\345\\205\\263\\351\\227\\255\\347\\224\\2`
         DC32     `?<Constant "Firmware: ">`
-        DC32     `?<Constant "Wifi: ">`
         DC32     `?<Constant "\\345\\276\\205\\346\\211\\223\\345\\215\\2`
+        DC32     `?<Constant "\\350\\257\\255\\350\\250\\200">`
+        DC32     `?<Constant "Wifi: ">`
         DC32     `?<Constant "\\345\\207\\206\\345\\244\\207\\350\\277\\2`
+        DC32     `?<Constant "SD\\345\\215\\241">`
         DC32     `?<Constant "\\345\\212\\240\\347\\203\\255\\345\\256\\2`
+        DC32     `?<Constant "U\\347\\233\\230">`
         DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\350\\277\\2`
         DC32     `?<Constant "\\350\\277\\233\\346\\226\\231\\345\\256\\2`
+        DC32     `?<Constant "\\344\\272\\221\\346\\234\\215\\345\\212\\2`
         DC32     `?<Constant "\\345\\207\\206\\345\\244\\207\\351\\200\\2`
+        DC32     `?<Constant "\\345\\267\\262\\347\\273\\221\\345\\256\\2`
         DC32     `?<Constant "\\345\\212\\240\\347\\203\\255\\345\\256\\2_1`
+        DC32     `?<Constant "\\350\\247\\243\\347\\273\\221">`
         DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\351\\200\\2`
+        DC32     `?<Constant "\\346\\234\\252\\347\\273\\221\\345\\256\\2`
         DC32     `?<Constant "\\351\\200\\200\\346\\226\\231\\345\\256\\2`
-        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\346\\211\\2`
+        DC32     `?<Constant "\\346\\234\\252\\350\\277\\236\\346\\216\\2`
+        DC32     `?<Constant "\\345\\267\\262\\347\\246\\201\\347\\224\\2`
         DC32     `?<Constant "\\346\\223\\215\\344\\275\\234">`
+        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\346\\211\\2`
         DC32     `?<Constant "\\345\\201\\234\\346\\255\\242">`
         DC32     `?<Constant "\\346\\232\\202\\345\\201\\234">`
         DC32     `?<Constant "\\346\\201\\242\\345\\244\\215">`
-        DC32     `?<Constant "\\345\\217\\230\\351\\200\\237">`
-        DC32     `?<Constant "\\350\\207\\252\\345\\212\\250\\345\\205\\2`
         DC32     `?<Constant "\\346\\211\\213\\345\\212\\250\\345\\205\\2`
         DC32     `?<Constant "\\346\\214\\244\\345\\207\\272\\351\\200\\2`
-        DC32     `?<Constant "\\347\\247\\273\\345\\212\\250\\351\\200\\2`
-        DC32     `?<Constant "\\347\\241\\256\\345\\256\\232">`
+        DC32     `?<Constant "\\345\\206\\215\\346\\211\\223\\345\\215\\2`
+        THUMB
+??disp_language_init_3:
+        LDR.N    R7,??disp_language_init_9
+        LDR.W    R0,??disp_language_init_19+0x38
+//  764 #if 1            
+//  765 		#if 1
+//  766 		case LANG_COMPLEX_CHINESE:
+//  767         //ª˙∆˜≤Œ ˝
+//  768         MachinePara_menu.title = MACHINE_PARA_TITLE_T_CN;
+//  769         MachinePara_menu.MachineSetting = MACHINE_TYPE_CNOFIG_T_CN;
+//  770         MachinePara_menu.TemperatureSetting=TEMPERATURE_CONFIG_T_CN;
+//  771         MachinePara_menu.MotorSetting=MOTOR_CONFIG_T_CN;
+//  772         MachinePara_menu.AdvanceSetting=ADVANCE_CONFIG_T_CN;
+//  773 
+//  774         machine_menu.default_value = DEFAULT_T_CN;
+//  775         machine_menu.next=NEXT_T_CN;
+//  776         machine_menu.previous=PREVIOUS_T_CN;
+//  777 
+//  778         machine_menu.MachineConfigTitle = MACHINE_CONFIG_TITLE_T_CN;
+//  779         machine_menu.MachineType=MACHINE_TYPE_T_CN;
+//  780         machine_menu.Stroke=MACHINE_STROKE_T_CN;
+//  781         machine_menu.HomeDir=MACHINE_HOMEDIR_T_CN;
+//  782         machine_menu.EndStopType=MACHINE_ENDSTOP_TYPE_T_CN;
+//  783         machine_menu.FilamentConf=MACHINE_FILAMENT_CONFIG_T_CN;
+//  784         machine_menu.LevelingConf=MACHINE_LEVELING_CONFIG_T_CN;
+        LDR.W    R1,??disp_language_init_19+0x3C
+//  785 
+//  786         machine_menu.MachineTypeConfTitle = MACHINE_TYPE_CONFIG_TITLE_T_CN;
+        LDR.W    R2,??disp_language_init_19+0x40
+//  787         machine_menu.xyz=MACHINE_TYPE_XYZ_T_CN;
+//  788         machine_menu.delta=MACHINE_TYPE_DELTA_T_CN;
+//  789         machine_menu.corexy=MACHINE_TYPE_COREXY_T_CN;
+//  790 
+//  791         machine_menu.StrokeConfTitle=MACHINE_STROKE_CONF_TITLE_T_CN;
+//  792         machine_menu.xStroke=X_MAX_LENGTH_T_CN;
+//  793         machine_menu.yStroke=Y_MAX_LENGTH_T_CN;
+//  794         machine_menu.zStroke=Z_MAX_LENGTH_T_CN;
+//  795 
+//  796 	    machine_menu.xmin=X_MIN_LENGTH_T_CN;
+//  797 	    machine_menu.ymin=Y_MIN_LENGTH_T_CN;
+//  798 	    machine_menu.zmin=Z_MIN_LENGTH_T_CN;		
+//  799 
+//  800         machine_menu.HomeDirConfTitle=HOME_DIR_CONF_TITLE_T_CN;
+//  801         machine_menu.xHomeDir=HOME_DIR_X_T_CN;
+//  802         machine_menu.yHomeDir=HOME_DIR_Y_T_CN;
+//  803         machine_menu.zHomeDir=HOME_DIR_Z_T_CN;
+//  804         machine_menu.min=HOME_MIN_T_CN;
+//  805         machine_menu.max=HOME_MAX_T_CN;
+//  806 
+//  807         machine_menu.EndstopConfTitle=ENDSTOP_CONF_TITLE_T_CN;
+//  808         machine_menu.xEndstop_min=MIN_ENDSTOP_X_T_CN;
+//  809         machine_menu.yEndstop_min=MIN_ENDSTOP_Y_T_CN;
+//  810         machine_menu.zEndstop_min=MIN_ENDSTOP_Z_T_CN;
+//  811         machine_menu.xEndstop_max=MAX_ENDSTOP_X_T_CN;
+//  812         machine_menu.yEndstop_max=MAX_ENDSTOP_Y_T_CN;
+//  813         machine_menu.zEndstop_max=MAX_ENDSTOP_Z_T_CN;            
+//  814         machine_menu.FilamentEndstop=ENDSTOP_FIL_T_CN;
+//  815         machine_menu.LevelingEndstop=ENDSTOP_LEVEL_T_CN;
+//  816         machine_menu.opened=ENDSTOP_OPENED_T_CN;
+//  817         machine_menu.closed=ENDSTOP_CLOSED_T_CN;
+//  818 
+//  819         machine_menu.FilamentConfTitle=FILAMENT_CONF_TITLE_T_CN;
+//  820         machine_menu.InTemperature=FILAMENT_IN_TEMPERATURE_T_CN;
+//  821         machine_menu.InLength=FILAMENT_IN_LENGTH_T_CN;
+//  822         machine_menu.InSpeed=FILAMENT_IN_SPEED_T_CN;
+//  823         machine_menu.OutTemperature=FILAMENT_OUT_TEMPERATURE_T_CN;
+//  824         machine_menu.OutLength=FILAMENT_OUT_LENGTH_T_CN;
+//  825         machine_menu.OutSpeed=FILAMENT_OUT_SPEED_T_CN;
+//  826                     
+//  827         machine_menu.LevelingParaConfTitle=LEVELING_CONF_TITLE_T_CN;
+//  828         machine_menu.LevelingParaConf=LEVELING_PARA_CONF_T_CN;
+//  829         machine_menu.DeltaLevelConf=LEVELING_DELTA_T_CN;
+//  830         machine_menu.XYZLevelconf=LEVELING_XYZ_T_CN;
+//  831 
+//  832         machine_menu.LevelingSubConfTitle=LEVELING_PARA_CONF_TITLE_T_CN;
+//  833         machine_menu.AutoLevelEnable=AUTO_LEVELING_ENABLE_T_CN;
+        LDR.W    LR,??disp_language_init_19+0x44
+        STR      R0,[R7, #+48]
+        LDR.W    R0,??disp_language_init_19+0x48
+        STR      R0,[R7, #+52]
+        LDR.W    R0,??disp_language_init_19+0x4C
+        STR      R0,[R7, #+56]
+        LDR.W    R0,??disp_language_init_19+0x50
+        STR      R0,[R7, #+60]
+        LDR.W    R0,??disp_language_init_19+0x54
+        STR      R0,[R7, #+64]
+        STR      R2,[R5, #+40]
+        STR      R1,[R5, #+36]
+        LDR.W    R0,??disp_language_init_19+0x58
+        LDR.W    R2,??disp_language_init_19+0x5C
+        STR      R0,[R5, #+0]
+        STR      R2,[R5, #+44]
+        STR      R1,[R5, #+180]
+        LDR.W    R0,??disp_language_init_19+0x60
+        LDR.W    R2,??disp_language_init_19+0x64
+        STR      R0,[R5, #+4]
+        STR      R2,[R5, #+48]
+        STR      R1,[R5, #+184]
+        LDR.W    R0,??disp_language_init_19+0x68
+        LDR.W    R2,??disp_language_init_19+0x6C
+        STR      R0,[R5, #+8]
+        STR      R2,[R5, #+52]
+        STR      LR,[R5, #+200]
+        LDR.W    R0,??disp_language_init_19+0x70
+        LDR.W    R2,??disp_language_init_19+0x74
+        STR      R0,[R5, #+12]
+        STR      R2,[R5, #+56]
+        LDR.W    R0,??disp_language_init_19+0x78
+        LDR.W    R2,??disp_language_init_19+0x7C
+        STR      R0,[R5, #+16]
+        STR      R2,[R5, #+60]
+        LDR.W    R0,??disp_language_init_19+0x80
+        LDR.W    R2,??disp_language_init_19+0x84
+        STR      R0,[R5, #+20]
+        STR      R2,[R5, #+64]
+        LDR.W    R0,??disp_language_init_19+0x88
+        LDR.W    R2,??disp_language_init_19+0x8C
+        STR      R0,[R5, #+24]
+        STR      R2,[R5, #+68]
+        LDR.W    R0,??disp_language_init_19+0x90
+        LDR.W    R2,??disp_language_init_19+0x94
+        STR      R0,[R5, #+28]
+        STR      R2,[R5, #+72]
+        LDR.W    R0,??disp_language_init_19+0x98
+        LDR.W    R2,??disp_language_init_19+0x9C
+        STR      R0,[R5, #+32]
+        STR      R2,[R5, #+76]
+        STR      R0,[R5, #+152]
+        LDR.W    R2,??disp_language_init_19+0xA0
+        LDR.W    R0,??disp_language_init_19+0xA4
+        STR      R2,[R5, #+80]
+        STR      R0,[R5, #+156]
+        LDR.W    R2,??disp_language_init_19+0xA8
+        LDR.W    R0,??disp_language_init_19+0xAC
+        STR      R2,[R5, #+84]
+        STR      R0,[R5, #+160]
+        LDR.W    R2,??disp_language_init_19+0xB0
+        LDR.W    R0,??disp_language_init_19+0xB4
+        STR      R2,[R5, #+88]
+        STR      R0,[R5, #+164]
+        LDR.W    R2,??disp_language_init_19+0xB8
+        LDR.W    R0,??disp_language_init_19+0xBC
+        STR      R2,[R5, #+92]
+        STR      R0,[R5, #+168]
+        LDR.W    R2,??disp_language_init_19+0xC0
+        LDR.W    R0,??disp_language_init_19+0xC4
+        STR      R2,[R5, #+96]
+        STR      R0,[R5, #+172]
+        ADR.N    R2,??disp_language_init_21  ;; "MIN"
+        LDR.N    R0,??disp_language_init_11
+        STR      R2,[R5, #+100]
+        STR      R0,[R5, #+176]
+        ADR.N    R2,??disp_language_init_21+0x4  ;; "MAX"
+        LDR.W    R0,??disp_language_init_19+0xC8
+        STR      R2,[R5, #+104]
+        STR      R0,[R5, #+188]
+        LDR.W    R2,??disp_language_init_19+0xCC
+        LDR.W    R0,??disp_language_init_19+0xD0
+        STR      R2,[R5, #+108]
+        STR      R0,[R5, #+192]
+        LDR.W    R2,??disp_language_init_19+0xD4
+        LDR.W    R0,??disp_language_init_19+0xD8
+        STR      R2,[R5, #+112]
+        STR      R0,[R5, #+196]
+        LDR.W    R2,??disp_language_init_19+0xDC
+//  834         machine_menu.BLtouchEnable=BLTOUCH_LEVELING_ENABLE_T_CN;
+        LDR.W    R0,??disp_language_init_19+0xE0
+        STR      R2,[R5, #+116]
+        STR      R0,[R5, #+204]
+        LDR.W    R2,??disp_language_init_19+0xE4
+//  835         machine_menu.ProbePort=PROBE_PORT_T_CN;
+        LDR.W    R0,??disp_language_init_19+0xE8
+        STR      R2,[R5, #+120]
+        STR      R0,[R5, #+208]
+        LDR.W    R2,??disp_language_init_19+0xEC
+//  836         machine_menu.ProbeXoffset=PROBE_X_OFFSET_T_CN;
+        LDR.W    R0,??disp_language_init_19+0xF0
+        STR      R2,[R5, #+124]
+        STR      R0,[R5, #+212]
+        LDR.W    R2,??disp_language_init_19+0xF4
+//  837         machine_menu.ProbeYoffset=PROBE_Y_OFFSET_T_CN;
+        LDR.N    R0,??disp_language_init_12
+        STR      R2,[R5, #+128]
+        STR      R0,[R5, #+216]
+        LDR.W    R2,??disp_language_init_19+0xF8
+//  838         machine_menu.ProbeZoffset=PROBE_Z_OFFSET_T_CN;
+        LDR.N    R0,??disp_language_init_12+0x4
+        STR      R2,[R5, #+132]
+        STR      R0,[R5, #+220]
+        LDR.W    R2,??disp_language_init_19+0xFC
+//  839         machine_menu.ProbeXYspeed=PROBE_XY_SPEED_T_CN;
+        LDR.W    R0,??disp_language_init_19+0x100
+        STR      R2,[R5, #+136]
+        STR      R0,[R5, #+224]
+        LDR.W    R2,??disp_language_init_19+0x104
+//  840         machine_menu.ProbeZspeed=PROBE_Z_SPEED_T_CN;
+        LDR.W    R0,??disp_language_init_19+0x108
+        STR      R2,[R5, #+140]
+        STR      R0,[R5, #+228]
+//  841         machine_menu.enable = ENABLE_T_CN;
+        ADR.N    R0,??disp_language_init_22  ;; "ÊòØ"
+        LDR.W    R2,??disp_language_init_19+0x10C
+        STR      R2,[R5, #+144]
+        STR      R0,[R5, #+232]
+//  842         machine_menu.disable = DISABLE_T_CN;
+        ADR.N    R0,??disp_language_init_22+0x4  ;; "Âê¶"
+        LDR.W    R2,??disp_language_init_19+0x110
+        STR      R2,[R5, #+148]
+        STR      R0,[R5, #+236]
+//  843         machine_menu.z_min = Z_MIN_T_CN;
+        LDR.W    R0,??disp_language_init_19+0x114
+//  844         machine_menu.z_max = Z_MAX_T_CN;
+//  845 
+//  846         machine_menu.LevelingSubDeltaConfTitle=DELTA_LEVEL_CONF_TITLE_T_CN;
+//  847         machine_menu.MachineRadius=DELTA_MACHINE_RADIUS_T_CN;
+//  848         machine_menu.DiagonalRod=DELTA_DIAGONAL_ROD_T_CN;
+//  849         machine_menu.PrintableRadius=DELTA_PRINT_RADIUS_T_CN;
+//  850         machine_menu.DeltaHeight=DELTA_HEIGHT_T_CN;
+//  851         machine_menu.SmoothRodOffset=SMOOTH_ROD_OFFSET_T_CN;
+//  852         machine_menu.EffectorOffset=EFFECTOR_OFFSET_T_CN;
+//  853         machine_menu.CalibrationRadius=CALIBRATION_RADIUS_T_CN;
+//  854 
+//  855         machine_menu.LevelingSubXYZConfTitle=XYZ_LEVEL_CONF_TITLE_T_CN;
+//  856         //machine_menu.ProbeMaxLeft=PROBE_REACH_MAX_LEFT_T_CN;
+//  857         //machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_T_CN;
+//  858         //machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_T_CN;
+//  859         //machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_T_CN;
+//  860 
+//  861         machine_menu.TemperatureConfTitle=TEMPERATURE_CONF_TITLE_T_CN;
+//  862         machine_menu.NozzleConf=NOZZLE_CONF_T_CN;
+//  863         machine_menu.HotBedConf=HOTBED_CONF_T_CN;
+//  864         machine_menu.PreheatTemperConf=PREHEAT_TEMPER_T_CN;
+//  865 
+//  866         machine_menu.NozzleConfTitle=NOZZLE_CONF_TITLE_T_CN;
+//  867         machine_menu.NozzleCnt=NOZZLECNT_T_CN;
+//  868         machine_menu.NozzleType=NOZZLE_TYPE_T_CN;
+//  869         machine_menu.NozzleAdjustType=NOZZLE_ADJUST_TYPE_T_CN;
+//  870         machine_menu.NozzleMinTemperature=NOZZLE_MIN_TEMPERATURE_T_CN;
+        LDR.W    R1,??disp_language_init_19+0x118
+//  871         machine_menu.NozzleMaxTemperature=NOZZLE_MAX_TEMPERATURE_T_CN;
+        LDR.W    R2,??disp_language_init_19+0x11C
+//  872         machine_menu.Extrude_Min_Temper=EXTRUD_MIN_TEMPER_T_CN;
+        LDR.W    R3,??disp_language_init_19+0x120
+        STR      R0,[R5, #+240]
+        STR      R3,[R5, #+324]
+        STR      R1,[R5, #+316]
+        STR      R2,[R5, #+320]
+//  873 
+//  874 	 machine_menu.HotbedEnable=HOTBED_ENABLE_T_CN;
+//  875         machine_menu.HotbedConfTitle=HOTBED_CONF_TITLE_T_CN;
+//  876         machine_menu.HotbedAjustType=HOTBED_ADJUST_T_CN;
+//  877         machine_menu.HotbedMinTemperature=HOTBED_MIN_TEMPERATURE_T_CN;
+        STR      R1,[R5, #+340]
+//  878         machine_menu.HotbedMaxTemperature=HOTBED_MAX_TEMPERATURE_T_CN;
+        STR      R2,[R5, #+344]
+        LDR.W    R0,??disp_language_init_23
+        LDR.W    R3,??disp_language_init_23+0x4
+        STR      R0,[R5, #+244]
+        STR      R3,[R5, #+328]
+        LDR.W    R0,??disp_language_init_23+0x8
+        LDR.W    R3,??disp_language_init_23+0xC
+        STR      R0,[R5, #+248]
+        STR      R3,[R5, #+332]
+        LDR.W    R0,??disp_language_init_23+0x10
+        STR      R0,[R5, #+252]
+        LDR.W    R0,??disp_language_init_23+0x14
+        STR      R0,[R5, #+256]
+        LDR.W    R0,??disp_language_init_23+0x18
+        STR      R0,[R5, #+260]
+        LDR.W    R0,??disp_language_init_23+0x1C
+        STR      R0,[R5, #+264]
+        LDR.W    R0,??disp_language_init_23+0x20
+        STR      R0,[R5, #+268]
+        LDR.W    R0,??disp_language_init_23+0x24
+        STR      R0,[R5, #+272]
+        LDR.W    R0,??disp_language_init_23+0x28
+        STR      R0,[R5, #+276]
+        LDR.W    R0,??disp_language_init_23+0x2C
+        STR      R0,[R5, #+280]
+        LDR.W    R0,??disp_language_init_23+0x30
+        STR      R0,[R5, #+284]
+        LDR.W    R0,??disp_language_init_23+0x34
+        STR      R0,[R5, #+288]
+        LDR.W    R0,??disp_language_init_23+0x38
+        STR      R0,[R5, #+292]
+        LDR.W    R0,??disp_language_init_23+0x3C
+        STR      R0,[R5, #+296]
+        LDR.W    R0,??disp_language_init_23+0x40
+        STR      R0,[R5, #+304]
+        LDR.W    R0,??disp_language_init_23+0x44
+        STR      R0,[R5, #+300]
+        LDR.W    R0,??disp_language_init_23+0x48
+        STR      R0,[R5, #+308]
+        LDR.W    R0,??disp_language_init_23+0x4C
+        STR      R0,[R5, #+312]
+        STR      R0,[R5, #+336]
+//  879 
+//  880         machine_menu.MotorConfTitle=MOTOR_CONF_TITLE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x50
+        STR      R0,[R5, #+348]
+//  881         machine_menu.MaxFeedRateConf=MAXFEEDRATE_CONF_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x54
+        STR      R0,[R5, #+352]
+//  882         machine_menu.AccelerationConf=ACCELERATION_CONF_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x58
+        STR      R0,[R5, #+356]
+//  883         machine_menu.JerkConf=JERKCONF_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x5C
+        STR      R0,[R5, #+360]
+//  884         machine_menu.StepsConf=STEPSCONF_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x60
+        STR      R0,[R5, #+364]
+//  885         machine_menu.MotorDirConf=MOTORDIRCONF_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x64
+        STR      R0,[R5, #+368]
+//  886         machine_menu.HomeFeedRateConf=HOMEFEEDRATECONF_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x68
+        STR      R0,[R5, #+372]
+//  887 
+//  888         machine_menu.MaxFeedRateConfTitle=MAXFEEDRATE_CONF_TITLE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x6C
+        STR      R0,[R5, #+376]
+//  889         machine_menu.XMaxFeedRate=X_MAXFEEDRATE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x70
+        STR      R0,[R5, #+380]
+//  890         machine_menu.YMaxFeedRate=Y_MAXFEEDRATE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x74
+        STR      R0,[R5, #+384]
+//  891         machine_menu.ZMaxFeedRate=Z_MAXFEEDRATE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x78
+        STR      R0,[R5, #+388]
+//  892         machine_menu.E0MaxFeedRate=E0_MAXFEEDRATE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x7C
+        STR      R0,[R5, #+392]
+//  893         machine_menu.E1MaxFeedRate=E1_MAXFEEDRATE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x80
+        STR      R0,[R5, #+396]
+//  894 
+//  895         machine_menu.AccelerationConfTitle=ACCELERATION_CONF_TITLE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x84
+        STR      R0,[R5, #+400]
+//  896         machine_menu.PrintAcceleration=PRINT_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x88
+        B.N      ??disp_language_init_24
+        DATA
+??disp_language_init_9:
+        DC32     set_menu
+        THUMB
+??disp_language_init_24:
+        STR      R0,[R5, #+404]
+//  897         machine_menu.RetractAcceleration=RETRACT_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x8C
+        STR      R0,[R5, #+408]
+//  898         machine_menu.TravelAcceleration=TRAVEL_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x90
+        STR      R0,[R5, #+412]
+//  899         machine_menu.X_Acceleration=X_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x94
+        STR      R0,[R5, #+416]
+//  900         machine_menu.Y_Acceleration=Y_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x98
+        STR      R0,[R5, #+420]
+//  901         machine_menu.Z_Acceleration=Z_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0x9C
+        STR      R0,[R5, #+424]
+//  902         machine_menu.E0_Acceleration=E0_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xA0
+        STR      R0,[R5, #+428]
+//  903         machine_menu.E1_Acceleration=E1_ACCELERATION_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xA4
+        STR      R0,[R5, #+432]
+//  904 
+//  905         machine_menu.JerkConfTitle=JERK_CONF_TITLE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xA8
+        STR      R0,[R5, #+436]
+//  906         machine_menu.X_Jerk=X_JERK_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xAC
+        STR      R0,[R5, #+440]
+//  907         machine_menu.Y_Jerk=Y_JERK_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xB0
+        STR      R0,[R5, #+444]
+//  908         machine_menu.Z_Jerk=Z_JERK_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xB4
+        STR      R0,[R5, #+448]
+//  909         machine_menu.E_Jerk=E_JERK_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xB8
+        STR      R0,[R5, #+452]
+//  910 
+//  911         machine_menu.StepsConfTitle=STEPS_CONF_TITLE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xBC
+        STR      R0,[R5, #+456]
+//  912         machine_menu.X_Steps=X_STEPS_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xC0
+        STR      R0,[R5, #+460]
+//  913         machine_menu.Y_Steps=Y_STEPS_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xC4
+        STR      R0,[R5, #+464]
+//  914         machine_menu.Z_Steps=Z_STEPS_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xC8
+        STR      R0,[R5, #+468]
+//  915         machine_menu.E0_Steps=E0_STEPS_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xCC
+        STR      R0,[R5, #+472]
+//  916         machine_menu.E1_Steps=E1_STEPS_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xD0
+        STR      R0,[R5, #+476]
+//  917 
+//  918         machine_menu.MotorDirConfTitle=MOTORDIR_CONF_TITLE_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xD4
+        STR      R0,[R5, #+480]
+//  919         machine_menu.X_MotorDir=X_MOTORDIR_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xD8
+        STR      R0,[R5, #+484]
+//  920         machine_menu.Y_MotorDir=Y_MOTORDIR_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xDC
+        STR      R0,[R5, #+488]
+//  921         machine_menu.Z_MotorDir=Z_MOTORDIR_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xE0
+        STR      R0,[R5, #+492]
+//  922         machine_menu.E0_MotorDir=E0_MOTORDIR_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xE4
+        STR      R0,[R5, #+496]
+//  923         machine_menu.E1_MotorDir=E1_MOTORDIR_T_CN;
+        LDR.W    R0,??disp_language_init_23+0xE8
+//  924         machine_menu.Invert_0=INVERT_P_T_CN;
+//  925         machine_menu.Invert_1=INVERT_N_T_CN;
+//  926 
+//  927         machine_menu.HomeFeedRateConfTitle=HOMEFEEDRATE_CONF_TITLE_T_CN;
+//  928         machine_menu.XY_HomeFeedRate=X_HOMESPEED_T_CN;
+//  929         //machine_menu.Y_HomeFeedRate=Y_HOMESPEED_T_CN;
+//  930         machine_menu.Z_HomeFeedRate=Z_HOMESPEED_T_CN;
+//  931 
+//  932         machine_menu.AdvancedConfTitle=ADVANCED_CONF_TITLE_T_CN;
+//  933         machine_menu.PwrOffDection=PWROFF_DECTION_T_CN;
+//  934         machine_menu.PwrOffAfterPrint=PWROFF_AFTER_PRINT_T_CN;
+//  935         machine_menu.HaveUps=HAVE_UPS_T_CN;
+//  936         machine_menu.Z2andZ2Endstop=Z2_AND_Z2ENDSTOP_CONF_T_CN;
+//  937         machine_menu.EnablePinsInvert=ENABLE_PINS_CONF_T_CN;
+//  938 
+//  939         machine_menu.Z2ConfTitle=Z2_AND_Z2ENDSTOP_CONF_TITLE_T_CN;
+//  940         machine_menu.Z2Enable=Z2_ENABLE_T_CN;
+//  941         machine_menu.Z2EndstopEnable=Z2_ENDSTOP_T_CN;
+//  942         machine_menu.Z2Port=Z2_PORT_T_CN;
+//  943 
+//  944         machine_menu.EnablePinsInvertTitle=ENABLE_PINS_CONF_TITLE_T_CN;
+//  945         machine_menu.XInvert=X_ENABLE_PINS_INVERT_T_CN;
+//  946         machine_menu.YInvert=Y_ENABLE_PINS_INVERT_T_CN;
+//  947         machine_menu.ZInvert=Z_ENABLE_PINS_INVERT_T_CN;
+//  948         machine_menu.EInvert=E_ENABLE_PINS_INVERT_T_CN;
+//  949 
+//  950         machine_menu.key_back = KEY_BACK_T_CN;
+//  951         machine_menu.key_rest = KEY_REST_T_CN;
+//  952         machine_menu.key_confirm = KEY_CONFIRM_T_CN;
+//  953 		machine_menu.high_level = MOTOR_EN_HIGH_LEVEL_T_CN;
+//  954 		machine_menu.low_level = MOTOR_EN_LOW_LEVEL_T_CN;
+//  955         //
+//  956 
+//  957             
+//  958 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_T_CN;
+//  959 			common_menu.text_back=BACK_TEXT_T_CN;
+//  960 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_T_CN;
+//  961 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_T_CN;
+//  962 			common_menu.print_special_title = PRINTING_GBK;
+//  963 			common_menu.pause_special_title = PRINTING_PAUSE_GBK;
+//  964 			common_menu.operate_special_title = PRINTING_OPERATION_GBK;			
+//  965 			//÷˜“≥√Ê
+//  966 			main_menu.title=TITLE_READYPRINT_T_CN;
+//  967 			main_menu.preheat=PREHEAT_TEXT_T_CN;
+        LDR.W    R9,??disp_language_init_23+0xEC
+//  968 			main_menu.move=MOVE_TEXT_T_CN;
+//  969 			main_menu.home=HOME_TEXT_T_CN;
+        LDR.W    R2,??disp_language_init_23+0xF0
+//  970 			main_menu.print=PRINT_TEXT_T_CN;
+//  971 			main_menu.extrude=EXTRUDE_TEXT_T_CN;
+        LDR.W    R3,??disp_language_init_23+0xF4
+//  972 			main_menu.leveling=LEVELING_TEXT_T_CN;
+        LDR.W    R10,??disp_language_init_23+0xF8
+//  973 			main_menu.autoleveling=AUTO_LEVELING_TEXT_T_CN;
+//  974 			main_menu.fan = FAN_TEXT_T_CN;
+//  975 			main_menu.set=SET_TEXT_T_CN;
+        LDR.W    R12,??disp_language_init_23+0xFC
+//  976 			main_menu.more=MORE_TEXT_T_CN;
+        LDR.W    R1,??disp_language_init_23+0x100
+        B.N      ??disp_language_init_25
+        Nop      
+        DATA
+??disp_language_init_11:
+        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231\\351\\200\\2`
+        THUMB
+??disp_language_init_25:
+        STR      R0,[R5, #+500]
+        STR      R9,[R4, #+404]
+        STR      R2,[R4, #+412]
+        STR      R3,[R4, #+420]
+        STR      R10,[R4, #+424]
+        STR      LR,[R4, #+428]
+        STR      R12,[R4, #+436]
+        STR      R1,[R4, #+444]
+//  977 			main_menu.tool = TOOL_TEXT_T_CN;
+//  978 			//TOOL
+//  979 			tool_menu.title = TOOL_TEXT_T_CN;
+//  980 			tool_menu.preheat = TOOL_PREHEAT_T_CN;
+        STR      R9,[R4, #+680]
+//  981 			tool_menu.extrude = TOOL_EXTRUDE_T_CN;
+        STR      R3,[R4, #+684]
+//  982 			tool_menu.move = TOOL_MOVE_T_CN;
+//  983 			tool_menu.home= TOOL_HOME_T_CN;
+        STR      R2,[R4, #+692]
+//  984 			tool_menu.leveling = TOOL_LEVELING_T_CN;
+        STR      R10,[R4, #+696]
+//  985             tool_menu.autoleveling = TOOL_AUTO_LEVELING_T_CN;
+        STR      LR,[R4, #+700]
+//  986 			tool_menu.filament = TOOL_FILAMENT_T_CN;
+//  987 			tool_menu.more = TOOL_MORE_T_CN;			
+        STR      R1,[R4, #+708]
+//  988 			//‘§»»
+//  989 			preheat_menu.adjust_title = TITLE_ADJUST_T_CN;
+//  990 			preheat_menu.title=TITLE_PREHEAT_T_CN;
+        STR      R9,[R4, #+348]
+//  991 			preheat_menu.add=ADD_TEXT_T_CN;
+//  992 			preheat_menu.dec=DEC_TEXT_T_CN;
+//  993 			preheat_menu.ext1=EXTRUDER_1_TEXT_T_CN;
+//  994 			preheat_menu.ext2=EXTRUDER_2_TEXT_T_CN;
+//  995 			preheat_menu.hotbed=HEATBED_TEXT_T_CN;
+//  996 			preheat_menu.off=CLOSE_TEXT_T_CN;
+//  997         	preheat_menu.value_state= TEXT_VALUE_T_CN;
+//  998         	preheat_menu.step_1c= TEXT_1C_T_CN;
+        STR      R6,[R4, #+376]
+//  999         	preheat_menu.step_5c= TEXT_5C_T_CN;
+        STR      R11,[R4, #+380]
+// 1000         	preheat_menu.step_10c= TEXT_10C_T_CN;             
+        STR      R8,[R4, #+384]
+// 1001 			//“∆∂Ø
+// 1002 			move_menu.title = MOVE_TEXT_T_CN;
+// 1003 			more_menu.zoffset = ZOFFSET_T_CN;
+// 1004 			//πÈ¡„
+// 1005 			home_menu.title=TITLE_HOME_T_CN;
+        STR      R2,[R4, #+844]
+        LDR.W    R0,??disp_language_init_23+0x104
+        LDR.W    LR,??disp_language_init_23+0x108
+        LDR.W    R9,??disp_language_init_23+0x10C
+        LDR.W    R6,??disp_language_init_23+0x110
+// 1006 			home_menu.stopmove = HOME_STOPMOVE_T_CN;
+        LDR.W    R2,??disp_language_init_23+0x114
+        B.N      ??disp_language_init_26
+        Nop      
+        DATA
+??disp_language_init_12:
+        DC32     `?<Constant "\\346\\216\\242\\351\\222\\210Y\\346\\226\\`
+        DC32     `?<Constant "\\346\\216\\242\\351\\222\\210Z\\346\\226\\`
+        THUMB
+??disp_language_init_26:
+        STR      R0,[R5, #+508]
+        STR      R9,[R4, #+356]
+        STR      LR,[R4, #+704]
+        STR      R6,[R4, #+452]
+        STR      R2,[R4, #+864]
+        LDR.W    R0,??disp_language_init_23+0x118
+        LDR.W    R9,??disp_language_init_23+0x11C
+        LDR.W    R6,??disp_language_init_18+0x8
+// 1007 			//Œƒº˛ƒø¬º
+// 1008 			file_menu.title=TITLE_CHOOSEFILE_T_CN;
+        LDR.W    R2,??disp_language_init_23+0x120
+        STR      R0,[R5, #+504]
+        STR      R9,[R4, #+360]
+        STR      R6,[R4, #+1016]
+        STR      R2,[R4, #+788]
+        LDR.W    R0,??disp_language_init_23+0x124
+        LDR.W    R9,??disp_language_init_23+0x128
+        STR      R0,[R5, #+512]
+        STR      R9,[R4, #+364]
+        LDR.W    R0,??disp_language_init_23+0x12C
+        LDR.W    R9,??disp_language_init_23+0x130
+        STR      R0,[R5, #+516]
+        STR      R9,[R4, #+368]
+        LDR.W    R0,??disp_language_init_23+0x134
+        LDR.W    R9,??disp_language_init_23+0x138
+        STR      R0,[R5, #+524]
+        STR      R9,[R4, #+372]
+        LDR.W    R0,??disp_language_init_23+0x13C
+        LDR.W    R9,??disp_language_init_23+0x140
+        STR      R0,[R5, #+528]
+        STR      R9,[R4, #+392]
+        LDR.W    R0,??disp_language_init_23+0x144
+        B.N      ??disp_language_init_27
+        Nop      
+        DATA
+??disp_language_init_21:
+        DC8      "MIN"
+        DC8      "MAX"
+        THUMB
+??disp_language_init_27:
+        STR      R0,[R5, #+532]
+        LDR.W    R0,??disp_language_init_23+0x148
+        STR      R0,[R5, #+536]
+        LDR.W    R0,??disp_language_init_23+0x14C
+        STR      R0,[R5, #+540]
+        LDR.W    R0,??disp_language_init_23+0x150
+        STR      R0,[R5, #+544]
+        LDR.W    R0,??disp_language_init_23+0x154
+        STR      R0,[R5, #+548]
+        LDR.W    R0,??disp_language_init_23+0x158
+        STR      R0,[R5, #+552]
+        LDR.W    R0,??disp_language_init_23+0x15C
+        STR      R0,[R5, #+556]
+        LDR.W    R0,??disp_language_init_23+0x160
+        STR      R0,[R5, #+560]
+        LDR.W    R0,??disp_language_init_23+0x164
+        STR      R0,[R5, #+564]
+        LDR.W    R0,??disp_language_init_23+0x168
+        STR      R0,[R5, #+568]
+        LDR.W    R0,??disp_language_init_23+0x16C
+        STR      R0,[R5, #+572]
+        LDR.W    R0,??disp_language_init_23+0x170
+        STR      R0,[R5, #+576]
+        LDR.W    R0,??disp_language_init_23+0x174
+        STR      R0,[R5, #+580]
+        LDR.W    R0,??disp_language_init_23+0x178
+        STR      R0,[R5, #+584]
+        LDR.W    R0,??disp_language_init_23+0x17C
+        STR      R0,[R5, #+632]
+        LDR.W    R0,??disp_language_init_23+0x180
+        STR      R0,[R5, #+636]
+        LDR.W    R0,??disp_language_init_23+0x184
+        STR      R0,[R5, #+640]
+        ADR.N    R0,??disp_language_init_18  ;; "È´ò"
+        B.N      ??disp_language_init_28
+        DATA
+??disp_language_init_22:
+        DC8      "ÊòØ"
+        DC8      "Âê¶"
+        THUMB
+??disp_language_init_28:
+        STR      R0,[R5, #+652]
+        ADR.N    R0,??disp_language_init_18+0x4  ;; "‰Ωé"
+        STR      R0,[R5, #+648]
+        LDR.W    R5,??disp_language_init_23+0x188
+        LDR.W    R0,??disp_language_init_23+0x18C
+        STR      R0,[R4, #+756]
+        STR      R5,[R4, #+432]
+        LDR.W    R0,??disp_language_init_23+0x190
+        STR      R0,[R4, #+752]
+        LDR.W    R0,??disp_language_init_23+0x194
+        STR      R0,[R4, #+760]
+        LDR.W    R0,??disp_language_init_23+0x198
+        STR      R0,[R4, #+764]
+        LDR.W    R0,??disp_language_init_23+0x19C
+        STR      R0,[R4, #+768]
+        LDR.W    R0,??disp_language_init_23+0x1A0
+        STR      R0,[R4, #+772]
+        LDR.W    R0,??disp_language_init_23+0x1A4
+        STR      R0,[R4, #+776]
+        LDR.W    R0,??disp_language_init_23+0x1A8
+        STR      R0,[R4, #+400]
+        LDR.W    R0,??disp_language_init_23+0x110
+        STR      R0,[R4, #+408]
+        LDR.W    R0,??disp_language_init_23+0x1AC
+        STR      R0,[R4, #+416]
+        LDR.W    R0,??disp_language_init_23+0x1B0
+        STR      R0,[R4, #+440]
+        STR      R0,[R4, #+676]
+        LDR.W    R0,??disp_language_init_23+0x110
+        STR      R0,[R4, #+688]
+        LDR.W    R0,??disp_language_init_23+0x1B4
+        STR      R0,[R4, #+344]
+        LDR.W    R0,??disp_language_init_23+0x1B8
+        STR      R0,[R4, #+352]
+// 1009 			file_menu.page_up=PAGE_UP_TEXT_T_CN;
+// 1010 			file_menu.page_down=PAGE_DOWN_TEXT_T_CN;
+// 1011 			file_menu.file_loading = FILE_LOADING_T_CN;
+// 1012 			file_menu.no_file = NO_FILE_T_CN;
+// 1013 			file_menu.no_file_and_check = NO_FILE_T_CN;//NO_FILE_AND_CHECK_T_CN;
+// 1014 			//º∑≥ˆ
+// 1015 			extrude_menu.title=TITLE_EXTRUDE_T_CN;
+        STR      R3,[R4, #+92]
+// 1016 			extrude_menu.in=EXTRUDER_IN_TEXT_T_CN;
+// 1017 			extrude_menu.out=EXTRUDER_OUT_TEXT_T_CN;
+// 1018 			extrude_menu.ext1=EXTRUDER_1_TEXT_T_CN;
+// 1019 			extrude_menu.ext2=EXTRUDER_2_TEXT_T_CN;
+// 1020 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_T_CN;
+// 1021 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_T_CN;
+// 1022 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_T_CN;
+// 1023 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_T_CN;
+// 1024             extrude_menu.temp_value = EXTRUDE_TEXT_VALUE_T_T_CN;
+// 1025 			//µ˜∆Ω
+// 1026 			leveling_menu.title=TITLE_LEVELING_CN;
+// 1027 			leveling_menu.position1=LEVELING_POINT1_TEXT_T_CN;
+// 1028 			leveling_menu.position2=LEVELING_POINT2_TEXT_T_CN;
+// 1029 			leveling_menu.position3=LEVELING_POINT3_TEXT_T_CN;
+// 1030 			leveling_menu.position4=LEVELING_POINT4_TEXT_T_CN;
+// 1031 			leveling_menu.position5=LEVELING_POINT5_TEXT_T_CN;
+// 1032 			//…Ë÷√
+// 1033 			set_menu.title=TITLE_SET_T_CN;
+        STR      R12,[R7, #+0]
+        LDR.W    R11,??disp_language_init_23+0x1BC
+        LDR.N    R2,??disp_language_init_19+0x68
+        LDR.W    R6,??disp_language_init_23+0x11C
+// 1034 			set_menu.filesys=FILESYS_TEXT_T_CN;
+        LDR.W    R9,??disp_language_init_23+0x1C0
+// 1035 			set_menu.wifi=WIFI_TEXT_T_CN;
+// 1036 			set_menu.about=ABOUT_TEXT_T_CN;
+        LDR.W    R12,??disp_language_init_23+0x1C4
+// 1037 			set_menu.fan=FAN_TEXT_T_CN;
+// 1038 			set_menu.filament=FILAMENT_TEXT_T_CN;
+// 1039 			set_menu.breakpoint=BREAK_POINT_TEXT_T_CN;
+        LDR.W    R8,??disp_language_init_23+0x1C8
+// 1040 			set_menu.motoroff=MOTOR_OFF_TEXT_T_CN;
+// 1041 			set_menu.language=LANGUAGE_TEXT_T_CN;
+// 1042             set_menu.machine_para = MACHINE_PARA_T_CN;
+        LDR.W    R10,??disp_language_init_19+0x38
+        STR      R11,[R4, #+152]
+        STR      R2,[R4, #+792]
+        STR      R6,[R4, #+104]
+        STR      R9,[R7, #+4]
+        STR      R12,[R7, #+12]
+        LDR.W    R11,??disp_language_init_23+0x1CC
+        LDR.N    R2,??disp_language_init_19+0x60
+        LDR.W    R6,??disp_language_init_23+0x128
+        STR      R11,[R4, #+872]
+        STR      R2,[R4, #+796]
+        STR      R6,[R4, #+108]
+        LDR.W    R11,??disp_language_init_23+0x1D0
+        LDR.W    R2,??disp_language_init_23+0x1D4
+        LDR.W    R6,??disp_language_init_23+0x1D8
+        STR      R11,[R4, #+876]
+        STR      R2,[R4, #+804]
+        STR      R6,[R4, #+124]
+        LDR.W    R11,??disp_language_init_23+0x1DC
+        LDR.W    R2,??disp_language_init_23+0x1E0
+        LDR.W    R6,??disp_language_init_23+0x1E4
+        STR      R11,[R4, #+880]
+        STR      R2,[R4, #+808]
+        STR      R2,[R4, #+812]
+        STR      R6,[R4, #+128]
+        LDR.W    R11,??disp_language_init_23+0x1E8
+        LDR.W    R2,??disp_language_init_23+0x1EC
+        LDR.W    R6,??disp_language_init_23+0x1F0
+        STR      R11,[R4, #+884]
+        STR      R2,[R4, #+96]
+        STR      R6,[R4, #+132]
+        LDR.W    R11,??disp_language_init_23+0x1F4
+        LDR.W    R2,??disp_language_init_23+0x1F8
+        LDR.W    R6,??disp_language_init_23+0x1FC
+        STR      R11,[R4, #+888]
+        STR      R2,[R4, #+100]
+        STR      R6,[R4, #+156]
+        LDR.W    R11,??disp_language_init_23+0x200
+        STR      R11,[R4, #+892]
+        LDR.W    R11,??disp_language_init_29
+        STR      R11,[R7, #+8]
+        STR      R5,[R7, #+16]
+        STR      R8,[R7, #+24]
+        STR      LR,[R7, #+20]
+        STR      R10,[R7, #+40]
+// 1043 			//Œƒº˛œµÕ≥
+// 1044 			filesys_menu.title = TITLE_FILESYS_T_CN;
+        STR      R9,[R4, #+992]
+// 1045 			filesys_menu.sd_sys = SD_CARD_TEXT_T_CN;
+// 1046 			filesys_menu.usb_sys = U_DISK_TEXT_T_CN;
+// 1047 			//∏¸∂‡
+// 1048 			more_menu.title = TITLE_MORE_T_CN;
+        STR      R1,[R4, #+1012]
+// 1049 			//WIFI
+// 1050 			wifi_menu.title=WIFI_TEXT;
+        STR      R11,[R4, #+504]
+// 1051 			//wifi_menu.key = WIFI_KEY_TEXT_CN;
+// 1052 			//wifi_menu.ip = WIFI_IP_TEXT_CN;
+// 1053 			//wifi_menu.state= WIFI_STA_TEXT_CN;
+// 1054 			wifi_menu.cloud= CLOUD_TEXT_T_CN;
+// 1055 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_T_CN;
+// 1056 			//CLOUD
+// 1057 			cloud_menu.title = TITLE_CLOUD_TEXT_T_CN;
+// 1058 			cloud_menu.bind = CLOUD_BINDED_T_CN;
+// 1059 			cloud_menu.binded = CLOUD_BINDED_T_CN;
+// 1060 			cloud_menu.unbind = CLOUD_UNBIND_T_CN;
+// 1061 			cloud_menu.unbinding = CLOUD_UNBINDED_T_CN;
+// 1062 			cloud_menu.disconnected = CLOUD_DISCONNECTED_T_CN;
+// 1063 			cloud_menu.disable = CLOUD_DISABLE_T_CN;
+// 1064 			//πÿ”⁄
+// 1065 			about_menu.title = ABOUT_TEXT_T_CN;
+        STR      R12,[R4, #+900]
+// 1066 			about_menu.type = ABOUT_TYPE_TEXT_T_CN;
+// 1067 			about_menu.version = ABOUT_VERSION_TEXT_T_CN;
+// 1068 			about_menu.wifi = ABOUT_WIFI_TEXT_T_CN;
+// 1069 
+// 1070 			//∑Á…»
+// 1071 			fan_menu.title = FAN_TEXT_T_CN;
+        STR      R5,[R4, #+716]
+// 1072 			fan_menu.add = FAN_ADD_TEXT_T_CN;
+        STR      R0,[R4, #+720]
+// 1073 			fan_menu.dec = FAN_DEC_TEXT_T_CN;
+// 1074 			fan_menu.state = FAN_TIPS1_TEXT_T_CN;
+        STR      R5,[R4, #+744]
+// 1075 			//ªª¡œ
+// 1076 			filament_menu.title = TITLE_FILAMENT_T_CN;
+        STR      LR,[R4, #+0]
+        LDR.W    R8,??disp_language_init_23+0x204
+        LDR.W    R9,??disp_language_init_23+0x208
+        STR      R8,[R7, #+28]
+        STR      R9,[R4, #+548]
+        LDR.W    R8,??disp_language_init_30+0x4
+        STR      R8,[R7, #+36]
+        LDR.W    R7,??disp_language_init_30+0x8
+        STR      R7,[R4, #+1000]
+        LDR.W    R7,??disp_language_init_30+0xC
+        STR      R7,[R4, #+1004]
+        LDR.W    R7,??disp_language_init_30+0x10
+        STR      R7,[R4, #+528]
+        STR      R7,[R4, #+596]
+        LDR.W    R7,??disp_language_init_30+0x14
+        STR      R7,[R4, #+612]
+        STR      R7,[R4, #+620]
+        LDR.W    R7,??disp_language_init_30+0x18
+        STR      R7,[R4, #+600]
+        LDR.W    R7,??disp_language_init_30+0x1C
+        STR      R7,[R4, #+604]
+        LDR.W    R7,??disp_language_init_30+0x20
+        STR      R7,[R4, #+628]
+        LDR.W    R7,??disp_language_init_30+0x24
+        STR      R7,[R4, #+624]
+        LDR.W    R7,??disp_language_init_30+0x28
+        STR      R7,[R4, #+912]
+        LDR.W    R7,??disp_language_init_30+0x2C
+        STR      R7,[R4, #+916]
+        LDR.W    R7,??disp_language_init_30+0x30
+        STR      R7,[R4, #+920]
+        LDR.W    R7,??disp_language_init_23+0x10C
+        STR      R7,[R4, #+724]
+// 1077 			filament_menu.in = FILAMENT_IN_TEXT_T_CN;
+        LDR.W    R7,??disp_language_init_23+0x1EC
+        STR      R7,[R4, #+4]
+// 1078 			filament_menu.out = FILAMENT_OUT_TEXT_T_CN;
+        STR      R2,[R4, #+8]
+// 1079 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_T_CN;
+// 1080 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_T_CN;
+// 1081 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_T_CN;
+// 1082 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_T_CN;
+// 1083 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_T_CN;
+// 1084 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_T_CN;
+// 1085 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_T_CN;
+// 1086 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_T_CN;
+// 1087 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_T_CN;
+// 1088 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_T_CN;
+// 1089 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_T_CN;
+// 1090 
+// 1091 
+// 1092 			//”Ô—‘
+// 1093 			language_menu.title = TITLE_LANGUAGE_T_CN;
+        STR      R8,[R4, #+224]
+        LDR.W    R2,??disp_language_init_23+0x11C
+// 1094 			language_menu.next = PAGE_DOWN_TEXT_T_CN;
+// 1095 			language_menu.up = PAGE_UP_TEXT_T_CN;
+// 1096 			
+// 1097 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 1098 			printing_menu.title = TITLE_PRINTING_T_CN;
+// 1099 			printing_menu.option = PRINTING_OPERATION_T_CN;
+        LDR.W    R7,??disp_language_init_30+0x34
+        STR      R2,[R4, #+12]
+        STR      R7,[R4, #+644]
+        LDR.W    R2,??disp_language_init_23+0x128
+        STR      R2,[R4, #+16]
+        LDR.W    R2,??disp_language_init_30+0x38
+        STR      R2,[R4, #+28]
+        LDR.W    R2,??disp_language_init_30+0x3C
+        STR      R2,[R4, #+52]
+        LDR.W    R2,??disp_language_init_30+0x40
+        STR      R2,[R4, #+60]
+        LDR.W    R2,??disp_language_init_30+0x44
+        STR      R2,[R4, #+68]
+        LDR.W    R2,??disp_language_init_30+0x48
+        STR      R2,[R4, #+76]
+        LDR.W    R2,??disp_language_init_30+0x4C
+        STR      R2,[R4, #+56]
+        LDR.W    R2,??disp_language_init_30+0x50
+        STR      R2,[R4, #+64]
+        LDR.W    R2,??disp_language_init_30+0x54
+        STR      R2,[R4, #+72]
+        LDR.W    R2,??disp_language_init_30+0x58
+        STR      R2,[R4, #+80]
+        LDR.N    R2,??disp_language_init_19+0x60
+        STR      R2,[R4, #+276]
+        LDR.N    R2,??disp_language_init_19+0x68
+        STR      R2,[R4, #+280]
+        LDR.W    R2,??disp_language_init_30+0x5C
+        STR      R2,[R4, #+640]
+// 1100 			printing_menu.stop = PRINTING_STOP_T_CN;
+        LDR.W    R2,??disp_language_init_30+0x60
+// 1101 			printing_menu.pause = PRINTING_PAUSE_T_CN;
+// 1102 			printing_menu.resume = PRINTING_RESUME_T_CN;
+// 1103 
+// 1104 			//≤Ÿ◊˜ΩÁ√Ê
+// 1105 			operation_menu.title = TITLE_OPERATION_T_CN;
+// 1106 			operation_menu.pause = PRINTING_PAUSE_T_CN;
+// 1107 			operation_menu.stop = PRINTING_STOP_T_CN;
+// 1108 			operation_menu.temp = PRINTING_TEMP_T_CN;
+// 1109 			operation_menu.fan = FAN_TEXT_T_CN;
+// 1110 			operation_menu.extr = PRINTING_EXTRUDER_T_CN;
+// 1111 			operation_menu.speed = PRINTING_CHANGESPEED_T_CN;			
+// 1112 			operation_menu.filament= FILAMENT_TEXT_T_CN;
+// 1113 			operation_menu.more = PRINTING_MORE_T_CN;
+        STR      R1,[R4, #+324]
+// 1114 			operation_menu.move = PRINTING_MOVE_T_CN;
+// 1115 			operation_menu.auto_off = AUTO_SHUTDOWN_T_CN;
+// 1116 			operation_menu.manual_off = MANUAL_SHUTDOWN_T_CN;			
+// 1117 			//‘›Õ£ΩÁ√Ê
+// 1118 			pause_menu.title= TITLE_PAUSE_T_CN;
+// 1119 			pause_menu.resume = PRINTING_RESUME_T_CN;
+// 1120 			pause_menu.stop = PRINTING_STOP_T_CN;
+// 1121 			pause_menu.extrude = PRINTING_EXTRUDER_T_CN;
+// 1122 			pause_menu.move = PRINTING_MOVE_T_CN;
+// 1123 			pause_menu.filament= FILAMENT_TEXT_T_CN;
+// 1124 			pause_menu.more = PRINTING_MORE_T_CN;
+        STR      R1,[R4, #+840]
+// 1125 
+// 1126 			//±‰ÀŸΩÁ√Ê
+// 1127 			speed_menu.title = PRINTING_CHANGESPEED_T_CN;
+// 1128 			speed_menu.add = ADD_TEXT_T_CN;
+// 1129 			speed_menu.dec = DEC_TEXT_T_CN;
+// 1130 			speed_menu.move = MOVE_SPEED_T_CN;
+// 1131 			speed_menu.extrude = EXTRUDER_SPEED_T_CN;
+// 1132 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_T_CN;
+// 1133 			speed_menu.move_speed = MOVE_SPEED_STATE_T_CN;
+// 1134 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 1135 			printing_more_menu.title = TITLE_MORE_T_CN;
+        STR      R1,[R4, #+936]
+        STR      R2,[R4, #+672]
+        STR      R7,[R4, #+288]
+        STR      R2,[R4, #+296]
+        STR      R6,[R4, #+300]
+        STR      R5,[R4, #+304]
+        STR      R3,[R4, #+312]
+        STR      LR,[R4, #+308]
+        STR      R2,[R4, #+824]
+        STR      R3,[R4, #+828]
+        STR      LR,[R4, #+836]
+        STR      R0,[R4, #+556]
+        STR      R3,[R4, #+564]
+// 1136 			printing_more_menu.fan = FAN_TEXT_T_CN;
+        STR      R5,[R4, #+940]
+// 1137 			printing_more_menu.auto_close = AUTO_SHUTDOWN_T_CN;
+// 1138 			printing_more_menu.manual = MANUAL_SHUTDOWN_T_CN;
+// 1139 			printing_more_menu.speed = PRINTING_CHANGESPEED_T_CN;
+// 1140 			printing_more_menu.temp = PRINTING_TEMP_T_CN;
+        STR      R6,[R4, #+952]
+// 1141 
+// 1142 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_CN;
+// 1143 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_T_CN;
+// 1144 			print_file_dialog_menu.cancle = DIALOG_CANCLE_T_CN;
+// 1145 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_T_CN;
+// 1146 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_T_CN;
+// 1147 			print_file_dialog_menu.retry = DIALOG_RETRY_T_CN;
+// 1148 			print_file_dialog_menu.stop = DIALOG_STOP_T_CN;
+        STR      R2,[R4, #+184]
+        LDR.W    R1,??disp_language_init_23+0x184
+        LDR.W    R12,??disp_language_init_30+0x64
+        LDR.W    R8,??disp_language_init_30+0x68
+        LDR.W    R7,??disp_language_init_30+0x6C
+        LDR.W    R9,??disp_language_init_23+0x110
+        LDR.W    R10,??disp_language_init_30+0x70
+        LDR.W    R3,??disp_language_init_30+0x74
+// 1149 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_T_CN;		
+// 1150 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_T_CN;
+// 1151 
+// 1152 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_T_CN;
+// 1153             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_T_CN;
+// 1154 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_T_CN;
+// 1155 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_T_CN;
+// 1156 			print_file_dialog_menu.reprint=DIALOG_REPRINT_T_CN;
+        LDR.W    R2,??disp_language_init_30+0x78
+        STR      R1,[R4, #+164]
+        STR      R12,[R4, #+664]
+        STR      R8,[R4, #+668]
+        STR      R12,[R4, #+292]
+        STR      R7,[R4, #+316]
+        STR      R9,[R4, #+320]
+        STR      R10,[R4, #+332]
+        STR      R12,[R4, #+816]
+        STR      R8,[R4, #+820]
+        STR      R7,[R4, #+552]
+        STR      R3,[R4, #+592]
+        STR      R10,[R4, #+948]
+        STR      R7,[R4, #+956]
+        STR      R2,[R4, #+216]
+        LDR.N    R1,??disp_language_init_19
+        LDR.W    R9,??disp_language_init_30+0x7C
+        LDR.W    R12,??disp_language_init_23+0x110
+        LDR.W    R3,??disp_language_init_30+0x80
+// 1157 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_T_CN;
+        LDR.W    R2,??disp_language_init_30+0x84
+        STR      R1,[R4, #+168]
+        STR      R12,[R4, #+832]
+        STR      R9,[R4, #+328]
+        STR      R3,[R4, #+588]
+        STR      R9,[R4, #+944]
+        STR      R2,[R4, #+220]
+        LDR.N    R1,??disp_language_init_19+0x14
+        LDR.W    R12,??disp_language_init_23+0x10C
+// 1158 			//ZOFFSET
+// 1159 			zoffset_menu.title = TITLE_ZOFFSET_T_CN;
+// 1160 			zoffset_menu.inc = ZOFFSET_INC_T_CN;
+// 1161 			zoffset_menu.dec = ZOFFSET_DEC_T_CN;			
+        LDR.W    R2,??disp_language_init_23+0x10C
+        STR      R1,[R4, #+172]
+        STR      R12,[R4, #+560]
+        LDR.N    R1,??disp_language_init_19+0x18
+        LDR.W    R12,??disp_language_init_23+0x110
+        STR      R1,[R4, #+176]
+        STR      R12,[R4, #+568]
+        LDR.W    R1,??disp_language_init_30+0x88
+        STR      R1,[R4, #+180]
+        LDR.W    R1,??disp_language_init_30+0x8C
+        STR      R1,[R4, #+188]
+        LDR.W    R1,??disp_language_init_30+0x90
+        STR      R1,[R4, #+192]
+        LDR.W    R1,??disp_language_init_30+0x94
+        STR      R1,[R4, #+200]
+        LDR.W    R1,??disp_language_init_30+0x98
+        STR      R1,[R4, #+204]
+        LDR.N    R1,??disp_language_init_19+0x30
+        B.N      ??disp_language_init_31
+        DATA
+??disp_language_init_18:
+        DC8      "È´ò"
+        DC8      "‰Ωé"
+        DC32     `?<Constant "Z Offset">`
+        THUMB
+??disp_language_init_31:
+        STR      R1,[R4, #+208]
+        LDR.W    R1,??disp_language_init_30+0x9C
+// 1162 			break;
+        B.W      ??disp_language_init_20
+        DATA
+??disp_language_init_19:
         DC32     `?<Constant "\\345\\217\\226\\346\\266\\210">`
+        DC32     `?<Constant "\\345\\217\\230\\351\\200\\237">`
+        DC32     `?<Constant "\\350\\207\\252\\345\\212\\250\\345\\205\\2`
+        DC32     `?<Constant "\\347\\247\\273\\345\\212\\250\\351\\200\\2`
+        DC32     `?<Constant "wifi\\346\\250\\241\\345\\235\\227\\346\\2`
         DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\346\\250\\2`
         DC32     `?<Constant "\\345\\201\\234\\346\\255\\242\\346\\211\\2`
         DC32     `?<Constant "\\351\\207\\215\\350\\257\\225">`
@@ -2036,515 +4357,1551 @@ _Z18disp_language_initv:
         DC32     `?<Constant "\\350\\257\\267\\345\\205\\210\\350\\243\\2`
         DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\345\\256\\2`
         DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\346\\227\\2`
-        DC32     `?<Constant "\\345\\206\\215\\346\\211\\223\\345\\215\\2`
-        DC32     `?<Constant "\\347\\242\\272\\350\\252\\215">`
-        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\351\\227\\2`
-        DC32     `?<Constant "\\350\\247\\243\\351\\231\\244\\347\\266\\2`
-        DC32     `?<Constant "\\346\\272\\226\\345\\202\\231\\346\\211\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2`
+        DC32     `?<Constant "\\350\\252\\277\\345\\271\\263\\350\\250\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_2`
+        DC32     `?<Constant "\\350\\207\\252\\345\\213\\225\\350\\252\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\350\\250\\2`
+        DC32     `?<Constant "\\346\\272\\253\\345\\272\\246\\350\\250\\2`
+        DC32     `?<Constant "\\351\\233\\273\\346\\251\\237\\350\\250\\2`
+        DC32     `?<Constant "\\351\\253\\230\\347\\264\\232\\350\\250\\2`
+        DC32     `?<Constant "\\351\\273\\230\\350\\252\\215\\345\\200\\2`
+        DC32     `?<Constant "XYZ\\346\\251\\237\\345\\236\\213">`
+        DC32     `?<Constant "\\344\\270\\213\\344\\270\\200\\351\\240\\2`
+        DC32     `?<Constant "Delta\\346\\251\\237\\345\\236\\213">`
+        DC32     `?<Constant "\\344\\270\\212\\344\\270\\200\\351\\240\\2`
+        DC32     `?<Constant "Corexy\\346\\251\\237\\345\\236\\213">`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_1`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_3`
+        DC32     `?<Constant "\\346\\251\\237\\345\\236\\213\\351\\201\\2`
+        DC32     `?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\244\\`
+        DC32     `?<Constant "\\350\\241\\214\\347\\250\\213\\350\\250\\2`
+        DC32     `?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\244\\`
+        DC32     `?<Constant "\\346\\255\\270\\351\\233\\266\\346\\226\\2`
+        DC32     `?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\244\\`
+        DC32     `?<Constant "\\351\\231\\220\\344\\275\\215\\351\\226\\2`
+        DC32     `?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\260\\`
+        DC32     `?<Constant "\\346\\217\\233\\346\\226\\231\\350\\250\\2`
+        DC32     `?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\260\\`
+        DC32     `?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\260\\`
+        DC32     `?<Constant "\\351\\200\\262\\346\\226\\231\\346\\272\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_4`
+        DC32     `?<Constant "\\351\\200\\262\\346\\226\\231\\351\\225\\2`
+        DC32     `?<Constant "X\\350\\273\\270\\346\\255\\270\\351\\233\\`
+        DC32     `?<Constant "\\351\\200\\262\\346\\226\\231\\351\\200\\2`
+        DC32     `?<Constant "Y\\350\\273\\270\\346\\255\\270\\351\\233\\`
+        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231\\346\\272\\2`
+        DC32     `?<Constant "Z\\350\\273\\270\\346\\255\\270\\351\\233\\`
+        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231\\351\\225\\2_1`
+        DC32     `?<Constant "delta\\346\\251\\237\\345\\236\\213\\350\\`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_5`
+        DC32     `?<Constant "\\346\\211\\213\\345\\213\\225\\350\\252\\2`
+        DC32     `?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\260\\_1`
+        DC32     `?<Constant "\\350\\252\\277\\345\\271\\263\\345\\217\\2`
+        DC32     `?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\260\\_1`
+        DC32     `?<Constant "\\345\\225\\237\\345\\213\\225BLtouch">`
+        DC32     `?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\260\\_1`
+        DC32     `?<Constant "\\350\\252\\277\\345\\271\\263\\346\\216\\2`
+        DC32     `?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\244\\_1`
+        DC32     `?<Constant "\\346\\216\\242\\351\\207\\235X\\346\\226\\`
+        DC32     `?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\244\\_1`
+        DC32     `?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\244\\_1`
+        DC32     `?<Constant "\\346\\226\\267\\346\\226\\231\\351\\226\\2`
+        DC32     `?<Constant "\\346\\216\\242\\351\\222\\210XY\\346\\226_1`
+        DC32     `?<Constant "\\350\\252\\277\\345\\271\\263\\351\\226\\2`
+        DC32     `?<Constant "\\346\\216\\242\\351\\222\\210Z\\346\\226\\_2`
+        DC32     `?<Constant "\\345\\270\\270\\351\\226\\213">`
+        DC32     `?<Constant "\\345\\270\\270\\351\\226\\211">`
+        DC32     `?<Constant "ZMin">`
+        DC32     `?<Constant "\\346\\234\\200\\344\\275\\216\\346\\272\\2`
+        DC32     `?<Constant "\\346\\234\\200\\351\\253\\230\\346\\272\\2`
+        DC32     `?<Constant "\\346\\234\\200\\344\\275\\216\\346\\223\\2`
+        THUMB
+// 1163 		case LANG_ENGLISH:
+// 1164             //ª˙∆˜≤Œ ˝
+// 1165                     MachinePara_menu.title = MACHINE_PARA_TITLE_EN;
+// 1166                     MachinePara_menu.MachineSetting = MACHINE_TYPE_CNOFIG_EN;
+// 1167                     MachinePara_menu.TemperatureSetting=TEMPERATURE_CONFIG_EN;
+// 1168                     MachinePara_menu.MotorSetting=MOTOR_CONFIG_EN;
+// 1169                     MachinePara_menu.AdvanceSetting=ADVANCE_CONFIG_EN;
+// 1170             
+// 1171                     machine_menu.default_value = DEFAULT_EN;
+// 1172                     machine_menu.next=NEXT_EN;
+// 1173                     machine_menu.previous=PREVIOUS_EN;
+// 1174             
+// 1175                     machine_menu.MachineConfigTitle = MACHINE_CONFIG_TITLE_EN;
+// 1176                     machine_menu.MachineType=MACHINE_TYPE_EN;
+// 1177                     machine_menu.Stroke=MACHINE_STROKE_EN;
+// 1178                     machine_menu.HomeDir=MACHINE_HOMEDIR_EN;
+// 1179                     machine_menu.EndStopType=MACHINE_ENDSTOP_TYPE_EN;
+// 1180                     machine_menu.FilamentConf=MACHINE_FILAMENT_CONFIG_EN;
+// 1181                     machine_menu.LevelingConf=MACHINE_LEVELING_CONFIG_EN;
+// 1182             
+// 1183                     machine_menu.MachineTypeConfTitle = MACHINE_TYPE_CONFIG_TITLE_EN;
+// 1184                     machine_menu.xyz=MACHINE_TYPE_XYZ_EN;
+// 1185                     machine_menu.delta=MACHINE_TYPE_DELTA_EN;
+// 1186                     machine_menu.corexy=MACHINE_TYPE_COREXY_EN;
+// 1187             
+// 1188                     machine_menu.StrokeConfTitle=MACHINE_STROKE_CONF_TITLE_EN;
+// 1189                     machine_menu.xStroke=X_MAX_LENGTH_EN;
+// 1190                     machine_menu.yStroke=Y_MAX_LENGTH_EN;
+// 1191                     machine_menu.zStroke=Z_MAX_LENGTH_EN;
+// 1192 
+// 1193 			machine_menu.xmin=X_MIN_LENGTH_EN;
+// 1194 		       machine_menu.ymin=Y_MIN_LENGTH_EN;
+// 1195 		       machine_menu.zmin=Z_MIN_LENGTH_EN;		
+// 1196             
+// 1197                     machine_menu.HomeDirConfTitle=HOME_DIR_CONF_TITLE_EN;
+// 1198                     machine_menu.xHomeDir=HOME_DIR_X_EN;
+// 1199                     machine_menu.yHomeDir=HOME_DIR_Y_EN;
+// 1200                     machine_menu.zHomeDir=HOME_DIR_Z_EN;
+// 1201                     machine_menu.min=HOME_MIN_EN;
+// 1202                     machine_menu.max=HOME_MAX_EN;
+// 1203             
+// 1204                     machine_menu.EndstopConfTitle=ENDSTOP_CONF_TITLE_EN;
+// 1205                     machine_menu.xEndstop_min=MIN_ENDSTOP_X_EN;
+// 1206                     machine_menu.yEndstop_min=MIN_ENDSTOP_Y_EN;
+// 1207                     machine_menu.zEndstop_min=MIN_ENDSTOP_Z_EN;
+// 1208                     machine_menu.xEndstop_max=MAX_ENDSTOP_X_EN;
+// 1209                     machine_menu.yEndstop_max=MAX_ENDSTOP_Y_EN;
+// 1210                     machine_menu.zEndstop_max=MAX_ENDSTOP_Z_EN;            
+// 1211                     machine_menu.FilamentEndstop=ENDSTOP_FIL_EN;
+// 1212                     machine_menu.LevelingEndstop=ENDSTOP_LEVEL_EN;
+// 1213                     machine_menu.opened=ENDSTOP_OPENED_EN;
+// 1214                     machine_menu.closed=ENDSTOP_CLOSED_EN;
+// 1215             
+// 1216                     machine_menu.FilamentConfTitle=FILAMENT_CONF_TITLE_EN;
+// 1217                     machine_menu.InTemperature=FILAMENT_IN_TEMPERATURE_EN;
+// 1218                     machine_menu.InLength=FILAMENT_IN_LENGTH_EN;
+// 1219                     machine_menu.InSpeed=FILAMENT_IN_SPEED_EN;
+// 1220                     machine_menu.OutTemperature=FILAMENT_OUT_TEMPERATURE_EN;
+// 1221                     machine_menu.OutLength=FILAMENT_OUT_LENGTH_EN;
+// 1222                     machine_menu.OutSpeed=FILAMENT_OUT_SPEED_EN;
+// 1223                                 
+// 1224                     machine_menu.LevelingParaConfTitle=LEVELING_CONF_TITLE_EN;
+// 1225                     machine_menu.LevelingParaConf=LEVELING_PARA_CONF_EN;
+// 1226                     machine_menu.DeltaLevelConf=LEVELING_DELTA_EN;
+// 1227                     machine_menu.XYZLevelconf=LEVELING_XYZ_EN;
+// 1228             
+// 1229                     machine_menu.LevelingSubConfTitle=LEVELING_PARA_CONF_TITLE_EN;
+// 1230                     machine_menu.AutoLevelEnable=AUTO_LEVELING_ENABLE_EN;
+// 1231                     machine_menu.BLtouchEnable=BLTOUCH_LEVELING_ENABLE_EN;
+// 1232                     machine_menu.ProbePort=PROBE_PORT_EN;
+// 1233                     machine_menu.ProbeXoffset=PROBE_X_OFFSET_EN;
+// 1234                     machine_menu.ProbeYoffset=PROBE_Y_OFFSET_EN;
+// 1235                     machine_menu.ProbeZoffset=PROBE_Z_OFFSET_EN;
+// 1236                     machine_menu.ProbeXYspeed=PROBE_XY_SPEED_EN;
+// 1237                     machine_menu.ProbeZspeed=PROBE_Z_SPEED_EN;
+// 1238                     machine_menu.enable = ENABLE_EN;
+// 1239                     machine_menu.disable = DISABLE_EN;
+// 1240                     machine_menu.z_min = Z_MIN_EN;
+// 1241                     machine_menu.z_max = Z_MAX_EN;
+// 1242             
+// 1243                     machine_menu.LevelingSubDeltaConfTitle=DELTA_LEVEL_CONF_TITLE_EN;
+// 1244                     machine_menu.MachineRadius=DELTA_MACHINE_RADIUS_EN;
+// 1245                     machine_menu.DiagonalRod=DELTA_DIAGONAL_ROD_EN;
+// 1246                     machine_menu.PrintableRadius=DELTA_PRINT_RADIUS_EN;
+// 1247                     machine_menu.DeltaHeight=DELTA_HEIGHT_EN;
+// 1248                     machine_menu.SmoothRodOffset=SMOOTH_ROD_OFFSET_EN;
+// 1249                     machine_menu.EffectorOffset=EFFECTOR_OFFSET_EN;
+// 1250                     machine_menu.CalibrationRadius=CALIBRATION_RADIUS_EN;
+// 1251             
+// 1252                     machine_menu.LevelingSubXYZConfTitle=XYZ_LEVEL_CONF_TITLE_EN;
+// 1253                     //machine_menu.ProbeMaxLeft=PROBE_REACH_MAX_LEFT_EN;
+// 1254                     //machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_EN;
+// 1255                     //machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_EN;
+// 1256                     //machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_EN;
+// 1257             
+// 1258                     machine_menu.TemperatureConfTitle=TEMPERATURE_CONF_TITLE_EN;
+// 1259                     machine_menu.NozzleConf=NOZZLE_CONF_EN;
+// 1260                     machine_menu.HotBedConf=HOTBED_CONF_EN;
+// 1261                     machine_menu.PreheatTemperConf=PREHEAT_TEMPER_EN;
+// 1262             
+// 1263                     machine_menu.NozzleConfTitle=NOZZLE_CONF_TITLE_EN;
+// 1264                     machine_menu.NozzleCnt=NOZZLECNT_EN;
+// 1265                     machine_menu.NozzleType=NOZZLE_TYPE_EN;
+// 1266                     machine_menu.NozzleAdjustType=NOZZLE_ADJUST_TYPE_EN;
+// 1267                     machine_menu.NozzleMinTemperature=NOZZLE_MIN_TEMPERATURE_EN;
+// 1268                     machine_menu.NozzleMaxTemperature=NOZZLE_MAX_TEMPERATURE_EN;
+// 1269                     machine_menu.Extrude_Min_Temper=EXTRUD_MIN_TEMPER_EN;
+// 1270 
+// 1271 			machine_menu.HotbedEnable=HOTBED_ENABLE_EN;
+// 1272                     machine_menu.HotbedConfTitle=HOTBED_CONF_TITLE_EN;
+// 1273                     machine_menu.HotbedAjustType=HOTBED_ADJUST_EN;
+// 1274                     machine_menu.HotbedMinTemperature=HOTBED_MIN_TEMPERATURE_EN;
+// 1275                     machine_menu.HotbedMaxTemperature=HOTBED_MAX_TEMPERATURE_EN;
+// 1276             
+// 1277                     machine_menu.MotorConfTitle=MOTOR_CONF_TITLE_EN;
+// 1278                     machine_menu.MaxFeedRateConf=MAXFEEDRATE_CONF_EN;
+// 1279                     machine_menu.AccelerationConf=ACCELERATION_CONF_EN;
+// 1280                     machine_menu.JerkConf=JERKCONF_EN;
+// 1281                     machine_menu.StepsConf=STEPSCONF_EN;
+// 1282                     machine_menu.MotorDirConf=MOTORDIRCONF_EN;
+// 1283                     machine_menu.HomeFeedRateConf=HOMEFEEDRATECONF_EN;
+// 1284             
+// 1285                     machine_menu.MaxFeedRateConfTitle=MAXFEEDRATE_CONF_TITLE_EN;
+// 1286                     machine_menu.XMaxFeedRate=X_MAXFEEDRATE_EN;
+// 1287                     machine_menu.YMaxFeedRate=Y_MAXFEEDRATE_EN;
+// 1288                     machine_menu.ZMaxFeedRate=Z_MAXFEEDRATE_EN;
+// 1289                     machine_menu.E0MaxFeedRate=E0_MAXFEEDRATE_EN;
+// 1290                     machine_menu.E1MaxFeedRate=E1_MAXFEEDRATE_EN;
+// 1291             
+// 1292                     machine_menu.AccelerationConfTitle=ACCELERATION_CONF_TITLE_EN;
+// 1293                     machine_menu.PrintAcceleration=PRINT_ACCELERATION_EN;
+// 1294                     machine_menu.RetractAcceleration=RETRACT_ACCELERATION_EN;
+// 1295                     machine_menu.TravelAcceleration=TRAVEL_ACCELERATION_EN;
+// 1296                     machine_menu.X_Acceleration=X_ACCELERATION_EN;
+// 1297                     machine_menu.Y_Acceleration=Y_ACCELERATION_EN;
+// 1298                     machine_menu.Z_Acceleration=Z_ACCELERATION_EN;
+// 1299                     machine_menu.E0_Acceleration=E0_ACCELERATION_EN;
+// 1300                     machine_menu.E1_Acceleration=E1_ACCELERATION_EN;
+// 1301             
+// 1302                     machine_menu.JerkConfTitle=JERK_CONF_TITLE_EN;
+// 1303                     machine_menu.X_Jerk=X_JERK_EN;
+// 1304                     machine_menu.Y_Jerk=Y_JERK_EN;
+// 1305                     machine_menu.Z_Jerk=Z_JERK_EN;
+// 1306                     machine_menu.E_Jerk=E_JERK_EN;
+// 1307             
+// 1308                     machine_menu.StepsConfTitle=STEPS_CONF_TITLE_EN;
+// 1309                     machine_menu.X_Steps=X_STEPS_EN;
+// 1310                     machine_menu.Y_Steps=Y_STEPS_EN;
+// 1311                     machine_menu.Z_Steps=Z_STEPS_EN;
+// 1312                     machine_menu.E0_Steps=E0_STEPS_EN;
+// 1313                     machine_menu.E1_Steps=E1_STEPS_EN;
+// 1314             
+// 1315                     machine_menu.MotorDirConfTitle=MOTORDIR_CONF_TITLE_EN;
+// 1316                     machine_menu.X_MotorDir=X_MOTORDIR_EN;
+// 1317                     machine_menu.Y_MotorDir=Y_MOTORDIR_EN;
+// 1318                     machine_menu.Z_MotorDir=Z_MOTORDIR_EN;
+// 1319                     machine_menu.E0_MotorDir=E0_MOTORDIR_EN;
+// 1320                     machine_menu.E1_MotorDir=E1_MOTORDIR_EN;
+// 1321                     machine_menu.Invert_0=INVERT_P_EN;
+// 1322                     machine_menu.Invert_1=INVERT_N_EN;
+// 1323             
+// 1324                     machine_menu.HomeFeedRateConfTitle=HOMEFEEDRATE_CONF_TITLE_EN;
+// 1325                     machine_menu.XY_HomeFeedRate=X_HOMESPEED_EN;
+// 1326                     //machine_menu.Y_HomeFeedRate=Y_HOMESPEED_EN;
+// 1327                     machine_menu.Z_HomeFeedRate=Z_HOMESPEED_EN;
+// 1328             
+// 1329                     machine_menu.AdvancedConfTitle=ADVANCED_CONF_TITLE_EN;
+// 1330                     machine_menu.PwrOffDection=PWROFF_DECTION_EN;
+// 1331                     machine_menu.PwrOffAfterPrint=PWROFF_AFTER_PRINT_EN;
+// 1332                     machine_menu.HaveUps=HAVE_UPS_EN;
+// 1333                     machine_menu.Z2andZ2Endstop=Z2_AND_Z2ENDSTOP_CONF_EN;
+// 1334                     machine_menu.EnablePinsInvert=ENABLE_PINS_CONF_EN;
+// 1335             
+// 1336                     machine_menu.Z2ConfTitle=Z2_AND_Z2ENDSTOP_CONF_TITLE_EN;
+// 1337                     machine_menu.Z2Enable=Z2_ENABLE_EN;
+// 1338                     machine_menu.Z2EndstopEnable=Z2_ENDSTOP_EN;
+// 1339                     machine_menu.Z2Port=Z2_PORT_EN;
+// 1340             
+// 1341                     machine_menu.EnablePinsInvertTitle=ENABLE_PINS_CONF_TITLE_EN;
+// 1342                     machine_menu.XInvert=X_ENABLE_PINS_INVERT_EN;
+// 1343                     machine_menu.YInvert=Y_ENABLE_PINS_INVERT_EN;
+// 1344                     machine_menu.ZInvert=Z_ENABLE_PINS_INVERT_EN;
+// 1345                     machine_menu.EInvert=E_ENABLE_PINS_INVERT_EN;
+// 1346             
+// 1347                     machine_menu.key_back = KEY_BACK_EN;
+// 1348                     machine_menu.key_rest = KEY_REST_EN;
+// 1349                     machine_menu.key_confirm = KEY_CONFIRM_EN;
+// 1350 					machine_menu.high_level = MOTOR_EN_HIGH_LEVEL_EN;
+// 1351 					machine_menu.low_level = MOTOR_EN_LOW_LEVEL_EN;
+// 1352                     //
+// 1353 
+// 1354             
+// 1355 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_EN;
+// 1356 			common_menu.text_back=BACK_TEXT_EN;
+// 1357 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_EN;
+// 1358 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_EN;
+// 1359 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
+// 1360 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
+// 1361 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;			
+// 1362 			//÷˜“≥√Ê
+// 1363 			main_menu.title=TITLE_READYPRINT_EN;
+// 1364 			main_menu.preheat=PREHEAT_TEXT_EN;
+// 1365 			main_menu.move=MOVE_TEXT_EN;
+// 1366 			main_menu.home=HOME_TEXT_EN;
+// 1367 			main_menu.print=PRINT_TEXT_EN;
+// 1368 			main_menu.extrude=EXTRUDE_TEXT_EN;
+// 1369 			main_menu.leveling=LEVELING_TEXT_EN;
+// 1370 			main_menu.autoleveling=AUTO_LEVELING_TEXT_EN;
+// 1371 			main_menu.fan = FAN_TEXT_EN;
+// 1372 			main_menu.set=SET_TEXT_EN;
+// 1373 			main_menu.more=MORE_TEXT_EN;
+// 1374 			main_menu.tool = TOOL_TEXT_EN;
+// 1375 			//TOOL
+// 1376 			tool_menu.title = TOOL_TEXT_EN;
+// 1377 			tool_menu.preheat = TOOL_PREHEAT_EN;
+// 1378 			tool_menu.extrude = TOOL_EXTRUDE_EN;
+// 1379 			tool_menu.move = TOOL_MOVE_EN;
+// 1380 			tool_menu.home= TOOL_HOME_EN;
+// 1381 			tool_menu.leveling = TOOL_LEVELING_EN;
+// 1382             tool_menu.autoleveling = TOOL_AUTO_LEVELING_EN;
+// 1383 			tool_menu.filament = TOOL_FILAMENT_EN;
+// 1384 			tool_menu.more = TOOL_MORE_EN;			
+// 1385 			//‘§»»
+// 1386 			preheat_menu.adjust_title = TITLE_ADJUST_EN;
+// 1387 			preheat_menu.title=TITLE_PREHEAT_EN;
+// 1388 			preheat_menu.add=ADD_TEXT_EN;
+// 1389 			preheat_menu.dec=DEC_TEXT_EN;
+// 1390 			preheat_menu.ext1=EXTRUDER_1_TEXT_EN;
+// 1391 			preheat_menu.ext2=EXTRUDER_2_TEXT_EN;
+// 1392 			preheat_menu.hotbed=HEATBED_TEXT_EN;
+// 1393 			preheat_menu.off=CLOSE_TEXT_EN;
+// 1394 			//“∆∂Ø
+// 1395 			move_menu.title = TITLE_MOVE_EN;
+// 1396 			//πÈ¡„
+// 1397 			home_menu.title=TITLE_HOME_EN;
+// 1398 			home_menu.stopmove = HOME_STOPMOVE_EN;
+// 1399 			//Œƒº˛ƒø¬º
+// 1400 			file_menu.title=TITLE_CHOOSEFILE_EN;
+// 1401 			file_menu.page_up=PAGE_UP_TEXT_EN;
+// 1402 			file_menu.page_down=PAGE_DOWN_TEXT_EN;
+// 1403 			file_menu.file_loading = FILE_LOADING_EN;
+// 1404 			file_menu.no_file = NO_FILE_EN;
+// 1405 			file_menu.no_file_and_check = NO_FILE_EN;//NO_FILE_AND_CHECK_EN;			
+// 1406 			//º∑≥ˆ
+// 1407 			extrude_menu.title=TITLE_EXTRUDE_EN;
+// 1408 			extrude_menu.in=EXTRUDER_IN_TEXT_EN;
+// 1409 			extrude_menu.out=EXTRUDER_OUT_TEXT_EN;
+// 1410 			extrude_menu.ext1=EXTRUDER_1_TEXT_EN;
+// 1411 			extrude_menu.ext2=EXTRUDER_2_TEXT_EN;
+// 1412 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_EN;
+// 1413 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_EN;
+// 1414 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_EN;
+// 1415 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_EN;
+// 1416 			//µ˜∆Ω
+// 1417 			leveling_menu.title=TITLE_LEVELING_EN;
+// 1418 			leveling_menu.position1=LEVELING_POINT1_TEXT_EN;
+// 1419 			leveling_menu.position2=LEVELING_POINT2_TEXT_EN;
+// 1420 			leveling_menu.position3=LEVELING_POINT3_TEXT_EN;
+// 1421 			leveling_menu.position4=LEVELING_POINT4_TEXT_EN;
+// 1422 			leveling_menu.position5=LEVELING_POINT5_TEXT_EN;
+// 1423 			//…Ë÷√
+// 1424 			set_menu.title=TITLE_SET_EN;
+// 1425 			set_menu.filesys=FILESYS_TEXT_EN;
+// 1426 			set_menu.wifi=WIFI_TEXT_EN;
+// 1427 			set_menu.about=ABOUT_TEXT_EN;
+// 1428 			set_menu.fan=FAN_TEXT_EN;
+// 1429 			set_menu.filament=FILAMENT_TEXT_EN;
+// 1430 			set_menu.breakpoint=BREAK_POINT_TEXT_EN;
+// 1431 			set_menu.motoroff=MOTOR_OFF_TEXT_EN;
+// 1432 			set_menu.language=LANGUAGE_TEXT_EN;
+// 1433             set_menu.machine_para = MACHINE_PARA_EN;
+// 1434 			//∏¸∂‡
+// 1435 			more_menu.title = TITLE_MORE_EN;
+// 1436 			more_menu.zoffset = ZOFFSET_EN;
+// 1437 			//Œƒº˛œµÕ≥
+// 1438 			filesys_menu.title = TITLE_FILESYS_EN;
+// 1439 			filesys_menu.sd_sys = SD_CARD_TEXT_EN;
+// 1440 			filesys_menu.usb_sys = U_DISK_TEXT_EN;
+// 1441 			//WIFI
+// 1442 			wifi_menu.title=WIFI_TEXT;
+// 1443 			//wifi_menu.key = WIFI_KEY_TEXT_EN;
+// 1444 			//wifi_menu.ip = WIFI_IP_TEXT_EN;
+// 1445 			//wifi_menu.state= WIFI_STA_TEXT_EN;
+// 1446 			wifi_menu.cloud= CLOUD_TEXT_EN;
+// 1447 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_EN;
+// 1448 
+// 1449 			cloud_menu.title = TITLE_CLOUD_TEXT_EN;
+// 1450 			cloud_menu.bind = CLOUD_BINDED_EN;
+// 1451 			cloud_menu.binded = CLOUD_BINDED_EN;
+// 1452 			cloud_menu.unbind = CLOUD_UNBIND_EN;
+// 1453 			cloud_menu.unbinding = CLOUD_UNBINDED_EN;
+// 1454 			cloud_menu.disconnected = CLOUD_DISCONNECTED_EN;
+// 1455 			cloud_menu.disable = CLOUD_DISABLE_EN;
+// 1456 			//πÿ”⁄
+// 1457 			about_menu.title = TITLE_ABOUT_EN;
+// 1458 			about_menu.type = ABOUT_TYPE_TEXT_EN;
+// 1459 			about_menu.version = ABOUT_VERSION_TEXT_EN;
+// 1460 			about_menu.wifi = ABOUT_WIFI_TEXT_EN;			
+// 1461 			//∑Á…»
+// 1462 			fan_menu.title = TITLE_FAN_EN;
+// 1463 			fan_menu.add = FAN_ADD_TEXT_EN;
+// 1464 			fan_menu.dec = FAN_DEC_TEXT_EN;
+// 1465 			fan_menu.state = FAN_TIPS1_TEXT_EN;
+// 1466 			//ªª¡œ
+// 1467 			filament_menu.title = TITLE_FILAMENT_EN;
+// 1468 			filament_menu.in = FILAMENT_IN_TEXT_EN;
+// 1469 			filament_menu.out = FILAMENT_OUT_TEXT_EN;
+// 1470 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_EN;
+// 1471 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_EN;
+// 1472 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_EN;
+// 1473 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_EN;
+// 1474 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_EN;
+// 1475 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_EN;
+// 1476 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_EN;
+// 1477 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_EN;
+// 1478 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_EN;
+// 1479 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_EN;
+// 1480 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_EN;
+// 1481 
+// 1482 			//”Ô—‘
+// 1483 			language_menu.title = TITLE_LANGUAGE_EN;
+// 1484 			language_menu.next = PAGE_DOWN_TEXT_EN;
+// 1485 			language_menu.up = PAGE_UP_TEXT_EN;			
+// 1486 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 1487 			printing_menu.title = TITLE_PRINTING_EN;
+// 1488 			printing_menu.option = PRINTING_OPERATION_EN;
+// 1489 			printing_menu.stop = PRINTING_STOP_EN;
+// 1490 			printing_menu.pause = PRINTING_PAUSE_EN;
+// 1491 			printing_menu.resume = PRINTING_RESUME_EN;
+// 1492 
+// 1493 			//≤Ÿ◊˜ΩÁ√Ê
+// 1494 			operation_menu.title = TITLE_OPERATION_EN;
+// 1495 			operation_menu.pause = PRINTING_PAUSE_EN;
+// 1496 			operation_menu.stop = PRINTING_STOP_EN;
+// 1497 			operation_menu.temp = PRINTING_TEMP_EN;
+// 1498 			operation_menu.fan = FAN_TEXT_EN;
+// 1499 			operation_menu.extr = PRINTING_EXTRUDER_EN;
+// 1500 			operation_menu.speed = PRINTING_CHANGESPEED_EN;			
+// 1501 			operation_menu.filament= FILAMENT_TEXT_EN;
+// 1502 			operation_menu.more = PRINTING_MORE_EN;
+// 1503 			operation_menu.move = PRINTING_MOVE_EN;
+// 1504 			operation_menu.auto_off = AUTO_SHUTDOWN_EN;
+// 1505 			operation_menu.manual_off = MANUAL_SHUTDOWN_EN;			
+// 1506 			//‘›Õ£ΩÁ√Ê
+// 1507 			pause_menu.title= TITLE_PAUSE_EN;
+// 1508 			pause_menu.resume = PRINTING_RESUME_EN;
+// 1509 			pause_menu.stop = PRINTING_STOP_EN;
+// 1510 			pause_menu.extrude = PRINTING_EXTRUDER_EN;
+// 1511 			pause_menu.move = PRINTING_MOVE_EN;
+// 1512 			pause_menu.filament = FILAMENT_TEXT_EN;
+// 1513 			pause_menu.more = PRINTING_MORE_EN;
+// 1514 
+// 1515 			//±‰ÀŸΩÁ√Ê
+// 1516 			speed_menu.title = TITLE_CHANGESPEED_EN;
+// 1517 			speed_menu.add = ADD_TEXT_EN;
+// 1518 			speed_menu.dec = DEC_TEXT_EN;
+// 1519 			speed_menu.move = MOVE_SPEED_EN;
+// 1520 			speed_menu.extrude = EXTRUDER_SPEED_EN;
+// 1521 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_EN;
+// 1522 			speed_menu.move_speed = MOVE_SPEED_STATE_EN;
+// 1523 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 1524 			printing_more_menu.title = TITLE_MORE_EN;
+// 1525 			printing_more_menu.fan = FAN_TEXT_EN;
+// 1526 			printing_more_menu.auto_close = AUTO_SHUTDOWN_EN;
+// 1527 			printing_more_menu.manual = MANUAL_SHUTDOWN_EN;
+// 1528 			printing_more_menu.speed = PRINTING_CHANGESPEED_EN;
+// 1529 			printing_more_menu.temp = PRINTING_TEMP_EN;
+// 1530 
+// 1531 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_EN;
+// 1532 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_EN;
+// 1533 			print_file_dialog_menu.cancle = DIALOG_CANCLE_EN;
+// 1534 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_EN;
+// 1535 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_EN;
+// 1536 			print_file_dialog_menu.retry = DIALOG_RETRY_EN;
+// 1537 			print_file_dialog_menu.stop = DIALOG_STOP_EN;
+// 1538 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_EN;	
+// 1539 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_EN;
+// 1540 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_EN;
+// 1541             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_EN;
+// 1542 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_EN;
+// 1543 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_EN;
+// 1544 			print_file_dialog_menu.reprint=DIALOG_REPRINT_EN;
+// 1545 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_EN;
+// 1546 			//ZOFFSET
+// 1547 			zoffset_menu.title = TITLE_ZOFFSET_EN;
+// 1548 			zoffset_menu.inc = ZOFFSET_INC_EN;
+// 1549 			zoffset_menu.dec = ZOFFSET_DEC_EN;				
+// 1550 			break;
+// 1551 		case LANG_RUSSIAN:
+// 1552 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_RU;
+??disp_language_init_5:
+        LDR.W    R0,??disp_language_init_30+0xA0
+// 1553 			common_menu.text_back=BACK_TEXT_RU;
+// 1554 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_RU;
+// 1555 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_RU;
+// 1556 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
+// 1557 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
+// 1558 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;			
+// 1559 			//÷˜“≥√Ê
+// 1560 			main_menu.title=TITLE_READYPRINT_RU;
+// 1561 			main_menu.preheat=PREHEAT_TEXT_RU;
+// 1562 			main_menu.move=MOVE_TEXT_RU;
+// 1563 			main_menu.home=HOME_TEXT_RU;
+        LDR.W    R3,??disp_language_init_30+0xA4
+// 1564 			main_menu.print=PRINT_TEXT_RU;
+        LDR.W    R1,??disp_language_init_30+0xA8
+// 1565 			main_menu.extrude=EXTRUDE_TEXT_RU;
+        LDR.W    R7,??disp_language_init_30+0xAC
+// 1566 			main_menu.leveling=LEVELING_TEXT_RU;
+        LDR.W    R10,??disp_language_init_30+0xB0
+// 1567 			main_menu.autoleveling=AUTO_LEVELING_TEXT_RU;
+        LDR.W    R5,??disp_language_init_30+0xB4
+// 1568 			main_menu.fan = FAN_TEXT_RU;
+// 1569 			main_menu.set=SET_TEXT_RU;
+        LDR.W    R9,??disp_language_init_30+0xB8
+// 1570 			main_menu.more=MORE_TEXT_RU;
+        LDR.W    R2,??disp_language_init_30+0xBC
+// 1571 			main_menu.tool = TOOL_TEXT_RU;
+        LDR.W    R6,??disp_language_init_30+0xC0
+// 1572 			//TOOL
+// 1573 			tool_menu.title = TOOL_TEXT_RU;
+// 1574 			tool_menu.preheat = TOOL_PREHEAT_RU;
+// 1575 			tool_menu.extrude = TOOL_EXTRUDE_RU;
+// 1576 			tool_menu.move = TOOL_MOVE_RU;
+// 1577 			tool_menu.home= TOOL_HOME_RU;
+// 1578 			tool_menu.leveling = TOOL_LEVELING_RU;
+// 1579             tool_menu.autoleveling = TOOL_AUTO_LEVELING_RU;
+// 1580 			tool_menu.filament = TOOL_FILAMENT_RU;
+// 1581 			tool_menu.more = TOOL_MORE_RU;			
+// 1582 			//‘§»»
+// 1583 			preheat_menu.adjust_title = TITLE_ADJUST_RU;
+// 1584 			preheat_menu.title=TITLE_PREHEAT_RU;
+// 1585 			preheat_menu.add=ADD_TEXT_RU;
+// 1586 			preheat_menu.dec=DEC_TEXT_RU;
+// 1587 			preheat_menu.ext1=EXTRUDER_1_TEXT_RU;
+// 1588 			preheat_menu.ext2=EXTRUDER_2_TEXT_RU;
+// 1589 			preheat_menu.hotbed=HEATBED_TEXT_RU;
+        LDR.W    R11,??disp_language_init_30+0xC4
+// 1590 			preheat_menu.off=CLOSE_TEXT_RU;
+// 1591 			//“∆∂Ø
+// 1592 			move_menu.title = MOVE_TEXT_RU;
+// 1593 			//πÈ¡„
+// 1594 			home_menu.title=TITLE_HOME_RU;
+// 1595 			home_menu.stopmove = HOME_STOPMOVE_RU;
+// 1596 			//Œƒº˛ƒø¬º
+// 1597 			file_menu.title=TITLE_CHOOSEFILE_RU;
+// 1598 			file_menu.page_up=PAGE_UP_TEXT_RU;
+// 1599 			file_menu.page_down=PAGE_DOWN_TEXT_RU;
+        LDR.W    R12,??disp_language_init_30+0xC8
+// 1600 			file_menu.file_loading = FILE_LOADING_RU;
+        LDR.W    R8,??disp_language_init_30+0xCC
+// 1601 			file_menu.no_file = NO_FILE_RU;
+// 1602 			file_menu.no_file_and_check = NO_FILE_RU;//NO_FILE_AND_CHECK_RU;			
+// 1603 			//º∑≥ˆ
+// 1604 			extrude_menu.title=TITLE_EXTRUDE_RU;
+// 1605 			extrude_menu.in=EXTRUDER_IN_TEXT_RU;
+        LDR.W    LR,??disp_language_init_30+0xD0
+        STR      R0,[R4, #+756]
+        STR      R11,[R4, #+368]
+        STR      R3,[R4, #+412]
+        STR      R1,[R4, #+416]
+        STR      R7,[R4, #+420]
+        STR      R10,[R4, #+424]
+        STR      R5,[R4, #+428]
+        STR      R9,[R4, #+436]
+        STR      R2,[R4, #+444]
+        STR      R6,[R4, #+440]
+        STR      R6,[R4, #+676]
+        STR      R7,[R4, #+684]
+        STR      R3,[R4, #+692]
+        STR      R10,[R4, #+696]
+        STR      R5,[R4, #+700]
+        STR      R2,[R4, #+708]
+        STR      R12,[R4, #+796]
+        STR      R8,[R4, #+804]
+        LDR.W    R0,??disp_language_init_30+0xD4
+        LDR.W    R1,??disp_language_init_30+0xD8
+        LDR.W    R6,??disp_language_init_30+0xDC
+        LDR.W    R3,??disp_language_init_30+0xE0
+        LDR.W    R5,??disp_language_init_30+0xE4
+        LDR.W    R11,??disp_language_init_30+0xE8
+        LDR.W    R8,??disp_language_init_30+0xEC
+        STR      R0,[R4, #+752]
+        STR      R11,[R4, #+372]
+        STR      R1,[R4, #+432]
+        STR      R6,[R4, #+680]
+        STR      R3,[R4, #+704]
+        STR      R5,[R4, #+344]
+        STR      R8,[R4, #+808]
+        STR      R8,[R4, #+812]
+        LDR.W    R0,??disp_language_init_30+0xF0
+        LDR.W    R5,??disp_language_init_30+0xF4
+        LDR.W    R6,??disp_language_init_30+0xF8
+        LDR.W    R11,??disp_language_init_30+0xFC
+// 1606 			extrude_menu.out=EXTRUDER_OUT_TEXT_RU;
+        LDR.W    R8,??disp_language_init_30+0x100
+        STR      R0,[R4, #+760]
+        STR      R11,[R4, #+844]
+        STR      R5,[R4, #+352]
+        STR      R6,[R4, #+364]
+        LDR.W    R0,??disp_language_init_30+0x104
+        LDR.W    R5,??disp_language_init_30+0x108
+        LDR.W    R11,??disp_language_init_30+0x10C
+        STR      R0,[R4, #+764]
+        STR      R11,[R4, #+864]
+        STR      R5,[R4, #+356]
+        LDR.W    R0,??disp_language_init_30+0x110
+        LDR.W    R5,??disp_language_init_30+0x114
+        LDR.W    R11,??disp_language_init_30+0x118
+        STR      R0,[R4, #+768]
+        STR      R11,[R4, #+788]
+        STR      R5,[R4, #+360]
+        LDR.W    R0,??disp_language_init_30+0x11C
+        LDR.W    R11,??disp_language_init_30+0x120
+        STR      R0,[R4, #+772]
+        STR      R11,[R4, #+792]
+        LDR.W    R0,??disp_language_init_32
+        STR      R0,[R4, #+776]
+        LDR.W    R0,??disp_language_init_30+0x124
+        STR      R0,[R4, #+400]
+        LDR.W    R0,??disp_language_init_30+0x128
+        STR      R0,[R4, #+404]
+        LDR.W    R0,??disp_language_init_30+0x12C
+        STR      R0,[R4, #+408]
+        STR      R0,[R4, #+688]
+        STR      R0,[R4, #+348]
+        STR      R0,[R4, #+452]
+        STR      R7,[R4, #+92]
+        STR      LR,[R4, #+96]
+        STR      R8,[R4, #+100]
+// 1607 			extrude_menu.ext1=EXTRUDER_1_TEXT_RU;
+        STR      R5,[R4, #+104]
+// 1608 			extrude_menu.ext2=EXTRUDER_2_TEXT_RU;
+        STR      R6,[R4, #+108]
+// 1609 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_RU;
+        LDR.W    R7,??disp_language_init_30+0x130
+        STR      R7,[R4, #+124]
+// 1610 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_RU;
+// 1611 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_RU;
+// 1612 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_RU;
+// 1613 			//µ˜∆Ω
+// 1614 			leveling_menu.title=TITLE_LEVELING_RU;
+        STR      R10,[R4, #+872]
+        LDR.W    R7,??disp_language_init_30+0x134
+// 1615 			leveling_menu.position1=LEVELING_POINT1_TEXT_RU;
+// 1616 			leveling_menu.position2=LEVELING_POINT2_TEXT_RU;
+// 1617 			leveling_menu.position3=LEVELING_POINT3_TEXT_RU;
+// 1618 			leveling_menu.position4=LEVELING_POINT4_TEXT_RU;
+// 1619 			leveling_menu.position5=LEVELING_POINT5_TEXT_RU;
+// 1620 			//…Ë÷√
+// 1621 			set_menu.title=TITLE_SET_RU;
+// 1622 			set_menu.filesys=FILESYS_TEXT_RU;
+// 1623 			set_menu.wifi=WIFI_TEXT_RU;
+// 1624 			set_menu.about=ABOUT_TEXT_RU;
+// 1625 			set_menu.fan=FAN_TEXT_RU;
+// 1626 			set_menu.filament=FILAMENT_TEXT_RU;
+// 1627 			set_menu.breakpoint=BREAK_POINT_TEXT_RU;
+        LDR.W    R10,??disp_language_init_30+0x138
+        STR      R7,[R4, #+128]
+        LDR.W    R7,??disp_language_init_30+0x13C
+        STR      R7,[R4, #+132]
+        LDR.W    R7,??disp_language_init_30+0x140
+        STR      R7,[R4, #+156]
+        LDR.W    R7,??disp_language_init_30+0x144
+        STR      R7,[R4, #+876]
+        LDR.W    R7,??disp_language_init_30+0x148
+        STR      R7,[R4, #+880]
+        LDR.W    R7,??disp_language_init_30+0x14C
+        STR      R7,[R4, #+884]
+        LDR.W    R7,??disp_language_init_30+0x150
+        STR      R7,[R4, #+888]
+        LDR.W    R7,??disp_language_init_30+0x154
+        STR      R7,[R4, #+892]
+        LDR.W    R7,??disp_language_init_30+0x158
+        STR      R9,[R7, #+0]
+        LDR.W    R9,??disp_language_init_30+0x15C
+        STR      R9,[R7, #+4]
+        LDR.W    R9,??disp_language_init_33
+        STR      R9,[R7, #+8]
+        LDR.W    R9,??disp_language_init_30+0x160
+        STR      R9,[R7, #+12]
+        STR      R1,[R7, #+16]
+        STR      R3,[R7, #+20]
+        STR      R10,[R7, #+24]
+// 1628 			set_menu.motoroff=MOTOR_OFF_TEXT_RU;
+// 1629 			set_menu.language=LANGUAGE_TEXT_RU;
+// 1630 			//∏¸∂‡
+// 1631 			more_menu.title = TITLE_MORE_RU;	
+        STR      R2,[R4, #+1012]
+        LDR.W    R10,??disp_language_init_30+0x164
+        STR      R10,[R7, #+28]
+        LDR.W    R10,??disp_language_init_30+0x168
+        STR      R10,[R7, #+36]
+// 1632 			more_menu.zoffset = ZOFFSET_RU;
+        LDR.W    R7,??disp_language_init_30+0x16C
+        STR      R7,[R4, #+1016]
+// 1633 			//Œƒº˛œµÕ≥
+// 1634 			filesys_menu.title = TITLE_FILESYS_RU;
+        LDR.W    R7,??disp_language_init_30+0x170
+        STR      R7,[R4, #+992]
+// 1635 			filesys_menu.sd_sys = SD_CARD_TEXT_RU;
+        LDR.W    R7,??disp_language_init_30+0x174
+// 1636 			filesys_menu.usb_sys = U_DISK_TEXT_RU;			
+// 1637 			//WIFI
+// 1638 			wifi_menu.title=WIFI_TEXT;
+// 1639 			//wifi_menu.key = WIFI_KEY_TEXT_RU;
+// 1640 			//wifi_menu.ip = WIFI_IP_TEXT_RU;
+// 1641 			//wifi_menu.state= WIFI_STA_TEXT_RU;
+// 1642 			wifi_menu.cloud= CLOUD_TEXT_RU;
+// 1643 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_RU;
+// 1644 
+// 1645 
+// 1646 			cloud_menu.title = TITLE_CLOUD_TEXT_RU;
+// 1647 			cloud_menu.bind = CLOUD_BINDED_RU;
+// 1648 			cloud_menu.binded = CLOUD_BINDED_RU;
+// 1649 			cloud_menu.unbind = CLOUD_UNBIND_RU;
+// 1650 			cloud_menu.unbinding = CLOUD_UNBINDED_RU;
+// 1651 			cloud_menu.disconnected = CLOUD_DISCONNECTED_RU;
+// 1652 			cloud_menu.disable = CLOUD_DISABLE_RU;			
+// 1653 			//πÿ”⁄
+// 1654 			about_menu.title = ABOUT_TEXT_RU;
+// 1655 			about_menu.type = ABOUT_TYPE_TEXT_RU;
+// 1656 			about_menu.version = ABOUT_VERSION_TEXT_RU;
+// 1657 			about_menu.wifi = ABOUT_WIFI_TEXT_RU;			
+// 1658 			//∑Á…»
+// 1659 			fan_menu.title = FAN_TEXT_RU;
+// 1660 			fan_menu.add = FAN_ADD_TEXT_RU;
+// 1661 			fan_menu.dec = FAN_DEC_TEXT_RU;
+// 1662 			fan_menu.state = FAN_TIPS1_TEXT_RU;
+// 1663 			//ªª¡œ
+// 1664 			filament_menu.title = TITLE_FILAMENT_RU;
+// 1665 			filament_menu.in = FILAMENT_IN_TEXT_RU;
+// 1666 			filament_menu.out = FILAMENT_OUT_TEXT_RU;
+// 1667 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_RU;
+// 1668 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_RU;
+// 1669 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_RU;
+// 1670 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_RU;
+// 1671 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_RU;
+// 1672 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_RU;
+// 1673 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_RU;
+// 1674 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_RU;
+// 1675 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_RU;
+// 1676 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_RU;
+// 1677 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_RU;
+// 1678 
+// 1679 			//”Ô—‘
+// 1680 			language_menu.title = LANGUAGE_TEXT_RU;
+// 1681 			language_menu.next = PAGE_DOWN_TEXT_RU;
+// 1682 			language_menu.up = PAGE_UP_TEXT_RU;
+// 1683 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 1684 			printing_menu.title = TITLE_PRINTING_RU;
+// 1685 			printing_menu.option = PRINTING_OPERATION_RU;
+// 1686 			printing_menu.stop = PRINTING_STOP_RU;
+// 1687 			printing_menu.pause = PRINTING_PAUSE_RU;
+// 1688 			printing_menu.resume = PRINTING_RESUME_RU;
+// 1689 
+// 1690 			//≤Ÿ◊˜ΩÁ√Ê
+// 1691 			operation_menu.title = TITLE_OPERATION_RU;
+// 1692 			operation_menu.pause = PRINTING_PAUSE_RU;
+// 1693 			operation_menu.stop = PRINTING_STOP_RU;
+// 1694 			operation_menu.temp = PRINTING_TEMP_RU;
+// 1695 			operation_menu.fan = FAN_TEXT_RU;
+// 1696 			operation_menu.extr = PRINTING_EXTRUDER_RU;
+// 1697 			operation_menu.speed = PRINTING_CHANGESPEED_RU;			
+// 1698 			operation_menu.filament= FILAMENT_TEXT_RU;
+// 1699 			operation_menu.more = PRINTING_MORE_RU;
+// 1700 			operation_menu.move = PRINTING_MOVE_RU;
+        STR      R0,[R4, #+320]
+// 1701 			operation_menu.auto_off = AUTO_SHUTDOWN_RU;
+// 1702 			operation_menu.manual_off = MANUAL_SHUTDOWN_RU;			
+// 1703 			//‘›Õ£ΩÁ√Ê
+// 1704 			pause_menu.title= TITLE_PAUSE_RU;
+// 1705 			pause_menu.resume = PRINTING_RESUME_RU;
+// 1706 			pause_menu.stop = PRINTING_STOP_RU;
+// 1707 			pause_menu.extrude = PRINTING_EXTRUDER_RU;
+// 1708 			pause_menu.move = PRINTING_MOVE_RU;
+        STR      R0,[R4, #+832]
+        STR      R7,[R4, #+1000]
+        STR      R9,[R4, #+900]
+        STR      R1,[R4, #+716]
+        STR      R1,[R4, #+744]
+        STR      R3,[R4, #+0]
+        STR      LR,[R4, #+4]
+        STR      R8,[R4, #+8]
+        STR      R5,[R4, #+12]
+        STR      R6,[R4, #+16]
+        STR      R10,[R4, #+224]
+        STR      R12,[R4, #+276]
+        STR      R11,[R4, #+280]
+        STR      R1,[R4, #+304]
+        STR      R3,[R4, #+308]
+        STR      R2,[R4, #+324]
+// 1709 			pause_menu.filament= FILAMENT_TEXT_RU;
+        STR      R3,[R4, #+836]
+// 1710 			pause_menu.more = PRINTING_MORE_RU;
+        STR      R2,[R4, #+840]
+// 1711 
+// 1712 			//±‰ÀŸΩÁ√Ê
+// 1713 			speed_menu.title = PRINTING_CHANGESPEED_RU;
+// 1714 			speed_menu.add = ADD_TEXT_RU;
+// 1715 			speed_menu.dec = DEC_TEXT_RU;
+// 1716 			speed_menu.move = MOVE_SPEED_RU;
+// 1717 			speed_menu.extrude = EXTRUDER_SPEED_RU;
+// 1718 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_RU;
+// 1719 			speed_menu.move_speed = MOVE_SPEED_STATE_RU;
+// 1720 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 1721 			printing_more_menu.title = TITLE_MORE_RU;
+        STR      R2,[R4, #+936]
+// 1722 			printing_more_menu.fan = FAN_TEXT_RU;
+        STR      R1,[R4, #+940]
+        LDR.W    R0,??disp_language_init_30+0xF4
+        LDR.W    R7,??disp_language_init_30+0x178
+        LDR.W    R5,??disp_language_init_30+0x17C
+        LDR.W    R6,??disp_language_init_30+0x180
+        LDR.W    R10,??disp_language_init_30+0x184
+        LDR.W    R11,??disp_language_init_30+0x188
+        LDR.W    R12,??disp_language_init_30+0x18C
+        LDR.W    LR,??disp_language_init_30+0x190
+        LDR.W    R8,??disp_language_init_30+0x194
+// 1723 			printing_more_menu.auto_close = AUTO_SHUTDOWN_RU;
+// 1724 			printing_more_menu.manual = MANUAL_SHUTDOWN_RU;
+// 1725 			printing_more_menu.speed = PRINTING_CHANGESPEED_RU;
+// 1726 			printing_more_menu.temp = PRINTING_TEMP_RU;
+// 1727 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_RU;
+// 1728 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_RU;
+// 1729 			print_file_dialog_menu.cancle = DIALOG_CANCLE_RU;
+// 1730 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_RU;
+// 1731 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_RU;
+// 1732 			print_file_dialog_menu.retry = DIALOG_RETRY_RU;
+// 1733 			print_file_dialog_menu.stop = DIALOG_STOP_RU;
+// 1734 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_RU;		
+// 1735 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_RU;
+// 1736 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_RU;
+// 1737             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_RU;
+// 1738 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_RU;
+// 1739 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_RU;
+        LDR.W    R1,??disp_language_init_30+0x198
+// 1740 			print_file_dialog_menu.reprint=DIALOG_REPRINT_RU;
+// 1741 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_RU;
+// 1742 			//ZOFFSET
+// 1743 			zoffset_menu.title = TITLE_ZOFFSET_RU;
+// 1744 			zoffset_menu.inc = ZOFFSET_INC_RU;
+// 1745 			zoffset_menu.dec = ZOFFSET_DEC_RU;			
+        LDR.W    R2,??disp_language_init_30+0x108
+        STR      R0,[R4, #+556]
+        STR      R7,[R4, #+1004]
+        STR      R5,[R4, #+28]
+        STR      R6,[R4, #+52]
+        STR      R6,[R4, #+56]
+        STR      R10,[R4, #+668]
+        STR      R11,[R4, #+312]
+        STR      R12,[R4, #+316]
+        STR      LR,[R4, #+328]
+        STR      R8,[R4, #+332]
+        STR      R10,[R4, #+820]
+        STR      R11,[R4, #+828]
+        STR      R12,[R4, #+552]
+        STR      R11,[R4, #+564]
+        STR      LR,[R4, #+944]
+        STR      R8,[R4, #+948]
+        STR      R12,[R4, #+956]
+        LDR.W    R0,??disp_language_init_30+0x108
+        LDR.W    R7,??disp_language_init_29
+        LDR.W    R5,??disp_language_init_30+0x19C
+        LDR.W    R6,??disp_language_init_30+0x1A0
+        STR      R0,[R4, #+560]
+        STR      R7,[R4, #+504]
+        STR      R5,[R4, #+60]
+        STR      R6,[R4, #+644]
+        STR      R6,[R4, #+288]
+        LDR.W    R0,??disp_language_init_30+0x1A4
+        LDR.W    R7,??disp_language_init_30+0x1A8
+        LDR.W    R5,??disp_language_init_30+0x1AC
+        LDR.W    R6,??disp_language_init_30+0x1B0
+        STR      R0,[R4, #+568]
+        STR      R7,[R4, #+528]
+        STR      R5,[R4, #+68]
+        STR      R6,[R4, #+300]
+        STR      R6,[R4, #+952]
+        LDR.W    R0,??disp_language_init_30+0x1B4
+        LDR.W    R7,??disp_language_init_33+0x4
+        LDR.W    R5,??disp_language_init_33+0x8
+        STR      R0,[R4, #+592]
+        STR      R7,[R4, #+548]
+        STR      R5,[R4, #+76]
+        LDR.W    R0,??disp_language_init_33+0xC
+        LDR.W    R7,??disp_language_init_33+0x10
+        LDR.W    R5,??disp_language_init_33+0x14
+        STR      R0,[R4, #+588]
+        STR      R7,[R4, #+596]
+        STR      R5,[R4, #+64]
+        LDR.W    R0,??disp_language_init_33+0x18
+        LDR.W    R7,??disp_language_init_33+0x1C
+        LDR.W    R5,??disp_language_init_30+0x1B8
+        STR      R0,[R4, #+164]
+        STR      R7,[R4, #+612]
+        STR      R7,[R4, #+620]
+        STR      R5,[R4, #+72]
+        LDR.W    R0,??disp_language_init_30+0x1BC
+        LDR.W    R7,??disp_language_init_30+0x1C0
+        LDR.W    R5,??disp_language_init_30+0x1C4
+        STR      R0,[R4, #+168]
+        STR      R7,[R4, #+600]
+        STR      R5,[R4, #+80]
+        LDR.W    R0,??disp_language_init_30+0x1C8
+        LDR.W    R7,??disp_language_init_30+0x1CC
+        LDR.W    R5,??disp_language_init_30+0x1D0
+        STR      R0,[R4, #+172]
+        STR      R7,[R4, #+604]
+        STR      R5,[R4, #+640]
+        LDR.W    R0,??disp_language_init_33+0x20
+        LDR.W    R7,??disp_language_init_30+0x1D4
+        LDR.W    R5,??disp_language_init_33+0x24
+        STR      R0,[R4, #+176]
+        STR      R7,[R4, #+628]
+        STR      R5,[R4, #+672]
+        STR      R5,[R4, #+296]
+        STR      R5,[R4, #+824]
+        STR      R5,[R4, #+184]
+        LDR.W    R0,??disp_language_init_33+0x28
+        LDR.W    R7,??disp_language_init_33+0x2C
+        STR      R0,[R4, #+180]
+        STR      R7,[R4, #+624]
+        LDR.W    R0,??disp_language_init_33+0x30
+        LDR.W    R7,??disp_language_init_30+0x28
+        STR      R0,[R4, #+188]
+        STR      R7,[R4, #+912]
+        LDR.W    R0,??disp_language_init_33+0x34
+        LDR.W    R7,??disp_language_init_30+0x2C
+        STR      R0,[R4, #+192]
+        STR      R7,[R4, #+916]
+        LDR.W    R0,??disp_language_init_33+0x38
+        LDR.W    R7,??disp_language_init_33+0x3C
+        STR      R0,[R4, #+200]
+        STR      R7,[R4, #+920]
+        LDR.W    R0,??disp_language_init_33+0x40
+        LDR.W    R7,??disp_language_init_30+0xF4
+        STR      R0,[R4, #+204]
+        STR      R7,[R4, #+720]
+        LDR.W    R0,??disp_language_init_33+0x44
+        LDR.W    R7,??disp_language_init_30+0x108
+        STR      R0,[R4, #+208]
+        STR      R7,[R4, #+724]
+        LDR.W    R0,??disp_language_init_33+0x48
+        LDR.W    R7,??disp_language_init_33+0x4C
+        STR      R0,[R4, #+216]
+        STR      R7,[R4, #+664]
+        STR      R7,[R4, #+292]
+        STR      R7,[R4, #+816]
+        LDR.W    R0,??disp_language_init_33+0x50
+        STR      R0,[R4, #+220]
+        LDR.W    R0,??disp_language_init_30+0xF4
+// 1746 			break;
+        B.W      ??disp_language_init_20
+        DATA
+??disp_language_init_23:
+        DC32     `?<Constant "ZMax">`
+        DC32     `?<Constant "\\344\\275\\277\\350\\203\\275\\347\\206\\2`
+        DC32     `?<Constant "Delta\\346\\251\\237\\345\\231\\250\\345\\`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_8`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\215\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\346\\241\\2`
+        DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\345\\215\\2_1`
+        DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\351\\253\\2`
+        DC32     `?<Constant "\\346\\273\\221\\345\\241\\212\\345\\201\\2`
+        DC32     `?<Constant "\\346\\225\\210\\346\\207\\211\\345\\231\\2`
+        DC32     `?<Constant "\\350\\252\\277\\345\\271\\263\\345\\215\\2`
+        DC32     `?<Constant "XYZ\\346\\251\\237\\345\\231\\250\\345\\21`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_6`
+        DC32     `?<Constant "\\345\\231\\264\\351\\240\\255\\350\\250\\2`
+        DC32     `?<Constant "\\347\\206\\261\\345\\272\\212\\350\\250\\2`
+        DC32     `?<Constant "\\351\\240\\220\\350\\250\\255\\346\\272\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_7`
+        DC32     `?<Constant "\\345\\231\\264\\351\\240\\255\\346\\225\\2`
+        DC32     `?<Constant "E0\\346\\272\\253\\346\\204\\237\\351\\241`
+        DC32     `?<Constant "PID\\350\\252\\277\\346\\272\\253">`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_9`
+        DC32     `?<Constant "\\346\\234\\200\\345\\244\\247\\351\\200\\2_1`
+        DC32     `?<Constant "\\345\\212\\240\\351\\200\\237\\345\\272\\2_1`
+        DC32     `?<Constant "\\347\\252\\201\\350\\256\\212\\351\\200\\2`
+        DC32     `?<Constant "\\350\\204\\210\\350\\241\\235\\350\\250\\2`
+        DC32     `?<Constant "\\351\\233\\273\\346\\251\\237\\346\\226\\2`
+        DC32     `?<Constant "\\346\\255\\270\\351\\233\\266\\351\\200\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_10`
+        DC32     `?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\244\\_2`
+        DC32     `?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\244\\_2`
+        DC32     `?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\244\\_2`
+        DC32     `?<Constant "E0\\350\\273\\270\\346\\234\\200\\345\\244`
+        DC32     `?<Constant "E1\\350\\273\\270\\346\\234\\200\\345\\244`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_11`
+        DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\345\\212\\2`
+        DC32     `?<Constant "\\345\\233\\236\\346\\212\\275\\345\\212\\2`
+        DC32     `?<Constant "\\347\\251\\272\\350\\274\\211\\345\\212\\2`
+        DC32     `?<Constant "X\\350\\273\\270\\345\\212\\240\\351\\200\\`
+        DC32     `?<Constant "Y\\350\\273\\270\\345\\212\\240\\351\\200\\`
+        DC32     `?<Constant "Z\\350\\273\\270\\345\\212\\240\\351\\200\\`
+        DC32     `?<Constant "E0\\350\\273\\270\\345\\212\\240\\351\\200`
+        DC32     `?<Constant "E1\\350\\273\\270\\345\\212\\240\\351\\200`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_12`
+        DC32     `?<Constant "X\\350\\273\\270\\347\\252\\201\\350\\256\\`
+        DC32     `?<Constant "Y\\350\\273\\270\\347\\252\\201\\350\\256\\`
+        DC32     `?<Constant "Z\\350\\273\\270\\347\\252\\201\\350\\256\\`
+        DC32     `?<Constant "E\\350\\273\\270\\347\\252\\201\\350\\256\\`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_13`
+        DC32     `?<Constant "X\\350\\273\\270\\350\\204\\210\\350\\241\\`
+        DC32     `?<Constant "Y\\350\\273\\270\\350\\204\\210\\350\\241\\`
+        DC32     `?<Constant "Z\\350\\273\\270\\350\\204\\210\\350\\241\\`
+        DC32     `?<Constant "E0\\350\\273\\270\\350\\204\\210\\350\\241`
+        DC32     `?<Constant "E1\\350\\273\\270\\350\\204\\210\\350\\241`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_14`
+        DC32     `?<Constant "X\\350\\273\\270\\351\\233\\273\\346\\251\\`
+        DC32     `?<Constant "Y\\350\\273\\270\\351\\233\\273\\346\\251\\`
+        DC32     `?<Constant "Z\\350\\273\\270\\351\\233\\273\\346\\251\\`
+        DC32     `?<Constant "E0\\350\\273\\270\\351\\233\\273\\346\\251`
+        DC32     `?<Constant "E1\\350\\273\\270\\351\\233\\273\\346\\251`
         DC32     `?<Constant "\\351\\240\\220\\347\\206\\261">`
-        DC32     `?<Constant "\\347\\247\\273\\345\\213\\225">`
+        DC32     `?<Constant "\\345\\233\\236\\351\\233\\266">`
         DC32     `?<Constant "\\346\\223\\240\\345\\207\\272">`
         DC32     `?<Constant "\\350\\252\\277\\345\\271\\263">`
-        DC32     `?<Constant "\\350\\207\\252\\345\\213\\225\\350\\252\\2`
-        DC32     `?<Constant "\\351\\242\\250\\346\\211\\207">`
         DC32     `?<Constant "\\350\\250\\255\\347\\275\\256">`
+        DC32     `?<Constant "\\346\\233\\264\\345\\244\\232">`
+        DC32     `?<Constant "\\346\\255\\243\\345\\220\\221">`
         DC32     `?<Constant "\\346\\217\\233\\346\\226\\231">`
-        DC32     `?<Constant "\\350\\252\\277\\346\\225\\264">`
         DC32     `?<Constant "\\346\\270\\233\\345\\260\\221">`
+        DC32     `?<Constant "\\347\\247\\273\\345\\213\\225">`
+        DC32     `?<Constant "\\346\\200\\245\\345\\201\\234">`
+        DC32     `?<Constant "\\345\\217\\215\\345\\220\\221">`
         DC32     `?<Constant "\\345\\231\\264\\351\\240\\2551">`
-        DC32     `?<Constant "\\345\\231\\264\\351\\240\\2552">`
-        DC32     `?<Constant "\\347\\206\\261\\345\\272\\212">`
-        DC32     `?<Constant "\\351\\227\\234\\351\\226\\211">`
-        THUMB
-//  726 		case LANG_RUSSIAN:
-//  727 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_RU;
-??disp_language_init_15:
-        LDR.W    R1,??disp_language_init_10+0xBC
-        STR      R1,[R0, #+776]
-//  728 			common_menu.text_back=BACK_TEXT_RU;
-        LDR.W    R1,??disp_language_init_13+0x94
-        STR      R1,[R0, #+772]
-//  729 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_RU;
-        LDR.W    R1,??disp_language_init_10+0xC4
-        STR      R1,[R0, #+780]
-//  730 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_RU;
-        LDR.W    R1,??disp_language_init_10+0xC8
-        STR      R1,[R0, #+784]
-//  731 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
-        LDR.W    R1,??disp_language_init_10+0xCC
-        STR      R1,[R0, #+788]
-//  732 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
-        LDR.W    R1,??disp_language_init_10+0xD0
-        STR      R1,[R0, #+792]
-//  733 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;			
-        LDR.W    R1,??disp_language_init_10+0xD4
-        STR      R1,[R0, #+796]
-//  734 			//÷˜“≥√Ê
-//  735 			main_menu.title=TITLE_READYPRINT_RU;
-        LDR.W    R1,??disp_language_init_13+0x98
-        STR      R1,[R0, #+340]
-//  736 			main_menu.preheat=PREHEAT_TEXT_RU;
-        LDR.W    R1,??disp_language_init_13+0x9C
-        STR      R1,[R0, #+344]
-//  737 			main_menu.move=MOVE_TEXT_RU;
-        LDR.W    R1,??disp_language_init_16+0x4
-        STR      R1,[R0, #+348]
-//  738 			main_menu.home=HOME_TEXT_RU;
-        LDR.W    R4,??disp_language_init_16+0x8
-        STR      R4,[R0, #+352]
-//  739 			main_menu.print=PRINT_TEXT_RU;
-        LDR.W    R2,??disp_language_init_16+0xC
-        STR      R2,[R0, #+356]
-//  740 			main_menu.extrude=EXTRUDE_TEXT_RU;
-        LDR.W    R12,??disp_language_init_16+0x10
-        STR      R12,[R0, #+360]
-//  741 			main_menu.leveling=LEVELING_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x14
-        STR      R8,[R0, #+364]
-//  742 			main_menu.autoleveling=AUTO_LEVELING_TEXT_RU;
-        LDR.W    R5,??disp_language_init_16+0x18
-        STR      R5,[R0, #+368]
-//  743 			main_menu.fan = FAN_TEXT_RU;
-        LDR.W    R2,??disp_language_init_16+0x1C
-        STR      R2,[R0, #+372]
-//  744 			main_menu.set=SET_TEXT_RU;
-        LDR.W    R9,??disp_language_init_16+0x20
-        STR      R9,[R0, #+376]
-//  745 			main_menu.more=MORE_TEXT_RU;
-        LDR.W    R3,??disp_language_init_16+0x24
-        STR      R3,[R0, #+384]
-//  746 			main_menu.tool = TOOL_TEXT_RU;
-        LDR.W    R6,??disp_language_init_16+0x28
-        STR      R6,[R0, #+380]
-//  747 			//TOOL
-//  748 			tool_menu.title = TOOL_TEXT_RU;
-        STR      R6,[R0, #+696]
-//  749 			tool_menu.preheat = TOOL_PREHEAT_RU;
-        LDR.W    R6,??disp_language_init_16+0x2C
-        STR      R6,[R0, #+700]
-//  750 			tool_menu.extrude = TOOL_EXTRUDE_RU;
-        STR      R12,[R0, #+704]
-//  751 			tool_menu.move = TOOL_MOVE_RU;
-        STR      R1,[R0, #+708]
-//  752 			tool_menu.home= TOOL_HOME_RU;
-        STR      R4,[R0, #+712]
-//  753 			tool_menu.leveling = TOOL_LEVELING_RU;
-        STR      R8,[R0, #+716]
-//  754             tool_menu.autoleveling = TOOL_AUTO_LEVELING_RU;
-        STR      R5,[R0, #+720]
-//  755 			tool_menu.filament = TOOL_FILAMENT_RU;
-        LDR.W    R4,??disp_language_init_16+0x30
-        STR      R4,[R0, #+724]
-//  756 			tool_menu.more = TOOL_MORE_RU;			
-        STR      R3,[R0, #+728]
-//  757 			//‘§»»
-//  758 			preheat_menu.adjust_title = TITLE_ADJUST_RU;
-        LDR.W    R5,??disp_language_init_16+0x34
-        STR      R5,[R0, #+284]
-//  759 			preheat_menu.title=TITLE_PREHEAT_RU;
-        STR      R1,[R0, #+288]
-        LDR.W    R5,??disp_language_init_16+0x38
-        STR      R5,[R0, #+292]
-        LDR.W    R5,??disp_language_init_16+0x3C
-        STR      R5,[R0, #+296]
-//  760 			preheat_menu.add=ADD_TEXT_RU;
-//  761 			preheat_menu.dec=DEC_TEXT_RU;
-//  762 			preheat_menu.ext1=EXTRUDER_1_TEXT_RU;
-        LDR.W    R6,??disp_language_init_16+0x40
-        STR      R6,[R0, #+300]
-//  763 			preheat_menu.ext2=EXTRUDER_2_TEXT_RU;
-        LDR.W    R7,??disp_language_init_16+0x44
-        STR      R7,[R0, #+304]
-//  764 			preheat_menu.hotbed=HEATBED_TEXT_RU;
-        LDR.W    R5,??disp_language_init_16+0x48
-        STR      R5,[R0, #+308]
-//  765 			preheat_menu.off=CLOSE_TEXT_RU;
-        LDR.W    R5,??disp_language_init_16+0x4C
-        STR      R5,[R0, #+312]
-//  766 			//“∆∂Ø
-//  767 			move_menu.title = MOVE_TEXT_RU;
-        STR      R1,[R0, #+484]
-//  768 			//πÈ¡„
-//  769 			home_menu.title=TITLE_HOME_RU;
-        LDR.W    R5,??disp_language_init_10+0xE4
-        STR      R5,[R0, #+856]
-//  770 			home_menu.stopmove = HOME_STOPMOVE_RU;
-        LDR.W    R5,??disp_language_init_10+0x118
-        STR      R5,[R0, #+876]
-//  771 			//Œƒº˛ƒø¬º
-//  772 			file_menu.title=TITLE_CHOOSEFILE_RU;
-        LDR.W    R5,??disp_language_init_16+0x50
-        STR      R5,[R0, #+800]
-        LDR.W    R5,??disp_language_init_16+0x54
-        STR      R5,[R0, #+804]
-//  773 			file_menu.page_up=PAGE_UP_TEXT_RU;
-//  774 			file_menu.page_down=PAGE_DOWN_TEXT_RU;
-        LDR.W    R5,??disp_language_init_16+0x58
-        STR      R5,[R0, #+808]
-//  775 			file_menu.file_loading = FILE_LOADING_RU;
-        LDR.W    LR,??disp_language_init_16+0x5C
-        STR      LR,[R0, #+816]
-//  776 			file_menu.no_file = NO_FILE_RU;
-        LDR.W    LR,??disp_language_init_16+0x60
-        STR      LR,[R0, #+820]
-//  777 			file_menu.no_file_and_check = NO_FILE_RU;//NO_FILE_AND_CHECK_RU;			
-        STR      LR,[R0, #+824]
-//  778 			//º∑≥ˆ
-//  779 			extrude_menu.title=TITLE_EXTRUDE_RU;
-        STR      R12,[R0, #+92]
-//  780 			extrude_menu.in=EXTRUDER_IN_TEXT_RU;
-        LDR.W    R12,??disp_language_init_16+0x64
-        STR      R12,[R0, #+96]
-//  781 			extrude_menu.out=EXTRUDER_OUT_TEXT_RU;
-        LDR.W    LR,??disp_language_init_16+0x68
-        STR      LR,[R0, #+100]
-//  782 			extrude_menu.ext1=EXTRUDER_1_TEXT_RU;
-        STR      R6,[R0, #+104]
-//  783 			extrude_menu.ext2=EXTRUDER_2_TEXT_RU;
-        STR      R7,[R0, #+108]
-//  784 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_RU;
-        LDR.W    R10,??disp_language_init_16+0x6C
-        STR      R10,[R0, #+124]
-//  785 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_RU;
-        LDR.W    R10,??disp_language_init_16+0x70
-        STR      R10,[R0, #+128]
-//  786 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_RU;
-        LDR.W    R10,??disp_language_init_16+0x74
-        STR      R10,[R0, #+132]
-//  787 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_RU;
-        LDR.W    R10,??disp_language_init_16+0x78
-        STR      R10,[R0, #+156]
-//  788 			//µ˜∆Ω
-//  789 			leveling_menu.title=TITLE_LEVELING_RU;
-        STR      R8,[R0, #+884]
-//  790 			leveling_menu.position1=LEVELING_POINT1_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x7C
-        STR      R8,[R0, #+888]
-//  791 			leveling_menu.position2=LEVELING_POINT2_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x80
-        STR      R8,[R0, #+892]
-//  792 			leveling_menu.position3=LEVELING_POINT3_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x84
-        STR      R8,[R0, #+896]
-//  793 			leveling_menu.position4=LEVELING_POINT4_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x88
-        STR      R8,[R0, #+900]
-//  794 			leveling_menu.position5=LEVELING_POINT5_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x8C
-        STR      R8,[R0, #+904]
-//  795 			//…Ë÷√
-//  796 			set_menu.title=TITLE_SET_RU;
-        STR      R9,[R0, #+528]
-//  797 			set_menu.filesys=FILESYS_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x90
-        STR      R8,[R0, #+532]
-//  798 			set_menu.wifi=WIFI_TEXT_RU;
-        LDR.W    R8,??disp_language_init_10+0x154
-        STR      R8,[R0, #+536]
-//  799 			set_menu.about=ABOUT_TEXT_RU;
-        LDR.W    R9,??disp_language_init_16+0x94
-        STR      R9,[R0, #+540]
-//  800 			set_menu.fan=FAN_TEXT_RU;
-        STR      R2,[R0, #+544]
-//  801 			set_menu.filament=FILAMENT_TEXT_RU;
-        STR      R4,[R0, #+548]
-//  802 			set_menu.breakpoint=BREAK_POINT_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x98
-        STR      R8,[R0, #+552]
-//  803 			set_menu.motoroff=MOTOR_OFF_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0x9C
-        STR      R8,[R0, #+556]
-//  804 			set_menu.language=LANGUAGE_TEXT_RU;
-        LDR.W    R8,??disp_language_init_16+0xA0
-        STR      R8,[R0, #+564]
-//  805 			//∏¸∂‡
-//  806 			more_menu.title = TITLE_MORE_RU;	
-        STR      R3,[R0, #+1024]
-//  807 			more_menu.zoffset = ZOFFSET_RU;
-        LDR.W    R10,??disp_language_init_16+0xA4
-        STR      R10,[R0, #+1028]
-//  808 			//Œƒº˛œµÕ≥
-//  809 			filesys_menu.title = TITLE_FILESYS_RU;
-        LDR.W    R11,??disp_language_init_10+0x150
-        STR      R11,[R0, #+1004]
-//  810 			filesys_menu.sd_sys = SD_CARD_TEXT_RU;
-        LDR.W    R11,??disp_language_init_16+0xA8
-        STR      R11,[R0, #+1012]
-//  811 			filesys_menu.usb_sys = U_DISK_TEXT_RU;			
-        LDR.W    R11,??disp_language_init_16+0xAC
-        STR      R11,[R0, #+1016]
-//  812 			//WIFI
-//  813 			wifi_menu.title=WIFI_TEXT;
-        LDR.W    R11,??disp_language_init_16+0xB0
-        STR      R11,[R0, #+572]
-//  814 			//wifi_menu.key = WIFI_KEY_TEXT_RU;
-//  815 			//wifi_menu.ip = WIFI_IP_TEXT_RU;
-//  816 			//wifi_menu.state= WIFI_STA_TEXT_RU;
-//  817 			wifi_menu.cloud= CLOUD_TEXT_RU;
-        LDR.W    R11,??disp_language_init_16+0xB4
-        STR      R11,[R0, #+596]
-//  818 
-//  819 
-//  820 			cloud_menu.title = TITLE_CLOUD_TEXT_RU;
-        LDR.W    R11,??disp_language_init_13+0x4
-        STR      R11,[R0, #+616]
-//  821 			cloud_menu.bind = CLOUD_BINDED_RU;
-        LDR.W    R11,??disp_language_init_13+0x8
-        STR      R11,[R0, #+632]
-//  822 			cloud_menu.binded = CLOUD_BINDED_RU;
-        STR      R11,[R0, #+640]
-//  823 			cloud_menu.unbind = CLOUD_UNBIND_RU;
-        LDR.W    R11,??disp_language_init_16+0xB8
-        STR      R11,[R0, #+620]
-//  824 			cloud_menu.unbinding = CLOUD_UNBINDED_RU;
-        LDR.W    R11,??disp_language_init_13+0xC
-        STR      R11,[R0, #+624]
-//  825 			cloud_menu.disconnected = CLOUD_DISCONNECTED_RU;
-        LDR.W    R11,??disp_language_init_13+0x10
-        STR      R11,[R0, #+648]
-//  826 			cloud_menu.disable = CLOUD_DISABLE_RU;			
-        LDR.W    R11,??disp_language_init_13+0x14
-        STR      R11,[R0, #+644]
-//  827 			//πÿ”⁄
-//  828 			about_menu.title = ABOUT_TEXT_RU;
-        STR      R9,[R0, #+912]
-//  829 			about_menu.type = ABOUT_TYPE_TEXT_RU;
-        LDR.W    R9,??disp_language_init_16+0xBC
-        STR      R9,[R0, #+924]
-//  830 			about_menu.version = ABOUT_VERSION_TEXT_RU;
-        LDR.W    R9,??disp_language_init_16+0xC0
-        STR      R9,[R0, #+928]
-//  831 			about_menu.wifi = ABOUT_WIFI_TEXT_RU;			
-        LDR.W    R9,??disp_language_init_13+0x18
-        STR      R9,[R0, #+932]
-//  832 			//∑Á…»
-//  833 			fan_menu.title = FAN_TEXT_RU;
-        STR      R2,[R0, #+736]
-//  834 			fan_menu.add = FAN_ADD_TEXT_RU;
-        LDR.W    R9,??disp_language_init_16+0x38
-        STR      R9,[R0, #+740]
-//  835 			fan_menu.dec = FAN_DEC_TEXT_RU;
-        LDR.W    R9,??disp_language_init_16+0x3C
-        STR      R9,[R0, #+744]
-//  836 			fan_menu.state = FAN_TIPS1_TEXT_RU;
-        STR      R2,[R0, #+764]
-//  837 			//ªª¡œ
-//  838 			filament_menu.title = TITLE_FILAMENT_RU;
-        STR      R4,[R0, #+0]
-//  839 			filament_menu.in = FILAMENT_IN_TEXT_RU;
-        STR      R12,[R0, #+4]
-//  840 			filament_menu.out = FILAMENT_OUT_TEXT_RU;
-        STR      LR,[R0, #+8]
-//  841 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_RU;
-        STR      R6,[R0, #+12]
-//  842 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_RU;
-        STR      R7,[R0, #+16]
-//  843 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_RU;
-        LDR.W    R6,??disp_language_init_13+0x24
-        STR      R6,[R0, #+28]
-//  844 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_RU;
-        LDR.W    R12,??disp_language_init_13+0x28
-        STR      R12,[R0, #+52]
-//  845 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_RU;
-        LDR.W    R6,??disp_language_init_13+0x2C
-        STR      R6,[R0, #+60]
-//  846 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_RU;
-        LDR.W    R6,??disp_language_init_13+0x30
-        STR      R6,[R0, #+68]
-//  847 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_RU;
-        LDR.W    R6,??disp_language_init_13+0x34
-        STR      R6,[R0, #+76]
-//  848 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_RU;
-        STR      R12,[R0, #+56]
-//  849 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_RU;
-        LDR.W    R6,??disp_language_init_13+0x38
-        STR      R6,[R0, #+64]
-//  850 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_RU;
-        LDR.W    R6,??disp_language_init_13+0x3C
-        STR      R6,[R0, #+72]
-//  851 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_RU;
-        LDR.W    R6,??disp_language_init_13+0x40
-        STR      R6,[R0, #+80]
-//  852 
-//  853 			//”Ô—‘
-//  854 			language_menu.title = LANGUAGE_TEXT_RU;
-        STR      R8,[R0, #+160]
-//  855 			language_menu.next = PAGE_DOWN_TEXT_RU;
-        STR      R5,[R0, #+212]
-//  856 			language_menu.up = PAGE_UP_TEXT_RU;
-        LDR.W    R5,??disp_language_init_16+0x54
-        STR      R5,[R0, #+216]
-//  857 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-//  858 			printing_menu.title = TITLE_PRINTING_RU;
-        LDR.W    R5,??disp_language_init_16+0xC4
-        STR      R5,[R0, #+660]
-//  859 			printing_menu.option = PRINTING_OPERATION_RU;
-        LDR.W    R12,??disp_language_init_16+0xC8
-        STR      R12,[R0, #+664]
-//  860 			printing_menu.stop = PRINTING_STOP_RU;
-        LDR.W    R5,??disp_language_init_16+0xCC
-        STR      R5,[R0, #+692]
-//  861 			printing_menu.pause = PRINTING_PAUSE_RU;
-        LDR.W    R6,??disp_language_init_16+0xD0
-        STR      R6,[R0, #+684]
-//  862 			printing_menu.resume = PRINTING_RESUME_RU;
-        LDR.W    R7,??disp_language_init_16+0xD4
-        STR      R7,[R0, #+688]
-//  863 
-//  864 			//≤Ÿ◊˜ΩÁ√Ê
-//  865 			operation_menu.title = TITLE_OPERATION_RU;
-        STR      R12,[R0, #+388]
-//  866 			operation_menu.pause = PRINTING_PAUSE_RU;
-        STR      R6,[R0, #+392]
-//  867 			operation_menu.stop = PRINTING_STOP_RU;
-        STR      R5,[R0, #+396]
-//  868 			operation_menu.temp = PRINTING_TEMP_RU;
-        LDR.W    R12,??disp_language_init_16+0xD8
-        STR      R12,[R0, #+400]
-//  869 			operation_menu.fan = FAN_TEXT_RU;
-        STR      R2,[R0, #+404]
-//  870 			operation_menu.extr = PRINTING_EXTRUDER_RU;
-        LDR.W    LR,??disp_language_init_16+0xDC
-        STR      LR,[R0, #+412]
-//  871 			operation_menu.speed = PRINTING_CHANGESPEED_RU;			
-        LDR.W    R8,??disp_language_init_16+0xE0
-        STR      R8,[R0, #+416]
-//  872 			operation_menu.filament= FILAMENT_TEXT_RU;
-        STR      R4,[R0, #+408]
-//  873 			operation_menu.more = PRINTING_MORE_RU;
-        STR      R3,[R0, #+424]
-//  874 			operation_menu.move = PRINTING_MOVE_RU;
-        STR      R1,[R0, #+420]
-//  875 			operation_menu.auto_off = AUTO_SHUTDOWN_RU;
-        LDR.W    R9,??disp_language_init_16+0xE4
-        STR      R9,[R0, #+428]
-//  876 			operation_menu.manual_off = MANUAL_SHUTDOWN_RU;			
-        LDR.W    R11,??disp_language_init_16+0xE8
-        STR      R11,[R0, #+432]
-//  877 			//‘›Õ£ΩÁ√Ê
-//  878 			pause_menu.title= TITLE_PAUSE_RU;
-        STR      R6,[R0, #+828]
-//  879 			pause_menu.resume = PRINTING_RESUME_RU;
-        STR      R7,[R0, #+832]
-//  880 			pause_menu.stop = PRINTING_STOP_RU;
-        STR      R5,[R0, #+836]
-//  881 			pause_menu.extrude = PRINTING_EXTRUDER_RU;
-        STR      LR,[R0, #+840]
-//  882 			pause_menu.move = PRINTING_MOVE_RU;
-        STR      R1,[R0, #+844]
-//  883 			pause_menu.filament= FILAMENT_TEXT_RU;
-        STR      R4,[R0, #+848]
-//  884 			pause_menu.more = PRINTING_MORE_RU;
-        STR      R3,[R0, #+852]
-//  885 
-//  886 			//±‰ÀŸΩÁ√Ê
-//  887 			speed_menu.title = PRINTING_CHANGESPEED_RU;
-        STR      R8,[R0, #+440]
-//  888 			speed_menu.add = ADD_TEXT_RU;
-        LDR.W    R1,??disp_language_init_16+0x38
-        STR      R1,[R0, #+444]
-//  889 			speed_menu.dec = DEC_TEXT_RU;
-        LDR.W    R1,??disp_language_init_16+0x3C
-        STR      R1,[R0, #+448]
-//  890 			speed_menu.move = MOVE_SPEED_RU;
-        LDR.W    R1,??disp_language_init_16+0xEC
-        STR      R1,[R0, #+456]
-//  891 			speed_menu.extrude = EXTRUDER_SPEED_RU;
-        STR      LR,[R0, #+452]
-//  892 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_RU;
-        LDR.W    R1,??disp_language_init_16+0xF0
-        STR      R1,[R0, #+480]
-//  893 			speed_menu.move_speed = MOVE_SPEED_STATE_RU;
-        LDR.W    R1,??disp_language_init_16+0xF4
-        STR      R1,[R0, #+476]
-//  894 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-//  895 			printing_more_menu.title = TITLE_MORE_RU;
-        STR      R3,[R0, #+948]
-//  896 			printing_more_menu.fan = FAN_TEXT_RU;
-        STR      R2,[R0, #+952]
-//  897 			printing_more_menu.auto_close = AUTO_SHUTDOWN_RU;
-        STR      R9,[R0, #+956]
-//  898 			printing_more_menu.manual = MANUAL_SHUTDOWN_RU;
-        STR      R11,[R0, #+960]
-//  899 			printing_more_menu.speed = PRINTING_CHANGESPEED_RU;
-        STR      R8,[R0, #+968]
-//  900 			printing_more_menu.temp = PRINTING_TEMP_RU;
-        STR      R12,[R0, #+964]
-//  901 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_RU;
-//  902 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_RU;
-        LDR.W    R1,??disp_language_init_16+0xF8
-        STR      R1,[R0, #+228]
-//  903 			print_file_dialog_menu.cancle = DIALOG_CANCLE_RU;
-        LDR.W    R1,??disp_language_init_16+0xFC
-        STR      R1,[R0, #+232]
-//  904 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_RU;
-        LDR.W    R1,??disp_language_init_16+0x100
-        STR      R1,[R0, #+236]
-//  905 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_RU;
-        LDR.W    R1,??disp_language_init_16+0x104
-        STR      R1,[R0, #+240]
-//  906 			print_file_dialog_menu.retry = DIALOG_RETRY_RU;
-        LDR.W    R1,??disp_language_init_16+0x108
-        STR      R1,[R0, #+244]
-//  907 			print_file_dialog_menu.stop = DIALOG_STOP_RU;
-        STR      R5,[R0, #+248]
-//  908 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_RU;		
-        LDR.W    R1,??disp_language_init_16+0x10C
-        STR      R1,[R0, #+252]
-//  909 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_RU;
-        LDR.W    R1,??disp_language_init_16+0x110
-        STR      R1,[R0, #+256]
-//  910 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_RU;
-        LDR.W    R1,??disp_language_init_16+0x114
-        STR      R1,[R0, #+264]
-//  911             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_RU;
-        LDR.W    R1,??disp_language_init_13+0x84
-        STR      R1,[R0, #+268]
-//  912 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_RU;
-        LDR.W    R1,??disp_language_init_16+0x118
-        STR      R1,[R0, #+272]
-//  913 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_RU;
-        LDR.W    R1,??disp_language_init_16+0x11C
-        STR      R1,[R0, #+276]
-//  914 			print_file_dialog_menu.reprint=DIALOG_REPRINT_RU;
-        LDR.W    R1,??disp_language_init_13+0x90
-        STR      R1,[R0, #+280]
-//  915 			//ZOFFSET
-//  916 			zoffset_menu.title = TITLE_ZOFFSET_RU;
-        STR      R10,[R0, #+976]
-//  917 			zoffset_menu.inc = ZOFFSET_INC_RU;
-        LDR.W    R1,??disp_language_init_16+0x38
-        STR      R1,[R0, #+980]
-//  918 			zoffset_menu.dec = ZOFFSET_DEC_RU;			
-        LDR.W    R1,??disp_language_init_16+0x3C
-        STR      R1,[R0, #+984]
-//  919 			break;
-        B.W      ??disp_language_init_4
-        DATA
-??disp_language_init_10:
         DC32     `?<Constant "\\351\\201\\270\\346\\223\\207\\346\\226\\2`
-        DC32     `?<Constant "\\344\\270\\212\\344\\270\\200\\351\\240\\2`
-        DC32     `?<Constant "\\344\\270\\213\\344\\270\\200\\351\\240\\2`
-        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\350\\274\\2`
-        DC32     `?<Constant "\\347\\204\\241\\346\\226\\207\\344\\273\\2`
-        DC32     `?<Constant "\\351\\200\\262\\346\\226\\231">`
-        DC32     `?<Constant "\\346\\272\\253\\345\\272\\246">`
-        DC32     `?<Constant "\\347\\254\\254\\344\\270\\200\\351\\273\\2`
-        DC32     `?<Constant "\\347\\254\\254\\344\\272\\214\\351\\273\\2`
-        DC32     `?<Constant "\\347\\254\\254\\344\\270\\211\\351\\273\\2`
-        DC32     `?<Constant "\\347\\254\\254\\345\\233\\233\\351\\273\\2`
-        DC32     `?<Constant "\\347\\254\\254\\344\\272\\224\\351\\273\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_15`
+        DC32     `?<Constant "\\345\\231\\264\\351\\240\\2552">`
+        DC32     `?<Constant "XY\\350\\273\\270\\346\\255\\270\\351\\233`
+        DC32     `?<Constant "\\347\\206\\261\\345\\272\\212">`
+        DC32     `?<Constant "Z\\350\\273\\270\\346\\255\\270\\351\\233\\_1`
+        DC32     `?<Constant "\\351\\227\\234\\351\\226\\211">`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_16`
+        DC32     `?<Constant "%d\\342\\204\\203/%d\\342\\204\\203">`
+        DC32     `?<Constant "\\346\\226\\267\\351\\233\\273\\346\\252\\2`
+        DC32     `?<Constant "\\345\\225\\237\\345\\213\\225\\346\\211\\2`
+        DC32     `?<Constant "\\346\\251\\237\\345\\231\\250\\351\\205\\2`
+        DC32     `?<Constant "\\351\\233\\231z\\350\\273\\270\\351\\233\\`
+        DC32     `?<Constant "\\351\\233\\273\\346\\251\\237\\344\\275\\2`
+        DC32     `?<Constant "\\351\\233\\231z\\350\\273\\270\\351\\233\\_1`
+        DC32     `?<Constant "\\345\\225\\237\\347\\224\\250Z2\\350\\273`
+        DC32     `?<Constant "\\345\\225\\237\\347\\224\\250Z2\\351\\231`
+        DC32     `?<Constant "Z2\\351\\231\\220\\344\\275\\215\\346\\216`
+        DC32     `?<Constant "\\351\\233\\273\\346\\251\\237\\344\\275\\2_1`
+        DC32     `?<Constant "X\\350\\273\\270\\351\\233\\273\\346\\251\\_1`
+        DC32     `?<Constant "Y\\350\\273\\270\\351\\233\\273\\346\\251\\_1`
+        DC32     `?<Constant "Z\\350\\273\\270\\351\\233\\273\\346\\251\\_1`
+        DC32     `?<Constant "E\\350\\273\\270\\351\\233\\273\\346\\251\\`
+        DC32     `?<Constant "\\351\\200\\200\\346\\240\\274">`
+        DC32     `?<Constant "\\351\\207\\215\\347\\275\\256">`
+        DC32     `?<Constant "\\347\\242\\272\\345\\256\\232">`
+        DC32     `?<Constant "\\351\\242\\250\\346\\211\\207">`
+        DC32     `?<Constant "\\347\\242\\272\\350\\252\\215">`
+        DC32     `?<Constant "\\350\\277\\224\\345\\233\\236">`
+        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\351\\227\\2`
+        DC32     `?<Constant "\\350\\247\\243\\351\\231\\244\\347\\266\\2`
+        DC32     `?<Constant "\\325\\375\\324\\332\\264\\362\\323\\241">`
+        DC32     `?<Constant "\\324\\335\\315\\243">`
+        DC32     `?<Constant "\\262\\331\\327\\367">`
+        DC32     `?<Constant "\\346\\272\\226\\345\\202\\231\\346\\211\\2`
+        DC32     `?<Constant "\\346\\211\\223\\345\\215\\260">`
+        DC32     `?<Constant "\\345\\267\\245\\345\\205\\267">`
+        DC32     `?<Constant "\\350\\252\\277\\346\\225\\264">`
+        DC32     `?<Constant "\\345\\242\\236\\345\\212\\240">`
+        DC32     `?<Constant ": %d\\342\\204\\203">`
         DC32     `?<Constant "\\346\\226\\207\\344\\273\\266\\347\\263\\2_1`
         DC32     `?<Constant "\\351\\227\\234\\346\\226\\274">`
         DC32     `?<Constant "\\346\\226\\267\\351\\273\\236\\347\\272\\2`
+        DC32     `?<Constant "\\350\\260\\203\\345\\271\\263">`
+        DC32     `?<Constant "\\347\\254\\254\\344\\270\\200\\351\\273\\2`
+        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\350\\274\\2`
+        DC32     `?<Constant "\\344\\275\\216\\351\\200\\237">`
+        DC32     `?<Constant "\\347\\254\\254\\344\\272\\214\\351\\273\\2`
+        DC32     `?<Constant "\\347\\204\\241\\346\\226\\207\\344\\273\\2`
+        DC32     `?<Constant "\\345\\270\\270\\351\\200\\237">`
+        DC32     `?<Constant "\\347\\254\\254\\344\\270\\211\\351\\273\\2`
+        DC32     `?<Constant "\\351\\200\\262\\346\\226\\231">`
+        DC32     `?<Constant "\\351\\253\\230\\351\\200\\237">`
+        DC32     `?<Constant "\\347\\254\\254\\345\\233\\233\\351\\273\\2`
+        DC32     `?<Constant "\\351\\200\\200\\346\\226\\231">`
+        DC32     `?<Constant "\\346\\272\\253\\345\\272\\246">`
+        DC32     `?<Constant "\\347\\254\\254\\344\\272\\224\\351\\273\\2`
         DC32     `?<Constant "\\351\\227\\234\\351\\226\\211\\351\\233\\2`
+        DC32     `?<Constant "\\351\\207\\215\\346\\226\\260\\351\\200\\2`
+        THUMB
+// 1747 		case LANG_SPANISH:
+// 1748 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_SP;
+// 1749 			common_menu.text_back=BACK_TEXT_SP;
+// 1750 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_SP;
+// 1751 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_SP;
+// 1752 			common_menu.print_special_title = PRINTING_SP;
+// 1753 			common_menu.pause_special_title = PRINTING_PAUSAR_SP;
+// 1754 			common_menu.operate_special_title = PRINTING_AJUSTES_SP;			
+// 1755 			//÷˜“≥√Ê
+// 1756 			main_menu.title=TITLE_READYPRINT_SP;
+// 1757 			main_menu.preheat=PREHEAT_TEXT_SP;
+??disp_language_init_6:
+        LDR.W    R7,??disp_language_init_33+0x54
+        STR      R7,[R4, #+404]
+// 1758 			main_menu.move=MOVE_TEXT_SP;
+// 1759 			main_menu.home=HOME_TEXT_SP;
+// 1760 			main_menu.print=PRINT_TEXT_SP;
+// 1761 			main_menu.extrude=EXTRUDE_TEXT_SP;
+// 1762 			main_menu.leveling=LEVELING_TEXT_SP;
+// 1763 			main_menu.autoleveling=AUTO_LEVELING_TEXT_SP;
+// 1764 			main_menu.fan = FAN_TEXT_SP;
+// 1765 			main_menu.set=SET_TEXT_SP;
+// 1766 			main_menu.more=MORE_TEXT_SP;
+// 1767 			main_menu.tool = TOOL_TEXT_SP;
+// 1768 			//TOOL
+// 1769 			tool_menu.title = TOOL_TEXT_SP;
+// 1770 			tool_menu.preheat = TOOL_PREHEAT_SP;
+        STR      R7,[R4, #+680]
+// 1771 			tool_menu.extrude = TOOL_EXTRUDE_SP;
+// 1772 			tool_menu.move = TOOL_MOVE_SP;
+// 1773 			tool_menu.home= TOOL_HOME_SP;
+// 1774 			tool_menu.leveling = TOOL_LEVELING_SP;
+// 1775             tool_menu.autoleveling = TOOL_AUTO_LEVELING_SP;
+// 1776 			tool_menu.filament = TOOL_FILAMENT_SP;
+// 1777 			tool_menu.more = TOOL_MORE_SP;			
+// 1778 			//‘§»»
+// 1779 			preheat_menu.adjust_title = TITLE_ADJUST_SP;
+// 1780 			preheat_menu.title=TITLE_PREHEAT_SP;
+        STR      R7,[R4, #+348]
+        LDR.W    R0,??disp_language_init_33+0x58
+// 1781 			preheat_menu.add=ADD_TEXT_SP;
+        LDR.W    R7,??disp_language_init_33+0x5C
+        LDR.W    R5,??disp_language_init_33+0x60
+        LDR.W    R2,??disp_language_init_33+0x64
+        LDR.W    R10,??disp_language_init_33+0x68
+        LDR.W    R6,??disp_language_init_33+0x6C
+        LDR.W    R12,??disp_language_init_34
+        LDR.W    R1,??disp_language_init_33+0x70
+        LDR.W    LR,??disp_language_init_33+0x74
+        LDR.W    R11,??disp_language_init_33+0x78
+        LDR.W    R3,??disp_language_init_33+0x7C
+// 1782 			preheat_menu.dec=DEC_TEXT_SP;
+// 1783 			preheat_menu.ext1=EXTRUDER_1_TEXT_SP;
+        LDR.W    R8,??disp_language_init_33+0x80
+// 1784 			preheat_menu.ext2=EXTRUDER_2_TEXT_SP;
+        LDR.W    R9,??disp_language_init_33+0x84
+        STR      R7,[R4, #+356]
+        STR      R0,[R4, #+756]
+        STR      R5,[R4, #+776]
+        STR      R2,[R4, #+408]
+        STR      R10,[R4, #+412]
+        STR      R6,[R4, #+420]
+        STR      R12,[R4, #+424]
+        STR      R1,[R4, #+428]
+        STR      LR,[R4, #+432]
+        STR      R11,[R4, #+436]
+        STR      R5,[R4, #+440]
+        STR      R5,[R4, #+676]
+        STR      R6,[R4, #+684]
+        STR      R2,[R4, #+688]
+        STR      R10,[R4, #+692]
+        STR      R12,[R4, #+696]
+        STR      R1,[R4, #+700]
+        STR      R3,[R4, #+344]
+        STR      R8,[R4, #+360]
+        STR      R9,[R4, #+364]
+// 1785 			preheat_menu.hotbed=HEATBED_TEXT_SP;
+// 1786 			preheat_menu.off=CLOSE_TEXT_SP;
+// 1787 			//“∆∂Ø
+// 1788 			move_menu.title = MOVE_TEXT_SP;
+        STR      R2,[R4, #+452]
+// 1789 			//πÈ¡„
+// 1790 			home_menu.title=TITLE_HOME_SP;
+        STR      R10,[R4, #+844]
+// 1791 			home_menu.home_x= HOME_X_TEXT_SP;
+// 1792 			home_menu.home_y= HOME_Y_TEXT_SP;
+// 1793 			home_menu.home_z= HOME_Z_TEXT_SP;
+// 1794 			home_menu.home_all= HOME_ALL_TEXT_SP;
+// 1795 			home_menu.stopmove = HOME_STOPMOVE_SP;
+// 1796 			//Œƒº˛ƒø¬º
+// 1797 			file_menu.title=TITLE_CHOOSEFILE_SP;
+// 1798 			file_menu.page_up=PAGE_UP_TEXT_SP;
+// 1799 			file_menu.page_down=PAGE_DOWN_TEXT_SP;
+// 1800 			file_menu.file_loading = FILE_LOADING_SP;
+// 1801 			file_menu.no_file = NO_FILE_SP;
+// 1802 			file_menu.no_file_and_check = NO_FILE_SP;//NO_FILE_AND_CHECK_SP;			
+// 1803 			//º∑≥ˆ
+// 1804 			extrude_menu.title=TITLE_EXTRUDE_SP;
+        STR      R6,[R4, #+92]
+        LDR.W    R7,??disp_language_init_33+0x88
+        LDR.W    R0,??disp_language_init_33+0x8C
+        LDR.W    R1,??disp_language_init_33+0x90
+// 1805 			extrude_menu.in=EXTRUDER_IN_TEXT_SP;
+// 1806 			extrude_menu.out=EXTRUDER_OUT_TEXT_SP;
+// 1807 			extrude_menu.ext1=EXTRUDER_1_TEXT_SP;
+// 1808 			extrude_menu.ext2=EXTRUDER_2_TEXT_SP;
+// 1809 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_SP;
+// 1810 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_SP;
+// 1811 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_SP;
+// 1812 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_SP;
+// 1813 			//µ˜∆Ω
+// 1814 			leveling_menu.title=TITLE_LEVELING_SP;
+// 1815 			leveling_menu.position1=LEVELING_POINT1_TEXT_SP;
+// 1816 			leveling_menu.position2=LEVELING_POINT2_TEXT_SP;
+// 1817 			leveling_menu.position3=LEVELING_POINT3_TEXT_SP;
+// 1818 			leveling_menu.position4=LEVELING_POINT4_TEXT_SP;
+// 1819 			leveling_menu.position5=LEVELING_POINT5_TEXT_SP;
+// 1820 			//…Ë÷√
+// 1821 			set_menu.title=TITLE_SET_SP;
+// 1822 			set_menu.filesys=FILESYS_TEXT_SP;
+        LDR.W    R10,??disp_language_init_33+0x94
+        STR      R7,[R4, #+368]
+        STR      R0,[R4, #+752]
+        STR      R1,[R4, #+704]
+        LDR.W    R7,??disp_language_init_33+0x98
+        LDR.W    R0,??disp_language_init_30+0xF0
+        STR      R7,[R4, #+372]
+        STR      R0,[R4, #+760]
+        LDR.W    R7,??disp_language_init_33+0x9C
+        LDR.W    R0,??disp_language_init_30+0x104
+        STR      R7,[R4, #+852]
+        STR      R0,[R4, #+764]
+        LDR.W    R7,??disp_language_init_33+0xA0
+        LDR.W    R0,??disp_language_init_33+0xA4
+        STR      R7,[R4, #+856]
+        STR      R0,[R4, #+768]
+        LDR.W    R7,??disp_language_init_33+0xA8
+        LDR.W    R0,??disp_language_init_33+0xAC
+        STR      R7,[R4, #+860]
+        STR      R0,[R4, #+772]
+        LDR.W    R7,??disp_language_init_33+0xB0
+        LDR.W    R0,??disp_language_init_33+0xB4
+        STR      R7,[R4, #+848]
+        STR      R0,[R4, #+400]
+        LDR.W    R7,??disp_language_init_30+0x10C
+        LDR.W    R0,??disp_language_init_33+0xB8
+        STR      R7,[R4, #+864]
+        STR      R0,[R4, #+416]
+        LDR.W    R7,??disp_language_init_33+0xB8
+        LDR.W    R0,??disp_language_init_33+0xBC
+        STR      R7,[R4, #+788]
+        STR      R0,[R4, #+444]
+        STR      R0,[R4, #+708]
+        STR      R0,[R4, #+352]
+        LDR.W    R7,??disp_language_init_33+0xC0
+        STR      R7,[R4, #+792]
+        LDR.W    R7,??disp_language_init_33+0xC4
+        STR      R7,[R4, #+796]
+        LDR.W    R7,??disp_language_init_33+0xC8
+        STR      R7,[R4, #+804]
+        LDR.W    R7,??disp_language_init_33+0xCC
+        STR      R7,[R4, #+808]
+        STR      R7,[R4, #+812]
+        LDR.W    R7,??disp_language_init_33+0xD0
+        STR      R7,[R4, #+96]
+        LDR.W    R7,??disp_language_init_33+0xD4
+        STR      R7,[R4, #+100]
+        STR      R8,[R4, #+104]
+        STR      R9,[R4, #+108]
+        LDR.W    R7,??disp_language_init_33+0xD8
+        STR      R7,[R4, #+124]
+        STR      R12,[R4, #+872]
+        LDR.W    R7,??disp_language_init_33+0xDC
+// 1823 			set_menu.wifi=WIFI_TEXT_SP;
+// 1824 			set_menu.about=ABOUT_TEXT_SP;
+        LDR.W    R12,??disp_language_init_33+0xE0
+        STR      R7,[R4, #+128]
+        LDR.W    R7,??disp_language_init_33+0xE4
+        STR      R7,[R4, #+132]
+        LDR.W    R7,??disp_language_init_34+0xC
+        STR      R7,[R4, #+156]
+        LDR.W    R7,??disp_language_init_33+0xE8
+        STR      R7,[R4, #+876]
+        LDR.W    R7,??disp_language_init_33+0xEC
+        STR      R7,[R4, #+880]
+        LDR.W    R7,??disp_language_init_33+0xF0
+        STR      R7,[R4, #+884]
+        LDR.W    R7,??disp_language_init_33+0xF4
+        STR      R7,[R4, #+888]
+        LDR.W    R7,??disp_language_init_33+0xF8
+        STR      R7,[R4, #+892]
+        LDR.N    R7,??disp_language_init_30+0x158
+        STR      R11,[R7, #+0]
+        STR      R10,[R7, #+4]
+        STR      R12,[R7, #+12]
+// 1825 			set_menu.fan=FAN_TEXT_SP;
+        STR      LR,[R7, #+16]
+        LDR.W    R11,??disp_language_init_33
+        STR      R11,[R7, #+8]
+// 1826 			set_menu.filament=FILAMENT_TEXT_SP;
+        STR      R1,[R7, #+20]
+// 1827 			set_menu.breakpoint=BREAK_POINT_TEXT_SP;
+// 1828 			set_menu.motoroff=MOTOR_OFF_TEXT_SP;
+// 1829 			set_menu.language=LANGUAGE_TEXT_SP;
+// 1830 			//∏¸∂‡
+// 1831 			more_menu.title = TITLE_MORE_SP;
+        STR      R0,[R4, #+1012]
+        LDR.W    R11,??disp_language_init_33+0xFC
+        STR      R11,[R7, #+24]
+        LDR.W    R11,??disp_language_init_33+0x100
+        STR      R11,[R7, #+28]
+        LDR.W    R11,??disp_language_init_33+0x104
+        STR      R11,[R7, #+36]
+// 1832 			more_menu.zoffset = ZOFFSET_SP;
+        LDR.N    R7,??disp_language_init_30+0x16C
+        STR      R7,[R4, #+1016]
+// 1833 			//Œƒº˛œµÕ≥
+// 1834 			filesys_menu.title = TITLE_FILESYS_SP;
+        STR      R10,[R4, #+992]
+// 1835 			filesys_menu.sd_sys = SD_CARD_TEXT_SP;
+        ADR.W    R10,??disp_language_init_30  ;; 0x53, 0x44, 0x00, 0x00
+// 1836 			filesys_menu.usb_sys = U_DISK_TEXT_SP;		
+        LDR.W    R7,??disp_language_init_33+0x108
+        STR      R7,[R4, #+1004]
+        STR      R10,[R4, #+1000]
+// 1837 			
+// 1838 			//WIFI
+// 1839 			wifi_menu.title=WIFI_TEXT;
+// 1840 			//wifi_menu.key = WIFI_KEY_TEXT_SP;
+// 1841 			//wifi_menu.ip = WIFI_IP_TEXT_SP;
+// 1842 			//wifi_menu.state= WIFI_STA_TEXT_SP;
+// 1843 			wifi_menu.cloud= CLOUD_TEXT_SP;
+// 1844 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_SP;
+// 1845 
+// 1846 			cloud_menu.title = TITLE_CLOUD_TEXT_SP;
+// 1847 			cloud_menu.bind = CLOUD_BINDED_SP;
+// 1848 			cloud_menu.binded = CLOUD_BINDED_SP;
+// 1849 			cloud_menu.unbind = CLOUD_UNBIND_SP;
+// 1850 			cloud_menu.unbinding = CLOUD_UNBINDED_SP;
+// 1851 			cloud_menu.disconnected = CLOUD_DISCONNECTED_SP;
+// 1852 			cloud_menu.disable = CLOUD_DISABLE_SP;			
+// 1853 			//πÿ”⁄
+// 1854 			about_menu.title = ABOUT_TEXT_SP;
+        STR      R12,[R4, #+900]
+// 1855 			about_menu.type = ABOUT_TYPE_TEXT_SP;
+// 1856 			about_menu.version = ABOUT_VERSION_TEXT_SP;
+// 1857 			about_menu.wifi = ABOUT_WIFI_TEXT_SP;				
+// 1858 			//∑Á…»
+// 1859 			fan_menu.title = FAN_TEXT_SP;
+        STR      LR,[R4, #+716]
+// 1860 			fan_menu.add = FAN_ADD_TEXT_SP;
+        STR      R0,[R4, #+720]
+// 1861 			fan_menu.dec = FAN_DEC_TEXT_SP;
+// 1862 			fan_menu.state = FAN_TIPS1_TEXT_SP;
+// 1863 			//ªª¡œ
+// 1864 			filament_menu.title = TITLE_FILAMENT_SP;
+        STR      R1,[R4, #+0]
+        LDR.N    R7,??disp_language_init_29
+// 1865 			filament_menu.in = FILAMENT_IN_TEXT_SP;
+// 1866 			filament_menu.out = FILAMENT_OUT_TEXT_SP;
+// 1867 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_SP;
+// 1868 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_SP;
+// 1869 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_SP;
+// 1870 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_SP;
+// 1871 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_SP;
+// 1872 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_SP;
+// 1873 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_SP;
+// 1874 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_SP;
+// 1875 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_SP;
+// 1876 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_SP;
+// 1877 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_SP;
+// 1878 
+// 1879 			//”Ô—‘
+// 1880 			language_menu.title = LANGUAGE_TEXT_SP;
+// 1881 			language_menu.next = PAGE_DOWN_TEXT_SP;
+// 1882 			language_menu.up = PAGE_UP_TEXT_SP;			
+// 1883 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 1884 			printing_menu.title = TITLE_PRINTING_SP;
+// 1885 			printing_menu.option = PRINTING_OPERATION_SP;
+// 1886 			printing_menu.stop = PRINTING_STOP_SP;
+// 1887 			printing_menu.pause = PRINTING_PAUSE_SP;
+        LDR.W    R12,??disp_language_init_33+0xAC
+// 1888 			printing_menu.resume = PRINTING_RESUME_SP;
+// 1889 
+// 1890 			//≤Ÿ◊˜ΩÁ√Ê
+// 1891 			operation_menu.title = TITLE_OPERATION_SP;
+// 1892 			operation_menu.pause = PRINTING_PAUSE_SP;
+// 1893 			operation_menu.stop = PRINTING_STOP_SP;
+// 1894 			operation_menu.temp = PRINTING_TEMP_SP;
+// 1895 			operation_menu.fan = FAN_TEXT_SP;
+// 1896 			operation_menu.extr = PRINTING_EXTRUDER_SP;
+// 1897 			operation_menu.speed = PRINTING_CHANGESPEED_SP;			
+// 1898 			operation_menu.filament = FILAMENT_TEXT_SP;
+// 1899 			operation_menu.more = PRINTING_MORE_SP;
+// 1900 			operation_menu.move = PRINTING_MOVE_SP;
+// 1901 			operation_menu.auto_off = AUTO_SHUTDOWN_SP;
+// 1902 			operation_menu.manual_off = MANUAL_SHUTDOWN_SP;
+// 1903 			//‘›Õ£ΩÁ√Ê
+// 1904 			pause_menu.title= TITLE_PAUSE_RU;
+        LDR.W    R10,??disp_language_init_33+0x4C
+        STR      R7,[R4, #+504]
+        LDR.W    R7,??disp_language_init_33+0x10C
+        STR      R7,[R4, #+528]
+        LDR.W    R7,??disp_language_init_33+0x4
+        STR      R7,[R4, #+548]
+        LDR.W    R7,??disp_language_init_33+0x10
+        STR      R7,[R4, #+596]
+        LDR.W    R7,??disp_language_init_33+0x1C
+        STR      R7,[R4, #+612]
+        STR      R7,[R4, #+620]
+        LDR.W    R7,??disp_language_init_33+0x110
+        STR      R7,[R4, #+600]
+        LDR.N    R7,??disp_language_init_30+0x1CC
+        STR      R7,[R4, #+604]
+        LDR.N    R7,??disp_language_init_30+0x1D4
+        STR      R7,[R4, #+628]
+        LDR.W    R7,??disp_language_init_33+0x2C
+        STR      R7,[R4, #+624]
+        LDR.W    R7,??disp_language_init_33+0x114
+        STR      R7,[R4, #+912]
+        LDR.N    R7,??disp_language_init_30+0x2C
+        STR      R7,[R4, #+916]
+        LDR.W    R7,??disp_language_init_33+0x3C
+        STR      R7,[R4, #+920]
+        LDR.W    R7,??disp_language_init_33+0x5C
+        STR      R7,[R4, #+724]
+        LDR.W    R7,??disp_language_init_35
+        STR      R7,[R4, #+744]
+        LDR.W    R7,??disp_language_init_33+0xD0
+        STR      R7,[R4, #+4]
+        LDR.W    R7,??disp_language_init_33+0xD4
+        STR      R7,[R4, #+8]
+        STR      R8,[R4, #+12]
+        STR      R9,[R4, #+16]
+        LDR.N    R7,??disp_language_init_30+0x17C
+        LDR.W    R8,??disp_language_init_35+0x4
+        LDR.W    R9,??disp_language_init_35+0x8
+        STR      R7,[R4, #+28]
+        LDR.W    R7,??disp_language_init_35+0xC
+        STR      R7,[R4, #+52]
+        STR      R8,[R4, #+60]
+        LDR.W    R8,??disp_language_init_35+0x10
+        STR      R8,[R4, #+68]
+        LDR.W    R8,??disp_language_init_35+0x14
+        STR      R8,[R4, #+76]
+        STR      R7,[R4, #+56]
+        LDR.W    R8,??disp_language_init_35+0x18
+        LDR.W    R7,??disp_language_init_35+0x1C
+        STR      R7,[R4, #+64]
+        LDR.W    R7,??disp_language_init_35+0x20
+        STR      R7,[R4, #+72]
+        LDR.W    R7,??disp_language_init_35+0x24
+        STR      R7,[R4, #+80]
+        STR      R1,[R4, #+308]
+// 1905 			pause_menu.resume = PRINTING_RESUME_SP;
+// 1906 			pause_menu.stop = PRINTING_STOP_SP;
+// 1907 			pause_menu.extrude = PRINTING_EXTRUDER_SP;
+// 1908 			pause_menu.move = PRINTING_MOVE_SP;
+// 1909 			pause_menu.filament= FILAMENT_TEXT_SP;
+        STR      R1,[R4, #+836]
+        STR      R11,[R4, #+224]
+        STR      R5,[R4, #+644]
+        STR      R12,[R4, #+664]
+        STR      R5,[R4, #+288]
+        STR      R3,[R4, #+300]
+        STR      LR,[R4, #+304]
+        STR      R6,[R4, #+312]
+        STR      R8,[R4, #+316]
+        STR      R0,[R4, #+324]
+        STR      R2,[R4, #+320]
+        STR      R9,[R4, #+332]
+        STR      R10,[R4, #+816]
+        STR      R6,[R4, #+828]
+        STR      R2,[R4, #+832]
+// 1910 			pause_menu.more = PRINTING_MORE_SP;
+        STR      R0,[R4, #+840]
+// 1911 
+// 1912 			//±‰ÀŸΩÁ√Ê
+// 1913 			speed_menu.title = PRINTING_CHANGESPEED_SP;
+        STR      R8,[R4, #+552]
+// 1914 			speed_menu.add = ADD_TEXT_SP;
+        STR      R0,[R4, #+556]
+// 1915 			speed_menu.dec = DEC_TEXT_SP;
+// 1916 			speed_menu.move = MOVE_SPEED_SP;
+        STR      R2,[R4, #+568]
+// 1917 			speed_menu.extrude = EXTRUDER_SPEED_SP;
+        STR      R6,[R4, #+564]
+// 1918 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_SP;
+// 1919 			speed_menu.move_speed = MOVE_SPEED_STATE_SP;
+// 1920 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 1921 			printing_more_menu.title= TITLE_MORE_SP;
+        STR      R0,[R4, #+936]
+// 1922 			printing_more_menu.fan = FAN_TEXT_SP;
+        STR      LR,[R4, #+940]
+// 1923 			printing_more_menu.auto_close = AUTO_SHUTDOWN_SP;
+// 1924 			printing_more_menu.manual = MANUAL_SHUTDOWN_SP;
+        STR      R9,[R4, #+948]
+// 1925 			printing_more_menu.speed = PRINTING_CHANGESPEED_SP;		
+        STR      R8,[R4, #+956]
+// 1926 			printing_more_menu.temp = PRINTING_TEMP_SP;
+        STR      R3,[R4, #+952]
+        LDR.W    R1,??disp_language_init_33+0x5C
+        LDR.W    R7,??disp_language_init_33+0xC4
+        LDR.W    R12,??disp_language_init_35+0x28
+        LDR.W    R5,??disp_language_init_33+0xAC
+// 1927 
+// 1928 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
+// 1929 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_SP;
+// 1930 			print_file_dialog_menu.cancle = DIALOG_CANCLE_SP;
+// 1931 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_SP;
+// 1932 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_SP;
+// 1933 			print_file_dialog_menu.retry = DIALOG_RETRY_SP;
+// 1934 			print_file_dialog_menu.stop = DIALOG_STOP_SP;
+// 1935 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_SP;
+// 1936 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_SP;
+// 1937 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_SP;
+// 1938             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_SP;
+// 1939 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_SP;
+// 1940 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_SP;
+// 1941 			print_file_dialog_menu.reprint=DIALOG_REPRINT_SP;
+        LDR.W    R2,??disp_language_init_33+0x48
+        STR      R1,[R4, #+560]
+        STR      R7,[R4, #+276]
+        STR      R12,[R4, #+668]
+        STR      R5,[R4, #+292]
+        STR      R12,[R4, #+820]
+        STR      R2,[R4, #+216]
+        LDR.W    R1,??disp_language_init_35+0x2C
+        LDR.W    R7,??disp_language_init_33+0xC0
+        LDR.W    R5,??disp_language_init_35+0x30
+// 1942 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_SP;
+        LDR.W    R2,??disp_language_init_33+0x50
+        STR      R1,[R4, #+592]
+        STR      R7,[R4, #+280]
+        STR      R5,[R4, #+328]
+        STR      R5,[R4, #+944]
+        STR      R2,[R4, #+220]
+        LDR.W    R1,??disp_language_init_35+0x34
+        LDR.W    R7,??disp_language_init_33+0xB8
+// 1943 			//ZOFFSET
+// 1944 			zoffset_menu.title = TITLE_ZOFFSET_SP;
+// 1945 			zoffset_menu.inc = ZOFFSET_INC_SP;
+// 1946 			zoffset_menu.dec = ZOFFSET_DEC_SP;			
+        LDR.W    R2,??disp_language_init_33+0x5C
+        STR      R1,[R4, #+588]
+        STR      R7,[R4, #+640]
+        LDR.W    R1,??disp_language_init_33+0x58
+        LDR.W    R7,??disp_language_init_35+0x38
+        STR      R1,[R4, #+164]
+        STR      R7,[R4, #+672]
+        STR      R7,[R4, #+296]
+        STR      R7,[R4, #+824]
+        LDR.W    R1,??disp_language_init_35+0x3C
+        STR      R1,[R4, #+168]
+        LDR.W    R1,??disp_language_init_35+0x40
+        STR      R1,[R4, #+172]
+        LDR.W    R1,??disp_language_init_35+0x44
+        STR      R1,[R4, #+176]
+        LDR.W    R1,??disp_language_init_35+0x48
+        STR      R1,[R4, #+180]
+        LDR.W    R1,??disp_language_init_35+0x4C
+        STR      R1,[R4, #+184]
+        LDR.W    R1,??disp_language_init_35+0x50
+        STR      R1,[R4, #+188]
+        LDR.W    R1,??disp_language_init_35+0x54
+        STR      R1,[R4, #+192]
+        LDR.W    R1,??disp_language_init_35+0x58
+        STR      R1,[R4, #+200]
+        LDR.W    R1,??disp_language_init_33+0x40
+        STR      R1,[R4, #+204]
+        LDR.W    R1,??disp_language_init_35+0x5C
+        B.N      ??disp_language_init_36
+        DATA
+??disp_language_init_29:
+        DC32     `?<Constant "WIFI">`
+        THUMB
+??disp_language_init_36:
+        STR      R1,[R4, #+208]
+        LDR.W    R1,??disp_language_init_35+0x60
+// 1947 			break;
+        B.W      ??disp_language_init_20
+        DATA
+??disp_language_init_30:
+        DC8      0x53, 0x44, 0x00, 0x00
         DC32     `?<Constant "\\350\\252\\236\\350\\250\\200">`
+        DC32     `?<Constant "SD\\345\\215\\241">`
         DC32     `?<Constant "U\\347\\233\\244">`
         DC32     `?<Constant "\\351\\233\\262\\346\\234\\215\\345\\213\\2`
         DC32     `?<Constant "\\345\\267\\262\\347\\266\\201\\345\\256\\2`
         DC32     `?<Constant "\\350\\247\\243\\347\\266\\201">`
         DC32     `?<Constant "\\346\\234\\252\\347\\266\\201\\345\\256\\2`
         DC32     `?<Constant "\\346\\234\\252\\351\\200\\243\\346\\216\\2`
+        DC32     `?<Constant "\\345\\267\\262\\347\\246\\201\\347\\224\\2`
+        DC32     `?<Constant "Type: ">`
+        DC32     `?<Constant "Firmware: ">`
+        DC32     `?<Constant "Wifi: ">`
+        DC32     `?<Constant "\\346\\223\\215\\344\\275\\234">`
         DC32     `?<Constant "\\345\\276\\205\\346\\211\\223\\345\\215\\2_1`
         DC32     `?<Constant "\\346\\272\\226\\345\\202\\231\\351\\200\\2`
         DC32     `?<Constant "\\345\\212\\240\\347\\206\\261\\345\\256\\2`
@@ -2554,1060 +5911,62 @@ _Z18disp_language_initv:
         DC32     `?<Constant "\\345\\212\\240\\347\\206\\261\\345\\256\\2_1`
         DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\351\\200\\2_2`
         DC32     `?<Constant "\\351\\200\\200\\346\\226\\231\\345\\256\\2_1`
+        DC32     `?<Constant "\\346\\255\\243\\345\\234\\250\\346\\211\\2`
+        DC32     `?<Constant "\\345\\201\\234\\346\\255\\242">`
         DC32     `?<Constant "\\346\\232\\253\\345\\201\\234">`
         DC32     `?<Constant "\\346\\201\\242\\345\\276\\251">`
         DC32     `?<Constant "\\350\\256\\212\\351\\200\\237">`
-        DC32     `?<Constant "\\350\\207\\252\\345\\213\\225\\351\\227\\2`
         DC32     `?<Constant "\\346\\211\\213\\345\\213\\225\\351\\227\\2`
         DC32     `?<Constant "\\346\\223\\240\\345\\207\\272\\351\\200\\2`
+        DC32     `?<Constant "\\345\\206\\215\\346\\211\\223\\345\\215\\2_1`
+        DC32     `?<Constant "\\350\\207\\252\\345\\213\\225\\351\\227\\2`
         DC32     `?<Constant "\\347\\247\\273\\345\\213\\225\\351\\200\\2`
-        DC32     `?<Constant "\\347\\242\\272\\345\\256\\232">`
+        DC32     `?<Constant "wifi\\346\\250\\241\\345\\241\\212\\346\\2`
         DC32     `?<Constant "\\351\\207\\215\\350\\251\\246">`
         DC32     `?<Constant "\\351\\214\\257\\350\\252\\244:\\346\\211\\`
         DC32     `?<Constant "\\345\\276\\236\\346\\226\\267\\351\\273\\2`
         DC32     `?<Constant "\\351\\214\\257\\350\\252\\244:\\351\\200\\`
         DC32     `?<Constant "\\350\\253\\213\\345\\205\\210\\350\\243\\2`
         DC32     `?<Constant "\\346\\211\\223\\345\\215\\260\\346\\231\\2`
-        DC32     `?<Constant "\\345\\206\\215\\346\\211\\223\\345\\215\\2_1`
         DC32     `?<Constant "Confirm">`
-        DC32     `?<Constant "Back">`
-        DC32     `?<Constant "Closing machine......">`
-        DC32     `?<Constant "Unbind the printer?">`
-        DC32     `?<Constant "Printing">`
-        DC32     `?<Constant "Pause">`
-        DC32     `?<Constant "Operation">`
-        DC32     `?<Constant "ReadyPrint">`
-        DC32     `?<Constant "Preheat">`
-        DC32     `?<Constant "Move">`
-        DC32     `?<Constant "Home">`
-        DC32     `?<Constant "Extrusion">`
-        DC32     `?<Constant "Leveling">`
-        DC32     `?<Constant "AutoLevel">`
-        DC32     `?<Constant "Settings">`
-        DC32     `?<Constant "More">`
-        DC32     `?<Constant "Tool">`
-        DC32     `?<Constant "Filament">`
-        DC32     `?<Constant "Adjust">`
-        DC32     `?<Constant "Extrusion1">`
-        DC32     `?<Constant "Extrusion2">`
-        DC32     `?<Constant "HeatBed">`
-        DC32     `?<Constant "Close">`
-        DC32     `?<Constant "Quickstop">`
-        DC32     `?<Constant "ChooseFile">`
-        DC32     `?<Constant "Page up">`
-        DC32     `?<Constant "Page down">`
-        DC32     `?<Constant "Loading......">`
-        DC32     `?<Constant "No files found!">`
-        DC32     `?<Constant "Normal">`
-        DC32     `?<Constant "High">`
-        DC32     `?<Constant "Temper">`
-        DC32     `?<Constant "Point1">`
-        DC32     `?<Constant "Point2">`
-        DC32     `?<Constant "Point3">`
-        DC32     `?<Constant "Point4">`
-        DC32     `?<Constant "Point5">`
-        DC32     `?<Constant "FileSys">`
-        DC32     `?<Constant "WiFi">`
-        DC32     `?<Constant "About">`
-        DC32     `?<Constant "Continue">`
-        DC32     `?<Constant "Motor-off">`
-        DC32     `?<Constant "Language">`
-        DC32     `?<Constant "Unbind">`
-        THUMB
-??disp_language_init_17:
-        LDR.W    R1,??disp_language_init_18
-        STR      R1,[R0, #+776]
-//  920 		case LANG_SPANISH:
-//  921 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_SP;
-//  922 			common_menu.text_back=BACK_TEXT_SP;
-        LDR.W    R1,??disp_language_init_18+0x4
-        STR      R1,[R0, #+772]
-//  923 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_SP;
-        LDR.W    R1,??disp_language_init_18+0x8
-        STR      R1,[R0, #+780]
-//  924 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_SP;
-        LDR.W    R1,??disp_language_init_18+0x10
-        STR      R1,[R0, #+784]
-//  925 			common_menu.print_special_title = PRINTING_SP;
-        LDR.W    R1,??disp_language_init_18+0x18
-        STR      R1,[R0, #+788]
-        LDR.W    R1,??disp_language_init_18+0x1C
-        STR      R1,[R0, #+792]
-//  926 			common_menu.pause_special_title = PRINTING_PAUSAR_SP;
-//  927 			common_menu.operate_special_title = PRINTING_AJUSTES_SP;			
-        LDR.W    R7,??disp_language_init_18+0x20
-        STR      R7,[R0, #+796]
-//  928 			//÷˜“≥√Ê
-//  929 			main_menu.title=TITLE_READYPRINT_SP;
-        LDR.W    R1,??disp_language_init_18+0x24
-        STR      R1,[R0, #+340]
-//  930 			main_menu.preheat=PREHEAT_TEXT_SP;
-        LDR.W    R12,??disp_language_init_18+0x28
-        STR      R12,[R0, #+344]
-//  931 			main_menu.move=MOVE_TEXT_SP;
-        LDR.W    R2,??disp_language_init_18+0x2C
-        STR      R2,[R0, #+348]
-//  932 			main_menu.home=HOME_TEXT_SP;
-        LDR.W    R9,??disp_language_init_18+0x30
-        STR      R9,[R0, #+352]
-        LDR.W    R1,??disp_language_init_18+0x34
-        STR      R1,[R0, #+356]
-//  933 			main_menu.print=PRINT_TEXT_SP;
-//  934 			main_menu.extrude=EXTRUDE_TEXT_SP;
-        LDR.W    R4,??disp_language_init_18+0x38
-        STR      R4,[R0, #+360]
-//  935 			main_menu.leveling=LEVELING_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0x3C
-        STR      R8,[R0, #+364]
-//  936 			main_menu.autoleveling=AUTO_LEVELING_TEXT_SP;
-        LDR.W    R1,??DataTable548
-        STR      R1,[R0, #+368]
-//  937 			main_menu.fan = FAN_TEXT_SP;
-        LDR.W    R5,??disp_language_init_18+0x40
-        STR      R5,[R0, #+372]
-//  938 			main_menu.set=SET_TEXT_SP;
-        LDR.W    R10,??disp_language_init_18+0x44
-        STR      R10,[R0, #+376]
-//  939 			main_menu.more=MORE_TEXT_SP;
-        LDR.W    R6,??disp_language_init_18+0x48
-        STR      R6,[R0, #+384]
-//  940 			main_menu.tool = TOOL_TEXT_SP;
-        STR      R7,[R0, #+380]
-//  941 			//TOOL
-//  942 			tool_menu.title = TOOL_TEXT_SP;
-        STR      R7,[R0, #+696]
-//  943 			tool_menu.preheat = TOOL_PREHEAT_SP;
-        STR      R12,[R0, #+700]
-//  944 			tool_menu.extrude = TOOL_EXTRUDE_SP;
-        STR      R4,[R0, #+704]
-//  945 			tool_menu.move = TOOL_MOVE_SP;
-        STR      R2,[R0, #+708]
-//  946 			tool_menu.home= TOOL_HOME_SP;
-        STR      R9,[R0, #+712]
-//  947 			tool_menu.leveling = TOOL_LEVELING_SP;
-        STR      R8,[R0, #+716]
-//  948             tool_menu.autoleveling = TOOL_AUTO_LEVELING_SP;
-        STR      R1,[R0, #+720]
-//  949 			tool_menu.filament = TOOL_FILAMENT_SP;
-        LDR.W    R3,??disp_language_init_18+0x4C
-        STR      R3,[R0, #+724]
-//  950 			tool_menu.more = TOOL_MORE_SP;			
-        STR      R6,[R0, #+728]
-//  951 			//‘§»»
-//  952 			preheat_menu.adjust_title = TITLE_ADJUST_SP;
-        LDR.N    R1,??disp_language_init_13+0x50
-        STR      R1,[R0, #+284]
-//  953 			preheat_menu.title=TITLE_PREHEAT_SP;
-        STR      R12,[R0, #+288]
-//  954 			preheat_menu.add=ADD_TEXT_SP;
-        STR      R6,[R0, #+292]
-        LDR.W    R12,??disp_language_init_18+0x50
-        STR      R12,[R0, #+296]
-//  955 			preheat_menu.dec=DEC_TEXT_SP;
-//  956 			preheat_menu.ext1=EXTRUDER_1_TEXT_SP;
-        LDR.W    R12,??disp_language_init_18+0x54
-        STR      R12,[R0, #+300]
-//  957 			preheat_menu.ext2=EXTRUDER_2_TEXT_SP;
-        LDR.W    LR,??disp_language_init_18+0x58
-        STR      LR,[R0, #+304]
-//  958 			preheat_menu.hotbed=HEATBED_TEXT_SP;
-        LDR.W    R11,??disp_language_init_18+0x5C
-        STR      R11,[R0, #+308]
-//  959 			preheat_menu.off=CLOSE_TEXT_SP;
-        LDR.W    R11,??disp_language_init_18+0x60
-        STR      R11,[R0, #+312]
-//  960 			//“∆∂Ø
-//  961 			move_menu.title = MOVE_TEXT_SP;
-        STR      R2,[R0, #+484]
-//  962 			//πÈ¡„
-//  963 			home_menu.title=TITLE_HOME_SP;
-        STR      R9,[R0, #+856]
-//  964 			home_menu.home_x= HOME_X_TEXT_SP;
-        LDR.W    R9,??disp_language_init_18+0x64
-        STR      R9,[R0, #+864]
-//  965 			home_menu.home_y= HOME_Y_TEXT_SP;
-        LDR.W    R9,??disp_language_init_18+0x68
-        STR      R9,[R0, #+868]
-//  966 			home_menu.home_z= HOME_Z_TEXT_SP;
-        LDR.W    R9,??disp_language_init_18+0x6C
-        STR      R9,[R0, #+872]
-//  967 			home_menu.home_all= HOME_ALL_TEXT_SP;
-        LDR.W    R9,??disp_language_init_18+0x70
-        STR      R9,[R0, #+860]
-//  968 			home_menu.stopmove = HOME_STOPMOVE_SP;
-        LDR.W    R9,??disp_language_init_18+0x74
-        STR      R9,[R0, #+876]
-//  969 			//Œƒº˛ƒø¬º
-//  970 			file_menu.title=TITLE_CHOOSEFILE_SP;
-        LDR.W    R9,??disp_language_init_18+0x34
-        STR      R9,[R0, #+800]
-        LDR.W    R9,??disp_language_init_18+0x78
-        STR      R9,[R0, #+804]
-        LDR.W    R9,??disp_language_init_18+0x7C
-        STR      R9,[R0, #+808]
-//  971 			file_menu.page_up=PAGE_UP_TEXT_SP;
-//  972 			file_menu.page_down=PAGE_DOWN_TEXT_SP;
-//  973 			file_menu.file_loading = FILE_LOADING_SP;
-        LDR.W    R9,??disp_language_init_18+0x80
-        STR      R9,[R0, #+816]
-//  974 			file_menu.no_file = NO_FILE_SP;
-        LDR.W    R9,??disp_language_init_18+0x84
-        STR      R9,[R0, #+820]
-//  975 			file_menu.no_file_and_check = NO_FILE_SP;//NO_FILE_AND_CHECK_SP;			
-        STR      R9,[R0, #+824]
-//  976 			//º∑≥ˆ
-//  977 			extrude_menu.title=TITLE_EXTRUDE_SP;
-        STR      R4,[R0, #+92]
-        LDR.W    R9,??disp_language_init_18+0x88
-        STR      R9,[R0, #+96]
-        LDR.W    R9,??disp_language_init_18+0x8C
-        STR      R9,[R0, #+100]
-//  978 			extrude_menu.in=EXTRUDER_IN_TEXT_SP;
-//  979 			extrude_menu.out=EXTRUDER_OUT_TEXT_SP;
-//  980 			extrude_menu.ext1=EXTRUDER_1_TEXT_SP;
-        STR      R12,[R0, #+104]
-//  981 			extrude_menu.ext2=EXTRUDER_2_TEXT_SP;
-        STR      LR,[R0, #+108]
-//  982 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_SP;
-        LDR.W    R9,??disp_language_init_18+0x90
-        STR      R9,[R0, #+124]
-//  983 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_SP;
-        LDR.W    R9,??DataTable548_1
-        STR      R9,[R0, #+128]
-//  984 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_SP;
-        LDR.W    R9,??DataTable548_2
-        STR      R9,[R0, #+132]
-//  985 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_SP;
-        LDR.W    R9,??disp_language_init_18+0x94
-        STR      R9,[R0, #+156]
-//  986 			//µ˜∆Ω
-//  987 			leveling_menu.title=TITLE_LEVELING_SP;
-        STR      R8,[R0, #+884]
-//  988 			leveling_menu.position1=LEVELING_POINT1_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0x98
-        STR      R8,[R0, #+888]
-//  989 			leveling_menu.position2=LEVELING_POINT2_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0x9C
-        STR      R8,[R0, #+892]
-//  990 			leveling_menu.position3=LEVELING_POINT3_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0xA0
-        STR      R8,[R0, #+896]
-//  991 			leveling_menu.position4=LEVELING_POINT4_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0xA4
-        STR      R8,[R0, #+900]
-//  992 			leveling_menu.position5=LEVELING_POINT5_TEXT_SP;
-        LDR.W    R8,??DataTable548_3
-        STR      R8,[R0, #+904]
-//  993 			//…Ë÷√
-//  994 			set_menu.title=TITLE_SET_SP;
-        STR      R10,[R0, #+528]
-//  995 			set_menu.filesys=FILESYS_TEXT_SP;
-        LDR.W    R11,??DataTable548_4
-        STR      R11,[R0, #+532]
-//  996 			set_menu.wifi=WIFI_TEXT_SP;
-        LDR.W    R8,??DataTable548_5
-        STR      R8,[R0, #+536]
-//  997 			set_menu.about=ABOUT_TEXT_SP;
-        LDR.W    R8,??DataTable548_6
-        STR      R8,[R0, #+540]
-//  998 			set_menu.fan=FAN_TEXT_SP;
-        STR      R5,[R0, #+544]
-//  999 			set_menu.filament=FILAMENT_TEXT_SP;
-        STR      R3,[R0, #+548]
-// 1000 			set_menu.breakpoint=BREAK_POINT_TEXT_SP;
-        LDR.W    R9,??DataTable548_7
-        STR      R9,[R0, #+552]
-// 1001 			set_menu.motoroff=MOTOR_OFF_TEXT_SP;
-        LDR.W    R9,??DataTable548_8
-        STR      R9,[R0, #+556]
-// 1002 			set_menu.language=LANGUAGE_TEXT_SP;
-        LDR.W    R9,??DataTable548_10
-        STR      R9,[R0, #+564]
-// 1003 			//∏¸∂‡
-// 1004 			more_menu.title = TITLE_MORE_SP;
-        STR      R6,[R0, #+1024]
-// 1005 			more_menu.zoffset = ZOFFSET_SP;
-        LDR.W    R10,??disp_language_init_16+0xA4
-        STR      R10,[R0, #+1028]
-// 1006 			//Œƒº˛œµÕ≥
-// 1007 			filesys_menu.title = TITLE_FILESYS_SP;
-        STR      R11,[R0, #+1004]
-// 1008 			filesys_menu.sd_sys = SD_CARD_TEXT_SP;
-        ADR.W    R11,??disp_language_init_13  ;; 0x53, 0x44, 0x00, 0x00
-        STR      R11,[R0, #+1012]
-// 1009 			filesys_menu.usb_sys = U_DISK_TEXT_SP;		
-        LDR.W    R11,??DataTable548_12
-        STR      R11,[R0, #+1016]
-// 1010 			
-// 1011 			//WIFI
-// 1012 			wifi_menu.title=WIFI_TEXT;
-        LDR.W    R11,??disp_language_init_16+0xB0
-        STR      R11,[R0, #+572]
-// 1013 			//wifi_menu.key = WIFI_KEY_TEXT_SP;
-// 1014 			//wifi_menu.ip = WIFI_IP_TEXT_SP;
-// 1015 			//wifi_menu.state= WIFI_STA_TEXT_SP;
-// 1016 			wifi_menu.cloud= CLOUD_TEXT_SP;
-        LDR.W    R11,??DataTable548_13
-        STR      R11,[R0, #+596]
-// 1017 
-// 1018 			cloud_menu.title = TITLE_CLOUD_TEXT_SP;
-        LDR.W    R11,??disp_language_init_13+0x4
-        STR      R11,[R0, #+616]
-// 1019 			cloud_menu.bind = CLOUD_BINDED_SP;
-        LDR.W    R11,??disp_language_init_13+0x8
-        STR      R11,[R0, #+632]
-// 1020 			cloud_menu.binded = CLOUD_BINDED_SP;
-        STR      R11,[R0, #+640]
-// 1021 			cloud_menu.unbind = CLOUD_UNBIND_SP;
-        LDR.W    R11,??DataTable548_14
-        STR      R11,[R0, #+620]
-// 1022 			cloud_menu.unbinding = CLOUD_UNBINDED_SP;
-        LDR.W    R11,??disp_language_init_13+0xC
-        STR      R11,[R0, #+624]
-// 1023 			cloud_menu.disconnected = CLOUD_DISCONNECTED_SP;
-        LDR.W    R11,??disp_language_init_13+0x10
-        STR      R11,[R0, #+648]
-// 1024 			cloud_menu.disable = CLOUD_DISABLE_SP;			
-        LDR.W    R11,??disp_language_init_13+0x14
-        STR      R11,[R0, #+644]
-// 1025 			//πÿ”⁄
-// 1026 			about_menu.title = ABOUT_TEXT_SP;
-        STR      R8,[R0, #+912]
-// 1027 			about_menu.type = ABOUT_TYPE_TEXT_SP;
-        LDR.W    R8,??DataTable548_15
-        STR      R8,[R0, #+924]
-// 1028 			about_menu.version = ABOUT_VERSION_TEXT_SP;
-        LDR.W    R8,??disp_language_init_16+0xC0
-        STR      R8,[R0, #+928]
-// 1029 			about_menu.wifi = ABOUT_WIFI_TEXT_SP;				
-        LDR.W    R8,??disp_language_init_13+0x18
-        STR      R8,[R0, #+932]
-// 1030 			//∑Á…»
-// 1031 			fan_menu.title = FAN_TEXT_SP;
-        STR      R5,[R0, #+736]
-// 1032 			fan_menu.add = FAN_ADD_TEXT_SP;
-        STR      R6,[R0, #+740]
-// 1033 			fan_menu.dec = FAN_DEC_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0x50
-        STR      R8,[R0, #+744]
-// 1034 			fan_menu.state = FAN_TIPS1_TEXT_SP;
-        LDR.W    R8,??DataTable548_16
-        STR      R8,[R0, #+764]
-// 1035 			//ªª¡œ
-// 1036 			filament_menu.title = TITLE_FILAMENT_SP;
-        STR      R3,[R0, #+0]
-// 1037 			filament_menu.in = FILAMENT_IN_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0x88
-        STR      R8,[R0, #+4]
-// 1038 			filament_menu.out = FILAMENT_OUT_TEXT_SP;
-        LDR.W    R8,??disp_language_init_18+0x8C
-        STR      R8,[R0, #+8]
-// 1039 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_SP;
-        STR      R12,[R0, #+12]
-// 1040 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_SP;
-        STR      LR,[R0, #+16]
-// 1041 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_SP;
-        LDR.W    R12,??disp_language_init_13+0x24
-        STR      R12,[R0, #+28]
-// 1042 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_SP;
-        LDR.W    R12,??DataTable548_17
-        STR      R12,[R0, #+52]
-// 1043 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_SP;
-        LDR.W    LR,??DataTable548_18
-        STR      LR,[R0, #+60]
-// 1044 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_SP;
-        LDR.W    LR,??DataTable548_19
-        STR      LR,[R0, #+68]
-// 1045 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_SP;
-        LDR.W    LR,??DataTable548_20
-        STR      LR,[R0, #+76]
-// 1046 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_SP;
-        STR      R12,[R0, #+56]
-// 1047 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_SP;
-        LDR.W    R12,??DataTable548_21
-        STR      R12,[R0, #+64]
-// 1048 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_SP;
-        LDR.W    R12,??DataTable548_22
-        STR      R12,[R0, #+72]
-// 1049 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_SP;
-        LDR.W    R12,??DataTable548_23
-        STR      R12,[R0, #+80]
-// 1050 
-// 1051 			//”Ô—‘
-// 1052 			language_menu.title = LANGUAGE_TEXT_SP;
-        STR      R9,[R0, #+160]
-// 1053 			language_menu.next = PAGE_DOWN_TEXT_SP;
-        LDR.W    R12,??disp_language_init_18+0x7C
-        STR      R12,[R0, #+212]
-// 1054 			language_menu.up = PAGE_UP_TEXT_SP;			
-        LDR.W    R12,??disp_language_init_18+0x78
-        STR      R12,[R0, #+216]
-// 1055 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-// 1056 			printing_menu.title = TITLE_PRINTING_SP;
-        LDR.W    R12,??disp_language_init_18+0x34
-        STR      R12,[R0, #+660]
-// 1057 			printing_menu.option = PRINTING_OPERATION_SP;
-        STR      R7,[R0, #+664]
-// 1058 			printing_menu.stop = PRINTING_STOP_SP;
-        LDR.W    LR,??DataTable548_24
-        STR      LR,[R0, #+692]
-// 1059 			printing_menu.pause = PRINTING_PAUSE_SP;
-        LDR.W    R12,??disp_language_init_18+0x1C
-        STR      R12,[R0, #+684]
-// 1060 			printing_menu.resume = PRINTING_RESUME_SP;
-        LDR.W    R8,??DataTable548_25
-        STR      R8,[R0, #+688]
-// 1061 
-// 1062 			//≤Ÿ◊˜ΩÁ√Ê
-// 1063 			operation_menu.title = TITLE_OPERATION_SP;
-        STR      R7,[R0, #+388]
-// 1064 			operation_menu.pause = PRINTING_PAUSE_SP;
-        MOV      R7,R12
-        STR      R7,[R0, #+392]
-// 1065 			operation_menu.stop = PRINTING_STOP_SP;
-        STR      LR,[R0, #+396]
-// 1066 			operation_menu.temp = PRINTING_TEMP_SP;
-        STR      R1,[R0, #+400]
-// 1067 			operation_menu.fan = FAN_TEXT_SP;
-        STR      R5,[R0, #+404]
-// 1068 			operation_menu.extr = PRINTING_EXTRUDER_SP;
-        STR      R4,[R0, #+412]
-// 1069 			operation_menu.speed = PRINTING_CHANGESPEED_SP;			
-        LDR.W    R7,??DataTable548_26
-        STR      R7,[R0, #+416]
-// 1070 			operation_menu.filament = FILAMENT_TEXT_SP;
-        STR      R3,[R0, #+408]
-// 1071 			operation_menu.more = PRINTING_MORE_SP;
-        STR      R6,[R0, #+424]
-// 1072 			operation_menu.move = PRINTING_MOVE_SP;
-        STR      R2,[R0, #+420]
-// 1073 			operation_menu.auto_off = AUTO_SHUTDOWN_SP;
-        LDR.W    R12,??disp_language_init_13+0x58
-        STR      R12,[R0, #+428]
-// 1074 			operation_menu.manual_off = MANUAL_SHUTDOWN_SP;
-        LDR.W    R9,??DataTable548_27
-        STR      R9,[R0, #+432]
-// 1075 			//‘›Õ£ΩÁ√Ê
-// 1076 			pause_menu.title= TITLE_PAUSE_RU;
-        LDR.W    R11,??disp_language_init_16+0xD0
-        STR      R11,[R0, #+828]
-// 1077 			pause_menu.resume = PRINTING_RESUME_SP;
-        STR      R8,[R0, #+832]
-// 1078 			pause_menu.stop = PRINTING_STOP_SP;
-        STR      LR,[R0, #+836]
-// 1079 			pause_menu.extrude = PRINTING_EXTRUDER_SP;
-        STR      R4,[R0, #+840]
-// 1080 			pause_menu.move = PRINTING_MOVE_SP;
-        STR      R2,[R0, #+844]
-// 1081 			pause_menu.filament= FILAMENT_TEXT_SP;
-        STR      R3,[R0, #+848]
-// 1082 			pause_menu.more = PRINTING_MORE_SP;
-        STR      R6,[R0, #+852]
-// 1083 
-// 1084 			//±‰ÀŸΩÁ√Ê
-// 1085 			speed_menu.title = PRINTING_CHANGESPEED_SP;
-        STR      R7,[R0, #+440]
-// 1086 			speed_menu.add = ADD_TEXT_SP;
-        STR      R6,[R0, #+444]
-// 1087 			speed_menu.dec = DEC_TEXT_SP;
-        LDR.W    R3,??disp_language_init_18+0x50
-        STR      R3,[R0, #+448]
-// 1088 			speed_menu.move = MOVE_SPEED_SP;
-        STR      R2,[R0, #+456]
-// 1089 			speed_menu.extrude = EXTRUDER_SPEED_SP;
-        STR      R4,[R0, #+452]
-// 1090 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_SP;
-        LDR.W    R2,??DataTable548_28
-        STR      R2,[R0, #+480]
-// 1091 			speed_menu.move_speed = MOVE_SPEED_STATE_SP;
-        LDR.W    R2,??DataTable548_29
-        STR      R2,[R0, #+476]
-// 1092 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-// 1093 			printing_more_menu.title= TITLE_MORE_SP;
-        STR      R6,[R0, #+948]
-// 1094 			printing_more_menu.fan = FAN_TEXT_SP;
-        STR      R5,[R0, #+952]
-// 1095 			printing_more_menu.auto_close = AUTO_SHUTDOWN_SP;
-        STR      R12,[R0, #+956]
-// 1096 			printing_more_menu.manual = MANUAL_SHUTDOWN_SP;
-        STR      R9,[R0, #+960]
-// 1097 			printing_more_menu.speed = PRINTING_CHANGESPEED_SP;		
-        STR      R7,[R0, #+968]
-// 1098 			printing_more_menu.temp = PRINTING_TEMP_SP;
-        STR      R1,[R0, #+964]
-// 1099 
-// 1100 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
-// 1101 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_SP;
-        LDR.W    R1,??disp_language_init_18
-        STR      R1,[R0, #+228]
-// 1102 			print_file_dialog_menu.cancle = DIALOG_CANCLE_SP;
-        LDR.W    R1,??DataTable548_30
-        STR      R1,[R0, #+232]
-// 1103 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_SP;
-        LDR.W    R1,??DataTable548_31
-        STR      R1,[R0, #+236]
-// 1104 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_SP;
-        LDR.W    R1,??DataTable548_32
-        STR      R1,[R0, #+240]
-// 1105 			print_file_dialog_menu.retry = DIALOG_RETRY_SP;
-        LDR.W    R1,??DataTable548_33
-        STR      R1,[R0, #+244]
-// 1106 			print_file_dialog_menu.stop = DIALOG_STOP_SP;
-        LDR.N    R1,??disp_language_init_13+0x48
-        STR      R1,[R0, #+248]
-// 1107 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_SP;
-        LDR.W    R1,??DataTable548_34
-        STR      R1,[R0, #+252]
-// 1108 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_SP;
-        LDR.N    R1,??disp_language_init_13+0x7C
-        STR      R1,[R0, #+256]
-// 1109 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_SP;
-        LDR.W    R1,??DataTable548_35
-        STR      R1,[R0, #+264]
-// 1110             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_SP;
-        LDR.N    R1,??disp_language_init_13+0x84
-        STR      R1,[R0, #+268]
-// 1111 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_SP;
-        LDR.W    R1,??DataTable548_36
-        STR      R1,[R0, #+272]
-// 1112 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_SP;
-        LDR.W    R1,??DataTable548_37
-        STR      R1,[R0, #+276]
-// 1113 			print_file_dialog_menu.reprint=DIALOG_REPRINT_SP;
-        LDR.N    R1,??disp_language_init_13+0x90
-        STR      R1,[R0, #+280]
-// 1114 			//ZOFFSET
-// 1115 			zoffset_menu.title = TITLE_ZOFFSET_SP;
-        STR      R10,[R0, #+976]
-// 1116 			zoffset_menu.inc = ZOFFSET_INC_SP;
-        STR      R6,[R0, #+980]
-// 1117 			zoffset_menu.dec = ZOFFSET_DEC_SP;			
-        MOV      R1,R3
-        STR      R1,[R0, #+984]
-// 1118 			break;
-        B.W      ??disp_language_init_4
-        Nop      
-        DATA
-??disp_language_init_13:
-        DC8      0x53, 0x44, 0x00, 0x00
-        DC32     `?<Constant "Cloud">`
-        DC32     `?<Constant "Binded">`
-        DC32     `?<Constant "Unbinded">`
-        DC32     `?<Constant "Disconnected">`
-        DC32     `?<Constant "Disable">`
-        DC32     `?<Constant "WiFi: ">`
-        DC32     `?<Constant "Load">`
-        DC32     `?<Constant "Unload">`
-        DC32     `?<Constant "Please click <Load> \\n...">`
-        DC32     `?<Constant "Heating up the nozzle...">`
-        DC32     `?<Constant "Heat completed,please...">`
-        DC32     `?<Constant "Is loading ,please wait!">`
-        DC32     `?<Constant "Load filament complet...">`
-        DC32     `?<Constant "Heat completed,please...">_1`
-        DC32     `?<Constant "Is unloading,please w...">`
-        DC32     `?<Constant "Unload filament compl...">`
-        DC32     `?<Constant "Option">`
-        DC32     `?<Constant "Stop">`
-        DC32     `?<Constant "Resume">`
-        DC32     `?<Constant "Temp.">`
-        DC32     `?<Constant "Speed">`
-        DC32     `?<Constant "Auto">`
-        DC32     `?<Constant "Manual">`
-        DC32     `?<Constant "Extrude Speed">`
-        DC32     `?<Constant "Move Speed">`
-        DC32     `?<Constant "Cancel">`
-        DC32     `?<Constant "Print this model?">`
-        DC32     `?<Constant "Stop print?">`
-        DC32     `?<Constant "Retry">`
-        DC32     `?<Constant "Error:no file,please ...">`
-        DC32     `?<Constant "Reprint from breakpoint?">`
-        DC32     `?<Constant "Error:transaction fai...">`
-        DC32     `?<Constant "Filament detection sw...">`
-        DC32     `?<Constant "Done print!">`
-        DC32     `?<Constant "Print time: ">`
-        DC32     `?<Constant "Print again">`
-        DC32     `?<Constant "\\320\\275\\320\\260\\320\\267\\320\\260\\3`
-        DC32     `?<Constant "\\320\\263\\320\\276\\321\\202\\320\\276\\3`
-        DC32     `?<Constant " \\320\\275\\320\\260\\320\\263\\321\\200\\`
-        THUMB
-// 1119 		#endif
-// 1120 
-// 1121 		case LANG_FRENCH:
-// 1122 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_FR;
-??disp_language_init_19:
-        LDR.W    R1,??DataTable548_38
-        STR      R1,[R0, #+776]
-// 1123 			common_menu.text_back=BACK_TEXT_FR;
-        LDR.W    R1,??DataTable548_39
-        STR      R1,[R0, #+772]
-// 1124 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_FR;
-        LDR.W    R1,??disp_language_init_18+0x8
-        STR      R1,[R0, #+780]
-// 1125 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_FR;			
-        LDR.W    R1,??disp_language_init_18+0x10
-        STR      R1,[R0, #+784]
-// 1126 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
-        LDR.W    R1,??DataTable548_40
-        STR      R1,[R0, #+788]
-// 1127 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
-        LDR.W    R2,??DataTable548_41
-        STR      R2,[R0, #+792]
-// 1128 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;
-        LDR.W    R1,??DataTable548_42
-        STR      R1,[R0, #+796]
-// 1129 
-// 1130 			//÷˜“≥√Ê
-// 1131 			main_menu.title=TITLE_READYPRINT_FR;
-        LDR.W    R1,??DataTable548_43
-        STR      R1,[R0, #+340]
-// 1132 			main_menu.preheat=PREHEAT_TEXT_FR;
-        LDR.W    R1,??DataTable548_44
-        STR      R1,[R0, #+344]
-// 1133 			main_menu.move=MOVE_TEXT_FR;
-        LDR.W    R3,??DataTable548_45
-        STR      R3,[R0, #+348]
-// 1134 			main_menu.home=HOME_TEXT_FR;
-        LDR.W    R12,??DataTable548_46
-        STR      R12,[R0, #+352]
-// 1135 			main_menu.print=PRINT_TEXT_FR;
-        LDR.W    R4,??DataTable548_47
-        STR      R4,[R0, #+356]
-// 1136 			main_menu.extrude=EXTRUDE_TEXT_FR;
-        LDR.W    R4,??DataTable548_48
-        STR      R4,[R0, #+360]
-// 1137 			main_menu.leveling=LEVELING_TEXT_FR;
-        LDR.W    R8,??disp_language_init_18+0x3C
-        STR      R8,[R0, #+364]
-// 1138 			main_menu.autoleveling=AUTO_LEVELING_TEXT_FR;
-        LDR.W    R7,??DataTable548_49
-        STR      R7,[R0, #+368]
-// 1139 			main_menu.fan = FAN_TEXT_FR;
-        ADR.N    R5,??disp_language_init_20  ;; "Fan"
-        STR      R5,[R0, #+372]
-// 1140 			main_menu.set=SET_TEXT_FR;
-        LDR.W    R6,??disp_language_init_18+0x44
-        STR      R6,[R0, #+376]
-// 1141 			main_menu.more=MORE_TEXT_FR;
-        LDR.W    R6,??DataTable548_50
-        STR      R6,[R0, #+384]
-// 1142 			main_menu.tool = TOOL_TEXT_FR;
-        LDR.W    LR,??DataTable548_51
-        STR      LR,[R0, #+380]
-// 1143 			//TOOL
-// 1144 			tool_menu.title = TOOL_TEXT_FR;
-        STR      LR,[R0, #+696]
-// 1145 			tool_menu.preheat = TOOL_PREHEAT_FR;
-        STR      R1,[R0, #+700]
-// 1146 			tool_menu.extrude = TOOL_EXTRUDE_FR;
-        STR      R4,[R0, #+704]
-// 1147 			tool_menu.move = TOOL_MOVE_FR;
-        STR      R3,[R0, #+708]
-// 1148 			tool_menu.home= TOOL_HOME_FR;
-        STR      R12,[R0, #+712]
-// 1149 			tool_menu.leveling = TOOL_LEVELING_FR;
-        STR      R8,[R0, #+716]
-// 1150             tool_menu.autoleveling = TOOL_AUTO_LEVELING_FR;
-        STR      R7,[R0, #+720]
-// 1151 			tool_menu.filament = TOOL_FILAMENT_FR;
-        LDR.W    R7,??DataTable548_52
-        STR      R7,[R0, #+724]
-// 1152 			tool_menu.more = TOOL_MORE_FR;			
-        STR      R6,[R0, #+728]
-// 1153 			//‘§»»
-// 1154 			preheat_menu.adjust_title = TITLE_ADJUST_FR;
-        LDR.W    R7,??DataTable548_53
-        STR      R7,[R0, #+284]
-// 1155 			preheat_menu.title=TITLE_PREHEAT_FR;
-        STR      R1,[R0, #+288]
-        LDR.W    R1,??DataTable548_54
-        STR      R1,[R0, #+292]
-        LDR.W    R1,??DataTable548_55
-        STR      R1,[R0, #+296]
-// 1156 			preheat_menu.add=ADD_TEXT_FR;
-// 1157 			preheat_menu.dec=DEC_TEXT_FR;
-// 1158 			preheat_menu.ext1=EXTRUDER_1_TEXT_FR;
-        LDR.W    R1,??DataTable548_56
-        STR      R1,[R0, #+300]
-// 1159 			preheat_menu.ext2=EXTRUDER_2_TEXT_FR;
-        LDR.W    R7,??DataTable548_57
-        STR      R7,[R0, #+304]
-// 1160 			preheat_menu.hotbed =HEATBED_TEXT_FR;
-        LDR.W    LR,??DataTable548_58
-        STR      LR,[R0, #+308]
-// 1161 			preheat_menu.off=CLOSE_TEXT_FR;
-        ADR.W    LR,??disp_language_init_16  ;; "Off"
-        STR      LR,[R0, #+312]
-// 1162 			//“∆∂Ø
-// 1163 			move_menu.title = MOVE_TEXT_FR;
-        STR      R3,[R0, #+484]
-// 1164 			//πÈ¡„
-// 1165 			home_menu.title=TITLE_HOME_FR;
-        STR      R12,[R0, #+856]
-// 1166 			home_menu.stopmove = HOME_STOPMOVE_FR;
-        LDR.W    R12,??disp_language_init_18+0x74
-        STR      R12,[R0, #+876]
-// 1167 			//Œƒº˛ƒø¬º
-// 1168 			file_menu.title=TITLE_CHOOSEFILE_FR;
-        LDR.W    R9,??DataTable548_59
-        STR      R9,[R0, #+800]
-// 1169 			file_menu.page_up=PAGE_UP_TEXT_FR;
-        LDR.W    R12,??DataTable548_60
-        STR      R12,[R0, #+804]
-// 1170 			file_menu.page_down=PAGE_DOWN_TEXT_FR;
-        LDR.W    R12,??DataTable548_61
-        STR      R12,[R0, #+808]
-// 1171 			//º∑≥ˆ
-// 1172 			extrude_menu.title=TITLE_EXTRUDE_FR;
-        STR      R4,[R0, #+92]
-// 1173 			extrude_menu.in=EXTRUDER_IN_TEXT_FR;
-        LDR.W    R12,??DataTable548_62
-        STR      R12,[R0, #+96]
-// 1174 			extrude_menu.out=EXTRUDER_OUT_TEXT_FR;
-        LDR.W    LR,??DataTable548_63
-        STR      LR,[R0, #+100]
-// 1175 			extrude_menu.ext1=EXTRUDER_1_TEXT_FR;
-        STR      R1,[R0, #+104]
-// 1176 			extrude_menu.ext2=EXTRUDER_2_TEXT_FR;
-        STR      R7,[R0, #+108]
-// 1177 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_FR;
-        LDR.W    R10,??DataTable548_64
-        STR      R10,[R0, #+124]
-// 1178 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_FR;
-        LDR.W    R10,??DataTable548_65
-        STR      R10,[R0, #+128]
-// 1179 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_FR;
-        LDR.W    R10,??DataTable548_66
-        STR      R10,[R0, #+132]
-// 1180 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_FR;
-        LDR.W    R10,??disp_language_init_18+0x94
-        STR      R10,[R0, #+156]
-// 1181 			//µ˜∆Ω
-// 1182 			leveling_menu.title=TITLE_LEVELING_FR;
-        STR      R8,[R0, #+884]
-// 1183 			leveling_menu.position1=LEVELING_POINT1_TEXT_FR;
-        LDR.W    R8,??DataTable548_67
-        STR      R8,[R0, #+888]
-// 1184 			leveling_menu.position2=LEVELING_POINT2_TEXT_FR;
-        LDR.W    R8,??DataTable548_68
-        STR      R8,[R0, #+892]
-// 1185 			leveling_menu.position3=LEVELING_POINT3_TEXT_FR;
-        LDR.W    R8,??DataTable548_69
-        STR      R8,[R0, #+896]
-// 1186 			leveling_menu.position4=LEVELING_POINT4_TEXT_FR;
-        LDR.W    R8,??DataTable548_70
-        STR      R8,[R0, #+900]
-// 1187 			leveling_menu.position5=LEVELING_POINT5_TEXT_FR;
-        LDR.W    R8,??DataTable548_71
-        STR      R8,[R0, #+904]
-// 1188 			//…Ë÷√
-// 1189 			set_menu.title=TITLE_SET_FR;
-        LDR.W    R8,??DataTable548_72
-        STR      R8,[R0, #+528]
-// 1190 			set_menu.filesys=FILESYS_TEXT_FR;
-        STR      R9,[R0, #+532]
-// 1191 			set_menu.wifi=WIFI_TEXT_FR;
-        LDR.W    R8,??DataTable548_5
-        STR      R8,[R0, #+536]
-// 1192 			set_menu.about=ABOUT_TEXT_FR;
-        LDR.W    R9,??DataTable548_73
-        STR      R9,[R0, #+540]
-// 1193 			set_menu.fan=FAN_TEXT_FR;
-        STR      R5,[R0, #+544]
-        LDR.W    R8,??DataTable548_74
-        STR      R8,[R0, #+548]
-// 1194 			set_menu.filament=FILAMENT_TEXT_FR;
-// 1195 			set_menu.breakpoint=BREAK_POINT_TEXT_FR;
-        LDR.W    R8,??DataTable548_75
-        STR      R8,[R0, #+552]
-// 1196 			set_menu.motoroff=MOTOR_OFF_TEXT_FR;
-        LDR.W    R8,??DataTable548_76
-        STR      R8,[R0, #+556]
-// 1197 			set_menu.language=LANGUAGE_TEXT_FR;
-        LDR.W    R8,??DataTable548_77
-        STR      R8,[R0, #+564]
-// 1198 			//∏¸∂‡
-// 1199 			more_menu.title = TITLE_MORE_FR;
-        STR      R6,[R0, #+1024]
-// 1200 			more_menu.zoffset = ZOFFSET_FR;
-        LDR.W    R10,??disp_language_init_16+0xA4
-        STR      R10,[R0, #+1028]
-// 1201 			//Œƒº˛œµÕ≥
-// 1202 			filesys_menu.title = TITLE_FILESYS_FR;
-        LDR.W    R11,??DataTable548_78
-        STR      R11,[R0, #+1004]
-// 1203 			filesys_menu.sd_sys = SD_CARD_TEXT_FR;
-        LDR.W    R11,??DataTable548_79
-        STR      R11,[R0, #+1012]
-// 1204 			filesys_menu.usb_sys = U_DISK_TEXT_FR;
-        LDR.W    R11,??DataTable548_80
-        STR      R11,[R0, #+1016]
-// 1205 			file_menu.file_loading = FILE_LOADING_FR;
-        LDR.W    R11,??DataTable548_81
-        STR      R11,[R0, #+816]
-// 1206 			file_menu.no_file = NO_FILE_FR;
-        LDR.W    R11,??DataTable548_82
-        STR      R11,[R0, #+820]
-// 1207 			file_menu.no_file_and_check = NO_FILE_FR;//NO_FILE_AND_CHECK_FR;				
-        STR      R11,[R0, #+824]
-// 1208 			//WIFI
-// 1209 			wifi_menu.title=WIFI_NAME_TEXT_FR;
-        LDR.W    R11,??DataTable548_83
-        STR      R11,[R0, #+572]
-// 1210 			//wifi_menu.key = WIFI_KEY_TEXT_FR;
-// 1211 			//wifi_menu.ip = WIFI_IP_TEXT_FR;
-// 1212 			//wifi_menu.state= WIFI_STA_TEXT_FR;
-// 1213 			//wifi_menu.cloud= CLOSE_TEXT_FR;
-// 1214 			//πÿ”⁄
-// 1215 			about_menu.title = ABOUT_TEXT_FR;
-        STR      R9,[R0, #+912]
-// 1216 			about_menu.type = ABOUT_TYPE_TEXT_FR;
-        LDR.W    R9,??disp_language_init_16+0xBC
-        STR      R9,[R0, #+924]
-// 1217 			about_menu.version = ABOUT_VERSION_TEXT_FR;
-        LDR.W    R9,??disp_language_init_16+0xC0
-        STR      R9,[R0, #+928]
-// 1218 			about_menu.wifi = ABOUT_WIFI_TEXT_FR;				
-        LDR.W    R9,??DataTable548_84
-        STR      R9,[R0, #+932]
-// 1219 			//∑Á…»
-// 1220 			fan_menu.title = FAN_TEXT_FR;
-        STR      R5,[R0, #+736]
-// 1221 			fan_menu.add = FAN_ADD_TEXT_FR;
-        LDR.W    R9,??DataTable548_54
-        STR      R9,[R0, #+740]
-// 1222 			fan_menu.dec = FAN_DEC_TEXT_FR;
-        LDR.W    R9,??DataTable548_55
-        STR      R9,[R0, #+744]
-// 1223 			fan_menu.state = FAN_TIPS1_TEXT_FR;
-        LDR.W    R9,??DataTable548_85
-        STR      R9,[R0, #+764]
-// 1224 			//ªª¡œ
-// 1225 			filament_menu.title = TITLE_FILAMENT_FR;
-        LDR.W    R9,??DataTable548_74
-        STR      R9,[R0, #+0]
-// 1226 			filament_menu.in = FILAMENT_IN_TEXT_FR;
-        STR      R12,[R0, #+4]
-// 1227 			filament_menu.out = FILAMENT_OUT_TEXT_FR;
-        STR      LR,[R0, #+8]
-// 1228 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_FR;
-        STR      R1,[R0, #+12]
-// 1229 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_FR;
-        STR      R7,[R0, #+16]
-// 1230 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_FR;
-        LDR.W    R1,??DataTable548_86
-        STR      R1,[R0, #+28]
-// 1231 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_FR;
-        LDR.W    R12,??DataTable548_87
-        STR      R12,[R0, #+52]
-// 1232 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_FR;
-        LDR.W    R1,??DataTable548_88
-        STR      R1,[R0, #+60]
-// 1233 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_FR;
-        LDR.W    R1,??DataTable548_89
-        STR      R1,[R0, #+68]
-// 1234 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_FR;
-        LDR.W    R1,??DataTable548_90
-        STR      R1,[R0, #+76]
-// 1235 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_FR;
-        STR      R12,[R0, #+56]
-// 1236 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_FR;
-        LDR.W    R1,??DataTable548_91
-        STR      R1,[R0, #+64]
-// 1237 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_FR;
-        LDR.W    R1,??DataTable548_92
-        STR      R1,[R0, #+72]
-// 1238 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_FR;
-        LDR.W    R1,??DataTable548_93
-        STR      R1,[R0, #+80]
-// 1239 
-// 1240 			//”Ô—‘
-// 1241 			language_menu.title = LANGUAGE_TEXT_FR;
-        STR      R8,[R0, #+160]
-// 1242 			
-// 1243 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-// 1244 			printing_menu.title = TITLE_PRINTING_FR;
-        LDR.W    R1,??DataTable548_94
-        STR      R1,[R0, #+660]
-// 1245 			printing_menu.option = PRINTING_OPERATION_FR;
-        LDR.W    R1,??DataTable548_95
-        STR      R1,[R0, #+664]
-// 1246 			printing_menu.stop = PRINTING_STOP_FR;
-        LDR.W    LR,??DataTable548_96
-        STR      LR,[R0, #+692]
-// 1247 			printing_menu.pause = PRINTING_PAUSE_FR;
-        STR      R2,[R0, #+684]
-// 1248 			printing_menu.resume = PRINTING_RESUME_FR;
-        LDR.W    R7,??DataTable548_97
-        STR      R7,[R0, #+688]
-// 1249 
-// 1250 			//≤Ÿ◊˜ΩÁ√Ê
-// 1251 			operation_menu.title = TITLE_OPERATION_FR;
-        STR      R1,[R0, #+388]
-// 1252 			operation_menu.pause = PRINTING_PAUSE_FR;
-        STR      R2,[R0, #+392]
-// 1253 			operation_menu.stop = PRINTING_STOP_FR;
-        STR      LR,[R0, #+396]
-// 1254 			operation_menu.temp = PRINTING_TEMP_FR;
-        LDR.W    R1,??DataTable548_98
-        STR      R1,[R0, #+400]
-// 1255 			operation_menu.fan = FAN_TEXT_FR;
-        STR      R5,[R0, #+404]
-// 1256 			operation_menu.extr = PRINTING_EXTRUDER_FR;
-        STR      R4,[R0, #+412]
-// 1257 			operation_menu.speed = PRINTING_CHANGESPEED_FR;
-        LDR.W    R8,??DataTable548_99
-        STR      R8,[R0, #+416]
-// 1258 			operation_menu.filament = FILAMENT_TEXT_FR;
-        MOV      R12,R9
-        STR      R12,[R0, #+408]
-// 1259 			operation_menu.more = PRINTING_MORE_FR;
-        STR      R6,[R0, #+424]
-// 1260 			operation_menu.move = PRINTING_MOVE_FR;
-        STR      R3,[R0, #+420]
-// 1261 			operation_menu.auto_off = AUTO_SHUTDOWN_FR;
-        LDR.W    R12,??DataTable548_100
-        STR      R12,[R0, #+428]
-// 1262 			operation_menu.manual_off = MANUAL_SHUTDOWN_FR;			
-        LDR.W    R9,??DataTable548_101
-        STR      R9,[R0, #+432]
-// 1263 			//‘›Õ£ΩÁ√Ê
-// 1264 			pause_menu.title= TITLE_PAUSE_FR;
-        STR      R2,[R0, #+828]
-// 1265 			pause_menu.resume = PRINTING_RESUME_FR;
-        STR      R7,[R0, #+832]
-// 1266 			pause_menu.stop = PRINTING_STOP_FR;
-        STR      LR,[R0, #+836]
-// 1267 			pause_menu.extrude = PRINTING_EXTRUDER_FR;
-        STR      R4,[R0, #+840]
-// 1268 			pause_menu.move = PRINTING_MOVE_FR;
-        STR      R3,[R0, #+844]
-// 1269 			pause_menu.filament = FILAMENT_TEXT_FR;
-        LDR.W    R2,??DataTable548_74
-        STR      R2,[R0, #+848]
-// 1270 			pause_menu.more = PRINTING_MORE_FR;
-        STR      R6,[R0, #+852]
-// 1271 
-// 1272 			//±‰ÀŸΩÁ√Ê
-// 1273 			speed_menu.title = PRINTING_CHANGESPEED_FR;
-        STR      R8,[R0, #+440]
-// 1274 			speed_menu.add = ADD_TEXT_FR;
-        LDR.W    R2,??DataTable548_54
-        STR      R2,[R0, #+444]
-// 1275 			speed_menu.dec = DEC_TEXT_FR;
-        LDR.W    R2,??DataTable548_55
-        STR      R2,[R0, #+448]
-// 1276 			speed_menu.move = MOVE_SPEED_FR;
-        STR      R3,[R0, #+456]
-// 1277 			speed_menu.extrude = EXTRUDER_SPEED_FR;
-        STR      R4,[R0, #+452]
-// 1278 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_FR;
-        LDR.W    R2,??DataTable548_102
-        STR      R2,[R0, #+480]
-// 1279 			speed_menu.move_speed = MOVE_SPEED_STATE_FR;
-        LDR.W    R2,??DataTable548_103
-        STR      R2,[R0, #+476]
-// 1280 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-// 1281 			printing_more_menu.fan = FAN_TEXT_FR;
-        STR      R5,[R0, #+952]
-// 1282 			printing_more_menu.auto_close = AUTO_SHUTDOWN_FR;
-        STR      R12,[R0, #+956]
-// 1283 			printing_more_menu.manual = MANUAL_SHUTDOWN_FR;
-        STR      R9,[R0, #+960]
-// 1284 			printing_more_menu.speed = PRINTING_CHANGESPEED_FR;	
-        STR      R8,[R0, #+968]
-// 1285 			printing_more_menu.temp = PRINTING_TEMP_FR;
-        STR      R1,[R0, #+964]
-// 1286 
-// 1287 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
-// 1288 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_FR;
-        LDR.W    R1,??DataTable548_104
-        STR      R1,[R0, #+228]
-// 1289 			print_file_dialog_menu.cancle = DIALOG_CANCLE_FR;
-        LDR.W    R1,??DataTable548_105
-        STR      R1,[R0, #+232]
-// 1290 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_FR;
-        LDR.W    R1,??DataTable548_106
-        STR      R1,[R0, #+236]
-// 1291 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_FR;
-        LDR.W    R1,??DataTable548_107
-        STR      R1,[R0, #+240]
-// 1292 			print_file_dialog_menu.retry = DIALOG_RETRY_FR;
-        LDR.W    R1,??DataTable548_108
-        STR      R1,[R0, #+244]
-// 1293 			print_file_dialog_menu.stop = DIALOG_STOP_FR;
-        LDR.W    R1,??DataTable548_109
-        STR      R1,[R0, #+248]
-// 1294 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_FR;
-        LDR.W    R1,??DataTable548_110
-        STR      R1,[R0, #+252]
-// 1295 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_FR;		
-        LDR.W    R1,??DataTable548_111
-        STR      R1,[R0, #+256]
-// 1296 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_FR;
-        LDR.W    R1,??DataTable548_112
-        STR      R1,[R0, #+264]
-// 1297             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_FR;
-        LDR.W    R1,??DataTable548_113
-        STR      R1,[R0, #+268]
-// 1298 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_FR;
-        LDR.W    R1,??DataTable548_114
-        STR      R1,[R0, #+272]
-// 1299 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_FR;
-        LDR.W    R1,??DataTable548_115
-        STR      R1,[R0, #+276]
-// 1300 			print_file_dialog_menu.reprint=DIALOG_REPRINT_FR;
-        LDR.W    R1,??DataTable548_116
-        STR      R1,[R0, #+280]
-// 1301 			//ZOFFSET
-// 1302 			zoffset_menu.title = TITLE_ZOFFSET_FR;
-        STR      R10,[R0, #+976]
-// 1303 			zoffset_menu.inc = ZOFFSET_INC_FR;
-        LDR.W    R1,??DataTable548_54
-        B.N      ??disp_language_init_21
-        Nop      
-        DATA
-??disp_language_init_20:
-        DC8      "Fan"
-        THUMB
-??disp_language_init_21:
-        STR      R1,[R0, #+980]
-// 1304 			zoffset_menu.dec = ZOFFSET_DEC_FR;			
-        LDR.W    R1,??DataTable548_55
-        STR      R1,[R0, #+984]
-// 1305 			break;
-        B.N      ??disp_language_init_4
-        Nop      
-        DATA
-??disp_language_init_16:
-        DC8      "Off"
-        DC32     `?<Constant "\\320\\264\\320\\262\\320\\270\\320\\266\\3`
         DC32     `?<Constant "\\320\\264\\320\\276\\320\\274\\320\\276\\3`
         DC32     `?<Constant " \\320\\277\\320\\265\\321\\207\\320\\260\\`
         DC32     `?<Constant "\\321\\215\\320\\272\\321\\201\\321\\202\\3`
         DC32     `?<Constant "\\321\\203\\321\\200\\320\\276\\320\\262\\3`
         DC32     `?<Constant "a\\320\\262\\321\\202\\320\\276">`
-        DC32     `?<Constant "\\320\\262\\320\\265\\320\\275\\321\\202\\3`
         DC32     `?<Constant "\\320\\275\\320\\260\\321\\201\\321\\202\\3`
         DC32     `?<Constant "\\320\\261\\320\\276\\320\\273\\321\\214\\3`
         DC32     `?<Constant "\\320\\270\\320\\275\\321\\201\\321\\202\\3`
+        DC32     `?<Constant "\\321\\201\\321\\202\\320\\276\\320\\273">`
+        DC32     `?<Constant "\\320\\262\\320\\275\\320\\270\\320\\267">`
+        DC32     `?<Constant "\\320\\267\\320\\260\\320\\263\\321\\200\\3`
+        DC32     `?<Constant "\\320\\262\\321\\202\\321\\217\\320\\275\\3`
+        DC32     `?<Constant "\\320\\275\\320\\260\\320\\267\\320\\260\\3`
+        DC32     `?<Constant "\\320\\262\\320\\265\\320\\275\\321\\202\\3`
         DC32     `?<Constant "\\320\\275\\320\\260\\320\\263\\321\\200\\3`
         DC32     `?<Constant "\\320\\267\\320\\260\\320\\274\\320\\265\\3`
         DC32     `?<Constant "\\321\\200\\320\\265\\320\\263\\321\\203\\3`
-        DC32     `?<Constant "\\320\\264\\320\\276\\320\\261\\320\\260\\3`
-        DC32     `?<Constant "\\321\\203\\320\\274\\320\\265\\320\\275\\3`
-        DC32     `?<Constant "\\321\\215\\320\\272\\321\\201\\321\\202\\3_1`
-        DC32     `?<Constant "\\321\\215\\320\\272\\321\\201\\321\\202\\3_2`
-        DC32     `?<Constant "\\321\\201\\321\\202\\320\\276\\320\\273">`
         DC32     `?<Constant "\\320\\262\\321\\213\\320\\272\\320\\273">`
-        DC32     `?<Constant "\\321\\204\\320\\260\\320\\271\\320\\273\\3`
-        DC32     `?<Constant "\\320\\262\\320\\262\\320\\265\\321\\200\\3`
-        DC32     `?<Constant "\\320\\262\\320\\275\\320\\270\\320\\267">`
-        DC32     `?<Constant "\\320\\267\\320\\260\\320\\263\\321\\200\\3`
         DC32     `?<Constant "\\320\\275\\320\\265\\321\\202 \\321\\204\\`
-        DC32     `?<Constant "\\320\\262\\321\\202\\321\\217\\320\\275\\3`
+        DC32     `?<Constant "Closing machine......">`
+        DC32     `?<Constant "\\320\\264\\320\\276\\320\\261\\320\\260\\3`
+        DC32     `?<Constant "\\321\\215\\320\\272\\321\\201\\321\\202\\3_2`
+        DC32     `?<Constant "Home">`
         DC32     `?<Constant "\\320\\262\\321\\213\\320\\264\\320\\260\\3`
+        DC32     `?<Constant "Unbind the printer?">`
+        DC32     `?<Constant "\\321\\203\\320\\274\\320\\265\\320\\275\\3`
+        DC32     `?<Constant "Quickstop">`
+        DC32     `?<Constant "Printing">`
+        DC32     `?<Constant "\\321\\215\\320\\272\\321\\201\\321\\202\\3_1`
+        DC32     `?<Constant "\\321\\204\\320\\260\\320\\271\\320\\273\\3`
+        DC32     `?<Constant "Pause">`
+        DC32     `?<Constant "\\320\\262\\320\\262\\320\\265\\321\\200\\3`
+        DC32     `?<Constant "\\320\\263\\320\\276\\321\\202\\320\\276\\3`
+        DC32     `?<Constant " \\320\\275\\320\\260\\320\\263\\321\\200\\`
+        DC32     `?<Constant "\\320\\264\\320\\262\\320\\270\\320\\266\\3`
         DC32     `?<Constant "\\320\\274\\320\\270\\320\\275">`
         DC32     `?<Constant "\\321\\201\\321\\200\\320\\265\\320\\264">`
+        DC32     `?<Constant "\\320\\277\\321\\200\\320\\276\\320\\264\\3`
         DC32     `?<Constant "\\320\\262\\321\\213\\321\\201">`
         DC32     `?<Constant "\\321\\202\\320\\265\\320\\274\\320\\277\\3`
         DC32     `?<Constant "1\\321\\202\\320\\276\\321\\207\\320\\272\\`
@@ -3615,639 +5974,559 @@ _Z18disp_language_initv:
         DC32     `?<Constant "3\\321\\202\\320\\276\\321\\207\\320\\272\\`
         DC32     `?<Constant "4\\321\\202\\320\\276\\321\\207\\320\\272\\`
         DC32     `?<Constant "5\\321\\202\\320\\276\\321\\207\\320\\272\\`
+        DC32     set_menu
         DC32     `?<Constant "\\321\\201\\320\\270\\321\\201\\321\\202\\3`
         DC32     `?<Constant "\\320\\270\\320\\275\\321\\204\\320\\276">`
-        DC32     `?<Constant "\\320\\277\\321\\200\\320\\276\\320\\264\\3`
         DC32     `?<Constant "\\320\\276\\321\\202\\320\\272\\320\\273\\3`
         DC32     `?<Constant "\\321\\217\\320\\267\\321\\213\\320\\272">`
         DC32     `?<Constant "Z Offset">`
+        DC32     `?<Constant "FileSys">`
         DC32     `?<Constant "SD \\320\\264\\320\\270\\321\\201\\320\\27`
         DC32     `?<Constant "U \\320\\264\\320\\270\\321\\201\\320\\272`
-        DC32     `?<Constant "WIFI">`
-        DC32     `?<Constant "\\320\\276\\320\\261\\320\\273\\320\\260\\3`
-        DC32     `?<Constant "\\320\\275\\320\\265 \\321\\201\\320\\276\\`
-        DC32     `?<Constant "Type: ">`
-        DC32     `?<Constant "Firmware: ">`
-        DC32     `?<Constant "\\320\\277\\320\\265\\321\\207\\320\\260\\3`
-        DC32     `?<Constant "\\321\\203\\320\\277\\321\\200\\320\\260\\3`
-        DC32     `?<Constant "\\321\\201\\321\\202\\320\\276\\320\\277">`
-        DC32     `?<Constant "\\320\\277\\320\\260\\321\\203\\320\\267\\3`
+        DC32     `?<Constant "Please click <Load> \\n...">`
+        DC32     `?<Constant "Heating up the nozzle...">`
         DC32     `?<Constant "\\320\\262\\320\\276\\320\\267\\320\\276\\3`
-        DC32     `?<Constant "\\321\\202\\320\\265\\320\\274\\320\\277">`
         DC32     `?<Constant "\\321\\215\\320\\272\\321\\201\\321\\202\\3_3`
         DC32     `?<Constant "\\321\\201\\320\\272\\320\\276\\321\\200\\3`
         DC32     `?<Constant "\\320\\260\\320\\262\\321\\202\\320\\276-\\`
         DC32     `?<Constant "\\321\\200\\321\\203\\321\\207\\320\\275-\\`
+        DC32     `?<Constant "\\320\\222\\321\\200\\320\\265\\320\\274\\3`
+        DC32     `?<Constant "Heat completed,please...">`
+        DC32     `?<Constant "\\321\\203\\320\\277\\321\\200\\320\\260\\3`
         DC32     `?<Constant "\\320\\264\\320\\262\\320\\270\\320\\266">`
+        DC32     `?<Constant "\\320\\276\\320\\261\\320\\273\\320\\260\\3`
+        DC32     `?<Constant "Is loading ,please wait!">`
+        DC32     `?<Constant "\\321\\202\\320\\265\\320\\274\\320\\277">`
         DC32     `?<Constant "\\321\\201\\320\\272\\320\\276\\321\\200\\3_1`
-        DC32     `?<Constant "\\321\\201\\320\\272\\320\\276\\321\\200\\3_2`
-        DC32     `?<Constant "\\320\\264\\320\\260">`
+        DC32     `?<Constant "Is unloading,please w...">`
         DC32     `?<Constant "\\320\\276\\321\\202\\320\\274\\320\\265\\3`
+        DC32     `?<Constant "\\320\\275\\320\\265 \\321\\201\\320\\276\\`
+        DC32     `?<Constant "Unload filament compl...">`
         DC32     `?<Constant "\\320\\277\\320\\265\\321\\207\\320\\260\\3_1`
+        DC32     `?<Constant "Unbinded">`
+        DC32     `?<Constant "\\320\\277\\320\\265\\321\\207\\320\\260\\3`
+        DC32     `?<Constant "Disconnected">`
+        THUMB
+// 1948 		#endif
+// 1949 
+// 1950 		case LANG_FRENCH:
+// 1951 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_FR;
+// 1952 			common_menu.text_back=BACK_TEXT_FR;
+// 1953 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_FR;
+// 1954 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_FR;			
+// 1955 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
+// 1956 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
+// 1957 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;
+// 1958 
+// 1959 			//÷˜“≥√Ê
+// 1960 			main_menu.title=TITLE_READYPRINT_FR;
+// 1961 			main_menu.preheat=PREHEAT_TEXT_FR;
+// 1962 			main_menu.move=MOVE_TEXT_FR;
+// 1963 			main_menu.home=HOME_TEXT_FR;
+// 1964 			main_menu.print=PRINT_TEXT_FR;
+// 1965 			main_menu.extrude=EXTRUDE_TEXT_FR;
+// 1966 			main_menu.leveling=LEVELING_TEXT_FR;
+??disp_language_init_4:
+        LDR.W    R7,??disp_language_init_34
+        STR      R7,[R4, #+424]
+// 1967 			main_menu.autoleveling=AUTO_LEVELING_TEXT_FR;
+// 1968 			main_menu.fan = FAN_TEXT_FR;
+// 1969 			main_menu.set=SET_TEXT_FR;
+// 1970 			main_menu.more=MORE_TEXT_FR;
+// 1971 			main_menu.tool = TOOL_TEXT_FR;
+// 1972 			//TOOL
+// 1973 			tool_menu.title = TOOL_TEXT_FR;
+// 1974 			tool_menu.preheat = TOOL_PREHEAT_FR;
+// 1975 			tool_menu.extrude = TOOL_EXTRUDE_FR;
+// 1976 			tool_menu.move = TOOL_MOVE_FR;
+// 1977 			tool_menu.home= TOOL_HOME_FR;
+// 1978 			tool_menu.leveling = TOOL_LEVELING_FR;
+        STR      R7,[R4, #+696]
+// 1979             tool_menu.autoleveling = TOOL_AUTO_LEVELING_FR;
+// 1980 			tool_menu.filament = TOOL_FILAMENT_FR;
+// 1981 			tool_menu.more = TOOL_MORE_FR;			
+// 1982 			//‘§»»
+// 1983 			preheat_menu.adjust_title = TITLE_ADJUST_FR;
+// 1984 			preheat_menu.title=TITLE_PREHEAT_FR;
+// 1985 			preheat_menu.add=ADD_TEXT_FR;
+// 1986 			preheat_menu.dec=DEC_TEXT_FR;
+// 1987 			preheat_menu.ext1=EXTRUDER_1_TEXT_FR;
+// 1988 			preheat_menu.ext2=EXTRUDER_2_TEXT_FR;
+// 1989 			preheat_menu.hotbed =HEATBED_TEXT_FR;
+// 1990 			preheat_menu.off=CLOSE_TEXT_FR;
+// 1991 			//“∆∂Ø
+// 1992 			move_menu.title = MOVE_TEXT_FR;
+// 1993 			//πÈ¡„
+// 1994 			home_menu.title=TITLE_HOME_FR;
+// 1995 			home_menu.stopmove = HOME_STOPMOVE_FR;
+// 1996 			//Œƒº˛ƒø¬º
+// 1997 			file_menu.title=TITLE_CHOOSEFILE_FR;
+// 1998 			file_menu.page_up=PAGE_UP_TEXT_FR;
+// 1999 			file_menu.page_down=PAGE_DOWN_TEXT_FR;
+// 2000 			//º∑≥ˆ
+// 2001 			extrude_menu.title=TITLE_EXTRUDE_FR;
+// 2002 			extrude_menu.in=EXTRUDER_IN_TEXT_FR;
+// 2003 			extrude_menu.out=EXTRUDER_OUT_TEXT_FR;
+// 2004 			extrude_menu.ext1=EXTRUDER_1_TEXT_FR;
+// 2005 			extrude_menu.ext2=EXTRUDER_2_TEXT_FR;
+// 2006 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_FR;
+// 2007 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_FR;
+// 2008 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_FR;
+// 2009 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_FR;
+// 2010 			//µ˜∆Ω
+// 2011 			leveling_menu.title=TITLE_LEVELING_FR;
+        STR      R7,[R4, #+872]
+        LDR.W    R0,??disp_language_init_35+0x64
+// 2012 			leveling_menu.position1=LEVELING_POINT1_TEXT_FR;
+        LDR.W    R7,??disp_language_init_35+0x68
+        LDR.W    LR,??disp_language_init_35+0x6C
+        LDR.N    R1,??disp_language_init_32
+        LDR.W    R3,??disp_language_init_35+0x70
+        LDR.W    R2,??disp_language_init_35+0x74
+        LDR.W    R6,??disp_language_init_35+0x78
+        LDR.W    R11,??disp_language_init_35+0x7C
+        LDR.W    R5,??disp_language_init_33+0x78
+        LDR.W    R8,??disp_language_init_35+0x80
+        LDR.W    R9,??disp_language_init_35+0x84
+        LDR.W    R10,??disp_language_init_35+0x88
+// 2013 			leveling_menu.position2=LEVELING_POINT2_TEXT_FR;
+// 2014 			leveling_menu.position3=LEVELING_POINT3_TEXT_FR;
+// 2015 			leveling_menu.position4=LEVELING_POINT4_TEXT_FR;
+// 2016 			leveling_menu.position5=LEVELING_POINT5_TEXT_FR;
+// 2017 			//…Ë÷√
+// 2018 			set_menu.title=TITLE_SET_FR;
+        LDR.W    R12,??disp_language_init_35+0x8C
+        STR      R7,[R4, #+876]
+        STR      R0,[R4, #+756]
+        STR      LR,[R4, #+428]
+        STR      LR,[R4, #+700]
+        STR      R1,[R4, #+776]
+        STR      R3,[R4, #+404]
+        STR      R2,[R4, #+408]
+        STR      R6,[R4, #+412]
+        STR      R11,[R4, #+420]
+        STR      R5,[R4, #+436]
+        STR      R8,[R4, #+444]
+        STR      R3,[R4, #+680]
+        STR      R11,[R4, #+684]
+        STR      R2,[R4, #+688]
+        STR      R6,[R4, #+692]
+        STR      R8,[R4, #+708]
+        STR      R3,[R4, #+348]
+        STR      R2,[R4, #+452]
+        STR      R6,[R4, #+844]
+        STR      R11,[R4, #+92]
+        STR      R9,[R4, #+100]
+        STR      R10,[R4, #+124]
+        LDR.W    R7,??disp_language_init_35+0x90
+        LDR.W    R0,??disp_language_init_35+0x94
+        LDR.W    LR,??disp_language_init_35+0x98
+        LDR.W    R1,??disp_language_init_35+0x9C
+        LDR.W    R5,??disp_language_init_35+0xA0
+        LDR.W    R3,??disp_language_init_35+0xA4
+        LDR.W    R6,??disp_language_init_35+0xA8
+        LDR.W    R10,??disp_language_init_35+0xAC
+        STR      R7,[R4, #+880]
+        STR      R0,[R4, #+752]
+        STR      LR,[R4, #+368]
+        STR      R1,[R4, #+400]
+        STR      R5,[R4, #+440]
+        STR      R5,[R4, #+676]
+        STR      R3,[R4, #+352]
+        ADR.W    LR,??disp_language_init_32+0x4  ;; "Off"
+        LDR.W    R7,??disp_language_init_35+0xB0
+        LDR.W    R0,??disp_language_init_35+0xB4
+        LDR.W    R1,??disp_language_init_35+0xB8
+        LDR.W    R5,??disp_language_init_35+0xBC
+        LDR.W    R3,??disp_language_init_35+0xC0
+        STR      R7,[R4, #+884]
+        STR      R0,[R4, #+760]
+        STR      LR,[R4, #+372]
+        STR      R1,[R4, #+416]
+        ADR.N    R1,??disp_language_init_32+0x8  ;; "Fan"
+        LDR.W    R7,??disp_language_init_35+0xC4
+        LDR.W    R0,??disp_language_init_35+0xC8
+        LDR.W    LR,??disp_language_init_35+0xCC
+        STR      R7,[R4, #+888]
+        STR      R0,[R4, #+764]
+        STR      R5,[R4, #+704]
+        STR      LR,[R4, #+792]
+        STR      R10,[R4, #+128]
+        STR      R1,[R4, #+432]
+        STR      R3,[R4, #+356]
+        STR      R6,[R4, #+864]
+        LDR.W    R7,??disp_language_init_35+0xD0
+        LDR.W    R0,??disp_language_init_35+0xD4
+        LDR.W    R5,??disp_language_init_35+0xD8
+        LDR.W    LR,??disp_language_init_35+0xDC
+        LDR.W    R10,??disp_language_init_35+0xE0
+        LDR.W    R3,??disp_language_init_35+0xE4
+        LDR.W    R6,??disp_language_init_35+0xE8
+        STR      R7,[R4, #+892]
+        STR      R0,[R4, #+768]
+        STR      R5,[R4, #+344]
+        STR      LR,[R4, #+796]
+        STR      R10,[R4, #+132]
+        STR      R3,[R4, #+360]
+        STR      R6,[R4, #+788]
+        STR      R3,[R4, #+104]
+        LDR.W    R7,??disp_language_init_37+0x4
+        LDR.W    R0,??disp_language_init_35+0xEC
+        LDR.W    R5,??disp_language_init_35+0xF0
+        LDR.W    LR,??disp_language_init_35+0xF4
+        LDR.W    R10,??disp_language_init_34+0xC
+        STR      R0,[R4, #+772]
+        STR      R5,[R4, #+364]
+        STR      LR,[R4, #+96]
+        STR      R5,[R4, #+108]
+        STR      R10,[R4, #+156]
+        STR      R12,[R7, #+0]
+// 2019 			set_menu.filesys=FILESYS_TEXT_FR;
+        STR      R6,[R7, #+4]
+// 2020 			set_menu.wifi=WIFI_TEXT_FR;
+// 2021 			set_menu.about=ABOUT_TEXT_FR;
+        LDR.W    R10,??disp_language_init_35+0xF8
+        LDR.N    R6,??disp_language_init_33
+// 2022 			set_menu.fan=FAN_TEXT_FR;
+// 2023 			set_menu.filament=FILAMENT_TEXT_FR;
+        LDR.W    R12,??disp_language_init_35+0xFC
+        STR      R6,[R7, #+8]
+        STR      R10,[R7, #+12]
+        STR      R1,[R7, #+16]
+        STR      R12,[R7, #+20]
+// 2024 			set_menu.breakpoint=BREAK_POINT_TEXT_FR;
+        LDR.W    R6,??disp_language_init_35+0x100
+        STR      R6,[R7, #+24]
+// 2025 			set_menu.motoroff=MOTOR_OFF_TEXT_FR;
+        LDR.W    R6,??disp_language_init_35+0x104
+        STR      R6,[R7, #+28]
+        LDR.W    R6,??disp_language_init_35+0x108
+        STR      R6,[R7, #+36]
+// 2026 			set_menu.language=LANGUAGE_TEXT_FR;
+// 2027 			//∏¸∂‡
+// 2028 			more_menu.title = TITLE_MORE_FR;
+        STR      R8,[R4, #+1012]
+// 2029 			more_menu.zoffset = ZOFFSET_FR;
+        LDR.W    R6,??disp_language_init_35+0x10C
+        STR      R6,[R4, #+1016]
+// 2030 			//Œƒº˛œµÕ≥
+// 2031 			filesys_menu.title = TITLE_FILESYS_FR;
+        LDR.W    R6,??disp_language_init_35+0x110
+        STR      R6,[R4, #+992]
+// 2032 			filesys_menu.sd_sys = SD_CARD_TEXT_FR;
+        LDR.W    R6,??disp_language_init_35+0x114
+        STR      R6,[R4, #+1000]
+// 2033 			filesys_menu.usb_sys = U_DISK_TEXT_FR;
+        LDR.W    R6,??disp_language_init_35+0x118
+        STR      R6,[R4, #+1004]
+// 2034 			file_menu.file_loading = FILE_LOADING_FR;
+        LDR.W    R6,??disp_language_init_35+0x11C
+        STR      R6,[R4, #+804]
+// 2035 			file_menu.no_file = NO_FILE_FR;
+        LDR.W    R6,??disp_language_init_35+0x120
+// 2036 			file_menu.no_file_and_check = NO_FILE_FR;//NO_FILE_AND_CHECK_FR;				
+// 2037 			//WIFI
+// 2038 			wifi_menu.title=WIFI_NAME_TEXT_FR;
+// 2039 			//wifi_menu.key = WIFI_KEY_TEXT_FR;
+// 2040 			//wifi_menu.ip = WIFI_IP_TEXT_FR;
+// 2041 			//wifi_menu.state= WIFI_STA_TEXT_FR;
+// 2042 			//wifi_menu.cloud= CLOSE_TEXT_FR;
+// 2043 			wifi_menu.cloud= CLOUD_TEXT_FR;
+// 2044 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_FR;
+// 2045 
+// 2046 			cloud_menu.title = TITLE_CLOUD_TEXT_FR;
+// 2047 			cloud_menu.bind = CLOUD_BINDED_FR;
+// 2048 			cloud_menu.binded = CLOUD_BINDED_FR;
+// 2049 			cloud_menu.unbind = CLOUD_UNBIND_FR;
+// 2050 			cloud_menu.unbinding = CLOUD_UNBINDED_FR;
+// 2051 			cloud_menu.disconnected = CLOUD_DISCONNECTED_FR;
+// 2052 			cloud_menu.disable = CLOUD_DISABLE_FR;
+// 2053 			//πÿ”⁄
+// 2054 			about_menu.title = ABOUT_TEXT_FR;
+// 2055 			about_menu.type = ABOUT_TYPE_TEXT_FR;
+// 2056 			about_menu.version = ABOUT_VERSION_TEXT_FR;
+// 2057 			about_menu.wifi = ABOUT_WIFI_TEXT_FR;				
+// 2058 			//∑Á…»
+// 2059 			fan_menu.title = FAN_TEXT_FR;
+// 2060 			fan_menu.add = FAN_ADD_TEXT_FR;
+// 2061 			fan_menu.dec = FAN_DEC_TEXT_FR;
+// 2062 			fan_menu.state = FAN_TIPS1_TEXT_FR;
+// 2063 			//ªª¡œ
+// 2064 			filament_menu.title = TITLE_FILAMENT_FR;
+// 2065 			filament_menu.in = FILAMENT_IN_TEXT_FR;
+// 2066 			filament_menu.out = FILAMENT_OUT_TEXT_FR;
+// 2067 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_FR;
+// 2068 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_FR;
+// 2069 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_FR;
+// 2070 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_FR;
+// 2071 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_FR;
+// 2072 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_FR;
+// 2073 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_FR;
+// 2074 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_FR;
+// 2075 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_FR;
+// 2076 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_FR;
+// 2077 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_FR;
+// 2078 
+// 2079 			//”Ô—‘
+// 2080 			language_menu.title = LANGUAGE_TEXT_FR;
+// 2081 			
+// 2082 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 2083 			printing_menu.title = TITLE_PRINTING_FR;
+// 2084 			printing_menu.option = PRINTING_OPERATION_FR;
+// 2085 			printing_menu.stop = PRINTING_STOP_FR;
+// 2086 			printing_menu.pause = PRINTING_PAUSE_FR;
+        STR      R0,[R4, #+664]
+// 2087 			printing_menu.resume = PRINTING_RESUME_FR;
+// 2088 
+// 2089 			//≤Ÿ◊˜ΩÁ√Ê
+// 2090 			operation_menu.title = TITLE_OPERATION_FR;
+// 2091 			operation_menu.pause = PRINTING_PAUSE_FR;
+        STR      R0,[R4, #+292]
+// 2092 			operation_menu.stop = PRINTING_STOP_FR;
+// 2093 			operation_menu.temp = PRINTING_TEMP_FR;
+// 2094 			operation_menu.fan = FAN_TEXT_FR;
+// 2095 			operation_menu.extr = PRINTING_EXTRUDER_FR;
+// 2096 			operation_menu.speed = PRINTING_CHANGESPEED_FR;
+// 2097 			operation_menu.filament = FILAMENT_TEXT_FR;
+// 2098 			operation_menu.more = PRINTING_MORE_FR;
+// 2099 			operation_menu.move = PRINTING_MOVE_FR;
+// 2100 			operation_menu.auto_off = AUTO_SHUTDOWN_FR;
+// 2101 			operation_menu.manual_off = MANUAL_SHUTDOWN_FR;			
+// 2102 			//‘›Õ£ΩÁ√Ê
+// 2103 			pause_menu.title= TITLE_PAUSE_FR;
+        STR      R0,[R4, #+816]
+        STR      R6,[R4, #+808]
+        STR      R6,[R4, #+812]
+        STR      R10,[R4, #+900]
+        STR      R1,[R4, #+716]
+        STR      R12,[R4, #+0]
+        STR      LR,[R4, #+4]
+        STR      R9,[R4, #+8]
+        STR      R3,[R4, #+12]
+        STR      R5,[R4, #+16]
+        STR      R1,[R4, #+304]
+        STR      R11,[R4, #+312]
+        STR      R12,[R4, #+308]
+        STR      R8,[R4, #+324]
+        STR      R2,[R4, #+320]
+// 2104 			pause_menu.resume = PRINTING_RESUME_FR;
+// 2105 			pause_menu.stop = PRINTING_STOP_FR;
+// 2106 			pause_menu.extrude = PRINTING_EXTRUDER_FR;
+        STR      R11,[R4, #+828]
+// 2107 			pause_menu.move = PRINTING_MOVE_FR;
+        STR      R2,[R4, #+832]
+// 2108 			pause_menu.filament = FILAMENT_TEXT_FR;
+        STR      R12,[R4, #+836]
+// 2109 			pause_menu.more = PRINTING_MORE_FR;
+        STR      R8,[R4, #+840]
+// 2110 
+// 2111 			//±‰ÀŸΩÁ√Ê
+// 2112 			speed_menu.title = PRINTING_CHANGESPEED_FR;
+// 2113 			speed_menu.add = ADD_TEXT_FR;
+// 2114 			speed_menu.dec = DEC_TEXT_FR;
+// 2115 			speed_menu.move = MOVE_SPEED_FR;
+        STR      R2,[R4, #+568]
+// 2116 			speed_menu.extrude = EXTRUDER_SPEED_FR;
+        STR      R11,[R4, #+564]
+// 2117 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_FR;
+// 2118 			speed_menu.move_speed = MOVE_SPEED_STATE_FR;
+// 2119 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 2120 			printing_more_menu.fan = FAN_TEXT_FR;
+        STR      R1,[R4, #+940]
+        LDR.W    R0,??disp_language_init_35+0xA4
+        LDR.N    R6,??disp_language_init_33+0x3C
+        LDR.N    R7,??disp_language_init_33+0x4
+        LDR.W    R3,??disp_language_init_35+0x124
+        LDR.W    LR,??disp_language_init_35+0x128
+        LDR.W    R5,??disp_language_init_35+0x30
+        LDR.W    R9,??disp_language_init_35+0x12C
+// 2121 			printing_more_menu.auto_close = AUTO_SHUTDOWN_FR;
+// 2122 			printing_more_menu.manual = MANUAL_SHUTDOWN_FR;
+// 2123 			printing_more_menu.speed = PRINTING_CHANGESPEED_FR;	
+// 2124 			printing_more_menu.temp = PRINTING_TEMP_FR;
+// 2125 
+// 2126 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
+// 2127 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_FR;
+// 2128 			print_file_dialog_menu.cancle = DIALOG_CANCLE_FR;
+// 2129 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_FR;
+// 2130 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_FR;
+// 2131 			print_file_dialog_menu.retry = DIALOG_RETRY_FR;
+// 2132 			print_file_dialog_menu.stop = DIALOG_STOP_FR;
+// 2133 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_FR;
+// 2134 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_FR;		
+// 2135 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_FR;
+// 2136             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_FR;
+// 2137 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_FR;
+// 2138 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_FR;
+        LDR.W    R1,??disp_language_init_35+0x130
+// 2139 			print_file_dialog_menu.reprint=DIALOG_REPRINT_FR;
+// 2140 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_FR;
+// 2141 			//ZOFFSET
+// 2142 			zoffset_menu.title = TITLE_ZOFFSET_FR;
+// 2143 			zoffset_menu.inc = ZOFFSET_INC_FR;
+// 2144 			zoffset_menu.dec = ZOFFSET_DEC_FR;			
+        LDR.W    R2,??disp_language_init_35+0xC0
+        STR      R0,[R4, #+556]
+        STR      R6,[R4, #+504]
+        STR      R7,[R4, #+548]
+        STR      R3,[R4, #+28]
+        STR      LR,[R4, #+316]
+        STR      R5,[R4, #+328]
+        STR      R9,[R4, #+332]
+        STR      LR,[R4, #+552]
+        STR      R5,[R4, #+944]
+        STR      R9,[R4, #+948]
+        STR      LR,[R4, #+956]
+        LDR.W    R0,??disp_language_init_35+0xC0
+        LDR.N    R6,??disp_language_init_33+0x10
+        LDR.W    R3,??disp_language_init_35+0x134
+        LDR.W    R7,??disp_language_init_35+0x138
+        STR      R0,[R4, #+560]
+        STR      R6,[R4, #+528]
+        STR      R6,[R4, #+596]
+        STR      R3,[R4, #+60]
+        STR      R7,[R4, #+668]
+        STR      R7,[R4, #+820]
+        LDR.W    R0,??disp_language_init_35+0x13C
+        LDR.W    R6,??disp_language_init_35+0x140
+        LDR.W    R3,??disp_language_init_35+0x144
+        STR      R0,[R4, #+592]
+        STR      R6,[R4, #+612]
+        STR      R6,[R4, #+620]
+        STR      R3,[R4, #+68]
+        LDR.W    R0,??disp_language_init_35+0x148
+        LDR.W    R6,??disp_language_init_35+0x14C
+        LDR.N    R3,??disp_language_init_33+0x8
+        STR      R0,[R4, #+588]
+        STR      R6,[R4, #+600]
+        STR      R6,[R4, #+604]
+        STR      R3,[R4, #+76]
+        LDR.W    R0,??disp_language_init_35+0x150
+        LDR.W    R6,??disp_language_init_35+0x154
+        LDR.N    R3,??disp_language_init_33+0x14
+        STR      R0,[R4, #+164]
+        STR      R6,[R4, #+628]
+        STR      R3,[R4, #+64]
+        LDR.W    R0,??disp_language_init_35+0x158
+        LDR.W    R6,??disp_language_init_35+0x15C
+        LDR.W    R3,??disp_language_init_35+0x160
+        STR      R0,[R4, #+168]
+        STR      R6,[R4, #+624]
+        STR      R3,[R4, #+72]
+        LDR.W    R0,??disp_language_init_35+0x164
+        LDR.W    R6,??disp_language_init_35+0x168
+        LDR.W    R3,??disp_language_init_35+0x16C
+        STR      R0,[R4, #+172]
+        STR      R6,[R4, #+912]
+        STR      R3,[R4, #+80]
+        LDR.W    R0,??disp_language_init_35+0x170
+        LDR.W    R6,??disp_language_init_35+0x174
+        LDR.W    R3,??disp_language_init_35+0x108
+        STR      R0,[R4, #+176]
+        STR      R6,[R4, #+916]
+        STR      R3,[R4, #+224]
+        LDR.W    R0,??disp_language_init_35+0x178
+        LDR.W    R6,??disp_language_init_35+0x17C
+        LDR.W    R3,??disp_language_init_35+0x180
+        STR      R0,[R4, #+180]
+        STR      R6,[R4, #+920]
+        STR      R3,[R4, #+640]
+        LDR.W    R0,??disp_language_init_35+0x184
+        LDR.W    R6,??disp_language_init_35+0xA4
+        LDR.W    R3,??disp_language_init_35+0x188
+        STR      R0,[R4, #+184]
+        STR      R6,[R4, #+720]
+        STR      R3,[R4, #+644]
+        STR      R3,[R4, #+288]
+        LDR.W    R0,??disp_language_init_35+0x18C
+        LDR.W    R6,??disp_language_init_35+0xC0
+        LDR.N    R3,??disp_language_init_33+0x7C
+        STR      R0,[R4, #+188]
+        STR      R6,[R4, #+724]
+        STR      R3,[R4, #+300]
+        STR      R3,[R4, #+952]
+        LDR.W    R0,??disp_language_init_35+0x190
+        LDR.W    R6,??disp_language_init_35+0x194
+        STR      R0,[R4, #+192]
+        STR      R6,[R4, #+744]
+        LDR.W    R0,??disp_language_init_35+0x198
+        LDR.W    R6,??disp_language_init_35+0x19C
+        STR      R0,[R4, #+200]
+        STR      R6,[R4, #+52]
+        STR      R6,[R4, #+56]
+        LDR.N    R0,??disp_language_init_33+0x40
+        LDR.W    R6,??disp_language_init_35+0x4C
+        STR      R0,[R4, #+204]
+        STR      R6,[R4, #+672]
+        STR      R6,[R4, #+296]
+        STR      R6,[R4, #+824]
+        LDR.W    R0,??disp_language_init_35+0x1A0
+        B.N      ??disp_language_init_38
+        DATA
+??disp_language_init_32:
+        DC32     `?<Constant "Operation">`
+        DC8      "Off"
+        DC8      "Fan"
+        THUMB
+??disp_language_init_38:
+        STR      R0,[R4, #+208]
+        LDR.N    R0,??disp_language_init_33+0x48
+        STR      R0,[R4, #+216]
+        LDR.N    R0,??disp_language_init_33+0x50
+        STR      R0,[R4, #+220]
+        LDR.W    R0,??disp_language_init_35+0xA4
+// 2145 			break;
+        B.W      ??disp_language_init_20
+        DATA
+??disp_language_init_33:
+        DC32     `?<Constant "WiFi">`
+        DC32     `?<Constant "Reconnect">`
+        DC32     `?<Constant "Load filament complet...">`
+        DC32     `?<Constant "\\321\\201\\320\\272\\320\\276\\321\\200\\3_2`
+        DC32     `?<Constant "Cloud">`
+        DC32     `?<Constant "Heat completed,please...">_1`
+        DC32     `?<Constant "\\320\\264\\320\\260">`
+        DC32     `?<Constant "Binded">`
         DC32     `?<Constant "\\321\\201\\321\\202\\320\\276\\320\\277?"`
+        DC32     `?<Constant "\\321\\201\\321\\202\\320\\276\\320\\277">`
         DC32     `?<Constant "\\320\\277\\320\\276\\320\\262\\321\\202\\3`
+        DC32     `?<Constant "Disable">`
         DC32     `?<Constant "\\320\\276\\321\\210\\320\\270\\320\\261\\3`
         DC32     `?<Constant "\\320\\277\\321\\200\\320\\276\\320\\264\\3_1`
         DC32     `?<Constant "\\320\\276\\321\\210\\320\\270\\320\\261\\3_1`
+        DC32     `?<Constant "WiFi: ">`
+        DC32     `?<Constant "Filament detection sw...">`
         DC32     `?<Constant "\\320\\237\\320\\265\\321\\207\\320\\260\\3`
-        DC32     `?<Constant "\\320\\222\\321\\200\\320\\265\\320\\274\\3`
-        THUMB
-// 1306 			
-// 1307 		case LANG_ITALY:
-// 1308 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_IT;
-??disp_language_init_22:
-        LDR.W    R1,??DataTable548_38
-        STR      R1,[R0, #+776]
-// 1309 			common_menu.text_back=BACK_TEXT_IT;
-        LDR.W    R1,??DataTable548_117
-        STR      R1,[R0, #+772]
-// 1310 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_IT;
-        LDR.N    R1,??disp_language_init_18+0x8
-        STR      R1,[R0, #+780]
-// 1311 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_IT;
-        LDR.N    R1,??disp_language_init_18+0x10
-        STR      R1,[R0, #+784]
-// 1312 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
-        LDR.W    R1,??DataTable548_40
-        STR      R1,[R0, #+788]
-// 1313 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
-        LDR.W    R2,??DataTable548_41
-        STR      R2,[R0, #+792]
-// 1314 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;
-        LDR.W    R1,??DataTable548_42
-        STR      R1,[R0, #+796]
-// 1315 
-// 1316 			//÷˜“≥√Ê
-// 1317 			main_menu.title=TITLE_READYPRINT_IT;
-        LDR.W    R1,??DataTable548_118
-        STR      R1,[R0, #+340]
-// 1318 			main_menu.preheat=PREHEAT_TEXT_IT;
-        LDR.W    R1,??DataTable548_119
-        STR      R1,[R0, #+344]
-// 1319 			main_menu.move=MOVE_TEXT_IT;
-        LDR.W    R4,??DataTable548_120
-        STR      R4,[R0, #+348]
-// 1320 			main_menu.home=HOME_TEXT_IT;
-        LDR.W    R9,??DataTable548_121
-        STR      R9,[R0, #+352]
-        LDR.W    R3,??DataTable548_122
-        STR      R3,[R0, #+356]
-// 1321 			main_menu.print=PRINT_TEXT_IT;
-// 1322 			main_menu.extrude=EXTRUDE_TEXT_IT;
-        LDR.W    R5,??DataTable548_123
-        STR      R5,[R0, #+360]
-// 1323 			main_menu.leveling=LEVELING_TEXT_IT;
-        LDR.W    R8,??disp_language_init_18+0x3C
-        STR      R8,[R0, #+364]
-// 1324 			main_menu.autoleveling=AUTO_LEVELING_TEXT_IT;
-        LDR.W    R3,??DataTable548_49
-        STR      R3,[R0, #+368]
-// 1325 			main_menu.fan = FAN_TEXT_IT;
-        LDR.W    R6,??DataTable548_124
-        STR      R6,[R0, #+372]
-// 1326 			main_menu.set=SET_TEXT_IT;
-        LDR.W    R3,??DataTable548_125
-        STR      R3,[R0, #+376]
-// 1327 			main_menu.more=MORE_TEXT_IT;
-        LDR.W    R7,??DataTable548_126
-        STR      R7,[R0, #+384]
-// 1328 			main_menu.tool = TOOL_TEXT_IT;
-        LDR.W    R3,??DataTable548_127
-        STR      R3,[R0, #+380]
-// 1329 			//TOOL
-// 1330 			tool_menu.title = TOOL_TEXT_IT;
-        STR      R3,[R0, #+696]
-// 1331 			tool_menu.preheat = TOOL_PREHEAT_IT;
-        STR      R1,[R0, #+700]
-// 1332 			tool_menu.extrude = TOOL_EXTRUDE_IT;
-        STR      R5,[R0, #+704]
-// 1333 			tool_menu.move = TOOL_MOVE_IT;
-        STR      R4,[R0, #+708]
-// 1334 			tool_menu.home= TOOL_HOME_IT;
-        STR      R9,[R0, #+712]
-// 1335 			tool_menu.leveling = TOOL_LEVELING_IT;
-        STR      R8,[R0, #+716]
-// 1336             tool_menu.autoleveling = TOOL_AUTO_LEVELING_IT;
-        LDR.N    R1,??DataTable548
-        STR      R1,[R0, #+720]
-// 1337 			tool_menu.filament = TOOL_FILAMENT_IT;
-        LDR.N    R3,??disp_language_init_18+0x4C
-        STR      R3,[R0, #+724]
-// 1338 			tool_menu.more = TOOL_MORE_IT;			
-        STR      R7,[R0, #+728]
-// 1339 			//‘§»»
-// 1340 			preheat_menu.adjust_title = TITLE_ADJUST_IT;
-        LDR.W    R1,??DataTable548_128
-        STR      R1,[R0, #+284]
-// 1341 			preheat_menu.title=TITLE_PREHEAT_IT;
-        LDR.W    R1,??DataTable548_129
-        STR      R1,[R0, #+288]
-        LDR.W    R1,??DataTable548_130
-        STR      R1,[R0, #+292]
-        LDR.W    R1,??DataTable548_131
-        STR      R1,[R0, #+296]
-// 1342 			preheat_menu.add=ADD_TEXT_IT;
-// 1343 			preheat_menu.dec=DEC_TEXT_IT;
-// 1344 			preheat_menu.ext1=EXTRUDER_1_TEXT_IT;
-        LDR.W    R1,??DataTable548_132
-        STR      R1,[R0, #+300]
-// 1345 			preheat_menu.ext2=EXTRUDER_2_TEXT_IT;
-        LDR.W    R12,??DataTable548_133
-        STR      R12,[R0, #+304]
-// 1346 			preheat_menu.hotbed=HEATBED_TEXT_IT;
-        LDR.W    LR,??DataTable548_134
-        STR      LR,[R0, #+308]
-// 1347 			preheat_menu.off=CLOSE_TEXT_IT;
-        LDR.W    LR,??DataTable548_135
-        STR      LR,[R0, #+312]
-// 1348 			//“∆∂Ø
-// 1349 			move_menu.title = MOVE_TEXT_IT;
-        STR      R4,[R0, #+484]
-// 1350 			//πÈ¡„
-// 1351 			home_menu.title=TITLE_HOME_IT;
-        STR      R9,[R0, #+856]
-// 1352 			home_menu.stopmove = HOME_STOPMOVE_IT;
-        LDR.W    R8,??disp_language_init_18+0x74
-        STR      R8,[R0, #+876]
-// 1353 			//Œƒº˛ƒø¬º
-// 1354 			file_menu.title=TITLE_CHOOSEFILE_IT;
-        LDR.W    R8,??DataTable548_136
-        STR      R8,[R0, #+800]
-// 1355 			file_menu.page_up=PAGE_UP_TEXT_IT;
-        LDR.W    R8,??DataTable548_137
-        STR      R8,[R0, #+804]
-// 1356 			file_menu.page_down=PAGE_DOWN_TEXT_IT;
-        LDR.W    R8,??DataTable548_138
-        STR      R8,[R0, #+808]
-// 1357 			file_menu.file_loading = FILE_LOADING_IT;
-        LDR.W    R8,??DataTable548_139
-        STR      R8,[R0, #+816]
-// 1358 			file_menu.no_file = NO_FILE_IT;
-        LDR.W    R8,??DataTable548_140
-        STR      R8,[R0, #+820]
-// 1359 			file_menu.no_file_and_check = NO_FILE_IT;//NO_FILE_AND_CHECK_IT;				
-        STR      R8,[R0, #+824]
-// 1360 			//º∑≥ˆ
-// 1361 			extrude_menu.title=TITLE_EXTRUDE_IT;
-        STR      R5,[R0, #+92]
-// 1362 			extrude_menu.in=EXTRUDER_IN_TEXT_IT;
-        LDR.W    R8,??DataTable548_141
-        STR      R8,[R0, #+96]
-// 1363 			extrude_menu.out=EXTRUDER_OUT_TEXT_IT;
-        LDR.W    R8,??DataTable548_142
-        STR      R8,[R0, #+100]
-// 1364 			extrude_menu.ext1=EXTRUDER_1_TEXT_IT;
-        STR      R1,[R0, #+104]
-// 1365 			extrude_menu.ext2=EXTRUDER_2_TEXT_IT;
-        STR      R12,[R0, #+108]
-// 1366 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_IT;
-        LDR.W    R8,??DataTable548_143
-        STR      R8,[R0, #+124]
-// 1367 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_IT;
-        LDR.W    R8,??DataTable548_1
-        STR      R8,[R0, #+128]
-// 1368 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_IT;
-        LDR.W    R8,??DataTable548_2
-        STR      R8,[R0, #+132]
-// 1369 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_IT;
-        LDR.W    R8,??disp_language_init_18+0x94
-        STR      R8,[R0, #+156]
-// 1370 			//µ˜∆Ω
-// 1371 			leveling_menu.title=TITLE_LEVELING_IT;
-        LDR.W    R8,??DataTable548_144
-        STR      R8,[R0, #+884]
-// 1372 			leveling_menu.position1=LEVELING_POINT1_TEXT_IT;
-        LDR.W    R8,??DataTable548_145
-        STR      R8,[R0, #+888]
-// 1373 			leveling_menu.position2=LEVELING_POINT2_TEXT_IT;
-        LDR.W    R8,??DataTable548_146
-        STR      R8,[R0, #+892]
-// 1374 			leveling_menu.position3=LEVELING_POINT3_TEXT_IT;
-        LDR.W    R8,??DataTable548_147
-        STR      R8,[R0, #+896]
-// 1375 			leveling_menu.position4=LEVELING_POINT4_TEXT_IT;
-        LDR.W    R8,??DataTable548_148
-        STR      R8,[R0, #+900]
-// 1376 			leveling_menu.position5=LEVELING_POINT5_TEXT_IT;
-        LDR.W    R8,??DataTable548_3
-        STR      R8,[R0, #+904]
-// 1377 			//…Ë÷√
-// 1378 			set_menu.title=TITLE_SET_IT;
-        LDR.W    R8,??DataTable548_149
-        STR      R8,[R0, #+528]
-// 1379 			set_menu.filesys=FILESYS_TEXT_IT;
-        LDR.W    R11,??DataTable548_78
-        STR      R11,[R0, #+532]
-// 1380 			set_menu.wifi=WIFI_TEXT_IT;
-        LDR.W    R8,??DataTable548_150
-        STR      R8,[R0, #+536]
-// 1381 			set_menu.about=ABOUT_TEXT_IT;
-        LDR.W    R9,??DataTable548_151
-        STR      R9,[R0, #+540]
-// 1382 			set_menu.fan=FAN_TEXT_IT;
-        STR      R6,[R0, #+544]
-// 1383 			set_menu.filament=FILAMENT_TEXT_IT;
-        STR      R3,[R0, #+548]
-// 1384 			set_menu.breakpoint=BREAK_POINT_TEXT_IT;
-        LDR.W    R8,??DataTable548_152
-        STR      R8,[R0, #+552]
-// 1385 			set_menu.motoroff=MOTOR_OFF_TEXT_IT;
-        LDR.W    R8,??DataTable548_153
-        STR      R8,[R0, #+556]
-// 1386 			set_menu.language=LANGUAGE_TEXT_IT;
-        LDR.W    R8,??DataTable548_154
-        STR      R8,[R0, #+564]
-// 1387 			//∏¸∂‡
-// 1388 			more_menu.title = TITLE_MORE_IT;
-        STR      R7,[R0, #+1024]
-// 1389 			more_menu.zoffset = ZOFFSET_IT;
-        LDR.W    R10,??DataTable548_155
-        STR      R10,[R0, #+1028]
-// 1390 			//Œƒº˛œµÕ≥
-// 1391 			filesys_menu.title = TITLE_FILESYS_IT;
-        STR      R11,[R0, #+1004]
-// 1392 			filesys_menu.sd_sys = SD_CARD_TEXT_IT;
-        ADR.W    R11,??disp_language_init_18+0xC  ;; 0x53, 0x44, 0x00, 0x00
-        STR      R11,[R0, #+1012]
-// 1393 			filesys_menu.usb_sys = U_DISK_TEXT_IT;
-        ADR.W    R11,??disp_language_init_18+0x14  ;; "USB"
-        STR      R11,[R0, #+1016]
-// 1394 
-// 1395 			//WIFI
-// 1396 			wifi_menu.title=WIFI_NAME_TEXT_IT;
-        LDR.W    R11,??DataTable548_156
-        STR      R11,[R0, #+572]
-// 1397 			//wifi_menu.key = WIFI_KEY_TEXT_IT;
-// 1398 			//wifi_menu.ip = WIFI_IP_TEXT_IT;
-// 1399 			//wifi_menu.state= WIFI_STA_TEXT_IT;
-// 1400 			wifi_menu.cloud= CLOSE_TEXT_IT;
-        STR      LR,[R0, #+596]
-// 1401 			//πÿ”⁄
-// 1402 			about_menu.title = ABOUT_TEXT_IT;
-        STR      R9,[R0, #+912]
-// 1403 			about_menu.type = ABOUT_TYPE_TEXT_IT;
-        LDR.W    LR,??DataTable548_157
-        STR      LR,[R0, #+924]
-// 1404 			about_menu.version = ABOUT_VERSION_TEXT_IT;
-        LDR.W    LR,??DataTable548_158
-        STR      LR,[R0, #+928]
-// 1405 			about_menu.wifi = ABOUT_WIFI_TEXT_IT;				
-        ADR.W    LR,`?<Constant "WiFi: ">`
-        STR      LR,[R0, #+932]
-// 1406 			//∑Á…»
-// 1407 			fan_menu.title = FAN_TEXT_IT;
-        STR      R6,[R0, #+736]
-// 1408 			fan_menu.add = FAN_ADD_TEXT_IT;
-        LDR.W    LR,??DataTable548_130
-        STR      LR,[R0, #+740]
-// 1409 			fan_menu.dec = FAN_DEC_TEXT_IT;
-        LDR.W    LR,??DataTable548_131
-        STR      LR,[R0, #+744]
-// 1410 			fan_menu.state = FAN_TIPS1_TEXT_IT;
-        STR      R6,[R0, #+764]
-// 1411 			//ªª¡œ
-// 1412 			filament_menu.title = TITLE_FILAMENT_IT;
-        STR      R3,[R0, #+0]
-// 1413 			filament_menu.in = FILAMENT_IN_TEXT_IT;
-        LDR.W    LR,??DataTable548_159
-        STR      LR,[R0, #+4]
-// 1414 			filament_menu.out = FILAMENT_OUT_TEXT_IT;
-        LDR.W    LR,??DataTable548_160
-        STR      LR,[R0, #+8]
-// 1415 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_IT;
-        STR      R1,[R0, #+12]
-// 1416 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_IT;
-        STR      R12,[R0, #+16]
-// 1417 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_IT;
-        LDR.N    R1,??DataTable548_86
-        STR      R1,[R0, #+28]
-// 1418 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_IT;
-        LDR.W    R1,??DataTable548_161
-        STR      R1,[R0, #+52]
-// 1419 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_IT;
-        LDR.W    R12,??DataTable548_88
-        STR      R12,[R0, #+60]
-// 1420 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_IT;
-        LDR.W    R12,??DataTable548_89
-        STR      R12,[R0, #+68]
-// 1421 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_IT;
-        LDR.W    R12,??DataTable548_90
-        STR      R12,[R0, #+76]
-// 1422 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_IT;
-        STR      R1,[R0, #+56]
-// 1423 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_IT;
-        LDR.N    R1,??DataTable548_91
-        STR      R1,[R0, #+64]
-// 1424 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_IT;
-        LDR.N    R1,??DataTable548_92
-        STR      R1,[R0, #+72]
-// 1425 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_IT;
-        LDR.N    R1,??DataTable548_93
-        STR      R1,[R0, #+80]
-// 1426 
-// 1427 			//”Ô—‘
-// 1428 			language_menu.title = LANGUAGE_TEXT_IT;
-        STR      R8,[R0, #+160]
-// 1429 			
-// 1430 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-// 1431 			printing_menu.title = TITLE_PRINTING_IT;
-        LDR.N    R1,??DataTable548_122
-        STR      R1,[R0, #+660]
-// 1432 			printing_menu.option = PRINTING_OPERATION_IT;
-        LDR.W    R1,??DataTable548_162
-        STR      R1,[R0, #+664]
-// 1433 			printing_menu.stop = PRINTING_STOP_IT;
-        LDR.W    LR,??DataTable548_96
-        STR      LR,[R0, #+692]
-// 1434 			printing_menu.pause = PRINTING_PAUSE_IT;
-        STR      R2,[R0, #+684]
-// 1435 			printing_menu.resume = PRINTING_RESUME_IT;
-        LDR.W    R8,??DataTable548_163
-        STR      R8,[R0, #+688]
-// 1436 
-// 1437 			//≤Ÿ◊˜ΩÁ√Ê
-// 1438 			operation_menu.title = TITLE_OPERATION_IT;
-        STR      R1,[R0, #+388]
-// 1439 			operation_menu.pause = PRINTING_PAUSE_IT;
-        STR      R2,[R0, #+392]
-// 1440 			operation_menu.stop = PRINTING_STOP_IT;
-        STR      LR,[R0, #+396]
-// 1441 			operation_menu.temp = PRINTING_TEMP_IT;
-        LDR.N    R1,??DataTable548_98
-        STR      R1,[R0, #+400]
-// 1442 			operation_menu.fan = FAN_TEXT_IT;
-        STR      R6,[R0, #+404]
-// 1443 			operation_menu.extr = PRINTING_EXTRUDER_IT;
-        STR      R5,[R0, #+412]
-// 1444 			operation_menu.speed = PRINTING_CHANGESPEED_IT;			
-        LDR.W    R2,??DataTable548_164
-        STR      R2,[R0, #+416]
-// 1445 			operation_menu.filament = FILAMENT_TEXT_IT;
-        STR      R3,[R0, #+408]
-// 1446 			operation_menu.more = PRINTING_MORE_IT;
-        STR      R7,[R0, #+424]
-// 1447 			operation_menu.move = PRINTING_MOVE_IT;
-        STR      R4,[R0, #+420]
-// 1448 			operation_menu.auto_off = AUTO_SHUTDOWN_IT;
-        LDR.W    R12,??DataTable548_100
-        STR      R12,[R0, #+428]
-// 1449 			operation_menu.manual_off = MANUAL_SHUTDOWN_IT;
-        LDR.W    R9,??DataTable548_165
-        STR      R9,[R0, #+432]
-// 1450 			//‘›Õ£ΩÁ√Ê
-// 1451 			pause_menu.title= TITLE_PAUSE_IT;
-        LDR.W    R11,??DataTable548_166
-        STR      R11,[R0, #+828]
-// 1452 			pause_menu.resume = PRINTING_RESUME_IT;
-        STR      R8,[R0, #+832]
-// 1453 			pause_menu.stop = PRINTING_STOP_IT;
-        STR      LR,[R0, #+836]
-// 1454 			pause_menu.extrude = PRINTING_EXTRUDER_IT;
-        STR      R5,[R0, #+840]
-// 1455 			pause_menu.move = PRINTING_MOVE_IT;
-        STR      R4,[R0, #+844]
-// 1456 			pause_menu.filament = FILAMENT_TEXT_IT;
-        STR      R3,[R0, #+848]
-// 1457 			pause_menu.more = PRINTING_MORE_IT;
-        STR      R7,[R0, #+852]
-// 1458 
-// 1459 			//±‰ÀŸΩÁ√Ê
-// 1460 			speed_menu.title = PRINTING_CHANGESPEED_IT;
-        STR      R2,[R0, #+440]
-// 1461 			speed_menu.add = ADD_TEXT_IT;
-        LDR.N    R3,??DataTable548_130
-        STR      R3,[R0, #+444]
-// 1462 			speed_menu.dec = DEC_TEXT_IT;
-        LDR.N    R3,??DataTable548_131
-        STR      R3,[R0, #+448]
-// 1463 			speed_menu.move = MOVE_SPEED_IT;
-        STR      R4,[R0, #+456]
-// 1464 			speed_menu.extrude = EXTRUDER_SPEED_IT;
-        STR      R5,[R0, #+452]
-// 1465 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_IT;
-        LDR.N    R3,??DataTable548_167
-        STR      R3,[R0, #+480]
-// 1466 			speed_menu.move_speed = MOVE_SPEED_STATE_IT;
-        LDR.N    R3,??DataTable548_168
-        STR      R3,[R0, #+476]
-// 1467 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-// 1468 			printing_more_menu.fan = FAN_TEXT_IT;
-        STR      R6,[R0, #+952]
-// 1469 			printing_more_menu.auto_close = AUTO_SHUTDOWN_IT;
-        STR      R12,[R0, #+956]
-// 1470 			printing_more_menu.manual = MANUAL_SHUTDOWN_IT;
-        STR      R9,[R0, #+960]
-// 1471 			printing_more_menu.temp = PRINTING_TEMP_IT;	
-        STR      R1,[R0, #+964]
-// 1472 			printing_more_menu.speed = PRINTING_CHANGESPEED_IT;		
-        STR      R2,[R0, #+968]
-// 1473 
-// 1474 						//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
-// 1475 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_IT;
-        LDR.N    R1,??DataTable548_169
-        STR      R1,[R0, #+228]
-// 1476 			print_file_dialog_menu.cancle = DIALOG_CANCLE_IT;
-        LDR.N    R1,??DataTable548_170
-        STR      R1,[R0, #+232]
-// 1477 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_IT;
-        LDR.N    R1,??DataTable548_171
-        STR      R1,[R0, #+236]
-// 1478 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_IT;
-        LDR.N    R1,??DataTable548_172
-        STR      R1,[R0, #+240]
-// 1479 			print_file_dialog_menu.retry = DIALOG_RETRY_IT;
-        LDR.N    R1,??DataTable548_173
-        STR      R1,[R0, #+244]
-// 1480 			print_file_dialog_menu.stop = DIALOG_STOP_IT;
-        STR      LR,[R0, #+248]
-// 1481 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_IT;
-        LDR.N    R1,??DataTable548_174
-        STR      R1,[R0, #+252]
-// 1482 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_IT;
-        LDR.N    R1,??DataTable548_175
-        STR      R1,[R0, #+256]
-// 1483 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_IT;
-        LDR.N    R1,??DataTable548_176
-        STR      R1,[R0, #+264]
-// 1484             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_IT;
-        LDR.N    R1,??DataTable548_113
-        STR      R1,[R0, #+268]
-// 1485 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_IT;
-        LDR.N    R1,??DataTable548_177
-        STR      R1,[R0, #+272]
-// 1486 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_IT;
-        LDR.N    R1,??DataTable548_178
-        STR      R1,[R0, #+276]
-// 1487 			print_file_dialog_menu.reprint=DIALOG_REPRINT_IT;
-        LDR.N    R1,??DataTable548_116
-        STR      R1,[R0, #+280]
-// 1488 			//ZOFFSET
-// 1489 			zoffset_menu.title = TITLE_ZOFFSET_IT;
-        STR      R10,[R0, #+976]
-// 1490 			zoffset_menu.inc = ZOFFSET_INC_IT;
-        ADR.N    R1,??DataTable548_9  ;; "Add"
-        STR      R1,[R0, #+980]
-// 1491 			zoffset_menu.dec = ZOFFSET_DEC_IT;			
-        ADR.N    R1,??DataTable548_11  ;; "Dec"
-        STR      R1,[R0, #+984]
-// 1492 			break;
-// 1493 
-// 1494 			#if 0
-// 1495 		case LANG_KOREAN:
-// 1496 			common_menu.text_back=BACK_TEXT_KR;
-// 1497 			//÷˜“≥√Ê
-// 1498 			main_menu.title=TITLE_READYPRINT_KR;
-// 1499 			main_menu.preheat=PREHEAT_TEXT_KR;
-// 1500 			main_menu.move=MOVE_TEXT_KR;
-// 1501 			main_menu.home=HOME_TEXT_KR;
-// 1502 			main_menu.print=PRINT_TEXT_KR;
-// 1503 			main_menu.extrude=EXTRUDE_TEXT_KR;
-// 1504 			main_menu.leveling=LEVELING_TEXT_KR;
-// 1505 			main_menu.autoleveling=AUTO_LEVELING_TEXT_KR;
-// 1506 			main_menu.set=SET_TEXT_KR;
-// 1507 			main_menu.more=MORE_TEXT_KR;
-// 1508 			//‘§»»
-// 1509 			preheat_menu.adjust_title = TITLE_ADJUST_KR;
-// 1510 			preheat_menu.title=TITLE_PREHEAT_KR;
-// 1511 			preheat_menu.add=ADD_TEXT_KR;
-// 1512 			preheat_menu.dec=DEC_TEXT_KR;
-// 1513 			preheat_menu.ext1=EXTRUDER_1_TEXT_KR;
-// 1514 			preheat_menu.ext2=EXTRUDER_2_TEXT_KR;
-// 1515 			preheat_menu.off=CLOSE_TEXT_KR;
-// 1516 			//“∆∂Ø
-// 1517 			move_menu.title = MOVE_TEXT_KR;
-// 1518 			//πÈ¡„
-// 1519 			home_menu.title=TITLE_HOME_KR;
-// 1520 			//Œƒº˛ƒø¬º
-// 1521 			file_menu.title=TITLE_CHOOSEFILE_KR;
-// 1522 			file_menu.page_up=PAGE_UP_TEXT_KR;
-// 1523 			file_menu.page_down=PAGE_DOWN_TEXT_KR;
-// 1524 			//º∑≥ˆ
-// 1525 			extrude_menu.title=TITLE_EXTRUDE_KR;
-// 1526 			extrude_menu.in=EXTRUDER_IN_TEXT_KR;
-// 1527 			extrude_menu.out=EXTRUDER_OUT_TEXT_KR;
-// 1528 			extrude_menu.ext1=EXTRUDER_1_TEXT_KR;
-// 1529 			extrude_menu.ext2=EXTRUDER_2_TEXT_KR;
-// 1530 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_KR;
-// 1531 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_KR;
-// 1532 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_KR;
-// 1533 			//µ˜∆Ω
-// 1534 			leveling_menu.title=TITLE_LEVELING_KR;
-// 1535 			leveling_menu.position1=LEVELING_POINT1_TEXT_KR;
-// 1536 			leveling_menu.position2=LEVELING_POINT2_TEXT_KR;
-// 1537 			leveling_menu.position3=LEVELING_POINT3_TEXT_KR;
-// 1538 			leveling_menu.position4=LEVELING_POINT4_TEXT_KR;
-// 1539 			leveling_menu.position5=LEVELING_POINT5_TEXT_KR;
-// 1540 			//…Ë÷√
-// 1541 			set_menu.title=TITLE_SET_KR;
-// 1542 			set_menu.wifi=WIFI_TEXT_KR;
-// 1543 			set_menu.about=ABOUT_TEXT_KR;
-// 1544 			set_menu.fan=FAN_TEXT_KR;
-// 1545 			set_menu.filament=FILAMENT_TEXT_KR;
-// 1546 			set_menu.breakpoint=BREAK_POINT_TEXT_KR;
-// 1547 			set_menu.motoroff=MOTOR_OFF_TEXT_KR;
-// 1548 			set_menu.language=LANGUAGE_TEXT_KR;
-// 1549 			//∏¸∂‡
-// 1550 			//strcpy(more_menu.back,BACK_TEXT_EN);	
-// 1551 			//WIFI
-// 1552 			wifi_menu.title=WIFI_NAME_TEXT_KR;
-// 1553 			wifi_menu.key = WIFI_KEY_TEXT_KR;
-// 1554 			wifi_menu.ip = WIFI_IP_TEXT_KR;
-// 1555 			wifi_menu.state= WIFI_STA_TEXT_KR;
-// 1556 			wifi_menu.cloud= CLOSE_TEXT_KR;
-// 1557 			//πÿ”⁄
-// 1558 			about_menu.title = ABOUT_TEXT_KR;
-// 1559 			//∑Á…»
-// 1560 			fan_menu.title = FAN_TEXT_KR;
-// 1561 			fan_menu.add = FAN_ADD_TEXT_KR;
-// 1562 			fan_menu.dec = FAN_DEC_TEXT_KR;
-// 1563 			fan_menu.state = FAN_TIPS1_TEXT;
-// 1564 			//ªª¡œ
-// 1565 			filament_menu.title = TITLE_FILAMENT_TEXT_KR;
-// 1566 			filament_menu.in = FILAMENT_IN_TEXT_KR;
-// 1567 			filament_menu.out = FILAMENT_OUT_TEXT_KR;
-// 1568 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_KR;
-// 1569 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_KR;
-// 1570 
-// 1571 			//”Ô—‘
-// 1572 			language_menu.title = LANGUAGE_TEXT_KR;
-// 1573 			
-// 1574 			//’˝‘⁄¥Ú”°ΩÁ√Ê
-// 1575 			printing_menu.title = TITLE_PRINTING_KR;
-// 1576 			printing_menu.option = PRINTING_OPERATION_KR;
-// 1577 			printing_menu.stop = PRINTING_STOP_KR;
-// 1578 			printing_menu.pause = PRINTING_PAUSE_KR;
-// 1579 			printing_menu.resume = PRINTING_RESUME_KR;
-// 1580 
-// 1581 			//≤Ÿ◊˜ΩÁ√Ê
-// 1582 			operation_menu.title = TITLE_OPERATION_KR;
-// 1583 			operation_menu.pause = PRINTING_PAUSE_KR;
-// 1584 			operation_menu.stop = PRINTING_STOP_KR;
-// 1585 			operation_menu.temp = PRINTING_TEMP_KR;
-// 1586 			operation_menu.speed = PRINTING_CHANGESPEED_KR;
-// 1587 			operation_menu.more = PRINTING_MORE_KR;
-// 1588 			//‘›Õ£ΩÁ√Ê
-// 1589 			pause_menu.title= PRINTING_PAUSE_KR;
-// 1590 			pause_menu.resume = PRINTING_RESUME_KR;
-// 1591 			pause_menu.stop = PRINTING_STOP_KR;
-// 1592 			pause_menu.extrude = PRINTING_EXTRUDER_KR;
-// 1593 			pause_menu.move = PRINTING_MOVE_KR;
-// 1594 			pause_menu.temp = PRINTING_TEMP_KR;
-// 1595 			pause_menu.more = PRINTING_MORE_KR;
-// 1596 
-// 1597 			//±‰ÀŸΩÁ√Ê
-// 1598 			speed_menu.title = PRINTING_CHANGESPEED_KR;
-// 1599 			speed_menu.add = ADD_TEXT_KR;
-// 1600 			speed_menu.dec = DEC_TEXT_KR;
-// 1601 			speed_menu.move = MOVE_SPEED_KR;
-// 1602 			speed_menu.extrude = EXTRUDER_SPEED_KR;
-// 1603 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_KR;
-// 1604 			speed_menu.move_speed = MOVE_SPEED_STATE_KR;
-// 1605 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
-// 1606 			printing_more_menu.fan = FAN_TEXT_KR;
-// 1607 			printing_more_menu.auto_close = AUTO_SHUTDOWN_KR;
-// 1608 			printing_more_menu.manual = MANUAL_SHUTDOWN_KR;
-// 1609 			printing_more_menu.filament = FILAMENT_TEXT_KR;						
-// 1610 			break;		
-// 1611 		#endif	
-// 1612 #endif        
-// 1613 		default:break;
-// 1614 	}
-// 1615 }
-??disp_language_init_4:
-        POP      {R4-R11,PC}      ;; return
-        DATA
-??disp_language_init_18:
-        DC32     `?<Constant "Confirmar">`
-        DC32     `?<Constant "Atr\\303\\241s">`
-        DC32     `?<Constant "Closing machine......">`
-        DC8      0x53, 0x44, 0x00, 0x00
-        DC32     `?<Constant "Unbind the printer?">`
-        DC8      "USB"
-        DC32     `?<Constant "Imprimiendo">`
-        DC32     `?<Constant "Pausar">`
-        DC32     `?<Constant "Ajustes">`
-        DC32     `?<Constant "Inicio">`
+        DC32     `?<Constant "Print again">`
+        DC32     `?<Constant "\\320\\277\\320\\260\\321\\203\\320\\267\\3`
+        DC32     `?<Constant "The wifi module is be...">_1`
         DC32     `?<Constant "Precalentar">`
+        DC32     `?<Constant "Confirmar">`
+        DC32     `?<Constant "Menos">`
+        DC32     `?<Constant "Ajustes">`
         DC32     `?<Constant "Mover">`
         DC32     `?<Constant "Origen">`
-        DC32     `?<Constant "Imprimir">`
         DC32     `?<Constant "Extrusor">`
-        DC32     `?<Constant "Leveling">`
+        DC32     `?<Constant "Autolevel">`
         DC32     `?<Constant "Ventilador">`
         DC32     `?<Constant "Config">`
-        DC32     `?<Constant "M\\303\\241s">`
-        DC32     `?<Constant "Filamento">`
-        DC32     `?<Constant "Menos">`
+        DC32     `?<Constant "Temp.">`
         DC32     `?<Constant "Extrusor1">`
         DC32     `?<Constant "Extrusor2">`
         DC32     `?<Constant "Cama">`
+        DC32     `?<Constant "Atr\\303\\241s">`
+        DC32     `?<Constant "Filamento">`
+        DC32     `?<Constant "Puerto">`
         DC32     `?<Constant "Apagar">`
         DC32     `?<Constant "EJE X">`
         DC32     `?<Constant "EJE Y">`
+        DC32     `?<Constant "Imprimiendo">`
         DC32     `?<Constant "EJE Z">`
+        DC32     `?<Constant "Pausar">`
         DC32     `?<Constant "TODOS">`
-        DC32     `?<Constant "Quickstop">`
+        DC32     `?<Constant "Inicio">`
+        DC32     `?<Constant "Imprimir">`
+        DC32     `?<Constant "M\\303\\241s">`
         DC32     `?<Constant "Arriba">`
         DC32     `?<Constant "Abajo">`
         DC32     `?<Constant "Cargando......">`
@@ -4255,1093 +6534,3141 @@ _Z18disp_language_initv:
         DC32     `?<Constant "Dentro">`
         DC32     `?<Constant "Fuera">`
         DC32     `?<Constant "Baja">`
-        DC32     `?<Constant "Temper">`
+        DC32     `?<Constant "Media">`
+        DC32     `?<Constant "Acerca">`
+        DC32     `?<Constant "Alta">`
         DC32     `?<Constant "Primero">`
         DC32     `?<Constant "Segundo">`
         DC32     `?<Constant "Tercero">`
         DC32     `?<Constant "Cuarto">`
-          CFI EndBlock cfiBlock0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548:
-        DC32     `?<Constant "Autolevel">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_1:
-        DC32     `?<Constant "Media">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_2:
-        DC32     `?<Constant "Alta">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_3:
         DC32     `?<Constant "Quinto">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_4:
-        DC32     `?<Constant "Puerto">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_5:
-        DC32     `?<Constant "WiFi">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_6:
-        DC32     `?<Constant "Acerca">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_7:
         DC32     `?<Constant "Continuar">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_8:
         DC32     `?<Constant "Apagar motor">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_9:
-        DC8      "Add"
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_10:
         DC32     `?<Constant "Language">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_11:
-        DC8      "Dec"
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_12:
         DC32     `?<Constant "PENDRIVE">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_13:
         DC32     `?<Constant "Nube">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_14:
         DC32     `?<Constant "Sin atar">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_15:
         DC32     `?<Constant "Pantalla: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
+        THUMB
+// 2146 			
+// 2147 		case LANG_ITALY:
+// 2148 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_IT;
+// 2149 			common_menu.text_back=BACK_TEXT_IT;
+// 2150 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_IT;
+// 2151 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_IT;
+// 2152 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
+// 2153 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
+// 2154 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;
+// 2155 
+// 2156 			//÷˜“≥√Ê
+// 2157 			main_menu.title=TITLE_READYPRINT_IT;
+// 2158 			main_menu.preheat=PREHEAT_TEXT_IT;
+// 2159 			main_menu.move=MOVE_TEXT_IT;
+// 2160 			main_menu.home=HOME_TEXT_IT;
+??disp_language_init_7:
+        LDR.W    R5,??disp_language_init_35+0x1A4
+        STR      R5,[R4, #+412]
+// 2161 			main_menu.print=PRINT_TEXT_IT;
+// 2162 			main_menu.extrude=EXTRUDE_TEXT_IT;
+// 2163 			main_menu.leveling=LEVELING_TEXT_IT;
+// 2164 			main_menu.autoleveling=AUTO_LEVELING_TEXT_IT;
+// 2165 			main_menu.fan = FAN_TEXT_IT;
+// 2166 			main_menu.set=SET_TEXT_IT;
+// 2167 			main_menu.more=MORE_TEXT_IT;
+// 2168 			main_menu.tool = TOOL_TEXT_IT;
+// 2169 			//TOOL
+// 2170 			tool_menu.title = TOOL_TEXT_IT;
+// 2171 			tool_menu.preheat = TOOL_PREHEAT_IT;
+// 2172 			tool_menu.extrude = TOOL_EXTRUDE_IT;
+// 2173 			tool_menu.move = TOOL_MOVE_IT;
+// 2174 			tool_menu.home= TOOL_HOME_IT;
+        STR      R5,[R4, #+692]
+// 2175 			tool_menu.leveling = TOOL_LEVELING_IT;
+// 2176             tool_menu.autoleveling = TOOL_AUTO_LEVELING_IT;
+// 2177 			tool_menu.filament = TOOL_FILAMENT_IT;
+// 2178 			tool_menu.more = TOOL_MORE_IT;			
+// 2179 			//‘§»»
+// 2180 			preheat_menu.adjust_title = TITLE_ADJUST_IT;
+// 2181 			preheat_menu.title=TITLE_PREHEAT_IT;
+// 2182 			preheat_menu.add=ADD_TEXT_IT;
+// 2183 			preheat_menu.dec=DEC_TEXT_IT;
+// 2184 			preheat_menu.ext1=EXTRUDER_1_TEXT_IT;
+// 2185 			preheat_menu.ext2=EXTRUDER_2_TEXT_IT;
+// 2186 			preheat_menu.hotbed=HEATBED_TEXT_IT;
+// 2187 			preheat_menu.off=CLOSE_TEXT_IT;
+// 2188 			//“∆∂Ø
+// 2189 			move_menu.title = MOVE_TEXT_IT;
+// 2190 			//πÈ¡„
+// 2191 			home_menu.title=TITLE_HOME_IT;
+        STR      R5,[R4, #+844]
+        LDR.W    R3,??disp_language_init_35+0x1A8
+// 2192 			home_menu.stopmove = HOME_STOPMOVE_IT;
+        LDR.W    R5,??disp_language_init_35+0xA8
+        LDR.W    R0,??disp_language_init_35+0x64
+        LDR.W    R1,??disp_language_init_35+0x1AC
+        LDR.W    R2,??disp_language_init_35+0x1B0
+        LDR.W    R11,??disp_language_init_35+0x1B4
+        LDR.N    R6,??disp_language_init_34
+        LDR.W    LR,??disp_language_init_35+0x1B8
+        LDR.W    R8,??disp_language_init_35+0x1BC
+        LDR.W    R12,??disp_language_init_35+0x1C0
+        LDR.W    R9,??disp_language_init_35+0x1C4
+// 2193 			//Œƒº˛ƒø¬º
+// 2194 			file_menu.title=TITLE_CHOOSEFILE_IT;
+// 2195 			file_menu.page_up=PAGE_UP_TEXT_IT;
+// 2196 			file_menu.page_down=PAGE_DOWN_TEXT_IT;
+// 2197 			file_menu.file_loading = FILE_LOADING_IT;
+// 2198 			file_menu.no_file = NO_FILE_IT;
+// 2199 			file_menu.no_file_and_check = NO_FILE_IT;//NO_FILE_AND_CHECK_IT;				
+// 2200 			//º∑≥ˆ
+// 2201 			extrude_menu.title=TITLE_EXTRUDE_IT;
+// 2202 			extrude_menu.in=EXTRUDER_IN_TEXT_IT;
+// 2203 			extrude_menu.out=EXTRUDER_OUT_TEXT_IT;
+// 2204 			extrude_menu.ext1=EXTRUDER_1_TEXT_IT;
+// 2205 			extrude_menu.ext2=EXTRUDER_2_TEXT_IT;
+// 2206 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_IT;
+// 2207 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_IT;
+// 2208 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_IT;
+// 2209 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_IT;
+// 2210 			//µ˜∆Ω
+// 2211 			leveling_menu.title=TITLE_LEVELING_IT;
+// 2212 			leveling_menu.position1=LEVELING_POINT1_TEXT_IT;
+// 2213 			leveling_menu.position2=LEVELING_POINT2_TEXT_IT;
+// 2214 			leveling_menu.position3=LEVELING_POINT3_TEXT_IT;
+// 2215 			leveling_menu.position4=LEVELING_POINT4_TEXT_IT;
+// 2216 			leveling_menu.position5=LEVELING_POINT5_TEXT_IT;
+// 2217 			//…Ë÷√
+// 2218 			set_menu.title=TITLE_SET_IT;
+        LDR.W    R7,??disp_language_init_37+0x4
+// 2219 			set_menu.filesys=FILESYS_TEXT_IT;
+// 2220 			set_menu.wifi=WIFI_TEXT_IT;
+// 2221 			set_menu.about=ABOUT_TEXT_IT;
+// 2222 			set_menu.fan=FAN_TEXT_IT;
+// 2223 			set_menu.filament=FILAMENT_TEXT_IT;
+// 2224 			set_menu.breakpoint=BREAK_POINT_TEXT_IT;
+        LDR.W    R10,??disp_language_init_35+0x1C8
+        STR      R5,[R4, #+864]
+        STR      R3,[R4, #+416]
+        STR      R0,[R4, #+756]
+        STR      R1,[R4, #+776]
+        STR      R2,[R4, #+408]
+        STR      R11,[R4, #+420]
+        STR      R6,[R4, #+424]
+        STR      LR,[R4, #+432]
+        STR      R8,[R4, #+444]
+        STR      R11,[R4, #+684]
+        STR      R2,[R4, #+688]
+        STR      R6,[R4, #+696]
+        STR      R8,[R4, #+708]
+        STR      R12,[R4, #+364]
+        STR      R9,[R4, #+372]
+        STR      R2,[R4, #+452]
+        STR      R11,[R4, #+92]
+        STR      R12,[R4, #+108]
+        LDR.W    R5,??disp_language_init_39+0x8
+        LDR.W    R0,??disp_language_init_39+0xC
+        LDR.W    R1,??disp_language_init_39+0x10
+        LDR.N    R3,??disp_language_init_35+0x6C
+        LDR.W    R6,??disp_language_init_39+0x14
+        STR      R5,[R4, #+788]
+        STR      R3,[R4, #+428]
+        STR      R0,[R4, #+752]
+        STR      R1,[R4, #+400]
+        STR      R6,[R4, #+368]
+        LDR.W    R5,??disp_language_init_39+0x18
+        LDR.W    R0,??disp_language_init_35+0xB4
+        LDR.W    R1,??disp_language_init_39+0x1C
+        LDR.W    R3,??disp_language_init_39+0x20
+        LDR.W    R6,??disp_language_init_35+0x110
+        STR      R5,[R4, #+792]
+        STR      R3,[R4, #+436]
+        STR      R0,[R4, #+760]
+        STR      R1,[R4, #+404]
+        STR      R1,[R4, #+680]
+        LDR.W    R5,??disp_language_init_39+0x24
+        LDR.W    R0,??disp_language_init_35+0xC8
+        LDR.W    R3,??disp_language_init_39+0x28
+        LDR.W    R1,??disp_language_init_39+0x2C
+        STR      R5,[R4, #+796]
+        STR      R3,[R4, #+440]
+        STR      R0,[R4, #+764]
+        STR      R3,[R4, #+676]
+        STR      R1,[R4, #+700]
+        LDR.W    R5,??disp_language_init_39+0x30
+        LDR.N    R0,??disp_language_init_35+0xD4
+        LDR.W    R1,??disp_language_init_39+0x34
+        LDR.W    R3,??disp_language_init_39+0x38
+        STR      R5,[R4, #+804]
+        STR      R3,[R4, #+344]
+        STR      R0,[R4, #+768]
+        STR      R1,[R4, #+704]
+        LDR.W    R5,??disp_language_init_39+0x3C
+        STR      R5,[R4, #+808]
+        STR      R5,[R4, #+812]
+        LDR.W    R3,??disp_language_init_39+0x40
+        LDR.W    R5,??disp_language_init_39+0x44
+        LDR.N    R0,??disp_language_init_35+0xEC
+        STR      R5,[R4, #+96]
+        STR      R3,[R4, #+348]
+        STR      R0,[R4, #+772]
+        LDR.W    R5,??disp_language_init_39+0x48
+        LDR.W    R3,??disp_language_init_39+0x50
+        STR      R5,[R4, #+100]
+        STR      R3,[R4, #+352]
+        LDR.W    R5,??disp_language_init_39+0x5C
+        LDR.W    R3,??disp_language_init_39+0x60
+        STR      R5,[R4, #+124]
+        STR      R3,[R4, #+356]
+        LDR.W    R5,??disp_language_init_39+0x64
+        LDR.W    R3,??disp_language_init_39+0x68
+        STR      R5,[R4, #+128]
+        STR      R3,[R4, #+360]
+        STR      R3,[R4, #+104]
+        LDR.W    R5,??disp_language_init_39+0x6C
+        STR      R5,[R4, #+132]
+        LDR.N    R5,??disp_language_init_34+0xC
+        STR      R5,[R4, #+156]
+        LDR.W    R5,??disp_language_init_39+0x70
+        STR      R5,[R4, #+872]
+        LDR.W    R5,??disp_language_init_39+0x74
+        STR      R5,[R4, #+876]
+        LDR.W    R5,??disp_language_init_39+0x78
+        STR      R5,[R4, #+880]
+        LDR.W    R5,??disp_language_init_39+0x7C
+        STR      R5,[R4, #+884]
+        LDR.W    R5,??disp_language_init_39+0x80
+        STR      R5,[R4, #+888]
+        LDR.W    R5,??disp_language_init_39+0x84
+        STR      R5,[R4, #+892]
+        LDR.W    R5,??disp_language_init_39+0x88
+        STR      R5,[R7, #+0]
+        STR      R6,[R7, #+4]
+        LDR.W    R5,??disp_language_init_39+0x8C
+        STR      R5,[R7, #+8]
+        LDR.W    R5,??disp_language_init_39+0x90
+        STR      R5,[R7, #+12]
+        STR      LR,[R7, #+16]
+        STR      R1,[R7, #+20]
+        STR      R10,[R7, #+24]
+// 2225 			set_menu.motoroff=MOTOR_OFF_TEXT_IT;
+// 2226 			set_menu.language=LANGUAGE_TEXT_IT;
+// 2227 			//∏¸∂‡
+// 2228 			more_menu.title = TITLE_MORE_IT;
+        STR      R8,[R4, #+1012]
+// 2229 			more_menu.zoffset = ZOFFSET_IT;
+// 2230 			//Œƒº˛œµÕ≥
+// 2231 			filesys_menu.title = TITLE_FILESYS_IT;
+        STR      R6,[R4, #+992]
+        LDR.W    R10,??disp_language_init_39+0x94
+        STR      R10,[R7, #+28]
+        LDR.W    R10,??disp_language_init_39+0x98
+        STR      R10,[R7, #+36]
+        LDR.N    R7,??disp_language_init_35+0x10C
+        STR      R7,[R4, #+1016]
+// 2232 			filesys_menu.sd_sys = SD_CARD_TEXT_IT;
+// 2233 			filesys_menu.usb_sys = U_DISK_TEXT_IT;
+// 2234 
+// 2235 			//WIFI
+// 2236 			wifi_menu.title=WIFI_NAME_TEXT_IT;
+// 2237 			//wifi_menu.key = WIFI_KEY_TEXT_IT;
+// 2238 			//wifi_menu.ip = WIFI_IP_TEXT_IT;
+// 2239 			//wifi_menu.state= WIFI_STA_TEXT_IT;
+// 2240 			wifi_menu.cloud= CLOSE_TEXT_IT;
+// 2241 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_IT;
+// 2242 
+// 2243 			cloud_menu.title = TITLE_CLOUD_TEXT_IT;
+// 2244 			cloud_menu.bind = CLOUD_BINDED_IT;
+// 2245 			cloud_menu.binded = CLOUD_BINDED_IT;
+// 2246 			cloud_menu.unbind = CLOUD_UNBIND_IT;
+// 2247 			cloud_menu.unbinding = CLOUD_UNBINDED_IT;
+// 2248 			cloud_menu.disconnected = CLOUD_DISCONNECTED_IT;
+// 2249 			cloud_menu.disable = CLOUD_DISABLE_IT;
+// 2250 			//πÿ”⁄
+// 2251 			about_menu.title = ABOUT_TEXT_IT;
+// 2252 			about_menu.type = ABOUT_TYPE_TEXT_IT;
+// 2253 			about_menu.version = ABOUT_VERSION_TEXT_IT;
+// 2254 			about_menu.wifi = ABOUT_WIFI_TEXT_IT;				
+// 2255 			//∑Á…»
+// 2256 			fan_menu.title = FAN_TEXT_IT;
+// 2257 			fan_menu.add = FAN_ADD_TEXT_IT;
+// 2258 			fan_menu.dec = FAN_DEC_TEXT_IT;
+// 2259 			fan_menu.state = FAN_TIPS1_TEXT_IT;
+// 2260 			//ªª¡œ
+// 2261 			filament_menu.title = TITLE_FILAMENT_IT;
+// 2262 			filament_menu.in = FILAMENT_IN_TEXT_IT;
+// 2263 			filament_menu.out = FILAMENT_OUT_TEXT_IT;
+// 2264 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_IT;
+// 2265 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_IT;
+// 2266 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_IT;
+// 2267 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_IT;
+// 2268 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_IT;
+// 2269 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_IT;
+// 2270 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_IT;
+// 2271 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_IT;
+// 2272 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_IT;
+// 2273 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_IT;
+// 2274 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_IT;
+// 2275 
+// 2276 			//”Ô—‘
+// 2277 			language_menu.title = LANGUAGE_TEXT_IT;
+// 2278 			
+// 2279 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 2280 			printing_menu.title = TITLE_PRINTING_IT;
+// 2281 			printing_menu.option = PRINTING_OPERATION_IT;
+// 2282 			printing_menu.stop = PRINTING_STOP_IT;
+// 2283 			printing_menu.pause = PRINTING_PAUSE_IT;
+        STR      R0,[R4, #+664]
+// 2284 			printing_menu.resume = PRINTING_RESUME_IT;
+// 2285 
+// 2286 			//≤Ÿ◊˜ΩÁ√Ê
+// 2287 			operation_menu.title = TITLE_OPERATION_IT;
+// 2288 			operation_menu.pause = PRINTING_PAUSE_IT;
+        STR      R0,[R4, #+292]
+        STR      R5,[R4, #+900]
+        ADR.N    R6,??disp_language_init_34+0x4  ;; 0x53, 0x44, 0x00, 0x00
+// 2289 			operation_menu.stop = PRINTING_STOP_IT;
+// 2290 			operation_menu.temp = PRINTING_TEMP_IT;
+// 2291 			operation_menu.fan = FAN_TEXT_IT;
+// 2292 			operation_menu.extr = PRINTING_EXTRUDER_IT;
+// 2293 			operation_menu.speed = PRINTING_CHANGESPEED_IT;			
+        LDR.W    R0,??disp_language_init_39+0x9C
+        STR      R0,[R4, #+316]
+// 2294 			operation_menu.filament = FILAMENT_TEXT_IT;
+// 2295 			operation_menu.more = PRINTING_MORE_IT;
+// 2296 			operation_menu.move = PRINTING_MOVE_IT;
+// 2297 			operation_menu.auto_off = AUTO_SHUTDOWN_IT;
+// 2298 			operation_menu.manual_off = MANUAL_SHUTDOWN_IT;
+// 2299 			//‘›Õ£ΩÁ√Ê
+// 2300 			pause_menu.title= TITLE_PAUSE_IT;
+// 2301 			pause_menu.resume = PRINTING_RESUME_IT;
+// 2302 			pause_menu.stop = PRINTING_STOP_IT;
+// 2303 			pause_menu.extrude = PRINTING_EXTRUDER_IT;
+// 2304 			pause_menu.move = PRINTING_MOVE_IT;
+// 2305 			pause_menu.filament = FILAMENT_TEXT_IT;
+// 2306 			pause_menu.more = PRINTING_MORE_IT;
+// 2307 
+// 2308 			//±‰ÀŸΩÁ√Ê
+// 2309 			speed_menu.title = PRINTING_CHANGESPEED_IT;
+        STR      R0,[R4, #+552]
+// 2310 			speed_menu.add = ADD_TEXT_IT;
+// 2311 			speed_menu.dec = DEC_TEXT_IT;
+// 2312 			speed_menu.move = MOVE_SPEED_IT;
+// 2313 			speed_menu.extrude = EXTRUDER_SPEED_IT;
+// 2314 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_IT;
+// 2315 			speed_menu.move_speed = MOVE_SPEED_STATE_IT;
+// 2316 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 2317 			printing_more_menu.fan = FAN_TEXT_IT;
+// 2318 			printing_more_menu.auto_close = AUTO_SHUTDOWN_IT;
+// 2319 			printing_more_menu.manual = MANUAL_SHUTDOWN_IT;
+// 2320 			printing_more_menu.temp = PRINTING_TEMP_IT;	
+// 2321 			printing_more_menu.speed = PRINTING_CHANGESPEED_IT;		
+        STR      R0,[R4, #+956]
+        STR      R6,[R4, #+1000]
+        ADR.N    R6,??disp_language_init_34+0x8  ;; "USB"
+// 2322 
+// 2323 						//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
+// 2324 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_IT;
+        LDR.W    R0,??disp_language_init_39+0xA0
+        LDR.N    R5,??disp_language_init_35+0x168
+        LDR.W    R7,??disp_language_init_39+0xA4
+        STR      R0,[R4, #+164]
+        STR      R5,[R4, #+912]
+        STR      R6,[R4, #+1004]
+        STR      R9,[R4, #+528]
+        STR      LR,[R4, #+716]
+        STR      LR,[R4, #+744]
+        STR      R1,[R4, #+0]
+        STR      R3,[R4, #+12]
+        STR      R12,[R4, #+16]
+        STR      R10,[R4, #+224]
+        STR      R7,[R4, #+668]
+        STR      LR,[R4, #+304]
+        STR      R11,[R4, #+312]
+        STR      R1,[R4, #+308]
+        STR      R8,[R4, #+324]
+        STR      R2,[R4, #+320]
+        STR      R7,[R4, #+820]
+        STR      R11,[R4, #+828]
+        STR      R2,[R4, #+832]
+        STR      R1,[R4, #+836]
+        STR      R8,[R4, #+840]
+        STR      R2,[R4, #+568]
+        STR      R11,[R4, #+564]
+        STR      LR,[R4, #+940]
+// 2325 			print_file_dialog_menu.cancle = DIALOG_CANCLE_IT;
+        LDR.W    R0,??disp_language_init_39+0xA8
+        LDR.W    R6,??disp_language_init_39+0xAC
+        LDR.N    R5,??disp_language_init_35+0x174
+        LDR.N    R3,??disp_language_init_35+0x124
+        LDR.W    R9,??disp_language_init_39+0xB0
+        LDR.W    R10,??disp_language_init_39+0xB4
+        LDR.W    R1,??disp_language_init_39+0x50
+        STR      R0,[R4, #+168]
+        STR      R5,[R4, #+916]
+        STR      R6,[R4, #+504]
+        STR      R3,[R4, #+28]
+        STR      R9,[R4, #+332]
+        STR      R10,[R4, #+816]
+        STR      R1,[R4, #+556]
+        STR      R9,[R4, #+948]
+// 2326 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_IT;
+        LDR.W    R0,??disp_language_init_39+0xB8
+        LDR.W    R6,??disp_language_init_39+0xBC
+        LDR.W    R5,??disp_language_init_39+0xC0
+        LDR.W    R3,??disp_language_init_39+0xC4
+        LDR.W    R1,??disp_language_init_39+0x60
+        STR      R0,[R4, #+172]
+        STR      R5,[R4, #+920]
+        STR      R6,[R4, #+548]
+        STR      R3,[R4, #+52]
+        STR      R3,[R4, #+56]
+        STR      R1,[R4, #+560]
+// 2327 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_IT;
+        LDR.W    R0,??disp_language_init_39+0xC8
+        LDR.W    R6,??disp_language_init_39+0xCC
+        LDR.W    R5,??disp_language_init_39+0x50
+        LDR.W    R3,??disp_language_init_39+0xD0
+        LDR.W    R1,??disp_language_init_39+0xD4
+        STR      R0,[R4, #+176]
+        STR      R5,[R4, #+720]
+        STR      R6,[R4, #+596]
+        STR      R3,[R4, #+64]
+        STR      R1,[R4, #+592]
+// 2328 			print_file_dialog_menu.retry = DIALOG_RETRY_IT;
+        LDR.W    R0,??disp_language_init_39+0xD8
+        LDR.W    R6,??disp_language_init_39+0xDC
+        LDR.W    R5,??disp_language_init_39+0x60
+        LDR.N    R3,??disp_language_init_35+0x160
+        LDR.W    R1,??disp_language_init_39+0xE0
+        STR      R0,[R4, #+180]
+        STR      R5,[R4, #+724]
+        STR      R6,[R4, #+612]
+        STR      R6,[R4, #+620]
+        STR      R3,[R4, #+72]
+        STR      R1,[R4, #+588]
+// 2329 			print_file_dialog_menu.stop = DIALOG_STOP_IT;
+// 2330 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_IT;
+        LDR.W    R0,??disp_language_init_39+0xE4
+        LDR.W    R6,??disp_language_init_39+0xE8
+        LDR.W    R5,??disp_language_init_39+0xEC
+        LDR.N    R3,??disp_language_init_35+0x16C
+// 2331 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_IT;
+// 2332 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_IT;
+// 2333             print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_IT;
+// 2334 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_IT;
+// 2335 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_IT;
+        LDR.W    R1,??disp_language_init_39+0xF0
+        STR      R0,[R4, #+188]
+        STR      R5,[R4, #+4]
+        STR      R6,[R4, #+600]
+        STR      R3,[R4, #+80]
+        LDR.W    R0,??disp_language_init_39+0xF4
+        LDR.W    R6,??disp_language_init_39+0xF8
+        LDR.W    R5,??disp_language_init_39+0xFC
+        LDR.N    R3,??disp_language_init_35+0x1A8
+        STR      R0,[R4, #+192]
+        STR      R5,[R4, #+8]
+        STR      R6,[R4, #+604]
+        STR      R3,[R4, #+640]
+        LDR.W    R0,??disp_language_init_39+0x100
+        LDR.W    R6,??disp_language_init_39+0x104
+        LDR.N    R5,??disp_language_init_35+0x134
+        LDR.W    R3,??disp_language_init_39+0x108
+        B.N      ??disp_language_init_40
+        Nop      
         DATA
-??DataTable548_16:
+??disp_language_init_34:
+        DC32     `?<Constant "Leveling">`
+        DC8      0x53, 0x44, 0x00, 0x00
+        DC8      "USB"
+        DC32     `?<Constant "Temper">`
+        THUMB
+??disp_language_init_40:
+        STR      R0,[R4, #+200]
+        STR      R5,[R4, #+60]
+        STR      R6,[R4, #+628]
+        STR      R3,[R4, #+644]
+        STR      R3,[R4, #+288]
+        LDR.W    R0,??disp_language_init_39+0x10C
+        LDR.W    R6,??DataTable1003
+        LDR.N    R5,??disp_language_init_35+0x144
+        LDR.W    R3,??DataTable1003_1
+        STR      R0,[R4, #+204]
+        STR      R5,[R4, #+68]
+        STR      R6,[R4, #+624]
+        STR      R3,[R4, #+300]
+        STR      R3,[R4, #+952]
+        LDR.W    R0,??DataTable1003_2
+        LDR.W    R5,??DataTable1003_3
+        LDR.N    R6,??disp_language_init_35+0x4C
+        STR      R0,[R4, #+208]
+        STR      R5,[R4, #+76]
+        STR      R6,[R4, #+672]
+        STR      R6,[R4, #+296]
+        STR      R6,[R4, #+824]
+        STR      R6,[R4, #+184]
+// 2336 			print_file_dialog_menu.reprint=DIALOG_REPRINT_IT;
+        LDR.W    R0,??DataTable1003_4
+        LDR.N    R5,??disp_language_init_35+0x30
+        STR      R0,[R4, #+216]
+        STR      R5,[R4, #+328]
+        STR      R5,[R4, #+944]
+// 2337 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_IT;
+        LDR.W    R0,??DataTable1003_5
+        B.W      ??disp_language_init_41
+        DATA
+??disp_language_init_35:
         DC32     `?<Constant "ventilador">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_17:
-        DC32     `?<Constant "Calentando\\302\\240el\\302\\240extru.`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_18:
         DC32     `?<Constant "Temperatura\\302\\240alcanzad...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_19:
-        DC32     `?<Constant "Cargando\\302\\240filamento,\\n...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_20:
-        DC32     `?<Constant "Filamento\\302\\240cargado,\\np...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_21:
-        DC32     `?<Constant "Temperatura\\302\\240alcanzad...">_1`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_22:
-        DC32     `?<Constant "Retirando\\302\\240filamento,...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_23:
-        DC32     `?<Constant "Filamento\\302\\240retirado,\\n...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_24:
-        DC32     `?<Constant "Detener">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_25:
-        DC32     `?<Constant "Resumir">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_26:
-        DC32     `?<Constant "Velocidad">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_27:
         DC32     `?<Constant "manual">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_28:
+        DC32     `?<Constant "Calentando\\302\\240el\\302\\240extru.`
+        DC32     `?<Constant "Cargando\\302\\240filamento,\\n...">`
+        DC32     `?<Constant "Filamento\\302\\240cargado,\\np...">`
+        DC32     `?<Constant "Velocidad">`
+        DC32     `?<Constant "Temperatura\\302\\240alcanzad...">_1`
+        DC32     `?<Constant "Retirando\\302\\240filamento,...">`
+        DC32     `?<Constant "Filamento\\302\\240retirado,\\n...">`
+        DC32     `?<Constant "Resumir">`
         DC32     `?<Constant "Extrusi\\303\\263n">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_29:
+        DC32     `?<Constant "Auto">`
         DC32     `?<Constant "Movimiento">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_30:
+        DC32     `?<Constant "Detener">`
         DC32     `?<Constant "Cancelar">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_31:
         DC32     `?<Constant "\\302\\277Est\\303\\241 seguro?">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_32:
         DC32     `?<Constant "\\302\\277Est\\303\\241 seguro que de.`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_33:
         DC32     `?<Constant "Reintentar">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_34:
-        DC32     `?<Constant "Error:archivo no enco...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_35:
-        DC32     `?<Constant "error:transacci\\303\\263n fa...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_36:
-        DC32     `?<Constant "\\302\\241La impresi\\303\\263n est\\30`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_37:
-        DC32     `?<Constant "Tiempo de impresi\\303\\263n: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_38:
-        DC32     `?<Constant "Confirm">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_39:
-        DC32     `?<Constant "Arri\\303\\250re">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_40:
-        DC32     `?<Constant "Printing">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_41:
-        DC32     `?<Constant "Pause">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_42:
-        DC32     `?<Constant "Operation">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_43:
-        DC32     `?<Constant "Pr\\303\\252te">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_44:
-        DC32     `?<Constant "Pr\\303\\251chauffe">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_45:
-        DC32     `?<Constant "D\\303\\251place">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_46:
-        DC32     `?<Constant "Acceuil">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_47:
-        DC32     `?<Constant "Impression">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_48:
-        DC32     `?<Constant "Extruder">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_49:
-        DC32     `?<Constant "AutoLevel">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_50:
-        DC32     `?<Constant "Plus">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_51:
-        DC32     `?<Constant "pr\\303\\252t">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_52:
-        DC32     `?<Constant "Filament">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_53:
-        DC32     `?<Constant "R\\303\\251glage">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_54:
-        DC32     `?<Constant "Ajouter">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_55:
-        DC32     `?<Constant "R\\303\\251duire">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_56:
-        DC32     `?<Constant "Extr1">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_57:
-        DC32     `?<Constant "Extr2">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_58:
-        DC32     `?<Constant "Hotlit">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_59:
-        DC32     `?<Constant "Fichier">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_60:
-        DC32     `?<Constant "En haut">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_61:
-        DC32     `?<Constant "En bas">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_62:
-        DC32     `?<Constant "Ins\\303\\251rer">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_63:
-        DC32     `?<Constant "\\303\\251jecter">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_64:
-        DC32     `?<Constant "Lente">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_65:
-        DC32     `?<Constant "Moyen">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_66:
-        DC32     `?<Constant "Rapide">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_67:
-        DC32     `?<Constant "Premier">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_68:
-        DC32     `?<Constant "Seconde">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_69:
-        DC32     `?<Constant "Troisi\\303\\250me">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_70:
-        DC32     `?<Constant "Quatri\\303\\250me">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_71:
-        DC32     `?<Constant "Cinqui\\303\\250me">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_72:
-        DC32     `?<Constant "Param\\303\\250tres">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_73:
-        DC32     `?<Constant "A propos">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_74:
-        DC32     `?<Constant "Remplacer">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_75:
-        DC32     `?<Constant "Continuer">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_76:
-        DC32     `?<Constant "M-hors">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_77:
-        DC32     `?<Constant "Langue">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_78:
-        DC32     `?<Constant "FileSys">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_79:
-        DC32     `?<Constant "Carte SD">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_80:
-        DC32     `?<Constant "Cl\\303\\251 usb">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_81:
-        DC32     `?<Constant "Chargement......">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_82:
-        DC32     `?<Constant "Pas de fichier!">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_83:
-        DC32     `?<Constant "WiFi: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_84:
-        DC32     `?<Constant "Wifi: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_85:
-        DC32     `?<Constant "ventilateur">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_86:
-        DC32     `?<Constant "Please click <Load> \\n...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_87:
-        DC32     `?<Constant "Heating up the nozzle...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_88:
-        DC32     `?<Constant "Heat completed,please...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_89:
-        DC32     `?<Constant "Is loading ,please wait!">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_90:
-        DC32     `?<Constant "Load filament complet...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_91:
-        DC32     `?<Constant "Heat completed,please...">_1`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_92:
-        DC32     `?<Constant "Is unloading,please w...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_93:
-        DC32     `?<Constant "Unload filament compl...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_94:
-        DC32     `?<Constant "Pimpression">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_95:
-        DC32     `?<Constant "Option">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_96:
         DC32     `?<Constant "Stop">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_97:
+        DC32     `?<Constant "Error:archivo no enco...">`
+        DC32     `?<Constant "Reprint from breakpoint?">`
+        DC32     `?<Constant "error:transacci\\303\\263n fa...">`
+        DC32     `?<Constant "\\302\\241La impresi\\303\\263n est\\30`
+        DC32     `?<Constant "Tiempo de impresi\\303\\263n: ">`
+        DC32     `?<Constant "Confirm">`
+        DC32     `?<Constant "Premier">`
+        DC32     `?<Constant "AutoLevel">`
+        DC32     `?<Constant "Pr\\303\\251chauffe">`
+        DC32     `?<Constant "D\\303\\251place">`
+        DC32     `?<Constant "Acceuil">`
+        DC32     `?<Constant "Extruder">`
+        DC32     `?<Constant "Plus">`
+        DC32     `?<Constant "\\303\\251jecter">`
+        DC32     `?<Constant "Lente">`
+        DC32     `?<Constant "Param\\303\\250tres">`
+        DC32     `?<Constant "Seconde">`
+        DC32     `?<Constant "Arri\\303\\250re">`
+        DC32     `?<Constant "Hotlit">`
+        DC32     `?<Constant "Pr\\303\\252te">`
+        DC32     `?<Constant "pr\\303\\252t">`
+        DC32     `?<Constant "Ajouter">`
+        DC32     `?<Constant "Quickstop">`
+        DC32     `?<Constant "Moyen">`
+        DC32     `?<Constant "Troisi\\303\\250me">`
+        DC32     `?<Constant "Closing machine......">`
+        DC32     `?<Constant "Impression">`
+        DC32     `?<Constant "Filament">`
+        DC32     `?<Constant "R\\303\\251duire">`
+        DC32     `?<Constant "Quatri\\303\\250me">`
+        DC32     `?<Constant "Unbind the printer?">`
+        DC32     `?<Constant "En haut">`
+        DC32     `?<Constant "Cinqui\\303\\250me">`
+        DC32     `?<Constant "Printing">`
+        DC32     `?<Constant "R\\303\\251glage">`
+        DC32     `?<Constant "En bas">`
+        DC32     `?<Constant "Rapide">`
+        DC32     `?<Constant "Extr1">`
+        DC32     `?<Constant "Fichier">`
+        DC32     `?<Constant "Pause">`
+        DC32     `?<Constant "Extr2">`
+        DC32     `?<Constant "Ins\\303\\251rer">`
+        DC32     `?<Constant "A propos">`
+        DC32     `?<Constant "Remplacer">`
+        DC32     `?<Constant "Continuer">`
+        DC32     `?<Constant "M-hors">`
+        DC32     `?<Constant "Langue">`
+        DC32     `?<Constant "Z Offset">`
+        DC32     `?<Constant "FileSys">`
+        DC32     `?<Constant "Carte SD">`
+        DC32     `?<Constant "Cl\\303\\251 usb">`
+        DC32     `?<Constant "Chargement......">`
+        DC32     `?<Constant "Pas de fichier!">`
+        DC32     `?<Constant "Please click <Load> \\n...">`
+        DC32     `?<Constant "Speed">`
+        DC32     `?<Constant "Manuel">`
+        DC32     `?<Constant "Temps d\\'impression: ">`
+        DC32     `?<Constant "Heat completed,please...">`
         DC32     `?<Constant "Reprendre">`
+        DC32     `?<Constant "Vitesse d\\'extrusion">`
+        DC32     `?<Constant "Li\\303\\251">`
+        DC32     `?<Constant "Is loading ,please wait!">`
+        DC32     `?<Constant "vitesse de d\\303\\251placement">`
+        DC32     `?<Constant "D\\303\\251lier">`
+        DC32     `?<Constant "Confirmer">`
+        DC32     `?<Constant "D\\303\\251connect\\303\\251">`
+        DC32     `?<Constant "Annuler">`
+        DC32     `?<Constant "D\\303\\251sactiver">`
+        DC32     `?<Constant "Is unloading,please w...">`
+        DC32     `?<Constant "Imprimer le fichier?">`
+        DC32     `?<Constant "Type: ">`
+        DC32     `?<Constant "Unload filament compl...">`
+        DC32     `?<Constant "Arr\\303\\252ter?">`
+        DC32     `?<Constant "Firmware: ">`
+        DC32     `?<Constant "Recommencez">`
+        DC32     `?<Constant "Wifi: ">`
+        DC32     `?<Constant "Pimpression">`
+        DC32     `?<Constant "Arr\\303\\252ter">`
+        DC32     `?<Constant "Option">`
+        DC32     `?<Constant "Erreur:error:Aucun fi...">`
+        DC32     `?<Constant "Continuer?">`
+        DC32     `?<Constant "ventilateur">`
+        DC32     `?<Constant "Erreur:La op\\303\\251ration ...">`
+        DC32     `?<Constant "Heating up the nozzle...">`
+        DC32     `?<Constant "L\\'impression est term...">`
+        DC32     `?<Constant "Home">`
+        DC32     `?<Constant "Stampa">`
+        DC32     `?<Constant "Operation">`
+        DC32     `?<Constant "Muovi">`
+        DC32     `?<Constant "Estrude">`
+        DC32     `?<Constant "Ventola">`
+        DC32     `?<Constant "Di pi\\303\\271">`
+        DC32     `?<Constant "Estrude2">`
+        DC32     `?<Constant "Spento">`
+        DC32     `?<Constant "Continua">`
+        THUMB
+// 2338 			//ZOFFSET
+// 2339 			zoffset_menu.title = TITLE_ZOFFSET_IT;
+// 2340 			zoffset_menu.inc = ZOFFSET_INC_IT;
+// 2341 			zoffset_menu.dec = ZOFFSET_DEC_IT;			
+// 2342 			break;
+// 2343 
+// 2344 			#if 0
+// 2345 		case LANG_KOREAN:
+// 2346 			common_menu.text_back=BACK_TEXT_KR;
+// 2347 			//÷˜“≥√Ê
+// 2348 			main_menu.title=TITLE_READYPRINT_KR;
+// 2349 			main_menu.preheat=PREHEAT_TEXT_KR;
+// 2350 			main_menu.move=MOVE_TEXT_KR;
+// 2351 			main_menu.home=HOME_TEXT_KR;
+// 2352 			main_menu.print=PRINT_TEXT_KR;
+// 2353 			main_menu.extrude=EXTRUDE_TEXT_KR;
+// 2354 			main_menu.leveling=LEVELING_TEXT_KR;
+// 2355 			main_menu.autoleveling=AUTO_LEVELING_TEXT_KR;
+// 2356 			main_menu.set=SET_TEXT_KR;
+// 2357 			main_menu.more=MORE_TEXT_KR;
+// 2358 			//‘§»»
+// 2359 			preheat_menu.adjust_title = TITLE_ADJUST_KR;
+// 2360 			preheat_menu.title=TITLE_PREHEAT_KR;
+// 2361 			preheat_menu.add=ADD_TEXT_KR;
+// 2362 			preheat_menu.dec=DEC_TEXT_KR;
+// 2363 			preheat_menu.ext1=EXTRUDER_1_TEXT_KR;
+// 2364 			preheat_menu.ext2=EXTRUDER_2_TEXT_KR;
+// 2365 			preheat_menu.off=CLOSE_TEXT_KR;
+// 2366 			//“∆∂Ø
+// 2367 			move_menu.title = MOVE_TEXT_KR;
+// 2368 			//πÈ¡„
+// 2369 			home_menu.title=TITLE_HOME_KR;
+// 2370 			//Œƒº˛ƒø¬º
+// 2371 			file_menu.title=TITLE_CHOOSEFILE_KR;
+// 2372 			file_menu.page_up=PAGE_UP_TEXT_KR;
+// 2373 			file_menu.page_down=PAGE_DOWN_TEXT_KR;
+// 2374 			//º∑≥ˆ
+// 2375 			extrude_menu.title=TITLE_EXTRUDE_KR;
+// 2376 			extrude_menu.in=EXTRUDER_IN_TEXT_KR;
+// 2377 			extrude_menu.out=EXTRUDER_OUT_TEXT_KR;
+// 2378 			extrude_menu.ext1=EXTRUDER_1_TEXT_KR;
+// 2379 			extrude_menu.ext2=EXTRUDER_2_TEXT_KR;
+// 2380 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_KR;
+// 2381 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_KR;
+// 2382 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_KR;
+// 2383 			//µ˜∆Ω
+// 2384 			leveling_menu.title=TITLE_LEVELING_KR;
+// 2385 			leveling_menu.position1=LEVELING_POINT1_TEXT_KR;
+// 2386 			leveling_menu.position2=LEVELING_POINT2_TEXT_KR;
+// 2387 			leveling_menu.position3=LEVELING_POINT3_TEXT_KR;
+// 2388 			leveling_menu.position4=LEVELING_POINT4_TEXT_KR;
+// 2389 			leveling_menu.position5=LEVELING_POINT5_TEXT_KR;
+// 2390 			//…Ë÷√
+// 2391 			set_menu.title=TITLE_SET_KR;
+// 2392 			set_menu.wifi=WIFI_TEXT_KR;
+// 2393 			set_menu.about=ABOUT_TEXT_KR;
+// 2394 			set_menu.fan=FAN_TEXT_KR;
+// 2395 			set_menu.filament=FILAMENT_TEXT_KR;
+// 2396 			set_menu.breakpoint=BREAK_POINT_TEXT_KR;
+// 2397 			set_menu.motoroff=MOTOR_OFF_TEXT_KR;
+// 2398 			set_menu.language=LANGUAGE_TEXT_KR;
+// 2399 			//∏¸∂‡
+// 2400 			//strcpy(more_menu.back,BACK_TEXT_EN);	
+// 2401 			//WIFI
+// 2402 			wifi_menu.title=WIFI_NAME_TEXT_KR;
+// 2403 			wifi_menu.key = WIFI_KEY_TEXT_KR;
+// 2404 			wifi_menu.ip = WIFI_IP_TEXT_KR;
+// 2405 			wifi_menu.state= WIFI_STA_TEXT_KR;
+// 2406 			wifi_menu.cloud= CLOSE_TEXT_KR;
+// 2407 			//πÿ”⁄
+// 2408 			about_menu.title = ABOUT_TEXT_KR;
+// 2409 			//∑Á…»
+// 2410 			fan_menu.title = FAN_TEXT_KR;
+// 2411 			fan_menu.add = FAN_ADD_TEXT_KR;
+// 2412 			fan_menu.dec = FAN_DEC_TEXT_KR;
+// 2413 			fan_menu.state = FAN_TIPS1_TEXT;
+// 2414 			//ªª¡œ
+// 2415 			filament_menu.title = TITLE_FILAMENT_TEXT_KR;
+// 2416 			filament_menu.in = FILAMENT_IN_TEXT_KR;
+// 2417 			filament_menu.out = FILAMENT_OUT_TEXT_KR;
+// 2418 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_KR;
+// 2419 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_KR;
+// 2420 
+// 2421 			//”Ô—‘
+// 2422 			language_menu.title = LANGUAGE_TEXT_KR;
+// 2423 			
+// 2424 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 2425 			printing_menu.title = TITLE_PRINTING_KR;
+// 2426 			printing_menu.option = PRINTING_OPERATION_KR;
+// 2427 			printing_menu.stop = PRINTING_STOP_KR;
+// 2428 			printing_menu.pause = PRINTING_PAUSE_KR;
+// 2429 			printing_menu.resume = PRINTING_RESUME_KR;
+// 2430 
+// 2431 			//≤Ÿ◊˜ΩÁ√Ê
+// 2432 			operation_menu.title = TITLE_OPERATION_KR;
+// 2433 			operation_menu.pause = PRINTING_PAUSE_KR;
+// 2434 			operation_menu.stop = PRINTING_STOP_KR;
+// 2435 			operation_menu.temp = PRINTING_TEMP_KR;
+// 2436 			operation_menu.speed = PRINTING_CHANGESPEED_KR;
+// 2437 			operation_menu.more = PRINTING_MORE_KR;
+// 2438 			//‘›Õ£ΩÁ√Ê
+// 2439 			pause_menu.title= PRINTING_PAUSE_KR;
+// 2440 			pause_menu.resume = PRINTING_RESUME_KR;
+// 2441 			pause_menu.stop = PRINTING_STOP_KR;
+// 2442 			pause_menu.extrude = PRINTING_EXTRUDER_KR;
+// 2443 			pause_menu.move = PRINTING_MOVE_KR;
+// 2444 			pause_menu.temp = PRINTING_TEMP_KR;
+// 2445 			pause_menu.more = PRINTING_MORE_KR;
+// 2446 
+// 2447 			//±‰ÀŸΩÁ√Ê
+// 2448 			speed_menu.title = PRINTING_CHANGESPEED_KR;
+// 2449 			speed_menu.add = ADD_TEXT_KR;
+// 2450 			speed_menu.dec = DEC_TEXT_KR;
+// 2451 			speed_menu.move = MOVE_SPEED_KR;
+// 2452 			speed_menu.extrude = EXTRUDER_SPEED_KR;
+// 2453 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_KR;
+// 2454 			speed_menu.move_speed = MOVE_SPEED_STATE_KR;
+// 2455 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 2456 			printing_more_menu.fan = FAN_TEXT_KR;
+// 2457 			printing_more_menu.auto_close = AUTO_SHUTDOWN_KR;
+// 2458 			printing_more_menu.manual = MANUAL_SHUTDOWN_KR;
+// 2459 			printing_more_menu.filament = FILAMENT_TEXT_KR;						
+// 2460 			break;		
+// 2461 		#endif	
+// 2462 #endif        
+// 2463 		default:
+// 2464 		//ª˙∆˜≤Œ ˝
+// 2465                     MachinePara_menu.title = MACHINE_PARA_TITLE_EN;
+??disp_language_init_8:
+        LDR.W    R7,??disp_language_init_37+0x4
+        LDR.W    R0,??DataTable1003_6
+// 2466                     MachinePara_menu.MachineSetting = MACHINE_TYPE_CNOFIG_EN;
+// 2467                     MachinePara_menu.TemperatureSetting=TEMPERATURE_CONFIG_EN;
+// 2468                     MachinePara_menu.MotorSetting=MOTOR_CONFIG_EN;
+// 2469                     MachinePara_menu.AdvanceSetting=ADVANCE_CONFIG_EN;
+// 2470             
+// 2471                     machine_menu.default_value = DEFAULT_EN;
+// 2472                     machine_menu.next=NEXT_EN;
+// 2473                     machine_menu.previous=PREVIOUS_EN;
+// 2474             
+// 2475                     machine_menu.MachineConfigTitle = MACHINE_CONFIG_TITLE_EN;
+// 2476                     machine_menu.MachineType=MACHINE_TYPE_EN;
+// 2477                     machine_menu.Stroke=MACHINE_STROKE_EN;
+// 2478                     machine_menu.HomeDir=MACHINE_HOMEDIR_EN;
+// 2479                     machine_menu.EndStopType=MACHINE_ENDSTOP_TYPE_EN;
+// 2480                     machine_menu.FilamentConf=MACHINE_FILAMENT_CONFIG_EN;
+// 2481                     machine_menu.LevelingConf=MACHINE_LEVELING_CONFIG_EN;
+        LDR.W    R1,??DataTable1003_7
+// 2482             
+// 2483                     machine_menu.MachineTypeConfTitle = MACHINE_TYPE_CONFIG_TITLE_EN;
+        LDR.W    R2,??DataTable1003_8
+// 2484                     machine_menu.xyz=MACHINE_TYPE_XYZ_EN;
+// 2485                     machine_menu.delta=MACHINE_TYPE_DELTA_EN;
+// 2486                     machine_menu.corexy=MACHINE_TYPE_COREXY_EN;
+// 2487             
+// 2488                     machine_menu.StrokeConfTitle=MACHINE_STROKE_CONF_TITLE_EN;
+// 2489                     machine_menu.xStroke=X_MAX_LENGTH_EN;
+// 2490                     machine_menu.yStroke=Y_MAX_LENGTH_EN;
+// 2491                     machine_menu.zStroke=Z_MAX_LENGTH_EN;
+// 2492 
+// 2493 			machine_menu.xmin=X_MIN_LENGTH_EN;
+// 2494 		       machine_menu.ymin=Y_MIN_LENGTH_EN;
+// 2495 		       machine_menu.zmin=Z_MIN_LENGTH_EN;					
+// 2496             
+// 2497                     machine_menu.HomeDirConfTitle=HOME_DIR_CONF_TITLE_EN;
+// 2498                     machine_menu.xHomeDir=HOME_DIR_X_EN;
+// 2499                     machine_menu.yHomeDir=HOME_DIR_Y_EN;
+// 2500                     machine_menu.zHomeDir=HOME_DIR_Z_EN;
+// 2501                     machine_menu.min=HOME_MIN_EN;
+// 2502                     machine_menu.max=HOME_MAX_EN;
+// 2503             
+// 2504                     machine_menu.EndstopConfTitle=ENDSTOP_CONF_TITLE_EN;
+// 2505                     machine_menu.xEndstop_min=MIN_ENDSTOP_X_EN;
+// 2506                     machine_menu.yEndstop_min=MIN_ENDSTOP_Y_EN;
+// 2507                     machine_menu.zEndstop_min=MIN_ENDSTOP_Z_EN;
+// 2508                     machine_menu.xEndstop_max=MAX_ENDSTOP_X_EN;
+// 2509                     machine_menu.yEndstop_max=MAX_ENDSTOP_Y_EN;
+// 2510                     machine_menu.zEndstop_max=MAX_ENDSTOP_Z_EN;            
+// 2511                     machine_menu.FilamentEndstop=ENDSTOP_FIL_EN;
+// 2512                     machine_menu.LevelingEndstop=ENDSTOP_LEVEL_EN;
+// 2513                     machine_menu.opened=ENDSTOP_OPENED_EN;
+// 2514                     machine_menu.closed=ENDSTOP_CLOSED_EN;
+        LDR.W    R3,??DataTable1003_9
+        STR      R0,[R7, #+48]
+        LDR.W    R0,??DataTable1003_10
+        STR      R0,[R7, #+52]
+        LDR.W    R0,??DataTable1003_11
+        STR      R0,[R7, #+56]
+        LDR.W    R0,??DataTable1003_12
+        STR      R0,[R7, #+60]
+        LDR.W    R0,??DataTable1003_13
+        STR      R0,[R7, #+64]
+        STR      R2,[R5, #+40]
+        STR      R1,[R5, #+36]
+        STR      R3,[R5, #+148]
+// 2515             
+// 2516                     machine_menu.FilamentConfTitle=FILAMENT_CONF_TITLE_EN;
+// 2517                     machine_menu.InTemperature=FILAMENT_IN_TEMPERATURE_EN;
+// 2518                     machine_menu.InLength=FILAMENT_IN_LENGTH_EN;
+// 2519                     machine_menu.InSpeed=FILAMENT_IN_SPEED_EN;
+// 2520                     machine_menu.OutTemperature=FILAMENT_OUT_TEMPERATURE_EN;
+// 2521                     machine_menu.OutLength=FILAMENT_OUT_LENGTH_EN;
+// 2522                     machine_menu.OutSpeed=FILAMENT_OUT_SPEED_EN;
+// 2523                                 
+// 2524                     machine_menu.LevelingParaConfTitle=LEVELING_CONF_TITLE_EN;
+        STR      R1,[R5, #+180]
+// 2525                     machine_menu.LevelingParaConf=LEVELING_PARA_CONF_EN;
+        STR      R1,[R5, #+184]
+// 2526                     machine_menu.DeltaLevelConf=LEVELING_DELTA_EN;
+// 2527                     machine_menu.XYZLevelconf=LEVELING_XYZ_EN;
+// 2528             
+// 2529                     machine_menu.LevelingSubConfTitle=LEVELING_PARA_CONF_TITLE_EN;
+// 2530                     machine_menu.AutoLevelEnable=AUTO_LEVELING_ENABLE_EN;
+// 2531                     machine_menu.BLtouchEnable=BLTOUCH_LEVELING_ENABLE_EN;
+// 2532                     machine_menu.ProbePort=PROBE_PORT_EN;
+// 2533                     machine_menu.ProbeXoffset=PROBE_X_OFFSET_EN;
+// 2534                     machine_menu.ProbeYoffset=PROBE_Y_OFFSET_EN;
+// 2535                     machine_menu.ProbeZoffset=PROBE_Z_OFFSET_EN;
+// 2536                     machine_menu.ProbeXYspeed=PROBE_XY_SPEED_EN;
+// 2537                     machine_menu.ProbeZspeed=PROBE_Z_SPEED_EN;
+// 2538                     machine_menu.enable = ENABLE_EN;
+// 2539                     machine_menu.disable = DISABLE_EN;
+        ADR.N    R1,??disp_language_init_42  ;; 0x4E, 0x4F, 0x00, 0x00
+        LDR.W    R0,??DataTable1003_14
+        LDR.W    R2,??DataTable1003_15
+        STR      R0,[R5, #+0]
+        STR      R2,[R5, #+44]
+        STR      R1,[R5, #+236]
+        LDR.W    R0,??DataTable1003_16
+        LDR.W    R2,??DataTable1003_17
+        STR      R0,[R5, #+4]
+        STR      R2,[R5, #+48]
+        LDR.W    R0,??DataTable1003_18
+        LDR.W    R2,??DataTable1003_19
+        STR      R0,[R5, #+8]
+        STR      R2,[R5, #+52]
+        LDR.W    R0,??DataTable1003_20
+        LDR.W    R2,??DataTable1003_21
+        STR      R0,[R5, #+12]
+        STR      R2,[R5, #+56]
+        LDR.W    R0,??DataTable1003_22
+        LDR.W    R2,??DataTable1003_23
+        STR      R0,[R5, #+16]
+        STR      R2,[R5, #+60]
+        LDR.W    R0,??DataTable1003_24
+        LDR.W    R2,??DataTable1003_25
+        STR      R0,[R5, #+20]
+        STR      R2,[R5, #+64]
+        LDR.W    R0,??DataTable1003_26
+        LDR.W    R2,??DataTable1003_27
+        STR      R0,[R5, #+24]
+        STR      R2,[R5, #+68]
+        LDR.W    R0,??DataTable1003_28
+        LDR.W    R2,??DataTable1003_29
+        STR      R0,[R5, #+28]
+        STR      R2,[R5, #+72]
+        LDR.W    R0,??DataTable1003_30
+        STR      R0,[R5, #+32]
+        STR      R0,[R5, #+152]
+        LDR.W    R2,??DataTable1003_31
+        LDR.W    R0,??DataTable1003_32
+        STR      R2,[R5, #+76]
+        STR      R0,[R5, #+156]
+        LDR.W    R2,??DataTable1003_33
+        LDR.W    R0,??DataTable1003_34
+        STR      R2,[R5, #+80]
+        STR      R0,[R5, #+160]
+        LDR.W    R2,??DataTable1003_35
+        LDR.W    R0,??DataTable1003_36
+        STR      R2,[R5, #+84]
+        STR      R0,[R5, #+164]
+        LDR.W    R2,??DataTable1003_37
+        LDR.W    R0,??DataTable1003_38
+        STR      R2,[R5, #+88]
+        STR      R0,[R5, #+168]
+        LDR.W    R2,??DataTable1003_39
+        LDR.W    R0,??DataTable1003_40
+        STR      R2,[R5, #+92]
+        STR      R0,[R5, #+172]
+        LDR.W    R2,??DataTable1003_41
+        LDR.W    R0,??DataTable1003_42
+        STR      R2,[R5, #+96]
+        STR      R0,[R5, #+176]
+        ADR.N    R2,??disp_language_init_43  ;; "MIN"
+        LDR.W    R0,??DataTable1003_43
+        STR      R2,[R5, #+100]
+        STR      R0,[R5, #+188]
+        ADR.N    R2,??disp_language_init_43+0x4  ;; "MAX"
+        LDR.W    R0,??DataTable1003_44
+        STR      R2,[R5, #+104]
+        STR      R0,[R5, #+192]
+        LDR.W    R2,??DataTable1003_45
+        LDR.W    R0,??DataTable1003_46
+        STR      R2,[R5, #+108]
+        STR      R0,[R5, #+196]
+        LDR.W    R2,??DataTable1003_47
+        LDR.W    R0,??DataTable1003_48
+        STR      R2,[R5, #+112]
+        STR      R0,[R5, #+200]
+        LDR.W    R2,??DataTable1003_49
+        LDR.W    R0,??DataTable1003_50
+        STR      R2,[R5, #+116]
+        STR      R0,[R5, #+204]
+        LDR.W    R2,??DataTable1003_51
+        LDR.W    R0,??DataTable1003_52
+        STR      R2,[R5, #+120]
+        STR      R0,[R5, #+208]
+        LDR.W    R2,??DataTable1003_53
+        LDR.W    R0,??DataTable1003_54
+        STR      R2,[R5, #+124]
+        STR      R0,[R5, #+212]
+        LDR.W    R2,??DataTable1003_55
+        LDR.W    R0,??DataTable1003_56
+        STR      R2,[R5, #+128]
+        STR      R0,[R5, #+216]
+        LDR.W    R2,??DataTable1003_57
+        LDR.W    R0,??DataTable1003_58
+        STR      R2,[R5, #+132]
+        STR      R0,[R5, #+220]
+        LDR.W    R2,??DataTable1003_59
+        LDR.W    R0,??DataTable1003_60
+        STR      R2,[R5, #+136]
+        STR      R0,[R5, #+224]
+        LDR.W    R2,??DataTable1003_61
+        LDR.W    R0,??DataTable1003_62
+        STR      R2,[R5, #+140]
+        STR      R0,[R5, #+228]
+        ADR.N    R0,??disp_language_init_37  ;; "YES"
+        LDR.W    R2,??DataTable1003_63
+        STR      R2,[R5, #+144]
+        STR      R0,[R5, #+232]
+// 2540                     machine_menu.z_min = Z_MIN_EN;
+        LDR.W    R2,??DataTable1003_64
+// 2541                     machine_menu.z_max = Z_MAX_EN;
+// 2542             
+// 2543                     machine_menu.LevelingSubDeltaConfTitle=DELTA_LEVEL_CONF_TITLE_EN;
+// 2544                     machine_menu.MachineRadius=DELTA_MACHINE_RADIUS_EN;
+// 2545                     machine_menu.DiagonalRod=DELTA_DIAGONAL_ROD_EN;
+// 2546                     machine_menu.PrintableRadius=DELTA_PRINT_RADIUS_EN;
+// 2547                     machine_menu.DeltaHeight=DELTA_HEIGHT_EN;
+// 2548                     machine_menu.SmoothRodOffset=SMOOTH_ROD_OFFSET_EN;
+// 2549                     machine_menu.EffectorOffset=EFFECTOR_OFFSET_EN;
+// 2550                     machine_menu.CalibrationRadius=CALIBRATION_RADIUS_EN;
+// 2551             
+// 2552                     machine_menu.LevelingSubXYZConfTitle=XYZ_LEVEL_CONF_TITLE_EN;
+// 2553                     //machine_menu.ProbeMaxLeft=PROBE_REACH_MAX_LEFT_EN;
+// 2554                     //machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_EN;
+// 2555                     //machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_EN;
+// 2556                     //machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_EN;
+// 2557             
+// 2558                     machine_menu.TemperatureConfTitle=TEMPERATURE_CONF_TITLE_EN;
+// 2559                     machine_menu.NozzleConf=NOZZLE_CONF_EN;
+// 2560                     machine_menu.HotBedConf=HOTBED_CONF_EN;
+// 2561                     machine_menu.PreheatTemperConf=PREHEAT_TEMPER_EN;
+// 2562             
+// 2563                     machine_menu.NozzleConfTitle=NOZZLE_CONF_TITLE_EN;
+// 2564                     machine_menu.NozzleCnt=NOZZLECNT_EN;
+// 2565                     machine_menu.NozzleType=NOZZLE_TYPE_EN;
+// 2566                     machine_menu.NozzleAdjustType=NOZZLE_ADJUST_TYPE_EN;
+// 2567                     machine_menu.NozzleMinTemperature=NOZZLE_MIN_TEMPERATURE_EN;
+        LDR.W    R6,??DataTable1003_65
+// 2568                     machine_menu.NozzleMaxTemperature=NOZZLE_MAX_TEMPERATURE_EN;
+        LDR.W    R11,??DataTable1003_66
+// 2569                     machine_menu.Extrude_Min_Temper=EXTRUD_MIN_TEMPER_EN;
+        LDR.W    R12,??DataTable1003_67
+        STR      R2,[R5, #+240]
+        STR      R12,[R5, #+324]
+        STR      R6,[R5, #+316]
+        STR      R11,[R5, #+320]
+// 2570 
+// 2571 			machine_menu.HotbedEnable=HOTBED_ENABLE_EN;
+// 2572                     machine_menu.HotbedConfTitle=HOTBED_CONF_TITLE_EN;
+// 2573                     machine_menu.HotbedAjustType=HOTBED_ADJUST_EN;
+// 2574                     machine_menu.HotbedMinTemperature=HOTBED_MIN_TEMPERATURE_EN;
+        STR      R6,[R5, #+340]
+// 2575                     machine_menu.HotbedMaxTemperature=HOTBED_MAX_TEMPERATURE_EN;
+        STR      R11,[R5, #+344]
+        LDR.W    R2,??DataTable1003_68
+        LDR.W    R12,??DataTable1003_69
+        STR      R2,[R5, #+244]
+        STR      R12,[R5, #+328]
+        LDR.W    R2,??DataTable1003_70
+        LDR.W    R12,??DataTable1003_71
+        STR      R2,[R5, #+248]
+        STR      R12,[R5, #+332]
+        LDR.W    R2,??DataTable1003_72
+        STR      R2,[R5, #+252]
+        LDR.W    R2,??DataTable1003_73
+        STR      R2,[R5, #+256]
+        LDR.W    R2,??DataTable1003_74
+        STR      R2,[R5, #+260]
+        LDR.W    R2,??DataTable1003_75
+        STR      R2,[R5, #+264]
+        LDR.W    R2,??DataTable1003_76
+        STR      R2,[R5, #+268]
+        LDR.W    R2,??DataTable1003_77
+        STR      R2,[R5, #+272]
+        LDR.W    R2,??DataTable1003_78
+        STR      R2,[R5, #+276]
+        LDR.W    R2,??DataTable1003_79
+        STR      R2,[R5, #+280]
+        LDR.W    R2,??DataTable1003_80
+        STR      R2,[R5, #+284]
+        LDR.W    R2,??DataTable1003_81
+        STR      R2,[R5, #+288]
+        LDR.W    R2,??DataTable1003_82
+        STR      R2,[R5, #+292]
+        LDR.W    R2,??DataTable1003_83
+        STR      R2,[R5, #+296]
+        LDR.W    R2,??DataTable1003_84
+        STR      R2,[R5, #+304]
+        LDR.W    R2,??DataTable1003_85
+        STR      R2,[R5, #+300]
+        LDR.W    R2,??DataTable1003_86
+        STR      R2,[R5, #+308]
+        LDR.W    R2,??DataTable1003_87
+        STR      R2,[R5, #+312]
+        STR      R2,[R5, #+336]
+// 2576             
+// 2577                     machine_menu.MotorConfTitle=MOTOR_CONF_TITLE_EN;
+        LDR.W    R2,??DataTable1003_88
+        STR      R2,[R5, #+348]
+// 2578                     machine_menu.MaxFeedRateConf=MAXFEEDRATE_CONF_EN;
+        LDR.W    R2,??DataTable1003_89
+        STR      R2,[R5, #+352]
+// 2579                     machine_menu.AccelerationConf=ACCELERATION_CONF_EN;
+        LDR.W    R2,??DataTable1003_90
+        STR      R2,[R5, #+356]
+// 2580                     machine_menu.JerkConf=JERKCONF_EN;
+        LDR.W    R2,??DataTable1003_91
+        STR      R2,[R5, #+360]
+// 2581                     machine_menu.StepsConf=STEPSCONF_EN;
+        LDR.W    R2,??DataTable1003_92
+        STR      R2,[R5, #+364]
+// 2582                     machine_menu.MotorDirConf=MOTORDIRCONF_EN;
+        LDR.W    R2,??DataTable1003_93
+        STR      R2,[R5, #+368]
+// 2583                     machine_menu.HomeFeedRateConf=HOMEFEEDRATECONF_EN;
+        LDR.W    R2,??DataTable1003_94
+        STR      R2,[R5, #+372]
+// 2584             
+// 2585                     machine_menu.MaxFeedRateConfTitle=MAXFEEDRATE_CONF_TITLE_EN;
+        LDR.W    R2,??DataTable1003_95
+        STR      R2,[R5, #+376]
+// 2586                     machine_menu.XMaxFeedRate=X_MAXFEEDRATE_EN;
+        LDR.W    R2,??DataTable1003_96
+        STR      R2,[R5, #+380]
+// 2587                     machine_menu.YMaxFeedRate=Y_MAXFEEDRATE_EN;
+        LDR.W    R2,??DataTable1003_97
+        STR      R2,[R5, #+384]
+// 2588                     machine_menu.ZMaxFeedRate=Z_MAXFEEDRATE_EN;
+        LDR.W    R2,??DataTable1003_98
+        STR      R2,[R5, #+388]
+// 2589                     machine_menu.E0MaxFeedRate=E0_MAXFEEDRATE_EN;
+        LDR.W    R2,??DataTable1003_99
+        STR      R2,[R5, #+392]
+// 2590                     machine_menu.E1MaxFeedRate=E1_MAXFEEDRATE_EN;
+        LDR.W    R2,??DataTable1003_100
+        STR      R2,[R5, #+396]
+// 2591             
+// 2592                     machine_menu.AccelerationConfTitle=ACCELERATION_CONF_TITLE_EN;
+        LDR.W    R2,??DataTable1003_101
+        STR      R2,[R5, #+400]
+// 2593                     machine_menu.PrintAcceleration=PRINT_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_102
+        STR      R2,[R5, #+404]
+// 2594                     machine_menu.RetractAcceleration=RETRACT_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_103
+        STR      R2,[R5, #+408]
+// 2595                     machine_menu.TravelAcceleration=TRAVEL_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_104
+        STR      R2,[R5, #+412]
+// 2596                     machine_menu.X_Acceleration=X_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_105
+        STR      R2,[R5, #+416]
+// 2597                     machine_menu.Y_Acceleration=Y_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_106
+        STR      R2,[R5, #+420]
+// 2598                     machine_menu.Z_Acceleration=Z_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_107
+        STR      R2,[R5, #+424]
+// 2599                     machine_menu.E0_Acceleration=E0_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_108
+        STR      R2,[R5, #+428]
+// 2600                     machine_menu.E1_Acceleration=E1_ACCELERATION_EN;
+        LDR.W    R2,??DataTable1003_109
+        STR      R2,[R5, #+432]
+// 2601             
+// 2602                     machine_menu.JerkConfTitle=JERK_CONF_TITLE_EN;
+        LDR.W    R2,??DataTable1003_110
+        STR      R2,[R5, #+436]
+// 2603                     machine_menu.X_Jerk=X_JERK_EN;
+        LDR.W    R2,??DataTable1003_111
+        STR      R2,[R5, #+440]
+// 2604                     machine_menu.Y_Jerk=Y_JERK_EN;
+        LDR.W    R2,??DataTable1003_112
+        STR      R2,[R5, #+444]
+// 2605                     machine_menu.Z_Jerk=Z_JERK_EN;
+        LDR.W    R2,??DataTable1003_113
+        STR      R2,[R5, #+448]
+// 2606                     machine_menu.E_Jerk=E_JERK_EN;
+        LDR.W    R2,??DataTable1003_114
+        STR      R2,[R5, #+452]
+// 2607             
+// 2608                     machine_menu.StepsConfTitle=STEPS_CONF_TITLE_EN;
+        LDR.W    R2,??DataTable1003_115
+        STR      R2,[R5, #+456]
+// 2609                     machine_menu.X_Steps=X_STEPS_EN;
+        LDR.W    R2,??DataTable1003_116
+        STR      R2,[R5, #+460]
+// 2610                     machine_menu.Y_Steps=Y_STEPS_EN;
+        LDR.W    R2,??DataTable1003_117
+        STR      R2,[R5, #+464]
+// 2611                     machine_menu.Z_Steps=Z_STEPS_EN;
+        LDR.W    R2,??DataTable1003_118
+        STR      R2,[R5, #+468]
+// 2612                     machine_menu.E0_Steps=E0_STEPS_EN;
+        LDR.W    R2,??DataTable1003_119
+        STR      R2,[R5, #+472]
+// 2613                     machine_menu.E1_Steps=E1_STEPS_EN;
+        LDR.W    R2,??DataTable1003_120
+        STR      R2,[R5, #+476]
+// 2614             
+// 2615                     machine_menu.MotorDirConfTitle=MOTORDIR_CONF_TITLE_EN;
+        LDR.W    R2,??DataTable1003_121
+        STR      R2,[R5, #+480]
+// 2616                     machine_menu.X_MotorDir=X_MOTORDIR_EN;
+        LDR.W    R2,??DataTable1003_122
+        STR      R2,[R5, #+484]
+// 2617                     machine_menu.Y_MotorDir=Y_MOTORDIR_EN;
+        LDR.W    R2,??DataTable1003_123
+        STR      R2,[R5, #+488]
+// 2618                     machine_menu.Z_MotorDir=Z_MOTORDIR_EN;
+        LDR.W    R2,??DataTable1003_124
+        STR      R2,[R5, #+492]
+// 2619                     machine_menu.E0_MotorDir=E0_MOTORDIR_EN;
+        LDR.W    R2,??DataTable1003_125
+        STR      R2,[R5, #+496]
+// 2620                     machine_menu.E1_MotorDir=E1_MOTORDIR_EN;
+        LDR.W    R2,??DataTable1003_126
+// 2621                     machine_menu.Invert_0=INVERT_P_EN;
+// 2622                     machine_menu.Invert_1=INVERT_N_EN;
+// 2623             
+// 2624                     machine_menu.HomeFeedRateConfTitle=HOMEFEEDRATE_CONF_TITLE_EN;
+// 2625                     machine_menu.XY_HomeFeedRate=X_HOMESPEED_EN;
+// 2626                     //machine_menu.Y_HomeFeedRate=Y_HOMESPEED_EN;
+// 2627                     machine_menu.Z_HomeFeedRate=Z_HOMESPEED_EN;
+// 2628             
+// 2629                     machine_menu.AdvancedConfTitle=ADVANCED_CONF_TITLE_EN;
+// 2630                     machine_menu.PwrOffDection=PWROFF_DECTION_EN;
+// 2631                     machine_menu.PwrOffAfterPrint=PWROFF_AFTER_PRINT_EN;
+// 2632                     machine_menu.HaveUps=HAVE_UPS_EN;
+// 2633                     machine_menu.Z2andZ2Endstop=Z2_AND_Z2ENDSTOP_CONF_EN;
+// 2634                     machine_menu.EnablePinsInvert=ENABLE_PINS_CONF_EN;
+// 2635             
+// 2636                     machine_menu.Z2ConfTitle=Z2_AND_Z2ENDSTOP_CONF_TITLE_EN;
+// 2637                     machine_menu.Z2Enable=Z2_ENABLE_EN;
+// 2638                     machine_menu.Z2EndstopEnable=Z2_ENDSTOP_EN;
+// 2639                     machine_menu.Z2Port=Z2_PORT_EN;
+// 2640             
+// 2641                     machine_menu.EnablePinsInvertTitle=ENABLE_PINS_CONF_TITLE_EN;
+// 2642                     machine_menu.XInvert=X_ENABLE_PINS_INVERT_EN;
+// 2643                     machine_menu.YInvert=Y_ENABLE_PINS_INVERT_EN;
+// 2644                     machine_menu.ZInvert=Z_ENABLE_PINS_INVERT_EN;
+// 2645                     machine_menu.EInvert=E_ENABLE_PINS_INVERT_EN;
+// 2646             
+// 2647                     machine_menu.key_back = KEY_BACK_EN;
+// 2648                     machine_menu.key_rest = KEY_REST_EN;
+// 2649                     machine_menu.key_confirm = KEY_CONFIRM_EN;
+// 2650 					machine_menu.high_level = MOTOR_EN_HIGH_LEVEL_EN;
+        LDR.W    R6,??DataTable1003_127
+// 2651 					machine_menu.low_level = MOTOR_EN_LOW_LEVEL_EN;
+// 2652                     //
+// 2653 
+// 2654             
+// 2655 			common_menu.dialog_confirm_title = TITLE_DIALOG_CONFIRM_EN;
+// 2656 			common_menu.text_back=BACK_TEXT_EN;
+// 2657 			common_menu.close_machine_tips = DIALOG_CLOSE_MACHINE_EN;
+// 2658 			common_menu.unbind_printer_tips = DIALOG_UNBIND_PRINTER_EN;
+// 2659 			common_menu.print_special_title = PRINTING_OTHER_LANGUGE;
+// 2660 			common_menu.pause_special_title = PRINTING_PAUSE_OTHER_LANGUGE;
+// 2661 			common_menu.operate_special_title = PRINTING_OPERATION_OTHER_LANGUGE;			
+// 2662 			//÷˜“≥√Ê
+// 2663 			main_menu.title=TITLE_READYPRINT_EN;
+// 2664 			main_menu.preheat=PREHEAT_TEXT_EN;
+        LDR.W    R8,??DataTable1003_128
+// 2665 			main_menu.move=MOVE_TEXT_EN;
+// 2666 			main_menu.home=HOME_TEXT_EN;
+// 2667 			main_menu.print=PRINT_TEXT_EN;
+// 2668 			main_menu.extrude=EXTRUDE_TEXT_EN;
+// 2669 			main_menu.leveling=LEVELING_TEXT_EN;
+        LDR.W    R12,??DataTable1003_129
+// 2670 			main_menu.autoleveling=AUTO_LEVELING_TEXT_EN;
+        LDR.W    LR,??DataTable1003_130
+// 2671 			main_menu.fan = FAN_TEXT_EN;
+// 2672 			main_menu.set=SET_TEXT_EN;
+        LDR.W    R9,??DataTable1003_131
+// 2673 			main_menu.more=MORE_TEXT_EN;
+// 2674 			main_menu.tool = TOOL_TEXT_EN;
+        LDR.W    R10,??DataTable1003_132
+        STR      R0,[R5, #+508]
+        STR      R1,[R5, #+504]
+        STR      R2,[R5, #+500]
+        STR      R6,[R5, #+652]
+        ADR.W    R11,??disp_language_init_44  ;; "Low"
+        LDR.W    R0,??DataTable1003_133
+        LDR.W    R1,??DataTable1003_134
+        LDR.W    R2,??DataTable1003_135
+        B.N      ??disp_language_init_45
+        DATA
+??disp_language_init_42:
+        DC8      0x4E, 0x4F, 0x00, 0x00
+        THUMB
+??disp_language_init_45:
+        STR      R0,[R5, #+512]
+        STR      R1,[R5, #+548]
+        STR      R11,[R5, #+648]
+        STR      R8,[R4, #+404]
+        STR      R12,[R4, #+424]
+        STR      LR,[R4, #+428]
+        STR      R9,[R4, #+436]
+        STR      R2,[R4, #+444]
+        STR      R10,[R4, #+440]
+// 2675 			//TOOL
+// 2676 			tool_menu.title = TOOL_TEXT_EN;
+        STR      R10,[R4, #+676]
+// 2677 			tool_menu.preheat = TOOL_PREHEAT_EN;
+        STR      R8,[R4, #+680]
+// 2678 			tool_menu.extrude = TOOL_EXTRUDE_EN;
+// 2679 			tool_menu.move = TOOL_MOVE_EN;
+// 2680 			tool_menu.home= TOOL_HOME_EN;
+// 2681 			tool_menu.leveling = TOOL_LEVELING_EN;
+        STR      R12,[R4, #+696]
+// 2682             tool_menu.autoleveling = TOOL_AUTO_LEVELING_EN;
+        STR      LR,[R4, #+700]
+// 2683 			tool_menu.filament = TOOL_FILAMENT_EN;
+// 2684 			tool_menu.more = TOOL_MORE_EN;			
+        STR      R2,[R4, #+708]
+// 2685 			//‘§»»
+// 2686 			preheat_menu.adjust_title = TITLE_ADJUST_EN;
+// 2687 			preheat_menu.title=TITLE_PREHEAT_EN;
+        STR      R8,[R4, #+348]
+// 2688 			preheat_menu.add=ADD_TEXT_EN;
+// 2689 			preheat_menu.dec=DEC_TEXT_EN;
+// 2690 			preheat_menu.ext1=EXTRUDER_1_TEXT_EN;
+// 2691 			preheat_menu.ext2=EXTRUDER_2_TEXT_EN;
+// 2692 			preheat_menu.hotbed=HEATBED_TEXT_EN;
+// 2693 			preheat_menu.off=CLOSE_TEXT_EN;
+        STR      R3,[R4, #+372]
+        LDR.W    R0,??DataTable1003_136
+        LDR.W    R1,??DataTable1003_137
+        LDR.W    R10,??DataTable1003_138
+        LDR.W    LR,??DataTable1003_139
+        LDR.W    R8,??DataTable1003_140
+// 2694 			//“∆∂Ø
+// 2695 			move_menu.title = TITLE_MOVE_EN;
+        LDR.W    R3,??DataTable1003_141
+        STR      R0,[R5, #+516]
+        STR      R1,[R4, #+776]
+        STR      R10,[R4, #+684]
+        STR      LR,[R4, #+704]
+        STR      R8,[R4, #+364]
+        STR      R3,[R4, #+452]
+        LDR.W    R0,??DataTable1003_142
+        LDR.W    R1,??DataTable1003_143
+        LDR.W    R10,??DataTable1003_141
+        LDR.W    LR,??DataTable1003_144
+// 2696 			//πÈ¡„
+// 2697 			home_menu.title=TITLE_HOME_EN;
+// 2698 			home_menu.stopmove = HOME_STOPMOVE_EN;
+        LDR.W    R3,??DataTable1003_145
+        STR      R0,[R5, #+524]
+        STR      R1,[R4, #+400]
+        STR      R10,[R4, #+688]
+        STR      LR,[R4, #+344]
+        ADR.W    LR,??disp_language_init_44+0x4  ;; "Add"
+        LDR.W    R0,??DataTable1003_146
+        LDR.W    R1,??DataTable1003_141
+        LDR.W    R10,??DataTable1003_147
+        STR      R0,[R5, #+528]
+        STR      R1,[R4, #+408]
+        STR      LR,[R4, #+352]
+        ADR.W    LR,??disp_language_init_44+0x8  ;; "Dec"
+        LDR.W    R0,??DataTable1003_148
+        LDR.W    R1,??DataTable1003_149
+        STR      R0,[R5, #+532]
+        STR      R10,[R4, #+368]
+        STR      R1,[R4, #+416]
+        STR      LR,[R4, #+356]
+        STR      R3,[R4, #+864]
+        LDR.W    R0,??DataTable1003_150
+        LDR.W    R1,??DataTable1003_138
+        LDR.W    LR,??DataTable1003_151
+// 2699 			//Œƒº˛ƒø¬º
+// 2700 			file_menu.title=TITLE_CHOOSEFILE_EN;
+        B.N      ??disp_language_init_46
+        Nop      
+        DATA
+??disp_language_init_43:
+        DC8      "MIN"
+        DC8      "MAX"
+        THUMB
+??disp_language_init_46:
+        LDR.W    R3,??DataTable1003_152
+// 2701 			file_menu.page_up=PAGE_UP_TEXT_EN;
+// 2702 			file_menu.page_down=PAGE_DOWN_TEXT_EN;
+// 2703 			file_menu.file_loading = FILE_LOADING_EN;
+        LDR.W    R10,??DataTable1003_153
+        STR      R0,[R5, #+536]
+        STR      R10,[R4, #+804]
+        STR      R1,[R4, #+420]
+        ADR.N    R1,??disp_language_init_44+0xC  ;; "Fan"
+        LDR.W    R0,??DataTable1003_154
+// 2704 			file_menu.no_file = NO_FILE_EN;
+        LDR.W    R10,??DataTable1003_155
+        STR      R0,[R5, #+540]
+        STR      R3,[R4, #+788]
+        STR      R1,[R4, #+432]
+        STR      LR,[R4, #+360]
+        STR      R10,[R4, #+808]
+// 2705 			file_menu.no_file_and_check = NO_FILE_EN;//NO_FILE_AND_CHECK_EN;			
+        STR      R10,[R4, #+812]
+        LDR.W    R0,??DataTable1003_156
+        STR      R0,[R5, #+544]
+        STR      R0,[R5, #+552]
+        LDR.W    R3,??DataTable1003_157
+        LDR.W    R0,??DataTable1003_158
+// 2706 			//º∑≥ˆ
+// 2707 			extrude_menu.title=TITLE_EXTRUDE_EN;
+        LDR.W    R10,??DataTable1003_138
+        STR      R0,[R5, #+556]
+        STR      R3,[R4, #+792]
+        LDR.W    R0,??DataTable1003_159
+        STR      R0,[R5, #+560]
+        LDR.W    R0,??DataTable1003_160
+        STR      R0,[R5, #+564]
+        LDR.W    R0,??DataTable1003_161
+        STR      R0,[R5, #+568]
+        LDR.W    R0,??DataTable1003_162
+        STR      R0,[R5, #+572]
+        LDR.W    R0,??DataTable1003_163
+        B.N      ??disp_language_init_47
+        DATA
+??disp_language_init_37:
+        DC8      "YES"
+        DC32     set_menu
+        THUMB
+??disp_language_init_47:
+        STR      R0,[R5, #+576]
+        LDR.W    R0,??DataTable1003_164
+        STR      R0,[R5, #+580]
+        LDR.W    R0,??DataTable1003_165
+        STR      R0,[R5, #+584]
+        ADR.N    R0,??disp_language_init_44+0x10  ;; "Del"
+        STR      R0,[R5, #+632]
+        LDR.W    R0,??DataTable1003_166
+        STR      R0,[R5, #+636]
+        LDR.W    R0,??DataTable1003_167
+        STR      R0,[R5, #+640]
+        STR      R0,[R4, #+756]
+        LDR.W    R5,??DataTable1003_168
+        LDR.W    R0,??DataTable1003_169
+        STR      R0,[R4, #+752]
+        STR      R5,[R4, #+412]
+        STR      R5,[R4, #+692]
+        STR      R5,[R4, #+844]
+        LDR.W    R0,??DataTable1003_170
+        LDR.W    R5,??DataTable1003_171
+        STR      R0,[R4, #+760]
+        STR      R5,[R4, #+796]
+        LDR.W    R0,??DataTable1003_172
+        STR      R0,[R4, #+764]
+        LDR.W    R0,??DataTable1003_149
+        STR      R0,[R4, #+768]
+        LDR.W    R0,??DataTable1003_173
+        STR      R0,[R4, #+772]
+// 2708 			extrude_menu.in=EXTRUDER_IN_TEXT_EN;
+// 2709 			extrude_menu.out=EXTRUDER_OUT_TEXT_EN;
+// 2710 			extrude_menu.ext1=EXTRUDER_1_TEXT_EN;
+// 2711 			extrude_menu.ext2=EXTRUDER_2_TEXT_EN;
+// 2712 			extrude_menu.low=EXTRUDE_LOW_SPEED_TEXT_EN;
+// 2713 			extrude_menu.normal=EXTRUDE_MEDIUM_SPEED_TEXT_EN;
+// 2714 			extrude_menu.high=EXTRUDE_HIGH_SPEED_TEXT_EN;
+        STR      R6,[R4, #+132]
+        STR      R10,[R4, #+92]
+        ADR.W    R10,??disp_language_init_44+0x14  ;; 0x49, 0x6E, 0x00, 0x00
+// 2715 			extrude_menu.temper_text=EXTRUDER_TEMP_TEXT_EN;
+        LDR.W    R6,??DataTable1003_174
+        STR      R6,[R4, #+156]
+        STR      R11,[R4, #+124]
+        STR      R10,[R4, #+96]
+        ADR.W    R10,??disp_language_init_44+0x18  ;; "Out"
+// 2716 			//µ˜∆Ω
+// 2717 			leveling_menu.title=TITLE_LEVELING_EN;
+// 2718 			leveling_menu.position1=LEVELING_POINT1_TEXT_EN;
+        LDR.W    R6,??DataTable1003_175
+        LDR.W    R11,??DataTable1003_176
+        STR      R6,[R4, #+876]
+        STR      R11,[R4, #+128]
+        STR      R10,[R4, #+100]
+        STR      LR,[R4, #+104]
+        STR      R8,[R4, #+108]
+        STR      R12,[R4, #+872]
+// 2719 			leveling_menu.position2=LEVELING_POINT2_TEXT_EN;
+// 2720 			leveling_menu.position3=LEVELING_POINT3_TEXT_EN;
+// 2721 			leveling_menu.position4=LEVELING_POINT4_TEXT_EN;
+// 2722 			leveling_menu.position5=LEVELING_POINT5_TEXT_EN;
+// 2723 			//…Ë÷√
+// 2724 			set_menu.title=TITLE_SET_EN;
+        STR      R9,[R7, #+0]
+        LDR.W    R6,??DataTable1003_177
+// 2725 			set_menu.filesys=FILESYS_TEXT_EN;
+// 2726 			set_menu.wifi=WIFI_TEXT_EN;
+        LDR.W    R11,??DataTable1003_178
+// 2727 			set_menu.about=ABOUT_TEXT_EN;
+        LDR.W    R12,??DataTable1003_179
+// 2728 			set_menu.fan=FAN_TEXT_EN;
+// 2729 			set_menu.filament=FILAMENT_TEXT_EN;
+// 2730 			set_menu.breakpoint=BREAK_POINT_TEXT_EN;
+// 2731 			set_menu.motoroff=MOTOR_OFF_TEXT_EN;
+// 2732 			set_menu.language=LANGUAGE_TEXT_EN;
+// 2733             set_menu.machine_para = MACHINE_PARA_EN;
+        LDR.W    R9,??DataTable1003_180
+        STR      R6,[R4, #+880]
+        LDR.W    R6,??DataTable1003_181
+        STR      R6,[R4, #+884]
+        LDR.W    R6,??DataTable1003_182
+        STR      R6,[R4, #+888]
+        LDR.W    R6,??DataTable1003_183
+        STR      R6,[R4, #+892]
+        LDR.W    R6,??DataTable1003_184
+        STR      R6,[R7, #+4]
+        STR      R11,[R7, #+8]
+        STR      R12,[R7, #+12]
+        STR      R1,[R7, #+16]
+// 2734 			//∏¸∂‡
+// 2735 			more_menu.title = TITLE_MORE_EN;
+// 2736 			more_menu.zoffset = ZOFFSET_EN;
+// 2737 			//Œƒº˛œµÕ≥
+// 2738 			filesys_menu.title = TITLE_FILESYS_EN;
+        STR      R6,[R4, #+992]
+        STR      R9,[R7, #+40]
+// 2739 			filesys_menu.sd_sys = SD_CARD_TEXT_EN;
+        ADR.N    R6,??disp_language_init_39  ;; 0x53, 0x44, 0x00, 0x00
+        STR      R6,[R4, #+1000]
+        STR      R2,[R4, #+1012]
+// 2740 			filesys_menu.usb_sys = U_DISK_TEXT_EN;
+        ADR.N    R6,??disp_language_init_39+0x4  ;; "USB"
+        STR      R6,[R4, #+1004]
+// 2741 			//WIFI
+// 2742 			wifi_menu.title=WIFI_TEXT;
+// 2743 			//wifi_menu.key = WIFI_KEY_TEXT_EN;
+// 2744 			//wifi_menu.ip = WIFI_IP_TEXT_EN;
+// 2745 			//wifi_menu.state= WIFI_STA_TEXT_EN;
+// 2746 			wifi_menu.cloud= CLOUD_TEXT_EN;
+// 2747 			wifi_menu.reconnect = WIFI_RECONNECT_TEXT_EN;
+// 2748 
+// 2749 			cloud_menu.title = TITLE_CLOUD_TEXT_EN;
+// 2750 			cloud_menu.bind = CLOUD_BINDED_EN;
+// 2751 			cloud_menu.binded = CLOUD_BINDED_EN;
+// 2752 			cloud_menu.unbind = CLOUD_UNBIND_EN;
+// 2753 			cloud_menu.unbinding = CLOUD_UNBINDED_EN;
+// 2754 			cloud_menu.disconnected = CLOUD_DISCONNECTED_EN;
+// 2755 			cloud_menu.disable = CLOUD_DISABLE_EN;
+// 2756 			//πÿ”⁄
+// 2757 			about_menu.title = TITLE_ABOUT_EN;
+        STR      R12,[R4, #+900]
+// 2758 			about_menu.type = ABOUT_TYPE_TEXT_EN;
+// 2759 			about_menu.version = ABOUT_VERSION_TEXT_EN;
+// 2760 			about_menu.wifi = ABOUT_WIFI_TEXT_EN;			
+// 2761 			//∑Á…»
+// 2762 			fan_menu.title = TITLE_FAN_EN;
+        STR      R1,[R4, #+716]
+// 2763 			fan_menu.add = FAN_ADD_TEXT_EN;
+// 2764 			fan_menu.dec = FAN_DEC_TEXT_EN;
+// 2765 			fan_menu.state = FAN_TIPS1_TEXT_EN;
+// 2766 			//ªª¡œ
+// 2767 			filament_menu.title = TITLE_FILAMENT_EN;
+// 2768 			filament_menu.in = FILAMENT_IN_TEXT_EN;
+// 2769 			filament_menu.out = FILAMENT_OUT_TEXT_EN;
+// 2770 			filament_menu.ext1 = FILAMENT_EXT0_TEXT_EN;
+        STR      LR,[R4, #+12]
+// 2771 			filament_menu.ext2 = FILAMENT_EXT1_TEXT_EN;
+        STR      R8,[R4, #+16]
+        LDR.N    R6,??disp_language_init_39+0x8C
+        LDR.W    R11,??DataTable1003_139
+        STR      R6,[R4, #+504]
+        STR      R11,[R7, #+20]
+        LDR.N    R6,??disp_language_init_39+0xCC
+        STR      R6,[R4, #+528]
+        STR      R6,[R4, #+596]
+        LDR.W    R11,??DataTable1003_185
+        LDR.W    R6,??DataTable1003_186
+        STR      R6,[R4, #+612]
+        STR      R6,[R4, #+620]
+        STR      R11,[R7, #+24]
+        LDR.W    R6,??DataTable1003_187
+        LDR.W    R11,??DataTable1003_188
+        STR      R6,[R4, #+600]
+        STR      R11,[R7, #+28]
+        LDR.W    R6,??DataTable1003_189
+        LDR.W    R11,??DataTable1003_190
+        STR      R6,[R4, #+604]
+        STR      R11,[R7, #+36]
+        LDR.W    R6,??DataTable1003_191
+        LDR.W    R7,??DataTable1003_192
+        STR      R6,[R4, #+628]
+        STR      R7,[R4, #+1016]
+        LDR.N    R6,??DataTable1003
+        LDR.N    R7,??disp_language_init_39+0xBC
+        STR      R6,[R4, #+624]
+        STR      R7,[R4, #+548]
+        LDR.W    R6,??DataTable1003_193
+// 2772 			filament_menu.ready_replace = FILAMENT_CHANGE_TEXT_EN;
+// 2773 			filament_menu.filament_dialog_load_heat = FILAMENT_DIALOG_LOAD_HEAT_TIPS_EN;
+// 2774 			filament_menu.filament_dialog_load_heat_confirm = FILAMENT_DIALOG_LOAD_CONFIRM1_TIPS_EN;
+        LDR.W    R7,??DataTable1003_194
+        STR      R6,[R4, #+912]
+        LDR.W    R6,??DataTable1003_195
+        STR      R6,[R4, #+916]
+        LDR.N    R6,??disp_language_init_39+0xC0
+        B.N      ??disp_language_init_48
+        Nop      
+        DATA
+??disp_language_init_44:
+        DC8      "Low"
+        DC8      "Add"
+        DC8      "Dec"
+        DC8      "Fan"
+        DC8      "Del"
+        DC8      0x49, 0x6E, 0x00, 0x00
+        DC8      "Out"
+        THUMB
+??disp_language_init_48:
+        STR      R6,[R4, #+920]
+        ADR.N    R6,??disp_language_init_39+0x4C  ;; "Add"
+        STR      R6,[R4, #+720]
+        ADR.N    R6,??disp_language_init_39+0x54  ;; "Dec"
+        STR      R6,[R4, #+724]
+        ADR.N    R6,??disp_language_init_39+0x58  ;; "FAN"
+        STR      R6,[R4, #+744]
+        LDR.W    R6,??DataTable1003_139
+        STR      R6,[R4, #+0]
+        LDR.W    R6,??DataTable1003_196
+        STR      R6,[R4, #+4]
+        LDR.W    R6,??DataTable1003_197
+        STR      R6,[R4, #+8]
+        LDR.W    R6,??DataTable1003_198
+        STR      R6,[R4, #+28]
+        LDR.W    R6,??DataTable1003_199
+        STR      R6,[R4, #+52]
+        STR      R7,[R4, #+60]
+// 2775 			filament_menu.filament_dialog_loading = FILAMENT_DIALOG_LOADING_TIPS_EN;
+        LDR.W    R7,??DataTable1003_200
+        STR      R7,[R4, #+68]
+// 2776 			filament_menu.filament_dialog_load_completed = FILAMENT_DIALOG_LOAD_COMPLETE_TIPS_EN;
+        LDR.N    R7,??DataTable1003_3
+        STR      R7,[R4, #+76]
+// 2777 			filament_menu.filament_dialog_unload_heat = FILAMENT_DIALOG_UNLOAD_HEAT_TIPS_EN;
+        STR      R6,[R4, #+56]
+// 2778 			filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_EN;
+// 2779 			filament_menu.filament_dialog_unloading = FILAMENT_DIALOG_UNLOADING_TIPS_EN;
+// 2780 			filament_menu.filament_dialog_unload_completed = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_EN;
+// 2781 
+// 2782 			//”Ô—‘
+// 2783 			language_menu.title = TITLE_LANGUAGE_EN;
+// 2784 			language_menu.next = PAGE_DOWN_TEXT_EN;
+// 2785 			language_menu.up = PAGE_UP_TEXT_EN;			
+        STR      R3,[R4, #+280]
+        STR      R11,[R4, #+224]
+        LDR.N    R6,??disp_language_init_39+0xD0
+// 2786 			//’˝‘⁄¥Ú”°ΩÁ√Ê
+// 2787 			printing_menu.title = TITLE_PRINTING_EN;
+        LDR.W    R3,??DataTable1003_149
+        STR      R6,[R4, #+64]
+        STR      R3,[R4, #+640]
+        STR      R5,[R4, #+276]
+        LDR.W    R6,??DataTable1003_201
+// 2788 			printing_menu.option = PRINTING_OPERATION_EN;
+        LDR.W    R3,??DataTable1003_202
+        STR      R6,[R4, #+72]
+        STR      R3,[R4, #+644]
+// 2789 			printing_menu.stop = PRINTING_STOP_EN;
+// 2790 			printing_menu.pause = PRINTING_PAUSE_EN;
+        STR      R0,[R4, #+664]
+        LDR.W    R6,??DataTable1003_203
+// 2791 			printing_menu.resume = PRINTING_RESUME_EN;
+// 2792 
+// 2793 			//≤Ÿ◊˜ΩÁ√Ê
+// 2794 			operation_menu.title = TITLE_OPERATION_EN;
+        LDR.W    R3,??DataTable1003_137
+        STR      R6,[R4, #+80]
+        STR      R3,[R4, #+288]
+        LDR.W    R6,??DataTable1003_204
+        LDR.W    R7,??DataTable1003_205
+// 2795 			operation_menu.pause = PRINTING_PAUSE_EN;
+// 2796 			operation_menu.stop = PRINTING_STOP_EN;
+// 2797 			operation_menu.temp = PRINTING_TEMP_EN;
+        LDR.N    R3,??DataTable1003_1
+// 2798 			operation_menu.fan = FAN_TEXT_EN;
+// 2799 			operation_menu.extr = PRINTING_EXTRUDER_EN;
+        LDR.W    R5,??DataTable1003_138
+        STR      R6,[R4, #+672]
+        STR      R7,[R4, #+668]
+        STR      R0,[R4, #+292]
+        STR      R6,[R4, #+296]
+        STR      R3,[R4, #+300]
+        STR      R1,[R4, #+304]
+        STR      R5,[R4, #+312]
+// 2800 			operation_menu.speed = PRINTING_CHANGESPEED_EN;			
+// 2801 			operation_menu.filament= FILAMENT_TEXT_EN;
+// 2802 			operation_menu.more = PRINTING_MORE_EN;
+// 2803 			operation_menu.move = PRINTING_MOVE_EN;
+// 2804 			operation_menu.auto_off = AUTO_SHUTDOWN_EN;
+// 2805 			operation_menu.manual_off = MANUAL_SHUTDOWN_EN;			
+// 2806 			//‘›Õ£ΩÁ√Ê
+// 2807 			pause_menu.title= TITLE_PAUSE_EN;
+        STR      R0,[R4, #+816]
+        STR      R2,[R4, #+324]
+// 2808 			pause_menu.resume = PRINTING_RESUME_EN;
+        STR      R7,[R4, #+820]
+// 2809 			pause_menu.stop = PRINTING_STOP_EN;
+        STR      R6,[R4, #+824]
+// 2810 			pause_menu.extrude = PRINTING_EXTRUDER_EN;
+// 2811 			pause_menu.move = PRINTING_MOVE_EN;
+// 2812 			pause_menu.filament = FILAMENT_TEXT_EN;
+// 2813 			pause_menu.more = PRINTING_MORE_EN;
+        STR      R2,[R4, #+840]
+// 2814 
+// 2815 			//±‰ÀŸΩÁ√Ê
+// 2816 			speed_menu.title = TITLE_CHANGESPEED_EN;
+// 2817 			speed_menu.add = ADD_TEXT_EN;
+// 2818 			speed_menu.dec = DEC_TEXT_EN;
+// 2819 			speed_menu.move = MOVE_SPEED_EN;
+// 2820 			speed_menu.extrude = EXTRUDER_SPEED_EN;
+// 2821 			speed_menu.extrude_speed = EXTRUDER_SPEED_STATE_EN;
+// 2822 			speed_menu.move_speed = MOVE_SPEED_STATE_EN;
+// 2823 			//¥Ú”°÷–---∏¸∂‡ΩÁ√Ê
+// 2824 			printing_more_menu.title = TITLE_MORE_EN;
+        STR      R2,[R4, #+936]
+// 2825 			printing_more_menu.fan = FAN_TEXT_EN;
+        STR      R1,[R4, #+940]
+// 2826 			printing_more_menu.auto_close = AUTO_SHUTDOWN_EN;
+// 2827 			printing_more_menu.manual = MANUAL_SHUTDOWN_EN;
+// 2828 			printing_more_menu.speed = PRINTING_CHANGESPEED_EN;
+// 2829 			printing_more_menu.temp = PRINTING_TEMP_EN;
+        STR      R3,[R4, #+952]
+// 2830 
+// 2831 			//print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_EN;
+// 2832 			print_file_dialog_menu.confirm = DIALOG_CONFIRM_EN;
+// 2833 			print_file_dialog_menu.cancle = DIALOG_CANCLE_EN;
+// 2834 			print_file_dialog_menu.print_file = DIALOG_PRINT_MODEL_EN;
+// 2835 			print_file_dialog_menu.cancle_print = DIALOG_CANCEL_PRINT_EN;
+// 2836 			print_file_dialog_menu.retry = DIALOG_RETRY_EN;
+// 2837 			print_file_dialog_menu.stop = DIALOG_STOP_EN;
+        STR      R6,[R4, #+184]
+        LDR.W    R0,??DataTable1003_138
+        LDR.W    LR,??DataTable1003_206
+        LDR.W    R5,??DataTable1003_139
+        LDR.W    R11,??DataTable1003_207
+// 2838 			print_file_dialog_menu.no_file_print_tips = DIALOG_ERROR_TIPS1_EN;	
+// 2839 			print_file_dialog_menu.print_from_breakpoint = DIALOG_REPRINT_FROM_BREAKPOINT_EN;
+// 2840 			print_file_dialog_menu.close_machine_error = DIALOG_ERROR_TIPS2_EN;
+// 2841             		print_file_dialog_menu.filament_no_press=DIALOG_FILAMENT_NO_PRESS_EN;
+// 2842 			print_file_dialog_menu.print_finish=DIALOG_PRINT_FINISH_EN;
+// 2843 			print_file_dialog_menu.print_time=DIALOG_PRINT_TIME_EN;
+        LDR.W    R1,??DataTable1003_208
+        STR      R0,[R4, #+828]
+        STR      R5,[R4, #+308]
+        STR      LR,[R4, #+316]
+        STR      R11,[R4, #+332]
+        STR      LR,[R4, #+552]
+        STR      R11,[R4, #+948]
+        STR      LR,[R4, #+956]
+        LDR.W    R0,??DataTable1003_141
+        LDR.W    R5,??DataTable1003_141
+        STR      R0,[R4, #+832]
+        STR      R5,[R4, #+320]
+        LDR.W    R0,??DataTable1003_139
+        LDR.W    R5,??DataTable1003_209
+        STR      R0,[R4, #+836]
+        STR      R5,[R4, #+328]
+        ADR.N    R0,??disp_language_init_39+0x4C  ;; "Add"
+        STR      R0,[R4, #+556]
+        STR      R5,[R4, #+944]
+        ADR.N    R0,??disp_language_init_39+0x54  ;; "Dec"
+        STR      R0,[R4, #+560]
+        LDR.N    R0,??DataTable1003_141
+        STR      R0,[R4, #+568]
+        LDR.N    R0,??DataTable1003_138
+        STR      R0,[R4, #+564]
+        LDR.W    R0,??DataTable1003_210
+        STR      R0,[R4, #+592]
+        LDR.W    R0,??DataTable1003_211
+        STR      R0,[R4, #+588]
+        LDR.W    R0,??DataTable1003_167
+        STR      R0,[R4, #+164]
+        LDR.W    R0,??DataTable1003_212
+        STR      R0,[R4, #+168]
+        LDR.W    R0,??DataTable1003_213
+        STR      R0,[R4, #+172]
+        LDR.W    R0,??DataTable1003_214
+        STR      R0,[R4, #+176]
+        LDR.W    R0,??DataTable1003_215
+        STR      R0,[R4, #+180]
+        LDR.W    R0,??DataTable1003_216
+        STR      R0,[R4, #+188]
+        LDR.W    R0,??DataTable1003_217
+        STR      R0,[R4, #+192]
+        LDR.W    R0,??DataTable1003_218
+        STR      R0,[R4, #+200]
+        LDR.N    R0,??disp_language_init_39+0x10C
+        STR      R0,[R4, #+204]
+        LDR.W    R0,??DataTable1003_219
+        STR      R0,[R4, #+208]
+// 2844 			print_file_dialog_menu.reprint=DIALOG_REPRINT_EN;
+        LDR.N    R0,??DataTable1003_4
+        STR      R0,[R4, #+216]
+// 2845 			print_file_dialog_menu.wifi_enable_tips=DIALOG_WIFI_ENABLE_TIPS_EN;
+        LDR.W    R0,??DataTable1003_220
+??disp_language_init_41:
+        STR      R0,[R4, #+220]
+// 2846 			//ZOFFSET
+// 2847 			zoffset_menu.title = TITLE_ZOFFSET_EN;
+// 2848 			zoffset_menu.inc = ZOFFSET_INC_EN;
+// 2849 			zoffset_menu.dec = ZOFFSET_DEC_EN;
+        ADR.N    R2,??disp_language_init_39+0x54  ;; "Dec"
+        ADR.N    R0,??disp_language_init_39+0x4C  ;; "Add"
+// 2850 		break;
+??disp_language_init_20:
+        STR      R1,[R4, #+212]
+        STR      R2,[R4, #+972]
+        STR      R0,[R4, #+968]
+        LDR.W    R1,??DataTable1003_192
+        STR      R1,[R4, #+964]
+// 2851 	}
+// 2852 }
+        POP      {R0,R4-R11,PC}   ;; return
+        DATA
+??disp_language_init_39:
+        DC8      0x53, 0x44, 0x00, 0x00
+        DC8      "USB"
+        DC32     `?<Constant "File">`
+        DC32     `?<Constant "Indietro">`
+        DC32     `?<Constant "Pronto">`
+        DC32     `?<Constant "Piano">`
+        DC32     `?<Constant "Pagina su">`
+        DC32     `?<Constant "Prerisc">`
+        DC32     `?<Constant "Imposta">`
+        DC32     `?<Constant "Pagina gi\\303\\271">`
+        DC32     `?<Constant "Strumento">`
+        DC32     `?<Constant "Autolevel">`
+        DC32     `?<Constant "Caricamento......">`
+        DC32     `?<Constant "Filamento">`
+        DC32     `?<Constant "Regolare">`
+        DC32     `?<Constant "Nessun file!">`
+        DC32     `?<Constant "Preris">`
+        DC32     `?<Constant "Estru">`
+        DC32     `?<Constant "Ritra">`
+        DC8      "Add"
+        DC32     `?<Constant "Aumentare">`
+        DC8      "Dec"
+        DC8      "FAN"
+        DC32     `?<Constant "Bassa">`
+        DC32     `?<Constant "Ridurre">`
+        DC32     `?<Constant "Media">`
+        DC32     `?<Constant "Estrude1">`
+        DC32     `?<Constant "Alta">`
+        DC32     `?<Constant "Livella">`
+        DC32     `?<Constant "Primo">`
+        DC32     `?<Constant "Secondo">`
+        DC32     `?<Constant "Terzo">`
+        DC32     `?<Constant "Quarto">`
+        DC32     `?<Constant "Quinto">`
+        DC32     `?<Constant "Impostare">`
+        DC32     `?<Constant "WIFI">`
+        DC32     `?<Constant "Circa">`
+        DC32     `?<Constant "Motor off">`
+        DC32     `?<Constant "Lingua">`
+        DC32     `?<Constant "Velocit\\303\\240">`
+        DC32     `?<Constant "Conferma">`
+        DC32     `?<Constant "Recupero">`
+        DC32     `?<Constant "Cancella">`
+        DC32     `?<Constant "WIFI: ">`
+        DC32     `?<Constant "Manuale">`
+        DC32     `?<Constant "Pausa">`
+        DC32     `?<Constant "Gcode stampa?">`
+        DC32     `?<Constant "Reconnect">`
+        DC32     `?<Constant "WiFi: ">`
+        DC32     `?<Constant "Heating up the nozzle...">_1`
+        DC32     `?<Constant "Stop stampa?">`
+        DC32     `?<Constant "Cloud">`
+        DC32     `?<Constant "Heat completed,please...">_1`
+        DC32     `?<Constant "Estrusione">`
+        DC32     `?<Constant "Riprovare">`
+        DC32     `?<Constant "Legato">`
+        DC32     `?<Constant "Movimento">`
+        DC32     `?<Constant "Errore: nessun file, ...">`
+        DC32     `?<Constant "Libero">`
+        DC32     `?<Constant "Inser">`
+        DC32     `?<Constant "Tempo di stampa: ">`
+        DC32     `?<Constant "Continua a stampare d...">`
+        DC32     `?<Constant "Sciolto">`
+        DC32     `?<Constant "Estra">`
+        DC32     `?<Constant "Errore: operazione no...">`
+        DC32     `?<Constant "Disconnesso">`
+        DC32     `?<Constant "Opzioni">`
+        DC32     `?<Constant "Filament detection sw...">`
+          CFI EndBlock cfiBlock1
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable548_98:
+??DataTable1003:
+        DC32     `?<Constant "Disable">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_1:
         DC32     `?<Constant "Temp.">`
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable548_99:
-        DC32     `?<Constant "Speed">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_100:
-        DC32     `?<Constant "Auto">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_101:
-        DC32     `?<Constant "Manuel">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_102:
-        DC32     `?<Constant "Vitesse d\\'extrusion">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_103:
-        DC32     `?<Constant "vitesse de d\\303\\251placement">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_104:
-        DC32     `?<Constant "Confirmer">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_105:
-        DC32     `?<Constant "Annuler">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_106:
-        DC32     `?<Constant "Imprimer le fichier?">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_107:
-        DC32     `?<Constant "Arr\\303\\252ter?">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_108:
-        DC32     `?<Constant "Recommencez">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_109:
-        DC32     `?<Constant "Arr\\303\\252ter">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_110:
-        DC32     `?<Constant "Erreur:error:Aucun fi...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_111:
-        DC32     `?<Constant "Continuer?">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_112:
-        DC32     `?<Constant "Erreur:La op\\303\\251ration ...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_113:
-        DC32     `?<Constant "Filament detection sw...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_114:
-        DC32     `?<Constant "L\\'impression est term...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_115:
-        DC32     `?<Constant "Temps d\\'impression: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_116:
-        DC32     `?<Constant "Print again">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_117:
-        DC32     `?<Constant "Indietro">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_118:
-        DC32     `?<Constant "Pronto">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_119:
-        DC32     `?<Constant "Prerisc">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_120:
-        DC32     `?<Constant "Muovi">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_121:
-        DC32     `?<Constant "Home">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_122:
-        DC32     `?<Constant "Stampa">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_123:
-        DC32     `?<Constant "Estrude">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_124:
-        DC32     `?<Constant "Ventola">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_125:
-        DC32     `?<Constant "Imposta">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_126:
-        DC32     `?<Constant "Di pi\\303\\271">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_127:
-        DC32     `?<Constant "Strumento">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_128:
-        DC32     `?<Constant "Regolare">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_129:
-        DC32     `?<Constant "Preris">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_130:
-        DC32     `?<Constant "Aumentare">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_131:
-        DC32     `?<Constant "Ridurre">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_132:
-        DC32     `?<Constant "Estrude1">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_133:
-        DC32     `?<Constant "Estrude2">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_134:
-        DC32     `?<Constant "Piano">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_135:
-        DC32     `?<Constant "Spento">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_136:
-        DC32     `?<Constant "File">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_137:
-        DC32     `?<Constant "Pagina su">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_138:
-        DC32     `?<Constant "Pagina gi\\303\\271">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_139:
-        DC32     `?<Constant "Caricamento......">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_140:
-        DC32     `?<Constant "Nessun file!">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_141:
-        DC32     `?<Constant "Estru">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_142:
-        DC32     `?<Constant "Ritra">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_143:
-        DC32     `?<Constant "Bassa">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_144:
-        DC32     `?<Constant "Livella">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_145:
-        DC32     `?<Constant "Primo">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_146:
-        DC32     `?<Constant "Secondo">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_147:
-        DC32     `?<Constant "Terzo">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_148:
-        DC32     `?<Constant "Quarto">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_149:
-        DC32     `?<Constant "Impostare">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_150:
-        DC32     `?<Constant "WIFI">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_151:
-        DC32     `?<Constant "Circa">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_152:
-        DC32     `?<Constant "Continua">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_153:
-        DC32     `?<Constant "Motor off">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_154:
-        DC32     `?<Constant "Lingua">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_155:
-        DC32     `?<Constant "Z Offset">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_156:
-        DC32     `?<Constant "WIFI: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_157:
-        DC32     `?<Constant "Type: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_158:
-        DC32     `?<Constant "Firmware: ">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_159:
-        DC32     `?<Constant "Inser">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_160:
-        DC32     `?<Constant "Estra">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_161:
-        DC32     `?<Constant "Heating up the nozzle...">_1`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_162:
-        DC32     `?<Constant "Opzioni">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_163:
-        DC32     `?<Constant "Recupero">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_164:
-        DC32     `?<Constant "Velocit\\303\\240">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_165:
-        DC32     `?<Constant "Manuale">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_166:
-        DC32     `?<Constant "Pausa">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_167:
-        DC32     `?<Constant "Estrusione">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_168:
-        DC32     `?<Constant "Movimento">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_169:
-        DC32     `?<Constant "Conferma">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_170:
-        DC32     `?<Constant "Cancella">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_171:
-        DC32     `?<Constant "Gcode stampa?">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_172:
-        DC32     `?<Constant "Stop stampa?">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_173:
-        DC32     `?<Constant "Riprovare">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_174:
-        DC32     `?<Constant "Errore: nessun file, ...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_175:
-        DC32     `?<Constant "Continua a stampare d...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_176:
-        DC32     `?<Constant "Errore: operazione no...">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable548_177:
+??DataTable1003_2:
         DC32     `?<Constant "La stampa \\303\\250 completa!">`
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable548_178:
-        DC32     `?<Constant "Tempo di stampa: ">`
+??DataTable1003_3:
+        DC32     `?<Constant "Load filament complet...">`
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-`?<Constant "WiFi: ">`:
-        DC8 "WiFi: "
-        DC8 0
+??DataTable1003_4:
+        DC32     `?<Constant "Print again">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_5:
+        DC32     `?<Constant "The wifi module is be...">_1`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_6:
+        DC32     `?<Constant "Machine settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_7:
+        DC32     `?<Constant "Leveling settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_8:
+        DC32     `?<Constant "Machine Settings>Mach...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_9:
+        DC32     `?<Constant "Close">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_10:
+        DC32     `?<Constant "Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_11:
+        DC32     `?<Constant "Temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_12:
+        DC32     `?<Constant "Motor">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_13:
+        DC32     `?<Constant "Adavance">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_14:
+        DC32     `?<Constant "Default">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_15:
+        DC32     `?<Constant "XYZ Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_16:
+        DC32     `?<Constant "Next">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_17:
+        DC32     `?<Constant "Delta Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_18:
+        DC32     `?<Constant "Previous">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_19:
+        DC32     `?<Constant "Corexy Machine">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_20:
+        DC32     `?<Constant "Machine Settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_21:
+        DC32     `?<Constant "Machine Settings>Mach...">_1`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_22:
+        DC32     `?<Constant "Machine type">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_23:
+        DC32     `?<Constant "X-axis maximum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_24:
+        DC32     `?<Constant "Machine Size">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_25:
+        DC32     `?<Constant "Y-axis maximum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_26:
+        DC32     `?<Constant "Home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_27:
+        DC32     `?<Constant "Z-axis maximum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_28:
+        DC32     `?<Constant "Endstop type">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_29:
+        DC32     `?<Constant "X-axis minimum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_30:
+        DC32     `?<Constant "Filament settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_31:
+        DC32     `?<Constant "Y-axis minimum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_32:
+        DC32     `?<Constant "Load temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_33:
+        DC32     `?<Constant "Z-axis minimum stroke">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_34:
+        DC32     `?<Constant "Load length">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_35:
+        DC32     `?<Constant "Machine Settings>Home...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_36:
+        DC32     `?<Constant "Load speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_37:
+        DC32     `?<Constant "X-axis home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_38:
+        DC32     `?<Constant "Unload temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_39:
+        DC32     `?<Constant "Y-axis home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_40:
+        DC32     `?<Constant "Unload length">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_41:
+        DC32     `?<Constant "Z-axis home direction">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_42:
+        DC32     `?<Constant "Unload speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_43:
+        DC32     `?<Constant "delta machine leveling">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_44:
+        DC32     `?<Constant "Manual leveling coord...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_45:
+        DC32     `?<Constant "Machine Settings>Ends...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_46:
+        DC32     `?<Constant "leveling setting">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_47:
+        DC32     `?<Constant "X-axis minimum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_48:
+        DC32     `?<Constant "Enable auto leveling">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_49:
+        DC32     `?<Constant "Y-axis minimum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_50:
+        DC32     `?<Constant "Enable BLtouch">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_51:
+        DC32     `?<Constant "Z-axis minimum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_52:
+        DC32     `?<Constant "Probe connector">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_53:
+        DC32     `?<Constant "X axis maximum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_54:
+        DC32     `?<Constant "Probe x axis offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_55:
+        DC32     `?<Constant "Y axis maximum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_56:
+        DC32     `?<Constant "Probe y axis offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_57:
+        DC32     `?<Constant "Z axis maximum Endstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_58:
+        DC32     `?<Constant "Probe z axis offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_59:
+        DC32     `?<Constant "Filament sensor">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_60:
+        DC32     `?<Constant "Probe xy axis speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_61:
+        DC32     `?<Constant "Leveling sensor">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_62:
+        DC32     `?<Constant "Probe z axis speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_63:
+        DC32     `?<Constant "Open">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_64:
+        DC32     `?<Constant "ZMin">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_65:
+        DC32     `?<Constant "lowest temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_66:
+        DC32     `?<Constant "Maximum temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_67:
+        DC32     `?<Constant "Minimum extrusion tem...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_68:
+        DC32     `?<Constant "ZMax">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_69:
+        DC32     `?<Constant "Enable heatbed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_70:
+        DC32     `?<Constant "Delta Machine settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_71:
+        DC32     `?<Constant "Machine Settings>Hotb...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_72:
+        DC32     `?<Constant "Machine Radius">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_73:
+        DC32     `?<Constant "Machine rod length">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_74:
+        DC32     `?<Constant "Print radius">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_75:
+        DC32     `?<Constant "Print height">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_76:
+        DC32     `?<Constant "Slider offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_77:
+        DC32     `?<Constant "Effector offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_78:
+        DC32     `?<Constant "Leveling radius">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_79:
+        DC32     `?<Constant "Cartesian Machine Set...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_80:
+        DC32     `?<Constant "Machine Settings>Temp...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_81:
+        DC32     `?<Constant "Nozzle settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_82:
+        DC32     `?<Constant "Hotbed settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_83:
+        DC32     `?<Constant "Preset temperature">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_84:
+        DC32     `?<Constant "Machine Settings>Nozz...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_85:
+        DC32     `?<Constant "Number of nozzles">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_86:
+        DC32     `?<Constant "E0 Temperature type">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_87:
+        DC32     `?<Constant "PID thermostat">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_88:
+        DC32     `?<Constant "Machine Settings>Moto...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_89:
+        DC32     `?<Constant "Maximum speed settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_90:
+        DC32     `?<Constant "Acceleration settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_91:
+        DC32     `?<Constant "Jerk settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_92:
+        DC32     `?<Constant "Steps settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_93:
+        DC32     `?<Constant "Motor direction settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_94:
+        DC32     `?<Constant "Home speed setting">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_95:
+        DC32     `?<Constant "Machine Settings>Maxi...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_96:
+        DC32     `?<Constant "X axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_97:
+        DC32     `?<Constant "Y axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_98:
+        DC32     `?<Constant "Z axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_99:
+        DC32     `?<Constant "E0 axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_100:
+        DC32     `?<Constant "E1 axis maximum speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_101:
+        DC32     `?<Constant "Machine Settings>Acce...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_102:
+        DC32     `?<Constant "Print acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_103:
+        DC32     `?<Constant "Retraction acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_104:
+        DC32     `?<Constant "Travel acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_105:
+        DC32     `?<Constant "X-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_106:
+        DC32     `?<Constant "Y-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_107:
+        DC32     `?<Constant "Z-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_108:
+        DC32     `?<Constant "E0-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_109:
+        DC32     `?<Constant "E1-axis acceleration">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_110:
+        DC32     `?<Constant "Machine Settings>Jerk...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_111:
+        DC32     `?<Constant "X-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_112:
+        DC32     `?<Constant "Y-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_113:
+        DC32     `?<Constant "J-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_114:
+        DC32     `?<Constant "E-axis jerk speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_115:
+        DC32     `?<Constant "Machine Settings>Step...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_116:
+        DC32     `?<Constant "X-axis steps">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_117:
+        DC32     `?<Constant "Y-axis stepS">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_118:
+        DC32     `?<Constant "Z-axis stepS">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_119:
+        DC32     `?<Constant "E0-axis steps">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_120:
+        DC32     `?<Constant "E1-axis steps">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_121:
+        DC32     `?<Constant "Machine Settings>Moto...">_1`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_122:
+        DC32     `?<Constant "X-axis motor directio...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_123:
+        DC32     `?<Constant "Y-axis motor directio...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_124:
+        DC32     `?<Constant "Z-axis motor directio...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_125:
+        DC32     `?<Constant "E0-axis motor directi...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_126:
+        DC32     `?<Constant "E1-axis motor directi...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_127:
+        DC32     `?<Constant "High">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_128:
+        DC32     `?<Constant "Preheat">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_129:
+        DC32     `?<Constant "Leveling">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_130:
+        DC32     `?<Constant "AutoLevel">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_131:
+        DC32     `?<Constant "Settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_132:
+        DC32     `?<Constant "Tool">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_133:
+        DC32     `?<Constant "Machine Settings>Home...">_1`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_134:
+        DC32     `?<Constant "Enable pins level set...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_135:
+        DC32     `?<Constant "More">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_136:
+        DC32     `?<Constant "XY-axis Home speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_137:
+        DC32     `?<Constant "Operation">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_138:
+        DC32     `?<Constant "Extrusion">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_139:
+        DC32     `?<Constant "Filament">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_140:
+        DC32     `?<Constant "Extrusion2">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_141:
+        DC32     `?<Constant "Move">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_142:
+        DC32     `?<Constant "Z-axis Home speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_143:
+        DC32     `?<Constant "ReadyPrint">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_144:
+        DC32     `?<Constant "Adjust">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_145:
+        DC32     `?<Constant "Quickstop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_146:
+        DC32     `?<Constant "Machine Settings>Advance">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_147:
+        DC32     `?<Constant "HeatBed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_148:
+        DC32     `?<Constant "power off dection module">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_149:
+        DC32     `?<Constant "Printing">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_150:
+        DC32     `?<Constant "Auto Shutdown after p...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_151:
+        DC32     `?<Constant "Extrusion1">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_152:
+        DC32     `?<Constant "ChooseFile">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_153:
+        DC32     `?<Constant "Loading......">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_154:
+        DC32     `?<Constant "Has UPS power supply">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_155:
+        DC32     `?<Constant "No files found!">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_156:
+        DC32     `?<Constant "Z2 Settings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_157:
+        DC32     `?<Constant "Page up">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_158:
+        DC32     `?<Constant "Z2 Enable">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_159:
+        DC32     `?<Constant "Z2_EndStop Enable">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_160:
+        DC32     `?<Constant "Z2 Connector">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_161:
+        DC32     `?<Constant "ENABLE_PINS_LEVEL">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_162:
+        DC32     `?<Constant "X_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_163:
+        DC32     `?<Constant "Y_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_164:
+        DC32     `?<Constant "Z_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_165:
+        DC32     `?<Constant "E_ENABLE_PIN_INVERT">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_166:
+        DC32     `?<Constant "Rest">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_167:
+        DC32     `?<Constant "Confirm">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_168:
+        DC32     `?<Constant "Home">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_169:
+        DC32     `?<Constant "Back">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_170:
+        DC32     `?<Constant "Closing machine......">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_171:
+        DC32     `?<Constant "Page down">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_172:
+        DC32     `?<Constant "Unbind the printer?">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_173:
+        DC32     `?<Constant "Pause">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_174:
+        DC32     `?<Constant "Temper">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_175:
+        DC32     `?<Constant "Point1">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_176:
+        DC32     `?<Constant "Normal">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_177:
+        DC32     `?<Constant "Point2">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_178:
+        DC32     `?<Constant "WiFi">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_179:
+        DC32     `?<Constant "About">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_180:
+        DC32     `?<Constant "Machine\\nsettings">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_181:
+        DC32     `?<Constant "Point3">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_182:
+        DC32     `?<Constant "Point4">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_183:
+        DC32     `?<Constant "Point5">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_184:
+        DC32     `?<Constant "FileSys">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_185:
+        DC32     `?<Constant "Continue">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_186:
+        DC32     `?<Constant "Binded">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_187:
+        DC32     `?<Constant "Unbind">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_188:
+        DC32     `?<Constant "Motor-off">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_189:
+        DC32     `?<Constant "Unbinded">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_190:
+        DC32     `?<Constant "Language">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_191:
+        DC32     `?<Constant "Disconnected">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_192:
+        DC32     `?<Constant "Z Offset">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_193:
+        DC32     `?<Constant "Type: ">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_194:
+        DC32     `?<Constant "Heat completed,please...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_195:
+        DC32     `?<Constant "Firmware: ">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_196:
+        DC32     `?<Constant "Load">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_197:
+        DC32     `?<Constant "Unload">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_198:
+        DC32     `?<Constant "Please click <Load> \\n...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_199:
+        DC32     `?<Constant "Heating up the nozzle...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_200:
+        DC32     `?<Constant "Is loading ,please wait!">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_201:
+        DC32     `?<Constant "Is unloading,please w...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_202:
+        DC32     `?<Constant "Option">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_203:
+        DC32     `?<Constant "Unload filament compl...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_204:
+        DC32     `?<Constant "Stop">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_205:
+        DC32     `?<Constant "Resume">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_206:
+        DC32     `?<Constant "Speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_207:
+        DC32     `?<Constant "Manual">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_208:
+        DC32     `?<Constant "Print time: ">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_209:
+        DC32     `?<Constant "Auto">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_210:
+        DC32     `?<Constant "Extrude Speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_211:
+        DC32     `?<Constant "Move Speed">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_212:
+        DC32     `?<Constant "Cancel">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_213:
+        DC32     `?<Constant "Print this model?">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_214:
+        DC32     `?<Constant "Stop print?">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_215:
+        DC32     `?<Constant "Retry">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_216:
+        DC32     `?<Constant "Error:no file,please ...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_217:
+        DC32     `?<Constant "Reprint from breakpoint?">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_218:
+        DC32     `?<Constant "Error:transaction fai...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_219:
+        DC32     `?<Constant "Done print!">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable1003_220:
+        DC32     `?<Constant "The wifi module is be...">`
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -5353,6 +9680,854 @@ _Z18disp_language_initv:
 
         SECTION __DLIB_PERTHREAD_init:DATA:REORDER:NOROOT(0)
         SECTION_TYPE SHT_PROGBITS, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine settings">`:
+        DC8 "Machine settings"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine">`:
+        DC8 "Machine"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Temperature">`:
+        DC8 "Temperature"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Motor">`:
+        DC8 "Motor"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Adavance">`:
+        DC8 "Adavance"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Default">`:
+        DC8 "Default"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Next">`:
+        DC8 "Next"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Previous">`:
+        DC8 "Previous"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings">`:
+        DC8 "Machine Settings"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine type">`:
+        DC8 "Machine type"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Size">`:
+        DC8 "Machine Size"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Home direction">`:
+        DC8 "Home direction"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Endstop type">`:
+        DC8 "Endstop type"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Filament settings">`:
+        DC8 "Filament settings"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Leveling settings">`:
+        DC8 "Leveling settings"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Mach...">`:
+        DC8 "Machine Settings>Machine type"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XYZ Machine">`:
+        DC8 "XYZ Machine"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Delta Machine">`:
+        DC8 "Delta Machine"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Corexy Machine">`:
+        DC8 "Corexy Machine"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Mach...">_1`:
+        DC8 "Machine Settings>Machine Size"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis maximum stroke">`:
+        DC8 "X-axis maximum stroke"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis maximum stroke">`:
+        DC8 "Y-axis maximum stroke"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis maximum stroke">`:
+        DC8 "Z-axis maximum stroke"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis minimum stroke">`:
+        DC8 "X-axis minimum stroke"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis minimum stroke">`:
+        DC8 "Y-axis minimum stroke"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis minimum stroke">`:
+        DC8 "Z-axis minimum stroke"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Home...">`:
+        DC8 "Machine Settings>Home direction"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis home direction">`:
+        DC8 "X-axis home direction"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis home direction">`:
+        DC8 "Y-axis home direction"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis home direction">`:
+        DC8 "Z-axis home direction"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "MIN">`:
+        DC8 "MIN"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "MAX">`:
+        DC8 "MAX"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Ends...">`:
+        DC8 "Machine Settings>Endstop type"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis minimum Endstop">`:
+        DC8 "X-axis minimum Endstop"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis minimum Endstop">`:
+        DC8 "Y-axis minimum Endstop"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis minimum Endstop">`:
+        DC8 "Z-axis minimum Endstop"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X axis maximum Endstop">`:
+        DC8 "X axis maximum Endstop"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y axis maximum Endstop">`:
+        DC8 "Y axis maximum Endstop"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z axis maximum Endstop">`:
+        DC8 "Z axis maximum Endstop"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Filament sensor">`:
+        DC8 "Filament sensor"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Leveling sensor">`:
+        DC8 "Leveling sensor"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Open">`:
+        DC8 "Open"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Close">`:
+        DC8 "Close"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Load temperature">`:
+        DC8 "Load temperature"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Load length">`:
+        DC8 "Load length"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Load speed">`:
+        DC8 "Load speed"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Unload temperature">`:
+        DC8 "Unload temperature"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Unload length">`:
+        DC8 "Unload length"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Unload speed">`:
+        DC8 "Unload speed"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "delta machine leveling">`:
+        DC8 "delta machine leveling"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Manual leveling coord...">`:
+        DC8 "Manual leveling coordinate settings"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "leveling setting">`:
+        DC8 "leveling setting"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Enable auto leveling">`:
+        DC8 "Enable auto leveling"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Enable BLtouch">`:
+        DC8 "Enable BLtouch"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Probe connector">`:
+        DC8 "Probe connector"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Probe x axis offset">`:
+        DC8 "Probe x axis offset"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Probe y axis offset">`:
+        DC8 "Probe y axis offset"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Probe z axis offset">`:
+        DC8 "Probe z axis offset"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Probe xy axis speed">`:
+        DC8 "Probe xy axis speed"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Probe z axis speed">`:
+        DC8 "Probe z axis speed"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "YES">`:
+        DC8 "YES"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "NO">`:
+        DC8 "NO"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "ZMin">`:
+        DC8 "ZMin"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "ZMax">`:
+        DC8 "ZMax"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Delta Machine settings">`:
+        DC8 "Delta Machine settings"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Radius">`:
+        DC8 "Machine Radius"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine rod length">`:
+        DC8 "Machine rod length"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Print radius">`:
+        DC8 "Print radius"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Print height">`:
+        DC8 "Print height"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Slider offset">`:
+        DC8 "Slider offset"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Effector offset">`:
+        DC8 "Effector offset"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Leveling radius">`:
+        DC8 "Leveling radius"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Cartesian Machine Set...">`:
+        DC8 "Cartesian Machine Settings"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Temp...">`:
+        DC8 "Machine Settings>Temperature settings"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Nozzle settings">`:
+        DC8 "Nozzle settings"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Hotbed settings">`:
+        DC8 "Hotbed settings"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Preset temperature">`:
+        DC8 "Preset temperature"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Nozz...">`:
+        DC8 "Machine Settings>Nozzle settings"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Number of nozzles">`:
+        DC8 "Number of nozzles"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0 Temperature type">`:
+        DC8 "E0 Temperature type"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "PID thermostat">`:
+        DC8 "PID thermostat"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "lowest temperature">`:
+        DC8 "lowest temperature"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Maximum temperature">`:
+        DC8 "Maximum temperature"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Minimum extrusion tem...">`:
+        DC8 "Minimum extrusion temperature"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Enable heatbed">`:
+        DC8 "Enable heatbed"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Hotb...">`:
+        DC8 "Machine Settings>Hotbed settings"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Moto...">`:
+        DC8 "Machine Settings>Motor settings"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Maximum speed settings">`:
+        DC8 "Maximum speed settings"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Acceleration settings">`:
+        DC8 "Acceleration settings"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Jerk settings">`:
+        DC8 "Jerk settings"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Steps settings">`:
+        DC8 "Steps settings"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Motor direction settings">`:
+        DC8 "Motor direction settings"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Home speed setting">`:
+        DC8 "Home speed setting"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Maxi...">`:
+        DC8 "Machine Settings>Maximum speed"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X axis maximum speed">`:
+        DC8 "X axis maximum speed"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y axis maximum speed">`:
+        DC8 "Y axis maximum speed"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z axis maximum speed">`:
+        DC8 "Z axis maximum speed"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0 axis maximum speed">`:
+        DC8 "E0 axis maximum speed"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1 axis maximum speed">`:
+        DC8 "E1 axis maximum speed"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Acce...">`:
+        DC8 "Machine Settings>Acceleration"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Print acceleration">`:
+        DC8 "Print acceleration"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Retraction acceleration">`:
+        DC8 "Retraction acceleration"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Travel acceleration">`:
+        DC8 "Travel acceleration"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis acceleration">`:
+        DC8 "X-axis acceleration"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis acceleration">`:
+        DC8 "Y-axis acceleration"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis acceleration">`:
+        DC8 "Z-axis acceleration"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0-axis acceleration">`:
+        DC8 "E0-axis acceleration"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1-axis acceleration">`:
+        DC8 "E1-axis acceleration"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Jerk...">`:
+        DC8 "Machine Settings>Jerk speed"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis jerk speed">`:
+        DC8 "X-axis jerk speed"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis jerk speed">`:
+        DC8 "Y-axis jerk speed"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "J-axis jerk speed">`:
+        DC8 "J-axis jerk speed"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E-axis jerk speed">`:
+        DC8 "E-axis jerk speed"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Step...">`:
+        DC8 "Machine Settings>Steps settings"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis steps">`:
+        DC8 "X-axis steps"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis stepS">`:
+        DC8 "Y-axis stepS"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis stepS">`:
+        DC8 "Z-axis stepS"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0-axis steps">`:
+        DC8 "E0-axis steps"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1-axis steps">`:
+        DC8 "E1-axis steps"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Moto...">_1`:
+        DC8 "Machine Settings>Motor direction"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X-axis motor directio...">`:
+        DC8 "X-axis motor direction invert"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y-axis motor directio...">`:
+        DC8 "Y-axis motor direction invert"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis motor directio...">`:
+        DC8 "Z-axis motor direction invert"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0-axis motor directi...">`:
+        DC8 "E0-axis motor direction invert"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1-axis motor directi...">`:
+        DC8 "E1-axis motor direction invert"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Home...">_1`:
+        DC8 "Machine Settings>Home speed"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XY-axis Home speed">`:
+        DC8 "XY-axis Home speed"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z-axis Home speed">`:
+        DC8 "Z-axis Home speed"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine Settings>Advance">`:
+        DC8 "Machine Settings>Advance"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "power off dection module">`:
+        DC8 "power off dection module"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Auto Shutdown after p...">`:
+        DC8 "Auto Shutdown after print"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Has UPS power supply">`:
+        DC8 "Has UPS power supply"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z2 Settings">`:
+        DC8 "Z2 Settings"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Enable pins level set...">`:
+        DC8 "Enable pins level settings"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z2 Enable">`:
+        DC8 "Z2 Enable"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z2_EndStop Enable">`:
+        DC8 "Z2_EndStop Enable"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z2 Connector">`:
+        DC8 "Z2 Connector"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "ENABLE_PINS_LEVEL">`:
+        DC8 "ENABLE_PINS_LEVEL"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X_ENABLE_PIN_INVERT">`:
+        DC8 "X_ENABLE_PIN_INVERT"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y_ENABLE_PIN_INVERT">`:
+        DC8 "Y_ENABLE_PIN_INVERT"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z_ENABLE_PIN_INVERT">`:
+        DC8 "Z_ENABLE_PIN_INVERT"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E_ENABLE_PIN_INVERT">`:
+        DC8 "E_ENABLE_PIN_INVERT"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Del">`:
+        DC8 "Del"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Rest">`:
+        DC8 "Rest"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Confirm">`:
+        DC8 "Confirm"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Machine\\nsettings">`:
+        DC8 "Machine\012settings"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "High">`:
+        DC8 "High"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Low">`:
+        DC8 "Low"
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -5412,6 +10587,18 @@ _Z18disp_language_initv:
         DATA
 `?<Constant "Z-">`:
         DC8 "Z-"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "0.01mm">`:
+        DC8 "0.01mm"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "0.05mm">`:
+        DC8 "0.05mm"
         DC8 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
@@ -5603,6 +10790,12 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
+`?<Constant "WiFi: ">`:
+        DC8 "WiFi: "
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
 `?<Constant "Key: ">`:
         DC8 "Key: "
         DC8 0, 0
@@ -5637,11 +10830,989 @@ _Z18disp_language_initv:
         DC8 "Exception"
         DC8 0, 0
 
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "0">`:
+        DC8 "0"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "1">`:
+        DC8 "1"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "2">`:
+        DC8 "2"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "3">`:
+        DC8 "3"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "4">`:
+        DC8 "4"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "5">`:
+        DC8 "5"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "6">`:
+        DC8 "6"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "7">`:
+        DC8 "7"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "8">`:
+        DC8 "8"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "9">`:
+        DC8 "9"
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant ".">`:
+        DC8 "."
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "-">`:
+        DC8 "-"
+
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
-`?<Constant "0.01mm">`:
-        DC8 "0.01mm"
+`?<Constant "WI-FI">`:
+        DC8 "WI-FI"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Join >">`:
+        DC8 "Join >"
         DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Password">`:
+        DC8 "Password"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "space">`:
+        DC8 "space"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "abc">`:
+        DC8 "abc"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "123">`:
+        DC8 "123"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "#+=">`:
+        DC8 "#+="
+
+        SECTION `.rodata`:CONST:NOROOT(1)
+        DATA
+`?<Constant "\`">`:
+        DC8 "`"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Joining\\nNetwork...">`:
+        DC8 "Joining\012Network..."
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Failed to\\nJoin Wi-Fi">`:
+        DC8 "Failed to\012Join Wi-Fi"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Wi-Fi\\nConnected">`:
+        DC8 "Wi-Fi\012Connected"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Babystep">`:
+        DC8 "Babystep"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\350\\256\\2`:
+        DC8 "\346\234\272\345\231\250\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\270\\251\\345\\272\\246\\350\\256\\2`:
+        DC8 "\346\270\251\345\272\246\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\224\\265\\346\\234\\272\\350\\256\\2`:
+        DC8 "\347\224\265\346\234\272\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\253\\230\\347\\272\\247\\350\\256\\2`:
+        DC8 "\351\253\230\347\272\247\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\273\\230\\350\\256\\244\\345\\200\\2`:
+        DC8 "\351\273\230\350\256\244\345\200\274"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\344\\270\\213\\344\\270\\200\\351\\241\\2`:
+        DC8 "\344\270\213\344\270\200\351\241\265"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\344\\270\\212\\344\\270\\200\\351\\241\\2`:
+        DC8 "\344\270\212\344\270\200\351\241\265"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_1`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\346\234\272\345\231\250\351\205\215\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\236\\213\\351\\200\\2`:
+        DC8 "\346\234\272\345\236\213\351\200\211\346\213\251"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\241\\214\\347\\250\\213\\350\\256\\2`:
+        DC8 "\350\241\214\347\250\213\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\275\\222\\351\\233\\266\\346\\226\\2`:
+        DC8 "\345\275\222\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\231\\220\\344\\275\\215\\345\\274\\2`:
+        DC8 "\351\231\220\344\275\215\345\274\200\345\205\263\347\261\273\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\215\\242\\346\\226\\231\\350\\256\\2`:
+        DC8 "\346\215\242\346\226\231\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\260\\203\\345\\271\\263\\350\\256\\2`:
+        DC8 "\350\260\203\345\271\263\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_2`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\346\234\272\345\236\213\351\200\211\346\213\251"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XYZ\\346\\234\\272\\345\\236\\213">`:
+        DC8 "XYZ\346\234\272\345\236\213"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Delta\\346\\234\\272\\345\\236\\213">`:
+        DC8 "Delta\346\234\272\345\236\213"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Corexy\\346\\234\\272\\345\\236\\213">`:
+        DC8 "Corexy\346\234\272\345\236\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_3`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\346\234\272\345\231\250\350\241\214\347\250\213"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\244\\`:
+        DC8 "X\350\275\264\346\234\200\345\244\247\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\244\\`:
+        DC8 "Y\350\275\264\346\234\200\345\244\247\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\244\\`:
+        DC8 "Z\350\275\264\346\234\200\345\244\247\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\260\\`:
+        DC8 "X\350\275\264\346\234\200\345\260\217\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\260\\`:
+        DC8 "Y\350\275\264\346\234\200\345\260\217\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\260\\`:
+        DC8 "Z\350\275\264\346\234\200\345\260\217\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_4`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\345\275\222\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\345\\275\\222\\351\\233\\`:
+        DC8 "X\350\275\264\345\275\222\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\345\\275\\222\\351\\233\\`:
+        DC8 "Y\350\275\264\345\275\222\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\345\\275\\222\\351\\233\\`:
+        DC8 "Z\350\275\264\345\275\222\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_5`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\351\231\220\344\275\215\345\274\200\345\205\263"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\260\\_1`:
+        DC8 "X\350\275\264\346\234\200\345\260\217\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\260\\_1`:
+        DC8 "Y\350\275\264\346\234\200\345\260\217\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\260\\_1`:
+        DC8 "Z\350\275\264\346\234\200\345\260\217\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\244\\_1`:
+        DC8 "X\350\275\264\346\234\200\345\244\247\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\244\\_1`:
+        DC8 "Y\350\275\264\346\234\200\345\244\247\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\244\\_1`:
+        DC8 "Z\350\275\264\346\234\200\345\244\247\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\226\\255\\346\\226\\231\\345\\274\\2`:
+        DC8 "\346\226\255\346\226\231\345\274\200\345\205\263\347\261\273\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\260\\203\\345\\271\\263\\345\\274\\2`:
+        DC8 "\350\260\203\345\271\263\345\274\200\345\205\263\347\261\273\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\270\\270\\345\\274\\200">`:
+        DC8 "\345\270\270\345\274\200"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\270\\270\\351\\227\\255">`:
+        DC8 "\345\270\270\351\227\255"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\277\\233\\346\\226\\231\\346\\270\\2`:
+        DC8 "\350\277\233\346\226\231\346\270\251\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\277\\233\\346\\226\\231\\351\\225\\2`:
+        DC8 "\350\277\233\346\226\231\351\225\277\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\277\\233\\346\\226\\231\\351\\200\\2`:
+        DC8 "\350\277\233\346\226\231\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\200\\346\\226\\231\\346\\270\\2`:
+        DC8 "\351\200\200\346\226\231\346\270\251\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\200\\346\\226\\231\\351\\225\\2`:
+        DC8 "\351\200\200\346\226\231\351\225\277\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\200\\346\\226\\231\\351\\200\\2`:
+        DC8 "\351\200\200\346\226\231\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "delta\\346\\234\\272\\345\\236\\213\\350\\`:
+        DC8 "delta\346\234\272\345\236\213\350\256\276\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\211\\213\\345\\212\\250\\350\\260\\2`:
+        DC8 "\346\211\213\345\212\250\350\260\203\345\271\263\345\235\220\346\240\207\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\260\\203\\345\\271\\263\\345\\217\\2`:
+        DC8 "\350\260\203\345\271\263\345\217\202\346\225\260"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\207\\252\\345\\212\\250\\350\\260\\2`:
+        DC8 "\350\207\252\345\212\250\350\260\203\345\271\263"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\220\\257\\345\\212\\250BLtouch">`:
+        DC8 "\345\220\257\345\212\250BLtouch"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\260\\203\\345\\271\\263\\346\\216\\2`:
+        DC8 "\350\260\203\345\271\263\346\216\242\351\222\210\346\216\245\345\217\243"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\222\\210X\\346\\226\\`:
+        DC8 "\346\216\242\351\222\210X\346\226\271\345\220\221\345\201\217\347\247\273"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\222\\210Y\\346\\226\\`:
+        DC8 "\346\216\242\351\222\210Y\346\226\271\345\220\221\345\201\217\347\247\273"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\222\\210Z\\346\\226\\`:
+        DC8 "\346\216\242\351\222\210Z\346\226\271\345\220\221\345\201\217\347\247\273"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\222\\210XY\\346\\226`:
+        DC8 "\346\216\242\351\222\210XY\346\226\271\345\220\221\347\247\273\345\212\250\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\222\\210Z\\346\\226\\_1`:
+        DC8 "\346\216\242\351\222\210Z\346\226\271\345\220\221\347\247\273\345\212\250\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\230\\257">`:
+        DC8 "\346\230\257"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\220\\246">`:
+        DC8 "\345\220\246"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Delta\\346\\234\\272\\345\\231\\250\\345\\`:
+        DC8 "Delta\346\234\272\345\231\250\345\217\202\346\225\260"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\215\\2`:
+        DC8 "\346\234\272\345\231\250\345\215\212\345\276\204"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\346\\235\\2`:
+        DC8 "\346\234\272\345\231\250\346\235\206\351\225\277"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\211\\223\\345\\215\\260\\345\\215\\2`:
+        DC8 "\346\211\223\345\215\260\345\215\212\345\276\204"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\211\\223\\345\\215\\260\\351\\253\\2`:
+        DC8 "\346\211\223\345\215\260\351\253\230\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\273\\221\\345\\235\\227\\345\\201\\2`:
+        DC8 "\346\273\221\345\235\227\345\201\217\347\247\273"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\225\\210\\345\\272\\224\\345\\231\\2`:
+        DC8 "\346\225\210\345\272\224\345\231\250\345\201\217\347\247\273"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\260\\203\\345\\271\\263\\345\\215\\2`:
+        DC8 "\350\260\203\345\271\263\345\215\212\345\276\204"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XYZ\\346\\234\\272\\345\\231\\250\\345\\21`:
+        DC8 "XYZ\346\234\272\345\231\250\345\217\202\346\225\260"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_6`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\346\270\251\345\272\246\350\256\276\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\226\\267\\345\\244\\264\\350\\256\\2`:
+        DC8 "\345\226\267\345\244\264\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\203\\255\\345\\272\\212\\350\\256\\2`:
+        DC8 "\347\203\255\345\272\212\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\242\\204\\350\\256\\276\\346\\270\\2`:
+        DC8 "\351\242\204\350\256\276\346\270\251\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_7`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\345\226\267\345\244\264\350\256\276\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\226\\267\\345\\244\\264\\346\\225\\2`:
+        DC8 "\345\226\267\345\244\264\346\225\260\351\207\217"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\346\\270\\251\\346\\204\\237\\347\\261`:
+        DC8 "E0\346\270\251\346\204\237\347\261\273\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "PID\\350\\260\\203\\346\\270\\251">`:
+        DC8 "PID\350\260\203\346\270\251"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\344\\275\\216\\346\\270\\2`:
+        DC8 "\346\234\200\344\275\216\346\270\251\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\351\\253\\230\\346\\270\\2`:
+        DC8 "\346\234\200\351\253\230\346\270\251\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\344\\275\\216\\346\\214\\2`:
+        DC8 "\346\234\200\344\275\216\346\214\244\345\207\272\346\270\251\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\344\\275\\277\\350\\203\\275\\347\\203\\2`:
+        DC8 "\344\275\277\350\203\275\347\203\255\345\272\212"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_8`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\347\203\255\345\272\212\350\256\276\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_9`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\347\224\265\346\234\272\350\256\276\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\345\\244\\247\\351\\200\\2`:
+        DC8 "\346\234\200\345\244\247\351\200\237\345\272\246\350\256\276\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\212\\240\\351\\200\\237\\345\\272\\2`:
+        DC8 "\345\212\240\351\200\237\345\272\246\350\256\276\347\275\256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\252\\201\\345\\217\\230\\351\\200\\2`:
+        DC8 "\347\252\201\345\217\230\351\200\237\345\272\246\350\256\276\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\204\\211\\345\\206\\262\\350\\256\\2`:
+        DC8 "\350\204\211\345\206\262\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\224\\265\\346\\234\\272\\346\\226\\2`:
+        DC8 "\347\224\265\346\234\272\346\226\271\345\220\221\350\256\276\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\275\\222\\351\\233\\266\\351\\200\\2`:
+        DC8 "\345\275\222\351\233\266\351\200\237\345\272\246\350\256\276\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_10`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\346\\234\\200\\345\\244\\_2`:
+        DC8 "X\350\275\264\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\346\\234\\200\\345\\244\\_2`:
+        DC8 "Y\350\275\264\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\346\\234\\200\\345\\244\\_2`:
+        DC8 "Z\350\275\264\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\275\\264\\346\\234\\200\\345\\244`:
+        DC8 "E0\350\275\264\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\275\\264\\346\\234\\200\\345\\244`:
+        DC8 "E1\350\275\264\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_11`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\345\212\240\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\211\\223\\345\\215\\260\\345\\212\\2`:
+        DC8 "\346\211\223\345\215\260\345\212\240\351\200\237\345\272\246"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\233\\236\\346\\212\\275\\345\\212\\2`:
+        DC8 "\345\233\236\346\212\275\345\212\240\351\200\237\345\272\246"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\251\\272\\350\\275\\275\\345\\212\\2`:
+        DC8 "\347\251\272\350\275\275\345\212\240\351\200\237\345\272\246"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\345\\212\\240\\351\\200\\`:
+        DC8 "X\350\275\264\345\212\240\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\345\\212\\240\\351\\200\\`:
+        DC8 "Y\350\275\264\345\212\240\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\345\\212\\240\\351\\200\\`:
+        DC8 "Z\350\275\264\345\212\240\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\275\\264\\345\\212\\240\\351\\200`:
+        DC8 "E0\350\275\264\345\212\240\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\275\\264\\345\\212\\240\\351\\200`:
+        DC8 "E1\350\275\264\345\212\240\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_12`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\347\252\201\345\217\230\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\347\\252\\201\\345\\217\\`:
+        DC8 "X\350\275\264\347\252\201\345\217\230\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\347\\252\\201\\345\\217\\`:
+        DC8 "Y\350\275\264\347\252\201\345\217\230\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\347\\252\\201\\345\\217\\`:
+        DC8 "Z\350\275\264\347\252\201\345\217\230\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E\\350\\275\\264\\347\\252\\201\\345\\217\\`:
+        DC8 "E\350\275\264\347\252\201\345\217\230\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_13`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\350\204\211\345\206\262\350\256\276\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\350\\204\\211\\345\\206\\`:
+        DC8 "X\350\275\264\350\204\211\345\206\262"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\350\\204\\211\\345\\206\\`:
+        DC8 "Y\350\275\264\350\204\211\345\206\262"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\350\\204\\211\\345\\206\\`:
+        DC8 "Z\350\275\264\350\204\211\345\206\262"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\275\\264\\350\\204\\211\\345\\206`:
+        DC8 "E0\350\275\264\350\204\211\345\206\262"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\275\\264\\350\\204\\211\\345\\206`:
+        DC8 "E1\350\275\264\350\204\211\345\206\262"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_14`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\347\224\265\346\234\272\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\347\\224\\265\\346\\234\\`:
+        DC8 "X\350\275\264\347\224\265\346\234\272\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\347\\224\\265\\346\\234\\`:
+        DC8 "Y\350\275\264\347\224\265\346\234\272\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\347\\224\\265\\346\\234\\`:
+        DC8 "Z\350\275\264\347\224\265\346\234\272\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\275\\264\\347\\224\\265\\346\\234`:
+        DC8 "E0\350\275\264\347\224\265\346\234\272\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\275\\264\\347\\224\\265\\346\\234`:
+        DC8 "E1\350\275\264\347\224\265\346\234\272\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\255\\243\\345\\220\\221">`:
+        DC8 "\346\255\243\345\220\221"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\217\\215\\345\\220\\221">`:
+        DC8 "\345\217\215\345\220\221"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_15`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\345\275\222\351\233\266\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XY\\350\\275\\264\\345\\275\\222\\351\\233`:
+        DC8 "XY\350\275\264\345\275\222\351\233\266\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\345\\275\\222\\351\\233\\_1`:
+        DC8 "Z\350\275\264\345\275\222\351\233\266\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\345\\217\\2_16`:
+        DC8 "\346\234\272\345\231\250\345\217\202\346\225\260>\351\253\230\347\272\247\350\256\276\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\226\\255\\347\\224\\265\\346\\243\\2`:
+        DC8 "\346\226\255\347\224\265\346\243\200\346\265\213\346\250\241\345\235\227"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\220\\257\\345\\212\\250\\346\\211\\2`:
+        DC8 "\345\220\257\345\212\250\346\211\223\345\256\214\345\205\263\346\234\272\345\212\237\350\203\275"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\272\\345\\231\\250\\351\\205\\2`:
+        DC8 "\346\234\272\345\231\250\351\205\215\345\244\207UPS\347\224\265\346\272\220"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\217\\214Z\\350\\275\\264\\345\\217\\`:
+        DC8 "\345\217\214Z\350\275\264\345\217\214\351\231\220\344\275\215\345\212\237\350\203\275\350\256\276\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\224\\265\\346\\234\\272\\344\\275\\2`:
+        DC8 "\347\224\265\346\234\272\344\275\277\350\203\275\350\204\232\347\224\265\345\271\263\350\256\276\347\275\256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\217\\214z\\345\\217\\214\\351\\231\\`:
+        DC8 "\345\217\214z\345\217\214\351\231\220\344\275\215\350\256\276\347\275\256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\220\\257\\347\\224\\250Z2\\350\\275`:
+        DC8 "\345\220\257\347\224\250Z2\350\275\264"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\220\\257\\347\\224\\250Z2\\351\\231`:
+        DC8 "\345\220\257\347\224\250Z2\351\231\220\344\275\215"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z2\\351\\231\\220\\344\\275\\215\\346\\216`:
+        DC8 "Z2\351\231\220\344\275\215\346\216\245\345\217\243"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\224\\265\\346\\234\\272\\344\\275\\2_1`:
+        DC8 "\347\224\265\346\234\272\344\275\277\350\203\275\350\204\232\347\224\265\345\271\263"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\275\\264\\347\\224\\265\\346\\234\\_1`:
+        DC8 "X\350\275\264\347\224\265\346\234\272\344\275\277\350\203\275\347\224\265\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\275\\264\\347\\224\\265\\346\\234\\_1`:
+        DC8 "Y\350\275\264\347\224\265\346\234\272\344\275\277\350\203\275\347\224\265\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\275\\264\\347\\224\\265\\346\\234\\_1`:
+        DC8 "Z\350\275\264\347\224\265\346\234\272\344\275\277\350\203\275\347\224\265\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E\\350\\275\\264\\347\\224\\265\\346\\234\\`:
+        DC8 "E\350\275\264\347\224\265\346\234\272\344\275\277\350\203\275\347\224\265\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\200\\346\\240\\274">`:
+        DC8 "\351\200\200\346\240\274"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\207\\215\\347\\275\\256">`:
+        DC8 "\351\207\215\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\241\\256\\345\\256\\232">`:
+        DC8 "\347\241\256\345\256\232"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\253\\230">`:
+        DC8 "\351\253\230"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\344\\275\\216">`:
+        DC8 "\344\275\216"
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -5729,12 +11900,6 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
-`?<Constant "\\350\\207\\252\\345\\212\\250\\350\\260\\2`:
-        DC8 "\350\207\252\345\212\250\350\260\203\345\271\263"
-        DC8 0, 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
 `?<Constant "\\351\\243\\216\\346\\211\\207">`:
         DC8 "\351\243\216\346\211\207"
         DC8 0
@@ -5805,6 +11970,11 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
+`?<Constant "%d\\342\\204\\203/%d\\342\\204\\203">`:
+        DC8 "%d\342\204\203/%d\342\204\203"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
 `?<Constant "\\346\\200\\245\\345\\201\\234">`:
         DC8 "\346\200\245\345\201\234"
         DC8 0
@@ -5814,18 +11984,6 @@ _Z18disp_language_initv:
 `?<Constant "\\351\\200\\211\\346\\213\\251\\346\\226\\2`:
         DC8 "\351\200\211\346\213\251\346\226\207\344\273\266"
         DC8 0, 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant "\\344\\270\\212\\344\\270\\200\\351\\241\\2`:
-        DC8 "\344\270\212\344\270\200\351\241\265"
-        DC8 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant "\\344\\270\\213\\344\\270\\200\\351\\241\\2`:
-        DC8 "\344\270\213\344\270\200\351\241\265"
-        DC8 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -5964,6 +12122,12 @@ _Z18disp_language_initv:
 `?<Constant "\\344\\272\\221\\346\\234\\215\\345\\212\\2`:
         DC8 "\344\272\221\346\234\215\345\212\241"
         DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\207\\215\\346\\226\\260\\350\\277\\2`:
+        DC8 "\351\207\215\346\226\260\350\277\236\346\216\245"
+        DC8 0, 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -6136,12 +12300,6 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
-`?<Constant "\\347\\241\\256\\345\\256\\232">`:
-        DC8 "\347\241\256\345\256\232"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
 `?<Constant "\\345\\217\\226\\346\\266\\210">`:
         DC8 "\345\217\226\346\266\210"
         DC8 0
@@ -6211,6 +12369,788 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
+`?<Constant "wifi\\346\\250\\241\\345\\235\\227\\346\\2`:
+        DC8 "wifi\346\250\241\345\235\227\346\255\243\345\234\250\351\205\215\347\275\256\344\270\255,\350\257\267\347\250\215\347\255\211......"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\350\\250\\2`:
+        DC8 "\346\251\237\345\231\250\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\272\\253\\345\\272\\246\\350\\250\\2`:
+        DC8 "\346\272\253\345\272\246\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\233\\273\\346\\251\\237\\350\\250\\2`:
+        DC8 "\351\233\273\346\251\237\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\253\\230\\347\\264\\232\\350\\250\\2`:
+        DC8 "\351\253\230\347\264\232\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\273\\230\\350\\252\\215\\345\\200\\2`:
+        DC8 "\351\273\230\350\252\215\345\200\274"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\344\\270\\213\\344\\270\\200\\351\\240\\2`:
+        DC8 "\344\270\213\344\270\200\351\240\201"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\344\\270\\212\\344\\270\\200\\351\\240\\2`:
+        DC8 "\344\270\212\344\270\200\351\240\201"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_1`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\346\251\237\345\231\250\351\205\215\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\236\\213\\351\\201\\2`:
+        DC8 "\346\251\237\345\236\213\351\201\270\346\223\207"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\241\\214\\347\\250\\213\\350\\250\\2`:
+        DC8 "\350\241\214\347\250\213\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\255\\270\\351\\233\\266\\346\\226\\2`:
+        DC8 "\346\255\270\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\231\\220\\344\\275\\215\\351\\226\\2`:
+        DC8 "\351\231\220\344\275\215\351\226\213\351\227\234\351\241\236\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\217\\233\\346\\226\\231\\350\\250\\2`:
+        DC8 "\346\217\233\346\226\231\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\252\\277\\345\\271\\263\\350\\250\\2`:
+        DC8 "\350\252\277\345\271\263\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_2`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\346\251\237\345\236\213\351\201\270\346\223\207"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XYZ\\346\\251\\237\\345\\236\\213">`:
+        DC8 "XYZ\346\251\237\345\236\213"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Delta\\346\\251\\237\\345\\236\\213">`:
+        DC8 "Delta\346\251\237\345\236\213"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Corexy\\346\\251\\237\\345\\236\\213">`:
+        DC8 "Corexy\346\251\237\345\236\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_3`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\346\251\237\345\231\250\350\241\214\347\250\213"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\244\\`:
+        DC8 "X\350\273\270\346\234\200\345\244\247\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\244\\`:
+        DC8 "Y\350\273\270\346\234\200\345\244\247\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\244\\`:
+        DC8 "Z\350\273\270\346\234\200\345\244\247\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\260\\`:
+        DC8 "X\350\273\270\346\234\200\345\260\217\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\260\\`:
+        DC8 "Y\350\273\270\346\234\200\345\260\217\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\260\\`:
+        DC8 "Z\350\273\270\346\234\200\345\260\217\350\241\214\347\250\213"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_4`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\346\255\270\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\346\\255\\270\\351\\233\\`:
+        DC8 "X\350\273\270\346\255\270\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\346\\255\\270\\351\\233\\`:
+        DC8 "Y\350\273\270\346\255\270\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\346\\255\\270\\351\\233\\`:
+        DC8 "Z\350\273\270\346\255\270\351\233\266\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_5`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\351\231\220\344\275\215\351\226\213\351\227\234"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\260\\_1`:
+        DC8 "X\350\273\270\346\234\200\345\260\217\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\260\\_1`:
+        DC8 "Y\350\273\270\346\234\200\345\260\217\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\260\\_1`:
+        DC8 "Z\350\273\270\346\234\200\345\260\217\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\244\\_1`:
+        DC8 "X\350\273\270\346\234\200\345\244\247\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\244\\_1`:
+        DC8 "Y\350\273\270\346\234\200\345\244\247\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\244\\_1`:
+        DC8 "Z\350\273\270\346\234\200\345\244\247\351\231\220\344\275\215"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\226\\267\\346\\226\\231\\351\\226\\2`:
+        DC8 "\346\226\267\346\226\231\351\226\213\351\227\234\351\241\236\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\252\\277\\345\\271\\263\\351\\226\\2`:
+        DC8 "\350\252\277\345\271\263\351\226\213\351\227\234\351\241\236\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\270\\270\\351\\226\\213">`:
+        DC8 "\345\270\270\351\226\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\270\\270\\351\\226\\211">`:
+        DC8 "\345\270\270\351\226\211"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\262\\346\\226\\231\\346\\272\\2`:
+        DC8 "\351\200\262\346\226\231\346\272\253\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\262\\346\\226\\231\\351\\225\\2`:
+        DC8 "\351\200\262\346\226\231\351\225\267\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\262\\346\\226\\231\\351\\200\\2`:
+        DC8 "\351\200\262\346\226\231\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\200\\346\\226\\231\\346\\272\\2`:
+        DC8 "\351\200\200\346\226\231\346\272\253\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\200\\200\\346\\226\\231\\351\\225\\2_1`:
+        DC8 "\351\200\200\346\226\231\351\225\267\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "delta\\346\\251\\237\\345\\236\\213\\350\\`:
+        DC8 "delta\346\251\237\345\236\213\350\250\255\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\211\\213\\345\\213\\225\\350\\252\\2`:
+        DC8 "\346\211\213\345\213\225\350\252\277\345\271\263\345\235\220\346\250\231\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\252\\277\\345\\271\\263\\345\\217\\2`:
+        DC8 "\350\252\277\345\271\263\345\217\203\346\225\270"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\207\\252\\345\\213\\225\\350\\252\\2`:
+        DC8 "\350\207\252\345\213\225\350\252\277\345\271\263"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\225\\237\\345\\213\\225BLtouch">`:
+        DC8 "\345\225\237\345\213\225BLtouch"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\252\\277\\345\\271\\263\\346\\216\\2`:
+        DC8 "\350\252\277\345\271\263\346\216\242\351\207\235\346\216\245\345\217\243"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\207\\235X\\346\\226\\`:
+        DC8 "\346\216\242\351\207\235X\346\226\271\345\220\221\345\201\217\347\247\273"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\222\\210XY\\346\\226_1`:
+        DC8 "\346\216\242\351\222\210XY\346\226\271\345\220\221\347\247\273\345\213\225\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\216\\242\\351\\222\\210Z\\346\\226\\_2`:
+        DC8 "\346\216\242\351\222\210Z\346\226\271\345\220\221\347\247\273\345\213\225\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Delta\\346\\251\\237\\345\\231\\250\\345\\`:
+        DC8 "Delta\346\251\237\345\231\250\345\217\203\346\225\270"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\215\\2`:
+        DC8 "\346\251\237\345\231\250\345\215\212\345\276\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\346\\241\\2`:
+        DC8 "\346\251\237\345\231\250\346\241\277\351\225\267"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\211\\223\\345\\215\\260\\345\\215\\2_1`:
+        DC8 "\346\211\223\345\215\260\345\215\212\345\276\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\273\\221\\345\\241\\212\\345\\201\\2`:
+        DC8 "\346\273\221\345\241\212\345\201\217\347\247\273"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\225\\210\\346\\207\\211\\345\\231\\2`:
+        DC8 "\346\225\210\346\207\211\345\231\250\345\201\217\347\247\273"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\252\\277\\345\\271\\263\\345\\215\\2`:
+        DC8 "\350\252\277\345\271\263\345\215\212\345\276\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XYZ\\346\\251\\237\\345\\231\\250\\345\\21`:
+        DC8 "XYZ\346\251\237\345\231\250\345\217\203\346\225\270"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_6`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\346\272\253\345\272\246\350\250\255\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\231\\264\\351\\240\\255\\350\\250\\2`:
+        DC8 "\345\231\264\351\240\255\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\206\\261\\345\\272\\212\\350\\250\\2`:
+        DC8 "\347\206\261\345\272\212\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\240\\220\\350\\250\\255\\346\\272\\2`:
+        DC8 "\351\240\220\350\250\255\346\272\253\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_7`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\345\231\264\351\240\255\350\250\255\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\231\\264\\351\\240\\255\\346\\225\\2`:
+        DC8 "\345\231\264\351\240\255\346\225\270\351\207\217"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\346\\272\\253\\346\\204\\237\\351\\241`:
+        DC8 "E0\346\272\253\346\204\237\351\241\236\345\236\213"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "PID\\350\\252\\277\\346\\272\\253">`:
+        DC8 "PID\350\252\277\346\272\253"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\344\\275\\216\\346\\272\\2`:
+        DC8 "\346\234\200\344\275\216\346\272\253\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\351\\253\\230\\346\\272\\2`:
+        DC8 "\346\234\200\351\253\230\346\272\253\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\344\\275\\216\\346\\223\\2`:
+        DC8 "\346\234\200\344\275\216\346\223\240\345\207\272\346\272\253\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\344\\275\\277\\350\\203\\275\\347\\206\\2`:
+        DC8 "\344\275\277\350\203\275\347\206\261\345\272\212"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_8`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\347\206\261\345\272\212\350\250\255\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_9`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\351\233\273\346\251\237\350\250\255\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\234\\200\\345\\244\\247\\351\\200\\2_1`:
+        DC8 "\346\234\200\345\244\247\351\200\237\345\272\246\350\250\255\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\212\\240\\351\\200\\237\\345\\272\\2_1`:
+        DC8 "\345\212\240\351\200\237\345\272\246\350\250\255\347\275\256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\252\\201\\350\\256\\212\\351\\200\\2`:
+        DC8 "\347\252\201\350\256\212\351\200\237\345\272\246\350\250\255\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\350\\204\\210\\350\\241\\235\\350\\250\\2`:
+        DC8 "\350\204\210\350\241\235\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\233\\273\\346\\251\\237\\346\\226\\2`:
+        DC8 "\351\233\273\346\251\237\346\226\271\345\220\221\350\250\255\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\255\\270\\351\\233\\266\\351\\200\\2`:
+        DC8 "\346\255\270\351\233\266\351\200\237\345\272\246\350\250\255\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_10`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\346\\234\\200\\345\\244\\_2`:
+        DC8 "X\350\273\270\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\346\\234\\200\\345\\244\\_2`:
+        DC8 "Y\350\273\270\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\346\\234\\200\\345\\244\\_2`:
+        DC8 "Z\350\273\270\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\273\\270\\346\\234\\200\\345\\244`:
+        DC8 "E0\350\273\270\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\273\\270\\346\\234\\200\\345\\244`:
+        DC8 "E1\350\273\270\346\234\200\345\244\247\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_11`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\345\212\240\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\251\\272\\350\\274\\211\\345\\212\\2`:
+        DC8 "\347\251\272\350\274\211\345\212\240\351\200\237\345\272\246"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\345\\212\\240\\351\\200\\`:
+        DC8 "X\350\273\270\345\212\240\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\345\\212\\240\\351\\200\\`:
+        DC8 "Y\350\273\270\345\212\240\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\345\\212\\240\\351\\200\\`:
+        DC8 "Z\350\273\270\345\212\240\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\273\\270\\345\\212\\240\\351\\200`:
+        DC8 "E0\350\273\270\345\212\240\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\273\\270\\345\\212\\240\\351\\200`:
+        DC8 "E1\350\273\270\345\212\240\351\200\237\345\272\246"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_12`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\347\252\201\350\256\212\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\347\\252\\201\\350\\256\\`:
+        DC8 "X\350\273\270\347\252\201\350\256\212\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\347\\252\\201\\350\\256\\`:
+        DC8 "Y\350\273\270\347\252\201\350\256\212\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\347\\252\\201\\350\\256\\`:
+        DC8 "Z\350\273\270\347\252\201\350\256\212\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E\\350\\273\\270\\347\\252\\201\\350\\256\\`:
+        DC8 "E\350\273\270\347\252\201\350\256\212\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_13`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\350\204\210\350\241\235\350\250\255\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\350\\204\\210\\350\\241\\`:
+        DC8 "X\350\273\270\350\204\210\350\241\235"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\350\\204\\210\\350\\241\\`:
+        DC8 "Y\350\273\270\350\204\210\350\241\235"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\350\\204\\210\\350\\241\\`:
+        DC8 "Z\350\273\270\350\204\210\350\241\235"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\273\\270\\350\\204\\210\\350\\241`:
+        DC8 "E0\350\273\270\350\204\210\350\241\235"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\273\\270\\350\\204\\210\\350\\241`:
+        DC8 "E1\350\273\270\350\204\210\350\241\235"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_14`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\351\233\273\346\251\237\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\351\\233\\273\\346\\251\\`:
+        DC8 "X\350\273\270\351\233\273\346\251\237\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\351\\233\\273\\346\\251\\`:
+        DC8 "Y\350\273\270\351\233\273\346\251\237\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\351\\233\\273\\346\\251\\`:
+        DC8 "Z\350\273\270\351\233\273\346\251\237\346\226\271\345\220\221"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E0\\350\\273\\270\\351\\233\\273\\346\\251`:
+        DC8 "E0\350\273\270\351\233\273\346\251\237\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E1\\350\\273\\270\\351\\233\\273\\346\\251`:
+        DC8 "E1\350\273\270\351\233\273\346\251\237\346\226\271\345\220\221"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_15`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\346\255\270\351\233\266\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "XY\\350\\273\\270\\346\\255\\270\\351\\233`:
+        DC8 "XY\350\273\270\346\255\270\351\233\266\351\200\237\345\272\246"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\346\\255\\270\\351\\233\\_1`:
+        DC8 "Z\350\273\270\346\255\270\351\233\266\351\200\237\345\272\246"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\345\\217\\2_16`:
+        DC8 "\346\251\237\345\231\250\345\217\203\346\225\270>\351\253\230\347\264\232\350\250\255\347\275\256"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\226\\267\\351\\233\\273\\346\\252\\2`:
+        DC8 "\346\226\267\351\233\273\346\252\242\346\270\254\346\250\241\345\241\212"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\225\\237\\345\\213\\225\\346\\211\\2`:
+        DC8 "\345\225\237\345\213\225\346\211\223\345\256\214\351\227\234\346\251\237\345\212\237\350\203\275"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\346\\251\\237\\345\\231\\250\\351\\205\\2`:
+        DC8 "\346\251\237\345\231\250\351\205\215\345\202\231UPS\351\233\273\345\243\223"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\233\\231z\\350\\273\\270\\351\\233\\`:
+        DC8 "\351\233\231z\350\273\270\351\233\231\351\231\220\344\275\215\345\212\237\350\203\275\350\250\255\347\275\256"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\233\\273\\346\\251\\237\\344\\275\\2`:
+        DC8 "\351\233\273\346\251\237\344\275\277\350\203\275\350\205\263\351\233\273\345\271\263\350\250\255\347\275\256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\233\\231z\\350\\273\\270\\351\\233\\_1`:
+        DC8 "\351\233\231z\350\273\270\351\233\231\351\231\220\344\275\215\350\250\255\347\275\256"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\225\\237\\347\\224\\250Z2\\350\\273`:
+        DC8 "\345\225\237\347\224\250Z2\350\273\270"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\345\\225\\237\\347\\224\\250Z2\\351\\231`:
+        DC8 "\345\225\237\347\224\250Z2\351\231\220\344\275\215"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\233\\273\\346\\251\\237\\344\\275\\2_1`:
+        DC8 "\351\233\273\346\251\237\344\275\277\350\203\275\350\205\263\351\233\273\345\271\263"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "X\\350\\273\\270\\351\\233\\273\\346\\251\\_1`:
+        DC8 "X\350\273\270\351\233\273\346\251\237\344\275\277\350\203\275\351\233\273\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Y\\350\\273\\270\\351\\233\\273\\346\\251\\_1`:
+        DC8 "Y\350\273\270\351\233\273\346\251\237\344\275\277\350\203\275\351\233\273\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Z\\350\\273\\270\\351\\233\\273\\346\\251\\_1`:
+        DC8 "Z\350\273\270\351\233\273\346\251\237\344\275\277\350\203\275\351\233\273\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "E\\350\\273\\270\\351\\233\\273\\346\\251\\`:
+        DC8 "E\350\273\270\351\233\273\346\251\237\344\275\277\350\203\275\351\233\273\345\271\263"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\347\\242\\272\\345\\256\\232">`:
+        DC8 "\347\242\272\345\256\232"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
 `?<Constant "\\347\\242\\272\\350\\252\\215">`:
         DC8 "\347\242\272\350\252\215"
         DC8 0
@@ -6256,12 +13196,6 @@ _Z18disp_language_initv:
 `?<Constant "\\350\\252\\277\\345\\271\\263">`:
         DC8 "\350\252\277\345\271\263"
         DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant "\\350\\207\\252\\345\\213\\225\\350\\252\\2`:
-        DC8 "\350\207\252\345\213\225\350\252\277\345\271\263"
-        DC8 0, 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -6320,18 +13254,6 @@ _Z18disp_language_initv:
 `?<Constant "\\351\\201\\270\\346\\223\\207\\346\\226\\2`:
         DC8 "\351\201\270\346\223\207\346\226\207\344\273\266"
         DC8 0, 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant "\\344\\270\\212\\344\\270\\200\\351\\240\\2`:
-        DC8 "\344\270\212\344\270\200\351\240\201"
-        DC8 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant "\\344\\270\\213\\344\\270\\200\\351\\240\\2`:
-        DC8 "\344\270\213\344\270\200\351\240\201"
-        DC8 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -6428,6 +13350,12 @@ _Z18disp_language_initv:
 `?<Constant "\\351\\233\\262\\346\\234\\215\\345\\213\\2`:
         DC8 "\351\233\262\346\234\215\345\213\231"
         DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "\\351\\207\\215\\346\\226\\260\\351\\200\\2`:
+        DC8 "\351\207\215\346\226\260\351\200\243\346\216\245"
+        DC8 0, 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -6554,12 +13482,6 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
-`?<Constant "\\347\\242\\272\\345\\256\\232">`:
-        DC8 "\347\242\272\345\256\232"
-        DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
 `?<Constant "\\351\\207\\215\\350\\251\\246">`:
         DC8 "\351\207\215\350\251\246"
         DC8 0
@@ -6605,8 +13527,9 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
-`?<Constant "Confirm">`:
-        DC8 "Confirm"
+`?<Constant "wifi\\346\\250\\241\\345\\241\\212\\346\\2`:
+        DC8 "wifi\346\250\241\345\241\212\346\255\243\345\234\250\351\205\215\347\275\256\344\270\255,\350\253\213\347\250\215\347\255\211......"
+        DC8 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -6748,12 +13671,6 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
-`?<Constant "Close">`:
-        DC8 "Close"
-        DC8 0, 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
 `?<Constant "Quickstop">`:
         DC8 "Quickstop"
         DC8 0, 0
@@ -6799,20 +13716,9 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
-`?<Constant "Low">`:
-        DC8 "Low"
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
 `?<Constant "Normal">`:
         DC8 "Normal"
         DC8 0
-
-        SECTION `.rodata`:CONST:NOROOT(2)
-        DATA
-`?<Constant "High">`:
-        DC8 "High"
-        DC8 0, 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -6900,6 +13806,12 @@ _Z18disp_language_initv:
         DATA
 `?<Constant "Cloud">`:
         DC8 "Cloud"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Reconnect">`:
+        DC8 "Reconnect"
         DC8 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
@@ -7153,6 +14065,19 @@ _Z18disp_language_initv:
         DATA
 `?<Constant "Print again">`:
         DC8 "Print again"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "The wifi module is be...">`:
+        DC8 54H, 68H, 65H, 20H, 77H, 69H, 66H, 69H
+        DC8 20H, 6DH, 6FH, 64H, 75H, 6CH, 65H, 20H
+        DC8 69H, 73H, 20H, 62H, 65H, 69H, 6EH, 67H
+        DC8 20H, 63H, 6FH, 6EH, 66H, 69H, 67H, 75H
+        DC8 72H, 65H, 64H, 0AH, 70H, 6CH, 65H, 61H
+        DC8 73H, 65H, 20H, 77H, 61H, 69H, 74H, 20H
+        DC8 61H, 20H, 6DH, 6FH, 6DH, 65H, 6EH, 74H
+        DC8 2EH, 2EH, 2EH, 2EH, 2EH, 0
+        DC8 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -7589,6 +14514,19 @@ _Z18disp_language_initv:
 `?<Constant "\\320\\222\\321\\200\\320\\265\\320\\274\\3`:
         DC8 "\320\222\321\200\320\265\320\274\321\217 \320\277\320\265\321\207\320\260\321\202\320\270: "
         DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "The wifi module is be...">_1`:
+        DC8 54H, 68H, 65H, 20H, 77H, 69H, 66H, 69H
+        DC8 20H, 6DH, 6FH, 64H, 75H, 6CH, 65H, 20H
+        DC8 69H, 73H, 20H, 62H, 65H, 69H, 6EH, 67H
+        DC8 20H, 63H, 6FH, 6EH, 66H, 69H, 67H, 75H
+        DC8 72H, 65H, 64H, 2CH, 0AH, 70H, 6CH, 65H
+        DC8 61H, 73H, 65H, 20H, 77H, 61H, 69H, 74H
+        DC8 20H, 61H, 20H, 6DH, 6FH, 6DH, 65H, 6EH
+        DC8 74H, 2EH, 2EH, 2EH, 2EH, 2EH, 0
+        DC8 0
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
@@ -8256,6 +15194,28 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
+`?<Constant "Li\\303\\251">`:
+        DC8 "Li\303\251"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "D\\303\\251lier">`:
+        DC8 "D\303\251lier"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "D\\303\\251connect\\303\\251">`:
+        DC8 "D\303\251connect\303\251"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "D\\303\\251sactiver">`:
+        DC8 "D\303\251sactiver"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
 `?<Constant "ventilateur">`:
         DC8 "ventilateur"
 
@@ -8583,6 +15543,28 @@ _Z18disp_language_initv:
 
         SECTION `.rodata`:CONST:NOROOT(2)
         DATA
+`?<Constant "Legato">`:
+        DC8 "Legato"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Libero">`:
+        DC8 "Libero"
+        DC8 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Sciolto">`:
+        DC8 "Sciolto"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant "Disconnesso">`:
+        DC8 "Disconnesso"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
 `?<Constant "Inser">`:
         DC8 "Inser"
         DC8 0, 0
@@ -8717,15 +15699,15 @@ _Z18disp_language_initv:
         DC8 0, 0
 
         END
-// 1616 
+// 2853 
 // 
-//  1 068 bytes in section .bss
-//  8 474 bytes in section .rodata
-// 10 000 bytes in section .text
+//  1 832 bytes in section .bss
+// 17 048 bytes in section .rodata
+// 17 356 bytes in section .text
 // 
-// 10 000 bytes of CODE  memory
-//  8 474 bytes of CONST memory
-//  1 068 bytes of DATA  memory
+// 17 356 bytes of CODE  memory
+// 17 048 bytes of CONST memory
+//  1 832 bytes of DATA  memory
 //
 //Errors: none
 //Warnings: 17

@@ -1026,6 +1026,9 @@
           <name>$PROJ_DIR$\..\User\ui\draw_advanced.cpp</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\User\ui\draw_babyStep.cpp</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\User\ui\draw_bind.cpp</name>
         </file>
         <file>

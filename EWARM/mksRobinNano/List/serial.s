@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:53
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:17
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\serial.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\serial.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\serial.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\serial.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\serial.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\serial.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -148,7 +145,7 @@
 _ZTI5Print:
         DATA
         DC8 0
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\serial.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\serial.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -198,9 +195,9 @@ __sti__routine:
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
+        LDR.N    R4,??DataTable10
         SUB      SP,SP,#+8
           CFI CFA R13+16
-        LDR.N    R4,??DataTable11
         MOV      R0,R4
           CFI FunCall _ZN10RingBufferC1Ev
         BL       _ZN10RingBufferC1Ev
@@ -210,7 +207,7 @@ __sti__routine:
         STR      R4,[SP, #+0]
         MOVS     R3,#+3
         MOVS     R2,#+39
-        LDR.N    R1,??DataTable11_1  ;; 0x40004800
+        LDR.N    R1,??DataTable10_1  ;; 0x40004800
         ADD      R0,R4,#+208
           CFI FunCall _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
         BL       _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
@@ -218,7 +215,7 @@ __sti__routine:
         STR      R0,[SP, #+0]
         MOVS     R3,#+1
         MOVS     R2,#+37
-        LDR.N    R1,??DataTable11_2  ;; 0x40013800
+        LDR.N    R1,??DataTable10_2  ;; 0x40013800
         ADD      R0,R4,#+256
           CFI FunCall _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
         BL       _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
@@ -240,11 +237,11 @@ _Z17serial_echopair_PPKcS0_:
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
         MOV      R1,R4
-        LDR.N    R0,??DataTable11_3
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        LDR.N    R0,??DataTable10_3
           CFI FunCall _ZN5Print5printEPKc
         B.W      _ZN5Print5printEPKc
           CFI EndBlock cfiBlock1
@@ -262,13 +259,12 @@ _Z17serial_echopair_PPKcc:
         MOV      R4,R1
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
-        MOV      R1,R4
-        UXTB     R1,R1
-        LDR.N    R0,??DataTable11_3
+        UXTB     R1,R4
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        LDR.N    R0,??DataTable10_3
           CFI FunCall _ZN10USARTClass5writeEh
         B.W      _ZN10USARTClass5writeEh
           CFI EndBlock cfiBlock2
@@ -286,13 +282,13 @@ _Z17serial_echopair_PPKci:
         MOV      R4,R1
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
-        MOVS     R2,#+10
         MOV      R1,R4
-        LDR.N    R0,??DataTable11_3
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R2,#+10
+        LDR.N    R0,??DataTable10_3
           CFI FunCall _ZN5Print5printEii
         B.W      _ZN5Print5printEii
           CFI EndBlock cfiBlock3
@@ -310,13 +306,13 @@ _Z17serial_echopair_PPKcj:
         MOV      R4,R1
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
-        MOVS     R2,#+10
         MOV      R1,R4
-        LDR.N    R0,??DataTable11_3
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R2,#+10
+        LDR.N    R0,??DataTable10_3
           CFI FunCall _ZN5Print5printEji
         B.W      _ZN5Print5printEji
           CFI EndBlock cfiBlock4
@@ -328,20 +324,30 @@ _Z17serial_echopair_PPKcj:
         THUMB
 //   33 void serial_echopair_P(const char* s_P, long v)          { serialprintPGM(s_P); SERIAL_ECHO(v); }
 _Z17serial_echopair_PPKcl:
-        PUSH     {R4,LR}
+        PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R1
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        MOVS     R2,#+10
-        MOV      R1,R4
-        LDR.N    R0,??DataTable11_3
-        POP      {R4,LR}
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
+        MOV      R4,R0
+        MOV      R5,R1
+        B.N      ??serial_echopair_P_0
+??serial_echopair_P_1:
+        UXTB     R1,R1
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??serial_echopair_P_0:
+        LDRSB    R1,[R4], #+1
+        LDR.N    R0,??DataTable10_3
+        MOVS     R2,R1
+        BNE.N    ??serial_echopair_P_1
+        MOV      R1,R5
+        POP      {R3-R5,LR}
           CFI R4 SameValue
+          CFI R5 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R2,#+10
           CFI FunCall _ZN5Print5printEli
         B.W      _ZN5Print5printEli
           CFI EndBlock cfiBlock5
@@ -352,26 +358,36 @@ _Z17serial_echopair_PPKcl:
         THUMB
 //   34 void serial_echopair_P(const char* s_P, float v)         { serialprintPGM(s_P); SERIAL_ECHO(v); }
 _Z17serial_echopair_PPKcf:
-        PUSH     {R4,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        SUB      SP,SP,#+8
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        MOV      R4,R1
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        SUB      SP,SP,#+8
+          CFI CFA R13+24
+        MOV      R5,R0
+        MOV      R6,R1
+        LDR.N    R4,??DataTable10_3
+        B.N      ??serial_echopair_P_2
+??serial_echopair_P_3:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??serial_echopair_P_2:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BNE.N    ??serial_echopair_P_3
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOV      R0,R4
+        MOV      R0,R6
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R2,R0
         MOV      R3,R1
-        LDR.N    R0,??DataTable11_3
-          CFI FunCall _ZN5Print5printEdi
-        BL       _ZN5Print5printEdi
-        POP      {R0,R1,R4,PC}    ;; return
+        MOV      R0,R4
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock6
 
         SECTION `.text`:CODE:NOROOT(1)
@@ -380,51 +396,87 @@ _Z17serial_echopair_PPKcf:
         THUMB
 //   35 void serial_echopair_P(const char* s_P, double v)        { serialprintPGM(s_P); SERIAL_ECHO(v); }
 _Z17serial_echopair_PPKcd:
+        PUSH     {R4-R6,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
+        SUB      SP,SP,#+8
+          CFI CFA R13+24
+        MOV      R6,R0
+        MOV      R4,R2
+        MOV      R5,R3
+        B.N      ??serial_echopair_P_4
+??serial_echopair_P_5:
+        UXTB     R1,R1
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??serial_echopair_P_4:
+        LDRSB    R1,[R6], #+1
+        LDR.N    R0,??DataTable10_3
+        MOVS     R2,R1
+        BNE.N    ??serial_echopair_P_5
+        MOVS     R1,#+2
+        STR      R1,[SP, #+0]
+        MOV      R2,R4
+        MOV      R3,R5
+          CFI EndBlock cfiBlock7
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock8 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+24
+          CFI R4 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+          CFI FunCall _Z17serial_echopair_PPKcf _ZN5Print5printEdi
+          CFI FunCall _Z17serial_echopair_PPKcd _ZN5Print5printEdi
+        THUMB
+?Subroutine0:
+        BL       _ZN5Print5printEdi
+        POP      {R0,R1,R4-R6,PC}  ;; return
+          CFI EndBlock cfiBlock8
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Function _Z17serial_echopair_PPKcm
+        THUMB
+//   36 void serial_echopair_P(const char* s_P, unsigned long v) { serialprintPGM(s_P); SERIAL_ECHO(v); }
+_Z17serial_echopair_PPKcm:
         PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-        MOV      R4,R2
-        MOV      R5,R3
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        MOVS     R0,#+2
-        STR      R0,[SP, #+0]
-        MOV      R2,R4
-        MOV      R3,R5
-        LDR.N    R0,??DataTable11_3
-          CFI FunCall _ZN5Print5printEdi
-        BL       _ZN5Print5printEdi
-        POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock7
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
-          CFI Function _Z17serial_echopair_PPKcm
-        THUMB
-//   36 void serial_echopair_P(const char* s_P, unsigned long v) { serialprintPGM(s_P); SERIAL_ECHO(v); }
-_Z17serial_echopair_PPKcm:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R1
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        MOVS     R2,#+10
-        MOV      R1,R4
-        LDR.N    R0,??DataTable11_3
-        POP      {R4,LR}
+        MOV      R4,R0
+        MOV      R5,R1
+        B.N      ??serial_echopair_P_6
+??serial_echopair_P_7:
+        UXTB     R1,R1
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??serial_echopair_P_6:
+        LDRSB    R1,[R4], #+1
+        LDR.N    R0,??DataTable10_3
+        MOVS     R2,R1
+        BNE.N    ??serial_echopair_P_7
+        MOV      R1,R5
+        POP      {R3-R5,LR}
           CFI R4 SameValue
+          CFI R5 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R2,#+10
           CFI FunCall _ZN5Print5printEmi
         B.W      _ZN5Print5printEmi
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock9
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _Z13serial_spacesh
         THUMB
 _Z13serial_spacesh:
@@ -436,49 +488,46 @@ _Z13serial_spacesh:
         BL       __aeabi_ui2d
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-        MOV      R4,R0
-        B.N      ??serial_spaces_0
+        UXTB     R4,R0
+        CBZ.N    R4,??serial_spaces_0
 ??serial_spaces_1:
         MOVS     R1,#+32
-        LDR.N    R0,??DataTable11_3
+        LDR.N    R0,??DataTable10_3
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-??serial_spaces_0:
-        MOV      R0,R4
-        SUBS     R4,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
+        SUBS     R4,R4,#+1
         BNE.N    ??serial_spaces_1
+??serial_spaces_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock10
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11:
+??DataTable10:
         DC32     rx_buffer3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_1:
+??DataTable10_1:
         DC32     0x40004800
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_2:
+??DataTable10_2:
         DC32     0x40013800
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_3:
+??DataTable10_3:
         DC32     rx_buffer3+0xD0
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _Z14serialprintPGMPKc
         THUMB
 // __interwork __softfp void serialprintPGM(char const *)
@@ -502,7 +551,7 @@ _Z14serialprintPGMPKc:
         DATA
 ??serialprintPGM_2:
         DC32     rx_buffer3+0xD0
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 //   37 
 //   38 void serial_spaces(uint8_t count) { count *= (PROPORTIONAL_FONT_RATIO); while (count--) MYSERIAL.write(' '); }
 //   39 
@@ -567,9 +616,9 @@ Serial1:
 // 304 bytes in section .bss
 //   4 bytes in section .init_array
 //  17 bytes in section .rodata
-// 324 bytes in section .text
+// 374 bytes in section .text
 // 
-// 300 bytes of CODE  memory (+ 28 bytes shared)
+// 350 bytes of CODE  memory (+ 28 bytes shared)
 //  16 bytes of CONST memory (+  1 byte  shared)
 // 304 bytes of DATA  memory
 //

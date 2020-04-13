@@ -1,80 +1,77 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:06:10
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:25:20
 # Copyright 1999-2014 IAR Systems AB.
 #
 #    Cpu mode     =  thumb
 #    Endian       =  little
 #    Source file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\stm32f1xx_it.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\stm32f1xx_it.cpp
 #    Command line =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\stm32f1xx_it.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\stm32f1xx_it.cpp
 #        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 #        MKS_ROBIN_NANO -D TFT35 -lC
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        -lA
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        --diag_suppress Pa050 -o
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
 #        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\INC\c\DLib_Config_Full.h" -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-#        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\CMSIS\Include\"
 #    List file    =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\stm32f1xx_it.lst
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\stm32f1xx_it.lst
 #    Object file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\stm32f1xx_it.o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\stm32f1xx_it.o
 #
 ###############################################################################
 
-E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\stm32f1xx_it.cpp
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\stm32f1xx_it.cpp
       1          /**
       2            ******************************************************************************
       3            * @file    stm32f1xx_it.c
@@ -109,21 +106,6 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
      32            */
      33          /* Includes ------------------------------------------------------------------*/
      34          #include "stm32f1xx_hal.h"
-
-   \                                 In section .text, align 2, keep-with-next
-   \   static __interwork __softfp void NVIC_SystemReset()
-   \                     _Z16NVIC_SystemResetv: (+1)
-   \   00000000   0xF3BF 0x8F4F      DSB      
-   \   00000004   0x....             LDR.N    R0,??DataTable10  ;; 0xe000ed0c
-   \   00000006   0x6801             LDR      R1,[R0, #+0]
-   \   00000008   0xF401 0x61E0      AND      R1,R1,#0x700
-   \   0000000C   0x....             LDR.N    R2,??DataTable10_1  ;; 0x5fa0004
-   \   0000000E   0x4311             ORRS     R1,R2,R1
-   \   00000010   0x6001             STR      R1,[R0, #+0]
-   \   00000012   0xF3BF 0x8F4F      DSB      
-   \                     ??NVIC_SystemReset_0: (+1)
-   \   00000016   0xBF00             Nop      
-   \   00000018   0xE7FD             B.N      ??NVIC_SystemReset_0
      35          #include "stm32f1xx.h"
      36          #include "stm32f1xx_it.h"
      37          
@@ -133,140 +115,140 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
 
   #define UNUSED(x) (void) (x)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\macros.h",101  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\macros.h",101  Warning[Pe047]: 
           incompatible redefinition of macro "UNUSED" (declared at line 87 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h")
 
   		volatile volatile float desireBedTempBak;
   		         ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Inc\mks_cfg.h",613  Warning[Pe083]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Inc\mks_cfg.h",626  Warning[Pe083]: 
           type qualifier specified more than once
 
   #define strcpy_P(dest, src) strcpy((dest), (src))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
           incompatible redefinition of macro "strcpy_P" (declared at line 93
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define strstr_P(a, b) strstr((a), (b))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
           incompatible redefinition of macro "strstr_P" (declared at line 94
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define sprintf_P(s, f, ...) sprintf((s), (f), __VA_ARGS__)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
           incompatible redefinition of macro "sprintf_P" (declared at line 95
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define pgm_read_word_near(addr) pgm_read_word(addr)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
           incompatible redefinition of macro "pgm_read_word_near" (declared at
           line 65 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
      41          #include "mks_test.h"
 
   #define IS_SPI_DIRECTION_MODE(MODE) (((MODE) == SPI_Direction_2Lines_FullDuplex) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",132  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",132  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_DIRECTION_MODE" (declared
           at line 466 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_MODE(MODE) (((MODE) == SPI_Mode_Master) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",146  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",146  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_MODE" (declared at line
           459 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_DATASIZE(DATASIZE) (((DATASIZE) == SPI_DataSize_16b) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",158  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",158  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_DATASIZE" (declared at
           line 488 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_CPOL(CPOL) (((CPOL) == SPI_CPOL_Low) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",170  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",170  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_CPOL" (declared at line
           496 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_CPHA(CPHA) (((CPHA) == SPI_CPHA_1Edge) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",182  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",182  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_CPHA" (declared at line
           504 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_NSS(NSS) (((NSS) == SPI_NSS_Soft) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",194  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",194  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_NSS" (declared at line
           512 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_BAUDRATE_PRESCALER(PRESCALER) (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",212  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",212  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_BAUDRATE_PRESCALER"
           (declared at line 521 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_FIRST_BIT(BIT) (((BIT) == SPI_FirstBit_MSB) || \
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",230  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",230  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_FIRST_BIT" (declared at
           line 535 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define SPI_FLAG_CRCERR                 ((uint16_t)0x0010)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",408  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",408  Warning[Pe047]: 
           incompatible redefinition of macro "SPI_FLAG_CRCERR" (declared at
           line 308 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define SPI_FLAG_MODF                   ((uint16_t)0x0020)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",409  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",409  Warning[Pe047]: 
           incompatible redefinition of macro "SPI_FLAG_MODF" (declared at line
           309 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #define IS_SPI_CRC_POLYNOMIAL(POLYNOMIAL) ((POLYNOMIAL) >= 0x1)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",425  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h",425  Warning[Pe047]: 
           incompatible redefinition of macro "IS_SPI_CRC_POLYNOMIAL" (declared
           at line 558 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\ST
+          M32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h")
 
   #else defined(MKS_ROBIN_NANO)
         ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\BSP\Components\w25qxx\spi_flash.h",40  Warning[Pe014]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\BSP\Components\w25qxx\spi_flash.h",40  Warning[Pe014]: 
           extra text after expected end of preprocessing directive
      42          
      43          extern void SysTick_Handler_User();
@@ -316,20 +298,27 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
    \                                 In section .text, align 2, keep-with-next
      82          void HardFault_Handler(void)
      83          {
-   \                     HardFault_Handler: (+1)
-   \   00000000   0xB580             PUSH     {R7,LR}
      84            /* USER CODE BEGIN HardFault_IRQn 0 */
      85          
      86            /* USER CODE END HardFault_IRQn 0 */
      87            while (1)
      88            {
      89            __set_FAULTMASK(1);
-   \                     ??HardFault_Handler_0: (+1)
-   \   00000002   0x2001             MOVS     R0,#+1
-   \   00000004   0xF380 0x8813      MSR      FAULTMASK,R0
+   \                     HardFault_Handler: (+1)
+   \   00000000   0x2001             MOVS     R0,#+1
+   \   00000002   0xF380 0x8813      MSR      FAULTMASK,R0
      90              NVIC_SystemReset();
-   \   00000008   0x.... 0x....      BL       _Z16NVIC_SystemResetv
-   \   0000000C   0xE7F9             B.N      ??HardFault_Handler_0
+   \   00000006   0xF3BF 0x8F4F      DSB      
+   \   0000000A   0x....             LDR.N    R0,??DataTable10  ;; 0xe000ed0c
+   \   0000000C   0x....             LDR.N    R2,??DataTable10_1  ;; 0x5fa0004
+   \   0000000E   0x6801             LDR      R1,[R0, #+0]
+   \   00000010   0xF401 0x61E0      AND      R1,R1,#0x700
+   \   00000014   0x4311             ORRS     R1,R2,R1
+   \   00000016   0x6001             STR      R1,[R0, #+0]
+   \   00000018   0xF3BF 0x8F4F      DSB      
+   \                     ??HardFault_Handler_0: (+1)
+   \   0000001C   0xBF00             Nop      
+   \   0000001E   0xE7FD             B.N      ??HardFault_Handler_0
      91            }
      92            /* USER CODE BEGIN HardFault_IRQn 1 */
      93          
@@ -598,13 +587,12 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
    \   00000008   0x....             LDR.N    R0,??DataTable10_8
    \   0000000A   0x7CC0             LDRB     R0,[R0, #+19]
    \   0000000C   0x2800             CMP      R0,#+0
-   \   0000000E   0xD003             BEQ.N    ??TIM2_IRQHandler_0
+   \   0000000E   0xBF1C             ITT      NE 
     291              mksStepperTest();
-   \   00000010   0xE8BD 0x4001      POP      {R0,LR}
-   \   00000014   0x.... 0x....      B.W      mksStepperTest
+   \   00000010   0xE8BD 0x4001      POPNE    {R0,LR}
+   \   00000014   0x.... 0x....      BNE.W    mksStepperTest
     292            else
     293              IsrStepperHandler();
-   \                     ??TIM2_IRQHandler_0: (+1)
    \   00000018   0xE8BD 0x4001      POP      {R0,LR}
    \   0000001C   0x.... 0x....      B.W      IsrStepperHandler
     294          
@@ -805,11 +793,9 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
        0   DMA1_Channel4_IRQHandler
          0   -> HAL_DMA_IRQHandler
        0   DebugMon_Handler
-       8   HardFault_Handler
-         8   -> NVIC_SystemReset()
+       0   HardFault_Handler
        0   MemManage_Handler
        0   NMI_Handler
-       0   NVIC_SystemReset()
        0   PendSV_Handler
        0   SPI2_IRQHandler
          0   -> HAL_SPI_IRQHandler
@@ -823,7 +809,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
        8   TIM2_IRQHandler
          8   -> HAL_TIM_IRQHandler
          0   -> IsrStepperHandler
-         0   -> mksStepperTest
+         8   -> mksStepperTest
        0   TIM3_IRQHandler
          0   -> HAL_TIM_IRQHandler
        8   TIM4_IRQHandler
@@ -856,10 +842,9 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
        6  DMA1_Channel1_IRQHandler
        6  DMA1_Channel4_IRQHandler
        2  DebugMon_Handler
-      14  HardFault_Handler
+      32  HardFault_Handler
        2  MemManage_Handler
        2  NMI_Handler
-      26  NVIC_SystemReset()
        2  PendSV_Handler
        6  SPI2_IRQHandler
        2  SVC_Handler
@@ -874,9 +859,9 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\
 
  
    1 byte  in section .rodata
- 222 bytes in section .text
+ 214 bytes in section .text
  
- 222 bytes of CODE  memory
+ 214 bytes of CODE  memory
    0 bytes of CONST memory (+ 1 byte shared)
 
 Errors: none

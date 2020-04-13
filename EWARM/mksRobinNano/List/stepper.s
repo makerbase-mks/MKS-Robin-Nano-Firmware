@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:55
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:18
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stepper.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stepper.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stepper.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stepper.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\stepper.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\stepper.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -82,6 +79,7 @@
 
         #define SHT_PROGBITS 0x1
 
+        EXTERN HAL_GPIO_ReadPin
         EXTERN HAL_GPIO_WritePin
         EXTERN HAL_TIM_Base_Start_IT
         EXTERN HAL_TIM_Base_Stop_IT
@@ -115,11 +113,6 @@
         EXTERN mksTmp
 
         PUBLIC IsrStepperHandler
-        PUBLIC _Z14serialprintPGMPKc
-        PUBLIC _ZN7Planner13blocks_queuedEv
-        PUBLIC _ZN7Planner17get_current_blockEv
-        PUBLIC _ZN7Planner21discard_current_blockEv
-        PUBLIC _ZN7Planner23discard_continued_blockEv
         PUBLIC _ZN7Stepper10quick_stopEv
         PUBLIC _ZN7Stepper10step_loopsE
         PUBLIC _ZN7Stepper11synchronizeEv
@@ -135,7 +128,6 @@
         PUBLIC _ZN7Stepper14set_e_positionERKl
         PUBLIC _ZN7Stepper15count_directionE
         PUBLIC _ZN7Stepper15locked_z2_motorE
-        PUBLIC _ZN7Stepper15motor_directionE8AxisEnum
         PUBLIC _ZN7Stepper16report_positionsEv
         PUBLIC _ZN7Stepper17acceleration_timeE
         PUBLIC _ZN7Stepper17deceleration_timeE
@@ -143,7 +135,6 @@
         PUBLIC _ZN7Stepper17performing_homingE
         PUBLIC _ZN7Stepper18endstops_trigstepsE
         PUBLIC _ZN7Stepper18finish_and_disableEv
-        PUBLIC _ZN7Stepper18kill_current_blockEv
         PUBLIC _ZN7Stepper18step_loops_nominalE
         PUBLIC _ZN7Stepper19calc_timer_intervalEt
         PUBLIC _ZN7Stepper19last_direction_bitsE
@@ -152,15 +143,14 @@
         PUBLIC _ZN7Stepper22waitUntilEndOfAllMovesEv
         PUBLIC _ZN7Stepper23cleaning_buffer_counterE
         PUBLIC _ZN7Stepper24waitUntilEndOfAllBuffersEv
-        PUBLIC _ZN7Stepper25trapezoid_generator_resetEv
         PUBLIC _ZN7Stepper4initEv
         PUBLIC _ZN7Stepper7wake_upEv
+        PUBLIC _ZN7Stepper8babystepE8AxisEnumb
         PUBLIC _ZN7Stepper8positionE8AxisEnum
         PUBLIC _ZN7Stepper9counter_EE
         PUBLIC _ZN7Stepper9counter_XE
         PUBLIC _ZN7Stepper9counter_YE
         PUBLIC _ZN7Stepper9counter_ZE
-        PUBLIC _ZN8Endstops6enableEb
         PUBLIC _ZTI5Print
         PUBLIC _ZZN7Stepper25trapezoid_generator_resetEvE13last_extruder
         PUBLIC stepper
@@ -192,7 +182,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stepper.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stepper.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -240,24 +230,51 @@
 //   45    and Philipp Tiefenbacher. */
 //   46 
 //   47 #include "Marlin.h"
+//   48 #include "stepper.h"
 
-        SECTION `.text`:CODE:NOROOT(1)
+        SECTION `.text`:CODE:REORDER:NOROOT(2)
+        SECTION_GROUP _ZN7Stepper19calc_timer_intervalEt
           CFI Block cfiBlock0 Using cfiCommon0
-          CFI Function _Z8CORESIGNl
+          CFI Function _ZN7Stepper19calc_timer_intervalEt
           CFI NoCalls
         THUMB
-// static __interwork __softfp long CORESIGN(long)
-_Z8CORESIGNl:
-        LDR.W    R1,??DataTable20
-        LDRB     R1,[R1, #+88]
-        MOVS     R2,#+168
-        TST      R1,R2
-        BEQ.N    ??CORESIGN_0
-        RSBS     R0,R0,#+0
-??CORESIGN_0:
+// __interwork __softfp unsigned short Stepper::calc_timer_interval(unsigned short)
+_ZN7Stepper19calc_timer_intervalEt:
+        MOVW     R2,#+40001
+        CMP      R0,R2
+        ITEE     GE 
+        MOVWGE   R0,#+40000
+        MOVWLT   R2,#+20001
+        CMPLT    R0,R2
+        BLT.N    ??calc_timer_interval_0
+        LSRS     R0,R0,#+2
+        MOVS     R1,#+4
+        B.N      ??calc_timer_interval_1
+??calc_timer_interval_0:
+        MOVW     R2,#+10001
+        CMP      R0,R2
+        ITTE     GE 
+        LSRGE    R0,R0,#+1
+        MOVGE    R1,#+2
+        MOVLT    R1,#+1
+??calc_timer_interval_1:
+        LDR.N    R2,??calc_timer_interval_2
+        STRB     R1,[R2, #+8]
+        ADD      R2,R0,R0, LSL #+3
+        LDR.N    R1,??calc_timer_interval_2+0x4  ;; 0x44aa200
+        LSLS     R0,R2,#+2
+        SDIV     R0,R1,R0
+        UXTH     R0,R0
+        CMP      R0,#+100
+        IT       LT 
+        MOVLT    R0,#+100
         BX       LR               ;; return
+        Nop      
+        DATA
+??calc_timer_interval_2:
+        DC32     _ZN7Stepper15count_directionE
+        DC32     0x44aa200
           CFI EndBlock cfiBlock0
-//   48 #include "stepper.h"
 
         SECTION `.data`:DATA:REORDER:NOROOT(0)
         SECTION_GROUP _ZZN7Stepper25trapezoid_generator_resetEvE13last_extruder
@@ -544,14 +561,13 @@ stepper:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN7Stepper7wake_upEv
+          CFI NoCalls
         THUMB
 //  320 void Stepper::wake_up() {
 //  321   // TCNT1 = 0;
 //  322   ENABLE_STEPPER_DRIVER_INTERRUPT();
 _ZN7Stepper7wake_upEv:
-        LDR.W    R0,??DataTable20_1
-          CFI FunCall HAL_TIM_Base_Start_IT
-        B.W      HAL_TIM_Base_Start_IT
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock1
 //  323 }
 //  324 
@@ -569,16 +585,13 @@ _ZN7Stepper7wake_upEv:
         THUMB
 //  332 void Stepper::set_directions() {
 _ZN7Stepper14set_directionsEv:
-        PUSH     {R4-R10,LR}
+        PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R10 Frame(CFA, -8)
-          CFI R9 Frame(CFA, -12)
-          CFI R8 Frame(CFA, -16)
-          CFI R7 Frame(CFA, -20)
-          CFI R6 Frame(CFA, -24)
-          CFI R5 Frame(CFA, -28)
-          CFI R4 Frame(CFA, -32)
-          CFI CFA R13+32
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+24
 //  333 
 //  334   #define SET_STEP_DIR(AXIS) \ 
 //  335     if (motor_direction(AXIS ##_AXIS)) { \ 
@@ -592,192 +605,161 @@ _ZN7Stepper14set_directionsEv:
 //  343 
 //  344   #if HAS_X_DIR
 //  345     SET_STEP_DIR(X); // A
-        LDR.W    R4,??DataTable20_2
-        LDR      R8,[R4, #+0]
-        LDR.W    R5,??DataTable20_3
-        LDRH     R9,[R5, #+0]
-        LDR.W    R7,??DataTable20
-        LDRB     R10,[R7, #+0]
-        LDR.W    R6,??DataTable20_4
-        MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R0,#+0
-        BEQ.N    ??set_directions_0
-        MOV      R2,R10
-        SXTB     R2,R2
-        MOV      R1,R9
-        MOV      R0,R8
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        MOV      R0,#-1
-        STRB     R0,[R6, #+0]
-        B.N      ??set_directions_1
-??set_directions_0:
-        SUBS     R2,R10,#+1
+        LDR.W    R7,??DataTable19
+        LDR.W    R4,??DataTable19_1
+        LDR.W    R5,??DataTable19_2
+        LDR.W    R6,??DataTable20
+        LDRB     R2,[R7, #+5]
+        LDR      R0,[R4, #+0]
+        LDRH     R1,[R5, #+0]
+        LDRB     R3,[R6, #+0]
+        LSLS     R2,R2,#+31
+        BMI.N    ??set_directions_0
+        SUBS     R2,R3,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
         SXTB     R2,R2
-        MOV      R1,R9
-        MOV      R0,R8
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         MOVS     R0,#+1
-        STRB     R0,[R6, #+0]
+        B.N      ??set_directions_1
+??set_directions_0:
+        SXTB     R2,R3
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        MOV      R0,#-1
+??set_directions_1:
+        STRB     R0,[R7, #+0]
 //  346   #endif
 //  347   #if HAS_Y_DIR
 //  348     SET_STEP_DIR(Y); // B
-??set_directions_1:
-        LDR      R8,[R4, #+20]
-        LDRH     R9,[R5, #+10]
-        LDRB     R10,[R7, #+1]
-        MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R0,#+0
-        BEQ.N    ??set_directions_2
-        MOV      R2,R10
-        SXTB     R2,R2
-        MOV      R1,R9
-        MOV      R0,R8
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        MOV      R0,#-1
-        STRB     R0,[R6, #+1]
-        B.N      ??set_directions_3
-??set_directions_2:
-        SUBS     R2,R10,#+1
+        LDRB     R2,[R7, #+5]
+        LDR      R0,[R4, #+20]
+        LDRH     R1,[R5, #+10]
+        LDRB     R3,[R6, #+1]
+        LSLS     R2,R2,#+30
+        BMI.N    ??set_directions_2
+        SUBS     R2,R3,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
         SXTB     R2,R2
-        MOV      R1,R9
-        MOV      R0,R8
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         MOVS     R0,#+1
-        STRB     R0,[R6, #+1]
+        B.N      ??set_directions_3
+??set_directions_2:
+        SXTB     R2,R3
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        MOV      R0,#-1
+??set_directions_3:
+        STRB     R0,[R7, #+1]
 //  349   #endif
 //  350   #if HAS_Z_DIR
 //  351     SET_STEP_DIR(Z); // C
-??set_directions_3:
-        LDR      R8,[R4, #+40]
-        LDRH     R9,[R5, #+20]
-        LDRB     R10,[R7, #+2]
-        MOVS     R0,#+2
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R0,#+0
-        BEQ.N    ??set_directions_4
-        MOV      R2,R10
-        SXTB     R2,R2
-        MOV      R1,R9
-        MOV      R0,R8
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        LDRB     R0,[R7, #+257]
-        CMP      R0,#+1
-        BNE.N    ??set_directions_5
-        LDRSB    R2,[R7, #+2]
-        LDRH     R1,[R5, #+36]
-        LDR      R0,[R4, #+72]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-??set_directions_5:
-        MOV      R0,#-1
-        STRB     R0,[R6, #+2]
-        B.N      ??set_directions_6
-??set_directions_4:
-        SUBS     R2,R10,#+1
-        SBCS     R2,R2,R2
-        LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        MOV      R1,R9
-        MOV      R0,R8
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        LDRB     R0,[R7, #+257]
-        CMP      R0,#+1
-        BNE.N    ??set_directions_7
-        LDRB     R0,[R7, #+2]
+        LDRB     R0,[R7, #+5]
+        LSLS     R0,R0,#+29
+        BMI.N    ??set_directions_4
+        LDRB     R0,[R6, #+2]
+        LDRH     R1,[R5, #+20]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
+        LDR      R0,[R4, #+40]
         SXTB     R2,R2
-        LDRH     R1,[R5, #+36]
-        LDR      R0,[R4, #+72]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-??set_directions_7:
+        LDRB     R0,[R6, #+257]
+        CMP      R0,#+1
+        BNE.N    ??set_directions_5
+        LDRB     R0,[R6, #+2]
+        LDRH     R1,[R5, #+36]
+        SUBS     R2,R0,#+1
+        SBCS     R2,R2,R2
+        LSRS     R2,R2,#+31
+        LDR      R0,[R4, #+72]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??set_directions_5:
         MOVS     R0,#+1
-        STRB     R0,[R6, #+2]
 ??set_directions_6:
-        LDR      R0,[R6, #+32]
-        LDRB     R8,[R0, #+1]
-        MOVS     R0,#+3
+        STRB     R0,[R7, #+2]
+        LDR      R0,[R7, #+32]
+        LDRB     R1,[R7, #+5]
+        LDRB     R0,[R0, #+1]
+        LSLS     R1,R1,#+28
+        BMI.N    ??set_directions_7
 //  352   #endif
 //  353 
 //  354   #if DISABLED(LIN_ADVANCE)
 //  355     if (motor_direction(E_AXIS)) {
-          CFI FunCall _ZN7Stepper15motor_directionE8AxisEnum
-        BL       _ZN7Stepper15motor_directionE8AxisEnum
-        CMP      R0,#+0
-        BEQ.N    ??set_directions_8
 //  356       REV_E_DIR();
-        CMP      R8,#+0
-        BNE.N    ??set_directions_9
-        LDRSB    R2,[R7, #+3]
-        LDRH     R1,[R5, #+30]
-        LDR      R0,[R4, #+60]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        B.N      ??set_directions_10
-??set_directions_9:
-        LDRSB    R2,[R7, #+4]
-        LDRH     R1,[R5, #+36]
-        LDR      R0,[R4, #+72]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
 //  357       count_direction[E_AXIS] = -1;
-??set_directions_10:
-        MOV      R0,#-1
-        STRB     R0,[R6, #+3]
-        B.N      ??set_directions_11
 //  358     }
 //  359     else {
 //  360       NORM_E_DIR();
-??set_directions_8:
-        CMP      R8,#+0
-        BNE.N    ??set_directions_12
-        LDRB     R0,[R7, #+3]
+        CBNZ.N   R0,??set_directions_8
+        LDRB     R0,[R6, #+3]
+        LDRH     R1,[R5, #+30]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        LDRH     R1,[R5, #+30]
         LDR      R0,[R4, #+60]
+        SXTB     R2,R2
+        B.N      ??set_directions_9
+??set_directions_4:
+        LDRSB    R2,[R6, #+2]
+        LDRH     R1,[R5, #+20]
+        LDR      R0,[R4, #+40]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        B.N      ??set_directions_13
-??set_directions_12:
-        LDRB     R0,[R7, #+4]
-        SUBS     R2,R0,#+1
-        SBCS     R2,R2,R2
-        LSRS     R2,R2,#+31
-        SXTB     R2,R2
+        LDRB     R0,[R6, #+257]
+        CMP      R0,#+1
+        BNE.N    ??set_directions_10
+        LDRSB    R2,[R6, #+2]
         LDRH     R1,[R5, #+36]
         LDR      R0,[R4, #+72]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
+??set_directions_10:
+        MOV      R0,#-1
+        B.N      ??set_directions_6
+??set_directions_7:
+        CBNZ.N   R0,??set_directions_11
+        LDRSB    R2,[R6, #+3]
+        LDRH     R1,[R5, #+30]
+        LDR      R0,[R4, #+60]
+        B.N      ??set_directions_12
+??set_directions_11:
+        LDRSB    R2,[R6, #+4]
+        LDRH     R1,[R5, #+36]
+        LDR      R0,[R4, #+72]
+??set_directions_12:
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        MOV      R0,#-1
+        B.N      ??set_directions_13
+??set_directions_8:
+        LDRB     R0,[R6, #+4]
+        LDRH     R1,[R5, #+36]
+        SUBS     R2,R0,#+1
+        SBCS     R2,R2,R2
+        LSRS     R2,R2,#+31
+        LDR      R0,[R4, #+72]
+        SXTB     R2,R2
+??set_directions_9:
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
 //  361       count_direction[E_AXIS] = 1;
-??set_directions_13:
         MOVS     R0,#+1
-        STRB     R0,[R6, #+3]
+??set_directions_13:
+        STRB     R0,[R7, #+3]
 //  362     }
 //  363   #endif // !LIN_ADVANCE
 //  364     //HAL_Delay(2);
 //  365 }
-??set_directions_11:
-        POP      {R4-R10,PC}      ;; return
+        POP      {R0,R4-R7,PC}    ;; return
           CFI EndBlock cfiBlock2
 //  366 
 //  367 #if ENABLED(ENDSTOP_INTERRUPTS_FEATURE)
@@ -860,17 +842,15 @@ _ZN7Stepper14StepperHandlerEv:
 //  415     // Disable Timer0 ISRs and enable global ISR again to capture UART events (incoming chars)
 //  416     //CBI(TIMSK0, OCIE0B); // Temperature ISR
 //  417     HAL_TIM_Base_Stop_IT(&htim4);		//1?±?2a???D???
-        LDR.W    R5,??DataTable20_5
-        MOV      R0,R5
+        LDR.W    R10,??DataTable20_1
+        MOV      R0,R10
           CFI FunCall HAL_TIM_Base_Stop_IT
         BL       HAL_TIM_Base_Stop_IT
+        LDR.W    R0,??DataTable20_2
 //  418     DISABLE_STEPPER_DRIVER_INTERRUPT();
-        LDR.W    R4,??DataTable20_1
-        MOV      R0,R4
           CFI FunCall HAL_TIM_Base_Stop_IT
         BL       HAL_TIM_Base_Stop_IT
 //  419     sei();
-        cpsie i
 //  420   #endif
 //  421 
 //  422   #define _SPLIT(L) (ocr_val = (uint16_t)L)
@@ -892,75 +872,59 @@ _ZN7Stepper14StepperHandlerEv:
 //  438     }while(0)
 //  439 
 //  440     if (step_remaining && ENDSTOPS_ENABLED) {   // Just check endstops - not yet time for a step
-        LDR.W    R6,??DataTable20_4
-        LDR      R0,[R6, #+76]
-        CMP      R0,#+0
-        BEQ.N    ??StepperHandler_0
-        LDR.W    R0,??DataTable20_6
+        LDR.W    R5,??DataTable19
+        cpsie i
+        LDR      R0,[R5, #+76]
+        CBZ.N    R0,??StepperHandler_0
+        LDR.W    R0,??DataTable20_3
         LDRB     R0,[R0, #+0]
         CMP      R0,#+0
-        BNE.N    ??StepperHandler_1
-        LDR.W    R0,??DataTable20_7
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
+        ITTT     EQ 
+        LDREQ.W  R0,??DataTable20_4
+        LDRBEQ   R0,[R0, #+0]
+        CMPEQ    R0,#+0
         BEQ.N    ??StepperHandler_0
 //  441       endstops.update();
-??StepperHandler_1:
           CFI FunCall _ZN8Endstops6updateEv
         BL       _ZN8Endstops6updateEv
 //  442 
 //  443       // Next ISR either for endstops or stepping
 //  444       ocr_val = step_remaining <= ENDSTOP_NOMINAL_OCR_VAL ? step_remaining : ENDSTOP_NOMINAL_OCR_VAL;
-        LDR      R0,[R6, #+76]
+        LDR      R0,[R5, #+76]
         MOVW     R1,#+3001
         CMP      R0,R1
-        BCS.N    ??StepperHandler_2
-        MOV      R1,R0
-        B.N      ??StepperHandler_3
-??StepperHandler_2:
-        MOVW     R1,#+3000
+        ITE      CC 
+        MOVCC    R1,R0
+        MOVWCS   R1,#+3000
 //  445       step_remaining -= ocr_val;
-??StepperHandler_3:
         UXTH     R1,R1
         SUBS     R0,R0,R1
-        STR      R0,[R6, #+76]
+        STR      R0,[R5, #+76]
 //  446       _NEXT_ISR(ocr_val);
-        LDR      R0,[R4, #+0]
+        LDR.W    R0,??DataTable20_2
+        LDR      R0,[R0, #+0]
         STR      R1,[R0, #+44]
-        LDR      R0,[R4, #+0]
         LDR      R1,[R0, #+44]
         LDR      R2,[R0, #+36]
         CMP      R1,R2
-        BCS.N    ??StepperHandler_4
+        BCS.N    ??StepperHandler_1
         LDR      R1,[R0, #+44]
         SUBS     R1,R1,#+1
         STR      R1,[R0, #+36]
 //  447       NOLESS(OCR1A, TCNT1 + 16);
-??StepperHandler_4:
-        LDR      R0,[R4, #+0]
+??StepperHandler_1:
         LDR      R1,[R0, #+44]
         LDR      R2,[R0, #+36]
         ADDS     R2,R2,#+16
         CMP      R1,R2
-        BCS.N    ??StepperHandler_5
+        BCS.N    ??StepperHandler_2
         LDR      R1,[R0, #+36]
         ADDS     R1,R1,#+16
         STR      R1,[R0, #+44]
 //  448       _ENABLE_ISRs(); // re-enable ISRs
-??StepperHandler_5:
+??StepperHandler_2:
         cpsie i
-        LDR.W    R0,??DataTable20_8
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        MOV      R0,R5
-        BEQ.N    ??StepperHandler_6
-          CFI FunCall HAL_TIM_Base_Stop_IT
-        BL       HAL_TIM_Base_Stop_IT
-        B.N      ??StepperHandler_7
-??StepperHandler_6:
-          CFI FunCall HAL_TIM_Base_Start_IT
-        BL       HAL_TIM_Base_Start_IT
-        B.N      ??StepperHandler_7
+        B.N      ??StepperHandler_3
 //  449       return;
 //  450     }
 //  451 
@@ -971,107 +935,181 @@ _ZN7Stepper14StepperHandlerEv:
 //  456   //
 //  457   if (cleaning_buffer_counter) {
 ??StepperHandler_0:
-        LDRSH    R7,[R6, #+10]
-        CMP      R7,#+0
-        BEQ.N    ??StepperHandler_8
+        LDRSH    R2,[R5, #+10]
+        CMP      R2,#+0
+        BEQ.N    ??StepperHandler_4
 //  458     if (cleaning_buffer_counter < 0) {          // Count up for endstop hit
-        BPL.N    ??StepperHandler_9
+        LDR.W    R0,??DataTable20_5
+        LDR.W    R1,??DataTable20_6
+        BPL.N    ??StepperHandler_5
 //  459       if (current_block) planner.discard_current_block(); // Discard the active block that led to the trigger
-        LDR      R0,[R6, #+32]
-        CMP      R0,#+0
-        BEQ.N    ??StepperHandler_10
-          CFI FunCall _ZN7Planner21discard_current_blockEv
-        BL       _ZN7Planner21discard_current_blockEv
+        LDR      R2,[R5, #+32]
+        CMP      R2,#+0
+        ITTT     NE 
+        LDRBNE   R2,[R1, #+0]
+        LDRBNE   R3,[R0, #+0]
+        CMPNE    R2,R3
+        BEQ.N    ??StepperHandler_6
+        LDRB     R2,[R0, #+0]
+        ADDS     R2,R2,#+1
+        AND      R2,R2,#0xF
+        STRB     R2,[R0, #+0]
 //  460       if (!planner.discard_continued_block())   // Discard next CONTINUED block
-??StepperHandler_10:
-          CFI FunCall _ZN7Planner23discard_continued_blockEv
-        BL       _ZN7Planner23discard_continued_blockEv
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_11
+??StepperHandler_6:
+        LDRB     R2,[R1, #+0]
+        LDRB     R3,[R0, #+0]
+        CMP      R2,R3
+        BEQ.N    ??StepperHandler_7
+        LDRB     R2,[R0, #+0]
+        LDR.W    R6,??DataTable20_7
+        MOVS     R3,#+84
+        MLA      R2,R3,R2,R6
+        LDRB     R2,[R2, #+0]
+        LSLS     R2,R2,#+27
+        BPL.N    ??StepperHandler_7
+        LDRB     R1,[R1, #+0]
+        LDRB     R2,[R0, #+0]
+        CMP      R1,R2
+        BEQ.N    ??StepperHandler_8
+        LDRB     R1,[R0, #+0]
+        ADDS     R1,R1,#+1
+        AND      R1,R1,#0xF
+        STRB     R1,[R0, #+0]
+        B.N      ??StepperHandler_8
 //  461         cleaning_buffer_counter = 0;            // Keep discarding until non-CONTINUED
+??StepperHandler_7:
         MOVS     R0,#+0
-        STRH     R0,[R6, #+10]
-        B.N      ??StepperHandler_11
+        STRH     R0,[R5, #+10]
+        B.N      ??StepperHandler_8
 //  462     }
 //  463     else {
 //  464       planner.discard_current_block();
-??StepperHandler_9:
-          CFI FunCall _ZN7Planner21discard_current_blockEv
-        BL       _ZN7Planner21discard_current_blockEv
+??StepperHandler_5:
+        LDRB     R1,[R1, #+0]
+        LDRB     R3,[R0, #+0]
+        CMP      R1,R3
+        BEQ.N    ??StepperHandler_9
+        LDRB     R1,[R0, #+0]
+        ADDS     R1,R1,#+1
+        AND      R1,R1,#0xF
+        STRB     R1,[R0, #+0]
 //  465       --cleaning_buffer_counter;                // Count down for abort print
-        SUBS     R0,R7,#+1
-        STRH     R0,[R6, #+10]
+??StepperHandler_9:
+        SUBS     R0,R2,#+1
+        STRH     R0,[R5, #+10]
 //  466       #if ENABLED(SD_FINISHED_STEPPERRELEASE) && defined(SD_FINISHED_RELEASECOMMAND)
 //  467         if (!cleaning_buffer_counter) enqueue_and_echo_commands_P(PSTR(SD_FINISHED_RELEASECOMMAND));
         SXTH     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_11
+        CBNZ.N   R0,??StepperHandler_8
         ADR.W    R0,`?<Constant "M84 X Y Z E">`
           CFI FunCall _Z27enqueue_and_echo_commands_PPKc
         BL       _Z27enqueue_and_echo_commands_PPKc
 //  468       #endif
 //  469     }
 //  470     current_block = NULL;                       // Prep to get a new block after cleaning
-??StepperHandler_11:
+??StepperHandler_8:
         MOVS     R0,#+0
-        STR      R0,[R6, #+32]
+        STR      R0,[R5, #+32]
 //  471     _NEXT_ISR(200);                             // Run at max speed - 10 KHz
-        MOVS     R0,#+200
-        LDR      R1,[R4, #+0]
-        STR      R0,[R1, #+44]
-        LDR      R0,[R4, #+0]
+        MOVS     R1,#+200
+        LDR.W    R0,??DataTable20_2
+        LDR      R0,[R0, #+0]
+        STR      R1,[R0, #+44]
         LDR      R1,[R0, #+44]
         LDR      R2,[R0, #+36]
         CMP      R1,R2
-        BCS.N    ??StepperHandler_12
+        BCS.N    ??StepperHandler_10
         LDR      R1,[R0, #+44]
         SUBS     R1,R1,#+1
         STR      R1,[R0, #+36]
 //  472     _ENABLE_ISRs();
-??StepperHandler_12:
+??StepperHandler_10:
         cpsie i
-        LDR.W    R0,??DataTable20_8
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        MOV      R0,R5
-        BEQ.N    ??StepperHandler_13
-          CFI FunCall HAL_TIM_Base_Stop_IT
-        BL       HAL_TIM_Base_Stop_IT
-        B.N      ??StepperHandler_7
-??StepperHandler_13:
-          CFI FunCall HAL_TIM_Base_Start_IT
-        BL       HAL_TIM_Base_Start_IT
-        B.N      ??StepperHandler_7
+        B.N      ??StepperHandler_3
 //  473     return;
 //  474   }
 //  475 
 //  476   // If there is no current block, attempt to pop one from the buffer
 //  477   if (!current_block) {
-??StepperHandler_8:
-        LDR      R0,[R6, #+32]
+??StepperHandler_4:
+        LDR      R0,[R5, #+32]
         CMP      R0,#+0
-        BNE.N    ??StepperHandler_14
+        BNE.N    ??StepperHandler_11
 //  478     // Anything in the buffer?
 //  479     if ((current_block = planner.get_current_block())) {
-          CFI FunCall _ZN7Planner17get_current_blockEv
-        BL       _ZN7Planner17get_current_blockEv
-        STR      R0,[R6, #+32]
+        LDR.W    R0,??DataTable20_6
+        LDRB     R1,[R0, #+0]
+        LDR.W    R0,??DataTable20_5
+        LDRB     R2,[R0, #+0]
+        CMP      R1,R2
+        IT       EQ 
+        MOVEQ    R0,#+0
+        BEQ.N    ??StepperHandler_12
+        LDRB     R0,[R0, #+0]
+        LDR.W    R2,??DataTable20_7
+        MOVS     R1,#+84
+        MLA      R0,R1,R0,R2
+        LDRB     R1,[R0, #+0]
+        ORR      R1,R1,#0x8
+        STRB     R1,[R0, #+0]
+??StepperHandler_12:
+        STR      R0,[R5, #+32]
         CMP      R0,#+0
-        BEQ.N    ??StepperHandler_15
+        BEQ.N    ??StepperHandler_13
 //  480       trapezoid_generator_reset();
-          CFI FunCall _ZN7Stepper25trapezoid_generator_resetEv
-        BL       _ZN7Stepper25trapezoid_generator_resetEv
+        LDRB     R1,[R0, #+36]
+        LDRB     R3,[R5, #+5]
+        LDR.W    R2,??DataTable20_12
+        CMP      R1,R3
+        ITTT     EQ 
+        LDRBEQ   R3,[R0, #+1]
+        LDRSBEQ  R6,[R2, #+0]
+        CMPEQ    R3,R6
+        BEQ.N    ??StepperHandler_14
+        STRB     R1,[R5, #+5]
+        LDRSB    R0,[R0, #+1]
+        STRB     R0,[R2, #+0]
+          CFI FunCall _ZN7Stepper14set_directionsEv
+        BL       _ZN7Stepper14set_directionsEv
+??StepperHandler_14:
+        MOVS     R0,#+0
+        LDR      R6,[R5, #+32]
+        STR      R0,[R5, #+60]
+        LDR      R0,[R6, #+60]
+        UXTH     R0,R0
+          CFI FunCall _ZN7Stepper19calc_timer_intervalEt
+        BL       _ZN7Stepper19calc_timer_intervalEt
+        STRH     R0,[R5, #+12]
+        LDRB     R0,[R5, #+8]
+        STRB     R0,[R5, #+9]
+        LDR      R0,[R6, #+64]
+        STRH     R0,[R5, #+14]
+        LDRH     R0,[R5, #+14]
+          CFI FunCall _ZN7Stepper19calc_timer_intervalEt
+        BL       _ZN7Stepper19calc_timer_intervalEt
+        STR      R0,[R5, #+56]
+        LDR.W    R0,??DataTable20_2
+        LDR      R0,[R0, #+0]
+        LDR      R1,[R5, #+56]
+        STR      R1,[R0, #+44]
+        LDR      R1,[R0, #+44]
+        LDR      R2,[R0, #+36]
+        CMP      R1,R2
+        BCS.N    ??StepperHandler_15
+        LDR      R1,[R0, #+44]
+        SUBS     R1,R1,#+1
+        STR      R1,[R0, #+36]
 //  481 
 //  482       // Initialize Bresenham counters to 1/2 the ceiling
 //  483       counter_X = counter_Y = counter_Z = counter_E = -(current_block->step_event_count >> 1);
-        LDR      R0,[R6, #+32]
-        LDR      R0,[R0, #+20]
+??StepperHandler_15:
+        LDR      R0,[R6, #+20]
         LSRS     R0,R0,#+1
         RSBS     R0,R0,#+0
-        STR      R0,[R6, #+48]
-        STR      R0,[R6, #+44]
-        STR      R0,[R6, #+40]
-        STR      R0,[R6, #+36]
+        STR      R0,[R5, #+48]
+        STR      R0,[R5, #+44]
+        STR      R0,[R5, #+40]
+        STR      R0,[R5, #+36]
 //  484 
 //  485       #if ENABLED(MIXING_EXTRUDER)
 //  486         MIXING_STEPPERS_LOOP(i)
@@ -1080,7 +1118,15 @@ _ZN7Stepper14StepperHandlerEv:
 //  489 
 //  490       step_events_completed = 0;
         MOVS     R0,#+0
-        STR      R0,[R6, #+52]
+        STR      R0,[R5, #+52]
+??StepperHandler_11:
+        LDR.W    R0,??DataTable20_3
+        LDRB     R0,[R0, #+0]
+        CMP      R0,#+0
+        ITTTE    EQ 
+        LDREQ.W  R0,??DataTable20_4
+        LDRBEQ   R0,[R0, #+0]
+        CMPEQ    R0,#+0
 //  491 
 //  492       #if ENABLED(ENDSTOP_INTERRUPTS_FEATURE)
 //  493         e_hit = 2; // Needed for the case an endstop is already triggered before the new move begins.
@@ -1111,32 +1157,23 @@ _ZN7Stepper14StepperHandlerEv:
 //  518     }
 //  519   #else
 //  520     if (ENDSTOPS_ENABLED) endstops.update();
-??StepperHandler_14:
-        LDR.W    R7,??DataTable20_6
-        LDRB     R0,[R7, #+0]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_16
-        LDR.W    R0,??DataTable20_7
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??StepperHandler_17
-??StepperHandler_16:
           CFI FunCall _ZN8Endstops6updateEv
-        BL       _ZN8Endstops6updateEv
+        BLNE     _ZN8Endstops6updateEv
 //  521   #endif
 //  522 
 //  523   // Take multiple steps per interrupt (For high speed moves)
 //  524   bool all_steps_done = false;
-??StepperHandler_17:
-        MOV      R8,#+0
 //  525   for (uint8_t i = step_loops; i--;) {
-        LDRB     R9,[R6, #+8]
-??StepperHandler_18:
-        MOV      R0,R9
-        SUB      R9,R0,#+1
-        UXTB     R0,R0
+        LDRB     R11,[R5, #+8]
+        LDR.W    R8,??DataTable20_13
+        LDR.W    R9,??DataTable20_14
+        LDR.W    R4,??DataTable19_1
+        LDR.W    R7,??DataTable19_2
+        MOVS     R6,#+0
+??StepperHandler_16:
+        UXTB     R0,R11
         CMP      R0,#+0
-        BEQ.W    ??StepperHandler_19
+        BEQ.W    ??StepperHandler_17
 //  526     #if ENABLED(LIN_ADVANCE)
 //  527 
 //  528       counter_E += current_block->steps[E_AXIS];
@@ -1266,214 +1303,174 @@ _ZN7Stepper14StepperHandlerEv:
 //  652 
 //  653     #if HAS_X_STEP
 //  654       PULSE_START(X);
-        LDR      R0,[R6, #+36]
-        LDR      R1,[R6, #+32]
+        LDR      R1,[R5, #+32]
         LDR      R1,[R1, #+4]
+        SUB      R11,R0,#+1
+        LDR      R0,[R5, #+36]
         ADDS     R0,R1,R0
-        STR      R0,[R6, #+36]
+        STR      R0,[R5, #+36]
         CMP      R0,#+1
-        BLT.N    ??StepperHandler_20
+        BLT.N    ??StepperHandler_18
+        LDRH     R1,[R7, #+2]
+        LDR      R0,[R4, #+4]
         MOVS     R2,#+1
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+2]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+4]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_21
-??StepperHandler_15:
-        MOV      R0,#+2000
-        LDR      R1,[R4, #+0]
-        STR      R0,[R1, #+44]
-        LDR      R0,[R4, #+0]
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_19
+??StepperHandler_13:
+        LDR.W    R0,??DataTable20_2
+        LDR      R0,[R0, #+0]
+        MOV      R1,#+2000
+        STR      R1,[R0, #+44]
         LDR      R1,[R0, #+44]
         LDR      R2,[R0, #+36]
         CMP      R1,R2
-        BCS.N    ??StepperHandler_22
+        BCS.N    ??StepperHandler_20
         LDR      R1,[R0, #+44]
         SUBS     R1,R1,#+1
         STR      R1,[R0, #+36]
-??StepperHandler_22:
+??StepperHandler_20:
         cpsie i
-        LDR.W    R0,??DataTable20_8
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        MOV      R0,R5
-        BEQ.N    ??StepperHandler_23
-          CFI FunCall HAL_TIM_Base_Stop_IT
-        BL       HAL_TIM_Base_Stop_IT
-        B.N      ??StepperHandler_7
-??StepperHandler_23:
-          CFI FunCall HAL_TIM_Base_Start_IT
-        BL       HAL_TIM_Base_Start_IT
-        B.N      ??StepperHandler_7
+        B.N      ??StepperHandler_3
+??StepperHandler_21:
+        LDR      R0,[SP, #+0]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+0]
+??StepperHandler_19:
+        LDR      R0,[SP, #+0]
+        LDRH     R1,[R9, #+700]
+        CMP      R0,R1
+        BLT.N    ??StepperHandler_21
+//  655     #endif
+//  656     #if HAS_Y_STEP
+//  657       PULSE_START(Y);
+??StepperHandler_18:
+        LDR      R1,[R5, #+32]
+        LDR      R0,[R5, #+40]
+        LDR      R1,[R1, #+8]
+        ADDS     R0,R1,R0
+        STR      R0,[R5, #+40]
+        CMP      R0,#+1
+        BLT.N    ??StepperHandler_22
+        LDRH     R1,[R7, #+12]
+        LDR      R0,[R4, #+24]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_23
 ??StepperHandler_24:
         LDR      R0,[SP, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+0]
-??StepperHandler_21:
+??StepperHandler_23:
         LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
+        LDRH     R1,[R9, #+700]
         CMP      R0,R1
         BLT.N    ??StepperHandler_24
-//  655     #endif
-//  656     #if HAS_Y_STEP
-//  657       PULSE_START(Y);
-??StepperHandler_20:
-        LDR      R0,[R6, #+40]
-        LDR      R1,[R6, #+32]
-        LDR      R1,[R1, #+8]
-        ADDS     R0,R1,R0
-        STR      R0,[R6, #+40]
-        CMP      R0,#+1
-        BLT.N    ??StepperHandler_25
-        MOVS     R2,#+1
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+12]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+24]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_26
-??StepperHandler_27:
-        LDR      R0,[SP, #+0]
-        ADDS     R0,R0,#+1
-        STR      R0,[SP, #+0]
-??StepperHandler_26:
-        LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
-        CMP      R0,R1
-        BLT.N    ??StepperHandler_27
 //  658     #endif
 //  659     #if HAS_Z_STEP
 //  660       Z_PULSE_START(Z);
-??StepperHandler_25:
-        LDR      R0,[R6, #+44]
-        LDR      R1,[R6, #+32]
+??StepperHandler_22:
+        LDR      R1,[R5, #+32]
+        LDR      R0,[R5, #+44]
         LDR      R1,[R1, #+12]
         ADDS     R0,R1,R0
-        STR      R0,[R6, #+44]
+        STR      R0,[R5, #+44]
         CMP      R0,#+1
-        BLT.W    ??StepperHandler_28
-        LDR.W    R10,??DataTable20
-        ADDW     R0,R10,#+257
+        BLT.N    ??StepperHandler_25
+        LDR.W    R0,??DataTable20_15
         LDRB     R0,[R0, #+1]
         CMP      R0,#+1
-        BNE.N    ??StepperHandler_29
-        LDRB     R0,[R6, #+4]
+        BNE.N    ??StepperHandler_26
+        LDRB     R0,[R5, #+4]
+        CBZ.N    R0,??StepperHandler_27
+        LDR.W    R0,??DataTable20
+        LDRSB    R0,[R0, #+7]
         CMP      R0,#+0
-        BEQ.N    ??StepperHandler_30
-        LDR.W    R11,??DataTable20_14
-        LDRH     R0,[R11, #+0]
-        LDRSB    R1,[R10, #+7]
-        CMP      R1,#+0
-        BPL.N    ??StepperHandler_31
+        LDRB     R0,[R8, #+0]
+        BPL.N    ??StepperHandler_28
         LSLS     R0,R0,#+29
-        BPL.N    ??StepperHandler_32
-        LDRSB    R0,[R6, #+2]
-        CMP      R0,#+0
-        BMI.N    ??StepperHandler_33
-??StepperHandler_32:
-        LDRB     R0,[R6, #+6]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_33
+        ITT      MI 
+        LDRSBMI  R0,[R5, #+2]
+        CMPMI    R0,#+0
+        BMI.N    ??StepperHandler_29
+        LDRB     R0,[R5, #+6]
+        CBNZ.N   R0,??StepperHandler_29
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
         MOVS     R2,#+1
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+22]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+44]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??StepperHandler_29:
+        LDRH     R0,[R8, #+0]
+        LSLS     R0,R0,#+20
+        BPL.N    ??StepperHandler_30
+        LDRSB    R0,[R5, #+2]
+        CMP      R0,#+0
+        BMI.N    ??StepperHandler_31
+        B.N      ??StepperHandler_30
+??StepperHandler_28:
+        LSLS     R0,R0,#+25
+        BPL.N    ??StepperHandler_32
+        LDRSB    R0,[R5, #+2]
+        CMP      R0,#+1
+        BGE.N    ??StepperHandler_33
+??StepperHandler_32:
+        LDRB     R0,[R5, #+6]
+        CBNZ.N   R0,??StepperHandler_33
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
+        MOVS     R2,#+1
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 ??StepperHandler_33:
-        LDRH     R0,[R11, #+0]
-        LSLS     R0,R0,#+20
-        BPL.N    ??StepperHandler_34
-        LDRSB    R0,[R6, #+2]
-        CMP      R0,#+0
-        BMI.N    ??StepperHandler_35
-        B.N      ??StepperHandler_34
-??StepperHandler_31:
-        LSLS     R0,R0,#+25
-        BPL.N    ??StepperHandler_36
-        LDRSB    R0,[R6, #+2]
-        CMP      R0,#+1
-        BGE.N    ??StepperHandler_37
-??StepperHandler_36:
-        LDRB     R0,[R6, #+6]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_37
-        MOVS     R2,#+1
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+22]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+44]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-??StepperHandler_37:
-        LDRH     R0,[R11, #+0]
+        LDRH     R0,[R8, #+0]
         LSLS     R0,R0,#+19
-        BPL.N    ??StepperHandler_34
-        LDRSB    R0,[R6, #+2]
+        BPL.N    ??StepperHandler_30
+        LDRSB    R0,[R5, #+2]
         CMP      R0,#+1
-        BGE.N    ??StepperHandler_35
-??StepperHandler_34:
-        LDRB     R0,[R6, #+7]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_35
-        B.N      ??StepperHandler_38
+        BGE.N    ??StepperHandler_31
 ??StepperHandler_30:
-        LDR.W    R10,??DataTable20_2
-        LDR.W    R11,??DataTable20_3
+        LDRB     R0,[R5, #+7]
+        CBNZ.N   R0,??StepperHandler_31
+        B.N      ??StepperHandler_34
+??StepperHandler_27:
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
         MOVS     R2,#+1
-        LDRH     R1,[R11, #+22]
-        LDR      R0,[R10, #+44]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
+        B.N      ??StepperHandler_34
+??StepperHandler_26:
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
         MOVS     R2,#+1
-        LDRH     R1,[R11, #+38]
-        LDR      R0,[R10, #+76]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        B.N      ??StepperHandler_35
-??StepperHandler_29:
-        MOVS     R2,#+1
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+22]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+44]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        LDRB     R0,[R10, #+257]
+        LDR.W    R0,??DataTable20
+        LDRB     R0,[R0, #+257]
         CMP      R0,#+1
-        BNE.N    ??StepperHandler_35
-??StepperHandler_38:
+        BNE.N    ??StepperHandler_31
+??StepperHandler_34:
+        LDRH     R1,[R7, #+38]
+        LDR      R0,[R4, #+76]
         MOVS     R2,#+1
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+38]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+76]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-??StepperHandler_35:
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_39
-??StepperHandler_40:
+??StepperHandler_31:
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_35
+??StepperHandler_36:
         LDR      R0,[SP, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+0]
-??StepperHandler_39:
+??StepperHandler_35:
         LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
+        LDRH     R1,[R9, #+700]
         CMP      R0,R1
-        BLT.N    ??StepperHandler_40
+        BLT.N    ??StepperHandler_36
 //  661     #endif
 //  662 
 //  663     // For non-advance use linear interpolation for E also
@@ -1490,45 +1487,38 @@ _ZN7Stepper14StepperHandlerEv:
 //  674         }
 //  675       #else // !MIXING_EXTRUDER
 //  676         PULSE_START(E);
-??StepperHandler_28:
-        LDR      R0,[R6, #+32]
-        LDR      R1,[R6, #+48]
+??StepperHandler_25:
+        LDR      R0,[R5, #+32]
+        LDR      R1,[R5, #+48]
         LDR      R2,[R0, #+16]
         ADDS     R1,R2,R1
-        STR      R1,[R6, #+48]
+        STR      R1,[R5, #+48]
         CMP      R1,#+1
-        BLT.N    ??StepperHandler_41
-        LDR.W    R10,??DataTable20_2
-        LDR.W    R11,??DataTable20_3
+        BLT.N    ??StepperHandler_37
         LDRB     R0,[R0, #+1]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_42
+        CBNZ.N   R0,??StepperHandler_38
+        LDRH     R1,[R7, #+32]
+        LDR      R0,[R4, #+64]
         MOVS     R2,#+1
-        LDRH     R1,[R11, #+32]
-        LDR      R0,[R10, #+64]
+        B.N      ??StepperHandler_39
+??StepperHandler_38:
+        LDRH     R1,[R7, #+38]
+        LDR      R0,[R4, #+76]
+        MOVS     R2,#+1
+??StepperHandler_39:
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        B.N      ??StepperHandler_43
-??StepperHandler_42:
-        MOVS     R2,#+1
-        LDRH     R1,[R11, #+38]
-        LDR      R0,[R10, #+76]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-??StepperHandler_43:
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_44
-??StepperHandler_45:
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_40
+??StepperHandler_41:
         LDR      R0,[SP, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+0]
-??StepperHandler_44:
+??StepperHandler_40:
         LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
+        LDRH     R1,[R9, #+700]
         CMP      R0,R1
-        BLT.N    ??StepperHandler_45
+        BLT.N    ??StepperHandler_41
 //  677       #endif
 //  678     #endif // !LIN_ADVANCE
 //  679 
@@ -1542,201 +1532,171 @@ _ZN7Stepper14StepperHandlerEv:
 //  687 
 //  688     #if HAS_X_STEP
 //  689       PULSE_STOP(X);
-??StepperHandler_41:
-        LDR      R0,[R6, #+36]
+??StepperHandler_37:
+        LDR      R0,[R5, #+36]
         CMP      R0,#+1
-        BLT.N    ??StepperHandler_46
-        LDR      R1,[R6, #+32]
+        BLT.N    ??StepperHandler_42
+        LDR      R1,[R5, #+32]
         LDR      R1,[R1, #+20]
         SUBS     R0,R0,R1
-        STR      R0,[R6, #+36]
-        LDRSB    R0,[R6, #+0]
-        LDR      R1,[R6, #+16]
+        STR      R0,[R5, #+36]
+        MOVS     R2,#+0
+        LDRSB    R0,[R5, R6]
+        LDR      R1,[R5, #+16]
         ADDS     R0,R0,R1
-        STR      R0,[R6, #+16]
-        MOV      R2,R8
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+2]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+4]
+        STR      R0,[R5, #+16]
+        LDRH     R1,[R7, #+2]
+        LDR      R0,[R4, #+4]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_47
-??StepperHandler_48:
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_43
+??StepperHandler_44:
         LDR      R0,[SP, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+0]
-??StepperHandler_47:
+??StepperHandler_43:
         LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
+        LDRH     R1,[R9, #+700]
         CMP      R0,R1
-        BLT.N    ??StepperHandler_48
+        BLT.N    ??StepperHandler_44
 //  690     #endif
 //  691     #if HAS_Y_STEP
 //  692       PULSE_STOP(Y);
-??StepperHandler_46:
-        LDR      R0,[R6, #+40]
+??StepperHandler_42:
+        LDR      R0,[R5, #+40]
         CMP      R0,#+1
-        BLT.N    ??StepperHandler_49
-        LDR      R1,[R6, #+32]
+        BLT.N    ??StepperHandler_45
+        LDR      R1,[R5, #+32]
         LDR      R1,[R1, #+20]
         SUBS     R0,R0,R1
-        STR      R0,[R6, #+40]
-        LDRSB    R0,[R6, #+1]
-        LDR      R1,[R6, #+20]
+        STR      R0,[R5, #+40]
+        MOVS     R2,#+0
+        LDRSB    R0,[R5, #+1]
+        LDR      R1,[R5, #+20]
         ADDS     R0,R0,R1
-        STR      R0,[R6, #+20]
-        MOV      R2,R8
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+12]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+24]
+        STR      R0,[R5, #+20]
+        LDRH     R1,[R7, #+12]
+        LDR      R0,[R4, #+24]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_50
-??StepperHandler_51:
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_46
+??StepperHandler_47:
         LDR      R0,[SP, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+0]
-??StepperHandler_50:
+??StepperHandler_46:
         LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
+        LDRH     R1,[R9, #+700]
         CMP      R0,R1
-        BLT.N    ??StepperHandler_51
+        BLT.N    ??StepperHandler_47
 //  693     #endif
 //  694     #if HAS_Z_STEP
 //  695       Z_PULSE_STOP(Z);
-??StepperHandler_49:
-        LDR      R0,[R6, #+44]
+??StepperHandler_45:
+        LDR      R0,[R5, #+44]
         CMP      R0,#+1
-        BLT.W    ??StepperHandler_52
-        LDR      R1,[R6, #+32]
+        BLT.N    ??StepperHandler_48
+        LDR      R1,[R5, #+32]
         LDR      R1,[R1, #+20]
         SUBS     R0,R0,R1
-        STR      R0,[R6, #+44]
-        LDRSB    R0,[R6, #+2]
-        LDR      R1,[R6, #+24]
+        STR      R0,[R5, #+44]
+        LDRSB    R0,[R5, #+2]
+        LDR      R1,[R5, #+24]
         ADDS     R0,R0,R1
-        STR      R0,[R6, #+24]
-        LDR.W    R10,??DataTable20
-        ADDW     R0,R10,#+257
+        STR      R0,[R5, #+24]
+        LDR.W    R0,??DataTable20_15
         LDRB     R0,[R0, #+1]
         CMP      R0,#+1
-        BNE.N    ??StepperHandler_53
-        LDRB     R0,[R6, #+4]
+        BNE.N    ??StepperHandler_49
+        LDRB     R0,[R5, #+4]
+        CBZ.N    R0,??StepperHandler_50
+        LDR.W    R0,??DataTable20
+        LDRSB    R0,[R0, #+7]
         CMP      R0,#+0
-        BEQ.N    ??StepperHandler_54
-        LDR.W    R11,??DataTable20_14
-        LDRH     R0,[R11, #+0]
-        LDRSB    R1,[R10, #+7]
-        CMP      R1,#+0
-        BPL.N    ??StepperHandler_55
+        LDRB     R0,[R8, #+0]
+        BPL.N    ??StepperHandler_51
         LSLS     R0,R0,#+29
-        BPL.N    ??StepperHandler_56
-        LDRSB    R0,[R6, #+2]
-        CMP      R0,#+0
-        BMI.N    ??StepperHandler_57
-??StepperHandler_56:
-        LDRB     R0,[R6, #+6]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_57
-        MOV      R2,R8
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+22]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+44]
+        ITT      MI 
+        LDRSBMI  R0,[R5, #+2]
+        CMPMI    R0,#+0
+        BMI.N    ??StepperHandler_52
+        LDRB     R0,[R5, #+6]
+        CBNZ.N   R0,??StepperHandler_52
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-??StepperHandler_57:
-        LDRH     R0,[R11, #+0]
+??StepperHandler_52:
+        LDRH     R0,[R8, #+0]
         LSLS     R0,R0,#+20
-        BPL.N    ??StepperHandler_58
-        LDRSB    R0,[R6, #+2]
+        BPL.N    ??StepperHandler_53
+        LDRSB    R0,[R5, #+2]
         CMP      R0,#+0
-        BMI.N    ??StepperHandler_59
-        B.N      ??StepperHandler_58
-??StepperHandler_55:
+        BMI.N    ??StepperHandler_54
+        B.N      ??StepperHandler_53
+??StepperHandler_51:
         LSLS     R0,R0,#+25
-        BPL.N    ??StepperHandler_60
-        LDRSB    R0,[R6, #+2]
+        BPL.N    ??StepperHandler_55
+        LDRSB    R0,[R5, #+2]
         CMP      R0,#+1
-        BGE.N    ??StepperHandler_61
-??StepperHandler_60:
-        LDRB     R0,[R6, #+6]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_61
-        MOV      R2,R8
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+22]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+44]
+        BGE.N    ??StepperHandler_56
+??StepperHandler_55:
+        LDRB     R0,[R5, #+6]
+        CBNZ.N   R0,??StepperHandler_56
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-??StepperHandler_61:
-        LDRH     R0,[R11, #+0]
+??StepperHandler_56:
+        LDRH     R0,[R8, #+0]
         LSLS     R0,R0,#+19
-        BPL.N    ??StepperHandler_58
-        LDRSB    R0,[R6, #+2]
+        BPL.N    ??StepperHandler_53
+        LDRSB    R0,[R5, #+2]
         CMP      R0,#+1
-        BGE.N    ??StepperHandler_59
-??StepperHandler_58:
-        LDRB     R0,[R6, #+7]
-        CMP      R0,#+0
-        BNE.N    ??StepperHandler_59
-        B.N      ??StepperHandler_62
-??StepperHandler_54:
-        LDR.W    R10,??DataTable20_2
-        LDR.W    R11,??DataTable20_3
-        MOV      R2,R8
-        LDRH     R1,[R11, #+22]
-        LDR      R0,[R10, #+44]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        MOV      R2,R8
-        LDRH     R1,[R11, #+38]
-        LDR      R0,[R10, #+76]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        B.N      ??StepperHandler_59
+        BGE.N    ??StepperHandler_54
 ??StepperHandler_53:
-        MOV      R2,R8
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+22]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+44]
+        LDRB     R0,[R5, #+7]
+        CBNZ.N   R0,??StepperHandler_54
+        B.N      ??StepperHandler_57
+??StepperHandler_50:
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        LDRB     R0,[R10, #+257]
+        B.N      ??StepperHandler_57
+??StepperHandler_49:
+        LDRH     R1,[R7, #+22]
+        LDR      R0,[R4, #+44]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDR.W    R0,??DataTable20
+        LDRB     R0,[R0, #+257]
         CMP      R0,#+1
-        BNE.N    ??StepperHandler_59
-??StepperHandler_62:
-        MOV      R2,R8
-        LDR.W    R0,??DataTable20_3
-        LDRH     R1,[R0, #+38]
-        LDR.W    R0,??DataTable20_2
-        LDR      R0,[R0, #+76]
+        BNE.N    ??StepperHandler_54
+??StepperHandler_57:
+        LDRH     R1,[R7, #+38]
+        LDR      R0,[R4, #+76]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
+??StepperHandler_54:
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_58
 ??StepperHandler_59:
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_63
-??StepperHandler_64:
         LDR      R0,[SP, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+0]
-??StepperHandler_63:
+??StepperHandler_58:
         LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
+        LDRH     R1,[R9, #+700]
         CMP      R0,R1
-        BLT.N    ??StepperHandler_64
+        BLT.N    ??StepperHandler_59
 //  696     #endif
 //  697 
 //  698     #if DISABLED(LIN_ADVANCE)
@@ -1754,62 +1714,53 @@ _ZN7Stepper14StepperHandlerEv:
 //  710         }
 //  711       #else // !MIXING_EXTRUDER
 //  712         PULSE_STOP(E);
-??StepperHandler_52:
-        LDR      R1,[R6, #+48]
+??StepperHandler_48:
+        LDR      R1,[R5, #+48]
         CMP      R1,#+1
-        BLT.N    ??StepperHandler_65
-        LDR      R0,[R6, #+32]
+        BLT.N    ??StepperHandler_60
+        LDR      R0,[R5, #+32]
         LDR      R2,[R0, #+20]
         SUBS     R1,R1,R2
-        STR      R1,[R6, #+48]
-        LDRSB    R1,[R6, #+3]
-        LDR      R2,[R6, #+28]
+        STR      R1,[R5, #+48]
+        LDRSB    R1,[R5, #+3]
+        LDR      R2,[R5, #+28]
         ADDS     R1,R1,R2
-        STR      R1,[R6, #+28]
-        LDR.W    R10,??DataTable20_2
-        LDR.W    R11,??DataTable20_3
+        STR      R1,[R5, #+28]
+        MOV      R2,R6
         LDRB     R0,[R0, #+1]
         CMP      R0,#+0
-        MOV      R2,R8
-        BNE.N    ??StepperHandler_66
-        LDRH     R1,[R11, #+32]
-        LDR      R0,[R10, #+64]
+        ITTEE    EQ 
+        LDRHEQ   R1,[R7, #+32]
+        LDREQ    R0,[R4, #+64]
+        LDRHNE   R1,[R7, #+38]
+        LDRNE    R0,[R4, #+76]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        B.N      ??StepperHandler_67
-??StepperHandler_66:
-        LDRH     R1,[R11, #+38]
-        LDR      R0,[R10, #+76]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-??StepperHandler_67:
-        MOV      R0,R8
-        STR      R0,[SP, #+0]
-        B.N      ??StepperHandler_68
-??StepperHandler_69:
+        STR      R6,[SP, #+0]
+        B.N      ??StepperHandler_61
+??StepperHandler_62:
         LDR      R0,[SP, #+0]
         ADDS     R0,R0,#+1
         STR      R0,[SP, #+0]
-??StepperHandler_68:
+??StepperHandler_61:
         LDR      R0,[SP, #+0]
-        LDR.W    R1,??DataTable20_13
-        LDRH     R1,[R1, #+684]
+        LDRH     R1,[R9, #+700]
         CMP      R0,R1
-        BLT.N    ??StepperHandler_69
+        BLT.N    ??StepperHandler_62
 //  713       #endif
 //  714     #endif // !LIN_ADVANCE
 //  715 
 //  716     if (++step_events_completed >= current_block->step_event_count) {
-??StepperHandler_65:
-        LDR      R0,[R6, #+52]
+??StepperHandler_60:
+        LDR      R0,[R5, #+52]
         ADDS     R0,R0,#+1
-        STR      R0,[R6, #+52]
-        LDR      R1,[R6, #+32]
+        STR      R0,[R5, #+52]
+        LDR      R1,[R5, #+32]
         LDR      R1,[R1, #+20]
         CMP      R0,R1
-        BCC.W    ??StepperHandler_18
+        BCC.W    ??StepperHandler_16
 //  717       all_steps_done = true;
-        MOV      R8,#+1
+        MOVS     R6,#+1
 //  718       break;
 //  719     }
 //  720 
@@ -1843,86 +1794,80 @@ _ZN7Stepper14StepperHandlerEv:
 //  748 
 //  749   // Calculate new timer value
 //  750   if (step_events_completed <= (uint32_t)current_block->accelerate_until) {
-??StepperHandler_19:
-        LDR      R2,[R6, #+32]
+??StepperHandler_17:
+        LDR      R2,[R5, #+32]
         LDR      R0,[R2, #+24]
-        LDR      R1,[R6, #+52]
+        LDR      R1,[R5, #+52]
         CMP      R0,R1
-        BCC.N    ??StepperHandler_70
+        BCC.N    ??StepperHandler_63
 //  751 
 //  752     MultiU24X32toH16(acc_step_rate, acceleration_time, current_block->acceleration_rate);
-        LDR      R0,[R6, #+56]
-        LDR      R1,[R2, #+32]
-        SMULL    R0,R1,R1,R0
+//  753     acc_step_rate += current_block->initial_rate;
+        LDR      R11,[R5, #+56]
+        LDR      R0,[R2, #+32]
+        SMULL    R0,R1,R0,R11
         LSRS     R0,R0,#+24
         ORR      R0,R0,R1, LSL #+8
-        STRH     R0,[R6, #+14]
-        LDRH     R0,[R6, #+14]
         LDR      R1,[R2, #+64]
         ADDS     R0,R1,R0
-        STRH     R0,[R6, #+14]
-//  753     acc_step_rate += current_block->initial_rate;
 //  754 
 //  755     // upper limit
 //  756     NOMORE(acc_step_rate, current_block->nominal_rate);
         LDR      R1,[R2, #+60]
         UXTH     R0,R0
         CMP      R1,R0
-        BCS.N    ??StepperHandler_71
-        STRH     R1,[R6, #+14]
+        IT       CC 
+        MOVCC    R0,R1
+        STRH     R0,[R5, #+14]
 //  757 
 //  758     // step_rate to timer interval
 //  759     const uint16_t interval = calc_timer_interval(acc_step_rate);
-??StepperHandler_71:
-        LDRH     R0,[R6, #+14]
+        LDRH     R0,[R5, #+14]
           CFI FunCall _ZN7Stepper19calc_timer_intervalEt
         BL       _ZN7Stepper19calc_timer_intervalEt
 //  760 
 //  761     SPLIT(interval);  // split step into multiple ISRs if larger than ENDSTOP_NOMINAL_OCR_VAL
-        MOV      R1,R0
-        LDRB     R2,[R7, #+0]
-        CMP      R2,#+0
-        BNE.N    ??StepperHandler_72
-        LDR.W    R2,??DataTable20_7
+        LDR.W    R2,??DataTable20_3
         LDRB     R2,[R2, #+0]
+        MOV      R1,R0
         CMP      R2,#+0
-        BEQ.N    ??StepperHandler_73
-??StepperHandler_72:
+        ITTT     EQ 
+        LDREQ.W  R2,??DataTable20_4
+        LDRBEQ   R2,[R2, #+0]
+        CMPEQ    R2,#+0
+        BEQ.N    ??StepperHandler_64
         MOVW     R2,#+3001
         CMP      R0,R2
-        BLT.N    ??StepperHandler_73
+        BLT.N    ??StepperHandler_64
         MOVW     R1,#+3000
         MOV      R2,R1
         SDIV     R2,R0,R2
         MLS      R2,R1,R2,R0
         UXTH     R2,R2
-        MOV      R3,R2
-        CMP      R3,#+1000
-        BGE.N    ??StepperHandler_74
-        ADDW     R1,R2,#+3000
-??StepperHandler_74:
+        CMP      R2,#+1000
+        IT       LT 
+        ADDWLT   R1,R2,#+3000
         UXTH     R1,R1
         SUBS     R2,R0,R1
-        STR      R2,[R6, #+76]
+        STR      R2,[R5, #+76]
 //  762     _NEXT_ISR(ocr_val);
-??StepperHandler_73:
-        LDR      R2,[R4, #+0]
+??StepperHandler_64:
+        LDR.W    R2,??DataTable20_2
+        LDR      R2,[R2, #+0]
         STR      R1,[R2, #+44]
-        LDR      R1,[R4, #+0]
-        LDR      R2,[R1, #+44]
-        LDR      R3,[R1, #+36]
-        CMP      R2,R3
-        BCS.N    ??StepperHandler_75
-        LDR      R2,[R1, #+44]
-        SUBS     R2,R2,#+1
-        STR      R2,[R1, #+36]
+        LDR      R1,[R2, #+44]
+        LDR      R3,[R2, #+36]
+        CMP      R1,R3
+        BCS.N    ??StepperHandler_65
+        LDR      R1,[R2, #+44]
+        SUBS     R1,R1,#+1
+        STR      R1,[R2, #+36]
 //  763 
 //  764     acceleration_time += interval;
-??StepperHandler_75:
-        LDR      R1,[R6, #+56]
-        ADDS     R0,R0,R1
-        STR      R0,[R6, #+56]
-        B.N      ??StepperHandler_76
+??StepperHandler_65:
+        ADD      R0,R0,R11
+        STR      R0,[R5, #+56]
+        B.N      ??StepperHandler_66
 //  765 
 //  766     #if ENABLED(LIN_ADVANCE)
 //  767 
@@ -1939,91 +1884,88 @@ _ZN7Stepper14StepperHandlerEv:
 //  778     #endif // LIN_ADVANCE
 //  779   }
 //  780   else if (step_events_completed > (uint32_t)current_block->decelerate_after) {
-??StepperHandler_70:
+??StepperHandler_63:
         LDR      R0,[R2, #+28]
-        LDR      R1,[R6, #+52]
+        LDR      R1,[R5, #+52]
         CMP      R0,R1
-        BCS.N    ??StepperHandler_77
+        BCS.N    ??StepperHandler_67
 //  781     uint16_t step_rate;
 //  782     MultiU24X32toH16(step_rate, deceleration_time, current_block->acceleration_rate);
-        LDR      R0,[R6, #+60]
-        LDR      R1,[R2, #+32]
-        SMULL    R0,R1,R1,R0
+        LDR      R11,[R5, #+60]
+        LDR      R0,[R2, #+32]
+        SMULL    R0,R1,R0,R11
         LSRS     R0,R0,#+24
         ORR      R0,R0,R1, LSL #+8
 //  783 
 //  784     if (step_rate < acc_step_rate) { // Still decelerating?
-        LDR      R1,[R2, #+68]
-        LDRH     R2,[R6, #+14]
-        UXTH     R0,R0
-        CMP      R0,R2
-        BCS.N    ??StepperHandler_78
-//  785       step_rate = acc_step_rate - step_rate;
-        SUBS     R0,R2,R0
-//  786       NOLESS(step_rate, current_block->final_rate);
+        LDRH     R1,[R5, #+14]
         UXTH     R0,R0
         CMP      R0,R1
-        BCS.N    ??StepperHandler_79
+        BCS.N    ??StepperHandler_68
+//  785       step_rate = acc_step_rate - step_rate;
+        SUBS     R0,R1,R0
+//  786       NOLESS(step_rate, current_block->final_rate);
+        LDR      R1,[R2, #+68]
+        UXTH     R0,R0
+        CMP      R0,R1
+        BCS.N    ??StepperHandler_69
         MOV      R0,R1
-        B.N      ??StepperHandler_79
+        B.N      ??StepperHandler_69
 //  787     }
 //  788     else
 //  789       step_rate = current_block->final_rate;
-??StepperHandler_78:
-        MOV      R0,R1
+??StepperHandler_68:
+        LDR      R0,[R2, #+68]
 //  790 
 //  791     // step_rate to timer interval
 //  792     const uint16_t interval = calc_timer_interval(step_rate);
-??StepperHandler_79:
+??StepperHandler_69:
         UXTH     R0,R0
           CFI FunCall _ZN7Stepper19calc_timer_intervalEt
         BL       _ZN7Stepper19calc_timer_intervalEt
 //  793 
 //  794     SPLIT(interval);  // split step into multiple ISRs if larger than ENDSTOP_NOMINAL_OCR_VAL
-        MOV      R1,R0
-        LDRB     R2,[R7, #+0]
-        CMP      R2,#+0
-        BNE.N    ??StepperHandler_80
-        LDR.W    R2,??DataTable20_7
+        LDR.W    R2,??DataTable20_3
         LDRB     R2,[R2, #+0]
+        MOV      R1,R0
         CMP      R2,#+0
-        BEQ.N    ??StepperHandler_81
-??StepperHandler_80:
+        ITTT     EQ 
+        LDREQ.W  R2,??DataTable20_4
+        LDRBEQ   R2,[R2, #+0]
+        CMPEQ    R2,#+0
+        BEQ.N    ??StepperHandler_70
         MOVW     R2,#+3001
         CMP      R0,R2
-        BLT.N    ??StepperHandler_81
+        BLT.N    ??StepperHandler_70
         MOVW     R1,#+3000
         MOV      R2,R1
         SDIV     R2,R0,R2
         MLS      R2,R1,R2,R0
         UXTH     R2,R2
-        MOV      R3,R2
-        CMP      R3,#+1000
-        BGE.N    ??StepperHandler_82
-        ADDW     R1,R2,#+3000
-??StepperHandler_82:
+        CMP      R2,#+1000
+        IT       LT 
+        ADDWLT   R1,R2,#+3000
         UXTH     R1,R1
         SUBS     R2,R0,R1
-        STR      R2,[R6, #+76]
+        STR      R2,[R5, #+76]
 //  795     _NEXT_ISR(ocr_val);
-??StepperHandler_81:
-        LDR      R2,[R4, #+0]
+??StepperHandler_70:
+        LDR.W    R2,??DataTable20_2
+        LDR      R2,[R2, #+0]
         STR      R1,[R2, #+44]
-        LDR      R1,[R4, #+0]
-        LDR      R2,[R1, #+44]
-        LDR      R3,[R1, #+36]
-        CMP      R2,R3
-        BCS.N    ??StepperHandler_83
-        LDR      R2,[R1, #+44]
-        SUBS     R2,R2,#+1
-        STR      R2,[R1, #+36]
+        LDR      R1,[R2, #+44]
+        LDR      R3,[R2, #+36]
+        CMP      R1,R3
+        BCS.N    ??StepperHandler_71
+        LDR      R1,[R2, #+44]
+        SUBS     R1,R1,#+1
+        STR      R1,[R2, #+36]
 //  796 
 //  797     deceleration_time += interval;
-??StepperHandler_83:
-        LDR      R1,[R6, #+60]
-        ADDS     R0,R0,R1
-        STR      R0,[R6, #+60]
-        B.N      ??StepperHandler_76
+??StepperHandler_71:
+        ADD      R0,R0,R11
+        STR      R0,[R5, #+60]
+        B.N      ??StepperHandler_66
 //  798 
 //  799     #if ENABLED(LIN_ADVANCE)
 //  800 
@@ -2051,62 +1993,61 @@ _ZN7Stepper14StepperHandlerEv:
 //  822     #endif
 //  823 
 //  824     SPLIT(OCR1A_nominal);  // split step into multiple ISRs if larger than ENDSTOP_NOMINAL_OCR_VAL
-??StepperHandler_77:
-        LDRH     R0,[R6, #+12]
-        MOV      R1,R0
-        LDRB     R2,[R7, #+0]
-        CMP      R2,#+0
-        BNE.N    ??StepperHandler_84
-        LDR.W    R2,??DataTable20_7
+??StepperHandler_67:
+        LDR.W    R2,??DataTable20_3
+        LDRH     R0,[R5, #+12]
         LDRB     R2,[R2, #+0]
+        MOV      R1,R0
         CMP      R2,#+0
-        BEQ.N    ??StepperHandler_85
-??StepperHandler_84:
+        ITTT     EQ 
+        LDREQ.W  R2,??DataTable20_4
+        LDRBEQ   R2,[R2, #+0]
+        CMPEQ    R2,#+0
+        BEQ.N    ??StepperHandler_72
         MOVW     R2,#+3001
         CMP      R0,R2
-        BLT.N    ??StepperHandler_85
+        BLT.N    ??StepperHandler_72
         MOVW     R1,#+3000
         MOV      R2,R1
         SDIV     R2,R0,R2
         MLS      R2,R1,R2,R0
         UXTH     R2,R2
-        MOV      R3,R2
-        CMP      R3,#+1000
-        BGE.N    ??StepperHandler_86
-        ADDW     R1,R2,#+3000
-??StepperHandler_86:
+        CMP      R2,#+1000
+        IT       LT 
+        ADDWLT   R1,R2,#+3000
         UXTH     R1,R1
         SUBS     R0,R0,R1
-        STR      R0,[R6, #+76]
+        STR      R0,[R5, #+76]
 //  825     _NEXT_ISR(ocr_val);
-??StepperHandler_85:
-        LDR      R0,[R4, #+0]
-        STR      R1,[R0, #+44]
-        LDR      R0,[R4, #+0]
-        LDR      R1,[R0, #+44]
-        LDR      R2,[R0, #+36]
-        CMP      R1,R2
-        BCS.N    ??StepperHandler_87
-        LDR      R1,[R0, #+44]
-        SUBS     R1,R1,#+1
-        STR      R1,[R0, #+36]
+??StepperHandler_72:
+        LDR.W    R0,??DataTable20_2
+        LDR      R2,[R0, #+0]
+        STR      R1,[R2, #+44]
+        LDR      R0,[R2, #+44]
+        LDR      R1,[R2, #+36]
+        CMP      R0,R1
+        BCS.N    ??StepperHandler_73
+        LDR      R0,[R2, #+44]
+        SUBS     R0,R0,#+1
+        STR      R0,[R2, #+36]
 //  826 
 //  827     // ensure we're running at the correct step rate, even if we just came off an acceleration
 //  828     step_loops = step_loops_nominal;
-??StepperHandler_87:
-        LDRB     R0,[R6, #+9]
-        STRB     R0,[R6, #+8]
+??StepperHandler_73:
+        LDRB     R0,[R5, #+9]
+        STRB     R0,[R5, #+8]
 //  829   }
 //  830 
 //  831   #if DISABLED(LIN_ADVANCE)
 //  832     NOLESS(OCR1A, TCNT1 + 16);
-??StepperHandler_76:
-        LDR      R0,[R4, #+0]
+??StepperHandler_66:
+        LDR.W    R0,??DataTable20_2
+        LDR      R0,[R0, #+0]
         LDR      R1,[R0, #+44]
         LDR      R2,[R0, #+36]
         ADDS     R2,R2,#+16
         CMP      R1,R2
-        BCS.N    ??StepperHandler_88
+        BCS.N    ??StepperHandler_74
         LDR      R1,[R0, #+36]
         ADDS     R1,R1,#+16
         STR      R1,[R0, #+44]
@@ -2114,33 +2055,40 @@ _ZN7Stepper14StepperHandlerEv:
 //  834 
 //  835   // If current block is finished, reset pointer
 //  836   if (all_steps_done) {
-??StepperHandler_88:
-        CMP      R8,#+0
-        BEQ.N    ??StepperHandler_89
+??StepperHandler_74:
+        CBZ.N    R6,??StepperHandler_75
 //  837     current_block = NULL;
         MOVS     R0,#+0
-        STR      R0,[R6, #+32]
+        STR      R0,[R5, #+32]
 //  838     planner.discard_current_block();
-          CFI FunCall _ZN7Planner21discard_current_blockEv
-        BL       _ZN7Planner21discard_current_blockEv
+        LDR.W    R0,??DataTable20_6
+        LDRB     R1,[R0, #+0]
+        LDR.W    R0,??DataTable20_5
+        LDRB     R2,[R0, #+0]
+        CMP      R1,R2
+        BEQ.N    ??StepperHandler_75
+        LDRB     R1,[R0, #+0]
+        ADDS     R1,R1,#+1
+        AND      R1,R1,#0xF
+        STRB     R1,[R0, #+0]
 //  839   }
 //  840   #if DISABLED(LIN_ADVANCE)
 //  841     _ENABLE_ISRs(); // re-enable ISRs
-??StepperHandler_89:
+??StepperHandler_75:
         cpsie i
-        LDR.W    R0,??DataTable20_8
+??StepperHandler_3:
+        LDR.W    R0,??DataTable21
         LDRB     R0,[R0, #+0]
         CMP      R0,#+0
-        MOV      R0,R5
-        BEQ.N    ??StepperHandler_90
+        MOV      R0,R10
+        BEQ.N    ??StepperHandler_76
           CFI FunCall HAL_TIM_Base_Stop_IT
         BL       HAL_TIM_Base_Stop_IT
-        B.N      ??StepperHandler_7
-??StepperHandler_90:
+        B.N      ??StepperHandler_77
+??StepperHandler_76:
           CFI FunCall HAL_TIM_Base_Start_IT
         BL       HAL_TIM_Base_Start_IT
-??StepperHandler_7:
-        MOV      R0,R4
+??StepperHandler_77:
         POP      {R1,R4-R11,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -2152,11 +2100,29 @@ _ZN7Stepper14StepperHandlerEv:
           CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall HAL_TIM_Base_Start_IT
-        B.W      HAL_TIM_Base_Start_IT
+        Nop      
           CFI EndBlock cfiBlock4
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
 //  842   #endif
 //  843 }
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock5 Using cfiCommon0
+          CFI NoFunction
+        THUMB
+?Subroutine0:
+        LDR.W    R0,??DataTable20_2
+          CFI FunCall _ZN7Stepper7wake_upEv HAL_TIM_Base_Start_IT
+          CFI FunCall _ZN7Stepper14StepperHandlerEv HAL_TIM_Base_Start_IT
+        B.W      HAL_TIM_Base_Start_IT
+          CFI EndBlock cfiBlock5
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "M84 X Y Z E">`:
+        DC8 "M84 X Y Z E"
 
         SECTION `.data`:DATA:REORDER:NOROOT(2)
 _ZN7Stepper15count_directionE:
@@ -2340,7 +2306,7 @@ _ZN7Stepper18endstops_trigstepsE:
 //  980 
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _ZN7Stepper4initEv
         THUMB
 //  981 void Stepper::init() {
@@ -2431,16 +2397,15 @@ _ZN7Stepper4initEv:
 // 1057   #if HAS_X_ENABLE
 // 1058     X_ENABLE_INIT;
 // 1059     if (!X_ENABLE_ON) X_ENABLE_WRITE(HIGH);
-        LDR.W    R7,??DataTable20
-        ADDW     R6,R7,#+257
-        LDR.W    R4,??DataTable20_2
-        LDR.W    R5,??DataTable20_3
+        LDR.W    R8,??DataTable20
+        LDR.W    R4,??DataTable19_1
+        LDR.W    R5,??DataTable19_2
+        ADDW     R6,R8,#+257
         LDRB     R0,[R6, #+3]
-        CMP      R0,#+0
-        BNE.N    ??init_0
-        MOVS     R2,#+1
+        CBNZ.N   R0,??init_0
         LDRH     R1,[R5, #+4]
         LDR      R0,[R4, #+8]
+        MOVS     R2,#+1
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1060     #if ENABLED(DUAL_X_CARRIAGE) && HAS_X2_ENABLE
@@ -2453,11 +2418,10 @@ _ZN7Stepper4initEv:
 // 1067     if (!Y_ENABLE_ON) Y_ENABLE_WRITE(HIGH);
 ??init_0:
         LDRB     R0,[R6, #+4]
-        CMP      R0,#+0
-        BNE.N    ??init_1
-        MOVS     R2,#+1
+        CBNZ.N   R0,??init_1
         LDRH     R1,[R5, #+14]
         LDR      R0,[R4, #+28]
+        MOVS     R2,#+1
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1068     #if ENABLED(Y_DUAL_STEPPER_DRIVERS) && HAS_Y2_ENABLE
@@ -2470,11 +2434,10 @@ _ZN7Stepper4initEv:
 // 1075     if (!Z_ENABLE_ON) Z_ENABLE_WRITE(HIGH);
 ??init_1:
         LDRB     R0,[R6, #+5]
-        CMP      R0,#+0
-        BNE.N    ??init_2
-        MOVS     R2,#+1
+        CBNZ.N   R0,??init_2
         LDRH     R1,[R5, #+24]
         LDR      R0,[R4, #+48]
+        MOVS     R2,#+1
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1076     //#if ENABLED(Z_DUAL_STEPPER_DRIVERS) && HAS_Z2_ENABLE
@@ -2485,11 +2448,10 @@ _ZN7Stepper4initEv:
 // 1081       if (!Z_ENABLE_ON) Z2_ENABLE_WRITE(HIGH);
 ??init_2:
         LDRB     R0,[R6, #+5]
-        CMP      R0,#+0
-        BNE.N    ??init_3
-        MOVS     R2,#+1
+        CBNZ.N   R0,??init_3
         LDRH     R1,[R5, #+40]
         LDR      R0,[R4, #+80]
+        MOVS     R2,#+1
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1082     //#endif
@@ -2499,11 +2461,10 @@ _ZN7Stepper4initEv:
 // 1086     if (!E_ENABLE_ON) E0_ENABLE_WRITE(HIGH);
 ??init_3:
         LDRB     R0,[R6, #+6]
-        CMP      R0,#+0
-        BNE.N    ??init_4
-        MOVS     R2,#+1
+        CBNZ.N   R0,??init_4
         LDRH     R1,[R5, #+34]
         LDR      R0,[R4, #+68]
+        MOVS     R2,#+1
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1087   #endif
@@ -2512,11 +2473,10 @@ _ZN7Stepper4initEv:
 // 1090     if (!E_ENABLE_ON) E1_ENABLE_WRITE(HIGH);
 ??init_4:
         LDRB     R0,[R6, #+6]
-        CMP      R0,#+0
-        BNE.N    ??init_5
-        MOVS     R2,#+1
+        CBNZ.N   R0,??init_5
         LDRH     R1,[R5, #+40]
         LDR      R0,[R4, #+80]
+        MOVS     R2,#+1
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1091   #endif
@@ -2536,7 +2496,7 @@ _ZN7Stepper4initEv:
 // 1105   // Init endstops and pullups
 // 1106   endstops.init();
 ??init_5:
-        LDR.W    R0,??DataTable20_15
+        LDR.W    R0,??DataTable21_1
           CFI FunCall _ZN8Endstops4initEv
         BL       _ZN8Endstops4initEv
 // 1107 
@@ -2558,23 +2518,23 @@ _ZN7Stepper4initEv:
 // 1123       X2_STEP_WRITE(INVERT_X_STEP_PIN);
 // 1124     #endif
 // 1125     AXIS_INIT(X, X);
-        MOVS     R2,#+0
         LDRH     R1,[R5, #+2]
         LDR      R0,[R4, #+4]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRB     R0,[R6, #+3]
+        LDRH     R1,[R5, #+4]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        LDRH     R1,[R5, #+4]
         LDR      R0,[R4, #+8]
+        SXTB     R2,R2
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-        LDR.W    R8,??DataTable20_16
+        LDR.W    R7,??DataTable21_2
         MOVS     R0,#+0
-        STRB     R0,[R8, #+0]
+        STRB     R0,[R7, #+0]
 // 1126   #endif
 // 1127 
 // 1128   #if HAS_Y_STEP
@@ -2583,100 +2543,100 @@ _ZN7Stepper4initEv:
 // 1131       Y2_STEP_WRITE(INVERT_Y_STEP_PIN);
 // 1132     #endif
 // 1133     AXIS_INIT(Y, Y);
-        MOV      R2,R0
+        MOVS     R2,#+0
         LDRH     R1,[R5, #+12]
         LDR      R0,[R4, #+24]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRB     R0,[R6, #+4]
+        LDRH     R1,[R5, #+14]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        LDRH     R1,[R5, #+14]
         LDR      R0,[R4, #+28]
+        SXTB     R2,R2
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         MOVS     R0,#+0
-        STRB     R0,[R8, #+1]
+        STRB     R0,[R7, #+1]
 // 1134   #endif
 // 1135 
 // 1136   #if HAS_Z_STEP
 // 1137     //#if ENABLED(Z_DUAL_STEPPER_DRIVERS)
 // 1138     if(Z_DUAL_STEPPER_DRIVERS==1)
-        LDRB     R0,[R7, #+257]
+        LDRB     R0,[R8, #+257]
         CMP      R0,#+1
         BNE.N    ??init_6
 // 1139     {
 // 1140       Z2_STEP_INIT;
 // 1141       Z2_STEP_WRITE(INVERT_Z_STEP_PIN);
-        MOVS     R2,#+0
         LDRH     R1,[R5, #+38]
         LDR      R0,[R4, #+76]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1142     }
 // 1143     //#endif
 // 1144     AXIS_INIT(Z, Z);
 ??init_6:
-        MOVS     R2,#+0
         LDRH     R1,[R5, #+22]
         LDR      R0,[R4, #+44]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRB     R0,[R6, #+5]
-        SUBS     R2,R0,#+1
-        SBCS     R2,R2,R2
-        LSRS     R2,R2,#+31
-        SXTB     R2,R2
         LDRH     R1,[R5, #+24]
-        LDR      R0,[R4, #+48]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        LDRB     R0,[R6, #+5]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
+        LDR      R0,[R4, #+48]
         SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRB     R0,[R6, #+5]
         LDRH     R1,[R5, #+40]
+        SUBS     R2,R0,#+1
+        SBCS     R2,R2,R2
+        LSRS     R2,R2,#+31
         LDR      R0,[R4, #+80]
+        SXTB     R2,R2
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         MOVS     R0,#+0
-        STRB     R0,[R8, #+2]
+        STRB     R0,[R7, #+2]
 // 1145   #endif
 // 1146 
 // 1147   #if HAS_E0_STEP
 // 1148     E_AXIS_INIT(0);
-        MOV      R2,R0
+        MOVS     R2,#+0
         LDRH     R1,[R5, #+32]
         LDR      R0,[R4, #+64]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRB     R0,[R6, #+6]
+        LDRH     R1,[R5, #+34]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        LDRH     R1,[R5, #+34]
         LDR      R0,[R4, #+68]
+        SXTB     R2,R2
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1149   #endif
 // 1150   #if HAS_E1_STEP
 // 1151     E_AXIS_INIT(1);
-        MOVS     R2,#+0
         LDRH     R1,[R5, #+38]
         LDR      R0,[R4, #+76]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRB     R0,[R6, #+6]
+        LDRH     R1,[R5, #+40]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        LDRH     R1,[R5, #+40]
         LDR      R0,[R4, #+80]
+        SXTB     R2,R2
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1152   #endif
@@ -2708,7 +2668,7 @@ _ZN7Stepper4initEv:
 // 1178   TCNT1 = 0;
 // 1179 #endif
 // 1180   ENABLE_STEPPER_DRIVER_INTERRUPT();
-        LDR.N    R0,??DataTable20_1
+        LDR.W    R0,??DataTable20_2
           CFI FunCall HAL_TIM_Base_Start_IT
         BL       HAL_TIM_Base_Start_IT
 // 1181 
@@ -2718,9 +2678,9 @@ _ZN7Stepper4initEv:
 // 1185   #endif
 // 1186 
 // 1187   endstops.enable(true); // Start with endstops active. After homing they can be disabled
+        LDR.W    R1,??DataTable20_3
         MOVS     R0,#+1
-          CFI FunCall _ZN8Endstops6enableEb
-        BL       _ZN8Endstops6enableEb
+        STRB     R0,[R1, #+0]
 // 1188   sei();
         cpsie i
 // 1189 
@@ -2735,7 +2695,7 @@ _ZN7Stepper4initEv:
           CFI CFA R13+0
           CFI FunCall _ZN7Stepper14set_directionsEv
         B.W      _ZN7Stepper14set_directionsEv
-          CFI EndBlock cfiBlock5
+          CFI EndBlock cfiBlock6
 // 1191 }
 // 1192 
 // 1193 
@@ -2744,56 +2704,60 @@ _ZN7Stepper4initEv:
 // 1196  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN7Stepper11synchronizeEv
         THUMB
 // 1197 void Stepper::synchronize() { while (planner.blocks_queued() || cleaning_buffer_counter) idle(); }
 _ZN7Stepper11synchronizeEv:
-        PUSH     {R7,LR}
+        PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
+        LDR.N    R4,??DataTable20_5
+        LDR.N    R5,??DataTable20_6
         B.N      ??synchronize_0
 ??synchronize_1:
           CFI FunCall _Z4idlev
         BL       _Z4idlev
 ??synchronize_0:
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
+        LDRB     R0,[R5, #+0]
+        LDRB     R1,[R4, #+0]
+        CMP      R0,R1
+        ITTT     EQ 
+        LDREQ.W  R0,??DataTable21_3
+        LDRSHEQ  R0,[R0, #+10]
+        CMPEQ    R0,#+0
         BNE.N    ??synchronize_1
-        LDR.N    R0,??DataTable20_4
-        LDRSH    R0,[R0, #+10]
-        CMP      R0,#+0
-        BNE.N    ??synchronize_1
-        POP      {R0,PC}          ;; return
-          CFI EndBlock cfiBlock6
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
-          CFI Function _ZN7Stepper24waitUntilEndOfAllBuffersEv
-        THUMB
-// 1198 void Stepper::waitUntilEndOfAllBuffers() { while (planner.blocks_queued()) ;}
-_ZN7Stepper24waitUntilEndOfAllBuffersEv:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-??waitUntilEndOfAllBuffers_0:
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
-        BNE.N    ??waitUntilEndOfAllBuffers_0
-        POP      {R0,PC}          ;; return
+        POP      {R0,R4,R5,PC}    ;; return
           CFI EndBlock cfiBlock7
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock8 Using cfiCommon0
+          CFI Function _ZN7Stepper24waitUntilEndOfAllBuffersEv
+          CFI NoCalls
+        THUMB
+// 1198 void Stepper::waitUntilEndOfAllBuffers() { while (planner.blocks_queued()) ;}
+_ZN7Stepper24waitUntilEndOfAllBuffersEv:
+        LDR.N    R0,??DataTable20_5
+        LDR.N    R1,??DataTable20_6
+??waitUntilEndOfAllBuffers_0:
+        LDRB     R2,[R1, #+0]
+        LDRB     R3,[R0, #+0]
+        CMP      R2,R3
+        BNE.N    ??waitUntilEndOfAllBuffers_0
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock8
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN7Stepper22waitUntilEndOfAllMovesEv
           CFI NoCalls
         THUMB
 // 1199 void Stepper:: waitUntilEndOfAllMoves()	{ }
 _ZN7Stepper22waitUntilEndOfAllMovesEv:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock9
 // 1200 
 // 1201 /**
 // 1202  * Set the stepper positions directly in steps
@@ -2806,37 +2770,50 @@ _ZN7Stepper22waitUntilEndOfAllMovesEv:
 // 1209  */
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _ZN7Stepper12set_positionERKlS1_S1_S1_
         THUMB
 // 1210 void Stepper::set_position(const long &a, const long &b, const long &c, const long &e) {
 _ZN7Stepper12set_positionERKlS1_S1_S1_:
-        PUSH     {R4-R8,LR}
+        PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
+          CFI R9 Frame(CFA, -8)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
+          CFI CFA R13+32
         MOV      R4,R0
         MOV      R5,R1
         MOV      R6,R2
         MOV      R7,R3
 // 1211 
 // 1212   synchronize(); // Bad to set stepper counts in the middle of a move
-          CFI FunCall _ZN7Stepper11synchronizeEv
-        BL       _ZN7Stepper11synchronizeEv
+        LDR.W    R8,??DataTable20_5
+        LDR.W    R9,??DataTable20_6
+        B.N      ??set_position_0
+??set_position_1:
+          CFI FunCall _Z4idlev
+        BL       _Z4idlev
+??set_position_0:
+        LDRB     R0,[R9, #+0]
+        LDRB     R1,[R8, #+0]
+        CMP      R0,R1
+        ITTT     EQ 
+        LDREQ.N  R0,??DataTable19
+        LDRSHEQ  R1,[R0, #+10]
+        CMPEQ    R1,#+0
+        BNE.N    ??set_position_1
 // 1213 
 // 1214   CRITICAL_SECTION_START;
+        LDR.W    R1,??DataTable21_4
         cpsid i
-        LDR.N    R0,??DataTable20
-        LDRSH    R2,[R0, #+88]
-        LDR      R1,[R4, #+0]
-        LDR.W    R8,??DataTable20_4
-        MOVS     R3,#+12
-        TST      R2,R3
-        BEQ.N    ??set_position_0
+        LDRSH    R2,[R1, #+88]
+        LDR      R3,[R4, #+0]
+        MOVS     R1,#+12
+        TST      R2,R1
+        BEQ.N    ??set_position_2
 // 1215 #if 0
 // 1216   #if CORE_IS_XY
 // 1217     // corexy positioning
@@ -2864,89 +2841,90 @@ _ZN7Stepper12set_positionERKlS1_S1_S1_:
 // 1239   if(MACHINETPYE & CORE_IS_XY)
 // 1240   	{
 // 1241 	  count_position[A_AXIS] = a + b;
-        LDR      R0,[R5, #+0]
-        ADDS     R0,R0,R1
-        STR      R0,[R8, #+16]
-// 1242 	  count_position[B_AXIS] = CORESIGN(a - b);
-        LDR      R0,[R4, #+0]
         LDR      R1,[R5, #+0]
-        SUBS     R0,R0,R1
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-        STR      R0,[R8, #+20]
-// 1243 	  count_position[Z_AXIS] = c;
-        LDR      R0,[R6, #+0]
-        STR      R0,[R8, #+24]
-        B.N      ??set_position_1
-// 1244   	}
-// 1245   else if(MACHINETPYE & CORE_IS_XZ)
-??set_position_0:
-        MOVS     R3,#+48
+        ADDS     R1,R1,R3
+        STR      R1,[R0, #+16]
+// 1242 	  count_position[B_AXIS] = CORESIGN(a - b);
+        LDR      R3,[R5, #+0]
+        LDR      R1,[R4, #+0]
+        SUBS     R1,R1,R3
+        MOVS     R3,#+168
         TST      R2,R3
-        BEQ.N    ??set_position_2
+        BEQ.N    ??set_position_3
+        RSBS     R1,R1,#+0
+// 1243 	  count_position[Z_AXIS] = c;
+// 1244   	}
+        B.N      ??set_position_3
+// 1245   else if(MACHINETPYE & CORE_IS_XZ)
+??set_position_2:
+        MOVS     R1,#+48
+        TST      R2,R1
+        BEQ.N    ??set_position_4
 // 1246   	{
 // 1247 	  count_position[A_AXIS] = a + c;
-        LDR      R0,[R6, #+0]
-        ADDS     R0,R0,R1
-        STR      R0,[R8, #+16]
-// 1248 	  count_position[Y_AXIS] = b;
-        LDR      R0,[R5, #+0]
-        STR      R0,[R8, #+20]
-// 1249 	  count_position[C_AXIS] = CORESIGN(a - c);
-        LDR      R0,[R4, #+0]
         LDR      R1,[R6, #+0]
-        SUBS     R0,R0,R1
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-        STR      R0,[R8, #+24]
-        B.N      ??set_position_1
+        ADDS     R1,R1,R3
+        STR      R1,[R0, #+16]
+// 1248 	  count_position[Y_AXIS] = b;
+        LDR      R1,[R5, #+0]
+        STR      R1,[R0, #+20]
+// 1249 	  count_position[C_AXIS] = CORESIGN(a - c);
+        LDR      R3,[R6, #+0]
+        LDR      R1,[R4, #+0]
+        SUBS     R1,R1,R3
+        MOVS     R3,#+168
+        TST      R2,R3
+        BEQ.N    ??set_position_5
+        RSBS     R1,R1,#+0
 // 1250   	}
+        B.N      ??set_position_5
 // 1251   else if(MACHINETPYE & CORE_IS_YZ)
-??set_position_2:
-        MOVS     R0,#+192
-        TST      R2,R0
-        STR      R1,[R8, #+16]
-        LDR      R0,[R5, #+0]
+??set_position_4:
+        MOVS     R1,#+192
+        TST      R2,R1
+        STR      R3,[R0, #+16]
+        LDR      R1,[R5, #+0]
         BEQ.N    ??set_position_3
 // 1252   	{
 // 1253 	  count_position[X_AXIS] = a;
 // 1254 	  count_position[B_AXIS] = b + c;
-        LDR      R1,[R6, #+0]
-        ADDS     R0,R1,R0
-        STR      R0,[R8, #+20]
+        LDR      R3,[R6, #+0]
+        ADDS     R1,R3,R1
+        STR      R1,[R0, #+20]
 // 1255 	  count_position[C_AXIS] = CORESIGN(b - c);
-        LDR      R0,[R5, #+0]
-        LDR      R1,[R6, #+0]
-        SUBS     R0,R0,R1
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-        STR      R0,[R8, #+24]
-        B.N      ??set_position_1
+        LDR      R3,[R6, #+0]
+        LDR      R1,[R5, #+0]
+        SUBS     R1,R1,R3
+        MOVS     R3,#+168
+        TST      R2,R3
+        BEQ.N    ??set_position_5
+        RSBS     R1,R1,#+0
 // 1256   	}
+        B.N      ??set_position_5
 // 1257   else
 // 1258   	{
 // 1259 	  count_position[X_AXIS] = a;
 // 1260 	  count_position[Y_AXIS] = b;
 ??set_position_3:
-        STR      R0,[R8, #+20]
+        STR      R1,[R0, #+20]
 // 1261 	  count_position[Z_AXIS] = c;
-        LDR      R0,[R6, #+0]
-        STR      R0,[R8, #+24]
+        LDR      R1,[R6, #+0]
+??set_position_5:
+        STR      R1,[R0, #+24]
 // 1262   	}
 // 1263 
 // 1264   count_position[E_AXIS] = e;
-??set_position_1:
-        LDR      R0,[R7, #+0]
-        STR      R0,[R8, #+28]
+        LDR      R1,[R7, #+0]
+        STR      R1,[R0, #+28]
 // 1265   CRITICAL_SECTION_END;
         cpsie i
 // 1266 }
-        POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock9
+        POP      {R0,R4-R9,PC}    ;; return
+          CFI EndBlock cfiBlock10
 // 1267 
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _ZN7Stepper12set_positionERK8AxisEnumRKl
           CFI NoCalls
         THUMB
@@ -2955,20 +2933,20 @@ _ZN7Stepper12set_positionERKlS1_S1_S1_:
 _ZN7Stepper12set_positionERK8AxisEnumRKl:
         cpsid i
 // 1270   count_position[axis] = v;
-        LDR      R1,[R1, #+0]
         LDRSB    R0,[R0, #+0]
-        LDR.N    R2,??DataTable20_4
+        LDR.W    R2,??DataTable21_3
+        LDR      R1,[R1, #+0]
         ADD      R0,R2,R0, LSL #+2
         STR      R1,[R0, #+16]
 // 1271   CRITICAL_SECTION_END;
         cpsie i
 // 1272 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 // 1273 
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN7Stepper14set_e_positionERKl
           CFI NoCalls
         THUMB
@@ -2978,36 +2956,36 @@ _ZN7Stepper14set_e_positionERKl:
         cpsid i
 // 1276   count_position[E_AXIS] = e;
         LDR      R0,[R0, #+0]
-        LDR.N    R1,??DataTable20_4
+        LDR.W    R1,??DataTable21_3
         STR      R0,[R1, #+28]
 // 1277   CRITICAL_SECTION_END;
         cpsie i
 // 1278 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock12
 // 1279 
 // 1280 /**
 // 1281  * Get a stepper's position in steps.
 // 1282  */
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function _ZN7Stepper8positionE8AxisEnum
           CFI NoCalls
         THUMB
 // 1283 long Stepper::position(const AxisEnum axis) {
 // 1284   CRITICAL_SECTION_START;
-_ZN7Stepper8positionE8AxisEnum:
-        cpsid i
 // 1285   const long count_pos = count_position[axis];
-        LDR.N    R1,??DataTable20_4
+_ZN7Stepper8positionE8AxisEnum:
+        LDR.W    R1,??DataTable21_3
         ADD      R0,R1,R0, LSL #+2
+        cpsid i
         LDR      R0,[R0, #+16]
 // 1286   CRITICAL_SECTION_END;
         cpsie i
 // 1287   return count_pos;
         BX       LR               ;; return
-          CFI EndBlock cfiBlock12
+          CFI EndBlock cfiBlock13
 // 1288 }
 // 1289 
 // 1290 /**
@@ -3016,37 +2994,37 @@ _ZN7Stepper8positionE8AxisEnum:
 // 1293  */
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function _ZN7Stepper20get_axis_position_mmE8AxisEnum
         THUMB
 // 1294 float Stepper::get_axis_position_mm(const AxisEnum axis) {
 _ZN7Stepper20get_axis_position_mmE8AxisEnum:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        MOV      R4,R0
 // 1295   float axis_steps;
 // 1296   //#if IS_CORE
 // 1297   if(MACHINETPYE & IS_CORE) {
-        LDR.N    R0,??DataTable20
-        LDRB     R0,[R0, #+88]
-        MOVS     R1,#+252
-        TST      R0,R1
+        LDR.N    R1,??DataTable20
+        MOV      R4,R0
+        LDRB     R0,[R1, #+88]
+        MOVS     R2,#+252
+        TST      R0,R2
         MOV      R0,R4
         BEQ.N    ??get_axis_position_mm_0
 // 1298     // Requesting one of the "core" axes?
 // 1299     if (axis == CORE_AXIS_1 || axis == CORE_AXIS_2) {
-        LDR.N    R1,??DataTable20_17
-        LDRB     R2,[R1, #+16]
-        CMP      R0,R2
-        BEQ.N    ??get_axis_position_mm_1
-        LDRB     R2,[R1, #+17]
-        CMP      R0,R2
-        BNE.N    ??get_axis_position_mm_2
+        LDR.W    R2,??DataTable21_5
+        LDRB     R3,[R2, #+16]
+        CMP      R0,R3
+        ITT      NE 
+        LDRBNE   R3,[R2, #+17]
+        CMPNE    R0,R3
+        BNE.N    ??get_axis_position_mm_0
 // 1300       CRITICAL_SECTION_START;
-??get_axis_position_mm_1:
         cpsid i
 // 1301       // ((a1+a2)+(a1-a2))/2 -> (a1+a2+a1-a2)/2 -> (a1+a1)/2 -> a1
 // 1302       // ((a1+a2)-(a1-a2))/2 -> (a1+a2-a1+a2)/2 -> (a2+a2)/2 -> a2
@@ -3054,41 +3032,37 @@ _ZN7Stepper20get_axis_position_mmE8AxisEnum:
 // 1304         axis == CORE_AXIS_2 ? CORESIGN(count_position[CORE_AXIS_1] - count_position[CORE_AXIS_2])
 // 1305                             : count_position[CORE_AXIS_1] + count_position[CORE_AXIS_2]
 // 1306       );
-        LDRB     R2,[R1, #+17]
-        LDR.N    R3,??DataTable20_4
-        ADD      R5,R3,R2, LSL #+2
-        LDRB     R1,[R1, #+16]
-        ADD      R1,R3,R1, LSL #+2
-        CMP      R0,R2
-        LDR      R0,[R1, #+16]
-        LDR      R1,[R5, #+16]
-        BNE.N    ??get_axis_position_mm_3
-        SUBS     R0,R0,R1
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-        B.N      ??get_axis_position_mm_4
-??get_axis_position_mm_3:
+        LDRB     R3,[R2, #+17]
+        LDRB     R2,[R2, #+16]
+        LDR.N    R5,??DataTable19
+        ADD      R2,R5,R2, LSL #+2
+        CMP      R0,R3
+        LDR      R0,[R2, #+16]
+        ADD      R6,R5,R3, LSL #+2
+        BNE.N    ??get_axis_position_mm_1
+        LDR      R2,[R6, #+16]
+        LDRB     R1,[R1, #+88]
+        SUBS     R0,R0,R2
+        MOVS     R2,#+168
+        TST      R1,R2
+        BEQ.N    ??get_axis_position_mm_2
+        RSBS     R0,R0,#+0
+        B.N      ??get_axis_position_mm_2
+??get_axis_position_mm_1:
+        LDR      R1,[R6, #+16]
         ADDS     R0,R1,R0
-??get_axis_position_mm_4:
+??get_axis_position_mm_2:
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,#+1056964608
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R0
 // 1307       CRITICAL_SECTION_END;
         cpsie i
-        B.N      ??get_axis_position_mm_5
+        B.N      ??get_axis_position_mm_3
 // 1308     }
 // 1309     else
 // 1310       axis_steps = position(axis);
-??get_axis_position_mm_2:
-          CFI FunCall _ZN7Stepper8positionE8AxisEnum
-        BL       _ZN7Stepper8positionE8AxisEnum
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        B.N      ??get_axis_position_mm_5
 // 1311   	}
 // 1312   //#else
 // 1313   else
@@ -3099,48 +3073,65 @@ _ZN7Stepper20get_axis_position_mmE8AxisEnum:
         BL       _ZN7Stepper8positionE8AxisEnum
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R1,R0
 // 1316   }
 // 1317   //#endif
 // 1318   return axis_steps * planner.steps_to_mm[axis];
-??get_axis_position_mm_5:
-        LDR.N    R0,??DataTable20_18
-        LDR      R0,[R0, R4, LSL #+2]
-        POP      {R2,R4,R5,LR}
+??get_axis_position_mm_3:
+        LDR.W    R1,??DataTable21_6
+        LDR      R1,[R1, R4, LSL #+2]
+        POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
+          CFI R6 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall __aeabi_fmul
         B.W      __aeabi_fmul
-          CFI EndBlock cfiBlock13
+          CFI EndBlock cfiBlock14
 // 1319 }
 // 1320 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function _ZN7Stepper18finish_and_disableEv
         THUMB
 // 1321 void Stepper::finish_and_disable() {
 _ZN7Stepper18finish_and_disableEv:
-        PUSH     {R7,LR}
+        PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
 // 1322   synchronize();
-          CFI FunCall _ZN7Stepper11synchronizeEv
-        BL       _ZN7Stepper11synchronizeEv
+        LDR.N    R4,??DataTable20_5
+        LDR.N    R5,??DataTable20_6
+        B.N      ??finish_and_disable_0
+??finish_and_disable_1:
+          CFI FunCall _Z4idlev
+        BL       _Z4idlev
+??finish_and_disable_0:
+        LDRB     R0,[R5, #+0]
+        LDRB     R1,[R4, #+0]
+        CMP      R0,R1
+        ITTT     EQ 
+        LDREQ.W  R0,??DataTable21_3
+        LDRSHEQ  R0,[R0, #+10]
+        CMPEQ    R0,#+0
+        BNE.N    ??finish_and_disable_1
 // 1323   disable_all_steppers();
-        POP      {R0,LR}
+        POP      {R0,R4,R5,LR}
+          CFI R4 SameValue
+          CFI R5 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall _Z20disable_all_steppersv
         B.W      _Z20disable_all_steppersv
-          CFI EndBlock cfiBlock14
+          CFI EndBlock cfiBlock15
 // 1324 }
 // 1325 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function _ZN7Stepper10quick_stopEv
         THUMB
 // 1326 void Stepper::quick_stop() {
@@ -3151,23 +3142,31 @@ _ZN7Stepper10quick_stopEv:
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
 // 1327   cleaning_buffer_counter = 5000;
-        LDR.N    R4,??DataTable20_4
+        LDR.N    R4,??DataTable19
+// 1328   DISABLE_STEPPER_DRIVER_INTERRUPT();
+        LDR.N    R5,??DataTable20_2
         MOVW     R0,#+5000
         STRH     R0,[R4, #+10]
-// 1328   DISABLE_STEPPER_DRIVER_INTERRUPT();
-        LDR.N    R5,??DataTable20_1
         MOV      R0,R5
           CFI FunCall HAL_TIM_Base_Stop_IT
         BL       HAL_TIM_Base_Stop_IT
+        LDR.N    R0,??DataTable20_5
+        LDR.N    R1,??DataTable20_6
         B.N      ??quick_stop_0
 // 1329   while (planner.blocks_queued()) planner.discard_current_block();
 ??quick_stop_1:
-          CFI FunCall _ZN7Planner21discard_current_blockEv
-        BL       _ZN7Planner21discard_current_blockEv
+        LDRB     R2,[R1, #+0]
+        LDRB     R3,[R0, #+0]
+        CMP      R2,R3
+        BEQ.N    ??quick_stop_0
+        LDRB     R2,[R0, #+0]
+        ADDS     R2,R2,#+1
+        AND      R2,R2,#0xF
+        STRB     R2,[R0, #+0]
 ??quick_stop_0:
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
+        LDRB     R2,[R1, #+0]
+        LDRB     R3,[R0, #+0]
+        CMP      R2,R3
         BNE.N    ??quick_stop_1
 // 1330   current_block = NULL;
         MOVS     R0,#+0
@@ -3181,7 +3180,7 @@ _ZN7Stepper10quick_stopEv:
           CFI CFA R13+0
           CFI FunCall HAL_TIM_Base_Start_IT
         B.W      HAL_TIM_Base_Start_IT
-          CFI EndBlock cfiBlock15
+          CFI EndBlock cfiBlock16
 // 1332   #if ENABLED(ULTRA_LCD)
 // 1333     planner.clear_block_buffer_runtime();
 // 1334   #endif
@@ -3189,7 +3188,7 @@ _ZN7Stepper10quick_stopEv:
 // 1336 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock17 Using cfiCommon0
           CFI Function _ZN7Stepper17endstop_triggeredE8AxisEnum
         THUMB
 // 1337 void Stepper::endstop_triggered(AxisEnum axis) {
@@ -3199,36 +3198,38 @@ _ZN7Stepper17endstop_triggeredE8AxisEnum:
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-        MOV      R5,R0
+        MOV      R4,R0
+        LDR.N    R0,??DataTable20
+        LDR.N    R5,??DataTable19
+        LDRSH    R1,[R0, #+88]
+        MOVS     R0,#+252
+        TST      R1,R0
+        BEQ.N    ??endstop_triggered_0
 // 1338 
 // 1339   //#if IS_CORE
 // 1340   if(MACHINETPYE & IS_CORE) {
-        LDR.N    R4,??DataTable20_4
-        LDR.N    R0,??DataTable20
-        LDRB     R0,[R0, #+88]
-        MOVS     R1,#+252
-        TST      R0,R1
-        BEQ.N    ??endstop_triggered_0
 // 1341 
 // 1342     endstops_trigsteps[axis] = 0.5f * (
 // 1343       axis == CORE_AXIS_2 ? CORESIGN(count_position[CORE_AXIS_1] - count_position[CORE_AXIS_2])
 // 1344                           : count_position[CORE_AXIS_1] + count_position[CORE_AXIS_2]
 // 1345     );
-        LDR.N    R0,??DataTable20_17
-        LDRB     R1,[R0, #+17]
-        ADD      R2,R4,R1, LSL #+2
+        LDR.W    R0,??DataTable21_5
+        LDRB     R2,[R0, #+17]
         LDRB     R0,[R0, #+16]
-        ADD      R0,R4,R0, LSL #+2
-        MOV      R3,R5
-        CMP      R3,R1
+        ADD      R0,R5,R0, LSL #+2
+        ADD      R3,R5,R2, LSL #+2
         LDR      R0,[R0, #+16]
-        LDR      R1,[R2, #+16]
+        CMP      R4,R2
         BNE.N    ??endstop_triggered_1
-        SUBS     R0,R0,R1
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
+        LDR      R2,[R3, #+16]
+        SUBS     R0,R0,R2
+        MOVS     R2,#+168
+        TST      R1,R2
+        BEQ.N    ??endstop_triggered_2
+        RSBS     R0,R0,#+0
         B.N      ??endstop_triggered_2
 ??endstop_triggered_1:
+        LDR      R1,[R3, #+16]
         ADDS     R0,R1,R0
 ??endstop_triggered_2:
           CFI FunCall __aeabi_i2f
@@ -3238,12 +3239,12 @@ _ZN7Stepper17endstop_triggeredE8AxisEnum:
         BL       __aeabi_fmul
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        ADD      R1,R4,R5, LSL #+2
+        ADD      R1,R5,R4, LSL #+2
         STR      R0,[R1, #+64]
         B.N      ??endstop_triggered_3
 // 1346   }
 ??endstop_triggered_0:
-        ADD      R0,R4,R5, LSL #+2
+        ADD      R0,R5,R4, LSL #+2
         LDR      R1,[R0, #+16]
         STR      R1,[R0, #+64]
 // 1347   else
@@ -3255,107 +3256,207 @@ _ZN7Stepper17endstop_triggeredE8AxisEnum:
 // 1353 
 // 1354   kill_current_block();
 ??endstop_triggered_3:
-          CFI FunCall _ZN7Stepper18kill_current_blockEv
-        BL       _ZN7Stepper18kill_current_blockEv
+        LDR      R0,[R5, #+32]
+        LDR      R0,[R0, #+20]
+        STR      R0,[R5, #+52]
 // 1355   cleaning_buffer_counter = -1; // Discard the rest of the move
         MOV      R0,#-1
-        STRH     R0,[R4, #+10]
+        STRH     R0,[R5, #+10]
 // 1356 }
         POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock16
+          CFI EndBlock cfiBlock17
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock17 Using cfiCommon0
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable19:
+        DC32     _ZN7Stepper15count_directionE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable19_1:
+        DC32     gArrayGpioPort
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable19_2:
+        DC32     gArrayGpioPin
+// 1357 
+
+        SECTION `.text`:CODE:NOROOT(2)
+          CFI Block cfiBlock18 Using cfiCommon0
           CFI Function _ZN7Stepper16report_positionsEv
         THUMB
+// 1358 void Stepper::report_positions() {
 _ZN7Stepper16report_positionsEv:
-        PUSH     {R4-R8,LR}
+        PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
+          CFI R9 Frame(CFA, -8)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
+          CFI CFA R13+32
+// 1359   CRITICAL_SECTION_START;
+// 1360   const long xpos = count_position[X_AXIS],
+        LDR.W    R0,??DataTable21_3
+        LDR.W    R8,??DataTable20
         cpsid i
-        LDR.N    R0,??DataTable20_4
-        LDR      R4,[R0, #+16]
-        LDR      R5,[R0, #+20]
-        LDR      R6,[R0, #+24]
+        LDR      R7,[R0, #+16]
+// 1361              ypos = count_position[Y_AXIS],
+        LDR      R6,[R0, #+20]
+// 1362              zpos = count_position[Z_AXIS];
+        LDR      R4,[R0, #+24]
+// 1363   CRITICAL_SECTION_END;
         cpsie i
-        LDR.N    R7,??DataTable20
-        LDRSH    R0,[R7, #+88]
+// 1364 
+// 1365   //#if CORE_IS_XY || CORE_IS_XZ || IS_SCARA
+// 1366   if(MACHINETPYE&IS_SCARA || MACHINETPYE&CORE_IS_XZ || MACHINETPYE&IS_SCARA)
+        LDRSH    R0,[R8, #+88]
         MOV      R1,#+816
         TST      R0,R1
-        BNE.N    ??report_positions_0
-        MOV      R1,#+768
-        TST      R0,R1
-        BEQ.N    ??report_positions_1
-??report_positions_0:
-        ADR.W    R0,`?<Constant " Count A:">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??report_positions_2
+        ITT      EQ 
+        MOVEQ    R1,#+768
+        TSTEQ    R0,R1
+        BEQ.N    ??report_positions_0
+// 1367     {SERIAL_PROTOCOLPGM(MSG_COUNT_A);}
+        ADR.W    R9,`?<Constant " Count A:">`
+        LDR.W    R5,??DataTable21_7
 ??report_positions_1:
-        ADR.W    R0,`?<Constant " Count X:">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BEQ.N    ??report_positions_2
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??report_positions_1
+// 1368   //#else
+// 1369   else
+// 1370     {SERIAL_PROTOCOLPGM(MSG_COUNT_X);}
+??report_positions_0:
+        ADR.W    R9,`?<Constant " Count X:">`
+        LDR.W    R5,??DataTable21_7
+        B.N      ??report_positions_3
+??report_positions_4:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_positions_3:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_positions_4
+// 1371   //#endif
+// 1372   SERIAL_PROTOCOL(xpos);
 ??report_positions_2:
-        LDR.W    R8,??DataTable20_19
         MOVS     R2,#+10
-        MOV      R1,R4
-        MOV      R0,R8
+        MOV      R1,R7
+        MOV      R0,R5
           CFI FunCall _ZN5Print5printEli
         BL       _ZN5Print5printEli
-        LDRH     R0,[R7, #+88]
+// 1373 
+// 1374   //#if CORE_IS_XY || CORE_IS_YZ || IS_SCARA
+// 1375   if(MACHINETPYE&CORE_IS_XY || MACHINETPYE&CORE_IS_YZ || MACHINETPYE&IS_SCARA)
+        LDRH     R0,[R8, #+88]
         MOV      R1,#+972
         TST      R0,R1
-        BEQ.N    ??report_positions_3
-        ADR.N    R0,??DataTable20_9  ;; " B:"
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??report_positions_4
-??report_positions_3:
-        ADR.N    R0,??DataTable20_10  ;; " Y:"
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-??report_positions_4:
-        MOVS     R2,#+10
-        MOV      R1,R5
-        MOV      R0,R8
-          CFI FunCall _ZN5Print5printEli
-        BL       _ZN5Print5printEli
-        LDRB     R0,[R7, #+88]
-        MOVS     R1,#+240
-        TST      R0,R1
         BEQ.N    ??report_positions_5
-        ADR.N    R0,??DataTable20_11  ;; " C:"
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??report_positions_6
-??report_positions_5:
-        ADR.N    R0,??DataTable20_12  ;; " Z:"
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+// 1376     {SERIAL_PROTOCOLPGM(" B:");}
+        ADR.N    R7,??DataTable20_8  ;; " B:"
 ??report_positions_6:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BEQ.N    ??report_positions_7
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??report_positions_6
+// 1377   //#else
+// 1378   else
+// 1379     {SERIAL_PROTOCOLPGM(" Y:");}
+??report_positions_5:
+        ADR.N    R7,??DataTable20_9  ;; " Y:"
+        B.N      ??report_positions_8
+??report_positions_9:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_positions_8:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_positions_9
+// 1380   //#endif
+// 1381   SERIAL_PROTOCOL(ypos);
+??report_positions_7:
         MOVS     R2,#+10
         MOV      R1,R6
-        MOV      R0,R8
+        MOV      R0,R5
           CFI FunCall _ZN5Print5printEli
         BL       _ZN5Print5printEli
-        MOVS     R1,#+10
-        MOV      R0,R8
-        POP      {R4-R8,LR}
+// 1382 
+// 1383   //#if CORE_IS_XZ || CORE_IS_YZ
+// 1384   if(MACHINETPYE&CORE_IS_XZ || MACHINETPYE&CORE_IS_YZ)
+        LDRB     R0,[R8, #+88]
+        MOVS     R1,#+240
+        TST      R0,R1
+        BEQ.N    ??report_positions_10
+// 1385     {SERIAL_PROTOCOLPGM(" C:");}
+        ADR.N    R6,??DataTable20_10  ;; " C:"
+??report_positions_11:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BEQ.N    ??report_positions_12
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??report_positions_11
+// 1386   //#else
+// 1387   else
+// 1388     {SERIAL_PROTOCOLPGM(" Z:");}
+??report_positions_10:
+        ADR.N    R6,??DataTable20_11  ;; " Z:"
+        B.N      ??report_positions_13
+??report_positions_14:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??report_positions_13:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??report_positions_14
+// 1389   //#endif
+// 1390   SERIAL_PROTOCOL(zpos);
+??report_positions_12:
+        MOVS     R2,#+10
+        MOV      R1,R4
+        MOV      R0,R5
+          CFI FunCall _ZN5Print5printEli
+        BL       _ZN5Print5printEli
+// 1391 
+// 1392   SERIAL_EOL();
+        MOV      R0,R5
+        POP      {R2,R4-R9,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
           CFI R8 SameValue
+          CFI R9 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R1,#+10
           CFI FunCall _ZN10USARTClass5writeEh
         B.W      _ZN10USARTClass5writeEh
-          CFI EndBlock cfiBlock17
+          CFI EndBlock cfiBlock18
+// 1393 }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -3367,121 +3468,679 @@ _ZN7Stepper16report_positionsEv:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable20_1:
-        DC32     htim2
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_2:
-        DC32     gArrayGpioPort
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_3:
-        DC32     gArrayGpioPin
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_4:
-        DC32     _ZN7Stepper15count_directionE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_5:
         DC32     htim4
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_6:
+??DataTable20_2:
+        DC32     htim2
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable20_3:
         DC32     _ZN8Endstops7enabledE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_7:
+??DataTable20_4:
         DC32     _ZN8Endstops15z_probe_enabledE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_8:
-        DC32     _ZN11Temperature11in_temp_isrE
+??DataTable20_5:
+        DC32     _ZN7Planner17block_buffer_tailE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_9:
+??DataTable20_6:
+        DC32     _ZN7Planner17block_buffer_headE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable20_7:
+        DC32     _ZN7Planner12block_bufferE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable20_8:
         DC8      " B:"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_10:
+??DataTable20_9:
         DC8      " Y:"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_11:
+??DataTable20_10:
         DC8      " C:"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_12:
+??DataTable20_11:
         DC8      " Z:"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_13:
-        DC32     gCfgItems
+??DataTable20_12:
+        DC32     _ZZN7Stepper25trapezoid_generator_resetEvE13last_extruder
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_14:
+??DataTable20_13:
         DC32     _ZN8Endstops16old_endstop_bitsE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
+??DataTable20_14:
+        DC32     gCfgItems
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
 ??DataTable20_15:
+        DC32     mksCfg+0x101
+// 1394 
+// 1395 #if ENABLED(BABYSTEPPING)
+// 1396 
+// 1397   #if ENABLED(DELTA)
+// 1398     #define CYCLES_EATEN_BABYSTEP (2 * 15)
+// 1399   #else
+// 1400     #define CYCLES_EATEN_BABYSTEP 0
+// 1401   #endif
+// 1402   #define EXTRA_CYCLES_BABYSTEP (STEP_PULSE_CYCLES - (CYCLES_EATEN_BABYSTEP))
+// 1403 
+// 1404   #define _ENABLE(AXIS) enable_## AXIS()
+// 1405   #define _READ_DIR(AXIS) AXIS ##_DIR_READ
+// 1406   #define _INVERT_DIR(AXIS) INVERT_## AXIS ##_DIR
+// 1407   #define _APPLY_DIR(AXIS, INVERT) AXIS ##_APPLY_DIR(INVERT, true)
+// 1408 
+// 1409   #if EXTRA_CYCLES_BABYSTEP > 20
+// 1410     #define _SAVE_START const uint32_t pulse_start = TCNT0
+// 1411     #define _PULSE_WAIT while (EXTRA_CYCLES_BABYSTEP > (uint32_t)(TCNT0 - pulse_start) * (INT0_PRESCALER)) { /* nada */ }
+// 1412   #else
+// 1413     #define _SAVE_START NOOP
+// 1414     #if EXTRA_CYCLES_BABYSTEP > 0
+// 1415       #define _PULSE_WAIT DELAY_NOPS(EXTRA_CYCLES_BABYSTEP)
+// 1416     #elif STEP_PULSE_CYCLES > 0
+// 1417       #define _PULSE_WAIT NOOP
+// 1418     #elif ENABLED(DELTA)
+// 1419       #define _PULSE_WAIT NOOP//for(uint8_t i=0;i<=255;i++)//HAL_Delay(2);//delayMicroseconds(2);
+// 1420     #else
+// 1421       #define _PULSE_WAIT NOOP//for(uint8_t i=0;i<=255;i++)//HAL_Delay(4);//delayMicroseconds(4);
+// 1422     #endif
+// 1423   #endif
+// 1424 
+// 1425   #define BABYSTEP_AXIS(AXIS, INVERT) {                     \ 
+// 1426       const uint8_t old_dir = _READ_DIR(AXIS);              \ 
+// 1427       _ENABLE(AXIS);                                        \ 
+// 1428       _SAVE_START;                                          \ 
+// 1429       _APPLY_DIR(AXIS, (GPIO_PinState)(_INVERT_DIR(AXIS)^direction^INVERT)); \ 
+// 1430       _APPLY_STEP(AXIS)(!_INVERT_STEP_PIN(AXIS), true);     \ 
+// 1431       _PULSE_WAIT;                                          \ 
+// 1432       _APPLY_STEP(AXIS)(_INVERT_STEP_PIN(AXIS), true);      \ 
+// 1433       _APPLY_DIR(AXIS, (GPIO_PinState)old_dir);                            \ 
+// 1434     }
+// 1435 
+// 1436   // MUST ONLY BE CALLED BY AN ISR,
+// 1437   // No other ISR should ever interrupt this!
+
+        SECTION `.text`:CODE:NOROOT(2)
+          CFI Block cfiBlock19 Using cfiCommon0
+          CFI Function _ZN7Stepper8babystepE8AxisEnumb
+        THUMB
+// 1438   void Stepper::babystep(const AxisEnum axis, const bool direction) {
+_ZN7Stepper8babystepE8AxisEnumb:
+        PUSH     {R4-R10,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
+        MOV      R4,R1
+// 1439     cli();
+        cpsid i
+// 1440 
+// 1441     switch (axis) {
+        CBZ.N    R0,??babystep_0
+        CMP      R0,#+2
+        BEQ.N    ??babystep_1
+        BCC.N    ??babystep_2
+        B.N      ??babystep_3
+// 1442 
+// 1443       #if ENABLED(BABYSTEP_XY)
+// 1444 
+// 1445         case X_AXIS:
+// 1446           BABYSTEP_AXIS(X, false);
+??babystep_0:
+        LDR.N    R5,??DataTable21_8
+        LDR.N    R6,??DataTable21_9
+        LDR      R0,[R5, #+0]
+        LDRH     R1,[R6, #+0]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDR.W    R9,??DataTable21_4
+        LDRH     R1,[R6, #+4]
+        LDRSB    R2,[R9, #+260]
+        MOV      R7,R0
+        LDR      R0,[R5, #+8]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRSB    R0,[R9, #+0]
+        LDRH     R1,[R6, #+0]
+        EOR      R2,R4,R0
+        LDR      R0,[R5, #+0]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRH     R1,[R6, #+2]
+        LDR      R0,[R5, #+4]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRH     R1,[R6, #+2]
+        LDR      R0,[R5, #+4]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRH     R1,[R6, #+0]
+        LDR      R0,[R5, #+0]
+        MOV      R2,R7
+        B.N      ??babystep_4
+// 1447           break;
+// 1448 
+// 1449         case Y_AXIS:
+// 1450           BABYSTEP_AXIS(Y, false);
+??babystep_2:
+        LDR.N    R5,??DataTable21_8
+        LDR.N    R6,??DataTable21_9
+        LDR      R0,[R5, #+20]
+        LDRH     R1,[R6, #+10]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDR.W    R9,??DataTable21_4
+        LDRH     R1,[R6, #+14]
+        LDRSB    R2,[R9, #+261]
+        MOV      R7,R0
+        LDR      R0,[R5, #+28]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRSB    R0,[R9, #+1]
+        LDRH     R1,[R6, #+10]
+        EOR      R2,R4,R0
+        LDR      R0,[R5, #+20]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRH     R1,[R6, #+12]
+        LDR      R0,[R5, #+24]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRH     R1,[R6, #+12]
+        LDR      R0,[R5, #+24]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRH     R1,[R6, #+10]
+        LDR      R0,[R5, #+20]
+        MOV      R2,R7
+        B.N      ??babystep_4
+// 1451           break;
+// 1452 
+// 1453       #endif
+// 1454 
+// 1455       case Z_AXIS: {
+// 1456 
+// 1457         //#if DISABLED(DELTA)
+// 1458 	if(MACHINETPYE != DELTA)
+??babystep_1:
+        LDR.W    R9,??DataTable21_4
+        LDR.N    R5,??DataTable21_8
+        LDRSH    R0,[R9, #+88]
+        LDR.N    R6,??DataTable21_9
+        CMP      R0,#+2
+        BEQ.W    ??babystep_5
+// 1459 	{
+// 1460 
+// 1461           BABYSTEP_AXIS(Z, BABYSTEP_INVERT_Z);
+        LDRH     R1,[R6, #+20]
+        LDR      R0,[R5, #+40]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+        LDRSB    R2,[R9, #+262]
+        LDRH     R1,[R6, #+24]
+        UXTB     R8,R0
+        LDR      R0,[R5, #+48]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRSB    R2,[R9, #+262]
+        LDRH     R1,[R6, #+40]
+        LDR      R0,[R5, #+80]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRSB    R0,[R9, #+2]
+        LDRH     R1,[R6, #+20]
+        EOR      R2,R4,R0
+        LDR      R0,[R5, #+40]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRB     R0,[R9, #+257]
+        CMP      R0,#+1
+        BNE.N    ??babystep_6
+        LDRSB    R0,[R9, #+2]
+        LDRH     R1,[R6, #+36]
+        EOR      R2,R4,R0
+        LDR      R0,[R5, #+72]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??babystep_6:
+        LDRB     R0,[R9, #+258]
+        CMP      R0,#+1
+        BNE.N    ??babystep_7
+        LDR.N    R4,??DataTable21_3
+        LDRB     R0,[R4, #+4]
+        CBZ.N    R0,??babystep_8
+        LDR.N    R7,??DataTable21_10
+        LDRSB    R1,[R9, #+7]
+        LDRH     R0,[R7, #+0]
+        CMP      R1,#+0
+        BPL.N    ??babystep_9
+        LSLS     R0,R0,#+29
+        ITT      MI 
+        LDRSBMI  R0,[R4, #+2]
+        CMPMI    R0,#+0
+        BMI.N    ??babystep_10
+        LDRB     R0,[R4, #+6]
+        CBNZ.N   R0,??babystep_10
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??babystep_10:
+        LDRH     R0,[R7, #+0]
+        LSLS     R0,R0,#+20
+        BPL.N    ??babystep_11
+        LDRSB    R0,[R4, #+2]
+        CMP      R0,#+0
+        BMI.N    ??babystep_12
+        B.N      ??babystep_11
+??babystep_9:
+        LSLS     R0,R0,#+25
+        BPL.N    ??babystep_13
+        LDRSB    R0,[R4, #+2]
+        CMP      R0,#+1
+        BGE.N    ??babystep_14
+??babystep_13:
+        LDRB     R0,[R4, #+6]
+        CBNZ.N   R0,??babystep_14
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??babystep_14:
+        LDRH     R0,[R7, #+0]
+        LSLS     R0,R0,#+19
+        BPL.N    ??babystep_11
+        LDRSB    R0,[R4, #+2]
+        CMP      R0,#+1
+        BGE.N    ??babystep_12
+??babystep_11:
+        LDRB     R0,[R4, #+7]
+        CBNZ.N   R0,??babystep_12
+        B.N      ??babystep_15
+??babystep_8:
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        B.N      ??babystep_15
+??babystep_7:
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRB     R0,[R9, #+257]
+        CMP      R0,#+1
+        BNE.N    ??babystep_12
+??babystep_15:
+        LDRH     R1,[R6, #+38]
+        LDR      R0,[R5, #+76]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??babystep_12:
+        LDRB     R0,[R9, #+258]
+        CMP      R0,#+1
+        BNE.N    ??babystep_16
+        LDR.N    R4,??DataTable21_3
+        LDRB     R0,[R4, #+4]
+        CBZ.N    R0,??babystep_17
+        LDR.N    R7,??DataTable21_10
+        LDRSB    R1,[R9, #+7]
+        LDRH     R0,[R7, #+0]
+        CMP      R1,#+0
+        BPL.N    ??babystep_18
+        LSLS     R0,R0,#+29
+        ITT      MI 
+        LDRSBMI  R0,[R4, #+2]
+        CMPMI    R0,#+0
+        BMI.N    ??babystep_19
+        LDRB     R0,[R4, #+6]
+        CBNZ.N   R0,??babystep_19
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??babystep_19:
+        LDRH     R0,[R7, #+0]
+        LSLS     R0,R0,#+20
+        BPL.N    ??babystep_20
+        LDRSB    R0,[R4, #+2]
+        CMP      R0,#+0
+        BMI.N    ??babystep_21
+        B.N      ??babystep_20
+??babystep_18:
+        LSLS     R0,R0,#+25
+        BPL.N    ??babystep_22
+        LDRSB    R0,[R4, #+2]
+        CMP      R0,#+1
+        BGE.N    ??babystep_23
+??babystep_22:
+        LDRB     R0,[R4, #+6]
+        CBNZ.N   R0,??babystep_23
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??babystep_23:
+        LDRH     R0,[R7, #+0]
+        LSLS     R0,R0,#+19
+        BPL.N    ??babystep_20
+        LDRSB    R0,[R4, #+2]
+        CMP      R0,#+1
+        BGE.N    ??babystep_21
+??babystep_20:
+        LDRB     R0,[R4, #+7]
+        CBNZ.N   R0,??babystep_21
+        B.N      ??babystep_24
+??babystep_17:
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        B.N      ??babystep_24
+??babystep_16:
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRB     R0,[R9, #+257]
+        CMP      R0,#+1
+        BNE.N    ??babystep_21
+??babystep_24:
+        LDRH     R1,[R6, #+38]
+        LDR      R0,[R5, #+76]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+??babystep_21:
+        LDRH     R1,[R6, #+20]
+        LDR      R0,[R5, #+40]
+        SXTB     R2,R8
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRB     R0,[R9, #+257]
+        CMP      R0,#+1
+        BNE.N    ??babystep_3
+        LDRH     R1,[R6, #+36]
+        LDR      R0,[R5, #+72]
+        SXTB     R2,R8
+        B.N      ??babystep_4
+// 1462 	}
+// 1463         //#else // DELTA
+// 1464 	else
+// 1465 	{
+// 1466           const bool z_direction = direction ^ BABYSTEP_INVERT_Z;
+// 1467 
+// 1468           enable_X();
+??babystep_5:
+        LDRSB    R2,[R9, #+260]
+        LDRH     R1,[R6, #+4]
+        LDR      R0,[R5, #+8]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1469           enable_Y();
+        LDRSB    R2,[R9, #+261]
+        LDRH     R1,[R6, #+14]
+        LDR      R0,[R5, #+28]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1470           enable_Z();
+        LDRSB    R2,[R9, #+262]
+        LDRH     R1,[R6, #+24]
+        LDR      R0,[R5, #+48]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+        LDRSB    R2,[R9, #+262]
+        LDRH     R1,[R6, #+40]
+        LDR      R0,[R5, #+80]
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1471 
+// 1472           const uint8_t old_x_dir_pin = X_DIR_READ,
+        LDRH     R1,[R6, #+0]
+        LDR      R0,[R5, #+0]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+// 1473                         old_y_dir_pin = Y_DIR_READ,
+        LDRH     R1,[R6, #+10]
+        MOV      R8,R0
+        LDR      R0,[R5, #+20]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+// 1474                         old_z_dir_pin = Z_DIR_READ;
+        LDRH     R1,[R6, #+20]
+        MOV      R7,R0
+        LDR      R0,[R5, #+40]
+          CFI FunCall HAL_GPIO_ReadPin
+        BL       HAL_GPIO_ReadPin
+// 1475 
+// 1476           X_DIR_WRITE((GPIO_PinState)(INVERT_X_DIR ^ z_direction));
+        LDRH     R1,[R6, #+0]
+        MOV      R10,R0
+        LDRSB    R0,[R9, #+0]
+        EOR      R2,R4,R0
+        LDR      R0,[R5, #+0]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1477           Y_DIR_WRITE((GPIO_PinState)(INVERT_Y_DIR ^ z_direction));
+        LDRSB    R0,[R9, #+1]
+        LDRH     R1,[R6, #+10]
+        EOR      R2,R4,R0
+        LDR      R0,[R5, #+20]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1478           Z_DIR_WRITE((GPIO_PinState)(INVERT_Z_DIR ^ z_direction));
+        LDRSB    R0,[R9, #+2]
+        LDRH     R1,[R6, #+20]
+        EOR      R2,R4,R0
+        LDR      R0,[R5, #+40]
+        SXTB     R2,R2
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1479 
+// 1480           _SAVE_START;
+// 1481 
+// 1482           X_STEP_WRITE(!INVERT_X_STEP_PIN);
+        LDRH     R1,[R6, #+2]
+        LDR      R0,[R5, #+4]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1483           Y_STEP_WRITE(!INVERT_Y_STEP_PIN);
+        LDRH     R1,[R6, #+12]
+        LDR      R0,[R5, #+24]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1484           Z_STEP_WRITE(!INVERT_Z_STEP_PIN);
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+1
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1485 
+// 1486           _PULSE_WAIT;
+// 1487 
+// 1488           X_STEP_WRITE(INVERT_X_STEP_PIN);
+        LDRH     R1,[R6, #+2]
+        LDR      R0,[R5, #+4]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1489           Y_STEP_WRITE(INVERT_Y_STEP_PIN);
+        LDRH     R1,[R6, #+12]
+        LDR      R0,[R5, #+24]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1490           Z_STEP_WRITE(INVERT_Z_STEP_PIN);
+        LDRH     R1,[R6, #+22]
+        LDR      R0,[R5, #+44]
+        MOVS     R2,#+0
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1491 
+// 1492           // Restore direction bits
+// 1493           X_DIR_WRITE(old_x_dir_pin);
+        LDRH     R1,[R6, #+0]
+        LDR      R0,[R5, #+0]
+        MOV      R2,R8
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1494           Y_DIR_WRITE(old_y_dir_pin);
+        LDRH     R1,[R6, #+10]
+        LDR      R0,[R5, #+20]
+        MOV      R2,R7
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1495           Z_DIR_WRITE(old_z_dir_pin);
+        LDRH     R1,[R6, #+20]
+        LDR      R0,[R5, #+40]
+        MOV      R2,R10
+??babystep_4:
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 1496 
+// 1497         //#endif
+// 1498 	}
+// 1499 
+// 1500       } break;
+// 1501 
+// 1502       default: break;
+// 1503     }
+// 1504     sei();
+??babystep_3:
+        cpsie i
+// 1505   }
+        POP      {R4-R10,PC}      ;; return
+          CFI EndBlock cfiBlock19
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable21:
+        DC32     _ZN11Temperature11in_temp_isrE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable21_1:
         DC32     endstops
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_16:
+??DataTable21_2:
         DC32     axis_known_position
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_17:
+??DataTable21_3:
+        DC32     _ZN7Stepper15count_directionE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable21_4:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable21_5:
         DC32     mksTmp
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_18:
+??DataTable21_6:
         DC32     _ZN7Planner11steps_to_mmE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable20_19:
+??DataTable21_7:
         DC32     Serial3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-`?<Constant "M84 X Y Z E">`:
-        DC8 "M84 X Y Z E"
+??DataTable21_8:
+        DC32     gArrayGpioPort
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable21_9:
+        DC32     gArrayGpioPin
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable21_10:
+        DC32     _ZN8Endstops16old_endstop_bitsE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -3496,337 +4155,6 @@ _ZN7Stepper16report_positionsEv:
 `?<Constant " Count X:">`:
         DC8 " Count X:"
         DC8 0, 0
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock18 Using cfiCommon0
-          CFI Function _Z14serialprintPGMPKc
-        THUMB
-// __interwork __softfp void serialprintPGM(char const *)
-_Z14serialprintPGMPKc:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-        B.N      ??serialprintPGM_0
-??serialprintPGM_1:
-        UXTB     R1,R1
-        LDR.N    R0,??serialprintPGM_2
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-??serialprintPGM_0:
-        LDRSB    R1,[R4], #+1
-        MOVS     R0,R1
-        BNE.N    ??serialprintPGM_1
-        POP      {R4,PC}          ;; return
-        DATA
-??serialprintPGM_2:
-        DC32     Serial3
-          CFI EndBlock cfiBlock18
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner13blocks_queuedEv
-          CFI Block cfiBlock19 Using cfiCommon0
-          CFI Function _ZN7Planner13blocks_queuedEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp bool Planner::blocks_queued()
-_ZN7Planner13blocks_queuedEv:
-        LDR.N    R0,??blocks_queued_0
-        LDRB     R0,[R0, #+0]
-        LDR.N    R1,??blocks_queued_0+0x4
-        LDRB     R1,[R1, #+0]
-        CMP      R0,R1
-        BEQ.N    ??blocks_queued_1
-        MOVS     R0,#+1
-        BX       LR
-??blocks_queued_1:
-        MOVS     R0,#+0
-        BX       LR               ;; return
-        DATA
-??blocks_queued_0:
-        DC32     _ZN7Planner17block_buffer_headE
-        DC32     _ZN7Planner17block_buffer_tailE
-          CFI EndBlock cfiBlock19
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner21discard_current_blockEv
-          CFI Block cfiBlock20 Using cfiCommon0
-          CFI Function _ZN7Planner21discard_current_blockEv
-        THUMB
-// __interwork __softfp void Planner::discard_current_block()
-_ZN7Planner21discard_current_blockEv:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
-        BEQ.N    ??discard_current_block_0
-        LDR.N    R0,??discard_current_block_1
-        LDRB     R1,[R0, #+0]
-        ADDS     R1,R1,#+1
-        AND      R1,R1,#0xF
-        STRB     R1,[R0, #+0]
-??discard_current_block_0:
-        POP      {R0,PC}          ;; return
-        DATA
-??discard_current_block_1:
-        DC32     _ZN7Planner17block_buffer_tailE
-          CFI EndBlock cfiBlock20
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner23discard_continued_blockEv
-          CFI Block cfiBlock21 Using cfiCommon0
-          CFI Function _ZN7Planner23discard_continued_blockEv
-        THUMB
-// __interwork __softfp bool Planner::discard_continued_block()
-_ZN7Planner23discard_continued_blockEv:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
-        BEQ.N    ??discard_continued_block_0
-        LDR.N    R0,??discard_continued_block_1
-        LDRB     R0,[R0, #+0]
-        MOVS     R1,#+84
-        LDR.N    R2,??discard_continued_block_1+0x4
-        MLA      R0,R1,R0,R2
-        LDRB     R0,[R0, #+0]
-        LSRS     R0,R0,#+4
-        AND      R4,R0,#0x1
-        B.N      ??discard_continued_block_2
-??discard_continued_block_0:
-        MOVS     R4,#+0
-??discard_continued_block_2:
-        CMP      R4,#+0
-        BEQ.N    ??discard_continued_block_3
-          CFI FunCall _ZN7Planner21discard_current_blockEv
-        BL       _ZN7Planner21discard_current_blockEv
-??discard_continued_block_3:
-        MOV      R0,R4
-        POP      {R4,PC}          ;; return
-        Nop      
-        DATA
-??discard_continued_block_1:
-        DC32     _ZN7Planner17block_buffer_tailE
-        DC32     _ZN7Planner12block_bufferE
-          CFI EndBlock cfiBlock21
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner17get_current_blockEv
-          CFI Block cfiBlock22 Using cfiCommon0
-          CFI Function _ZN7Planner17get_current_blockEv
-        THUMB
-// __interwork __softfp block_t *Planner::get_current_block()
-_ZN7Planner17get_current_blockEv:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
-        BEQ.N    ??get_current_block_0
-        LDR.N    R0,??get_current_block_1
-        LDRB     R0,[R0, #+0]
-        MOVS     R1,#+84
-        LDR.N    R2,??get_current_block_1+0x4
-        MLA      R0,R1,R0,R2
-        LDRB     R1,[R0, #+0]
-        ORR      R1,R1,#0x8
-        STRB     R1,[R0, #+0]
-        POP      {R1,PC}
-??get_current_block_0:
-        MOVS     R0,#+0
-        POP      {R1,PC}          ;; return
-        DATA
-??get_current_block_1:
-        DC32     _ZN7Planner17block_buffer_tailE
-        DC32     _ZN7Planner12block_bufferE
-          CFI EndBlock cfiBlock22
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Stepper15motor_directionE8AxisEnum
-          CFI Block cfiBlock23 Using cfiCommon0
-          CFI Function _ZN7Stepper15motor_directionE8AxisEnum
-          CFI NoCalls
-        THUMB
-// __interwork __softfp bool Stepper::motor_direction(AxisEnum)
-_ZN7Stepper15motor_directionE8AxisEnum:
-        LDR.N    R1,??motor_direction_0
-        LDRB     R1,[R1, #+5]
-        MOVS     R2,#+1
-        LSL      R0,R2,R0
-        ANDS     R1,R0,R1
-        MOV      R0,R1
-        SUBS     R0,R0,#+1
-        SBCS     R0,R0,R0
-        MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        BX       LR               ;; return
-        DATA
-??motor_direction_0:
-        DC32     _ZN7Stepper15count_directionE
-          CFI EndBlock cfiBlock23
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Stepper18kill_current_blockEv
-          CFI Block cfiBlock24 Using cfiCommon0
-          CFI Function _ZN7Stepper18kill_current_blockEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Stepper::kill_current_block()
-_ZN7Stepper18kill_current_blockEv:
-        LDR.N    R0,??kill_current_block_0
-        LDR      R1,[R0, #+32]
-        LDR      R1,[R1, #+20]
-        STR      R1,[R0, #+52]
-        BX       LR               ;; return
-        Nop      
-        DATA
-??kill_current_block_0:
-        DC32     _ZN7Stepper15count_directionE
-          CFI EndBlock cfiBlock24
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Stepper19calc_timer_intervalEt
-          CFI Block cfiBlock25 Using cfiCommon0
-          CFI Function _ZN7Stepper19calc_timer_intervalEt
-          CFI NoCalls
-        THUMB
-// __interwork __softfp unsigned short Stepper::calc_timer_interval(unsigned short)
-_ZN7Stepper19calc_timer_intervalEt:
-        MOVW     R1,#+40001
-        CMP      R0,R1
-        BLT.N    ??calc_timer_interval_0
-        MOVW     R0,#+40000
-??calc_timer_interval_0:
-        MOV      R1,R0
-        LDR.N    R2,??calc_timer_interval_1
-        MOVW     R3,#+20001
-        CMP      R1,R3
-        BLT.N    ??calc_timer_interval_2
-        LSRS     R0,R0,#+2
-        MOVS     R1,#+4
-        STRB     R1,[R2, #+8]
-        B.N      ??calc_timer_interval_3
-??calc_timer_interval_2:
-        MOVW     R3,#+10001
-        CMP      R1,R3
-        BLT.N    ??calc_timer_interval_4
-        LSRS     R0,R0,#+1
-        MOVS     R1,#+2
-        STRB     R1,[R2, #+8]
-        B.N      ??calc_timer_interval_3
-??calc_timer_interval_4:
-        MOVS     R1,#+1
-        STRB     R1,[R2, #+8]
-??calc_timer_interval_3:
-        LDR.N    R1,??calc_timer_interval_1+0x4  ;; 0x44aa200
-        ADD      R2,R0,R0, LSL #+3
-        LSLS     R0,R2,#+2
-        SDIV     R0,R1,R0
-        UXTH     R0,R0
-        CMP      R0,#+100
-        BGE.N    ??calc_timer_interval_5
-        MOVS     R0,#+100
-??calc_timer_interval_5:
-        BX       LR               ;; return
-        Nop      
-        DATA
-??calc_timer_interval_1:
-        DC32     _ZN7Stepper15count_directionE
-        DC32     0x44aa200
-          CFI EndBlock cfiBlock25
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Stepper25trapezoid_generator_resetEv
-          CFI Block cfiBlock26 Using cfiCommon0
-          CFI Function _ZN7Stepper25trapezoid_generator_resetEv
-        THUMB
-// __interwork __softfp void Stepper::trapezoid_generator_reset()
-_ZN7Stepper25trapezoid_generator_resetEv:
-        PUSH     {R3-R5,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        LDR.N    R4,??trapezoid_generator_reset_0
-        LDR      R0,[R4, #+32]
-        LDRB     R1,[R0, #+36]
-        LDR.N    R2,??trapezoid_generator_reset_0+0x4
-        LDRB     R3,[R4, #+5]
-        CMP      R1,R3
-        BNE.N    ??trapezoid_generator_reset_1
-        LDRB     R3,[R0, #+1]
-        LDRSB    R5,[R2, #+0]
-        CMP      R3,R5
-        BEQ.N    ??trapezoid_generator_reset_2
-??trapezoid_generator_reset_1:
-        STRB     R1,[R4, #+5]
-        LDRSB    R0,[R0, #+1]
-        STRB     R0,[R2, #+0]
-          CFI FunCall _ZN7Stepper14set_directionsEv
-        BL       _ZN7Stepper14set_directionsEv
-??trapezoid_generator_reset_2:
-        MOVS     R0,#+0
-        STR      R0,[R4, #+60]
-        LDR      R5,[R4, #+32]
-        LDR      R0,[R5, #+60]
-        UXTH     R0,R0
-          CFI FunCall _ZN7Stepper19calc_timer_intervalEt
-        BL       _ZN7Stepper19calc_timer_intervalEt
-        STRH     R0,[R4, #+12]
-        LDRB     R0,[R4, #+8]
-        STRB     R0,[R4, #+9]
-        LDR      R0,[R5, #+64]
-        STRH     R0,[R4, #+14]
-        LDRH     R0,[R4, #+14]
-          CFI FunCall _ZN7Stepper19calc_timer_intervalEt
-        BL       _ZN7Stepper19calc_timer_intervalEt
-        STR      R0,[R4, #+56]
-        LDR.N    R0,??trapezoid_generator_reset_0+0x8
-        LDR      R1,[R4, #+56]
-        LDR      R2,[R0, #+0]
-        STR      R1,[R2, #+44]
-        LDR      R0,[R0, #+0]
-        LDR      R1,[R0, #+44]
-        LDR      R2,[R0, #+36]
-        CMP      R1,R2
-        BCS.N    ??trapezoid_generator_reset_3
-        LDR      R1,[R0, #+44]
-        SUBS     R1,R1,#+1
-        STR      R1,[R0, #+36]
-??trapezoid_generator_reset_3:
-        POP      {R0,R4,R5,PC}    ;; return
-        Nop      
-        DATA
-??trapezoid_generator_reset_0:
-        DC32     _ZN7Stepper15count_directionE
-        DC32     _ZZN7Stepper25trapezoid_generator_resetEvE13last_extruder
-        DC32     htim2
-          CFI EndBlock cfiBlock26
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN8Endstops6enableEb
-          CFI Block cfiBlock27 Using cfiCommon0
-          CFI Function _ZN8Endstops6enableEb
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Endstops::enable(bool)
-_ZN8Endstops6enableEb:
-        LDR.N    R1,??enable_0
-        STRB     R0,[R1, #+0]
-        BX       LR               ;; return
-        Nop      
-        DATA
-??enable_0:
-        DC32     _ZN8Endstops7enabledE
-          CFI EndBlock cfiBlock27
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -3867,413 +4195,268 @@ _ZTI5Print:
         DC8 " Z:"
 
         END
-// 1357 
-// 1358 void Stepper::report_positions() {
-// 1359   CRITICAL_SECTION_START;
-// 1360   const long xpos = count_position[X_AXIS],
-// 1361              ypos = count_position[Y_AXIS],
-// 1362              zpos = count_position[Z_AXIS];
-// 1363   CRITICAL_SECTION_END;
-// 1364 
-// 1365   //#if CORE_IS_XY || CORE_IS_XZ || IS_SCARA
-// 1366   if(MACHINETPYE&IS_SCARA || MACHINETPYE&CORE_IS_XZ || MACHINETPYE&IS_SCARA)
-// 1367     {SERIAL_PROTOCOLPGM(MSG_COUNT_A);}
-// 1368   //#else
-// 1369   else
-// 1370     {SERIAL_PROTOCOLPGM(MSG_COUNT_X);}
-// 1371   //#endif
-// 1372   SERIAL_PROTOCOL(xpos);
-// 1373 
-// 1374   //#if CORE_IS_XY || CORE_IS_YZ || IS_SCARA
-// 1375   if(MACHINETPYE&CORE_IS_XY || MACHINETPYE&CORE_IS_YZ || MACHINETPYE&IS_SCARA)
-// 1376     {SERIAL_PROTOCOLPGM(" B:");}
-// 1377   //#else
-// 1378   else
-// 1379     {SERIAL_PROTOCOLPGM(" Y:");}
-// 1380   //#endif
-// 1381   SERIAL_PROTOCOL(ypos);
-// 1382 
-// 1383   //#if CORE_IS_XZ || CORE_IS_YZ
-// 1384   if(MACHINETPYE&CORE_IS_XZ || MACHINETPYE&CORE_IS_YZ)
-// 1385     {SERIAL_PROTOCOLPGM(" C:");}
-// 1386   //#else
-// 1387   else
-// 1388     {SERIAL_PROTOCOLPGM(" Z:");}
-// 1389   //#endif
-// 1390   SERIAL_PROTOCOL(zpos);
-// 1391 
-// 1392   SERIAL_EOL();
-// 1393 }
-// 1394 
-// 1395 #if ENABLED(BABYSTEPPING)
-// 1396 
-// 1397   #if ENABLED(DELTA)
-// 1398     #define CYCLES_EATEN_BABYSTEP (2 * 15)
-// 1399   #else
-// 1400     #define CYCLES_EATEN_BABYSTEP 0
-// 1401   #endif
-// 1402   #define EXTRA_CYCLES_BABYSTEP (STEP_PULSE_CYCLES - (CYCLES_EATEN_BABYSTEP))
-// 1403 
-// 1404   #define _ENABLE(AXIS) enable_## AXIS()
-// 1405   #define _READ_DIR(AXIS) AXIS ##_DIR_READ
-// 1406   #define _INVERT_DIR(AXIS) INVERT_## AXIS ##_DIR
-// 1407   #define _APPLY_DIR(AXIS, INVERT) AXIS ##_APPLY_DIR(INVERT, true)
-// 1408 
-// 1409   #if EXTRA_CYCLES_BABYSTEP > 20
-// 1410     #define _SAVE_START const uint32_t pulse_start = TCNT0
-// 1411     #define _PULSE_WAIT while (EXTRA_CYCLES_BABYSTEP > (uint32_t)(TCNT0 - pulse_start) * (INT0_PRESCALER)) { /* nada */ }
-// 1412   #else
-// 1413     #define _SAVE_START NOOP
-// 1414     #if EXTRA_CYCLES_BABYSTEP > 0
-// 1415       #define _PULSE_WAIT DELAY_NOPS(EXTRA_CYCLES_BABYSTEP)
-// 1416     #elif STEP_PULSE_CYCLES > 0
-// 1417       #define _PULSE_WAIT NOOP
-// 1418     #elif ENABLED(DELTA)
-// 1419       #define _PULSE_WAIT delayMicroseconds(2);
-// 1420     #else
-// 1421       #define _PULSE_WAIT delayMicroseconds(4);
-// 1422     #endif
-// 1423   #endif
-// 1424 
-// 1425   #define BABYSTEP_AXIS(AXIS, INVERT) {                     \ 
-// 1426       const uint8_t old_dir = _READ_DIR(AXIS);              \ 
-// 1427       _ENABLE(AXIS);                                        \ 
-// 1428       _SAVE_START;                                          \ 
-// 1429       _APPLY_DIR(AXIS, _INVERT_DIR(AXIS)^direction^INVERT); \ 
-// 1430       _APPLY_STEP(AXIS)(!_INVERT_STEP_PIN(AXIS), true);     \ 
-// 1431       _PULSE_WAIT;                                          \ 
-// 1432       _APPLY_STEP(AXIS)(_INVERT_STEP_PIN(AXIS), true);      \ 
-// 1433       _APPLY_DIR(AXIS, old_dir);                            \ 
-// 1434     }
-// 1435 
-// 1436   // MUST ONLY BE CALLED BY AN ISR,
-// 1437   // No other ISR should ever interrupt this!
-// 1438   void Stepper::babystep(const AxisEnum axis, const bool direction) {
-// 1439     cli();
-// 1440 
-// 1441     switch (axis) {
-// 1442 
-// 1443       #if ENABLED(BABYSTEP_XY)
-// 1444 
-// 1445         case X_AXIS:
-// 1446           BABYSTEP_AXIS(X, false);
-// 1447           break;
-// 1448 
-// 1449         case Y_AXIS:
-// 1450           BABYSTEP_AXIS(Y, false);
-// 1451           break;
-// 1452 
-// 1453       #endif
-// 1454 
-// 1455       case Z_AXIS: {
-// 1456 
-// 1457         #if DISABLED(DELTA)
-// 1458 
-// 1459           BABYSTEP_AXIS(Z, BABYSTEP_INVERT_Z);
-// 1460 
-// 1461         #else // DELTA
-// 1462 
-// 1463           const bool z_direction = direction ^ BABYSTEP_INVERT_Z;
-// 1464 
-// 1465           enable_X();
-// 1466           enable_Y();
-// 1467           enable_Z();
-// 1468 
-// 1469           const uint8_t old_x_dir_pin = X_DIR_READ,
-// 1470                         old_y_dir_pin = Y_DIR_READ,
-// 1471                         old_z_dir_pin = Z_DIR_READ;
-// 1472 
-// 1473           X_DIR_WRITE(INVERT_X_DIR ^ z_direction);
-// 1474           Y_DIR_WRITE(INVERT_Y_DIR ^ z_direction);
-// 1475           Z_DIR_WRITE(INVERT_Z_DIR ^ z_direction);
-// 1476 
-// 1477           _SAVE_START;
-// 1478 
-// 1479           X_STEP_WRITE(!INVERT_X_STEP_PIN);
-// 1480           Y_STEP_WRITE(!INVERT_Y_STEP_PIN);
-// 1481           Z_STEP_WRITE(!INVERT_Z_STEP_PIN);
-// 1482 
-// 1483           _PULSE_WAIT;
-// 1484 
-// 1485           X_STEP_WRITE(INVERT_X_STEP_PIN);
-// 1486           Y_STEP_WRITE(INVERT_Y_STEP_PIN);
-// 1487           Z_STEP_WRITE(INVERT_Z_STEP_PIN);
-// 1488 
-// 1489           // Restore direction bits
-// 1490           X_DIR_WRITE(old_x_dir_pin);
-// 1491           Y_DIR_WRITE(old_y_dir_pin);
-// 1492           Z_DIR_WRITE(old_z_dir_pin);
-// 1493 
-// 1494         #endif
-// 1495 
-// 1496       } break;
-// 1497 
-// 1498       default: break;
-// 1499     }
-// 1500     sei();
-// 1501   }
-// 1502 
-// 1503 #endif // BABYSTEPPING
-// 1504 
-// 1505 /**
-// 1506  * Software-controlled Stepper Motor Current
-// 1507  */
+// 1506 
+// 1507 #endif // BABYSTEPPING
 // 1508 
-// 1509 #if HAS_DIGIPOTSS
-// 1510 
-// 1511   // From Arduino DigitalPotControl example
-// 1512   void Stepper::digitalPotWrite(const int16_t address, const int16_t value) {
-// 1513     WRITE(DIGIPOTSS_PIN, LOW);  // Take the SS pin low to select the chip
-// 1514     SPI.transfer(address);      // Send the address and value via SPI
-// 1515     SPI.transfer(value);
-// 1516     WRITE(DIGIPOTSS_PIN, HIGH); // Take the SS pin high to de-select the chip
-// 1517     //delay(10);
-// 1518   }
-// 1519 
-// 1520 #endif // HAS_DIGIPOTSS
-// 1521 
-// 1522 #if HAS_MOTOR_CURRENT_PWM
+// 1509 /**
+// 1510  * Software-controlled Stepper Motor Current
+// 1511  */
+// 1512 
+// 1513 #if HAS_DIGIPOTSS
+// 1514 
+// 1515   // From Arduino DigitalPotControl example
+// 1516   void Stepper::digitalPotWrite(const int16_t address, const int16_t value) {
+// 1517     WRITE(DIGIPOTSS_PIN, LOW);  // Take the SS pin low to select the chip
+// 1518     SPI.transfer(address);      // Send the address and value via SPI
+// 1519     SPI.transfer(value);
+// 1520     WRITE(DIGIPOTSS_PIN, HIGH); // Take the SS pin high to de-select the chip
+// 1521     //delay(10);
+// 1522   }
 // 1523 
-// 1524   void Stepper::refresh_motor_power() {
-// 1525     for (uint8_t i = 0; i < COUNT(motor_current_setting); ++i) {
-// 1526       switch (i) {
-// 1527         #if PIN_EXISTS(MOTOR_CURRENT_PWM_XY)
-// 1528           case 0:
-// 1529         #endif
-// 1530         #if PIN_EXISTS(MOTOR_CURRENT_PWM_Z)
-// 1531           case 1:
-// 1532         #endif
-// 1533         #if PIN_EXISTS(MOTOR_CURRENT_PWM_E)
-// 1534           case 2:
-// 1535         #endif
-// 1536             digipot_current(i, motor_current_setting[i]);
-// 1537         default: break;
-// 1538       }
-// 1539     }
-// 1540   }
-// 1541 
-// 1542 #endif // HAS_MOTOR_CURRENT_PWM
-// 1543 
-// 1544 #if HAS_DIGIPOTSS || HAS_MOTOR_CURRENT_PWM
+// 1524 #endif // HAS_DIGIPOTSS
+// 1525 
+// 1526 #if HAS_MOTOR_CURRENT_PWM
+// 1527 
+// 1528   void Stepper::refresh_motor_power() {
+// 1529     for (uint8_t i = 0; i < COUNT(motor_current_setting); ++i) {
+// 1530       switch (i) {
+// 1531         #if PIN_EXISTS(MOTOR_CURRENT_PWM_XY)
+// 1532           case 0:
+// 1533         #endif
+// 1534         #if PIN_EXISTS(MOTOR_CURRENT_PWM_Z)
+// 1535           case 1:
+// 1536         #endif
+// 1537         #if PIN_EXISTS(MOTOR_CURRENT_PWM_E)
+// 1538           case 2:
+// 1539         #endif
+// 1540             digipot_current(i, motor_current_setting[i]);
+// 1541         default: break;
+// 1542       }
+// 1543     }
+// 1544   }
 // 1545 
-// 1546   void Stepper::digipot_current(const uint8_t driver, const int current) {
+// 1546 #endif // HAS_MOTOR_CURRENT_PWM
 // 1547 
-// 1548     #if HAS_DIGIPOTSS
+// 1548 #if HAS_DIGIPOTSS || HAS_MOTOR_CURRENT_PWM
 // 1549 
-// 1550       const uint8_t digipot_ch[] = DIGIPOT_CHANNELS;
-// 1551       digitalPotWrite(digipot_ch[driver], current);
-// 1552 
-// 1553     #elif HAS_MOTOR_CURRENT_PWM
-// 1554 
-// 1555       if (WITHIN(driver, 0, 2))
-// 1556         motor_current_setting[driver] = current; // update motor_current_setting
-// 1557 
-// 1558       #define _WRITE_CURRENT_PWM(P) analogWrite(MOTOR_CURRENT_PWM_## P ##_PIN, 255L * current / (MOTOR_CURRENT_PWM_RANGE))
-// 1559       switch (driver) {
-// 1560         #if PIN_EXISTS(MOTOR_CURRENT_PWM_XY)
-// 1561           case 0: _WRITE_CURRENT_PWM(XY); break;
-// 1562         #endif
-// 1563         #if PIN_EXISTS(MOTOR_CURRENT_PWM_Z)
-// 1564           case 1: _WRITE_CURRENT_PWM(Z); break;
-// 1565         #endif
-// 1566         #if PIN_EXISTS(MOTOR_CURRENT_PWM_E)
-// 1567           case 2: _WRITE_CURRENT_PWM(E); break;
-// 1568         #endif
-// 1569       }
-// 1570     #endif
-// 1571   }
-// 1572 
-// 1573   void Stepper::digipot_init() {
-// 1574 
-// 1575     #if HAS_DIGIPOTSS
+// 1550   void Stepper::digipot_current(const uint8_t driver, const int current) {
+// 1551 
+// 1552     #if HAS_DIGIPOTSS
+// 1553 
+// 1554       const uint8_t digipot_ch[] = DIGIPOT_CHANNELS;
+// 1555       digitalPotWrite(digipot_ch[driver], current);
+// 1556 
+// 1557     #elif HAS_MOTOR_CURRENT_PWM
+// 1558 
+// 1559       if (WITHIN(driver, 0, 2))
+// 1560         motor_current_setting[driver] = current; // update motor_current_setting
+// 1561 
+// 1562       #define _WRITE_CURRENT_PWM(P) analogWrite(MOTOR_CURRENT_PWM_## P ##_PIN, 255L * current / (MOTOR_CURRENT_PWM_RANGE))
+// 1563       switch (driver) {
+// 1564         #if PIN_EXISTS(MOTOR_CURRENT_PWM_XY)
+// 1565           case 0: _WRITE_CURRENT_PWM(XY); break;
+// 1566         #endif
+// 1567         #if PIN_EXISTS(MOTOR_CURRENT_PWM_Z)
+// 1568           case 1: _WRITE_CURRENT_PWM(Z); break;
+// 1569         #endif
+// 1570         #if PIN_EXISTS(MOTOR_CURRENT_PWM_E)
+// 1571           case 2: _WRITE_CURRENT_PWM(E); break;
+// 1572         #endif
+// 1573       }
+// 1574     #endif
+// 1575   }
 // 1576 
-// 1577       static const uint8_t digipot_motor_current[] = DIGIPOT_MOTOR_CURRENT;
+// 1577   void Stepper::digipot_init() {
 // 1578 
-// 1579       SPI.begin();
-// 1580       SET_OUTPUT(DIGIPOTSS_PIN);
-// 1581 
-// 1582       for (uint8_t i = 0; i < COUNT(digipot_motor_current); i++) {
-// 1583         //digitalPotWrite(digipot_ch[i], digipot_motor_current[i]);
-// 1584         digipot_current(i, digipot_motor_current[i]);
-// 1585       }
-// 1586 
-// 1587     #elif HAS_MOTOR_CURRENT_PWM
-// 1588 
-// 1589       #if PIN_EXISTS(MOTOR_CURRENT_PWM_XY)
-// 1590         SET_OUTPUT(MOTOR_CURRENT_PWM_XY_PIN);
-// 1591       #endif
-// 1592       #if PIN_EXISTS(MOTOR_CURRENT_PWM_Z)
-// 1593         SET_OUTPUT(MOTOR_CURRENT_PWM_Z_PIN);
-// 1594       #endif
-// 1595       #if PIN_EXISTS(MOTOR_CURRENT_PWM_E)
-// 1596         SET_OUTPUT(MOTOR_CURRENT_PWM_E_PIN);
-// 1597       #endif
-// 1598 
-// 1599       refresh_motor_power();
-// 1600 
-// 1601       // Set Timer5 to 31khz so the PWM of the motor power is as constant as possible. (removes a buzzing noise)
-// 1602       SET_CS5(PRESCALER_1);
-// 1603 
-// 1604     #endif
-// 1605   }
-// 1606 
-// 1607 #endif
-// 1608 
-// 1609 #if HAS_MICROSTEPS
+// 1579     #if HAS_DIGIPOTSS
+// 1580 
+// 1581       static const uint8_t digipot_motor_current[] = DIGIPOT_MOTOR_CURRENT;
+// 1582 
+// 1583       SPI.begin();
+// 1584       SET_OUTPUT(DIGIPOTSS_PIN);
+// 1585 
+// 1586       for (uint8_t i = 0; i < COUNT(digipot_motor_current); i++) {
+// 1587         //digitalPotWrite(digipot_ch[i], digipot_motor_current[i]);
+// 1588         digipot_current(i, digipot_motor_current[i]);
+// 1589       }
+// 1590 
+// 1591     #elif HAS_MOTOR_CURRENT_PWM
+// 1592 
+// 1593       #if PIN_EXISTS(MOTOR_CURRENT_PWM_XY)
+// 1594         SET_OUTPUT(MOTOR_CURRENT_PWM_XY_PIN);
+// 1595       #endif
+// 1596       #if PIN_EXISTS(MOTOR_CURRENT_PWM_Z)
+// 1597         SET_OUTPUT(MOTOR_CURRENT_PWM_Z_PIN);
+// 1598       #endif
+// 1599       #if PIN_EXISTS(MOTOR_CURRENT_PWM_E)
+// 1600         SET_OUTPUT(MOTOR_CURRENT_PWM_E_PIN);
+// 1601       #endif
+// 1602 
+// 1603       refresh_motor_power();
+// 1604 
+// 1605       // Set Timer5 to 31khz so the PWM of the motor power is as constant as possible. (removes a buzzing noise)
+// 1606       SET_CS5(PRESCALER_1);
+// 1607 
+// 1608     #endif
+// 1609   }
 // 1610 
-// 1611   /**
-// 1612    * Software-controlled Microstepping
-// 1613    */
+// 1611 #endif
+// 1612 
+// 1613 #if HAS_MICROSTEPS
 // 1614 
-// 1615   void Stepper::microstep_init() {
-// 1616     SET_OUTPUT(X_MS1_PIN);
-// 1617     SET_OUTPUT(X_MS2_PIN);
-// 1618     #if HAS_Y_MICROSTEPS
-// 1619       SET_OUTPUT(Y_MS1_PIN);
-// 1620       SET_OUTPUT(Y_MS2_PIN);
-// 1621     #endif
-// 1622     #if HAS_Z_MICROSTEPS
-// 1623       SET_OUTPUT(Z_MS1_PIN);
-// 1624       SET_OUTPUT(Z_MS2_PIN);
+// 1615   /**
+// 1616    * Software-controlled Microstepping
+// 1617    */
+// 1618 
+// 1619   void Stepper::microstep_init() {
+// 1620     SET_OUTPUT(X_MS1_PIN);
+// 1621     SET_OUTPUT(X_MS2_PIN);
+// 1622     #if HAS_Y_MICROSTEPS
+// 1623       SET_OUTPUT(Y_MS1_PIN);
+// 1624       SET_OUTPUT(Y_MS2_PIN);
 // 1625     #endif
-// 1626     #if HAS_E0_MICROSTEPS
-// 1627       SET_OUTPUT(E0_MS1_PIN);
-// 1628       SET_OUTPUT(E0_MS2_PIN);
+// 1626     #if HAS_Z_MICROSTEPS
+// 1627       SET_OUTPUT(Z_MS1_PIN);
+// 1628       SET_OUTPUT(Z_MS2_PIN);
 // 1629     #endif
-// 1630     #if HAS_E1_MICROSTEPS
-// 1631       SET_OUTPUT(E1_MS1_PIN);
-// 1632       SET_OUTPUT(E1_MS2_PIN);
+// 1630     #if HAS_E0_MICROSTEPS
+// 1631       SET_OUTPUT(E0_MS1_PIN);
+// 1632       SET_OUTPUT(E0_MS2_PIN);
 // 1633     #endif
-// 1634     #if HAS_E2_MICROSTEPS
-// 1635       SET_OUTPUT(E2_MS1_PIN);
-// 1636       SET_OUTPUT(E2_MS2_PIN);
+// 1634     #if HAS_E1_MICROSTEPS
+// 1635       SET_OUTPUT(E1_MS1_PIN);
+// 1636       SET_OUTPUT(E1_MS2_PIN);
 // 1637     #endif
-// 1638     #if HAS_E3_MICROSTEPS
-// 1639       SET_OUTPUT(E3_MS1_PIN);
-// 1640       SET_OUTPUT(E3_MS2_PIN);
+// 1638     #if HAS_E2_MICROSTEPS
+// 1639       SET_OUTPUT(E2_MS1_PIN);
+// 1640       SET_OUTPUT(E2_MS2_PIN);
 // 1641     #endif
-// 1642     #if HAS_E4_MICROSTEPS
-// 1643       SET_OUTPUT(E4_MS1_PIN);
-// 1644       SET_OUTPUT(E4_MS2_PIN);
+// 1642     #if HAS_E3_MICROSTEPS
+// 1643       SET_OUTPUT(E3_MS1_PIN);
+// 1644       SET_OUTPUT(E3_MS2_PIN);
 // 1645     #endif
-// 1646     static const uint8_t microstep_modes[] = MICROSTEP_MODES;
-// 1647     for (uint16_t i = 0; i < COUNT(microstep_modes); i++)
-// 1648       microstep_mode(i, microstep_modes[i]);
-// 1649   }
-// 1650 
-// 1651   void Stepper::microstep_ms(const uint8_t driver, const int8_t ms1, const int8_t ms2) {
-// 1652     if (ms1 >= 0) switch (driver) {
-// 1653       case 0: WRITE(X_MS1_PIN, ms1); break;
-// 1654       #if HAS_Y_MICROSTEPS
-// 1655         case 1: WRITE(Y_MS1_PIN, ms1); break;
-// 1656       #endif
-// 1657       #if HAS_Z_MICROSTEPS
-// 1658         case 2: WRITE(Z_MS1_PIN, ms1); break;
-// 1659       #endif
-// 1660       #if HAS_E0_MICROSTEPS
-// 1661         case 3: WRITE(E0_MS1_PIN, ms1); break;
-// 1662       #endif
-// 1663       #if HAS_E1_MICROSTEPS
-// 1664         case 4: WRITE(E1_MS1_PIN, ms1); break;
-// 1665       #endif
-// 1666       #if HAS_E2_MICROSTEPS
-// 1667         case 5: WRITE(E2_MS1_PIN, ms1); break;
-// 1668       #endif
-// 1669       #if HAS_E3_MICROSTEPS
-// 1670         case 6: WRITE(E3_MS1_PIN, ms1); break;
-// 1671       #endif
-// 1672       #if HAS_E4_MICROSTEPS
-// 1673         case 7: WRITE(E4_MS1_PIN, ms1); break;
-// 1674       #endif
-// 1675     }
-// 1676     if (ms2 >= 0) switch (driver) {
-// 1677       case 0: WRITE(X_MS2_PIN, ms2); break;
-// 1678       #if HAS_Y_MICROSTEPS
-// 1679         case 1: WRITE(Y_MS2_PIN, ms2); break;
-// 1680       #endif
-// 1681       #if HAS_Z_MICROSTEPS
-// 1682         case 2: WRITE(Z_MS2_PIN, ms2); break;
-// 1683       #endif
-// 1684       #if HAS_E0_MICROSTEPS
-// 1685         case 3: WRITE(E0_MS2_PIN, ms2); break;
-// 1686       #endif
-// 1687       #if HAS_E1_MICROSTEPS
-// 1688         case 4: WRITE(E1_MS2_PIN, ms2); break;
-// 1689       #endif
-// 1690       #if HAS_E2_MICROSTEPS
-// 1691         case 5: WRITE(E2_MS2_PIN, ms2); break;
-// 1692       #endif
-// 1693       #if HAS_E3_MICROSTEPS
-// 1694         case 6: WRITE(E3_MS2_PIN, ms2); break;
-// 1695       #endif
-// 1696       #if HAS_E4_MICROSTEPS
-// 1697         case 7: WRITE(E4_MS2_PIN, ms2); break;
-// 1698       #endif
-// 1699     }
-// 1700   }
-// 1701 
-// 1702   void Stepper::microstep_mode(const uint8_t driver, const uint8_t stepping_mode) {
-// 1703     switch (stepping_mode) {
-// 1704       case 1: microstep_ms(driver, MICROSTEP1); break;
-// 1705       case 2: microstep_ms(driver, MICROSTEP2); break;
-// 1706       case 4: microstep_ms(driver, MICROSTEP4); break;
-// 1707       case 8: microstep_ms(driver, MICROSTEP8); break;
-// 1708       case 16: microstep_ms(driver, MICROSTEP16); break;
-// 1709     }
-// 1710   }
-// 1711 
-// 1712   void Stepper::microstep_readings() {
-// 1713     SERIAL_PROTOCOLLNPGM("MS1,MS2 Pins");
-// 1714     SERIAL_PROTOCOLPGM("X: ");
-// 1715     SERIAL_PROTOCOL(READ(X_MS1_PIN));
-// 1716     SERIAL_PROTOCOLLN(READ(X_MS2_PIN));
-// 1717     #if HAS_Y_MICROSTEPS
-// 1718       SERIAL_PROTOCOLPGM("Y: ");
-// 1719       SERIAL_PROTOCOL(READ(Y_MS1_PIN));
-// 1720       SERIAL_PROTOCOLLN(READ(Y_MS2_PIN));
-// 1721     #endif
-// 1722     #if HAS_Z_MICROSTEPS
-// 1723       SERIAL_PROTOCOLPGM("Z: ");
-// 1724       SERIAL_PROTOCOL(READ(Z_MS1_PIN));
-// 1725       SERIAL_PROTOCOLLN(READ(Z_MS2_PIN));
-// 1726     #endif
-// 1727     #if HAS_E0_MICROSTEPS
-// 1728       SERIAL_PROTOCOLPGM("E0: ");
-// 1729       SERIAL_PROTOCOL(READ(E0_MS1_PIN));
-// 1730       SERIAL_PROTOCOLLN(READ(E0_MS2_PIN));
-// 1731     #endif
-// 1732     #if HAS_E1_MICROSTEPS
-// 1733       SERIAL_PROTOCOLPGM("E1: ");
-// 1734       SERIAL_PROTOCOL(READ(E1_MS1_PIN));
-// 1735       SERIAL_PROTOCOLLN(READ(E1_MS2_PIN));
-// 1736     #endif
-// 1737     #if HAS_E2_MICROSTEPS
-// 1738       SERIAL_PROTOCOLPGM("E2: ");
-// 1739       SERIAL_PROTOCOL(READ(E2_MS1_PIN));
-// 1740       SERIAL_PROTOCOLLN(READ(E2_MS2_PIN));
-// 1741     #endif
-// 1742     #if HAS_E3_MICROSTEPS
-// 1743       SERIAL_PROTOCOLPGM("E3: ");
-// 1744       SERIAL_PROTOCOL(READ(E3_MS1_PIN));
-// 1745       SERIAL_PROTOCOLLN(READ(E3_MS2_PIN));
-// 1746     #endif
-// 1747     #if HAS_E4_MICROSTEPS
-// 1748       SERIAL_PROTOCOLPGM("E4: ");
-// 1749       SERIAL_PROTOCOL(READ(E4_MS1_PIN));
-// 1750       SERIAL_PROTOCOLLN(READ(E4_MS2_PIN));
-// 1751     #endif
-// 1752   }
-// 1753 
-// 1754 #endif // HAS_MICROSTEPS
+// 1646     #if HAS_E4_MICROSTEPS
+// 1647       SET_OUTPUT(E4_MS1_PIN);
+// 1648       SET_OUTPUT(E4_MS2_PIN);
+// 1649     #endif
+// 1650     static const uint8_t microstep_modes[] = MICROSTEP_MODES;
+// 1651     for (uint16_t i = 0; i < COUNT(microstep_modes); i++)
+// 1652       microstep_mode(i, microstep_modes[i]);
+// 1653   }
+// 1654 
+// 1655   void Stepper::microstep_ms(const uint8_t driver, const int8_t ms1, const int8_t ms2) {
+// 1656     if (ms1 >= 0) switch (driver) {
+// 1657       case 0: WRITE(X_MS1_PIN, ms1); break;
+// 1658       #if HAS_Y_MICROSTEPS
+// 1659         case 1: WRITE(Y_MS1_PIN, ms1); break;
+// 1660       #endif
+// 1661       #if HAS_Z_MICROSTEPS
+// 1662         case 2: WRITE(Z_MS1_PIN, ms1); break;
+// 1663       #endif
+// 1664       #if HAS_E0_MICROSTEPS
+// 1665         case 3: WRITE(E0_MS1_PIN, ms1); break;
+// 1666       #endif
+// 1667       #if HAS_E1_MICROSTEPS
+// 1668         case 4: WRITE(E1_MS1_PIN, ms1); break;
+// 1669       #endif
+// 1670       #if HAS_E2_MICROSTEPS
+// 1671         case 5: WRITE(E2_MS1_PIN, ms1); break;
+// 1672       #endif
+// 1673       #if HAS_E3_MICROSTEPS
+// 1674         case 6: WRITE(E3_MS1_PIN, ms1); break;
+// 1675       #endif
+// 1676       #if HAS_E4_MICROSTEPS
+// 1677         case 7: WRITE(E4_MS1_PIN, ms1); break;
+// 1678       #endif
+// 1679     }
+// 1680     if (ms2 >= 0) switch (driver) {
+// 1681       case 0: WRITE(X_MS2_PIN, ms2); break;
+// 1682       #if HAS_Y_MICROSTEPS
+// 1683         case 1: WRITE(Y_MS2_PIN, ms2); break;
+// 1684       #endif
+// 1685       #if HAS_Z_MICROSTEPS
+// 1686         case 2: WRITE(Z_MS2_PIN, ms2); break;
+// 1687       #endif
+// 1688       #if HAS_E0_MICROSTEPS
+// 1689         case 3: WRITE(E0_MS2_PIN, ms2); break;
+// 1690       #endif
+// 1691       #if HAS_E1_MICROSTEPS
+// 1692         case 4: WRITE(E1_MS2_PIN, ms2); break;
+// 1693       #endif
+// 1694       #if HAS_E2_MICROSTEPS
+// 1695         case 5: WRITE(E2_MS2_PIN, ms2); break;
+// 1696       #endif
+// 1697       #if HAS_E3_MICROSTEPS
+// 1698         case 6: WRITE(E3_MS2_PIN, ms2); break;
+// 1699       #endif
+// 1700       #if HAS_E4_MICROSTEPS
+// 1701         case 7: WRITE(E4_MS2_PIN, ms2); break;
+// 1702       #endif
+// 1703     }
+// 1704   }
+// 1705 
+// 1706   void Stepper::microstep_mode(const uint8_t driver, const uint8_t stepping_mode) {
+// 1707     switch (stepping_mode) {
+// 1708       case 1: microstep_ms(driver, MICROSTEP1); break;
+// 1709       case 2: microstep_ms(driver, MICROSTEP2); break;
+// 1710       case 4: microstep_ms(driver, MICROSTEP4); break;
+// 1711       case 8: microstep_ms(driver, MICROSTEP8); break;
+// 1712       case 16: microstep_ms(driver, MICROSTEP16); break;
+// 1713     }
+// 1714   }
+// 1715 
+// 1716   void Stepper::microstep_readings() {
+// 1717     SERIAL_PROTOCOLLNPGM("MS1,MS2 Pins");
+// 1718     SERIAL_PROTOCOLPGM("X: ");
+// 1719     SERIAL_PROTOCOL(READ(X_MS1_PIN));
+// 1720     SERIAL_PROTOCOLLN(READ(X_MS2_PIN));
+// 1721     #if HAS_Y_MICROSTEPS
+// 1722       SERIAL_PROTOCOLPGM("Y: ");
+// 1723       SERIAL_PROTOCOL(READ(Y_MS1_PIN));
+// 1724       SERIAL_PROTOCOLLN(READ(Y_MS2_PIN));
+// 1725     #endif
+// 1726     #if HAS_Z_MICROSTEPS
+// 1727       SERIAL_PROTOCOLPGM("Z: ");
+// 1728       SERIAL_PROTOCOL(READ(Z_MS1_PIN));
+// 1729       SERIAL_PROTOCOLLN(READ(Z_MS2_PIN));
+// 1730     #endif
+// 1731     #if HAS_E0_MICROSTEPS
+// 1732       SERIAL_PROTOCOLPGM("E0: ");
+// 1733       SERIAL_PROTOCOL(READ(E0_MS1_PIN));
+// 1734       SERIAL_PROTOCOLLN(READ(E0_MS2_PIN));
+// 1735     #endif
+// 1736     #if HAS_E1_MICROSTEPS
+// 1737       SERIAL_PROTOCOLPGM("E1: ");
+// 1738       SERIAL_PROTOCOL(READ(E1_MS1_PIN));
+// 1739       SERIAL_PROTOCOLLN(READ(E1_MS2_PIN));
+// 1740     #endif
+// 1741     #if HAS_E2_MICROSTEPS
+// 1742       SERIAL_PROTOCOLPGM("E2: ");
+// 1743       SERIAL_PROTOCOL(READ(E2_MS1_PIN));
+// 1744       SERIAL_PROTOCOLLN(READ(E2_MS2_PIN));
+// 1745     #endif
+// 1746     #if HAS_E3_MICROSTEPS
+// 1747       SERIAL_PROTOCOLPGM("E3: ");
+// 1748       SERIAL_PROTOCOL(READ(E3_MS1_PIN));
+// 1749       SERIAL_PROTOCOLLN(READ(E3_MS2_PIN));
+// 1750     #endif
+// 1751     #if HAS_E4_MICROSTEPS
+// 1752       SERIAL_PROTOCOLPGM("E4: ");
+// 1753       SERIAL_PROTOCOL(READ(E4_MS1_PIN));
+// 1754       SERIAL_PROTOCOLLN(READ(E4_MS2_PIN));
+// 1755     #endif
+// 1756   }
+// 1757 
+// 1758 #endif // HAS_MICROSTEPS
 // 
 //     4 bytes in section .bss
 //    81 bytes in section .data
 //    17 bytes in section .rodata
-// 3 796 bytes in section .text
+// 4 244 bytes in section .text
 // 
-// 3 360 bytes of CODE  memory (+ 436 bytes shared)
-//    16 bytes of CONST memory (+   1 byte  shared)
-//    84 bytes of DATA  memory (+   1 byte  shared)
+// 4 168 bytes of CODE  memory (+ 76 bytes shared)
+//    16 bytes of CONST memory (+  1 byte  shared)
+//    84 bytes of DATA  memory (+  1 byte  shared)
 //
 //Errors: none
 //Warnings: 42

@@ -20,6 +20,7 @@
 
 #include "marlin.h"
 #include "mks_reprint.h"
+#include "draw_babyStep.h"
 #ifndef GUI_FLASH
 #define GUI_FLASH
 #endif
@@ -40,7 +41,7 @@ static PROGBAR_Handle printingBar;
 
 static TEXT_Handle textPrintTemp1, textPrintTemp2, printStopDlgText,Fill_State_BK;
 static BUTTON_STRUCT buttonPause, buttonStop, buttonTemperature, buttonSpeed, buttonMore_printing, buttonRet, buttonOk, buttonCancle,buttonFan;
-static BUTTON_STRUCT buttonFilament,buttonAuto_Off,buttonExtrude,buttonMove;
+static BUTTON_STRUCT buttonFilament,buttonAuto_Off,buttonExtrude,buttonMove,buttonBabystep;
 
 //extern PR_STATUS printerStaus;
 extern uint8_t flash_preview_begin;
@@ -216,6 +217,13 @@ switch (pMsg->MsgId)
 				}
 			}	
 			#endif
+			else if(pMsg->hWinSrc == buttonBabystep.btnHandle)
+			{
+				last_disp_state = OPERATE_UI;
+				Clear_operate();
+				draw_babyStep();
+			}
+			
             #endif
 		}
 		#endif
@@ -505,6 +513,13 @@ void draw_operate()
 			{
 				buttonAuto_Off.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hOperateWnd, BUTTON_CF_SHOW, 0, 302);
 			}
+			buttonBabystep.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL,BTN_Y_PIXEL,hOperateWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+			BUTTON_SetBmpFileName(buttonBabystep.btnHandle, "bmp_mov.bin",1);
+			BUTTON_SetBitmapEx(buttonBabystep.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+			if(gCfgItems.multiple_language != 0)
+			{
+				BUTTON_SetText(buttonBabystep.btnHandle, operation_menu.babystep);
+			}
 	}
 
 	
@@ -519,6 +534,7 @@ void draw_operate()
 	BUTTON_SetBmpFileName(buttonExtrude.btnHandle, "bmp_extrude_opr.bin",1);
 	BUTTON_SetBmpFileName(buttonMove.btnHandle, "bmp_move_opr.bin",1);
 	BUTTON_SetBmpFileName(buttonMore_printing.btnHandle, "bmp_more_opr.bin",1);
+	
 	if(gCfgItems.print_finish_close_machine_flg == 1)
 	{
 		if(IsChooseAutoShutdown == 1)

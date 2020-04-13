@@ -1416,9 +1416,9 @@ void Stepper::report_positions() {
     #elif STEP_PULSE_CYCLES > 0
       #define _PULSE_WAIT NOOP
     #elif ENABLED(DELTA)
-      #define _PULSE_WAIT delayMicroseconds(2);
+      #define _PULSE_WAIT NOOP//for(uint8_t i=0;i<=255;i++)//HAL_Delay(2);//delayMicroseconds(2);
     #else
-      #define _PULSE_WAIT delayMicroseconds(4);
+      #define _PULSE_WAIT NOOP//for(uint8_t i=0;i<=255;i++)//HAL_Delay(4);//delayMicroseconds(4);
     #endif
   #endif
 
@@ -1426,11 +1426,11 @@ void Stepper::report_positions() {
       const uint8_t old_dir = _READ_DIR(AXIS);              \
       _ENABLE(AXIS);                                        \
       _SAVE_START;                                          \
-      _APPLY_DIR(AXIS, _INVERT_DIR(AXIS)^direction^INVERT); \
+      _APPLY_DIR(AXIS, (GPIO_PinState)(_INVERT_DIR(AXIS)^direction^INVERT)); \
       _APPLY_STEP(AXIS)(!_INVERT_STEP_PIN(AXIS), true);     \
       _PULSE_WAIT;                                          \
       _APPLY_STEP(AXIS)(_INVERT_STEP_PIN(AXIS), true);      \
-      _APPLY_DIR(AXIS, old_dir);                            \
+      _APPLY_DIR(AXIS, (GPIO_PinState)old_dir);                            \
     }
 
   // MUST ONLY BE CALLED BY AN ISR,
@@ -1454,12 +1454,15 @@ void Stepper::report_positions() {
 
       case Z_AXIS: {
 
-        #if DISABLED(DELTA)
+        //#if DISABLED(DELTA)
+	if(MACHINETPYE != DELTA)
+	{
 
           BABYSTEP_AXIS(Z, BABYSTEP_INVERT_Z);
-
-        #else // DELTA
-
+	}
+        //#else // DELTA
+	else
+	{
           const bool z_direction = direction ^ BABYSTEP_INVERT_Z;
 
           enable_X();
@@ -1470,9 +1473,9 @@ void Stepper::report_positions() {
                         old_y_dir_pin = Y_DIR_READ,
                         old_z_dir_pin = Z_DIR_READ;
 
-          X_DIR_WRITE(INVERT_X_DIR ^ z_direction);
-          Y_DIR_WRITE(INVERT_Y_DIR ^ z_direction);
-          Z_DIR_WRITE(INVERT_Z_DIR ^ z_direction);
+          X_DIR_WRITE((GPIO_PinState)(INVERT_X_DIR ^ z_direction));
+          Y_DIR_WRITE((GPIO_PinState)(INVERT_Y_DIR ^ z_direction));
+          Z_DIR_WRITE((GPIO_PinState)(INVERT_Z_DIR ^ z_direction));
 
           _SAVE_START;
 
@@ -1491,7 +1494,8 @@ void Stepper::report_positions() {
           Y_DIR_WRITE(old_y_dir_pin);
           Z_DIR_WRITE(old_z_dir_pin);
 
-        #endif
+        //#endif
+	}
 
       } break;
 

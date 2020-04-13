@@ -1,80 +1,77 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:01
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:23:54
 # Copyright 1999-2014 IAR Systems AB.
 #
 #    Cpu mode     =  thumb
 #    Endian       =  little
 #    Source file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\BSP\Components\at24cxx\at24cxx.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\BSP\Components\at24cxx\at24cxx.cpp
 #    Command line =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\BSP\Components\at24cxx\at24cxx.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\BSP\Components\at24cxx\at24cxx.cpp
 #        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 #        MKS_ROBIN_NANO -D TFT35 -lC
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        -lA
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        --diag_suppress Pa050 -o
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
 #        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\INC\c\DLib_Config_Full.h" -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-#        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\CMSIS\Include\"
 #    List file    =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\at24cxx.lst
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\at24cxx.lst
 #    Object file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\at24cxx.o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\at24cxx.o
 #
 ###############################################################################
 
-E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\BSP\Components\at24cxx\at24cxx.cpp
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\BSP\Components\at24cxx\at24cxx.cpp
       1          
       2          #include "at24cxx.h"
       3          #include "sys.h"
@@ -113,27 +110,26 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \                                 In section .text, align 2, keep-with-next
      31          void delay_us(uint32_t nus)
      32          {
-     33                while(nus--)
    \                     _Z8delay_usj: (+1)
-   \                     ??delay_us_0: (+1)
-   \   00000000   0x4601             MOV      R1,R0
-   \   00000002   0x1E48             SUBS     R0,R1,#+1
-   \   00000004   0x2900             CMP      R1,#+0
-   \   00000006   0xD008             BEQ.N    ??delay_us_1
+   \   00000000   0xB158             CBZ.N    R0,??delay_us_0
+   \   00000002   0x.... 0x....      LDR.W    R1,??DataTable8
+     33                while(nus--)
      34                {
      35                  delayCnt = 5;  //10,8,6 -ok          
-   \   00000008   0x....             LDR.N    R1,??DataTable9
-   \   0000000A   0x2205             MOVS     R2,#+5
-   \   0000000C   0x800A             STRH     R2,[R1, #+0]
+   \                     ??delay_us_1: (+1)
+   \   00000006   0x2205             MOVS     R2,#+5
+   \   00000008   0x800A             STRH     R2,[R1, #+0]
+   \   0000000A   0x1E40             SUBS     R0,R0,#+1
      36                  while(delayCnt--);
    \                     ??delay_us_2: (+1)
-   \   0000000E   0x880A             LDRH     R2,[R1, #+0]
-   \   00000010   0x1E53             SUBS     R3,R2,#+1
-   \   00000012   0x800B             STRH     R3,[R1, #+0]
-   \   00000014   0x2A00             CMP      R2,#+0
-   \   00000016   0xD1FA             BNE.N    ??delay_us_2
-   \   00000018   0xE7F2             B.N      ??delay_us_0
+   \   0000000C   0x880A             LDRH     R2,[R1, #+0]
+   \   0000000E   0x1E53             SUBS     R3,R2,#+1
+   \   00000010   0x800B             STRH     R3,[R1, #+0]
+   \   00000012   0x2A00             CMP      R2,#+0
+   \   00000014   0xD1FA             BNE.N    ??delay_us_2
      37                }
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD1F5             BNE.N    ??delay_us_1
      38           /*
      39          	u32 temp;	    	 
      40          	SysTick->LOAD=nus*fac_us; 					//时间加载	  		 
@@ -147,7 +143,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
      48          	SysTick->VAL =0X00;      		        //清空计数器	 
      49             */     
      50          }
-   \                     ??delay_us_1: (+1)
+   \                     ??delay_us_0: (+1)
    \   0000001A   0x4770             BX       LR               ;; return
      51          //延时nms
      52          //注意nms的范围
@@ -159,29 +155,27 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \                                 In section .text, align 2, keep-with-next
      57          void delay_ms(uint16_t nms)
      58          {	 
+   \                     _Z8delay_mst: (+1)
+   \   00000000   0xB168             CBZ.N    R0,??delay_ms_0
+   \   00000002   0x....             LDR.N    R1,??DataTable8
+   \   00000004   0xF241 0x3288      MOVW     R2,#+5000
      59          
      60                while(nms--)
-   \                     _Z8delay_mst: (+1)
-   \                     ??delay_ms_0: (+1)
-   \   00000000   0x4601             MOV      R1,R0
-   \   00000002   0x1E48             SUBS     R0,R1,#+1
-   \   00000004   0xB289             UXTH     R1,R1
-   \   00000006   0x2900             CMP      R1,#+0
-   \   00000008   0xD009             BEQ.N    ??delay_ms_1
      61                {
      62                  delayCnt = 5000;        //10000,8000,6000 -ok          
-   \   0000000A   0x....             LDR.N    R1,??DataTable9
-   \   0000000C   0xF241 0x3288      MOVW     R2,#+5000
-   \   00000010   0x800A             STRH     R2,[R1, #+0]
+   \                     ??delay_ms_1: (+1)
+   \   00000008   0x800A             STRH     R2,[R1, #+0]
+   \   0000000A   0x1E40             SUBS     R0,R0,#+1
      63                  while(delayCnt--);
    \                     ??delay_ms_2: (+1)
-   \   00000012   0x880A             LDRH     R2,[R1, #+0]
-   \   00000014   0x1E53             SUBS     R3,R2,#+1
-   \   00000016   0x800B             STRH     R3,[R1, #+0]
-   \   00000018   0x2A00             CMP      R2,#+0
-   \   0000001A   0xD1FA             BNE.N    ??delay_ms_2
-   \   0000001C   0xE7F0             B.N      ??delay_ms_0
+   \   0000000C   0x880B             LDRH     R3,[R1, #+0]
+   \   0000000E   0xF1A3 0x0C01      SUB      R12,R3,#+1
+   \   00000012   0xF8A1 0xC000      STRH     R12,[R1, #+0]
+   \   00000016   0x2B00             CMP      R3,#+0
+   \   00000018   0xD1F8             BNE.N    ??delay_ms_2
      64                }
+   \   0000001A   0x2800             CMP      R0,#+0
+   \   0000001C   0xD1F4             BNE.N    ??delay_ms_1
      65            
      66          	/*u32 temp;		   
      67          	SysTick->LOAD=(u32)nms*fac_ms;				//时间加载(SysTick->LOAD为24bit)
@@ -195,18 +189,38 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
      75          	SysTick->VAL =0X00;       					//清空计数器	
      76          */
      77          }
-   \                     ??delay_ms_1: (+1)
+   \                     ??delay_ms_0: (+1)
    \   0000001E   0x4770             BX       LR               ;; return
      78          //初始化IIC接口
 
    \                                 In section .text, align 2, keep-with-next
      79          void AT24CXX_Init(void)
+   \                     AT24CXX_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x....             B.N      ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
      80          {
+   \                     ?Subroutine0: (+1)
+   \   00000000   0xB084             SUB      SP,SP,#+16
      81                  //delay_init();
      82          	IIC_Init();
-   \                     AT24CXX_Init: (+1)
-   \   00000000   0x....             B.N      IIC_Init
+   \   00000002   0x20C0             MOVS     R0,#+192
+   \   00000004   0x9000             STR      R0,[SP, #+0]
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0x9001             STR      R0,[SP, #+4]
+   \   0000000A   0x9003             STR      R0,[SP, #+12]
+   \   0000000C   0xA900             ADD      R1,SP,#+0
+   \   0000000E   0x....             LDR.N    R4,??DataTable8_1  ;; 0x40010c00
+   \   00000010   0x4620             MOV      R0,R4
+   \   00000012   0x.... 0x....      BL       HAL_GPIO_Init
+   \   00000016   0x2201             MOVS     R2,#+1
+   \   00000018   0x21C0             MOVS     R1,#+192
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0x.... 0x....      BL       HAL_GPIO_WritePin
      83          }
+   \   00000020   0xB004             ADD      SP,SP,#+16
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
      84          //在AT24CXX指定地址读出一个数据
      85          //ReadAddr:开始读数的地址  
      86          //返回值  :读到的数据
@@ -236,27 +250,26 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
      99          	IIC_Wait_Ack(); 
    \   00000014   0x.... 0x....      BL       IIC_Wait_Ack
     100              IIC_Send_Byte(ReadAddr%256);   //发送低地址
-   \   00000018   0x4620             MOV      R0,R4
-   \   0000001A   0xB2C0             UXTB     R0,R0
-   \   0000001C   0x.... 0x....      BL       IIC_Send_Byte
+   \   00000018   0xB2E0             UXTB     R0,R4
+   \   0000001A   0x.... 0x....      BL       IIC_Send_Byte
     101          	IIC_Wait_Ack();	    
-   \   00000020   0x.... 0x....      BL       IIC_Wait_Ack
+   \   0000001E   0x.... 0x....      BL       IIC_Wait_Ack
     102          	IIC_Start();  	 	   
-   \   00000024   0x.... 0x....      BL       IIC_Start
+   \   00000022   0x.... 0x....      BL       IIC_Start
     103          	IIC_Send_Byte(0XA1);           //进入接收模式			   
-   \   00000028   0x20A1             MOVS     R0,#+161
-   \   0000002A   0x.... 0x....      BL       IIC_Send_Byte
+   \   00000026   0x20A1             MOVS     R0,#+161
+   \   00000028   0x.... 0x....      BL       IIC_Send_Byte
     104          	IIC_Wait_Ack();	 
-   \   0000002E   0x.... 0x....      BL       IIC_Wait_Ack
+   \   0000002C   0x.... 0x....      BL       IIC_Wait_Ack
     105              temp=IIC_Read_Byte(0);		   
-   \   00000032   0x2000             MOVS     R0,#+0
-   \   00000034   0x.... 0x....      BL       IIC_Read_Byte
-   \   00000038   0x4604             MOV      R4,R0
+   \   00000030   0x2000             MOVS     R0,#+0
+   \   00000032   0x.... 0x....      BL       IIC_Read_Byte
+   \   00000036   0x4604             MOV      R4,R0
     106              IIC_Stop();//产生一个停止条件	    
-   \   0000003A   0x.... 0x....      BL       IIC_Stop
+   \   00000038   0x.... 0x....      BL       IIC_Stop
     107          	return temp;
-   \   0000003E   0x4620             MOV      R0,R4
-   \   00000040   0xBD10             POP      {R4,PC}          ;; return
+   \   0000003C   0x4620             MOV      R0,R4
+   \   0000003E   0xBD10             POP      {R4,PC}          ;; return
     108          }
     109          //在AT24CXX指定地址写入一个数据
     110          //WriteAddr  :写入数据的目的地址    
@@ -288,23 +301,22 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
     124          	IIC_Wait_Ack();	   
    \   00000016   0x.... 0x....      BL       IIC_Wait_Ack
     125              IIC_Send_Byte(WriteAddr%256);   //发送低地址
-   \   0000001A   0x4620             MOV      R0,R4
-   \   0000001C   0xB2C0             UXTB     R0,R0
-   \   0000001E   0x.... 0x....      BL       IIC_Send_Byte
+   \   0000001A   0xB2E0             UXTB     R0,R4
+   \   0000001C   0x.... 0x....      BL       IIC_Send_Byte
     126          	IIC_Wait_Ack(); 	 										  		   
-   \   00000022   0x.... 0x....      BL       IIC_Wait_Ack
+   \   00000020   0x.... 0x....      BL       IIC_Wait_Ack
     127          	IIC_Send_Byte(DataToWrite);     //发送字节							   
-   \   00000026   0x4628             MOV      R0,R5
-   \   00000028   0x.... 0x....      BL       IIC_Send_Byte
+   \   00000024   0x4628             MOV      R0,R5
+   \   00000026   0x.... 0x....      BL       IIC_Send_Byte
     128          	IIC_Wait_Ack();  		    	   
-   \   0000002C   0x.... 0x....      BL       IIC_Wait_Ack
+   \   0000002A   0x.... 0x....      BL       IIC_Wait_Ack
     129              IIC_Stop();//产生一个停止条件 
-   \   00000030   0x.... 0x....      BL       IIC_Stop
+   \   0000002E   0x.... 0x....      BL       IIC_Stop
     130          	//delay_ms(10);	 
     131          	delay_ms(5);	 //5-ok;3-ok;2-ok;1-bad;
-   \   00000034   0x2005             MOVS     R0,#+5
-   \   00000036   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
-   \   0000003A   0x....             B.N      _Z8delay_mst
+   \   00000032   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \   00000036   0x2005             MOVS     R0,#+5
+   \   00000038   0x....             B.N      _Z8delay_mst
     132          }
     133          //在AT24CXX里面的指定地址开始写入长度为Len的数据
     134          //该函数用于写入16bit或者32bit的数据.
@@ -319,28 +331,26 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \   00000000   0xB5F8             PUSH     {R3-R7,LR}
    \   00000002   0x4604             MOV      R4,R0
    \   00000004   0x460D             MOV      R5,R1
-   \   00000006   0x4616             MOV      R6,R2
+   \   00000006   0x0016             MOVS     R6,R2
     140          	uint8_t t;
     141          	for(t=0;t<Len;t++)
-   \   00000008   0x2700             MOVS     R7,#+0
-   \   0000000A   0xE009             B.N      ??AT24CXX_WriteLenByte_0
+   \   00000008   0xD00A             BEQ.N    ??AT24CXX_WriteLenByte_0
+   \   0000000A   0x2700             MOVS     R7,#+0
     142          	{
     143          		AT24CXX_WriteOneByte(WriteAddr+t,(DataToWrite>>(8*t))&0xff);
    \                     ??AT24CXX_WriteLenByte_1: (+1)
-   \   0000000C   0x00F8             LSLS     R0,R7,#+3
-   \   0000000E   0xFA25 0xF100      LSR      R1,R5,R0
-   \   00000012   0xB2C9             UXTB     R1,R1
-   \   00000014   0x1938             ADDS     R0,R7,R4
-   \   00000016   0xB280             UXTH     R0,R0
-   \   00000018   0x.... 0x....      BL       AT24CXX_WriteOneByte
+   \   0000000C   0xFA25 0xF107      LSR      R1,R5,R7
+   \   00000010   0xB2C9             UXTB     R1,R1
+   \   00000012   0xB2A0             UXTH     R0,R4
+   \   00000014   0x.... 0x....      BL       AT24CXX_WriteOneByte
     144          	}												    
-   \   0000001C   0x1C7F             ADDS     R7,R7,#+1
-   \   0000001E   0xB2FF             UXTB     R7,R7
-   \                     ??AT24CXX_WriteLenByte_0: (+1)
-   \   00000020   0x42B7             CMP      R7,R6
-   \   00000022   0xDBF3             BLT.N    ??AT24CXX_WriteLenByte_1
+   \   00000018   0x3708             ADDS     R7,R7,#+8
+   \   0000001A   0x1C64             ADDS     R4,R4,#+1
+   \   0000001C   0x1E76             SUBS     R6,R6,#+1
+   \   0000001E   0xD1F5             BNE.N    ??AT24CXX_WriteLenByte_1
     145          }
-   \   00000024   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+   \                     ??AT24CXX_WriteLenByte_0: (+1)
+   \   00000020   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
     146          
     147          //在AT24CXX里面的指定地址开始读出长度为Len的数据
     148          //该函数用于读出16bit或者32bit的数据.
@@ -352,34 +362,30 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
     152          uint32_t AT24CXX_ReadLenByte(uint16_t ReadAddr,uint8_t Len)
     153          {  	
    \                     AT24CXX_ReadLenByte: (+1)
-   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
-   \   00000002   0x4604             MOV      R4,R0
-   \   00000004   0x460D             MOV      R5,R1
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x460C             MOV      R4,R1
     154          	uint8_t t;
     155          	uint32_t temp=0;
-   \   00000006   0x2600             MOVS     R6,#+0
+   \   00000004   0x2500             MOVS     R5,#+0
     156          	for(t=0;t<Len;t++)
-   \   00000008   0x4637             MOV      R7,R6
-   \   0000000A   0xE008             B.N      ??AT24CXX_ReadLenByte_0
+   \   00000006   0xB14C             CBZ.N    R4,??AT24CXX_ReadLenByte_0
+   \   00000008   0x1820             ADDS     R0,R4,R0
+   \   0000000A   0x1E46             SUBS     R6,R0,#+1
     157          	{
     158          		temp<<=8;
     159          		temp+=AT24CXX_ReadOneByte(ReadAddr+Len-t-1); 	 				   
    \                     ??AT24CXX_ReadLenByte_1: (+1)
-   \   0000000C   0x1928             ADDS     R0,R5,R4
-   \   0000000E   0x1BC0             SUBS     R0,R0,R7
-   \   00000010   0x1E40             SUBS     R0,R0,#+1
-   \   00000012   0xB280             UXTH     R0,R0
-   \   00000014   0x.... 0x....      BL       AT24CXX_ReadOneByte
-   \   00000018   0xEB00 0x2606      ADD      R6,R0,R6, LSL #+8
+   \   0000000C   0xB2B0             UXTH     R0,R6
+   \   0000000E   0x.... 0x....      BL       AT24CXX_ReadOneByte
     160          	}
-   \   0000001C   0x1C7F             ADDS     R7,R7,#+1
-   \                     ??AT24CXX_ReadLenByte_0: (+1)
-   \   0000001E   0xB2FF             UXTB     R7,R7
-   \   00000020   0x42AF             CMP      R7,R5
-   \   00000022   0xD3F3             BCC.N    ??AT24CXX_ReadLenByte_1
+   \   00000012   0x1E76             SUBS     R6,R6,#+1
+   \   00000014   0xEB00 0x2505      ADD      R5,R0,R5, LSL #+8
+   \   00000018   0x1E64             SUBS     R4,R4,#+1
+   \   0000001A   0xD1F7             BNE.N    ??AT24CXX_ReadLenByte_1
     161          	return temp;												    
-   \   00000024   0x4630             MOV      R0,R6
-   \   00000026   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+   \                     ??AT24CXX_ReadLenByte_0: (+1)
+   \   0000001C   0x4628             MOV      R0,R5
+   \   0000001E   0xBD70             POP      {R4-R6,PC}       ;; return
     162          }
     163          //检查AT24CXX是否正常
     164          //这里用了24XX的最后一个地址(255)来存储标志字.
@@ -398,29 +404,37 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \   00000002   0x20FF             MOVS     R0,#+255
    \   00000004   0x.... 0x....      BL       AT24CXX_ReadOneByte
    \   00000008   0x2855             CMP      R0,#+85
-   \   0000000A   0xD101             BNE.N    ??AT24CXX_Check_0
-   \   0000000C   0x2000             MOVS     R0,#+0
-   \   0000000E   0xBD02             POP      {R1,PC}
+   \   0000000A   0xD01A             BEQ.N    ??AT24CXX_Check_0
     173          	else//排除第一次初始化的情况
     174          	{
     175          		AT24CXX_WriteOneByte(255,0X55);
-   \                     ??AT24CXX_Check_0: (+1)
-   \   00000010   0x2155             MOVS     R1,#+85
-   \   00000012   0x20FF             MOVS     R0,#+255
-   \   00000014   0x.... 0x....      BL       AT24CXX_WriteOneByte
+   \   0000000C   0x.... 0x....      BL       IIC_Start
+   \   00000010   0x20A0             MOVS     R0,#+160
+   \   00000012   0x.... 0x....      BL       IIC_Send_Byte
+   \   00000016   0x.... 0x....      BL       IIC_Wait_Ack
+   \   0000001A   0x20FF             MOVS     R0,#+255
+   \   0000001C   0x.... 0x....      BL       IIC_Send_Byte
+   \   00000020   0x.... 0x....      BL       IIC_Wait_Ack
+   \   00000024   0x2055             MOVS     R0,#+85
+   \   00000026   0x.... 0x....      BL       IIC_Send_Byte
+   \   0000002A   0x.... 0x....      BL       IIC_Wait_Ack
+   \   0000002E   0x.... 0x....      BL       IIC_Stop
+   \   00000032   0x2005             MOVS     R0,#+5
+   \   00000034   0x.... 0x....      BL       _Z8delay_mst
     176          	    temp=AT24CXX_ReadOneByte(255);	  
     177          		if(temp==0X55)return 0;
-   \   00000018   0x20FF             MOVS     R0,#+255
-   \   0000001A   0x.... 0x....      BL       AT24CXX_ReadOneByte
-   \   0000001E   0x2855             CMP      R0,#+85
-   \   00000020   0xD101             BNE.N    ??AT24CXX_Check_1
-   \   00000022   0x2000             MOVS     R0,#+0
-   \   00000024   0xBD02             POP      {R1,PC}
+   \   00000038   0x20FF             MOVS     R0,#+255
+   \   0000003A   0x.... 0x....      BL       AT24CXX_ReadOneByte
+   \   0000003E   0x2855             CMP      R0,#+85
+   \   00000040   0xD101             BNE.N    ??AT24CXX_Check_1
+   \                     ??AT24CXX_Check_0: (+1)
+   \   00000042   0x2000             MOVS     R0,#+0
+   \   00000044   0xBD02             POP      {R1,PC}
     178          	}
     179          	return 1;											  
    \                     ??AT24CXX_Check_1: (+1)
-   \   00000026   0x2001             MOVS     R0,#+1
-   \   00000028   0xBD02             POP      {R1,PC}          ;; return
+   \   00000046   0x2001             MOVS     R0,#+1
+   \   00000048   0xBD02             POP      {R1,PC}          ;; return
     180          }
     181          
     182          //在AT24CXX里面的指定地址开始读出指定个数的数据
@@ -439,23 +453,22 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \   00000002   0x4604             MOV      R4,R0
    \   00000004   0x460D             MOV      R5,R1
    \   00000006   0x0016             MOVS     R6,R2
-   \   00000008   0xE007             B.N      ??AT24CXX_Read_0
+   \   00000008   0xD007             BEQ.N    ??AT24CXX_Read_0
     191          	while(NumToRead)
     192          	{
     193          		*pBuffer++=AT24CXX_ReadOneByte(ReadAddr++);	
    \                     ??AT24CXX_Read_1: (+1)
-   \   0000000A   0x4620             MOV      R0,R4
-   \   0000000C   0xB280             UXTH     R0,R0
-   \   0000000E   0x.... 0x....      BL       AT24CXX_ReadOneByte
-   \   00000012   0x1C64             ADDS     R4,R4,#+1
-   \   00000014   0xF805 0x0B01      STRB     R0,[R5], #+1
+   \   0000000A   0xB2A0             UXTH     R0,R4
+   \   0000000C   0x.... 0x....      BL       AT24CXX_ReadOneByte
+   \   00000010   0x1C64             ADDS     R4,R4,#+1
+   \   00000012   0xF805 0x0B01      STRB     R0,[R5], #+1
     194          		NumToRead--;
-   \   00000018   0x1E76             SUBS     R6,R6,#+1
+   \   00000016   0x1E76             SUBS     R6,R6,#+1
     195          	}
-   \                     ??AT24CXX_Read_0: (+1)
-   \   0000001A   0xD1F6             BNE.N    ??AT24CXX_Read_1
+   \   00000018   0xD1F7             BNE.N    ??AT24CXX_Read_1
     196          }  
-   \   0000001C   0xBD70             POP      {R4-R6,PC}       ;; return
+   \                     ??AT24CXX_Read_0: (+1)
+   \   0000001A   0xBD70             POP      {R4-R6,PC}       ;; return
     197          //在AT24CXX里面的指定地址开始写入指定个数的数据
     198          //WriteAddr :开始写入的地址 对24c02为0~255
     199          //pBuffer   :数据数组首地址
@@ -471,58 +484,43 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \   00000000   0xB570             PUSH     {R4-R6,LR}
    \   00000002   0x4604             MOV      R4,R0
    \   00000004   0x460D             MOV      R5,R1
-   \   00000006   0x4616             MOV      R6,R2
-   \   00000008   0xE006             B.N      ??AT24CXX_Write_0
+   \   00000006   0x0016             MOVS     R6,R2
+   \   00000008   0xD007             BEQ.N    ??AT24CXX_Write_0
     206          	while(NumToWrite--)
     207          	{
     208          		AT24CXX_WriteOneByte(WriteAddr,*pBuffer);
    \                     ??AT24CXX_Write_1: (+1)
    \   0000000A   0xF815 0x1B01      LDRB     R1,[R5], #+1
-   \   0000000E   0x4620             MOV      R0,R4
-   \   00000010   0xB280             UXTH     R0,R0
-   \   00000012   0x.... 0x....      BL       AT24CXX_WriteOneByte
+   \   0000000E   0xB2A0             UXTH     R0,R4
+   \   00000010   0x.... 0x....      BL       AT24CXX_WriteOneByte
     209          		WriteAddr++;
-   \   00000016   0x1C64             ADDS     R4,R4,#+1
+   \   00000014   0x1C64             ADDS     R4,R4,#+1
     210          		pBuffer++;
+   \   00000016   0x1E76             SUBS     R6,R6,#+1
     211          	}
-   \                     ??AT24CXX_Write_0: (+1)
-   \   00000018   0x4630             MOV      R0,R6
-   \   0000001A   0x1E46             SUBS     R6,R0,#+1
-   \   0000001C   0x2800             CMP      R0,#+0
-   \   0000001E   0xD1F4             BNE.N    ??AT24CXX_Write_1
+   \   00000018   0xD1F7             BNE.N    ??AT24CXX_Write_1
     212          }
-   \   00000020   0xBD70             POP      {R4-R6,PC}       ;; return
+   \                     ??AT24CXX_Write_0: (+1)
+   \   0000001A   0xBD70             POP      {R4-R6,PC}       ;; return
     213          
     214          //初始化IIC
 
    \                                 In section .text, align 2, keep-with-next
     215          void IIC_Init(void)
-    216          {		
    \                     IIC_Init: (+1)
-   \   00000000   0xB51F             PUSH     {R0-R4,LR}
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002                      REQUIRE ?Subroutine0
+   \   00000002                      ;; // Fall through to label ?Subroutine0
+    216          {		
     217          	GPIO_InitTypeDef GPIO_InitStruct;
     218          
     219          	GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_7;
-   \   00000002   0x20C0             MOVS     R0,#+192
-   \   00000004   0x9000             STR      R0,[SP, #+0]
     220          	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-   \   00000006   0x2001             MOVS     R0,#+1
-   \   00000008   0x9001             STR      R0,[SP, #+4]
     221          	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
-   \   0000000A   0x9003             STR      R0,[SP, #+12]
     222          	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-   \   0000000C   0x....             LDR.N    R4,??DataTable9_1  ;; 0x40010c00
-   \   0000000E   0xA900             ADD      R1,SP,#+0
-   \   00000010   0x4620             MOV      R0,R4
-   \   00000012   0x.... 0x....      BL       HAL_GPIO_Init
     223          	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6|GPIO_PIN_7, GPIO_PIN_SET);
-   \   00000016   0x2201             MOVS     R2,#+1
-   \   00000018   0x21C0             MOVS     R1,#+192
-   \   0000001A   0x4620             MOV      R0,R4
-   \   0000001C   0x.... 0x....      BL       HAL_GPIO_WritePin
     224          	
     225          }
-   \   00000020   0xBD1F             POP      {R0-R4,PC}       ;; return
     226          //产生IIC起始信号
 
    \                                 In section .text, align 2, keep-with-next
@@ -531,16 +529,16 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \                     IIC_Start: (+1)
    \   00000000   0xB510             PUSH     {R4,LR}
     229          	SDA_OUT();     //sda线输出
-   \   00000002   0x....             LDR.N    R0,??DataTable9_1  ;; 0x40010c00
-   \   00000004   0x6801             LDR      R1,[R0, #+0]
-   \   00000006   0x0109             LSLS     R1,R1,#+4
-   \   00000008   0x0909             LSRS     R1,R1,#+4
-   \   0000000A   0x6001             STR      R1,[R0, #+0]
-   \   0000000C   0x6801             LDR      R1,[R0, #+0]
-   \   0000000E   0xF041 0x5140      ORR      R1,R1,#0x30000000
-   \   00000012   0x6001             STR      R1,[R0, #+0]
+   \   00000002   0x....             LDR.N    R0,??DataTable8_1  ;; 0x40010c00
+   \   00000004   0x....             LDR.N    R4,??DataTable8_2  ;; 0x42218198
+   \   00000006   0x6801             LDR      R1,[R0, #+0]
+   \   00000008   0x0109             LSLS     R1,R1,#+4
+   \   0000000A   0x0909             LSRS     R1,R1,#+4
+   \   0000000C   0x6001             STR      R1,[R0, #+0]
+   \   0000000E   0x6801             LDR      R1,[R0, #+0]
+   \   00000010   0xF041 0x5140      ORR      R1,R1,#0x30000000
+   \   00000014   0x6001             STR      R1,[R0, #+0]
     230          	IIC_SDA=1;	  	  
-   \   00000014   0x....             LDR.N    R4,??DataTable9_2  ;; 0x42218198
    \   00000016   0x2001             MOVS     R0,#+1
    \   00000018   0x6060             STR      R0,[R4, #+4]
     231          	IIC_SCL=1;
@@ -553,12 +551,16 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \   00000024   0x6060             STR      R0,[R4, #+4]
     234          	delay_us(4);
    \   00000026   0x2004             MOVS     R0,#+4
-   \   00000028   0x.... 0x....      BL       _Z8delay_usj
+   \   00000028   0x....             B.N      ??Subroutine2_0
     235          	IIC_SCL=0;//钳住I2C总线，准备发送或接收数据 
-   \   0000002C   0x2000             MOVS     R0,#+0
-   \   0000002E   0x6020             STR      R0,[R4, #+0]
     236          }	  
-   \   00000030   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ??Subroutine2_0: (+1)
+   \   00000000   0x.... 0x....      BL       _Z8delay_usj
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x6020             STR      R0,[R4, #+0]
+   \   00000008   0xBD10             POP      {R4,PC}          ;; return
     237          //产生IIC停止信号
 
    \                                 In section .text, align 2, keep-with-next
@@ -567,16 +569,16 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \                     IIC_Stop: (+1)
    \   00000000   0xB510             PUSH     {R4,LR}
     240          	SDA_OUT();//sda线输出
-   \   00000002   0x....             LDR.N    R0,??DataTable9_1  ;; 0x40010c00
-   \   00000004   0x6801             LDR      R1,[R0, #+0]
-   \   00000006   0x0109             LSLS     R1,R1,#+4
-   \   00000008   0x0909             LSRS     R1,R1,#+4
-   \   0000000A   0x6001             STR      R1,[R0, #+0]
-   \   0000000C   0x6801             LDR      R1,[R0, #+0]
-   \   0000000E   0xF041 0x5140      ORR      R1,R1,#0x30000000
-   \   00000012   0x6001             STR      R1,[R0, #+0]
+   \   00000002   0x....             LDR.N    R0,??DataTable8_1  ;; 0x40010c00
+   \   00000004   0x....             LDR.N    R4,??DataTable8_2  ;; 0x42218198
+   \   00000006   0x6801             LDR      R1,[R0, #+0]
+   \   00000008   0x0109             LSLS     R1,R1,#+4
+   \   0000000A   0x0909             LSRS     R1,R1,#+4
+   \   0000000C   0x6001             STR      R1,[R0, #+0]
+   \   0000000E   0x6801             LDR      R1,[R0, #+0]
+   \   00000010   0xF041 0x5140      ORR      R1,R1,#0x30000000
+   \   00000014   0x6001             STR      R1,[R0, #+0]
     241          	IIC_SCL=0;
-   \   00000014   0x....             LDR.N    R4,??DataTable9_2  ;; 0x42218198
    \   00000016   0x2000             MOVS     R0,#+0
    \   00000018   0x6020             STR      R0,[R4, #+0]
     242          	IIC_SDA=0;//STOP:when CLK is high DATA change form low to high
@@ -602,54 +604,51 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
     251          uint8_t IIC_Wait_Ack(void)
     252          {
    \                     IIC_Wait_Ack: (+1)
-   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000000   0xB510             PUSH     {R4,LR}
     253          	uint8_t ucErrTime=0;
-   \   00000002   0x2400             MOVS     R4,#+0
     254          	SDA_IN();      //SDA设置为输入  
-   \   00000004   0x....             LDR.N    R0,??DataTable9_1  ;; 0x40010c00
-   \   00000006   0x6801             LDR      R1,[R0, #+0]
-   \   00000008   0x0109             LSLS     R1,R1,#+4
-   \   0000000A   0x0909             LSRS     R1,R1,#+4
-   \   0000000C   0x6001             STR      R1,[R0, #+0]
-   \   0000000E   0x6801             LDR      R1,[R0, #+0]
-   \   00000010   0xF041 0x4100      ORR      R1,R1,#0x80000000
-   \   00000014   0x6001             STR      R1,[R0, #+0]
+   \   00000002   0x....             LDR.N    R0,??DataTable8_1  ;; 0x40010c00
+   \   00000004   0x6801             LDR      R1,[R0, #+0]
+   \   00000006   0x0109             LSLS     R1,R1,#+4
+   \   00000008   0x0909             LSRS     R1,R1,#+4
+   \   0000000A   0x6001             STR      R1,[R0, #+0]
+   \   0000000C   0x6801             LDR      R1,[R0, #+0]
+   \   0000000E   0xF041 0x4100      ORR      R1,R1,#0x80000000
+   \   00000012   0x6001             STR      R1,[R0, #+0]
     255          	IIC_SDA=1;delay_us(1);	   
-   \   00000016   0x2001             MOVS     R0,#+1
-   \   00000018   0x....             LDR.N    R1,??DataTable9_3  ;; 0x4221819c
-   \   0000001A   0x6008             STR      R0,[R1, #+0]
-   \   0000001C   0x.... 0x....      BL       _Z8delay_usj
+   \   00000014   0x2001             MOVS     R0,#+1
+   \   00000016   0x....             LDR.N    R1,??DataTable8_3  ;; 0x4221819c
+   \   00000018   0x6008             STR      R0,[R1, #+0]
+   \   0000001A   0x.... 0x....      BL       _Z8delay_usj
     256          	IIC_SCL=1;delay_us(1);	 
-   \   00000020   0x....             LDR.N    R5,??DataTable9_4  ;; 0x4221811c
-   \   00000022   0x2001             MOVS     R0,#+1
-   \   00000024   0x67E8             STR      R0,[R5, #+124]
-   \   00000026   0x.... 0x....      BL       _Z8delay_usj
+   \   0000001E   0x2001             MOVS     R0,#+1
+   \   00000020   0x....             LDR.N    R4,??DataTable8_4  ;; 0x4221811c
+   \   00000022   0x67E0             STR      R0,[R4, #+124]
+   \   00000024   0x.... 0x....      BL       _Z8delay_usj
+   \   00000028   0x20FB             MOVS     R0,#+251
     257          	while(READ_SDA)
    \                     ??IIC_Wait_Ack_0: (+1)
-   \   0000002A   0x6828             LDR      R0,[R5, #+0]
-   \   0000002C   0x2800             CMP      R0,#+0
-   \   0000002E   0xD007             BEQ.N    ??IIC_Wait_Ack_1
+   \   0000002A   0x6821             LDR      R1,[R4, #+0]
+   \   0000002C   0xB129             CBZ.N    R1,??IIC_Wait_Ack_1
     258          	{
     259          		ucErrTime++;
-   \   00000030   0x1C64             ADDS     R4,R4,#+1
     260          		if(ucErrTime>250)
-   \   00000032   0xB2E4             UXTB     R4,R4
-   \   00000034   0x2CFB             CMP      R4,#+251
-   \   00000036   0xDBF8             BLT.N    ??IIC_Wait_Ack_0
+   \   0000002E   0x1E40             SUBS     R0,R0,#+1
+   \   00000030   0xD1FB             BNE.N    ??IIC_Wait_Ack_0
     261          		{
     262          			IIC_Stop();
-   \   00000038   0x.... 0x....      BL       IIC_Stop
+   \   00000032   0x.... 0x....      BL       IIC_Stop
     263          			return 1;
-   \   0000003C   0x2001             MOVS     R0,#+1
-   \   0000003E   0xBD32             POP      {R1,R4,R5,PC}
+   \   00000036   0x2001             MOVS     R0,#+1
+   \   00000038   0xBD10             POP      {R4,PC}
     264          		}
     265          	}
     266          	IIC_SCL=0;//时钟输出0 	   
    \                     ??IIC_Wait_Ack_1: (+1)
-   \   00000040   0x2000             MOVS     R0,#+0
-   \   00000042   0x67E8             STR      R0,[R5, #+124]
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \   0000003C   0x67E0             STR      R0,[R4, #+124]
     267          	return 0;  
-   \   00000044   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+   \   0000003E   0xBD10             POP      {R4,PC}          ;; return
     268          } 
     269          //产生ACK应答
 
@@ -659,11 +658,11 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \                     IIC_Ack: (+1)
    \   00000000   0xB510             PUSH     {R4,LR}
     272          	IIC_SCL=0;
-   \   00000002   0x....             LDR.N    R4,??DataTable9_2  ;; 0x42218198
+   \   00000002   0x....             LDR.N    R4,??DataTable8_2  ;; 0x42218198
    \   00000004   0x2000             MOVS     R0,#+0
    \   00000006   0x6020             STR      R0,[R4, #+0]
     273          	SDA_OUT();
-   \   00000008   0x....             LDR.N    R0,??DataTable9_1  ;; 0x40010c00
+   \   00000008   0x....             LDR.N    R0,??DataTable8_1  ;; 0x40010c00
    \   0000000A   0x6801             LDR      R1,[R0, #+0]
    \   0000000C   0x0109             LSLS     R1,R1,#+4
    \   0000000E   0x0909             LSRS     R1,R1,#+4
@@ -673,21 +672,23 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \   00000018   0x6001             STR      R1,[R0, #+0]
     274          	IIC_SDA=0;
    \   0000001A   0x2000             MOVS     R0,#+0
-   \   0000001C   0x6060             STR      R0,[R4, #+4]
+   \   0000001C   0x....             B.N      ?Subroutine1
     275          	delay_us(2);
-   \   0000001E   0x2002             MOVS     R0,#+2
-   \   00000020   0x.... 0x....      BL       _Z8delay_usj
     276          	IIC_SCL=1;
-   \   00000024   0x2001             MOVS     R0,#+1
-   \   00000026   0x6020             STR      R0,[R4, #+0]
     277          	delay_us(2);
-   \   00000028   0x2002             MOVS     R0,#+2
-   \   0000002A   0x.... 0x....      BL       _Z8delay_usj
     278          	IIC_SCL=0;
-   \   0000002E   0x2000             MOVS     R0,#+0
-   \   00000030   0x6020             STR      R0,[R4, #+0]
     279          }
-   \   00000032   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \   00000000   0x6060             STR      R0,[R4, #+4]
+   \   00000002   0x2002             MOVS     R0,#+2
+   \   00000004   0x.... 0x....      BL       _Z8delay_usj
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0x6020             STR      R0,[R4, #+0]
+   \   0000000C   0x2002             MOVS     R0,#+2
+   \   0000000E                      REQUIRE ??Subroutine2_0
+   \   0000000E                      ;; // Fall through to label ??Subroutine2_0
     280          //不产生ACK应答		    
 
    \                                 In section .text, align 2, keep-with-next
@@ -696,11 +697,11 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \                     IIC_NAck: (+1)
    \   00000000   0xB510             PUSH     {R4,LR}
     283          	IIC_SCL=0;
-   \   00000002   0x....             LDR.N    R4,??DataTable9_2  ;; 0x42218198
+   \   00000002   0x....             LDR.N    R4,??DataTable8_2  ;; 0x42218198
    \   00000004   0x2000             MOVS     R0,#+0
    \   00000006   0x6020             STR      R0,[R4, #+0]
     284          	SDA_OUT();
-   \   00000008   0x....             LDR.N    R0,??DataTable9_1  ;; 0x40010c00
+   \   00000008   0x....             LDR.N    R0,??DataTable8_1  ;; 0x40010c00
    \   0000000A   0x6801             LDR      R1,[R0, #+0]
    \   0000000C   0x0109             LSLS     R1,R1,#+4
    \   0000000E   0x0909             LSRS     R1,R1,#+4
@@ -710,21 +711,13 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    \   00000018   0x6001             STR      R1,[R0, #+0]
     285          	IIC_SDA=1;
    \   0000001A   0x2001             MOVS     R0,#+1
-   \   0000001C   0x6060             STR      R0,[R4, #+4]
+   \   0000001C                      REQUIRE ?Subroutine1
+   \   0000001C                      ;; // Fall through to label ?Subroutine1
     286          	delay_us(2);
-   \   0000001E   0x2002             MOVS     R0,#+2
-   \   00000020   0x.... 0x....      BL       _Z8delay_usj
     287          	IIC_SCL=1;
-   \   00000024   0x2001             MOVS     R0,#+1
-   \   00000026   0x6020             STR      R0,[R4, #+0]
     288          	delay_us(2);
-   \   00000028   0x2002             MOVS     R0,#+2
-   \   0000002A   0x.... 0x....      BL       _Z8delay_usj
     289          	IIC_SCL=0;
-   \   0000002E   0x2000             MOVS     R0,#+0
-   \   00000030   0x6020             STR      R0,[R4, #+0]
     290          }					 				     
-   \   00000032   0xBD10             POP      {R4,PC}          ;; return
     291          //IIC发送一个字节
     292          //返回从机有无应答
     293          //1，有应答
@@ -734,63 +727,93 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
     295          void IIC_Send_Byte(uint8_t txd)
     296          {                        
    \                     IIC_Send_Byte: (+1)
-   \   00000000   0xB570             PUSH     {R4-R6,LR}
-   \   00000002   0x4604             MOV      R4,R0
+   \   00000000   0xB470             PUSH     {R4-R6}
     297              uint8_t t;   
     298          	SDA_OUT(); 	    
-   \   00000004   0x....             LDR.N    R0,??DataTable9_1  ;; 0x40010c00
-   \   00000006   0x6801             LDR      R1,[R0, #+0]
-   \   00000008   0x0109             LSLS     R1,R1,#+4
-   \   0000000A   0x0909             LSRS     R1,R1,#+4
-   \   0000000C   0x6001             STR      R1,[R0, #+0]
-   \   0000000E   0x6801             LDR      R1,[R0, #+0]
-   \   00000010   0xF041 0x5140      ORR      R1,R1,#0x30000000
-   \   00000014   0x6001             STR      R1,[R0, #+0]
+   \   00000002   0x....             LDR.N    R1,??DataTable8_1  ;; 0x40010c00
+   \   00000004   0x....             LDR.N    R3,??DataTable8
+   \   00000006   0x680A             LDR      R2,[R1, #+0]
+   \   00000008   0x0112             LSLS     R2,R2,#+4
+   \   0000000A   0x0912             LSRS     R2,R2,#+4
+   \   0000000C   0x600A             STR      R2,[R1, #+0]
+   \   0000000E   0x680A             LDR      R2,[R1, #+0]
+   \   00000010   0xF042 0x5240      ORR      R2,R2,#0x30000000
+   \   00000014   0x600A             STR      R2,[R1, #+0]
     299              IIC_SCL=0;//拉低时钟开始数据传输
-   \   00000016   0x....             LDR.N    R5,??DataTable9_2  ;; 0x42218198
-   \   00000018   0x2000             MOVS     R0,#+0
-   \   0000001A   0x6028             STR      R0,[R5, #+0]
+   \   00000016   0x2200             MOVS     R2,#+0
+   \   00000018   0x....             LDR.N    R1,??DataTable8_2  ;; 0x42218198
+   \   0000001A   0x600A             STR      R2,[R1, #+0]
     300              for(t=0;t<8;t++)
-   \   0000001C   0x4606             MOV      R6,R0
-   \   0000001E   0xE015             B.N      ??IIC_Send_Byte_0
+   \   0000001C   0x2208             MOVS     R2,#+8
     301              {              
     302                  //IIC_SDA=(txd&0x80)>>7;
     303          		if((txd&0x80)>>7)
-   \                     ??IIC_Send_Byte_1: (+1)
-   \   00000020   0xB2E4             UXTB     R4,R4
-   \   00000022   0x09E0             LSRS     R0,R4,#+7
-   \   00000024   0x1E41             SUBS     R1,R0,#+1
-   \   00000026   0x4189             SBCS     R1,R1,R1
-   \   00000028   0x43C9             MVNS     R1,R1
-   \   0000002A   0x0FC9             LSRS     R1,R1,#+31
-   \   0000002C   0x6069             STR      R1,[R5, #+4]
+   \                     ??IIC_Send_Byte_0: (+1)
+   \   0000001E   0xB2C0             UXTB     R0,R0
+   \   00000020   0x09C4             LSRS     R4,R0,#+7
+   \   00000022   0x1E65             SUBS     R5,R4,#+1
+   \   00000024   0x41AD             SBCS     R5,R5,R5
+   \   00000026   0x43ED             MVNS     R5,R5
+   \   00000028   0x0FED             LSRS     R5,R5,#+31
+   \   0000002A   0x604D             STR      R5,[R1, #+4]
     304          			IIC_SDA=1;
     305          		else
     306          			IIC_SDA=0;
     307          		txd<<=1; 	  
-   \   0000002E   0x0064             LSLS     R4,R4,#+1
+   \   0000002C   0x0040             LSLS     R0,R0,#+1
     308          		delay_us(2);   //对TEA5767这三个延时都是必须的
-   \   00000030   0x2002             MOVS     R0,#+2
-   \   00000032   0x.... 0x....      BL       _Z8delay_usj
+   \   0000002E   0x2402             MOVS     R4,#+2
+   \                     ??IIC_Send_Byte_1: (+1)
+   \   00000030   0x2505             MOVS     R5,#+5
+   \   00000032   0x801D             STRH     R5,[R3, #+0]
+   \   00000034   0x1E64             SUBS     R4,R4,#+1
+   \                     ??IIC_Send_Byte_2: (+1)
+   \   00000036   0x881D             LDRH     R5,[R3, #+0]
+   \   00000038   0x1E6E             SUBS     R6,R5,#+1
+   \   0000003A   0x801E             STRH     R6,[R3, #+0]
+   \   0000003C   0x2D00             CMP      R5,#+0
+   \   0000003E   0xD1FA             BNE.N    ??IIC_Send_Byte_2
+   \   00000040   0x2C00             CMP      R4,#+0
+   \   00000042   0xD1F5             BNE.N    ??IIC_Send_Byte_1
     309          		IIC_SCL=1;
-   \   00000036   0x2001             MOVS     R0,#+1
-   \   00000038   0x6028             STR      R0,[R5, #+0]
+   \   00000044   0x2401             MOVS     R4,#+1
+   \   00000046   0x600C             STR      R4,[R1, #+0]
     310          		delay_us(2); 
-   \   0000003A   0x2002             MOVS     R0,#+2
-   \   0000003C   0x.... 0x....      BL       _Z8delay_usj
+   \   00000048   0x2402             MOVS     R4,#+2
+   \                     ??IIC_Send_Byte_3: (+1)
+   \   0000004A   0x2505             MOVS     R5,#+5
+   \   0000004C   0x801D             STRH     R5,[R3, #+0]
+   \   0000004E   0x1E64             SUBS     R4,R4,#+1
+   \                     ??IIC_Send_Byte_4: (+1)
+   \   00000050   0x881D             LDRH     R5,[R3, #+0]
+   \   00000052   0x1E6E             SUBS     R6,R5,#+1
+   \   00000054   0x801E             STRH     R6,[R3, #+0]
+   \   00000056   0x2D00             CMP      R5,#+0
+   \   00000058   0xD1FA             BNE.N    ??IIC_Send_Byte_4
+   \   0000005A   0x2C00             CMP      R4,#+0
+   \   0000005C   0xD1F5             BNE.N    ??IIC_Send_Byte_3
     311          		IIC_SCL=0;	
-   \   00000040   0x2000             MOVS     R0,#+0
-   \   00000042   0x6028             STR      R0,[R5, #+0]
+   \   0000005E   0x600C             STR      R4,[R1, #+0]
     312          		delay_us(2);
-   \   00000044   0x2002             MOVS     R0,#+2
-   \   00000046   0x.... 0x....      BL       _Z8delay_usj
+   \   00000060   0x2402             MOVS     R4,#+2
+   \                     ??IIC_Send_Byte_5: (+1)
+   \   00000062   0x2505             MOVS     R5,#+5
+   \   00000064   0x801D             STRH     R5,[R3, #+0]
+   \   00000066   0x1E64             SUBS     R4,R4,#+1
+   \                     ??IIC_Send_Byte_6: (+1)
+   \   00000068   0x881D             LDRH     R5,[R3, #+0]
+   \   0000006A   0x1E6E             SUBS     R6,R5,#+1
+   \   0000006C   0x801E             STRH     R6,[R3, #+0]
+   \   0000006E   0x2D00             CMP      R5,#+0
+   \   00000070   0xD1FA             BNE.N    ??IIC_Send_Byte_6
+   \   00000072   0x2C00             CMP      R4,#+0
+   \   00000074   0xD1F5             BNE.N    ??IIC_Send_Byte_5
     313              }	 
-   \   0000004A   0x1C76             ADDS     R6,R6,#+1
-   \                     ??IIC_Send_Byte_0: (+1)
-   \   0000004C   0x2E08             CMP      R6,#+8
-   \   0000004E   0xDBE7             BLT.N    ??IIC_Send_Byte_1
+   \   00000076   0x1E52             SUBS     R2,R2,#+1
+   \   00000078   0xD1D1             BNE.N    ??IIC_Send_Byte_0
     314          } 	    
-   \   00000050   0xBD70             POP      {R4-R6,PC}       ;; return
+   \   0000007A   0xBC70             POP      {R4-R6}
+   \   0000007C   0x4770             BX       LR               ;; return
     315          //读1个字节，ack=1时，发送ACK，ack=0，发送nACK   
 
    \                                 In section .text, align 2, keep-with-next
@@ -798,84 +821,95 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
     317          {
    \                     IIC_Read_Byte: (+1)
    \   00000000   0xB5F8             PUSH     {R3-R7,LR}
-   \   00000002   0x4604             MOV      R4,R0
     318          	unsigned char i,receive=0;
-   \   00000004   0x2500             MOVS     R5,#+0
     319          	SDA_IN();//SDA设置为输入
-   \   00000006   0x....             LDR.N    R0,??DataTable9_1  ;; 0x40010c00
-   \   00000008   0x6801             LDR      R1,[R0, #+0]
-   \   0000000A   0x0109             LSLS     R1,R1,#+4
-   \   0000000C   0x0909             LSRS     R1,R1,#+4
-   \   0000000E   0x6001             STR      R1,[R0, #+0]
-   \   00000010   0x6801             LDR      R1,[R0, #+0]
-   \   00000012   0xF041 0x4100      ORR      R1,R1,#0x80000000
-   \   00000016   0x6001             STR      R1,[R0, #+0]
+   \   00000002   0x....             LDR.N    R1,??DataTable8_1  ;; 0x40010c00
+   \   00000004   0x....             LDR.N    R3,??DataTable8
+   \   00000006   0x680A             LDR      R2,[R1, #+0]
+   \   00000008   0x0112             LSLS     R2,R2,#+4
+   \   0000000A   0x0912             LSRS     R2,R2,#+4
+   \   0000000C   0x600A             STR      R2,[R1, #+0]
+   \   0000000E   0x2400             MOVS     R4,#+0
+   \   00000010   0x680A             LDR      R2,[R1, #+0]
+   \   00000012   0xF042 0x4200      ORR      R2,R2,#0x80000000
+   \   00000016   0x600A             STR      R2,[R1, #+0]
     320              for(i=0;i<8;i++ )
-   \   00000018   0x462E             MOV      R6,R5
-   \   0000001A   0x....             LDR.N    R7,??DataTable9_4  ;; 0x4221811c
-   \   0000001C   0xE00F             B.N      ??IIC_Read_Byte_0
+   \   00000018   0x2108             MOVS     R1,#+8
+   \   0000001A   0x....             LDR.N    R2,??DataTable8_4  ;; 0x4221811c
     321          	{
     322                  IIC_SCL=0; 
-   \                     ??IIC_Read_Byte_1: (+1)
-   \   0000001E   0x2000             MOVS     R0,#+0
-   \   00000020   0x67F8             STR      R0,[R7, #+124]
-    323                  delay_us(2);
-   \   00000022   0x2002             MOVS     R0,#+2
-   \   00000024   0x.... 0x....      BL       _Z8delay_usj
-    324          		IIC_SCL=1;
-   \   00000028   0x2001             MOVS     R0,#+1
-   \   0000002A   0x67F8             STR      R0,[R7, #+124]
-    325                  receive<<=1;
-   \   0000002C   0x006D             LSLS     R5,R5,#+1
-    326                  if(READ_SDA)receive++;   
-   \   0000002E   0x6838             LDR      R0,[R7, #+0]
-   \   00000030   0x2800             CMP      R0,#+0
-   \   00000032   0xD000             BEQ.N    ??IIC_Read_Byte_2
-   \   00000034   0x1C6D             ADDS     R5,R5,#+1
-    327          		delay_us(1); 
-   \                     ??IIC_Read_Byte_2: (+1)
-   \   00000036   0x2001             MOVS     R0,#+1
-   \   00000038   0x.... 0x....      BL       _Z8delay_usj
-    328              }					 
-   \   0000003C   0x1C76             ADDS     R6,R6,#+1
    \                     ??IIC_Read_Byte_0: (+1)
-   \   0000003E   0x2E08             CMP      R6,#+8
-   \   00000040   0xDBED             BLT.N    ??IIC_Read_Byte_1
+   \   0000001C   0x2500             MOVS     R5,#+0
+   \   0000001E   0x67D5             STR      R5,[R2, #+124]
+    323                  delay_us(2);
+   \   00000020   0x2502             MOVS     R5,#+2
+   \                     ??IIC_Read_Byte_1: (+1)
+   \   00000022   0x2605             MOVS     R6,#+5
+   \   00000024   0x801E             STRH     R6,[R3, #+0]
+   \   00000026   0x1E6D             SUBS     R5,R5,#+1
+   \                     ??IIC_Read_Byte_2: (+1)
+   \   00000028   0x881E             LDRH     R6,[R3, #+0]
+   \   0000002A   0x1E77             SUBS     R7,R6,#+1
+   \   0000002C   0x801F             STRH     R7,[R3, #+0]
+   \   0000002E   0x2E00             CMP      R6,#+0
+   \   00000030   0xD1FA             BNE.N    ??IIC_Read_Byte_2
+   \   00000032   0x2D00             CMP      R5,#+0
+   \   00000034   0xD1F5             BNE.N    ??IIC_Read_Byte_1
+    324          		IIC_SCL=1;
+   \   00000036   0x2501             MOVS     R5,#+1
+   \   00000038   0x67D5             STR      R5,[R2, #+124]
+    325                  receive<<=1;
+   \   0000003A   0x0064             LSLS     R4,R4,#+1
+    326                  if(READ_SDA)receive++;   
+   \   0000003C   0x6815             LDR      R5,[R2, #+0]
+   \   0000003E   0xB105             CBZ.N    R5,??IIC_Read_Byte_3
+   \   00000040   0x1C64             ADDS     R4,R4,#+1
+    327          		delay_us(1); 
+   \                     ??IIC_Read_Byte_3: (+1)
+   \   00000042   0x2505             MOVS     R5,#+5
+   \   00000044   0x801D             STRH     R5,[R3, #+0]
+   \                     ??IIC_Read_Byte_4: (+1)
+   \   00000046   0x881D             LDRH     R5,[R3, #+0]
+   \   00000048   0x1E6E             SUBS     R6,R5,#+1
+   \   0000004A   0x801E             STRH     R6,[R3, #+0]
+   \   0000004C   0x2D00             CMP      R5,#+0
+   \   0000004E   0xD1FA             BNE.N    ??IIC_Read_Byte_4
+    328              }					 
+   \   00000050   0x1E49             SUBS     R1,R1,#+1
+   \   00000052   0xD1E3             BNE.N    ??IIC_Read_Byte_0
     329              if (!ack)
-   \   00000042   0x2C00             CMP      R4,#+0
-   \   00000044   0xD102             BNE.N    ??IIC_Read_Byte_3
+   \   00000054   0xB910             CBNZ.N   R0,??IIC_Read_Byte_5
     330                  IIC_NAck();//发送nACK
-   \   00000046   0x.... 0x....      BL       IIC_NAck
-   \   0000004A   0xE001             B.N      ??IIC_Read_Byte_4
+   \   00000056   0x.... 0x....      BL       IIC_NAck
+   \   0000005A   0xE001             B.N      ??IIC_Read_Byte_6
     331              else
     332                  IIC_Ack(); //发送ACK   
-   \                     ??IIC_Read_Byte_3: (+1)
-   \   0000004C   0x.... 0x....      BL       IIC_Ack
+   \                     ??IIC_Read_Byte_5: (+1)
+   \   0000005C   0x.... 0x....      BL       IIC_Ack
     333              return receive;
-   \                     ??IIC_Read_Byte_4: (+1)
-   \   00000050   0x4628             MOV      R0,R5
-   \   00000052   0xB2C0             UXTB     R0,R0
-   \   00000054   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+   \                     ??IIC_Read_Byte_6: (+1)
+   \   00000060   0xB2E0             UXTB     R0,R4
+   \   00000062   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
     334          }
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable9:
+   \                     ??DataTable8:
    \   00000000   0x........         DC32     delayCnt
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable9_1:
+   \                     ??DataTable8_1:
    \   00000000   0x40010C00         DC32     0x40010c00
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable9_2:
+   \                     ??DataTable8_2:
    \   00000000   0x42218198         DC32     0x42218198
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable9_3:
+   \                     ??DataTable8_3:
    \   00000000   0x4221819C         DC32     0x4221819c
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable9_4:
+   \                     ??DataTable8_4:
    \   00000000   0x4221811C         DC32     0x4221811c
     335          
     336          /*--------------------------MKS EEPROM-------------------------*/
@@ -887,13 +921,18 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
    ------- --------
        8   AT24CXX_Check
          8   -> AT24CXX_ReadOneByte
-         8   -> AT24CXX_WriteOneByte
-       0   AT24CXX_Init
-         0   -> IIC_Init
+         8   -> IIC_Send_Byte
+         8   -> IIC_Start
+         8   -> IIC_Stop
+         8   -> IIC_Wait_Ack
+         8   -> delay_ms(uint16_t)
+       8   AT24CXX_Init
+        24   -> HAL_GPIO_Init
+        24   -> HAL_GPIO_WritePin
       16   AT24CXX_Read
         16   -> AT24CXX_ReadOneByte
-      24   AT24CXX_ReadLenByte
-        24   -> AT24CXX_ReadOneByte
+      16   AT24CXX_ReadLenByte
+        16   -> AT24CXX_ReadOneByte
        8   AT24CXX_ReadOneByte
          8   -> IIC_Read_Byte
          8   -> IIC_Send_Byte
@@ -912,7 +951,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
          0   -> delay_ms(uint16_t)
        8   IIC_Ack
          8   -> delay_us(uint32_t)
-      24   IIC_Init
+       0   IIC_Init
         24   -> HAL_GPIO_Init
         24   -> HAL_GPIO_WritePin
        8   IIC_NAck
@@ -920,17 +959,15 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
       24   IIC_Read_Byte
         24   -> IIC_Ack
         24   -> IIC_NAck
-        24   -> delay_us(uint32_t)
-      16   IIC_Send_Byte
-        16   -> delay_us(uint32_t)
+      12   IIC_Send_Byte
        8   IIC_Start
          8   -> delay_us(uint32_t)
        8   IIC_Stop
          0   -> delay_us(uint32_t)
          8   -> delay_us(uint32_t)
-      16   IIC_Wait_Ack
-        16   -> IIC_Stop
-        16   -> delay_us(uint32_t)
+       8   IIC_Wait_Ack
+         8   -> IIC_Stop
+         8   -> delay_us(uint32_t)
        0   delay_ms(uint16_t)
        0   delay_us(uint32_t)
 
@@ -939,36 +976,39 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Driv
 
    Bytes  Function/Label
    -----  --------------
-       4  ??DataTable9
-       4  ??DataTable9_1
-       4  ??DataTable9_2
-       4  ??DataTable9_3
-       4  ??DataTable9_4
-      42  AT24CXX_Check
-       2  AT24CXX_Init
-      30  AT24CXX_Read
-      40  AT24CXX_ReadLenByte
-      66  AT24CXX_ReadOneByte
-      34  AT24CXX_Write
-      38  AT24CXX_WriteLenByte
-      60  AT24CXX_WriteOneByte
-      52  IIC_Ack
-      34  IIC_Init
-      52  IIC_NAck
-      86  IIC_Read_Byte
-      82  IIC_Send_Byte
-      50  IIC_Start
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+      10  ??Subroutine2_0
+      36  ?Subroutine0
+      14  ?Subroutine1
+      74  AT24CXX_Check
+       4  AT24CXX_Init
+      28  AT24CXX_Read
+      32  AT24CXX_ReadLenByte
+      64  AT24CXX_ReadOneByte
+      28  AT24CXX_Write
+      34  AT24CXX_WriteLenByte
+      58  AT24CXX_WriteOneByte
+      30  IIC_Ack
+       2  IIC_Init
+      28  IIC_NAck
+     100  IIC_Read_Byte
+     126  IIC_Send_Byte
+      42  IIC_Start
       48  IIC_Stop
-      70  IIC_Wait_Ack
+      64  IIC_Wait_Ack
        2  delayCnt
       32  delay_ms(uint16_t)
       28  delay_us(uint32_t)
 
  
    2 bytes in section .bss
- 866 bytes in section .text
+ 902 bytes in section .text
  
- 866 bytes of CODE memory
+ 902 bytes of CODE memory
    2 bytes of DATA memory
 
 Errors: none

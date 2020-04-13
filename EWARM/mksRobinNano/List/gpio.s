@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:30
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:50
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\gpio.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\gpio.c
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\gpio.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\gpio.c
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
 //        Workbench 7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\gpio.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\gpio.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -112,7 +109,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\gpio.c
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\gpio.c
 //    1 #if defined(MKS_ROBIN_LITE)		//robin_lite主板
 //    2   #include "gpio_Lite.c"
 //    3 #elif defined(MKS_ROBIN) 		//MKS Robin主板
@@ -142,12 +139,14 @@ MX_GPIO_Init:
           CFI R5 Frame(CFA, -20)
           CFI R4 Frame(CFA, -24)
           CFI CFA R13+24
+        LDR.N    R0,??MX_GPIO_Init_0  ;; 0x40021018
+        LDR.N    R4,??MX_GPIO_Init_0+0x4  ;; 0x40011800
         SUB      SP,SP,#+24
           CFI CFA R13+48
-        LDR.N    R0,??MX_GPIO_Init_0  ;; 0x40021018
         LDR      R1,[R0, #+0]
         ORR      R1,R1,#0x40
         STR      R1,[R0, #+0]
+        MOVS     R2,#+1
         LDR      R1,[R0, #+0]
         AND      R1,R1,#0x40
         STR      R1,[SP, #+0]
@@ -183,13 +182,11 @@ MX_GPIO_Init:
         LDR      R1,[R0, #+0]
         ORR      R1,R1,#0x20
         STR      R1,[R0, #+0]
+        MOVS     R1,#+63
         LDR      R0,[R0, #+0]
         AND      R0,R0,#0x20
         STR      R0,[SP, #+0]
         LDR      R0,[SP, #+0]
-        LDR.N    R4,??MX_GPIO_Init_0+0x4  ;; 0x40011800
-        MOVS     R2,#+1
-        MOVS     R1,#+63
         MOV      R0,R4
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
@@ -234,105 +231,105 @@ MX_GPIO_Init:
         BL       HAL_GPIO_WritePin
         MOVS     R0,#+55
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+1
         STR      R0,[SP, #+8]
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVS     R0,#+235
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+1
         STR      R0,[SP, #+8]
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R6
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOV      R0,#+360
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+1
         STR      R0,[SP, #+8]
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R5
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVW     R0,#+38932
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
         MOVS     R0,#+1
         STR      R0,[SP, #+12]
-        ADD      R1,SP,#+4
         MOV      R0,R6
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVS     R0,#+23
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
         MOVS     R0,#+1
         STR      R0,[SP, #+12]
-        ADD      R1,SP,#+4
         MOV      R0,R5
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVS     R0,#+64
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
         MOVS     R0,#+1
         STR      R0,[SP, #+12]
-        ADD      R1,SP,#+4
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVW     R0,#+4925
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+1
         STR      R0,[SP, #+8]
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R7
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVW     R0,#+8264
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+1
         STR      R0,[SP, #+8]
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R8
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVS     R0,#+8
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+1
         STR      R0,[SP, #+8]
         MOVS     R0,#+3
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVS     R0,#+1
         STR      R0,[SP, #+4]
         STR      R0,[SP, #+8]
+        ADD      R1,SP,#+4
         MOVS     R0,#+3
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
         MOVS     R0,#+32
         STR      R0,[SP, #+4]
+        ADD      R1,SP,#+4
         MOVS     R0,#+1
         STR      R0,[SP, #+8]
         MOVS     R0,#+3
         STR      R0,[SP, #+16]
-        ADD      R1,SP,#+4
         MOV      R0,R7
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init

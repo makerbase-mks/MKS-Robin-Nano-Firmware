@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:06:12
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:21
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\Stream.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\Stream.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\Stream.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\Stream.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\Stream.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\Stream.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -108,7 +105,6 @@
         PUBLIC _ZN6Stream9readBytesEPcj
         PUBLIC _ZN6Stream9timedPeekEv
         PUBLIC _ZN6Stream9timedReadEv
-        PUBLIC _ZN6StringpLEc
         PUBLIC _ZTI5Print
         PUBLIC _ZTI6Stream
         
@@ -139,7 +135,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\Stream.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\Stream.cpp
 //    1 /*
 //    2  Stream.cpp - adds parsing methods to Stream class
 //    3  Copyright (c) 2008 David A. Mellis.  All right reserved.
@@ -163,24 +159,6 @@
 //   21  */
 //   22 
 //   23 #include "Arduino.h"
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN6StringpLEc
-          CFI Block cfiBlock0 Using cfiCommon0
-          CFI Function _ZN6StringpLEc
-        THUMB
-// __interwork __softfp String &String::operator+=(char)
-_ZN6StringpLEc:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-          CFI FunCall _ZN6String6concatEc
-        BL       _ZN6String6concatEc
-        MOV      R0,R4
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock0
 //   24 #include "Stream.h"
 //   25 
 //   26 #define PARSE_TIMEOUT 1000  // default number of milli-seconds to wait
@@ -191,7 +169,7 @@ _ZN6StringpLEc:
 //   31 // private method to read stream with timeout
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _ZN6Stream9timedReadEv
         THUMB
 //   32 int Stream::timedRead()
@@ -210,9 +188,9 @@ _ZN6Stream9timedReadEv:
 //   36   do {
 //   37     c = read();
 ??timedRead_0:
-        MOV      R0,R4
         LDR      R1,[R4, #+0]
         LDR      R1,[R1, #+12]
+        MOV      R0,R4
           CFI FunCall
         BLX      R1
 //   38     if (c >= 0) return c;
@@ -230,13 +208,13 @@ _ZN6Stream9timedReadEv:
         MOV      R0,#-1
 ??timedRead_1:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock1
+          CFI EndBlock cfiBlock0
 //   41 }
 //   42 
 //   43 // private method to peek stream with timeout
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN6Stream9timedPeekEv
         THUMB
 //   44 int Stream::timedPeek()
@@ -255,9 +233,9 @@ _ZN6Stream9timedPeekEv:
 //   48   do {
 //   49     c = peek();
 ??timedPeek_0:
-        MOV      R0,R4
         LDR      R1,[R4, #+0]
         LDR      R1,[R1, #+16]
+        MOV      R0,R4
           CFI FunCall
         BLX      R1
 //   50     if (c >= 0) return c;
@@ -275,14 +253,14 @@ _ZN6Stream9timedPeekEv:
         MOV      R0,#-1
 ??timedPeek_1:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock2
+          CFI EndBlock cfiBlock1
 //   53 }
 //   54 
 //   55 // returns peek of the next digit in the stream or -1 if timeout
 //   56 // discards non-numeric characters
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function _ZN6Stream13peekNextDigitEv
         THUMB
 //   57 int Stream::peekNextDigit()
@@ -302,26 +280,42 @@ _ZN6Stream13peekNextDigitEv:
 //   64     if (c >= '0' && c <= '9') return c;
 //   65     read();  // discard non-numeric
 ??peekNextDigit_1:
-        MOV      R0,R4
         LDR      R1,[R4, #+0]
         LDR      R1,[R1, #+12]
+        MOV      R0,R4
           CFI FunCall
         BLX      R1
 ??peekNextDigit_0:
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        STR      R0,[R4, #+12]
+??peekNextDigit_2:
+        LDR      R1,[R4, #+0]
+        LDR      R1,[R1, #+16]
         MOV      R0,R4
-          CFI FunCall _ZN6Stream9timedPeekEv
-        BL       _ZN6Stream9timedPeekEv
+          CFI FunCall
+        BLX      R1
         CMP      R0,#+0
-        BMI.N    ??peekNextDigit_2
+        BMI.N    ??peekNextDigit_3
         CMP      R0,#+45
-        BEQ.N    ??peekNextDigit_2
+        BEQ.N    ??peekNextDigit_4
         SUB      R1,R0,#+48
         CMP      R1,#+10
         BCS.N    ??peekNextDigit_1
-??peekNextDigit_2:
+??peekNextDigit_4:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock3
 //   66   }
+??peekNextDigit_3:
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        LDR      R1,[R4, #+12]
+        SUBS     R0,R0,R1
+        LDR      R1,[R4, #+8]
+        CMP      R0,R1
+        BCC.N    ??peekNextDigit_2
+        MOV      R0,#-1
+        POP      {R4,PC}
+          CFI EndBlock cfiBlock2
 //   67 }
 //   68 
 //   69 // Public Methods
@@ -329,7 +323,7 @@ _ZN6Stream13peekNextDigitEv:
 //   71 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _ZN6Stream10setTimeoutEm
           CFI NoCalls
         THUMB
@@ -340,12 +334,12 @@ _ZN6Stream10setTimeoutEm:
         STR      R1,[R0, #+8]
 //   75 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock4
+          CFI EndBlock cfiBlock3
 //   76 
 //   77  // find returns true if the target string is found
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN6Stream4findEPc
         THUMB
 //   78 bool  Stream::find(char *target)
@@ -355,14 +349,14 @@ _ZN6Stream4findEPc:
         MOVS     R2,#+0
           CFI FunCall _ZN6Stream9findUntilEPcS0_
         B.N      _ZN6Stream9findUntilEPcS0_
-          CFI EndBlock cfiBlock5
+          CFI EndBlock cfiBlock4
 //   81 }
 //   82 
 //   83 // reads data from the stream until the target string of given length is found
 //   84 // returns true if target string is found, false if timed out
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function _ZN6Stream4findEPcj
         THUMB
 //   85 bool Stream::find(char *target, size_t length)
@@ -377,13 +371,13 @@ _ZN6Stream4findEPcj:
           CFI FunCall _ZN6Stream9findUntilEPcjS0_j
         BL       _ZN6Stream9findUntilEPcjS0_j
         POP      {R1,PC}          ;; return
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock5
 //   88 }
 //   89 
 //   90 // as find but search ends if the terminator string is found
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _ZN6Stream9findUntilEPcS0_
         THUMB
 //   91 bool  Stream::findUntil(char *target, char *terminator)
@@ -397,8 +391,8 @@ _ZN6Stream9findUntilEPcS0_:
           CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
         MOV      R4,R0
-        MOV      R5,R1
         MOV      R6,R2
+        MOV      R5,R1
 //   93   return findUntil(target, strlen(target), terminator, strlen(terminator));
         MOV      R0,R6
           CFI FunCall strlen
@@ -407,15 +401,15 @@ _ZN6Stream9findUntilEPcS0_:
         MOV      R0,R5
           CFI FunCall strlen
         BL       strlen
+        MOV      R2,R0
         STR      R7,[SP, #+0]
         MOV      R3,R6
-        MOV      R2,R0
         MOV      R1,R5
         MOV      R0,R4
           CFI FunCall _ZN6Stream9findUntilEPcjS0_j
         BL       _ZN6Stream9findUntilEPcjS0_j
         POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock7
+          CFI EndBlock cfiBlock6
 //   94 }
 //   95 
 //   96 // reads data from the stream until the target string of the given length is found
@@ -423,7 +417,7 @@ _ZN6Stream9findUntilEPcS0_:
 //   98 // returns true if target string is found, false if terminated or timed out
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN6Stream9findUntilEPcjS0_j
         THUMB
 //   99 bool Stream::findUntil(char *target, size_t targetLen, char *terminator, size_t termLen)
@@ -439,21 +433,20 @@ _ZN6Stream9findUntilEPcjS0_j:
           CFI R5 Frame(CFA, -28)
           CFI R4 Frame(CFA, -32)
           CFI CFA R13+32
-        MOV      R4,R0
         MOV      R5,R1
-        MOV      R6,R2
-        MOV      R7,R3
+        MOV      R8,R0
 //  101   size_t index = 0;  // maximum target string length is 64k bytes!
-        MOV      R8,#+0
 //  102   size_t termIndex = 0;
-        MOV      R9,R8
 //  103   int c;
 //  104   
 //  105   if( *target == 0)
         LDRSB    R0,[R5, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??findUntil_0
-        LDR      R10,[SP, #+32]
+        MOV      R9,R2
+        MOV      R10,R3
+        MOVS     R4,#+0
+        MOVS     R6,#+0
+        CBZ.N    R0,??findUntil_0
+        LDR      R7,[SP, #+32]
         B.N      ??findUntil_1
 //  106     return true;   // return true if target is a null string
 //  107   while( (c = timedRead()) > 0){
@@ -475,43 +468,41 @@ _ZN6Stream9findUntilEPcjS0_j:
 //  123     else
 //  124       termIndex = 0;
 ??findUntil_2:
-        MOV      R9,#+0
+        MOVS     R6,#+0
 ??findUntil_1:
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall _ZN6Stream9timedReadEv
         BL       _ZN6Stream9timedReadEv
         CMP      R0,#+1
         BLT.N    ??findUntil_3
-        LDRSB    R1,[R8, R5]
+        LDRSB    R1,[R4, R5]
         CMP      R0,R1
-        BEQ.N    ??findUntil_4
-        MOV      R8,#+0
-??findUntil_4:
-        LDRSB    R1,[R8, R5]
+        IT       NE 
+        MOVNE    R4,#+0
+        LDRSB    R1,[R4, R5]
         CMP      R0,R1
-        BNE.N    ??findUntil_5
-        ADD      R8,R8,#+1
-        CMP      R8,R6
-        BCC.N    ??findUntil_5
+        BNE.N    ??findUntil_4
+        ADDS     R4,R4,#+1
+        CMP      R4,R9
+        BCC.N    ??findUntil_4
 ??findUntil_0:
         MOVS     R0,#+1
-        B.N      ??findUntil_6
-??findUntil_5:
-        CMP      R10,#+0
+        POP      {R4-R10,PC}
+??findUntil_4:
+        CMP      R7,#+0
         BEQ.N    ??findUntil_2
-        LDRSB    R1,[R9, R7]
+        LDRSB    R1,[R6, R10]
         CMP      R0,R1
         BNE.N    ??findUntil_2
-        ADD      R9,R9,#+1
-        CMP      R9,R10
+        ADDS     R6,R6,#+1
+        CMP      R6,R7
         BCC.N    ??findUntil_1
 //  125   }
 //  126   return false;
 ??findUntil_3:
         MOVS     R0,#+0
-??findUntil_6:
         POP      {R4-R10,PC}      ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock7
 //  127 }
 //  128 
 //  129 
@@ -520,7 +511,7 @@ _ZN6Stream9findUntilEPcjS0_j:
 //  132 // function is terminated by the first character that is not a digit.
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function _ZN6Stream8parseIntEv
           CFI FunCall _ZN6Stream8parseIntEc
         THUMB
@@ -529,7 +520,7 @@ _ZN6Stream9findUntilEPcjS0_j:
 //  135   return parseInt(NO_SKIP_CHAR); // terminate on first non-digit character (or timeout)
 _ZN6Stream8parseIntEv:
         MOVS     R1,#+1
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock8
         REQUIRE _ZN6Stream8parseIntEc
         ;; // Fall through to label Stream::parseInt(char)
 //  136 }
@@ -538,26 +529,25 @@ _ZN6Stream8parseIntEv:
 //  139 // this allows format characters (typically commas) in values to be ignored
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN6Stream8parseIntEc
         THUMB
 //  140 long Stream::parseInt(char skipChar)
 //  141 {
 _ZN6Stream8parseIntEc:
-        PUSH     {R4-R8,LR}
+        PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
         MOV      R4,R0
         MOV      R5,R1
 //  142   boolean isNegative = false;
         MOVS     R7,#+0
 //  143   long value = 0;
-        MOV      R8,R7
+        MOVS     R6,#+0
 //  144   int c;
 //  145 
 //  146   c = peekNextDigit();
@@ -568,68 +558,81 @@ _ZN6Stream8parseIntEc:
         CMP      R0,#+0
         BPL.N    ??parseInt_0
 //  149     return 0; // zero returned if timeout
-        MOV      R0,R7
-        B.N      ??parseInt_1
+        MOVS     R0,#+0
+        POP      {R1,R4-R7,PC}
 //  150 
 //  151   do{
 //  152     if(c == skipChar)
 ??parseInt_0:
-        MOV      R6,R5
-        CMP      R0,R6
-        BEQ.N    ??parseInt_2
+        CMP      R0,R5
+        BEQ.N    ??parseInt_1
 //  153       ; // ignore this charactor
 //  154     else if(c == '-')
         CMP      R0,#+45
-        BNE.N    ??parseInt_3
+        IT       EQ 
 //  155       isNegative = true;
-        MOVS     R7,#+1
-        B.N      ??parseInt_2
+        MOVEQ    R7,#+1
+        BEQ.N    ??parseInt_1
 //  156     else if(c >= '0' && c <= '9')        // is c a digit?
-??parseInt_3:
         SUB      R1,R0,#+48
         CMP      R1,#+10
-        BCS.N    ??parseInt_2
+        BCS.N    ??parseInt_1
 //  157       value = value * 10 + c - '0';
-        ADD      R1,R8,R8, LSL #+2
+        ADD      R1,R6,R6, LSL #+2
         ADD      R0,R0,R1, LSL #+1
-        SUB      R8,R0,#+48
+        SUB      R6,R0,#+48
 //  158     read();  // consume the character we got with peek
-??parseInt_2:
-        MOV      R0,R4
+??parseInt_1:
         LDR      R1,[R4, #+0]
         LDR      R1,[R1, #+12]
+        MOV      R0,R4
           CFI FunCall
         BLX      R1
 //  159     c = timedPeek();
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        STR      R0,[R4, #+12]
+??parseInt_2:
+        LDR      R1,[R4, #+0]
+        LDR      R1,[R1, #+16]
         MOV      R0,R4
-          CFI FunCall _ZN6Stream9timedPeekEv
-        BL       _ZN6Stream9timedPeekEv
+          CFI FunCall
+        BLX      R1
+        CMP      R0,#+0
+        BPL.N    ??parseInt_3
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        LDR      R1,[R4, #+12]
+        SUBS     R0,R0,R1
+        LDR      R1,[R4, #+8]
+        CMP      R0,R1
+        BCC.N    ??parseInt_2
+        MOV      R0,#-1
 //  160   }
 //  161   while( (c >= '0' && c <= '9') || c == skipChar );
+??parseInt_3:
         SUB      R1,R0,#+48
         CMP      R1,#+10
         BCC.N    ??parseInt_0
-        CMP      R0,R6
+        CMP      R0,R5
         BEQ.N    ??parseInt_0
 //  162 
 //  163   if(isNegative)
-        CMP      R7,#+0
-        BEQ.N    ??parseInt_4
+        CBZ.N    R7,??parseInt_4
 //  164     value = -value;
-        RSB      R8,R8,#+0
+        RSBS     R6,R6,#+0
 //  165   return value;
 ??parseInt_4:
-        MOV      R0,R8
-??parseInt_1:
-        POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock10
+        MOV      R0,R6
+        POP      {R1,R4-R7,PC}    ;; return
+          CFI EndBlock cfiBlock9
 //  166 }
 //  167 
 //  168 
 //  169 // as parseInt but returns a floating point value
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _ZN6Stream10parseFloatEv
           CFI FunCall _ZN6Stream10parseFloatEc
         THUMB
@@ -638,7 +641,7 @@ _ZN6Stream8parseIntEc:
 //  172   return parseFloat(NO_SKIP_CHAR);
 _ZN6Stream10parseFloatEv:
         MOVS     R1,#+1
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock10
         REQUIRE _ZN6Stream10parseFloatEc
         ;; // Fall through to label Stream::parseFloat(char)
 //  173 }
@@ -647,27 +650,26 @@ _ZN6Stream10parseFloatEv:
 //  176 // this allows format characters (typically commas) in values to be ignored
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _ZN6Stream10parseFloatEc
         THUMB
 //  177 float Stream::parseFloat(char skipChar){
 _ZN6Stream10parseFloatEc:
-        PUSH     {R4-R10,LR}
+        PUSH     {R3-R8,R10,LR}
           CFI R14 Frame(CFA, -4)
           CFI R10 Frame(CFA, -8)
-          CFI R9 Frame(CFA, -12)
-          CFI R8 Frame(CFA, -16)
-          CFI R7 Frame(CFA, -20)
-          CFI R6 Frame(CFA, -24)
-          CFI R5 Frame(CFA, -28)
-          CFI R4 Frame(CFA, -32)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
           CFI CFA R13+32
-        MOV      R4,R0
-        MOV      R9,R1
 //  178   boolean isNegative = false;
         MOVS     R5,#+0
+        MOV      R4,R0
+        MOV      R8,R1
 //  179   boolean isFraction = false;
-        MOV      R6,R5
+        MOVS     R6,#+0
 //  180   long value = 0;
         MOV      R7,R5
 //  181   signed char c;
@@ -681,33 +683,30 @@ _ZN6Stream10parseFloatEc:
 //  185     // ignore non numeric leading characters
 //  186   if(c < 0)
         CMP      R0,#+0
-        MOV      R8,R9
-        BPL.N    ??parseFloat_0
+        IT       MI 
 //  187     return 0; // zero returned if timeout
-        MOV      R0,R5
-        B.N      ??parseFloat_1
+        MOVMI    R0,#+0
+        BMI.N    ??parseFloat_0
 //  188 
 //  189   do{
 //  190     if(c == skipChar)
-??parseFloat_0:
+??parseFloat_1:
         CMP      R0,R8
         BEQ.N    ??parseFloat_2
 //  191       ; // ignore
 //  192     else if(c == '-')
         CMP      R0,#+45
-        BNE.N    ??parseFloat_3
+        IT       EQ 
 //  193       isNegative = true;
-        MOVS     R5,#+1
-        B.N      ??parseFloat_2
+        MOVEQ    R5,#+1
+        BEQ.N    ??parseFloat_2
 //  194     else if (c == '.')
-??parseFloat_3:
         CMP      R0,#+46
-        BNE.N    ??parseFloat_4
+        IT       EQ 
 //  195       isFraction = true;
-        MOVS     R6,#+1
-        B.N      ??parseFloat_2
+        MOVEQ    R6,#+1
+        BEQ.N    ??parseFloat_2
 //  196     else if(c >= '0' && c <= '9')  {      // is c a digit?
-??parseFloat_4:
         SUB      R1,R0,#+48
         CMP      R1,#+10
         BCS.N    ??parseFloat_2
@@ -716,8 +715,7 @@ _ZN6Stream10parseFloatEc:
         ADD      R0,R0,R1, LSL #+1
         SUB      R7,R0,#+48
 //  198       if(isFraction)
-        CMP      R6,#+0
-        BEQ.N    ??parseFloat_2
+        CBZ.N    R6,??parseFloat_2
 //  199          fraction *= 0.1;
         MOV      R0,R10
           CFI FunCall __aeabi_f2d
@@ -732,29 +730,45 @@ _ZN6Stream10parseFloatEc:
 //  200     }
 //  201     read();  // consume the character we got with peek
 ??parseFloat_2:
-        MOV      R0,R4
         LDR      R1,[R4, #+0]
         LDR      R1,[R1, #+12]
+        MOV      R0,R4
           CFI FunCall
         BLX      R1
 //  202     c = timedPeek();
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        STR      R0,[R4, #+12]
+??parseFloat_3:
+        LDR      R1,[R4, #+0]
+        LDR      R1,[R1, #+16]
         MOV      R0,R4
-          CFI FunCall _ZN6Stream9timedPeekEv
-        BL       _ZN6Stream9timedPeekEv
-        SXTB     R0,R0
+          CFI FunCall
+        BLX      R1
+        CMP      R0,#+0
+        BPL.N    ??parseFloat_4
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        LDR      R1,[R4, #+12]
+        SUBS     R0,R0,R1
+        LDR      R1,[R4, #+8]
+        CMP      R0,R1
+        BCC.N    ??parseFloat_3
+        MOV      R0,#-1
 //  203   }
+??parseFloat_4:
+        SXTB     R0,R0
 //  204   while( (c >= '0' && c <= '9')  || c == '.' || c == skipChar );
         SUB      R1,R0,#+48
         CMP      R1,#+10
-        BCC.N    ??parseFloat_0
+        BCC.N    ??parseFloat_1
         CMP      R0,#+46
-        BEQ.N    ??parseFloat_0
-        CMP      R0,R8
-        BEQ.N    ??parseFloat_0
+        IT       NE 
+        CMPNE    R0,R8
+        BEQ.N    ??parseFloat_1
 //  205 
 //  206   if(isNegative)
-        CMP      R5,#+0
-        BEQ.N    ??parseFloat_5
+        CBZ.N    R5,??parseFloat_5
 //  207     value = -value;
         RSBS     R7,R7,#+0
 //  208   if(isFraction)
@@ -762,36 +776,34 @@ _ZN6Stream10parseFloatEc:
         MOV      R0,R7
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        CMP      R6,#+0
-        BEQ.N    ??parseFloat_1
+        MOV      R1,R0
+        CBZ.N    R6,??parseFloat_0
 //  209     return value * fraction;
-        MOV      R1,R10
-        POP      {R4-R10,LR}
+        MOV      R0,R10
+        POP      {R2,R4-R8,R10,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
           CFI R8 SameValue
-          CFI R9 SameValue
           CFI R10 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall __aeabi_fmul
         B.W      __aeabi_fmul
-          CFI R4 Frame(CFA, -32)
-          CFI R5 Frame(CFA, -28)
-          CFI R6 Frame(CFA, -24)
-          CFI R7 Frame(CFA, -20)
-          CFI R8 Frame(CFA, -16)
-          CFI R9 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -12)
           CFI R10 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+32
 //  210   else
 //  211     return value;
-??parseFloat_1:
-        POP      {R4-R10,PC}      ;; return
-          CFI EndBlock cfiBlock12
+??parseFloat_0:
+        POP      {R1,R4-R8,R10,PC}  ;; return
+          CFI EndBlock cfiBlock11
 //  212 }
 //  213 
 //  214 // read characters from stream into buffer
@@ -801,7 +813,7 @@ _ZN6Stream10parseFloatEc:
 //  218 //
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN6Stream9readBytesEPcj
         THUMB
 //  219 size_t Stream::readBytes(char *buffer, size_t length)
@@ -841,7 +853,7 @@ _ZN6Stream9readBytesEPcj:
 ??readBytes_2:
         MOV      R0,R7
         POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock13
+          CFI EndBlock cfiBlock12
 //  229 }
 //  230 
 //  231 
@@ -851,7 +863,7 @@ _ZN6Stream9readBytesEPcj:
 //  235 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function _ZN6Stream14readBytesUntilEcPcj
         THUMB
 //  236 size_t Stream::readBytesUntil(char terminator, char *buffer, size_t length)
@@ -868,45 +880,42 @@ _ZN6Stream14readBytesUntilEcPcj:
         MOV      R4,R0
         MOV      R5,R1
         MOV      R6,R2
-        MOVS     R7,R3
+        MOVS     R8,R3
 //  238   if (length < 1) return 0;
-        BNE.N    ??readBytesUntil_0
-        MOVS     R0,#+0
-        B.N      ??readBytesUntil_1
+        IT       EQ 
+        MOVEQ    R0,#+0
+        BEQ.N    ??readBytesUntil_0
 //  239   size_t index = 0;
-??readBytesUntil_0:
-        MOV      R8,#+0
-        B.N      ??readBytesUntil_2
+        MOVS     R7,#+0
 //  240   while (index < length) {
 //  241     int c = timedRead();
-//  242     if (c < 0 || c == terminator) break;
-//  243     *buffer++ = (char)c;
-??readBytesUntil_3:
-        STRB     R0,[R6], #+1
-//  244     index++;
-        ADD      R8,R8,#+1
-??readBytesUntil_2:
-        CMP      R8,R7
-        BCS.N    ??readBytesUntil_4
+??readBytesUntil_1:
         MOV      R0,R4
           CFI FunCall _ZN6Stream9timedReadEv
         BL       _ZN6Stream9timedReadEv
+//  242     if (c < 0 || c == terminator) break;
         CMP      R0,#+0
-        BMI.N    ??readBytesUntil_4
+        BMI.N    ??readBytesUntil_2
         CMP      R0,R5
-        BNE.N    ??readBytesUntil_3
+        BEQ.N    ??readBytesUntil_2
+//  243     *buffer++ = (char)c;
+//  244     index++;
+        ADDS     R7,R7,#+1
+        STRB     R0,[R6], #+1
 //  245   }
+        CMP      R7,R8
+        BCC.N    ??readBytesUntil_1
 //  246   return index; // return number of characters, not including null terminator
-??readBytesUntil_4:
-        MOV      R0,R8
-??readBytesUntil_1:
+??readBytesUntil_2:
+        MOV      R0,R7
+??readBytesUntil_0:
         POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock14
+          CFI EndBlock cfiBlock13
 //  247 }
 //  248 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function _ZN6Stream10readStringEv
         THUMB
 //  249 String Stream::readString()
@@ -917,8 +926,8 @@ _ZN6Stream10readStringEv:
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-        MOV      R4,R0
         MOV      R5,R1
+        MOV      R4,R0
 //  251   String ret;
         ADR.N    R1,??DataTable3  ;; ""
           CFI FunCall _ZN6StringC1EPKc
@@ -927,32 +936,45 @@ _ZN6Stream10readStringEv:
         MOV      R0,R5
           CFI FunCall _ZN6Stream9timedReadEv
         BL       _ZN6Stream9timedReadEv
-        B.N      ??readString_0
+        MOVS     R1,R0
 //  253   while (c >= 0)
+        BMI.N    ??readString_0
 //  254   {
 //  255     ret += (char)c;
 ??readString_1:
-        MOV      R1,R0
         SXTB     R1,R1
         MOV      R0,R4
-          CFI FunCall _ZN6StringpLEc
-        BL       _ZN6StringpLEc
+          CFI FunCall _ZN6String6concatEc
+        BL       _ZN6String6concatEc
 //  256     c = timedRead();
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        STR      R0,[R5, #+12]
+??readString_2:
+        LDR      R1,[R5, #+0]
+        LDR      R1,[R1, #+12]
         MOV      R0,R5
-          CFI FunCall _ZN6Stream9timedReadEv
-        BL       _ZN6Stream9timedReadEv
-//  257   }
-??readString_0:
-        CMP      R0,#+0
+          CFI FunCall
+        BLX      R1
+        MOVS     R1,R0
         BPL.N    ??readString_1
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        LDR      R1,[R5, #+12]
+        SUBS     R0,R0,R1
+        LDR      R1,[R5, #+8]
+        CMP      R0,R1
+        BCC.N    ??readString_2
+//  257   }
 //  258   return ret;
+??readString_0:
         POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock15
+          CFI EndBlock cfiBlock14
 //  259 }
 //  260 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function _ZN6Stream15readStringUntilEc
         THUMB
 //  261 String Stream::readStringUntil(char terminator)
@@ -964,8 +986,8 @@ _ZN6Stream15readStringUntilEc:
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        MOV      R4,R0
         MOV      R5,R1
+        MOV      R4,R0
         MOV      R6,R2
 //  263   String ret;
         ADR.N    R1,??DataTable3  ;; ""
@@ -975,30 +997,42 @@ _ZN6Stream15readStringUntilEc:
         MOV      R0,R5
           CFI FunCall _ZN6Stream9timedReadEv
         BL       _ZN6Stream9timedReadEv
-        B.N      ??readStringUntil_0
+        MOVS     R1,R0
 //  265   while (c >= 0 && c != terminator)
+        BMI.N    ??readStringUntil_0
+??readStringUntil_1:
+        CMP      R1,R6
+        BEQ.N    ??readStringUntil_0
 //  266   {
 //  267     ret += (char)c;
-??readStringUntil_1:
-        MOV      R1,R0
         SXTB     R1,R1
         MOV      R0,R4
-          CFI FunCall _ZN6StringpLEc
-        BL       _ZN6StringpLEc
+          CFI FunCall _ZN6String6concatEc
+        BL       _ZN6String6concatEc
 //  268     c = timedRead();
-        MOV      R0,R5
-          CFI FunCall _ZN6Stream9timedReadEv
-        BL       _ZN6Stream9timedReadEv
-//  269   }
-??readStringUntil_0:
-        CMP      R0,#+0
-        BMI.N    ??readStringUntil_2
-        CMP      R0,R6
-        BNE.N    ??readStringUntil_1
-//  270   return ret;
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        STR      R0,[R5, #+12]
 ??readStringUntil_2:
+        LDR      R1,[R5, #+0]
+        LDR      R1,[R1, #+12]
+        MOV      R0,R5
+          CFI FunCall
+        BLX      R1
+        MOVS     R1,R0
+        BPL.N    ??readStringUntil_1
+          CFI FunCall _Z6millisv
+        BL       _Z6millisv
+        LDR      R1,[R5, #+12]
+        SUBS     R0,R0,R1
+        LDR      R1,[R5, #+8]
+        CMP      R0,R1
+        BCC.N    ??readStringUntil_2
+//  269   }
+//  270   return ret;
+??readStringUntil_0:
         POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock16
+          CFI EndBlock cfiBlock15
 //  271 }
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -1057,7 +1091,7 @@ _ZN6Stream15readStringUntilEc:
         DC32    1
         DC32    _ZTI6Stream
         DC32    1
-        DC32    8
+        DC32    24
         DC32    0
         DC32    0
 
@@ -1071,7 +1105,7 @@ _ZN6Stream15readStringUntilEc:
         DC32    1
         DC32    _ZTI6Stream
         DC32    1
-        DC32    8
+        DC32    24
         DC32    0
         DC32    0
 
@@ -1080,6 +1114,34 @@ _ZN6Stream15readStringUntilEc:
         SECTION_GROUP _ZN6Stream10parseFloatEc
         DATA
         DC32    _ZN6Stream10parseFloatEc
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI6Stream
+        DC32    1
+        DC32    24
+        DC32    0
+        DC32    0
+
+        SECTION `.iar_vfe_vcallinfo_ZN6Stream10readStringEv`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN6Stream10readStringEv
+        DATA
+        DC32    _ZN6Stream10readStringEv
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI6Stream
+        DC32    1
+        DC32    8
+        DC32    0
+        DC32    0
+
+        SECTION `.iar_vfe_vcallinfo_ZN6Stream15readStringUntilEc`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN6Stream15readStringUntilEc
+        DATA
+        DC32    _ZN6Stream15readStringUntilEc
         DC32    0
         DC32    0
         DC32    1
@@ -1123,10 +1185,10 @@ _ZTI6Stream:
 //  272 
 // 
 //   3 bytes in section .rodata
-// 754 bytes in section .text
+// 836 bytes in section .text
 // 
-// 742 bytes of CODE  memory (+ 12 bytes shared)
-//   1 byte  of CONST memory (+  2 bytes shared)
+// 836 bytes of CODE  memory
+//   1 byte  of CONST memory (+ 2 bytes shared)
 //
 //Errors: none
 //Warnings: 102

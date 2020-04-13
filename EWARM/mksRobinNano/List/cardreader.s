@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:02
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:23:56
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\cardreader.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\cardreader.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\cardreader.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\cardreader.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\cardreader.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\cardreader.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -93,6 +90,7 @@
         EXTERN _ZN9Stopwatch4stopEv
         EXTERN _ZN9Stopwatch8durationEv
         EXTERN __aeabi_memclr4
+        EXTERN __aeabi_memset4
         EXTERN __iar_Strchr
         EXTERN __iar_Strstr
         EXTERN card
@@ -109,7 +107,6 @@
         EXTERN f_unlink
         EXTERN f_write
         EXTERN gCfgItems
-        EXTERN memset
         EXTERN mksReprint
         EXTERN mks_saveFileName
         EXTERN print_job_timer
@@ -120,12 +117,8 @@
 
         PUBLIC _Z10RFstrnicmpPKcS0_j
         PUBLIC _Z14serialprintPGMPKc
-        PUBLIC _Z6strchrPci
-        PUBLIC _Z6strstrPKcS0_
-        PUBLIC _Z6strstrPcPKc
         PUBLIC _Z9RFstricmpPKcS0_
         PUBLIC _ZN10CardReader10deleteFileEPc
-        PUBLIC _ZN10CardReader10isFileOpenEv
         PUBLIC _ZN10CardReader10pausePrintEb
         PUBLIC _ZN10CardReader10removeFileEPc
         PUBLIC _ZN10CardReader10reopenfileEPc
@@ -165,7 +158,6 @@
         PUBLIC _ZN10CardReader9stopPrintEv
         PUBLIC _ZN10CardReaderC1Ev
         PUBLIC _ZN10CardReaderC2Ev
-        PUBLIC _ZN10SdBaseFileC1Ev
         PUBLIC _ZTI5Print
         
           CFI Names cfiNames0
@@ -207,7 +199,7 @@ _ZN10CardReaderC2Ev:
           CFI EndBlock cfiBlock0
         REQUIRE _ZN10CardReaderC1Ev
         ;; // Fall through to label CardReader::CardReader()
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\cardreader.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\cardreader.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -255,34 +247,27 @@ _ZN10CardReaderC2Ev:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN10CardReaderC1Ev
+          CFI NoCalls
         THUMB
 //   44 CardReader::CardReader() {
 _ZN10CardReaderC1Ev:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-        ADD      R0,R4,#+1136
-          CFI FunCall _ZN10SdBaseFileC1Ev
-        BL       _ZN10SdBaseFileC1Ev
+        ADDW     R1,R0,#+1136
+        MOVS     R2,#+0
+        STRB     R2,[R1, #+0]
+        STRB     R2,[R1, #+3]
 //   45     sdmode = 0;			
-        MOVS     R0,#+0
-        STRB     R0,[R4, #+1132]
+        STRB     R2,[R0, #+1132]
 //   46 	sdprinting = false;
-        STRB     R0,[R4, #+2488]
 //   47 	cardOK = false;	
-        ADDW     R0,R4,#+2488
-        MOVS     R1,#+0
-        STRB     R1,[R0, #+3]
+        ADDW     R1,R0,#+1888
+        STRB     R2,[R0, #+1888]
+        STRB     R2,[R1, #+3]
 //   48 	usbOK = false;
-        STRB     R1,[R0, #+4]
+        STRB     R2,[R1, #+4]
 //   49     savetosd = false;
-        MOV      R0,R1
-        STRB     R0,[R4, #+1133]
+        STRB     R2,[R0, #+1133]
 //   50 }
-        MOV      R0,R4
-        POP      {R4,PC}          ;; return
+        BX       LR               ;; return
           CFI EndBlock cfiBlock1
 //   51 
 
@@ -372,11 +357,13 @@ _ZN10CardReader14checkautostartEb:
 //  113 void CardReader::checkFilesys(unsigned char filesys)
 //  114 {
 _ZN10CardReader12checkFilesysEh:
-        PUSH     {R3-R5,LR}
+        PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+24
         MOV      R4,R0
 //  115 #if 1
 //  116 	switch(filesys)
@@ -387,23 +374,21 @@ _ZN10CardReader12checkFilesysEh:
 //  119 	  //if(filesys == FILE_SYS_SD)        //U?ì??óD1ò??
 //  120 	  {
 //  121 	      if (SD_DET_IP != SD_DETECT_INVERTED)    
-        ADDW     R5,R4,#+2488
+        ADDW     R5,R4,#+1888
+        LDR.W    R1,??DataTable37_3  ;; 0x42228130
         LDRB     R0,[R5, #+3]
-        LDR.W    R1,??DataTable38_3  ;; 0x42228130
         LDR      R1,[R1, #+0]
-        CMP      R1,#+0
-        BEQ.N    ??checkFilesys_1
+        CBZ.N    R1,??checkFilesys_1
 //  122 	      {
 //  123 	        if(cardOK || sdprinting)   // Card removed
         CMP      R0,#+0
-        BNE.N    ??checkFilesys_2
-        LDRB     R0,[R4, #+2488]
-        CMP      R0,#+0
+        ITT      EQ 
+        LDRBEQ   R0,[R4, #+1888]
+        CMPEQ    R0,#+0
         BEQ.N    ??checkFilesys_0
 //  124 	        {
 //  125 				SERIAL_ECHO_START();
-??checkFilesys_2:
-        LDR.W    R0,??DataTable38_4
+        LDR.W    R0,??DataTable37_4
           CFI FunCall _Z14serialprintPGMPKc
         BL       _Z14serialprintPGMPKc
 //  126 				SERIAL_ECHOLNPGM("SD card removed");
@@ -413,7 +398,7 @@ _ZN10CardReader12checkFilesysEh:
 //  127 	            cardOK = false;
         MOVS     R0,#+0
         STRB     R0,[R5, #+3]
-        POP      {R0,R4,R5,PC}
+        POP      {R0,R4-R7,PC}
 //  128 	            //FATFS_UnLinkDriver(SD_Path); 
 //  129 	            //unmount();
 //  130 	        }
@@ -422,17 +407,33 @@ _ZN10CardReader12checkFilesysEh:
 //  133 	      {
 //  134 	        if(!cardOK)
 ??checkFilesys_1:
-        CMP      R0,#+0
-        BNE.N    ??checkFilesys_0
+        CBNZ.N   R0,??checkFilesys_0
 //  135 	        {
 //  136 				SERIAL_ECHO_START();
-        LDR.W    R0,??DataTable38_4
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R7,??DataTable37_4
+        LDR.W    R6,??DataTable37_5
+        B.N      ??checkFilesys_2
+??checkFilesys_3:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??checkFilesys_2:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??checkFilesys_3
 //  137 				SERIAL_ECHOLNPGM("Select SD file system");
-        ADR.W    R0,`?<Constant "Select SD file system\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R7,`?<Constant "Select SD file system\\n">`
+        B.N      ??checkFilesys_4
+??checkFilesys_5:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??checkFilesys_4:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??checkFilesys_5
 //  138 	            //FATFS_LinkDriver_sd(&SD_Driver, SD_Path);
 //  139 	            //SD_Init();
 //  140 	            initsd();
@@ -480,7 +481,7 @@ _ZN10CardReader12checkFilesysEh:
 //  177     #endif
 //  178 }
 ??checkFilesys_0:
-        POP      {R0,R4,R5,PC}    ;; return
+        POP      {R0,R4-R7,PC}    ;; return
           CFI EndBlock cfiBlock4
 //  179 #endif
 //  180 #if 0
@@ -673,69 +674,89 @@ _ZN10CardReader12checkFilesysEh:
 //  362 void CardReader::initsd()
 //  363 {
 _ZN10CardReader6initsdEv:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        MOV      R4,R0
+        MOV      R5,R0
 //  364 	FRESULT mksMountState = FR_DISK_ERR;
 //  365 	cardOK = false;
         MOVS     R0,#+0
-        STRB     R0,[R4, #+2491]
+        STRB     R0,[R5, #+1891]
 //  366 	
 //  367 	if( SD_DET_IP != SD_DETECT_INVERTED)
-        LDR.W    R0,??DataTable38_3  ;; 0x42228130
+        LDR.W    R0,??DataTable37_3  ;; 0x42228130
         LDR      R0,[R0, #+0]
-        CMP      R0,#+0
-        BNE.N    ??initsd_0
+        CBNZ.N   R0,??initsd_0
 //  368 		return;
 //  369 
 //  370 	if(f_mount(&fs, (TCHAR const*)SD_Path, 0) != FR_OK)	
-        LDR.W    R5,??DataTable38_4
+        LDR.W    R6,??DataTable37_4
+        LDR.W    R1,??DataTable37_6
         MOVS     R2,#+0
-        LDR.W    R1,??DataTable38_5
-        ADD      R0,R4,#+556
+        ADD      R0,R5,#+556
           CFI FunCall f_mount
         BL       f_mount
         CMP      R0,#+0
-        MOV      R0,R5
+        LDR.W    R4,??DataTable37_5
         BEQ.N    ??initsd_1
 //  371 	{
 //  372 		SERIAL_ECHO_START();
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        B.N      ??initsd_2
+??initsd_3:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??initsd_2:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??initsd_3
 //  373 		SERIAL_ECHOLNPGM(MSG_SD_INIT_FAIL);
-        ADR.W    R0,`?<Constant "SD init fail\\n">`
-        POP      {R1,R4,R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z14serialprintPGMPKc
-        B.W      _Z14serialprintPGMPKc
-          CFI R4 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        ADR.W    R5,`?<Constant "SD init fail\\n">`
+??initsd_4:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BEQ.N    ??initsd_0
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??initsd_4
+??initsd_5:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??initsd_1:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??initsd_5
 //  374 	}
 //  375 	else
 //  376 	{
 //  377 		SERIAL_ECHO_START();
-??initsd_1:
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
 //  378 		SERIAL_ECHOLNPGM(MSG_SD_CARD_OK);
-        ADR.W    R0,`?<Constant "SD card ok\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R6,`?<Constant "SD card ok\\n">`
+        B.N      ??initsd_6
+??initsd_7:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??initsd_6:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??initsd_7
 //  379 		cardOK = true;
         MOVS     R0,#+1
-        STRB     R0,[R4, #+2491]
+        STRB     R0,[R5, #+1891]
 //  380 	}
 //  381 }
 ??initsd_0:
-        POP      {R0,R4,R5,PC}    ;; return
+        POP      {R4-R6,PC}       ;; return
           CFI EndBlock cfiBlock5
 //  382 #if 1
 //  383 
@@ -779,7 +800,7 @@ _ZN10CardReader7initusbEv:
 _ZN10CardReader5mountEv:
         MOVS     R1,#+0
         STRB     R1,[R0, #+1132]
-        STRB     R1,[R0, #+2488]
+        STRB     R1,[R0, #+1888]
 //  407     initsd();
           CFI FunCall _ZN10CardReader6initsdEv
         B.N      _ZN10CardReader6initsdEv
@@ -796,13 +817,10 @@ _ZN10CardReader5mountEv:
 //  411 {
 //  412     sdmode = false;		sdprinting = false;
 _ZN10CardReader7unmountEv:
-        MOVS     R1,#+0
-        STRB     R1,[R0, #+1132]
-        STRB     R1,[R0, #+2488]
+        B.N      ?Subroutine0
+          CFI EndBlock cfiBlock8
 //  413 	cardOK = false;
-        STRB     R1,[R0, #+2491]
 //  414     savetosd = false;	
-        STRB     R1,[R0, #+1133]
 //  415  #if 0   //lite mask   
 //  416 #if UI_DISPLAY_TYPE!=0 && SDSUPPORT
 //  417     uid.cwd[0]='/';
@@ -811,8 +829,6 @@ _ZN10CardReader7unmountEv:
 //  420 #endif
 //  421 #endif    //lite mask
 //  422 }
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock8
 //  423 
 //  424 
 //  425 
@@ -823,20 +839,32 @@ _ZN10CardReader7unmountEv:
           CFI NoCalls
         THUMB
 //  426 void CardReader::release() {
-//  427     sdmode = false;		
 _ZN10CardReader7releaseEv:
+        Nop      
+          CFI EndBlock cfiBlock9
+//  427     sdmode = false;		
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock10 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN10CardReader7unmountEv
+          CFI NoCalls _ZN10CardReader7releaseEv
+        THUMB
+?Subroutine0:
         MOVS     R1,#+0
         STRB     R1,[R0, #+1132]
 //  428 	sdprinting = false;	
-        STRB     R1,[R0, #+2488]
+        STRB     R1,[R0, #+1888]
 //  429 	cardOK = false;
-        STRB     R1,[R0, #+2491]
+        STRB     R1,[R0, #+1891]
 //  430     savetosd = false;	
         STRB     R1,[R0, #+1133]
 //  431 
 //  432 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock10
 //  433 #if 0
 //  434 void CardReader::openAndPrintFile(const char *name) {
 //  435   char cmd[4 + strlen(name) + 1]; // Room for "M23 ", filename, and null
@@ -849,7 +877,7 @@ _ZN10CardReader7releaseEv:
 //  442 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _ZN10CardReader10startPrintEv
           CFI NoCalls
         THUMB
@@ -857,69 +885,67 @@ _ZN10CardReader7releaseEv:
 //  444 {
 //  445     if(!cardOK) return;
 _ZN10CardReader10startPrintEv:
-        LDRB     R1,[R0, #+2491]
-        CMP      R1,#+0
-        BEQ.N    ??startPrint_0
+        LDRB     R1,[R0, #+1891]
+        CBZ.N    R1,??startPrint_0
 //  446     sdmode = true;	
         MOVS     R1,#+1
         STRB     R1,[R0, #+1132]
 //  447 	sdprinting = true;
-        STRB     R1,[R0, #+2488]
+        STRB     R1,[R0, #+1888]
 //  448 }
 ??startPrint_0:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 //  449 
 //  450 //volatile int textt;
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN10CardReader14startFileprintEv
         THUMB
 //  451 void CardReader::startFileprint() {
 //  452   if (cardOK || usbOK) {
 _ZN10CardReader14startFileprintEv:
-        ADDW     R1,R0,#+2488
+        ADDW     R1,R0,#+1888
         LDRB     R2,[R1, #+3]
         CMP      R2,#+0
-        BNE.N    ??startFileprint_0
-        LDRB     R1,[R1, #+4]
-        CMP      R1,#+0
-        BEQ.N    ??startFileprint_1
+        ITT      EQ 
+        LDRBEQ   R1,[R1, #+4]
+        CMPEQ    R1,#+0
+        BEQ.N    ??startFileprint_0
 //  453     sdprinting = true; sdmode = true;
-??startFileprint_0:
         MOVS     R1,#+1
-        STRB     R1,[R0, #+2488]
+        STRB     R1,[R0, #+1888]
         STRB     R1,[R0, #+1132]
 //  454     #if ENABLED(SDCARD_SORT_ALPHA)
 //  455       flush_presort();
 //  456     #endif
 //  457 
 //  458 	mksReprint.mks_printer_state = MKS_WORKING;
-        LDR.W    R0,??DataTable38_6
         MOVS     R1,#+167
-        STRB     R1,[R0, #+224]
+        LDR.W    R0,??DataTable37_7
+        STRB     R1,[R0, #+172]
 //  459     if(gCfgItems.pwroff_save_mode != 1)
-        LDR.W    R1,??DataTable38_7
-        LDRB     R1,[R1, #+415]
+        LDR.W    R1,??DataTable37_8
+        LDRB     R1,[R1, #+431]
         CMP      R1,#+1
-        BEQ.N    ??startFileprint_1
+        BEQ.N    ??startFileprint_0
 //  460 	    epr_write_data(EPR_SAV_FLAG, (uint8_t *)&mksReprint.mks_printer_state,sizeof(mksReprint.mks_printer_state));
+        ADD      R1,R0,#+172
         MOVS     R2,#+1
-        ADD      R1,R0,#+224
         MOV      R0,#+1200
           CFI FunCall epr_write_data
         B.W      epr_write_data
 //  461     //epr_read_data(EPR_SAV_FLAG, (uint8_t *)&textt,sizeof(mksReprint.mks_printer_state));
 //  462   }
 //  463 }
-??startFileprint_1:
+??startFileprint_0:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock12
 //  464 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function _ZN10CardReader10pausePrintEb
           CFI NoCalls
         THUMB
@@ -927,10 +953,9 @@ _ZN10CardReader14startFileprintEv:
 //  466 {
 //  467     if(!card.cardOK) return;
 _ZN10CardReader10pausePrintEb:
-        LDR.W    R1,??DataTable38_8
-        LDRB     R1,[R1, #+2491]
-        CMP      R1,#+0
-        BEQ.N    ??pausePrint_0
+        LDR.W    R1,??DataTable37_9
+        LDRB     R1,[R1, #+1891]
+        CBZ.N    R1,??pausePrint_0
 //  468     sdmode = 2; // finish running line
         MOVS     R1,#+2
         STRB     R1,[R0, #+1132]
@@ -940,10 +965,10 @@ _ZN10CardReader10pausePrintEb:
 //  472 }
 ??pausePrint_0:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock12
+          CFI EndBlock cfiBlock13
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function _ZN10CardReader12pauseSDPrintEv
           CFI NoCalls
         THUMB
@@ -951,25 +976,24 @@ _ZN10CardReader10pausePrintEb:
 //  474 {
 //  475   if(sdprinting)
 _ZN10CardReader12pauseSDPrintEv:
-        LDRB     R1,[R0, #+2488]
-        CMP      R1,#+0
-        BEQ.N    ??pauseSDPrint_0
+        LDRB     R1,[R0, #+1888]
+        CBZ.N    R1,??pauseSDPrint_0
 //  476   {
 //  477     sdprinting = false;	sdmode = 2;
         MOVS     R1,#+0
-        STRB     R1,[R0, #+2488]
+        STRB     R1,[R0, #+1888]
         MOVS     R1,#+2
         STRB     R1,[R0, #+1132]
 //  478   }
 //  479 }
 ??pauseSDPrint_0:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock13
+          CFI EndBlock cfiBlock14
 //  480 
 //  481 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function _ZN10CardReader13continuePrintEb
           CFI NoCalls
         THUMB
@@ -990,10 +1014,10 @@ _ZN10CardReader12pauseSDPrintEv:
 //  496 }
 _ZN10CardReader13continuePrintEb:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock14
+          CFI EndBlock cfiBlock15
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function _ZN10CardReader11stopSDPrintEv
         THUMB
 //  497 void CardReader::stopSDPrint() {
@@ -1005,31 +1029,24 @@ _ZN10CardReader11stopSDPrintEv:
         MOV      R4,R0
 //  498   sdprinting = false;
         MOVS     R0,#+0
-        STRB     R0,[R4, #+2488]
+        STRB     R0,[R4, #+1888]
 //  499   if (isFileOpen()) closefile();
+        LDR      R0,[R4, #+512]
+        CBZ.N    R0,??stopSDPrint_0
         MOV      R0,R4
-          CFI FunCall _ZN10CardReader10isFileOpenEv
-        BL       _ZN10CardReader10isFileOpenEv
-        CMP      R0,#+0
-        BEQ.N    ??stopSDPrint_0
+          CFI FunCall f_close
+        BL       f_close
+        ADDW     R0,R4,#+1888
         MOVS     R1,#+0
-        MOV      R0,R4
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN10CardReader9closefileEb
-        B.N      _ZN10CardReader9closefileEb
-          CFI R4 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        STRB     R1,[R0, #+1]
+        STRB     R1,[R0, #+2]
 //  500 }
 ??stopSDPrint_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock15
+          CFI EndBlock cfiBlock16
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock17 Using cfiCommon0
           CFI Function _ZN10CardReader9stopPrintEv
           CFI NoCalls
         THUMB
@@ -1037,22 +1054,21 @@ _ZN10CardReader11stopSDPrintEv:
 //  502 {
 //  503     if(!card.cardOK) return;
 _ZN10CardReader9stopPrintEv:
-        LDR.W    R1,??DataTable38_8
-        LDRB     R1,[R1, #+2491]
-        CMP      R1,#+0
-        BEQ.N    ??stopPrint_0
+        LDR.W    R1,??DataTable37_9
+        LDRB     R1,[R1, #+1891]
+        CBZ.N    R1,??stopPrint_0
 //  504     sdmode = 0;	sdprinting = false;	
         MOVS     R1,#+0
         STRB     R1,[R0, #+1132]
-        STRB     R1,[R0, #+2488]
+        STRB     R1,[R0, #+1888]
 //  505 }
 ??stopPrint_0:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock16
+          CFI EndBlock cfiBlock17
 //  506 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock17 Using cfiCommon0
+          CFI Block cfiBlock18 Using cfiCommon0
           CFI Function _ZN10CardReader12operatePrintEv
           CFI NoCalls
         THUMB
@@ -1062,62 +1078,51 @@ _ZN10CardReader9stopPrintEv:
 //  510 }
 _ZN10CardReader12operatePrintEv:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock17
+          CFI EndBlock cfiBlock18
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock18 Using cfiCommon0
+          CFI Block cfiBlock19 Using cfiCommon0
           CFI Function _ZN10CardReader14createFilenameEPcRK14directoryEntry
           CFI NoCalls
         THUMB
 //  511 char *CardReader::createFilename(char *buffer,const dir_t &p)
 //  512 {
-_ZN10CardReader14createFilenameEPcRK14directoryEntry:
-        PUSH     {R4}
-          CFI R4 Frame(CFA, -4)
-          CFI CFA R13+4
 //  513     char *pos = buffer,*src = (char*)p.name;
 //  514     for (uint8_t i = 0; i < 11; i++,src++)
+_ZN10CardReader14createFilenameEPcRK14directoryEntry:
         MOVS     R0,#+0
-        B.N      ??createFilename_0
 //  515     {
 //  516         if (*src == ' ') continue;
-??createFilename_1:
-        LDRSB    R4,[R2, #+0]
-        CMP      R4,#+32
-        BEQ.N    ??createFilename_2
+??createFilename_0:
+        LDRSB    R3,[R2, #+0]
+        CMP      R3,#+32
+        BEQ.N    ??createFilename_1
 //  517         if (i == 8)
-        CMP      R3,#+8
-        BNE.N    ??createFilename_3
+        CMP      R0,#+8
+        ITT      EQ 
 //  518             *pos++ = '.';
-        MOVS     R3,#+46
-        STRB     R3,[R1], #+1
+        MOVEQ    R3,#+46
+        STRBEQ   R3,[R1], #+1
 //  519         *pos++ = *src;
-??createFilename_3:
         LDRB     R3,[R2, #+0]
         STRB     R3,[R1], #+1
 //  520     }
-??createFilename_2:
+??createFilename_1:
         ADDS     R0,R0,#+1
         ADDS     R2,R2,#+1
-??createFilename_0:
-        UXTB     R0,R0
-        MOV      R3,R0
-        CMP      R3,#+11
-        BLT.N    ??createFilename_1
+        CMP      R0,#+11
+        BLT.N    ??createFilename_0
 //  521     *pos = 0;
         MOVS     R0,#+0
         STRB     R0,[R1, #+0]
 //  522     return pos;
         MOV      R0,R1
-        POP      {R4}
-          CFI R4 SameValue
-          CFI CFA R13+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock18
+          CFI EndBlock cfiBlock19
 //  523 }
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock19 Using cfiCommon0
+          CFI Block cfiBlock20 Using cfiCommon0
           CFI Function _ZN10CardReader12showFilenameEPKh
           CFI NoCalls
         THUMB
@@ -1127,22 +1132,21 @@ _ZN10CardReader14createFilenameEPcRK14directoryEntry:
 _ZN10CardReader12showFilenameEPKh:
         LDRB     R0,[R1, #+0]
         CMP      R0,#+229
-        BEQ.N    ??showFilename_0
-        CMP      R0,#+46
-        BNE.N    ??showFilename_1
-??showFilename_0:
+        IT       NE 
+        CMPNE    R0,#+46
+        BNE.N    ??showFilename_0
         MOVS     R0,#+0
         BX       LR
 //  527     return true;
-??showFilename_1:
+??showFilename_0:
         MOVS     R0,#+1
         BX       LR               ;; return
-          CFI EndBlock cfiBlock19
+          CFI EndBlock cfiBlock20
 //  528 }
 //  529 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock20 Using cfiCommon0
+          CFI Block cfiBlock21 Using cfiCommon0
           CFI Function _Z9RFstricmpPKcS0_
         THUMB
 //  530 int8_t RFstricmp(const char* s1, const char* s2)
@@ -1164,8 +1168,7 @@ _Z9RFstricmpPKcS0_:
         ADDS     R5,R5,#+1
 ??RFstricmp_0:
         LDRSB    R0,[R4, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??RFstricmp_2
+        CBZ.N    R0,??RFstricmp_2
           CFI FunCall tolower
         BL       tolower
         MOV      R6,R0
@@ -1186,12 +1189,12 @@ _Z9RFstricmpPKcS0_:
         SUBS     R0,R4,R0
         SXTB     R0,R0
         POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock20
+          CFI EndBlock cfiBlock21
 //  535 }
 //  536 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock21 Using cfiCommon0
+          CFI Block cfiBlock22 Using cfiCommon0
           CFI Function _Z10RFstrnicmpPKcS0_j
         THUMB
 //  537 int8_t RFstrnicmp(const char* s1, const char* s2, size_t n)
@@ -1218,11 +1221,9 @@ _Z10RFstrnicmpPKcS0_j:
 //  544         s2++;
         ADDS     R5,R5,#+1
 ??RFstrnicmp_0:
-        MOV      R0,R6
-        SUBS     R6,R0,#+1
-        CMP      R0,#+0
-        BEQ.N    ??RFstrnicmp_2
+        CBZ.N    R6,??RFstrnicmp_2
         LDRSB    R0,[R4, #+0]
+        SUBS     R6,R6,#+1
           CFI FunCall tolower
         BL       tolower
         MOV      R7,R0
@@ -1246,29 +1247,30 @@ _Z10RFstrnicmpPKcS0_j:
 ??RFstrnicmp_2:
         MOVS     R0,#+0
         POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock21
+          CFI EndBlock cfiBlock22
 //  547 }
 //  548 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock22 Using cfiCommon0
+          CFI Block cfiBlock23 Using cfiCommon0
           CFI Function _ZN10CardReader2lsEv
         THUMB
 //  549 void CardReader::ls()
 //  550 {
 //  551     if ((SD_DET_IP == SD_DETECT_INVERTED)&&(usbOK == false))
 _ZN10CardReader2lsEv:
-        LDR.W    R1,??DataTable38_3  ;; 0x42228130
+        LDR.W    R1,??DataTable37_3  ;; 0x42228130
         LDR      R1,[R1, #+0]
         CMP      R1,#+0
-        BNE.N    ??ls_0
-        LDRB     R1,[R0, #+2492]
-        CMP      R1,#+0
+        ITT      EQ 
+        LDRBEQ   R1,[R0, #+1892]
+        CMPEQ    R1,#+0
         BNE.N    ??ls_0
 //  552       get_file_list(SD_Path);
-        LDR.W    R1,??DataTable38_5
-          CFI FunCall _ZN10CardReader13get_file_listEPc
-        B.N      _ZN10CardReader13get_file_listEPc
+        MOVS     R2,#+0
+        LDR.W    R1,??DataTable37_6
+          CFI FunCall _ZN10CardReader12Explore_DiskEPch
+        B.N      _ZN10CardReader12Explore_DiskEPch
 //  553     else
 //  554     {
 //  555 #if unused
@@ -1278,21 +1280,21 @@ _ZN10CardReader2lsEv:
 //  559 }
 ??ls_0:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock22
+          CFI EndBlock cfiBlock23
 //  560 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock23 Using cfiCommon0
+          CFI Block cfiBlock24 Using cfiCommon0
           CFI Function _ZN10CardReader10selectFileEPcb
           CFI NoCalls
         THUMB
 //  561 bool CardReader::selectFile(char *filename, bool silent){}
 _ZN10CardReader10selectFileEPcb:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock23
+          CFI EndBlock cfiBlock24
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock24 Using cfiCommon0
+          CFI Block cfiBlock25 Using cfiCommon0
           CFI Function _ZN10CardReader10reopenfileEPc
         THUMB
 //  562 bool CardReader::reopenfile(char* filename)
@@ -1314,8 +1316,7 @@ _ZN10CardReader10reopenfileEPc:
         MOV      R0,R4
           CFI FunCall f_open
         BL       f_open
-        CMP      R0,#+0
-        BNE.N    ??reopenfile_0
+        CBNZ.N   R0,??reopenfile_0
 //  566     {
 //  567         filesize = curFile.fsize;
         LDR      R0,[R4, #+524]
@@ -1330,12 +1331,12 @@ _ZN10CardReader10reopenfileEPc:
 ??reopenfile_0:
         MOVS     R0,#+0
         POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock24
+          CFI EndBlock cfiBlock25
 //  573     }
 //  574 }
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock25 Using cfiCommon0
+          CFI Block cfiBlock26 Using cfiCommon0
           CFI Function _ZN10CardReader8openFileEPcbb
         THUMB
 //  575 bool CardReader::openFile(char* filename,bool silent, bool replace_current/*=true*/)
@@ -1347,31 +1348,25 @@ _ZN10CardReader8openFileEPcbb:
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        SUB      SP,SP,#+192
-          CFI CFA R13+208
+        SUB      SP,SP,#+104
+          CFI CFA R13+120
         MOV      R4,R0
         MOV      R5,R1
 //  577     SdBaseFile parent;
-        ADD      R0,SP,#+152
-          CFI FunCall _ZN10SdBaseFileC1Ev
-        BL       _ZN10SdBaseFileC1Ev
 //  578     char *oldP;
 //  579     boolean bFound;
 //  580     
-//  581     char newname[150]={0};
+//  581     char newname[100]={0};
         ADD      R0,SP,#+0
-        MOVS     R1,#+152
+        MOVS     R1,#+100
           CFI FunCall __aeabi_memclr4
         BL       __aeabi_memclr4
 //  582       
 //  583 	  if(sdprinting)			return false;
-        LDRB     R0,[R4, #+2488]
+        LDRB     R0,[R4, #+1888]
         CMP      R0,#+0
-        BEQ.N    ??openFile_0
-        MOVS     R0,#+0
-        B.N      ??openFile_1
+        BNE.N    ??openFile_0
 //  584 	  f_close(&curFile);
-??openFile_0:
         MOV      R0,R4
           CFI FunCall f_close
         BL       f_close
@@ -1379,15 +1374,15 @@ _ZN10CardReader8openFileEPcbb:
 //  586   if(filename[2] != '/')     //???t??2?′??ì·??·??
         LDRSB    R0,[R5, #+2]
         CMP      R0,#+47
-        BEQ.N    ??openFile_2
+        BEQ.N    ??openFile_1
 //  587   {    
 //  588    if(card.cardOK)
-        LDR.W    R0,??DataTable38_8
-        LDRB     R0,[R0, #+2491]
+        LDR.W    R0,??DataTable37_9
+        LDRB     R0,[R0, #+1891]
         CMP      R0,#+0
-        BEQ.N    ??openFile_3
+        BEQ.N    ??openFile_0
 //  589 	   strcat(newname,SD_Path);
-        LDR.W    R1,??DataTable38_5
+        LDR.W    R1,??DataTable37_6
         ADD      R0,SP,#+0
           CFI FunCall strcat
         BL       strcat
@@ -1399,7 +1394,7 @@ _ZN10CardReader8openFileEPcbb:
 //  595           return false;
 //  596   }
 //  597 	strcat(newname,filename);
-??openFile_2:
+??openFile_1:
         MOV      R1,R5
         ADD      R0,SP,#+0
           CFI FunCall strcat
@@ -1410,14 +1405,13 @@ _ZN10CardReader8openFileEPcbb:
         BL       mks_saveFileName
 //  600 
 //  601 	if(f_open(&curFile, (const TCHAR *)newname, FA_OPEN_EXISTING | FA_READ) == FR_OK)					
-        LDR.W    R6,??DataTable38_9
+        LDR.W    R6,??DataTable37_5
         MOVS     R2,#+1
         ADD      R1,SP,#+0
         MOV      R0,R4
           CFI FunCall f_open
         BL       f_open
-        CMP      R0,#+0
-        BNE.N    ??openFile_4
+        CBNZ.N   R0,??openFile_2
 //  602       {
 //  603 
 //  604         if(!silent)
@@ -1425,23 +1419,30 @@ _ZN10CardReader8openFileEPcbb:
 //  606         }
 //  607 		
 //  608         sdpos = 0;
-        MOVS     R0,#+0
         STR      R0,[R4, #+1120]
 //  609         filesize = curFile.fsize;
-        LDR      R0,[R4, #+524]
-        STR      R0,[R4, #+1116]
 //  610         SERIAL_PROTOCOLPAIR(MSG_SD_FILE_OPENED, filename);
         MOV      R1,R5
+        LDR      R0,[R4, #+524]
+        STR      R0,[R4, #+1116]
         ADR.W    R0,`?<Constant "File opened: ">`
           CFI FunCall _Z17serial_echopair_PPKcS0_
         BL       _Z17serial_echopair_PPKcS0_
 //  611 		SERIAL_PROTOCOLPGM(MSG_SD_SIZE);
-        ADR.W    R0,`?<Constant " Size: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R5,`?<Constant " Size: ">`
+        B.N      ??openFile_3
+??openFile_4:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??openFile_3:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BNE.N    ??openFile_4
 //  612 		SERIAL_PROTOCOL(filesize);
-        MOVS     R2,#+10
         LDR      R1,[R4, #+1116]
+        MOVS     R2,#+10
         MOV      R0,R6
           CFI FunCall _ZN5Print5printEji
         BL       _ZN5Print5printEji
@@ -1451,20 +1452,28 @@ _ZN10CardReader8openFileEPcbb:
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  614 		SERIAL_PROTOCOLLNPGM(MSG_SD_FILE_SELECTED);
-        ADR.W    R0,`?<Constant "File selected\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R4,`?<Constant "File selected\\n">`
+        B.N      ??openFile_5
+??openFile_6:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??openFile_5:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??openFile_6
 //  615         return true;
         MOVS     R0,#+1
-        B.N      ??openFile_1
+        ADD      SP,SP,#+104
+          CFI CFA R13+16
+        POP      {R4-R6,PC}
+          CFI CFA R13+120
 //  616     }
-??openFile_3:
-        MOVS     R0,#+0
-        B.N      ??openFile_1
 //  617     else
 //  618     {
 //  619 		SERIAL_PROTOCOLPAIR(MSG_SD_OPEN_FILE_FAIL, filename);
-??openFile_4:
+??openFile_2:
         MOV      R1,R5
         ADR.W    R0,`?<Constant "open failed, File: ">`
           CFI FunCall _Z17serial_echopair_PPKcS0_
@@ -1483,18 +1492,18 @@ _ZN10CardReader8openFileEPcbb:
 //  623         if(!silent){}
 //  624    //         Com::printFLN(Com::tFileOpenFailed);
 //  625         return false;
+??openFile_0:
         MOVS     R0,#+0
-??openFile_1:
-        ADD      SP,SP,#+192
+        ADD      SP,SP,#+104
           CFI CFA R13+16
         POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock25
+          CFI EndBlock cfiBlock26
 //  626     }
 //  627 }
 //  628 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock26 Using cfiCommon0
+          CFI Block cfiBlock27 Using cfiCommon0
           CFI Function _ZN10CardReader11printStatusEv
           CFI NoCalls
         THUMB
@@ -1515,84 +1524,105 @@ _ZN10CardReader8openFileEPcbb:
 //  643 }
 _ZN10CardReader11printStatusEv:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock26
+          CFI EndBlock cfiBlock27
 //  644 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock27 Using cfiCommon0
+          CFI Block cfiBlock28 Using cfiCommon0
           CFI Function _ZN10CardReader9getStatusEv
         THUMB
 //  645 void CardReader::getStatus()
 //  646 {
 _ZN10CardReader9getStatusEv:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
         MOV      R4,R0
 //  647   if(cardOK || usbOK){
-        LDRB     R0,[R4, #+2491]
+        LDRB     R0,[R4, #+1891]
         CMP      R0,#+0
-        BNE.N    ??getStatus_0
-        LDRB     R0,[R4, #+2492]
-        CMP      R0,#+0
-        BEQ.N    ??getStatus_1
+        ITT      EQ 
+        LDRBEQ   R0,[R4, #+1892]
+        CMPEQ    R0,#+0
+        BEQ.N    ??getStatus_0
 //  648     SERIAL_PROTOCOLPGM(MSG_SD_PRINTING_BYTE);
-??getStatus_0:
-        ADR.W    R0,`?<Constant "SD printing byte ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R6,`?<Constant "SD printing byte ">`
+        LDR.W    R5,??DataTable37_5
+        B.N      ??getStatus_1
+??getStatus_2:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??getStatus_1:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??getStatus_2
 //  649     SERIAL_PROTOCOL(sdpos);
-        LDR.W    R5,??DataTable38_9
-        MOVS     R2,#+10
         LDR      R1,[R4, #+1120]
+        MOVS     R2,#+10
         MOV      R0,R5
           CFI FunCall _ZN5Print5printEji
         BL       _ZN5Print5printEji
 //  650     SERIAL_PROTOCOLPGM("/");
-        ADR.N    R0,??DataTable35  ;; "/"
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.N    R6,??DataTable35  ;; "/"
+        B.N      ??getStatus_3
+??getStatus_4:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??getStatus_3:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??getStatus_4
 //  651     SERIAL_PROTOCOLLN(filesize);
-        MOVS     R2,#+10
         LDR      R1,[R4, #+1116]
+        MOVS     R2,#+10
         MOV      R0,R5
           CFI FunCall _ZN5Print5printEji
         BL       _ZN5Print5printEji
-        MOVS     R1,#+10
         MOV      R0,R5
-        POP      {R2,R4,R5,LR}
+        POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
+          CFI R6 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall _ZN10USARTClass5writeEh
-        B.W      _ZN10USARTClass5writeEh
-          CFI R4 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -8)
+        B.N      ?Subroutine1
+          CFI R4 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+16
 //  652   }
 //  653   else{
 //  654     SERIAL_PROTOCOLLNPGM(MSG_SD_NOT_PRINTING);
-??getStatus_1:
-        ADR.W    R0,`?<Constant "Not SD printing\\n">`
-        POP      {R1,R4,R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z14serialprintPGMPKc
-        B.W      _Z14serialprintPGMPKc
-          CFI EndBlock cfiBlock27
+??getStatus_0:
+        ADR.W    R4,`?<Constant "Not SD printing\\n">`
+        LDR.W    R5,??DataTable37_5
+        B.N      ??getStatus_5
+??getStatus_6:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??getStatus_5:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??getStatus_6
 //  655   }
 //  656 }
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock28
 //  657 
 //  658 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock28 Using cfiCommon0
+          CFI Block cfiBlock29 Using cfiCommon0
           CFI Function _ZN10CardReader10startWriteEPc
         THUMB
 //  659 void CardReader::startWrite(char *filename)
@@ -1604,27 +1634,26 @@ _ZN10CardReader10startWriteEPc:
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
         MOV      R4,R0
-        MOV      R5,R1
 //  661  //char sdFileName[100];
 //  662   //memset(sdFileName,0,sizeof(sdFileName));
 //  663   
 //  664     if(!cardOK && ! usbOK) return;
-        ADDW     R0,R4,#+2488
+        ADDW     R0,R4,#+1888
+        MOV      R5,R1
         LDRB     R1,[R0, #+3]
         CMP      R1,#+0
-        BNE.N    ??startWrite_0
-        LDRB     R0,[R0, #+4]
-        CMP      R0,#+0
-        BEQ.N    ??startWrite_1
+        ITT      EQ 
+        LDRBEQ   R0,[R0, #+4]
+        CMPEQ    R0,#+0
+        BEQ.N    ??startWrite_0
 //  665       f_close(&card.curFile);
-??startWrite_0:
-        LDR.W    R0,??DataTable38_8
+        LDR.W    R0,??DataTable37_9
           CFI FunCall f_close
         BL       f_close
 //  666     sdmode = false;    sdprinting = false;
         MOVS     R0,#+0
         STRB     R0,[R4, #+1132]
-        STRB     R0,[R4, #+2488]
+        STRB     R0,[R4, #+1888]
 //  667     
 //  668     //fat.chdir();
 //  669 	
@@ -1637,8 +1666,7 @@ _ZN10CardReader10startWriteEPc:
         MOV      R0,R4
           CFI FunCall f_open
         BL       f_open
-        CMP      R0,#+0
-        BNE.N    ??startWrite_1
+        CBNZ.N   R0,??startWrite_0
 //  674     {
 //  675      ///   Com::printFLN(Com::tOpenFailedFile,filename);
 //  676     }
@@ -1651,13 +1679,13 @@ _ZN10CardReader10startWriteEPc:
 //  681    ///     Com::printFLN(Com::tWritingToFile,filename);
 //  682     }
 //  683 }
-??startWrite_1:
+??startWrite_0:
         POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock28
+          CFI EndBlock cfiBlock29
 //  684 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock29 Using cfiCommon0
+          CFI Block cfiBlock30 Using cfiCommon0
           CFI Function _ZN10CardReader11finishWriteEv
         THUMB
 //  685 void CardReader::finishWrite()
@@ -1670,8 +1698,7 @@ _ZN10CardReader11finishWriteEv:
         MOV      R4,R0
 //  687     if(!savetosd) return; // already closed or never opened
         LDRB     R0,[R4, #+1133]
-        CMP      R0,#+0
-        BEQ.N    ??finishWrite_0
+        CBZ.N    R0,??finishWrite_0
 //  688     //file.sync();
 //  689     //file.close();
 //  690     f_sync(&curFile);
@@ -1690,51 +1717,51 @@ _ZN10CardReader11finishWriteEv:
 //  695 }
 ??finishWrite_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock29
+          CFI EndBlock cfiBlock30
 //  696 
 //  697 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock30 Using cfiCommon0
+          CFI Block cfiBlock31 Using cfiCommon0
           CFI Function _ZN10CardReader10deleteFileEPc
           CFI NoCalls
         THUMB
 //  698 void CardReader::deleteFile(char *filename)	{}
 _ZN10CardReader10deleteFileEPc:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock30
+          CFI EndBlock cfiBlock31
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock31 Using cfiCommon0
+          CFI Block cfiBlock32 Using cfiCommon0
           CFI Function _ZN10CardReader10removeFileEPc
         THUMB
 //  699 void CardReader::removeFile(char* filename) 
 //  700 {
 _ZN10CardReader10removeFileEPc:
-        PUSH     {R4-R6,LR}
+        PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        MOV      R4,R0
-        MOV      R5,R1
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+24
+        MOV      R5,R0
 //  701     if(!cardOK && !usbOK) return;
-        ADDW     R0,R4,#+2488
+        ADDW     R0,R5,#+1888
+        MOV      R4,R1
         LDRB     R1,[R0, #+3]
         CMP      R1,#+0
-        BNE.N    ??removeFile_0
-        LDRB     R0,[R0, #+4]
-        CMP      R0,#+0
-        BEQ.N    ??removeFile_1
+        ITT      EQ 
+        LDRBEQ   R0,[R0, #+4]
+        CMPEQ    R0,#+0
+        BEQ.N    ??removeFile_0
 //  702     sdmode = false; sdprinting = false;
-??removeFile_0:
         MOVS     R0,#+0
-        STRB     R0,[R4, #+1132]
-        STRB     R0,[R4, #+2488]
+        STRB     R0,[R5, #+1132]
+        STRB     R0,[R5, #+1888]
 //  703 	
 //  704     f_close(&curFile);
-        MOV      R0,R4
+        MOV      R0,R5
           CFI FunCall f_close
         BL       f_close
 //  705     /*if(fat.remove(filename))
@@ -1749,20 +1776,27 @@ _ZN10CardReader10removeFileEPc:
 //  714             Com::printFLN(Com::tDeletionFailed);
 //  715     }*/
 //  716     if(f_unlink((const TCHAR *)filename) == FR_OK)
-        LDR.W    R6,??DataTable38_9
-        MOV      R0,R5
+        LDR.W    R6,??DataTable37_5
+        MOV      R0,R4
           CFI FunCall f_unlink
         BL       f_unlink
-        CMP      R0,#+0
-        BNE.N    ??removeFile_2
+        CBNZ.N   R0,??removeFile_1
 //  717 	{
 //  718   ///      Com::printFLN(Com::tFileDeleted);
 //  719   	SERIAL_PROTOCOLPGM("File deleted:");
-        ADR.W    R0,`?<Constant "File deleted:">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ADR.W    R7,`?<Constant "File deleted:">`
+        B.N      ??removeFile_2
+??removeFile_3:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??removeFile_2:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??removeFile_3
 //  720   	SERIAL_PROTOCOLLN(filename);
-        MOV      R1,R5
+        MOV      R1,R4
         MOV      R0,R6
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
@@ -1772,48 +1806,53 @@ _ZN10CardReader10removeFileEPc:
         BL       _ZN10USARTClass5writeEh
 //  721   	sdpos = 0;
         MOVS     R0,#+0
-        STR      R0,[R4, #+1120]
-        POP      {R4-R6,PC}
+        STR      R0,[R5, #+1120]
+        POP      {R0,R4-R7,PC}
 //  722   
 //  723     }
 //  724 	else
 //  725 	{
 //  726 ///		Com::printFLN(Com::tDeletionFailed);
 //  727 	SERIAL_PROTOCOLPGM("Deletion failed, File: ");
-??removeFile_2:
-        ADR.W    R0,`?<Constant "Deletion failed, File: ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+??removeFile_1:
+        ADR.W    R5,`?<Constant "Deletion failed, File: ">`
+        B.N      ??removeFile_4
+??removeFile_5:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??removeFile_4:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BNE.N    ??removeFile_5
 //  728 	SERIAL_PROTOCOL(filename);
-        MOV      R1,R5
+        MOV      R1,R4
         MOV      R0,R6
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
 //  729 	SERIAL_PROTOCOLLNPGM(".");
-        ADR.N    R0,??DataTable37  ;; 0x2E, 0x0A, 0x00, 0x00
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z14serialprintPGMPKc
-        B.W      _Z14serialprintPGMPKc
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        ADR.N    R4,??DataTable36  ;; 0x2E, 0x0A, 0x00, 0x00
+        B.N      ??removeFile_6
+??removeFile_7:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??removeFile_6:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??removeFile_7
 //  730 
 //  731 	}
 //  732 }
-??removeFile_1:
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock31
+??removeFile_0:
+        POP      {R0,R4-R7,PC}    ;; return
+          CFI EndBlock cfiBlock32
 //  733 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock32 Using cfiCommon0
+          CFI Block cfiBlock33 Using cfiCommon0
           CFI Function _ZN10CardReader13makeDirectoryEPc
         THUMB
 //  734 void CardReader::makeDirectory(char *filename)
@@ -1826,81 +1865,72 @@ _ZN10CardReader13makeDirectoryEPc:
           CFI CFA R13+16
         MOV      R4,R1
 //  736     if(!cardOK && !usbOK) return;
-        ADDW     R1,R0,#+2488
+        ADDW     R1,R0,#+1888
         LDRB     R2,[R1, #+3]
         CMP      R2,#+0
-        BNE.N    ??makeDirectory_0
-        LDRB     R1,[R1, #+4]
-        CMP      R1,#+0
-        BEQ.N    ??makeDirectory_1
+        ITT      EQ 
+        LDRBEQ   R1,[R1, #+4]
+        CMPEQ    R1,#+0
+        BEQ.N    ??makeDirectory_0
 //  737     sdmode = false;	sdprinting = false;
-??makeDirectory_0:
         MOVS     R1,#+0
         STRB     R1,[R0, #+1132]
-        STRB     R1,[R0, #+2488]
+        STRB     R1,[R0, #+1888]
 //  738     //file.close();
 //  739     f_close(&curFile);
           CFI FunCall f_close
         BL       f_close
 //  740     //if(fat.mkdir(filename))
 //  741     if(f_mkdir((const TCHAR *)filename) == FR_OK)
-        LDR.W    R5,??DataTable38_9
         MOV      R0,R4
+        LDR.N    R5,??DataTable37_5
           CFI FunCall f_mkdir
         BL       f_mkdir
         CMP      R0,#+0
-        BNE.N    ??makeDirectory_2
+        ITE      EQ 
 //  742     {
 //  743  ///       Com::printFLN(Com::tDirectoryCreated);
 //  744  		SERIAL_PROTOCOLLN("Directory created");
-        ADR.W    R1,`?<Constant "Directory created">`
-        MOV      R0,R5
-          CFI FunCall _ZN5Print5printEPKc
-        BL       _ZN5Print5printEPKc
-        MOVS     R1,#+10
-        MOV      R0,R5
-        POP      {R2,R4,R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN10USARTClass5writeEh
-        B.W      _ZN10USARTClass5writeEh
-          CFI R4 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        ADREQ.W  R1,`?<Constant "Directory created">`
 //  745     }
 //  746     else
 //  747     {
 //  748   ///      Com::printFLN(Com::tCreationFailed);
 //  749   SERIAL_PROTOCOLLN("Creation failed");
-??makeDirectory_2:
-        ADR.W    R1,`?<Constant "Creation failed">`
+        ADRNE.W  R1,`?<Constant "Creation failed">`
         MOV      R0,R5
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
-        MOVS     R1,#+10
         MOV      R0,R5
         POP      {R2,R4,R5,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall _ZN10USARTClass5writeEh
-        B.W      _ZN10USARTClass5writeEh
+        B.N      ?Subroutine1
           CFI R4 Frame(CFA, -12)
           CFI R5 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+16
 //  750     }
 //  751 }
-??makeDirectory_1:
+??makeDirectory_0:
         POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock32
+          CFI EndBlock cfiBlock33
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock33 Using cfiCommon0
+          CFI Block cfiBlock34 Using cfiCommon0
+          CFI NoFunction
+        THUMB
+?Subroutine1:
+        MOVS     R1,#+10
+          CFI FunCall _ZN10CardReader9getStatusEv _ZN10USARTClass5writeEh
+          CFI FunCall _ZN10CardReader13makeDirectoryEPc _ZN10USARTClass5writeEh
+        B.W      _ZN10USARTClass5writeEh
+          CFI EndBlock cfiBlock34
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock35 Using cfiCommon0
           CFI Function _ZN10CardReader13get_file_listEPc
         THUMB
 //  752 void CardReader::get_file_list(char *path)
@@ -1908,42 +1938,42 @@ _ZN10CardReader13makeDirectoryEPc:
 //  754 	if( path == 0)
 _ZN10CardReader13get_file_listEPc:
         CMP      R1,#+0
-        BEQ.N    ??get_file_list_0
+        ITT      NE 
 //  755 	{
 //  756 		return;
 //  757 	}
 //  758 
 //  759 	Explore_Disk(path, 0);
-        MOVS     R2,#+0
+        MOVNE    R2,#+0
           CFI FunCall _ZN10CardReader12Explore_DiskEPch
-        B.N      _ZN10CardReader12Explore_DiskEPch
-??get_file_list_0:
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock33
+        BNE.W    _ZN10CardReader12Explore_DiskEPch
 //  760 	
 //  761 	
 //  762 }
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock35
 //  763 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock34 Using cfiCommon0
+          CFI Block cfiBlock36 Using cfiCommon0
           CFI Function _ZN10CardReader12Explore_DiskEPch
         THUMB
 //  764 uint8_t CardReader::Explore_Disk (char* path , uint8_t recu_level)
 //  765 {
 _ZN10CardReader12Explore_DiskEPch:
-        PUSH     {R4-R8,LR}
+        PUSH     {R2-R8,R10,R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+40
         SUB      SP,SP,#+984
-          CFI CFA R13+1008
+          CFI CFA R13+1024
         MOV      R4,R1
-        MOV      R5,R2
 //  766 
 //  767   FILINFO fno;
 //  768   DIR dir;
@@ -1953,25 +1983,24 @@ _ZN10CardReader12Explore_DiskEPch:
 //  772   char Fstream[200];
 //  773 	int local_offset;
 //  774 	int file_offset = 0;
-        MOVS     R7,#+0
 //  775 	FRESULT res;
 //  776 	
 //  777   #if _USE_LFN
 //  778     static TCHAR lfn[_MAX_LFN + 1];
 //  779     fno.lfname = lfn;
-        LDR.N    R1,??DataTable38_10
+        LDR.N    R1,??DataTable37_10
         STR      R1,[SP, #+24]
+        MOVS     R6,#+0
 //  780     fno.lfsize = sizeof(lfn);
         MOV      R1,#+256
         STR      R1,[SP, #+28]
 //  781 #endif
 //  782 
 //  783 	if(path == 0)
-        CMP      R4,#+0
-        BNE.N    ??Explore_Disk_0
+        CBNZ.N   R4,??Explore_Disk_0
 //  784 		return 0;
-        MOV      R0,R7
-        B.N      ??Explore_Disk_1
+        MOVS     R0,#+0
+        B.N      ?Subroutine2
 //  785 /*
 //  786 	if(path[0] == '0')               //skyblue 2016-12-13
 //  787 		f_mount(0, &fs);
@@ -1982,12 +2011,15 @@ _ZN10CardReader12Explore_DiskEPch:
 //  792 */	
 //  793         f_mount(&fs, (char *)path, 0);     //skyblue 2016-12-13
 ??Explore_Disk_0:
-        MOV      R2,R7
+        MOVS     R2,#+0
         MOV      R1,R4
         ADD      R0,R0,#+556
           CFI FunCall f_mount
         BL       f_mount
-        B.N      ??Explore_Disk_2
+        LDR.W    R10,??DataTable37_5
+        ADR.W    R11,`?<Constant ".GCO">`
+        ADR.W    R8,`?<Constant ".gco">`
+        B.N      ??Explore_Disk_1
 //  794         
 //  795 	for(;;)
 //  796 	{
@@ -2041,7 +2073,7 @@ _ZN10CardReader12Explore_DiskEPch:
 //  844 				      	
 //  845 						
 //  846 						strcat(Fstream, ".DIR\r\n");
-??Explore_Disk_3:
+??Explore_Disk_2:
         ADR.W    R1,`?<Constant ".DIR\\r\\n">`
           CFI FunCall strcat
         BL       strcat
@@ -2050,22 +2082,22 @@ _ZN10CardReader12Explore_DiskEPch:
 //  849                    	//Com::printF(Com::tSlash);
 //  850 					
 //  851 						SERIAL_PROTOCOL(Fstream);
+??Explore_Disk_3:
         ADD      R1,SP,#+32
-        LDR.N    R0,??DataTable38_9
+        MOV      R0,R10
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
 //  852 						//SERIAL_PROTOCOLLNPGM("/");
 //  853 
 //  854 
 //  855 				      }
-??Explore_Disk_2:
-        MOV      R8,#+0
+??Explore_Disk_1:
+        MOVS     R7,#+0
         MOV      R1,R4
         ADD      R0,SP,#+432
           CFI FunCall f_opendir
         BL       f_opendir
-        CMP      R0,#+0
-        BEQ.N    ??Explore_Disk_4
+        CBZ.N    R0,??Explore_Disk_4
 //  856 					  else
 //  857 					  {					
 //  858 						strcat(Fstream, "\r\n");
@@ -2088,86 +2120,74 @@ _ZN10CardReader12Explore_DiskEPch:
 //  875   	
 //  876 	}
 //  877  return res;
-        MOV      R0,R6
-        UXTB     R0,R0
-??Explore_Disk_1:
-        ADD      SP,SP,#+984
-          CFI CFA R13+24
-        POP      {R4-R8,PC}       ;; return
-          CFI CFA R13+1008
+        UXTB     R0,R5
 ??Explore_Disk_5:
-        ADD      R8,R8,#+1
+        B.N      ?Subroutine2
+??Explore_Disk_6:
+        ADDS     R7,R7,#+1
 ??Explore_Disk_4:
         ADD      R1,SP,#+0
         ADD      R0,SP,#+432
           CFI FunCall f_readdir
         BL       f_readdir
-        MOVS     R6,R0
-        BNE.N    ??Explore_Disk_1
+        MOVS     R5,R0
+        BNE.N    ??Explore_Disk_5
         LDRSB    R0,[SP, #+9]
         CMP      R0,#+0
-        BEQ.N    ??Explore_Disk_1
+        BEQ.N    ??Explore_Disk_5
         CMP      R0,#+46
         BEQ.N    ??Explore_Disk_4
-        CMP      R8,R7
-        BLT.N    ??Explore_Disk_5
-        ADDS     R7,R7,#+1
-        LDR      R8,[SP, #+24]
-        LDRSB    R0,[R8, #+0]
+        CMP      R7,R6
+        BLT.N    ??Explore_Disk_6
+        LDR      R7,[SP, #+24]
+        LDRSB    R0,[R7, #+0]
+        ADDS     R6,R6,#+1
         CMP      R0,#+0
-        BEQ.N    ??Explore_Disk_6
-        CMP      R8,#+0
-        BNE.N    ??Explore_Disk_7
-??Explore_Disk_6:
-        ADD      R8,SP,#+9
-??Explore_Disk_7:
-        ADR.W    R1,`?<Constant ".gco">`
-        MOV      R0,R8
-          CFI FunCall _Z6strstrPKcS0_
-        BL       _Z6strstrPKcS0_
-        CMP      R0,#+0
-        BNE.N    ??Explore_Disk_8
-        ADR.W    R1,`?<Constant ".GCO">`
-        MOV      R0,R8
-          CFI FunCall _Z6strstrPKcS0_
-        BL       _Z6strstrPKcS0_
-        CMP      R0,#+0
-        BNE.N    ??Explore_Disk_8
+        ITE      NE 
+        CMPNE    R7,#+0
+        ADDEQ    R7,SP,#+9
+        MOV      R1,R8
+        MOV      R0,R7
+          CFI FunCall __iar_Strstr
+        BL       __iar_Strstr
+        CBNZ.N   R0,??Explore_Disk_7
+        MOV      R1,R11
+        MOV      R0,R7
+          CFI FunCall __iar_Strstr
+        BL       __iar_Strstr
+        CBNZ.N   R0,??Explore_Disk_7
         LDRB     R0,[SP, #+8]
         LSLS     R0,R0,#+27
-        BPL.N    ??Explore_Disk_2
-??Explore_Disk_8:
+        BPL.N    ??Explore_Disk_1
+??Explore_Disk_7:
         MOVS     R0,#+0
         STRB     R0,[SP, #+232]
-        MOV      R1,R8
+        MOV      R1,R7
         ADD      R0,SP,#+232
           CFI FunCall strcat
         BL       strcat
-        MOVS     R2,#+200
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOVS     R1,#+200
         ADD      R0,SP,#+32
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
         ADD      R1,SP,#+232
         ADD      R0,SP,#+32
           CFI FunCall strcpy
         BL       strcpy
         LDRB     R1,[SP, #+8]
         LSLS     R1,R1,#+27
-        BPL.N    ??Explore_Disk_9
-        CMP      R5,#+11
-        BLT.N    ??Explore_Disk_3
-??Explore_Disk_9:
-        ADR.N    R1,??DataTable38  ;; 0x0D, 0x0A, 0x00, 0x00
+        BPL.N    ??Explore_Disk_8
+        LDRB     R1,[SP, #+984]
+        CMP      R1,#+11
+        BLT.N    ??Explore_Disk_2
+??Explore_Disk_8:
+        ADR.N    R1,??DataTable37  ;; 0x0D, 0x0A, 0x00, 0x00
         ADD      R0,SP,#+32
           CFI FunCall strcat
         BL       strcat
-        ADD      R1,SP,#+32
-        LDR.N    R0,??DataTable38_9
-          CFI FunCall _ZN5Print5printEPKc
-        BL       _ZN5Print5printEPKc
-        B.N      ??Explore_Disk_2
-          CFI EndBlock cfiBlock34
+        B.N      ??Explore_Disk_3
+          CFI EndBlock cfiBlock36
 //  878 }
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -2176,13 +2196,33 @@ _ZN10CardReader12Explore_DiskEPch:
 ??DataTable35:
         DC8      "/",0x0,0x0
 
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock37 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN10CardReader12Explore_DiskEPch
+          CFI CFA R13+1024
+          CFI R4 Frame(CFA, -32)
+          CFI R5 Frame(CFA, -28)
+          CFI R6 Frame(CFA, -24)
+          CFI R7 Frame(CFA, -20)
+          CFI R8 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine2:
+        ADD      SP,SP,#+992
+          CFI CFA R13+32
+        POP      {R4-R8,R10,R11,PC}  ;; return
+          CFI EndBlock cfiBlock37
+
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 ??lfn:
         DS8 256
 //  879 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock35 Using cfiCommon0
+          CFI Block cfiBlock38 Using cfiCommon0
           CFI Function _ZN10CardReader11ShowSDFilesEv
         THUMB
 //  880 void CardReader::ShowSDFiles(void)
@@ -2210,11 +2250,8 @@ _ZN10CardReader11ShowSDFilesEv:
 //  890   #if _USE_LFN
 //  891 		static TCHAR lfn[_MAX_LFN + 1];
 //  892 		fno.lfname = lfn;
-        LDR.N    R0,??DataTable38_11
-        STR      R0,[SP, #+24]
+        LDR.N    R0,??DataTable37_11
 //  893 		fno.lfsize = _MAX_LFN + 1;
-        MOV      R0,#+256
-        STR      R0,[SP, #+28]
 //  894 #endif
 //  895 	 
 //  896 	
@@ -2233,17 +2270,20 @@ _ZN10CardReader11ShowSDFilesEv:
 //  909          f_mount(&fs, (TCHAR const*)USBH_Path, 0);	
 //  910 #else//robin robin_mini robin_nano只有SD卡方式
 //  911      f_mount(&fs, (TCHAR const*)SD_Path, 0);
+        LDR.N    R1,??DataTable37_6
+        STR      R0,[SP, #+24]
         MOVS     R2,#+0
-        LDR.N    R1,??DataTable38_5
+        MOV      R0,#+256
+        STR      R0,[SP, #+28]
         ADD      R0,R4,#+556
           CFI FunCall f_mount
         BL       f_mount
 //  912 #endif
 //  913 
 //  914 	 if (f_opendir(&dir, gCurDir) == FR_OK) 
-        ADDW     R5,R4,#+2486
-        ADDW     R6,R4,#+1180
-        MOV      R1,R6
+        ADDW     R8,R4,#+1180
+        ADDW     R5,R4,#+1886
+        MOV      R1,R8
         ADD      R0,SP,#+232
           CFI FunCall f_opendir
         BL       f_opendir
@@ -2252,7 +2292,6 @@ _ZN10CardReader11ShowSDFilesEv:
 //  915 	  {
 //  916 		Sd_file_cnt = 0;
         ADDW     R7,R4,#+1172
-        MOVS     R0,#+0
         STR      R0,[R7, #+4]
 //  917 			gcodeFileList.listVaild= 2;
         MOVS     R0,#+2
@@ -2342,45 +2381,40 @@ _ZN10CardReader11ShowSDFilesEv:
         BEQ.N    ??ShowSDFiles_0
         CMP      R0,#+46
         BEQ.N    ??ShowSDFiles_1
-        LDR      R8,[SP, #+24]
-        LDRSB    R0,[R8, #+0]
+        LDR      R6,[SP, #+24]
+        LDRSB    R0,[R6, #+0]
         CMP      R0,#+0
-        BEQ.N    ??ShowSDFiles_3
-        CMP      R8,#+0
-        BNE.N    ??ShowSDFiles_4
-??ShowSDFiles_3:
-        ADD      R8,SP,#+9
-??ShowSDFiles_4:
+        ITE      NE 
+        CMPNE    R6,#+0
+        ADDEQ    R6,SP,#+9
         LDR      R0,[R7, #+4]
         LDR      R1,[R4, #+1172]
         CMP      R0,R1
         BNE.N    ??ShowSDFiles_2
+        MOV      R0,R6
         ADR.W    R1,`?<Constant ".gco">`
-        MOV      R0,R8
-          CFI FunCall _Z6strstrPcPKc
-        BL       _Z6strstrPcPKc
-        CMP      R0,#+0
-        BNE.N    ??ShowSDFiles_5
+          CFI FunCall __iar_Strstr
+        BL       __iar_Strstr
+        CBNZ.N   R0,??ShowSDFiles_3
         ADR.W    R1,`?<Constant ".GCO">`
-        MOV      R0,R8
-          CFI FunCall _Z6strstrPcPKc
-        BL       _Z6strstrPcPKc
-        CMP      R0,#+0
-        BNE.N    ??ShowSDFiles_5
+        MOV      R0,R6
+          CFI FunCall __iar_Strstr
+        BL       __iar_Strstr
+        CBNZ.N   R0,??ShowSDFiles_3
         LDRB     R0,[SP, #+8]
         LSLS     R0,R0,#+27
-        BPL.N    ??ShowSDFiles_6
-??ShowSDFiles_5:
+        BPL.N    ??ShowSDFiles_4
+??ShowSDFiles_3:
         MOVS     R0,#+0
         STRB     R0,[SP, #+32]
-        MOV      R1,R6
+        MOV      R1,R8
         ADD      R0,SP,#+32
           CFI FunCall strcpy
         BL       strcpy
-        ADR.N    R1,??DataTable38_1  ;; "/"
+        ADR.N    R1,??DataTable37_1  ;; "/"
           CFI FunCall strcat
         BL       strcat
-        MOV      R1,R8
+        MOV      R1,R6
         ADD      R0,SP,#+32
           CFI FunCall strcat
         BL       strcat
@@ -2389,27 +2423,22 @@ _ZN10CardReader11ShowSDFilesEv:
         LDRB     R0,[SP, #+8]
         AND      R0,R0,#0x10
         SUBS     R1,R0,#+1
+        LDRB     R0,[R4, #+1886]
         SBCS     R1,R1,R1
         MVNS     R1,R1
-        LSRS     R1,R1,#+31
-        LDRB     R0,[R4, #+2486]
         ADDS     R0,R0,R4
-        STRB     R1,[R0, #+2480]
+        LSRS     R1,R1,#+31
+        STRB     R1,[R0, #+1880]
         ADD      R1,SP,#+32
-        LDRB     R0,[R4, #+2486]
-        MOVS     R2,#+200
+        LDRB     R0,[R4, #+1886]
+        MOVS     R2,#+100
         MLA      R0,R2,R0,R4
         ADD      R0,R0,#+1280
           CFI FunCall strcpy
         BL       strcpy
-        LDRB     R0,[R4, #+2486]
+        LDRB     R0,[R4, #+1886]
         ADDS     R0,R0,#+1
-        STRB     R0,[R4, #+2486]
-        B.N      ??ShowSDFiles_7
-??ShowSDFiles_6:
-        MOVS     R0,#+0
-        STRB     R0,[R5, #+1]
-        B.N      ??ShowSDFiles_7
+        STRB     R0,[R4, #+1886]
 //  987 			
 //  988 			 
 //  989 		}
@@ -2446,16 +2475,37 @@ _ZN10CardReader11ShowSDFilesEv:
 // 1020 	 }
 // 1021 	 else
 // 1022 		 gcodeFileList.listVaild= 2;
-??ShowSDFiles_0:
-        MOVS     R0,#+2
-        STRB     R0,[R5, #+1]
 // 1023 	 
 // 1024 	}
-??ShowSDFiles_7:
+        B.N      ?Subroutine3
+??ShowSDFiles_4:
+        MOVS     R0,#+0
+        B.N      ??ShowSDFiles_5
+??ShowSDFiles_0:
+        MOVS     R0,#+2
+??ShowSDFiles_5:
+        STRB     R0,[R5, #+1]
+          CFI EndBlock cfiBlock38
+        REQUIRE ?Subroutine3
+        ;; // Fall through to label ?Subroutine3
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock39 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN10CardReader11ShowSDFilesEv
+          CFI CFA R13+808
+          CFI R4 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine3:
         ADD      SP,SP,#+784
           CFI CFA R13+24
         POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock35
+          CFI EndBlock cfiBlock39
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 ??lfn_1:
@@ -2463,7 +2513,7 @@ _ZN10CardReader11ShowSDFilesEv:
 // 1025 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock36 Using cfiCommon0
+          CFI Block cfiBlock40 Using cfiCommon0
           CFI Function _ZN10CardReader9ascii2decEPcc
           CFI NoCalls
         THUMB
@@ -2478,11 +2528,10 @@ _ZN10CardReader9ascii2decEPcc:
 // 1028 	int i = 0;
         MOVS     R3,#+0
 // 1029 	int result = 0;
-        MOV      R0,R3
+        MOVS     R0,#+0
 // 1030 
 // 1031 	if(ascii == 0)
-        CMP      R1,#+0
-        BNE.N    ??ascii2dec_0
+        CBNZ.N   R1,??ascii2dec_0
 // 1032 		return 0;
 // 1033 	
 // 1034 	while(i < width)
@@ -2497,53 +2546,59 @@ _ZN10CardReader9ascii2decEPcc:
 // 1043 			result += *(ascii + i) - 'A' + 0x0a;
 // 1044 		else
 // 1045 			return 0;
-??ascii2dec_1:
-        MOVS     R0,#+0
-        B.N      ??ascii2dec_2
-??ascii2dec_3:
-        SUBS     R4,R4,#+48
-        ADDS     R0,R4,R0, LSL #+4
 // 1046 		
 // 1047 		i++;
-??ascii2dec_4:
+// 1048 	}
+// 1049 	return result;
+??ascii2dec_1:
+        POP      {R4-R6}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI CFA R13+0
+        MOVS     R0,#+0
+        BX       LR
+          CFI R4 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -4)
+          CFI CFA R13+12
+??ascii2dec_2:
+        SUBS     R4,R4,#+48
+??ascii2dec_3:
+        ADD      R0,R4,R0, LSL #+4
         ADDS     R3,R3,#+1
 ??ascii2dec_0:
         CMP      R3,R2
-        BGE.N    ??ascii2dec_2
+        BGE.N    ??ascii2dec_4
         LDRSB    R4,[R3, R1]
-        MOV      R5,R4
-        SUB      R6,R5,#+48
+        SUB      R6,R4,#+48
         CMP      R6,#+10
-        BCC.N    ??ascii2dec_3
-        SUB      R6,R5,#+97
+        BCC.N    ??ascii2dec_2
+        SUB      R6,R4,#+97
         CMP      R6,#+6
-        BCS.N    ??ascii2dec_5
-        SUBS     R4,R4,#+87
-        ADDS     R0,R4,R0, LSL #+4
-        B.N      ??ascii2dec_4
-??ascii2dec_5:
-        SUBS     R5,R5,#+65
+        IT       CC 
+        SUBCC    R4,R4,#+87
+        BCC.N    ??ascii2dec_3
+        SUB      R5,R4,#+65
         CMP      R5,#+6
-        BCS.N    ??ascii2dec_1
-        SUBS     R4,R4,#+55
-        ADDS     R0,R4,R0, LSL #+4
-        B.N      ??ascii2dec_4
-// 1048 	}
-// 1049 	return result;
-??ascii2dec_2:
+        IT       CC 
+        SUBCC    R4,R4,#+55
+        BCC.N    ??ascii2dec_3
+        B.N      ??ascii2dec_1
+??ascii2dec_4:
         POP      {R4-R6}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI CFA R13+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock36
+          CFI EndBlock cfiBlock40
 // 1050 }
 // 1051 
 // 1052 /*---------------------------------mks add begin-------------------------------------*/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock37 Using cfiCommon0
+          CFI Block cfiBlock41 Using cfiCommon0
           CFI Function _ZN10CardReader8getsdposEv
           CFI NoCalls
         THUMB
@@ -2554,11 +2609,11 @@ _ZN10CardReader9ascii2decEPcc:
 _ZN10CardReader8getsdposEv:
         LDR      R0,[R0, #+1120]
         BX       LR               ;; return
-          CFI EndBlock cfiBlock37
+          CFI EndBlock cfiBlock41
 // 1057 }
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock38 Using cfiCommon0
+          CFI Block cfiBlock42 Using cfiCommon0
           CFI Function _ZN10CardReader19printingHasFinishedEv
         THUMB
 // 1058 void CardReader::printingHasFinished()
@@ -2579,7 +2634,7 @@ _ZN10CardReader19printingHasFinishedEv:
 // 1062 
 // 1063     sdprinting = false;
         MOVS     R0,#+0
-        STRB     R0,[R4, #+2488]
+        STRB     R0,[R4, #+1888]
 // 1064 	sdmode = 0;
         STRB     R0,[R4, #+1132]
 // 1065     if (SD_FINISHED_STEPPERRELEASE)
@@ -2588,7 +2643,7 @@ _ZN10CardReader19printingHasFinishedEv:
           CFI FunCall _Z27enqueue_and_echo_commands_PPKc
         BL       _Z27enqueue_and_echo_commands_PPKc
 // 1067     print_job_timer.stop();
-        LDR.N    R4,??DataTable38_12
+        LDR.N    R4,??DataTable37_12
         MOV      R0,R4
           CFI FunCall _ZN9Stopwatch4stopEv
         BL       _ZN9Stopwatch4stopEv
@@ -2599,11 +2654,11 @@ _ZN10CardReader19printingHasFinishedEv:
         CMP      R0,#+61
         BCC.N    ??printingHasFinished_0
 // 1069       enqueue_and_echo_commands_P(PSTR("M31"));
-        ADR.N    R0,??DataTable38_2  ;; "M31"
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        ADR.N    R0,??DataTable37_2  ;; "M31"
           CFI FunCall _Z27enqueue_and_echo_commands_PPKc
         B.W      _Z27enqueue_and_echo_commands_PPKc
           CFI R4 Frame(CFA, -8)
@@ -2612,12 +2667,12 @@ _ZN10CardReader19printingHasFinishedEv:
 // 1070 }
 ??printingHasFinished_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock38
+          CFI EndBlock cfiBlock42
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable37:
+??DataTable36:
         DC8      0x2E, 0x0A, 0x00, 0x00
 // 1071 
 // 1072 
@@ -2627,7 +2682,7 @@ _ZN10CardReader19printingHasFinishedEv:
 // 1076 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock39 Using cfiCommon0
+          CFI Block cfiBlock43 Using cfiCommon0
           CFI Function _ZN10CardReader9closefileEb
         THUMB
 // 1077 void CardReader::closefile(bool store_location)
@@ -2643,17 +2698,17 @@ _ZN10CardReader9closefileEb:
         BL       f_close
 // 1080   saving = false;  
         MOVS     R0,#+0
-        STRB     R0,[R4, #+2489]
+        STRB     R0,[R4, #+1889]
 // 1081   logging = false;
-        STRB     R0,[R4, #+2490]
+        STRB     R0,[R4, #+1890]
 // 1082   
 // 1083 }
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock39
+          CFI EndBlock cfiBlock43
 // 1084 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock40 Using cfiCommon0
+          CFI Block cfiBlock44 Using cfiCommon0
           CFI Function _ZN10CardReader11openLogFileEPc
         THUMB
 // 1085 void CardReader::openLogFile(char* name)
@@ -2661,17 +2716,17 @@ _ZN10CardReader9closefileEb:
 // 1087   logging = true;
 _ZN10CardReader11openLogFileEPc:
         MOVS     R2,#+1
-        STRB     R2,[R0, #+2490]
+        STRB     R2,[R0, #+1890]
 // 1088   openFile(name, false);
-        MOV      R3,R2
+        MOVS     R3,#+1
         MOVS     R2,#+0
           CFI FunCall _ZN10CardReader8openFileEPcbb
         B.N      _ZN10CardReader8openFileEPcbb
-          CFI EndBlock cfiBlock40
+          CFI EndBlock cfiBlock44
 // 1089 }
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock41 Using cfiCommon0
+          CFI Block cfiBlock45 Using cfiCommon0
           CFI Function _ZN10CardReader13write_commandEPc
         THUMB
 _ZN10CardReader13write_commandEPc:
@@ -2685,147 +2740,163 @@ _ZN10CardReader13write_commandEPc:
         SUB      SP,SP,#+12
           CFI CFA R13+32
         MOV      R4,R0
-        MOV      R5,R1
         MOVS     R0,#+0
         STR      R0,[SP, #+4]
+        MOV      R5,R1
         MOV      R0,R5
           CFI FunCall strlen
         BL       strlen
         ADDS     R0,R0,R5
         SUBS     R6,R0,#+1
-        MOVS     R2,#+1
-        MOVS     R1,#+0
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
-        MOVS     R1,#+78
+        MOVS     R1,#+0
+        STRB     R1,[R0, #+0]
         MOV      R0,R5
-          CFI FunCall _Z6strchrPci
-        BL       _Z6strchrPci
+        MOVS     R1,#+78
+          CFI FunCall __iar_Strchr
+        BL       __iar_Strchr
         MOVS     R7,R0
         BEQ.N    ??write_command_0
         MOVS     R1,#+32
-          CFI FunCall _Z6strchrPci
-        BL       _Z6strchrPci
+          CFI FunCall __iar_Strchr
+        BL       __iar_Strchr
         ADDS     R5,R0,#+1
         MOVS     R1,#+42
         MOV      R0,R7
-          CFI FunCall _Z6strchrPci
-        BL       _Z6strchrPci
+          CFI FunCall __iar_Strchr
+        BL       __iar_Strchr
         SUBS     R6,R0,#+1
 ??write_command_0:
         MOVS     R0,#+13
         STRB     R0,[R6, #+1]
+        ADD      R3,SP,#+4
         MOVS     R0,#+10
         STRB     R0,[R6, #+2]
+        MOV      R1,R5
         ADDS     R0,R6,#+2
         SUBS     R0,R0,R5
         ADDS     R6,R0,#+1
-        ADD      R3,SP,#+4
         MOV      R2,R6
-        MOV      R1,R5
         MOV      R0,R4
           CFI FunCall f_write
         BL       f_write
         STRB     R0,[SP, #+0]
         CMP      R0,#+0
-        BNE.N    ??write_command_1
-        LDR      R0,[SP, #+4]
-        CMP      R0,R6
-        BEQ.N    ??write_command_2
-??write_command_1:
-        LDR.N    R0,??DataTable38_13
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        ADR.W    R0,`?<Constant "error writing to file\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        ITT      EQ 
+        LDREQ    R0,[SP, #+4]
+        CMPEQ    R0,R6
+        BEQ.N    ??write_command_1
+        LDR.N    R4,??DataTable37_13
+        LDR.N    R5,??DataTable37_5
+        B.N      ??write_command_2
+??write_command_3:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 ??write_command_2:
-        POP      {R0-R2,R4-R7,PC}  ;; return
-          CFI EndBlock cfiBlock41
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??write_command_3
+        ADR.W    R4,`?<Constant "error writing to file\\n">`
+        B.N      ??write_command_4
+??write_command_5:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??write_command_4:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??write_command_5
+??write_command_1:
+        ADD      SP,SP,#+12
+          CFI CFA R13+20
+        POP      {R4-R7,PC}       ;; return
+          CFI EndBlock cfiBlock45
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38:
+??DataTable37:
         DC8      0x0D, 0x0A, 0x00, 0x00
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_1:
+??DataTable37_1:
         DC8      "/",0x0,0x0
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_2:
+??DataTable37_2:
         DC8      "M31"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_3:
+??DataTable37_3:
         DC32     0x42228130
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_4:
+??DataTable37_4:
         DC32     echomagic
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_5:
-        DC32     SD_Path
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable38_6:
-        DC32     mksReprint
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable38_7:
-        DC32     gCfgItems
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable38_8:
-        DC32     card
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable38_9:
+??DataTable37_5:
         DC32     Serial3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_10:
+??DataTable37_6:
+        DC32     SD_Path
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable37_7:
+        DC32     mksReprint
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable37_8:
+        DC32     gCfgItems
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable37_9:
+        DC32     card
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable37_10:
         DC32     ??lfn
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_11:
+??DataTable37_11:
         DC32     ??lfn_1
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_12:
+??DataTable37_12:
         DC32     print_job_timer
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable38_13:
+??DataTable37_13:
         DC32     errormagic
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -2955,98 +3026,36 @@ _ZN10CardReader13write_commandEPc:
         DC8 ".DIR\015\012"
         DC8 0
 
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _Z6strstrPKcS0_
-          CFI Block cfiBlock42 Using cfiCommon0
-          CFI Function _Z6strstrPKcS0_
-          CFI FunCall __iar_Strstr
-        THUMB
-// __intrinsic __nounwind __interwork __softfp char const *strstr(char const *, char const *)
-_Z6strstrPKcS0_:
-        B.W      __iar_Strstr
-          CFI EndBlock cfiBlock42
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _Z6strchrPci
-          CFI Block cfiBlock43 Using cfiCommon0
-          CFI Function _Z6strchrPci
-          CFI FunCall __iar_Strchr
-        THUMB
-// __intrinsic __nounwind __interwork __softfp char *strchr(char *, int)
-_Z6strchrPci:
-        B.W      __iar_Strchr
-          CFI EndBlock cfiBlock43
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _Z6strstrPcPKc
-          CFI Block cfiBlock44 Using cfiCommon0
-          CFI Function _Z6strstrPcPKc
-          CFI FunCall __iar_Strstr
-        THUMB
-// __intrinsic __nounwind __interwork __softfp char *strstr(char *, char const *)
-_Z6strstrPcPKc:
-        B.W      __iar_Strstr
-          CFI EndBlock cfiBlock44
-
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock45 Using cfiCommon0
+          CFI Block cfiBlock46 Using cfiCommon0
           CFI Function _Z14serialprintPGMPKc
         THUMB
 // __interwork __softfp void serialprintPGM(char const *)
 _Z14serialprintPGMPKc:
-        PUSH     {R4,LR}
+        PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
         MOV      R4,R0
-        B.N      ??serialprintPGM_0
-??serialprintPGM_1:
+        LDR.N    R5,??serialprintPGM_0
+        B.N      ??serialprintPGM_1
+??serialprintPGM_2:
         UXTB     R1,R1
-        LDR.N    R0,??serialprintPGM_2
+        MOV      R0,R5
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-??serialprintPGM_0:
+??serialprintPGM_1:
         LDRSB    R1,[R4], #+1
         MOVS     R0,R1
-        BNE.N    ??serialprintPGM_1
-        POP      {R4,PC}          ;; return
+        BNE.N    ??serialprintPGM_2
+        POP      {R0,R4,R5,PC}    ;; return
+        Nop      
         DATA
-??serialprintPGM_2:
+??serialprintPGM_0:
         DC32     Serial3
-          CFI EndBlock cfiBlock45
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN10SdBaseFileC1Ev
-          CFI Block cfiBlock46 Using cfiCommon0
-          CFI Function _ZN10SdBaseFileC1Ev
-          CFI NoCalls
-        THUMB
-// __code __interwork __softfp SdBaseFile::SdBaseFile()
-_ZN10SdBaseFileC1Ev:
-        MOVS     R1,#+0
-        STRB     R1,[R0, #+0]
-        STRB     R1,[R0, #+3]
-        BX       LR               ;; return
           CFI EndBlock cfiBlock46
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN10CardReader10isFileOpenEv
-          CFI Block cfiBlock47 Using cfiCommon0
-          CFI Function _ZN10CardReader10isFileOpenEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp bool CardReader::isFileOpen()
-_ZN10CardReader10isFileOpenEv:
-        LDR      R0,[R0, #+512]
-        CMP      R0,#+0
-        BEQ.N    ??isFileOpen_0
-        MOVS     R0,#+1
-        BX       LR
-??isFileOpen_0:
-        MOVS     R0,#+0
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock47
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -3079,10 +3088,7 @@ _ZTI5Print:
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
         SECTION `.rodata`:CONST:NOROOT(1)
         DATA
@@ -3743,11 +3749,11 @@ _ZTI5Print:
 // 1728 #endif // SDSUPPORT
 // 
 //   512 bytes in section .bss
-//   167 bytes in section .rodata
-// 2 570 bytes in section .text
+//   115 bytes in section .rodata
+// 2 628 bytes in section .text
 // 
-// 2 506 bytes of CODE  memory (+ 64 bytes shared)
-//   166 bytes of CONST memory (+  1 byte  shared)
+// 2 596 bytes of CODE  memory (+ 32 bytes shared)
+//   114 bytes of CONST memory (+  1 byte  shared)
 //   512 bytes of DATA  memory
 //
 //Errors: none

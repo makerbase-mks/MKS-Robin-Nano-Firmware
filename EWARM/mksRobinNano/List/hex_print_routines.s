@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:31
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:51
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\hex_print_routines.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\hex_print_routines.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -122,7 +119,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -161,12 +158,9 @@
 _Z10hex_nybbleh:
         AND      R1,R0,#0xF
         CMP      R1,#+10
-        BGE.N    ??hex_nybble_0
-        MOVS     R1,#+48
-        B.N      ??hex_nybble_1
-??hex_nybble_0:
-        MOVS     R1,#+55
-??hex_nybble_1:
+        ITE      LT 
+        MOVLT    R1,#+48
+        MOVGE    R1,#+55
         AND      R0,R0,#0xF
         ADDS     R0,R1,R0
         BX       LR               ;; return
@@ -184,29 +178,31 @@ _hex:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _Z8hex_byteh
+          CFI NoCalls
         THUMB
 //   31 char* hex_byte(const uint8_t b) {
-_Z8hex_byteh:
-        PUSH     {R3-R5,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        MOV      R4,R0
 //   32   _hex[4] = hex_nybble(b >> 4);
-        LDR.N    R5,??DataTable5
-        LSRS     R0,R4,#+4
-          CFI FunCall _Z10hex_nybbleh
-        BL       _Z10hex_nybbleh
-        STRB     R0,[R5, #+4]
+_Z8hex_byteh:
+        LSRS     R1,R0,#+4
+        CMP      R1,#+10
+        ITE      LT 
+        MOVLT    R2,#+48
+        MOVGE    R2,#+55
+        LDR.N    R3,??DataTable4
+        ADDS     R1,R2,R1
+        STRB     R1,[R3, #+4]
 //   33   _hex[5] = hex_nybble(b);
-        MOV      R0,R4
-          CFI FunCall _Z10hex_nybbleh
-        BL       _Z10hex_nybbleh
-        STRB     R0,[R5, #+5]
+        AND      R1,R0,#0xF
+        CMP      R1,#+10
+        ITE      LT 
+        MOVLT    R1,#+48
+        MOVGE    R1,#+55
+        AND      R0,R0,#0xF
+        ADDS     R0,R1,R0
+        STRB     R0,[R3, #+5]
 //   34   return &_hex[4];
-        ADDS     R0,R5,#+4
-        POP      {R1,R4,R5,PC}    ;; return
+        ADDS     R0,R3,#+4
+        BX       LR               ;; return
           CFI EndBlock cfiBlock1
 //   35 }
 //   36 
@@ -222,32 +218,38 @@ _Z8hex_wordt:
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-        MOV      R4,R0
+        MOV      R5,R0
 //   38   _hex[2] = hex_nybble(w >> 12);
-        LDR.N    R5,??DataTable5
-        LSRS     R0,R4,#+12
+        LDR.N    R4,??DataTable4
+        LSRS     R0,R5,#+12
           CFI FunCall _Z10hex_nybbleh
         BL       _Z10hex_nybbleh
-        STRB     R0,[R5, #+2]
+        STRB     R0,[R4, #+2]
 //   39   _hex[3] = hex_nybble(w >> 8);
-        LSRS     R0,R4,#+8
+        LSRS     R0,R5,#+8
           CFI FunCall _Z10hex_nybbleh
         BL       _Z10hex_nybbleh
-        STRB     R0,[R5, #+3]
+        STRB     R0,[R4, #+3]
 //   40   _hex[4] = hex_nybble(w >> 4);
-        LSRS     R0,R4,#+4
-        UXTB     R0,R0
-          CFI FunCall _Z10hex_nybbleh
-        BL       _Z10hex_nybbleh
-        STRB     R0,[R5, #+4]
+        LSLS     R0,R5,#+24
+        LSRS     R0,R0,#+28
+        CMP      R0,#+10
+        ITE      LT 
+        MOVLT    R1,#+48
+        MOVGE    R1,#+55
+        ADDS     R0,R1,R0
+        STRB     R0,[R4, #+4]
 //   41   _hex[5] = hex_nybble(w);
-        MOV      R0,R4
-        UXTB     R0,R0
-          CFI FunCall _Z10hex_nybbleh
-        BL       _Z10hex_nybbleh
-        STRB     R0,[R5, #+5]
+        AND      R0,R5,#0xF
+        CMP      R0,#+10
+        ITE      LT 
+        MOVLT    R0,#+48
+        MOVGE    R0,#+55
+        AND      R1,R5,#0xF
+        ADDS     R0,R0,R1
+        STRB     R0,[R4, #+5]
 //   42   return &_hex[2];
-        ADDS     R0,R5,#+2
+        ADDS     R0,R4,#+2
         POP      {R1,R4,R5,PC}    ;; return
           CFI EndBlock cfiBlock2
 //   43 }
@@ -266,7 +268,7 @@ _Z11hex_addresst:
           CFI FunCall _Z8hex_wordt
         BL       _Z8hex_wordt
 //   47   return _hex;
-        LDR.N    R0,??DataTable5
+        LDR.N    R0,??DataTable4
         POP      {R1,PC}          ;; return
           CFI EndBlock cfiBlock3
 //   48 }
@@ -278,17 +280,15 @@ _Z11hex_addresst:
         THUMB
 //   50 void print_hex_nybble(const uint8_t n)       { SERIAL_CHAR(hex_nybble(n));  }
 _Z16print_hex_nybbleh:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-          CFI FunCall _Z10hex_nybbleh
-        BL       _Z10hex_nybbleh
-        MOV      R1,R0
+        AND      R1,R0,#0xF
+        CMP      R1,#+10
+        ITE      LT 
+        MOVLT    R1,#+48
+        MOVGE    R1,#+55
+        AND      R0,R0,#0xF
+        ADDS     R1,R1,R0
         UXTB     R1,R1
-        LDR.N    R0,??DataTable5_1
-        POP      {R2,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
+        LDR.N    R0,??DataTable4_1
           CFI FunCall _ZN10USARTClass5writeEh
         B.W      _ZN10USARTClass5writeEh
           CFI EndBlock cfiBlock4
@@ -304,13 +304,7 @@ _Z14print_hex_byteh:
           CFI CFA R13+8
           CFI FunCall _Z8hex_byteh
         BL       _Z8hex_byteh
-        MOV      R1,R0
-        LDR.N    R0,??DataTable5_1
-        POP      {R2,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN5Print5printEPKc
-        B.W      _ZN5Print5printEPKc
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock5
 
         SECTION `.text`:CODE:NOROOT(1)
@@ -324,25 +318,37 @@ _Z14print_hex_wordt:
           CFI CFA R13+8
           CFI FunCall _Z8hex_wordt
         BL       _Z8hex_wordt
-        MOV      R1,R0
-        LDR.N    R0,??DataTable5_1
-        POP      {R2,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN5Print5printEPKc
-        B.W      _ZN5Print5printEPKc
           CFI EndBlock cfiBlock6
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock7 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+8
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
+        POP      {R2,LR}
+          CFI CFA R13+0
+          CFI R14 SameValue
+        MOV      R1,R0
+        LDR.N    R0,??DataTable4_1
+          CFI FunCall _Z14print_hex_byteh _ZN5Print5printEPKc
+          CFI FunCall _Z14print_hex_wordt _ZN5Print5printEPKc
+        B.W      _ZN5Print5printEPKc
+          CFI EndBlock cfiBlock7
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable5:
+??DataTable4:
         DC32     _hex
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable5_1:
+??DataTable4_1:
         DC32     Serial3
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
@@ -370,9 +376,9 @@ _ZTI5Print:
 // 
 //   8 bytes in section .data
 //   1 byte  in section .rodata
-// 168 bytes in section .text
+// 192 bytes in section .text
 // 
-// 146 bytes of CODE  memory (+ 22 bytes shared)
+// 172 bytes of CODE  memory (+ 20 bytes shared)
 //   0 bytes of CONST memory (+  1 byte  shared)
 //   8 bytes of DATA  memory
 //

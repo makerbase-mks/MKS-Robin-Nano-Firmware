@@ -51,7 +51,7 @@ static void cbHomeDirWin(WM_MESSAGE * pMsg) {
                     {
                         mksCfg.x_home_dir=-1;
 			    home_dir_P[0] = -1;
-                        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_home_min.bin",1); 
+                        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_disable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(XHomeDir.btnHandle, machine_menu.min);    
                     }
@@ -59,7 +59,7 @@ static void cbHomeDirWin(WM_MESSAGE * pMsg) {
                     {
                         mksCfg.x_home_dir=1;
 			   home_dir_P[0] = 1;
-                        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_home_max.bin",1); 
+                        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)    
                             BUTTON_SetText(XHomeDir.btnHandle, machine_menu.max);
                     }
@@ -71,7 +71,7 @@ static void cbHomeDirWin(WM_MESSAGE * pMsg) {
                     {
                         mksCfg.y_home_dir=-1;
 			   home_dir_P[1] = -1;
-                        BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_home_min.bin",1); 
+                        BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_disable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(YHomeDir.btnHandle, machine_menu.min);
                     }
@@ -79,7 +79,7 @@ static void cbHomeDirWin(WM_MESSAGE * pMsg) {
                     {
                         mksCfg.y_home_dir=1;
 			   home_dir_P[1] = 1;
-                        BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_home_max.bin",1);
+                        BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_enable.bin",1);
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(YHomeDir.btnHandle, machine_menu.max);
                     }	
@@ -91,7 +91,7 @@ static void cbHomeDirWin(WM_MESSAGE * pMsg) {
                     {
                         mksCfg.z_home_dir=-1;
 			   home_dir_P[2] = -1;
-                        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_home_min.bin",1);
+                        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_disable.bin",1);
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(ZHomeDir.btnHandle, machine_menu.min);
                     }
@@ -99,7 +99,7 @@ static void cbHomeDirWin(WM_MESSAGE * pMsg) {
                     {
                         mksCfg.z_home_dir=1;
 			   home_dir_P[2] = 1;
-                        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_home_max.bin",1); 
+                        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(ZHomeDir.btnHandle, machine_menu.max);
                     }
@@ -144,29 +144,29 @@ void draw_HomeDir()
 
     if(mksCfg.x_home_dir==1)
     {
-        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_home_max.bin",1); 
+        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_enable.bin",1); 
     }
     else
     {
-        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_home_min.bin",1); 
+        BUTTON_SetBmpFileName(XHomeDir.btnHandle, "bmp_disable.bin",1); 
     }
     
     if(mksCfg.y_home_dir==1)
     {
-        BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_home_max.bin",1);
+        BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_enable.bin",1);
     }
     else
     {
-         BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_home_min.bin",1);
+         BUTTON_SetBmpFileName(YHomeDir.btnHandle, "bmp_disable.bin",1);
     }
     
     if(mksCfg.z_home_dir==1)
     {
-        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_home_max.bin",1);
+        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_enable.bin",1);
     }
     else
     {
-        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_home_min.bin",1);
+        BUTTON_SetBmpFileName(ZHomeDir.btnHandle, "bmp_disable.bin",1);
     }
    
     BUTTON_SetBmpFileName(XHomeDir_Text.btnHandle,NULL,1);        

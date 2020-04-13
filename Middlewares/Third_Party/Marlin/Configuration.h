@@ -1325,20 +1325,24 @@
 // - Prevent Z homing when the Z probe is outside bed area.
 //
 //#define Z_SAFE_HOMING
-
-#if ENABLED(Z_SAFE_HOMING)
+#define Z_SAFE_HOMING mksCfg.z_save_homing
+//#if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axes (G28).
   #define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE) / 2)    // Y point for Z homing when homing all axes (G28).
-#endif
+//#endif
 
 #if USE_MKS_CONFIGURATION
 #define HOMING_FEEDRATE_XY mksCfg.homing_feedrate_xy		/*--mks cfg--*/
 #define HOMING_FEEDRATE_Z  mksCfg.homing_feedrate_z		/*--mks cfg--*/
+
+
 #else
 
 // Homing speeds (mm/m)
 #define HOMING_FEEDRATE_XY (50*60)
 #define HOMING_FEEDRATE_Z  (4*60)
+
+
 #endif
 // @section calibrate
 
@@ -2069,3 +2073,6 @@
 //#define DEACTIVATE_SERVOS_AFTER_MOVE
 
 #endif // CONFIGURATION_H
+
+
+

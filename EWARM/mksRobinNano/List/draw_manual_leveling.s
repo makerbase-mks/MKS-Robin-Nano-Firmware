@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:12
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:20
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_manual_leveling.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_manual_leveling.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_manual_leveling.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_manual_leveling.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\draw_manual_leveling.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_manual_leveling.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -87,10 +84,8 @@
         EXTERN BMP_PIC_Y
         EXTERN BUTTON_CreateEx
         EXTERN BUTTON_SetBitmapEx
-        EXTERN BUTTON_SetBkColor
         EXTERN BUTTON_SetBmpFileName
         EXTERN BUTTON_SetText
-        EXTERN BUTTON_SetTextColor
         EXTERN GUI_Clear
         EXTERN GUI_DispStringAt
         EXTERN GUI_DrawRect
@@ -101,7 +96,7 @@
         EXTERN WM_CreateWindow
         EXTERN WM_DeleteWindow
         EXTERN WM_IsWindow
-        EXTERN __aeabi_memclr4
+        EXTERN __aeabi_memset4
         EXTERN alloc_win_id
         EXTERN bmp_struct
         EXTERN common_menu
@@ -111,7 +106,6 @@
         EXTERN draw_return_ui
         EXTERN gCfgItems
         EXTERN leveling_menu
-        EXTERN memset
         EXTERN mks_manual_leveling
         EXTERN sprintf
 
@@ -152,7 +146,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_manual_leveling.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_manual_leveling.cpp
 //    1 #include "gui.h"
 //    2 #include "button.h"
 //    3 #include "text.h"
@@ -223,45 +217,49 @@ leveling_start_flg:
 //   33 void level_coordinates(uint8_t x)
 //   34 {
 _Z17level_coordinatesh:
-        PUSH     {R4-R6,LR}
+        PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
         SUB      SP,SP,#+24
-          CFI CFA R13+40
-        MOV      R5,R0
+          CFI CFA R13+48
 //   35 	uint8_t level_point_buf[20]={0};
-        ADD      R0,SP,#+0
-        MOVS     R1,#+20
-          CFI FunCall __aeabi_memclr4
-        BL       __aeabi_memclr4
+        ADD      R1,SP,#+0
+        MOVS     R2,#+0
+        MOVS     R3,#+0
+        MOV      R4,R2
+        STM      R1!,{R2-R4}
+        STM      R1!,{R2,R3}
 //   36 	switch(x)
-        LDR.W    R4,??DataTable12
-        CMP      R5,#+5
+        LDR.W    R4,??DataTable11
+        CMP      R0,#+5
         BHI.W    ??level_coordinates_1
-        TBH      [PC, R5, LSL #+1]
+        TBH      [PC, R0, LSL #+1]
         DATA
 ??level_coordinates_0:
-        DC16     0x6,0x6E,0xDD,0x14C
-        DC16     0x1BB,0x22A
+        DC16     0x6,0x59,0xB4,0x10E
+        DC16     0x167,0x1D7
         THUMB
 //   37 	{
 //   38 	case 0:
 //   39 		memset(level_point_buf,0,sizeof(level_point_buf));
 ??level_coordinates_2:
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R5,#+20
+        MOVS     R6,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   40 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
-        ADDW     R5,R4,#+254
-        LDRSH    R3,[R5, #+2]
-        ADR.W    R6,`?<Constant "[%3d,%3d]">`
-        LDRSH    R2,[R4, #+254]
-        MOV      R1,R6
+        ADDW     R7,R4,#+270
+        ADR.W    R8,`?<Constant "[%3d,%3d]">`
+        LDRSH    R3,[R7, #+2]
+        LDRSH    R2,[R4, #+270]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -272,15 +270,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   42 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   43 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
-        LDRSH    R3,[R5, #+6]
-        LDRSH    R2,[R5, #+4]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+6]
+        LDRSH    R2,[R7, #+4]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -291,15 +289,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   45 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   46 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
-        LDRSH    R3,[R5, #+10]
-        LDRSH    R2,[R5, #+8]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+10]
+        LDRSH    R2,[R7, #+8]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -310,20 +308,20 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   48 		if(gCfgItems.leveling_point_number>3)
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+4
-        BLT.N    ??level_coordinates_3
+        BLT.W    ??level_coordinates_3
 //   49 		{
 //   50 			memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   51 			sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
-        LDRSH    R3,[R5, #+14]
-        LDRSH    R2,[R5, #+12]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+14]
+        LDRSH    R2,[R7, #+12]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -335,31 +333,11 @@ _Z17level_coordinatesh:
         BL       GUI_DispStringAt
 //   53 		}
 //   54 		if(gCfgItems.leveling_point_number>4)
-??level_coordinates_3:
-        LDRB     R0,[R4, #+253]
-        CMP      R0,#+5
-        BLT.W    ??level_coordinates_1
+        B.N      ??level_coordinates_3
 //   55 		{
 //   56 			memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
-        ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
 //   57 			sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
-        LDRSH    R3,[R5, #+18]
-        LDRSH    R2,[R5, #+16]
-        MOV      R1,R6
-        ADD      R0,SP,#+0
-          CFI FunCall sprintf
-        BL       sprintf
 //   58 			GUI_DispStringAt((char *)level_point_buf,30,150);		
-        MOVS     R2,#+150
-        MOVS     R1,#+30
-        ADD      R0,SP,#+0
-          CFI FunCall GUI_DispStringAt
-        BL       GUI_DispStringAt
-        B.N      ??level_coordinates_1
 //   59 		}
 //   60 		break;
 //   61 	case 1:
@@ -369,17 +347,19 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //   63 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R5,#+20
+        MOVS     R6,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   64 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
-        ADDW     R5,R4,#+254
-        LDRSH    R3,[R5, #+2]
-        ADR.W    R6,`?<Constant "[%3d,%3d]">`
-        LDRSH    R2,[R4, #+254]
-        MOV      R1,R6
+        ADDW     R7,R4,#+270
+        ADR.W    R8,`?<Constant "[%3d,%3d]">`
+        LDRSH    R3,[R7, #+2]
+        LDRSH    R2,[R4, #+270]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -390,19 +370,19 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   66 		GUI_SetColor(gCfgItems.title_color);
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //   67 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   68 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
-        LDRSH    R3,[R5, #+6]
-        LDRSH    R2,[R5, #+4]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+6]
+        LDRSH    R2,[R7, #+4]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -413,15 +393,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   70 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   71 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
-        LDRSH    R3,[R5, #+10]
-        LDRSH    R2,[R5, #+8]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+10]
+        LDRSH    R2,[R7, #+8]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -432,20 +412,20 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   73 		if(gCfgItems.leveling_point_number>3)
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+4
-        BLT.N    ??level_coordinates_5
+        BLT.W    ??level_coordinates_3
 //   74 			{
 //   75 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   76 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
-        LDRSH    R3,[R5, #+14]
-        LDRSH    R2,[R5, #+12]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+14]
+        LDRSH    R2,[R7, #+12]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -457,47 +437,28 @@ _Z17level_coordinatesh:
         BL       GUI_DispStringAt
 //   78 			}
 //   79 		if(gCfgItems.leveling_point_number>4)
-??level_coordinates_5:
-        LDRB     R0,[R4, #+253]
-        CMP      R0,#+5
-        BLT.W    ??level_coordinates_1
+        B.N      ??level_coordinates_3
 //   80 			{
 //   81 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
-        ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
 //   82 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
-        LDRSH    R3,[R5, #+18]
-        LDRSH    R2,[R5, #+16]
-        MOV      R1,R6
-        ADD      R0,SP,#+0
-          CFI FunCall sprintf
-        BL       sprintf
 //   83 		GUI_DispStringAt((char *)level_point_buf,30,150);		
-        MOVS     R2,#+150
-        MOVS     R1,#+30
-        ADD      R0,SP,#+0
-          CFI FunCall GUI_DispStringAt
-        BL       GUI_DispStringAt
-        B.N      ??level_coordinates_1
 //   84 			}
 //   85 		break;
 //   86 	case 2:
 //   87 		memset(level_point_buf,0,sizeof(level_point_buf));
-??level_coordinates_6:
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+??level_coordinates_5:
+        MOVS     R5,#+20
+        MOVS     R6,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   88 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
-        ADDW     R5,R4,#+254
-        LDRSH    R3,[R5, #+2]
-        ADR.W    R6,`?<Constant "[%3d,%3d]">`
-        LDRSH    R2,[R4, #+254]
-        MOV      R1,R6
+        ADDW     R7,R4,#+270
+        ADR.W    R8,`?<Constant "[%3d,%3d]">`
+        LDRSH    R3,[R7, #+2]
+        LDRSH    R2,[R4, #+270]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -512,15 +473,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //   91 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   92 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
-        LDRSH    R3,[R5, #+6]
-        LDRSH    R2,[R5, #+4]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+6]
+        LDRSH    R2,[R7, #+4]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -531,19 +492,19 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   94 		GUI_SetColor(gCfgItems.title_color);
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //   95 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //   96 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
-        LDRSH    R3,[R5, #+10]
-        LDRSH    R2,[R5, #+8]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+10]
+        LDRSH    R2,[R7, #+8]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -554,20 +515,20 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //   98 		if(gCfgItems.leveling_point_number>3)
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+4
-        BLT.N    ??level_coordinates_7
+        BLT.W    ??level_coordinates_3
 //   99 			{
 //  100 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  101 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
-        LDRSH    R3,[R5, #+14]
-        LDRSH    R2,[R5, #+12]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+14]
+        LDRSH    R2,[R7, #+12]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -579,47 +540,28 @@ _Z17level_coordinatesh:
         BL       GUI_DispStringAt
 //  103 			}
 //  104 		if(gCfgItems.leveling_point_number>4)
-??level_coordinates_7:
-        LDRB     R0,[R4, #+253]
-        CMP      R0,#+5
-        BLT.W    ??level_coordinates_1
+        B.N      ??level_coordinates_3
 //  105 			{
 //  106 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
-        ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
 //  107 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
-        LDRSH    R3,[R5, #+18]
-        LDRSH    R2,[R5, #+16]
-        MOV      R1,R6
-        ADD      R0,SP,#+0
-          CFI FunCall sprintf
-        BL       sprintf
 //  108 		GUI_DispStringAt((char *)level_point_buf,30,150);	
-        MOVS     R2,#+150
-        MOVS     R1,#+30
-        ADD      R0,SP,#+0
-          CFI FunCall GUI_DispStringAt
-        BL       GUI_DispStringAt
-        B.N      ??level_coordinates_1
 //  109 			}
 //  110 		break;
 //  111 	case 3:
 //  112 		memset(level_point_buf,0,sizeof(level_point_buf));
-??level_coordinates_8:
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+??level_coordinates_6:
+        MOVS     R5,#+20
+        MOVS     R6,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  113 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
-        ADDW     R5,R4,#+254
-        LDRSH    R3,[R5, #+2]
-        ADR.W    R6,`?<Constant "[%3d,%3d]">`
-        LDRSH    R2,[R4, #+254]
-        MOV      R1,R6
+        ADDW     R7,R4,#+270
+        ADR.W    R8,`?<Constant "[%3d,%3d]">`
+        LDRSH    R3,[R7, #+2]
+        LDRSH    R2,[R4, #+270]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -630,15 +572,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  115 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  116 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
-        LDRSH    R3,[R5, #+6]
-        LDRSH    R2,[R5, #+4]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+6]
+        LDRSH    R2,[R7, #+4]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -653,15 +595,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  119 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  120 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
-        LDRSH    R3,[R5, #+10]
-        LDRSH    R2,[R5, #+8]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+10]
+        LDRSH    R2,[R7, #+8]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -672,24 +614,24 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  122 		GUI_SetColor(gCfgItems.title_color);
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  123 		if(gCfgItems.leveling_point_number>3)
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+4
-        BLT.N    ??level_coordinates_9
+        BLT.N    ??level_coordinates_3
 //  124 			{
 //  125 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  126 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
-        LDRSH    R3,[R5, #+14]
-        LDRSH    R2,[R5, #+12]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+14]
+        LDRSH    R2,[R7, #+12]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -701,47 +643,28 @@ _Z17level_coordinatesh:
         BL       GUI_DispStringAt
 //  128 			}
 //  129 		if(gCfgItems.leveling_point_number>4)
-??level_coordinates_9:
-        LDRB     R0,[R4, #+253]
-        CMP      R0,#+5
-        BLT.W    ??level_coordinates_1
+        B.N      ??level_coordinates_3
 //  130 			{
 //  131 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
-        ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
 //  132 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
-        LDRSH    R3,[R5, #+18]
-        LDRSH    R2,[R5, #+16]
-        MOV      R1,R6
-        ADD      R0,SP,#+0
-          CFI FunCall sprintf
-        BL       sprintf
 //  133 		GUI_DispStringAt((char *)level_point_buf,30,150);	
-        MOVS     R2,#+150
-        MOVS     R1,#+30
-        ADD      R0,SP,#+0
-          CFI FunCall GUI_DispStringAt
-        BL       GUI_DispStringAt
-        B.N      ??level_coordinates_1
 //  134 			}
 //  135 		break;
 //  136 	case 4:
 //  137 		memset(level_point_buf,0,sizeof(level_point_buf));
-??level_coordinates_10:
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+??level_coordinates_7:
+        MOVS     R5,#+20
+        MOVS     R6,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  138 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
-        ADDW     R5,R4,#+254
-        LDRSH    R3,[R5, #+2]
-        ADR.W    R6,`?<Constant "[%3d,%3d]">`
-        LDRSH    R2,[R4, #+254]
-        MOV      R1,R6
+        ADDW     R7,R4,#+270
+        ADR.W    R8,`?<Constant "[%3d,%3d]">`
+        LDRSH    R3,[R7, #+2]
+        LDRSH    R2,[R4, #+270]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -752,15 +675,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  140 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  141 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
-        LDRSH    R3,[R5, #+6]
-        LDRSH    R2,[R5, #+4]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+6]
+        LDRSH    R2,[R7, #+4]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -771,15 +694,15 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  143 		memset((char *)level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  144 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
-        LDRSH    R3,[R5, #+10]
-        LDRSH    R2,[R5, #+8]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+10]
+        LDRSH    R2,[R7, #+8]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -794,20 +717,20 @@ _Z17level_coordinatesh:
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  147 		if(gCfgItems.leveling_point_number>3)
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+4
-        BLT.N    ??level_coordinates_11
+        BLT.N    ??level_coordinates_8
 //  148 			{
 //  149 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  150 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
-        LDRSH    R3,[R5, #+14]
-        LDRSH    R2,[R5, #+12]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+14]
+        LDRSH    R2,[R7, #+12]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -819,25 +742,26 @@ _Z17level_coordinatesh:
         BL       GUI_DispStringAt
 //  152 			}
 //  153 		GUI_SetColor(gCfgItems.title_color);
-??level_coordinates_11:
-        LDR      R0,[R4, #+8]
+??level_coordinates_8:
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  154 		if(gCfgItems.leveling_point_number>4)
-        LDRB     R0,[R4, #+253]
+??level_coordinates_3:
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+5
         BLT.W    ??level_coordinates_1
 //  155 			{
 //  156 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  157 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
-        LDRSH    R3,[R5, #+18]
-        LDRSH    R2,[R5, #+16]
-        MOV      R1,R6
+        LDRSH    R3,[R7, #+18]
+        LDRSH    R2,[R7, #+16]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
@@ -847,141 +771,159 @@ _Z17level_coordinatesh:
         ADD      R0,SP,#+0
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-        B.N      ??level_coordinates_1
 //  159 			}
 //  160 		break;
 //  161 	case 5:
 //  162 		memset(level_point_buf,0,sizeof(level_point_buf));
-??level_coordinates_12:
-        MOVS     R2,#+20
-        MOVS     R1,#+0
-        ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
 //  163 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
-        ADDW     R5,R4,#+254
-        LDRSH    R3,[R5, #+2]
-        ADR.W    R6,`?<Constant "[%3d,%3d]">`
-        LDRSH    R2,[R4, #+254]
-        MOV      R1,R6
+//  164 		GUI_DispStringAt((char *)level_point_buf,30,50);
+//  165 		memset(level_point_buf,0,sizeof(level_point_buf));
+//  166 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
+//  167 		GUI_DispStringAt((char *)level_point_buf,30,75);		
+//  168 		memset(level_point_buf,0,sizeof(level_point_buf));
+//  169 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
+//  170 		GUI_DispStringAt((char *)level_point_buf,30,100);	
+//  171 		if(gCfgItems.leveling_point_number>3)
+//  172 			{
+//  173 		memset(level_point_buf,0,sizeof(level_point_buf));
+//  174 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
+//  175 		GUI_DispStringAt((char *)level_point_buf,30,125);		
+//  176 		GUI_SetColor(0x00ff00);
+//  177 			}
+//  178 		if(gCfgItems.leveling_point_number>4)
+//  179 			{
+//  180 		memset(level_point_buf,0,sizeof(level_point_buf));
+//  181 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
+//  182 		GUI_DispStringAt((char *)level_point_buf,30,150);		
+//  183 		GUI_SetColor(gCfgItems.title_color);
+//  184 			}
+//  185 		break;
+//  186 	}
+//  187 }
+        B.N      ?Subroutine0
+??level_coordinates_9:
+        MOVS     R5,#+20
+        MOVS     R6,#+0
+        MOV      R1,R5
+        ADD      R0,SP,#+0
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
+        ADDW     R7,R4,#+270
+        ADR.W    R8,`?<Constant "[%3d,%3d]">`
+        LDRSH    R3,[R7, #+2]
+        LDRSH    R2,[R4, #+270]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
-//  164 		GUI_DispStringAt((char *)level_point_buf,30,50);
         MOVS     R2,#+50
         MOVS     R1,#+30
         ADD      R0,SP,#+0
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-//  165 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
-//  166 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
-        LDRSH    R3,[R5, #+6]
-        LDRSH    R2,[R5, #+4]
-        MOV      R1,R6
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
+        LDRSH    R3,[R7, #+6]
+        LDRSH    R2,[R7, #+4]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
-//  167 		GUI_DispStringAt((char *)level_point_buf,30,75);		
         MOVS     R2,#+75
         MOVS     R1,#+30
         ADD      R0,SP,#+0
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-//  168 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
-//  169 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
-        LDRSH    R3,[R5, #+10]
-        LDRSH    R2,[R5, #+8]
-        MOV      R1,R6
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
+        LDRSH    R3,[R7, #+10]
+        LDRSH    R2,[R7, #+8]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
-//  170 		GUI_DispStringAt((char *)level_point_buf,30,100);	
         MOVS     R2,#+100
         MOVS     R1,#+30
         ADD      R0,SP,#+0
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-//  171 		if(gCfgItems.leveling_point_number>3)
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+4
-        BLT.N    ??level_coordinates_13
-//  172 			{
-//  173 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        BLT.N    ??level_coordinates_10
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
-//  174 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
-        LDRSH    R3,[R5, #+14]
-        LDRSH    R2,[R5, #+12]
-        MOV      R1,R6
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
+        LDRSH    R3,[R7, #+14]
+        LDRSH    R2,[R7, #+12]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
-//  175 		GUI_DispStringAt((char *)level_point_buf,30,125);		
         MOVS     R2,#+125
         MOVS     R1,#+30
         ADD      R0,SP,#+0
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-//  176 		GUI_SetColor(0x00ff00);
         MOV      R0,#+65280
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
-//  177 			}
-//  178 		if(gCfgItems.leveling_point_number>4)
-??level_coordinates_13:
-        LDRB     R0,[R4, #+253]
+??level_coordinates_10:
+        LDRB     R0,[R4, #+269]
         CMP      R0,#+5
         BLT.N    ??level_coordinates_1
-//  179 			{
-//  180 		memset(level_point_buf,0,sizeof(level_point_buf));
-        MOVS     R2,#+20
-        MOVS     R1,#+0
+        MOVS     R2,#+0
+        MOV      R1,R5
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
-//  181 		sprintf((char *)level_point_buf,"[%3d,%3d]",gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
-        LDRSH    R3,[R5, #+18]
-        LDRSH    R2,[R5, #+16]
-        MOV      R1,R6
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
+        LDRSH    R3,[R7, #+18]
+        LDRSH    R2,[R7, #+16]
+        MOV      R1,R8
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
-//  182 		GUI_DispStringAt((char *)level_point_buf,30,150);		
         MOVS     R2,#+150
         MOVS     R1,#+30
         ADD      R0,SP,#+0
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-//  183 		GUI_SetColor(gCfgItems.title_color);
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
-//  184 			}
-//  185 		break;
-//  186 	}
-//  187 }
-??level_coordinates_1:
-        ADD      SP,SP,#+24
-          CFI CFA R13+16
-        POP      {R4-R6,PC}       ;; return
           CFI EndBlock cfiBlock0
+??level_coordinates_1:
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _Z17level_coordinatesh
+          CFI CFA R13+48
+          CFI R4 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
+        ADD      SP,SP,#+24
+          CFI CFA R13+24
+        POP      {R4-R8,PC}       ;; return
+          CFI EndBlock cfiBlock1
 //  188 	
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function _Z11level_pointh
         THUMB
 //  189 void level_point(uint8_t x)
@@ -1005,15 +947,15 @@ _Z11level_pointh:
         TBB      [PC, R4]
         DATA
 ??level_point_0:
-        DC8      0x3,0x22,0x44,0x66
-        DC8      0x88,0x0
+        DC8      0x3,0x1B,0x36,0x51
+        DC8      0x73,0x0
         THUMB
 //  193 	{
 //  194 		case 0:
 //  195 			GUI_SetColor(gCfgItems.title_color);
 ??level_point_2:
-        LDR.W    R0,??DataTable12
-        LDR      R0,[R0, #+8]
+        LDR.W    R0,??DataTable11
+        LDR      R0,[R0, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  196 			GUI_FillRect(20,50,30,60);		
@@ -1038,23 +980,11 @@ _Z11level_pointh:
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  199 			GUI_FillRect(125,180,135,190);		
-        MOVS     R3,#+190
-        MOVS     R2,#+135
-        MOVS     R1,#+180
-        MOVS     R0,#+125
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall GUI_FillRect
-        B.W      GUI_FillRect
-          CFI R4 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        B.N      ??level_point_3
 //  200 			break;
 //  201 		case 1:			
 //  202 			GUI_SetColor(0x0000ff);
-??level_point_3:
+??level_point_4:
         MOVS     R0,#+255
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
@@ -1066,8 +996,8 @@ _Z11level_pointh:
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  204 			GUI_SetColor(gCfgItems.title_color);
-        LDR.W    R0,??DataTable12
-        LDR      R0,[R0, #+8]
+        LDR.W    R0,??DataTable11
+        LDR      R0,[R0, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  205 			GUI_FillRect(125,50,135,60);
@@ -1085,23 +1015,11 @@ _Z11level_pointh:
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  207 			GUI_FillRect(125,180,135,190);		
-        MOVS     R3,#+190
-        MOVS     R2,#+135
-        MOVS     R1,#+180
-        MOVS     R0,#+125
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall GUI_FillRect
-        B.W      GUI_FillRect
-          CFI R4 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        B.N      ??level_point_3
 //  208 		break;
 //  209 		case 2:			
 //  210 			GUI_FillRect(20,50,30,60);		
-??level_point_4:
+??level_point_5:
         MOVS     R3,#+60
         MOVS     R2,#+30
         MOVS     R1,#+50
@@ -1120,8 +1038,8 @@ _Z11level_pointh:
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  213 			GUI_SetColor(gCfgItems.title_color);
-        LDR.W    R0,??DataTable12
-        LDR      R0,[R0, #+8]
+        LDR.W    R0,??DataTable11
+        LDR      R0,[R0, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  214 			GUI_FillRect(20,180,30,190);
@@ -1132,23 +1050,11 @@ _Z11level_pointh:
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  215 			GUI_FillRect(125,180,135,190);			
-        MOVS     R3,#+190
-        MOVS     R2,#+135
-        MOVS     R1,#+180
-        MOVS     R0,#+125
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall GUI_FillRect
-        B.W      GUI_FillRect
-          CFI R4 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        B.N      ??level_point_3
 //  216 		break;
 //  217 		case 3:
 //  218 			GUI_FillRect(20,50,30,60);		
-??level_point_5:
+??level_point_6:
         MOVS     R3,#+60
         MOVS     R2,#+30
         MOVS     R1,#+50
@@ -1181,8 +1087,8 @@ _Z11level_pointh:
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  223 			GUI_SetColor(gCfgItems.title_color);
-        LDR.W    R0,??DataTable12
-        LDR      R0,[R0, #+8]
+        LDR.W    R0,??DataTable11
+        LDR      R0,[R0, #+24]
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
@@ -1195,7 +1101,7 @@ _Z11level_pointh:
 //  224 		break;	
 //  225 		case 4:
 //  226 			GUI_FillRect(20,50,30,60);		
-??level_point_6:
+??level_point_7:
         MOVS     R3,#+60
         MOVS     R2,#+30
         MOVS     R1,#+50
@@ -1221,19 +1127,20 @@ _Z11level_pointh:
           CFI FunCall GUI_FillRect
         BL       GUI_FillRect
 //  230 			GUI_SetColor(gCfgItems.title_color);
-        LDR.W    R0,??DataTable12
-        LDR      R0,[R0, #+8]
+        LDR.W    R0,??DataTable11
+        LDR      R0,[R0, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  231 			GUI_FillRect(125,180,135,190);				
-        MOVS     R3,#+190
-        MOVS     R2,#+135
-        MOVS     R1,#+180
-        MOVS     R0,#+125
+??level_point_3:
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R3,#+190
+        MOVS     R2,#+135
+        MOVS     R1,#+180
+        MOVS     R0,#+125
           CFI FunCall GUI_FillRect
         B.W      GUI_FillRect
           CFI R4 Frame(CFA, -8)
@@ -1245,7 +1152,7 @@ _Z11level_pointh:
 //  235 }
 ??level_point_1:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock1
+          CFI EndBlock cfiBlock2
 //  236 #if 0
 //  237 void leveling_move_action()
 //  238 {
@@ -1309,7 +1216,7 @@ _Z11level_pointh:
 //  296 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _Z13cbLevelingWinP10WM_MESSAGE
         THUMB
 //  297 static void cbLevelingWin(WM_MESSAGE * pMsg) {
@@ -1334,40 +1241,55 @@ _Z13cbLevelingWinP10WM_MESSAGE:
 //  311 		case WM_NOTIFY_PARENT:
 //  312 			if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
 ??cbLevelingWin_0:
-        PUSH     {R7,LR}
+        PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
         LDR      R1,[R0, #+8]
         CMP      R1,#+2
         BNE.N    ??cbLevelingWin_1
 //  313 			{
 //  314 				if(pMsg->hWinSrc == buttonRet.btnHandle)
+        LDR.W    R4,??DataTable11_1
         LDRSH    R0,[R0, #+6]
-        LDR.W    R1,??DataTable12_1
-        LDRSH    R2,[R1, #+4]
-        CMP      R0,R2
+        LDRSH    R1,[R4, #+4]
+        CMP      R0,R1
         BNE.N    ??cbLevelingWin_2
 //  315 				{
 //  316 					leveling_first_time=0;
         MOVS     R0,#+0
-        STRB     R0,[R1, #+0]
+        STRB     R0,[R4, #+0]
 //  317 					Clear_Leveling();
-          CFI FunCall Clear_Leveling
-        BL       Clear_Leveling
+        LDR.N    R0,??DataTable11
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+2]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbLevelingWin_3
+        LDRSH    R0,[R4, #+2]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
+          CFI FunCall GUI_Exec
+        BL       GUI_Exec
 //  318 					draw_return_ui();
-        POP      {R0,LR}
+??cbLevelingWin_3:
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall draw_return_ui
         B.W      draw_return_ui
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //  319 				}
 //  320 				else if(pMsg->hWinSrc == buttonleveling1.btnHandle)
 ??cbLevelingWin_2:
-        LDRSH    R1,[R1, #+28]
+        LDRSH    R1,[R4, #+28]
         CMP      R0,R1
-        BNE.N    ??cbLevelingWin_3
+        BNE.N    ??cbLevelingWin_4
 //  321 				{
 //  322 				/*
 //  323 						if(leveling_first_time == 1)
@@ -1386,24 +1308,18 @@ _Z13cbLevelingWinP10WM_MESSAGE:
 //  336 						enqueue_and_echo_commands_P(PSTR("G1 Z0"));
 //  337 						*/
 //  338 						mks_manual_leveling(gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
-        LDR.W    R0,??DataTable12
-        ADD      R1,R0,#+254
+        LDR.N    R0,??DataTable11
+        ADD      R1,R0,#+270
         LDRSH    R1,[R1, #+2]
-        LDRSH    R0,[R0, #+254]
-        POP      {R2,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall mks_manual_leveling
-        B.W      mks_manual_leveling
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        LDRSH    R0,[R0, #+270]
+        B.N      ??cbLevelingWin_5
 //  339 				}
 //  340 				else if(pMsg->hWinSrc == buttonleveling2.btnHandle)
-??cbLevelingWin_3:
-        LDR.W    R1,??DataTable12_2
+??cbLevelingWin_4:
+        LDR.N    R1,??DataTable11_2
         LDRSH    R2,[R1, #+0]
         CMP      R0,R2
-        BNE.N    ??cbLevelingWin_4
+        BNE.N    ??cbLevelingWin_6
 //  341 				{
 //  342 				/*
 //  343 					if(leveling_first_time == 1)
@@ -1423,23 +1339,17 @@ _Z13cbLevelingWinP10WM_MESSAGE:
 //  357 						enqueue_and_echo_commands_P(PSTR("G1 Z0"));		
 //  358 						*/
 //  359 						mks_manual_leveling(gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
-        LDR.W    R0,??DataTable12
-        ADDW     R0,R0,#+254
+        LDR.N    R0,??DataTable11
+        ADDW     R0,R0,#+270
         LDRSH    R1,[R0, #+6]
         LDRSH    R0,[R0, #+4]
-        POP      {R2,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall mks_manual_leveling
-        B.W      mks_manual_leveling
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        B.N      ??cbLevelingWin_5
 //  360 				}
 //  361 				else if(pMsg->hWinSrc == buttonleveling3.btnHandle)
-??cbLevelingWin_4:
+??cbLevelingWin_6:
         LDRSH    R1,[R1, #+24]
         CMP      R0,R1
-        BNE.N    ??cbLevelingWin_5
+        BNE.N    ??cbLevelingWin_7
 //  362 				{
 //  363 				/*
 //  364 					if(leveling_first_time == 1)
@@ -1459,25 +1369,19 @@ _Z13cbLevelingWinP10WM_MESSAGE:
 //  378 						enqueue_and_echo_commands_P(PSTR("G1 Z0"));	
 //  379 						*/
 //  380 						mks_manual_leveling(gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
-        LDR.W    R0,??DataTable12
-        ADDW     R0,R0,#+254
+        LDR.N    R0,??DataTable11
+        ADDW     R0,R0,#+270
         LDRSH    R1,[R0, #+10]
         LDRSH    R0,[R0, #+8]
-        POP      {R2,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall mks_manual_leveling
-        B.W      mks_manual_leveling
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        B.N      ??cbLevelingWin_5
 //  381 						
 //  382 				}		
 //  383 				else if(pMsg->hWinSrc == buttonleveling4.btnHandle)
-??cbLevelingWin_5:
-        LDR.W    R1,??DataTable12_3
+??cbLevelingWin_7:
+        LDR.N    R1,??DataTable11_3
         LDRSH    R2,[R1, #+0]
         CMP      R0,R2
-        BNE.N    ??cbLevelingWin_6
+        BNE.N    ??cbLevelingWin_8
 //  384 				{
 //  385 				/*
 //  386 					if(leveling_first_time == 1)
@@ -1496,20 +1400,14 @@ _Z13cbLevelingWinP10WM_MESSAGE:
 //  399 						enqueue_and_echo_commands_P(PSTR("G1 Z0"));	
 //  400 						*/
 //  401 						mks_manual_leveling(gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
-        LDR.W    R0,??DataTable12
-        ADDW     R0,R0,#+254
+        LDR.N    R0,??DataTable11
+        ADDW     R0,R0,#+270
         LDRSH    R1,[R0, #+14]
         LDRSH    R0,[R0, #+12]
-        POP      {R2,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall mks_manual_leveling
-        B.W      mks_manual_leveling
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        B.N      ??cbLevelingWin_5
 //  402 				}	
 //  403 				else if(pMsg->hWinSrc == buttonleveling5.btnHandle)
-??cbLevelingWin_6:
+??cbLevelingWin_8:
         LDRSH    R1,[R1, #+24]
         CMP      R0,R1
         BNE.N    ??cbLevelingWin_1
@@ -1531,15 +1429,18 @@ _Z13cbLevelingWinP10WM_MESSAGE:
 //  419 						enqueue_and_echo_commands_P(PSTR("G1 Z0"));	
 //  420 						*/
 //  421 						mks_manual_leveling(gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
-        LDR.W    R0,??DataTable12
-        ADDW     R0,R0,#+254
+        LDR.N    R0,??DataTable11
+        ADDW     R0,R0,#+270
         LDRSH    R1,[R0, #+18]
         LDRSH    R0,[R0, #+16]
-        POP      {R2,LR}
+??cbLevelingWin_5:
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall mks_manual_leveling
         B.W      mks_manual_leveling
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //  422 				}				
@@ -1551,17 +1452,17 @@ _Z13cbLevelingWinP10WM_MESSAGE:
 //  428 	}
 //  429 }
 ??cbLevelingWin_1:
-        POP      {R0,PC}          ;; return
-          CFI EndBlock cfiBlock2
+        POP      {R4,PC}          ;; return
+          CFI EndBlock cfiBlock3
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function draw_leveling
         THUMB
 //  430 void draw_leveling()
 //  431 {
 draw_leveling:
-        PUSH     {R0-R10,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
           CFI R10 Frame(CFA, -8)
           CFI R9 Frame(CFA, -12)
@@ -1570,12 +1471,14 @@ draw_leveling:
           CFI R6 Frame(CFA, -24)
           CFI R5 Frame(CFA, -28)
           CFI R4 Frame(CFA, -32)
-          CFI CFA R13+48
+          CFI CFA R13+32
 //  432 	char bf[80] = {0};
 //  433 	
 //  434 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != LEVELING_UI)
-        LDR.W    R0,??DataTable12_4
+        LDR.N    R0,??DataTable11_4
         LDRSB    R1,[R0, #+100]
+        SUB      SP,SP,#+16
+          CFI CFA R13+48
         LDRSB    R2,[R1, R0]
         CMP      R2,#+28
         BEQ.N    ??draw_leveling_0
@@ -1592,17 +1495,16 @@ draw_leveling:
 //  440 	disp_state = LEVELING_UI;	
 ??draw_leveling_0:
         MOVS     R0,#+28
-        LDR.W    R1,??DataTable12_5
-        STRB     R0,[R1, #+0]
+        LDR.N    R1,??DataTable11_5
 //  441 
 //  442 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.W    R4,??DataTable12
-        LDR      R0,[R4, #+4]
+        LDR.W    R8,??DataTable11
+        STRB     R0,[R1, #+0]
+        LDR      R0,[R8, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  443 	GUI_SetColor(gCfgItems.title_color);
-        ADDS     R5,R4,#+4
-        LDR      R0,[R5, #+4]
+        LDR      R0,[R8, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  444 	GUI_Clear();
@@ -1618,76 +1520,76 @@ draw_leveling:
         BL       GUI_DispStringAt
 //  447 	
 //  448 	hLevelingWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbLevelingWin, 0);
-        LDR.W    R6,??DataTable12_1
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
-        LDR.W    R0,??DataTable12_6
+        MOV      R3,#+284
+        LDR.N    R0,??DataTable11_6
+        LDR.N    R5,??DataTable11_1
         STR      R0,[SP, #+4]
+        MOV      R2,#+480
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOV      R3,#+284
-        MOV      R2,#+480
         MOVS     R1,#+36
         MOVS     R0,#+0
           CFI FunCall WM_CreateWindow
         BL       WM_CreateWindow
-        STRH     R0,[R6, #+2]
+        STRH     R0,[R5, #+2]
 //  449 	
 //  450 	buttonleveling1.btnHandle = BUTTON_CreateEx(INTERVAL_V, 0, BTN_X_PIXEL, BTN_Y_PIXEL, hLevelingWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+2]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, R0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+28]
+        STRH     R0,[R5, #+28]
 //  451 	buttonleveling2.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,	0, BTN_X_PIXEL, BTN_Y_PIXEL, hLevelingWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
-        LDR.N    R7,??DataTable12_2
         STR      R0,[SP, #+12]
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+2]
-        STR      R0,[SP, #+0]
         MOVS     R3,#+140
+        LDRSH    R0,[R5, R0]
+        LDR.N    R6,??DataTable11_2
+        STR      R0,[SP, #+0]
         MOVS     R2,#+117
         MOVS     R1,#+0
         MOVS     R0,#+121
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R7, #+0]
+        STRH     R0,[R6, #+0]
 //  452 	buttonleveling3.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3 , 0, BTN_X_PIXEL, BTN_Y_PIXEL, hLevelingWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+2]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, R0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+240
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R7, #+24]
+        STRH     R0,[R6, #+24]
 //  453 	if(gCfgItems.leveling_point_number>3)
-        LDR.W    R8,??DataTable12_3
-        LDRB     R0,[R4, #+253]
+        LDR.N    R7,??DataTable11_3
+        LDRB     R0,[R8, #+269]
         CMP      R0,#+4
         BLT.N    ??draw_leveling_1
 //  454 	{
@@ -1695,23 +1597,23 @@ draw_leveling:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+2]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, R0]
+        STR      R0,[SP, #+0]
         MOVW     R0,#+359
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R8, #+0]
+        STRH     R0,[R7, #+0]
 //  456 	}
 //  457 	if(gCfgItems.leveling_point_number>4)
 ??draw_leveling_1:
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R8, #+269]
         CMP      R0,#+5
         BLT.N    ??draw_leveling_2
 //  458 	{
@@ -1719,19 +1621,19 @@ draw_leveling:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+2]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, R0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R8, #+24]
+        STRH     R0,[R7, #+24]
 //  460 	}
 //  461 
 //  462 	buttonRet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hLevelingWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
@@ -1739,392 +1641,241 @@ draw_leveling:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+2]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, R0]
+        STR      R0,[SP, #+0]
         MOVW     R0,#+359
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+4]
+        STRH     R0,[R5, #+4]
 //  463 
 //  464 	BUTTON_SetBmpFileName(buttonleveling1.btnHandle, "bmp_leveling1.bin",1);
         MOVS     R2,#+1
+        LDRSH    R0,[R5, #+28]
         ADR.W    R1,`?<Constant "bmp_leveling1.bin">`
-        LDRSH    R0,[R6, #+28]
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  465 	BUTTON_SetBmpFileName(buttonleveling2.btnHandle, "bmp_leveling2.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R6, #+0]
         ADR.W    R1,`?<Constant "bmp_leveling2.bin">`
-        LDRSH    R0,[R7, #+0]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  466 	BUTTON_SetBmpFileName(buttonleveling3.btnHandle, "bmp_leveling3.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R6, #+24]
         ADR.W    R1,`?<Constant "bmp_leveling3.bin">`
-        LDRSH    R0,[R7, #+24]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  467 
-//  468 	BUTTON_SetBkColor(buttonleveling1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  469 	BUTTON_SetBkColor(buttonleveling1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  470 	BUTTON_SetTextColor(buttonleveling1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  471 	BUTTON_SetTextColor(buttonleveling1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  472 	
-//  473 	BUTTON_SetBkColor(buttonleveling2.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  474 	BUTTON_SetBkColor(buttonleveling2.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  475 	BUTTON_SetTextColor(buttonleveling2.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  476 	BUTTON_SetTextColor(buttonleveling2.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  477 	
-//  478 	BUTTON_SetBkColor(buttonleveling3.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  479 	BUTTON_SetBkColor(buttonleveling3.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  480 	BUTTON_SetTextColor(buttonleveling3.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  481 	BUTTON_SetTextColor(buttonleveling3.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  482 	
-//  483 	if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_leveling_3
-//  484 	{
-//  485 		BUTTON_SetText(buttonleveling1.btnHandle, leveling_menu.position1);
-        LDR.W    R9,??DataTable12_7
-        LDR      R1,[R9, #+4]
-        LDRSH    R0,[R6, #+28]
+//  468 	if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R8, #+463]
+        CBZ.N    R0,??draw_leveling_3
+//  469 	{
+//  470 		BUTTON_SetText(buttonleveling1.btnHandle, leveling_menu.position1);
+        LDR.N    R4,??DataTable11_7
+        LDRSH    R0,[R5, #+28]
+        LDR      R1,[R4, #+4]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  486 		BUTTON_SetText(buttonleveling2.btnHandle, leveling_menu.position2);
-        LDR      R1,[R9, #+8]
-        LDRSH    R0,[R7, #+0]
+//  471 		BUTTON_SetText(buttonleveling2.btnHandle, leveling_menu.position2);
+        LDR      R1,[R4, #+8]
+        LDRSH    R0,[R6, #+0]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  487 		BUTTON_SetText(buttonleveling3.btnHandle, leveling_menu.position3);
-        LDR      R1,[R9, #+12]
-        LDRSH    R0,[R7, #+24]
+//  472 		BUTTON_SetText(buttonleveling3.btnHandle, leveling_menu.position3);
+        LDR      R1,[R4, #+12]
+        LDRSH    R0,[R6, #+24]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  488 	}
-//  489 		
-//  490 	
-//  491 	if(gCfgItems.leveling_point_number>3)
+//  473 	}
+//  474 		
+//  475 	
+//  476 	if(gCfgItems.leveling_point_number>3)
 ??draw_leveling_3:
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R8, #+269]
         CMP      R0,#+4
         BLT.N    ??draw_leveling_4
-//  492 	{
-//  493 		BUTTON_SetBkColor(buttonleveling4.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  494 		BUTTON_SetBkColor(buttonleveling4.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  495 		BUTTON_SetTextColor(buttonleveling4.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  496 		BUTTON_SetTextColor(buttonleveling4.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  497 		
-//  498 		BUTTON_SetBmpFileName(buttonleveling4.btnHandle, "bmp_leveling4.bin",1);			
-        MOVS     R2,#+1
+//  477 	{
+//  478 		
+//  479 		BUTTON_SetBmpFileName(buttonleveling4.btnHandle, "bmp_leveling4.bin",1);			
+        LDRSH    R0,[R7, #+0]
         ADR.W    R1,`?<Constant "bmp_leveling4.bin">`
-        LDRSH    R0,[R8, #+0]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  499 		if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_leveling_4
-//  500 		{
-//  501 			BUTTON_SetText(buttonleveling4.btnHandle, leveling_menu.position4);
-        LDR.N    R0,??DataTable12_7
+//  480 		if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R8, #+463]
+        CBZ.N    R0,??draw_leveling_4
+//  481 		{
+//  482 			BUTTON_SetText(buttonleveling4.btnHandle, leveling_menu.position4);
+        LDR.N    R0,??DataTable11_7
         LDR      R1,[R0, #+16]
-        LDRSH    R0,[R8, #+0]
+        LDRSH    R0,[R7, #+0]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  502 		}		
-//  503 	}
-//  504 	if(gCfgItems.leveling_point_number>4)
+//  483 		}		
+//  484 	}
+//  485 	if(gCfgItems.leveling_point_number>4)
 ??draw_leveling_4:
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R8, #+269]
         CMP      R0,#+5
         BLT.N    ??draw_leveling_5
-//  505 	{
-//  506 
-//  507 		BUTTON_SetBkColor(buttonleveling5.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R8, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  508 		BUTTON_SetBkColor(buttonleveling5.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);	
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R8, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  509 		BUTTON_SetTextColor(buttonleveling5.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_textcolor);
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+1
-        LDRSH    R0,[R8, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  510 		BUTTON_SetTextColor(buttonleveling5.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_textcolor);	
-        LDR      R2,[R5, #+44]
-        MOVS     R1,#+0
-        LDRSH    R0,[R8, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  511 		
-//  512 		BUTTON_SetBmpFileName(buttonleveling5.btnHandle, "bmp_leveling5.bin",1);	
-        MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_leveling5.bin">`
-        LDRSH    R0,[R8, #+24]
-          CFI FunCall BUTTON_SetBmpFileName
-        BL       BUTTON_SetBmpFileName
-//  513 		
-//  514 		if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_leveling_5
-//  515 		{
-//  516 			BUTTON_SetText(buttonleveling5.btnHandle, leveling_menu.position5);
-        LDR.N    R0,??DataTable12_7
-        LDR      R1,[R0, #+20]
-        LDRSH    R0,[R8, #+24]
-          CFI FunCall BUTTON_SetText
-        BL       BUTTON_SetText
-//  517 		}		
-//  518 	}
-//  519 
-//  520 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
-??draw_leveling_5:
-        MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_return.bin">`
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBmpFileName
-        BL       BUTTON_SetBmpFileName
-//  521 
-//  522 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  523 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  524 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  525 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);	
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  526 	if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_leveling_6
-//  527 	{
-//  528 		BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
-        LDR.N    R0,??DataTable12_8
-        LDR      R1,[R0, #+0]
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetText
-        BL       BUTTON_SetText
-//  529 	}
-//  530 	
-//  531 	BUTTON_SetBitmapEx(buttonleveling1.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-??draw_leveling_6:
-        LDR.N    R5,??DataTable12_9
-        LDR.W    R9,??DataTable12_10
-        LDR.W    R10,??DataTable12_11
-        LDRSB    R0,[R10, #+0]
-        STR      R0,[SP, #+0]
-        LDRSB    R3,[R9, #+0]
-        MOV      R2,R5
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBitmapEx
-        BL       BUTTON_SetBitmapEx
-//  532 	BUTTON_SetBitmapEx(buttonleveling2.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R10, #+0]
-        STR      R0,[SP, #+0]
-        LDRSB    R3,[R9, #+0]
-        MOV      R2,R5
-        MOVS     R1,#+0
-        LDRSH    R0,[R7, #+0]
-          CFI FunCall BUTTON_SetBitmapEx
-        BL       BUTTON_SetBitmapEx
-//  533 	BUTTON_SetBitmapEx(buttonleveling3.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R10, #+0]
-        STR      R0,[SP, #+0]
-        LDRSB    R3,[R9, #+0]
-        MOV      R2,R5
-        MOVS     R1,#+0
+//  486 	{
+//  487 		
+//  488 		BUTTON_SetBmpFileName(buttonleveling5.btnHandle, "bmp_leveling5.bin",1);	
         LDRSH    R0,[R7, #+24]
+        ADR.W    R1,`?<Constant "bmp_leveling5.bin">`
+        MOVS     R2,#+1
+          CFI FunCall BUTTON_SetBmpFileName
+        BL       BUTTON_SetBmpFileName
+//  489 		
+//  490 		if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R8, #+463]
+        CBZ.N    R0,??draw_leveling_5
+//  491 		{
+//  492 			BUTTON_SetText(buttonleveling5.btnHandle, leveling_menu.position5);
+        LDR.N    R0,??DataTable11_7
+        LDR      R1,[R0, #+20]
+        LDRSH    R0,[R7, #+24]
+          CFI FunCall BUTTON_SetText
+        BL       BUTTON_SetText
+//  493 		}		
+//  494 	}
+//  495 
+//  496 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
+??draw_leveling_5:
+        LDRSH    R0,[R5, #+4]
+        ADR.W    R1,`?<Constant "bmp_return.bin">`
+        MOVS     R2,#+1
+          CFI FunCall BUTTON_SetBmpFileName
+        BL       BUTTON_SetBmpFileName
+//  497 
+//  498 	if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R8, #+463]
+        CBZ.N    R0,??draw_leveling_6
+//  499 	{
+//  500 		BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
+        LDR.N    R0,??DataTable11_8
+        LDR      R1,[R0, #+0]
+        LDRSH    R0,[R5, #+4]
+          CFI FunCall BUTTON_SetText
+        BL       BUTTON_SetText
+//  501 	}
+//  502 	
+//  503 	BUTTON_SetBitmapEx(buttonleveling1.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+??draw_leveling_6:
+        LDR.W    R10,??DataTable11_9
+        LDR.W    R9,??DataTable11_10
+        LDRSB    R0,[R10, #+0]
+        LDR.N    R4,??DataTable11_11
+        LDRSB    R3,[R9, #+0]
+        STR      R0,[SP, #+0]
+        MOV      R2,R4
+        LDRSH    R0,[R5, #+28]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  534 	if(gCfgItems.leveling_point_number>3)
-        LDRB     R0,[R4, #+253]
+//  504 	BUTTON_SetBitmapEx(buttonleveling2.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+        LDRSB    R0,[R10, #+0]
+        STR      R0,[SP, #+0]
+        MOVS     R1,#+0
+        LDRSB    R3,[R9, #+0]
+        LDRSH    R0,[R6, R1]
+        MOV      R2,R4
+          CFI FunCall BUTTON_SetBitmapEx
+        BL       BUTTON_SetBitmapEx
+//  505 	BUTTON_SetBitmapEx(buttonleveling3.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+        LDRSB    R0,[R10, #+0]
+        LDRSB    R3,[R9, #+0]
+        STR      R0,[SP, #+0]
+        MOV      R2,R4
+        LDRSH    R0,[R6, #+24]
+        MOVS     R1,#+0
+          CFI FunCall BUTTON_SetBitmapEx
+        BL       BUTTON_SetBitmapEx
+//  506 	if(gCfgItems.leveling_point_number>3)
+        LDRB     R0,[R8, #+269]
         CMP      R0,#+4
         BLT.N    ??draw_leveling_7
-//  535 	{
-//  536 		BUTTON_SetBitmapEx(buttonleveling4.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+//  507 	{
+//  508 		BUTTON_SetBitmapEx(buttonleveling4.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R10, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R9, #+0]
-        MOV      R2,R5
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
+        LDRSB    R3,[R9, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R4
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  537 	}
-//  538 	if(gCfgItems.leveling_point_number>4)
+//  509 	}
+//  510 	if(gCfgItems.leveling_point_number>4)
 ??draw_leveling_7:
-        LDRB     R0,[R4, #+253]
+        LDRB     R0,[R8, #+269]
         CMP      R0,#+5
         BLT.N    ??draw_leveling_8
-//  539 	{
-//  540 		BUTTON_SetBitmapEx(buttonleveling5.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+//  511 	{
+//  512 		BUTTON_SetBitmapEx(buttonleveling5.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R10, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R9, #+0]
-        MOV      R2,R5
+        STR      R0,[SP, #+0]
+        MOV      R2,R4
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+24]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  541 	}
-//  542 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
+//  513 	}
+//  514 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
 ??draw_leveling_8:
         LDRSB    R0,[R10, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R9, #+0]
-        MOV      R2,R5
+        STR      R0,[SP, #+0]
+        MOV      R2,R4
+        LDRSH    R0,[R5, #+4]
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  543 }
-        POP      {R0-R10,PC}      ;; return
-          CFI EndBlock cfiBlock3
-//  544 
+//  515 }
+        ADD      SP,SP,#+16
+          CFI CFA R13+32
+        POP      {R4-R10,PC}      ;; return
+          CFI EndBlock cfiBlock4
+//  516 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function Clear_Leveling
         THUMB
-//  545 void Clear_Leveling()
-//  546 {
+//  517 void Clear_Leveling()
+//  518 {
 Clear_Leveling:
         PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-//  547 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R0,??DataTable12
-        LDR      R0,[R0, #+4]
+//  519 	GUI_SetBkColor(gCfgItems.background_color);
+        LDR.N    R0,??DataTable11
+        LDR      R0,[R0, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
-//  548 	if(WM_IsWindow(hLevelingWnd))
-        LDR.N    R4,??DataTable12_1
+//  520 	if(WM_IsWindow(hLevelingWnd))
+        LDR.N    R4,??DataTable11_1
         LDRSH    R0,[R4, #+2]
           CFI FunCall WM_IsWindow
         BL       WM_IsWindow
-        CMP      R0,#+0
-        BEQ.N    ??Clear_Leveling_0
-//  549 	{
-//  550 		WM_DeleteWindow(hLevelingWnd);
+        CBZ.N    R0,??Clear_Leveling_0
+//  521 	{
+//  522 		WM_DeleteWindow(hLevelingWnd);
         LDRSH    R0,[R4, #+2]
           CFI FunCall WM_DeleteWindow
         BL       WM_DeleteWindow
-//  551 		GUI_Exec();
+//  523 		GUI_Exec();
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
@@ -2134,84 +1885,84 @@ Clear_Leveling:
           CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
-//  552 	}
-//  553 
-//  554 }
+//  524 	}
+//  525 
+//  526 }
 ??Clear_Leveling_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock4
+          CFI EndBlock cfiBlock5
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12:
+??DataTable11:
         DC32     gCfgItems
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_1:
+??DataTable11_1:
         DC32     leveling_first_time
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_2:
+??DataTable11_2:
         DC32     buttonleveling2
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_3:
+??DataTable11_3:
         DC32     buttonleveling4
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_4:
+??DataTable11_4:
         DC32     disp_state_stack
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_5:
+??DataTable11_5:
         DC32     disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_6:
+??DataTable11_6:
         DC32     _Z13cbLevelingWinP10WM_MESSAGE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_7:
+??DataTable11_7:
         DC32     leveling_menu
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_8:
+??DataTable11_8:
         DC32     common_menu
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_9:
-        DC32     bmp_struct
+??DataTable11_9:
+        DC32     BMP_PIC_Y
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_10:
+??DataTable11_10:
         DC32     BMP_PIC_X
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_11:
-        DC32     BMP_PIC_Y
+??DataTable11_11:
+        DC32     bmp_struct
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -2286,13 +2037,13 @@ _ZTI5Print:
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
         END
-//  555 
+//  527 
 // 
 //   151 bytes in section .bss
 //    21 bytes in section .rodata
-// 3 162 bytes in section .text
+// 2 620 bytes in section .text
 // 
-// 3 162 bytes of CODE  memory
+// 2 620 bytes of CODE  memory
 //    20 bytes of CONST memory (+ 1 byte shared)
 //   151 bytes of DATA  memory
 //

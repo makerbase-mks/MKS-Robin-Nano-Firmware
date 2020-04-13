@@ -1,0 +1,2144 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:24:42
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_XYZLevelPara.cpp
+#    Command line =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_XYZLevelPara.cpp
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
+#        -lA
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_XYZLevelPara.lst
+#    Object file  =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\draw_XYZLevelPara.o
+#
+###############################################################################
+
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_XYZLevelPara.cpp
+      1          #include "gui.h"
+      2          #include "button.h"
+      3          #include "draw_ui.h"
+
+  #define UNUSED(x) ((void)(x))
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 101 of
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../M
+          iddlewares/Third_Party/Marlin\macros.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Inc\mks_cfg.h",626  Warning[Pe083]: 
+          type qualifier specified more than once
+
+    #define FILAMENT_CHANGE_TEXT_EN				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_en.h",337  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_EN"
+          (declared at line 315)
+
+  #define DIALOG_UNBIND_PRINTER_CN            "Ëß£Èô§ÁªëÂÆö?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_s_cn.h",408  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_CN"
+          (declared at line 403)
+
+    #define FILAMENT_CHANGE_TEXT_T_CN				"ÂæÖÊâìÂç∞Ê©üÊö´ÂÅúÂêé,\nË´ãÊåâ<ÈÄ≤Êñô>Êàñ<ÈÄÄÊñô>"
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_t_cn.h",318  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_T_CN"
+          (declared at line 304)
+
+    #define FILAMENT_CHANGE_TEXT_RU				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_ru.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_RU"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_RU            "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_ru.h",231  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_RU"
+          (declared at line 226)
+
+    #define FILAMENT_CHANGE_TEXT_FR				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_fr.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_FR"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_FR        "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_fr.h",234  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_FR"
+          (declared at line 230)
+
+    #define FILAMENT_CHANGE_TEXT_SP				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_sp.h",133  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_SP"
+          (declared at line 114)
+
+    #define FILAMENT_CHANGE_TEXT_IT				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_it.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_IT"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_IT                "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_it.h",230  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_IT"
+          (declared at line 225)
+
+  #define FILAMENT_CHANGE_TEXT_JP				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Multi_language.h",899  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_JP"
+          (declared at line 892)
+
+  #define FILAMENT_CHANGE_TEXT_GN				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Multi_language.h",1107  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_GN"
+          (declared at line 1101)
+
+  #define Simple_Dec"ºı…Ÿ"
+                    ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",666  Warning[Pe1649]: 
+          white space is required between the macro name "Simple_Dec" and its
+          replacement text
+
+  #define Simple_Speed "ÀŸ∂»"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",721  Warning[Pe047]: 
+          incompatible redefinition of macro "Simple_Speed" (declared at line
+          718)
+
+  #define Complex_Speed "ÀŸ∂»"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",722  Warning[Pe047]: 
+          incompatible redefinition of macro "Complex_Speed" (declared at line
+          719)
+      4          
+      5          #ifndef GUI_FLASH
+      6          #define GUI_FLASH
+      7          #endif
+      8          
+
+   \                                 In section .bss, align 4
+      9          static GUI_HWIN hXYZLevelParaWnd;
+     10          static BUTTON_STRUCT level_point1_text,level_point2_text,level_point3_text,level_point4_text,level_point5_text;
+     11          static BUTTON_STRUCT level_point1_x_value,level_point2_x_value,level_point3_x_value,level_point4_x_value,level_point5_x_value;
+     12          static BUTTON_STRUCT level_point1_y_value,level_point2_y_value,level_point3_y_value,level_point4_y_value,level_point5_y_value;
+     13          
+     14          static BUTTON_STRUCT button_next,button_previous,button_back;
+     15          
+     16          static uint8_t current_page;//0:…œ“ª“≥£¨1:œ¬“ª“≥
+   \                     current_page:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 1
+   \   00000002                      DS8 2
+   \   00000004                      DS8 24
+   \   0000001C                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     level_point1_text:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+   \   00000030                      DS8 24
+   \   00000048                      DS8 24
+   \   00000060                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     level_point3_x_value:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     level_point5_x_value:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     level_point2_y_value:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     level_point4_y_value:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     button_next:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     button_back:
+   \   00000000                      DS8 24
+     17          
+
+   \                                 In section .text, align 2, keep-with-next
+     18          static void cbXYZLevelParaWin(WM_MESSAGE * pMsg) {
+     19          
+     20              struct PressEvt *press_event;
+                                      ^
+Warning[Pe550]: variable "press_event" was set but never used
+     21              switch (pMsg->MsgId)
+   \                     _Z17cbXYZLevelParaWinP10WM_MESSAGE: (+1)
+   \   00000000   0x6801             LDR      R1,[R0, #+0]
+   \   00000002   0x290C             CMP      R1,#+12
+   \   00000004   0xD100             BNE.N    ??cbXYZLevelParaWin_0
+   \   00000006   0x4770             BX       LR
+   \                     ??cbXYZLevelParaWin_0: (+1)
+   \   00000008   0xB510             PUSH     {R4,LR}
+   \   0000000A   0x290D             CMP      R1,#+13
+   \   0000000C   0xF000 0x8176      BEQ.W    ??cbXYZLevelParaWin_1
+   \   00000010   0x290F             CMP      R1,#+15
+   \   00000012   0xD002             BEQ.N    ??cbXYZLevelParaWin_2
+   \   00000014   0x2926             CMP      R1,#+38
+   \   00000016   0xD028             BEQ.N    ??cbXYZLevelParaWin_3
+   \   00000018   0xE16C             B.N      ??cbXYZLevelParaWin_4
+     22              {
+     23              	case WM_PAINT:
+     24          			//GUI_SetColor(gCfgItems.state_background_color);
+     25          			//GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
+     26          			GUI_SetColor(0xff5449);
+   \                     ??cbXYZLevelParaWin_2: (+1)
+   \   0000001A   0x.... 0x....      LDR.W    R0,??DataTable7  ;; 0xff5449
+   \   0000001E   0x.... 0x....      BL       GUI_SetColor
+     27          			GUI_FillRect(10, 90, 470,90);
+   \   00000022   0x235A             MOVS     R3,#+90
+   \   00000024   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000028   0x215A             MOVS     R1,#+90
+   \   0000002A   0x200A             MOVS     R0,#+10
+   \   0000002C   0x.... 0x....      BL       GUI_FillRect
+     28          			if(current_page != 1)
+   \   00000030   0x.... 0x....      LDR.W    R0,??DataTable7_1
+   \   00000034   0x7800             LDRB     R0,[R0, #+0]
+   \   00000036   0x2801             CMP      R0,#+1
+   \   00000038   0xF000 0x8160      BEQ.W    ??cbXYZLevelParaWin_1
+     29          			{
+     30          		            GUI_FillRect(10, 140, 470,140);
+   \   0000003C   0x238C             MOVS     R3,#+140
+   \   0000003E   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000042   0x218C             MOVS     R1,#+140
+   \   00000044   0x200A             MOVS     R0,#+10
+   \   00000046   0x.... 0x....      BL       GUI_FillRect
+     31          		            GUI_FillRect(10, 190, 470,190);
+   \   0000004A   0x23BE             MOVS     R3,#+190
+   \   0000004C   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000050   0x4619             MOV      R1,R3
+   \   00000052   0x200A             MOVS     R0,#+10
+   \   00000054   0x.... 0x....      BL       GUI_FillRect
+     32          		            GUI_FillRect(10, 240, 470,240);
+   \   00000058   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000005C   0x23F0             MOVS     R3,#+240
+   \   0000005E   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000062   0x4619             MOV      R1,R3
+   \   00000064   0x200A             MOVS     R0,#+10
+   \   00000066   0x.... 0x....      B.W      GUI_FillRect
+     33          			}
+     34              		break;
+     35              	case WM_TOUCH:
+     36              	 	press_event = (struct PressEvt *)pMsg->Data.p;
+     37              		
+     38              		break;
+     39              	case WM_TOUCH_CHILD:
+     40              		press_event = (struct PressEvt *)pMsg->Data.p;
+     41          
+     42              		break;
+     43              		
+     44              	case WM_NOTIFY_PARENT:
+     45              		if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
+   \                     ??cbXYZLevelParaWin_3: (+1)
+   \   0000006A   0x6881             LDR      R1,[R0, #+8]
+   \   0000006C   0x2902             CMP      R1,#+2
+   \   0000006E   0xF040 0x8145      BNE.W    ??cbXYZLevelParaWin_1
+     46              		{
+     47              			if(pMsg->hWinSrc == button_back.btnHandle)
+   \   00000072   0x.... 0x....      LDR.W    R1,??DataTable7_2
+   \   00000076   0xF9B0 0x0006      LDRSH    R0,[R0, #+6]
+   \   0000007A   0xF9B1 0x1000      LDRSH    R1,[R1, #+0]
+   \   0000007E   0x.... 0x....      LDR.W    R4,??DataTable7_1
+   \   00000082   0x4288             CMP      R0,R1
+   \   00000084   0xD115             BNE.N    ??cbXYZLevelParaWin_5
+     48              			{
+     49              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   00000086   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   0000008A   0x2031             MOVS     R0,#+49
+   \   0000008C   0x7008             STRB     R0,[R1, #+0]
+     50              				Clear_XYZLevelPara();
+   \   0000008E   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   00000092   0x6940             LDR      R0,[R0, #+20]
+   \   00000094   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000098   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000009C   0x.... 0x....      BL       WM_IsWindow
+   \   000000A0   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_6
+   \   000000A2   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000000A6   0x.... 0x....      BL       WM_DeleteWindow
+     51              				draw_return_ui();
+   \                     ??cbXYZLevelParaWin_6: (+1)
+   \   000000AA   0xE8BD 0x4010      POP      {R4,LR}
+   \   000000AE   0x.... 0x....      B.W      draw_return_ui
+     52              			}	
+     53              			else if(pMsg->hWinSrc == level_point1_x_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_5: (+1)
+   \   000000B2   0xF9B4 0x1004      LDRSH    R1,[R4, #+4]
+   \   000000B6   0x4288             CMP      R0,R1
+   \   000000B8   0xD113             BNE.N    ??cbXYZLevelParaWin_7
+     54              			{
+     55              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   000000BA   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   000000BE   0x2031             MOVS     R0,#+49
+   \   000000C0   0x7008             STRB     R0,[R1, #+0]
+     56          	                    Clear_XYZLevelPara();
+   \   000000C2   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   000000C6   0x6940             LDR      R0,[R0, #+20]
+   \   000000C8   0x.... 0x....      BL       GUI_SetBkColor
+   \   000000CC   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000000D0   0x.... 0x....      BL       WM_IsWindow
+   \   000000D4   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_8
+   \   000000D6   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000000DA   0x.... 0x....      BL       WM_DeleteWindow
+     57          	                    value=Point1_x;
+   \                     ??cbXYZLevelParaWin_8: (+1)
+   \   000000DE   0x2018             MOVS     R0,#+24
+   \   000000E0   0xE0DE             B.N      ??cbXYZLevelParaWin_9
+     58          	                    draw_NumberKey();
+     59              			}
+     60              			else if(pMsg->hWinSrc == level_point2_x_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_7: (+1)
+   \   000000E2   0xF9B4 0x101C      LDRSH    R1,[R4, #+28]
+   \   000000E6   0x4288             CMP      R0,R1
+   \   000000E8   0xD113             BNE.N    ??cbXYZLevelParaWin_10
+     61              			{
+     62              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   000000EA   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   000000EE   0x2031             MOVS     R0,#+49
+   \   000000F0   0x7008             STRB     R0,[R1, #+0]
+     63          	                    Clear_XYZLevelPara();
+   \   000000F2   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   000000F6   0x6940             LDR      R0,[R0, #+20]
+   \   000000F8   0x.... 0x....      BL       GUI_SetBkColor
+   \   000000FC   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000100   0x.... 0x....      BL       WM_IsWindow
+   \   00000104   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_11
+   \   00000106   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000010A   0x.... 0x....      BL       WM_DeleteWindow
+     64          	                    value=Point2_x;
+   \                     ??cbXYZLevelParaWin_11: (+1)
+   \   0000010E   0x2019             MOVS     R0,#+25
+   \   00000110   0xE0C6             B.N      ??cbXYZLevelParaWin_9
+     65          	                    draw_NumberKey();                    
+     66              			}
+     67              			else if(pMsg->hWinSrc == level_point3_x_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_10: (+1)
+   \   00000112   0x.... 0x....      LDR.W    R1,??DataTable7_5
+   \   00000116   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   0000011A   0x4290             CMP      R0,R2
+   \   0000011C   0xD113             BNE.N    ??cbXYZLevelParaWin_12
+     68              			{
+     69              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   0000011E   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   00000122   0x2031             MOVS     R0,#+49
+   \   00000124   0x7008             STRB     R0,[R1, #+0]
+     70          	                    Clear_XYZLevelPara();
+   \   00000126   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   0000012A   0x6940             LDR      R0,[R0, #+20]
+   \   0000012C   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000130   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000134   0x.... 0x....      BL       WM_IsWindow
+   \   00000138   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_13
+   \   0000013A   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000013E   0x.... 0x....      BL       WM_DeleteWindow
+     71          	                    value=Point3_x;
+   \                     ??cbXYZLevelParaWin_13: (+1)
+   \   00000142   0x201A             MOVS     R0,#+26
+   \   00000144   0xE0AC             B.N      ??cbXYZLevelParaWin_9
+     72          	                    draw_NumberKey();                    
+     73              			} 
+     74              			else if(pMsg->hWinSrc == level_point4_x_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_12: (+1)
+   \   00000146   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   0000014A   0x4288             CMP      R0,R1
+   \   0000014C   0xD113             BNE.N    ??cbXYZLevelParaWin_14
+     75              			{
+     76              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   0000014E   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   00000152   0x2031             MOVS     R0,#+49
+   \   00000154   0x7008             STRB     R0,[R1, #+0]
+     77          	                    Clear_XYZLevelPara();
+   \   00000156   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   0000015A   0x6940             LDR      R0,[R0, #+20]
+   \   0000015C   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000160   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000164   0x.... 0x....      BL       WM_IsWindow
+   \   00000168   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_15
+   \   0000016A   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000016E   0x.... 0x....      BL       WM_DeleteWindow
+     78          	                    value=Point4_x;
+   \                     ??cbXYZLevelParaWin_15: (+1)
+   \   00000172   0x201B             MOVS     R0,#+27
+   \   00000174   0xE094             B.N      ??cbXYZLevelParaWin_9
+     79          	                    draw_NumberKey();                    
+     80                              
+     81              			} 
+     82          			else if(pMsg->hWinSrc == level_point5_x_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_14: (+1)
+   \   00000176   0x.... 0x....      LDR.W    R1,??DataTable7_6
+   \   0000017A   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   0000017E   0x4290             CMP      R0,R2
+   \   00000180   0xD113             BNE.N    ??cbXYZLevelParaWin_16
+     83              			{
+     84              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   00000182   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   00000186   0x2031             MOVS     R0,#+49
+   \   00000188   0x7008             STRB     R0,[R1, #+0]
+     85          	                    Clear_XYZLevelPara();
+   \   0000018A   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   0000018E   0x6940             LDR      R0,[R0, #+20]
+   \   00000190   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000194   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000198   0x.... 0x....      BL       WM_IsWindow
+   \   0000019C   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_17
+   \   0000019E   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001A2   0x.... 0x....      BL       WM_DeleteWindow
+     86          	                    value=Point5_x;
+   \                     ??cbXYZLevelParaWin_17: (+1)
+   \   000001A6   0x201C             MOVS     R0,#+28
+   \   000001A8   0xE07A             B.N      ??cbXYZLevelParaWin_9
+     87          	                    draw_NumberKey();                    
+     88                              
+     89              			}
+     90          			else if(pMsg->hWinSrc == level_point1_y_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_16: (+1)
+   \   000001AA   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   000001AE   0x4288             CMP      R0,R1
+   \   000001B0   0xD113             BNE.N    ??cbXYZLevelParaWin_18
+     91              			{
+     92              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   000001B2   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   000001B6   0x2031             MOVS     R0,#+49
+   \   000001B8   0x7008             STRB     R0,[R1, #+0]
+     93          	                    Clear_XYZLevelPara();
+   \   000001BA   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   000001BE   0x6940             LDR      R0,[R0, #+20]
+   \   000001C0   0x.... 0x....      BL       GUI_SetBkColor
+   \   000001C4   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001C8   0x.... 0x....      BL       WM_IsWindow
+   \   000001CC   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_19
+   \   000001CE   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001D2   0x.... 0x....      BL       WM_DeleteWindow
+     94          	                    value=Point1_y;
+   \                     ??cbXYZLevelParaWin_19: (+1)
+   \   000001D6   0x201D             MOVS     R0,#+29
+   \   000001D8   0xE062             B.N      ??cbXYZLevelParaWin_9
+     95          	                    draw_NumberKey();
+     96              			}
+     97              			else if(pMsg->hWinSrc == level_point2_y_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_18: (+1)
+   \   000001DA   0x.... 0x....      LDR.W    R1,??DataTable7_7
+   \   000001DE   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   000001E2   0x4290             CMP      R0,R2
+   \   000001E4   0xD113             BNE.N    ??cbXYZLevelParaWin_20
+     98              			{
+     99              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   000001E6   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   000001EA   0x2031             MOVS     R0,#+49
+   \   000001EC   0x7008             STRB     R0,[R1, #+0]
+    100          	                    Clear_XYZLevelPara();
+   \   000001EE   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   000001F2   0x6940             LDR      R0,[R0, #+20]
+   \   000001F4   0x.... 0x....      BL       GUI_SetBkColor
+   \   000001F8   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001FC   0x.... 0x....      BL       WM_IsWindow
+   \   00000200   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_21
+   \   00000202   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000206   0x.... 0x....      BL       WM_DeleteWindow
+    101          	                    value=Point2_y;
+   \                     ??cbXYZLevelParaWin_21: (+1)
+   \   0000020A   0x201E             MOVS     R0,#+30
+   \   0000020C   0xE048             B.N      ??cbXYZLevelParaWin_9
+    102          	                    draw_NumberKey();                    
+    103              			}
+    104              			else if(pMsg->hWinSrc == level_point3_y_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_20: (+1)
+   \   0000020E   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   00000212   0x4288             CMP      R0,R1
+   \   00000214   0xD113             BNE.N    ??cbXYZLevelParaWin_22
+    105              			{
+    106              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   00000216   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   0000021A   0x2031             MOVS     R0,#+49
+   \   0000021C   0x7008             STRB     R0,[R1, #+0]
+    107          	                    Clear_XYZLevelPara();
+   \   0000021E   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   00000222   0x6940             LDR      R0,[R0, #+20]
+   \   00000224   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000228   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000022C   0x.... 0x....      BL       WM_IsWindow
+   \   00000230   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_23
+   \   00000232   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000236   0x.... 0x....      BL       WM_DeleteWindow
+    108          	                    value=Point3_y;
+   \                     ??cbXYZLevelParaWin_23: (+1)
+   \   0000023A   0x201F             MOVS     R0,#+31
+   \   0000023C   0xE030             B.N      ??cbXYZLevelParaWin_9
+    109          	                    draw_NumberKey();                    
+    110              			} 
+    111              			else if(pMsg->hWinSrc == level_point4_y_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_22: (+1)
+   \   0000023E   0x.... 0x....      LDR.W    R1,??DataTable7_8
+   \   00000242   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   00000246   0x4290             CMP      R0,R2
+   \   00000248   0xD113             BNE.N    ??cbXYZLevelParaWin_24
+    112              			{
+    113              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   0000024A   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   0000024E   0x2031             MOVS     R0,#+49
+   \   00000250   0x7008             STRB     R0,[R1, #+0]
+    114          	                    Clear_XYZLevelPara();
+   \   00000252   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   00000256   0x6940             LDR      R0,[R0, #+20]
+   \   00000258   0x.... 0x....      BL       GUI_SetBkColor
+   \   0000025C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000260   0x.... 0x....      BL       WM_IsWindow
+   \   00000264   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_25
+   \   00000266   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000026A   0x.... 0x....      BL       WM_DeleteWindow
+    115          	                    value=Point4_y;
+   \                     ??cbXYZLevelParaWin_25: (+1)
+   \   0000026E   0x2020             MOVS     R0,#+32
+   \   00000270   0xE016             B.N      ??cbXYZLevelParaWin_9
+    116          	                    draw_NumberKey();                    
+    117                              
+    118              			} 
+    119          			else if(pMsg->hWinSrc == level_point5_y_value.btnHandle)
+   \                     ??cbXYZLevelParaWin_24: (+1)
+   \   00000272   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   00000276   0x4288             CMP      R0,R1
+   \   00000278   0xD119             BNE.N    ??cbXYZLevelParaWin_26
+    120              			{
+    121              				last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   0000027A   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   0000027E   0x2031             MOVS     R0,#+49
+   \   00000280   0x7008             STRB     R0,[R1, #+0]
+    122          	                    Clear_XYZLevelPara();
+   \   00000282   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   00000286   0x6940             LDR      R0,[R0, #+20]
+   \   00000288   0x.... 0x....      BL       GUI_SetBkColor
+   \   0000028C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000290   0x.... 0x....      BL       WM_IsWindow
+   \   00000294   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_27
+   \   00000296   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000029A   0x.... 0x....      BL       WM_DeleteWindow
+    123          	                    value=Point5_y;
+   \                     ??cbXYZLevelParaWin_27: (+1)
+   \   0000029E   0x2021             MOVS     R0,#+33
+   \                     ??cbXYZLevelParaWin_9: (+1)
+   \   000002A0   0x.... 0x....      LDR.W    R1,??DataTable7_9
+   \   000002A4   0x7008             STRB     R0,[R1, #+0]
+    124          	                    draw_NumberKey();                    
+   \   000002A6   0xE8BD 0x4010      POP      {R4,LR}
+   \   000002AA   0x.... 0x....      B.W      draw_NumberKey
+    125                              
+    126              			}
+    127          			else if(pMsg->hWinSrc == button_next.btnHandle)
+   \                     ??cbXYZLevelParaWin_26: (+1)
+   \   000002AE   0x.... 0x....      LDR.W    R1,??DataTable7_10
+   \   000002B2   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   000002B6   0x4290             CMP      R0,R2
+   \   000002B8   0xBF08             IT       EQ 
+    128          	             {
+    129          	                    current_page = 1;
+   \   000002BA   0x2001             MOVEQ    R0,#+1
+   \   000002BC   0xD004             BEQ.N    ??cbXYZLevelParaWin_28
+    130          	                    last_disp_state = XYZ_LEVELING_PARA_UI;
+    131          	                    Clear_XYZLevelPara();
+    132          	                    draw_XYZLevelPara();
+    133          	              }
+    134          	              else if(pMsg->hWinSrc == button_previous.btnHandle)
+   \   000002BE   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   000002C2   0x4288             CMP      R0,R1
+   \   000002C4   0xD11A             BNE.N    ??cbXYZLevelParaWin_1
+    135          	              {
+    136          	                    current_page = 0;
+   \   000002C6   0x2000             MOVS     R0,#+0
+   \                     ??cbXYZLevelParaWin_28: (+1)
+   \   000002C8   0x7020             STRB     R0,[R4, #+0]
+    137          	                    last_disp_state = XYZ_LEVELING_PARA_UI;
+   \   000002CA   0x2031             MOVS     R0,#+49
+   \   000002CC   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   000002D0   0x7008             STRB     R0,[R1, #+0]
+    138          	                    Clear_XYZLevelPara();
+   \   000002D2   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   000002D6   0x6940             LDR      R0,[R0, #+20]
+   \   000002D8   0x.... 0x....      BL       GUI_SetBkColor
+   \   000002DC   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000002E0   0x.... 0x....      BL       WM_IsWindow
+   \   000002E4   0xB118             CBZ.N    R0,??cbXYZLevelParaWin_29
+   \   000002E6   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000002EA   0x.... 0x....      BL       WM_DeleteWindow
+    139          	                    draw_XYZLevelPara();
+   \                     ??cbXYZLevelParaWin_29: (+1)
+   \   000002EE   0xE8BD 0x4010      POP      {R4,LR}
+   \   000002F2   0x....             B.N      draw_XYZLevelPara
+    140          	              } 
+    141              		}
+    142              		break;
+    143              		
+    144              	default:
+    145              		WM_DefaultProc(pMsg);
+   \                     ??cbXYZLevelParaWin_4: (+1)
+   \   000002F4   0xE8BD 0x4010      POP      {R4,LR}
+   \   000002F8   0x.... 0x....      B.W      WM_DefaultProc
+    146              	}
+    147          }
+   \                     ??cbXYZLevelParaWin_1: (+1)
+   \   000002FC   0xBD10             POP      {R4,PC}          ;; return
+    148          
+    149          
+
+   \                                 In section .text, align 4, keep-with-next
+    150          void draw_XYZLevelPara()
+    151          {   
+   \                     draw_XYZLevelPara: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+    152              int i;
+                         ^
+Warning[Pe177]: variable "i" was declared but never referenced
+    153          
+    154              level_point1_text.btnHandle=0;
+    155              level_point2_text.btnHandle=0;
+    156              level_point3_text.btnHandle=0;
+    157              level_point4_text.btnHandle=0;
+    158              level_point5_text.btnHandle=0;
+    159          
+    160              level_point1_x_value.btnHandle=0;
+    161              level_point2_x_value.btnHandle=0;
+   \   00000004   0x.... 0x....      LDR.W    R1,??DataTable7_5
+   \   00000008   0x.... 0x....      LDR.W    R5,??DataTable7_11
+   \   0000000C   0x.... 0x....      LDR.W    R6,??DataTable7_1
+    162              level_point3_x_value.btnHandle=0;
+    163              level_point4_x_value.btnHandle=0;
+    164              level_point5_x_value.btnHandle=0;
+   \   00000010   0x.... 0x....      LDR.W    R9,??DataTable7_6
+    165          
+    166              level_point1_y_value.btnHandle=0;
+    167              level_point2_y_value.btnHandle=0;
+    168              level_point3_y_value.btnHandle=0;
+    169              level_point4_y_value.btnHandle=0;
+   \   00000014   0x.... 0x....      LDR.W    R10,??DataTable7_8
+    170              level_point5_y_value.btnHandle=0;
+    171          
+    172              button_back.btnHandle=0;
+    173          
+    174              button_next.btnHandle=0;
+   \   00000018   0x.... 0x....      LDR.W    R8,??DataTable7_10
+   \   0000001C   0x2000             MOVS     R0,#+0
+   \   0000001E   0x8008             STRH     R0,[R1, #+0]
+   \   00000020   0x8308             STRH     R0,[R1, #+24]
+   \   00000022   0xB085             SUB      SP,SP,#+20
+   \   00000024   0x.... 0x....      LDR.W    R1,??DataTable7_7
+   \   00000028   0x8008             STRH     R0,[R1, #+0]
+   \   0000002A   0x8308             STRH     R0,[R1, #+24]
+   \   0000002C   0x8028             STRH     R0,[R5, #+0]
+   \   0000002E   0x8328             STRH     R0,[R5, #+24]
+   \   00000030   0x8628             STRH     R0,[R5, #+48]
+   \   00000032   0xF8A5 0x0048      STRH     R0,[R5, #+72]
+   \   00000036   0xF8A5 0x0060      STRH     R0,[R5, #+96]
+   \   0000003A   0x80B0             STRH     R0,[R6, #+4]
+   \   0000003C   0x83B0             STRH     R0,[R6, #+28]
+   \   0000003E   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+   \   00000042   0xF8A9 0x0018      STRH     R0,[R9, #+24]
+   \   00000046   0xF8AA 0x0000      STRH     R0,[R10, #+0]
+   \   0000004A   0xF8AA 0x0018      STRH     R0,[R10, #+24]
+   \   0000004E   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+    175              button_previous.btnHandle=0;
+   \   00000052   0xF8A8 0x0018      STRH     R0,[R8, #+24]
+   \   00000056   0x.... 0x....      LDR.W    R1,??DataTable7_2
+   \   0000005A   0x8008             STRH     R0,[R1, #+0]
+    176          
+    177              if(disp_state_stack._disp_state[disp_state_stack._disp_index] != XYZ_LEVELING_PARA_UI)
+   \   0000005C   0x.... 0x....      LDR.W    R0,??DataTable7_12
+   \   00000060   0xF990 0x1064      LDRSB    R1,[R0, #+100]
+   \   00000064   0x560A             LDRSB    R2,[R1, R0]
+   \   00000066   0x2A31             CMP      R2,#+49
+   \   00000068   0xD005             BEQ.N    ??draw_XYZLevelPara_0
+    178              {
+    179                  disp_state_stack._disp_index++;
+   \   0000006A   0x1C49             ADDS     R1,R1,#+1
+   \   0000006C   0xF880 0x1064      STRB     R1,[R0, #+100]
+    180                  disp_state_stack._disp_state[disp_state_stack._disp_index] = XYZ_LEVELING_PARA_UI;
+   \   00000070   0x2231             MOVS     R2,#+49
+   \   00000072   0xB249             SXTB     R1,R1
+   \   00000074   0x540A             STRB     R2,[R1, R0]
+    181              }
+    182              disp_state = XYZ_LEVELING_PARA_UI;
+   \                     ??draw_XYZLevelPara_0: (+1)
+   \   00000076   0x2031             MOVS     R0,#+49
+   \   00000078   0x.... 0x....      LDR.W    R1,??DataTable7_13
+    183              
+    184              GUI_SetBkColor(gCfgItems.background_color);
+   \   0000007C   0x.... 0x....      LDR.W    R7,??DataTable7_4
+   \   00000080   0x7008             STRB     R0,[R1, #+0]
+   \   00000082   0x1D3C             ADDS     R4,R7,#+4
+   \   00000084   0x6920             LDR      R0,[R4, #+16]
+   \   00000086   0x.... 0x....      BL       GUI_SetBkColor
+    185              GUI_SetColor(gCfgItems.title_color);
+   \   0000008A   0x6960             LDR      R0,[R4, #+20]
+   \   0000008C   0x.... 0x....      BL       GUI_SetColor
+    186              GUI_Clear();
+   \   00000090   0x.... 0x....      BL       GUI_Clear
+   \   00000094   0x.... 0x....      LDR.W    R0,??DataTable7_14
+   \   00000098   0xF8D0 0x00C0      LDR      R0,[R0, #+192]
+   \   0000009C   0x2205             MOVS     R2,#+5
+   \   0000009E   0x2103             MOVS     R1,#+3
+    187              
+    188              GUI_DispStringAt(machine_menu.XYZLevelconf, TITLE_XPOS, TITLE_YPOS);
+   \   000000A0   0x.... 0x....      BL       GUI_DispStringAt
+    189          
+    190              hXYZLevelParaWnd = WM_CreateWindow(0, 0, LCD_WIDTH, LCD_HEIGHT, WM_CF_SHOW, cbXYZLevelParaWin, 0);
+   \   000000A4   0x2000             MOVS     R0,#+0
+   \   000000A6   0x9002             STR      R0,[SP, #+8]
+   \   000000A8   0xF44F 0x73A0      MOV      R3,#+320
+   \   000000AC   0x.... 0x....      LDR.W    R0,??DataTable7_15
+   \   000000B0   0x9001             STR      R0,[SP, #+4]
+   \   000000B2   0xF44F 0x72F0      MOV      R2,#+480
+   \   000000B6   0x2002             MOVS     R0,#+2
+   \   000000B8   0x9000             STR      R0,[SP, #+0]
+   \   000000BA   0x2100             MOVS     R1,#+0
+   \   000000BC   0x2000             MOVS     R0,#+0
+   \   000000BE   0x.... 0x....      BL       WM_CreateWindow
+   \   000000C2   0x8070             STRH     R0,[R6, #+2]
+    191          
+    192              if(current_page != 1)
+   \   000000C4   0xF207 0x100E      ADDW     R0,R7,#+270
+   \   000000C8   0x9004             STR      R0,[SP, #+16]
+   \   000000CA   0x.... 0x....      LDR.W    R11,??DataTable7_16
+   \   000000CE   0x7830             LDRB     R0,[R6, #+0]
+   \   000000D0   0x2801             CMP      R0,#+1
+   \   000000D2   0xF000 0x8388      BEQ.W    ??draw_XYZLevelPara_1
+    193              {
+    194          	    level_point1_text.btnHandle = BUTTON_CreateEx(10,50,300,40,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000000D6   0x.... 0x....      BL       alloc_win_id
+   \   000000DA   0x9003             STR      R0,[SP, #+12]
+   \   000000DC   0x2328             MOVS     R3,#+40
+   \   000000DE   0x2000             MOVS     R0,#+0
+   \   000000E0   0x9002             STR      R0,[SP, #+8]
+   \   000000E2   0xF44F 0x7296      MOV      R2,#+300
+   \   000000E6   0x2002             MOVS     R0,#+2
+   \   000000E8   0x9001             STR      R0,[SP, #+4]
+   \   000000EA   0x2132             MOVS     R1,#+50
+   \   000000EC   0x5E30             LDRSH    R0,[R6, R0]
+   \   000000EE   0x9000             STR      R0,[SP, #+0]
+   \   000000F0   0x200A             MOVS     R0,#+10
+   \   000000F2   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000000F6   0x8028             STRH     R0,[R5, #+0]
+    195          	    //XYZ_left_value.btnHandle = BUTTON_CreateEx(270,50,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+    196          	    level_point1_x_value.btnHandle = BUTTON_CreateEx(320,50,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000000F8   0x.... 0x....      BL       alloc_win_id
+   \   000000FC   0x9003             STR      R0,[SP, #+12]
+   \   000000FE   0x231C             MOVS     R3,#+28
+   \   00000100   0x2000             MOVS     R0,#+0
+   \   00000102   0x9002             STR      R0,[SP, #+8]
+   \   00000104   0x2246             MOVS     R2,#+70
+   \   00000106   0x2002             MOVS     R0,#+2
+   \   00000108   0x9001             STR      R0,[SP, #+4]
+   \   0000010A   0x2132             MOVS     R1,#+50
+   \   0000010C   0x5E30             LDRSH    R0,[R6, R0]
+   \   0000010E   0x9000             STR      R0,[SP, #+0]
+   \   00000110   0xF44F 0x70A0      MOV      R0,#+320
+   \   00000114   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000118   0x80B0             STRH     R0,[R6, #+4]
+    197          	    level_point1_y_value.btnHandle = BUTTON_CreateEx(400,50,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000011A   0x.... 0x....      BL       alloc_win_id
+   \   0000011E   0x9003             STR      R0,[SP, #+12]
+   \   00000120   0x231C             MOVS     R3,#+28
+   \   00000122   0x2000             MOVS     R0,#+0
+   \   00000124   0x9002             STR      R0,[SP, #+8]
+   \   00000126   0x2246             MOVS     R2,#+70
+   \   00000128   0x2002             MOVS     R0,#+2
+   \   0000012A   0x9001             STR      R0,[SP, #+4]
+   \   0000012C   0x2132             MOVS     R1,#+50
+   \   0000012E   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000130   0x9000             STR      R0,[SP, #+0]
+   \   00000132   0xF44F 0x70C8      MOV      R0,#+400
+   \   00000136   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000013A   0xF8A9 0x0018      STRH     R0,[R9, #+24]
+    198          
+    199          	    level_point2_text.btnHandle = BUTTON_CreateEx(10,100,300,40,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000013E   0x.... 0x....      BL       alloc_win_id
+   \   00000142   0x9003             STR      R0,[SP, #+12]
+   \   00000144   0x2328             MOVS     R3,#+40
+   \   00000146   0x2000             MOVS     R0,#+0
+   \   00000148   0x9002             STR      R0,[SP, #+8]
+   \   0000014A   0xF44F 0x7296      MOV      R2,#+300
+   \   0000014E   0x2002             MOVS     R0,#+2
+   \   00000150   0x9001             STR      R0,[SP, #+4]
+   \   00000152   0x2164             MOVS     R1,#+100
+   \   00000154   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000156   0x9000             STR      R0,[SP, #+0]
+   \   00000158   0x200A             MOVS     R0,#+10
+   \   0000015A   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000015E   0x8328             STRH     R0,[R5, #+24]
+    200          	    //XYZ_right_value.btnHandle = BUTTON_CreateEx(270,100,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+    201          	    level_point2_x_value.btnHandle = BUTTON_CreateEx(320,100,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000160   0x.... 0x....      BL       alloc_win_id
+   \   00000164   0x9003             STR      R0,[SP, #+12]
+   \   00000166   0x231C             MOVS     R3,#+28
+   \   00000168   0x2000             MOVS     R0,#+0
+   \   0000016A   0x9002             STR      R0,[SP, #+8]
+   \   0000016C   0x2246             MOVS     R2,#+70
+   \   0000016E   0x2002             MOVS     R0,#+2
+   \   00000170   0x9001             STR      R0,[SP, #+4]
+   \   00000172   0x2164             MOVS     R1,#+100
+   \   00000174   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000176   0x9000             STR      R0,[SP, #+0]
+   \   00000178   0xF44F 0x70A0      MOV      R0,#+320
+   \   0000017C   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000180   0x83B0             STRH     R0,[R6, #+28]
+    202          	    level_point2_y_value.btnHandle = BUTTON_CreateEx(400,100,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000182   0x.... 0x....      BL       alloc_win_id
+   \   00000186   0x9003             STR      R0,[SP, #+12]
+   \   00000188   0x231C             MOVS     R3,#+28
+   \   0000018A   0x2000             MOVS     R0,#+0
+   \   0000018C   0x9002             STR      R0,[SP, #+8]
+   \   0000018E   0x2246             MOVS     R2,#+70
+   \   00000190   0x2002             MOVS     R0,#+2
+   \   00000192   0x9001             STR      R0,[SP, #+4]
+   \   00000194   0x2164             MOVS     R1,#+100
+   \   00000196   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000198   0x9000             STR      R0,[SP, #+0]
+   \   0000019A   0xF44F 0x70C8      MOV      R0,#+400
+   \   0000019E   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001A2   0x.... 0x....      LDR.W    R1,??DataTable7_7
+   \   000001A6   0x8008             STRH     R0,[R1, #+0]
+    203          
+    204          	    level_point3_text.btnHandle = BUTTON_CreateEx(10,150,300,40,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000001A8   0x.... 0x....      BL       alloc_win_id
+   \   000001AC   0x9003             STR      R0,[SP, #+12]
+   \   000001AE   0x2328             MOVS     R3,#+40
+   \   000001B0   0x2000             MOVS     R0,#+0
+   \   000001B2   0x9002             STR      R0,[SP, #+8]
+   \   000001B4   0xF44F 0x7296      MOV      R2,#+300
+   \   000001B8   0x2002             MOVS     R0,#+2
+   \   000001BA   0x9001             STR      R0,[SP, #+4]
+   \   000001BC   0x2196             MOVS     R1,#+150
+   \   000001BE   0x5E30             LDRSH    R0,[R6, R0]
+   \   000001C0   0x9000             STR      R0,[SP, #+0]
+   \   000001C2   0x200A             MOVS     R0,#+10
+   \   000001C4   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001C8   0x8628             STRH     R0,[R5, #+48]
+    205          	    //XYZ_front_value.btnHandle = BUTTON_CreateEx(270,150,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+    206          	    level_point3_x_value.btnHandle = BUTTON_CreateEx(320,150,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000001CA   0x.... 0x....      BL       alloc_win_id
+   \   000001CE   0x9003             STR      R0,[SP, #+12]
+   \   000001D0   0x231C             MOVS     R3,#+28
+   \   000001D2   0x2000             MOVS     R0,#+0
+   \   000001D4   0x9002             STR      R0,[SP, #+8]
+   \   000001D6   0x2246             MOVS     R2,#+70
+   \   000001D8   0x2002             MOVS     R0,#+2
+   \   000001DA   0x9001             STR      R0,[SP, #+4]
+   \   000001DC   0x2196             MOVS     R1,#+150
+   \   000001DE   0x5E30             LDRSH    R0,[R6, R0]
+   \   000001E0   0x9000             STR      R0,[SP, #+0]
+   \   000001E2   0xF44F 0x70A0      MOV      R0,#+320
+   \   000001E6   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001EA   0x.... 0x....      LDR.W    R1,??DataTable7_5
+   \   000001EE   0x8008             STRH     R0,[R1, #+0]
+    207          	    level_point3_y_value.btnHandle = BUTTON_CreateEx(400,150,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000001F0   0x.... 0x....      BL       alloc_win_id
+   \   000001F4   0x9003             STR      R0,[SP, #+12]
+   \   000001F6   0x231C             MOVS     R3,#+28
+   \   000001F8   0x2000             MOVS     R0,#+0
+   \   000001FA   0x9002             STR      R0,[SP, #+8]
+   \   000001FC   0x2246             MOVS     R2,#+70
+   \   000001FE   0x2002             MOVS     R0,#+2
+   \   00000200   0x9001             STR      R0,[SP, #+4]
+   \   00000202   0x2196             MOVS     R1,#+150
+   \   00000204   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000206   0x9000             STR      R0,[SP, #+0]
+   \   00000208   0xF44F 0x70C8      MOV      R0,#+400
+   \   0000020C   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000210   0x.... 0x....      LDR.W    R1,??DataTable7_7
+   \   00000214   0x8308             STRH     R0,[R1, #+24]
+    208          
+    209          	    level_point4_text.btnHandle = BUTTON_CreateEx(10,200,300,40,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000216   0x.... 0x....      BL       alloc_win_id
+   \   0000021A   0x9003             STR      R0,[SP, #+12]
+   \   0000021C   0x2328             MOVS     R3,#+40
+   \   0000021E   0x2000             MOVS     R0,#+0
+   \   00000220   0x9002             STR      R0,[SP, #+8]
+   \   00000222   0xF44F 0x7296      MOV      R2,#+300
+   \   00000226   0x2002             MOVS     R0,#+2
+   \   00000228   0x9001             STR      R0,[SP, #+4]
+   \   0000022A   0x21C8             MOVS     R1,#+200
+   \   0000022C   0x5E30             LDRSH    R0,[R6, R0]
+   \   0000022E   0x9000             STR      R0,[SP, #+0]
+   \   00000230   0x200A             MOVS     R0,#+10
+   \   00000232   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000236   0xF8A5 0x0048      STRH     R0,[R5, #+72]
+    210          	    //XYZ_back_value.btnHandle = BUTTON_CreateEx(270,200,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+    211          	    level_point4_x_value.btnHandle = BUTTON_CreateEx(320,200,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000023A   0x.... 0x....      BL       alloc_win_id
+   \   0000023E   0x9003             STR      R0,[SP, #+12]
+   \   00000240   0x231C             MOVS     R3,#+28
+   \   00000242   0x2000             MOVS     R0,#+0
+   \   00000244   0x9002             STR      R0,[SP, #+8]
+   \   00000246   0x2246             MOVS     R2,#+70
+   \   00000248   0x2002             MOVS     R0,#+2
+   \   0000024A   0x9001             STR      R0,[SP, #+4]
+   \   0000024C   0x21C8             MOVS     R1,#+200
+   \   0000024E   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000250   0x9000             STR      R0,[SP, #+0]
+   \   00000252   0xF44F 0x70A0      MOV      R0,#+320
+   \   00000256   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000025A   0x.... 0x....      LDR.W    R1,??DataTable7_5
+   \   0000025E   0x8308             STRH     R0,[R1, #+24]
+    212          	    level_point4_y_value.btnHandle = BUTTON_CreateEx(400,200,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000260   0x.... 0x....      BL       alloc_win_id
+   \   00000264   0x9003             STR      R0,[SP, #+12]
+   \   00000266   0x231C             MOVS     R3,#+28
+   \   00000268   0x2000             MOVS     R0,#+0
+   \   0000026A   0x9002             STR      R0,[SP, #+8]
+   \   0000026C   0x2246             MOVS     R2,#+70
+   \   0000026E   0x2002             MOVS     R0,#+2
+   \   00000270   0x9001             STR      R0,[SP, #+4]
+   \   00000272   0x21C8             MOVS     R1,#+200
+   \   00000274   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000276   0x9000             STR      R0,[SP, #+0]
+   \   00000278   0xF44F 0x70C8      MOV      R0,#+400
+   \   0000027C   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000280   0xF8AA 0x0000      STRH     R0,[R10, #+0]
+    213          	     
+    214          	    BUTTON_SetBmpFileName(level_point1_x_value.btnHandle, "bmp_value_blank.bin",1);        
+   \   00000284   0x2201             MOVS     R2,#+1
+   \   00000286   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   0000028A   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   0000028E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    215          	    BUTTON_SetBmpFileName(level_point2_x_value.btnHandle, "bmp_value_blank.bin",1);
+   \   00000292   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   00000296   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   0000029A   0x2201             MOVS     R2,#+1
+   \   0000029C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    216          	    BUTTON_SetBmpFileName(level_point3_x_value.btnHandle, "bmp_value_blank.bin",1);
+   \   000002A0   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   000002A4   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   000002A8   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000002AC   0x2201             MOVS     R2,#+1
+   \   000002AE   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    217          	    BUTTON_SetBmpFileName(level_point4_x_value.btnHandle, "bmp_value_blank.bin",1);
+   \   000002B2   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   000002B6   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   000002BA   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000002BE   0x2201             MOVS     R2,#+1
+   \   000002C0   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    218          
+    219          	    BUTTON_SetBmpFileName(level_point1_y_value.btnHandle, "bmp_value_blank.bin",1);        
+   \   000002C4   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000002C8   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   000002CC   0x2201             MOVS     R2,#+1
+   \   000002CE   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    220          	    BUTTON_SetBmpFileName(level_point2_y_value.btnHandle, "bmp_value_blank.bin",1);
+   \   000002D2   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000002D6   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   000002DA   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000002DE   0x2201             MOVS     R2,#+1
+   \   000002E0   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    221          	    BUTTON_SetBmpFileName(level_point3_y_value.btnHandle, "bmp_value_blank.bin",1);
+   \   000002E4   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000002E8   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   000002EC   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000002F0   0x2201             MOVS     R2,#+1
+   \   000002F2   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    222          	    BUTTON_SetBmpFileName(level_point4_y_value.btnHandle, "bmp_value_blank.bin",1);
+   \   000002F6   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   000002FA   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   000002FE   0x2201             MOVS     R2,#+1
+   \   00000300   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    223          	   
+    224          	    
+    225          	    BUTTON_SetBmpFileName(level_point1_text.btnHandle,NULL,1);        
+   \   00000304   0x2100             MOVS     R1,#+0
+   \   00000306   0x2201             MOVS     R2,#+1
+   \   00000308   0x5E68             LDRSH    R0,[R5, R1]
+   \   0000030A   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    226          	    BUTTON_SetBmpFileName(level_point2_text.btnHandle,NULL,1);
+   \   0000030E   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   00000312   0x2201             MOVS     R2,#+1
+   \   00000314   0x2100             MOVS     R1,#+0
+   \   00000316   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    227          	    BUTTON_SetBmpFileName(level_point3_text.btnHandle,NULL,1);
+   \   0000031A   0xF9B5 0x0030      LDRSH    R0,[R5, #+48]
+   \   0000031E   0x2201             MOVS     R2,#+1
+   \   00000320   0x2100             MOVS     R1,#+0
+   \   00000322   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    228          	    BUTTON_SetBmpFileName(level_point4_text.btnHandle,NULL,1);
+   \   00000326   0xF9B5 0x0048      LDRSH    R0,[R5, #+72]
+   \   0000032A   0x2201             MOVS     R2,#+1
+   \   0000032C   0x2100             MOVS     R1,#+0
+   \   0000032E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    229          	    
+    230          	    
+    231          	    BUTTON_SetBitmapEx(level_point1_x_value.btnHandle,0,&bmp_struct70X28,0,0);//Õº∆¨¥Û–°Œ™70x28
+   \   00000332   0x2000             MOVS     R0,#+0
+   \   00000334   0x9000             STR      R0,[SP, #+0]
+   \   00000336   0x4601             MOV      R1,R0
+   \   00000338   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   0000033C   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   00000340   0x2300             MOVS     R3,#+0
+   \   00000342   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    232          	    BUTTON_SetBitmapEx(level_point2_x_value.btnHandle,0,&bmp_struct70X28,0,0);
+   \   00000346   0x2000             MOVS     R0,#+0
+   \   00000348   0x9000             STR      R0,[SP, #+0]
+   \   0000034A   0x4603             MOV      R3,R0
+   \   0000034C   0x4601             MOV      R1,R0
+   \   0000034E   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   00000352   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   00000356   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    233          	    BUTTON_SetBitmapEx(level_point3_x_value.btnHandle,0,&bmp_struct70X28,0,0);
+   \   0000035A   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   0000035E   0x2000             MOVS     R0,#+0
+   \   00000360   0x9000             STR      R0,[SP, #+0]
+   \   00000362   0x4603             MOV      R3,R0
+   \   00000364   0x4601             MOV      R1,R0
+   \   00000366   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   0000036A   0x5E40             LDRSH    R0,[R0, R1]
+   \   0000036C   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    234          	    BUTTON_SetBitmapEx(level_point4_x_value.btnHandle,0,&bmp_struct70X28,0,0);//Õº∆¨¥Û–°Œ™70x28
+   \   00000370   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   00000374   0x2000             MOVS     R0,#+0
+   \   00000376   0x9000             STR      R0,[SP, #+0]
+   \   00000378   0x4603             MOV      R3,R0
+   \   0000037A   0x4601             MOV      R1,R0
+   \   0000037C   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   00000380   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000384   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    235          
+    236          		BUTTON_SetBitmapEx(level_point1_y_value.btnHandle,0,&bmp_struct70X28,0,0);//Õº∆¨¥Û–°Œ™70x28
+   \   00000388   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   0000038C   0x2000             MOVS     R0,#+0
+   \   0000038E   0x9000             STR      R0,[SP, #+0]
+   \   00000390   0x4603             MOV      R3,R0
+   \   00000392   0x4601             MOV      R1,R0
+   \   00000394   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   00000398   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    237          	    BUTTON_SetBitmapEx(level_point2_y_value.btnHandle,0,&bmp_struct70X28,0,0);
+   \   0000039C   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   000003A0   0x2000             MOVS     R0,#+0
+   \   000003A2   0x9000             STR      R0,[SP, #+0]
+   \   000003A4   0x4603             MOV      R3,R0
+   \   000003A6   0x4601             MOV      R1,R0
+   \   000003A8   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000003AC   0x5E40             LDRSH    R0,[R0, R1]
+   \   000003AE   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    238          	    BUTTON_SetBitmapEx(level_point3_y_value.btnHandle,0,&bmp_struct70X28,0,0);
+   \   000003B2   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   000003B6   0x2000             MOVS     R0,#+0
+   \   000003B8   0x9000             STR      R0,[SP, #+0]
+   \   000003BA   0x4603             MOV      R3,R0
+   \   000003BC   0x4601             MOV      R1,R0
+   \   000003BE   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000003C2   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000003C6   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    239          	    BUTTON_SetBitmapEx(level_point4_y_value.btnHandle,0,&bmp_struct70X28,0,0);//Õº∆¨¥Û–°Œ™70x28
+   \   000003CA   0x.... 0x....      LDR.W    R2,??DataTable7_17
+   \   000003CE   0x2000             MOVS     R0,#+0
+   \   000003D0   0x9000             STR      R0,[SP, #+0]
+   \   000003D2   0x4603             MOV      R3,R0
+   \   000003D4   0x4601             MOV      R1,R0
+   \   000003D6   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   000003DA   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    240          	        
+    241          	    BUTTON_SetTextAlign(level_point1_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000003DE   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000003E2   0x210C             MOVS     R1,#+12
+   \   000003E4   0x.... 0x....      BL       BUTTON_SetTextAlign
+    242          	    BUTTON_SetTextAlign(level_point2_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000003E8   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   000003EC   0x210C             MOVS     R1,#+12
+   \   000003EE   0x.... 0x....      BL       BUTTON_SetTextAlign
+    243          	    BUTTON_SetTextAlign(level_point3_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000003F2   0xF9B5 0x0030      LDRSH    R0,[R5, #+48]
+   \   000003F6   0x210C             MOVS     R1,#+12
+   \   000003F8   0x.... 0x....      BL       BUTTON_SetTextAlign
+    244          	    BUTTON_SetTextAlign(level_point4_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000003FC   0xF9B5 0x0048      LDRSH    R0,[R5, #+72]
+   \   00000400   0x210C             MOVS     R1,#+12
+   \   00000402   0x.... 0x....      BL       BUTTON_SetTextAlign
+    245          
+    246          	    BUTTON_SetTextAlign(level_point1_x_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000406   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   0000040A   0x210E             MOVS     R1,#+14
+   \   0000040C   0x.... 0x....      BL       BUTTON_SetTextAlign
+    247          	    BUTTON_SetTextAlign(level_point2_x_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000410   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   00000414   0x210E             MOVS     R1,#+14
+   \   00000416   0x.... 0x....      BL       BUTTON_SetTextAlign
+    248          	    BUTTON_SetTextAlign(level_point3_x_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   0000041A   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   0000041E   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000422   0x210E             MOVS     R1,#+14
+   \   00000424   0x.... 0x....      BL       BUTTON_SetTextAlign
+    249          	    BUTTON_SetTextAlign(level_point4_x_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000428   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   0000042C   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000430   0x210E             MOVS     R1,#+14
+   \   00000432   0x.... 0x....      BL       BUTTON_SetTextAlign
+    250          
+    251          		BUTTON_SetTextAlign(level_point1_y_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000436   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   0000043A   0x210E             MOVS     R1,#+14
+   \   0000043C   0x.... 0x....      BL       BUTTON_SetTextAlign
+    252          	    BUTTON_SetTextAlign(level_point2_y_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000440   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000444   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000448   0x210E             MOVS     R1,#+14
+   \   0000044A   0x.... 0x....      BL       BUTTON_SetTextAlign
+    253          	    BUTTON_SetTextAlign(level_point3_y_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   0000044E   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000452   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000456   0x210E             MOVS     R1,#+14
+   \   00000458   0x.... 0x....      BL       BUTTON_SetTextAlign
+    254          	    BUTTON_SetTextAlign(level_point4_y_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   0000045C   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   00000460   0x210E             MOVS     R1,#+14
+   \   00000462   0x.... 0x....      BL       BUTTON_SetTextAlign
+    255          
+    256          	    BUTTON_SetBkColor(level_point1_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   00000466   0x687A             LDR      R2,[R7, #+4]
+   \   00000468   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   0000046C   0x2101             MOVS     R1,#+1
+   \   0000046E   0x.... 0x....      BL       BUTTON_SetBkColor
+    257          	    BUTTON_SetBkColor(level_point1_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   00000472   0x687A             LDR      R2,[R7, #+4]
+   \   00000474   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   00000478   0x2100             MOVS     R1,#+0
+   \   0000047A   0x.... 0x....      BL       BUTTON_SetBkColor
+    258          	    BUTTON_SetTextColor(level_point1_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   0000047E   0x6862             LDR      R2,[R4, #+4]
+   \   00000480   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   00000484   0x2101             MOVS     R1,#+1
+   \   00000486   0x.... 0x....      BL       BUTTON_SetTextColor
+    259          	    BUTTON_SetTextColor(level_point1_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color); 
+   \   0000048A   0x6862             LDR      R2,[R4, #+4]
+   \   0000048C   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   00000490   0x2100             MOVS     R1,#+0
+   \   00000492   0x.... 0x....      BL       BUTTON_SetTextColor
+    260          
+    261          		BUTTON_SetBkColor(level_point1_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   00000496   0x687A             LDR      R2,[R7, #+4]
+   \   00000498   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   0000049C   0x2101             MOVS     R1,#+1
+   \   0000049E   0x.... 0x....      BL       BUTTON_SetBkColor
+    262          	    BUTTON_SetBkColor(level_point1_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   000004A2   0x687A             LDR      R2,[R7, #+4]
+   \   000004A4   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000004A8   0x2100             MOVS     R1,#+0
+   \   000004AA   0x.... 0x....      BL       BUTTON_SetBkColor
+    263          	    BUTTON_SetTextColor(level_point1_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   000004AE   0x6862             LDR      R2,[R4, #+4]
+   \   000004B0   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000004B4   0x2101             MOVS     R1,#+1
+   \   000004B6   0x.... 0x....      BL       BUTTON_SetTextColor
+    264          	    BUTTON_SetTextColor(level_point1_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color);
+   \   000004BA   0x6862             LDR      R2,[R4, #+4]
+   \   000004BC   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000004C0   0x2100             MOVS     R1,#+0
+   \   000004C2   0x.... 0x....      BL       BUTTON_SetTextColor
+    265          
+    266          	    BUTTON_SetBkColor(level_point2_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   000004C6   0x687A             LDR      R2,[R7, #+4]
+   \   000004C8   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000004CC   0x2101             MOVS     R1,#+1
+   \   000004CE   0x.... 0x....      BL       BUTTON_SetBkColor
+    267          	    BUTTON_SetBkColor(level_point2_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   000004D2   0x687A             LDR      R2,[R7, #+4]
+   \   000004D4   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000004D8   0x2100             MOVS     R1,#+0
+   \   000004DA   0x.... 0x....      BL       BUTTON_SetBkColor
+    268          	    BUTTON_SetTextColor(level_point2_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   000004DE   0x6862             LDR      R2,[R4, #+4]
+   \   000004E0   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000004E4   0x2101             MOVS     R1,#+1
+   \   000004E6   0x.... 0x....      BL       BUTTON_SetTextColor
+    269          	    BUTTON_SetTextColor(level_point2_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color); 
+   \   000004EA   0x6862             LDR      R2,[R4, #+4]
+   \   000004EC   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000004F0   0x2100             MOVS     R1,#+0
+   \   000004F2   0x.... 0x....      BL       BUTTON_SetTextColor
+    270          
+    271          		BUTTON_SetBkColor(level_point2_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   000004F6   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000004FA   0x687A             LDR      R2,[R7, #+4]
+   \   000004FC   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000500   0x2101             MOVS     R1,#+1
+   \   00000502   0x.... 0x....      BL       BUTTON_SetBkColor
+    272          	    BUTTON_SetBkColor(level_point2_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   00000506   0x2100             MOVS     R1,#+0
+   \   00000508   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   0000050C   0x687A             LDR      R2,[R7, #+4]
+   \   0000050E   0x5E40             LDRSH    R0,[R0, R1]
+   \   00000510   0x.... 0x....      BL       BUTTON_SetBkColor
+    273          	    BUTTON_SetTextColor(level_point2_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   00000514   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000518   0x6862             LDR      R2,[R4, #+4]
+   \   0000051A   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   0000051E   0x2101             MOVS     R1,#+1
+   \   00000520   0x.... 0x....      BL       BUTTON_SetTextColor
+    274          	    BUTTON_SetTextColor(level_point2_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color);
+   \   00000524   0x2100             MOVS     R1,#+0
+   \   00000526   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   0000052A   0x6862             LDR      R2,[R4, #+4]
+   \   0000052C   0x5E40             LDRSH    R0,[R0, R1]
+   \   0000052E   0x.... 0x....      BL       BUTTON_SetTextColor
+    275          
+    276          	    BUTTON_SetBkColor(level_point3_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   00000532   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   00000536   0x687A             LDR      R2,[R7, #+4]
+   \   00000538   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   0000053C   0x2101             MOVS     R1,#+1
+   \   0000053E   0x.... 0x....      BL       BUTTON_SetBkColor
+    277          	    BUTTON_SetBkColor(level_point3_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   00000542   0x2100             MOVS     R1,#+0
+   \   00000544   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   00000548   0x687A             LDR      R2,[R7, #+4]
+   \   0000054A   0x5E40             LDRSH    R0,[R0, R1]
+   \   0000054C   0x.... 0x....      BL       BUTTON_SetBkColor
+    278          	    BUTTON_SetTextColor(level_point3_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   00000550   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   00000554   0x6862             LDR      R2,[R4, #+4]
+   \   00000556   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   0000055A   0x2101             MOVS     R1,#+1
+   \   0000055C   0x.... 0x....      BL       BUTTON_SetTextColor
+    279          	    BUTTON_SetTextColor(level_point3_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color); 
+   \   00000560   0x2100             MOVS     R1,#+0
+   \   00000562   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   00000566   0x6862             LDR      R2,[R4, #+4]
+   \   00000568   0x5E40             LDRSH    R0,[R0, R1]
+   \   0000056A   0x.... 0x....      BL       BUTTON_SetTextColor
+    280          
+    281          		BUTTON_SetBkColor(level_point3_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   0000056E   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000572   0x687A             LDR      R2,[R7, #+4]
+   \   00000574   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000578   0x2101             MOVS     R1,#+1
+   \   0000057A   0x.... 0x....      BL       BUTTON_SetBkColor
+    282          	    BUTTON_SetBkColor(level_point3_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   0000057E   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000582   0x687A             LDR      R2,[R7, #+4]
+   \   00000584   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000588   0x2100             MOVS     R1,#+0
+   \   0000058A   0x.... 0x....      BL       BUTTON_SetBkColor
+    283          	    BUTTON_SetTextColor(level_point3_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   0000058E   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000592   0x6862             LDR      R2,[R4, #+4]
+   \   00000594   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000598   0x2101             MOVS     R1,#+1
+   \   0000059A   0x.... 0x....      BL       BUTTON_SetTextColor
+    284          	    BUTTON_SetTextColor(level_point3_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color);
+   \   0000059E   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000005A2   0x6862             LDR      R2,[R4, #+4]
+   \   000005A4   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000005A8   0x2100             MOVS     R1,#+0
+   \   000005AA   0x.... 0x....      BL       BUTTON_SetTextColor
+    285          
+    286          	    BUTTON_SetBkColor(level_point4_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   000005AE   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   000005B2   0x687A             LDR      R2,[R7, #+4]
+   \   000005B4   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000005B8   0x2101             MOVS     R1,#+1
+   \   000005BA   0x.... 0x....      BL       BUTTON_SetBkColor
+    287          	    BUTTON_SetBkColor(level_point4_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   000005BE   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   000005C2   0x687A             LDR      R2,[R7, #+4]
+   \   000005C4   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000005C8   0x2100             MOVS     R1,#+0
+   \   000005CA   0x.... 0x....      BL       BUTTON_SetBkColor
+    288          	    BUTTON_SetTextColor(level_point4_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   000005CE   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   000005D2   0x6862             LDR      R2,[R4, #+4]
+   \   000005D4   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000005D8   0x2101             MOVS     R1,#+1
+   \   000005DA   0x.... 0x....      BL       BUTTON_SetTextColor
+    289          	    BUTTON_SetTextColor(level_point4_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color); 
+   \   000005DE   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   000005E2   0x6862             LDR      R2,[R4, #+4]
+   \   000005E4   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000005E8   0x2100             MOVS     R1,#+0
+   \   000005EA   0x.... 0x....      BL       BUTTON_SetTextColor
+    290          
+    291          		BUTTON_SetBkColor(level_point4_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   000005EE   0x687A             LDR      R2,[R7, #+4]
+   \   000005F0   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   000005F4   0x2101             MOVS     R1,#+1
+   \   000005F6   0x.... 0x....      BL       BUTTON_SetBkColor
+    292          	    BUTTON_SetBkColor(level_point4_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   000005FA   0x687A             LDR      R2,[R7, #+4]
+   \   000005FC   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   00000600   0x2100             MOVS     R1,#+0
+   \   00000602   0x.... 0x....      BL       BUTTON_SetBkColor
+    293          	    BUTTON_SetTextColor(level_point4_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   00000606   0x6862             LDR      R2,[R4, #+4]
+   \   00000608   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   0000060C   0x2101             MOVS     R1,#+1
+   \   0000060E   0x.... 0x....      BL       BUTTON_SetTextColor
+    294          	    BUTTON_SetTextColor(level_point4_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color);
+   \   00000612   0x6862             LDR      R2,[R4, #+4]
+   \   00000614   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   00000618   0x2100             MOVS     R1,#+0
+   \   0000061A   0x.... 0x....      BL       BUTTON_SetTextColor
+    295          
+    296          	    memset(cmd_code,0,sizeof(cmd_code));
+   \   0000061E   0x21C9             MOVS     R1,#+201
+   \   00000620   0x4658             MOV      R0,R11
+   \   00000622   0x.... 0x....      BL       __aeabi_memclr
+    297          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point1_x);
+   \   00000626   0xF9B7 0x210E      LDRSH    R2,[R7, #+270]
+   \   0000062A   0xA1EB             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   0000062C   0x4658             MOV      R0,R11
+   \   0000062E   0x.... 0x....      BL       sprintf
+    298          	    BUTTON_SetText(level_point1_x_value.btnHandle,cmd_code);
+   \   00000632   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   00000636   0x4659             MOV      R1,R11
+   \   00000638   0x.... 0x....      BL       BUTTON_SetText
+    299          	    memset(cmd_code,0,sizeof(cmd_code));
+   \   0000063C   0x21C9             MOVS     R1,#+201
+   \   0000063E   0x4658             MOV      R0,R11
+   \   00000640   0x.... 0x....      BL       __aeabi_memclr
+    300          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point2_x);
+   \   00000644   0x9804             LDR      R0,[SP, #+16]
+   \   00000646   0xF9B0 0x2004      LDRSH    R2,[R0, #+4]
+   \   0000064A   0xA1E3             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   0000064C   0x4658             MOV      R0,R11
+   \   0000064E   0x.... 0x....      BL       sprintf
+    301          	    BUTTON_SetText(level_point2_x_value.btnHandle,cmd_code);
+   \   00000652   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   00000656   0x4659             MOV      R1,R11
+   \   00000658   0x.... 0x....      BL       BUTTON_SetText
+    302          	    memset(cmd_code,0,sizeof(cmd_code));
+   \   0000065C   0x21C9             MOVS     R1,#+201
+   \   0000065E   0x4658             MOV      R0,R11
+   \   00000660   0x.... 0x....      BL       __aeabi_memclr
+    303          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point3_x);
+   \   00000664   0x9804             LDR      R0,[SP, #+16]
+   \   00000666   0xF9B0 0x2008      LDRSH    R2,[R0, #+8]
+   \   0000066A   0xA1DB             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   0000066C   0x4658             MOV      R0,R11
+   \   0000066E   0x.... 0x....      BL       sprintf
+    304          	    BUTTON_SetText(level_point3_x_value.btnHandle,cmd_code);
+   \   00000672   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   00000676   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   0000067A   0x4659             MOV      R1,R11
+   \   0000067C   0x.... 0x....      BL       BUTTON_SetText
+    305          	    memset(cmd_code,0,sizeof(cmd_code));
+   \   00000680   0x21C9             MOVS     R1,#+201
+   \   00000682   0x4658             MOV      R0,R11
+   \   00000684   0x.... 0x....      BL       __aeabi_memclr
+    306          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point4_x);
+   \   00000688   0x9804             LDR      R0,[SP, #+16]
+   \   0000068A   0xF9B0 0x200C      LDRSH    R2,[R0, #+12]
+   \   0000068E   0xA1D2             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   00000690   0x4658             MOV      R0,R11
+   \   00000692   0x.... 0x....      BL       sprintf
+    307          	    BUTTON_SetText(level_point4_x_value.btnHandle,cmd_code);
+   \   00000696   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   0000069A   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   0000069E   0x4659             MOV      R1,R11
+   \   000006A0   0x.... 0x....      BL       BUTTON_SetText
+    308          
+    309          		memset(cmd_code,0,sizeof(cmd_code));
+   \   000006A4   0x21C9             MOVS     R1,#+201
+   \   000006A6   0x4658             MOV      R0,R11
+   \   000006A8   0x.... 0x....      BL       __aeabi_memclr
+    310          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point1_y);
+   \   000006AC   0x9804             LDR      R0,[SP, #+16]
+   \   000006AE   0xF9B0 0x2002      LDRSH    R2,[R0, #+2]
+   \   000006B2   0xA1C9             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   000006B4   0x4658             MOV      R0,R11
+   \   000006B6   0x.... 0x....      BL       sprintf
+    311          	    BUTTON_SetText(level_point1_y_value.btnHandle,cmd_code);
+   \   000006BA   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000006BE   0x4659             MOV      R1,R11
+   \   000006C0   0x.... 0x....      BL       BUTTON_SetText
+    312          	    memset(cmd_code,0,sizeof(cmd_code));
+   \   000006C4   0x21C9             MOVS     R1,#+201
+   \   000006C6   0x4658             MOV      R0,R11
+   \   000006C8   0x.... 0x....      BL       __aeabi_memclr
+    313          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point2_y);
+   \   000006CC   0x9804             LDR      R0,[SP, #+16]
+   \   000006CE   0xF9B0 0x2006      LDRSH    R2,[R0, #+6]
+   \   000006D2   0xA1C1             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   000006D4   0x4658             MOV      R0,R11
+   \   000006D6   0x.... 0x....      BL       sprintf
+    314          	    BUTTON_SetText(level_point2_y_value.btnHandle,cmd_code);
+   \   000006DA   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000006DE   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000006E2   0x4659             MOV      R1,R11
+   \   000006E4   0x.... 0x....      BL       BUTTON_SetText
+    315          	    memset(cmd_code,0,sizeof(cmd_code));
+   \   000006E8   0x21C9             MOVS     R1,#+201
+   \   000006EA   0x4658             MOV      R0,R11
+   \   000006EC   0x.... 0x....      BL       __aeabi_memclr
+    316          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point3_y);
+   \   000006F0   0x9804             LDR      R0,[SP, #+16]
+   \   000006F2   0xF9B0 0x200A      LDRSH    R2,[R0, #+10]
+   \   000006F6   0xA1B8             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   000006F8   0x4658             MOV      R0,R11
+   \   000006FA   0x.... 0x....      BL       sprintf
+    317          	    BUTTON_SetText(level_point3_y_value.btnHandle,cmd_code);
+   \   000006FE   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000702   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   00000706   0x4659             MOV      R1,R11
+   \   00000708   0x.... 0x....      BL       BUTTON_SetText
+    318          	    memset(cmd_code,0,sizeof(cmd_code));
+   \   0000070C   0x21C9             MOVS     R1,#+201
+   \   0000070E   0x4658             MOV      R0,R11
+   \   00000710   0x.... 0x....      BL       __aeabi_memclr
+    319          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point4_y);
+   \   00000714   0x9804             LDR      R0,[SP, #+16]
+   \   00000716   0xF9B0 0x200E      LDRSH    R2,[R0, #+14]
+   \   0000071A   0xA1AF             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   0000071C   0x4658             MOV      R0,R11
+   \   0000071E   0x.... 0x....      BL       sprintf
+    320          	    BUTTON_SetText(level_point4_y_value.btnHandle,cmd_code);
+   \   00000722   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   00000726   0x4659             MOV      R1,R11
+   \   00000728   0x.... 0x....      BL       BUTTON_SetText
+    321          
+    322          		button_next.btnHandle = BUTTON_CreateEx(320,270,70,40,hXYZLevelParaWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   0000072C   0x.... 0x....      BL       alloc_win_id
+   \   00000730   0x9003             STR      R0,[SP, #+12]
+   \   00000732   0x2328             MOVS     R3,#+40
+   \   00000734   0x2000             MOVS     R0,#+0
+   \   00000736   0x9002             STR      R0,[SP, #+8]
+   \   00000738   0x2246             MOVS     R2,#+70
+   \   0000073A   0x2002             MOVS     R0,#+2
+   \   0000073C   0x9001             STR      R0,[SP, #+4]
+   \   0000073E   0xF44F 0x7187      MOV      R1,#+270
+   \   00000742   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000744   0x9000             STR      R0,[SP, #+0]
+   \   00000746   0xF44F 0x70A0      MOV      R0,#+320
+   \   0000074A   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000074E   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+    323                     BUTTON_SetBmpFileName(button_next.btnHandle, "bmp_next.bin",1); 
+   \   00000752   0x2201             MOVS     R2,#+1
+   \   00000754   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_next.bin">`
+   \   00000758   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    324                     BUTTON_SetBitmapEx(button_next.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   0000075C   0x....             LDR.N    R2,??DataTable7_18
+   \   0000075E   0x2000             MOVS     R0,#+0
+   \   00000760   0x9000             STR      R0,[SP, #+0]
+   \   00000762   0x4603             MOV      R3,R0
+   \   00000764   0x4601             MOV      R1,R0
+   \   00000766   0xF938 0x0000      LDRSH    R0,[R8, R0]
+   \   0000076A   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    325          
+    326          
+    327          	     BUTTON_SetBkColor(button_next.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   0000076E   0x6CA2             LDR      R2,[R4, #+72]
+   \   00000770   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000774   0x2101             MOVS     R1,#+1
+   \   00000776   0x.... 0x....      BL       BUTTON_SetBkColor
+    328          	     BUTTON_SetBkColor(button_next.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color); 
+   \   0000077A   0x2100             MOVS     R1,#+0
+   \   0000077C   0x6CA2             LDR      R2,[R4, #+72]
+   \   0000077E   0xF938 0x0001      LDRSH    R0,[R8, R1]
+   \   00000782   0x.... 0x....      BL       BUTTON_SetBkColor
+    329          	     BUTTON_SetTextColor(button_next.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   00000786   0x6CE2             LDR      R2,[R4, #+76]
+   \   00000788   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   0000078C   0x2101             MOVS     R1,#+1
+   \   0000078E   0x.... 0x....      BL       BUTTON_SetTextColor
+    330          	     BUTTON_SetTextColor(button_next.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
+   \   00000792   0x2100             MOVS     R1,#+0
+   \   00000794   0x6CE2             LDR      R2,[R4, #+76]
+   \   00000796   0xF938 0x0001      LDRSH    R0,[R8, R1]
+   \   0000079A   0x.... 0x....      BL       BUTTON_SetTextColor
+    331          	     BUTTON_SetTextAlign(button_next.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   0000079E   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000007A2   0x210E             MOVS     R1,#+14
+   \   000007A4   0x.... 0x....      BL       BUTTON_SetTextAlign
+    332          	     
+    333          
+    334          	    if(gCfgItems.multiple_language != 0)
+   \   000007A8   0xF897 0x01CF      LDRB     R0,[R7, #+463]
+   \   000007AC   0x2800             CMP      R0,#+0
+   \   000007AE   0xF000 0x8120      BEQ.W    ??draw_XYZLevelPara_3
+    335          	    {
+    336          	        BUTTON_SetText(level_point1_text.btnHandle, leveling_menu.position1);
+   \   000007B2   0x....             LDR.N    R7,??DataTable7_19
+   \   000007B4   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000007B8   0x6879             LDR      R1,[R7, #+4]
+   \   000007BA   0x.... 0x....      BL       BUTTON_SetText
+    337          	        BUTTON_SetText(level_point2_text.btnHandle, leveling_menu.position2);
+   \   000007BE   0x68B9             LDR      R1,[R7, #+8]
+   \   000007C0   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   000007C4   0x.... 0x....      BL       BUTTON_SetText
+    338          	        BUTTON_SetText(level_point3_text.btnHandle, leveling_menu.position3); 
+   \   000007C8   0x68F9             LDR      R1,[R7, #+12]
+   \   000007CA   0xF9B5 0x0030      LDRSH    R0,[R5, #+48]
+   \   000007CE   0x.... 0x....      BL       BUTTON_SetText
+    339          	        BUTTON_SetText(level_point4_text.btnHandle, leveling_menu.position4);  
+   \   000007D2   0x6939             LDR      R1,[R7, #+16]
+   \   000007D4   0xF9B5 0x0048      LDRSH    R0,[R5, #+72]
+   \   000007D8   0x.... 0x....      BL       BUTTON_SetText
+    340          		 BUTTON_SetText(button_next.btnHandle,machine_menu.next);
+   \   000007DC   0x....             LDR.N    R0,??DataTable7_14
+   \   000007DE   0x6841             LDR      R1,[R0, #+4]
+   \   000007E0   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000007E4   0xE103             B.N      ??draw_XYZLevelPara_4
+    341          	   }
+    342              }
+    343              else
+    344              {
+    345              	    level_point5_text.btnHandle = BUTTON_CreateEx(10,50,300,40,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \                     ??draw_XYZLevelPara_1: (+1)
+   \   000007E6   0x.... 0x....      BL       alloc_win_id
+   \   000007EA   0x9003             STR      R0,[SP, #+12]
+   \   000007EC   0x2328             MOVS     R3,#+40
+   \   000007EE   0x2000             MOVS     R0,#+0
+   \   000007F0   0x9002             STR      R0,[SP, #+8]
+   \   000007F2   0xF44F 0x7296      MOV      R2,#+300
+   \   000007F6   0x2002             MOVS     R0,#+2
+   \   000007F8   0x9001             STR      R0,[SP, #+4]
+   \   000007FA   0x2132             MOVS     R1,#+50
+   \   000007FC   0x5E30             LDRSH    R0,[R6, R0]
+   \   000007FE   0x9000             STR      R0,[SP, #+0]
+   \   00000800   0x200A             MOVS     R0,#+10
+   \   00000802   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000806   0xF8A5 0x0060      STRH     R0,[R5, #+96]
+    346          	    //XYZ_left_value.btnHandle = BUTTON_CreateEx(270,50,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+    347          	    level_point5_x_value.btnHandle = BUTTON_CreateEx(320,50,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000080A   0x.... 0x....      BL       alloc_win_id
+   \   0000080E   0x9003             STR      R0,[SP, #+12]
+   \   00000810   0x231C             MOVS     R3,#+28
+   \   00000812   0x2000             MOVS     R0,#+0
+   \   00000814   0x9002             STR      R0,[SP, #+8]
+   \   00000816   0x2246             MOVS     R2,#+70
+   \   00000818   0x2002             MOVS     R0,#+2
+   \   0000081A   0x9001             STR      R0,[SP, #+4]
+   \   0000081C   0x2132             MOVS     R1,#+50
+   \   0000081E   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000820   0x9000             STR      R0,[SP, #+0]
+   \   00000822   0xF44F 0x70A0      MOV      R0,#+320
+   \   00000826   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000082A   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+    348          	    level_point5_y_value.btnHandle = BUTTON_CreateEx(400,50,VALUE_DEFAULT_X,VALUE_DEFAULT_Y,hXYZLevelParaWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000082E   0x.... 0x....      BL       alloc_win_id
+   \   00000832   0x9003             STR      R0,[SP, #+12]
+   \   00000834   0x231C             MOVS     R3,#+28
+   \   00000836   0x2000             MOVS     R0,#+0
+   \   00000838   0x9002             STR      R0,[SP, #+8]
+   \   0000083A   0x2246             MOVS     R2,#+70
+   \   0000083C   0x2002             MOVS     R0,#+2
+   \   0000083E   0x9001             STR      R0,[SP, #+4]
+   \   00000840   0x2132             MOVS     R1,#+50
+   \   00000842   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000844   0x9000             STR      R0,[SP, #+0]
+   \   00000846   0xF44F 0x70C8      MOV      R0,#+400
+   \   0000084A   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000084E   0xF8AA 0x0018      STRH     R0,[R10, #+24]
+    349          
+    350          	    BUTTON_SetBmpFileName(level_point5_x_value.btnHandle, "bmp_value_blank.bin",1);
+   \   00000852   0x2201             MOVS     R2,#+1
+   \   00000854   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000858   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   0000085C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    351          	    BUTTON_SetBmpFileName(level_point5_y_value.btnHandle, "bmp_value_blank.bin",1); 
+   \   00000860   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   00000864   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_value_blank.bin">`
+   \   00000868   0x2201             MOVS     R2,#+1
+   \   0000086A   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    352          
+    353          	    BUTTON_SetBitmapEx(level_point5_x_value.btnHandle,0,&bmp_struct70X28,0,0);//Õº∆¨¥Û–°Œ™70x28
+   \   0000086E   0x2000             MOVS     R0,#+0
+   \   00000870   0x9000             STR      R0,[SP, #+0]
+   \   00000872   0x4601             MOV      R1,R0
+   \   00000874   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000878   0x....             LDR.N    R2,??DataTable7_17
+   \   0000087A   0x2300             MOVS     R3,#+0
+   \   0000087C   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    354          	    BUTTON_SetBitmapEx(level_point5_y_value.btnHandle,0,&bmp_struct70X28,0,0);//Õº∆¨¥Û–°Œ™70x28
+   \   00000880   0x2000             MOVS     R0,#+0
+   \   00000882   0x9000             STR      R0,[SP, #+0]
+   \   00000884   0x4603             MOV      R3,R0
+   \   00000886   0x4601             MOV      R1,R0
+   \   00000888   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   0000088C   0x....             LDR.N    R2,??DataTable7_17
+   \   0000088E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    355          
+    356          	    BUTTON_SetBkColor(level_point5_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   00000892   0x687A             LDR      R2,[R7, #+4]
+   \   00000894   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000898   0x2101             MOVS     R1,#+1
+   \   0000089A   0x.... 0x....      BL       BUTTON_SetBkColor
+    357          	    BUTTON_SetBkColor(level_point5_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   0000089E   0x687A             LDR      R2,[R7, #+4]
+   \   000008A0   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   000008A4   0x2100             MOVS     R1,#+0
+   \   000008A6   0x.... 0x....      BL       BUTTON_SetBkColor
+    358          	    BUTTON_SetTextColor(level_point5_x_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   000008AA   0x6862             LDR      R2,[R4, #+4]
+   \   000008AC   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   000008B0   0x2101             MOVS     R1,#+1
+   \   000008B2   0x.... 0x....      BL       BUTTON_SetTextColor
+    359          	    BUTTON_SetTextColor(level_point5_x_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color); 
+   \   000008B6   0x6862             LDR      R2,[R4, #+4]
+   \   000008B8   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   000008BC   0x2100             MOVS     R1,#+0
+   \   000008BE   0x.... 0x....      BL       BUTTON_SetTextColor
+    360          
+    361          		BUTTON_SetBkColor(level_point5_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_bk_color);
+   \   000008C2   0x687A             LDR      R2,[R7, #+4]
+   \   000008C4   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000008C8   0x2101             MOVS     R1,#+1
+   \   000008CA   0x.... 0x....      BL       BUTTON_SetBkColor
+    362          	    BUTTON_SetBkColor(level_point5_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_bk_color); 
+   \   000008CE   0x687A             LDR      R2,[R7, #+4]
+   \   000008D0   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000008D4   0x2100             MOVS     R1,#+0
+   \   000008D6   0x.... 0x....      BL       BUTTON_SetBkColor
+    363          	    BUTTON_SetTextColor(level_point5_y_value.btnHandle, BUTTON_CI_PRESSED, gCfgItems.value_text_color);
+   \   000008DA   0x6862             LDR      R2,[R4, #+4]
+   \   000008DC   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000008E0   0x2101             MOVS     R1,#+1
+   \   000008E2   0x.... 0x....      BL       BUTTON_SetTextColor
+    364          	    BUTTON_SetTextColor(level_point5_y_value.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.value_text_color);
+   \   000008E6   0x6862             LDR      R2,[R4, #+4]
+   \   000008E8   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000008EC   0x2100             MOVS     R1,#+0
+   \   000008EE   0x.... 0x....      BL       BUTTON_SetTextColor
+    365          
+    366          	    BUTTON_SetTextAlign(level_point5_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000008F2   0xF9B5 0x0060      LDRSH    R0,[R5, #+96]
+   \   000008F6   0x210C             MOVS     R1,#+12
+   \   000008F8   0x.... 0x....      BL       BUTTON_SetTextAlign
+    367          	    BUTTON_SetTextAlign(level_point5_x_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   000008FC   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000900   0x210E             MOVS     R1,#+14
+   \   00000902   0x.... 0x....      BL       BUTTON_SetTextAlign
+    368          	    BUTTON_SetTextAlign(level_point5_y_value.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000906   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   0000090A   0x210E             MOVS     R1,#+14
+   \   0000090C   0x.... 0x....      BL       BUTTON_SetTextAlign
+    369          
+    370          		memset(cmd_code,0,sizeof(cmd_code));
+   \   00000910   0x21C9             MOVS     R1,#+201
+   \   00000912   0x4658             MOV      R0,R11
+   \   00000914   0x.... 0x....      BL       __aeabi_memclr
+    371          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point5_x);
+   \   00000918   0x9804             LDR      R0,[SP, #+16]
+   \   0000091A   0xF9B0 0x2010      LDRSH    R2,[R0, #+16]
+   \   0000091E   0xA12E             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   00000920   0x4658             MOV      R0,R11
+   \   00000922   0x.... 0x....      BL       sprintf
+    372          	    BUTTON_SetText(level_point5_x_value.btnHandle,cmd_code);
+   \   00000926   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   0000092A   0x4659             MOV      R1,R11
+   \   0000092C   0x.... 0x....      BL       BUTTON_SetText
+    373          		
+    374          		memset(cmd_code,0,sizeof(cmd_code));
+   \   00000930   0x21C9             MOVS     R1,#+201
+   \   00000932   0x4658             MOV      R0,R11
+   \   00000934   0x.... 0x....      BL       __aeabi_memclr
+    375          	    sprintf(cmd_code,"%d",gCfgItems.leveling_point5_y);
+   \   00000938   0x9804             LDR      R0,[SP, #+16]
+   \   0000093A   0xF9B0 0x2012      LDRSH    R2,[R0, #+18]
+   \   0000093E   0xA126             ADR.N    R1,??draw_XYZLevelPara_2  ;; 0x25, 0x64, 0x00, 0x00
+   \   00000940   0x4658             MOV      R0,R11
+   \   00000942   0x.... 0x....      BL       sprintf
+    376          	    BUTTON_SetText(level_point5_y_value.btnHandle,cmd_code);
+   \   00000946   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   0000094A   0x4659             MOV      R1,R11
+   \   0000094C   0x.... 0x....      BL       BUTTON_SetText
+    377          
+    378          	    button_previous.btnHandle = BUTTON_CreateEx(320,270,70,40,hXYZLevelParaWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   00000950   0x.... 0x....      BL       alloc_win_id
+   \   00000954   0x9003             STR      R0,[SP, #+12]
+   \   00000956   0x2328             MOVS     R3,#+40
+   \   00000958   0x2000             MOVS     R0,#+0
+   \   0000095A   0x9002             STR      R0,[SP, #+8]
+   \   0000095C   0x2246             MOVS     R2,#+70
+   \   0000095E   0x2002             MOVS     R0,#+2
+   \   00000960   0x9001             STR      R0,[SP, #+4]
+   \   00000962   0xF44F 0x7187      MOV      R1,#+270
+   \   00000966   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000968   0x9000             STR      R0,[SP, #+0]
+   \   0000096A   0xF44F 0x70A0      MOV      R0,#+320
+   \   0000096E   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000972   0xF8A8 0x0018      STRH     R0,[R8, #+24]
+    379                     BUTTON_SetBmpFileName(button_previous.btnHandle, "bmp_previous.bin",1); 
+   \   00000976   0x2201             MOVS     R2,#+1
+   \   00000978   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_previous.bin">`
+   \   0000097C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    380                  
+    381                     BUTTON_SetBitmapEx(button_previous.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   00000980   0x....             LDR.N    R2,??DataTable7_18
+   \   00000982   0x2000             MOVS     R0,#+0
+   \   00000984   0x9000             STR      R0,[SP, #+0]
+   \   00000986   0x4603             MOV      R3,R0
+   \   00000988   0x4601             MOV      R1,R0
+   \   0000098A   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   0000098E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    382          
+    383          	     BUTTON_SetBkColor(button_previous.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   00000992   0x6CA2             LDR      R2,[R4, #+72]
+   \   00000994   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   00000998   0x2101             MOVS     R1,#+1
+   \   0000099A   0x.... 0x....      BL       BUTTON_SetBkColor
+    384          	     BUTTON_SetBkColor(button_previous.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);    
+   \   0000099E   0x6CA2             LDR      R2,[R4, #+72]
+   \   000009A0   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000009A4   0x2100             MOVS     R1,#+0
+   \   000009A6   0x.... 0x....      BL       BUTTON_SetBkColor
+    385          	     BUTTON_SetTextColor(button_previous.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   000009AA   0x6CE2             LDR      R2,[R4, #+76]
+   \   000009AC   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000009B0   0x2101             MOVS     R1,#+1
+   \   000009B2   0x.... 0x....      BL       BUTTON_SetTextColor
+    386          	     BUTTON_SetTextColor(button_previous.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
+   \   000009B6   0x6CE2             LDR      R2,[R4, #+76]
+   \   000009B8   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000009BC   0x2100             MOVS     R1,#+0
+   \   000009BE   0x.... 0x....      BL       BUTTON_SetTextColor
+    387          	     
+    388               	     BUTTON_SetTextAlign(button_previous.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   000009C2   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000009C6   0x210E             MOVS     R1,#+14
+   \   000009C8   0x.... 0x....      BL       BUTTON_SetTextAlign
+    389          
+    390          	    if(gCfgItems.multiple_language != 0)
+   \   000009CC   0xF897 0x01CF      LDRB     R0,[R7, #+463]
+   \   000009D0   0xB178             CBZ.N    R0,??draw_XYZLevelPara_3
+    391          	    {
+    392          	        BUTTON_SetText(level_point5_text.btnHandle, leveling_menu.position5);
+   \   000009D2   0x....             LDR.N    R0,??DataTable7_19
+   \   000009D4   0xE002             B.N      ??draw_XYZLevelPara_5
+   \   000009D6   0xBF00             Nop      
+   \                     ??draw_XYZLevelPara_2:
+   \   000009D8   0x25 0x64          DC8      0x25, 0x64, 0x00, 0x00
+   \              0x00 0x00    
+   \                     ??draw_XYZLevelPara_5: (+1)
+   \   000009DC   0x6941             LDR      R1,[R0, #+20]
+   \   000009DE   0xF9B5 0x0060      LDRSH    R0,[R5, #+96]
+   \   000009E2   0x.... 0x....      BL       BUTTON_SetText
+    393          	    	 BUTTON_SetText(button_previous.btnHandle,machine_menu.previous); 
+   \   000009E6   0x....             LDR.N    R0,??DataTable7_14
+   \   000009E8   0x6881             LDR      R1,[R0, #+8]
+   \   000009EA   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \                     ??draw_XYZLevelPara_4: (+1)
+   \   000009EE   0x.... 0x....      BL       BUTTON_SetText
+    394          	    }
+    395              }
+    396          
+    397              button_back.btnHandle = BUTTON_CreateEx(400,270,70,40,hXYZLevelParaWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \                     ??draw_XYZLevelPara_3: (+1)
+   \   000009F2   0x.... 0x....      BL       alloc_win_id
+   \   000009F6   0x9003             STR      R0,[SP, #+12]
+   \   000009F8   0x2328             MOVS     R3,#+40
+   \   000009FA   0x2000             MOVS     R0,#+0
+   \   000009FC   0x9002             STR      R0,[SP, #+8]
+   \   000009FE   0x2246             MOVS     R2,#+70
+   \   00000A00   0x2002             MOVS     R0,#+2
+   \   00000A02   0x9001             STR      R0,[SP, #+4]
+   \   00000A04   0xF44F 0x7187      MOV      R1,#+270
+   \   00000A08   0x5E30             LDRSH    R0,[R6, R0]
+   \   00000A0A   0x9000             STR      R0,[SP, #+0]
+   \   00000A0C   0xF44F 0x70C8      MOV      R0,#+400
+   \   00000A10   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000A14   0x....             LDR.N    R1,??DataTable7_2
+   \   00000A16   0x8008             STRH     R0,[R1, #+0]
+    398              
+    399              BUTTON_SetBmpFileName(button_back.btnHandle, "bmp_back70x40.bin",1);        
+   \   00000A18   0x2201             MOVS     R2,#+1
+   \   00000A1A   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_back70x40.bin">`
+   \   00000A1E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    400              BUTTON_SetBitmapEx(button_back.btnHandle, 0, &bmp_struct70X40,0,0);
+   \   00000A22   0x....             LDR.N    R2,??DataTable7_18
+   \   00000A24   0x2000             MOVS     R0,#+0
+   \   00000A26   0x9000             STR      R0,[SP, #+0]
+   \   00000A28   0x4601             MOV      R1,R0
+   \   00000A2A   0x....             LDR.N    R0,??DataTable7_2
+   \   00000A2C   0x5E40             LDRSH    R0,[R0, R1]
+   \   00000A2E   0x2300             MOVS     R3,#+0
+   \   00000A30   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    401              BUTTON_SetTextAlign(button_back.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000A34   0x....             LDR.N    R0,??DataTable7_2
+   \   00000A36   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000A3A   0x210E             MOVS     R1,#+14
+   \   00000A3C   0x.... 0x....      BL       BUTTON_SetTextAlign
+    402              
+    403              BUTTON_SetBkColor(button_back.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   00000A40   0x....             LDR.N    R0,??DataTable7_2
+   \   00000A42   0x6CA2             LDR      R2,[R4, #+72]
+   \   00000A44   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000A48   0x2101             MOVS     R1,#+1
+   \   00000A4A   0x.... 0x....      BL       BUTTON_SetBkColor
+    404              BUTTON_SetBkColor(button_back.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color); 
+   \   00000A4E   0x2100             MOVS     R1,#+0
+   \   00000A50   0x....             LDR.N    R0,??DataTable7_2
+   \   00000A52   0x6CA2             LDR      R2,[R4, #+72]
+   \   00000A54   0x5E40             LDRSH    R0,[R0, R1]
+   \   00000A56   0x.... 0x....      BL       BUTTON_SetBkColor
+    405              BUTTON_SetTextColor(button_back.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   00000A5A   0x....             LDR.N    R0,??DataTable7_2
+   \   00000A5C   0x6CE2             LDR      R2,[R4, #+76]
+   \   00000A5E   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000A62   0x2101             MOVS     R1,#+1
+   \   00000A64   0x.... 0x....      BL       BUTTON_SetTextColor
+    406              BUTTON_SetTextColor(button_back.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor); 
+   \   00000A68   0x2100             MOVS     R1,#+0
+   \   00000A6A   0x....             LDR.N    R0,??DataTable7_2
+   \   00000A6C   0x6CE2             LDR      R2,[R4, #+76]
+   \   00000A6E   0x5E40             LDRSH    R0,[R0, R1]
+   \   00000A70   0x.... 0x....      BL       BUTTON_SetTextColor
+    407              
+    408              BUTTON_SetText(button_back.btnHandle,common_menu.text_back);
+   \   00000A74   0x....             LDR.N    R0,??DataTable7_20
+   \   00000A76   0x6801             LDR      R1,[R0, #+0]
+   \   00000A78   0x....             LDR.N    R0,??DataTable7_2
+   \   00000A7A   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000A7E   0xB005             ADD      SP,SP,#+20
+   \   00000A80   0xE8BD 0x4FF0      POP      {R4-R11,LR}
+   \   00000A84   0x.... 0x....      B.W      BUTTON_SetText
+    409          
+    410          }
+    411          
+
+   \                                 In section .text, align 2, keep-with-next
+    412          void Clear_XYZLevelPara()
+    413          {
+   \                     Clear_XYZLevelPara: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    414          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000002   0x....             LDR.N    R0,??DataTable7_4
+   \   00000004   0x6940             LDR      R0,[R0, #+20]
+   \   00000006   0x.... 0x....      BL       GUI_SetBkColor
+    415          	if(WM_IsWindow(hXYZLevelParaWnd))
+   \   0000000A   0x....             LDR.N    R4,??DataTable7_1
+   \   0000000C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000010   0x.... 0x....      BL       WM_IsWindow
+   \   00000014   0xB128             CBZ.N    R0,??Clear_XYZLevelPara_0
+    416          	{
+    417          		WM_DeleteWindow(hXYZLevelParaWnd);
+   \   00000016   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000001A   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001E   0x.... 0x....      B.W      WM_DeleteWindow
+    418          	}
+    419          }
+   \                     ??Clear_XYZLevelPara_0: (+1)
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x00FF5449         DC32     0xff5449
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \   00000000   0x........         DC32     current_page
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \   00000000   0x........         DC32     button_back
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \   00000000   0x........         DC32     last_disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \   00000000   0x........         DC32     level_point3_x_value
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \   00000000   0x........         DC32     level_point5_x_value
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \   00000000   0x........         DC32     level_point2_y_value
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \   00000000   0x........         DC32     level_point4_y_value
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \   00000000   0x........         DC32     value
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \   00000000   0x........         DC32     button_next
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \   00000000   0x........         DC32     level_point1_text
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \   00000000   0x........         DC32     disp_state_stack
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_13:
+   \   00000000   0x........         DC32     disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_14:
+   \   00000000   0x........         DC32     machine_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_15:
+   \   00000000   0x........         DC32     _Z17cbXYZLevelParaWinP10WM_MESSAGE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_16:
+   \   00000000   0x........         DC32     cmd_code
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_17:
+   \   00000000   0x........         DC32     bmp_struct70X28
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_18:
+   \   00000000   0x........         DC32     bmp_struct70X40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_19:
+   \   00000000   0x........         DC32     leveling_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_20:
+   \   00000000   0x........         DC32     common_menu
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "%d">`:
+   \   00000000   0x25 0x64          DC8 "%d"
+   \              0x00         
+   \   00000003   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_value_blank.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_value_blank.bin"
+   \              0x70 0x5F    
+   \              0x76 0x61    
+   \              0x6C 0x75    
+   \              0x65 0x5F    
+   \              0x62 0x6C    
+   \              0x61 0x6E    
+   \              0x6B 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_next.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_next.bin"
+   \              0x70 0x5F    
+   \              0x6E 0x65    
+   \              0x78 0x74    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_previous.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_previous.bin"
+   \              0x70 0x5F    
+   \              0x70 0x72    
+   \              0x65 0x76    
+   \              0x69 0x6F    
+   \              0x75 0x73    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_back70x40.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_back70x40.bin"
+   \              0x70 0x5F    
+   \              0x62 0x61    
+   \              0x63 0x6B    
+   \              0x37 0x30    
+   \              0x78 0x34    
+   \              0x30 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+    420          
+    421          
+    422          
+    423          
+    424          
+    425          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Clear_XYZLevelPara
+         8   -> GUI_SetBkColor
+         0   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+       8   cbXYZLevelParaWin(WM_MESSAGE *)
+         0   -> GUI_FillRect
+         8   -> GUI_FillRect
+         8   -> GUI_SetBkColor
+         8   -> GUI_SetColor
+         0   -> WM_DefaultProc
+         8   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+         0   -> draw_NumberKey
+         0   -> draw_XYZLevelPara
+         0   -> draw_return_ui
+      56   draw_XYZLevelPara
+        56   -> BUTTON_CreateEx
+        56   -> BUTTON_SetBitmapEx
+        56   -> BUTTON_SetBkColor
+        56   -> BUTTON_SetBmpFileName
+         0   -> BUTTON_SetText
+        56   -> BUTTON_SetText
+        56   -> BUTTON_SetTextAlign
+        56   -> BUTTON_SetTextColor
+        56   -> GUI_Clear
+        56   -> GUI_DispStringAt
+        56   -> GUI_SetBkColor
+        56   -> GUI_SetColor
+        56   -> WM_CreateWindow
+        56   -> __aeabi_memclr
+        56   -> alloc_win_id
+        56   -> sprintf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ?<Constant "%d">
+      20  ?<Constant "bmp_back70x40.bin">
+      16  ?<Constant "bmp_next.bin">
+      20  ?<Constant "bmp_previous.bin">
+      20  ?<Constant "bmp_value_blank.bin">
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_13
+       4  ??DataTable7_14
+       4  ??DataTable7_15
+       4  ??DataTable7_16
+       4  ??DataTable7_17
+       4  ??DataTable7_18
+       4  ??DataTable7_19
+       4  ??DataTable7_2
+       4  ??DataTable7_20
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+      36  Clear_XYZLevelPara
+      24  button_back
+      48  button_next
+          button_previous
+     766  cbXYZLevelParaWin(WM_MESSAGE *)
+      52  current_page
+          hXYZLevelParaWnd
+          level_point1_x_value
+          level_point2_x_value
+    2696  draw_XYZLevelPara
+     120  level_point1_text
+          level_point2_text
+          level_point3_text
+          level_point4_text
+          level_point5_text
+      48  level_point2_y_value
+          level_point3_y_value
+      48  level_point3_x_value
+          level_point4_x_value
+      48  level_point4_y_value
+          level_point5_y_value
+      48  level_point5_x_value
+          level_point1_y_value
+
+ 
+   436 bytes in section .bss
+     4 bytes in section .rodata
+ 3 658 bytes in section .text
+ 
+ 3 658 bytes of CODE  memory
+     4 bytes of CONST memory
+   436 bytes of DATA  memory
+
+Errors: none
+Warnings: 19

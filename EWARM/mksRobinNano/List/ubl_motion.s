@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:06:18
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:27
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\ubl_motion.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\ubl_motion.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\ubl_motion.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\ubl_motion.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\ubl_motion.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\ubl_motion.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -123,15 +120,11 @@
         EXTERN destination
         EXTERN g26_debug_flag
         EXTERN lroundf
-        EXTERN memcpy
         EXTERN mksCfg
         EXTERN mksTmp
         EXTERN sqrtf
 
         PUBLIC _Z22ubl_buffer_segment_rawRA4_KfRS_
-        PUBLIC _Z28set_current_from_destinationv
-        PUBLIC _Z29debug_current_and_destinationPKc
-        PUBLIC _Z34position_is_reachable_IS_CARTESIANRKfS0_
         PUBLIC _Z34position_is_reachable_IS_KINEMATICRKfS0_
         PUBLIC _ZN20unified_bed_leveling16get_cell_index_xERKf
         PUBLIC _ZN20unified_bed_leveling16get_cell_index_yERKf
@@ -141,9 +134,6 @@
         PUBLIC _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh
         PUBLIC _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii
         PUBLIC _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii
-        PUBLIC _ZN7Planner20leveling_active_at_zERKf
-        PUBLIC _ZN7Planner25fade_scaling_factor_for_zERKf
-        PUBLIC _ZN7Stepper25get_axis_position_degreesE8AxisEnum
         PUBLIC _ZTI5Print
         PUBLIC _ZZN7Planner25fade_scaling_factor_for_zERKfE13z_fade_factor
         
@@ -174,7 +164,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\ubl_motion.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\ubl_motion.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -203,27 +193,8 @@
 //   26   #include "Marlin.h"
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z28set_current_from_destinationv
-          CFI Block cfiBlock0 Using cfiCommon0
-          CFI Function _Z28set_current_from_destinationv
-        THUMB
-// __interwork __softfp void set_current_from_destination()
-_Z28set_current_from_destinationv:
-        MOVS     R2,#+16
-        LDR.N    R1,??set_current_from_destination_0
-        LDR.N    R0,??set_current_from_destination_0+0x4
-          CFI FunCall memcpy
-        B.W      memcpy
-        Nop      
-        DATA
-??set_current_from_destination_0:
-        DC32     destination
-        DC32     current_position
-          CFI EndBlock cfiBlock0
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _Z34position_is_reachable_IS_KINEMATICRKfS0_
-          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _Z34position_is_reachable_IS_KINEMATICRKfS0_
         THUMB
 // __interwork __softfp bool position_is_reachable_IS_KINEMATIC(float const &, float const &)
@@ -238,184 +209,152 @@ _Z34position_is_reachable_IS_KINEMATICRKfS0_:
           CFI R4 Frame(CFA, -28)
           CFI CFA R13+32
         MOV      R5,R0
-        MOV      R4,R1
         LDR.N    R0,??position_is_reachable_IS_KINEMATIC_0
+        MOV      R4,R1
         LDRSH    R1,[R0, #+88]
         LSLS     R2,R1,#+30
         BPL.N    ??position_is_reachable_IS_KINEMATIC_1
-        LDR      R8,[R0, #+84]
-        MOV      R9,#+2
-        MOV      R6,#+1065353216
-        MOV      R7,R6
+        LDR      R6,[R0, #+84]
+        MOV      R8,#+1065353216
+        MOVS     R7,#+2
+        MOV      R9,R8
         B.N      ??position_is_reachable_IS_KINEMATIC_2
 ??position_is_reachable_IS_KINEMATIC_3:
-        MOV      R0,R8
-        MOV      R1,R8
+        MOV      R0,R6
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R8,R0
+        MOV      R6,R0
 ??position_is_reachable_IS_KINEMATIC_2:
-        LSLS     R0,R9,#+31
+        LSLS     R0,R7,#+31
         BPL.N    ??position_is_reachable_IS_KINEMATIC_4
-        MOV      R0,R7
-        MOV      R1,R8
+        MOV      R0,R9
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R7,R0
+        MOV      R9,R0
 ??position_is_reachable_IS_KINEMATIC_4:
-        LSRS     R9,R9,#+1
+        LSRS     R7,R7,#+1
         BNE.N    ??position_is_reachable_IS_KINEMATIC_3
-        LDR      R8,[R5, #+0]
-        MOV      R9,#+2
-        MOV      R5,R6
+        LDR      R6,[R5, #+0]
+        MOVS     R7,#+2
+        MOV      R5,R8
         B.N      ??position_is_reachable_IS_KINEMATIC_5
 ??position_is_reachable_IS_KINEMATIC_6:
-        MOV      R0,R8
-        MOV      R1,R8
+        MOV      R0,R6
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R8,R0
+        MOV      R6,R0
 ??position_is_reachable_IS_KINEMATIC_5:
-        LSLS     R0,R9,#+31
+        LSLS     R0,R7,#+31
         BPL.N    ??position_is_reachable_IS_KINEMATIC_7
         MOV      R0,R5
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R5,R0
 ??position_is_reachable_IS_KINEMATIC_7:
-        LSRS     R9,R9,#+1
+        LSRS     R7,R7,#+1
         BNE.N    ??position_is_reachable_IS_KINEMATIC_6
         LDR      R4,[R4, #+0]
-        MOV      R8,#+2
         B.N      ??position_is_reachable_IS_KINEMATIC_8
-??position_is_reachable_IS_KINEMATIC_9:
-        MOV      R0,R4
-        MOV      R1,R4
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R4,R0
-??position_is_reachable_IS_KINEMATIC_8:
-        LSLS     R0,R8,#+31
-        BPL.N    ??position_is_reachable_IS_KINEMATIC_10
-        MOV      R0,R6
-        MOV      R1,R4
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R6,R0
-??position_is_reachable_IS_KINEMATIC_10:
-        LSRS     R8,R8,#+1
-        BNE.N    ??position_is_reachable_IS_KINEMATIC_9
-        MOV      R0,R5
-        MOV      R1,R6
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_cfrcmple
-        BL       __aeabi_cfrcmple
-        BHI.N    ??position_is_reachable_IS_KINEMATIC_11
-        MOVS     R0,#+1
-        B.N      ??position_is_reachable_IS_KINEMATIC_12
-??position_is_reachable_IS_KINEMATIC_11:
-        MOVS     R0,#+0
-        B.N      ??position_is_reachable_IS_KINEMATIC_12
 ??position_is_reachable_IS_KINEMATIC_1:
         MOV      R0,#+768
         TST      R1,R0
-        BEQ.N    ??position_is_reachable_IS_KINEMATIC_12
+        BEQ.N    ??position_is_reachable_IS_KINEMATIC_9
         LDR.N    R0,??position_is_reachable_IS_KINEMATIC_0+0x4
         LDR      R1,[R0, #+0]
         LDR.N    R0,??position_is_reachable_IS_KINEMATIC_0+0x8
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R8,R0
-        MOV      R9,#+2
-        MOV      R6,#+1065353216
-        MOV      R7,R6
-        B.N      ??position_is_reachable_IS_KINEMATIC_13
-??position_is_reachable_IS_KINEMATIC_14:
-        MOV      R0,R8
-        MOV      R1,R8
+        MOV      R8,#+1065353216
+        MOV      R6,R0
+        MOVS     R7,#+2
+        MOV      R9,R8
+        B.N      ??position_is_reachable_IS_KINEMATIC_10
+??position_is_reachable_IS_KINEMATIC_11:
+        MOV      R0,R6
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R8,R0
-??position_is_reachable_IS_KINEMATIC_13:
-        LSLS     R0,R9,#+31
-        BPL.N    ??position_is_reachable_IS_KINEMATIC_15
-        MOV      R0,R7
-        MOV      R1,R8
+        MOV      R6,R0
+??position_is_reachable_IS_KINEMATIC_10:
+        LSLS     R0,R7,#+31
+        BPL.N    ??position_is_reachable_IS_KINEMATIC_12
+        MOV      R0,R9
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R7,R0
-??position_is_reachable_IS_KINEMATIC_15:
-        LSRS     R9,R9,#+1
-        BNE.N    ??position_is_reachable_IS_KINEMATIC_14
+        MOV      R9,R0
+??position_is_reachable_IS_KINEMATIC_12:
+        LSRS     R7,R7,#+1
+        BNE.N    ??position_is_reachable_IS_KINEMATIC_11
         LDR      R1,[R5, #+0]
         LDR.N    R0,??position_is_reachable_IS_KINEMATIC_0+0xC  ;; 0xc2c80000
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R8,R0
-        MOV      R9,#+2
-        MOV      R5,R6
-        B.N      ??position_is_reachable_IS_KINEMATIC_16
-??position_is_reachable_IS_KINEMATIC_17:
-        MOV      R0,R8
-        MOV      R1,R8
+        MOV      R6,R0
+        MOVS     R7,#+2
+        MOV      R5,R8
+        B.N      ??position_is_reachable_IS_KINEMATIC_13
+??position_is_reachable_IS_KINEMATIC_14:
+        MOV      R0,R6
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R8,R0
-??position_is_reachable_IS_KINEMATIC_16:
-        LSLS     R0,R9,#+31
-        BPL.N    ??position_is_reachable_IS_KINEMATIC_18
+        MOV      R6,R0
+??position_is_reachable_IS_KINEMATIC_13:
+        LSLS     R0,R7,#+31
+        BPL.N    ??position_is_reachable_IS_KINEMATIC_15
         MOV      R0,R5
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R5,R0
-??position_is_reachable_IS_KINEMATIC_18:
-        LSRS     R9,R9,#+1
-        BNE.N    ??position_is_reachable_IS_KINEMATIC_17
+??position_is_reachable_IS_KINEMATIC_15:
+        LSRS     R7,R7,#+1
+        BNE.N    ??position_is_reachable_IS_KINEMATIC_14
         LDR      R1,[R4, #+0]
         LDR.N    R0,??position_is_reachable_IS_KINEMATIC_0+0x10  ;; 0x42600000
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R4,R0
-        MOV      R8,#+2
-        B.N      ??position_is_reachable_IS_KINEMATIC_19
-??position_is_reachable_IS_KINEMATIC_20:
+??position_is_reachable_IS_KINEMATIC_8:
+        MOVS     R6,#+2
+        B.N      ??position_is_reachable_IS_KINEMATIC_16
+??position_is_reachable_IS_KINEMATIC_17:
         MOV      R0,R4
         MOV      R1,R4
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R4,R0
-??position_is_reachable_IS_KINEMATIC_19:
-        LSLS     R0,R8,#+31
-        BPL.N    ??position_is_reachable_IS_KINEMATIC_21
-        MOV      R0,R6
+??position_is_reachable_IS_KINEMATIC_16:
+        LSLS     R0,R6,#+31
+        BPL.N    ??position_is_reachable_IS_KINEMATIC_18
+        MOV      R0,R8
         MOV      R1,R4
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R6,R0
-??position_is_reachable_IS_KINEMATIC_21:
-        LSRS     R8,R8,#+1
-        BNE.N    ??position_is_reachable_IS_KINEMATIC_20
+        MOV      R8,R0
+??position_is_reachable_IS_KINEMATIC_18:
+        LSRS     R6,R6,#+1
+        BNE.N    ??position_is_reachable_IS_KINEMATIC_17
         MOV      R0,R5
-        MOV      R1,R6
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R7
+        MOV      R0,R9
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.N    ??position_is_reachable_IS_KINEMATIC_22
-        MOVS     R0,#+1
-        B.N      ??position_is_reachable_IS_KINEMATIC_12
-??position_is_reachable_IS_KINEMATIC_22:
-        MOVS     R0,#+0
-??position_is_reachable_IS_KINEMATIC_12:
+        ITE      LS 
+        MOVLS    R0,#+1
+        MOVHI    R0,#+0
+??position_is_reachable_IS_KINEMATIC_9:
         POP      {R1,R4-R9,PC}    ;; return
+        Nop      
         DATA
 ??position_is_reachable_IS_KINEMATIC_0:
         DC32     mksCfg
@@ -423,171 +362,8 @@ _Z34position_is_reachable_IS_KINEMATICRKfS0_:
         DC32     L2
         DC32     0xc2c80000
         DC32     0x42600000
-          CFI EndBlock cfiBlock1
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z34position_is_reachable_IS_CARTESIANRKfS0_
-          CFI Block cfiBlock2 Using cfiCommon0
-          CFI Function _Z34position_is_reachable_IS_CARTESIANRKfS0_
-        THUMB
-// __interwork __softfp bool position_is_reachable_IS_CARTESIAN(float const &, float const &)
-_Z34position_is_reachable_IS_CARTESIANRKfS0_:
-        PUSH     {R3-R11,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R11,R1
-        LDR      R0,[R0, #+0]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R4,R0
-        MOV      R5,R1
-        LDR.W    R8,??position_is_reachable_IS_CARTESIAN_0  ;; 0xd2f1a9fc
-        LDR.W    R9,??position_is_reachable_IS_CARTESIAN_0+0x4  ;; 0xbf50624d
-        LDR.W    R10,??position_is_reachable_IS_CARTESIAN_0+0x8
-        LDR      R0,[R10, #+8]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dadd
-        BL       __aeabi_dadd
-        MOV      R2,R0
-        MOV      R3,R1
-        MOV      R0,R4
-        MOV      R1,R5
-          CFI FunCall __aeabi_cdrcmple
-        BL       __aeabi_cdrcmple
-        BHI.N    ??position_is_reachable_IS_CARTESIAN_1
-        MOV      R6,R8
-        LDR.N    R7,??position_is_reachable_IS_CARTESIAN_0+0xC  ;; 0x3f50624d
-        LDR      R0,[R10, #+20]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R6
-        MOV      R3,R7
-          CFI FunCall __aeabi_dadd
-        BL       __aeabi_dadd
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_cdrcmple
-        BL       __aeabi_cdrcmple
-        BHI.N    ??position_is_reachable_IS_CARTESIAN_1
-        LDR      R0,[R11, #+0]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R4,R0
-        MOV      R5,R1
-        LDR      R0,[R10, #+12]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dadd
-        BL       __aeabi_dadd
-        MOV      R2,R0
-        MOV      R3,R1
-        MOV      R0,R4
-        MOV      R1,R5
-          CFI FunCall __aeabi_cdrcmple
-        BL       __aeabi_cdrcmple
-        BHI.N    ??position_is_reachable_IS_CARTESIAN_1
-        LDR      R0,[R10, #+24]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R6
-        MOV      R3,R7
-          CFI FunCall __aeabi_dadd
-        BL       __aeabi_dadd
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_cdrcmple
-        BL       __aeabi_cdrcmple
-        BHI.N    ??position_is_reachable_IS_CARTESIAN_1
-        MOVS     R0,#+1
-        B.N      ??position_is_reachable_IS_CARTESIAN_2
-??position_is_reachable_IS_CARTESIAN_1:
-        MOVS     R0,#+0
-??position_is_reachable_IS_CARTESIAN_2:
-        POP      {R1,R4-R11,PC}   ;; return
-        Nop      
-        DATA
-??position_is_reachable_IS_CARTESIAN_0:
-        DC32     0xd2f1a9fc
-        DC32     0xbf50624d
-        DC32     mksCfg
-        DC32     0x3f50624d
-          CFI EndBlock cfiBlock2
+          CFI EndBlock cfiBlock0
 //   27   #include "ubl.h"
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner25fade_scaling_factor_for_zERKf
-          CFI Block cfiBlock3 Using cfiCommon0
-          CFI Function _ZN7Planner25fade_scaling_factor_for_zERKf
-        THUMB
-// __interwork __softfp float Planner::fade_scaling_factor_for_z(float const &)
-_ZN7Planner25fade_scaling_factor_for_zERKf:
-        PUSH     {R3-R5,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        MOV      R2,R0
-        LDR.N    R0,??fade_scaling_factor_for_z_0
-        LDR      R3,[R0, #+0]
-        MOV      R0,R3
-        MOVS     R1,#+0
-          CFI FunCall __aeabi_cfcmpeq
-        BL       __aeabi_cfcmpeq
-        BEQ.N    ??fade_scaling_factor_for_z_1
-        LDR      R4,[R2, #+0]
-        MOV      R0,R4
-        MOV      R1,R3
-          CFI FunCall __aeabi_cfrcmple
-        BL       __aeabi_cfrcmple
-        BHI.N    ??fade_scaling_factor_for_z_2
-        MOVS     R0,#+0
-        POP      {R1,R4,R5,PC}
-??fade_scaling_factor_for_z_2:
-        LDR.N    R5,??fade_scaling_factor_for_z_0+0x4
-        LDR.N    R3,??fade_scaling_factor_for_z_0+0x8
-        LDR      R0,[R3, #+0]
-        MOV      R1,R4
-          CFI FunCall __aeabi_cfcmpeq
-        BL       __aeabi_cfcmpeq
-        BEQ.N    ??fade_scaling_factor_for_z_3
-        STR      R4,[R3, #+0]
-        LDR      R1,[R2, #+0]
-        LDR.N    R0,??fade_scaling_factor_for_z_0+0xC
-        LDR      R0,[R0, #+0]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R0
-        MOV      R0,#+1065353216
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        STR      R0,[R5, #+0]
-??fade_scaling_factor_for_z_3:
-        LDR      R0,[R5, #+0]
-        POP      {R1,R4,R5,PC}
-??fade_scaling_factor_for_z_1:
-        MOV      R0,#+1065353216
-        POP      {R1,R4,R5,PC}    ;; return
-        Nop      
-        DATA
-??fade_scaling_factor_for_z_0:
-        DC32     _ZN7Planner13z_fade_heightE
-        DC32     _ZZN7Planner25fade_scaling_factor_for_zERKfE13z_fade_factor
-        DC32     _ZN7Planner11last_fade_zE
-        DC32     _ZN7Planner21inverse_z_fade_heightE
-          CFI EndBlock cfiBlock3
 
         SECTION `.data`:DATA:REORDER:NOROOT(2)
         SECTION_GROUP _ZZN7Planner25fade_scaling_factor_for_zERKfE13z_fade_factor
@@ -597,82 +373,36 @@ _ZZN7Planner25fade_scaling_factor_for_zERKfE13z_fade_factor:
         DC32 3F800000H
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner20leveling_active_at_zERKf
-          CFI Block cfiBlock4 Using cfiCommon0
-          CFI Function _ZN7Planner20leveling_active_at_zERKf
-        THUMB
-// __interwork __softfp bool Planner::leveling_active_at_z(float const &)
-_ZN7Planner20leveling_active_at_zERKf:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-        MOV      R2,R0
-        LDR.N    R0,??leveling_active_at_z_0
-        LDR      R3,[R0, #+0]
-        MOV      R0,R3
-        MOVS     R1,#+0
-          CFI FunCall __aeabi_cfcmpeq
-        BL       __aeabi_cfcmpeq
-        BEQ.N    ??leveling_active_at_z_1
-        LDR      R0,[R2, #+0]
-        MOV      R1,R3
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??leveling_active_at_z_2
-??leveling_active_at_z_1:
-        MOVS     R0,#+1
-        POP      {R1,PC}
-??leveling_active_at_z_2:
-        MOVS     R0,#+0
-        POP      {R1,PC}          ;; return
-        DATA
-??leveling_active_at_z_0:
-        DC32     _ZN7Planner13z_fade_heightE
-          CFI EndBlock cfiBlock4
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _Z29debug_current_and_destinationPKc
-          CFI Block cfiBlock5 Using cfiCommon0
-          CFI Function _Z29debug_current_and_destinationPKc
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void debug_current_and_destination(char const *)
-_Z29debug_current_and_destinationPKc:
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock5
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling16get_cell_index_xERKf
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling16get_cell_index_xERKf
         THUMB
 // __interwork __softfp int8_t unified_bed_leveling::get_cell_index_x(float const &)
 _ZN20unified_bed_leveling16get_cell_index_xERKf:
-        PUSH     {R3-R11,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
         LDR.N    R6,??get_cell_index_x_0
+        MOV      R4,R0
         LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R7,R0
+        MOV      R8,R0
         ADD      R0,R6,#+8
-        LDRH     R1,[R0, #+80]
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+80]
         TST      R1,R2
         BEQ.N    ??get_cell_index_x_1
-        LDR.W    R8,??get_cell_index_x_0+0x4
-        LDR      R0,[R8, #+0]
-        MOV      R1,R7
+        LDR.N    R7,??get_cell_index_x_0+0x4
+        LDR      R0,[R7, #+0]
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R9,R0
@@ -684,103 +414,66 @@ _ZN20unified_bed_leveling16get_cell_index_xERKf:
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        LDR      R0,[R8, #+4]
-        MOV      R1,R7
+        LDR      R0,[R7, #+4]
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+96]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??get_cell_index_x_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
         B.N      ??get_cell_index_x_2
 ??get_cell_index_x_1:
-        LDR      R9,[R0, #+12]
+        LDR      R5,[R0, #+12]
         MOV      R0,#+1056964608
-        MOV      R1,R9
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R1,R11
+        MOV      R10,R0
+        MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R8,R0
-        ADD      R0,R6,#+96
-        LDR      R10,[R0, #+12]
-        LDR      R0,[R6, #+8]
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R5,R0
         MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R7,R0
+        ADD      R0,R6,#+96
+        LDR      R9,[R0, #+12]
+        LDR      R0,[R6, #+8]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??get_cell_index_x_3
-        STR      R8,[SP, #+0]
-        B.N      ??get_cell_index_x_4
-??get_cell_index_x_3:
-        STR      R5,[SP, #+0]
-??get_cell_index_x_4:
+        IT       CS 
+        MOVCS    R7,R0
         MOV      R0,#+1073741824
-        MOV      R1,R11
+        MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R7,R0
-        MOV      R0,R9
-        MOV      R1,R10
+        MOV      R8,R0
+        MOV      R0,R5
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R7
+        MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_x_5
-        MOV      R7,R1
-??get_cell_index_x_5:
-        MOV      R0,R5
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_x_6
-        MOV      R8,R5
-??get_cell_index_x_6:
+        IT       CS 
+        MOVCS    R8,R1
         LDR      R0,[R4, #+0]
-        LDR      R1,[SP, #+0]
+        MOV      R1,R7
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        MOV      R0,R7
-        MOV      R1,R8
+        MOV      R0,R8
+        MOV      R1,R7
+??get_cell_index_x_2:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R7,R0
@@ -806,61 +499,58 @@ _ZN20unified_bed_leveling16get_cell_index_xERKf:
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-??get_cell_index_x_2:
         SXTB     R0,R0
         MOVS     R1,R0
-        BPL.N    ??get_cell_index_x_7
-        MOVS     R0,#+0
-        B.N      ??get_cell_index_x_8
-??get_cell_index_x_7:
+        IT       MI 
+        MOVMI    R0,#+0
+        BMI.N    ??get_cell_index_x_3
         LDRB     R2,[R6, #+96]
         SUBS     R3,R2,#+1
-        CMP      R3,R1
-        BGE.N    ??get_cell_index_x_8
-        SUBS     R0,R2,#+1
-??get_cell_index_x_8:
+        CMP      R3,R0
+        IT       LT 
+        SUBLT    R0,R2,#+1
+??get_cell_index_x_3:
         SXTB     R0,R0
-        POP      {R1,R4-R11,PC}   ;; return
+        POP      {R4-R10,PC}      ;; return
         Nop      
         DATA
 ??get_cell_index_x_0:
         DC32     mksCfg
         DC32     mksTmp
         DC32     0x3ff00000
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock1
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling16get_cell_index_yERKf
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling16get_cell_index_yERKf
         THUMB
 // __interwork __softfp int8_t unified_bed_leveling::get_cell_index_y(float const &)
 _ZN20unified_bed_leveling16get_cell_index_yERKf:
-        PUSH     {R3-R11,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
         LDR.N    R6,??get_cell_index_y_0
+        MOV      R4,R0
         LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R7,R0
+        MOV      R8,R0
         ADD      R0,R6,#+12
-        LDRH     R1,[R0, #+76]
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+76]
         TST      R1,R2
         BEQ.N    ??get_cell_index_y_1
-        LDR.W    R8,??get_cell_index_y_0+0x4
-        LDR      R0,[R8, #+8]
-        MOV      R1,R7
+        LDR.N    R7,??get_cell_index_y_0+0x4
+        LDR      R0,[R7, #+8]
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R9,R0
@@ -872,102 +562,65 @@ _ZN20unified_bed_leveling16get_cell_index_yERKf:
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        LDR      R0,[R8, #+12]
-        MOV      R1,R7
+        LDR      R0,[R7, #+12]
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+97]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??get_cell_index_y_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
         B.N      ??get_cell_index_y_2
 ??get_cell_index_y_1:
-        LDR      R9,[R0, #+12]
+        LDR      R5,[R0, #+12]
         MOV      R0,#+1056964608
-        MOV      R1,R9
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R1,R11
+        MOV      R10,R0
+        MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R8,R0
-        LDR      R10,[R6, #+112]
-        LDR      R0,[R6, #+12]
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R5,R0
         MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R7,R0
+        LDR      R9,[R6, #+112]
+        LDR      R0,[R6, #+12]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??get_cell_index_y_3
-        STR      R8,[SP, #+0]
-        B.N      ??get_cell_index_y_4
-??get_cell_index_y_3:
-        STR      R5,[SP, #+0]
-??get_cell_index_y_4:
+        IT       CS 
+        MOVCS    R7,R0
         MOV      R0,#+1073741824
-        MOV      R1,R11
+        MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R7,R0
-        MOV      R0,R9
-        MOV      R1,R10
+        MOV      R8,R0
+        MOV      R0,R5
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R7
+        MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_y_5
-        MOV      R7,R1
-??get_cell_index_y_5:
-        MOV      R0,R5
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_y_6
-        MOV      R8,R5
-??get_cell_index_y_6:
+        IT       CS 
+        MOVCS    R8,R1
         LDR      R0,[R4, #+0]
-        LDR      R1,[SP, #+0]
+        MOV      R1,R7
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        MOV      R0,R7
-        MOV      R1,R8
+        MOV      R0,R8
+        MOV      R1,R7
+??get_cell_index_y_2:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R7,R0
@@ -993,32 +646,30 @@ _ZN20unified_bed_leveling16get_cell_index_yERKf:
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-??get_cell_index_y_2:
         SXTB     R0,R0
         MOVS     R1,R0
-        BPL.N    ??get_cell_index_y_7
-        MOVS     R0,#+0
-        B.N      ??get_cell_index_y_8
-??get_cell_index_y_7:
+        IT       MI 
+        MOVMI    R0,#+0
+        BMI.N    ??get_cell_index_y_3
         LDRB     R2,[R6, #+97]
         SUBS     R3,R2,#+1
-        CMP      R3,R1
-        BGE.N    ??get_cell_index_y_8
-        SUBS     R0,R2,#+1
-??get_cell_index_y_8:
+        CMP      R3,R0
+        IT       LT 
+        SUBLT    R0,R2,#+1
+??get_cell_index_y_3:
         SXTB     R0,R0
-        POP      {R1,R4-R11,PC}   ;; return
+        POP      {R4-R10,PC}      ;; return
         Nop      
         DATA
 ??get_cell_index_y_0:
         DC32     mksCfg
         DC32     mksTmp
         DC32     0x3ff00000
-          CFI EndBlock cfiBlock7
+          CFI EndBlock cfiBlock2
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii
         THUMB
 // __interwork __softfp float unified_bed_leveling::z_correction_for_x_on_horizontal_mesh_line(float const &, int, int)
@@ -1034,22 +685,22 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+36
+        MOV      R5,R1
         SUB      SP,SP,#+20
           CFI CFA R13+56
-        MOV      R9,R0
-        MOV      R5,R1
+        MOV      R7,R0
         MOV      R6,R2
         CMP      R5,#+0
         BMI.N    ??z_correction_for_x_on_horizontal_mesh_line_0
-        LDR.N    R7,??z_correction_for_x_on_horizontal_mesh_line_1
-        LDRB     R0,[R7, #+96]
+        LDR.W    R9,??z_correction_for_x_on_horizontal_mesh_line_1
+        LDRB     R0,[R9, #+96]
         SUBS     R0,R0,#+1
         STR      R0,[SP, #+0]
         CMP      R0,R5
         BLT.N    ??z_correction_for_x_on_horizontal_mesh_line_0
         CMP      R6,#+0
         BMI.N    ??z_correction_for_x_on_horizontal_mesh_line_0
-        ADD      R0,R7,#+96
+        ADD      R0,R9,#+96
         STR      R0,[SP, #+8]
         LDRB     R0,[R0, #+1]
         SUBS     R0,R0,#+1
@@ -1057,24 +708,26 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
         BGE.N    ??z_correction_for_x_on_horizontal_mesh_line_2
 ??z_correction_for_x_on_horizontal_mesh_line_0:
         MVN      R0,#-2147483648
-        B.N      ??z_correction_for_x_on_horizontal_mesh_line_3
+        ADD      SP,SP,#+20
+          CFI CFA R13+36
+        POP      {R4-R11,PC}
+          CFI CFA R13+56
 ??z_correction_for_x_on_horizontal_mesh_line_2:
-        ADD      R4,R7,#+8
-        LDRH     R0,[R4, #+80]
+        ADD      R4,R9,#+8
         MOVW     R1,#+770
+        LDRH     R0,[R4, #+80]
         TST      R0,R1
-        MOV      R0,R5
-        UXTB     R0,R0
-        BEQ.N    ??z_correction_for_x_on_horizontal_mesh_line_4
+        UXTB     R0,R5
+        BEQ.N    ??z_correction_for_x_on_horizontal_mesh_line_3
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
         MOV      R10,R0
-        LDRB     R0,[R7, #+152]
+        LDRB     R0,[R9, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R8,R0
         LDR.N    R4,??z_correction_for_x_on_horizontal_mesh_line_1+0x4
-        LDR      R0,[R9, #+0]
+        MOV      R8,R0
+        LDR      R0,[R7, #+0]
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
@@ -1086,13 +739,13 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
         MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R9,R0
+        MOV      R7,R0
         LDR      R0,[R4, #+0]
         MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R9
+        MOV      R0,R7
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
@@ -1112,24 +765,18 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         MOV      R2,R10
-        MOV      R3,R11
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R4,R0
-        B.N      ??z_correction_for_x_on_horizontal_mesh_line_5
-??z_correction_for_x_on_horizontal_mesh_line_4:
+        B.N      ??z_correction_for_x_on_horizontal_mesh_line_4
+??z_correction_for_x_on_horizontal_mesh_line_3:
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        STR      R0,[SP, #+12]
         LDR      R11,[R4, #+12]
-        MOV      R0,#+1056964608
+        STR      R0,[SP, #+12]
         MOV      R1,R11
+        MOV      R0,#+1056964608
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R10,R0
-        LDRB     R0,[R7, #+152]
+        LDRB     R0,[R9, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R8,R0
@@ -1151,9 +798,8 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
         MOV      R0,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??z_correction_for_x_on_horizontal_mesh_line_6
-        MOV      R4,R1
-??z_correction_for_x_on_horizontal_mesh_line_6:
+        IT       CS 
+        MOVCS    R4,R1
         MOV      R0,R10
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
@@ -1162,23 +808,22 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R8,R0
-        LDR      R1,[R7, #+8]
+        LDR      R1,[R9, #+8]
         LDR      R0,[SP, #+4]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??z_correction_for_x_on_horizontal_mesh_line_7
-        MOV      R8,R0
-??z_correction_for_x_on_horizontal_mesh_line_7:
-        LDR      R0,[R9, #+0]
+        IT       CS 
+        MOVCS    R8,R0
+        LDR      R0,[R7, #+0]
         LDR      R1,[SP, #+12]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        MOV      R10,R0
+        MOV      R7,R0
         MOV      R11,R1
         MOV      R0,R4
         MOV      R1,R8
@@ -1200,34 +845,34 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
         LDR.N    R1,??z_correction_for_x_on_horizontal_mesh_line_1+0x8  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
-        MOV      R2,R10
+        MOV      R2,R7
+??z_correction_for_x_on_horizontal_mesh_line_4:
         MOV      R3,R11
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
         MOV      R4,R0
-??z_correction_for_x_on_horizontal_mesh_line_5:
-        MOVS     R0,#+48
-        LDR.N    R1,??z_correction_for_x_on_horizontal_mesh_line_1+0xC
-        MLA      R2,R0,R5,R1
-        LDR      R8,[R2, R6, LSL #+2]
-        LDRB     R2,[R7, #+96]
-        SUBS     R2,R2,#+2
-        CMP      R5,R2
-        BLE.N    ??z_correction_for_x_on_horizontal_mesh_line_8
-        MOV      R5,R2
-??z_correction_for_x_on_horizontal_mesh_line_8:
-        MLA      R0,R0,R5,R1
+        LDR.N    R0,??z_correction_for_x_on_horizontal_mesh_line_1+0xC
+        ADD      R1,R5,R5, LSL #+1
+        ADD      R1,R0,R1, LSL #+4
+        LDR      R7,[R1, R6, LSL #+2]
+        LDRB     R1,[R9, #+96]
+        SUBS     R1,R1,#+2
+        CMP      R5,R1
+        IT       GT 
+        MOVGT    R5,R1
+        ADD      R1,R5,R5, LSL #+1
+        ADD      R0,R0,R1, LSL #+4
         ADD      R0,R0,R6, LSL #+2
+        MOV      R1,R7
         LDR      R0,[R0, #+48]
-        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R4
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R8
+        MOV      R1,R7
         ADD      SP,SP,#+20
           CFI CFA R13+36
         POP      {R4-R11,LR}
@@ -1243,31 +888,18 @@ _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii:
           CFI CFA R13+0
           CFI FunCall __aeabi_fadd
         B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+56
-??z_correction_for_x_on_horizontal_mesh_line_3:
-        ADD      SP,SP,#+20
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
+        Nop      
         DATA
 ??z_correction_for_x_on_horizontal_mesh_line_1:
         DC32     mksCfg
         DC32     mksTmp
         DC32     0x3ff00000
         DC32     _ZN20unified_bed_leveling8z_valuesE
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock3
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii
         THUMB
 // __interwork __softfp float unified_bed_leveling::z_correction_for_y_on_vertical_mesh_line(float const &, int, int)
@@ -1283,17 +915,17 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+36
+        MOV      R8,R1
         SUB      SP,SP,#+20
           CFI CFA R13+56
         MOV      R4,R0
-        MOV      R6,R1
         MOV      R7,R2
-        CMP      R6,#+0
+        CMP      R8,#+0
         BMI.N    ??z_correction_for_y_on_vertical_mesh_line_0
         LDR.N    R5,??z_correction_for_y_on_vertical_mesh_line_1
         LDRB     R0,[R5, #+96]
         SUBS     R0,R0,#+1
-        CMP      R0,R6
+        CMP      R0,R8
         BLT.N    ??z_correction_for_y_on_vertical_mesh_line_0
         CMP      R7,#+0
         BMI.N    ??z_correction_for_y_on_vertical_mesh_line_0
@@ -1307,23 +939,25 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
         BGE.N    ??z_correction_for_y_on_vertical_mesh_line_2
 ??z_correction_for_y_on_vertical_mesh_line_0:
         MVN      R0,#-2147483648
-        B.N      ??z_correction_for_y_on_vertical_mesh_line_3
+        ADD      SP,SP,#+20
+          CFI CFA R13+36
+        POP      {R4-R11,PC}
+          CFI CFA R13+56
 ??z_correction_for_y_on_vertical_mesh_line_2:
-        ADD      R8,R5,#+12
-        LDRSH    R0,[R8, #+76]
+        ADD      R6,R5,#+12
         MOVW     R1,#+770
+        LDRSH    R0,[R6, #+76]
         CMP      R0,R1
-        MOV      R0,R7
-        UXTB     R0,R0
-        BNE.N    ??z_correction_for_y_on_vertical_mesh_line_4
+        UXTB     R0,R7
+        BNE.N    ??z_correction_for_y_on_vertical_mesh_line_3
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
         MOV      R10,R0
         LDRB     R0,[R5, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
+        LDR.N    R6,??z_correction_for_y_on_vertical_mesh_line_1+0x4
         MOV      R9,R0
-        LDR.W    R8,??z_correction_for_y_on_vertical_mesh_line_1+0x4
         LDR      R0,[R4, #+0]
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
@@ -1332,53 +966,24 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        LDR      R0,[R8, #+12]
+        LDR      R0,[R6, #+12]
         MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R10,R0
-        LDR      R0,[R8, #+8]
+        LDR      R0,[R6, #+8]
         MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
         MOV      R0,R10
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[SP, #+0]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R8
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??z_correction_for_y_on_vertical_mesh_line_1+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R4,R0
-        ADD      R0,R6,R6, LSL #+1
-        LDR.N    R1,??z_correction_for_y_on_vertical_mesh_line_1+0xC
-        ADD      R0,R1,R0, LSL #+4
-        LDR      R5,[R0, R7, LSL #+2]
-        B.N      ??z_correction_for_y_on_vertical_mesh_line_5
-??z_correction_for_y_on_vertical_mesh_line_4:
+        B.N      ??z_correction_for_y_on_vertical_mesh_line_4
+??z_correction_for_y_on_vertical_mesh_line_3:
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
         STR      R0,[SP, #+16]
-        LDR      R11,[R8, #+12]
         MOV      R0,#+1056964608
+        LDR      R11,[R6, #+12]
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
@@ -1394,7 +999,7 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
         MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
+        MOV      R6,R0
         LDR      R0,[SP, #+12]
         LDR      R0,[R0, #+16]
         STR      R0,[SP, #+4]
@@ -1402,12 +1007,11 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??z_correction_for_y_on_vertical_mesh_line_6
-        MOV      R8,R1
-??z_correction_for_y_on_vertical_mesh_line_6:
+        IT       CS 
+        MOVCS    R6,R1
         MOV      R0,R10
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
@@ -1423,9 +1027,8 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
         MOV      R1,R9
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??z_correction_for_y_on_vertical_mesh_line_7
-        MOV      R9,R0
-??z_correction_for_y_on_vertical_mesh_line_7:
+        IT       CS 
+        MOVCS    R9,R0
         LDR      R0,[R4, #+0]
         LDR      R1,[SP, #+16]
           CFI FunCall __aeabi_fsub
@@ -1434,16 +1037,17 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        MOV      R0,R8
+        MOV      R0,R6
         MOV      R1,R9
+??z_correction_for_y_on_vertical_mesh_line_4:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
+        MOV      R6,R0
         LDR      R0,[SP, #+0]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2d
@@ -1461,22 +1065,20 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
         MOV      R4,R0
-        ADD      R0,R6,R6, LSL #+1
+        ADD      R0,R8,R8, LSL #+1
         LDR.N    R1,??z_correction_for_y_on_vertical_mesh_line_1+0xC
         ADD      R0,R1,R0, LSL #+4
         LDR      R5,[R0, R7, LSL #+2]
-??z_correction_for_y_on_vertical_mesh_line_5:
         LDR      R0,[SP, #+8]
         SUBS     R0,R0,#+2
         CMP      R7,R0
-        BLE.N    ??z_correction_for_y_on_vertical_mesh_line_8
-        MOV      R7,R0
-??z_correction_for_y_on_vertical_mesh_line_8:
-        ADD      R0,R6,R6, LSL #+1
+        IT       GT 
+        MOVGT    R7,R0
+        ADD      R0,R8,R8, LSL #+1
         ADD      R0,R1,R0, LSL #+4
         ADD      R0,R0,R7, LSL #+2
-        LDR      R0,[R0, #+4]
         MOV      R1,R5
+        LDR      R0,[R0, #+4]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R4
@@ -1498,20 +1100,6 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
           CFI CFA R13+0
           CFI FunCall __aeabi_fadd
         B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+56
-??z_correction_for_y_on_vertical_mesh_line_3:
-        ADD      SP,SP,#+20
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
         Nop      
         DATA
 ??z_correction_for_y_on_vertical_mesh_line_1:
@@ -1519,11 +1107,11 @@ _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii:
         DC32     mksTmp
         DC32     0x3ff00000
         DC32     _ZN20unified_bed_leveling8z_valuesE
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock4
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling18mesh_index_to_xposEh
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling18mesh_index_to_xposEh
         THUMB
 // __interwork __softfp float unified_bed_leveling::mesh_index_to_xpos(uint8_t)
@@ -1539,90 +1127,62 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+40
-        MOV      R5,R0
-        LDR.N    R7,??mesh_index_to_xpos_0
-        LDRB     R6,[R7, #+96]
-        ADD      R0,R7,#+8
-        LDRH     R1,[R0, #+80]
+        MOV      R8,R0
+        LDR.N    R6,??mesh_index_to_xpos_0
+        LDRB     R7,[R6, #+96]
+        ADD      R0,R6,#+8
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+80]
         TST      R1,R2
         BEQ.N    ??mesh_index_to_xpos_1
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_xpos_2
-        LDR.N    R0,??mesh_index_to_xpos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_xpos_3
-??mesh_index_to_xpos_2:
-        LDRB     R0,[R7, #+152]
+        CMP      R8,R7
+        BCC.N    ??mesh_index_to_xpos_2
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R10,R0
-        LDR.N    R4,??mesh_index_to_xpos_0+0x8
+        LDR.N    R4,??mesh_index_to_xpos_0+0x4
+        MOV      R5,R0
         LDR      R0,[R4, #+0]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
-        MOV      R0,R5
+        MOV      R6,R0
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R5,R0
+        MOV      R8,R0
         LDR      R0,[R4, #+4]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
         MOV      R0,R4
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
+        MOV      R1,R8
+        B.N      ??mesh_index_to_xpos_3
+??mesh_index_to_xpos_1:
+        CMP      R8,R7
+        BCS.N    ??mesh_index_to_xpos_4
+??mesh_index_to_xpos_2:
+        LDR.N    R0,??mesh_index_to_xpos_0+0x8
+        LDR      R0,[R0, R8, LSL #+2]
+        POP      {R1,R4-R11,PC}
+??mesh_index_to_xpos_4:
+        LDR      R5,[R0, #+12]
+        MOV      R0,#+1056964608
         MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
-        POP      {R2,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fadd
-        B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_xpos_1:
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_xpos_4
-        LDR.N    R0,??mesh_index_to_xpos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_xpos_3
-??mesh_index_to_xpos_4:
-        LDR      R8,[R0, #+12]
-        MOV      R0,#+1056964608
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
         MOV      R9,R0
-        LDRB     R0,[R7, #+152]
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R10,R0
@@ -1634,22 +1194,18 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R4,R0
-        ADD      R0,R7,#+96
+        ADD      R0,R6,#+96
         LDR      R11,[R0, #+12]
-        LDR      R0,[R7, #+8]
+        LDR      R0,[R6, #+8]
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
         MOV      R1,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??mesh_index_to_xpos_5
-        STR      R4,[SP, #+0]
-        B.N      ??mesh_index_to_xpos_6
-??mesh_index_to_xpos_5:
-        STR      R7,[SP, #+0]
-??mesh_index_to_xpos_6:
+        MOV      R6,R0
+        IT       CC 
+        MOVCC    R6,R4
         MOV      R0,#+1073741824
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
@@ -1657,35 +1213,27 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R9,R0
-        MOV      R0,R8
+        MOV      R4,R0
+        MOV      R0,R5
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R9
+        MOV      R0,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_xpos_7
-        MOV      R9,R1
-??mesh_index_to_xpos_7:
-        MOV      R0,R7
-        MOV      R1,R4
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_xpos_8
-        MOV      R4,R7
-??mesh_index_to_xpos_8:
-        MOV      R0,R5
+        IT       CS 
+        MOVCS    R4,R1
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R5,R0
-        MOV      R0,R9
-        MOV      R1,R4
+        MOV      R0,R4
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
@@ -1693,9 +1241,10 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         MOV      R1,R5
+??mesh_index_to_xpos_3:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[SP, #+0]
+        MOV      R1,R6
         POP      {R2,R4-R11,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -1709,28 +1258,16 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI CFA R13+0
           CFI FunCall __aeabi_fadd
         B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_xpos_3:
-        POP      {R1,R4-R11,PC}   ;; return
         DATA
 ??mesh_index_to_xpos_0:
         DC32     mksCfg
-        DC32     _ZN20unified_bed_leveling19_mesh_index_to_xposE
         DC32     mksTmp
-          CFI EndBlock cfiBlock10
+        DC32     _ZN20unified_bed_leveling19_mesh_index_to_xposE
+          CFI EndBlock cfiBlock5
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling18mesh_index_to_yposEh
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling18mesh_index_to_yposEh
         THUMB
 // __interwork __softfp float unified_bed_leveling::mesh_index_to_ypos(uint8_t)
@@ -1746,90 +1283,62 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+40
-        MOV      R5,R0
-        LDR.N    R7,??mesh_index_to_ypos_0
-        LDRB     R6,[R7, #+97]
-        ADD      R0,R7,#+12
-        LDRH     R1,[R0, #+76]
+        MOV      R8,R0
+        LDR.N    R6,??mesh_index_to_ypos_0
+        LDRB     R7,[R6, #+97]
+        ADD      R0,R6,#+12
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+76]
         TST      R1,R2
         BEQ.N    ??mesh_index_to_ypos_1
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_ypos_2
-        LDR.N    R0,??mesh_index_to_ypos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_ypos_3
-??mesh_index_to_ypos_2:
-        LDRB     R0,[R7, #+152]
+        CMP      R8,R7
+        BCC.N    ??mesh_index_to_ypos_2
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R10,R0
-        LDR.N    R4,??mesh_index_to_ypos_0+0x8
+        LDR.N    R4,??mesh_index_to_ypos_0+0x4
+        MOV      R5,R0
         LDR      R0,[R4, #+8]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
-        MOV      R0,R5
+        MOV      R6,R0
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R5,R0
+        MOV      R8,R0
         LDR      R0,[R4, #+12]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
         MOV      R0,R4
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
+        MOV      R1,R8
+        B.N      ??mesh_index_to_ypos_3
+??mesh_index_to_ypos_1:
+        CMP      R8,R7
+        BCS.N    ??mesh_index_to_ypos_4
+??mesh_index_to_ypos_2:
+        LDR.N    R0,??mesh_index_to_ypos_0+0x8
+        LDR      R0,[R0, R8, LSL #+2]
+        POP      {R1,R4-R11,PC}
+??mesh_index_to_ypos_4:
+        LDR      R5,[R0, #+12]
+        MOV      R0,#+1056964608
         MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
-        POP      {R2,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fadd
-        B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_ypos_1:
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_ypos_4
-        LDR.N    R0,??mesh_index_to_ypos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_ypos_3
-??mesh_index_to_ypos_4:
-        LDR      R8,[R0, #+12]
-        MOV      R0,#+1056964608
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
         MOV      R9,R0
-        LDRB     R0,[R7, #+152]
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R10,R0
@@ -1841,21 +1350,17 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R4,R0
-        LDR      R11,[R7, #+112]
-        LDR      R0,[R7, #+12]
+        LDR      R11,[R6, #+112]
+        LDR      R0,[R6, #+12]
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
         MOV      R1,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??mesh_index_to_ypos_5
-        STR      R4,[SP, #+0]
-        B.N      ??mesh_index_to_ypos_6
-??mesh_index_to_ypos_5:
-        STR      R7,[SP, #+0]
-??mesh_index_to_ypos_6:
+        MOV      R6,R0
+        IT       CC 
+        MOVCC    R6,R4
         MOV      R0,#+1073741824
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
@@ -1863,35 +1368,27 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R9,R0
-        MOV      R0,R8
+        MOV      R4,R0
+        MOV      R0,R5
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R9
+        MOV      R0,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_ypos_7
-        MOV      R9,R1
-??mesh_index_to_ypos_7:
-        MOV      R0,R7
-        MOV      R1,R4
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_ypos_8
-        MOV      R4,R7
-??mesh_index_to_ypos_8:
-        MOV      R0,R5
+        IT       CS 
+        MOVCS    R4,R1
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R5,R0
-        MOV      R0,R9
-        MOV      R1,R4
+        MOV      R0,R4
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
@@ -1899,9 +1396,10 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         MOV      R1,R5
+??mesh_index_to_ypos_3:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[SP, #+0]
+        MOV      R1,R6
         POP      {R2,R4-R11,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -1915,37 +1413,14 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI CFA R13+0
           CFI FunCall __aeabi_fadd
         B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_ypos_3:
-        POP      {R1,R4-R11,PC}   ;; return
         DATA
 ??mesh_index_to_ypos_0:
         DC32     mksCfg
-        DC32     _ZN20unified_bed_leveling19_mesh_index_to_yposE
         DC32     mksTmp
-          CFI EndBlock cfiBlock11
+        DC32     _ZN20unified_bed_leveling19_mesh_index_to_yposE
+          CFI EndBlock cfiBlock6
 //   28   #include "planner.h"
 //   29   #include "stepper.h"
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN7Stepper25get_axis_position_degreesE8AxisEnum
-          CFI Block cfiBlock12 Using cfiCommon0
-          CFI Function _ZN7Stepper25get_axis_position_degreesE8AxisEnum
-          CFI FunCall _ZN7Stepper20get_axis_position_mmE8AxisEnum
-        THUMB
-// __interwork __softfp float Stepper::get_axis_position_degrees(AxisEnum)
-_ZN7Stepper25get_axis_position_degreesE8AxisEnum:
-        B.W      _ZN7Stepper20get_axis_position_mmE8AxisEnum
-          CFI EndBlock cfiBlock12
 //   30   //#include <avr/io.h>
 //   31   #include <math.h>
 //   32 
@@ -1959,7 +1434,7 @@ _ZN7Stepper25get_axis_position_degreesE8AxisEnum:
 //   40 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh
         THUMB
 //   41     void unified_bed_leveling::line_to_destination_cartesian(const float &feed_rate, const uint8_t extruder) {
@@ -1975,8 +1450,6 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+44
-        SUB      SP,SP,#+84
-          CFI CFA R13+128
 //   42       /**
 //   43        * Much of the nozzle movement will be within the same cell. So we will do as little computation
 //   44        * as possible to determine if this is the case. If this move is within the same cell, we will
@@ -1994,76 +1467,76 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //   56       #endif
 //   57 
 //   58       const int cell_start_xi = get_cell_index_x(start[X_AXIS]),
-        LDR.W    R5,??DataTable10
-        MOV      R0,R5
+        LDR.W    R4,??DataTable4
+        SUB      SP,SP,#+92
+          CFI CFA R13+136
+        MOV      R0,R4
           CFI FunCall _ZN20unified_bed_leveling16get_cell_index_xERKf
         BL       _ZN20unified_bed_leveling16get_cell_index_xERKf
-        MOV      R7,R0
+        STR      R0,[SP, #+56]
 //   59                 cell_start_yi = get_cell_index_y(start[Y_AXIS]),
-        ADDS     R0,R5,#+4
+        ADDS     R0,R4,#+4
           CFI FunCall _ZN20unified_bed_leveling16get_cell_index_yERKf
         BL       _ZN20unified_bed_leveling16get_cell_index_yERKf
-        MOV      R6,R0
+        STR      R0,[SP, #+40]
 //   60                 cell_dest_xi  = get_cell_index_x(end[X_AXIS]),
-        LDR.W    R4,??DataTable10_1
-        MOV      R0,R4
+        LDR.W    R5,??DataTable4_1
+        MOV      R0,R5
           CFI FunCall _ZN20unified_bed_leveling16get_cell_index_xERKf
         BL       _ZN20unified_bed_leveling16get_cell_index_xERKf
         STR      R0,[SP, #+16]
 //   61                 cell_dest_yi  = get_cell_index_y(end[Y_AXIS]);
-        ADDS     R0,R4,#+4
+        ADDS     R0,R5,#+4
           CFI FunCall _ZN20unified_bed_leveling16get_cell_index_yERKf
         BL       _ZN20unified_bed_leveling16get_cell_index_yERKf
         STR      R0,[SP, #+12]
-        LDR.W    R0,??DataTable10_2
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??line_to_destination_cartesian_0
 //   62 
 //   63       if (g26_debug_flag) {
+        LDR.W    R0,??DataTable4_2
+        LDRB     R0,[R0, #+0]
+        CBZ.N    R0,??line_to_destination_cartesian_0
 //   64         SERIAL_ECHOPAIR(" ubl.line_to_destination_cartesian(xe=", destination[X_AXIS]);
-        LDR      R1,[R4, #+0]
+        LDR      R1,[R5, #+0]
         ADR.W    R0,`?<Constant " ubl.line_to_destinat...">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //   65         SERIAL_ECHOPAIR(", ye=", destination[Y_AXIS]);
-        LDR      R1,[R4, #+4]
+        LDR      R1,[R5, #+4]
         ADR.W    R0,`?<Constant ", ye=">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //   66         SERIAL_ECHOPAIR(", ze=", destination[Z_AXIS]);
-        LDR      R1,[R4, #+8]
+        LDR      R1,[R5, #+8]
         ADR.W    R0,`?<Constant ", ze=">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //   67         SERIAL_ECHOPAIR(", ee=", destination[E_AXIS]);
-        LDR      R1,[R4, #+12]
+        LDR      R1,[R5, #+12]
         ADR.W    R0,`?<Constant ", ee=">`
           CFI FunCall _Z17serial_echopair_PPKcf
         BL       _Z17serial_echopair_PPKcf
 //   68         SERIAL_CHAR(')');
-        LDR.W    R8,??DataTable10_3
+        LDR.W    R6,??DataTable4_3
         MOVS     R1,#+41
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //   69         SERIAL_EOL();
         MOVS     R1,#+10
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //   70         debug_current_and_destination(PSTR("Start of ubl.line_to_destination_cartesian()"));
-        ADR.W    R0,`?<Constant "Start of ubl.line_to_...">`
-          CFI FunCall _Z29debug_current_and_destinationPKc
-        BL       _Z29debug_current_and_destinationPKc
-??line_to_destination_cartesian_0:
-        LDR      R0,[SP, #+16]
-        CMP      R7,R0
-        BNE.W    ??line_to_destination_cartesian_1
-        LDR      R0,[SP, #+12]
-        CMP      R6,R0
-        BNE.W    ??line_to_destination_cartesian_1
 //   71       }
+??line_to_destination_cartesian_0:
+        LDR      R0,[SP, #+56]
+        LDR      R1,[SP, #+16]
+        CMP      R0,R1
+        ITTT     EQ 
+        LDREQ    R0,[SP, #+40]
+        LDREQ    R1,[SP, #+12]
+        CMPEQ    R0,R1
+        BNE.W    ??line_to_destination_cartesian_1
 //   72 
 //   73       if (cell_start_xi == cell_dest_xi && cell_start_yi == cell_dest_yi) { // if the whole move is within the same cell,
 //   74         /**
@@ -2077,19 +1550,19 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
         LDR      R0,[SP, #+16]
         CMP      R0,#+0
         BMI.N    ??line_to_destination_cartesian_2
-        LDR.W    R0,??DataTable10_4
+        LDR.W    R0,??DataTable4_4
         LDRB     R0,[R0, #+96]
-        SUBS     R0,R0,#+1
         LDR      R1,[SP, #+16]
+        SUBS     R0,R0,#+1
         CMP      R0,R1
         BLT.N    ??line_to_destination_cartesian_2
         LDR      R0,[SP, #+12]
         CMP      R0,#+0
         BMI.N    ??line_to_destination_cartesian_2
-        LDR.W    R0,??DataTable10_5
+        LDR.W    R0,??DataTable4_5
         LDRB     R0,[R0, #+1]
-        SUBS     R0,R0,#+1
         LDR      R1,[SP, #+12]
+        SUBS     R0,R0,#+1
         CMP      R0,R1
         BGE.N    ??line_to_destination_cartesian_3
 //   82 
@@ -2098,32 +1571,23 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //   85 
 //   86           planner.buffer_segment(end[X_AXIS], end[Y_AXIS], end[Z_AXIS], end[E_AXIS], feed_rate, extruder);
 ??line_to_destination_cartesian_2:
-        LDRB     R0,[SP, #+88]
+        LDRB     R0,[SP, #+96]
         STR      R0,[SP, #+4]
-        LDR      R0,[SP, #+84]
+        ADD      R3,R5,#+12
+        LDR      R0,[SP, #+92]
         STR      R0,[SP, #+0]
-        ADD      R3,R4,#+12
-        ADD      R2,R4,#+8
-        ADDS     R1,R4,#+4
-        MOV      R0,R4
+        ADD      R2,R5,#+8
+        ADDS     R1,R5,#+4
+        MOV      R0,R5
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
 //   87           set_current_from_destination();
-          CFI FunCall _Z28set_current_from_destinationv
-        BL       _Z28set_current_from_destinationv
+        B.W      ??line_to_destination_cartesian_4
 //   88 
 //   89           if (g26_debug_flag)
-        LDR.W    R0,??DataTable10_2
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.W    ??line_to_destination_cartesian_4
 //   90             debug_current_and_destination(PSTR("out of bounds in ubl.line_to_destination_cartesian()"));
-        ADR.W    R0,`?<Constant "out of bounds in ubl....">`
-          CFI FunCall _Z29debug_current_and_destinationPKc
-        BL       _Z29debug_current_and_destinationPKc
 //   91 
 //   92           return;
-        B.W      ??line_to_destination_cartesian_4
 //   93         }
 //   94 
 //   95         FINAL_MOVE:
@@ -2141,49 +1605,139 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  107         float xratio;
 //  108         if(MACHINETPYE & IS_KINEMATIC)
 ??line_to_destination_cartesian_3:
-        LDR.W    R0,??DataTable10_6
+        LDR.W    R0,??DataTable4_6
+        LDRSH    R11,[R0, #+80]
+        STR      R0,[SP, #+20]
+        MOVW     R10,#+770
+        LDR.W    R0,??DataTable4_5
         STR      R0,[SP, #+4]
-        LDRSH    R10,[R0, #+80]
-        LDR.W    R0,??DataTable10_5
-        STR      R0,[SP, #+0]
-        MOVW     R5,#+770
-        TST      R10,R5
+        TST      R11,R10
         LDR      R0,[SP, #+16]
         UXTB     R0,R0
         BEQ.N    ??line_to_destination_cartesian_5
 //  109             xratio = (end[X_AXIS] - mesh_index_to_xpos(cell_dest_xi)) * (1.0 / (MESH_X_DIST_IS_KINEMATIC));
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        MOV      R6,R0
-        LDR.W    R0,??DataTable10_4
+        MOV      R8,R0
+        LDR.W    R0,??DataTable4_4
         LDRB     R0,[R0, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
+        LDR.W    R7,??DataTable4_7
+        MOV      R6,R0
+        LDR      R0,[R5, #+0]
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
         MOV      R8,R0
-        LDR.W    R9,??DataTable10_7
-        LDR      R0,[R4, #+0]
+        MOV      R9,R1
+        LDR      R0,[R7, #+4]
         MOV      R1,R6
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[SP, #+0]
+        MOV      R1,R6
+        LDR      R0,[R7, #+0]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R0
+        LDR      R0,[SP, #+0]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R6,R0
+        LDR.W    R0,??DataTable4_4
+        LDRB     R0,[R0, #+96]
+        SUBS     R0,R0,#+1
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R0
+        MOV      R0,R6
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOVS     R0,#+0
+        LDR.W    R1,??DataTable4_8  ;; 0x3ff00000
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+        MOV      R2,R8
+        MOV      R3,R9
+        B.N      ??line_to_destination_cartesian_6
+//  110         else
+//  111             xratio = (end[X_AXIS] - mesh_index_to_xpos(cell_dest_xi)) * (1.0 / (MESH_X_DIST_IS_Cartesian));
+??line_to_destination_cartesian_5:
+          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
+        BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
+        STR      R0,[SP, #+24]
+        LDR      R0,[SP, #+20]
+        LDR      R8,[R0, #+12]
+        MOV      R0,#+1056964608
+        MOV      R1,R8
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
+        LDR.W    R0,??DataTable4_4
+        LDRB     R0,[R0, #+152]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        MOV      R6,R0
+        MOV      R0,#+1073741824
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R6
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R7,R0
+        LDR      R0,[SP, #+4]
+        LDR      R0,[R0, #+12]
+        STR      R0,[SP, #+0]
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R0
+        MOV      R0,R7
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        ITE      CC 
+        MOVCC    R8,R7
+        MOVCS    R8,R1
+        MOV      R0,R9
+        MOV      R1,R9
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R6
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R9,R0
+        LDR.W    R0,??DataTable4_4
+        LDR      R1,[R0, #+8]
+        LDR      R0,[SP, #+0]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CS 
+        MOVCS    R9,R0
+        LDR      R0,[R5, #+0]
+        LDR      R1,[SP, #+24]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R6,R0
         MOV      R7,R1
-        LDR      R0,[R9, #+4]
-        MOV      R1,R8
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R11,R0
-        LDR      R0,[R9, #+0]
-        MOV      R1,R8
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R11
+        MOV      R0,R8
+        MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R8,R0
-        LDR.W    R0,??DataTable10_4
+        LDR.W    R0,??DataTable4_4
         LDRB     R0,[R0, #+96]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
@@ -2197,163 +1751,64 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable10_8  ;; 0x3ff00000
+        LDR.W    R1,??DataTable4_8  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         MOV      R2,R6
         MOV      R3,R7
+??line_to_destination_cartesian_6:
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
-        MOV      R6,R0
-        B.N      ??line_to_destination_cartesian_6
-//  110         else
-//  111             xratio = (end[X_AXIS] - mesh_index_to_xpos(cell_dest_xi)) * (1.0 / (MESH_X_DIST_IS_Cartesian));
-??line_to_destination_cartesian_5:
-          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        MOV      R9,R0
-        LDR      R0,[SP, #+4]
-        LDR      R6,[R0, #+12]
-        MOV      R1,#+1056964608
-        MOV      R0,R6
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R7,R0
-        LDR.W    R0,??DataTable10_4
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
         MOV      R8,R0
-        MOV      R0,#+1073741824
-        MOV      R1,R7
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R8
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R11,R0
-        LDR      R0,[SP, #+0]
-        LDR      R0,[R0, #+12]
-        STR      R0,[SP, #+8]
-        MOV      R1,R6
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R11
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??line_to_destination_cartesian_7
-        MOV      R6,R11
-        B.N      ??line_to_destination_cartesian_8
-??line_to_destination_cartesian_7:
-        MOV      R6,R1
-??line_to_destination_cartesian_8:
-        MOV      R0,R7
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R8
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R7,R0
-        LDR.W    R0,??DataTable10_4
-        LDR      R1,[R0, #+8]
-        LDR      R0,[SP, #+8]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R7
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??line_to_destination_cartesian_9
-        MOV      R7,R0
-??line_to_destination_cartesian_9:
-        LDR      R0,[R4, #+0]
-        MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R8,R0
-        MOV      R9,R1
-        MOV      R0,R6
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R6,R0
-        LDR.W    R0,??DataTable10_4
-        LDRB     R0,[R0, #+96]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R6
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.W    R1,??DataTable10_8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R6,R0
 //  112 
 //  113         float z1 = z_values[cell_dest_xi    ][cell_dest_yi    ] + xratio *
 //  114                   (z_values[cell_dest_xi + 1][cell_dest_yi    ] - z_values[cell_dest_xi][cell_dest_yi    ]),
-??line_to_destination_cartesian_6:
         LDR      R0,[SP, #+16]
         ADD      R1,R0,R0, LSL #+1
-        LDR.W    R0,??DataTable10_9
-        ADD      R9,R0,R1, LSL #+4
+        LDR.W    R0,??DataTable4_9
+        ADD      R6,R0,R1, LSL #+4
         LDR      R0,[SP, #+12]
-        LDR      R7,[R9, R0, LSL #+2]
-        ADD      R8,R9,R0, LSL #+2
-        LDR      R0,[R8, #+48]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R6
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R7,R0
-        LDR      R0,[SP, #+12]
-        ADD      R0,R9,R0, LSL #+2
-        LDR      R9,[R0, #+4]
-        LDR      R0,[R8, #+52]
+        LDR      R9,[R6, R0, LSL #+2]
+        ADD      R7,R6,R0, LSL #+2
         MOV      R1,R9
+        LDR      R0,[R7, #+48]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R6
+        MOV      R1,R8
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R6,R0
+        MOV      R9,R0
+        LDR      R0,[SP, #+12]
+        ADD      R0,R6,R0, LSL #+2
+        LDR      R6,[R0, #+4]
+        LDR      R0,[R7, #+52]
+        MOV      R1,R6
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R8
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R6
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
 //  115               z2 = z_values[cell_dest_xi    ][cell_dest_yi + 1] + xratio *
 //  116                   (z_values[cell_dest_xi + 1][cell_dest_yi + 1] - z_values[cell_dest_xi][cell_dest_yi + 1]);
 //  117 
 //  118         if (cell_dest_xi >= GRID_MAX_POINTS_X - 1) z1 = z2 = 0.0;
-        LDR      R0,[SP, #+16]
-        LDR.W    R1,??DataTable10_4
+        LDR.W    R1,??DataTable4_4
         LDRB     R1,[R1, #+96]
+        MOV      R8,R0
+        LDR      R0,[SP, #+16]
         SUBS     R1,R1,#+1
         CMP      R0,R1
-        BLT.N    ??line_to_destination_cartesian_10
-        MOVS     R6,#+0
-        MOV      R7,R6
+        ITT      GE 
+        MOVGE    R8,#+0
+        MOVGE    R9,R8
 //  119 
 //  120         // we are done with the fractional X distance into the cell. Now with the two Z-Heights we have calculated, we
 //  121         // are going to apply the Y-Distance into the cell to interpolate the final Z correction.
@@ -2361,149 +1816,118 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  123         //const 
 //  124         float yratio;
 //  125         if(MACHINETPYE & IS_KINEMATIC)
-??line_to_destination_cartesian_10:
-        TST      R10,R5
         LDR      R0,[SP, #+12]
+        TST      R11,R10
         UXTB     R0,R0
-        BEQ.N    ??line_to_destination_cartesian_11
+        BEQ.N    ??line_to_destination_cartesian_7
 //  126             yratio = (end[Y_AXIS] - mesh_index_to_ypos(cell_dest_yi)) * (1.0 / (MESH_Y_DIST_IS_KINEMATIC));
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        MOV      R5,R0
-        LDR.W    R0,??DataTable10_4
+        MOV      R10,R0
+        LDR.W    R0,??DataTable4_4
         LDRB     R0,[R0, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R8,R0
-        LDR.W    R9,??DataTable10_7
-        LDR      R0,[R4, #+4]
-        MOV      R1,R5
+        LDR.W    R7,??DataTable4_7
+        MOV      R6,R0
+        LDR      R0,[R5, #+4]
+        MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R10,R0
         MOV      R11,R1
-        LDR      R0,[R9, #+12]
-        MOV      R1,R8
+        LDR      R0,[R7, #+12]
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R5,R0
-        LDR      R0,[R9, #+8]
-        MOV      R1,R8
+        STR      R0,[SP, #+0]
+        MOV      R1,R6
+        LDR      R0,[R7, #+8]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R5
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R5,R0
         LDR      R0,[SP, #+0]
-        LDRB     R0,[R0, #+1]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R5
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.W    R1,??DataTable10_8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R10
-        MOV      R3,R11
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R5,R0
-        B.N      ??line_to_destination_cartesian_12
+        B.N      ??line_to_destination_cartesian_8
 //  127         else
 //  128             yratio = (end[Y_AXIS] - mesh_index_to_ypos(cell_dest_yi)) * (1.0 / (MESH_Y_DIST_IS_Cartesian));
-??line_to_destination_cartesian_11:
+??line_to_destination_cartesian_7:
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        MOV      R9,R0
-        LDR      R0,[SP, #+4]
-        LDR      R5,[R0, #+16]
-        MOV      R1,#+1056964608
-        MOV      R0,R5
+        STR      R0,[SP, #+16]
+        LDR      R0,[SP, #+20]
+        LDR      R7,[R0, #+16]
+        MOV      R0,#+1056964608
+        MOV      R1,R7
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R10,R0
-        LDR.W    R0,??DataTable10_4
+        LDR.W    R0,??DataTable4_4
         LDRB     R0,[R0, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R8,R0
+        MOV      R6,R0
         MOV      R0,#+1073741824
         MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R11,R0
-        LDR      R0,[SP, #+0]
+        LDR      R0,[SP, #+4]
         LDR      R0,[R0, #+16]
-        STR      R0,[SP, #+8]
-        MOV      R1,R5
+        STR      R0,[SP, #+0]
+        MOV      R1,R7
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
         MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??line_to_destination_cartesian_13
-        MOV      R5,R11
-        B.N      ??line_to_destination_cartesian_14
-??line_to_destination_cartesian_13:
-        MOV      R5,R1
-??line_to_destination_cartesian_14:
+        ITE      CC 
+        MOVCC    R7,R11
+        MOVCS    R7,R1
         MOV      R0,R10
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R8,R0
-        LDR      R0,[SP, #+4]
+        MOV      R6,R0
+        LDR      R0,[SP, #+20]
         LDR      R1,[R0, #+4]
-        LDR      R0,[SP, #+8]
+        LDR      R0,[SP, #+0]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??line_to_destination_cartesian_15
-        MOV      R8,R0
-??line_to_destination_cartesian_15:
-        LDR      R0,[R4, #+4]
-        MOV      R1,R9
+        IT       CS 
+        MOVCS    R6,R0
+        LDR      R0,[R5, #+4]
+        LDR      R1,[SP, #+16]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R10,R0
         MOV      R11,R1
-        MOV      R0,R5
-        MOV      R1,R8
+        MOV      R0,R7
+        MOV      R1,R6
+??line_to_destination_cartesian_8:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R5,R0
-        LDR      R0,[SP, #+0]
+        MOV      R6,R0
+        LDR      R0,[SP, #+4]
         LDRB     R0,[R0, #+1]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R5
+        MOV      R0,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2d
@@ -2511,7 +1935,7 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable10_8  ;; 0x3ff00000
+        LDR.W    R1,??DataTable4_8  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         MOV      R2,R10
@@ -2520,37 +1944,70 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
-        MOV      R5,R0
 //  129         
 //  130         float z0 = cell_dest_yi < GRID_MAX_POINTS_Y - 1 ? (z1 + (z2 - z1) * yratio) * planner.fade_scaling_factor_for_z(end[Z_AXIS]) : 0.0;
-??line_to_destination_cartesian_12:
-        LDR      R0,[SP, #+12]
-        LDR      R1,[SP, #+0]
+        LDR      R1,[SP, #+4]
         LDRB     R1,[R1, #+1]
+        MOV      R7,R0
+        LDR      R0,[SP, #+12]
         SUBS     R1,R1,#+1
         CMP      R0,R1
-        BGE.N    ??line_to_destination_cartesian_16
-        MOV      R0,R6
-        MOV      R1,R7
+        BGE.N    ??line_to_destination_cartesian_9
+        LDR.W    R0,??DataTable4_10
+        LDR      R2,[R0, #+0]
+        MOV      R0,R2
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_10
+        LDR      R3,[R5, #+8]
+        MOV      R0,R3
+        MOV      R1,R2
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        IT       LS 
+        MOVLS    R6,#+0
+        BLS.N    ??line_to_destination_cartesian_11
+        LDR.W    R2,??DataTable4_11
+        LDR.W    R6,??DataTable4_12
+        LDR      R0,[R2, #+0]
+        MOV      R1,R3
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_12
+        LDR.W    R0,??DataTable4_13
+        STR      R3,[R2, #+0]
+        LDR      R0,[R0, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,#+1065353216
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R5
+        STR      R0,[R6, #+0]
+??line_to_destination_cartesian_12:
+        LDR      R6,[R6, #+0]
+        B.N      ??line_to_destination_cartesian_11
+??line_to_destination_cartesian_10:
+        MOV      R6,#+1065353216
+??line_to_destination_cartesian_11:
+        MOV      R0,R8
+        MOV      R1,R9
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R7
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R5,R0
-        ADD      R0,R4,#+8
-          CFI FunCall _ZN7Planner25fade_scaling_factor_for_zERKf
-        BL       _ZN7Planner25fade_scaling_factor_for_zERKf
-        MOV      R1,R5
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R5,R0
-        B.N      ??line_to_destination_cartesian_17
-??line_to_destination_cartesian_16:
-        MOVS     R5,#+0
+        MOV      R8,R0
+        B.N      ??line_to_destination_cartesian_13
+??line_to_destination_cartesian_9:
+        MOV      R8,#+0
 //  131 
 //  132         /**
 //  133          * If part of the Mesh is undefined, it will show up as NAN
@@ -2560,57 +2017,38 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  137          * information we need to complete the height correction.
 //  138          */
 //  139         if (isnan(z0)) z0 = 0.0;
-??line_to_destination_cartesian_17:
-        MOV      R0,R5
+??line_to_destination_cartesian_13:
+        MOV      R0,R8
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??line_to_destination_cartesian_18
-        MOVS     R5,#+0
+        IT       EQ 
+        MOVEQ    R8,#+0
 //  140 
 //  141         planner.buffer_segment(end[X_AXIS], end[Y_AXIS], end[Z_AXIS] + z0, end[E_AXIS], feed_rate, extruder);
-??line_to_destination_cartesian_18:
-        LDR      R0,[R4, #+8]
-        MOV      R1,R5
+        LDR      R0,[R5, #+8]
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+8]
-        LDRB     R0,[SP, #+88]
+        STR      R0,[SP, #+12]
+        ADD      R3,R5,#+12
+        LDRB     R0,[SP, #+96]
         STR      R0,[SP, #+4]
-        LDR      R0,[SP, #+84]
+        ADD      R2,SP,#+12
+        LDR      R0,[SP, #+92]
         STR      R0,[SP, #+0]
-        ADD      R3,R4,#+12
-        ADD      R2,SP,#+8
-        ADDS     R1,R4,#+4
-        MOV      R0,R4
+        ADDS     R1,R5,#+4
+        MOV      R0,R5
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
 //  142 
 //  143         if (g26_debug_flag)
-        LDR.W    R0,??DataTable10_2
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.W    ??line_to_destination_cartesian_19
 //  144           debug_current_and_destination(PSTR("FINAL_MOVE in ubl.line_to_destination_cartesian()"));
-        ADR.W    R0,`?<Constant "FINAL_MOVE in ubl.lin...">`
-          CFI FunCall _Z29debug_current_and_destinationPKc
-        BL       _Z29debug_current_and_destinationPKc
-        B.N      ??line_to_destination_cartesian_19
+        B.N      ??line_to_destination_cartesian_4
 //  145 
 //  146         set_current_from_destination();
 //  147         return;
 //  148       }
-??line_to_destination_cartesian_1:
-        LDR      R0,[R4, #+0]
-        LDR      R1,[R5, #+0]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[R4, #+4]
-        LDR      R1,[R5, #+4]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R9,R0
 //  149 
 //  150       /**
 //  151        * If we get here, we are processing a move that crosses at least one Mesh Line. We will check
@@ -2621,84 +2059,78 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  156        */
 //  157 
 //  158       const float dx = end[X_AXIS] - start[X_AXIS],
+??line_to_destination_cartesian_1:
+        LDR      R8,[R4, #+0]
+        LDR      R0,[R5, #+0]
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R9,R0
 //  159                   dy = end[Y_AXIS] - start[Y_AXIS];
+        LDR      R6,[R4, #+4]
+        LDR      R0,[R5, #+4]
+        MOV      R1,R6
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R7,R0
 //  160 
 //  161       const int left_flag = dx < 0.0 ? 1 : 0,
-        MOV      R0,R8
+        MOV      R0,R9
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??line_to_destination_cartesian_20
-        MOVS     R0,#+1
-        STR      R0,[SP, #+28]
-        B.N      ??line_to_destination_cartesian_21
-??line_to_destination_cartesian_20:
-        MOV      R0,R1
-        STR      R0,[SP, #+28]
+        ITTE     CC 
+        MOVCC    R0,#+1
+        STRCC    R0,[SP, #+24]
+        STRCS    R1,[SP, #+24]
 //  162                 down_flag = dy < 0.0 ? 1 : 0;
-??line_to_destination_cartesian_21:
-        MOV      R0,R9
+        MOV      R0,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??line_to_destination_cartesian_22
-        MOVS     R0,#+1
-        STR      R0,[SP, #+24]
-        B.N      ??line_to_destination_cartesian_23
-??line_to_destination_cartesian_22:
-        MOV      R0,R1
-        STR      R0,[SP, #+24]
+        ITTE     CC 
+        MOVCC    R0,#+1
+        STRCC    R0,[SP, #+20]
+        STRCS    R1,[SP, #+20]
 //  163 
 //  164       const float adx = left_flag ? -dx : dx,
-??line_to_destination_cartesian_23:
-        LDR      R0,[SP, #+28]
-        CMP      R0,#+0
-        MOV      R1,R8
-        BEQ.N    ??line_to_destination_cartesian_24
-        EOR      R1,R1,#0x80000000
-//  165                   ady = down_flag ? -dy : dy;
-??line_to_destination_cartesian_24:
         LDR      R0,[SP, #+24]
         CMP      R0,#+0
-        MOV      R0,R9
-        BEQ.N    ??line_to_destination_cartesian_25
-        EOR      R0,R0,#0x80000000
+        ITE      NE 
+        EORNE    R1,R9,#0x80000000
+        MOVEQ    R1,R9
+//  165                   ady = down_flag ? -dy : dy;
+        LDR      R0,[SP, #+20]
+        CMP      R0,#+0
+        MOV      R0,R7
+        IT       NE 
+        EORNE    R0,R0,#0x80000000
 //  166 
 //  167       const int dxi = cell_start_xi == cell_dest_xi ? 0 : left_flag ? -1 : 1,
-??line_to_destination_cartesian_25:
-        LDR      R2,[SP, #+16]
-        CMP      R7,R2
-        BNE.N    ??line_to_destination_cartesian_26
-        MOVS     R2,#+0
-        STR      R2,[SP, #+40]
-        B.N      ??line_to_destination_cartesian_27
-??line_to_destination_cartesian_26:
-        LDR      R2,[SP, #+28]
-        CMP      R2,#+0
-        BEQ.N    ??line_to_destination_cartesian_28
-        MOV      R2,#-1
-        STR      R2,[SP, #+40]
-        B.N      ??line_to_destination_cartesian_27
-??line_to_destination_cartesian_28:
-        MOVS     R2,#+1
-        STR      R2,[SP, #+40]
-//  168                 dyi = cell_start_yi == cell_dest_yi ? 0 : down_flag ? -1 : 1;
-??line_to_destination_cartesian_27:
-        LDR      R2,[SP, #+12]
-        CMP      R6,R2
-        BNE.N    ??line_to_destination_cartesian_29
-        MOVS     R2,#+0
-        STR      R2,[SP, #+20]
-        B.N      ??line_to_destination_cartesian_30
-??line_to_destination_cartesian_29:
+        LDR      R2,[SP, #+56]
+        LDR      R3,[SP, #+16]
+        CMP      R2,R3
+        IT       EQ 
+        MOVEQ    R2,#+0
+        BEQ.N    ??line_to_destination_cartesian_14
         LDR      R2,[SP, #+24]
         CMP      R2,#+0
-        BEQ.N    ??line_to_destination_cartesian_31
-        MOV      R2,#-1
-        STR      R2,[SP, #+20]
-        B.N      ??line_to_destination_cartesian_30
-??line_to_destination_cartesian_31:
-        MOVS     R2,#+1
-        STR      R2,[SP, #+20]
+        ITE      NE 
+        MOVNE    R2,#-1
+        MOVEQ    R2,#+1
+??line_to_destination_cartesian_14:
+        STR      R2,[SP, #+36]
+//  168                 dyi = cell_start_yi == cell_dest_yi ? 0 : down_flag ? -1 : 1;
+        LDR      R3,[SP, #+12]
+        LDR      R2,[SP, #+40]
+        CMP      R2,R3
+        IT       EQ 
+        MOVEQ    R2,#+0
+        BEQ.N    ??line_to_destination_cartesian_15
+        LDR      R2,[SP, #+20]
+        CMP      R2,#+0
+        ITE      NE 
+        MOVNE    R2,#-1
+        MOVEQ    R2,#+1
 //  169 
 //  170       /**
 //  171        * Compute the scaling factor for the extruder for each partial move.
@@ -2710,30 +2142,25 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  177        */
 //  178 
 //  179       const bool use_x_dist = adx > ady;
-??line_to_destination_cartesian_30:
+??line_to_destination_cartesian_15:
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??line_to_destination_cartesian_32
+        STR      R2,[SP, #+32]
+        BCS.N    ??line_to_destination_cartesian_16
         MOVS     R0,#+1
-        STR      R0,[SP, #+36]
-        B.N      ??line_to_destination_cartesian_33
-??line_to_destination_cartesian_32:
+        STR      R0,[SP, #+52]
+        MOV      R11,R9
+        B.N      ??line_to_destination_cartesian_17
+??line_to_destination_cartesian_16:
         MOVS     R0,#+0
-        STR      R0,[SP, #+36]
+        STR      R0,[SP, #+52]
+        MOV      R11,R7
 //  180 
 //  181       float on_axis_distance = use_x_dist ? dx : dy,
-??line_to_destination_cartesian_33:
-        LDR      R0,[SP, #+36]
-        CMP      R0,#+0
-        BEQ.N    ??line_to_destination_cartesian_34
-        MOV      R11,R8
-        B.N      ??line_to_destination_cartesian_35
-??line_to_destination_cartesian_34:
-        MOV      R11,R9
 //  182             e_position = end[E_AXIS] - start[E_AXIS],
-??line_to_destination_cartesian_35:
-        LDR      R0,[R4, #+12]
-        LDR      R1,[R5, #+12]
+??line_to_destination_cartesian_17:
+        LDR      R0,[R5, #+12]
+        LDR      R1,[R4, #+12]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         STR      R0,[SP, #+8]
@@ -2745,72 +2172,70 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
         BL       __aeabi_fdiv
         STR      R0,[SP, #+48]
 //  186                   z_normalized_dist = z_position / on_axis_distance;
-        LDR      R0,[R4, #+8]
-        LDR      R1,[R5, #+8]
+        LDR      R1,[R4, #+8]
+        LDR      R0,[R5, #+8]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R11
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        STR      R0,[SP, #+64]
+        STR      R0,[SP, #+72]
 //  187 
 //  188       int current_xi = cell_start_xi,
 //  189           current_yi = cell_start_yi;
 //  190 
 //  191       const float m = dy / dx,
-        MOV      R0,R9
-        MOV      R1,R8
+        MOV      R1,R9
+        MOV      R0,R7
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        STR      R0,[SP, #+32]
+        STR      R0,[SP, #+28]
 //  192                   c = start[Y_AXIS] - m * start[X_AXIS];
-        MOV      R1,R0
-        LDR      R0,[R5, #+0]
+        MOV      R1,R8
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R0
-        LDR      R0,[R5, #+4]
+        MOV      R0,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        STR      R0,[SP, #+60]
+        STR      R0,[SP, #+68]
 //  193 
 //  194       const bool inf_normalized_flag = (isinf(e_normalized_dist) != 0),
         LDR      R0,[SP, #+48]
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+1
-        BNE.N    ??line_to_destination_cartesian_36
-        MOVS     R0,#+1
-        STR      R0,[SP, #+44]
-        B.N      ??line_to_destination_cartesian_37
-??line_to_destination_cartesian_36:
-        MOVS     R0,#+0
+        IT       NE 
+        MOVNE    R0,#+0
         STR      R0,[SP, #+44]
 //  195                  inf_m_flag = (isinf(m) != 0);
-??line_to_destination_cartesian_37:
-        LDR      R0,[SP, #+32]
+        LDR      R0,[SP, #+28]
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+1
-        BNE.N    ??line_to_destination_cartesian_38
-        MOV      R8,#+1
-        B.N      ??line_to_destination_cartesian_39
-??line_to_destination_cartesian_38:
-        MOV      R8,#+0
+        IT       NE 
+        MOVNE    R0,#+0
+        STR      R0,[SP, #+60]
 //  196       /**
 //  197        * This block handles vertical lines. These are lines that stay within the same
 //  198        * X Cell column. They do not need to be perfectly vertical. They just can
 //  199        * not cross into another X Cell column.
 //  200        */
 //  201       if (dxi == 0) {       // Check for a vertical line
-??line_to_destination_cartesian_39:
-        LDR      R0,[SP, #+40]
+        LDR      R0,[SP, #+36]
         CMP      R0,#+0
-        BNE.N    ??line_to_destination_cartesian_40
+        BNE.W    ??line_to_destination_cartesian_18
 //  202         current_yi += down_flag;  // Line is heading down, we just want to go to the bottom
-        LDR      R0,[SP, #+24]
-        ADDS     R6,R0,R6
-        B.N      ??line_to_destination_cartesian_41
+        LDR      R0,[SP, #+40]
+        LDR      R1,[SP, #+20]
+        LDR.W    R6,??DataTable4_12
+        LDR.W    R7,??DataTable4_11
+        LDR.W    R10,??DataTable4_10
+        ADD      R9,R1,R0
+        LDR      R0,[SP, #+12]
+        ADDS     R0,R1,R0
+        STR      R0,[SP, #+40]
+        B.N      ??line_to_destination_cartesian_19
 //  203         while (current_yi != cell_dest_yi + down_flag) {
 //  204           current_yi += dyi;
 //  205           const float next_mesh_line_y = mesh_index_to_ypos(current_yi);
@@ -2850,132 +2275,143 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  239             }
 //  240             else {
 //  241               e_position = end[E_AXIS];
-??line_to_destination_cartesian_42:
-        LDR      R0,[R4, #+12]
+??line_to_destination_cartesian_20:
+        LDR      R0,[R5, #+12]
         STR      R0,[SP, #+8]
 //  242               z_position = end[Z_AXIS];
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R5, #+8]
 //  243             }
 //  244 
 //  245             planner.buffer_segment(rx, ry, z_position + z0, e_position, feed_rate, extruder);
-??line_to_destination_cartesian_43:
-        MOV      R1,R9
+??line_to_destination_cartesian_21:
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+52]
-        LDRB     R0,[SP, #+88]
-        STR      R0,[SP, #+4]
-        LDR      R0,[SP, #+84]
-        STR      R0,[SP, #+0]
+        STR      R0,[SP, #+36]
         ADD      R3,SP,#+8
-        ADD      R2,SP,#+52
-        ADD      R1,SP,#+40
-        ADD      R0,SP,#+28
+        LDRB     R0,[SP, #+96]
+        STR      R0,[SP, #+4]
+        ADD      R2,SP,#+36
+        LDR      R0,[SP, #+92]
+        STR      R0,[SP, #+0]
+        ADD      R1,SP,#+24
+        ADD      R0,SP,#+20
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-??line_to_destination_cartesian_41:
-        LDR      R0,[SP, #+12]
-        LDR      R1,[SP, #+24]
-        ADDS     R0,R1,R0
-        CMP      R6,R0
-        BEQ.N    ??line_to_destination_cartesian_44
-        LDR      R0,[SP, #+20]
-        ADDS     R6,R0,R6
-        MOV      R0,R6
-        UXTB     R0,R0
+??line_to_destination_cartesian_19:
+        LDR      R0,[SP, #+40]
+        CMP      R9,R0
+        BEQ.W    ??line_to_destination_cartesian_22
+        LDR      R0,[SP, #+32]
+        ADD      R9,R0,R9
+        UXTB     R0,R9
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        CMP      R8,#+0
-        BEQ.N    ??line_to_destination_cartesian_45
-        LDR      R0,[R5, #+0]
-        STR      R0,[SP, #+28]
-        B.N      ??line_to_destination_cartesian_46
-??line_to_destination_cartesian_45:
         LDR      R1,[SP, #+60]
+        CBZ.N    R1,??line_to_destination_cartesian_23
+        LDR      R0,[R4, #+0]
+        B.N      ??line_to_destination_cartesian_24
+??line_to_destination_cartesian_23:
+        LDR      R1,[SP, #+68]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        LDR      R1,[SP, #+32]
+        LDR      R1,[SP, #+28]
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        STR      R0,[SP, #+28]
-??line_to_destination_cartesian_46:
-        MOV      R2,R6
-        MOV      R1,R7
-        ADD      R0,SP,#+28
+??line_to_destination_cartesian_24:
+        STR      R0,[SP, #+20]
+        MOV      R2,R9
+        LDR      R1,[SP, #+56]
+        ADD      R0,SP,#+20
           CFI FunCall _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii
         BL       _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii
-        MOV      R9,R0
-        ADD      R0,R4,#+8
-          CFI FunCall _ZN7Planner25fade_scaling_factor_for_zERKf
-        BL       _ZN7Planner25fade_scaling_factor_for_zERKf
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R9,R0
-          CFI FunCall __iar_FDtest
-        BL       __iar_FDtest
-        CMP      R0,#+2
-        BNE.N    ??line_to_destination_cartesian_47
-        MOV      R9,#+0
-??line_to_destination_cartesian_47:
-        MOV      R0,R6
-        UXTB     R0,R0
-          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        STR      R0,[SP, #+40]
-        LDR      R2,[R5, #+4]
+        LDR      R3,[R10, #+0]
+        MOV      R8,R0
+        MOV      R0,R3
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_25
+        LDR      R2,[R5, #+8]
+        MOV      R0,R2
+        MOV      R1,R3
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        IT       LS 
+        MOVLS    R0,#+0
+        BLS.N    ??line_to_destination_cartesian_26
+        LDR      R0,[R7, #+0]
         MOV      R1,R2
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
-        BEQ.N    ??line_to_destination_cartesian_41
+        BEQ.N    ??line_to_destination_cartesian_27
+        LDR.W    R0,??DataTable4_13
+        STR      R2,[R7, #+0]
+        LDR      R1,[R0, #+0]
+        MOV      R0,R2
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[R6, #+0]
+??line_to_destination_cartesian_27:
+        LDR      R0,[R6, #+0]
+        B.N      ??line_to_destination_cartesian_26
+??line_to_destination_cartesian_25:
+        MOV      R0,#+1065353216
+??line_to_destination_cartesian_26:
+        MOV      R1,R8
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R8,R0
+          CFI FunCall __iar_FDtest
+        BL       __iar_FDtest
+        CMP      R0,#+2
+        IT       EQ 
+        MOVEQ    R8,#+0
+        UXTB     R0,R9
+          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
+        BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
+        LDR      R1,[R4, #+4]
+        STR      R0,[SP, #+24]
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_19
         LDR      R0,[SP, #+44]
         CMP      R0,#+0
-        BNE.N    ??line_to_destination_cartesian_42
-        LDR      R0,[SP, #+36]
+        BNE.N    ??line_to_destination_cartesian_20
+        LDR      R0,[SP, #+52]
         CMP      R0,#+0
-        BEQ.N    ??line_to_destination_cartesian_48
-        LDR      R0,[SP, #+28]
-        LDR      R1,[R5, #+0]
+        ITTE     NE 
+        LDRNE    R0,[SP, #+20]
+        LDRNE    R1,[R4, #+0]
+        LDREQ    R0,[SP, #+24]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R11,R0
-        B.N      ??line_to_destination_cartesian_49
-??line_to_destination_cartesian_48:
-        LDR      R0,[SP, #+40]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R11,R0
-??line_to_destination_cartesian_49:
         LDR      R0,[SP, #+48]
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+12]
+        LDR      R1,[R4, #+12]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         STR      R0,[SP, #+8]
-        LDR      R0,[SP, #+64]
         MOV      R1,R11
+        LDR      R0,[SP, #+72]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+8]
+        LDR      R1,[R4, #+8]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        B.N      ??line_to_destination_cartesian_43
+        B.N      ??line_to_destination_cartesian_21
 //  246           } //else printf("FIRST MOVE PRUNED  ");
 //  247         }
 //  248 
 //  249         if (g26_debug_flag)
-??line_to_destination_cartesian_44:
-        LDR.N    R0,??DataTable10_2
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.W    ??line_to_destination_cartesian_50
 //  250           debug_current_and_destination(PSTR("vertical move done in ubl.line_to_destination_cartesian()"));
-        ADR.W    R0,`?<Constant "vertical move done in...">`
-          CFI FunCall _Z29debug_current_and_destinationPKc
-        BL       _Z29debug_current_and_destinationPKc
-        B.N      ??line_to_destination_cartesian_50
 //  251 
 //  252         //
 //  253         // Check if we are at the final destination. Usually, we won't be, but if it is on a Y Mesh Line, we are done.
@@ -2996,14 +2432,21 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  268        */
 //  269 
 //  270       if (dyi == 0) {             // Check for a horizontal line
-??line_to_destination_cartesian_40:
-        LDR      R0,[SP, #+28]
-        ADD      R9,R0,R7
-        LDR      R0,[SP, #+20]
+??line_to_destination_cartesian_18:
+        LDR      R0,[SP, #+56]
+        LDR      R1,[SP, #+24]
+        ADD      R8,R1,R0
+        LDR      R0,[SP, #+32]
         CMP      R0,#+0
-        BNE.N    ??line_to_destination_cartesian_51
+        BNE.W    ??line_to_destination_cartesian_28
 //  271         current_xi += left_flag;  // Line is heading left, we just want to go to the left
-        B.N      ??line_to_destination_cartesian_52
+        LDR      R0,[SP, #+16]
+        LDR.N    R6,??DataTable4_12
+        LDR.N    R7,??DataTable4_11
+        LDR.W    R10,??DataTable4_10
+        ADDS     R0,R1,R0
+        STR      R0,[SP, #+56]
+        B.N      ??line_to_destination_cartesian_29
 //  272                                   // edge of this cell for the first move.
 //  273         while (current_xi != cell_dest_xi + left_flag) {
 //  274           current_xi += dxi;
@@ -3038,126 +2481,138 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  303             }
 //  304             else {
 //  305               e_position = end[E_AXIS];
-??line_to_destination_cartesian_53:
-        LDR      R0,[R4, #+12]
+??line_to_destination_cartesian_30:
+        LDR      R0,[R5, #+12]
         STR      R0,[SP, #+8]
 //  306               z_position = end[Z_AXIS];
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R5, #+8]
 //  307             }
 //  308 
 //  309             planner.buffer_segment(rx, ry, z_position + z0, e_position, feed_rate, extruder);
-??line_to_destination_cartesian_54:
-        MOV      R1,R7
+??line_to_destination_cartesian_31:
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+52]
-        LDRB     R0,[SP, #+88]
-        STR      R0,[SP, #+4]
-        LDR      R0,[SP, #+84]
-        STR      R0,[SP, #+0]
+        STR      R0,[SP, #+32]
         ADD      R3,SP,#+8
-        ADD      R2,SP,#+52
+        LDRB     R0,[SP, #+96]
+        STR      R0,[SP, #+4]
+        ADD      R2,SP,#+32
+        LDR      R0,[SP, #+92]
+        STR      R0,[SP, #+0]
         ADD      R1,SP,#+24
         ADD      R0,SP,#+20
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-??line_to_destination_cartesian_52:
-        LDR      R0,[SP, #+16]
-        LDR      R1,[SP, #+28]
-        ADDS     R0,R1,R0
-        CMP      R9,R0
-        BEQ.N    ??line_to_destination_cartesian_55
-        LDR      R0,[SP, #+40]
-        ADD      R9,R0,R9
-        MOV      R0,R9
-        UXTB     R0,R0
+??line_to_destination_cartesian_29:
+        LDR      R0,[SP, #+56]
+        CMP      R8,R0
+        BEQ.W    ??line_to_destination_cartesian_22
+        LDR      R0,[SP, #+36]
+        ADD      R8,R0,R8
+        UXTB     R0,R8
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
         MOV      R1,R0
-        LDR      R0,[SP, #+32]
+        LDR      R0,[SP, #+28]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[SP, #+60]
+        LDR      R1,[SP, #+68]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
+        LDR      R2,[SP, #+40]
         STR      R0,[SP, #+24]
-        MOV      R2,R6
-        MOV      R1,R9
+        MOV      R1,R8
         ADD      R0,SP,#+24
           CFI FunCall _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii
         BL       _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii
-        MOV      R7,R0
-        ADD      R0,R4,#+8
-          CFI FunCall _ZN7Planner25fade_scaling_factor_for_zERKf
-        BL       _ZN7Planner25fade_scaling_factor_for_zERKf
-        MOV      R1,R7
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R7,R0
-          CFI FunCall __iar_FDtest
-        BL       __iar_FDtest
-        CMP      R0,#+2
-        BNE.N    ??line_to_destination_cartesian_56
-        MOVS     R7,#+0
-??line_to_destination_cartesian_56:
-        MOV      R0,R9
-        UXTB     R0,R0
-          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        STR      R0,[SP, #+20]
-        LDR      R2,[R5, #+0]
+        LDR      R3,[R10, #+0]
+        MOV      R9,R0
+        MOV      R0,R3
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_32
+        LDR      R2,[R5, #+8]
+        MOV      R0,R2
+        MOV      R1,R3
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        IT       LS 
+        MOVLS    R0,#+0
+        BLS.N    ??line_to_destination_cartesian_33
+        LDR      R0,[R7, #+0]
         MOV      R1,R2
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
-        BEQ.N    ??line_to_destination_cartesian_52
+        BEQ.N    ??line_to_destination_cartesian_34
+        LDR.N    R0,??DataTable4_13
+        STR      R2,[R7, #+0]
+        LDR      R1,[R0, #+0]
+        MOV      R0,R2
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[R6, #+0]
+??line_to_destination_cartesian_34:
+        LDR      R0,[R6, #+0]
+        B.N      ??line_to_destination_cartesian_33
+??line_to_destination_cartesian_32:
+        MOV      R0,#+1065353216
+??line_to_destination_cartesian_33:
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
+          CFI FunCall __iar_FDtest
+        BL       __iar_FDtest
+        CMP      R0,#+2
+        IT       EQ 
+        MOVEQ    R9,#+0
+        UXTB     R0,R8
+          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
+        BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
+        LDR      R1,[R4, #+0]
+        STR      R0,[SP, #+20]
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_29
         LDR      R0,[SP, #+44]
         CMP      R0,#+0
-        BNE.N    ??line_to_destination_cartesian_53
-        LDR      R0,[SP, #+36]
+        BNE.N    ??line_to_destination_cartesian_30
+        LDR      R0,[SP, #+52]
         CMP      R0,#+0
-        BEQ.N    ??line_to_destination_cartesian_57
-        LDR      R0,[SP, #+20]
+        ITEE     NE 
+        LDRNE    R0,[SP, #+20]
+        LDREQ    R0,[SP, #+24]
+        LDREQ    R1,[R4, #+4]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R11,R0
-        B.N      ??line_to_destination_cartesian_58
-??line_to_destination_cartesian_57:
-        LDR      R0,[SP, #+24]
-        LDR      R1,[R5, #+4]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R11,R0
-??line_to_destination_cartesian_58:
         LDR      R0,[SP, #+48]
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+12]
+        LDR      R1,[R4, #+12]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         STR      R0,[SP, #+8]
-        LDR      R0,[SP, #+64]
         MOV      R1,R11
+        LDR      R0,[SP, #+72]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+8]
+        LDR      R1,[R4, #+8]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        B.N      ??line_to_destination_cartesian_54
+        B.N      ??line_to_destination_cartesian_31
 //  310           } //else printf("FIRST MOVE PRUNED  ");
 //  311         }
 //  312 
 //  313         if (g26_debug_flag)
-??line_to_destination_cartesian_55:
-        LDR.N    R0,??DataTable10_2
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.W    ??line_to_destination_cartesian_50
 //  314           debug_current_and_destination(PSTR("horizontal move done in ubl.line_to_destination_cartesian()"));
-        ADR.W    R0,`?<Constant "horizontal move done ...">`
-          CFI FunCall _Z29debug_current_and_destinationPKc
-        BL       _Z29debug_current_and_destinationPKc
-        B.N      ??line_to_destination_cartesian_50
 //  315 
 //  316         if (current_position[X_AXIS] != end[X_AXIS] || current_position[Y_AXIS] != end[Y_AXIS])
 //  317           goto FINAL_MOVE;
@@ -3173,106 +2628,144 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 //  327        */
 //  328 
 //  329       int xi_cnt = cell_start_xi - cell_dest_xi,
-??line_to_destination_cartesian_51:
-        LDR      R0,[SP, #+16]
-        SUBS     R0,R7,R0
+??line_to_destination_cartesian_28:
+        LDR      R0,[SP, #+56]
+        LDR      R1,[SP, #+16]
 //  330           yi_cnt = cell_start_yi - cell_dest_yi;
-        LDR      R1,[SP, #+12]
-        SUBS     R1,R6,R1
+        LDR      R2,[SP, #+12]
+        SUBS     R0,R0,R1
+        LDR      R1,[SP, #+40]
+        SUBS     R1,R1,R2
 //  331 
 //  332       if (xi_cnt < 0) xi_cnt = -xi_cnt;
-        MOVS     R7,R0
-        BPL.N    ??line_to_destination_cartesian_59
-        RSBS     R7,R7,#+0
+        CMP      R0,#+0
+        IT       MI 
+        RSBMI    R0,R0,#+0
+        STR      R0,[SP, #+64]
 //  333       if (yi_cnt < 0) yi_cnt = -yi_cnt;
-??line_to_destination_cartesian_59:
-        MOV      R8,R1
-        CMP      R8,#+0
-        BPL.N    ??line_to_destination_cartesian_60
-        RSB      R8,R8,#+0
+        MOVS     R0,R1
+        IT       MI 
+        RSBMI    R0,R0,#+0
+        STR      R0,[SP, #+60]
 //  334 
 //  335       current_xi += left_flag;
 //  336       current_yi += down_flag;
-??line_to_destination_cartesian_60:
-        LDR      R0,[SP, #+24]
-        ADDS     R6,R0,R6
+        LDR      R1,[SP, #+20]
+        LDR      R0,[SP, #+40]
+        LDR.N    R6,??DataTable4_12
+        LDR.N    R7,??DataTable4_11
+        LDR.W    R10,??DataTable4_10
+        ADD      R9,R1,R0
 //  337 
 //  338       while (xi_cnt > 0 || yi_cnt > 0) {
-??line_to_destination_cartesian_61:
-        CMP      R7,#+1
-        BGE.N    ??line_to_destination_cartesian_62
-        CMP      R8,#+1
-        BLT.W    ??line_to_destination_cartesian_63
+??line_to_destination_cartesian_35:
+        LDR      R0,[SP, #+64]
+        CMP      R0,#+1
+        ITT      LT 
+        LDRLT    R0,[SP, #+60]
+        CMPLT    R0,#+1
+        BLT.W    ??line_to_destination_cartesian_22
 //  339 
 //  340         const float next_mesh_line_x = mesh_index_to_xpos(current_xi + dxi),
-??line_to_destination_cartesian_62:
-        LDR      R0,[SP, #+40]
-        ADD      R0,R0,R9
+        LDR      R0,[SP, #+36]
+        ADD      R0,R0,R8
         UXTB     R0,R0
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
         STR      R0,[SP, #+56]
 //  341                     next_mesh_line_y = mesh_index_to_ypos(current_yi + dyi),
-        LDR      R0,[SP, #+20]
-        ADDS     R0,R0,R6
+        LDR      R0,[SP, #+32]
+        ADD      R0,R0,R9
         UXTB     R0,R0
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        STR      R0,[SP, #+72]
+        STR      R0,[SP, #+80]
 //  342                     ry = m * next_mesh_line_x + c,   // Calculate Y at the next X mesh line
-        LDR      R0,[SP, #+32]
         LDR      R1,[SP, #+56]
+        LDR      R0,[SP, #+28]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[SP, #+60]
+        LDR      R1,[SP, #+68]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+68]
 //  343                     rx = (next_mesh_line_y - c) / m; // Calculate X at the next Y mesh line
-        LDR      R0,[SP, #+72]
-        LDR      R1,[SP, #+60]
+        LDR      R1,[SP, #+68]
+        STR      R0,[SP, #+76]
+        LDR      R0,[SP, #+80]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        LDR      R1,[SP, #+32]
+        LDR      R1,[SP, #+28]
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        STR      R0,[SP, #+52]
+        STR      R0,[SP, #+40]
 //  344                                                      // (No need to worry about m being zero.
 //  345                                                      //  If that was the case, it was already detected
 //  346                                                      //  as a vertical line move above.)
 //  347 
 //  348         if (left_flag == (rx > next_mesh_line_x)) { // Check if we hit the Y line first
+        LDR      R1,[SP, #+40]
         LDR      R0,[SP, #+56]
-        LDR      R1,[SP, #+52]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??line_to_destination_cartesian_64
-        MOVS     R0,#+1
-        B.N      ??line_to_destination_cartesian_65
-??line_to_destination_cartesian_64:
-        MOVS     R0,#+0
-??line_to_destination_cartesian_65:
-        LDR      R1,[SP, #+28]
+        ITE      CC 
+        MOVCC    R0,#+1
+        MOVCS    R0,#+0
+        LDR      R1,[SP, #+24]
         CMP      R1,R0
-        BNE.N    ??line_to_destination_cartesian_66
-        LDR      R0,[SP, #+20]
-        ADDS     R2,R0,R6
-        MOV      R0,R1
-        SUB      R1,R9,R0
-        ADD      R0,SP,#+52
+        BNE.N    ??line_to_destination_cartesian_36
 //  349           // Yes!  Crossing a Y Mesh Line next
 //  350           float z0 = z_correction_for_x_on_horizontal_mesh_line(rx, current_xi - left_flag, current_yi + dyi)
 //  351                      * planner.fade_scaling_factor_for_z(end[Z_AXIS]);
+        LDR      R0,[SP, #+32]
+        ADD      R0,R0,R9
+        STR      R0,[SP, #+84]
+        MOV      R2,R0
+        LDR      R0,[SP, #+24]
+        SUB      R1,R8,R0
+        ADD      R0,SP,#+40
           CFI FunCall _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii
         BL       _ZN20unified_bed_leveling42z_correction_for_x_on_horizontal_mesh_lineERKfii
-        MOV      R10,R0
-        ADD      R0,R4,#+8
-          CFI FunCall _ZN7Planner25fade_scaling_factor_for_zERKf
-        BL       _ZN7Planner25fade_scaling_factor_for_zERKf
-        MOV      R1,R10
+        LDR      R3,[R10, #+0]
+        MOV      R9,R0
+        MOV      R0,R3
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_37
+        LDR      R2,[R5, #+8]
+        MOV      R0,R2
+        MOV      R1,R3
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        IT       LS 
+        MOVLS    R0,#+0
+        BLS.N    ??line_to_destination_cartesian_38
+        LDR      R0,[R7, #+0]
+        MOV      R1,R2
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_39
+        LDR.N    R0,??DataTable4_13
+        STR      R2,[R7, #+0]
+        LDR      R1,[R0, #+0]
+        MOV      R0,R2
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R10,R0
+        MOV      R1,R0
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[R6, #+0]
+??line_to_destination_cartesian_39:
+        LDR      R0,[R6, #+0]
+        B.N      ??line_to_destination_cartesian_38
+??line_to_destination_cartesian_37:
+        MOV      R0,#+1065353216
+??line_to_destination_cartesian_38:
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
 //  352 
 //  353           /**
 //  354            * If part of the Mesh is undefined, it will show up as NAN
@@ -3285,103 +2778,129 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??line_to_destination_cartesian_67
-        MOV      R10,#+0
+        IT       EQ 
+        MOVEQ    R9,#+0
 //  361 
 //  362           if (!inf_normalized_flag) {
-??line_to_destination_cartesian_67:
         LDR      R0,[SP, #+44]
-        CMP      R0,#+0
-        BNE.N    ??line_to_destination_cartesian_68
+        CBNZ.N   R0,??line_to_destination_cartesian_40
 //  363             on_axis_distance = use_x_dist ? rx - start[X_AXIS] : next_mesh_line_y - start[Y_AXIS];
-        LDR      R0,[SP, #+36]
-        CMP      R0,#+0
-        BEQ.N    ??line_to_destination_cartesian_69
         LDR      R0,[SP, #+52]
-        LDR      R1,[R5, #+0]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R11,R0
-        B.N      ??line_to_destination_cartesian_70
-??line_to_destination_cartesian_69:
-        LDR      R0,[SP, #+72]
-        LDR      R1,[R5, #+4]
+        CMP      R0,#+0
+        ITTEE    NE 
+        LDRNE    R0,[SP, #+40]
+        LDRNE    R1,[R4, #+0]
+        LDREQ    R0,[SP, #+80]
+        LDREQ    R1,[R4, #+4]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R11,R0
 //  364             e_position = start[E_AXIS] + on_axis_distance * e_normalized_dist;
-??line_to_destination_cartesian_70:
         LDR      R0,[SP, #+48]
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+12]
+        LDR      R1,[R4, #+12]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         STR      R0,[SP, #+8]
 //  365             z_position = start[Z_AXIS] + on_axis_distance * z_normalized_dist;
-        LDR      R0,[SP, #+64]
         MOV      R1,R11
+        LDR      R0,[SP, #+72]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+8]
+        LDR      R1,[R4, #+8]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        B.N      ??line_to_destination_cartesian_71
+        B.N      ??line_to_destination_cartesian_41
 //  366           }
 //  367           else {
 //  368             e_position = end[E_AXIS];
-??line_to_destination_cartesian_68:
-        LDR      R0,[R4, #+12]
+??line_to_destination_cartesian_40:
+        LDR      R0,[R5, #+12]
         STR      R0,[SP, #+8]
 //  369             z_position = end[Z_AXIS];
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R5, #+8]
 //  370           }
 //  371           planner.buffer_segment(rx, next_mesh_line_y, z_position + z0, e_position, feed_rate, extruder);
-??line_to_destination_cartesian_71:
-        MOV      R1,R10
+??line_to_destination_cartesian_41:
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+76]
-        LDRB     R0,[SP, #+88]
-        STR      R0,[SP, #+4]
-        LDR      R0,[SP, #+84]
-        STR      R0,[SP, #+0]
+        STR      R0,[SP, #+88]
         ADD      R3,SP,#+8
-        ADD      R2,SP,#+76
-        ADD      R1,SP,#+72
-        ADD      R0,SP,#+52
+        LDRB     R0,[SP, #+96]
+        STR      R0,[SP, #+4]
+        ADD      R2,SP,#+88
+        LDR      R0,[SP, #+92]
+        STR      R0,[SP, #+0]
+        ADD      R1,SP,#+80
+        ADD      R0,SP,#+40
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
 //  372           current_yi += dyi;
-        LDR      R0,[SP, #+20]
-        ADDS     R6,R0,R6
 //  373           yi_cnt--;
-        SUB      R8,R8,#+1
-        B.N      ??line_to_destination_cartesian_72
+        LDR      R0,[SP, #+60]
+        LDR      R9,[SP, #+84]
+        SUBS     R0,R0,#+1
+        STR      R0,[SP, #+60]
+        B.N      ??line_to_destination_cartesian_42
 //  374         }
 //  375         else {
 //  376           // Yes!  Crossing a X Mesh Line next
 //  377           float z0 = z_correction_for_y_on_vertical_mesh_line(ry, current_xi + dxi, current_yi - down_flag)
 //  378                      * planner.fade_scaling_factor_for_z(end[Z_AXIS]);
-??line_to_destination_cartesian_66:
-        LDR      R0,[SP, #+40]
-        ADD      R0,R0,R9
-        STR      R0,[SP, #+76]
-        LDR      R0,[SP, #+24]
-        SUBS     R2,R6,R0
-        LDR      R1,[SP, #+76]
-        ADD      R0,SP,#+68
+??line_to_destination_cartesian_36:
+        LDR      R0,[SP, #+36]
+        ADD      R0,R0,R8
+        STR      R0,[SP, #+84]
+        LDR      R0,[SP, #+20]
+        LDR      R1,[SP, #+84]
+        SUB      R2,R9,R0
+        ADD      R0,SP,#+76
           CFI FunCall _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii
         BL       _ZN20unified_bed_leveling40z_correction_for_y_on_vertical_mesh_lineERKfii
-        MOV      R9,R0
-        ADD      R0,R4,#+8
-          CFI FunCall _ZN7Planner25fade_scaling_factor_for_zERKf
-        BL       _ZN7Planner25fade_scaling_factor_for_zERKf
-        MOV      R1,R9
+        LDR      R3,[R10, #+0]
+        MOV      R8,R0
+        MOV      R0,R3
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_43
+        LDR      R2,[R5, #+8]
+        MOV      R0,R2
+        MOV      R1,R3
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        IT       LS 
+        MOVLS    R1,#+0
+        BLS.N    ??line_to_destination_cartesian_44
+        LDR      R0,[R7, #+0]
+        MOV      R1,R2
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??line_to_destination_cartesian_45
+        LDR.N    R0,??DataTable4_13
+        STR      R2,[R7, #+0]
+        LDR      R1,[R0, #+0]
+        MOV      R0,R2
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R9,R0
+        MOV      R1,R0
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[R6, #+0]
+??line_to_destination_cartesian_45:
+        LDR      R1,[R6, #+0]
+        B.N      ??line_to_destination_cartesian_44
+??line_to_destination_cartesian_43:
+        MOV      R1,#+1065353216
+??line_to_destination_cartesian_44:
+        MOV      R0,R8
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R8,R0
 //  379 
 //  380           /**
 //  381            * If part of the Mesh is undefined, it will show up as NAN
@@ -3394,184 +2913,195 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??line_to_destination_cartesian_73
-        MOV      R9,#+0
+        IT       EQ 
+        MOVEQ    R8,#+0
 //  388 
 //  389           if (!inf_normalized_flag) {
-??line_to_destination_cartesian_73:
         LDR      R0,[SP, #+44]
-        CMP      R0,#+0
-        BNE.N    ??line_to_destination_cartesian_74
+        CBNZ.N   R0,??line_to_destination_cartesian_46
 //  390             on_axis_distance = use_x_dist ? next_mesh_line_x - start[X_AXIS] : ry - start[Y_AXIS];
-        LDR      R0,[SP, #+36]
+        LDR      R0,[SP, #+52]
         CMP      R0,#+0
-        BEQ.N    ??line_to_destination_cartesian_75
-        LDR      R0,[SP, #+56]
-        LDR      R1,[R5, #+0]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R11,R0
-        B.N      ??line_to_destination_cartesian_76
-??line_to_destination_cartesian_75:
-        LDR      R0,[SP, #+68]
-        LDR      R1,[R5, #+4]
+        ITTEE    NE 
+        LDRNE    R0,[SP, #+56]
+        LDRNE    R1,[R4, #+0]
+        LDREQ    R0,[SP, #+76]
+        LDREQ    R1,[R4, #+4]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R11,R0
 //  391             e_position = start[E_AXIS] + on_axis_distance * e_normalized_dist;
-??line_to_destination_cartesian_76:
         LDR      R0,[SP, #+48]
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+12]
+        LDR      R1,[R4, #+12]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         STR      R0,[SP, #+8]
 //  392             z_position = start[Z_AXIS] + on_axis_distance * z_normalized_dist;
-        LDR      R0,[SP, #+64]
         MOV      R1,R11
+        LDR      R0,[SP, #+72]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[R5, #+8]
+        LDR      R1,[R4, #+8]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        B.N      ??line_to_destination_cartesian_77
+        B.N      ??line_to_destination_cartesian_47
 //  393           }
 //  394           else {
 //  395             e_position = end[E_AXIS];
-??line_to_destination_cartesian_74:
-        LDR      R0,[R4, #+12]
+??line_to_destination_cartesian_46:
+        LDR      R0,[R5, #+12]
         STR      R0,[SP, #+8]
 //  396             z_position = end[Z_AXIS];
-        LDR      R0,[R4, #+8]
+        LDR      R0,[R5, #+8]
 //  397           }
 //  398 
 //  399           planner.buffer_segment(next_mesh_line_x, ry, z_position + z0, e_position, feed_rate, extruder);
-??line_to_destination_cartesian_77:
-        MOV      R1,R9
+??line_to_destination_cartesian_47:
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+80]
-        LDRB     R0,[SP, #+88]
-        STR      R0,[SP, #+4]
-        LDR      R0,[SP, #+84]
-        STR      R0,[SP, #+0]
+        STR      R0,[SP, #+88]
         ADD      R3,SP,#+8
-        ADD      R2,SP,#+80
-        ADD      R1,SP,#+68
+        LDRB     R0,[SP, #+96]
+        STR      R0,[SP, #+4]
+        ADD      R2,SP,#+88
+        LDR      R0,[SP, #+92]
+        STR      R0,[SP, #+0]
+        ADD      R1,SP,#+76
         ADD      R0,SP,#+56
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
 //  400           current_xi += dxi;
-        LDR      R9,[SP, #+76]
 //  401           xi_cnt--;
-        SUBS     R7,R7,#+1
+        LDR      R0,[SP, #+64]
+        LDR      R8,[SP, #+84]
+        SUBS     R0,R0,#+1
+        STR      R0,[SP, #+64]
 //  402         }
 //  403 
 //  404         if (xi_cnt < 0 || yi_cnt < 0) break; // we've gone too far, so exit the loop and move on to FINAL_MOVE
-??line_to_destination_cartesian_72:
-        CMP      R7,#+0
-        BMI.N    ??line_to_destination_cartesian_63
-        CMP      R8,#+0
-        BPL.W    ??line_to_destination_cartesian_61
+??line_to_destination_cartesian_42:
+        LDR      R0,[SP, #+64]
+        CMP      R0,#+0
+        ITT      PL 
+        LDRPL    R0,[SP, #+60]
+        CMPPL    R0,#+0
+        BPL.W    ??line_to_destination_cartesian_35
 //  405       }
 //  406 
 //  407       if (g26_debug_flag)
-??line_to_destination_cartesian_63:
-        LDR.N    R0,??DataTable10_2
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??line_to_destination_cartesian_50
 //  408         debug_current_and_destination(PSTR("generic move done in ubl.line_to_destination_cartesian()"));
-        ADR.W    R0,`?<Constant "generic move done in ...">`
-          CFI FunCall _Z29debug_current_and_destinationPKc
-        BL       _Z29debug_current_and_destinationPKc
 //  409 
 //  410       if (current_position[X_AXIS] != end[X_AXIS] || current_position[Y_AXIS] != end[Y_AXIS])
-??line_to_destination_cartesian_50:
-        LDR      R0,[R5, #+0]
-        LDR      R1,[R4, #+0]
+??line_to_destination_cartesian_22:
+        LDR      R0,[R4, #+0]
+        LDR      R1,[R5, #+0]
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
         BNE.W    ??line_to_destination_cartesian_3
-        LDR      R0,[R5, #+4]
-        LDR      R1,[R4, #+4]
+        LDR      R0,[R4, #+4]
+        LDR      R1,[R5, #+4]
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
         BNE.W    ??line_to_destination_cartesian_3
 //  411         goto FINAL_MOVE;
 //  412 
 //  413       set_current_from_destination();
-??line_to_destination_cartesian_19:
-          CFI FunCall _Z28set_current_from_destinationv
-        BL       _Z28set_current_from_destinationv
-//  414     }
 ??line_to_destination_cartesian_4:
-        ADD      SP,SP,#+92
+        LDM      R5!,{R0-R3}
+        STM      R4!,{R0-R3}
+//  414     }
+        ADD      SP,SP,#+100
           CFI CFA R13+36
         POP      {R4-R11,PC}      ;; return
-          CFI EndBlock cfiBlock13
+          CFI EndBlock cfiBlock7
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10:
+??DataTable4:
         DC32     current_position
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_1:
+??DataTable4_1:
         DC32     destination
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_2:
+??DataTable4_2:
         DC32     g26_debug_flag
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_3:
+??DataTable4_3:
         DC32     Serial3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_4:
+??DataTable4_4:
         DC32     mksCfg
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_5:
+??DataTable4_5:
         DC32     mksCfg+0x60
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_6:
+??DataTable4_6:
         DC32     mksCfg+0x8
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_7:
+??DataTable4_7:
         DC32     mksTmp
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_8:
+??DataTable4_8:
         DC32     0x3ff00000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable10_9:
+??DataTable4_9:
         DC32     _ZN20unified_bed_leveling8z_valuesE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable4_10:
+        DC32     _ZN7Planner13z_fade_heightE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable4_11:
+        DC32     _ZN7Planner11last_fade_zE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable4_12:
+        DC32     _ZZN7Planner25fade_scaling_factor_for_zERKfE13z_fade_factor
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable4_13:
+        DC32     _ZN7Planner21inverse_z_fade_heightE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -3600,74 +3130,6 @@ _ZN20unified_bed_leveling29line_to_destination_cartesianERKfh:
 `?<Constant ", ee=">`:
         DC8 ", ee="
         DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "Start of ubl.line_to_...">`:
-        DC8 "Start of ubl.line_to_destination_cartesian()"
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "out of bounds in ubl....">`:
-        DC8 6FH, 75H, 74H, 20H, 6FH, 66H, 20H, 62H
-        DC8 6FH, 75H, 6EH, 64H, 73H, 20H, 69H, 6EH
-        DC8 20H, 75H, 62H, 6CH, 2EH, 6CH, 69H, 6EH
-        DC8 65H, 5FH, 74H, 6FH, 5FH, 64H, 65H, 73H
-        DC8 74H, 69H, 6EH, 61H, 74H, 69H, 6FH, 6EH
-        DC8 5FH, 63H, 61H, 72H, 74H, 65H, 73H, 69H
-        DC8 61H, 6EH, 28H, 29H, 0
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "FINAL_MOVE in ubl.lin...">`:
-        DC8 "FINAL_MOVE in ubl.line_to_destination_cartesian()"
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "vertical move done in...">`:
-        DC8 76H, 65H, 72H, 74H, 69H, 63H, 61H, 6CH
-        DC8 20H, 6DH, 6FH, 76H, 65H, 20H, 64H, 6FH
-        DC8 6EH, 65H, 20H, 69H, 6EH, 20H, 75H, 62H
-        DC8 6CH, 2EH, 6CH, 69H, 6EH, 65H, 5FH, 74H
-        DC8 6FH, 5FH, 64H, 65H, 73H, 74H, 69H, 6EH
-        DC8 61H, 74H, 69H, 6FH, 6EH, 5FH, 63H, 61H
-        DC8 72H, 74H, 65H, 73H, 69H, 61H, 6EH, 28H
-        DC8 29H, 0
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "horizontal move done ...">`:
-        DC8 68H, 6FH, 72H, 69H, 7AH, 6FH, 6EH, 74H
-        DC8 61H, 6CH, 20H, 6DH, 6FH, 76H, 65H, 20H
-        DC8 64H, 6FH, 6EH, 65H, 20H, 69H, 6EH, 20H
-        DC8 75H, 62H, 6CH, 2EH, 6CH, 69H, 6EH, 65H
-        DC8 5FH, 74H, 6FH, 5FH, 64H, 65H, 73H, 74H
-        DC8 69H, 6EH, 61H, 74H, 69H, 6FH, 6EH, 5FH
-        DC8 63H, 61H, 72H, 74H, 65H, 73H, 69H, 61H
-        DC8 6EH, 28H, 29H, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "generic move done in ...">`:
-        DC8 67H, 65H, 6EH, 65H, 72H, 69H, 63H, 20H
-        DC8 6DH, 6FH, 76H, 65H, 20H, 64H, 6FH, 6EH
-        DC8 65H, 20H, 69H, 6EH, 20H, 75H, 62H, 6CH
-        DC8 2EH, 6CH, 69H, 6EH, 65H, 5FH, 74H, 6FH
-        DC8 5FH, 64H, 65H, 73H, 74H, 69H, 6EH, 61H
-        DC8 74H, 69H, 6FH, 6EH, 5FH, 63H, 61H, 72H
-        DC8 74H, 65H, 73H, 69H, 61H, 6EH, 28H, 29H
-        DC8 0
-        DC8 0, 0, 0
 //  415 #endif
 //  416 //  #else // UBL_SEGMENTED
 //  417 #if 1
@@ -3681,7 +3143,7 @@ scara_feed_factor:
         DS8 4
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_
         THUMB
 _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
@@ -3698,10 +3160,10 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
           CFI CFA R13+44
         SUB      SP,SP,#+84
           CFI CFA R13+128
-        LDR.W    R0,??DataTable11
-        STR      R0,[SP, #+8]
-        LDRH     R0,[R0, #+80]
+        LDR.W    R0,??DataTable5
+        STR      R0,[SP, #+12]
         MOVW     R1,#+770
+        LDRH     R0,[R0, #+80]
         TST      R0,R1
         BEQ.N    ??prepare_segmented_line_to_0
         LDR      R0,[SP, #+84]
@@ -3711,110 +3173,173 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         CMP      R0,#+0
         BEQ.N    ??prepare_segmented_line_to_1
         LDR      R0,[SP, #+84]
-        ADDS     R1,R0,#+4
-          CFI FunCall _Z34position_is_reachable_IS_CARTESIANRKfS0_
-        BL       _Z34position_is_reachable_IS_CARTESIANRKfS0_
-        CMP      R0,#+0
-        BNE.N    ??prepare_segmented_line_to_0
+        ADDS     R6,R0,#+4
+        LDR      R0,[R0, #+0]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDR.W    R8,??DataTable5_1  ;; 0xd2f1a9fc
+        LDR.W    R9,??DataTable5_2  ;; 0xbf50624d
+        MOV      R4,R0
+        LDR.W    R0,??DataTable5_3
+        LDR      R0,[R0, #+8]
+        MOV      R5,R1
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R8
+        MOV      R3,R9
+          CFI FunCall __aeabi_dadd
+        BL       __aeabi_dadd
+        MOV      R2,R0
+        MOV      R3,R1
+        MOV      R0,R4
+        MOV      R1,R5
+          CFI FunCall __aeabi_cdrcmple
+        BL       __aeabi_cdrcmple
+        BHI.N    ??prepare_segmented_line_to_1
+        LDR      R0,[SP, #+12]
+        LDR.W    R7,??DataTable5_4  ;; 0x3f50624d
+        LDR      R0,[R0, #+12]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R8
+        MOV      R3,R7
+          CFI FunCall __aeabi_dadd
+        BL       __aeabi_dadd
+        MOV      R2,R4
+        MOV      R3,R5
+          CFI FunCall __aeabi_cdrcmple
+        BL       __aeabi_cdrcmple
+        BHI.N    ??prepare_segmented_line_to_1
+        LDR      R0,[R6, #+0]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R4,R0
+        LDR      R0,[SP, #+12]
+        LDR      R0,[R0, #+4]
+        MOV      R5,R1
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R8
+        MOV      R3,R9
+          CFI FunCall __aeabi_dadd
+        BL       __aeabi_dadd
+        MOV      R2,R0
+        MOV      R3,R1
+        MOV      R0,R4
+        MOV      R1,R5
+          CFI FunCall __aeabi_cdrcmple
+        BL       __aeabi_cdrcmple
+        BHI.N    ??prepare_segmented_line_to_1
+        LDR      R0,[SP, #+12]
+        LDR      R0,[R0, #+16]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R8
+        MOV      R3,R7
+          CFI FunCall __aeabi_dadd
+        BL       __aeabi_dadd
+        MOV      R2,R4
+        MOV      R3,R5
+          CFI FunCall __aeabi_cdrcmple
+        BL       __aeabi_cdrcmple
+        BLS.N    ??prepare_segmented_line_to_0
 ??prepare_segmented_line_to_1:
         MOVS     R0,#+1
 ??prepare_segmented_line_to_2:
-        ADD      SP,SP,#+92
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
-          CFI CFA R13+128
+        B.W      ?Subroutine0
 ??prepare_segmented_line_to_0:
-        LDR.W    R5,??DataTable11_1
         LDR      R0,[SP, #+84]
+        LDR.W    R4,??DataTable5_5
         LDR      R0,[R0, #+0]
-        LDR      R1,[R5, #+0]
+        LDR      R1,[R4, #+0]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
+        LDR      R1,[R4, #+4]
         MOV      R8,R0
         LDR      R0,[SP, #+84]
         LDR      R0,[R0, #+4]
-        LDR      R1,[R5, #+4]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R6,R0
+        LDR      R1,[R4, #+8]
+        MOV      R5,R0
         LDR      R0,[SP, #+84]
         LDR      R0,[R0, #+8]
-        LDR      R1,[R5, #+8]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        LDR      R1,[R4, #+12]
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+84]
+        LDR      R0,[R0, #+12]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         STR      R0,[SP, #+0]
-        LDR      R0,[SP, #+84]
-        LDR      R0,[R0, #+12]
-        LDR      R1,[R5, #+12]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R9,R0
-        MOV      R10,R8
-        MOVS     R7,#+2
-        MOV      R11,#+1065353216
-        MOV      R4,R11
+        MOV      R6,#+1065353216
+        MOV      R9,R8
+        MOV      R10,#+2
+        MOV      R7,R6
         B.N      ??prepare_segmented_line_to_3
 ??prepare_segmented_line_to_4:
-        MOV      R0,R10
-        MOV      R1,R10
+        MOV      R0,R9
+        MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R10,R0
+        MOV      R9,R0
 ??prepare_segmented_line_to_3:
-        LSLS     R0,R7,#+31
+        LSLS     R0,R10,#+31
         BPL.N    ??prepare_segmented_line_to_5
-        MOV      R0,R4
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R4,R0
-??prepare_segmented_line_to_5:
-        LSRS     R7,R7,#+1
-        BNE.N    ??prepare_segmented_line_to_4
-        MOV      R7,R6
-        MOV      R10,#+2
-        B.N      ??prepare_segmented_line_to_6
-??prepare_segmented_line_to_7:
         MOV      R0,R7
-        MOV      R1,R7
+        MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R7,R0
-??prepare_segmented_line_to_6:
-        LSLS     R0,R10,#+31
-        BPL.N    ??prepare_segmented_line_to_8
+??prepare_segmented_line_to_5:
+        LSRS     R10,R10,#+1
+        BNE.N    ??prepare_segmented_line_to_4
+        MOV      R11,R5
+        MOV      R9,#+2
+        MOV      R10,R6
+        B.N      ??prepare_segmented_line_to_6
+??prepare_segmented_line_to_7:
         MOV      R0,R11
-        MOV      R1,R7
+        MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R11,R0
-??prepare_segmented_line_to_8:
-        LSRS     R10,R10,#+1
-        BNE.N    ??prepare_segmented_line_to_7
-        MOV      R0,R4
+??prepare_segmented_line_to_6:
+        LSLS     R0,R9,#+31
+        BPL.N    ??prepare_segmented_line_to_8
+        MOV      R0,R10
         MOV      R1,R11
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R10,R0
+??prepare_segmented_line_to_8:
+        LSRS     R9,R9,#+1
+        BNE.N    ??prepare_segmented_line_to_7
+        MOV      R0,R7
+        MOV      R1,R10
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
           CFI FunCall sqrtf
         BL       sqrtf
         MOV      R7,R0
-        LDR      R0,[SP, #+8]
+        LDR      R0,[SP, #+12]
         LDRSH    R0,[R0, #+80]
         MOV      R1,#+768
         TST      R0,R1
         BEQ.N    ??prepare_segmented_line_to_9
-        MOV      R0,R7
         LDR      R1,[SP, #+88]
         LDR      R1,[R1, #+0]
+        MOV      R0,R7
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        LDR.W    R1,??DataTable11_2
+        LDR.W    R1,??DataTable5_6
         LDR      R1,[R1, #+0]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
-        MOV      R4,R0
+        MOV      R9,R0
         MOV      R0,#+1082130432
         MOV      R1,R7
           CFI FunCall __aeabi_fmul
@@ -3822,215 +3347,258 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
           CFI FunCall lroundf
         BL       lroundf
         UXTH     R0,R0
-        UXTH     R4,R4
-        CMP      R0,R4
+        UXTH     R1,R9
+        CMP      R0,R1
         BLS.N    ??prepare_segmented_line_to_10
-        MOV      R0,R4
-??prepare_segmented_line_to_10:
-        MOV      R4,R0
-        B.N      ??prepare_segmented_line_to_11
+        MOV      R0,R1
+        B.N      ??prepare_segmented_line_to_10
 ??prepare_segmented_line_to_9:
         LSLS     R0,R0,#+30
         MOV      R0,R7
-        BPL.N    ??prepare_segmented_line_to_12
+        BPL.N    ??prepare_segmented_line_to_11
         LDR      R1,[SP, #+88]
         LDR      R1,[R1, #+0]
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        LDR.W    R1,??DataTable11_2
+        LDR.W    R1,??DataTable5_6
         LDR      R1,[R1, #+0]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
-        MOV      R4,R0
-        LDR.W    R0,??DataTable11_3  ;; 0x41200000
+        MOV      R9,R0
+        LDR.W    R0,??DataTable5_7  ;; 0x41200000
         MOV      R1,R7
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
         UXTH     R0,R0
-        UXTH     R4,R4
-        CMP      R0,R4
-        BLS.N    ??prepare_segmented_line_to_13
-        MOV      R0,R4
-??prepare_segmented_line_to_13:
-        MOV      R4,R0
-        B.N      ??prepare_segmented_line_to_11
-??prepare_segmented_line_to_12:
+        UXTH     R1,R9
+        CMP      R0,R1
+        BLS.N    ??prepare_segmented_line_to_10
+        MOV      R0,R1
+        B.N      ??prepare_segmented_line_to_10
+??prepare_segmented_line_to_11:
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.W    R2,??DataTable11_4  ;; 0x9999999a
-        LDR.W    R3,??DataTable11_5  ;; 0x3fc99999
+        LDR.W    R2,??DataTable5_8  ;; 0x9999999a
+        LDR.W    R3,??DataTable5_9  ;; 0x3fc99999
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
           CFI FunCall lroundf
         BL       lroundf
-        MOV      R4,R0
-??prepare_segmented_line_to_11:
-        UXTH     R4,R4
-        CMP      R4,#+0
-        BNE.N    ??prepare_segmented_line_to_14
-        MOVS     R4,#+1
-??prepare_segmented_line_to_14:
-        MOV      R0,R4
+??prepare_segmented_line_to_10:
+        STRH     R0,[SP, #+8]
+        LDRH     R0,[SP, #+8]
+        CBNZ.N   R0,??prepare_segmented_line_to_12
+        MOVS     R0,#+1
+        STRH     R0,[SP, #+8]
+??prepare_segmented_line_to_12:
+        LDRH     R0,[SP, #+8]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R1,R0
-        MOV      R0,#+1065353216
+        MOV      R0,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        MOV      R10,R0
-        LDR      R0,[SP, #+8]
+        MOV      R9,R0
+        LDR      R0,[SP, #+12]
         LDRH     R0,[R0, #+80]
         MOV      R1,#+768
         TST      R0,R1
-        BEQ.N    ??prepare_segmented_line_to_15
-        LDR.W    R11,??DataTable11_6
+        BEQ.N    ??prepare_segmented_line_to_13
+        LDR.W    R10,??DataTable5_10
         MOV      R0,R7
-        MOV      R1,R10
+        MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         LDR      R1,[SP, #+88]
         LDR      R1,[R1, #+0]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[R11, #+0]
+        STR      R0,[R10, #+0]
         MOVS     R0,#+0
-          CFI FunCall _ZN7Stepper25get_axis_position_degreesE8AxisEnum
-        BL       _ZN7Stepper25get_axis_position_degreesE8AxisEnum
-        STR      R0,[R11, #+4]
+          CFI FunCall _ZN7Stepper20get_axis_position_mmE8AxisEnum
+        BL       _ZN7Stepper20get_axis_position_mmE8AxisEnum
+        STR      R0,[R10, #+4]
         MOVS     R0,#+1
-          CFI FunCall _ZN7Stepper25get_axis_position_degreesE8AxisEnum
-        BL       _ZN7Stepper25get_axis_position_degreesE8AxisEnum
-        STR      R0,[R11, #+8]
-??prepare_segmented_line_to_15:
+          CFI FunCall _ZN7Stepper20get_axis_position_mmE8AxisEnum
+        BL       _ZN7Stepper20get_axis_position_mmE8AxisEnum
+        STR      R0,[R10, #+8]
+??prepare_segmented_line_to_13:
         MOV      R0,R8
-        MOV      R1,R10
+        MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[SP, #+64]
-        MOV      R0,R6
-        MOV      R1,R10
+        STR      R0,[SP, #+36]
+        MOV      R1,R9
+        MOV      R0,R5
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        STR      R0,[SP, #+52]
+        MOV      R1,R9
+        LDR      R0,[SP, #+4]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[SP, #+68]
+        MOV      R1,R9
         LDR      R0,[SP, #+0]
-        MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[SP, #+72]
-        MOV      R0,R9
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        STR      R0,[SP, #+76]
-        LDR      R0,[R5, #+0]
-        STR      R0,[SP, #+36]
-        LDR      R0,[R5, #+4]
-        STR      R0,[SP, #+40]
-        LDR      R0,[R5, #+8]
-        STR      R0,[SP, #+44]
-        LDR      R0,[R5, #+12]
-        STR      R0,[SP, #+48]
-        LDR.W    R0,??DataTable11_7
+        LDR      R7,[R4, #+4]
+        LDR      R5,[R4, #+8]
+        STR      R0,[SP, #+64]
+        STR      R7,[SP, #+24]
+        STR      R5,[SP, #+28]
+        LDR      R0,[R4, #+0]
+        LDR      R4,[R4, #+12]
+        STR      R0,[SP, #+20]
+        STR      R4,[SP, #+32]
+        LDR.W    R0,??DataTable5_11
         LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??prepare_segmented_line_to_16
+        CBZ.N    R0,??prepare_segmented_line_to_14
+        LDR.W    R0,??DataTable5_12
+        LDR      R2,[R0, #+0]
+        MOV      R0,R2
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        IT       EQ 
+        STREQ    R6,[SP, #+60]
+        BEQ.N    ??prepare_segmented_line_to_15
         LDR      R0,[SP, #+84]
-        ADDS     R0,R0,#+8
-          CFI FunCall _ZN7Planner20leveling_active_at_zERKf
-        BL       _ZN7Planner20leveling_active_at_zERKf
-        CMP      R0,#+0
-        BEQ.N    ??prepare_segmented_line_to_16
+        LDR      R0,[R0, #+8]
+        MOV      R1,R2
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.N    ??prepare_segmented_line_to_14
         LDR      R0,[SP, #+84]
-        ADDS     R0,R0,#+8
-          CFI FunCall _ZN7Planner25fade_scaling_factor_for_zERKf
-        BL       _ZN7Planner25fade_scaling_factor_for_zERKf
-        STR      R0,[SP, #+80]
-        MOVS     R5,#+0
+        ADD      R3,R0,#+8
+        LDR      R6,[R3, #+0]
+        MOV      R0,R6
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        BHI.N    ??prepare_segmented_line_to_16
+        MOVS     R0,#+0
         B.N      ??prepare_segmented_line_to_17
 ??prepare_segmented_line_to_18:
-        ADD      R0,SP,#+36
-        LDR      R0,[R0, R5, LSL #+2]
-        ADD      R1,SP,#+64
-        LDR      R1,[R1, R5, LSL #+2]
+        LDR      R0,[SP, #+20]
+        LDR      R1,[SP, #+36]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        ADD      R1,SP,#+36
-        STR      R0,[R1, R5, LSL #+2]
-        ADDS     R5,R5,#+1
-??prepare_segmented_line_to_19:
-        CMP      R5,#+4
-        BLT.N    ??prepare_segmented_line_to_18
+        LDR      R1,[SP, #+52]
+        STR      R0,[SP, #+20]
+        LDR      R0,[SP, #+24]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        LDR      R1,[SP, #+68]
+        STR      R0,[SP, #+24]
+        LDR      R0,[SP, #+28]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        LDR      R1,[SP, #+64]
+        STR      R0,[SP, #+28]
+        LDR      R0,[SP, #+32]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
         LDR      R1,[SP, #+88]
-        ADD      R0,SP,#+36
+        STR      R0,[SP, #+32]
+        ADD      R0,SP,#+20
           CFI FunCall _Z22ubl_buffer_segment_rawRA4_KfRS_
         BL       _Z22ubl_buffer_segment_rawRA4_KfRS_
-??prepare_segmented_line_to_16:
-        SUBS     R4,R4,#+1
-        UXTH     R4,R4
-        CMP      R4,#+0
-        BEQ.N    ??prepare_segmented_line_to_20
-        MOVS     R5,#+0
-        B.N      ??prepare_segmented_line_to_19
-??prepare_segmented_line_to_20:
+??prepare_segmented_line_to_14:
+        LDRH     R0,[SP, #+8]
+        SUBS     R0,R0,#+1
+        STRH     R0,[SP, #+8]
+        LDRH     R0,[SP, #+8]
+        CMP      R0,#+0
+        BNE.N    ??prepare_segmented_line_to_18
         LDR      R1,[SP, #+88]
         LDR      R0,[SP, #+84]
           CFI FunCall _Z22ubl_buffer_segment_rawRA4_KfRS_
         BL       _Z22ubl_buffer_segment_rawRA4_KfRS_
         MOVS     R0,#+0
-        B.N      ??prepare_segmented_line_to_2
-??prepare_segmented_line_to_21:
-        ADD      R0,SP,#+36
-        LDR      R0,[R0, R5, LSL #+2]
-        ADD      R1,SP,#+64
-        LDR      R1,[R1, R5, LSL #+2]
+        B.W      ?Subroutine0
+??prepare_segmented_line_to_16:
+        LDR.W    R2,??DataTable5_13
+        LDR.W    R8,??DataTable5_14
+        LDR      R0,[R2, #+0]
+        MOV      R1,R6
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??prepare_segmented_line_to_19
+        LDR.W    R0,??DataTable5_15
+        LDR      R0,[R0, #+0]
+        STR      R6,[R2, #+0]
+        LDR      R1,[R3, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[R8, #+0]
+??prepare_segmented_line_to_19:
+        LDR      R0,[R8, #+0]
+??prepare_segmented_line_to_17:
+        STR      R0,[SP, #+60]
+??prepare_segmented_line_to_15:
+        LDR      R1,[SP, #+20]
+        LDR      R0,[SP, #+36]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        ADD      R1,SP,#+36
-        STR      R0,[R1, R5, LSL #+2]
-        ADDS     R5,R5,#+1
-??prepare_segmented_line_to_17:
-        CMP      R5,#+4
-        BLT.N    ??prepare_segmented_line_to_21
-??prepare_segmented_line_to_22:
-        LDR.W    R0,??DataTable11_8
+        STR      R0,[SP, #+20]
+        MOV      R1,R7
+        LDR      R0,[SP, #+52]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        STR      R0,[SP, #+24]
+        MOV      R1,R5
+        LDR      R0,[SP, #+68]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        STR      R0,[SP, #+28]
+        MOV      R1,R4
+        LDR      R0,[SP, #+64]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        STR      R0,[SP, #+32]
+??prepare_segmented_line_to_20:
+        LDR.W    R0,??DataTable5_16
+        STR      R0,[SP, #+16]
+        MOVW     R1,#+770
+        LDR      R0,[SP, #+12]
+        LDRH     R0,[R0, #+80]
+        TST      R0,R1
+        BEQ.N    ??prepare_segmented_line_to_21
+        LDR.W    R0,??DataTable5_3
+        LDRB     R0,[R0, #+96]
+        SUBS     R0,R0,#+1
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R7,R0
+        LDR.W    R0,??DataTable5_3
         LDRB     R0,[R0, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R5,R0
-        LDR.W    R0,??DataTable11_9
-        STR      R0,[SP, #+12]
-        LDR      R0,[SP, #+8]
-        LDRH     R0,[R0, #+80]
-        MOVW     R1,#+770
-        TST      R0,R1
-        BEQ.N    ??prepare_segmented_line_to_23
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+96]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R6,R0
-        LDR.W    R0,??DataTable11_10
-        LDR      R0,[R0, #+0]
-        MOV      R1,R5
+        LDR.W    R6,??DataTable5_17
+        MOV      R4,R0
+        LDR      R0,[R6, #+0]
+        MOV      R1,R4
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
-        LDR.W    R0,??DataTable11_10
-        LDR      R0,[R0, #+4]
+        MOV      R5,R0
+        LDR      R0,[R6, #+4]
+        MOV      R1,R4
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
         MOV      R1,R5
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2d
@@ -4038,128 +3606,106 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
+        LDR.W    R1,??DataTable5_18  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
-        MOV      R8,R0
+        MOV      R7,R0
         MOV      R9,R1
-        LDR      R0,[SP, #+36]
-        MOV      R1,R7
+        LDR      R0,[SP, #+20]
+        MOV      R1,R5
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        MOV      R2,R8
+        MOV      R2,R7
         MOV      R3,R9
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-        MOV      R7,R0
-        SXTB     R7,R7
-        LDR.W    R0,??DataTable11_10
-        LDR      R0,[R0, #+8]
-        MOV      R1,R5
+        SXTB     R5,R0
+        LDR      R0,[R6, #+8]
+        MOV      R1,R4
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        LDR      R0,[SP, #+40]
+        LDR      R0,[SP, #+24]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
-        MOV      R6,R0
-        SXTB     R6,R6
-        B.N      ??prepare_segmented_line_to_24
-??prepare_segmented_line_to_23:
-        LDR      R0,[SP, #+8]
-        LDR      R6,[R0, #+12]
-        MOV      R0,#+1056964608
-        MOV      R1,R6
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R1,R11
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R5
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R9,R0
+        MOV      R2,R7
+        B.N      ??prepare_segmented_line_to_22
+??prepare_segmented_line_to_21:
         LDR      R0,[SP, #+12]
-        LDR      R10,[R0, #+12]
-        LDR.W    R0,??DataTable11_8
-        LDR      R0,[R0, #+8]
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R8,R0
-        MOV      R1,R9
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_25
-        MOV      R7,R9
-        B.N      ??prepare_segmented_line_to_26
-??prepare_segmented_line_to_25:
-        MOV      R7,R8
-??prepare_segmented_line_to_26:
-        MOV      R0,#+1073741824
-        MOV      R1,R11
+        LDR      R5,[R0, #+12]
+        MOV      R0,#+1056964608
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R5
+        MOV      R7,R0
+        LDR.W    R0,??DataTable5_3
+        LDRB     R0,[R0, #+152]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        MOV      R4,R0
+        MOV      R0,R7
+        MOV      R1,R7
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R11,R0
-        MOV      R0,R6
-        MOV      R1,R10
+        MOV      R1,R4
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R10,R0
-        MOV      R0,R11
-        MOV      R1,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_27
-        STR      R11,[SP, #+20]
-        B.N      ??prepare_segmented_line_to_28
-??prepare_segmented_line_to_27:
-        STR      R10,[SP, #+20]
-??prepare_segmented_line_to_28:
-        MOV      R0,R8
+        MOV      R6,R0
+        LDR      R0,[SP, #+16]
+        LDR      R9,[R0, #+12]
+        LDR.W    R0,??DataTable5_3
+        LDR      R0,[R0, #+8]
         MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R6
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_29
-        STR      R9,[SP, #+16]
-        B.N      ??prepare_segmented_line_to_30
-??prepare_segmented_line_to_29:
-        STR      R8,[SP, #+16]
-??prepare_segmented_line_to_30:
-        LDR.W    R0,??DataTable11_8
+        IT       CS 
+        MOVCS    R6,R0
+        MOV      R0,#+1073741824
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R4
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R8,R0
+        MOV      R0,R5
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R0
+        MOV      R0,R8
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CS 
+        MOVCS    R8,R1
+        LDR.W    R0,??DataTable5_3
         LDRB     R0,[R0, #+96]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R6,R0
-        LDR      R0,[SP, #+36]
-        MOV      R1,R7
+        MOV      R7,R0
+        LDR      R0,[SP, #+20]
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        STRD     R0,R1,[SP, #+0]
-        LDR      R0,[SP, #+20]
-        LDR      R1,[SP, #+16]
+        MOV      R5,R0
+        MOV      R11,R1
+        MOV      R0,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R6
+        MOV      R1,R7
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2d
@@ -4167,17 +3713,17 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
+        LDR.W    R1,??DataTable5_18  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
-        LDRD     R2,R3,[SP, #+0]
+        MOV      R2,R5
+        MOV      R3,R11
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-        MOV      R7,R0
-        SXTB     R7,R7
-        LDR      R0,[SP, #+8]
+        SXTB     R5,R0
+        LDR      R0,[SP, #+12]
         LDR      R0,[R0, #+16]
         MOV      R1,#+1056964608
           CFI FunCall __aeabi_fmul
@@ -4185,48 +3731,35 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R1,R0
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R5
+        MOV      R1,R4
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R5,R0
-        LDR      R0,[SP, #+8]
+        MOV      R9,R0
+        LDR      R0,[SP, #+12]
+        LDR      R1,[SP, #+16]
         LDR      R0,[R0, #+4]
-        LDR      R1,[SP, #+12]
         LDR      R1,[R1, #+16]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R1,R5
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_31
-        MOV      R5,R0
-??prepare_segmented_line_to_31:
-        MOV      R0,R11
-        MOV      R1,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_32
-        MOV      R10,R11
-??prepare_segmented_line_to_32:
-        MOV      R0,R8
         MOV      R1,R9
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_33
-        MOV      R8,R9
-??prepare_segmented_line_to_33:
-        LDR      R0,[SP, #+40]
-        MOV      R1,R5
+        IT       CS 
+        MOVCS    R9,R0
+        LDR      R0,[SP, #+24]
+        MOV      R4,R8
+        MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        STRD     R0,R1,[SP, #+0]
-        MOV      R0,R10
-        MOV      R1,R8
+        MOV      R8,R0
+        MOV      R9,R1
+        MOV      R0,R4
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R6
+        MOV      R1,R7
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2d
@@ -4234,135 +3767,122 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
+        LDR.W    R1,??DataTable5_18  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
-        LDRD     R2,R3,[SP, #+0]
+        MOV      R2,R8
+??prepare_segmented_line_to_22:
+        MOV      R3,R9
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-        MOV      R6,R0
-        SXTB     R6,R6
-??prepare_segmented_line_to_24:
-        CMP      R7,#+0
-        BPL.N    ??prepare_segmented_line_to_34
-        MOVS     R7,#+0
-        B.N      ??prepare_segmented_line_to_35
-??prepare_segmented_line_to_34:
-        LDR.W    R0,??DataTable11_8
+        SXTB     R7,R0
+        CMP      R5,#+0
+        IT       MI 
+        MOVMI    R5,#+0
+        BMI.N    ??prepare_segmented_line_to_23
+        LDR.W    R0,??DataTable5_3
         LDRB     R0,[R0, #+96]
         SUBS     R1,R0,#+1
-        CMP      R1,R7
-        BGE.N    ??prepare_segmented_line_to_35
-        SUBS     R7,R0,#+1
-??prepare_segmented_line_to_35:
-        SXTB     R7,R7
-        CMP      R6,#+0
-        BPL.N    ??prepare_segmented_line_to_36
-        MOVS     R6,#+0
-        B.N      ??prepare_segmented_line_to_37
-??prepare_segmented_line_to_36:
-        LDR      R0,[SP, #+12]
+        CMP      R1,R5
+        IT       LT 
+        SUBLT    R5,R0,#+1
+??prepare_segmented_line_to_23:
+        SXTB     R5,R5
+        CMP      R7,#+0
+        IT       MI 
+        MOVMI    R7,#+0
+        BMI.N    ??prepare_segmented_line_to_24
+        LDR      R0,[SP, #+16]
         LDRB     R0,[R0, #+1]
         SUBS     R1,R0,#+1
-        CMP      R1,R6
-        BGE.N    ??prepare_segmented_line_to_37
-        SUBS     R6,R0,#+1
-??prepare_segmented_line_to_37:
-        SXTB     R6,R6
-        MOV      R0,R7
-        UXTB     R0,R0
+        CMP      R1,R7
+        IT       LT 
+        SUBLT    R7,R0,#+1
+??prepare_segmented_line_to_24:
+        SXTB     R7,R7
+        UXTB     R0,R5
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        MOV      R8,R0
-        MOV      R0,R6
-        UXTB     R0,R0
+        MOV      R4,R0
+        UXTB     R0,R7
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        MOV      R5,R0
-        ADD      R0,R7,R7, LSL #+1
-        LDR.W    R1,??DataTable11_12
+        MOV      R6,R0
+        ADD      R0,R5,R5, LSL #+1
+        LDR.W    R1,??DataTable5_19
         ADD      R0,R1,R0, LSL #+4
-        LDR      R1,[R0, R6, LSL #+2]
-        STR      R1,[SP, #+32]
-        ADD      R1,R0,R6, LSL #+2
-        LDR      R2,[R1, #+48]
-        STR      R2,[SP, #+52]
-        ADD      R0,R0,R6, LSL #+2
+        LDR      R1,[R0, R7, LSL #+2]
+        STR      R1,[SP, #+48]
+        ADD      R1,R0,R7, LSL #+2
+        ADD      R0,R0,R7, LSL #+2
+        LDR      R9,[R1, #+48]
         LDR      R0,[R0, #+4]
-        STR      R0,[SP, #+28]
-        LDR      R6,[R1, #+52]
-        LDR      R0,[SP, #+32]
+        STR      R0,[SP, #+44]
+        LDR      R10,[R1, #+52]
+        LDR      R0,[SP, #+48]
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??prepare_segmented_line_to_38
-        MOVS     R0,#+0
-        STR      R0,[SP, #+32]
-??prepare_segmented_line_to_38:
-        LDR      R0,[SP, #+52]
+        ITT      EQ 
+        MOVEQ    R0,#+0
+        STREQ    R0,[SP, #+48]
+        MOV      R0,R9
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??prepare_segmented_line_to_39
-        MOVS     R0,#+0
-        STR      R0,[SP, #+52]
-??prepare_segmented_line_to_39:
-        LDR      R0,[SP, #+28]
+        IT       EQ 
+        MOVEQ    R9,#+0
+        LDR      R0,[SP, #+44]
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??prepare_segmented_line_to_40
-        MOVS     R0,#+0
-        STR      R0,[SP, #+28]
-??prepare_segmented_line_to_40:
-        MOV      R0,R6
+        ITT      EQ 
+        MOVEQ    R0,#+0
+        STREQ    R0,[SP, #+44]
+        MOV      R0,R10
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??prepare_segmented_line_to_41
-        MOVS     R6,#+0
-??prepare_segmented_line_to_41:
-        LDR      R0,[SP, #+36]
-        MOV      R1,R8
+        IT       EQ 
+        MOVEQ    R10,#+0
+        LDR      R0,[SP, #+20]
+        MOV      R1,R4
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        STR      R0,[SP, #+16]
-        LDR      R0,[SP, #+40]
-        MOV      R1,R5
+        MOV      R4,R0
+        LDR      R0,[SP, #+24]
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R5,R0
-        LDR      R0,[SP, #+8]
+        LDR      R0,[SP, #+12]
         LDRH     R0,[R0, #+80]
-        STRH     R0,[SP, #+20]
-        LDRSH    R0,[SP, #+20]
+        STRH     R0,[SP, #+10]
         MOVW     R1,#+770
+        LDRSH    R0,[SP, #+10]
         TST      R0,R1
-        BEQ.N    ??prepare_segmented_line_to_42
-        LDR.W    R0,??DataTable11_8
+        BEQ.N    ??prepare_segmented_line_to_25
+        LDR.W    R0,??DataTable5_3
         LDRB     R0,[R0, #+96]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R7,R0
-        LDR.W    R0,??DataTable11_8
+        LDR.W    R0,??DataTable5_3
         LDRB     R0,[R0, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R1,R0
-        LDR.W    R0,??DataTable11_10
-        LDR      R0,[R0, #+4]
+        LDR.W    R6,??DataTable5_17
+        MOV      R11,R0
+        LDR      R0,[R6, #+4]
+        MOV      R1,R11
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R8,R0
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        LDR.W    R1,??DataTable11_10
-        LDR      R1,[R1, #+0]
+        LDR      R0,[R6, #+0]
+        MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
@@ -4377,120 +3897,102 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
+        LDR.W    R1,??DataTable5_18  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
-        MOV      R8,R0
-        MOV      R9,R1
-        LDR      R0,[SP, #+52]
-        LDR      R1,[SP, #+32]
+        MOV      R7,R1
+        MOV      R6,R0
+        LDR      R1,[SP, #+48]
+        MOV      R0,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        MOV      R2,R8
-        MOV      R3,R9
+        MOV      R2,R6
+        MOV      R3,R7
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
-        STR      R0,[SP, #+24]
-        MOV      R0,R6
-        LDR      R1,[SP, #+28]
+        STR      R0,[SP, #+40]
+        MOV      R0,R10
+        LDR      R1,[SP, #+44]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R8,R0
-        B.N      ??prepare_segmented_line_to_43
-??prepare_segmented_line_to_42:
-        LDR      R0,[SP, #+8]
-        LDR      R8,[R0, #+12]
+        MOV      R2,R6
+        MOV      R3,R7
+        B.N      ??prepare_segmented_line_to_26
+??prepare_segmented_line_to_25:
+        LDR      R0,[SP, #+12]
+        LDR      R6,[R0, #+12]
         MOV      R0,#+1056964608
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R7,R0
+        LDR.W    R0,??DataTable5_3
+        LDRB     R0,[R0, #+152]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        MOV      R11,R0
         MOV      R0,#+1073741824
         MOV      R1,R7
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R9,R0
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R0
-        MOV      R0,R9
+        MOV      R1,R11
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R11,R0
-        LDR      R0,[SP, #+12]
+        MOV      R8,R0
+        LDR      R0,[SP, #+16]
         LDR      R0,[R0, #+12]
         STR      R0,[SP, #+0]
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R10,R0
-        MOV      R0,R11
-        MOV      R1,R10
+        MOV      R1,R0
+        MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_44
-        STR      R11,[SP, #+60]
-        B.N      ??prepare_segmented_line_to_45
-??prepare_segmented_line_to_44:
-        STR      R10,[SP, #+60]
-??prepare_segmented_line_to_45:
+        ITE      CC 
+        STRCC    R8,[SP, #+56]
+        STRCS    R1,[SP, #+56]
         MOV      R0,R7
         MOV      R1,R7
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R7,R0
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R9,R0
-        LDR.W    R0,??DataTable11_8
-        LDR      R0,[R0, #+8]
-        LDR      R1,[SP, #+0]
+        MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R8,R0
-        MOV      R1,R9
+        LDR.W    R0,??DataTable5_3
+        LDR      R1,[SP, #+0]
+        LDR      R0,[R0, #+8]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_46
-        STR      R9,[SP, #+56]
-        B.N      ??prepare_segmented_line_to_47
-??prepare_segmented_line_to_46:
-        STR      R8,[SP, #+56]
-??prepare_segmented_line_to_47:
-        LDR.W    R0,??DataTable11_8
+        MOV      R6,R0
+        ITE      CC 
+        MOVCC    R11,R8
+        MOVCS    R11,R6
+        LDR.W    R0,??DataTable5_3
         LDRB     R0,[R0, #+96]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R7,R0
-        LDR      R0,[SP, #+52]
-        LDR      R1,[SP, #+32]
+        LDR      R1,[SP, #+48]
+        MOV      R0,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         STRD     R0,R1,[SP, #+0]
-        LDR      R0,[SP, #+60]
-        LDR      R1,[SP, #+56]
+        LDR      R0,[SP, #+56]
+        MOV      R1,R11
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R7
@@ -4501,7 +4003,7 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
+        LDR.W    R1,??DataTable5_18  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         LDRD     R2,R3,[SP, #+0]
@@ -4509,108 +4011,27 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
-        STR      R0,[SP, #+24]
-        MOV      R0,R11
-        MOV      R1,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_48
-        MOV      R10,R11
-??prepare_segmented_line_to_48:
-        MOV      R0,R8
-        MOV      R1,R9
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??prepare_segmented_line_to_49
-        MOV      R8,R9
-??prepare_segmented_line_to_49:
+        LDR      R9,[SP, #+56]
+        STR      R0,[SP, #+40]
+        MOV      R1,R8
         MOV      R0,R6
-        LDR      R1,[SP, #+28]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        STRD     R0,R1,[SP, #+0]
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CC 
+        MOVCC    R6,R8
+        LDR      R1,[SP, #+44]
         MOV      R0,R10
-        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        LDRD     R2,R3,[SP, #+0]
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R8,R0
-??prepare_segmented_line_to_43:
-        LDR      R0,[SP, #+24]
-        LDR      R1,[SP, #+16]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        LDR      R1,[SP, #+32]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R6,R0
-        LDR      R0,[SP, #+16]
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        LDR      R1,[SP, #+28]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R6
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRSH    R0,[SP, #+20]
-        MOVW     R1,#+770
-        TST      R0,R1
-        BEQ.N    ??prepare_segmented_line_to_50
-        MOV      R0,R7
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R10,R0
         MOV      R11,R1
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R0
-        LDR.W    R0,??DataTable11_10
-        LDR      R0,[R0, #+12]
+        MOV      R0,R9
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R7,R0
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        LDR.W    R1,??DataTable11_10
-        LDR      R1,[R1, #+8]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDR      R0,[SP, #+12]
-        LDRB     R0,[R0, #+1]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
+        MOV      R1,R7
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2d
@@ -4618,473 +4039,421 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
+        LDR.W    R1,??DataTable5_18  ;; 0x3ff00000
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
         MOV      R2,R10
+        MOV      R3,R11
+??prepare_segmented_line_to_26:
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        MOV      R10,R0
+        LDR      R0,[SP, #+40]
+        MOV      R1,R4
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[SP, #+48]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R8,R0
+        MOV      R0,R10
+        MOV      R1,R4
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[SP, #+44]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[SP, #+48]
+        MOVW     R1,#+770
+        LDRSH    R0,[SP, #+10]
+        TST      R0,R1
+        BEQ.N    ??prepare_segmented_line_to_27
+        LDR      R0,[SP, #+16]
+        LDRB     R0,[R0, #+1]
+        SUBS     R0,R0,#+1
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R9,R0
+        LDR.W    R0,??DataTable5_3
+        LDRB     R0,[R0, #+152]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        LDR.W    R6,??DataTable5_17
+        MOV      R11,R0
+        LDR      R0,[R6, #+12]
+        MOV      R1,R11
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R7,R0
+        LDR      R0,[R6, #+8]
+        MOV      R1,R11
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R0
+        MOV      R0,R7
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R9
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOVS     R0,#+0
+        LDR.W    R1,??DataTable5_18  ;; 0x3ff00000
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+        STRD     R0,R1,[SP, #+72]
+        LDR      R0,[SP, #+48]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDRD     R2,R3,[SP, #+72]
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        LDR      R1,[SP, #+36]
+        MOV      R7,R0
+        LDR      R0,[SP, #+40]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[SP, #+40]
+        STR      R0,[SP, #+48]
+        MOV      R0,R10
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDRD     R2,R3,[SP, #+72]
+        B.N      ??prepare_segmented_line_to_28
+??prepare_segmented_line_to_27:
+        LDR      R0,[SP, #+12]
+        LDR      R6,[R0, #+16]
+        MOV      R0,#+1056964608
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R7,R0
+        LDR.N    R0,??DataTable5_3
+        LDRB     R0,[R0, #+152]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        MOV      R11,R0
+        MOV      R0,#+1073741824
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R11
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R9,R0
+        LDR      R0,[SP, #+16]
+        LDR      R0,[R0, #+16]
+        STR      R0,[SP, #+0]
+        MOV      R1,R6
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R0
+        MOV      R0,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        ITE      CC 
+        STRCC    R9,[SP, #+44]
+        STRCS    R1,[SP, #+44]
+        MOV      R0,R7
+        MOV      R1,R7
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R11
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R11,R0
+        LDR      R0,[SP, #+12]
+        LDR      R1,[SP, #+0]
+        LDR      R0,[R0, #+4]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R11
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        MOV      R6,R0
+        ITE      CC 
+        MOVCC    R7,R11
+        MOVCS    R7,R6
+        LDR      R0,[SP, #+16]
+        LDRB     R0,[R0, #+1]
+        SUBS     R0,R0,#+1
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R9,R0
+        LDR      R0,[SP, #+48]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        STRD     R0,R1,[SP, #+0]
+        LDR      R0,[SP, #+44]
+        MOV      R1,R7
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R9
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOVS     R0,#+0
+        LDR.N    R1,??DataTable5_18  ;; 0x3ff00000
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+        LDRD     R2,R3,[SP, #+0]
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        LDR      R1,[SP, #+36]
+        MOV      R7,R0
+        LDR      R0,[SP, #+40]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        STR      R0,[SP, #+48]
+        MOV      R1,R11
+        LDR      R0,[SP, #+44]
+        STR      R0,[SP, #+0]
+        MOV      R0,R6
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CC 
+        MOVCC    R6,R11
+        LDR      R1,[SP, #+40]
+        MOV      R0,R10
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R10,R0
+        MOV      R11,R1
+        LDR      R0,[SP, #+0]
+        MOV      R1,R6
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R9
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOVS     R0,#+0
+        LDR.N    R1,??DataTable5_18  ;; 0x3ff00000
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+        MOV      R2,R10
+        MOV      R3,R11
+??prepare_segmented_line_to_28:
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R6,R0
+        LDR      R0,[SP, #+36]
+        MOV      R11,R1
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R6
         MOV      R3,R11
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
-        MOV      R7,R0
-        B.N      ??prepare_segmented_line_to_51
-??prepare_segmented_line_to_50:
-        LDR      R0,[SP, #+8]
-        LDR      R9,[R0, #+16]
-        MOV      R0,#+1056964608
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R10,R0
-        MOV      R0,#+1073741824
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R0
-        MOV      R0,R11
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R11,R0
-        LDR      R0,[SP, #+12]
-        LDR      R0,[R0, #+16]
-        STR      R0,[SP, #+0]
-        MOV      R1,R9
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R11
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_52
-        MOV      R11,R1
-??prepare_segmented_line_to_52:
-        MOV      R0,R10
-        MOV      R1,R10
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R9,R0
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R9
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R9,R0
-        LDR      R0,[SP, #+8]
-        LDR      R0,[R0, #+4]
-        LDR      R1,[SP, #+0]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R9
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_53
-        MOV      R9,R0
-??prepare_segmented_line_to_53:
-        MOV      R0,R7
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        STRD     R0,R1,[SP, #+0]
-        MOV      R0,R11
-        MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDR      R0,[SP, #+12]
-        LDRB     R0,[R0, #+1]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.W    R1,??DataTable11_11  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        LDRD     R2,R3,[SP, #+0]
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R7,R0
-??prepare_segmented_line_to_51:
-        LDR      R0,[SP, #+24]
-        LDR      R1,[SP, #+64]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        STR      R0,[SP, #+28]
-        LDRSH    R0,[SP, #+20]
-        MOVW     R1,#+770
-        TST      R0,R1
-        BEQ.N    ??prepare_segmented_line_to_54
-        MOV      R0,R8
-        LDR      R1,[SP, #+24]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R8,R0
-        MOV      R9,R1
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R0
-        LDR.W    R0,??DataTable11_10
-        LDR      R0,[R0, #+12]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R10,R0
-        LDR.W    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        LDR.W    R1,??DataTable11_10
-        LDR      R1,[R1, #+8]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R10
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R10,R0
-        LDR      R0,[SP, #+12]
-        LDRB     R0,[R0, #+1]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R10
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??DataTable11_11  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R8,R0
-        MOV      R9,R1
-        LDR      R0,[SP, #+64]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
         STR      R0,[SP, #+4]
-        B.N      ??prepare_segmented_line_to_55
-??prepare_segmented_line_to_54:
-        LDR      R0,[SP, #+8]
-        LDR      R9,[R0, #+16]
-        MOV      R0,#+1056964608
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R10,R0
-        MOV      R0,#+1073741824
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        LDR.N    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R0
+        B.N      ??prepare_segmented_line_to_29
+??prepare_segmented_line_to_30:
         MOV      R0,R11
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R11,R0
-        LDR      R0,[SP, #+12]
-        LDR      R0,[R0, #+16]
-        STR      R0,[SP, #+0]
-        MOV      R1,R9
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R11
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_56
-        MOV      R11,R1
-??prepare_segmented_line_to_56:
-        MOV      R0,R10
-        MOV      R1,R10
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R9,R0
-        LDR.N    R0,??DataTable11_8
-        LDRB     R0,[R0, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R1,R9
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R9,R0
-        LDR      R0,[SP, #+8]
-        LDR      R0,[R0, #+4]
-        LDR      R1,[SP, #+0]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R9
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_57
-        MOV      R9,R0
-??prepare_segmented_line_to_57:
-        MOV      R0,R8
-        LDR      R1,[SP, #+24]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        STRD     R0,R1,[SP, #+0]
-        MOV      R0,R11
-        MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[SP, #+12]
+        MOV      R6,R0
+        LDR      R0,[SP, #+16]
         LDRB     R0,[R0, #+1]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R8
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??DataTable11_11  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        LDRD     R2,R3,[SP, #+0]
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R8,R0
-        MOV      R9,R1
-        LDR      R0,[SP, #+64]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        STR      R0,[SP, #+4]
-        B.N      ??prepare_segmented_line_to_55
-??prepare_segmented_line_to_58:
-        MOV      R8,R0
-??prepare_segmented_line_to_59:
-        MOV      R0,R11
-        MOV      R1,R8
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[SP, #+12]
-        LDRB     R0,[R0, #+1]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         MOV      R1,R5
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.W    ??prepare_segmented_line_to_22
-??prepare_segmented_line_to_60:
-        LDR      R0,[SP, #+28]
-        MOV      R1,R6
+        BHI.W    ??prepare_segmented_line_to_20
+??prepare_segmented_line_to_31:
+        LDR      R0,[SP, #+48]
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R6,R0
+        MOV      R8,R0
         LDR      R0,[SP, #+4]
         MOV      R1,R7
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R7,R0
-??prepare_segmented_line_to_55:
-        SUBS     R4,R4,#+1
-        UXTH     R4,R4
-        CMP      R4,#+0
-        BNE.N    ??prepare_segmented_line_to_61
-        MOVS     R2,#+16
-        LDR      R1,[SP, #+84]
-        ADD      R0,SP,#+36
-          CFI FunCall memcpy
-        BL       memcpy
-??prepare_segmented_line_to_61:
-        LDR      R8,[SP, #+44]
-        MOV      R9,R8
+??prepare_segmented_line_to_29:
+        LDRH     R0,[SP, #+8]
+        SUBS     R0,R0,#+1
+        STRH     R0,[SP, #+8]
+        LDRH     R0,[SP, #+8]
+        CBNZ.N   R0,??prepare_segmented_line_to_32
+        LDR      R0,[SP, #+84]
+        LDM      R0!,{R2,R3,R6,R12}
+        ADD      R1,SP,#+20
+        STM      R1!,{R2,R3,R6,R12}
+??prepare_segmented_line_to_32:
+        LDR      R6,[SP, #+28]
         MOV      R0,R7
         MOV      R1,R5
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R6
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        LDR      R1,[SP, #+80]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+44]
+        LDR      R1,[SP, #+60]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R6
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        STR      R0,[SP, #+28]
+        ADD      R0,SP,#+20
         LDR      R1,[SP, #+88]
-        ADD      R0,SP,#+36
           CFI FunCall _Z22ubl_buffer_segment_rawRA4_KfRS_
         BL       _Z22ubl_buffer_segment_rawRA4_KfRS_
-        STR      R9,[SP, #+44]
-        CMP      R4,#+0
-        BNE.N    ??prepare_segmented_line_to_62
-        MOVS     R0,#+0
-        B.W      ??prepare_segmented_line_to_2
-??prepare_segmented_line_to_62:
-        MOV      R8,#+0
-        B.N      ??prepare_segmented_line_to_63
-??prepare_segmented_line_to_64:
-        ADD      R0,SP,#+36
-        LDR      R0,[R0, R8, LSL #+2]
-        ADD      R1,SP,#+64
-        LDR      R1,[R1, R8, LSL #+2]
+        LDRH     R0,[SP, #+8]
+        STR      R6,[SP, #+28]
+        CMP      R0,#+0
+        BEQ.W    ??prepare_segmented_line_to_2
+        LDR      R0,[SP, #+20]
+        LDR      R1,[SP, #+36]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        ADD      R1,SP,#+36
-        STR      R0,[R1, R8, LSL #+2]
-        ADD      R8,R8,#+1
-??prepare_segmented_line_to_63:
-        CMP      R8,#+4
-        BLT.N    ??prepare_segmented_line_to_64
-        LDR      R0,[SP, #+16]
-        LDR      R1,[SP, #+64]
+        LDR      R1,[SP, #+52]
+        STR      R0,[SP, #+20]
+        LDR      R0,[SP, #+24]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        STR      R0,[SP, #+16]
+        STR      R0,[SP, #+24]
+        MOV      R1,R6
         LDR      R0,[SP, #+68]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        LDR      R1,[SP, #+64]
+        STR      R0,[SP, #+28]
+        LDR      R0,[SP, #+32]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        STR      R0,[SP, #+32]
+        MOV      R1,R4
+        LDR      R0,[SP, #+36]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R4,R0
+        LDR      R0,[SP, #+52]
         MOV      R1,R5
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R5,R0
-        LDR      R0,[SP, #+8]
+        LDR      R0,[SP, #+12]
         LDRH     R0,[R0, #+80]
         MOVW     R1,#+770
         TST      R0,R1
-        LDR      R0,[SP, #+16]
-        BEQ.N    ??prepare_segmented_line_to_65
+        MOV      R0,R4
+        BEQ.N    ??prepare_segmented_line_to_33
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.W    ??prepare_segmented_line_to_22
-        LDR.N    R0,??DataTable11_8
+        BHI.W    ??prepare_segmented_line_to_20
+        LDR.N    R0,??DataTable5_3
         LDRB     R0,[R0, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
+        LDR.N    R6,??DataTable5_17
         MOV      R9,R0
-        LDR.N    R0,??DataTable11_10
-        LDR      R0,[R0, #+4]
+        LDR      R0,[R6, #+4]
         MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR.N    R0,??DataTable11_10
-        LDR      R0,[R0, #+0]
+        MOV      R10,R0
+        LDR      R0,[R6, #+0]
         MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR.N    R0,??DataTable11_8
+        MOV      R10,R0
+        LDR.N    R0,??DataTable5_3
         LDRB     R0,[R0, #+96]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R10
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        LDR      R1,[SP, #+16]
+        MOV      R1,R4
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.W    ??prepare_segmented_line_to_22
+        BHI.W    ??prepare_segmented_line_to_20
         MOV      R0,R5
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.W    ??prepare_segmented_line_to_22
-        LDR.N    R0,??DataTable11_10
-        LDR      R0,[R0, #+12]
+        BHI.W    ??prepare_segmented_line_to_20
+        LDR      R0,[R6, #+12]
         MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR.N    R0,??DataTable11_10
-        LDR      R0,[R0, #+8]
+        MOV      R10,R0
+        LDR      R0,[R6, #+8]
         MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[SP, #+12]
+        MOV      R6,R0
+        LDR      R0,[SP, #+16]
         LDRB     R0,[R0, #+1]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         MOV      R1,R5
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BLS.W    ??prepare_segmented_line_to_60
-        B.W      ??prepare_segmented_line_to_22
-??prepare_segmented_line_to_65:
+        BLS.W    ??prepare_segmented_line_to_31
+        B.N      ??prepare_segmented_line_to_20
+??prepare_segmented_line_to_33:
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.W    ??prepare_segmented_line_to_22
-        LDR      R0,[SP, #+8]
+        BHI.W    ??prepare_segmented_line_to_20
+        LDR      R0,[SP, #+12]
         LDR      R11,[R0, #+12]
         MOV      R0,#+1056964608
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R10,R0
-        LDR.N    R0,??DataTable11_8
+        LDR.N    R0,??DataTable5_3
         LDRB     R0,[R0, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
@@ -5096,20 +4465,19 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[SP, #+12]
+        MOV      R6,R0
+        LDR      R0,[SP, #+16]
         LDR      R0,[R0, #+12]
         STR      R0,[SP, #+0]
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_66
-        MOV      R8,R1
-??prepare_segmented_line_to_66:
+        IT       CS 
+        MOVCS    R6,R1
         MOV      R0,R10
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
@@ -5118,44 +4486,43 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R10,R0
-        LDR.N    R0,??DataTable11_8
-        LDR      R0,[R0, #+8]
+        LDR.N    R0,??DataTable5_3
         LDR      R1,[SP, #+0]
+        LDR      R0,[R0, #+8]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R10
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_67
-        MOV      R10,R0
-??prepare_segmented_line_to_67:
-        MOV      R0,R8
+        IT       CS 
+        MOVCS    R10,R0
+        MOV      R0,R6
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR.N    R0,??DataTable11_8
+        MOV      R6,R0
+        LDR.N    R0,??DataTable5_3
         LDRB     R0,[R0, #+96]
         SUBS     R0,R0,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        LDR      R1,[SP, #+16]
+        MOV      R1,R4
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.W    ??prepare_segmented_line_to_22
+        BHI.W    ??prepare_segmented_line_to_20
         MOV      R0,R5
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.W    ??prepare_segmented_line_to_22
-        LDR      R0,[SP, #+8]
-        LDR      R8,[R0, #+16]
+        BHI.W    ??prepare_segmented_line_to_20
+        LDR      R0,[SP, #+12]
+        LDR      R6,[R0, #+16]
         MOV      R0,#+1056964608
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R10,R0
@@ -5167,19 +4534,18 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R11,R0
-        LDR      R0,[SP, #+12]
+        LDR      R0,[SP, #+16]
         LDR      R0,[R0, #+16]
         STR      R0,[SP, #+0]
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
         MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??prepare_segmented_line_to_68
-        MOV      R11,R1
-??prepare_segmented_line_to_68:
+        IT       CS 
+        MOVCS    R11,R1
         MOV      R0,R10
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
@@ -5187,96 +4553,160 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
         MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R8,R0
-        LDR      R0,[SP, #+8]
-        LDR      R0,[R0, #+4]
+        MOV      R6,R0
+        LDR      R0,[SP, #+12]
         LDR      R1,[SP, #+0]
+        LDR      R0,[R0, #+4]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R1,R8
+        MOV      R1,R6
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.W    ??prepare_segmented_line_to_58
-        B.N      ??prepare_segmented_line_to_59
-          CFI EndBlock cfiBlock14
+        IT       CS 
+        MOVCS    R6,R0
+        B.N      ??prepare_segmented_line_to_30
+          CFI EndBlock cfiBlock8
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11:
+??DataTable5:
         DC32     mksCfg+0x8
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_1:
-        DC32     current_position
+??DataTable5_1:
+        DC32     0xd2f1a9fc
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_2:
-        DC32     delta_segments_per_second
+??DataTable5_2:
+        DC32     0xbf50624d
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_3:
-        DC32     0x41200000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable11_4:
-        DC32     0x9999999a
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable11_5:
-        DC32     0x3fc99999
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable11_6:
-        DC32     scara_feed_factor
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable11_7:
-        DC32     _ZN7Planner15leveling_activeE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable11_8:
+??DataTable5_3:
         DC32     mksCfg
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_9:
+??DataTable5_4:
+        DC32     0x3f50624d
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_5:
+        DC32     current_position
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_6:
+        DC32     delta_segments_per_second
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_7:
+        DC32     0x41200000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_8:
+        DC32     0x9999999a
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_9:
+        DC32     0x3fc99999
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_10:
+        DC32     scara_feed_factor
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_11:
+        DC32     _ZN7Planner15leveling_activeE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_12:
+        DC32     _ZN7Planner13z_fade_heightE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_13:
+        DC32     _ZN7Planner11last_fade_zE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_14:
+        DC32     _ZZN7Planner25fade_scaling_factor_for_zERKfE13z_fade_factor
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_15:
+        DC32     _ZN7Planner21inverse_z_fade_heightE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable5_16:
         DC32     mksCfg+0x60
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_10:
+??DataTable5_17:
         DC32     mksTmp
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_11:
+??DataTable5_18:
         DC32     0x3ff00000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable11_12:
+??DataTable5_19:
         DC32     _ZN20unified_bed_leveling8z_valuesE
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock9 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_
+          CFI CFA R13+128
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
+        ADD      SP,SP,#+92
+          CFI CFA R13+36
+        POP      {R4-R11,PC}
+          CFI EndBlock cfiBlock9
 //  420     #endif
 //  421 
 //  422     // We don't want additional apply_leveling() performed by regular buffer_line or buffer_line_kinematic,
@@ -5285,7 +4715,7 @@ _ZN20unified_bed_leveling25prepare_segmented_line_toERA4_KfRS0_:
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _Z22ubl_buffer_segment_rawRA4_KfRS_
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _Z22ubl_buffer_segment_rawRA4_KfRS_
         THUMB
 //  425     inline void /*_O2*/ ubl_buffer_segment_raw(const float (&in_raw)[XYZE], const float &fr) {
@@ -5301,11 +4731,11 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+40
-        SUB      SP,SP,#+16
-          CFI CFA R13+56
         MOV      R5,R0
         LDR.N    R0,??ubl_buffer_segment_raw_0
         LDRSH    R0,[R0, #+88]
+        SUB      SP,SP,#+16
+          CFI CFA R13+56
         LSLS     R1,R0,#+30
         BPL.W    ??ubl_buffer_segment_raw_1
 //  426 
@@ -5321,14 +4751,14 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
 //  436       {
 //  437         DELTA_IK(raw);
         LDR.N    R7,??ubl_buffer_segment_raw_0+0x4
-        LDR      R0,[R7, #+0]
         LDR      R1,[R5, #+0]
+        LDR      R0,[R7, #+0]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
+        MOV      R9,#+1065353216
         MOV      R8,R0
-        MOV      R9,#+2
-        MOV      R4,#+1065353216
-        MOV      R6,R4
+        MOVS     R4,#+2
+        MOV      R6,R9
         B.N      ??ubl_buffer_segment_raw_2
 ??ubl_buffer_segment_raw_3:
         MOV      R0,R8
@@ -5337,7 +4767,7 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fmul
         MOV      R8,R0
 ??ubl_buffer_segment_raw_2:
-        LSLS     R0,R9,#+31
+        LSLS     R0,R4,#+31
         BPL.N    ??ubl_buffer_segment_raw_4
         MOV      R0,R6
         MOV      R1,R8
@@ -5345,15 +4775,15 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fmul
         MOV      R6,R0
 ??ubl_buffer_segment_raw_4:
-        LSRS     R9,R9,#+1
+        LSRS     R4,R4,#+1
         BNE.N    ??ubl_buffer_segment_raw_3
         LDR      R0,[R7, #+4]
         LDR      R1,[R5, #+4]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R8,R0
-        MOV      R9,#+2
-        MOV      R10,R4
+        MOVS     R4,#+2
+        MOV      R10,R9
         B.N      ??ubl_buffer_segment_raw_5
 ??ubl_buffer_segment_raw_6:
         MOV      R0,R8
@@ -5362,7 +4792,7 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fmul
         MOV      R8,R0
 ??ubl_buffer_segment_raw_5:
-        LSLS     R0,R9,#+31
+        LSLS     R0,R4,#+31
         BPL.N    ??ubl_buffer_segment_raw_7
         MOV      R0,R10
         MOV      R1,R8
@@ -5370,7 +4800,7 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fmul
         MOV      R10,R0
 ??ubl_buffer_segment_raw_7:
-        LSRS     R9,R9,#+1
+        LSRS     R4,R4,#+1
         BNE.N    ??ubl_buffer_segment_raw_6
         MOV      R0,R6
         MOV      R1,R10
@@ -5383,30 +4813,30 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fsub
           CFI FunCall sqrtf
         BL       sqrtf
-        LDR.N    R6,??ubl_buffer_segment_raw_0+0xC
         LDR      R1,[R5, #+8]
+        LDR.N    R6,??ubl_buffer_segment_raw_0+0xC
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         STR      R0,[R6, #+0]
-        LDR      R0,[R7, #+8]
         LDR      R1,[R5, #+0]
+        LDR      R0,[R7, #+8]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R9,R0
+        MOV      R4,R0
         MOV      R10,#+2
-        MOV      R8,R4
+        MOV      R8,R9
         B.N      ??ubl_buffer_segment_raw_8
 ??ubl_buffer_segment_raw_9:
-        MOV      R0,R9
-        MOV      R1,R9
+        MOV      R0,R4
+        MOV      R1,R4
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R9,R0
+        MOV      R4,R0
 ??ubl_buffer_segment_raw_8:
         LSLS     R0,R10,#+31
         BPL.N    ??ubl_buffer_segment_raw_10
         MOV      R0,R8
-        MOV      R1,R9
+        MOV      R1,R4
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R8,R0
@@ -5418,8 +4848,8 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R11,R0
-        MOV      R9,#+2
-        MOV      R10,R4
+        MOVS     R4,#+2
+        MOV      R10,R9
         B.N      ??ubl_buffer_segment_raw_11
 ??ubl_buffer_segment_raw_12:
         MOV      R0,R11
@@ -5428,7 +4858,7 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fmul
         MOV      R11,R0
 ??ubl_buffer_segment_raw_11:
-        LSLS     R0,R9,#+31
+        LSLS     R0,R4,#+31
         BPL.N    ??ubl_buffer_segment_raw_13
         MOV      R0,R10
         MOV      R1,R11
@@ -5436,7 +4866,7 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fmul
         MOV      R10,R0
 ??ubl_buffer_segment_raw_13:
-        LSRS     R9,R9,#+1
+        LSRS     R4,R4,#+1
         BNE.N    ??ubl_buffer_segment_raw_12
         MOV      R0,R8
         MOV      R1,R10
@@ -5454,25 +4884,25 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         STR      R0,[R6, #+4]
-        LDR      R0,[R7, #+16]
         LDR      R1,[R5, #+0]
+        LDR      R0,[R7, #+16]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R9,R0
+        MOV      R4,R0
         MOV      R10,#+2
-        MOV      R8,R4
+        MOV      R8,R9
         B.N      ??ubl_buffer_segment_raw_14
 ??ubl_buffer_segment_raw_15:
-        MOV      R0,R9
-        MOV      R1,R9
+        MOV      R0,R4
+        MOV      R1,R4
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R9,R0
+        MOV      R4,R0
 ??ubl_buffer_segment_raw_14:
         LSLS     R0,R10,#+31
         BPL.N    ??ubl_buffer_segment_raw_16
         MOV      R0,R8
-        MOV      R1,R9
+        MOV      R1,R4
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R8,R0
@@ -5484,7 +4914,7 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R7,R0
-        MOV      R9,#+2
+        MOVS     R4,#+2
         B.N      ??ubl_buffer_segment_raw_17
 ??ubl_buffer_segment_raw_18:
         MOV      R0,R7
@@ -5493,18 +4923,18 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fmul
         MOV      R7,R0
 ??ubl_buffer_segment_raw_17:
-        LSLS     R0,R9,#+31
+        LSLS     R0,R4,#+31
         BPL.N    ??ubl_buffer_segment_raw_19
-        MOV      R0,R4
+        MOV      R0,R9
         MOV      R1,R7
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R4,R0
+        MOV      R9,R0
 ??ubl_buffer_segment_raw_19:
-        LSRS     R9,R9,#+1
+        LSRS     R4,R4,#+1
         BNE.N    ??ubl_buffer_segment_raw_18
         MOV      R0,R8
-        MOV      R1,R4
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
@@ -5520,17 +4950,15 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         BL       __aeabi_fadd
         STR      R0,[R6, #+8]
 //  438         planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], in_raw[E_AXIS], fr, active_extruder);
+        ADD      R3,R5,#+12
         LDR.N    R0,??ubl_buffer_segment_raw_0+0x10
         LDRB     R0,[R0, #+0]
         STR      R0,[SP, #+4]
+        ADD      R2,R6,#+8
         LDR      R0,[SP, #+16]
         STR      R0,[SP, #+0]
-        ADD      R3,R5,#+12
-        ADD      R2,R6,#+8
         ADDS     R1,R6,#+4
         MOV      R0,R6
-          CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-        BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         B.N      ??ubl_buffer_segment_raw_20
 //  439       }
 //  440       //#elif IS_SCARA  // apply scara inverse_kinematics (should be changed to save raw->logical->raw)
@@ -5549,20 +4977,20 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
 //  446         const float adiff = FABS(delta[A_AXIS] - scara_oldA),
         LDR.N    R4,??ubl_buffer_segment_raw_0+0x14
         LDR.N    R6,??ubl_buffer_segment_raw_0+0xC
-        LDR      R0,[R6, #+0]
         LDR      R1,[R4, #+4]
+        LDR      R0,[R6, #+0]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        BIC      R7,R0,#0x80000000
 //  447                     bdiff = FABS(delta[B_AXIS] - scara_oldB);
-        LDR      R0,[R6, #+4]
         LDR      R1,[R4, #+8]
+        BIC      R7,R0,#0x80000000
+        LDR      R0,[R6, #+4]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        BIC      R0,R0,#0x80000000
 //  448         scara_oldA = delta[A_AXIS];
         LDR      R1,[R6, #+0]
         STR      R1,[R4, #+4]
+        BIC      R0,R0,#0x80000000
 //  449         scara_oldB = delta[B_AXIS];
         LDR      R1,[R6, #+4]
         STR      R1,[R4, #+8]
@@ -5570,9 +4998,8 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         MOV      R1,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??ubl_buffer_segment_raw_22
-        MOV      R7,R0
-??ubl_buffer_segment_raw_22:
+        IT       CS 
+        MOVCS    R7,R0
         LDR      R0,[R4, #+0]
         MOV      R1,R7
           CFI FunCall __aeabi_fmul
@@ -5580,39 +5007,42 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         STR      R0,[SP, #+8]
 //  451 
 //  452         planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], in_raw[E_AXIS], s_feedrate, active_extruder);
+        ADD      R3,R5,#+12
         LDR.N    R0,??ubl_buffer_segment_raw_0+0x10
         LDRB     R0,[R0, #+0]
         STR      R0,[SP, #+4]
+        ADD      R2,R6,#+8
         ADD      R0,SP,#+8
         STR      R0,[SP, #+0]
-        ADD      R3,R5,#+12
-        ADD      R2,R6,#+8
         ADDS     R1,R6,#+4
         MOV      R0,R6
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-        B.N      ??ubl_buffer_segment_raw_20
 //  453       }
 //  454       //#else // CARTESIAN
 //  455       else
 //  456       {
 //  457         planner.buffer_segment(raw[X_AXIS], raw[Y_AXIS], raw[Z_AXIS], in_raw[E_AXIS], fr, active_extruder);
+//  458       }
+//  459       //#endif
+//  460     }
+        ADD      SP,SP,#+20
+          CFI CFA R13+36
+        POP      {R4-R11,PC}
+          CFI CFA R13+56
 ??ubl_buffer_segment_raw_21:
         LDR.N    R0,??ubl_buffer_segment_raw_0+0x10
         LDRB     R0,[R0, #+0]
         STR      R0,[SP, #+4]
+        ADD      R3,R5,#+12
         LDR      R0,[SP, #+16]
         STR      R0,[SP, #+0]
-        ADD      R3,R5,#+12
         ADD      R2,R5,#+8
         ADDS     R1,R5,#+4
         MOV      R0,R5
+??ubl_buffer_segment_raw_20:
           CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-//  458       }
-//  459       //#endif
-//  460     }
-??ubl_buffer_segment_raw_20:
         ADD      SP,SP,#+20
           CFI CFA R13+36
         POP      {R4-R11,PC}      ;; return
@@ -5625,7 +5055,7 @@ _Z22ubl_buffer_segment_rawRA4_KfRS_:
         DC32     delta
         DC32     active_extruder
         DC32     scara_feed_factor
-          CFI EndBlock cfiBlock15
+          CFI EndBlock cfiBlock10
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -5892,9 +5322,9 @@ _ZTI5Print:
 //    12 bytes in section .bss
 //     4 bytes in section .data
 //     1 byte  in section .rodata
-// 9 668 bytes in section .text
+// 8 574 bytes in section .text
 // 
-// 6 070 bytes of CODE  memory (+ 3 598 bytes shared)
+// 5 766 bytes of CODE  memory (+ 2 808 bytes shared)
 //     0 bytes of CONST memory (+     1 byte  shared)
 //    12 bytes of DATA  memory (+     4 bytes shared)
 //

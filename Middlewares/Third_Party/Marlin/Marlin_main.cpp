@@ -1853,10 +1853,10 @@ static void set_axis_is_at_home(const AxisEnum axis) {
           }
         #endif
 	  }
-	  else
-	  {
-		  if (DEBUGGING(LEVELING)) SERIAL_ECHOLNPGM("*** Z HOMED TO ENDSTOP (Z_MIN_PROBE_ENDSTOP) ***");	  
-	  }
+	  //else
+	  //{
+		  //if (DEBUGGING(LEVELING)) SERIAL_ECHOLNPGM("*** Z HOMED TO ENDSTOP (Z_MIN_PROBE_ENDSTOP) ***");	  
+	  //}
       #elif ENABLED(DEBUG_LEVELING_FEATURE)
 
         if (DEBUGGING(LEVELING)) SERIAL_ECHOLNPGM("*** Z HOMED TO ENDSTOP (Z_MIN_PROBE_ENDSTOP) ***");
@@ -4574,13 +4574,13 @@ inline void gcode_G4() {
 
 #endif // DELTA
 
-#if ENABLED(Z_SAFE_HOMING)
+//#if ENABLED(Z_SAFE_HOMING)
 
   inline void home_z_safely() {
 
     // Disallow Z homing if X or Y are unknown
     if (!axis_known_position[X_AXIS] || !axis_known_position[Y_AXIS]) {
-      LCD_MESSAGEPGM(MSG_ERR_Z_HOMING);
+      //LCD_MESSAGEPGM(MSG_ERR_Z_HOMING);
       SERIAL_ECHO_START();
       SERIAL_ECHOLNPGM(MSG_ERR_Z_HOMING);
       return;
@@ -4623,7 +4623,7 @@ if(MACHINETPYE & IS_KINEMATIC)
       HOMEAXIS(Z);
     }
     else {
-      LCD_MESSAGEPGM(MSG_ZPROBE_OUT);
+      //LCD_MESSAGEPGM(MSG_ZPROBE_OUT);
       SERIAL_ECHO_START();
       SERIAL_ECHOLNPGM(MSG_ZPROBE_OUT);
     }
@@ -4645,7 +4645,7 @@ else
       HOMEAXIS(Z);
     }
     else {
-      LCD_MESSAGEPGM(MSG_ZPROBE_OUT);
+      //LCD_MESSAGEPGM(MSG_ZPROBE_OUT);
       SERIAL_ECHO_START();
       SERIAL_ECHOLNPGM(MSG_ZPROBE_OUT);
     }    
@@ -4655,7 +4655,7 @@ else
     #endif
   }
 
-#endif // Z_SAFE_HOMING
+//#endif // Z_SAFE_HOMING
 
 #if ENABLED(PROBE_MANUALLY)
   bool g29_in_progress = false;
@@ -4854,11 +4854,13 @@ inline void gcode_G28(const bool always_home_all) {
     if(Z_HOME_DIR < 0)
     {
       if (home_all || homeZ) {
-        #if ENABLED(Z_SAFE_HOMING)
+        //#if ENABLED(Z_SAFE_HOMING)
+	 if(Z_SAFE_HOMING)
           home_z_safely();
-        #else
+        //#else
+        else
           HOMEAXIS(Z);
-        #endif
+        //#endif
         #if ENABLED(DEBUG_LEVELING_FEATURE)
           if (DEBUGGING(LEVELING)) DEBUG_POS("> (home_all || homeZ) > final", current_position);
         #endif
@@ -15611,8 +15613,24 @@ uint8_t button_disp_pause_state=0;
 void lcd_reInit()
 {
    GUI_Init();
-   GUI_UC_SetEncodeUTF8();
+   //GUI_UC_SetEncodeUTF8();
    gui_view_init(); 
+   
+   if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+  {
+    GUI_SetFont(&GUI_FontHZ16);
+    BUTTON_SetDefaultFont(&GUI_FontHZ16);
+    TEXT_SetDefaultFont(&GUI_FontHZ16);  
+    GUI_UC_SetEncodeNone();
+  }
+  else
+  {
+    GUI_SetFont(&FONT_TITLE);
+    BUTTON_SetDefaultFont(&FONT_TITLE);
+    TEXT_SetDefaultFont(&FONT_TITLE);                    
+    GUI_UC_SetEncodeUTF8();
+  }
+  
    clear_cur_ui();
    disp_state_stack._disp_index += 1;
    if(mksReprint.mks_printer_state == MKS_REPRINTED)
@@ -15841,16 +15859,16 @@ void stop() {
  *  - Print startup messages and diagnostics
  *  - Get EEPROM or default settings
  *  - Initialize managers for:
- *    • temperature
- *    • planner
- *    • watchdog
- *    • stepper
- *    • photo pin
- *    • servos
- *    • LCD controller
- *    • Digipot I2C
- *    • Z probe sled
- *    • status LEDs
+ *    temperature
+ *    planner
+ *    watchdog
+ *    stepper
+ *    photo pin
+ *    servos
+ *    LCD controller
+ *    Digipot I2C
+ *    Z probe sled
+ *    status LEDs
  */
 void setup() {
 

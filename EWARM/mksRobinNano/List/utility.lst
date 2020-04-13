@@ -1,80 +1,77 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:06:20
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:25:29
 # Copyright 1999-2014 IAR Systems AB.
 #
 #    Cpu mode     =  thumb
 #    Endian       =  little
 #    Source file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\utility.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\utility.cpp
 #    Command line =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\utility.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\utility.cpp
 #        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 #        MKS_ROBIN_NANO -D TFT35 -lC
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        -lA
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        --diag_suppress Pa050 -o
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
 #        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\INC\c\DLib_Config_Full.h" -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-#        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\CMSIS\Include\"
 #    List file    =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\utility.lst
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\utility.lst
 #    Object file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\utility.o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\utility.o
 #
 ###############################################################################
 
-E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\utility.cpp
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\utility.cpp
       1          /**
       2           * Marlin 3D Printer Firmware
       3           * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -101,51 +98,51 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
   #define UNUSED(x) ((void)(x))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
           incompatible redefinition of macro "UNUSED" (declared at line 101 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\macros.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\macros.h")
 
   		volatile volatile float desireBedTempBak;
   		         ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Inc\mks_cfg.h",613  Warning[Pe083]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Inc\mks_cfg.h",626  Warning[Pe083]: 
           type qualifier specified more than once
 
   #define strcpy_P(dest, src) strcpy((dest), (src))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
           incompatible redefinition of macro "strcpy_P" (declared at line 93
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define strstr_P(a, b) strstr((a), (b))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
           incompatible redefinition of macro "strstr_P" (declared at line 94
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define sprintf_P(s, f, ...) sprintf((s), (f), __VA_ARGS__)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
           incompatible redefinition of macro "sprintf_P" (declared at line 95
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define pgm_read_word_near(addr) pgm_read_word(addr)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
           incompatible redefinition of macro "pgm_read_word_near" (declared at
           line 65 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
     }
     ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
           missing return statement at end of non-void function
           "position_is_reachable_IS_KINEMATIC"
      24          #include "utility.h"
@@ -153,12 +150,12 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
         target_temperature[HOTEND_INDEX] = celsius;
                                          ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\temperature.h",406  Warning[Pa093]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\temperature.h",406  Warning[Pa093]: 
           implicit conversion from floating point to integer
 
           target_temperature_bed =
                                  ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\temperature.h",414  Warning[Pa093]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\temperature.h",414  Warning[Pa093]: 
           implicit conversion from floating point to integer
      26          
 
@@ -167,26 +164,27 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    \                     _Z10safe_delaym: (+1)
    \   00000000   0xB510             PUSH     {R4,LR}
    \   00000002   0x4604             MOV      R4,R0
-   \   00000004   0xE005             B.N      ??safe_delay_0
+   \   00000004   0x2C33             CMP      R4,#+51
+   \   00000006   0xD307             BCC.N    ??safe_delay_0
      28            while (ms > 50) {
      29              ms -= 50;
    \                     ??safe_delay_1: (+1)
-   \   00000006   0x3C32             SUBS     R4,R4,#+50
+   \   00000008   0x3C32             SUBS     R4,R4,#+50
      30              delay(50);
-   \   00000008   0x2032             MOVS     R0,#+50
-   \   0000000A   0x.... 0x....      BL       HAL_Delay
+   \   0000000A   0x2032             MOVS     R0,#+50
+   \   0000000C   0x.... 0x....      BL       HAL_Delay
      31              thermalManager.manage_heater();
-   \   0000000E   0x.... 0x....      BL       _ZN11Temperature13manage_heaterEv
+   \   00000010   0x.... 0x....      BL       _ZN11Temperature13manage_heaterEv
      32            }
-   \                     ??safe_delay_0: (+1)
-   \   00000012   0x2C33             CMP      R4,#+51
-   \   00000014   0xD2F7             BCS.N    ??safe_delay_1
+   \   00000014   0x2C33             CMP      R4,#+51
+   \   00000016   0xD2F7             BCS.N    ??safe_delay_1
      33            delay(ms);
-   \   00000016   0x4620             MOV      R0,R4
-   \   00000018   0x.... 0x....      BL       HAL_Delay
+   \                     ??safe_delay_0: (+1)
+   \   00000018   0x4620             MOV      R0,R4
+   \   0000001A   0x.... 0x....      BL       HAL_Delay
      34            thermalManager.manage_heater(); // This keeps us safe if too many small safe_delay() calls are made
-   \   0000001C   0xE8BD 0x4010      POP      {R4,LR}
-   \   00000020   0x.... 0x....      B.W      _ZN11Temperature13manage_heaterEv
+   \   0000001E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000022   0x.... 0x....      B.W      _ZN11Temperature13manage_heaterEv
      35          }
      36          
      37          #if ENABLED(EEPROM_SETTINGS)
@@ -194,43 +192,39 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
    \                                 In section .text, align 2, keep-with-next
      39            void crc16(uint16_t *crc, const void * const data, uint16_t cnt) {
-   \                     _Z5crc16PtPKvt: (+1)
-   \   00000000   0xB430             PUSH     {R4,R5}
      40              uint8_t *ptr = (uint8_t *)data;
-     41              while (cnt--) {
+   \                     _Z5crc16PtPKvt: (+1)
+   \   00000000   0xB902             CBNZ.N   R2,??crc16_0
+   \   00000002   0x4770             BX       LR
    \                     ??crc16_0: (+1)
-   \   00000002   0x4613             MOV      R3,R2
-   \   00000004   0x1E5A             SUBS     R2,R3,#+1
-   \   00000006   0xB29B             UXTH     R3,R3
-   \   00000008   0x2B00             CMP      R3,#+0
-   \   0000000A   0xD014             BEQ.N    ??crc16_1
+   \   00000004   0xB470             PUSH     {R4-R6}
+   \   00000006   0xF241 0x0321      MOVW     R3,#+4129
+     41              while (cnt--) {
      42                *crc = (uint16_t)(*crc ^ (uint16_t)(((uint16_t)*ptr++) << 8));
-   \   0000000C   0x8803             LDRH     R3,[R0, #+0]
-   \   0000000E   0xF811 0x4B01      LDRB     R4,[R1], #+1
-   \   00000012   0xEA83 0x2304      EOR      R3,R3,R4, LSL #+8
-   \   00000016   0x8003             STRH     R3,[R0, #+0]
-     43                for (uint8_t x = 0; x < 8; x++)
-   \   00000018   0x2300             MOVS     R3,#+0
-   \   0000001A   0xE001             B.N      ??crc16_2
-     44                  *crc = (uint16_t)((*crc & 0x8000) ? ((uint16_t)(*crc << 1) ^ 0x1021) : (*crc << 1));
-   \                     ??crc16_3: (+1)
-   \   0000001C   0x8004             STRH     R4,[R0, #+0]
-   \   0000001E   0x1C5B             ADDS     R3,R3,#+1
-   \                     ??crc16_2: (+1)
-   \   00000020   0x2B08             CMP      R3,#+8
-   \   00000022   0xDAEE             BGE.N    ??crc16_0
-   \   00000024   0x8805             LDRH     R5,[R0, #+0]
-   \   00000026   0x006C             LSLS     R4,R5,#+1
-   \   00000028   0x042D             LSLS     R5,R5,#+16
-   \   0000002A   0xD5F7             BPL.N    ??crc16_3
-   \   0000002C   0xF484 0x5480      EOR      R4,R4,#0x1000
-   \   00000030   0xF084 0x0421      EOR      R4,R4,#0x21
-   \   00000034   0xE7F2             B.N      ??crc16_3
-     45              }
-     46            }
    \                     ??crc16_1: (+1)
-   \   00000036   0xBC30             POP      {R4,R5}
-   \   00000038   0x4770             BX       LR               ;; return
+   \   0000000A   0x8804             LDRH     R4,[R0, #+0]
+   \   0000000C   0xF811 0x5B01      LDRB     R5,[R1], #+1
+   \   00000010   0xEA84 0x2405      EOR      R4,R4,R5, LSL #+8
+   \   00000014   0x8004             STRH     R4,[R0, #+0]
+     43                for (uint8_t x = 0; x < 8; x++)
+   \   00000016   0x1E52             SUBS     R2,R2,#+1
+   \   00000018   0x2408             MOVS     R4,#+8
+     44                  *crc = (uint16_t)((*crc & 0x8000) ? ((uint16_t)(*crc << 1) ^ 0x1021) : (*crc << 1));
+   \                     ??crc16_2: (+1)
+   \   0000001A   0x8805             LDRH     R5,[R0, #+0]
+   \   0000001C   0x006E             LSLS     R6,R5,#+1
+   \   0000001E   0x042D             LSLS     R5,R5,#+16
+   \   00000020   0xBF48             IT       MI 
+   \   00000022   0x405E             EORMI    R6,R3,R6
+   \   00000024   0x8006             STRH     R6,[R0, #+0]
+   \   00000026   0x1E64             SUBS     R4,R4,#+1
+   \   00000028   0xD1F7             BNE.N    ??crc16_2
+     45              }
+   \   0000002A   0x2A00             CMP      R2,#+0
+   \   0000002C   0xD1ED             BNE.N    ??crc16_1
+     46            }
+   \   0000002E   0xBC70             POP      {R4-R6}
+   \   00000030   0x4770             BX       LR               ;; return
      47          
      48          #endif // EEPROM_SETTINGS
      49          
@@ -447,7 +441,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
    .cstack Function
    ------- --------
-       8   crc16(uint16_t *, void const *, uint16_t)
+      12   crc16(uint16_t *, void const *, uint16_t)
        8   safe_delay(millis_t)
          8   -> HAL_Delay
          0   -> Temperature::manage_heater()
@@ -458,15 +452,15 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
    Bytes  Function/Label
    -----  --------------
-      58  crc16(uint16_t *, void const *, uint16_t)
-      36  safe_delay(millis_t)
+      50  crc16(uint16_t *, void const *, uint16_t)
+      38  safe_delay(millis_t)
        1  -- Other
 
  
   1 byte  in section .rodata
- 94 bytes in section .text
+ 88 bytes in section .text
  
- 94 bytes of CODE  memory
+ 88 bytes of CODE  memory
   0 bytes of CONST memory (+ 1 byte shared)
 
 Errors: none

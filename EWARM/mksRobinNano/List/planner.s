@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:47
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:13
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\planner.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\planner.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\planner.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\planner.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\planner.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\planner.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -133,10 +130,13 @@
         EXTERN __aeabi_fsub
         EXTERN __aeabi_i2d
         EXTERN __aeabi_i2f
+        EXTERN __aeabi_memclr
         EXTERN __aeabi_memcpy4
+        EXTERN __aeabi_memset4
         EXTERN __aeabi_ui2d
         EXTERN __aeabi_ui2f
         EXTERN __iar_FDtest
+        EXTERN __iar_Stod
         EXTERN active_extruder
         EXTERN ceilf
         EXTERN current_position
@@ -148,37 +148,22 @@
         EXTERN gArrayGpioPort
         EXTERN gCfgItems
         EXTERN htim2
-        EXTERN labs
         EXTERN lround
         EXTERN lroundf
         EXTERN marlin_debug_flags
-        EXTERN memcpy
-        EXTERN memset
         EXTERN mksCfg
         EXTERN mksTmp
         EXTERN sqrtf
-        EXTERN strtod
 
-        PUBLIC _Z14serialprintPGMPKc
-        PUBLIC _Z31calculate_volumetric_multiplierRKf
         PUBLIC _ZN11GCodeParser11value_floatEv
-        PUBLIC _ZN11GCodeParser13value_celsiusEv
-        PUBLIC _ZN11GCodeParser18value_celsius_diffEv
-        PUBLIC _ZN11GCodeParser4seenEc
-        PUBLIC _ZN11Temperature15degTargetHotendEh
-        PUBLIC _ZN11Temperature15setTargetHotendEfh
-        PUBLIC _ZN11Temperature16tooColdToExtrudeEh
-        PUBLIC _ZN11Temperature9degHotendEh
         PUBLIC _ZN17mesh_bed_leveling12cell_index_xERKf
         PUBLIC _ZN17mesh_bed_leveling12cell_index_yERKf
         PUBLIC _ZN17mesh_bed_leveling5get_zERKfS1_S1_
-        PUBLIC _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
         PUBLIC _ZN20unified_bed_leveling16get_cell_index_xERKf
         PUBLIC _ZN20unified_bed_leveling16get_cell_index_yERKf
         PUBLIC _ZN20unified_bed_leveling16get_z_correctionERKfS1_
         PUBLIC _ZN20unified_bed_leveling18mesh_index_to_xposEh
         PUBLIC _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        PUBLIC _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
         PUBLIC _ZN7Planner11cutoff_longE
         PUBLIC _ZN7Planner11last_fade_zE
         PUBLIC _ZN7Planner11recalculateEv
@@ -188,10 +173,8 @@
         PUBLIC _ZN7Planner12autotemp_minE
         PUBLIC _ZN7Planner12block_bufferE
         PUBLIC _ZN7Planner12forward_passEv
-        PUBLIC _ZN7Planner12movesplannedEv
         PUBLIC _ZN7Planner12reverse_passEv
         PUBLIC _ZN7Planner13_buffer_stepsERA4_Kifh
-        PUBLIC _ZN7Planner13blocks_queuedEv
         PUBLIC _ZN7Planner13filament_sizeE
         PUBLIC _ZN7Planner13getHighESpeedEv
         PUBLIC _ZN7Planner13last_extruderE
@@ -206,9 +189,6 @@
         PUBLIC _ZN7Planner16_set_position_mmERKfS1_S1_S1_
         PUBLIC _ZN7Planner16autotemp_enabledE
         PUBLIC _ZN7Planner16bed_level_matrixE
-        PUBLIC _ZN7Planner16next_block_indexEa
-        PUBLIC _ZN7Planner16prev_block_indexEa
-        PUBLIC _ZN7Planner16refresh_e_factorEh
         PUBLIC _ZN7Planner16unapply_levelingEPf
         PUBLIC _ZN7Planner17axis_steps_per_mmE
         PUBLIC _ZN7Planner17block_buffer_headE
@@ -219,13 +199,11 @@
         PUBLIC _ZN7Planner18sync_from_steppersEv
         PUBLIC _ZN7Planner19check_axes_activityEv
         PUBLIC _ZN7Planner19forward_pass_kernelEPK7block_tPS0_
-        PUBLIC _ZN7Planner19max_allowable_speedERKfS1_S1_
         PUBLIC _ZN7Planner19min_segment_time_usE
         PUBLIC _ZN7Planner19refresh_positioningEv
         PUBLIC _ZN7Planner19reverse_pass_kernelEP7block_tPKS0_
         PUBLIC _ZN7Planner19travel_accelerationE
         PUBLIC _ZN7Planner20retract_accelerationE
-        PUBLIC _ZN7Planner21intersection_distanceERKfS1_S1_S1_
         PUBLIC _ZN7Planner21inverse_z_fade_heightE
         PUBLIC _ZN7Planner21volumetric_multiplierE
         PUBLIC _ZN7Planner22previous_nominal_speedE
@@ -238,7 +216,6 @@
         PUBLIC _ZN7Planner26max_acceleration_mm_per_s2E
         PUBLIC _ZN7Planner29calculate_trapezoid_for_blockEP7block_tRKfS3_
         PUBLIC _ZN7Planner29max_acceleration_steps_per_s2E
-        PUBLIC _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_
         PUBLIC _ZN7Planner32calculate_volumetric_multipliersEv
         PUBLIC _ZN7Planner4initEv
         PUBLIC _ZN7Planner8e_factorE
@@ -276,77 +253,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock0 Using cfiCommon0
-          CFI Function _ZN7PlannerC2Ev
-          CFI FunCall _ZN7PlannerC1Ev
-        THUMB
-// __code __interwork __softfp Planner::subobject Planner()
-_ZN7PlannerC2Ev:
-        B.N      _ZN7PlannerC1Ev
-          CFI EndBlock cfiBlock0
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock1 Using cfiCommon0
-          CFI Function __sti__routine
-        THUMB
-// static __intrinsic __interwork __softfp void __sti__routine()
-__sti__routine:
-        PUSH     {R3-R9,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R9 Frame(CFA, -8)
-          CFI R8 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -24)
-          CFI R4 Frame(CFA, -28)
-          CFI CFA R13+32
-        LDR.W    R4,??DataTable12
-        ADDS     R0,R4,#+4
-          CFI FunCall _ZN7PlannerC1Ev
-        BL       _ZN7PlannerC1Ev
-        MOV      R8,#+0
-        LDR.W    R9,??DataTable12_1  ;; 0x3ff80000
-        MOVS     R5,#+2
-        MOV      R6,R8
-        LDR.W    R7,??DataTable12_2  ;; 0x3ff00000
-        B.N      ??__sti__routine_0
-??__sti__routine_1:
-        MOV      R0,R8
-        MOV      R1,R9
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R8,R0
-        MOV      R9,R1
-??__sti__routine_0:
-        LSLS     R0,R5,#+31
-        BPL.N    ??__sti__routine_2
-        MOV      R2,R8
-        MOV      R3,R9
-        MOV      R0,R6
-        MOV      R1,R7
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R6,R0
-        MOV      R7,R1
-??__sti__routine_2:
-        LSRS     R5,R5,#+1
-        BNE.N    ??__sti__routine_1
-        LDR.W    R0,??DataTable12_3  ;; 0x54442d18
-        LDR.W    R1,??DataTable12_4  ;; 0x400921fb
-        MOV      R2,R6
-        MOV      R3,R7
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        STR      R0,[R4, #+0]
-        POP      {R0,R4-R9,PC}    ;; return
-          CFI EndBlock cfiBlock1
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\planner.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\planner.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -407,23 +314,6 @@ __sti__routine:
 //   58  *
 //   59  */
 //   60 #include "Marlin.h"
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
-          CFI Function _Z8CORESIGNl
-          CFI NoCalls
-        THUMB
-// static __interwork __softfp long CORESIGN(long)
-_Z8CORESIGNl:
-        LDR.W    R1,??DataTable12_5
-        LDRB     R1,[R1, #+88]
-        MOVS     R2,#+168
-        TST      R1,R2
-        BEQ.N    ??CORESIGN_0
-        RSBS     R0,R0,#+0
-??CORESIGN_0:
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock2
 //   61 
 //   62 #include "MarlinConfig.h"
 //   63 #include "planner.h"
@@ -476,6 +366,80 @@ planner:
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 _ZN7Planner12block_bufferE:
         DS8 1344
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock0 Using cfiCommon0
+          CFI Function _ZN7PlannerC2Ev
+          CFI NoCalls
+        THUMB
+// __code __interwork __softfp Planner::subobject Planner()
+_ZN7PlannerC2Ev:
+        PUSH     {R4,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
+        B.N      ?Subroutine0
+          CFI EndBlock cfiBlock0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function __sti__routine
+        THUMB
+// static __intrinsic __interwork __softfp void __sti__routine()
+__sti__routine:
+        PUSH     {R3-R9,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R9 Frame(CFA, -8)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
+          CFI CFA R13+32
+        LDR.W    R4,??DataTable10
+        ADDS     R0,R4,#+4
+          CFI FunCall _ZN7Planner4initEv
+        BL       _ZN7Planner4initEv
+        MOVS     R7,#+0
+        LDR.W    R9,??DataTable10_1  ;; 0x3ff80000
+        LDR.W    R8,??DataTable10_2  ;; 0x3ff00000
+        MOVS     R5,#+2
+        MOVS     R6,#+0
+        B.N      ??__sti__routine_0
+??__sti__routine_1:
+        MOV      R0,R7
+        MOV      R1,R9
+        MOV      R2,R7
+        MOV      R3,R9
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R7,R0
+        MOV      R9,R1
+??__sti__routine_0:
+        LSLS     R0,R5,#+31
+        BPL.N    ??__sti__routine_2
+        MOV      R2,R7
+        MOV      R3,R9
+        MOV      R0,R6
+        MOV      R1,R8
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R6,R0
+        MOV      R8,R1
+??__sti__routine_2:
+        LSRS     R5,R5,#+1
+        BNE.N    ??__sti__routine_1
+        LDR.W    R0,??DataTable10_3  ;; 0x54442d18
+        LDR.W    R1,??DataTable10_4  ;; 0x400921fb
+        MOV      R2,R6
+        MOV      R3,R8
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        STR      R0,[R4, #+0]
+        POP      {R0,R4-R9,PC}    ;; return
+          CFI EndBlock cfiBlock1
 //  103         Planner::volumetric_multiplier[EXTRUDERS];  // Reciprocal of cross-sectional area of filament (in mm^2). Pre-calculated to reduce computation in the planner
 //  104 #endif
 //  105 
@@ -564,17 +528,28 @@ _ZN7Planner12block_bufferE:
 //  188 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function _ZN7PlannerC1Ev
+          CFI NoCalls
         THUMB
 //  189 Planner::Planner() { init(); }
 _ZN7PlannerC1Ev:
         PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
+          CFI EndBlock cfiBlock2
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock3 Using cfiCommon0
+          CFI NoFunction
           CFI CFA R13+8
+          CFI R4 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
         MOV      R4,R0
-          CFI FunCall _ZN7Planner4initEv
+          CFI FunCall _ZN7PlannerC2Ev _ZN7Planner4initEv
+          CFI FunCall _ZN7PlannerC1Ev _ZN7Planner4initEv
         BL       _ZN7Planner4initEv
         MOV      R0,R4
         POP      {R4,PC}          ;; return
@@ -587,38 +562,43 @@ _ZN7PlannerC1Ev:
         THUMB
 //  191 void Planner::init() {
 _ZN7Planner4initEv:
-        PUSH     {R4,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
 //  192   block_buffer_head = block_buffer_tail = 0;
-        LDR.W    R4,??DataTable12_6
+        LDR.W    R4,??DataTable10_5
         MOVS     R0,#+0
         STRB     R0,[R4, #+1]
         STRB     R0,[R4, #+0]
 //  193   ZERO(position);
-        MOVS     R2,#+16
-        MOV      R1,R0
+        MOVS     R5,#+16
+        MOV      R2,R0
+        MOVS     R6,#+0
+        MOV      R1,R5
         ADD      R0,R4,#+64
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  194   #if ENABLED(LIN_ADVANCE)
 //  195     ZERO(position_float);
 //  196   #endif
 //  197   ZERO(previous_speed);
-        MOVS     R2,#+16
-        MOVS     R1,#+0
+        MOV      R2,R6
+        MOV      R1,R5
         ADD      R0,R4,#+104
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memset4
+        BL       __aeabi_memset4
 //  198   previous_nominal_speed = 0.0;
-        MOVS     R0,#+0
-        STR      R0,[R4, #+120]
+        STR      R6,[R4, #+120]
 //  199   #if 1//ABL_PLANAR
 //  200     bed_level_matrix.set_to_identity();
-        LDR.W    R0,??DataTable12_7
-        POP      {R4,LR}
+        LDR.W    R0,??DataTable10_6
+        POP      {R4-R6,LR}
           CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall _ZN10matrix_3x315set_to_identityEv
@@ -651,13 +631,13 @@ _ZN7Planner29calculate_trapezoid_for_blockEP7block_tRKfS3_:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+36
-        SUB      SP,SP,#+28
-          CFI CFA R13+64
         MOV      R4,R0
-        MOV      R5,R1
-        MOV      R6,R2
+        SUB      SP,SP,#+20
+          CFI CFA R13+56
 //  211   uint32_t initial_rate = CEIL(block->nominal_rate * entry_factor),
         LDR      R0,[R4, #+60]
+        MOV      R5,R1
+        MOV      R6,R2
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         LDR      R1,[R5, #+0]
@@ -679,115 +659,291 @@ _ZN7Planner29calculate_trapezoid_for_blockEP7block_tRKfS3_:
         BL       ceilf
           CFI FunCall __aeabi_f2uiz
         BL       __aeabi_f2uiz
-        MOV      R6,R0
+        MOV      R9,R0
 //  213 
 //  214   // Limit minimal step rate (Otherwise the timer will overflow.)
 //  215   NOLESS(initial_rate, MINIMAL_STEP_RATE);
         CMP      R5,#+120
-        BCS.N    ??calculate_trapezoid_for_block_0
-        MOVS     R5,#+120
+        IT       CC 
+        MOVCC    R5,#+120
 //  216   NOLESS(final_rate, MINIMAL_STEP_RATE);
-??calculate_trapezoid_for_block_0:
-        CMP      R6,#+120
-        BCS.N    ??calculate_trapezoid_for_block_1
-        MOVS     R6,#+120
+        CMP      R9,#+120
+        IT       CC 
+        MOVCC    R9,#+120
 //  217 
 //  218   const int32_t accel = block->acceleration_steps_per_s2;
-??calculate_trapezoid_for_block_1:
-        LDR      R11,[R4, #+72]
+        LDR      R0,[R4, #+72]
+        STR      R0,[SP, #+16]
 //  219 
 //  220           // Steps required for acceleration, deceleration to/from nominal rate
 //  221   int32_t accelerate_steps = CEIL(estimate_acceleration_distance(initial_rate, block->nominal_rate, accel)),
         MOV      R0,R5
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R7,R0
-        STR      R7,[SP, #+20]
+        STR      R0,[SP, #+12]
+        STR      R0,[SP, #+0]
+        LDR      R0,[SP, #+16]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        STR      R0,[SP, #+8]
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        MOV      R10,R0
+        IT       EQ 
+        MOVEQ    R0,#+0
+        BEQ.N    ??calculate_trapezoid_for_block_0
         LDR      R0,[R4, #+60]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        STR      R0,[SP, #+4]
-        MOV      R0,R11
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
+        MOV      R11,#+1065353216
+        MOV      R7,R0
+        MOVS     R6,#+2
+        MOV      R8,R11
+        B.N      ??calculate_trapezoid_for_block_1
+??calculate_trapezoid_for_block_2:
+        MOV      R0,R7
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R7,R0
+??calculate_trapezoid_for_block_1:
+        LSLS     R0,R6,#+31
+        BPL.N    ??calculate_trapezoid_for_block_3
+        MOV      R0,R8
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R8,R0
-        STR      R8,[SP, #+16]
-        ADD      R2,SP,#+16
-        ADD      R1,SP,#+4
-        ADD      R0,SP,#+20
-          CFI FunCall _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_
-        BL       _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_
+??calculate_trapezoid_for_block_3:
+        LSRS     R6,R6,#+1
+        BNE.N    ??calculate_trapezoid_for_block_2
+        LDR      R6,[SP, #+0]
+        MOVS     R7,#+2
+        B.N      ??calculate_trapezoid_for_block_4
+??calculate_trapezoid_for_block_5:
+        MOV      R0,R6
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R6,R0
+??calculate_trapezoid_for_block_4:
+        LSLS     R0,R7,#+31
+        BPL.N    ??calculate_trapezoid_for_block_6
+        MOV      R0,R11
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R11,R0
+??calculate_trapezoid_for_block_6:
+        LSRS     R7,R7,#+1
+        BNE.N    ??calculate_trapezoid_for_block_5
+        MOV      R0,R8
+        MOV      R1,R11
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R6,R0
+        MOV      R0,#+1073741824
+        MOV      R1,R10
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,R6
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+??calculate_trapezoid_for_block_0:
           CFI FunCall ceilf
         BL       ceilf
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        MOV      R9,R0
+        MOV      R10,R0
 //  222           decelerate_steps = FLOOR(estimate_acceleration_distance(block->nominal_rate, final_rate, -accel)),
         LDR      R0,[R4, #+60]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         STR      R0,[SP, #+0]
-        MOV      R0,R6
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R10,R0
-        STR      R10,[SP, #+12]
-        RSB      R0,R11,#+0
+        LDR      R0,[SP, #+16]
+        RSBS     R0,R0,#+0
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        STR      R0,[SP, #+8]
-        ADD      R2,SP,#+8
-        ADD      R1,SP,#+12
-        ADD      R0,SP,#+0
-          CFI FunCall _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_
-        BL       _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        STR      R0,[SP, #+4]
+        IT       EQ 
+        MOVEQ    R0,#+0
+        BEQ.N    ??calculate_trapezoid_for_block_7
+        MOV      R0,R9
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        MOV      R11,#+1065353216
+        MOV      R7,R0
+        MOVS     R6,#+2
+        MOV      R8,R11
+        B.N      ??calculate_trapezoid_for_block_8
+??calculate_trapezoid_for_block_9:
+        MOV      R0,R7
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R7,R0
+??calculate_trapezoid_for_block_8:
+        LSLS     R0,R6,#+31
+        BPL.N    ??calculate_trapezoid_for_block_10
+        MOV      R0,R8
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R8,R0
+??calculate_trapezoid_for_block_10:
+        LSRS     R6,R6,#+1
+        BNE.N    ??calculate_trapezoid_for_block_9
+        LDR      R6,[SP, #+0]
+        MOVS     R7,#+2
+        B.N      ??calculate_trapezoid_for_block_11
+??calculate_trapezoid_for_block_12:
+        MOV      R0,R6
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R6,R0
+??calculate_trapezoid_for_block_11:
+        LSLS     R0,R7,#+31
+        BPL.N    ??calculate_trapezoid_for_block_13
+        MOV      R0,R11
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R11,R0
+??calculate_trapezoid_for_block_13:
+        LSRS     R7,R7,#+1
+        BNE.N    ??calculate_trapezoid_for_block_12
+        MOV      R0,R8
+        MOV      R1,R11
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R6,R0
+        LDR      R1,[SP, #+4]
+        MOV      R0,#+1073741824
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,R6
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+??calculate_trapezoid_for_block_7:
           CFI FunCall floorf
         BL       floorf
-          CFI FunCall __aeabi_f2iz
-        BL       __aeabi_f2iz
 //  223           // Steps between acceleration and deceleration, if any
 //  224           plateau_steps = block->step_event_count - accelerate_steps - decelerate_steps;
-        LDR      R1,[R4, #+20]
-        SUB      R1,R1,R9
-        SUBS     R0,R1,R0
+        LDR      R7,[R4, #+20]
+        SUB      R6,R7,R10
+          CFI FunCall __aeabi_f2iz
+        BL       __aeabi_f2iz
+        SUBS     R0,R6,R0
 //  225 
 //  226   // Does accelerate_steps + decelerate_steps exceed step_event_count?
 //  227   // Then we can't possibly reach the nominal rate, there will be no cruising.
 //  228   // Use intersection_distance() to calculate accel / braking time in order to
 //  229   // reach the final_rate exactly at the end of this block.
 //  230   if (plateau_steps < 0) {
-        BPL.N    ??calculate_trapezoid_for_block_2
+        BPL.N    ??calculate_trapezoid_for_block_14
 //  231     accelerate_steps = CEIL(intersection_distance(initial_rate, final_rate, accel, block->step_event_count));
-        STR      R7,[SP, #+12]
-        STR      R10,[SP, #+8]
-        STR      R8,[SP, #+4]
-        LDR      R0,[R4, #+20]
+        MOV      R0,R9
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
+        MOV      R10,R0
+        LDR      R0,[SP, #+8]
         STR      R0,[SP, #+0]
-        ADD      R3,SP,#+0
-        ADD      R2,SP,#+4
-        ADD      R1,SP,#+8
-        ADD      R0,SP,#+12
-          CFI FunCall _ZN7Planner21intersection_distanceERKfS1_S1_S1_
-        BL       _ZN7Planner21intersection_distanceERKfS1_S1_S1_
+        MOV      R0,R7
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        STR      R0,[SP, #+4]
+        MOVS     R1,#+0
+        LDR      R0,[SP, #+0]
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        IT       EQ 
+        MOVEQ    R0,#+0
+        BEQ.N    ??calculate_trapezoid_for_block_15
+        LDR      R7,[SP, #+12]
+        MOV      R11,#+1065353216
+        MOVS     R6,#+2
+        MOV      R8,R11
+        B.N      ??calculate_trapezoid_for_block_16
+??calculate_trapezoid_for_block_17:
+        MOV      R0,R7
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R7,R0
+??calculate_trapezoid_for_block_16:
+        LSLS     R0,R6,#+31
+        BPL.N    ??calculate_trapezoid_for_block_18
+        MOV      R0,R8
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R8,R0
+??calculate_trapezoid_for_block_18:
+        LSRS     R6,R6,#+1
+        BNE.N    ??calculate_trapezoid_for_block_17
+        MOVS     R6,#+2
+        B.N      ??calculate_trapezoid_for_block_19
+??calculate_trapezoid_for_block_20:
+        MOV      R0,R10
+        MOV      R1,R10
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R10,R0
+??calculate_trapezoid_for_block_19:
+        LSLS     R0,R6,#+31
+        BPL.N    ??calculate_trapezoid_for_block_21
+        MOV      R0,R11
+        MOV      R1,R10
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R11,R0
+??calculate_trapezoid_for_block_21:
+        LSRS     R6,R6,#+1
+        BNE.N    ??calculate_trapezoid_for_block_20
+        LDR      R1,[SP, #+0]
+        MOV      R0,#+1073741824
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[SP, #+4]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R11
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R6,R0
+        LDR      R1,[SP, #+0]
+        MOV      R0,#+1082130432
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,R6
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+??calculate_trapezoid_for_block_15:
           CFI FunCall ceilf
         BL       ceilf
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        MOV      R9,R0
+        MOVS     R10,R0
 //  232     NOLESS(accelerate_steps, 0); // Check limits due to numerical round-off
-        CMP      R9,#+0
-        BPL.N    ??calculate_trapezoid_for_block_3
-        MOV      R9,#+0
+        IT       MI 
+        MOVMI    R10,#+0
 //  233     accelerate_steps = min((uint32_t)accelerate_steps, block->step_event_count);//(We can cast here to unsigned, because the above line ensures that we are above zero)
-??calculate_trapezoid_for_block_3:
         LDR      R0,[R4, #+20]
-        CMP      R9,R0
-        BCC.N    ??calculate_trapezoid_for_block_4
-        MOV      R9,R0
+        CMP      R10,R0
+        IT       CS 
+        MOVCS    R10,R0
 //  234     plateau_steps = 0;
-??calculate_trapezoid_for_block_4:
         MOVS     R0,#+0
 //  235   }
 //  236 
@@ -795,29 +951,27 @@ _ZN7Planner29calculate_trapezoid_for_blockEP7block_tRKfS3_:
 //  238   // block->decelerate_after = accelerate_steps+plateau_steps;
 //  239 
 //  240   CRITICAL_SECTION_START;  // Fill variables used by the stepper in a critical section
-??calculate_trapezoid_for_block_2:
+??calculate_trapezoid_for_block_14:
         cpsid i
 //  241   if (!TEST(block->flag, BLOCK_BIT_BUSY)) { // Don't update variables if block is busy.
         LDRB     R1,[R4, #+0]
         LSLS     R1,R1,#+28
-        BMI.N    ??calculate_trapezoid_for_block_5
+        BMI.N    ??calculate_trapezoid_for_block_22
 //  242     block->accelerate_until = accelerate_steps;
-        STR      R9,[R4, #+24]
+        STR      R10,[R4, #+24]
 //  243     block->decelerate_after = accelerate_steps + plateau_steps;
-        ADD      R0,R0,R9
+        ADD      R0,R0,R10
         STR      R0,[R4, #+28]
 //  244     block->initial_rate = initial_rate;
         STR      R5,[R4, #+64]
 //  245     block->final_rate = final_rate;
-        STR      R6,[R4, #+68]
+        STR      R9,[R4, #+68]
 //  246   }
 //  247   CRITICAL_SECTION_END;
-??calculate_trapezoid_for_block_5:
+??calculate_trapezoid_for_block_22:
         cpsie i
 //  248 }
-        ADD      SP,SP,#+28
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
+        B.N      ?Subroutine1
           CFI EndBlock cfiBlock5
 //  249 
 //  250 // "Junction jerk" in this context is the immediate change in speed at the junction of two blocks.
@@ -837,27 +991,31 @@ _ZN7Planner29calculate_trapezoid_for_blockEP7block_tRKfS3_:
         THUMB
 //  260 void Planner::reverse_pass_kernel(block_t* const current, const block_t * const next) {
 _ZN7Planner19reverse_pass_kernelEP7block_tPKS0_:
-        PUSH     {R2-R6,LR}
+        PUSH     {R3-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+24
-        MOV      R4,R0
-        MOV      R5,R1
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+40
+        MOVS     R5,R0
+        MOV      R6,R1
 //  261   if (!current || !next) return;
-        CMP      R4,#+0
-        BEQ.N    ??reverse_pass_kernel_0
-        CMP      R5,#+0
+        IT       NE 
+        CMPNE    R6,#+0
         BEQ.N    ??reverse_pass_kernel_0
 //  262   // If entry speed is already at the maximum entry speed, no need to recheck. Block is cruising.
 //  263   // If not, block in state of acceleration or deceleration. Reset entry speed to maximum and
 //  264   // check for maximum allowable speed reductions to ensure maximum possible planned speed.
 //  265   float max_entry_speed = current->max_entry_speed;
-        LDR      R6,[R4, #+48]
+        LDR      R7,[R5, #+48]
 //  266   if (current->entry_speed != max_entry_speed) {
-        LDR      R0,[R4, #+44]
-        MOV      R1,R6
+        LDR      R0,[R5, #+44]
+        MOV      R1,R7
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
         BEQ.N    ??reverse_pass_kernel_0
@@ -866,45 +1024,105 @@ _ZN7Planner19reverse_pass_kernelEP7block_tPKS0_:
 //  269     current->entry_speed = (TEST(current->flag, BLOCK_BIT_NOMINAL_LENGTH) || max_entry_speed <= next->entry_speed)
 //  270       ? max_entry_speed
 //  271       : min(max_entry_speed, max_allowable_speed(-current->acceleration, next->entry_speed, current->millimeters));
-        LDRB     R0,[R4, #+0]
+        LDRB     R0,[R5, #+0]
         LSLS     R0,R0,#+30
         BMI.N    ??reverse_pass_kernel_1
-        LDR      R0,[R5, #+44]
+        LDR      R4,[R6, #+44]
+        MOV      R0,R4
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
         BLS.N    ??reverse_pass_kernel_1
-        LDR      R0,[R4, #+56]
-        EOR      R0,R0,#0x80000000
+        LDR      R0,[R5, #+56]
+        EOR      R8,R0,#0x80000000
+        ADD      R0,R5,#+52
+        MOV      R9,#+1065353216
         STR      R0,[SP, #+0]
-        ADD      R2,R4,#+52
-        ADD      R1,R5,#+44
-        ADD      R0,SP,#+0
-          CFI FunCall _ZN7Planner19max_allowable_speedERKfS1_S1_
-        BL       _ZN7Planner19max_allowable_speedERKfS1_S1_
+        MOV      R10,#+2
+        MOV      R11,R9
+        B.N      ??reverse_pass_kernel_2
+??reverse_pass_kernel_3:
+        MOV      R0,R4
+        MOV      R1,R4
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R4,R0
+??reverse_pass_kernel_2:
+        LSLS     R0,R10,#+31
+        BPL.N    ??reverse_pass_kernel_4
+        MOV      R0,R11
+        MOV      R1,R4
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R11,R0
+??reverse_pass_kernel_4:
+        LSRS     R10,R10,#+1
+        BNE.N    ??reverse_pass_kernel_3
+        MOV      R0,#+1073741824
+        MOV      R1,R8
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[SP, #+0]
+        LDR      R1,[R1, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R1,R0
-        MOV      R0,R6
+        MOV      R0,R11
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall sqrtf
+        BL       sqrtf
+        MOV      R1,R0
+        MOV      R0,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCC.N    ??reverse_pass_kernel_1
-        LDR      R0,[R4, #+56]
-        EOR      R0,R0,#0x80000000
-        STR      R0,[SP, #+4]
-        ADD      R2,R4,#+52
-        ADD      R1,R5,#+44
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN7Planner19max_allowable_speedERKfS1_S1_
-        BL       _ZN7Planner19max_allowable_speedERKfS1_S1_
+        LDR      R7,[R5, #+56]
+        LDR      R6,[R6, #+44]
+        EOR      R7,R7,#0x80000000
+        ADD      R8,R5,#+52
+        MOVS     R4,#+2
+        B.N      ??reverse_pass_kernel_5
+??reverse_pass_kernel_6:
+        MOV      R0,R6
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R6,R0
+??reverse_pass_kernel_5:
+        LSLS     R0,R4,#+31
+        BPL.N    ??reverse_pass_kernel_7
+        MOV      R0,R9
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
+??reverse_pass_kernel_7:
+        LSRS     R4,R4,#+1
+        BNE.N    ??reverse_pass_kernel_6
+        MOV      R0,#+1073741824
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[R8, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,R9
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall sqrtf
+        BL       sqrtf
+        MOV      R7,R0
 ??reverse_pass_kernel_1:
-        STR      R6,[R4, #+44]
+        STR      R7,[R5, #+44]
 //  272     SBI(current->flag, BLOCK_BIT_RECALCULATE);
-        LDRB     R0,[R4, #+0]
+        LDRB     R0,[R5, #+0]
         ORR      R0,R0,#0x1
-        STRB     R0,[R4, #+0]
+        STRB     R0,[R5, #+0]
 //  273   }
 //  274 }
 ??reverse_pass_kernel_0:
-        POP      {R0,R1,R4-R6,PC}  ;; return
+        POP      {R0,R4-R11,PC}   ;; return
           CFI EndBlock cfiBlock6
 //  275 
 //  276 /**
@@ -917,60 +1135,55 @@ _ZN7Planner19reverse_pass_kernelEP7block_tPKS0_:
           CFI Function _ZN7Planner12reverse_passEv
         THUMB
 //  280 void Planner::reverse_pass() {
-_ZN7Planner12reverse_passEv:
-        PUSH     {R3-R9,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R9 Frame(CFA, -8)
-          CFI R8 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -24)
-          CFI R4 Frame(CFA, -28)
-          CFI CFA R13+32
 //  281   if (movesplanned() > 3) {
-          CFI FunCall _ZN7Planner12movesplannedEv
-        BL       _ZN7Planner12movesplannedEv
-        CMP      R0,#+4
-        BLT.N    ??reverse_pass_0
+_ZN7Planner12reverse_passEv:
+        LDR.W    R0,??DataTable10_5
+        LDRB     R1,[R0, #+0]
+        LDRB     R2,[R0, #+1]
+        SUBS     R1,R1,R2
+        AND      R1,R1,#0xF
+        CMP      R1,#+4
+        BGE.N    ??reverse_pass_0
+        BX       LR
 //  282     const uint8_t endnr = BLOCK_MOD(block_buffer_tail + 2); // tail is running. tail+1 shouldn't be altered because it's connected to the running block.
-        LDR.W    R0,??DataTable12_6
+??reverse_pass_0:
+        PUSH     {R4-R8,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
         LDRB     R1,[R0, #+1]
-        ADDS     R1,R1,#+2
-        AND      R4,R1,#0xF
 //  283                                                             // tail+2 because the index is not yet advanced when checked
 //  284     uint8_t blocknr = prev_block_index(block_buffer_head);
         LDRSB    R0,[R0, #+0]
-          CFI FunCall _ZN7Planner16prev_block_indexEa
-        BL       _ZN7Planner16prev_block_indexEa
-        MOV      R7,R0
-        UXTB     R7,R7
 //  285     block_t* current = &block_buffer[blocknr];
+        LDR.W    R8,??DataTable10_7
+        SUBS     R0,R0,#+1
+        ADDS     R1,R1,#+2
+        AND      R7,R0,#0xF
         MOVS     R5,#+84
-        LDR.W    R6,??DataTable12_8
-        MOV      R0,R7
-        MLA      R8,R5,R0,R6
+        AND      R4,R1,#0xF
+        MLA      R6,R5,R7,R8
 //  286 
 //  287     do {
 //  288       const block_t * const next = current;
-??reverse_pass_1:
-        MOV      R9,R8
 //  289       blocknr = prev_block_index(blocknr);
-        MOV      R0,R7
-        SXTB     R0,R0
-          CFI FunCall _ZN7Planner16prev_block_indexEa
-        BL       _ZN7Planner16prev_block_indexEa
-        MOV      R7,R0
-        UXTB     R7,R7
+??reverse_pass_1:
+        SUBS     R0,R7,#+1
+        MOV      R1,R6
+        AND      R7,R0,#0xF
 //  290       current = &block_buffer[blocknr];
-        MLA      R8,R5,R7,R6
+        MLA      R6,R5,R7,R8
 //  291       if (TEST(current->flag, BLOCK_BIT_START_FROM_FULL_HALT)) // Up to this every block is already optimized.
-        LDRB     R0,[R8, #+0]
+        LDRB     R0,[R6, #+0]
         LSLS     R0,R0,#+29
-        BMI.N    ??reverse_pass_0
+        BMI.N    ??reverse_pass_2
 //  292         break;
 //  293       reverse_pass_kernel(current, next);
-        MOV      R1,R9
-        MOV      R0,R8
+        MOV      R0,R6
           CFI FunCall _ZN7Planner19reverse_pass_kernelEP7block_tPKS0_
         BL       _ZN7Planner19reverse_pass_kernelEP7block_tPKS0_
 //  294     } while (blocknr != endnr);
@@ -978,8 +1191,8 @@ _ZN7Planner12reverse_passEv:
         BNE.N    ??reverse_pass_1
 //  295   }
 //  296 }
-??reverse_pass_0:
-        POP      {R0,R4-R9,PC}    ;; return
+??reverse_pass_2:
+        POP      {R4-R8,PC}       ;; return
           CFI EndBlock cfiBlock7
 //  297 
 //  298 // The kernel called by recalculate() when scanning the plan from first to last entry.
@@ -990,17 +1203,20 @@ _ZN7Planner12reverse_passEv:
         THUMB
 //  299 void Planner::forward_pass_kernel(const block_t * const previous, block_t* const current) {
 _ZN7Planner19forward_pass_kernelEPK7block_tPS0_:
-        PUSH     {R4,R5,LR}
+        PUSH     {R3-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
-        SUB      SP,SP,#+12
-          CFI CFA R13+24
-        MOV      R4,R0
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+40
+        MOVS     R6,R0
         MOV      R5,R1
 //  300   if (!previous) return;
-        CMP      R4,#+0
         BEQ.N    ??forward_pass_kernel_0
 //  301 
 //  302   // If the previous block is an acceleration block, but it is not long enough to complete the
@@ -1008,43 +1224,101 @@ _ZN7Planner19forward_pass_kernelEPK7block_tPS0_:
 //  304   // speeds have already been reset, maximized, and reverse planned by reverse planner.
 //  305   // If nominal length is true, max junction speed is guaranteed to be reached. No need to recheck.
 //  306   if (!TEST(previous->flag, BLOCK_BIT_NOMINAL_LENGTH)) {
-        LDRB     R0,[R4, #+0]
+        LDRB     R0,[R6, #+0]
         LSLS     R0,R0,#+30
         BMI.N    ??forward_pass_kernel_0
 //  307     if (previous->entry_speed < current->entry_speed) {
-        LDR      R0,[R4, #+44]
+        LDR      R10,[R6, #+44]
         LDR      R1,[R5, #+44]
+        MOV      R0,R10
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCS.N    ??forward_pass_kernel_0
 //  308       float entry_speed = min(current->entry_speed,
 //  309                                max_allowable_speed(-previous->acceleration, previous->entry_speed, previous->millimeters));
-        LDR      R0,[R4, #+56]
-        EOR      R0,R0,#0x80000000
-        STR      R0,[SP, #+0]
-        ADD      R2,R4,#+52
-        ADD      R1,R4,#+44
-        ADD      R0,SP,#+0
-          CFI FunCall _ZN7Planner19max_allowable_speedERKfS1_S1_
-        BL       _ZN7Planner19max_allowable_speedERKfS1_S1_
+        LDR      R0,[R6, #+56]
+        MOV      R9,#+1065353216
+        EOR      R8,R0,#0x80000000
+        ADD      R4,R6,#+52
+        MOVS     R7,#+2
+        MOV      R11,R9
+        B.N      ??forward_pass_kernel_1
+??forward_pass_kernel_2:
+        MOV      R0,R10
+        MOV      R1,R10
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R10,R0
+??forward_pass_kernel_1:
+        LSLS     R0,R7,#+31
+        BPL.N    ??forward_pass_kernel_3
+        MOV      R0,R11
+        MOV      R1,R10
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R11,R0
+??forward_pass_kernel_3:
+        LSRS     R7,R7,#+1
+        BNE.N    ??forward_pass_kernel_2
+        MOV      R0,#+1073741824
+        MOV      R1,R8
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[R4, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
         MOV      R1,R0
+        MOV      R0,R11
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall sqrtf
+        BL       sqrtf
         LDR      R2,[R5, #+44]
+        MOV      R1,R0
         MOV      R0,R2
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??forward_pass_kernel_1
-        LDR      R0,[R4, #+56]
-        EOR      R0,R0,#0x80000000
-        STR      R0,[SP, #+4]
-        ADD      R2,R4,#+52
-        ADD      R1,R4,#+44
-        ADD      R0,SP,#+4
-          CFI FunCall _ZN7Planner19max_allowable_speedERKfS1_S1_
-        BL       _ZN7Planner19max_allowable_speedERKfS1_S1_
+        BCC.N    ??forward_pass_kernel_4
+        LDR      R0,[R6, #+56]
+        ADD      R8,R6,#+52
+        LDR      R6,[R6, #+44]
+        EOR      R7,R0,#0x80000000
+        MOVS     R4,#+2
+        B.N      ??forward_pass_kernel_5
+??forward_pass_kernel_6:
+        MOV      R0,R6
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R6,R0
+??forward_pass_kernel_5:
+        LSLS     R0,R4,#+31
+        BPL.N    ??forward_pass_kernel_7
+        MOV      R0,R9
+        MOV      R1,R6
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
+??forward_pass_kernel_7:
+        LSRS     R4,R4,#+1
+        BNE.N    ??forward_pass_kernel_6
+        MOV      R0,#+1073741824
+        MOV      R1,R7
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[R8, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,R9
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall sqrtf
+        BL       sqrtf
         MOV      R2,R0
 //  310       // Check for junction speed change
 //  311       if (current->entry_speed != entry_speed) {
-??forward_pass_kernel_1:
+??forward_pass_kernel_4:
         LDR      R0,[R5, #+44]
         MOV      R1,R2
           CFI FunCall __aeabi_cfcmpeq
@@ -1061,7 +1335,7 @@ _ZN7Planner19forward_pass_kernelEPK7block_tPS0_:
 //  316   }
 //  317 }
 ??forward_pass_kernel_0:
-        POP      {R0-R2,R4,R5,PC}  ;; return
+        POP      {R0,R4-R11,PC}   ;; return
           CFI EndBlock cfiBlock8
 //  318 
 //  319 /**
@@ -1075,53 +1349,53 @@ _ZN7Planner19forward_pass_kernelEPK7block_tPS0_:
         THUMB
 //  323 void Planner::forward_pass() {
 _ZN7Planner12forward_passEv:
-        PUSH     {R3-R7,LR}
+        PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
+          CFI R9 Frame(CFA, -8)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
+          CFI CFA R13+32
 //  324   block_t* block[3] = { NULL, NULL, NULL };
-        MOVS     R4,#+0
-        MOV      R5,R4
 //  325 
 //  326   for (uint8_t b = block_buffer_tail; b != block_buffer_head; b = next_block_index(b)) {
-        LDR.W    R6,??DataTable12_6
+        LDR.W    R6,??DataTable10_5
+        LDR.W    R9,??DataTable10_7
         LDRB     R7,[R6, #+1]
+        MOVS     R4,#+0
+        MOV      R8,R4
+        MOVS     R5,#+84
         B.N      ??forward_pass_0
 //  327     block[0] = block[1];
 ??forward_pass_1:
         MOV      R0,R4
 //  328     block[1] = block[2];
-        MOV      R4,R5
+        MOV      R4,R8
 //  329     block[2] = &block_buffer[b];
-        MOVS     R1,#+84
-        LDR.W    R2,??DataTable12_8
-        MLA      R5,R1,R7,R2
+        MLA      R8,R5,R7,R9
 //  330     forward_pass_kernel(block[0], block[1]);
         MOV      R1,R4
           CFI FunCall _ZN7Planner19forward_pass_kernelEPK7block_tPS0_
         BL       _ZN7Planner19forward_pass_kernelEPK7block_tPS0_
 //  331   }
-        MOV      R0,R7
-        SXTB     R0,R0
-          CFI FunCall _ZN7Planner16next_block_indexEa
-        BL       _ZN7Planner16next_block_indexEa
-        MOV      R7,R0
-        UXTB     R7,R7
+        ADDS     R0,R7,#+1
+        AND      R7,R0,#0xF
 ??forward_pass_0:
         LDRB     R0,[R6, #+0]
         CMP      R7,R0
         BNE.N    ??forward_pass_1
 //  332   forward_pass_kernel(block[1], block[2]);
-        MOV      R1,R5
+        MOV      R1,R8
         MOV      R0,R4
-        POP      {R2,R4-R7,LR}
+        POP      {R2,R4-R9,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall _ZN7Planner19forward_pass_kernelEPK7block_tPS0_
@@ -1141,31 +1415,32 @@ _ZN7Planner12forward_passEv:
         THUMB
 //  340 void Planner::recalculate_trapezoids() {
 _ZN7Planner22recalculate_trapezoidsEv:
-        PUSH     {R2-R8,LR}
+        PUSH     {R2-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+32
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+40
 //  341   int8_t block_index = block_buffer_tail;
-        LDR.W    R5,??DataTable12_6
-        LDRSB    R6,[R5, #+1]
+        LDR.W    R5,??DataTable10_5
 //  342   block_t *current, *next = NULL;
+        LDR.W    R8,??DataTable10_7
+        LDRSB    R6,[R5, #+1]
         MOVS     R4,#+0
+        MOV      R9,#+84
         B.N      ??recalculate_trapezoids_0
 //  343 
 //  344   while (block_index != block_buffer_head) {
 //  345     current = next;
 ??recalculate_trapezoids_1:
-        MOV      R7,R4
+        MOVS     R7,R4
 //  346     next = &block_buffer[block_index];
-        MOVS     R0,#+84
-        LDR.W    R1,??DataTable12_8
-        MLA      R4,R0,R6,R1
+        MLA      R4,R9,R6,R8
 //  347     if (current) {
-        CMP      R7,#+0
         BEQ.N    ??recalculate_trapezoids_2
 //  348       // Recalculate if current block entry or exit junction speed has changed.
 //  349       if (TEST(current->flag, BLOCK_BIT_RECALCULATE) || TEST(next->flag, BLOCK_BIT_RECALCULATE)) {
@@ -1178,19 +1453,19 @@ _ZN7Planner22recalculate_trapezoidsEv:
 //  350         // NOTE: Entry and exit factors always > 0 by all previous logic operations.
 //  351         const float nomr = 1.0 / current->nominal_speed;
 ??recalculate_trapezoids_3:
-        MOV      R0,#+1065353216
         LDR      R1,[R7, #+40]
+        MOV      R0,#+1065353216
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        MOV      R8,R0
+        MOV      R10,R0
 //  352         calculate_trapezoid_for_block(current, current->entry_speed * nomr, next->entry_speed * nomr);
         LDR      R0,[R7, #+44]
-        MOV      R1,R8
+        MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[SP, #+4]
+        MOV      R1,R10
         LDR      R0,[R4, #+44]
-        MOV      R1,R8
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[SP, #+0]
@@ -1206,24 +1481,20 @@ _ZN7Planner22recalculate_trapezoidsEv:
 //  354       }
 //  355     }
 //  356     block_index = next_block_index(block_index);
-??recalculate_trapezoids_2:
-        MOV      R0,R6
-          CFI FunCall _ZN7Planner16next_block_indexEa
-        BL       _ZN7Planner16next_block_indexEa
-        MOV      R6,R0
 //  357   }
+??recalculate_trapezoids_2:
+        ADDS     R0,R6,#+1
+        AND      R6,R0,#0xF
 ??recalculate_trapezoids_0:
-        MOV      R0,R6
         LDRB     R1,[R5, #+0]
-        CMP      R0,R1
+        CMP      R6,R1
         BNE.N    ??recalculate_trapezoids_1
 //  358   // Last/newest block in buffer. Exit speed is set with MINIMUM_PLANNER_SPEED. Always recalculated.
 //  359   if (next) {
-        CMP      R4,#+0
-        BEQ.N    ??recalculate_trapezoids_4
+        CBZ.N    R4,??recalculate_trapezoids_4
 //  360     const float nomr = 1.0 / next->nominal_speed;
-        MOV      R0,#+1065353216
         LDR      R1,[R4, #+40]
+        MOV      R0,#+1065353216
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         MOV      R5,R0
@@ -1236,8 +1507,8 @@ _ZN7Planner22recalculate_trapezoidsEv:
         MOV      R0,R5
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable12_9  ;; 0x9999999a
-        LDR.N    R3,??DataTable12_10  ;; 0x3fa99999
+        LDR.W    R2,??DataTable10_8  ;; 0x9999999a
+        LDR.W    R3,??DataTable10_9  ;; 0x3fa99999
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2f
@@ -1255,7 +1526,7 @@ _ZN7Planner22recalculate_trapezoidsEv:
 //  363   }
 //  364 }
 ??recalculate_trapezoids_4:
-        POP      {R0,R1,R4-R8,PC}  ;; return
+        POP      {R0,R1,R4-R10,PC}  ;; return
           CFI EndBlock cfiBlock10
 //  365 
 //  366 /*
@@ -1317,172 +1588,176 @@ _ZN7Planner11recalculateEv:
         THUMB
 //  399   void Planner::getHighESpeed() {
 _ZN7Planner13getHighESpeedEv:
-        PUSH     {R3-R9,LR}
+        PUSH     {R3-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R9 Frame(CFA, -8)
-          CFI R8 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -24)
-          CFI R4 Frame(CFA, -28)
-          CFI CFA R13+32
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+40
 //  400     static float oldt = 0;
 //  401 
 //  402     if (!autotemp_enabled) return;
-        LDR.N    R7,??DataTable12_6
-        LDRB     R0,[R7, #+3]
+        LDR.N    R6,??DataTable10_5
+        LDRB     R0,[R6, #+3]
         CMP      R0,#+0
         BEQ.N    ??getHighESpeed_0
 //  403     if (thermalManager.degTargetHotend(0) + 2 < autotemp_min) return; // probably temperature set to zero.
-        LDR      R4,[R7, #+92]
-        MOVS     R0,#+0
-          CFI FunCall _ZN11Temperature15degTargetHotendEh
-        BL       _ZN11Temperature15degTargetHotendEh
+        LDR.W    R7,??DataTable10_10
+        LDR      R8,[R6, #+92]
+        LDR      R0,[R7, #+0]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
         MOV      R1,#+1073741824
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R1,R4
+        MOV      R1,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCC.N    ??getHighESpeed_0
 //  404 
 //  405     float high = 0.0;
-        MOVS     R5,#+0
 //  406     for (uint8_t b = block_buffer_tail; b != block_buffer_head; b = next_block_index(b)) {
-        LDRB     R6,[R7, #+1]
+        LDRB     R4,[R6, #+1]
+        LDR.W    R10,??DataTable10_7
+        MOV      R11,#+0
+        MOV      R9,#+84
         B.N      ??getHighESpeed_1
 //  407       block_t* block = &block_buffer[b];
 ??getHighESpeed_2:
-        MOVS     R0,#+84
-        LDR.N    R1,??DataTable12_8
-        MLA      R8,R0,R6,R1
+        MLA      R5,R9,R4,R10
 //  408       if (block->steps[X_AXIS] || block->steps[Y_AXIS] || block->steps[Z_AXIS]) {
-        LDR      R0,[R8, #+4]
+        LDR      R0,[R5, #+4]
         CMP      R0,#+0
+        ITT      EQ 
+        LDREQ    R0,[R5, #+8]
+        CMPEQ    R0,#+0
         BNE.N    ??getHighESpeed_3
-        LDR      R0,[R8, #+8]
-        CMP      R0,#+0
-        BNE.N    ??getHighESpeed_3
-        LDR      R0,[R8, #+12]
-        CMP      R0,#+0
-        BEQ.N    ??getHighESpeed_4
+        LDR      R0,[R5, #+12]
+        CBZ.N    R0,??getHighESpeed_4
 //  409         float se = (float)block->steps[E_AXIS] / block->step_event_count * block->nominal_speed; // mm/sec;
 ??getHighESpeed_3:
-        LDR      R0,[R8, #+16]
+        LDR      R0,[R5, #+16]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R9,R0
-        LDR      R0,[R8, #+20]
+        STR      R0,[SP, #+0]
+        LDR      R0,[R5, #+20]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R1,R0
-        MOV      R0,R9
+        LDR      R0,[SP, #+0]
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        LDR      R1,[R8, #+40]
+        LDR      R1,[R5, #+40]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R0
 //  410         NOLESS(high, se);
-        MOV      R0,R5
+        MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??getHighESpeed_4
-        MOV      R5,R1
+        IT       CC 
+        MOVCC    R11,R1
 //  411       }
 //  412     }
 ??getHighESpeed_4:
-        MOV      R0,R6
-        SXTB     R0,R0
-          CFI FunCall _ZN7Planner16next_block_indexEa
-        BL       _ZN7Planner16next_block_indexEa
-        MOV      R6,R0
-        UXTB     R6,R6
+        ADDS     R0,R4,#+1
+        AND      R4,R0,#0xF
 ??getHighESpeed_1:
-        LDRB     R0,[R7, #+0]
-        CMP      R6,R0
+        LDRB     R0,[R6, #+0]
+        CMP      R4,R0
         BNE.N    ??getHighESpeed_2
 //  413 
 //  414     float t = autotemp_min + high * autotemp_factor;
-        LDR      R0,[R7, #+96]
-        MOV      R1,R5
+        LDR      R0,[R6, #+96]
+        MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R4
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R2,R0
 //  415     t = constrain(t, autotemp_min, autotemp_max);
-        MOV      R1,R4
+        MOV      R1,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??getHighESpeed_5
-        MOV      R2,R4
-        B.N      ??getHighESpeed_6
-??getHighESpeed_5:
-        LDR      R0,[R7, #+88]
+        MOV      R2,R0
+        IT       CC 
+        MOVCC    R2,R8
+        BCC.N    ??getHighESpeed_5
+        LDR      R0,[R6, #+88]
         MOV      R1,R2
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??getHighESpeed_6
-        MOV      R2,R0
+        IT       CC 
+        MOVCC    R2,R0
 //  416     if (t < oldt) t = t * (1 - (AUTOTEMP_OLDWEIGHT)) + oldt * (AUTOTEMP_OLDWEIGHT);
-??getHighESpeed_6:
-        LDR      R6,[R7, #+124]
+??getHighESpeed_5:
+        LDR      R4,[R6, #+124]
         MOV      R0,R2
-        MOV      R1,R6
+        MOV      R1,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??getHighESpeed_7
+        BCS.N    ??getHighESpeed_6
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable12_11  ;; 0x47ae1480
-        LDR.N    R3,??DataTable12_12  ;; 0x3f947ae1
+        LDR.N    R2,??DataTable10_11  ;; 0x47ae1480
+        LDR.N    R3,??DataTable10_12  ;; 0x3f947ae1
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
-        MOV      R4,R0
-        MOV      R5,R1
-        MOV      R0,R6
+        MOV      R5,R0
+        MOV      R11,R1
+        MOV      R0,R4
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.N    R2,??DataTable12_13  ;; 0xf5c28f5c
-        LDR.N    R3,??DataTable12_14  ;; 0x3fef5c28
+        LDR.N    R2,??DataTable10_13  ;; 0xf5c28f5c
+        LDR.N    R3,??DataTable10_14  ;; 0x3fef5c28
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
-        MOV      R2,R4
-        MOV      R3,R5
+        MOV      R2,R5
+        MOV      R3,R11
           CFI FunCall __aeabi_dadd
         BL       __aeabi_dadd
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
         MOV      R2,R0
 //  417     oldt = t;
-??getHighESpeed_7:
-        STR      R2,[R7, #+124]
+??getHighESpeed_6:
+        STR      R2,[R6, #+124]
 //  418     thermalManager.setTargetHotend(t, 0);
-        MOVS     R1,#+0
         MOV      R0,R2
-        POP      {R2,R4-R9,LR}
+          CFI FunCall __aeabi_f2iz
+        BL       __aeabi_f2iz
+        STR      R0,[R7, #+0]
+        MOVS     R0,#+0
+        POP      {R1,R4-R11,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
           CFI R8 SameValue
           CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall _ZN11Temperature15setTargetHotendEfh
-        B.W      _ZN11Temperature15setTargetHotendEfh
-          CFI R4 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -8)
+          CFI FunCall _ZN11Temperature21start_watching_heaterEh
+        B.W      _ZN11Temperature21start_watching_heaterEh
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+32
+          CFI CFA R13+40
 ??getHighESpeed_0:
-        POP      {R0,R4-R9,PC}    ;; return
+        POP      {R0,R4-R11,PC}   ;; return
           CFI EndBlock cfiBlock12
 //  419   }
 
@@ -1540,11 +1815,6 @@ _ZN7Planner13filament_sizeE:
           CFI Function _ZN7Planner19check_axes_activityEv
         THUMB
 //  426 void Planner::check_axes_activity() {
-_ZN7Planner19check_axes_activityEv:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
 //  427   unsigned char axis_active[NUM_AXIS] = { 0 },
 //  428                 tail_fan_speed[FAN_COUNT];
 //  429 
@@ -1558,23 +1828,17 @@ _ZN7Planner19check_axes_activityEv:
 //  437   #endif
 //  438 
 //  439   if (blocks_queued()) {
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
+_ZN7Planner19check_axes_activityEv:
+        LDR.N    R0,??DataTable10_5
+        LDRB     R1,[R0, #+0]
+        LDRB     R2,[R0, #+1]
+        CMP      R1,R2
         BEQ.N    ??check_axes_activity_0
 //  440 
 //  441     #if FAN_COUNT > 0
 //  442       for (uint8_t i = 0; i < FAN_COUNT; i++)
-        MOVS     R0,#+0
-        LDR.N    R4,??DataTable12_6
-        B.N      ??check_axes_activity_1
 //  443         tail_fan_speed[i] = block_buffer[block_buffer_tail].fan_speed[i];
-??check_axes_activity_2:
-        MOVS     R0,#+1
-??check_axes_activity_1:
-        CMP      R0,#+0
-        LDRB     R0,[R4, #+1]
-        BEQ.N    ??check_axes_activity_2
+        LDRB     R1,[R0, #+1]
 //  444     #endif
 //  445 
 //  446     block_t* block;
@@ -1590,37 +1854,22 @@ _ZN7Planner19check_axes_activityEv:
 //  456     #endif
 //  457 
 //  458     for (uint8_t b = block_buffer_tail; b != block_buffer_head; b = next_block_index(b)) {
-        B.N      ??check_axes_activity_3
+        LDRB     R1,[R0, #+1]
+        B.N      ??check_axes_activity_1
 //  459       block = &block_buffer[b];
 //  460       LOOP_XYZE(i) if (block->steps[i]) axis_active[i]++;
-??check_axes_activity_4:
+??check_axes_activity_2:
         ADDS     R1,R1,#+1
-??check_axes_activity_5:
-        CMP      R1,#+4
-        BLT.N    ??check_axes_activity_4
-        SXTB     R0,R0
-          CFI FunCall _ZN7Planner16next_block_indexEa
-        BL       _ZN7Planner16next_block_indexEa
-        UXTB     R0,R0
-??check_axes_activity_3:
-        LDRB     R1,[R4, #+0]
-        CMP      R0,R1
-        BEQ.N    ??check_axes_activity_6
-        MOVS     R1,#+0
-        B.N      ??check_axes_activity_5
+        AND      R1,R1,#0xF
+??check_axes_activity_1:
+        LDRB     R2,[R0, #+0]
+        CMP      R1,R2
+        BNE.N    ??check_axes_activity_2
 //  461     }
 //  462   }
 //  463   else {
 //  464     #if FAN_COUNT > 0
 //  465       for (uint8_t i = 0; i < FAN_COUNT; i++) tail_fan_speed[i] = fanSpeeds[i];
-??check_axes_activity_0:
-        MOVS     R0,#+0
-        B.N      ??check_axes_activity_7
-??check_axes_activity_8:
-        MOVS     R0,#+1
-??check_axes_activity_7:
-        CMP      R0,#+0
-        BEQ.N    ??check_axes_activity_8
 //  466     #endif
 //  467 
 //  468     #if ENABLED(BARICUDA)
@@ -1706,11 +1955,7 @@ _ZN7Planner19check_axes_activityEv:
 //  548 
 //  549   #if ENABLED(AUTOTEMP)
 //  550     getHighESpeed();
-??check_axes_activity_6:
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
+??check_axes_activity_0:
           CFI FunCall _ZN7Planner13getHighESpeedEv
         B.N      _ZN7Planner13getHighESpeedEv
           CFI EndBlock cfiBlock13
@@ -1748,34 +1993,164 @@ _ZN7Planner19check_axes_activityEv:
         THUMB
 //  578   void Planner::calculate_volumetric_multipliers() {
 _ZN7Planner32calculate_volumetric_multipliersEv:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+36
+        SUB      SP,SP,#+20
+          CFI CFA R13+56
 //  579     for (uint8_t i = 0; i < COUNT(filament_size); i++) {
+        LDR.N    R0,??DataTable10_15
+        LDR.N    R5,??DataTable10_2  ;; 0x3ff00000
+        STR      R0,[SP, #+16]
+        ADD      R1,R0,#+12
+        ADDS     R0,R0,#+4
+        STR      R0,[SP, #+4]
+        MOVS     R6,#+0
+        LDR.N    R0,??DataTable10_16
+        STR      R0,[SP, #+12]
+        STR      R1,[SP, #+0]
         MOVS     R4,#+0
-        B.N      ??calculate_volumetric_multipliers_0
-??calculate_volumetric_multipliers_1:
-        LDR.N    R0,??DataTable12_15
-        ADD      R5,R0,R4, LSL #+2
-        ADD      R0,R5,#+12
+        LDR.N    R0,??DataTable10_17
+        LDRB     R0,[R0, #+0]
+        STRB     R0,[SP, #+8]
 //  580       volumetric_multiplier[i] = calculate_volumetric_multiplier(filament_size[i]);
-          CFI FunCall _Z31calculate_volumetric_multiplierRKf
-        BL       _Z31calculate_volumetric_multiplierRKf
-        STR      R0,[R5, #+4]
-//  581       refresh_e_factor(i);
-        MOV      R0,R4
-          CFI FunCall _ZN7Planner16refresh_e_factorEh
-        BL       _ZN7Planner16refresh_e_factorEh
-//  582     }
-        ADDS     R4,R4,#+1
 ??calculate_volumetric_multipliers_0:
-        CMP      R4,#+2
-        BCC.N    ??calculate_volumetric_multipliers_1
-//  583   }
-        POP      {R0,R4,R5,PC}    ;; return
+        LDRB     R0,[SP, #+8]
+        CMP      R0,#+0
+        BEQ.N    ??calculate_volumetric_multipliers_1
+        LDR      R0,[SP, #+0]
+        LDR      R0,[R0, #+0]
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmpeq
+        BL       __aeabi_cfcmpeq
+        BEQ.N    ??calculate_volumetric_multipliers_1
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOVS     R2,#+0
+        LDR.N    R3,??DataTable10_18  ;; 0x3fe00000
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R8,R0
+        MOV      R9,R1
+        MOVS     R7,#+2
+        MOV      R10,R4
+        MOV      R11,R5
+        B.N      ??calculate_volumetric_multipliers_2
+??calculate_volumetric_multipliers_3:
+        MOV      R0,R8
+        MOV      R1,R9
+        MOV      R2,R8
+        MOV      R3,R9
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R8,R0
+        MOV      R9,R1
+??calculate_volumetric_multipliers_2:
+        LSLS     R0,R7,#+31
+        BPL.N    ??calculate_volumetric_multipliers_4
+        MOV      R2,R8
+        MOV      R3,R9
+        MOV      R0,R10
+        MOV      R1,R11
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R10,R0
+        MOV      R11,R1
+??calculate_volumetric_multipliers_4:
+        LSRS     R7,R7,#+1
+        BNE.N    ??calculate_volumetric_multipliers_3
+        LDR.N    R0,??DataTable10_3  ;; 0x54442d18
+        LDR.N    R1,??DataTable10_4  ;; 0x400921fb
+        MOV      R2,R10
+        MOV      R3,R11
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R2,R0
+        MOV      R3,R1
+        MOVS     R0,#+0
+        MOV      R1,R5
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        B.N      ??calculate_volumetric_multipliers_5
+??calculate_volumetric_multipliers_1:
+        MOV      R0,#+1065353216
+??calculate_volumetric_multipliers_5:
+        LDR      R1,[SP, #+4]
+        STR      R0,[R1, #+0]
+//  581       refresh_e_factor(i);
+        LDR      R0,[SP, #+16]
+        ADDS     R0,R0,#+2
+        STR      R0,[SP, #+16]
+        SUBS     R0,R0,#+2
+        LDRSH    R0,[R0, R4]
+          CFI FunCall __aeabi_i2d
+        BL       __aeabi_i2d
+        LDR.N    R2,??DataTable10_19  ;; 0x47ae147b
+        LDR.N    R3,??DataTable10_20  ;; 0x3f847ae1
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R7,R0
+        LDR      R0,[SP, #+4]
+        ADDS     R0,R0,#+4
+        STR      R0,[SP, #+4]
+        MOV      R9,R1
+        SUBS     R0,R0,#+4
+        LDR      R0,[R0, #+0]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R7
+        MOV      R3,R9
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        LDR      R1,[SP, #+12]
+        ADDS     R1,R1,#+4
+        STR      R1,[SP, #+12]
+//  582     }
+        ADDS     R6,R6,#+1
+        STR      R0,[R1, #-4]!
+        LDR      R0,[SP, #+0]
+        ADDS     R0,R0,#+4
+        STR      R0,[SP, #+0]
+        CMP      R6,#+2
+        BCC.N    ??calculate_volumetric_multipliers_0
           CFI EndBlock cfiBlock14
+//  583   }
+        REQUIRE ?Subroutine1
+        ;; // Fall through to label ?Subroutine1
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock15 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN7Planner32calculate_volumetric_multipliersEv
+          CFI NoCalls _ZN7Planner29calculate_trapezoid_for_blockEP7block_tRKfS3_
+          CFI CFA R13+56
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine1:
+        ADD      SP,SP,#+20
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock15
 //  584 
 //  585 #endif // !NO_VOLUMETRICS
 //  586 
@@ -1805,7 +2180,7 @@ _ZN7Planner32calculate_volumetric_multipliersEv:
 //  610    */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function _ZN7Planner14apply_levelingERfS0_S0_
         THUMB
 //  611   void Planner::apply_leveling(float &rx, float &ry, float &rz) {
@@ -1816,48 +2191,48 @@ _ZN7Planner14apply_levelingERfS0_S0_:
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        SUB      SP,SP,#+40
-          CFI CFA R13+56
         MOV      R4,R0
-        MOV      R5,R1
-        MOV      R6,R2
 //  612 
 //  613     #if ENABLED(SKEW_CORRECTION)
 //  614       skew(rx, ry, rz);
 //  615     #endif
 //  616 
 //  617     if (!leveling_active) return;
-        LDR.N    R0,??DataTable12_16
+        LDR.N    R0,??DataTable10_21
         LDRB     R0,[R0, #+0]
+        SUB      SP,SP,#+40
+          CFI CFA R13+56
+        MOV      R5,R1
+        MOV      R6,R2
         CMP      R0,#+0
         BEQ.N    ??apply_leveling_0
+        LDR.N    R0,??DataTable10_22
+        LDRB     R0,[R0, #+66]
+        MOVS     R1,#+6
+        TST      R0,R1
+        BEQ.N    ??apply_leveling_1
 //  618 
 //  619     //#if ABL_PLANAR
 //  620     if(BED_LEVELING_METHOD & ABL_PLANAR)
-        LDR.N    R0,??DataTable12_5
-        LDRB     R1,[R0, #+64]
-        MOVS     R2,#+6
-        TST      R1,R2
-        BEQ.N    ??apply_leveling_1
 //  621     {
 //  622       float dx = rx - (X_TILT_FULCRUM),
         LDR      R0,[R4, #+0]
-        STR      R0,[SP, #+36]
 //  623             dy = ry - (Y_TILT_FULCRUM);
-        LDR      R0,[R5, #+0]
-        STR      R0,[SP, #+32]
 //  624 
 //  625       apply_rotation_xyz(bed_level_matrix, dx, dy, rz);
+        LDR.N    R1,??DataTable10_6
+        STR      R0,[SP, #+36]
+        MOVS     R2,#+36
+        LDR      R0,[R5, #+0]
+        STR      R0,[SP, #+32]
         STR      R6,[SP, #+28]
         ADD      R0,SP,#+32
         STR      R0,[SP, #+24]
         ADD      R0,SP,#+36
         STR      R0,[SP, #+20]
-        LDR.N    R1,??DataTable12_7
         SUB      SP,SP,#+16
           CFI CFA R13+72
         MOV      R0,SP
-        MOVS     R2,#+36
           CFI FunCall __aeabi_memcpy4
         BL       __aeabi_memcpy4
         POP      {R0-R3}
@@ -1871,7 +2246,6 @@ _ZN7Planner14apply_levelingERfS0_S0_:
 //  628       ry = dy + Y_TILT_FULCRUM;
         LDR      R0,[SP, #+32]
         STR      R0,[R5, #+0]
-        B.N      ??apply_leveling_0
 //  629     }
 //  630     //#else
 //  631     else
@@ -1883,32 +2257,16 @@ _ZN7Planner14apply_levelingERfS0_S0_:
 //  637       #else
 //  638         float fade_scaling_factor;
 //  639         if(BED_LEVELING_METHOD & HAS_MESH)
-??apply_leveling_1:
-        MOVS     R2,#+56
-        TST      R1,R2
-        BEQ.N    ??apply_leveling_2
 //  640             fade_scaling_factor = 1.0;
-        MOV      R1,#+1065353216
-        STR      R1,[SP, #+0]
 //  641       #endif
 //  642 
 //  643       //#if ENABLED(AUTO_BED_LEVELING_BILINEAR)
 //  644       float raw[XYZ];
 //  645       if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_BILINEAR)
-??apply_leveling_2:
-        LDRB     R1,[R0, #+64]
-        LSLS     R1,R1,#+28
-        BPL.N    ??apply_leveling_3
 //  646       {
 //  647         raw[0] = rx;
-        LDR      R1,[R4, #+0]
-        STR      R1,[SP, #+4]
 //  648         raw[1] = ry;
-        LDR      R1,[R5, #+0]
-        STR      R1,[SP, #+8]
 //  649         raw[2] = 0;
-        MOVS     R1,#+0
-        STR      R1,[SP, #+12]
 //  650       }
 //  651       //#endif
 //  652 /*
@@ -1929,29 +2287,51 @@ _ZN7Planner14apply_levelingERfS0_S0_:
 //  667       );
 //  668 */        
 //  669         if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_UBL)
-??apply_leveling_3:
-        LDRB     R0,[R0, #+64]
-        LSLS     R1,R0,#+27
-        BPL.N    ??apply_leveling_4
 //  670             rz += (ubl.get_z_correction(rx, ry) * fade_scaling_factor);
+//  671         else if(BED_LEVELING_METHOD & MESH_BED_LEVELING)
+//  672             #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
+//  673             rz += ( mbl.get_z(rx, ry,fade_scaling_factor));
+//  674             #else
+//  675             rz += ( mbl.get_z(rx, ry));
+//  676             #endif
+//  677         else if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_BILINEAR)
+//  678             rz += bilinear_z_offset(raw) * fade_scaling_factor;
+//  679         else
+//  680             rz += 0;
+//  681         //#endif
+//  682     }
+//  683     //#endif
+//  684   }
+        ADD      SP,SP,#+40
+          CFI CFA R13+16
+        POP      {R4-R6,PC}
+          CFI CFA R13+56
+??apply_leveling_1:
+        MOVS     R1,#+56
+        TST      R0,R1
+        ITT      NE 
+        MOVNE    R1,#+1065353216
+        STRNE    R1,[SP, #+0]
+        ANDS     R1,R0,#0x8
+        BEQ.N    ??apply_leveling_2
+        LDR      R2,[R4, #+0]
+        STR      R2,[SP, #+4]
+        LDR      R2,[R5, #+0]
+        STR      R2,[SP, #+8]
+        MOVS     R2,#+0
+        STR      R2,[SP, #+12]
+??apply_leveling_2:
+        LSLS     R2,R0,#+27
+        BPL.N    ??apply_leveling_3
         MOV      R1,R5
         MOV      R0,R4
           CFI FunCall _ZN20unified_bed_leveling16get_z_correctionERKfS1_
         BL       _ZN20unified_bed_leveling16get_z_correctionERKfS1_
         LDR      R1,[SP, #+0]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        LDR      R1,[R6, #+0]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        STR      R0,[R6, #+0]
-        B.N      ??apply_leveling_0
-//  671         else if(BED_LEVELING_METHOD & MESH_BED_LEVELING)
-??apply_leveling_4:
-        LSLS     R1,R0,#+26
+        B.N      ??apply_leveling_4
+??apply_leveling_3:
+        LSLS     R0,R0,#+26
         BPL.N    ??apply_leveling_5
-//  672             #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
-//  673             rz += ( mbl.get_z(rx, ry,fade_scaling_factor));
         ADD      R2,SP,#+0
         MOV      R1,R5
         MOV      R0,R4
@@ -1959,48 +2339,31 @@ _ZN7Planner14apply_levelingERfS0_S0_:
         BL       _ZN17mesh_bed_leveling5get_zERKfS1_S1_
         MOV      R1,R0
         LDR      R0,[R6, #+0]
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        STR      R0,[R6, #+0]
-        B.N      ??apply_leveling_0
-//  674             #else
-//  675             rz += ( mbl.get_z(rx, ry));
-//  676             #endif
-//  677         else if(BED_LEVELING_METHOD & AUTO_BED_LEVELING_BILINEAR)
+        B.N      ??apply_leveling_6
 ??apply_leveling_5:
-        LSLS     R0,R0,#+28
-        BPL.N    ??apply_leveling_6
-//  678             rz += bilinear_z_offset(raw) * fade_scaling_factor;
+        CBZ.N    R1,??apply_leveling_0
         ADD      R0,SP,#+4
           CFI FunCall _Z17bilinear_z_offsetPKf
         BL       _Z17bilinear_z_offsetPKf
         MOV      R1,R0
         LDR      R0,[SP, #+0]
+??apply_leveling_4:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         LDR      R1,[R6, #+0]
+??apply_leveling_6:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         STR      R0,[R6, #+0]
-        B.N      ??apply_leveling_0
-//  679         else
-//  680             rz += 0;
-??apply_leveling_6:
-        LDR      R0,[R6, #+0]
-        STR      R0,[R6, #+0]
-//  681         //#endif
-//  682     }
-//  683     //#endif
-//  684   }
 ??apply_leveling_0:
         ADD      SP,SP,#+40
           CFI CFA R13+16
         POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock15
+          CFI EndBlock cfiBlock16
 //  685 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock17 Using cfiCommon0
           CFI Function _ZN7Planner16unapply_levelingEPf
         THUMB
 //  686   void Planner::unapply_leveling(float raw[XYZ]) {
@@ -2022,12 +2385,12 @@ _ZN7Planner16unapply_levelingEPf:
 //  692     #endif
 //  693 
 //  694     if (leveling_active && fade_scaling_factor) {
-        LDR.N    R0,??DataTable12_16
+        LDR.N    R0,??DataTable10_21
         LDRB     R0,[R0, #+0]
         CMP      R0,#+0
         BEQ.N    ??unapply_leveling_0
-        LDR.N    R0,??DataTable12_5
-        LDRB     R0,[R0, #+64]
+        LDR.N    R0,??DataTable10_22
+        LDRB     R0,[R0, #+66]
         MOVS     R1,#+6
         TST      R0,R1
         BEQ.N    ??unapply_leveling_1
@@ -2036,9 +2399,9 @@ _ZN7Planner16unapply_levelingEPf:
 //  697       if(BED_LEVELING_METHOD & ABL_PLANAR)
 //  698       {
 //  699         matrix_3x3 inverse = matrix_3x3::transpose(bed_level_matrix);
-        LDR.N    R1,??DataTable12_7
         SUB      SP,SP,#+12
           CFI CFA R13+100
+        LDR.N    R1,??DataTable10_6
         MOV      R0,SP
         MOVS     R2,#+36
           CFI FunCall __aeabi_memcpy4
@@ -2053,21 +2416,21 @@ _ZN7Planner16unapply_levelingEPf:
         LDR      R0,[R4, #+0]
         STR      R0,[SP, #+36]
 //  702               dy = raw[Y_AXIS] - (Y_TILT_FULCRUM);
-        LDR      R0,[R4, #+4]
-        STR      R0,[SP, #+32]
 //  703 
 //  704         apply_rotation_xyz(inverse, dx, dy, raw[Z_AXIS]);
+        ADD      R1,SP,#+44
+        LDR      R0,[R4, #+4]
+        STR      R0,[SP, #+32]
+        MOVS     R2,#+36
         ADD      R0,R4,#+8
         STR      R0,[SP, #+28]
         ADD      R0,SP,#+32
         STR      R0,[SP, #+24]
         ADD      R0,SP,#+36
         STR      R0,[SP, #+20]
-        ADD      R1,SP,#+44
         SUB      SP,SP,#+16
           CFI CFA R13+104
         MOV      R0,SP
-        MOVS     R2,#+36
           CFI FunCall __aeabi_memcpy4
         BL       __aeabi_memcpy4
         POP      {R0-R3}
@@ -2081,35 +2444,15 @@ _ZN7Planner16unapply_levelingEPf:
 //  707         raw[Y_AXIS] = dy + Y_TILT_FULCRUM;
         LDR      R0,[SP, #+32]
         STR      R0,[R4, #+4]
-        B.N      ??unapply_leveling_0
 //  708       }
 //  709       //#else // !ABL_PLANAR
 //  710       else
 //  711       {
 //  712         if((BED_LEVELING_METHOD == AUTO_BED_LEVELING_UBL))
-??unapply_leveling_1:
-        CMP      R0,#+16
-        BNE.N    ??unapply_leveling_2
 //  713         {
 //  714           raw[Z_AXIS] -= (ubl.get_z_correction(raw[X_AXIS], raw[Y_AXIS]) * fade_scaling_factor);
-        ADDS     R1,R4,#+4
-        MOV      R0,R4
-          CFI FunCall _ZN20unified_bed_leveling16get_z_correctionERKfS1_
-        BL       _ZN20unified_bed_leveling16get_z_correctionERKfS1_
-        LDR      R1,[SP, #+40]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R0
-        LDR      R0,[R4, #+8]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        STR      R0,[R4, #+8]
-        B.N      ??unapply_leveling_0
 //  715         }
 //  716         else if((BED_LEVELING_METHOD == MESH_BED_LEVELING))
-??unapply_leveling_2:
-        CMP      R0,#+32
-        BNE.N    ??unapply_leveling_3
 //  717         {
 //  718             
 //  719             raw[Z_AXIS] -= mbl.get_z(raw[X_AXIS], raw[Y_AXIS]
@@ -2117,44 +2460,14 @@ _ZN7Planner16unapply_levelingEPf:
 //  721                 , fade_scaling_factor
 //  722               #endif
 //  723             );
-        ADD      R2,SP,#+40
-        ADDS     R1,R4,#+4
-        MOV      R0,R4
-          CFI FunCall _ZN17mesh_bed_leveling5get_zERKfS1_S1_
-        BL       _ZN17mesh_bed_leveling5get_zERKfS1_S1_
-        MOV      R1,R0
-        LDR      R0,[R4, #+8]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        STR      R0,[R4, #+8]
-        B.N      ??unapply_leveling_0
 //  724         }
 //  725         else if((BED_LEVELING_METHOD == AUTO_BED_LEVELING_BILINEAR))
-??unapply_leveling_3:
-        CMP      R0,#+8
-        BNE.N    ??unapply_leveling_4
 //  726         {
 //  727             raw[Z_AXIS] -= (bilinear_z_offset(raw) * fade_scaling_factor);
-        MOV      R0,R4
-          CFI FunCall _Z17bilinear_z_offsetPKf
-        BL       _Z17bilinear_z_offsetPKf
-        MOV      R1,R0
-        LDR      R0,[SP, #+40]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R0
-        LDR      R0,[R4, #+8]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        STR      R0,[R4, #+8]
-        B.N      ??unapply_leveling_0
 //  728         }
 //  729         else
 //  730         {
 //  731             raw[Z_AXIS] -= 0;
-??unapply_leveling_4:
-        LDR      R0,[R4, #+8]
-        STR      R0,[R4, #+8]
 //  732         }
 //  733         /*
 //  734         raw[Z_AXIS] -= (
@@ -2181,113 +2494,188 @@ _ZN7Planner16unapply_levelingEPf:
 //  755       unskew(raw[X_AXIS], raw[Y_AXIS], raw[Z_AXIS]);
 //  756     #endif
 //  757   }
+        ADD      SP,SP,#+80
+          CFI CFA R13+8
+        POP      {R4,PC}
+          CFI CFA R13+88
+??unapply_leveling_1:
+        CMP      R0,#+16
+        BNE.N    ??unapply_leveling_2
+        ADDS     R1,R4,#+4
+        MOV      R0,R4
+          CFI FunCall _ZN20unified_bed_leveling16get_z_correctionERKfS1_
+        BL       _ZN20unified_bed_leveling16get_z_correctionERKfS1_
+        LDR      R1,[SP, #+40]
+        B.N      ??unapply_leveling_3
+??unapply_leveling_2:
+        CMP      R0,#+32
+        BNE.N    ??unapply_leveling_4
+        ADD      R2,SP,#+40
+        ADDS     R1,R4,#+4
+        MOV      R0,R4
+          CFI FunCall _ZN17mesh_bed_leveling5get_zERKfS1_S1_
+        BL       _ZN17mesh_bed_leveling5get_zERKfS1_S1_
+        B.N      ??unapply_leveling_5
+??unapply_leveling_4:
+        CMP      R0,#+8
+        BNE.N    ??unapply_leveling_0
+        MOV      R0,R4
+          CFI FunCall _Z17bilinear_z_offsetPKf
+        BL       _Z17bilinear_z_offsetPKf
+        MOV      R1,R0
+        LDR      R0,[SP, #+40]
+??unapply_leveling_3:
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+??unapply_leveling_5:
+        MOV      R1,R0
+        LDR      R0,[R4, #+8]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[R4, #+8]
 ??unapply_leveling_0:
         ADD      SP,SP,#+80
           CFI CFA R13+8
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock16
+          CFI EndBlock cfiBlock17
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12:
+??DataTable10:
         DC32     _ZN7Planner23volumetric_area_nominalE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_1:
+??DataTable10_1:
         DC32     0x3ff80000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_2:
+??DataTable10_2:
         DC32     0x3ff00000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_3:
+??DataTable10_3:
         DC32     0x54442d18
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_4:
+??DataTable10_4:
         DC32     0x400921fb
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_5:
-        DC32     mksCfg
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable12_6:
+??DataTable10_5:
         DC32     _ZN7Planner17block_buffer_headE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_7:
+??DataTable10_6:
         DC32     _ZN7Planner16bed_level_matrixE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_8:
+??DataTable10_7:
         DC32     _ZN7Planner12block_bufferE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_9:
+??DataTable10_8:
         DC32     0x9999999a
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_10:
+??DataTable10_9:
         DC32     0x3fa99999
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_11:
+??DataTable10_10:
+        DC32     _ZN11Temperature18target_temperatureE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable10_11:
         DC32     0x47ae1480
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_12:
+??DataTable10_12:
         DC32     0x3f947ae1
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_13:
+??DataTable10_13:
         DC32     0xf5c28f5c
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_14:
+??DataTable10_14:
         DC32     0x3fef5c28
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_15:
+??DataTable10_15:
         DC32     _ZN7Planner15flow_percentageE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable12_16:
+??DataTable10_16:
+        DC32     _ZN7Planner17block_buffer_headE+0x50
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable10_17:
+        DC32     _ZN11GCodeParser18volumetric_enabledE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable10_18:
+        DC32     0x3fe00000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable10_19:
+        DC32     0x47ae147b
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable10_20:
+        DC32     0x3f847ae1
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable10_21:
         DC32     _ZN7Planner15leveling_activeE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable10_22:
+        DC32     mksCfg
 //  758 
 //  759 #endif // PLANNER_LEVELING
 //  760 
@@ -2301,8 +2689,8 @@ _ZN7Planner16unapply_levelingEPf:
 //  768  *  extruder    - target extruder
 //  769  */
 
-        SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock17 Using cfiCommon0
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock18 Using cfiCommon0
           CFI Function _ZN7Planner13_buffer_stepsERA4_Kifh
         THUMB
 //  770 void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const uint8_t extruder) {
@@ -2318,30 +2706,30 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+48
-        SUB      SP,SP,#+64
-          CFI CFA R13+112
 //  771 
 //  772   const int32_t da = target[X_AXIS] - position[X_AXIS],
-        LDR.W    R4,??_buffer_steps_0
-        LDR      R0,[R0, #+0]
+        LDR.W    R4,??DataTable11
         LDR      R1,[R4, #+64]
-        SUBS     R5,R0,R1
+        SUB      SP,SP,#+72
+          CFI CFA R13+120
+        LDR      R0,[R0, #+0]
+        SUB      R10,R0,R1
 //  773                 db = target[Y_AXIS] - position[Y_AXIS],
-        LDR      R0,[SP, #+64]
-        LDR      R0,[R0, #+4]
+        LDR      R0,[SP, #+72]
         LDR      R1,[R4, #+68]
+        LDR      R0,[R0, #+4]
         SUB      R8,R0,R1
 //  774                 dc = target[Z_AXIS] - position[Z_AXIS];
-        LDR      R0,[SP, #+64]
-        LDR      R0,[R0, #+8]
+        LDR      R0,[SP, #+72]
         LDR      R1,[R4, #+72]
+        LDR      R0,[R0, #+8]
         SUB      R9,R0,R1
 //  775 
 //  776   int32_t de = target[E_AXIS] - position[E_AXIS];
-        LDR      R0,[SP, #+64]
-        LDR      R0,[R0, #+12]
-        LDR      R1,[R4, #+76]
-        SUBS     R7,R0,R1
+        LDR      R0,[SP, #+72]
+        LDR      R6,[R0, #+12]
+        LDR      R0,[R4, #+76]
+        SUBS     R5,R6,R0
 //  777 
 //  778 
 //  779   /* <-- add a slash to enable
@@ -2361,37 +2749,60 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  793   // Otherwise it's done in _buffer_segment.
 //  794   #if DISABLED(LIN_ADVANCE) && (ENABLED(PREVENT_COLD_EXTRUSION) || ENABLED(PREVENT_LENGTHY_EXTRUDE))
 //  795     if (de) {
-        BEQ.N    ??_buffer_steps_1
+        BEQ.N    ??_buffer_steps_0
 //  796       #if ENABLED(PREVENT_COLD_EXTRUSION)
 //  797         if (thermalManager.tooColdToExtrude(extruder)) {
-        MOV      R0,R2
-          CFI FunCall _ZN11Temperature16tooColdToExtrudeEh
-        BL       _ZN11Temperature16tooColdToExtrudeEh
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_2
+        LDR.W    R0,??DataTable11_1
+        LDRB     R0,[R0, #+0]
+        MOV      R7,R2
+        CBNZ.N   R0,??_buffer_steps_1
+        LDR.W    R0,??DataTable11_2
+        LDRSH    R0,[R0, #+0]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R0
+        LDR.W    R0,??DataTable11_3
+        LDR      R0,[R0, R7, LSL #+2]
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.N    ??_buffer_steps_1
 //  798           position[E_AXIS] = target[E_AXIS]; // Behave as if the move really took place, but ignore E part
-        LDR      R0,[SP, #+64]
-        LDR      R0,[R0, #+12]
-        STR      R0,[R4, #+76]
+        STR      R6,[R4, #+76]
 //  799           de = 0; // no difference
-        MOVS     R7,#+0
+        MOVS     R5,#+0
 //  800           SERIAL_ECHO_START();
-        LDR.W    R0,??_buffer_steps_0+0x4
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R6,??DataTable11_4
+        LDR.W    R11,??DataTable11_5
+        B.N      ??_buffer_steps_2
+??_buffer_steps_3:
+        UXTB     R1,R1
+        MOV      R0,R11
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_buffer_steps_2:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??_buffer_steps_3
 //  801           SERIAL_ECHOLNPGM(MSG_ERR_COLD_EXTRUDE_STOP);
-        LDR.W    R0,??_buffer_steps_0+0x8
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R6,??DataTable11_6
+        B.N      ??_buffer_steps_4
+??_buffer_steps_5:
+        UXTB     R1,R1
+        MOV      R0,R11
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_buffer_steps_4:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??_buffer_steps_5
 //  802         }
 //  803       #endif // PREVENT_COLD_EXTRUSION
 //  804       #if ENABLED(PREVENT_LENGTHY_EXTRUDE)
 //  805         if (labs(de * e_factor[extruder]) > (int32_t)axis_steps_per_mm[E_AXIS_N] * (EXTRUDE_MAXLENGTH)) { // It's not important to get max. extrusion length in a precision < 1mm, so save some cycles and cast to int
-??_buffer_steps_2:
-        LDRB     R0,[SP, #+72]
-        ADD      R0,R4,R0, LSL #+2
+??_buffer_steps_1:
+        ADD      R0,R4,R7, LSL #+2
         STR      R0,[SP, #+4]
-        MOV      R0,R7
+        MOV      R0,R5
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[SP, #+4]
@@ -2400,9 +2811,9 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         BL       __aeabi_fmul
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-          CFI FunCall labs
-        BL       labs
-        MOV      R6,R0
+        MOVS     R6,R0
+        IT       MI 
+        RSBMI    R6,R6,#+0
         LDR      R0,[SP, #+4]
         LDR      R0,[R0, #+16]
           CFI FunCall __aeabi_f2iz
@@ -2410,21 +2821,38 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         MOV      R1,#+1000
         MULS     R0,R1,R0
         CMP      R0,R6
-        BGE.N    ??_buffer_steps_1
+        BGE.N    ??_buffer_steps_0
 //  806           position[E_AXIS] = target[E_AXIS]; // Behave as if the move really took place, but ignore E part
-        LDR      R0,[SP, #+64]
-        LDR      R0,[R0, #+12]
-        STR      R0,[R4, #+76]
+        LDR      R0,[SP, #+72]
 //  807           de = 0; // no difference
-        MOVS     R7,#+0
 //  808           SERIAL_ECHO_START();
-        LDR.W    R0,??_buffer_steps_0+0x4
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R6,??DataTable11_4
+        LDR      R0,[R0, #+12]
+        LDR.W    R7,??DataTable11_5
+        STR      R0,[R4, #+76]
+        MOVS     R5,#+0
+        B.N      ??_buffer_steps_6
+??_buffer_steps_7:
+        UXTB     R1,R1
+        MOV      R0,R7
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_buffer_steps_6:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??_buffer_steps_7
 //  809           SERIAL_ECHOLNPGM(MSG_ERR_LONG_EXTRUDE_STOP);
-        LDR.W    R0,??_buffer_steps_3
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R6,??DataTable11_7
+        B.N      ??_buffer_steps_8
+??_buffer_steps_9:
+        UXTB     R1,R1
+        MOV      R0,R7
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_buffer_steps_8:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??_buffer_steps_9
 //  810         }
 //  811       #endif // PREVENT_LENGTHY_EXTRUDE
 //  812     }
@@ -2432,149 +2860,137 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  814 
 //  815   // Compute direction bit-mask for this block
 //  816   uint8_t dm = 0;
-??_buffer_steps_1:
-        MOVS     R6,#+0
-        LDR.W    R0,??_buffer_steps_3+0x4
+??_buffer_steps_0:
+        LDR.W    R0,??DataTable11_8
         LDRSH    R1,[R0, #+88]
+        MOVS     R6,#+0
         MOVS     R2,#+12
         TST      R1,R2
-        BEQ.N    ??_buffer_steps_4
+        BEQ.N    ??_buffer_steps_10
 //  817   //#if CORE_IS_XY
 //  818   if(MACHINETPYE & CORE_IS_XY)
 //  819   {
 //  820     if (da < 0) SBI(dm, X_HEAD);                // Save the real Extruder (head) direction in X Axis
-        CMP      R5,#+0
-        BPL.N    ??_buffer_steps_5
-        MOVS     R6,#+16
+        CMP      R10,#+0
+        IT       MI 
+        MOVMI    R6,#+16
 //  821     if (db < 0) SBI(dm, Y_HEAD);                // ...and Y
-??_buffer_steps_5:
         CMP      R8,#+0
-        BPL.N    ??_buffer_steps_6
-        ORR      R6,R6,#0x20
+        IT       MI 
+        ORRMI    R6,R6,#0x20
 //  822     if (dc < 0) SBI(dm, Z_AXIS);
-??_buffer_steps_6:
         CMP      R9,#+0
-        BPL.N    ??_buffer_steps_7
-        ORR      R6,R6,#0x4
+        IT       MI 
+        ORRMI    R6,R6,#0x4
 //  823     if (da + db < 0) SBI(dm, A_AXIS);           // Motor A direction
-??_buffer_steps_7:
-        ADDS     R0,R8,R5
-        BPL.N    ??_buffer_steps_8
-        ORR      R6,R6,#0x1
+        ADDS     R0,R8,R10
+        IT       MI 
+        ORRMI    R6,R6,#0x1
 //  824     if (CORESIGN(da - db) < 0) SBI(dm, B_AXIS); // Motor B direction
-??_buffer_steps_8:
-        SUB      R0,R5,R8
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-        CMP      R0,#+0
-        BPL.N    ??_buffer_steps_9
+        MOVS     R3,#+168
+        SUB      R2,R10,R8
+        TST      R1,R3
+        IT       NE 
+        RSBNE    R2,R2,#+0
+        CMP      R2,#+0
+        BPL.N    ??_buffer_steps_11
         ORR      R6,R6,#0x2
-        B.N      ??_buffer_steps_9
+        B.N      ??_buffer_steps_11
 //  825   }
 //  826   //#elif CORE_IS_XZ
 //  827   else if(MACHINETPYE & CORE_IS_XZ)
-??_buffer_steps_4:
+??_buffer_steps_10:
         MOVS     R2,#+48
         TST      R1,R2
-        BEQ.N    ??_buffer_steps_10
+        BEQ.N    ??_buffer_steps_12
 //  828   {
 //  829     if (da < 0) SBI(dm, X_HEAD);                // Save the real Extruder (head) direction in X Axis
-        CMP      R5,#+0
-        BPL.N    ??_buffer_steps_11
-        MOVS     R6,#+16
+        CMP      R10,#+0
+        IT       MI 
+        MOVMI    R6,#+16
 //  830     if (db < 0) SBI(dm, Y_AXIS);
-??_buffer_steps_11:
         CMP      R8,#+0
-        BPL.N    ??_buffer_steps_12
-        ORR      R6,R6,#0x2
+        IT       MI 
+        ORRMI    R6,R6,#0x2
 //  831     if (dc < 0) SBI(dm, Z_HEAD);                // ...and Z
-??_buffer_steps_12:
         CMP      R9,#+0
-        BPL.N    ??_buffer_steps_13
-        ORR      R6,R6,#0x40
+        IT       MI 
+        ORRMI    R6,R6,#0x40
 //  832     if (da + dc < 0) SBI(dm, A_AXIS);           // Motor A direction
-??_buffer_steps_13:
-        ADDS     R0,R9,R5
-        BPL.N    ??_buffer_steps_14
-        ORR      R6,R6,#0x1
+        ADDS     R0,R9,R10
+        IT       MI 
+        ORRMI    R6,R6,#0x1
 //  833     if (CORESIGN(da - dc) < 0) SBI(dm, C_AXIS); // Motor C direction
-??_buffer_steps_14:
-        SUB      R0,R5,R9
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-        CMP      R0,#+0
-        BPL.N    ??_buffer_steps_9
-        ORR      R6,R6,#0x4
-        B.N      ??_buffer_steps_9
+        MOVS     R3,#+168
+        SUB      R2,R10,R9
+        TST      R1,R3
+        IT       NE 
+        RSBNE    R2,R2,#+0
 //  834   }
+        CMP      R2,#+0
+        B.N      ??_buffer_steps_13
 //  835   //#elif CORE_IS_YZ
 //  836   else if(MACHINETPYE & CORE_IS_YZ)
-??_buffer_steps_10:
-        MOVS     R0,#+192
-        TST      R1,R0
-        BEQ.N    ??_buffer_steps_15
+??_buffer_steps_12:
+        MOVS     R2,#+192
+        TST      R1,R2
+        BEQ.N    ??_buffer_steps_14
 //  837   {
 //  838     if (da < 0) SBI(dm, X_AXIS);
-        CMP      R5,#+0
-        BPL.N    ??_buffer_steps_16
-        MOVS     R6,#+1
+        CMP      R10,#+0
+        IT       MI 
+        MOVMI    R6,#+1
 //  839     if (db < 0) SBI(dm, Y_HEAD);                // Save the real Extruder (head) direction in Y Axis
-??_buffer_steps_16:
         CMP      R8,#+0
-        BPL.N    ??_buffer_steps_17
-        ORR      R6,R6,#0x20
+        IT       MI 
+        ORRMI    R6,R6,#0x20
 //  840     if (dc < 0) SBI(dm, Z_HEAD);                // ...and Z
-??_buffer_steps_17:
         CMP      R9,#+0
-        BPL.N    ??_buffer_steps_18
-        ORR      R6,R6,#0x40
+        IT       MI 
+        ORRMI    R6,R6,#0x40
 //  841     if (db + dc < 0) SBI(dm, B_AXIS);           // Motor B direction
-??_buffer_steps_18:
         ADDS     R0,R9,R8
-        BPL.N    ??_buffer_steps_19
-        ORR      R6,R6,#0x2
+        IT       MI 
+        ORRMI    R6,R6,#0x2
 //  842     if (CORESIGN(db - dc) < 0) SBI(dm, C_AXIS); // Motor C direction
-??_buffer_steps_19:
-        SUB      R0,R8,R9
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-        CMP      R0,#+0
-        BPL.N    ??_buffer_steps_9
-        ORR      R6,R6,#0x4
-        B.N      ??_buffer_steps_9
+        MOVS     R3,#+168
+        SUB      R2,R8,R9
+        TST      R1,R3
+        IT       NE 
+        RSBNE    R2,R2,#+0
 //  843   }
+        CMP      R2,#+0
+        B.N      ??_buffer_steps_13
 //  844   //#else
 //  845   else
 //  846   {
 //  847     if (da < 0) SBI(dm, X_AXIS);
-??_buffer_steps_15:
-        CMP      R5,#+0
-        BPL.N    ??_buffer_steps_20
-        MOVS     R6,#+1
+??_buffer_steps_14:
+        CMP      R10,#+0
+        IT       MI 
+        MOVMI    R6,#+1
 //  848     if (db < 0) SBI(dm, Y_AXIS);
-??_buffer_steps_20:
         CMP      R8,#+0
-        BPL.N    ??_buffer_steps_21
-        ORR      R6,R6,#0x2
+        IT       MI 
+        ORRMI    R6,R6,#0x2
 //  849     if (dc < 0) SBI(dm, Z_AXIS);
-??_buffer_steps_21:
         CMP      R9,#+0
-        BPL.N    ??_buffer_steps_9
-        ORR      R6,R6,#0x4
+??_buffer_steps_13:
+        IT       MI 
+        ORRMI    R6,R6,#0x4
 //  850   }
 //  851   //#endif
 //  852   if (de < 0) SBI(dm, E_AXIS);
-??_buffer_steps_9:
-        CMP      R7,#+0
-        BPL.N    ??_buffer_steps_22
-        ORR      R6,R6,#0x8
+??_buffer_steps_11:
+        CMP      R5,#+0
+        IT       MI 
+        ORRMI    R6,R6,#0x8
 //  853 
 //  854   const float esteps_float = de * e_factor[extruder];
-??_buffer_steps_22:
-        LDRB     R0,[SP, #+72]
-        ADD      R0,R4,R0, LSL #+2
+        LDRB     R7,[SP, #+80]
+        ADD      R0,R4,R7, LSL #+2
         STR      R0,[SP, #+4]
-        MOV      R0,R7
+        MOV      R0,R5
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[SP, #+4]
@@ -2587,7 +3003,7 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOVS     R2,#+0
-        LDR.W    R3,??DataTable13  ;; 0x3fe00000
+        LDR.W    R3,??DataTable11_9  ;; 0x3fe00000
           CFI FunCall __aeabi_dadd
         BL       __aeabi_dadd
           CFI FunCall __aeabi_d2iz
@@ -2597,29 +3013,29 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  857   // Calculate the buffer head after we push this byte
 //  858   const uint8_t next_buffer_head = next_block_index(block_buffer_head);
         LDRSB    R0,[R4, #+0]
-          CFI FunCall _ZN7Planner16next_block_indexEa
-        BL       _ZN7Planner16next_block_indexEa
-        UXTB     R0,R0
-        STR      R0,[SP, #+16]
-        B.N      ??_buffer_steps_23
+        ADDS     R0,R0,#+1
+        AND      R0,R0,#0xF
+        STR      R0,[SP, #+24]
+        B.N      ??_buffer_steps_15
 //  859 
 //  860   // If the buffer is full: good! That means we are well ahead of the robot.
 //  861   // Rest here until there is room in the buffer.
 //  862   while (block_buffer_tail == next_buffer_head) idle();
-??_buffer_steps_24:
+??_buffer_steps_16:
           CFI FunCall _Z4idlev
         BL       _Z4idlev
-??_buffer_steps_23:
+??_buffer_steps_15:
         LDRB     R0,[R4, #+1]
-        LDR      R1,[SP, #+16]
+        LDR      R1,[SP, #+24]
+        UXTB     R1,R1
         CMP      R0,R1
-        BEQ.N    ??_buffer_steps_24
+        BEQ.N    ??_buffer_steps_16
 //  863 
 //  864   // Prepare to set up new block
 //  865   block_t* block = &block_buffer[block_buffer_head];
-        LDRB     R0,[R4, #+0]
         MOVS     R1,#+84
-        LDR.W    R2,??DataTable13_1
+        LDRB     R0,[R4, #+0]
+        LDR.W    R2,??DataTable11_10
         MLA      R7,R1,R0,R2
 //  866 
 //  867   // Clear all flags, including the "busy" bit
@@ -2635,140 +3051,124 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  874   // See http://www.corexy.com/theory.html
 //  875   //#if CORE_IS_XY
 //  876   if(MACHINETPYE & CORE_IS_XY)
-        LDR.W    R0,??_buffer_steps_3+0x4
-        LDRSH    R0,[R0, #+88]
         MOVS     R1,#+12
+        LDR.W    R0,??DataTable11_8
+        LDRSH    R0,[R0, #+88]
         TST      R0,R1
-        BEQ.N    ??_buffer_steps_25
+        BEQ.N    ??_buffer_steps_17
 //  877   {
 //  878     block->steps[A_AXIS] = labs(da + db);
-        ADD      R0,R8,R5
-          CFI FunCall labs
-        BL       labs
+        ADDS     R0,R8,R10
+        IT       MI 
+        RSBMI    R0,R0,#+0
         STR      R0,[R7, #+4]
 //  879     block->steps[B_AXIS] = labs(da - db);
-        SUB      R0,R5,R8
-          CFI FunCall labs
-        BL       labs
-        STR      R0,[R7, #+8]
+        SUBS     R0,R10,R8
+        B.N      ??_buffer_steps_18
 //  880     block->steps[Z_AXIS] = labs(dc);
-        MOV      R0,R9
-          CFI FunCall labs
-        BL       labs
-        STR      R0,[R7, #+12]
-        B.N      ??_buffer_steps_26
 //  881   }
 //  882   //#elif CORE_IS_XZ
 //  883   else if(MACHINETPYE & CORE_IS_XZ)
-??_buffer_steps_25:
+??_buffer_steps_17:
         MOVS     R1,#+48
         TST      R0,R1
-        BEQ.N    ??_buffer_steps_27
+        BEQ.N    ??_buffer_steps_19
 //  884   {
 //  885     block->steps[A_AXIS] = labs(da + dc);
-        ADD      R0,R9,R5
-          CFI FunCall labs
-        BL       labs
+        ADDS     R0,R9,R10
+        IT       MI 
+        RSBMI    R0,R0,#+0
         STR      R0,[R7, #+4]
 //  886     block->steps[Y_AXIS] = labs(db);
         MOV      R0,R8
-          CFI FunCall labs
-        BL       labs
+        CMP      R0,#+0
+        IT       MI 
+        RSBMI    R0,R0,#+0
         STR      R0,[R7, #+8]
 //  887     block->steps[C_AXIS] = labs(da - dc);
-        SUB      R0,R5,R9
-          CFI FunCall labs
-        BL       labs
-        STR      R0,[R7, #+12]
-        B.N      ??_buffer_steps_26
+        SUBS     R0,R10,R9
+        B.N      ??_buffer_steps_20
 //  888   }
 //  889   //#elif CORE_IS_YZ
 //  890   else if(MACHINETPYE & CORE_IS_YZ)
-??_buffer_steps_27:
-        MOVS     R1,#+192
-        TST      R0,R1
-        MOV      R0,R5
-        BEQ.N    ??_buffer_steps_28
+??_buffer_steps_19:
+        MOVS     R1,R10
+        IT       MI 
+        RSBMI    R1,R1,#+0
+        MOVS     R2,#+192
+        TST      R0,R2
+        STR      R1,[R7, #+4]
+        BEQ.N    ??_buffer_steps_21
 //  891   {
 //  892     block->steps[X_AXIS] = labs(da);
-          CFI FunCall labs
-        BL       labs
-        STR      R0,[R7, #+4]
 //  893     block->steps[B_AXIS] = labs(db + dc);
-        ADD      R0,R9,R8
-          CFI FunCall labs
-        BL       labs
+        ADDS     R0,R9,R8
+        IT       MI 
+        RSBMI    R0,R0,#+0
         STR      R0,[R7, #+8]
 //  894     block->steps[C_AXIS] = labs(db - dc);
-        SUB      R0,R8,R9
-          CFI FunCall labs
-        BL       labs
-        STR      R0,[R7, #+12]
-        B.N      ??_buffer_steps_26
+        SUBS     R0,R8,R9
+        B.N      ??_buffer_steps_20
 //  895   }
 //  896   //#else
 //  897   else
 //  898   {
 //  899     // default non-h-bot planning
 //  900     block->steps[X_AXIS] = labs(da);
-??_buffer_steps_28:
-          CFI FunCall labs
-        BL       labs
-        STR      R0,[R7, #+4]
 //  901     block->steps[Y_AXIS] = labs(db);
+??_buffer_steps_21:
         MOV      R0,R8
-          CFI FunCall labs
-        BL       labs
+        CMP      R0,#+0
+??_buffer_steps_18:
+        IT       MI 
+        RSBMI    R0,R0,#+0
         STR      R0,[R7, #+8]
 //  902     block->steps[Z_AXIS] = labs(dc);
         MOV      R0,R9
-          CFI FunCall labs
-        BL       labs
-        STR      R0,[R7, #+12]
+        CMP      R0,#+0
+??_buffer_steps_20:
+        IT       MI 
+        RSBMI    R0,R0,#+0
 //  903   }
+        STR      R0,[R7, #+12]
 //  904   //#endif
 //  905 
 //  906   block->steps[E_AXIS] = esteps;
-??_buffer_steps_26:
         LDR      R0,[SP, #+8]
         STR      R0,[R7, #+16]
 //  907   block->step_event_count = MAX4(block->steps[X_AXIS], block->steps[Y_AXIS], block->steps[Z_AXIS], esteps);
-        LDR      R0,[R7, #+4]
         LDR      R1,[R7, #+8]
+        LDR      R0,[R7, #+4]
         MOV      R2,R1
         CMP      R1,R0
-        BGE.N    ??_buffer_steps_29
-        MOV      R2,R0
-??_buffer_steps_29:
+        IT       LT 
+        MOVLT    R2,R0
         LDR      R3,[R7, #+12]
-        CMP      R3,R2
-        BGE.N    ??_buffer_steps_30
-        MOV      R6,R2
-        B.N      ??_buffer_steps_31
-??_buffer_steps_30:
         MOV      R6,R3
-??_buffer_steps_31:
-        LDR      R12,[SP, #+8]
-        CMP      R12,R6
-        BGE.N    ??_buffer_steps_32
         CMP      R3,R2
-        BGE.N    ??_buffer_steps_33
+        IT       LT 
+        MOVLT    R6,R2
+        LDR      R5,[SP, #+8]
+        CMP      R5,R6
+        BGE.N    ??_buffer_steps_22
+        CMP      R3,R2
+        BGE.N    ??_buffer_steps_23
         CMP      R1,R0
-        BLT.N    ??_buffer_steps_34
+        BLT.N    ??_buffer_steps_24
         MOV      R0,R1
-        B.N      ??_buffer_steps_34
-??_buffer_steps_33:
+        B.N      ??_buffer_steps_24
+??_buffer_steps_23:
         MOV      R0,R3
-        B.N      ??_buffer_steps_34
-??_buffer_steps_32:
-        MOV      R0,R12
-??_buffer_steps_34:
+        B.N      ??_buffer_steps_24
+??_buffer_steps_22:
+        MOV      R0,R5
+??_buffer_steps_24:
         STR      R0,[R7, #+20]
 //  908 
 //  909   // Bail if this is a zero-length block
 //  910   if (block->step_event_count < MIN_STEPS_PER_SEGMENT) return;
         CMP      R0,#+6
-        BCC.W    ??_buffer_steps_35
+        BCC.W    ??_buffer_steps_25
 //  911 
 //  912   // For a mixing extruder, get a magnified step_event_count for each
 //  913   #if ENABLED(MIXING_EXTRUDER)
@@ -2778,16 +3178,9 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  917 
 //  918   #if FAN_COUNT > 0
 //  919     for (uint8_t i = 0; i < FAN_COUNT; i++) block->fan_speed[i] = fanSpeeds[i];
-        MOVS     R0,#+0
-        B.N      ??_buffer_steps_36
-??_buffer_steps_37:
-        LDR.W    R0,??DataTable13_2
+        LDR.W    R0,??DataTable13
         LDR      R0,[R0, #+0]
         STRH     R0,[R7, #+76]
-        MOVS     R0,#+1
-??_buffer_steps_36:
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_37
 //  920   #endif
 //  921 
 //  922   #if ENABLED(BARICUDA)
@@ -2796,8 +3189,6 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  925   #endif
 //  926 
 //  927   block->active_extruder = extruder;
-        LDRB     R0,[SP, #+72]
-        STRB     R0,[R7, #+1]
 //  928 
 //  929   //enable active axes
 //  930   #if 0
@@ -2830,148 +3221,138 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  957   #endif
 //  958 #endif
 //  959   if(MACHINETPYE & CORE_IS_XY)
-        LDR.W    R0,??_buffer_steps_3+0x4
-        LDRSH    R0,[R0, #+88]
         MOVS     R1,#+12
+        LDRB     R0,[SP, #+80]
+        STRB     R0,[R7, #+1]
+        LDR.W    R0,??DataTable11_8
+        LDRSH    R0,[R0, #+88]
         TST      R0,R1
-        BEQ.N    ??_buffer_steps_38
+        BEQ.N    ??_buffer_steps_26
 //  960  {
 //  961 	  if (block->steps[A_AXIS] || block->steps[B_AXIS]) {
         LDR      R0,[R7, #+4]
         CMP      R0,#+0
-        BNE.N    ??_buffer_steps_39
-        LDR      R0,[R7, #+8]
-        CMP      R0,#+0
-        BEQ.W    ??_buffer_steps_40
+        ITT      EQ 
+        LDREQ    R0,[R7, #+8]
+        CMPEQ    R0,#+0
+        BEQ.W    ??_buffer_steps_27
 //  962 		enable_X();
-??_buffer_steps_39:
         LDR.W    R11,??DataTable14
         LDR.W    R6,??DataTable14_1
-        LDR.W    R10,??DataTable14_2
+        LDR.W    R5,??DataTable14_2
         LDRSB    R2,[R11, #+3]
-        LDRH     R1,[R10, #+4]
+        LDRH     R1,[R5, #+4]
         LDR      R0,[R6, #+8]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  963 		enable_Y();
         LDRSB    R2,[R11, #+4]
-        LDRH     R1,[R10, #+14]
+        LDRH     R1,[R5, #+14]
         LDR      R0,[R6, #+28]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        B.N      ??_buffer_steps_40
+        B.N      ??_buffer_steps_28
 //  964 	  }
 //  965   	#if DISABLED(Z_LATE_ENABLE)
 //  966 		if (block->steps[Z_AXIS]) enable_Z();
 //  967   	#endif
 //  968   }
 //  969   else if(MACHINETPYE & CORE_IS_XZ)
-??_buffer_steps_38:
+??_buffer_steps_26:
         MOVS     R1,#+48
         TST      R0,R1
-        BEQ.N    ??_buffer_steps_41
+        BEQ.N    ??_buffer_steps_29
 //  970   	{
 //  971 	  if (block->steps[A_AXIS] || block->steps[C_AXIS]) {
         LDR      R0,[R7, #+4]
         CMP      R0,#+0
-        BNE.N    ??_buffer_steps_42
-        MOV      R0,R3
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_43
+        IT       EQ 
+        CMPEQ    R3,#+0
+        BEQ.N    ??_buffer_steps_30
 //  972 		enable_X();
-??_buffer_steps_42:
         LDR.W    R11,??DataTable14
         LDR.W    R6,??DataTable14_1
-        LDR.W    R10,??DataTable14_2
+        LDR.W    R5,??DataTable14_2
         LDRSB    R2,[R11, #+3]
-        LDRH     R1,[R10, #+4]
+        LDRH     R1,[R5, #+4]
         LDR      R0,[R6, #+8]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  973 		enable_Z();
         LDRSB    R2,[R11, #+5]
-        LDRH     R1,[R10, #+24]
+        LDRH     R1,[R5, #+24]
         LDR      R0,[R6, #+48]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRSB    R2,[R11, #+5]
-        LDRH     R1,[R10, #+40]
+        LDRH     R1,[R5, #+40]
         LDR      R0,[R6, #+80]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  974 	  }
 //  975 	  if (block->steps[Y_AXIS]) enable_Y();
-??_buffer_steps_43:
+??_buffer_steps_30:
         LDR      R0,[R7, #+8]
         CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_44
+        BEQ.N    ??_buffer_steps_31
         LDR.W    R0,??DataTable14
         LDRSB    R2,[R0, #+4]
         LDR.W    R0,??DataTable14_2
         LDRH     R1,[R0, #+14]
         LDR.W    R0,??DataTable14_1
         LDR      R0,[R0, #+28]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        B.N      ??_buffer_steps_44
+        B.N      ??_buffer_steps_32
 //  976   	}
 //  977   else if(MACHINETPYE & CORE_IS_YZ)
-??_buffer_steps_41:
+??_buffer_steps_29:
         MOVS     R1,#+192
         TST      R0,R1
-        BEQ.N    ??_buffer_steps_45
+        BEQ.N    ??_buffer_steps_33
 //  978   	{
 //  979 	  if (block->steps[B_AXIS] || block->steps[C_AXIS]) {
         LDR      R0,[R7, #+8]
         CMP      R0,#+0
-        BNE.N    ??_buffer_steps_46
-        MOV      R0,R3
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_47
+        IT       EQ 
+        CMPEQ    R3,#+0
+        BEQ.N    ??_buffer_steps_34
 //  980 		enable_Y();
-??_buffer_steps_46:
         LDR.W    R11,??DataTable14
         LDR.W    R6,??DataTable14_1
-        LDR.W    R10,??DataTable14_2
+        LDR.W    R5,??DataTable14_2
         LDRSB    R2,[R11, #+4]
-        LDRH     R1,[R10, #+14]
+        LDRH     R1,[R5, #+14]
         LDR      R0,[R6, #+28]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  981 		enable_Z();
         LDRSB    R2,[R11, #+5]
-        LDRH     R1,[R10, #+24]
+        LDRH     R1,[R5, #+24]
         LDR      R0,[R6, #+48]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRSB    R2,[R11, #+5]
-        LDRH     R1,[R10, #+40]
+        LDRH     R1,[R5, #+40]
         LDR      R0,[R6, #+80]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  982 	  }
 //  983 	  if (block->steps[X_AXIS]) enable_X();
-??_buffer_steps_47:
+??_buffer_steps_34:
         LDR      R0,[R7, #+4]
         CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_44
+        BEQ.N    ??_buffer_steps_31
         LDR.W    R0,??DataTable14
         LDRSB    R2,[R0, #+3]
         LDR.W    R0,??DataTable14_2
         LDRH     R1,[R0, #+4]
         LDR.W    R0,??DataTable14_1
         LDR      R0,[R0, #+8]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        B.N      ??_buffer_steps_44
+        B.N      ??_buffer_steps_32
 //  984   	}
 //  985 	else
 //  986 	{
 //  987 		if (block->steps[X_AXIS]) enable_X();
-??_buffer_steps_45:
+??_buffer_steps_33:
         LDR      R0,[R7, #+4]
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_48
+        CBZ.N    R0,??_buffer_steps_35
         LDR.W    R0,??DataTable14
         LDRSB    R2,[R0, #+3]
         LDR.W    R0,??DataTable14_2
@@ -2981,41 +3362,42 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  988 		if (block->steps[Y_AXIS]) enable_Y();
-??_buffer_steps_48:
+??_buffer_steps_35:
         LDR      R0,[R7, #+8]
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_40
+        CBZ.N    R0,??_buffer_steps_27
         LDR.W    R0,??DataTable14
         LDRSB    R2,[R0, #+4]
         LDR.W    R0,??DataTable14_2
         LDRH     R1,[R0, #+14]
         LDR.W    R0,??DataTable14_1
         LDR      R0,[R0, #+28]
+??_buffer_steps_28:
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 //  989 	  #if DISABLED(Z_LATE_ENABLE)
 //  990 		  if (block->steps[Z_AXIS]) enable_Z();
-??_buffer_steps_40:
+??_buffer_steps_27:
         LDR      R0,[R7, #+12]
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_44
+        CBZ.N    R0,??_buffer_steps_31
         LDR.W    R11,??DataTable14
         LDR.W    R6,??DataTable14_1
-        LDR.W    R10,??DataTable14_2
+        LDR.W    R5,??DataTable14_2
         LDRSB    R2,[R11, #+5]
-        LDRH     R1,[R10, #+24]
+        LDRH     R1,[R5, #+24]
         LDR      R0,[R6, #+48]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
         LDRSB    R2,[R11, #+5]
-        LDRH     R1,[R10, #+40]
+        LDRH     R1,[R5, #+40]
         LDR      R0,[R6, #+80]
+??_buffer_steps_32:
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-??_buffer_steps_44:
+??_buffer_steps_31:
         LDR      R0,[SP, #+8]
         CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_49
+        LDR.W    R0,??DataTable18
+        BEQ.N    ??_buffer_steps_36
 //  991 	  #endif
 //  992 	}
 //  993 
@@ -3027,44 +3409,41 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 //  999       #define DISABLE_IDLE_E(N) if (!g_uc_extruder_last_move[N]) disable_E##N();
 // 1000 
 // 1001       for (uint8_t i = 0; i < EXTRUDERS; i++)
-        MOVS     R0,#+0
-        LDR.W    R2,??DataTable18
-        B.N      ??_buffer_steps_50
 // 1002         if (g_uc_extruder_last_move[i] > 0) g_uc_extruder_last_move[i]--;
-??_buffer_steps_51:
-        MOV      R1,R2
-        LDRB     R1,[R0, R1]
-        CMP      R1,#+0
-        BEQ.N    ??_buffer_steps_52
-        SUBS     R1,R1,#+1
-        STRB     R1,[R0, R2]
-??_buffer_steps_52:
-        ADDS     R0,R0,#+1
-??_buffer_steps_50:
-        CMP      R0,#+2
-        BLT.N    ??_buffer_steps_51
+        LDRB     R0,[R0, #+0]
+        CBZ.N    R0,??_buffer_steps_37
+        LDR.W    R1,??DataTable18
+        SUBS     R0,R0,#+1
+        STRB     R0,[R1, #+0]
+??_buffer_steps_37:
+        LDR.W    R0,??DataTable18
+        LDRB     R0,[R0, #+1]
+        CBZ.N    R0,??_buffer_steps_38
+        LDR.W    R1,??DataTable18
+        SUBS     R0,R0,#+1
+        STRB     R0,[R1, #+1]
 // 1003 
 // 1004       switch(extruder) {
-        LDRB     R0,[SP, #+72]
-        CMP      R0,#+0
-        BEQ.N    ??_buffer_steps_53
+??_buffer_steps_38:
+        LDRB     R0,[SP, #+80]
+        CBZ.N    R0,??_buffer_steps_39
         CMP      R0,#+1
-        BEQ.N    ??_buffer_steps_54
-        B.N      ??_buffer_steps_49
+        BEQ.N    ??_buffer_steps_40
+        B.N      ??_buffer_steps_41
 // 1005         case 0:
 // 1006           enable_E0();
-??_buffer_steps_53:
+??_buffer_steps_39:
         LDR.W    R11,??DataTable14
         LDR.W    R6,??DataTable14_1
-        LDR.W    R10,??DataTable14_2
+        LDR.W    R5,??DataTable14_2
         LDRSB    R2,[R11, #+6]
-        LDRH     R1,[R10, #+34]
+        LDRH     R1,[R5, #+34]
         LDR      R0,[R6, #+68]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1007           g_uc_extruder_last_move[0] = (BLOCK_BUFFER_SIZE) * 2;
-        MOVS     R0,#+32
         LDR.W    R1,??DataTable18
+        MOVS     R0,#+32
         STRB     R0,[R1, #+0]
 // 1008           #if ENABLED(DUAL_X_CARRIAGE) || ENABLED(DUAL_NOZZLE_DUPLICATION_MODE)
 // 1009             if (extruder_duplication_enabled) {
@@ -3074,25 +3453,21 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1013           #endif
 // 1014           #if EXTRUDERS > 1
 // 1015             if(mksCfg.z2_enable != 1)
-        LDR.W    R0,??_buffer_steps_3+0x4
+        LDR.W    R0,??DataTable11_8
         LDRB     R0,[R0, #+257]
         CMP      R0,#+1
-        BEQ.N    ??_buffer_steps_49
+        BEQ.N    ??_buffer_steps_41
 // 1016                 DISABLE_IDLE_E(1);
-        MOV      R0,R1
-        LDRB     R0,[R0, #+1]
-        CMP      R0,#+0
-        BNE.N    ??_buffer_steps_49
+        LDRB     R0,[R1, #+1]
+        CBNZ.N   R0,??_buffer_steps_41
         LDRB     R0,[R11, #+6]
+        LDRH     R1,[R5, #+40]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        LDRH     R1,[R10, #+40]
         LDR      R0,[R6, #+80]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-        B.N      ??_buffer_steps_49
+        SXTB     R2,R2
+        B.N      ??_buffer_steps_42
 // 1017             #if EXTRUDERS > 2
 // 1018               DISABLE_IDLE_E(2);
 // 1019               #if EXTRUDERS > 3
@@ -3107,31 +3482,30 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1028         #if EXTRUDERS > 1
 // 1029           case 1:
 // 1030             enable_E1();
-??_buffer_steps_54:
+??_buffer_steps_40:
         LDR.W    R11,??DataTable14
         LDR.W    R6,??DataTable14_1
-        LDR.W    R10,??DataTable14_2
+        LDR.W    R5,??DataTable14_2
         LDRSB    R2,[R11, #+6]
-        LDRH     R1,[R10, #+40]
+        LDRH     R1,[R5, #+40]
         LDR      R0,[R6, #+80]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1031             g_uc_extruder_last_move[1] = (BLOCK_BUFFER_SIZE) * 2;
-        MOVS     R0,#+32
         LDR.W    R1,??DataTable18
+        MOVS     R0,#+32
         STRB     R0,[R1, #+1]
 // 1032             DISABLE_IDLE_E(0);
-        MOV      R0,R1
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BNE.N    ??_buffer_steps_49
+        LDRB     R0,[R1, #+0]
+        CBNZ.N   R0,??_buffer_steps_41
         LDRB     R0,[R11, #+6]
+        LDRH     R1,[R5, #+34]
         SUBS     R2,R0,#+1
         SBCS     R2,R2,R2
         LSRS     R2,R2,#+31
-        SXTB     R2,R2
-        LDRH     R1,[R10, #+34]
         LDR      R0,[R6, #+68]
+        SXTB     R2,R2
+??_buffer_steps_42:
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
 // 1033             #if EXTRUDERS > 2
@@ -3192,28 +3566,21 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1088   }
 // 1089 
 // 1090   if (esteps)
-??_buffer_steps_49:
-        LDR      R0,[SP, #+8]
-        CMP      R0,#+0
-        LDR.W    R0,??DataTable18
-        BEQ.N    ??_buffer_steps_55
 // 1091     NOLESS(fr_mm_s, min_feedrate_mm_s);
+??_buffer_steps_41:
+        LDR.W    R0,??DataTable18
         LDR      R1,[R0, #+28]
-        LDR      R0,[SP, #+68]
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_56
-        STR      R1,[SP, #+68]
-        B.N      ??_buffer_steps_56
+        B.N      ??_buffer_steps_43
 // 1092   else
 // 1093     NOLESS(fr_mm_s, min_travel_feedrate_mm_s);
-??_buffer_steps_55:
+??_buffer_steps_36:
         LDR      R1,[R0, #+60]
-        LDR      R0,[SP, #+68]
+??_buffer_steps_43:
+        LDR      R0,[SP, #+76]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_56
-        STR      R1,[SP, #+68]
+        IT       CC 
+        STRCC    R1,[SP, #+76]
 // 1094 
 // 1095   /**
 // 1096    * This part of the code calculates the total length of the movement.
@@ -3226,19 +3593,18 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1103   //#if IS_CORE
 // 1104     float delta_mm[Z_HEAD + 1];
 // 1105   if(MACHINETPYE & IS_CORE) {
-??_buffer_steps_56:
-        LDR.W    R0,??_buffer_steps_3+0x4
-        LDRSH    R10,[R0, #+88]
-        ADD      R6,SP,#+36
+        LDR.W    R0,??DataTable11_8
+        LDRSH    R5,[R0, #+88]
         MOVS     R1,#+252
-        TST      R10,R1
-        BEQ.W    ??_buffer_steps_57
+        ADD      R6,SP,#+44
+        TST      R5,R1
+        BEQ.W    ??_buffer_steps_44
 // 1106     //#if CORE_IS_XY
 // 1107     if(MACHINETPYE & CORE_IS_XY) {
         MOVS     R1,#+12
-        TST      R10,R1
-        BEQ.N    ??_buffer_steps_58
-        MOV      R0,R5
+        TST      R5,R1
+        BEQ.N    ??_buffer_steps_45
+        MOV      R0,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+24]
@@ -3263,31 +3629,33 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         BL       __aeabi_fmul
         STR      R0,[R6, #+8]
 // 1111       delta_mm[A_AXIS] = (da + db) * steps_to_mm[A_AXIS];
-        ADD      R0,R8,R5
+        ADD      R0,R8,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+24]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[SP, #+36]
+        STR      R0,[SP, #+44]
 // 1112       delta_mm[B_AXIS] = CORESIGN(da - db) * steps_to_mm[B_AXIS];}
-        SUB      R0,R5,R8
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
+        MOVS     R1,#+168
+        SUB      R0,R10,R8
+        TST      R5,R1
+        IT       NE 
+        RSBNE    R0,R0,#+0
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+28]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[R6, #+4]
-        B.N      ??_buffer_steps_59
+        B.N      ??_buffer_steps_46
 // 1113    // #elif CORE_IS_XZ
 // 1114    else if(MACHINETPYE & CORE_IS_XZ) {
-??_buffer_steps_58:
+??_buffer_steps_45:
         MOVS     R1,#+48
-        TST      R10,R1
-        BEQ.N    ??_buffer_steps_60
-        MOV      R0,R5
+        TST      R5,R1
+        BEQ.N    ??_buffer_steps_47
+        MOV      R0,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+24]
@@ -3304,8 +3672,8 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         BL       __aeabi_fmul
         STR      R0,[R6, #+4]
 // 1117       delta_mm[Z_HEAD] = dc * steps_to_mm[C_AXIS];
-        LDR      R11,[R4, #+32]
         MOV      R0,R9
+        LDR      R11,[R4, #+32]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R11
@@ -3313,38 +3681,37 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         BL       __aeabi_fmul
         STR      R0,[R6, #+24]
 // 1118       delta_mm[A_AXIS] = (da + dc) * steps_to_mm[A_AXIS];
-        ADD      R0,R9,R5
+        ADD      R0,R9,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+24]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[SP, #+36]
+        STR      R0,[SP, #+44]
 // 1119       delta_mm[C_AXIS] = CORESIGN(da - dc) * steps_to_mm[C_AXIS];}
-        SUB      R0,R5,R9
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
+        MOVS     R1,#+168
+        SUB      R0,R10,R9
+        TST      R5,R1
+        IT       NE 
+        RSBNE    R0,R0,#+0
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R11
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        STR      R0,[R6, #+8]
-        B.N      ??_buffer_steps_59
+        B.N      ??_buffer_steps_48
 // 1120     //#elif CORE_IS_YZ
 // 1121     else if(MACHINETPYE & CORE_IS_YZ) {
-??_buffer_steps_60:
+??_buffer_steps_47:
         MOVS     R1,#+192
-        TST      R10,R1
-        BEQ.N    ??_buffer_steps_59
+        TST      R5,R1
+        BEQ.N    ??_buffer_steps_46
 // 1122       delta_mm[X_AXIS] = da * steps_to_mm[X_AXIS];
-        MOV      R0,R5
+        MOV      R0,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+24]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[SP, #+36]
+        STR      R0,[SP, #+44]
         MOV      R0,R8
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
@@ -3354,11 +3721,11 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         STR      R0,[R6, #+20]
 // 1123       delta_mm[Y_HEAD] = db * steps_to_mm[B_AXIS];
 // 1124       delta_mm[Z_HEAD] = dc * steps_to_mm[C_AXIS];
-        LDR      R11,[R4, #+32]
         MOV      R0,R9
+        LDR      R10,[R4, #+32]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R1,R11
+        MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[R6, #+24]
@@ -3371,31 +3738,30 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         BL       __aeabi_fmul
         STR      R0,[R6, #+4]
 // 1126       delta_mm[C_AXIS] = CORESIGN(db - dc) * steps_to_mm[C_AXIS];}
+        MOVS     R1,#+168
         SUB      R0,R8,R9
-          CFI FunCall _Z8CORESIGNl
-        BL       _Z8CORESIGNl
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R11
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        STR      R0,[R6, #+8]
-        B.N      ??_buffer_steps_59
+        TST      R5,R1
+        IT       NE 
+        RSBNE    R0,R0,#+0
 // 1127     //#endif
 // 1128   	}
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R10
+        B.N      ??_buffer_steps_48
 // 1129   //#else
 // 1130   else
 // 1131   {
 // 1132     //float delta_mm[XYZE];
 // 1133     delta_mm[X_AXIS] = da * steps_to_mm[X_AXIS];
-??_buffer_steps_57:
-        MOV      R0,R5
+??_buffer_steps_44:
+        MOV      R0,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+24]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[SP, #+36]
+        STR      R0,[SP, #+44]
 // 1134     delta_mm[Y_AXIS] = db * steps_to_mm[Y_AXIS];
         MOV      R0,R8
           CFI FunCall __aeabi_i2f
@@ -3409,15 +3775,16 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         LDR      R1,[R4, #+32]
+??_buffer_steps_48:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[R6, #+8]
 // 1136   }
 // 1137   //#endif
 // 1138   delta_mm[E_AXIS] = esteps_float * steps_to_mm[E_AXIS_N];
-??_buffer_steps_59:
-        LDR      R1,[SP, #+0]
+??_buffer_steps_46:
         LDR      R0,[SP, #+4]
+        LDR      R1,[SP, #+0]
         LDR      R0,[R0, #+36]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
@@ -3426,17 +3793,16 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1140   if (block->steps[X_AXIS] < MIN_STEPS_PER_SEGMENT && block->steps[Y_AXIS] < MIN_STEPS_PER_SEGMENT && block->steps[Z_AXIS] < MIN_STEPS_PER_SEGMENT) {
         LDR      R1,[R7, #+4]
         CMP      R1,#+6
-        BGE.N    ??_buffer_steps_61
-        LDR      R1,[R7, #+8]
-        CMP      R1,#+6
-        BGE.N    ??_buffer_steps_61
+        ITT      LT 
+        LDRLT    R1,[R7, #+8]
+        CMPLT    R1,#+6
+        BGE.N    ??_buffer_steps_49
         LDR      R1,[R7, #+12]
         CMP      R1,#+6
-        BGE.N    ??_buffer_steps_61
+        IT       LT 
 // 1141     block->millimeters = FABS(delta_mm[E_AXIS]);
-        BIC      R0,R0,#0x80000000
-        STR      R0,[R7, #+52]
-        B.N      ??_buffer_steps_62
+        BICLT    R0,R0,#0x80000000
+        BLT.W    ??_buffer_steps_50
 // 1142   }
 // 1143   else {
 // 1144   	/*
@@ -3453,303 +3819,201 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1155     );
 // 1156     */
 // 1157 		if(MACHINETPYE & CORE_IS_XY)
-??_buffer_steps_61:
-        MOV      R5,#+1065353216
+??_buffer_steps_49:
         MOVS     R0,#+12
-        TST      R10,R0
-        BEQ.N    ??_buffer_steps_63
+        MOV      R10,#+1065353216
+        TST      R5,R0
+        BEQ.N    ??_buffer_steps_51
 // 1158 			block->millimeters = sqrt(sq(delta_mm[X_HEAD]) + sq(delta_mm[Y_HEAD]) + sq(delta_mm[Z_AXIS]));
         LDR      R9,[R6, #+16]
-        MOV      R10,#+2
-        MOV      R8,R5
-        B.N      ??_buffer_steps_64
-??_buffer_steps_65:
+        MOVS     R5,#+2
+        MOV      R8,R10
+        B.N      ??_buffer_steps_52
+??_buffer_steps_53:
         MOV      R0,R9
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R9,R0
-??_buffer_steps_64:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_66
+??_buffer_steps_52:
+        LSLS     R0,R5,#+31
+        BPL.N    ??_buffer_steps_54
         MOV      R0,R8
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R8,R0
-??_buffer_steps_66:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_65
+??_buffer_steps_54:
+        LSRS     R5,R5,#+1
+        BNE.N    ??_buffer_steps_53
         LDR      R11,[R6, #+20]
-        MOV      R10,#+2
-        MOV      R9,R5
-        B.N      ??_buffer_steps_67
-??_buffer_steps_68:
-        MOV      R0,R11
-        MOV      R1,R11
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-??_buffer_steps_67:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_69
-        MOV      R0,R9
-        MOV      R1,R11
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R9,R0
-??_buffer_steps_69:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_68
-        LDR      R10,[R6, #+8]
-        MOV      R11,#+2
-        B.N      ??_buffer_steps_70
-??_buffer_steps_71:
-        MOV      R0,R10
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R10,R0
-??_buffer_steps_70:
-        LSLS     R0,R11,#+31
-        BPL.N    ??_buffer_steps_72
-        MOV      R0,R5
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R5,R0
-??_buffer_steps_72:
-        LSRS     R11,R11,#+1
-        BNE.N    ??_buffer_steps_71
-        MOV      R0,R8
-        MOV      R1,R9
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R5
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-          CFI FunCall sqrtf
-        BL       sqrtf
-        STR      R0,[R7, #+52]
-        B.N      ??_buffer_steps_62
+        B.N      ??_buffer_steps_55
 // 1159 		else if (MACHINETPYE & CORE_IS_XZ)
-??_buffer_steps_63:
+??_buffer_steps_51:
         MOVS     R0,#+48
-        TST      R10,R0
-        BEQ.N    ??_buffer_steps_73
+        TST      R5,R0
+        BEQ.N    ??_buffer_steps_56
 // 1160 			block->millimeters = sqrt(sq(delta_mm[X_HEAD]) + sq(delta_mm[Y_AXIS]) + sq(delta_mm[Z_HEAD]));
         LDR      R9,[R6, #+16]
-        MOV      R10,#+2
-        MOV      R8,R5
-        B.N      ??_buffer_steps_74
-??_buffer_steps_75:
+        MOVS     R5,#+2
+        MOV      R8,R10
+        B.N      ??_buffer_steps_57
+??_buffer_steps_58:
         MOV      R0,R9
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R9,R0
-??_buffer_steps_74:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_76
+??_buffer_steps_57:
+        LSLS     R0,R5,#+31
+        BPL.N    ??_buffer_steps_59
         MOV      R0,R8
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R8,R0
-??_buffer_steps_76:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_75
+??_buffer_steps_59:
+        LSRS     R5,R5,#+1
+        BNE.N    ??_buffer_steps_58
         LDR      R11,[R6, #+4]
-        MOV      R10,#+2
-        MOV      R9,R5
-        B.N      ??_buffer_steps_77
-??_buffer_steps_78:
+        MOVS     R5,#+2
+        MOV      R9,R10
+        B.N      ??_buffer_steps_60
+??_buffer_steps_61:
         MOV      R0,R11
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R11,R0
-??_buffer_steps_77:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_79
+??_buffer_steps_60:
+        LSLS     R0,R5,#+31
+        BPL.N    ??_buffer_steps_62
         MOV      R0,R9
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R9,R0
-??_buffer_steps_79:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_78
-        LDR      R10,[R6, #+24]
-        MOV      R11,#+2
-        B.N      ??_buffer_steps_80
-??_buffer_steps_81:
-        MOV      R0,R10
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R10,R0
-??_buffer_steps_80:
-        LSLS     R0,R11,#+31
-        BPL.N    ??_buffer_steps_82
-        MOV      R0,R5
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R5,R0
-??_buffer_steps_82:
-        LSRS     R11,R11,#+1
-        BNE.N    ??_buffer_steps_81
-        MOV      R0,R8
-        MOV      R1,R9
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R5
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-          CFI FunCall sqrtf
-        BL       sqrtf
-        STR      R0,[R7, #+52]
-        B.N      ??_buffer_steps_62
+??_buffer_steps_62:
+        LSRS     R5,R5,#+1
+        BNE.N    ??_buffer_steps_61
+        LDR      R5,[R6, #+24]
+        B.N      ??_buffer_steps_63
 // 1161 		else if (MACHINETPYE & CORE_IS_YZ)
-??_buffer_steps_73:
+??_buffer_steps_56:
         MOVS     R0,#+192
-        TST      R10,R0
-        LDR      R9,[SP, #+36]
-        MOV      R10,#+2
-        MOV      R8,R5
-        BEQ.N    ??_buffer_steps_83
+        LDR      R9,[SP, #+44]
+        TST      R5,R0
+        BEQ.N    ??_buffer_steps_64
 // 1162 			block->millimeters = sqrt(sq(delta_mm[X_AXIS]) + sq(delta_mm[Y_HEAD]) + sq(delta_mm[Z_HEAD]));
-        B.N      ??_buffer_steps_84
-??_buffer_steps_85:
+        MOVS     R5,#+2
+        MOV      R8,R10
+        B.N      ??_buffer_steps_65
+??_buffer_steps_66:
         MOV      R0,R9
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R9,R0
-??_buffer_steps_84:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_86
+??_buffer_steps_65:
+        LSLS     R0,R5,#+31
+        BPL.N    ??_buffer_steps_67
         MOV      R0,R8
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R8,R0
-??_buffer_steps_86:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_85
+??_buffer_steps_67:
+        LSRS     R5,R5,#+1
+        BNE.N    ??_buffer_steps_66
         LDR      R11,[R6, #+20]
-        MOV      R10,#+2
-        MOV      R9,R5
-        B.N      ??_buffer_steps_87
-??_buffer_steps_88:
+        MOVS     R5,#+2
+        MOV      R9,R10
+        B.N      ??_buffer_steps_68
+??_buffer_steps_69:
         MOV      R0,R11
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R11,R0
-??_buffer_steps_87:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_89
+??_buffer_steps_68:
+        LSLS     R0,R5,#+31
+        BPL.N    ??_buffer_steps_70
         MOV      R0,R9
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R9,R0
-??_buffer_steps_89:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_88
-        LDR      R10,[R6, #+24]
-        MOV      R11,#+2
-        B.N      ??_buffer_steps_90
-??_buffer_steps_91:
-        MOV      R0,R10
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R10,R0
-??_buffer_steps_90:
-        LSLS     R0,R11,#+31
-        BPL.N    ??_buffer_steps_92
-        MOV      R0,R5
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R5,R0
-??_buffer_steps_92:
-        LSRS     R11,R11,#+1
-        BNE.N    ??_buffer_steps_91
-        MOV      R0,R8
-        MOV      R1,R9
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R5
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-          CFI FunCall sqrtf
-        BL       sqrtf
-        STR      R0,[R7, #+52]
-        B.N      ??_buffer_steps_62
-??_buffer_steps_93:
-        MOV      R0,R9
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R9,R0
-??_buffer_steps_83:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_94
-        MOV      R0,R8
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R8,R0
-??_buffer_steps_94:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_93
+??_buffer_steps_70:
+        LSRS     R5,R5,#+1
+        BNE.N    ??_buffer_steps_69
+        LDR      R5,[R6, #+24]
+        B.N      ??_buffer_steps_63
 // 1163 		else	
 // 1164 			block->millimeters = sqrt(sq(delta_mm[X_AXIS]) + sq(delta_mm[Y_AXIS]) + sq(delta_mm[Z_AXIS]));
+??_buffer_steps_64:
+        MOVS     R5,#+2
+        MOV      R8,R10
+        B.N      ??_buffer_steps_71
+??_buffer_steps_72:
+        MOV      R0,R9
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
+??_buffer_steps_71:
+        LSLS     R0,R5,#+31
+        BPL.N    ??_buffer_steps_73
+        MOV      R0,R8
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R8,R0
+??_buffer_steps_73:
+        LSRS     R5,R5,#+1
+        BNE.N    ??_buffer_steps_72
         LDR      R11,[R6, #+4]
-        MOV      R10,#+2
-        MOV      R9,R5
-        B.N      ??_buffer_steps_95
-??_buffer_steps_96:
+??_buffer_steps_55:
+        MOVS     R5,#+2
+        MOV      R9,R10
+        B.N      ??_buffer_steps_74
+??_buffer_steps_75:
         MOV      R0,R11
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R11,R0
-??_buffer_steps_95:
-        LSLS     R0,R10,#+31
-        BPL.N    ??_buffer_steps_97
+??_buffer_steps_74:
+        LSLS     R0,R5,#+31
+        BPL.N    ??_buffer_steps_76
         MOV      R0,R9
         MOV      R1,R11
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R9,R0
-??_buffer_steps_97:
-        LSRS     R10,R10,#+1
-        BNE.N    ??_buffer_steps_96
-        LDR      R10,[R6, #+8]
+??_buffer_steps_76:
+        LSRS     R5,R5,#+1
+        BNE.N    ??_buffer_steps_75
+        LDR      R5,[R6, #+8]
+??_buffer_steps_63:
         MOV      R11,#+2
-        B.N      ??_buffer_steps_98
-??_buffer_steps_99:
-        MOV      R0,R10
-        MOV      R1,R10
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R10,R0
-??_buffer_steps_98:
-        LSLS     R0,R11,#+31
-        BPL.N    ??_buffer_steps_100
+        B.N      ??_buffer_steps_77
+??_buffer_steps_78:
         MOV      R0,R5
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R5,R0
-??_buffer_steps_100:
+??_buffer_steps_77:
+        LSLS     R0,R11,#+31
+        BPL.N    ??_buffer_steps_79
+        MOV      R0,R10
+        MOV      R1,R5
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R10,R0
+??_buffer_steps_79:
         LSRS     R11,R11,#+1
-        BNE.N    ??_buffer_steps_99
+        BNE.N    ??_buffer_steps_78
 // 1165 			
 // 1166     
 // 1167   }
@@ -3757,31 +4021,33 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R1,R5
+        MOV      R1,R10
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
           CFI FunCall sqrtf
         BL       sqrtf
+??_buffer_steps_50:
         STR      R0,[R7, #+52]
 // 1168   const float inverse_millimeters = 1.0 / block->millimeters;  // Inverse millimeters to remove multiple divides
-??_buffer_steps_62:
         MOV      R0,#+1065353216
         LDR      R1,[R7, #+52]
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        STR      R0,[SP, #+0]
 // 1169 
 // 1170   // Calculate inverse time for this move. No divide by zero due to previous checks.
 // 1171   // Example: At 120mm/s a 60mm move takes 0.5s. So this will give 2.0.
 // 1172   float inverse_secs = fr_mm_s * inverse_millimeters;
-        LDR      R1,[SP, #+68]
+        LDR      R1,[SP, #+76]
+        STR      R0,[SP, #+0]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R8,R0
 // 1173 
 // 1174   const uint8_t moves_queued = movesplanned();
-          CFI FunCall _ZN7Planner12movesplannedEv
-        BL       _ZN7Planner12movesplannedEv
+        LDRB     R0,[R4, #+0]
+        LDRB     R1,[R4, #+1]
+        SUBS     R0,R0,R1
+        AND      R0,R0,#0xF
         STR      R0,[SP, #+12]
 // 1175 
 // 1176   // Slow down when the buffer starts to empty, rather than wait at the corner for a buffer refill
@@ -3794,7 +4060,7 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable21  ;; 0x412e8480
+        LDR.W    R1,??DataTable18_1  ;; 0x412e8480
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
           CFI FunCall lround
@@ -3804,40 +4070,40 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1181 
 // 1182   //#if ENABLED(SLOWDOWN)
 // 1183   if(!(MACHINETPYE & IS_KINEMATIC))
-        LDR.W    R0,??_buffer_steps_3+0x4
+        LDR.W    R0,??DataTable11_8
         LDRH     R0,[R0, #+88]
         MOVW     R1,#+770
         TST      R0,R1
-        BNE.N    ??_buffer_steps_101
+        BNE.N    ??_buffer_steps_80
 // 1184   { 
 // 1185     if (WITHIN(moves_queued, 2, (BLOCK_BUFFER_SIZE) / 2 - 1)) {
         LDR      R0,[SP, #+12]
         SUBS     R0,R0,#+2
         CMP      R0,#+6
-        BCS.N    ??_buffer_steps_101
+        ITTT     CC 
 // 1186       if (segment_time_us < min_segment_time_us) {
-        LDR.W    R0,??DataTable18
-        LDR      R0,[R0, #+24]
-        CMP      R5,R0
-        BCS.N    ??_buffer_steps_101
+        LDRCC.W  R0,??DataTable18
+        LDRCC    R0,[R0, #+24]
+        CMPCC    R5,R0
+        BCS.N    ??_buffer_steps_80
 // 1187         // buffer is draining, add extra time.  The amount of time added increases if the buffer is still emptied more.
 // 1188         const uint32_t nst = segment_time_us + LROUND((double)(2 * (min_segment_time_us - segment_time_us) / moves_queued));
+// 1189         inverse_secs = 1000000.0 / nst;
         SUBS     R0,R0,R5
-        LSLS     R0,R0,#+1
         LDR      R1,[SP, #+12]
+        LSLS     R0,R0,#+1
         UDIV     R0,R0,R1
           CFI FunCall __aeabi_ui2d
         BL       __aeabi_ui2d
           CFI FunCall lround
         BL       lround
-        ADDS     R0,R0,R5
-// 1189         inverse_secs = 1000000.0 / nst;
+        ADD      R0,R0,R5
           CFI FunCall __aeabi_ui2d
         BL       __aeabi_ui2d
         MOV      R2,R0
         MOV      R3,R1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable21  ;; 0x412e8480
+        LDR.W    R1,??DataTable18_1  ;; 0x412e8480
           CFI FunCall __aeabi_ddiv
         BL       __aeabi_ddiv
           CFI FunCall __aeabi_d2f
@@ -3858,7 +4124,7 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1202   #endif
 // 1203 
 // 1204   block->nominal_speed = block->millimeters * inverse_secs;           //   (mm/sec) Always > 0
-??_buffer_steps_101:
+??_buffer_steps_80:
         LDR      R0,[R7, #+52]
         MOV      R1,R8
           CFI FunCall __aeabi_fmul
@@ -3913,34 +4179,33 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1240 
 // 1241   // Calculate and limit speed in mm/sec for each axis
 // 1242   float current_speed[NUM_AXIS], speed_factor = 1.0; // factor <1 decreases speed
-        MOV      R5,#+1065353216
-        MOV      R9,R5
+        MOV      R10,#+1065353216
+        MOV      R9,R10
 // 1243   LOOP_XYZE(i) {
-        MOV      R10,#+0
-        ADD      R11,SP,#+20
-        B.N      ??_buffer_steps_102
+        MOV      R11,#+0
+        ADD      R5,SP,#+28
 // 1244     const float cs = FABS((current_speed[i] = delta_mm[i] * inverse_secs));
-??_buffer_steps_103:
-        LDR      R0,[R6, R10, LSL #+2]
+??_buffer_steps_81:
+        LDR      R0,[R6, R11, LSL #+2]
         MOV      R1,R8
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[R11, R10, LSL #+2]
+        STR      R0,[R5, R11, LSL #+2]
         BIC      R1,R0,#0x80000000
 // 1245     #if ENABLED(DISTINCT_E_FACTORS)
 // 1246       if (i == E_AXIS) i += extruder;
-        CMP      R10,#+3
-        BNE.N    ??_buffer_steps_104
-        LDRB     R0,[SP, #+72]
-        ADD      R10,R0,R10
-        UXTB     R10,R10
-??_buffer_steps_104:
+        CMP      R11,#+3
+        BNE.N    ??_buffer_steps_82
+        LDRB     R0,[SP, #+80]
+        ADD      R0,R0,R11
+        UXTB     R11,R0
+??_buffer_steps_82:
         LDR.W    R0,??DataTable18
-        ADD      R0,R0,R10, LSL #+2
+        ADD      R0,R0,R11, LSL #+2
         LDR      R0,[R0, #+4]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_105
+        BCS.N    ??_buffer_steps_83
 // 1247     #endif
 // 1248     if (cs > max_feedrate_mm_s[i]) NOMORE(speed_factor, max_feedrate_mm_s[i] / cs);
           CFI FunCall __aeabi_fdiv
@@ -3948,15 +4213,14 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         MOV      R1,R9
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_105
-        MOV      R9,R0
+        IT       CC 
+        MOVCC    R9,R0
 // 1249   }
-??_buffer_steps_105:
-        ADD      R10,R10,#+1
-        UXTB     R10,R10
-??_buffer_steps_102:
-        CMP      R10,#+4
-        BLT.N    ??_buffer_steps_103
+??_buffer_steps_83:
+        ADD      R0,R11,#+1
+        UXTB     R11,R0
+        CMP      R11,#+4
+        BLT.N    ??_buffer_steps_81
 // 1250 
 // 1251   // Max segment time in 碌s.
 // 1252   #ifdef XY_FREQUENCY_LIMIT
@@ -3999,26 +4263,34 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1289   // Correct the speed
 // 1290   if (speed_factor < 1.0) {
         MOV      R0,R9
-        MOV      R1,R5
+        MOV      R1,R10
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_106
+        BCS.N    ??_buffer_steps_84
 // 1291     LOOP_XYZE(i) current_speed[i] *= speed_factor;
-        MOVS     R6,#+0
-        B.N      ??_buffer_steps_107
-??_buffer_steps_108:
-        LDR      R0,[R11, R6, LSL #+2]
+        LDR      R0,[SP, #+28]
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[R11, R6, LSL #+2]
-        ADDS     R6,R6,#+1
-??_buffer_steps_107:
-        CMP      R6,#+4
-        BLT.N    ??_buffer_steps_108
-// 1292     block->nominal_speed *= speed_factor;
-        LDR      R0,[R7, #+40]
+        STR      R0,[SP, #+28]
         MOV      R1,R9
+        LDR      R0,[R5, #+4]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        STR      R0,[R5, #+4]
+        MOV      R1,R9
+        LDR      R0,[R5, #+8]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        STR      R0,[R5, #+8]
+        MOV      R1,R9
+        LDR      R0,[R5, #+12]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        STR      R0,[R5, #+12]
+// 1292     block->nominal_speed *= speed_factor;
+        MOV      R1,R9
+        LDR      R0,[R7, #+40]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[R7, #+40]
@@ -4036,7 +4308,7 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1295 
 // 1296   // Compute and limit the acceleration rate for the trapezoid generator.
 // 1297   const float steps_per_mm = block->step_event_count * inverse_millimeters;
-??_buffer_steps_106:
+??_buffer_steps_84:
         LDR      R0,[R7, #+20]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
@@ -4048,13 +4320,12 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1299   if (!block->steps[X_AXIS] && !block->steps[Y_AXIS] && !block->steps[Z_AXIS]) {
         LDR      R0,[R7, #+4]
         CMP      R0,#+0
-        BNE.N    ??_buffer_steps_109
-        LDR      R0,[R7, #+8]
-        CMP      R0,#+0
-        BNE.N    ??_buffer_steps_109
+        ITT      EQ 
+        LDREQ    R0,[R7, #+8]
+        CMPEQ    R0,#+0
+        BNE.N    ??_buffer_steps_85
         LDR      R0,[R7, #+12]
-        CMP      R0,#+0
-        BNE.N    ??_buffer_steps_109
+        CBNZ.N   R0,??_buffer_steps_85
 // 1300     // convert to: acceleration steps/sec^2
 // 1301     accel = CEIL(retract_acceleration * steps_per_mm);
         LDR.W    R0,??DataTable18
@@ -4064,10 +4335,7 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         BL       __aeabi_fmul
           CFI FunCall ceilf
         BL       ceilf
-          CFI FunCall __aeabi_f2uiz
-        BL       __aeabi_f2uiz
-        MOV      R9,R0
-        B.N      ??_buffer_steps_110
+        B.N      ??_buffer_steps_86
 // 1302   }
 // 1303   else {
 // 1304     #define LIMIT_ACCEL_LONG(AXIS,INDX) do{ \ 
@@ -4086,16 +4354,13 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1317 
 // 1318     // Start with print or travel acceleration
 // 1319     accel = CEIL((esteps ? acceleration : travel_acceleration) * steps_per_mm);
-??_buffer_steps_109:
+??_buffer_steps_85:
         LDR      R0,[SP, #+8]
         CMP      R0,#+0
         LDR.W    R0,??DataTable18
-        BEQ.N    ??_buffer_steps_111
-        LDR      R0,[R0, #+32]
-        B.N      ??_buffer_steps_112
-??_buffer_steps_111:
-        LDR      R0,[R0, #+40]
-??_buffer_steps_112:
+        ITE      NE 
+        LDRNE    R0,[R0, #+32]
+        LDREQ    R0,[R0, #+40]
         MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
@@ -4103,7 +4368,6 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         BL       ceilf
           CFI FunCall __aeabi_f2uiz
         BL       __aeabi_f2uiz
-        MOV      R9,R0
 // 1320 
 // 1321     #if ENABLED(DISTINCT_E_FACTORS)
 // 1322       #define ACCEL_IDX extruder
@@ -4113,72 +4377,66 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1326 
 // 1327     // Limit acceleration per axis
 // 1328     if (block->step_event_count <= cutoff_long) {
-        LDR      R10,[R7, #+4]
+        LDR      R5,[R7, #+4]
         LDR      R8,[R7, #+20]
+        MOV      R9,R0
         LDR      R0,[R4, #+100]
         CMP      R0,R8
-        BCC.N    ??_buffer_steps_113
+        BCC.N    ??_buffer_steps_87
 // 1329       LIMIT_ACCEL_LONG(X_AXIS, 0);
-        CMP      R10,#+0
-        BEQ.N    ??_buffer_steps_114
+        CBZ.N    R5,??_buffer_steps_88
         LDR      R0,[R4, #+44]
         CMP      R0,R9
-        BCS.N    ??_buffer_steps_114
-        MUL      R0,R8,R0
-        MUL      R1,R10,R9
-        CMP      R0,R1
-        BCS.N    ??_buffer_steps_114
-        UDIV     R9,R0,R10
+        ITTTT    CC 
+        MULCC    R0,R8,R0
+        MULCC    R1,R5,R9
+        CMPCC    R0,R1
+        UDIVCC   R9,R0,R5
 // 1330       LIMIT_ACCEL_LONG(Y_AXIS, 0);
-??_buffer_steps_114:
-        LDR      R10,[R7, #+8]
-        CMP      R10,#+0
-        BEQ.N    ??_buffer_steps_115
+??_buffer_steps_88:
+        LDR      R2,[R7, #+8]
+        CBZ.N    R2,??_buffer_steps_89
         LDR      R0,[R4, #+48]
         CMP      R0,R9
-        BCS.N    ??_buffer_steps_115
-        MUL      R0,R8,R0
-        MUL      R1,R10,R9
-        CMP      R0,R1
-        BCS.N    ??_buffer_steps_115
-        UDIV     R9,R0,R10
+        ITTTT    CC 
+        MULCC    R0,R8,R0
+        MULCC    R1,R2,R9
+        CMPCC    R0,R1
+        UDIVCC   R9,R0,R2
 // 1331       LIMIT_ACCEL_LONG(Z_AXIS, 0);
-??_buffer_steps_115:
-        LDR      R10,[R7, #+12]
-        CMP      R10,#+0
-        BEQ.N    ??_buffer_steps_116
+??_buffer_steps_89:
+        LDR      R2,[R7, #+12]
+        CBZ.N    R2,??_buffer_steps_90
         LDR      R0,[R4, #+52]
         CMP      R0,R9
-        BCS.N    ??_buffer_steps_116
-        MUL      R0,R8,R0
-        MUL      R1,R10,R9
-        CMP      R0,R1
-        BCS.N    ??_buffer_steps_116
-        UDIV     R9,R0,R10
+        ITTTT    CC 
+        MULCC    R0,R8,R0
+        MULCC    R1,R2,R9
+        CMPCC    R0,R1
+        UDIVCC   R9,R0,R2
 // 1332       LIMIT_ACCEL_LONG(E_AXIS, ACCEL_IDX);
-??_buffer_steps_116:
-        LDR      R10,[R7, #+16]
-        CMP      R10,#+0
-        BEQ.W    ??_buffer_steps_110
+??_buffer_steps_90:
+        LDR      R2,[R7, #+16]
+        CMP      R2,#+0
+        BEQ.W    ??_buffer_steps_91
         LDR      R0,[SP, #+4]
         LDR      R0,[R0, #+56]
         CMP      R0,R9
-        BCS.W    ??_buffer_steps_110
-        MUL      R0,R8,R0
-        MUL      R1,R10,R9
-        CMP      R0,R1
-        BCS.W    ??_buffer_steps_110
-        UDIV     R9,R0,R10
-        B.N      ??_buffer_steps_110
+        ITTT     CC 
+        MULCC    R0,R8,R0
+        MULCC    R1,R2,R9
+        CMPCC    R0,R1
+        BCS.W    ??_buffer_steps_91
+        UDIV     R9,R0,R2
+        B.N      ??_buffer_steps_91
 // 1333     }
 // 1334     else {
 // 1335       LIMIT_ACCEL_FLOAT(X_AXIS, 0);
-??_buffer_steps_113:
-        CMP      R10,#+0
-        BEQ.N    ??_buffer_steps_117
+??_buffer_steps_87:
+        CBZ.N    R5,??_buffer_steps_92
         LDR      R0,[R4, #+44]
         CMP      R0,R9
-        BCS.N    ??_buffer_steps_117
+        BCS.N    ??_buffer_steps_92
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R11,R0
@@ -4189,35 +4447,34 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R11,R0
-        MOV      R0,R10
+        MOV      R0,R5
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R10,R0
+        MOV      R5,R0
         MOV      R0,R9
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R0
         MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_117
-        MOV      R1,R10
+        BCS.N    ??_buffer_steps_92
+        MOV      R1,R5
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2uiz
         BL       __aeabi_f2uiz
         MOV      R9,R0
 // 1336       LIMIT_ACCEL_FLOAT(Y_AXIS, 0);
-??_buffer_steps_117:
-        LDR      R10,[R7, #+8]
-        CMP      R10,#+0
-        BEQ.N    ??_buffer_steps_118
+??_buffer_steps_92:
+        LDR      R5,[R7, #+8]
+        CBZ.N    R5,??_buffer_steps_93
         LDR      R0,[R4, #+48]
         CMP      R0,R9
-        BCS.N    ??_buffer_steps_118
+        BCS.N    ??_buffer_steps_93
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R11,R0
@@ -4228,35 +4485,34 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R11,R0
-        MOV      R0,R10
+        MOV      R0,R5
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R10,R0
+        MOV      R5,R0
         MOV      R0,R9
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R0
         MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_118
-        MOV      R1,R10
+        BCS.N    ??_buffer_steps_93
+        MOV      R1,R5
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2uiz
         BL       __aeabi_f2uiz
         MOV      R9,R0
 // 1337       LIMIT_ACCEL_FLOAT(Z_AXIS, 0);
-??_buffer_steps_118:
-        LDR      R10,[R7, #+12]
-        CMP      R10,#+0
-        BEQ.N    ??_buffer_steps_119
+??_buffer_steps_93:
+        LDR      R5,[R7, #+12]
+        CBZ.N    R5,??_buffer_steps_94
         LDR      R0,[R4, #+52]
         CMP      R0,R9
-        BCS.N    ??_buffer_steps_119
+        BCS.N    ??_buffer_steps_94
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R11,R0
@@ -4267,36 +4523,35 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R11,R0
-        MOV      R0,R10
+        MOV      R0,R5
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R10,R0
+        MOV      R5,R0
         MOV      R0,R9
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R0
         MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_119
-        MOV      R1,R10
+        BCS.N    ??_buffer_steps_94
+        MOV      R1,R5
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
           CFI FunCall __aeabi_f2uiz
         BL       __aeabi_f2uiz
         MOV      R9,R0
 // 1338       LIMIT_ACCEL_FLOAT(E_AXIS, ACCEL_IDX);
-??_buffer_steps_119:
-        LDR      R10,[R7, #+16]
-        CMP      R10,#+0
-        BEQ.N    ??_buffer_steps_110
+??_buffer_steps_94:
+        LDR      R5,[R7, #+16]
+        CBZ.N    R5,??_buffer_steps_91
         LDR      R0,[SP, #+4]
         LDR      R0,[R0, #+56]
         CMP      R0,R9
-        BCS.N    ??_buffer_steps_110
+        BCS.N    ??_buffer_steps_91
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R11,R0
@@ -4307,31 +4562,32 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R8,R0
-        MOV      R0,R10
+        MOV      R0,R5
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R10,R0
+        MOV      R5,R0
         MOV      R0,R9
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R0
         MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_110
-        MOV      R1,R10
+        BCS.N    ??_buffer_steps_91
+        MOV      R1,R5
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
+??_buffer_steps_86:
           CFI FunCall __aeabi_f2uiz
         BL       __aeabi_f2uiz
         MOV      R9,R0
 // 1339     }
 // 1340   }
 // 1341   block->acceleration_steps_per_s2 = accel;
-??_buffer_steps_110:
+??_buffer_steps_91:
         STR      R9,[R7, #+72]
 // 1342   block->acceleration = accel / steps_per_mm;
         MOV      R0,R9
@@ -4346,8 +4602,8 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         MOV      R0,R9
           CFI FunCall __aeabi_ui2d
         BL       __aeabi_ui2d
-        LDR.W    R2,??DataTable21_1  ;; 0xa0b5ed8d
-        LDR.W    R3,??DataTable21_2  ;; 0x4020c6f7
+        LDR.W    R2,??DataTable18_2  ;; 0xa0b5ed8d
+        LDR.W    R3,??DataTable18_3  ;; 0x4020c6f7
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
@@ -4417,76 +4673,76 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1406   static float previous_safe_speed;
 // 1407 
 // 1408   float safe_speed = block->nominal_speed;
-        LDR      R8,[R7, #+40]
 // 1409   uint8_t limited = 0;
-        MOV      R9,#+0
+        MOVS     R5,#+0
+        LDR      R6,[R7, #+40]
 // 1410   LOOP_XYZE(i) {
-        MOV      R10,R9
-        B.N      ??_buffer_steps_120
+        LDR.W    R0,??DataTable18_4
+        STR      R0,[SP, #+0]
+        ADD      R8,SP,#+28
+        MOV      R9,#+4
 // 1411     const float jerk = FABS(current_speed[i]), maxj = max_jerk[i];
+??_buffer_steps_95:
+        LDR      R0,[R8, #+0]
+        BIC      R0,R0,#0x80000000
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+0]
 // 1412     if (jerk > maxj) {
-// 1413       if (limited) {
-// 1414         const float mjerk = maxj * block->nominal_speed;
-// 1415         if (jerk * safe_speed > mjerk) safe_speed = mjerk / jerk;
-// 1416       }
-// 1417       else {
-// 1418         ++limited;
-??_buffer_steps_121:
-        MOV      R9,#+1
-// 1419         safe_speed = maxj;
-        MOV      R8,R6
-// 1420       }
-??_buffer_steps_122:
-        ADD      R10,R10,#+1
-??_buffer_steps_120:
-        CMP      R10,#+4
-        BGE.N    ??_buffer_steps_123
-        ADD      R0,SP,#+20
-        LDR      R0,[R0, R10, LSL #+2]
-        BIC      R11,R0,#0x80000000
-        LDR.W    R0,??DataTable18
-        ADD      R0,R0,R10, LSL #+2
-        LDR      R6,[R0, #+44]
-        MOV      R0,R6
-        MOV      R1,R11
+        LDR      R1,[SP, #+4]
+        LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_122
-        CMP      R9,#+0
-        BEQ.N    ??_buffer_steps_121
-        LDR      R0,[R7, #+40]
+        BCS.N    ??_buffer_steps_96
+// 1413       if (limited) {
+        CBZ.N    R5,??_buffer_steps_97
+// 1414         const float mjerk = maxj * block->nominal_speed;
+        LDR      R1,[R7, #+40]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R11,R0
+// 1415         if (jerk * safe_speed > mjerk) safe_speed = mjerk / jerk;
+        LDR      R0,[SP, #+4]
         MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R6,R0
-        MOV      R0,R11
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
         MOV      R1,R0
-        MOV      R0,R6
+        MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_122
-        MOV      R1,R11
+        BCS.N    ??_buffer_steps_96
+        LDR      R1,[SP, #+4]
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        MOV      R8,R0
-        B.N      ??_buffer_steps_122
+        B.N      ??_buffer_steps_98
+// 1416       }
+// 1417       else {
+// 1418         ++limited;
+??_buffer_steps_97:
+        MOVS     R5,#+1
+// 1419         safe_speed = maxj;
+??_buffer_steps_98:
+        MOV      R6,R0
+// 1420       }
 // 1421     }
 // 1422   }
+??_buffer_steps_96:
+        LDR      R0,[SP, #+0]
+        ADDS     R0,R0,#+4
+        STR      R0,[SP, #+0]
+        ADD      R8,R8,#+4
+        SUBS     R9,R9,#+1
+        BNE.N    ??_buffer_steps_95
 // 1423 
 // 1424   if (moves_queued && !UNEAR_ZERO(previous_nominal_speed)) {
-??_buffer_steps_123:
         LDR      R0,[SP, #+12]
         CMP      R0,#+0
-        BEQ.W    ??_buffer_steps_124
+        BEQ.W    ??_buffer_steps_99
         LDR      R2,[R4, #+120]
+        LDR.W    R1,??DataTable18_5  ;; 0x358637be
         MOV      R0,R2
-        LDR.W    R1,??DataTable21_3  ;; 0x358637be
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.W    ??_buffer_steps_124
+        BCC.W    ??_buffer_steps_99
 // 1425     // Estimate a maximum velocity allowed at a joint of two successive segments.
 // 1426     // If this maximum velocity allowed is lower than the minimum of the entry / exit safe velocities,
 // 1427     // then the machine is not coasting anymore and the safe entry / exit velocities shall be used.
@@ -4498,40 +4754,58 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         MOV      R1,R2
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_125
-        STR      R0,[SP, #+0]
-        B.N      ??_buffer_steps_126
-        Nop      
-        DATA
-??_buffer_steps_0:
-        DC32     _ZN7Planner17block_buffer_headE
-        DC32     echomagic
-        DC32     `?<Constant " cold extrusion preve...">`
-        THUMB
-??_buffer_steps_125:
-        STR      R2,[SP, #+0]
+        ITE      CC 
+        MOVCC    R8,R0
+        MOVCS    R8,R2
 // 1432 
 // 1433     // Factor to multiply the previous / current nominal velocities to get componentwise limited velocities.
 // 1434     float v_factor = 1;
+        STR      R10,[SP, #+16]
 // 1435     limited = 0;
-??_buffer_steps_126:
-        MOV      R9,#+0
+        MOVS     R5,#+0
 // 1436 
 // 1437     // Now limit the jerk in all axes.
 // 1438     const float smaller_speed_factor = vmax_junction / previous_nominal_speed;
-        LDR      R0,[SP, #+0]
+        MOV      R0,R8
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         STR      R0,[SP, #+4]
 // 1439     LOOP_XYZE(axis) {
-        MOV      R6,R9
-        B.N      ??_buffer_steps_127
+        ADD      R0,R4,#+104
+        STR      R0,[SP, #+0]
+        ADD      R0,SP,#+28
+        STR      R0,[SP, #+8]
+        LDR.W    R0,??DataTable18_4
+        STR      R0,[SP, #+12]
+        MOVS     R0,#+4
+        STR      R0,[SP, #+20]
 // 1440       // Limit an axis. We have to differentiate: coasting, reversal of an axis, full stop.
 // 1441       float v_exit = previous_speed[axis] * smaller_speed_factor,
+??_buffer_steps_100:
+        LDR      R0,[SP, #+0]
+        LDR      R1,[SP, #+4]
+        LDR      R0,[R0, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
 // 1442             v_entry = current_speed[axis];
+        LDR      R0,[SP, #+8]
+        LDR      R11,[R0, #+0]
 // 1443       if (limited) {
+        UXTB     R5,R5
+        CBZ.N    R5,??_buffer_steps_101
 // 1444         v_exit *= v_factor;
+        LDR      R0,[SP, #+16]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R9,R0
 // 1445         v_entry *= v_factor;
+        LDR      R0,[SP, #+16]
+        MOV      R1,R11
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R11,R0
 // 1446       }
 // 1447 
 // 1448       // Calculate jerk depending on whether the axis is coasting in the same direction or reversing.
@@ -4540,127 +4814,106 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1451             ( (v_entry > 0 || v_exit < 0) ? (v_exit - v_entry) : max(v_exit, -v_entry) )
 // 1452           : // v_exit <= v_entry                coasting             axis reversal
 // 1453             ( (v_entry < 0 || v_exit > 0) ? (v_entry - v_exit) : max(-v_exit, v_entry) );
-??_buffer_steps_128:
-        MOV      R2,R10
-??_buffer_steps_129:
-        LDR.W    R0,??DataTable18
-        ADD      R0,R0,R6, LSL #+2
-        LDR      R0,[R0, #+44]
-        MOV      R1,R2
+??_buffer_steps_101:
+        MOV      R0,R11
+        MOV      R1,R9
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_130
+        BCS.N    ??_buffer_steps_102
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        BCC.N    ??_buffer_steps_103
+        MOV      R0,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.N    ??_buffer_steps_104
+??_buffer_steps_103:
+        MOV      R0,R9
+        MOV      R1,R11
+        B.N      ??_buffer_steps_105
+??_buffer_steps_104:
+        EOR      R2,R11,#0x80000000
+        MOV      R0,R2
+        MOV      R1,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCC.N    ??_buffer_steps_106
+        MOV      R9,R2
+        B.N      ??_buffer_steps_106
+??_buffer_steps_102:
+        MOVS     R1,#+0
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCC.N    ??_buffer_steps_107
+        MOV      R0,R9
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        BCS.N    ??_buffer_steps_108
+??_buffer_steps_107:
+        MOV      R0,R11
+        MOV      R1,R9
+??_buffer_steps_105:
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R9,R0
+        B.N      ??_buffer_steps_106
+??_buffer_steps_108:
+        EOR      R9,R9,#0x80000000
+        MOV      R0,R11
+        MOV      R1,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CS 
+        MOVCS    R9,R11
 // 1454 
 // 1455       if (jerk > max_jerk[axis]) {
+??_buffer_steps_106:
+        LDR      R0,[SP, #+12]
+        LDR      R0,[R0, #+0]
+        MOV      R1,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.N    ??_buffer_steps_109
 // 1456         v_factor *= max_jerk[axis] / jerk;
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        MOV      R1,R5
+        LDR      R1,[SP, #+16]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R5,R0
+        STR      R0,[SP, #+16]
 // 1457         ++limited;
-        ADD      R9,R9,#+1
+        ADDS     R5,R5,#+1
 // 1458       }
-??_buffer_steps_130:
-        ADDS     R6,R6,#+1
-??_buffer_steps_127:
-        CMP      R6,#+4
-        BGE.N    ??_buffer_steps_131
-        ADD      R0,R4,R6, LSL #+2
-        LDR      R0,[R0, #+104]
-        LDR      R1,[SP, #+4]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        ADD      R0,SP,#+20
-        LDR      R10,[R0, R6, LSL #+2]
-        UXTB     R9,R9
-        CMP      R9,#+0
-        BEQ.N    ??_buffer_steps_132
-        MOV      R0,R11
-        MOV      R1,R5
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R0,R10
-        MOV      R1,R5
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R10,R0
-??_buffer_steps_132:
-        MOV      R0,R10
-        MOV      R1,R11
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_133
-        MOVS     R1,#+0
-          CFI FunCall __aeabi_cfrcmple
-        BL       __aeabi_cfrcmple
-        BCC.N    ??_buffer_steps_134
-        MOV      R0,R11
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_135
-??_buffer_steps_134:
-        MOV      R0,R11
-        MOV      R1,R10
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R2,R0
-        B.N      ??_buffer_steps_129
-??_buffer_steps_135:
-        MOV      R2,R10
-        EOR      R2,R2,#0x80000000
-        MOV      R0,R2
-        MOV      R1,R11
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_129
-        MOV      R2,R11
-        B.N      ??_buffer_steps_129
-??_buffer_steps_133:
-        MOVS     R1,#+0
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??_buffer_steps_136
-        MOV      R0,R11
-          CFI FunCall __aeabi_cfrcmple
-        BL       __aeabi_cfrcmple
-        BCS.N    ??_buffer_steps_137
-??_buffer_steps_136:
-        MOV      R0,R10
-        MOV      R1,R11
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R2,R0
-        B.N      ??_buffer_steps_129
-??_buffer_steps_137:
-        MOV      R2,R11
-        EOR      R2,R2,#0x80000000
-        MOV      R0,R10
-        MOV      R1,R2
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_128
-        B.N      ??_buffer_steps_129
 // 1459     }
-// 1460     if (limited) vmax_junction *= v_factor;
-??_buffer_steps_131:
-        UXTB     R9,R9
-        CMP      R9,#+0
-        BEQ.N    ??_buffer_steps_138
+??_buffer_steps_109:
+        LDR      R0,[SP, #+12]
+        ADDS     R0,R0,#+4
+        STR      R0,[SP, #+12]
+        LDR      R0,[SP, #+8]
+        ADDS     R0,R0,#+4
+        STR      R0,[SP, #+8]
         LDR      R0,[SP, #+0]
-        MOV      R1,R5
+        ADDS     R0,R0,#+4
+        STR      R0,[SP, #+0]
+        LDR      R0,[SP, #+20]
+        SUBS     R0,R0,#+1
+        STR      R0,[SP, #+20]
+        BNE.N    ??_buffer_steps_100
+// 1460     if (limited) vmax_junction *= v_factor;
+        UXTB     R0,R5
+        CBZ.N    R0,??_buffer_steps_110
+        MOV      R1,R8
+        LDR      R0,[SP, #+16]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        STR      R0,[SP, #+0]
+        MOV      R8,R0
 // 1461     // Now the transition velocity is known, which maximizes the shared exit / entry velocity while
 // 1462     // respecting the jerk factors, it may be possible, that applying separate safe exit / entry velocities will achieve faster prints.
 // 1463     const float vmax_junction_threshold = vmax_junction * 0.99f;
-??_buffer_steps_138:
-        LDR      R1,[SP, #+0]
-        LDR.W    R0,??DataTable21_4  ;; 0x3f7d70a4
+??_buffer_steps_110:
+        LDR.W    R0,??DataTable18_6  ;; 0x3f7d70a4
+        MOV      R1,R8
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
 // 1464     if (previous_safe_speed > vmax_junction_threshold && safe_speed > vmax_junction_threshold) {
@@ -4668,11 +4921,11 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         LDR      R1,[R1, #+64]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_139
-        MOV      R1,R8
+        BCS.N    ??_buffer_steps_111
+        MOV      R1,R6
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??_buffer_steps_139
+        BCS.N    ??_buffer_steps_111
 // 1465       // Not coasting. The machine will stop and start the movements anyway,
 // 1466       // better to start the segment from start.
 // 1467       SBI(block->flag, BLOCK_BIT_START_FROM_FULL_HALT);
@@ -4681,41 +4934,67 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1470   }
 // 1471   else {
 // 1472     SBI(block->flag, BLOCK_BIT_START_FROM_FULL_HALT);
-??_buffer_steps_124:
+??_buffer_steps_99:
         LDRB     R0,[R7, #+0]
         ORR      R0,R0,#0x4
         STRB     R0,[R7, #+0]
 // 1473     vmax_junction = safe_speed;
-        STR      R8,[SP, #+0]
+        MOV      R8,R6
 // 1474   }
 // 1475 
 // 1476   // Max entry speed of this block equals the max exit speed of the previous block.
 // 1477   block->max_entry_speed = vmax_junction;
-??_buffer_steps_139:
-        LDR      R0,[SP, #+0]
-        STR      R0,[R7, #+48]
+??_buffer_steps_111:
+        STR      R8,[R7, #+48]
 // 1478 
 // 1479   // Initialize block entry speed. Compute based on deceleration to user-defined MINIMUM_PLANNER_SPEED.
 // 1480   const float v_allowable = max_allowable_speed(-block->acceleration, MINIMUM_PLANNER_SPEED, block->millimeters);
+        MOV      R11,#+2
         LDR      R0,[R7, #+56]
-        EOR      R0,R0,#0x80000000
-        STR      R0,[SP, #+8]
-        LDR.W    R0,??DataTable21_5  ;; 0x3d4ccccd
-        STR      R0,[SP, #+4]
-        ADD      R2,R7,#+52
-        ADD      R1,SP,#+4
-        ADD      R0,SP,#+8
-          CFI FunCall _ZN7Planner19max_allowable_speedERKfS1_S1_
-        BL       _ZN7Planner19max_allowable_speedERKfS1_S1_
+        LDR.W    R5,??DataTable18_7  ;; 0x3d4ccccd
+        EOR      R9,R0,#0x80000000
+        ADD      R0,R7,#+52
+        STR      R0,[SP, #+0]
+        B.N      ??_buffer_steps_112
+??_buffer_steps_113:
+        MOV      R0,R5
+        MOV      R1,R5
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R5,R0
+??_buffer_steps_112:
+        LSLS     R0,R11,#+31
+        BPL.N    ??_buffer_steps_114
+        MOV      R0,R10
+        MOV      R1,R5
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R10,R0
+??_buffer_steps_114:
+        LSRS     R11,R11,#+1
+        BNE.N    ??_buffer_steps_113
+        MOV      R0,#+1073741824
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[SP, #+0]
+        LDR      R1,[R1, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R0
+        MOV      R0,R10
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall sqrtf
+        BL       sqrtf
         MOV      R1,R0
 // 1481   block->entry_speed = min(vmax_junction, v_allowable);
-        LDR      R0,[SP, #+0]
+        MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??_buffer_steps_140
-        MOV      R0,R1
-??_buffer_steps_140:
-        STR      R0,[R7, #+44]
+        IT       CS 
+        MOVCS    R8,R1
+        STR      R8,[R7, #+44]
 // 1482 
 // 1483   // Initialize planner efficiency flags
 // 1484   // Set flag if block will always reach maximum junction speed regardless of entry/exit speeds.
@@ -4730,18 +5009,9 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
         LDR      R1,[R7, #+40]
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.N    ??_buffer_steps_141
-        MOVS     R0,#+2
-        B.N      ??_buffer_steps_142
-        Nop      
-        DATA
-??_buffer_steps_3:
-        DC32     `?<Constant " too long extrusion p...">`
-        DC32     mksCfg
-        THUMB
-??_buffer_steps_141:
-        MOVS     R0,#+0
-??_buffer_steps_142:
+        ITE      LS 
+        MOVLS    R0,#+2
+        MOVHI    R0,#+0
         LDRB     R1,[R7, #+0]
         ORR      R0,R0,#0x1
         ORRS     R0,R0,R1
@@ -4750,16 +5020,16 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1493   // Update previous path unit_vector and nominal speed
 // 1494   COPY(previous_speed, current_speed);
         MOVS     R2,#+16
-        ADD      R1,SP,#+20
+        ADD      R1,SP,#+28
         ADD      R0,R4,#+104
-          CFI FunCall memcpy
-        BL       memcpy
+          CFI FunCall __aeabi_memcpy4
+        BL       __aeabi_memcpy4
 // 1495   previous_nominal_speed = block->nominal_speed;
         LDR      R0,[R7, #+40]
         STR      R0,[R4, #+120]
 // 1496   previous_safe_speed = safe_speed;
-        LDR.N    R0,??DataTable18
-        STR      R8,[R0, #+64]
+        LDR.W    R0,??DataTable18
+        STR      R6,[R0, #+64]
 // 1497 
 // 1498   #if ENABLED(LIN_ADVANCE)
 // 1499     /**
@@ -4802,8 +5072,8 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[SP, #+4]
-        MOV      R0,R8
         MOV      R1,R5
+        MOV      R0,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         STR      R0,[SP, #+0]
@@ -4815,46 +5085,98 @@ _ZN7Planner13_buffer_stepsERA4_Kifh:
 // 1529 
 // 1530   // Move buffer head
 // 1531   block_buffer_head = next_buffer_head;
-        LDR      R0,[SP, #+16]
+        LDR      R0,[SP, #+24]
         STRB     R0,[R4, #+0]
 // 1532 
 // 1533   // Update the position (only when a move was queued)
 // 1534   static_assert(COUNT(target) > 1, "Parameter to _buffer_steps must be (&target)[XYZE]!");
 // 1535   COPY(position, target);
         MOVS     R2,#+16
-        LDR      R1,[SP, #+64]
+        LDR      R1,[SP, #+72]
         ADD      R0,R4,#+64
-          CFI FunCall memcpy
-        BL       memcpy
+          CFI FunCall __aeabi_memcpy4
+        BL       __aeabi_memcpy4
 // 1536 
 // 1537   recalculate();
-          CFI FunCall _ZN7Planner11recalculateEv
-        BL       _ZN7Planner11recalculateEv
+          CFI FunCall _ZN7Planner12reverse_passEv
+        BL       _ZN7Planner12reverse_passEv
+          CFI FunCall _ZN7Planner12forward_passEv
+        BL       _ZN7Planner12forward_passEv
+          CFI FunCall _ZN7Planner22recalculate_trapezoidsEv
+        BL       _ZN7Planner22recalculate_trapezoidsEv
 // 1538 
 // 1539 } // _buffer_steps()
-??_buffer_steps_35:
-        ADD      SP,SP,#+76
+??_buffer_steps_25:
+        ADD      SP,SP,#+84
           CFI CFA R13+36
         POP      {R4-R11,PC}      ;; return
-          CFI EndBlock cfiBlock17
+          CFI EndBlock cfiBlock18
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable13:
+??DataTable11:
+        DC32     _ZN7Planner17block_buffer_headE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_1:
+        DC32     _ZN11Temperature18allow_cold_extrudeE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_2:
+        DC32     _ZN11Temperature16extrude_min_tempE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_3:
+        DC32     _ZN11Temperature19current_temperatureE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_4:
+        DC32     echomagic
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_5:
+        DC32     Serial3
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_6:
+        DC32     `?<Constant " cold extrusion preve...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_7:
+        DC32     `?<Constant " too long extrusion p...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_8:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable11_9:
         DC32     0x3fe00000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable13_1:
+??DataTable11_10:
         DC32     _ZN7Planner12block_bufferE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable13_2:
-        DC32     fanSpeeds
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 _ZN7Planner23g_uc_extruder_last_moveE:
@@ -4915,54 +5237,52 @@ _ZN7Planner11last_fade_zE:
 // 1551  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock18 Using cfiCommon0
+          CFI Block cfiBlock19 Using cfiCommon0
           CFI Function _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
         THUMB
 // 1552 void Planner::buffer_segment(const float &a, const float &b, const float &c, const float &e, const float &fr_mm_s, const uint8_t extruder) {
 _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
-        PUSH     {R4-R11,LR}
+        PUSH     {R4-R7,R9-R11,LR}
           CFI R14 Frame(CFA, -4)
           CFI R11 Frame(CFA, -8)
           CFI R10 Frame(CFA, -12)
           CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+36
-        SUB      SP,SP,#+44
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
+        SUB      SP,SP,#+48
           CFI CFA R13+80
-        MOV      R10,R0
-        MOV      R5,R1
-        MOV      R6,R2
-        MOV      R7,R3
-        LDR      R4,[SP, #+84]
+        MOV      R6,R0
+        LDR      R9,[SP, #+84]
 // 1553 
 // 1554 
 // 1555   
 // 1556   // When changing extruders recalculate steps corresponding to the E position
 // 1557   #if ENABLED(DISTINCT_E_FACTORS)
 // 1558     if (last_extruder != extruder && axis_steps_per_mm[E_AXIS_N] != axis_steps_per_mm[E_AXIS + last_extruder]) {
-        MOV      R8,R4
-        LDR.W    R9,??DataTable21_6
-        ADD      R0,R9,R8, LSL #+2
+        LDR.W    R4,??DataTable18_8
+        ADD      R0,R4,R9, LSL #+2
         STR      R0,[SP, #+4]
-        LDRB     R0,[R9, #+2]
-        CMP      R0,R4
+        MOV      R5,R1
+        LDRB     R0,[R4, #+2]
+        MOV      R10,R2
+        MOV      R7,R3
+        CMP      R0,R9
         BEQ.N    ??buffer_segment_0
-        ADD      R0,R9,R0, LSL #+2
+        ADD      R0,R4,R0, LSL #+2
         STR      R0,[SP, #+0]
         LDR      R0,[SP, #+4]
-        LDR      R11,[R0, #+16]
-        MOV      R0,R11
         LDR      R1,[SP, #+0]
+        LDR      R11,[R0, #+16]
         LDR      R1,[R1, #+16]
+        MOV      R0,R11
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
         BEQ.N    ??buffer_segment_0
 // 1559       position[E_AXIS] = LROUND(position[E_AXIS] * axis_steps_per_mm[E_AXIS_N] * steps_to_mm[E_AXIS + last_extruder]);
-        LDR      R0,[R9, #+76]
+        LDR      R0,[R4, #+76]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R11
@@ -4974,9 +5294,9 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
-        STR      R0,[R9, #+76]
+        STR      R0,[R4, #+76]
 // 1560       last_extruder = extruder;
-        STRB     R4,[R9, #+2]
+        STRB     R9,[R4, #+2]
 // 1561     }
 // 1562   #endif
 // 1563 
@@ -4984,37 +5304,35 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
 // 1565   // Calculate target position in absolute steps
 // 1566   const int32_t target[XYZE] = {
 ??buffer_segment_0:
-        LDR      R1,[R10, #+0]
-        LDR      R0,[R9, #+4]
+        LDR      R1,[R6, #+0]
+        LDR      R0,[R4, #+4]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
         STR      R0,[SP, #+8]
-        ADD      R10,SP,#+8
+        ADD      R6,SP,#+8
         LDR      R1,[R5, #+0]
-        LDR      R0,[R9, #+8]
+        LDR      R0,[R4, #+8]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
-        STR      R0,[R10, #+4]
-        LDR      R1,[R6, #+0]
-        LDR      R0,[R9, #+12]
+        STR      R0,[R6, #+4]
+        LDR      R1,[R10, #+0]
+        LDR      R0,[R4, #+12]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
-        STR      R0,[R10, #+8]
-        LDR      R1,[R7, #+0]
+        STR      R0,[R6, #+8]
         LDR      R0,[SP, #+4]
+        LDR      R1,[R7, #+0]
         LDR      R0,[R0, #+16]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
         BL       lroundf
-        MOV      R5,R0
-        STR      R5,[R10, #+12]
 // 1567     LROUND(a * axis_steps_per_mm[X_AXIS]),
 // 1568     LROUND(b * axis_steps_per_mm[Y_AXIS]),
 // 1569     LROUND(c * axis_steps_per_mm[Z_AXIS]),
@@ -5023,12 +5341,14 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
 // 1572 
 // 1573   
 // 1574   if(MACHINETPYE & IS_KINEMATIC)
-        LDR.N    R2,??DataTable21_7
-        LDR.N    R0,??DataTable21_8
-        LDRH     R0,[R0, #+88]
+        LDR.W    R3,??DataTable18_9
+        MOV      R2,R0
+        LDR.W    R0,??DataTable18_10
+        STR      R2,[R6, #+12]
         MOVW     R1,#+770
+        LDRH     R0,[R0, #+88]
         TST      R0,R1
-        LDRB     R0,[R2, #+328]
+        LDRB     R0,[R3, #+344]
         BEQ.N    ??buffer_segment_1
 // 1575   {
 // 1576     if (gCfgItems.breakpoint_reprint_flg == 1)
@@ -5036,17 +5356,16 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
         BNE.N    ??buffer_segment_2
 // 1577     {
 // 1578         if(gCfgItems.had_breakpoint)
-        ADD      R0,R2,#+328
+        ADD      R0,R3,#+344
         LDRB     R1,[R0, #+12]
-        CMP      R1,#+0
-        BEQ.N    ??buffer_segment_2
+        CBZ.N    R1,??buffer_segment_2
 // 1579         {
 // 1580             gCfgItems.had_breakpoint=0;
         MOVS     R1,#+0
         STRB     R1,[R0, #+12]
 // 1581             position[E_AXIS] = gCfgItems.breakpoint_e_position;
         LDR      R0,[R0, #+8]
-        STR      R0,[R9, #+76]
+        STR      R0,[R4, #+76]
         B.N      ??buffer_segment_2
 // 1582         }
 // 1583     }
@@ -5058,44 +5377,31 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
         CMP      R0,#+1
         BNE.N    ??buffer_segment_3
 // 1588 		if (c < gCfgItems.breakpoint_z_pos) 
-        LDR      R0,[R6, #+0]
-        LDR      R1,[R2, #+664]
+        LDR      R0,[R10, #+0]
+        LDR      R1,[R3, #+680]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCS.N    ??buffer_segment_3
 // 1589         {
 // 1590             position[E_AXIS] = target[E_AXIS_N];
         ADD      R0,SP,#+8
-        ADD      R0,R0,R8, LSL #+2
-        LDR      R0,[R0, #+12]
-        STR      R0,[R9, #+76]
+        ADD      R0,R0,R9, LSL #+2
 // 1591             gCfgItems.breakpoint_flg=1;
+        ADD      R1,R3,#+344
+        LDR      R0,[R0, #+12]
+        STR      R0,[R4, #+76]
         MOVS     R0,#+1
-        ADD      R1,R2,#+328
         STRB     R0,[R1, #+13]
 // 1592             return;
-        B.N      ??buffer_segment_4
 // 1593         }
 // 1594 	}
 // 1595     //gCfgItems.breakpoint_reprint_flg = 0;
 // 1596     gCfgItems.breakpoint_flg=0;
-??buffer_segment_3:
-        MOVS     R0,#+0
-        ADD      R1,R2,#+328
-        STRB     R0,[R1, #+13]
 // 1597   }
 // 1598 
 // 1599   // DRYRUN prevents E moves from taking place
 // 1600   if (DEBUGGING(DRYRUN)) {
-??buffer_segment_2:
-        LDR.N    R0,??DataTable21_9
-        LDRB     R0,[R0, #+0]
-        LSLS     R0,R0,#+28
-        BPL.N    ??buffer_segment_5
 // 1601     position[E_AXIS] = target[E_AXIS];
-        STR      R5,[R9, #+76]
-??buffer_segment_5:
-        LDR      R6,[SP, #+80]
 // 1602     #if ENABLED(LIN_ADVANCE)
 // 1603       position_float[E_AXIS] = e;
 // 1604     #endif
@@ -5166,38 +5472,10 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
 // 1669   // Always split the first move into two (if not homing or probing)
 // 1670 
 // 1671   if (!blocks_queued()) {
-          CFI FunCall _ZN7Planner13blocks_queuedEv
-        BL       _ZN7Planner13blocks_queuedEv
-        CMP      R0,#+0
-        BNE.N    ??buffer_segment_6
 // 1672 
 // 1673     #define _BETWEEN(A) (position[A##_AXIS] + target[A##_AXIS]) >> 1
 // 1674     const int32_t between[XYZE] = { _BETWEEN(X), _BETWEEN(Y), _BETWEEN(Z), _BETWEEN(E) };
-        LDR      R0,[R9, #+64]
-        LDR      R1,[SP, #+8]
-        ADDS     R0,R1,R0
-        ASRS     R0,R0,#+1
-        STR      R0,[SP, #+24]
-        ADD      R0,SP,#+24
-        LDR      R1,[R9, #+68]
-        LDR      R2,[R10, #+4]
-        ADDS     R1,R2,R1
-        ASRS     R1,R1,#+1
-        STR      R1,[R0, #+4]
-        LDR      R1,[R9, #+72]
-        LDR      R2,[R10, #+8]
-        ADDS     R1,R2,R1
-        ASRS     R1,R1,#+1
-        STR      R1,[R0, #+8]
-        LDR      R1,[R9, #+76]
-        ADDS     R1,R5,R1
-        ASRS     R1,R1,#+1
-        STR      R1,[R0, #+12]
 // 1675     DISABLE_STEPPER_DRIVER_INTERRUPT();
-        LDR.N    R5,??DataTable21_10
-        MOV      R0,R5
-          CFI FunCall HAL_TIM_Base_Stop_IT
-        BL       HAL_TIM_Base_Stop_IT
 // 1676 
 // 1677     #if ENABLED(LIN_ADVANCE)
 // 1678       lin_dist_xy *= 0.5;
@@ -5205,11 +5483,6 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
 // 1680     #endif
 // 1681 
 // 1682     _buffer_steps(between, fr_mm_s, extruder);
-        MOV      R2,R4
-        LDR      R1,[R6, #+0]
-        ADD      R0,SP,#+24
-          CFI FunCall _ZN7Planner13_buffer_stepsERA4_Kifh
-        BL       _ZN7Planner13_buffer_stepsERA4_Kifh
 // 1683 
 // 1684     #if ENABLED(LIN_ADVANCE)
 // 1685       position_float[X_AXIS] = (position_float[X_AXIS] + a) * 0.5;
@@ -5219,40 +5492,15 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
 // 1689     #endif
 // 1690 
 // 1691     const uint8_t next = block_buffer_head;
-        LDRB     R7,[R9, #+0]
 // 1692     _buffer_steps(target, fr_mm_s, extruder);
-        MOV      R2,R4
-        LDR      R1,[R6, #+0]
-        ADD      R0,SP,#+8
-          CFI FunCall _ZN7Planner13_buffer_stepsERA4_Kifh
-        BL       _ZN7Planner13_buffer_stepsERA4_Kifh
 // 1693     SBI(block_buffer[next].flag, BLOCK_BIT_CONTINUED);
-        MOVS     R0,#+84
-        MULS     R0,R0,R7
-        LDR.N    R1,??DataTable21_11
-        LDRB     R2,[R0, R1]
-        ORR      R2,R2,#0x10
-        STRB     R2,[R0, R1]
 // 1694     ENABLE_STEPPER_DRIVER_INTERRUPT();
-        MOV      R0,R5
-          CFI FunCall HAL_TIM_Base_Start_IT
-        BL       HAL_TIM_Base_Start_IT
-        B.N      ??buffer_segment_7
 // 1695   }
 // 1696   else
 // 1697 
 // 1698     _buffer_steps(target, fr_mm_s, extruder);
-??buffer_segment_6:
-        MOV      R2,R4
-        LDR      R1,[R6, #+0]
-        ADD      R0,SP,#+8
-          CFI FunCall _ZN7Planner13_buffer_stepsERA4_Kifh
-        BL       _ZN7Planner13_buffer_stepsERA4_Kifh
 // 1699 
 // 1700   stepper.wake_up();
-??buffer_segment_7:
-          CFI FunCall _ZN7Stepper7wake_upEv
-        BL       _ZN7Stepper7wake_upEv
 // 1701 
 // 1702   #if ENABLED(LIN_ADVANCE)
 // 1703     position_float[X_AXIS] = a;
@@ -5261,29 +5509,99 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
 // 1706     position_float[E_AXIS] = e;
 // 1707   #endif
 // 1708 } // buffer_segment()
+        B.N      ?Subroutine2
+??buffer_segment_3:
+        ADD      R1,R3,#+344
+        MOVS     R0,#+0
+        STRB     R0,[R1, #+13]
+??buffer_segment_2:
+        LDR.N    R0,??DataTable18_11
+        LDRB     R0,[R0, #+0]
+        LSLS     R0,R0,#+28
+        IT       MI 
+        STRMI    R2,[R4, #+76]
+        LDRB     R0,[R4, #+0]
+        LDR      R5,[SP, #+80]
+        LDRB     R1,[R4, #+1]
+        CMP      R0,R1
+        BNE.N    ??buffer_segment_4
+        LDR      R0,[R4, #+64]
+        LDR      R1,[SP, #+8]
+        ADDS     R0,R1,R0
+        ASRS     R0,R0,#+1
+        STR      R0,[SP, #+24]
+        LDR      R1,[R4, #+68]
+        LDR      R3,[R6, #+4]
+        ADD      R0,SP,#+24
+        ADDS     R1,R3,R1
+        ASRS     R1,R1,#+1
+        STR      R1,[R0, #+4]
+        LDR      R3,[R6, #+8]
+        LDR      R1,[R4, #+72]
+        LDR.N    R6,??DataTable18_12
+        ADDS     R1,R3,R1
+        ASRS     R1,R1,#+1
+        STR      R1,[R0, #+8]
+        LDR      R1,[R4, #+76]
+        ADDS     R1,R2,R1
+        ASRS     R1,R1,#+1
+        STR      R1,[R0, #+12]
+        MOV      R0,R6
+          CFI FunCall HAL_TIM_Base_Stop_IT
+        BL       HAL_TIM_Base_Stop_IT
+        LDR      R1,[R5, #+0]
+        MOV      R2,R9
+        ADD      R0,SP,#+24
+          CFI FunCall _ZN7Planner13_buffer_stepsERA4_Kifh
+        BL       _ZN7Planner13_buffer_stepsERA4_Kifh
+        LDRB     R7,[R4, #+0]
+        LDR      R1,[R5, #+0]
+        MOV      R2,R9
+        ADD      R0,SP,#+8
+          CFI FunCall _ZN7Planner13_buffer_stepsERA4_Kifh
+        BL       _ZN7Planner13_buffer_stepsERA4_Kifh
+        MOVS     R0,#+84
+        MULS     R0,R0,R7
+        LDR.N    R1,??DataTable18_13
+        LDRB     R2,[R0, R1]
+        ORR      R2,R2,#0x10
+        STRB     R2,[R0, R1]
+        MOV      R0,R6
+          CFI FunCall HAL_TIM_Base_Start_IT
+        BL       HAL_TIM_Base_Start_IT
+        B.N      ??buffer_segment_5
 ??buffer_segment_4:
-        ADD      SP,SP,#+44
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
-          CFI EndBlock cfiBlock18
+        LDR      R1,[R5, #+0]
+        MOV      R2,R9
+        ADD      R0,SP,#+8
+          CFI FunCall _ZN7Planner13_buffer_stepsERA4_Kifh
+        BL       _ZN7Planner13_buffer_stepsERA4_Kifh
+??buffer_segment_5:
+          CFI FunCall _ZN7Stepper7wake_upEv
+        BL       _ZN7Stepper7wake_upEv
+          CFI EndBlock cfiBlock19
+        REQUIRE ?Subroutine2
+        ;; // Fall through to label ?Subroutine2
 
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable14:
-        DC32     mksCfg+0x101
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable14_1:
-        DC32     gArrayGpioPort
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable14_2:
-        DC32     gArrayGpioPin
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock20 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
+          CFI CFA R13+80
+          CFI R4 Frame(CFA, -32)
+          CFI R5 Frame(CFA, -28)
+          CFI R6 Frame(CFA, -24)
+          CFI R7 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine2:
+        ADD      SP,SP,#+48
+          CFI CFA R13+32
+        POP      {R4-R7,R9-R11,PC}  ;; return
+          CFI EndBlock cfiBlock20
 // 1709 
 // 1710 /**
 // 1711  * Directly set the planner XYZ position (and stepper positions)
@@ -5294,12 +5612,12 @@ _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h:
 // 1716 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock19 Using cfiCommon0
+          CFI Block cfiBlock21 Using cfiCommon0
           CFI Function _ZN7Planner16_set_position_mmERKfS1_S1_S1_
         THUMB
 // 1717 void Planner::_set_position_mm(const float &a, const float &b, const float &c, const float &e) {
 _ZN7Planner16_set_position_mmERKfS1_S1_S1_:
-        PUSH     {R0-R10,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
           CFI R10 Frame(CFA, -8)
           CFI R9 Frame(CFA, -12)
@@ -5308,23 +5626,25 @@ _ZN7Planner16_set_position_mmERKfS1_S1_S1_:
           CFI R6 Frame(CFA, -24)
           CFI R5 Frame(CFA, -28)
           CFI R4 Frame(CFA, -32)
-          CFI CFA R13+48
-        MOV      R5,R1
-        MOV      R10,R2
-        MOV      R8,R3
+          CFI CFA R13+32
 // 1718   #if ENABLED(DISTINCT_E_FACTORS)
 // 1719     #define _EINDEX (E_AXIS + active_extruder)
 // 1720     last_extruder = active_extruder;
-        LDR.N    R4,??DataTable21_6
-        LDR.W    R9,??DataTable21_12
+        LDR.W    R9,??DataTable18_14
+        LDR.N    R4,??DataTable18_8
+        MOV      R5,R1
         LDRB     R1,[R9, #+0]
         STRB     R1,[R4, #+2]
+        SUB      SP,SP,#+16
+          CFI CFA R13+48
 // 1721   #else
 // 1722     #define _EINDEX E_AXIS
 // 1723   #endif
 // 1724   const int32_t na = position[X_AXIS] = LROUND(a * axis_steps_per_mm[X_AXIS]),
         LDR      R1,[R0, #+0]
         LDR      R0,[R4, #+4]
+        MOV      R10,R2
+        MOV      R8,R3
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
           CFI FunCall lroundf
@@ -5348,11 +5668,11 @@ _ZN7Planner16_set_position_mmERKfS1_S1_S1_:
           CFI FunCall lroundf
         BL       lroundf
         MOV      R5,R0
-        STR      R5,[R4, #+72]
 // 1727                 ne = position[E_AXIS] = LROUND(e * axis_steps_per_mm[_EINDEX]);
-        LDR      R1,[R8, #+0]
         LDRB     R0,[R9, #+0]
+        STR      R5,[R4, #+72]
         ADD      R0,R4,R0, LSL #+2
+        LDR      R1,[R8, #+0]
         LDR      R0,[R0, #+16]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
@@ -5366,10 +5686,10 @@ _ZN7Planner16_set_position_mmERKfS1_S1_S1_:
 // 1732     position_float[E_AXIS] = e;
 // 1733   #endif
 // 1734   stepper.set_position(na, nb, nc, ne);
+        STR      R0,[SP, #+0]
         STR      R7,[SP, #+12]
         STR      R6,[SP, #+8]
         STR      R5,[SP, #+4]
-        STR      R0,[SP, #+0]
         ADD      R3,SP,#+0
         ADD      R2,SP,#+4
         ADD      R1,SP,#+8
@@ -5380,18 +5700,19 @@ _ZN7Planner16_set_position_mmERKfS1_S1_S1_:
         MOVS     R0,#+0
         STR      R0,[R4, #+120]
 // 1736   ZERO(previous_speed);
-        MOVS     R2,#+16
-        MOV      R1,R0
+        MOVS     R1,#+16
         ADD      R0,R4,#+104
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr
+        BL       __aeabi_memclr
 // 1737 }
-        POP      {R0-R10,PC}      ;; return
-          CFI EndBlock cfiBlock19
+        ADD      SP,SP,#+16
+          CFI CFA R13+32
+        POP      {R4-R10,PC}      ;; return
+          CFI EndBlock cfiBlock21
 // 1738 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock20 Using cfiCommon0
+          CFI Block cfiBlock22 Using cfiCommon0
           CFI Function _ZN7Planner25set_position_mm_kinematicERA4_Kf
         THUMB
 // 1739 void Planner::set_position_mm_kinematic(const float (&cart)[XYZE]) {
@@ -5401,9 +5722,9 @@ _ZN7Planner25set_position_mm_kinematicERA4_Kf:
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+12
+        MOV      R4,R0
         SUB      SP,SP,#+20
           CFI CFA R13+32
-        MOV      R4,R0
 // 1740 	/*
 // 1741   #if PLANNER_LEVELING
 // 1742     float raw[XYZ] = { cart[X_AXIS], cart[Y_AXIS], cart[Z_AXIS] };
@@ -5415,16 +5736,16 @@ _ZN7Planner25set_position_mm_kinematicERA4_Kf:
 // 1748   float raw[NUM_AXIS];
 // 1749   if(BED_LEVELING_METHOD&PLANNER_LEVELING)	{
         LDR      R0,[R4, #+0]
-        LDR.N    R5,??DataTable21_8
-        ADD      R1,SP,#+0
-        LDRB     R2,[R5, #+64]
-        MOVS     R3,#+46
-        TST      R2,R3
+        LDR.N    R5,??DataTable18_10
+        LDRB     R2,[R5, #+66]
         STR      R0,[SP, #+0]
+        ADD      R1,SP,#+0
         LDR      R0,[R4, #+4]
         STR      R0,[R1, #+4]
+        MOVS     R3,#+46
         LDR      R0,[R4, #+8]
         STR      R0,[R1, #+8]
+        TST      R2,R3
         BEQ.N    ??set_position_mm_kinematic_0
 // 1750   	raw[0] = cart[X_AXIS];
 // 1751   	raw[1] = cart[Y_AXIS];
@@ -5447,9 +5768,9 @@ _ZN7Planner25set_position_mm_kinematicERA4_Kf:
         LDR      R0,[R4, #+12]
         STR      R0,[R1, #+12]
 ??set_position_mm_kinematic_1:
-        ADD      R0,R5,#+64
-        LDRSH    R0,[R0, #+24]
+        ADD      R0,R5,#+66
         MOVW     R1,#+770
+        LDRSH    R0,[R0, #+22]
         TST      R0,R1
         BEQ.N    ??set_position_mm_kinematic_2
 // 1761   	}
@@ -5480,17 +5801,22 @@ _ZN7Planner25set_position_mm_kinematicERA4_Kf:
 // 1777 	  
 // 1778 	  _set_position_mm(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], cart[E_AXIS]);
 ??set_position_mm_kinematic_4:
-        LDR.N    R0,??DataTable21_13
+        LDR.N    R0,??DataTable18_15
         ADD      R3,R4,#+12
         ADD      R2,R0,#+8
         ADDS     R1,R0,#+4
           CFI FunCall _ZN7Planner16_set_position_mmERKfS1_S1_S1_
         BL       _ZN7Planner16_set_position_mmERKfS1_S1_S1_
-        B.N      ??set_position_mm_kinematic_5
 // 1779   	}
 // 1780   else
 // 1781   	{
 // 1782 	  _set_position_mm(raw[X_AXIS], raw[Y_AXIS], raw[Z_AXIS], cart[E_AXIS]);
+// 1783   	}  
+// 1784 }
+        ADD      SP,SP,#+20
+          CFI CFA R13+12
+        POP      {R4,R5,PC}
+          CFI CFA R13+32
 ??set_position_mm_kinematic_2:
         ADD      R3,R4,#+12
         ADD      R2,SP,#+8
@@ -5498,20 +5824,23 @@ _ZN7Planner25set_position_mm_kinematicERA4_Kf:
         ADD      R0,SP,#+0
           CFI FunCall _ZN7Planner16_set_position_mmERKfS1_S1_S1_
         BL       _ZN7Planner16_set_position_mmERKfS1_S1_S1_
-// 1783   	}  
-// 1784 }
-??set_position_mm_kinematic_5:
         ADD      SP,SP,#+20
           CFI CFA R13+12
         POP      {R4,R5,PC}       ;; return
-          CFI EndBlock cfiBlock20
+          CFI EndBlock cfiBlock22
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable13:
+        DC32     fanSpeeds
 // 1785 
 // 1786 /**
 // 1787  * Sync from the stepper positions. (e.g., after an interrupted move)
 // 1788  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock21 Using cfiCommon0
+          CFI Block cfiBlock23 Using cfiCommon0
           CFI Function _ZN7Planner18sync_from_steppersEv
         THUMB
 // 1789 void Planner::sync_from_steppers() {
@@ -5521,17 +5850,24 @@ _ZN7Planner18sync_from_steppersEv:
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 // 1790   LOOP_XYZE(i) {
-        MOVS     R4,#+0
-        B.N      ??sync_from_steppers_0
 // 1791     position[i] = stepper.position((AxisEnum)i);
-??sync_from_steppers_1:
-        MOV      R0,R4
-        SXTB     R0,R0
+        LDR.N    R4,??DataTable18_8
+        MOVS     R0,#+0
           CFI FunCall _ZN7Stepper8positionE8AxisEnum
         BL       _ZN7Stepper8positionE8AxisEnum
-        LDR.N    R1,??DataTable21_6
-        ADD      R1,R1,R4, LSL #+2
-        STR      R0,[R1, #+64]
+        STR      R0,[R4, #+64]
+        MOVS     R0,#+1
+          CFI FunCall _ZN7Stepper8positionE8AxisEnum
+        BL       _ZN7Stepper8positionE8AxisEnum
+        STR      R0,[R4, #+68]
+        MOVS     R0,#+2
+          CFI FunCall _ZN7Stepper8positionE8AxisEnum
+        BL       _ZN7Stepper8positionE8AxisEnum
+        STR      R0,[R4, #+72]
+        MOVS     R0,#+3
+          CFI FunCall _ZN7Stepper8positionE8AxisEnum
+        BL       _ZN7Stepper8positionE8AxisEnum
+        STR      R0,[R4, #+76]
 // 1792     #if ENABLED(LIN_ADVANCE)
 // 1793       position_float[i] = position[i] * steps_to_mm[i
 // 1794         #if ENABLED(DISTINCT_E_FACTORS)
@@ -5540,20 +5876,34 @@ _ZN7Planner18sync_from_steppersEv:
 // 1797       ];
 // 1798     #endif
 // 1799   }
-        ADDS     R4,R4,#+1
-??sync_from_steppers_0:
-        CMP      R4,#+4
-        BLT.N    ??sync_from_steppers_1
 // 1800 }
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock21
+          CFI EndBlock cfiBlock23
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable14:
+        DC32     mksCfg+0x101
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable14_1:
+        DC32     gArrayGpioPort
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable14_2:
+        DC32     gArrayGpioPin
 // 1801 
 // 1802 /**
 // 1803  * Setters for planner position (also setting stepper position).
 // 1804  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock22 Using cfiCommon0
+          CFI Block cfiBlock24 Using cfiCommon0
           CFI Function _ZN7Planner15set_position_mmE8AxisEnumRKf
         THUMB
 // 1805 void Planner::set_position_mm(const AxisEnum axis, const float &v) {
@@ -5568,28 +5918,25 @@ _ZN7Planner15set_position_mmE8AxisEnumRKf:
         MOV      R4,R1
 // 1806   #if ENABLED(DISTINCT_E_FACTORS)
 // 1807     const uint8_t axis_index = axis + (axis == E_AXIS ? active_extruder : 0);
-        LDR.N    R0,??DataTable21_12
-        LDRB     R0,[R0, #+0]
+        LDR.N    R0,??DataTable18_14
         LDRSB    R1,[SP, #+8]
+        LDRB     R0,[R0, #+0]
         CMP      R1,#+3
-        BNE.N    ??set_position_mm_0
-        MOV      R1,R0
-        B.N      ??set_position_mm_1
-??set_position_mm_0:
-        MOVS     R1,#+0
-??set_position_mm_1:
-        LDRSB    R2,[SP, #+8]
-        ADDS     R2,R1,R2
+        ITE      EQ 
+        MOVEQ    R2,R0
+        MOVNE    R2,#+0
 // 1808     last_extruder = active_extruder;
-        LDR.N    R5,??DataTable21_6
+        LDR.N    R5,??DataTable18_8
         STRB     R0,[R5, #+2]
 // 1809   #else
 // 1810     const uint8_t axis_index = axis;
 // 1811   #endif
 // 1812   position[axis] = LROUND(v * axis_steps_per_mm[axis_index]);
+        LDRSB    R0,[SP, #+8]
         LDR      R1,[R4, #+0]
-        UXTB     R2,R2
-        ADD      R0,R5,R2, LSL #+2
+        ADDS     R0,R2,R0
+        UXTB     R0,R0
+        ADD      R0,R5,R0, LSL #+2
         LDR      R0,[R0, #+4]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
@@ -5611,418 +5958,24 @@ _ZN7Planner15set_position_mmE8AxisEnumRKf:
           CFI FunCall _ZN7Stepper12set_positionERK8AxisEnumRKl
         BL       _ZN7Stepper12set_positionERK8AxisEnumRKl
 // 1817   previous_speed[axis] = 0.0;
-        MOVS     R0,#+0
         LDRSB    R1,[SP, #+8]
         ADD      R1,R5,R1, LSL #+2
+        MOVS     R0,#+0
         STR      R0,[R1, #+104]
 // 1818 }
-        POP      {R0-R2,R4,R5,PC}  ;; return
-          CFI EndBlock cfiBlock22
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable18:
-        DC32     _ZN7Planner23g_uc_extruder_last_moveE
+        ADD      SP,SP,#+12
+          CFI CFA R13+12
+        POP      {R4,R5,PC}       ;; return
+          CFI EndBlock cfiBlock24
 // 1819 
 // 1820 // Recalculate the steps/s^2 acceleration rates, based on the mm/s^2
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock23 Using cfiCommon0
+          CFI Block cfiBlock25 Using cfiCommon0
           CFI Function _ZN7Planner24reset_acceleration_ratesEv
         THUMB
 // 1821 void Planner::reset_acceleration_rates() {
 _ZN7Planner24reset_acceleration_ratesEv:
-        PUSH     {R4-R6,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-// 1822   #if ENABLED(DISTINCT_E_FACTORS)
-// 1823     #define HIGHEST_CONDITION (i < E_AXIS || i == E_AXIS + active_extruder)
-// 1824   #else
-// 1825     #define HIGHEST_CONDITION true
-// 1826   #endif
-// 1827   uint32_t highest_rate = 1;
-        MOVS     R4,#+1
-// 1828   LOOP_XYZE_N(i) {
-        MOVS     R5,#+0
-        B.N      ??reset_acceleration_rates_0
-// 1829     max_acceleration_steps_per_s2[i] = max_acceleration_mm_per_s2[i] * axis_steps_per_mm[i];
-??reset_acceleration_rates_1:
-        ADD      R6,R0,R5, LSL #+2
-        LDR.N    R0,??DataTable21_14
-        LDR      R0,[R0, R5, LSL #+2]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        LDR      R1,[R6, #+4]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-          CFI FunCall __aeabi_f2uiz
-        BL       __aeabi_f2uiz
-        STR      R0,[R6, #+44]
-// 1830     if (HIGHEST_CONDITION) NOLESS(highest_rate, max_acceleration_steps_per_s2[i]);
-        CMP      R5,#+3
-        BLT.N    ??reset_acceleration_rates_2
-        LDR.N    R1,??DataTable21_12
-        LDRB     R1,[R1, #+0]
-        ADDS     R1,R1,#+3
-        CMP      R5,R1
-        BNE.N    ??reset_acceleration_rates_3
-??reset_acceleration_rates_2:
-        CMP      R4,R0
-        BCS.N    ??reset_acceleration_rates_3
-        MOV      R4,R0
-// 1831   }
-??reset_acceleration_rates_3:
-        ADDS     R5,R5,#+1
-        UXTB     R5,R5
-??reset_acceleration_rates_0:
-        LDR.N    R0,??DataTable21_6
-        CMP      R5,#+5
-        BLT.N    ??reset_acceleration_rates_1
-// 1832   cutoff_long = 4294967295UL / highest_rate;
-        MOV      R1,#-1
-        UDIV     R1,R1,R4
-        STR      R1,[R0, #+100]
-// 1833 }
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock23
-// 1834 
-// 1835 // Recalculate position, steps_to_mm if axis_steps_per_mm changes!
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock24 Using cfiCommon0
-          CFI Function _ZN7Planner19refresh_positioningEv
-        THUMB
-// 1836 void Planner::refresh_positioning() {
-_ZN7Planner19refresh_positioningEv:
-        PUSH     {R3-R5,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-// 1837   LOOP_XYZE_N(i) steps_to_mm[i] = 1.0 / axis_steps_per_mm[i];
-        MOVS     R4,#+0
-        B.N      ??refresh_positioning_0
-??refresh_positioning_1:
-        LDR.N    R0,??DataTable21_6
-        ADD      R5,R0,R4, LSL #+2
-        MOV      R0,#+1065353216
-        LDR      R1,[R5, #+4]
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-        STR      R0,[R5, #+24]
-        ADDS     R4,R4,#+1
-??refresh_positioning_0:
-        CMP      R4,#+5
-        BLT.N    ??refresh_positioning_1
-// 1838   set_position_mm_kinematic(current_position);
-        LDR.N    R0,??DataTable21_15
-          CFI FunCall _ZN7Planner25set_position_mm_kinematicERA4_Kf
-        BL       _ZN7Planner25set_position_mm_kinematicERA4_Kf
-// 1839   reset_acceleration_rates();
-        POP      {R0,R4,R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN7Planner24reset_acceleration_ratesEv
-        B.N      _ZN7Planner24reset_acceleration_ratesEv
-          CFI EndBlock cfiBlock24
-// 1840 }
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock25 Using cfiCommon0
-          CFI Function _ZN7Planner18autotemp_M104_M109Ev
-        THUMB
-_ZN7Planner18autotemp_M104_M109Ev:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOVS     R0,#+70
-          CFI FunCall _ZN11GCodeParser4seenEc
-        BL       _ZN11GCodeParser4seenEc
-        LDR.N    R4,??DataTable21_6
-        STRB     R0,[R4, #+3]
-        CMP      R0,#+0
-        BEQ.N    ??autotemp_M104_M109_0
-          CFI FunCall _ZN11GCodeParser18value_celsius_diffEv
-        BL       _ZN11GCodeParser18value_celsius_diffEv
-        STR      R0,[R4, #+96]
-??autotemp_M104_M109_0:
-        MOVS     R0,#+83
-          CFI FunCall _ZN11GCodeParser4seenEc
-        BL       _ZN11GCodeParser4seenEc
-        CMP      R0,#+0
-        BEQ.N    ??autotemp_M104_M109_1
-          CFI FunCall _ZN11GCodeParser13value_celsiusEv
-        BL       _ZN11GCodeParser13value_celsiusEv
-        STR      R0,[R4, #+92]
-??autotemp_M104_M109_1:
-        MOVS     R0,#+66
-          CFI FunCall _ZN11GCodeParser4seenEc
-        BL       _ZN11GCodeParser4seenEc
-        CMP      R0,#+0
-        BEQ.N    ??autotemp_M104_M109_2
-          CFI FunCall _ZN11GCodeParser13value_celsiusEv
-        BL       _ZN11GCodeParser13value_celsiusEv
-        STR      R0,[R4, #+88]
-??autotemp_M104_M109_2:
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock25
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21:
-        DC32     0x412e8480
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_1:
-        DC32     0xa0b5ed8d
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_2:
-        DC32     0x4020c6f7
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_3:
-        DC32     0x358637be
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_4:
-        DC32     0x3f7d70a4
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_5:
-        DC32     0x3d4ccccd
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_6:
-        DC32     _ZN7Planner17block_buffer_headE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_7:
-        DC32     gCfgItems
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_8:
-        DC32     mksCfg
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_9:
-        DC32     marlin_debug_flags
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_10:
-        DC32     htim2
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_11:
-        DC32     _ZN7Planner12block_bufferE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_12:
-        DC32     active_extruder
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_13:
-        DC32     delta
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_14:
-        DC32     _ZN7Planner26max_acceleration_mm_per_s2E
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable21_15:
-        DC32     current_position
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock26 Using cfiCommon0
-          CFI Function _Z14serialprintPGMPKc
-        THUMB
-// __interwork __softfp void serialprintPGM(char const *)
-_Z14serialprintPGMPKc:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-        B.N      ??serialprintPGM_0
-??serialprintPGM_1:
-        UXTB     R1,R1
-        LDR.N    R0,??serialprintPGM_2
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-??serialprintPGM_0:
-        LDRSB    R1,[R4], #+1
-        MOVS     R0,R1
-        BNE.N    ??serialprintPGM_1
-        POP      {R4,PC}          ;; return
-        DATA
-??serialprintPGM_2:
-        DC32     Serial3
-          CFI EndBlock cfiBlock26
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner16refresh_e_factorEh
-          CFI Block cfiBlock27 Using cfiCommon0
-          CFI Function _ZN7Planner16refresh_e_factorEh
-        THUMB
-// __interwork __softfp void Planner::refresh_e_factor(uint8_t)
-_ZN7Planner16refresh_e_factorEh:
-        PUSH     {R3-R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
-        MOV      R6,R0
-        LDR.N    R7,??refresh_e_factor_0
-        LDRSH    R0,[R7, R6, LSL #+1]
-          CFI FunCall __aeabi_i2d
-        BL       __aeabi_i2d
-        LDR.N    R2,??refresh_e_factor_0+0x4  ;; 0x47ae147b
-        LDR.N    R3,??refresh_e_factor_0+0x8  ;; 0x3f847ae1
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R4,R0
-        MOV      R5,R1
-        ADD      R0,R7,R6, LSL #+2
-        LDR      R0,[R0, #+4]
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        LDR.N    R1,??refresh_e_factor_0+0xC
-        ADD      R1,R1,R6, LSL #+2
-        STR      R0,[R1, #+80]
-        POP      {R0,R4-R7,PC}    ;; return
-        Nop      
-        DATA
-??refresh_e_factor_0:
-        DC32     _ZN7Planner15flow_percentageE
-        DC32     0x47ae147b
-        DC32     0x3f847ae1
-        DC32     _ZN7Planner17block_buffer_headE
-          CFI EndBlock cfiBlock27
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner12movesplannedEv
-          CFI Block cfiBlock28 Using cfiCommon0
-          CFI Function _ZN7Planner12movesplannedEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp uint8_t Planner::movesplanned()
-_ZN7Planner12movesplannedEv:
-        LDR.N    R0,??movesplanned_0
-        LDRB     R1,[R0, #+0]
-        LDRB     R0,[R0, #+1]
-        SUBS     R0,R1,R0
-        AND      R0,R0,#0xF
-        BX       LR               ;; return
-        Nop      
-        DATA
-??movesplanned_0:
-        DC32     _ZN7Planner17block_buffer_headE
-          CFI EndBlock cfiBlock28
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN7Planner13blocks_queuedEv
-          CFI Block cfiBlock29 Using cfiCommon0
-          CFI Function _ZN7Planner13blocks_queuedEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp bool Planner::blocks_queued()
-_ZN7Planner13blocks_queuedEv:
-        LDR.N    R0,??blocks_queued_0
-        LDRB     R1,[R0, #+0]
-        LDRB     R0,[R0, #+1]
-        CMP      R1,R0
-        BEQ.N    ??blocks_queued_1
-        MOVS     R0,#+1
-        BX       LR
-??blocks_queued_1:
-        MOVS     R0,#+0
-        BX       LR               ;; return
-        Nop      
-        DATA
-??blocks_queued_0:
-        DC32     _ZN7Planner17block_buffer_headE
-          CFI EndBlock cfiBlock29
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN7Planner16next_block_indexEa
-          CFI Block cfiBlock30 Using cfiCommon0
-          CFI Function _ZN7Planner16next_block_indexEa
-          CFI NoCalls
-        THUMB
-// __interwork __softfp signed char const Planner::next_block_index(int8_t)
-_ZN7Planner16next_block_indexEa:
-        ADDS     R0,R0,#+1
-        AND      R0,R0,#0xF
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock30
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN7Planner16prev_block_indexEa
-          CFI Block cfiBlock31 Using cfiCommon0
-          CFI Function _ZN7Planner16prev_block_indexEa
-          CFI NoCalls
-        THUMB
-// __interwork __softfp signed char const Planner::prev_block_index(int8_t)
-_ZN7Planner16prev_block_indexEa:
-        SUBS     R0,R0,#+1
-        AND      R0,R0,#0xF
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock31
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_
-          CFI Block cfiBlock32 Using cfiCommon0
-          CFI Function _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_
-        THUMB
-// __interwork __softfp float Planner::estimate_acceleration_distance(float const &, float const &, float const &)
-_ZN7Planner30estimate_acceleration_distanceERKfS1_S1_:
         PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
           CFI R9 Frame(CFA, -8)
@@ -6032,100 +5985,318 @@ _ZN7Planner30estimate_acceleration_distanceERKfS1_S1_:
           CFI R5 Frame(CFA, -24)
           CFI R4 Frame(CFA, -28)
           CFI CFA R13+32
-        MOV      R7,R0
-        MOV      R3,R1
-        MOV      R4,R2
-        LDR      R0,[R4, #+0]
-        MOVS     R1,#+0
-          CFI FunCall __aeabi_cfcmpeq
-        BL       __aeabi_cfcmpeq
-        BNE.N    ??estimate_acceleration_distance_0
-        MOV      R0,R1
-        B.N      ??estimate_acceleration_distance_1
-??estimate_acceleration_distance_0:
-        LDR      R8,[R3, #+0]
-        MOV      R9,#+2
-        MOV      R5,#+1065353216
-        MOV      R6,R5
-        B.N      ??estimate_acceleration_distance_2
-??estimate_acceleration_distance_3:
-        MOV      R0,R8
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R8,R0
-??estimate_acceleration_distance_2:
-        LSLS     R0,R9,#+31
-        BPL.N    ??estimate_acceleration_distance_4
-        MOV      R0,R6
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R6,R0
-??estimate_acceleration_distance_4:
-        LSRS     R9,R9,#+1
-        BNE.N    ??estimate_acceleration_distance_3
-        LDR      R7,[R7, #+0]
-        MOV      R8,#+2
-        B.N      ??estimate_acceleration_distance_5
-??estimate_acceleration_distance_6:
-        MOV      R0,R7
-        MOV      R1,R7
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R7,R0
-??estimate_acceleration_distance_5:
-        LSLS     R0,R8,#+31
-        BPL.N    ??estimate_acceleration_distance_7
-        MOV      R0,R5
-        MOV      R1,R7
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R5,R0
-??estimate_acceleration_distance_7:
-        LSRS     R8,R8,#+1
-        BNE.N    ??estimate_acceleration_distance_6
-        MOV      R0,R6
-        MOV      R1,R5
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R5,R0
+// 1822   #if ENABLED(DISTINCT_E_FACTORS)
+// 1823     #define HIGHEST_CONDITION (i < E_AXIS || i == E_AXIS + active_extruder)
+// 1824   #else
+// 1825     #define HIGHEST_CONDITION true
+// 1826   #endif
+// 1827   uint32_t highest_rate = 1;
+// 1828   LOOP_XYZE_N(i) {
+        LDR.N    R6,??DataTable18_8
+        LDR.W    R8,??DataTable18_16
+        MOV      R9,#+1
+        MOVS     R5,#+0
+        ADD      R7,R6,#+44
+        ADDS     R4,R6,#+4
+// 1829     max_acceleration_steps_per_s2[i] = max_acceleration_mm_per_s2[i] * axis_steps_per_mm[i];
+??reset_acceleration_rates_0:
+        LDR      R0,[R8, #+0]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
         LDR      R1,[R4, #+0]
-        MOV      R0,#+1073741824
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R0
-        MOV      R0,R5
-        POP      {R2,R4-R9,LR}
+          CFI FunCall __aeabi_f2uiz
+        BL       __aeabi_f2uiz
+        STR      R0,[R7, #+0]
+// 1830     if (HIGHEST_CONDITION) NOLESS(highest_rate, max_acceleration_steps_per_s2[i]);
+        CMP      R5,#+3
+        BLT.N    ??reset_acceleration_rates_1
+        LDR.N    R1,??DataTable18_14
+        LDRB     R1,[R1, #+0]
+        ADDS     R1,R1,#+3
+        CMP      R5,R1
+        BNE.N    ??reset_acceleration_rates_2
+??reset_acceleration_rates_1:
+        CMP      R9,R0
+        IT       CC 
+        MOVCC    R9,R0
+// 1831   }
+??reset_acceleration_rates_2:
+        ADDS     R5,R5,#+1
+        ADDS     R4,R4,#+4
+        ADDS     R7,R7,#+4
+        ADD      R8,R8,#+4
+        CMP      R5,#+5
+        BLT.N    ??reset_acceleration_rates_0
+// 1832   cutoff_long = 4294967295UL / highest_rate;
+        MOV      R0,#-1
+        UDIV     R0,R0,R9
+        STR      R0,[R6, #+100]
+// 1833 }
+        POP      {R0,R4-R9,PC}    ;; return
+          CFI EndBlock cfiBlock25
+// 1834 
+// 1835 // Recalculate position, steps_to_mm if axis_steps_per_mm changes!
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock26 Using cfiCommon0
+          CFI Function _ZN7Planner19refresh_positioningEv
+        THUMB
+// 1836 void Planner::refresh_positioning() {
+_ZN7Planner19refresh_positioningEv:
+        PUSH     {R4,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
+// 1837   LOOP_XYZE_N(i) steps_to_mm[i] = 1.0 / axis_steps_per_mm[i];
+        LDR.N    R4,??DataTable18_8
+        LDR      R1,[R4, #+4]
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        STR      R0,[R4, #+24]
+        MOV      R0,#+1065353216
+        LDR      R1,[R4, #+8]
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        LDR      R1,[R4, #+12]
+        STR      R0,[R4, #+28]
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        STR      R0,[R4, #+32]
+        MOV      R0,#+1065353216
+        LDR      R1,[R4, #+16]
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        LDR      R1,[R4, #+20]
+        STR      R0,[R4, #+36]
+        MOV      R0,#+1065353216
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        STR      R0,[R4, #+40]
+// 1838   set_position_mm_kinematic(current_position);
+        LDR.N    R0,??DataTable18_17
+          CFI FunCall _ZN7Planner25set_position_mm_kinematicERA4_Kf
+        BL       _ZN7Planner25set_position_mm_kinematicERA4_Kf
+// 1839   reset_acceleration_rates();
+        POP      {R4,LR}
           CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall __aeabi_fdiv
-        B.W      __aeabi_fdiv
-          CFI R4 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+32
-??estimate_acceleration_distance_1:
-        POP      {R1,R4-R9,PC}    ;; return
-          CFI EndBlock cfiBlock32
+          CFI FunCall _ZN7Planner24reset_acceleration_ratesEv
+        B.N      _ZN7Planner24reset_acceleration_ratesEv
+          CFI EndBlock cfiBlock26
+// 1840 }
 
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN7Planner21intersection_distanceERKfS1_S1_S1_
-          CFI Block cfiBlock33 Using cfiCommon0
-          CFI Function _ZN7Planner21intersection_distanceERKfS1_S1_S1_
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock27 Using cfiCommon0
+          CFI Function _ZN7Planner18autotemp_M104_M109Ev
         THUMB
-// __interwork __softfp float Planner::intersection_distance(float const &, float const &, float const &, float const &)
-_ZN7Planner21intersection_distanceERKfS1_S1_S1_:
+_ZN7Planner18autotemp_M104_M109Ev:
+        PUSH     {R3-R5,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
+        LDR.N    R4,??DataTable18_18
+        LDRB     R0,[R4, #+0]
+        LSRS     R0,R0,#+5
+        ANDS     R1,R0,#0x1
+        BEQ.N    ??autotemp_M104_M109_0
+        LDR.N    R0,??DataTable18_19
+        LDRB     R2,[R0, #+5]
+        LDR.N    R0,??DataTable18_20
+        CBZ.N    R2,??autotemp_M104_M109_1
+        LDR.N    R3,??DataTable18_21
+        LDR      R3,[R3, #+0]
+        ADDS     R2,R2,R3
+??autotemp_M104_M109_1:
+        STR      R2,[R0, #+0]
+??autotemp_M104_M109_0:
+        LDR.N    R5,??DataTable18_8
+        STRB     R1,[R5, #+3]
+        MOVS     R0,R1
+        BEQ.N    ??autotemp_M104_M109_2
+          CFI FunCall _ZN11GCodeParser11value_floatEv
+        BL       _ZN11GCodeParser11value_floatEv
+        STR      R0,[R5, #+96]
+??autotemp_M104_M109_2:
+        LDRB     R0,[R4, #+2]
+        LSLS     R0,R0,#+29
+        BPL.N    ??autotemp_M104_M109_3
+        LDR.N    R0,??DataTable18_19
+        LDRB     R1,[R0, #+18]
+        LDR.N    R0,??DataTable18_20
+        CBZ.N    R1,??autotemp_M104_M109_4
+        LDR.N    R2,??DataTable18_21
+        LDR      R2,[R2, #+0]
+        ADDS     R1,R1,R2
+??autotemp_M104_M109_4:
+        STR      R1,[R0, #+0]
+          CFI FunCall _ZN11GCodeParser11value_floatEv
+        BL       _ZN11GCodeParser11value_floatEv
+        STR      R0,[R5, #+92]
+??autotemp_M104_M109_3:
+        LDRB     R0,[R4, #+0]
+        LSLS     R0,R0,#+30
+        BPL.N    ??autotemp_M104_M109_5
+        LDR.N    R0,??DataTable18_19
+        LDRB     R1,[R0, #+1]
+        LDR.N    R0,??DataTable18_20
+        CBZ.N    R1,??autotemp_M104_M109_6
+        LDR.N    R2,??DataTable18_21
+        LDR      R2,[R2, #+0]
+        ADDS     R1,R1,R2
+??autotemp_M104_M109_6:
+        STR      R1,[R0, #+0]
+          CFI FunCall _ZN11GCodeParser11value_floatEv
+        BL       _ZN11GCodeParser11value_floatEv
+        STR      R0,[R5, #+88]
+??autotemp_M104_M109_5:
+        POP      {R0,R4,R5,PC}    ;; return
+          CFI EndBlock cfiBlock27
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18:
+        DC32     _ZN7Planner23g_uc_extruder_last_moveE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_1:
+        DC32     0x412e8480
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_2:
+        DC32     0xa0b5ed8d
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_3:
+        DC32     0x4020c6f7
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_4:
+        DC32     _ZN7Planner23g_uc_extruder_last_moveE+0x2C
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_5:
+        DC32     0x358637be
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_6:
+        DC32     0x3f7d70a4
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_7:
+        DC32     0x3d4ccccd
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_8:
+        DC32     _ZN7Planner17block_buffer_headE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_9:
+        DC32     gCfgItems
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_10:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_11:
+        DC32     marlin_debug_flags
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_12:
+        DC32     htim2
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_13:
+        DC32     _ZN7Planner12block_bufferE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_14:
+        DC32     active_extruder
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_15:
+        DC32     delta
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_16:
+        DC32     _ZN7Planner26max_acceleration_mm_per_s2E
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_17:
+        DC32     current_position
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_18:
+        DC32     _ZN11GCodeParser8codebitsE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_19:
+        DC32     _ZN11GCodeParser5paramE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_20:
+        DC32     _ZN11GCodeParser9value_ptrE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_21:
+        DC32     _ZN11GCodeParser11command_ptrE
+
+        SECTION `.text`:CODE:REORDER:NOROOT(2)
+        SECTION_GROUP _ZN20unified_bed_leveling16get_cell_index_xERKf
+          CFI Block cfiBlock28 Using cfiCommon0
+          CFI Function _ZN20unified_bed_leveling16get_cell_index_xERKf
+        THUMB
+// __interwork __softfp int8_t unified_bed_leveling::get_cell_index_x(float const &)
+_ZN20unified_bed_leveling16get_cell_index_xERKf:
         PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
           CFI R10 Frame(CFA, -8)
@@ -6136,304 +6307,20 @@ _ZN7Planner21intersection_distanceERKfS1_S1_S1_:
           CFI R5 Frame(CFA, -28)
           CFI R4 Frame(CFA, -32)
           CFI CFA R13+32
-        MOV      R6,R0
-        MOV      R8,R1
-        MOV      R4,R2
-        MOV      R5,R3
-        LDR      R0,[R4, #+0]
-        MOVS     R1,#+0
-          CFI FunCall __aeabi_cfcmpeq
-        BL       __aeabi_cfcmpeq
-        BNE.N    ??intersection_distance_0
-        MOV      R0,R1
-        B.N      ??intersection_distance_1
-??intersection_distance_0:
-        LDR      R9,[R6, #+0]
-        MOV      R10,#+2
-        MOV      R6,#+1065353216
-        MOV      R7,R6
-        B.N      ??intersection_distance_2
-??intersection_distance_3:
-        MOV      R0,R9
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R9,R0
-??intersection_distance_2:
-        LSLS     R0,R10,#+31
-        BPL.N    ??intersection_distance_4
-        MOV      R0,R7
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R7,R0
-??intersection_distance_4:
-        LSRS     R10,R10,#+1
-        BNE.N    ??intersection_distance_3
-        LDR      R8,[R8, #+0]
-        MOV      R9,#+2
-        B.N      ??intersection_distance_5
-??intersection_distance_6:
-        MOV      R0,R8
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R8,R0
-??intersection_distance_5:
-        LSLS     R0,R9,#+31
-        BPL.N    ??intersection_distance_7
-        MOV      R0,R6
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R6,R0
-??intersection_distance_7:
-        LSRS     R9,R9,#+1
-        BNE.N    ??intersection_distance_6
-        LDR      R4,[R4, #+0]
-        MOV      R0,#+1073741824
-        MOV      R1,R4
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        LDR      R1,[R5, #+0]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R6
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R5,R0
-        MOV      R0,#+1082130432
-        MOV      R1,R4
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R0
-        MOV      R0,R5
-        POP      {R4-R10,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fdiv
-        B.W      __aeabi_fdiv
-          CFI R4 Frame(CFA, -32)
-          CFI R5 Frame(CFA, -28)
-          CFI R6 Frame(CFA, -24)
-          CFI R7 Frame(CFA, -20)
-          CFI R8 Frame(CFA, -16)
-          CFI R9 Frame(CFA, -12)
-          CFI R10 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+32
-??intersection_distance_1:
-        POP      {R4-R10,PC}      ;; return
-          CFI EndBlock cfiBlock33
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN7Planner19max_allowable_speedERKfS1_S1_
-          CFI Block cfiBlock34 Using cfiCommon0
-          CFI Function _ZN7Planner19max_allowable_speedERKfS1_S1_
-        THUMB
-// __interwork __softfp float Planner::max_allowable_speed(float const &, float const &, float const &)
-_ZN7Planner19max_allowable_speedERKfS1_S1_:
-        PUSH     {R4-R8,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
-        MOV      R4,R0
-        MOV      R5,R2
-        LDR      R6,[R1, #+0]
-        MOVS     R7,#+2
-        MOV      R8,#+1065353216
-        B.N      ??max_allowable_speed_0
-??max_allowable_speed_1:
-        MOV      R0,R6
-        MOV      R1,R6
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R6,R0
-??max_allowable_speed_0:
-        LSLS     R0,R7,#+31
-        BPL.N    ??max_allowable_speed_2
-        MOV      R0,R8
-        MOV      R1,R6
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R8,R0
-??max_allowable_speed_2:
-        LSRS     R7,R7,#+1
-        BNE.N    ??max_allowable_speed_1
-        LDR      R1,[R4, #+0]
-        MOV      R0,#+1073741824
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        LDR      R1,[R5, #+0]
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R0
-        MOV      R0,R8
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        POP      {R4-R8,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall sqrtf
-        B.W      sqrtf
-          CFI EndBlock cfiBlock34
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature16tooColdToExtrudeEh
-          CFI Block cfiBlock35 Using cfiCommon0
-          CFI Function _ZN11Temperature16tooColdToExtrudeEh
-        THUMB
-// __interwork __softfp bool Temperature::tooColdToExtrude(uint8_t)
-_ZN11Temperature16tooColdToExtrudeEh:
-        PUSH     {R3-R5,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        MOV      R4,R0
-        LDR.N    R0,??tooColdToExtrude_0
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??tooColdToExtrude_1
-        MOVS     R0,#+0
-        POP      {R1,R4,R5,PC}
-??tooColdToExtrude_1:
-        LDR.N    R0,??tooColdToExtrude_0+0x4
-        LDRSH    R0,[R0, #+0]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R5,R1
-        MOV      R0,R4
-          CFI FunCall _ZN11Temperature9degHotendEh
-        BL       _ZN11Temperature9degHotendEh
-        MOV      R1,R5
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??tooColdToExtrude_2
-        MOVS     R0,#+1
-        POP      {R1,R4,R5,PC}
-??tooColdToExtrude_2:
-        MOVS     R0,#+0
-        POP      {R1,R4,R5,PC}    ;; return
-        DATA
-??tooColdToExtrude_0:
-        DC32     _ZN11Temperature18allow_cold_extrudeE
-        DC32     _ZN11Temperature16extrude_min_tempE
-          CFI EndBlock cfiBlock35
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature9degHotendEh
-          CFI Block cfiBlock36 Using cfiCommon0
-          CFI Function _ZN11Temperature9degHotendEh
-          CFI NoCalls
-        THUMB
-// __interwork __softfp float Temperature::degHotend(uint8_t)
-_ZN11Temperature9degHotendEh:
-        LDR.N    R1,??degHotend_0
-        LDR      R0,[R1, R0, LSL #+2]
-        BX       LR               ;; return
-        DATA
-??degHotend_0:
-        DC32     _ZN11Temperature19current_temperatureE
-          CFI EndBlock cfiBlock36
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature15degTargetHotendEh
-          CFI Block cfiBlock37 Using cfiCommon0
-          CFI Function _ZN11Temperature15degTargetHotendEh
-        THUMB
-// __interwork __softfp float Temperature::degTargetHotend(uint8_t)
-_ZN11Temperature15degTargetHotendEh:
-        LDR.N    R1,??degTargetHotend_0
-        LDR      R0,[R1, R0, LSL #+2]
-          CFI FunCall __aeabi_i2f
-        B.W      __aeabi_i2f
-        Nop      
-        DATA
-??degTargetHotend_0:
-        DC32     _ZN11Temperature18target_temperatureE
-          CFI EndBlock cfiBlock37
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature15setTargetHotendEfh
-          CFI Block cfiBlock38 Using cfiCommon0
-          CFI Function _ZN11Temperature15setTargetHotendEfh
-        THUMB
-// __interwork __softfp void Temperature::setTargetHotend(float, uint8_t)
-_ZN11Temperature15setTargetHotendEfh:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R1
-          CFI FunCall __aeabi_f2iz
-        BL       __aeabi_f2iz
-        LDR.N    R1,??setTargetHotend_0
-        STR      R0,[R1, R4, LSL #+2]
-        MOV      R0,R4
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN11Temperature21start_watching_heaterEh
-        B.W      _ZN11Temperature21start_watching_heaterEh
-        DATA
-??setTargetHotend_0:
-        DC32     _ZN11Temperature18target_temperatureE
-          CFI EndBlock cfiBlock38
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN20unified_bed_leveling16get_cell_index_xERKf
-          CFI Block cfiBlock39 Using cfiCommon0
-          CFI Function _ZN20unified_bed_leveling16get_cell_index_xERKf
-        THUMB
-// __interwork __softfp int8_t unified_bed_leveling::get_cell_index_x(float const &)
-_ZN20unified_bed_leveling16get_cell_index_xERKf:
-        PUSH     {R3-R11,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
         LDR.N    R6,??get_cell_index_x_0
+        MOV      R4,R0
         LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R7,R0
+        MOV      R8,R0
         ADD      R0,R6,#+8
-        LDRH     R1,[R0, #+80]
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+80]
         TST      R1,R2
         BEQ.N    ??get_cell_index_x_1
-        LDR.W    R8,??get_cell_index_x_0+0x4
-        LDR      R0,[R8, #+0]
-        MOV      R1,R7
+        LDR.N    R7,??get_cell_index_x_0+0x4
+        LDR      R0,[R7, #+0]
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R9,R0
@@ -6445,103 +6332,66 @@ _ZN20unified_bed_leveling16get_cell_index_xERKf:
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        LDR      R0,[R8, #+4]
-        MOV      R1,R7
+        LDR      R0,[R7, #+4]
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+96]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??get_cell_index_x_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
         B.N      ??get_cell_index_x_2
 ??get_cell_index_x_1:
-        LDR      R9,[R0, #+12]
+        LDR      R5,[R0, #+12]
         MOV      R0,#+1056964608
-        MOV      R1,R9
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R1,R11
+        MOV      R10,R0
+        MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R8,R0
-        ADD      R0,R6,#+96
-        LDR      R10,[R0, #+12]
-        LDR      R0,[R6, #+8]
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R5,R0
         MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R7,R0
+        ADD      R0,R6,#+96
+        LDR      R9,[R0, #+12]
+        LDR      R0,[R6, #+8]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??get_cell_index_x_3
-        STR      R8,[SP, #+0]
-        B.N      ??get_cell_index_x_4
-??get_cell_index_x_3:
-        STR      R5,[SP, #+0]
-??get_cell_index_x_4:
+        IT       CS 
+        MOVCS    R7,R0
         MOV      R0,#+1073741824
-        MOV      R1,R11
+        MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R7,R0
-        MOV      R0,R9
-        MOV      R1,R10
+        MOV      R8,R0
+        MOV      R0,R5
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R7
+        MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_x_5
-        MOV      R7,R1
-??get_cell_index_x_5:
-        MOV      R0,R5
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_x_6
-        MOV      R8,R5
-??get_cell_index_x_6:
+        IT       CS 
+        MOVCS    R8,R1
         LDR      R0,[R4, #+0]
-        LDR      R1,[SP, #+0]
+        MOV      R1,R7
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        MOV      R0,R7
-        MOV      R1,R8
+        MOV      R0,R8
+        MOV      R1,R7
+??get_cell_index_x_2:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R7,R0
@@ -6567,61 +6417,58 @@ _ZN20unified_bed_leveling16get_cell_index_xERKf:
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-??get_cell_index_x_2:
         SXTB     R0,R0
         MOVS     R1,R0
-        BPL.N    ??get_cell_index_x_7
-        MOVS     R0,#+0
-        B.N      ??get_cell_index_x_8
-??get_cell_index_x_7:
+        IT       MI 
+        MOVMI    R0,#+0
+        BMI.N    ??get_cell_index_x_3
         LDRB     R2,[R6, #+96]
         SUBS     R3,R2,#+1
-        CMP      R3,R1
-        BGE.N    ??get_cell_index_x_8
-        SUBS     R0,R2,#+1
-??get_cell_index_x_8:
+        CMP      R3,R0
+        IT       LT 
+        SUBLT    R0,R2,#+1
+??get_cell_index_x_3:
         SXTB     R0,R0
-        POP      {R1,R4-R11,PC}   ;; return
+        POP      {R4-R10,PC}      ;; return
         Nop      
         DATA
 ??get_cell_index_x_0:
         DC32     mksCfg
         DC32     mksTmp
         DC32     0x3ff00000
-          CFI EndBlock cfiBlock39
+          CFI EndBlock cfiBlock28
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling16get_cell_index_yERKf
-          CFI Block cfiBlock40 Using cfiCommon0
+          CFI Block cfiBlock29 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling16get_cell_index_yERKf
         THUMB
 // __interwork __softfp int8_t unified_bed_leveling::get_cell_index_y(float const &)
 _ZN20unified_bed_leveling16get_cell_index_yERKf:
-        PUSH     {R3-R11,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
         LDR.N    R6,??get_cell_index_y_0
+        MOV      R4,R0
         LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R7,R0
+        MOV      R8,R0
         ADD      R0,R6,#+12
-        LDRH     R1,[R0, #+76]
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+76]
         TST      R1,R2
         BEQ.N    ??get_cell_index_y_1
-        LDR.W    R8,??get_cell_index_y_0+0x4
-        LDR      R0,[R8, #+8]
-        MOV      R1,R7
+        LDR.N    R7,??get_cell_index_y_0+0x4
+        LDR      R0,[R7, #+8]
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R9,R0
@@ -6633,102 +6480,65 @@ _ZN20unified_bed_leveling16get_cell_index_yERKf:
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        LDR      R0,[R8, #+12]
-        MOV      R1,R7
+        LDR      R0,[R7, #+12]
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+97]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??get_cell_index_y_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
         B.N      ??get_cell_index_y_2
 ??get_cell_index_y_1:
-        LDR      R9,[R0, #+12]
+        LDR      R5,[R0, #+12]
         MOV      R0,#+1056964608
-        MOV      R1,R9
+        MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R1,R11
+        MOV      R10,R0
+        MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R8,R0
-        LDR      R10,[R6, #+112]
-        LDR      R0,[R6, #+12]
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R5,R0
         MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R7,R0
+        LDR      R9,[R6, #+112]
+        LDR      R0,[R6, #+12]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??get_cell_index_y_3
-        STR      R8,[SP, #+0]
-        B.N      ??get_cell_index_y_4
-??get_cell_index_y_3:
-        STR      R5,[SP, #+0]
-??get_cell_index_y_4:
+        IT       CS 
+        MOVCS    R7,R0
         MOV      R0,#+1073741824
-        MOV      R1,R11
+        MOV      R1,R10
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R7,R0
-        MOV      R0,R9
-        MOV      R1,R10
+        MOV      R8,R0
+        MOV      R0,R5
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R7
+        MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_y_5
-        MOV      R7,R1
-??get_cell_index_y_5:
-        MOV      R0,R5
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??get_cell_index_y_6
-        MOV      R8,R5
-??get_cell_index_y_6:
+        IT       CS 
+        MOVCS    R8,R1
         LDR      R0,[R4, #+0]
-        LDR      R1,[SP, #+0]
+        MOV      R1,R7
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R4,R0
         MOV      R5,R1
-        MOV      R0,R7
-        MOV      R1,R8
+        MOV      R0,R8
+        MOV      R1,R7
+??get_cell_index_y_2:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R7,R0
@@ -6754,91 +6564,35 @@ _ZN20unified_bed_leveling16get_cell_index_yERKf:
         BL       __aeabi_dmul
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-??get_cell_index_y_2:
         SXTB     R0,R0
         MOVS     R1,R0
-        BPL.N    ??get_cell_index_y_7
-        MOVS     R0,#+0
-        B.N      ??get_cell_index_y_8
-??get_cell_index_y_7:
+        IT       MI 
+        MOVMI    R0,#+0
+        BMI.N    ??get_cell_index_y_3
         LDRB     R2,[R6, #+97]
         SUBS     R3,R2,#+1
-        CMP      R3,R1
-        BGE.N    ??get_cell_index_y_8
-        SUBS     R0,R2,#+1
-??get_cell_index_y_8:
+        CMP      R3,R0
+        IT       LT 
+        SUBLT    R0,R2,#+1
+??get_cell_index_y_3:
         SXTB     R0,R0
-        POP      {R1,R4-R11,PC}   ;; return
+        POP      {R4-R10,PC}      ;; return
         Nop      
         DATA
 ??get_cell_index_y_0:
         DC32     mksCfg
         DC32     mksTmp
         DC32     0x3ff00000
-          CFI EndBlock cfiBlock40
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-          CFI Block cfiBlock41 Using cfiCommon0
-          CFI Function _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        THUMB
-// __interwork __softfp float unified_bed_leveling::calc_z0(float const &, float const &, float const &, float const &, float const &)
-_ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_:
-        PUSH     {R4-R8,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
-        MOV      R4,R0
-        MOV      R5,R3
-        LDR      R0,[SP, #+24]
-        LDR      R6,[R1, #+0]
-        LDR      R7,[R2, #+0]
-        LDR      R0,[R0, #+0]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[R4, #+0]
-        MOV      R1,R6
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R4,R0
-        LDR      R0,[R5, #+0]
-        MOV      R1,R6
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R0
-        MOV      R0,R4
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-        MOV      R1,R7
-        POP      {R4-R8,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fadd
-        B.W      __aeabi_fadd
-          CFI EndBlock cfiBlock41
+          CFI EndBlock cfiBlock29
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling16get_z_correctionERKfS1_
-          CFI Block cfiBlock42 Using cfiCommon0
+          CFI Block cfiBlock30 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling16get_z_correctionERKfS1_
         THUMB
 // __interwork __softfp float unified_bed_leveling::get_z_correction(float const &, float const &)
 _ZN20unified_bed_leveling16get_z_correctionERKfS1_:
-        PUSH     {R4-R11,LR}
+        PUSH     {R1,R4-R11,LR}
           CFI R14 Frame(CFA, -4)
           CFI R11 Frame(CFA, -8)
           CFI R10 Frame(CFA, -12)
@@ -6848,111 +6602,157 @@ _ZN20unified_bed_leveling16get_z_correctionERKfS1_:
           CFI R6 Frame(CFA, -28)
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
-          CFI CFA R13+36
-        SUB      SP,SP,#+36
-          CFI CFA R13+72
+          CFI CFA R13+40
+        SUB      SP,SP,#+16
+          CFI CFA R13+56
         MOV      R4,R0
-        MOV      R5,R1
           CFI FunCall _ZN20unified_bed_leveling16get_cell_index_xERKf
         BL       _ZN20unified_bed_leveling16get_cell_index_xERKf
-        MOV      R6,R0
-        MOV      R0,R5
+        MOV      R5,R0
+        LDR      R0,[SP, #+16]
           CFI FunCall _ZN20unified_bed_leveling16get_cell_index_yERKf
         BL       _ZN20unified_bed_leveling16get_cell_index_yERKf
-        MOV      R7,R0
-        MOV      R0,R6
-        UXTB     R0,R0
+        MOV      R6,R0
+        UXTB     R0,R5
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        STR      R0,[SP, #+32]
-        ADDS     R0,R6,#+1
+        MOV      R8,R0
+        ADDS     R0,R5,#+1
         STRB     R0,[SP, #+4]
         LDRB     R0,[SP, #+4]
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        STR      R0,[SP, #+28]
-        LDR.W    R8,??get_z_correction_0
-        LDRB     R0,[R8, #+96]
-        SUBS     R0,R0,#+2
-        CMP      R6,R0
-        BGT.N    ??get_z_correction_1
-        MOV      R0,R6
-??get_z_correction_1:
-        MOV      R9,#+48
-        LDR.W    R10,??get_z_correction_0+0x4
-        MLA      R11,R9,R6,R10
-        MLA      R0,R9,R0,R10
-        ADD      R0,R0,R7, LSL #+2
-        ADDS     R0,R0,#+48
-        STR      R0,[SP, #+0]
-        ADD      R3,SP,#+28
-        ADD      R2,R11,R7, LSL #+2
-        ADD      R1,SP,#+32
-        MOV      R0,R4
-          CFI FunCall _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        BL       _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
+        LDR.N    R7,??get_z_correction_0
         STR      R0,[SP, #+12]
-        MOV      R0,R6
-        UXTB     R0,R0
+        MOV      R9,R5
+        LDRB     R0,[R7, #+96]
+        SUBS     R0,R0,#+2
+        CMP      R5,R0
+        IT       GT 
+        MOVGT    R9,R0
+        LDR.W    R10,??get_z_correction_0+0x4
+        ADD      R0,R5,R5, LSL #+1
+        ADD      R0,R10,R0, LSL #+4
+        STR      R0,[SP, #+8]
+        ADD      R0,R0,R6, LSL #+2
+        LDR      R11,[R0, #+0]
+        ADD      R0,R9,R9, LSL #+1
+        ADD      R0,R10,R0, LSL #+4
+        ADD      R0,R0,R6, LSL #+2
+        MOV      R1,R11
+        LDR      R0,[R0, #+48]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[SP, #+0]
+        MOV      R1,R8
+        LDR      R0,[R4, #+0]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        LDR      R1,[SP, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        STR      R0,[SP, #+0]
+        MOV      R1,R8
+        LDR      R0,[SP, #+12]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R0
+        LDR      R0,[SP, #+0]
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        MOV      R1,R11
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R8,R0
+        UXTB     R0,R5
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        STR      R0,[SP, #+24]
+        MOV      R5,R0
         LDRB     R0,[SP, #+4]
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_xposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_xposEh
-        STR      R0,[SP, #+20]
-        LDRB     R0,[R8, #+96]
-        SUBS     R0,R0,#+2
-        CMP      R6,R0
-        BLE.N    ??get_z_correction_2
-        MOV      R6,R0
-??get_z_correction_2:
-        ADD      R0,R8,#+96
+        MOV      R11,R0
+        ADD      R0,R7,#+96
         LDRB     R0,[R0, #+1]
         SUBS     R0,R0,#+2
-        CMP      R7,R0
-        BGT.N    ??get_z_correction_3
-        MOV      R0,R7
-??get_z_correction_3:
-        MLA      R1,R9,R6,R10
-        ADD      R1,R1,R0, LSL #+2
-        ADDS     R1,R1,#+52
-        STR      R1,[SP, #+0]
-        ADD      R3,SP,#+20
-        ADD      R0,R11,R0, LSL #+2
-        ADDS     R2,R0,#+4
-        ADD      R1,SP,#+24
+        CMP      R6,R0
+        ITTE     LT 
+        MOVLT    R0,R6
+        MOVLT    R1,R6
+        MOVGE    R1,R0
+        LDR      R2,[SP, #+8]
+        ADD      R1,R2,R1, LSL #+2
+        LDR      R7,[R1, #+4]!
+        ADD      R1,R9,R9, LSL #+1
+        ADD      R1,R10,R1, LSL #+4
+        ADD      R0,R1,R0, LSL #+2
+        MOV      R1,R7
+        LDR      R0,[R0, #+52]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R9,R0
+        LDR      R0,[R4, #+0]
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R9
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R4,R0
+        MOV      R0,R11
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R0
         MOV      R0,R4
-          CFI FunCall _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        BL       _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        STR      R0,[SP, #+8]
-        MOV      R0,R7
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        MOV      R1,R7
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R4,R0
+        UXTB     R0,R6
+          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
+        BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
+        MOV      R5,R0
+        ADDS     R0,R6,#+1
         UXTB     R0,R0
           CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
         BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        STR      R0,[SP, #+16]
-        ADDS     R0,R7,#+1
-        UXTB     R0,R0
-          CFI FunCall _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        BL       _ZN20unified_bed_leveling18mesh_index_to_yposEh
-        STR      R0,[SP, #+4]
-        ADD      R0,SP,#+8
-        STR      R0,[SP, #+0]
-        ADD      R3,SP,#+4
-        ADD      R2,SP,#+12
-        ADD      R1,SP,#+16
-        MOV      R0,R5
-          CFI FunCall _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        BL       _ZN20unified_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
+        MOV      R6,R0
+        MOV      R0,R4
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R4,R0
+        LDR      R0,[SP, #+16]
+        LDR      R0,[R0, #+0]
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R4
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R4,R0
+        MOV      R0,R6
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R0
+        MOV      R0,R4
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
         MOV      R4,R0
           CFI FunCall __iar_FDtest
         BL       __iar_FDtest
         CMP      R0,#+2
-        BNE.N    ??get_z_correction_4
-        MOVS     R4,#+0
-??get_z_correction_4:
+        IT       EQ 
+        MOVEQ    R4,#+0
         MOV      R0,R4
-        ADD      SP,SP,#+36
+        ADD      SP,SP,#+20
           CFI CFA R13+36
         POP      {R4-R11,PC}      ;; return
         Nop      
@@ -6960,11 +6760,11 @@ _ZN20unified_bed_leveling16get_z_correctionERKfS1_:
 ??get_z_correction_0:
         DC32     mksCfg
         DC32     _ZN20unified_bed_leveling8z_valuesE
-          CFI EndBlock cfiBlock42
+          CFI EndBlock cfiBlock30
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling18mesh_index_to_xposEh
-          CFI Block cfiBlock43 Using cfiCommon0
+          CFI Block cfiBlock31 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling18mesh_index_to_xposEh
         THUMB
 // __interwork __softfp float unified_bed_leveling::mesh_index_to_xpos(uint8_t)
@@ -6980,90 +6780,62 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+40
-        MOV      R5,R0
-        LDR.N    R7,??mesh_index_to_xpos_0
-        LDRB     R6,[R7, #+96]
-        ADD      R0,R7,#+8
-        LDRH     R1,[R0, #+80]
+        MOV      R8,R0
+        LDR.N    R6,??mesh_index_to_xpos_0
+        LDRB     R7,[R6, #+96]
+        ADD      R0,R6,#+8
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+80]
         TST      R1,R2
         BEQ.N    ??mesh_index_to_xpos_1
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_xpos_2
-        LDR.N    R0,??mesh_index_to_xpos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_xpos_3
-??mesh_index_to_xpos_2:
-        LDRB     R0,[R7, #+152]
+        CMP      R8,R7
+        BCC.N    ??mesh_index_to_xpos_2
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R10,R0
-        LDR.N    R4,??mesh_index_to_xpos_0+0x8
+        LDR.N    R4,??mesh_index_to_xpos_0+0x4
+        MOV      R5,R0
         LDR      R0,[R4, #+0]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
-        MOV      R0,R5
+        MOV      R6,R0
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R5,R0
+        MOV      R8,R0
         LDR      R0,[R4, #+4]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
         MOV      R0,R4
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
+        MOV      R1,R8
+        B.N      ??mesh_index_to_xpos_3
+??mesh_index_to_xpos_1:
+        CMP      R8,R7
+        BCS.N    ??mesh_index_to_xpos_4
+??mesh_index_to_xpos_2:
+        LDR.N    R0,??mesh_index_to_xpos_0+0x8
+        LDR      R0,[R0, R8, LSL #+2]
+        POP      {R1,R4-R11,PC}
+??mesh_index_to_xpos_4:
+        LDR      R5,[R0, #+12]
+        MOV      R0,#+1056964608
         MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
-        POP      {R2,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fadd
-        B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_xpos_1:
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_xpos_4
-        LDR.N    R0,??mesh_index_to_xpos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_xpos_3
-??mesh_index_to_xpos_4:
-        LDR      R8,[R0, #+12]
-        MOV      R0,#+1056964608
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
         MOV      R9,R0
-        LDRB     R0,[R7, #+152]
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R10,R0
@@ -7075,22 +6847,18 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R4,R0
-        ADD      R0,R7,#+96
+        ADD      R0,R6,#+96
         LDR      R11,[R0, #+12]
-        LDR      R0,[R7, #+8]
+        LDR      R0,[R6, #+8]
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
         MOV      R1,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??mesh_index_to_xpos_5
-        STR      R4,[SP, #+0]
-        B.N      ??mesh_index_to_xpos_6
-??mesh_index_to_xpos_5:
-        STR      R7,[SP, #+0]
-??mesh_index_to_xpos_6:
+        MOV      R6,R0
+        IT       CC 
+        MOVCC    R6,R4
         MOV      R0,#+1073741824
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
@@ -7098,35 +6866,27 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R9,R0
-        MOV      R0,R8
+        MOV      R4,R0
+        MOV      R0,R5
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R9
+        MOV      R0,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_xpos_7
-        MOV      R9,R1
-??mesh_index_to_xpos_7:
-        MOV      R0,R7
-        MOV      R1,R4
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_xpos_8
-        MOV      R4,R7
-??mesh_index_to_xpos_8:
-        MOV      R0,R5
+        IT       CS 
+        MOVCS    R4,R1
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R5,R0
-        MOV      R0,R9
-        MOV      R1,R4
+        MOV      R0,R4
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
@@ -7134,9 +6894,10 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         MOV      R1,R5
+??mesh_index_to_xpos_3:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[SP, #+0]
+        MOV      R1,R6
         POP      {R2,R4-R11,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -7150,28 +6911,16 @@ _ZN20unified_bed_leveling18mesh_index_to_xposEh:
           CFI CFA R13+0
           CFI FunCall __aeabi_fadd
         B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_xpos_3:
-        POP      {R1,R4-R11,PC}   ;; return
         DATA
 ??mesh_index_to_xpos_0:
         DC32     mksCfg
-        DC32     _ZN20unified_bed_leveling19_mesh_index_to_xposE
         DC32     mksTmp
-          CFI EndBlock cfiBlock43
+        DC32     _ZN20unified_bed_leveling19_mesh_index_to_xposE
+          CFI EndBlock cfiBlock31
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN20unified_bed_leveling18mesh_index_to_yposEh
-          CFI Block cfiBlock44 Using cfiCommon0
+          CFI Block cfiBlock32 Using cfiCommon0
           CFI Function _ZN20unified_bed_leveling18mesh_index_to_yposEh
         THUMB
 // __interwork __softfp float unified_bed_leveling::mesh_index_to_ypos(uint8_t)
@@ -7187,90 +6936,62 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+40
-        MOV      R5,R0
-        LDR.N    R7,??mesh_index_to_ypos_0
-        LDRB     R6,[R7, #+97]
-        ADD      R0,R7,#+12
-        LDRH     R1,[R0, #+76]
+        MOV      R8,R0
+        LDR.N    R6,??mesh_index_to_ypos_0
+        LDRB     R7,[R6, #+97]
+        ADD      R0,R6,#+12
         MOVW     R2,#+770
+        LDRH     R1,[R0, #+76]
         TST      R1,R2
         BEQ.N    ??mesh_index_to_ypos_1
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_ypos_2
-        LDR.N    R0,??mesh_index_to_ypos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_ypos_3
-??mesh_index_to_ypos_2:
-        LDRB     R0,[R7, #+152]
+        CMP      R8,R7
+        BCC.N    ??mesh_index_to_ypos_2
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R10,R0
-        LDR.N    R4,??mesh_index_to_ypos_0+0x8
+        LDR.N    R4,??mesh_index_to_ypos_0+0x4
+        MOV      R5,R0
         LDR      R0,[R4, #+8]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
-        MOV      R0,R5
+        MOV      R6,R0
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R5,R0
+        MOV      R8,R0
         LDR      R0,[R4, #+12]
-        MOV      R1,R10
+        MOV      R1,R5
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R1,R7
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
         MOV      R0,R4
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
+        MOV      R1,R8
+        B.N      ??mesh_index_to_ypos_3
+??mesh_index_to_ypos_1:
+        CMP      R8,R7
+        BCS.N    ??mesh_index_to_ypos_4
+??mesh_index_to_ypos_2:
+        LDR.N    R0,??mesh_index_to_ypos_0+0x8
+        LDR      R0,[R0, R8, LSL #+2]
+        POP      {R1,R4-R11,PC}
+??mesh_index_to_ypos_4:
+        LDR      R5,[R0, #+12]
+        MOV      R0,#+1056964608
         MOV      R1,R5
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R1,R7
-        POP      {R2,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fadd
-        B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_ypos_1:
-        CMP      R5,R6
-        BCS.N    ??mesh_index_to_ypos_4
-        LDR.N    R0,??mesh_index_to_ypos_0+0x4
-        LDR      R0,[R0, R5, LSL #+2]
-        B.N      ??mesh_index_to_ypos_3
-??mesh_index_to_ypos_4:
-        LDR      R8,[R0, #+12]
-        MOV      R0,#+1056964608
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
         MOV      R9,R0
-        LDRB     R0,[R7, #+152]
+        LDRB     R0,[R6, #+152]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R10,R0
@@ -7282,21 +7003,17 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R4,R0
-        LDR      R11,[R7, #+112]
-        LDR      R0,[R7, #+12]
+        LDR      R11,[R6, #+112]
+        LDR      R0,[R6, #+12]
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-        MOV      R7,R0
         MOV      R1,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??mesh_index_to_ypos_5
-        STR      R4,[SP, #+0]
-        B.N      ??mesh_index_to_ypos_6
-??mesh_index_to_ypos_5:
-        STR      R7,[SP, #+0]
-??mesh_index_to_ypos_6:
+        MOV      R6,R0
+        IT       CC 
+        MOVCC    R6,R4
         MOV      R0,#+1073741824
         MOV      R1,R9
           CFI FunCall __aeabi_fmul
@@ -7304,35 +7021,27 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R9,R0
-        MOV      R0,R8
+        MOV      R4,R0
+        MOV      R0,R5
         MOV      R1,R11
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R0
-        MOV      R0,R9
+        MOV      R0,R4
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_ypos_7
-        MOV      R9,R1
-??mesh_index_to_ypos_7:
-        MOV      R0,R7
-        MOV      R1,R4
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??mesh_index_to_ypos_8
-        MOV      R4,R7
-??mesh_index_to_ypos_8:
-        MOV      R0,R5
+        IT       CS 
+        MOVCS    R4,R1
+        MOV      R0,R8
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R5,R0
-        MOV      R0,R9
-        MOV      R1,R4
+        MOV      R0,R4
+        MOV      R1,R6
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R4,R0
-        SUBS     R0,R6,#+1
+        SUBS     R0,R7,#+1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
@@ -7340,9 +7049,10 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         MOV      R1,R5
+??mesh_index_to_ypos_3:
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        LDR      R1,[SP, #+0]
+        MOV      R1,R6
         POP      {R2,R4-R11,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -7356,74 +7066,16 @@ _ZN20unified_bed_leveling18mesh_index_to_yposEh:
           CFI CFA R13+0
           CFI FunCall __aeabi_fadd
         B.W      __aeabi_fadd
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-??mesh_index_to_ypos_3:
-        POP      {R1,R4-R11,PC}   ;; return
         DATA
 ??mesh_index_to_ypos_0:
         DC32     mksCfg
-        DC32     _ZN20unified_bed_leveling19_mesh_index_to_yposE
         DC32     mksTmp
-          CFI EndBlock cfiBlock44
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11GCodeParser4seenEc
-          CFI Block cfiBlock45 Using cfiCommon0
-          CFI Function _ZN11GCodeParser4seenEc
-          CFI NoCalls
-        THUMB
-// __interwork __softfp bool GCodeParser::seen(char)
-_ZN11GCodeParser4seenEc:
-        SUB      R1,R0,#+65
-        UXTB     R1,R1
-        CMP      R1,#+26
-        BCC.N    ??seen_0
-        MOVS     R0,#+0
-        BX       LR
-??seen_0:
-        ASRS     R0,R1,#+3
-        LDR.N    R2,??seen_1
-        LDRB     R0,[R0, R2]
-        AND      R2,R1,#0x7
-        LSRS     R0,R0,R2
-        ANDS     R0,R0,#0x1
-        BEQ.N    ??seen_2
-        LDR.N    R2,??seen_1+0x4
-        LDRB     R1,[R1, R2]
-        LDR.N    R2,??seen_1+0x8
-        CMP      R1,#+0
-        BEQ.N    ??seen_3
-        LDR.N    R3,??seen_1+0xC
-        LDR      R3,[R3, #+0]
-        ADDS     R1,R1,R3
-        STR      R1,[R2, #+0]
-        BX       LR
-??seen_3:
-        MOVS     R1,#+0
-        STR      R1,[R2, #+0]
-??seen_2:
-        BX       LR               ;; return
-        Nop      
-        DATA
-??seen_1:
-        DC32     _ZN11GCodeParser8codebitsE
-        DC32     _ZN11GCodeParser5paramE
-        DC32     _ZN11GCodeParser9value_ptrE
-        DC32     _ZN11GCodeParser11command_ptrE
-          CFI EndBlock cfiBlock45
+        DC32     _ZN20unified_bed_leveling19_mesh_index_to_yposE
+          CFI EndBlock cfiBlock32
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN11GCodeParser11value_floatEv
-          CFI Block cfiBlock46 Using cfiCommon0
+          CFI Block cfiBlock33 Using cfiCommon0
           CFI Function _ZN11GCodeParser11value_floatEv
         THUMB
 // __interwork __softfp float GCodeParser::value_float()
@@ -7433,10 +7085,9 @@ _ZN11GCodeParser11value_floatEv:
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-        LDR.N    R2,??value_float_0
-        LDR      R0,[R2, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??value_float_1
+        LDR.N    R3,??value_float_0
+        LDR      R0,[R3, #+0]
+        CBZ.N    R0,??value_float_1
         MOV      R4,R0
         B.N      ??value_float_2
 ??value_float_3:
@@ -7444,13 +7095,28 @@ _ZN11GCodeParser11value_floatEv:
 ??value_float_2:
         LDRSB    R5,[R4, #+0]
         CMP      R5,#+0
-        BEQ.N    ??value_float_4
-        CMP      R5,#+32
-        BNE.N    ??value_float_5
-??value_float_4:
+        IT       NE 
+        CMPNE    R5,#+32
+        BNE.N    ??value_float_4
+        MOVS     R2,#+0
         MOVS     R1,#+0
-          CFI FunCall strtod
-        BL       strtod
+          CFI FunCall __iar_Stod
+        BL       __iar_Stod
+        B.N      ??value_float_5
+??value_float_4:
+        CMP      R5,#+69
+        IT       NE 
+        CMPNE    R5,#+101
+        BNE.N    ??value_float_3
+        MOVS     R0,#+0
+        STRB     R0,[R4, #+0]
+        MOV      R1,R0
+        LDR      R0,[R3, #+0]
+        MOVS     R2,#+0
+          CFI FunCall __iar_Stod
+        BL       __iar_Stod
+        STRB     R5,[R4, #+0]
+??value_float_5:
         POP      {R2,R4,R5,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -7462,488 +7128,21 @@ _ZN11GCodeParser11value_floatEv:
           CFI R5 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+16
-??value_float_5:
-        CMP      R5,#+69
-        BEQ.N    ??value_float_6
-        CMP      R5,#+101
-        BNE.N    ??value_float_3
-??value_float_6:
-        MOVS     R0,#+0
-        STRB     R0,[R4, #+0]
-        MOV      R1,R0
-        LDR      R0,[R2, #+0]
-          CFI FunCall strtod
-        BL       strtod
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        STRB     R5,[R4, #+0]
-        POP      {R1,R4,R5,PC}
 ??value_float_1:
-        MOVS     R0,#+0
         POP      {R1,R4,R5,PC}    ;; return
         Nop      
         DATA
 ??value_float_0:
         DC32     _ZN11GCodeParser9value_ptrE
-          CFI EndBlock cfiBlock46
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN11GCodeParser13value_celsiusEv
-          CFI Block cfiBlock47 Using cfiCommon0
-          CFI Function _ZN11GCodeParser13value_celsiusEv
-          CFI FunCall _ZN11GCodeParser11value_floatEv
-        THUMB
-// __interwork __softfp float GCodeParser::value_celsius()
-_ZN11GCodeParser13value_celsiusEv:
-        B.W      _ZN11GCodeParser11value_floatEv
-          CFI EndBlock cfiBlock47
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN11GCodeParser18value_celsius_diffEv
-          CFI Block cfiBlock48 Using cfiCommon0
-          CFI Function _ZN11GCodeParser18value_celsius_diffEv
-          CFI FunCall _ZN11GCodeParser11value_floatEv
-        THUMB
-// __interwork __softfp float GCodeParser::value_celsius_diff()
-_ZN11GCodeParser18value_celsius_diffEv:
-        B.W      _ZN11GCodeParser11value_floatEv
-          CFI EndBlock cfiBlock48
+          CFI EndBlock cfiBlock33
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
         SECTION_GROUP _ZN17mesh_bed_leveling12cell_index_xERKf
-          CFI Block cfiBlock49 Using cfiCommon0
+          CFI Block cfiBlock34 Using cfiCommon0
           CFI Function _ZN17mesh_bed_leveling12cell_index_xERKf
         THUMB
 // __interwork __softfp int8_t mesh_bed_leveling::cell_index_x(float const &)
 _ZN17mesh_bed_leveling12cell_index_xERKf:
-        PUSH     {R3-R11,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
-        LDR.N    R6,??cell_index_x_0
-        LDRB     R0,[R6, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R7,R0
-        ADD      R0,R6,#+8
-        LDRH     R1,[R0, #+80]
-        MOVW     R2,#+770
-        TST      R1,R2
-        BEQ.N    ??cell_index_x_1
-        LDR.W    R8,??cell_index_x_0+0x4
-        LDR      R0,[R8, #+0]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R9,R0
-        LDR      R0,[R4, #+0]
-        MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R4,R0
-        MOV      R5,R1
-        LDR      R0,[R8, #+4]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+96]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??cell_index_x_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
-        B.N      ??cell_index_x_2
-??cell_index_x_1:
-        LDR      R9,[R0, #+12]
-        MOV      R0,#+1056964608
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R1,R11
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R8,R0
-        ADD      R0,R6,#+96
-        LDR      R10,[R0, #+12]
-        LDR      R0,[R6, #+8]
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R5,R0
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??cell_index_x_3
-        STR      R8,[SP, #+0]
-        B.N      ??cell_index_x_4
-??cell_index_x_3:
-        STR      R5,[SP, #+0]
-??cell_index_x_4:
-        MOV      R0,#+1073741824
-        MOV      R1,R11
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        MOV      R0,R9
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??cell_index_x_5
-        MOV      R7,R1
-??cell_index_x_5:
-        MOV      R0,R5
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??cell_index_x_6
-        MOV      R8,R5
-??cell_index_x_6:
-        LDR      R0,[R4, #+0]
-        LDR      R1,[SP, #+0]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R4,R0
-        MOV      R5,R1
-        MOV      R0,R7
-        MOV      R1,R8
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+96]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??cell_index_x_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
-??cell_index_x_2:
-        SXTB     R0,R0
-        MOVS     R1,R0
-        BPL.N    ??cell_index_x_7
-        MOVS     R0,#+0
-        B.N      ??cell_index_x_8
-??cell_index_x_7:
-        LDRB     R2,[R6, #+96]
-        SUBS     R3,R2,#+2
-        CMP      R3,R1
-        BGE.N    ??cell_index_x_8
-        SUBS     R0,R2,#+2
-??cell_index_x_8:
-        SXTB     R0,R0
-        POP      {R1,R4-R11,PC}   ;; return
-        Nop      
-        DATA
-??cell_index_x_0:
-        DC32     mksCfg
-        DC32     mksTmp
-        DC32     0x3ff00000
-          CFI EndBlock cfiBlock49
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN17mesh_bed_leveling12cell_index_yERKf
-          CFI Block cfiBlock50 Using cfiCommon0
-          CFI Function _ZN17mesh_bed_leveling12cell_index_yERKf
-        THUMB
-// __interwork __softfp int8_t mesh_bed_leveling::cell_index_y(float const &)
-_ZN17mesh_bed_leveling12cell_index_yERKf:
-        PUSH     {R3-R11,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
-        LDR.N    R6,??cell_index_y_0
-        LDRB     R0,[R6, #+152]
-          CFI FunCall __aeabi_ui2f
-        BL       __aeabi_ui2f
-        MOV      R7,R0
-        ADD      R0,R6,#+12
-        LDRH     R1,[R0, #+76]
-        MOVW     R2,#+770
-        TST      R1,R2
-        BEQ.N    ??cell_index_y_1
-        LDR.W    R8,??cell_index_y_0+0x4
-        LDR      R0,[R8, #+8]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R9,R0
-        LDR      R0,[R4, #+0]
-        MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R4,R0
-        MOV      R5,R1
-        LDR      R0,[R8, #+12]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R9
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+97]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??cell_index_y_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
-        B.N      ??cell_index_y_2
-??cell_index_y_1:
-        LDR      R9,[R0, #+12]
-        MOV      R0,#+1056964608
-        MOV      R1,R9
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        MOV      R1,R11
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R7
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R8,R0
-        LDR      R10,[R6, #+112]
-        LDR      R0,[R6, #+12]
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R5,R0
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??cell_index_y_3
-        STR      R8,[SP, #+0]
-        B.N      ??cell_index_y_4
-??cell_index_y_3:
-        STR      R5,[SP, #+0]
-??cell_index_y_4:
-        MOV      R0,#+1073741824
-        MOV      R1,R11
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        MOV      R0,R9
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??cell_index_y_5
-        MOV      R7,R1
-??cell_index_y_5:
-        MOV      R0,R5
-        MOV      R1,R8
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCC.N    ??cell_index_y_6
-        MOV      R8,R5
-??cell_index_y_6:
-        LDR      R0,[R4, #+0]
-        LDR      R1,[SP, #+0]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R4,R0
-        MOV      R5,R1
-        MOV      R0,R7
-        MOV      R1,R8
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R7,R0
-        LDRB     R0,[R6, #+97]
-        SUBS     R0,R0,#+1
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R7
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??cell_index_y_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2iz
-        BL       __aeabi_d2iz
-??cell_index_y_2:
-        SXTB     R0,R0
-        MOVS     R1,R0
-        BPL.N    ??cell_index_y_7
-        MOVS     R0,#+0
-        B.N      ??cell_index_y_8
-??cell_index_y_7:
-        LDRB     R2,[R6, #+97]
-        SUBS     R3,R2,#+2
-        CMP      R3,R1
-        BGE.N    ??cell_index_y_8
-        SUBS     R0,R2,#+2
-??cell_index_y_8:
-        SXTB     R0,R0
-        POP      {R1,R4-R11,PC}   ;; return
-        Nop      
-        DATA
-??cell_index_y_0:
-        DC32     mksCfg
-        DC32     mksTmp
-        DC32     0x3ff00000
-          CFI EndBlock cfiBlock50
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-          CFI Block cfiBlock51 Using cfiCommon0
-          CFI Function _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        THUMB
-// __interwork __softfp float mesh_bed_leveling::calc_z0(float const &, float const &, float const &, float const &, float const &)
-_ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_:
-        PUSH     {R4-R8,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
-        MOV      R4,R3
-        LDR      R5,[SP, #+24]
-        LDR      R6,[R2, #+0]
-        LDR      R7,[R1, #+0]
-        LDR      R0,[R0, #+0]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R8,R0
-        LDR      R0,[R5, #+0]
-        MOV      R1,R6
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R5,R0
-        LDR      R0,[R4, #+0]
-        MOV      R1,R7
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        MOV      R1,R0
-        MOV      R0,R5
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R6
-        POP      {R4-R8,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_fadd
-        B.W      __aeabi_fadd
-          CFI EndBlock cfiBlock51
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN17mesh_bed_leveling5get_zERKfS1_S1_
-          CFI Block cfiBlock52 Using cfiCommon0
-          CFI Function _ZN17mesh_bed_leveling5get_zERKfS1_S1_
-        THUMB
-// __interwork __softfp float mesh_bed_leveling::get_z(float const &, float const &, float const &)
-_ZN17mesh_bed_leveling5get_zERKfS1_S1_:
         PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
           CFI R10 Frame(CFA, -8)
@@ -7954,169 +7153,435 @@ _ZN17mesh_bed_leveling5get_zERKfS1_S1_:
           CFI R5 Frame(CFA, -28)
           CFI R4 Frame(CFA, -32)
           CFI CFA R13+32
-        SUB      SP,SP,#+16
-          CFI CFA R13+48
+        LDR.N    R6,??cell_index_x_0
+        MOV      R4,R0
+        LDRB     R0,[R6, #+152]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        MOV      R8,R0
+        ADD      R0,R6,#+8
+        MOVW     R2,#+770
+        LDRH     R1,[R0, #+80]
+        TST      R1,R2
+        BEQ.N    ??cell_index_x_1
+        LDR.N    R7,??cell_index_x_0+0x4
+        LDR      R0,[R7, #+0]
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R9,R0
+        LDR      R0,[R4, #+0]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R4,R0
+        MOV      R5,R1
+        LDR      R0,[R7, #+4]
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R9
+        B.N      ??cell_index_x_2
+??cell_index_x_1:
+        LDR      R5,[R0, #+12]
+        MOV      R0,#+1056964608
+        MOV      R1,R5
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R10,R0
+        MOV      R1,R10
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
         MOV      R7,R0
+        ADD      R0,R6,#+96
+        LDR      R9,[R0, #+12]
+        LDR      R0,[R6, #+8]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R7
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CS 
+        MOVCS    R7,R0
+        MOV      R0,#+1073741824
+        MOV      R1,R10
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R8,R0
+        MOV      R0,R5
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R0
+        MOV      R0,R8
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CS 
+        MOVCS    R8,R1
+        LDR      R0,[R4, #+0]
+        MOV      R1,R7
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R4,R0
+        MOV      R5,R1
+        MOV      R0,R8
+        MOV      R1,R7
+??cell_index_x_2:
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R7,R0
+        LDRB     R0,[R6, #+96]
+        SUBS     R0,R0,#+1
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R0
+        MOV      R0,R7
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOVS     R0,#+0
+        LDR.N    R1,??cell_index_x_0+0x8  ;; 0x3ff00000
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+        MOV      R2,R4
+        MOV      R3,R5
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2iz
+        BL       __aeabi_d2iz
+        SXTB     R0,R0
+        MOVS     R1,R0
+        IT       MI 
+        MOVMI    R0,#+0
+        BMI.N    ??cell_index_x_3
+        LDRB     R2,[R6, #+96]
+        SUBS     R3,R2,#+2
+        CMP      R3,R0
+        IT       LT 
+        SUBLT    R0,R2,#+2
+??cell_index_x_3:
+        SXTB     R0,R0
+        POP      {R4-R10,PC}      ;; return
+        Nop      
+        DATA
+??cell_index_x_0:
+        DC32     mksCfg
+        DC32     mksTmp
+        DC32     0x3ff00000
+          CFI EndBlock cfiBlock34
+
+        SECTION `.text`:CODE:REORDER:NOROOT(2)
+        SECTION_GROUP _ZN17mesh_bed_leveling12cell_index_yERKf
+          CFI Block cfiBlock35 Using cfiCommon0
+          CFI Function _ZN17mesh_bed_leveling12cell_index_yERKf
+        THUMB
+// __interwork __softfp int8_t mesh_bed_leveling::cell_index_y(float const &)
+_ZN17mesh_bed_leveling12cell_index_yERKf:
+        PUSH     {R4-R10,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
+        LDR.N    R6,??cell_index_y_0
+        MOV      R4,R0
+        LDRB     R0,[R6, #+152]
+          CFI FunCall __aeabi_ui2f
+        BL       __aeabi_ui2f
+        MOV      R8,R0
+        ADD      R0,R6,#+12
+        MOVW     R2,#+770
+        LDRH     R1,[R0, #+76]
+        TST      R1,R2
+        BEQ.N    ??cell_index_y_1
+        LDR.N    R7,??cell_index_y_0+0x4
+        LDR      R0,[R7, #+8]
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R9,R0
+        LDR      R0,[R4, #+0]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R4,R0
+        MOV      R5,R1
+        LDR      R0,[R7, #+12]
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R9
+        B.N      ??cell_index_y_2
+??cell_index_y_1:
+        LDR      R5,[R0, #+12]
+        MOV      R0,#+1056964608
+        MOV      R1,R5
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R10,R0
+        MOV      R1,R10
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R7,R0
+        LDR      R9,[R6, #+112]
+        LDR      R0,[R6, #+12]
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R7
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CS 
+        MOVCS    R7,R0
+        MOV      R0,#+1073741824
+        MOV      R1,R10
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R8,R0
+        MOV      R0,R5
+        MOV      R1,R9
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R1,R0
+        MOV      R0,R8
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CS 
+        MOVCS    R8,R1
+        LDR      R0,[R4, #+0]
+        MOV      R1,R7
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R4,R0
+        MOV      R5,R1
+        MOV      R0,R8
+        MOV      R1,R7
+??cell_index_y_2:
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R7,R0
+        LDRB     R0,[R6, #+97]
+        SUBS     R0,R0,#+1
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R0
+        MOV      R0,R7
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOVS     R0,#+0
+        LDR.N    R1,??cell_index_y_0+0x8  ;; 0x3ff00000
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+        MOV      R2,R4
+        MOV      R3,R5
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2iz
+        BL       __aeabi_d2iz
+        SXTB     R0,R0
+        MOVS     R1,R0
+        IT       MI 
+        MOVMI    R0,#+0
+        BMI.N    ??cell_index_y_3
+        LDRB     R2,[R6, #+97]
+        SUBS     R3,R2,#+2
+        CMP      R3,R0
+        IT       LT 
+        SUBLT    R0,R2,#+2
+??cell_index_y_3:
+        SXTB     R0,R0
+        POP      {R4-R10,PC}      ;; return
+        Nop      
+        DATA
+??cell_index_y_0:
+        DC32     mksCfg
+        DC32     mksTmp
+        DC32     0x3ff00000
+          CFI EndBlock cfiBlock35
+
+        SECTION `.text`:CODE:REORDER:NOROOT(2)
+        SECTION_GROUP _ZN17mesh_bed_leveling5get_zERKfS1_S1_
+          CFI Block cfiBlock36 Using cfiCommon0
+          CFI Function _ZN17mesh_bed_leveling5get_zERKfS1_S1_
+        THUMB
+// __interwork __softfp float mesh_bed_leveling::get_z(float const &, float const &, float const &)
+_ZN17mesh_bed_leveling5get_zERKfS1_S1_:
+        PUSH     {R4-R11,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+36
+        SUB      SP,SP,#+12
+          CFI CFA R13+48
+        MOV      R10,R0
         MOV      R4,R1
-        MOV      R5,R2
+        MOV      R9,R2
           CFI FunCall _ZN17mesh_bed_leveling12cell_index_xERKf
         BL       _ZN17mesh_bed_leveling12cell_index_xERKf
-        MOV      R10,R0
+        MOV      R7,R0
         MOV      R0,R4
           CFI FunCall _ZN17mesh_bed_leveling12cell_index_yERKf
         BL       _ZN17mesh_bed_leveling12cell_index_yERKf
         MOV      R6,R0
-        ADD      R0,R10,R10, LSL #+1
+        ADD      R0,R7,R7, LSL #+1
         LDR.N    R1,??get_z_0
+        LDR.N    R2,??get_z_0+0x4
         ADD      R0,R1,R0, LSL #+4
-        ADD      R8,R0,R6, LSL #+2
-        ADD      R9,R0,R6, LSL #+2
-        LDR.N    R0,??get_z_0+0x4
-        ADD      R10,R0,R10, LSL #+2
-        ADD      R0,R9,#+48
-        STR      R0,[SP, #+0]
-        ADD      R3,R10,#+4
-        MOV      R2,R8
-        MOV      R1,R10
-        MOV      R0,R7
-          CFI FunCall _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        BL       _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        STR      R0,[SP, #+8]
-        ADD      R0,R9,#+52
-        STR      R0,[SP, #+0]
-        ADD      R3,R10,#+4
-        ADD      R2,R8,#+4
-        MOV      R1,R10
-        MOV      R0,R7
-          CFI FunCall _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        BL       _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        STR      R0,[SP, #+4]
-        LDR.N    R0,??get_z_0+0x8
         ADD      R1,R0,R6, LSL #+2
-        ADD      R0,SP,#+4
+        ADD      R7,R2,R7, LSL #+2
+        ADD      R0,R0,R6, LSL #+2
+        STR      R1,[SP, #+8]
+        STR      R0,[SP, #+4]
+        LDR      R8,[R1, #+0]
+        LDR      R5,[R7, #+0]
+        LDR      R11,[R10, #+0]
+        MOV      R0,R11
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
         STR      R0,[SP, #+0]
-        ADDS     R3,R1,#+4
-        ADD      R2,SP,#+8
-        MOV      R0,R4
-          CFI FunCall _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        BL       _ZN17mesh_bed_leveling7calc_z0ERKfS1_S1_S1_S1_
-        LDR      R1,[R5, #+0]
+        MOV      R1,R8
+        LDR      R0,[SP, #+4]
+        LDR      R0,[R0, #+48]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R10,R0
+        LDR      R0,[R7, #+4]
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R0
+        MOV      R0,R10
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        LDR      R1,[SP, #+0]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R8,R0
+        LDR      R0,[SP, #+8]
+        LDR      R10,[R7, #+0]
+        LDR      R5,[R0, #+4]!
+        MOV      R0,R11
+        MOV      R1,R10
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[SP, #+0]
+        MOV      R1,R5
+        LDR      R0,[SP, #+4]
+        LDR      R0,[R0, #+52]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R11,R0
+        LDR      R0,[R7, #+4]
+        MOV      R1,R10
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R0
+        MOV      R0,R11
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        LDR      R1,[SP, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R5
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        MOV      R7,R0
+        LDR.N    R0,??get_z_0+0x8
+        ADD      R6,R0,R6, LSL #+2
+        LDR      R5,[R6, #+0]
+        LDR      R0,[R4, #+0]
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R4,R0
+        MOV      R0,R7
+        MOV      R1,R8
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R7,R0
+        LDR      R0,[R6, #+4]
+        MOV      R1,R5
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        MOV      R1,R0
+        MOV      R0,R7
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        MOV      R1,R4
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,R8
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        LDR      R1,[R9, #+0]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        ADD      SP,SP,#+12
+          CFI CFA R13+36
+        POP      {R4-R11,LR}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R14 SameValue
+          CFI CFA R13+0
         LDR.N    R1,??get_z_0+0xC
         LDR      R1,[R1, #+0]
           CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        ADD      SP,SP,#+16
-          CFI CFA R13+32
-        POP      {R4-R10,PC}      ;; return
+        B.W      __aeabi_fadd
         DATA
 ??get_z_0:
         DC32     _ZN17mesh_bed_leveling8z_valuesE
         DC32     _ZN17mesh_bed_leveling13index_to_xposE
         DC32     _ZN17mesh_bed_leveling13index_to_yposE
         DC32     _ZN17mesh_bed_leveling8z_offsetE
-          CFI EndBlock cfiBlock52
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z31calculate_volumetric_multiplierRKf
-          CFI Block cfiBlock53 Using cfiCommon0
-          CFI Function _Z31calculate_volumetric_multiplierRKf
-        THUMB
-_Z31calculate_volumetric_multiplierRKf:
-        PUSH     {R4-R6,R8,R9,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R9 Frame(CFA, -8)
-          CFI R8 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
-        LDR.N    R1,??calculate_volumetric_multiplier_0
-        LDRB     R1,[R1, #+0]
-        CMP      R1,#+0
-        BEQ.N    ??calculate_volumetric_multiplier_1
-        LDR      R2,[R0, #+0]
-        MOV      R0,R2
-        MOVS     R1,#+0
-          CFI FunCall __aeabi_cfcmpeq
-        BL       __aeabi_cfcmpeq
-        BEQ.N    ??calculate_volumetric_multiplier_1
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOVS     R2,#+0
-        LDR.N    R3,??calculate_volumetric_multiplier_0+0x4  ;; 0x3fe00000
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R4,R0
-        MOV      R5,R1
-        MOVS     R6,#+2
-        MOV      R8,#+0
-        LDR.W    R9,??calculate_volumetric_multiplier_0+0x8  ;; 0x3ff00000
-        B.N      ??calculate_volumetric_multiplier_2
-??calculate_volumetric_multiplier_3:
-        MOV      R0,R4
-        MOV      R1,R5
-        MOV      R2,R4
-        MOV      R3,R5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R4,R0
-        MOV      R5,R1
-??calculate_volumetric_multiplier_2:
-        LSLS     R0,R6,#+31
-        BPL.N    ??calculate_volumetric_multiplier_4
-        MOV      R2,R4
-        MOV      R3,R5
-        MOV      R0,R8
-        MOV      R1,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R8,R0
-        MOV      R9,R1
-??calculate_volumetric_multiplier_4:
-        LSRS     R6,R6,#+1
-        BNE.N    ??calculate_volumetric_multiplier_3
-        LDR.N    R0,??calculate_volumetric_multiplier_0+0xC  ;; 0x54442d18
-        LDR.N    R1,??calculate_volumetric_multiplier_0+0x10  ;; 0x400921fb
-        MOV      R2,R8
-        MOV      R3,R9
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R2,R0
-        MOV      R3,R1
-        MOVS     R0,#+0
-        LDR.N    R1,??calculate_volumetric_multiplier_0+0x8  ;; 0x3ff00000
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-        POP      {R4-R6,R8,R9,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_d2f
-        B.W      __aeabi_d2f
-          CFI R4 Frame(CFA, -24)
-          CFI R5 Frame(CFA, -20)
-          CFI R6 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+24
-??calculate_volumetric_multiplier_1:
-        MOV      R0,#+1065353216
-        POP      {R4-R6,R8,R9,PC}  ;; return
-        DATA
-??calculate_volumetric_multiplier_0:
-        DC32     _ZN11GCodeParser18volumetric_enabledE
-        DC32     0x3fe00000
-        DC32     0x3ff00000
-        DC32     0x54442d18
-        DC32     0x400921fb
-          CFI EndBlock cfiBlock53
+          CFI EndBlock cfiBlock36
 
         SECTION `.init_array`:CODE:ROOT(2)
         SECTION_TYPE SHT_INIT_ARRAY, 0
@@ -8166,13 +7631,13 @@ _ZTI5Print:
 // 1850 
 // 1851 #endif
 // 
-//  1 489 bytes in section .bss
-//    148 bytes in section .data
-//      4 bytes in section .init_array
-//     61 bytes in section .rodata
-// 10 282 bytes in section .text
+// 1 489 bytes in section .bss
+//   148 bytes in section .data
+//     4 bytes in section .init_array
+//    61 bytes in section .rodata
+// 9 542 bytes in section .text
 // 
-// 6 700 bytes of CODE  memory (+ 3 586 bytes shared)
+// 7 186 bytes of CODE  memory (+ 2 360 bytes shared)
 //    60 bytes of CONST memory (+     1 byte  shared)
 // 1 637 bytes of DATA  memory
 //

@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:40
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:04
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\src\misc.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\src\misc.c
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\src\misc.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\src\misc.c
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
 //        Workbench 7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\misc.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\misc.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -113,7 +110,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F10x_StdPeriph_Driver\src\misc.c
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F10x_StdPeriph_Driver\src\misc.c
 //    1 /**
 //    2   ******************************************************************************
 //    3   * @file    misc.c
@@ -261,19 +258,15 @@ NVIC_Init:
 //  120     
 //  121   if (NVIC_InitStruct->NVIC_IRQChannelCmd != DISABLE)
         LDRB     R3,[R0, #+0]
+        LDRSB    R4,[R0, #+3]
         MOV      R2,R3
         MOVS     R1,#+1
-        LDRSB    R4,[R0, #+3]
-        CMP      R4,#+0
-        BEQ.N    ??NVIC_Init_0
+        CBZ.N    R4,??NVIC_Init_0
 //  122   {
 //  123     /* Compute the Corresponding IRQ Priority --------------------------------*/    
 //  124     tmppriority = (0x700 - ((SCB->AIRCR) & (uint32_t)0x700))>> 0x08;
         LDR.N    R3,??DataTable4_1  ;; 0xe000ed0c
         LDR      R3,[R3, #+0]
-        AND      R3,R3,#0x700
-        RSB      R3,R3,#+1792
-        LSRS     R3,R3,#+8
 //  125     tmppre = (0x4 - tmppriority);
 //  126     tmpsub = tmpsub >> tmppriority;
 //  127 
@@ -283,6 +276,9 @@ NVIC_Init:
 //  131         
 //  132     NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
         LDRB     R4,[R0, #+1]
+        AND      R3,R3,#0x700
+        RSB      R3,R3,#+1792
+        LSRS     R3,R3,#+8
         RSB      R5,R3,#+4
         LSLS     R4,R4,R5
         LDRB     R5,[R0, #+2]
@@ -290,8 +286,8 @@ NVIC_Init:
         LSR      R3,R6,R3
         ANDS     R3,R3,R5
         ORRS     R3,R3,R4
-        LSLS     R3,R3,#+4
         LDR.N    R4,??DataTable4_2  ;; 0xe000e400
+        LSLS     R3,R3,#+4
         STRB     R3,[R2, R4]
 //  133     
 //  134     /* Enable the Selected IRQ Channels --------------------------------------*/
@@ -300,25 +296,33 @@ NVIC_Init:
         LDRB     R0,[R0, #+0]
         AND      R2,R0,#0x1F
         LSLS     R1,R1,R2
-        ASRS     R0,R0,#+5
         LDR.N    R2,??DataTable4_3  ;; 0xe000e100
+        LSRS     R0,R0,#+5
         STR      R1,[R2, R0, LSL #+2]
-        B.N      ??NVIC_Init_1
 //  137   }
 //  138   else
 //  139   {
 //  140     /* Disable the Selected IRQ Channels -------------------------------------*/
 //  141     NVIC->ICER[NVIC_InitStruct->NVIC_IRQChannel >> 0x05] =
 //  142       (uint32_t)0x01 << (NVIC_InitStruct->NVIC_IRQChannel & (uint8_t)0x1F);
+//  143   }
+//  144 }
+        POP      {R4-R6}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI CFA R13+0
+        BX       LR
+          CFI R4 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -4)
+          CFI CFA R13+12
 ??NVIC_Init_0:
         AND      R0,R3,#0x1F
         LSL      R0,R1,R0
-        ASRS     R1,R2,#+5
+        LSRS     R1,R2,#+5
         LDR.N    R2,??DataTable4_4  ;; 0xe000e180
         STR      R0,[R2, R1, LSL #+2]
-//  143   }
-//  144 }
-??NVIC_Init_1:
         POP      {R4-R6}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -387,18 +391,15 @@ NVIC_SystemLPConfig:
         LDR.N    R2,??DataTable4_7  ;; 0xe000ed10
         CMP      R1,#+0
         LDR      R1,[R2, #+0]
-        BEQ.N    ??NVIC_SystemLPConfig_0
+        ITE      NE 
 //  182   {
 //  183     SCB->SCR |= LowPowerMode;
-        ORRS     R0,R0,R1
-        STR      R0,[R2, #+0]
-        BX       LR
+        ORRNE    R0,R0,R1
 //  184   }
 //  185   else
 //  186   {
 //  187     SCB->SCR &= (uint32_t)(~(uint32_t)LowPowerMode);
-??NVIC_SystemLPConfig_0:
-        BIC      R0,R1,R0
+        BICEQ    R0,R1,R0
         STR      R0,[R2, #+0]
 //  188   }
 //  189 }
@@ -428,18 +429,15 @@ SysTick_CLKSourceConfig:
         LDR.N    R1,??DataTable4_8  ;; 0xe000e010
         CMP      R0,#+4
         LDR      R0,[R1, #+0]
-        BNE.N    ??SysTick_CLKSourceConfig_0
+        ITE      EQ 
 //  204   {
 //  205     SysTick->CTRL |= SysTick_CLKSource_HCLK;
-        ORR      R0,R0,#0x4
-        STR      R0,[R1, #+0]
-        BX       LR
+        ORREQ    R0,R0,#0x4
 //  206   }
 //  207   else
 //  208   {
 //  209     SysTick->CTRL &= SysTick_CLKSource_HCLK_Div8;
-??SysTick_CLKSourceConfig_0:
-        BIC      R0,R0,#0x4
+        BICNE    R0,R0,#0x4
         STR      R0,[R1, #+0]
 //  210   }
 //  211 }
@@ -527,9 +525,9 @@ SysTick_CLKSourceConfig:
 //  224 
 //  225 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
 // 
-// 198 bytes in section .text
+// 190 bytes in section .text
 // 
-// 198 bytes of CODE memory
+// 190 bytes of CODE memory
 //
 //Errors: none
 //Warnings: 2

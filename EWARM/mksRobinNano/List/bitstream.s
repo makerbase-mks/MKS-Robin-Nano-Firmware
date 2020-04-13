@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:01
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:23:55
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\QRENCODE\bitstream.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\QRENCODE\bitstream.c
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\QRENCODE\bitstream.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\QRENCODE\bitstream.c
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
 //        Workbench 7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\bitstream.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\bitstream.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -81,9 +78,9 @@
 
         #define SHT_PROGBITS 0x1
 
+        EXTERN __aeabi_memcpy
         EXTERN free
         EXTERN malloc
-        EXTERN memcpy
 
         PUBLIC BitStream_append
         PUBLIC BitStream_appendBytes
@@ -119,7 +116,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\QRENCODE\bitstream.c
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\QRENCODE\bitstream.c
 //    1 /*
 //    2  * qrencode - QR Code encoder
 //    3  *
@@ -168,173 +165,112 @@ BitStream_new:
           CFI FunCall malloc
         BL       malloc
 //   36 	if(bstream == NULL) return NULL;
-        CMP      R0,#+0
-        BNE.N    ??BitStream_new_0
-        MOVS     R0,#+0
-        POP      {R1,PC}
+        CBZ.N    R0,??BitStream_new_0
 //   37 
 //   38 	bstream->length = 0;
-??BitStream_new_0:
         MOVS     R1,#+0
         STR      R1,[R0, #+0]
 //   39 	bstream->data = NULL;
         STR      R1,[R0, #+4]
 //   40 
 //   41 	return bstream;
+??BitStream_new_0:
         POP      {R1,PC}          ;; return
           CFI EndBlock cfiBlock0
 //   42 }
 //   43 
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock1 Using cfiCommon0
-          CFI Function BitStream_allocate
-        THUMB
 //   44 static int BitStream_allocate(BitStream *bstream, int length)
 //   45 {
-BitStream_allocate:
-        PUSH     {R4-R6,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        MOV      R4,R0
-        MOV      R5,R1
 //   46 	unsigned char *data;
 //   47 
 //   48 	if(bstream == NULL) {
-        CMP      R4,#+0
-        BEQ.N    ??BitStream_allocate_0
 //   49 		return -1;
 //   50 	}
 //   51 
 //   52 	data = (unsigned char *)malloc(length);
-        MOV      R0,R5
-          CFI FunCall malloc
-        BL       malloc
-        MOVS     R6,R0
 //   53 	if(data == NULL) {
-        BNE.N    ??BitStream_allocate_1
 //   54 		return -1;
-??BitStream_allocate_0:
-        MOV      R0,#-1
-        POP      {R4-R6,PC}
 //   55 	}
 //   56 
 //   57 	if(bstream->data) {
-??BitStream_allocate_1:
-        LDR      R0,[R4, #+4]
-        CMP      R0,#+0
-        BEQ.N    ??BitStream_allocate_2
 //   58 		free(bstream->data);
-          CFI FunCall free
-        BL       free
 //   59 	}
 //   60 	bstream->length = length;
-??BitStream_allocate_2:
-        STR      R5,[R4, #+0]
 //   61 	bstream->data = data;
-        STR      R6,[R4, #+4]
 //   62 
 //   63 	return 0;
-        MOVS     R0,#+0
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock1
 //   64 }
 //   65 
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
-          CFI Function BitStream_newFromNum
-        THUMB
 //   66 static BitStream *BitStream_newFromNum(int bits, unsigned int num)
 //   67 {
-BitStream_newFromNum:
-        PUSH     {R4-R6,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        MOV      R4,R0
-        MOV      R5,R1
 //   68 	unsigned int mask;
 //   69 	int i;
 //   70 	unsigned char *p;
 //   71 	BitStream *bstream;
 //   72 
 //   73 	bstream = BitStream_new();
-          CFI FunCall BitStream_new
-        BL       BitStream_new
-        MOVS     R6,R0
 //   74 	if(bstream == NULL) return NULL;
-        BNE.N    ??BitStream_newFromNum_0
-        MOVS     R0,#+0
-        POP      {R4-R6,PC}
 //   75 
 //   76 	if(BitStream_allocate(bstream, bits)) {
-??BitStream_newFromNum_0:
-        MOV      R1,R4
-          CFI FunCall BitStream_allocate
-        BL       BitStream_allocate
-        CMP      R0,#+0
-        BEQ.N    ??BitStream_newFromNum_1
 //   77 		BitStream_free(bstream);
-        MOV      R0,R6
-          CFI FunCall BitStream_free
-        BL       BitStream_free
 //   78 		return NULL;
-        MOVS     R0,#+0
-        POP      {R4-R6,PC}
 //   79 	}
 //   80 
 //   81 	p = bstream->data;
-??BitStream_newFromNum_1:
-        LDR      R0,[R6, #+4]
 //   82 	mask = 1 << (bits - 1);
-        MOVS     R1,#+1
-        MOV      R2,R4
-        SUBS     R2,R2,#+1
-        LSLS     R1,R1,R2
 //   83 	for(i=0; i<bits; i++) {
-        MOVS     R2,#+0
-        B.N      ??BitStream_newFromNum_2
 //   84 		if(num & mask) {
-??BitStream_newFromNum_3:
-        AND      R3,R1,R5
-        SUBS     R3,R3,#+1
-        SBCS     R3,R3,R3
-        MVNS     R3,R3
-        LSRS     R3,R3,#+31
-        STRB     R3,[R0], #+1
 //   85 			*p = 1;
 //   86 		} else {
 //   87 			*p = 0;
 //   88 		}
 //   89 		p++;
 //   90 		mask = mask >> 1;
-        LSRS     R1,R1,#+1
 //   91 	}
-        ADDS     R2,R2,#+1
-??BitStream_newFromNum_2:
-        CMP      R2,R4
-        BLT.N    ??BitStream_newFromNum_3
 //   92 
 //   93 	return bstream;
-        MOV      R0,R6
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock2
 //   94 }
 //   95 
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
-          CFI Function BitStream_newFromBytes
-        THUMB
 //   96 static BitStream *BitStream_newFromBytes(int size, unsigned char *data)
 //   97 {
-BitStream_newFromBytes:
+//   98 	unsigned char mask;
+//   99 	int i, j;
+//  100 	unsigned char *p;
+//  101 	BitStream *bstream;
+//  102 
+//  103 	bstream = BitStream_new();
+//  104 	if(bstream == NULL) return NULL;
+//  105 
+//  106 	if(BitStream_allocate(bstream, size * 8)) {
+//  107 		BitStream_free(bstream);
+//  108 		return NULL;
+//  109 	}
+//  110 
+//  111 	p = bstream->data;
+//  112 	for(i=0; i<size; i++) {
+//  113 		mask = 0x80;
+//  114 		for(j=0; j<8; j++) {
+//  115 			if(data[i] & mask) {
+//  116 				*p = 1;
+//  117 			} else {
+//  118 				*p = 0;
+//  119 			}
+//  120 			p++;
+//  121 			mask = mask >> 1;
+//  122 		}
+//  123 	}
+//  124 
+//  125 	return bstream;
+//  126 }
+//  127 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function BitStream_append
+        THUMB
+//  128 int BitStream_append(BitStream *bstream, BitStream *arg)
+//  129 {
+BitStream_append:
         PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
           CFI R7 Frame(CFA, -8)
@@ -343,168 +279,73 @@ BitStream_newFromBytes:
           CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
         MOV      R4,R0
-        MOV      R5,R1
-//   98 	unsigned char mask;
-//   99 	int i, j;
-//  100 	unsigned char *p;
-//  101 	BitStream *bstream;
-//  102 
-//  103 	bstream = BitStream_new();
-          CFI FunCall BitStream_new
-        BL       BitStream_new
-        MOVS     R6,R0
-//  104 	if(bstream == NULL) return NULL;
-        BNE.N    ??BitStream_newFromBytes_0
-        MOVS     R0,#+0
-        POP      {R1,R4-R7,PC}
-//  105 
-//  106 	if(BitStream_allocate(bstream, size * 8)) {
-??BitStream_newFromBytes_0:
-        LSLS     R1,R4,#+3
-          CFI FunCall BitStream_allocate
-        BL       BitStream_allocate
-        CMP      R0,#+0
-        BEQ.N    ??BitStream_newFromBytes_1
-//  107 		BitStream_free(bstream);
-        MOV      R0,R6
-          CFI FunCall BitStream_free
-        BL       BitStream_free
-//  108 		return NULL;
-        MOVS     R0,#+0
-        POP      {R1,R4-R7,PC}
-//  109 	}
-//  110 
-//  111 	p = bstream->data;
-??BitStream_newFromBytes_1:
-        LDR      R0,[R6, #+4]
-//  112 	for(i=0; i<size; i++) {
-        MOVS     R1,#+0
-        B.N      ??BitStream_newFromBytes_2
-//  113 		mask = 0x80;
-//  114 		for(j=0; j<8; j++) {
-//  115 			if(data[i] & mask) {
-??BitStream_newFromBytes_3:
-        LDRB     R7,[R1, R5]
-        ANDS     R7,R2,R7
-        MOV      R12,R7
-        SUBS     R12,R12,#+1
-        SBC      R12,R12,R12
-        MVN      R12,R12
-        LSR      R12,R12,#+31
-        STRB     R12,[R0], #+1
-//  116 				*p = 1;
-//  117 			} else {
-//  118 				*p = 0;
-//  119 			}
-//  120 			p++;
-//  121 			mask = mask >> 1;
-        ASRS     R2,R2,#+1
-//  122 		}
-        ADDS     R3,R3,#+1
-??BitStream_newFromBytes_4:
-        CMP      R3,#+8
-        BLT.N    ??BitStream_newFromBytes_3
-        ADDS     R1,R1,#+1
-??BitStream_newFromBytes_2:
-        CMP      R1,R4
-        BGE.N    ??BitStream_newFromBytes_5
-        MOVS     R2,#+128
-        MOVS     R3,#+0
-        B.N      ??BitStream_newFromBytes_4
-//  123 	}
-//  124 
-//  125 	return bstream;
-??BitStream_newFromBytes_5:
-        MOV      R0,R6
-        POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock3
-//  126 }
-//  127 
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
-          CFI Function BitStream_append
-        THUMB
-//  128 int BitStream_append(BitStream *bstream, BitStream *arg)
-//  129 {
-BitStream_append:
-        PUSH     {R4-R6,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        MOV      R4,R0
         MOVS     R5,R1
 //  130 	unsigned char *data;
 //  131 
 //  132 	if(arg == NULL) {
-        BNE.N    ??BitStream_append_0
+        BEQ.N    ??BitStream_append_0
 //  133 		return -1;
-        MOV      R0,#-1
-        POP      {R4-R6,PC}
 //  134 	}
 //  135 	if(arg->length == 0) {
-??BitStream_append_0:
-        LDR      R1,[R5, #+0]
-        CMP      R1,#+0
-        BNE.N    ??BitStream_append_1
+        LDR      R6,[R5, #+0]
+        CBZ.N    R6,??BitStream_append_1
 //  136 		return 0;
-        MOVS     R0,#+0
-        POP      {R4-R6,PC}
 //  137 	}
 //  138 	if(bstream->length == 0) {
-??BitStream_append_1:
         LDR      R0,[R4, #+0]
-        CMP      R0,#+0
-        BNE.N    ??BitStream_append_2
+        CBNZ.N   R0,??BitStream_append_2
 //  139 		if(BitStream_allocate(bstream, arg->length)) {
-        MOV      R0,R4
-          CFI FunCall BitStream_allocate
-        BL       BitStream_allocate
-        CMP      R0,#+0
-        BEQ.N    ??BitStream_append_3
+        CBZ.N    R4,??BitStream_append_0
+        MOV      R0,R6
+          CFI FunCall malloc
+        BL       malloc
+        MOVS     R7,R0
+        BEQ.N    ??BitStream_append_0
+        LDR      R0,[R4, #+4]
+        CBZ.N    R0,??BitStream_append_3
+          CFI FunCall free
+        BL       free
+??BitStream_append_3:
+        STR      R6,[R4, #+0]
+        STR      R7,[R4, #+4]
 //  140 			return -1;
-        MOV      R0,#-1
-        POP      {R4-R6,PC}
 //  141 		}
 //  142 		memcpy(bstream->data, arg->data, arg->length);
-??BitStream_append_3:
         LDR      R2,[R5, #+0]
         LDR      R1,[R5, #+4]
-        LDR      R0,[R4, #+4]
-          CFI FunCall memcpy
-        BL       memcpy
+        MOV      R0,R7
+          CFI FunCall __aeabi_memcpy
+        BL       __aeabi_memcpy
 //  143 		return 0;
-        MOVS     R0,#+0
-        POP      {R4-R6,PC}
+        B.N      ??BitStream_append_1
 //  144 	}
 //  145 
 //  146 	data = (unsigned char *)malloc(bstream->length + arg->length);
 ??BitStream_append_2:
-        ADDS     R0,R1,R0
+        ADDS     R0,R6,R0
           CFI FunCall malloc
         BL       malloc
         MOVS     R6,R0
 //  147 	if(data == NULL) {
         BNE.N    ??BitStream_append_4
 //  148 		return -1;
+??BitStream_append_0:
         MOV      R0,#-1
-        POP      {R4-R6,PC}
+        POP      {R1,R4-R7,PC}
 //  149 	}
 //  150 	memcpy(data, bstream->data, bstream->length);
 ??BitStream_append_4:
         LDR      R2,[R4, #+0]
         LDR      R1,[R4, #+4]
-          CFI FunCall memcpy
-        BL       memcpy
+          CFI FunCall __aeabi_memcpy
+        BL       __aeabi_memcpy
 //  151 	memcpy(data + bstream->length, arg->data, arg->length);
+        LDR      R0,[R4, #+0]
         LDR      R2,[R5, #+0]
         LDR      R1,[R5, #+4]
-        LDR      R0,[R4, #+0]
         ADDS     R0,R0,R6
-          CFI FunCall memcpy
-        BL       memcpy
+          CFI FunCall __aeabi_memcpy
+        BL       __aeabi_memcpy
 //  152 
 //  153 	free(bstream->data);
         LDR      R0,[R4, #+4]
@@ -519,120 +360,219 @@ BitStream_append:
         STR      R6,[R4, #+4]
 //  156 
 //  157 	return 0;
+??BitStream_append_1:
         MOVS     R0,#+0
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock4
+        POP      {R1,R4-R7,PC}    ;; return
+          CFI EndBlock cfiBlock1
 //  158 }
 //  159 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function BitStream_appendNum
         THUMB
 //  160 int BitStream_appendNum(BitStream *bstream, int bits, unsigned int num)
 //  161 {
 BitStream_appendNum:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        MOV      R4,R0
-        MOV      R0,R1
-        MOV      R1,R2
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
+        MOV      R5,R0
+        MOVS     R6,R1
+        MOV      R8,R2
 //  162 	BitStream *b;
 //  163 	int ret;
 //  164 
 //  165 	if(bits == 0) return 0;
-        CMP      R0,#+0
-        BNE.N    ??BitStream_appendNum_0
-        MOVS     R0,#+0
-        POP      {R1,R4,R5,PC}
+        IT       EQ 
+        MOVEQ    R0,#+0
+        BEQ.N    ??BitStream_appendNum_0
 //  166 
 //  167 	b = BitStream_newFromNum(bits, num);
-??BitStream_appendNum_0:
-          CFI FunCall BitStream_newFromNum
-        BL       BitStream_newFromNum
-        MOVS     R5,R0
-//  168 	if(b == NULL) return -1;
+        MOVS     R0,#+8
+          CFI FunCall malloc
+        BL       malloc
+        MOVS     R4,R0
         BNE.N    ??BitStream_appendNum_1
+//  168 	if(b == NULL) return -1;
+??BitStream_appendNum_2:
         MOV      R0,#-1
-        POP      {R1,R4,R5,PC}
+??BitStream_appendNum_0:
+        POP      {R4-R8,PC}       ;; return
+??BitStream_appendNum_1:
+        MOVS     R0,#+0
+        STR      R0,[R4, #+0]
+        STR      R0,[R4, #+4]
+        MOV      R0,R6
+          CFI FunCall malloc
+        BL       malloc
+        MOVS     R7,R0
+        LDR      R0,[R4, #+4]
+        BEQ.N    ??BitStream_appendNum_3
+        CBZ.N    R0,??BitStream_appendNum_4
+          CFI FunCall free
+        BL       free
+??BitStream_appendNum_4:
+        MOVS     R1,#+1
+        SUBS     R2,R6,#+1
+        STR      R6,[R4, #+0]
+        LSLS     R1,R1,R2
+        STR      R7,[R4, #+4]
+        MOV      R0,R7
+        CMP      R6,#+1
+        BLT.N    ??BitStream_appendNum_5
+??BitStream_appendNum_6:
+        AND      R2,R1,R8
+        SUBS     R2,R2,#+1
+        SBCS     R2,R2,R2
+        MVNS     R2,R2
+        LSRS     R2,R2,#+31
+        LSRS     R1,R1,#+1
+        STRB     R2,[R0], #+1
+        SUBS     R6,R6,#+1
+        BNE.N    ??BitStream_appendNum_6
 //  169 
 //  170 	ret = BitStream_append(bstream, b);
-??BitStream_appendNum_1:
-        MOV      R1,R5
-        MOV      R0,R4
+??BitStream_appendNum_5:
+        MOV      R1,R4
+        MOV      R0,R5
           CFI FunCall BitStream_append
         BL       BitStream_append
-        MOV      R4,R0
+        MOV      R5,R0
 //  171 	BitStream_free(b);
-        MOV      R0,R5
-          CFI FunCall BitStream_free
-        BL       BitStream_free
+        LDR      R0,[R4, #+4]
+          CFI FunCall free
+        BL       free
+        MOV      R0,R4
+          CFI FunCall free
+        BL       free
 //  172 
 //  173 	return ret;
+        MOV      R0,R5
+        POP      {R4-R8,PC}
+??BitStream_appendNum_3:
+          CFI FunCall free
+        BL       free
         MOV      R0,R4
-        POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock5
+          CFI FunCall free
+        BL       free
+        B.N      ??BitStream_appendNum_2
+          CFI EndBlock cfiBlock2
 //  174 }
 //  175 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function BitStream_appendBytes
         THUMB
 //  176 int BitStream_appendBytes(BitStream *bstream, int size, unsigned char *data)
 //  177 {
 BitStream_appendBytes:
-        PUSH     {R3-R5,LR}
+        PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        MOV      R4,R0
-        MOV      R0,R1
-        MOV      R1,R2
+          CFI R9 Frame(CFA, -8)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
+          CFI CFA R13+32
+        MOV      R8,R0
+        MOVS     R6,R1
+        MOV      R7,R2
 //  178 	BitStream *b;
 //  179 	int ret;
 //  180 
 //  181 	if(size == 0) return 0;
-        CMP      R0,#+0
-        BNE.N    ??BitStream_appendBytes_0
-        MOVS     R0,#+0
-        POP      {R1,R4,R5,PC}
+        IT       EQ 
+        MOVEQ    R0,#+0
+        BEQ.N    ??BitStream_appendBytes_0
 //  182 
 //  183 	b = BitStream_newFromBytes(size, data);
-??BitStream_appendBytes_0:
-          CFI FunCall BitStream_newFromBytes
-        BL       BitStream_newFromBytes
-        MOVS     R5,R0
+        MOVS     R0,#+8
+          CFI FunCall malloc
+        BL       malloc
+        CBNZ.N   R0,??BitStream_appendBytes_1
 //  184 	if(b == NULL) return -1;
-        BNE.N    ??BitStream_appendBytes_1
+??BitStream_appendBytes_2:
         MOV      R0,#-1
-        POP      {R1,R4,R5,PC}
+??BitStream_appendBytes_0:
+        POP      {R1,R4-R9,PC}    ;; return
+??BitStream_appendBytes_1:
+        MOVS     R1,#+0
+        STR      R1,[R0, #+0]
+        STR      R1,[R0, #+4]
+        MOV      R5,R0
+        LSLS     R4,R6,#+3
+        MOV      R0,R4
+          CFI FunCall malloc
+        BL       malloc
+        MOVS     R9,R0
+        LDR      R0,[R5, #+4]
+        BEQ.N    ??BitStream_appendBytes_3
+        CBZ.N    R0,??BitStream_appendBytes_4
+          CFI FunCall free
+        BL       free
+??BitStream_appendBytes_4:
+        STR      R4,[R5, #+0]
+        STR      R9,[R5, #+4]
+        MOV      R0,R9
+        CMP      R6,#+1
+        BLT.N    ??BitStream_appendBytes_5
+??BitStream_appendBytes_6:
+        MOVS     R1,#+128
+        MOVS     R2,#+8
+??BitStream_appendBytes_7:
+        LDRB     R3,[R7, #+0]
+        AND      R4,R1,R3
+        SUBS     R3,R4,#+1
+        SBCS     R3,R3,R3
+        MVNS     R3,R3
+        LSRS     R3,R3,#+31
+        ASRS     R1,R1,#+1
+        STRB     R3,[R0], #+1
+        SUBS     R2,R2,#+1
+        BNE.N    ??BitStream_appendBytes_7
+        ADDS     R7,R7,#+1
+        SUBS     R6,R6,#+1
+        BNE.N    ??BitStream_appendBytes_6
 //  185 
 //  186 	ret = BitStream_append(bstream, b);
-??BitStream_appendBytes_1:
+??BitStream_appendBytes_5:
         MOV      R1,R5
-        MOV      R0,R4
+        MOV      R0,R8
           CFI FunCall BitStream_append
         BL       BitStream_append
         MOV      R4,R0
 //  187 	BitStream_free(b);
+        LDR      R0,[R5, #+4]
+          CFI FunCall free
+        BL       free
         MOV      R0,R5
-          CFI FunCall BitStream_free
-        BL       BitStream_free
+          CFI FunCall free
+        BL       free
 //  188 
 //  189 	return ret;
         MOV      R0,R4
-        POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock6
+        POP      {R1,R4-R9,PC}
+??BitStream_appendBytes_3:
+          CFI FunCall free
+        BL       free
+        MOV      R0,R5
+          CFI FunCall free
+        BL       free
+        B.N      ??BitStream_appendBytes_2
+          CFI EndBlock cfiBlock3
 //  190 }
 //  191 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function BitStream_toByte
         THUMB
 //  192 unsigned char *BitStream_toByte(BitStream *bstream)
@@ -653,8 +593,7 @@ BitStream_toByte:
 //  198 	size = BitStream_size(bstream);
         LDR      R4,[R5, #+0]
 //  199 	if(size == 0) {
-        CMP      R4,#+0
-        BEQ.N    ??BitStream_toByte_0
+        CBZ.N    R4,??BitStream_toByte_0
 //  200 		return NULL;
 //  201 	}
 //  202 	data = (unsigned char *)malloc((size + 7) / 8);
@@ -665,8 +604,7 @@ BitStream_toByte:
           CFI FunCall malloc
         BL       malloc
 //  203 	if(data == NULL) {
-        CMP      R0,#+0
-        BNE.N    ??BitStream_toByte_1
+        CBNZ.N   R0,??BitStream_toByte_1
 //  204 		return NULL;
 ??BitStream_toByte_0:
         MOVS     R0,#+0
@@ -682,65 +620,67 @@ BitStream_toByte:
 //  209 	p = bstream->data;
         LDR      R2,[R5, #+4]
 //  210 	for(i=0; i<bytes; i++) {
-        MOVS     R3,#+0
-        B.N      ??BitStream_toByte_2
+        CMP      R1,#+1
+        BLT.N    ??BitStream_toByte_2
+        MOV      R3,R0
+        MOV      R5,R1
 //  211 		v = 0;
 //  212 		for(j=0; j<8; j++) {
 //  213 			v = v << 1;
 //  214 			v |= *p;
 ??BitStream_toByte_3:
-        LDRB     R7,[R2], #+1
-        ORR      R5,R7,R5, LSL #+1
+        LDRB     R6,[R2], #+1
 //  215 			p++;
+        LDRB     R7,[R2], #+1
+        ORR      R6,R7,R6, LSL #+1
+        LDRB     R7,[R2], #+1
+        ORR      R6,R7,R6, LSL #+1
+        LDRB     R7,[R2], #+1
+        ORR      R6,R7,R6, LSL #+1
+        LDRB     R7,[R2], #+1
+        ORR      R6,R7,R6, LSL #+1
+        LDRB     R7,[R2], #+1
+        ORR      R6,R7,R6, LSL #+1
+        LDRB     R7,[R2], #+1
+        ORR      R6,R7,R6, LSL #+1
+        LDRB     R7,[R2], #+1
+        ORR      R6,R7,R6, LSL #+1
 //  216 		}
-        ADDS     R6,R6,#+1
-??BitStream_toByte_4:
-        CMP      R6,#+8
-        BLT.N    ??BitStream_toByte_3
 //  217 		data[i] = v;
-        STRB     R5,[R3, R0]
-        ADDS     R3,R3,#+1
-??BitStream_toByte_2:
-        CMP      R3,R1
-        BGE.N    ??BitStream_toByte_5
-        MOVS     R5,#+0
-        MOV      R6,R5
-        B.N      ??BitStream_toByte_4
+        STRB     R6,[R3], #+1
 //  218 	}
+        SUBS     R5,R5,#+1
+        BNE.N    ??BitStream_toByte_3
 //  219 	if(size & 7) {
-??BitStream_toByte_5:
+??BitStream_toByte_2:
         TST      R4,#0x7
-        BEQ.N    ??BitStream_toByte_6
+        BEQ.N    ??BitStream_toByte_4
 //  220 		v = 0;
-        MOVS     R5,#+0
+        MOVS     R6,#+0
 //  221 		for(j=0; j<(size & 7); j++) {
-        MOV      R6,R5
-        B.N      ??BitStream_toByte_7
+        AND      R3,R4,#0x7
 //  222 			v = v << 1;
 //  223 			v |= *p;
-??BitStream_toByte_8:
-        LDRB     R3,[R2], #+1
-        ORR      R5,R3,R5, LSL #+1
+??BitStream_toByte_5:
+        LDRB     R4,[R2], #+1
+        ORR      R6,R4,R6, LSL #+1
 //  224 			p++;
 //  225 		}
-        ADDS     R6,R6,#+1
-??BitStream_toByte_7:
-        AND      R3,R4,#0x7
-        CMP      R6,R3
-        BLT.N    ??BitStream_toByte_8
+        SUBS     R3,R3,#+1
+        BNE.N    ??BitStream_toByte_5
 //  226 		data[bytes] = v;
-        STRB     R5,[R1, R0]
+        STRB     R6,[R1, R0]
 //  227 	}
 //  228 
 //  229 	return data;
-??BitStream_toByte_6:
+??BitStream_toByte_4:
         POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock7
+          CFI EndBlock cfiBlock4
 //  230 }
 //  231 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function BitStream_free
         THUMB
 //  232 void BitStream_free(BitStream *bstream)
@@ -772,7 +712,7 @@ BitStream_free:
 //  238 }
 ??BitStream_free_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock5
 
         SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -787,9 +727,9 @@ BitStream_free:
 
         END
 // 
-// 590 bytes in section .text
+// 576 bytes in section .text
 // 
-// 590 bytes of CODE memory
+// 576 bytes of CODE memory
 //
 //Errors: none
 //Warnings: none

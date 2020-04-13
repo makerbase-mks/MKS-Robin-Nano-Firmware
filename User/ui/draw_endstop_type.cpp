@@ -68,7 +68,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     if(mksCfg.x_min_endstop_inverting == 1)
                     {
                         mksCfg.x_min_endstop_inverting=0;
-                        BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_normally_open.bin",1); 
+                        BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(XEndstop_Min.btnHandle, machine_menu.opened);
                         
@@ -76,7 +76,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     else
                     {
                         mksCfg.x_min_endstop_inverting=1;
-                        BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_normally_closed.bin",1);   
+                        BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_disable.bin",1);   
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(XEndstop_Min.btnHandle, machine_menu.closed);
                     }
@@ -89,7 +89,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     if(mksCfg.y_min_endstop_inverting == 1)
                     {
                         mksCfg.y_min_endstop_inverting=0;
-                        BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_normally_open.bin",1); 
+                        BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(YEndstop_Min.btnHandle, machine_menu.opened);
                         
@@ -97,7 +97,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     else
                     {
                         mksCfg.y_min_endstop_inverting=1;
-                        BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_normally_closed.bin",1);   
+                        BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_disable.bin",1);   
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(YEndstop_Min.btnHandle, machine_menu.closed);
                     }
@@ -110,7 +110,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     if(mksCfg.z_min_endstop_inverting == 1)
                     {
                         mksCfg.z_min_endstop_inverting=0;
-                        BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_normally_open.bin",1); 
+                        BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(ZEndstop_Min.btnHandle, machine_menu.opened);
                         
@@ -118,7 +118,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     else
                     {
                         mksCfg.z_min_endstop_inverting=1;
-                        BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_normally_closed.bin",1);   
+                        BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_disable.bin",1);   
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(ZEndstop_Min.btnHandle, machine_menu.closed);
                     }
@@ -130,7 +130,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     if(mksCfg.x_max_endstop_inverting == 1)
                     {
                         mksCfg.x_max_endstop_inverting=0;
-                        BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_normally_open.bin",1); 
+                        BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(XEndstop_Max.btnHandle, machine_menu.opened);
                         
@@ -138,7 +138,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     else
                     {
                         mksCfg.x_max_endstop_inverting=1;
-                        BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_normally_closed.bin",1);   
+                        BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_disable.bin",1);   
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(XEndstop_Max.btnHandle, machine_menu.closed);
                     }
@@ -151,7 +151,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     if(mksCfg.y_max_endstop_inverting == 1)
                     {
                         mksCfg.y_max_endstop_inverting=0;
-                        BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_normally_open.bin",1); 
+                        BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(YEndstop_Max.btnHandle, machine_menu.opened);
                         
@@ -159,7 +159,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     else
                     {
                         mksCfg.y_max_endstop_inverting=1;
-                        BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_normally_closed.bin",1);   
+                        BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_disable.bin",1);   
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(YEndstop_Max.btnHandle, machine_menu.closed);
                     }
@@ -172,7 +172,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     if(mksCfg.z_max_endstop_inverting == 1)
                     {
                         mksCfg.z_max_endstop_inverting=0;
-                        BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_normally_open.bin",1); 
+                        BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(ZEndstop_Max.btnHandle, machine_menu.opened);
                         
@@ -180,7 +180,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     else
                     {
                         mksCfg.z_max_endstop_inverting=1;
-                        BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_normally_closed.bin",1);   
+                        BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_disable.bin",1);   
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(ZEndstop_Max.btnHandle, machine_menu.closed);
                     }
@@ -195,14 +195,14 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     	    if(gCfgItems.filament_det0_level_flg == 1 && gCfgItems.filament_det1_level_flg==1)
                        {
                         	gCfgItems.filament_det0_level_flg=gCfgItems.filament_det1_level_flg=0;
-                        	BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_normally_open.bin",1); 
+                        	BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_enable.bin",1); 
                         	if(gCfgItems.multiple_language != 0)
                            BUTTON_SetText(MT_Endstop.btnHandle, machine_menu.opened);
                     	   }
                     	   else
                     	   {
                        	 gCfgItems.filament_det0_level_flg=gCfgItems.filament_det1_level_flg=1;
-                        	BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_normally_closed.bin",1);   
+                        	BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_disable.bin",1);   
                         	if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(MT_Endstop.btnHandle, machine_menu.closed);
                    	   }
@@ -215,7 +215,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     if(mksCfg.z_min_probe_endstop_inverting == 1)
                     {
                         mksCfg.z_min_probe_endstop_inverting=0;
-                        BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_normally_open.bin",1); 
+                        BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_enable.bin",1); 
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(LevelingEndstop.btnHandle, machine_menu.opened);
                         
@@ -223,7 +223,7 @@ static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
                     else
                     {
                         mksCfg.z_min_probe_endstop_inverting=1;
-                        BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_normally_closed.bin",1);   
+                        BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_disable.bin",1);   
                         if(gCfgItems.multiple_language != 0)
                             BUTTON_SetText(LevelingEndstop.btnHandle, machine_menu.closed);
                     }
@@ -297,35 +297,35 @@ void draw_EndstopType()
 
         if(mksCfg.x_min_endstop_inverting == 1)
         {
-            BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_normally_closed.bin",1); 
+            BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_disable.bin",1); 
         }
         else
         {
-            BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_normally_open.bin",1);   
+            BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_enable.bin",1);   
         }
         if(mksCfg.y_min_endstop_inverting == 1)
         {
-            BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_normally_closed.bin",1);
+            BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_disable.bin",1);
         }
         else
         {
-            BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_normally_open.bin",1);
+            BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_enable.bin",1);
         }
         if(mksCfg.z_min_endstop_inverting == 1)
         {
-            BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_normally_closed.bin",1);
+            BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_disable.bin",1);
         }
         else
         {
-            BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_normally_open.bin",1);
+            BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_enable.bin",1);
         }
         if(mksCfg.x_max_endstop_inverting == 1)
         {
-            BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_normally_closed.bin",1);
+            BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_disable.bin",1);
         }
         else
         {
-            BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_normally_open.bin",1);
+            BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_enable.bin",1);
         }
         
         BUTTON_SetBmpFileName(XEndstop_Min_text.btnHandle,NULL,1);        
@@ -372,37 +372,37 @@ void draw_EndstopType()
 
         if(mksCfg.y_max_endstop_inverting == 1)
         {
-            BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_normally_closed.bin",1); 
+            BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_disable.bin",1); 
         }
         else
         {
-            BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_normally_open.bin",1);   
+            BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_enable.bin",1);   
         }
         if(mksCfg.z_max_endstop_inverting == 1)
         {
-            BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_normally_closed.bin",1);
+            BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_disable.bin",1);
         }
         else
         {
-            BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_normally_open.bin",1);
+            BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_enable.bin",1);
         }
         
         if(gCfgItems.filament_det0_level_flg == 1 && gCfgItems.filament_det1_level_flg==1)
         {
-            BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_normally_closed.bin",1);
+            BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_disable.bin",1);
         }
         else
         {
-            BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_normally_open.bin",1);
+            BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_enable.bin",1);
         }
         
         if(mksCfg.z_min_probe_endstop_inverting == 1)
         {
-            BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_normally_closed.bin",1);
+            BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_disable.bin",1);
         }
         else
         {
-            BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_normally_open.bin",1);
+            BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_enable.bin",1);
         }
 
          BUTTON_SetBmpFileName(YEndstop_Max_text.btnHandle,NULL,1);        

@@ -898,7 +898,7 @@ static_assert(1 >= 0
 /**
  * Make sure Z_SAFE_HOMING point is reachable
  */
-#if ENABLED(Z_SAFE_HOMING)
+#if 0//ENABLED(Z_SAFE_HOMING)
   #if !WITHIN(Z_SAFE_HOMING_X_POINT, MIN_PROBE_X, MAX_PROBE_X)
     #if HAS_BED_PROBE
       #error "Z_SAFE_HOMING_X_POINT can't be reached by the Z probe."

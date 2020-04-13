@@ -1,0 +1,2275 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:24:07
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_endstop_type.cpp
+#    Command line =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_endstop_type.cpp
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
+#        -lA
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_endstop_type.lst
+#    Object file  =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\draw_endstop_type.o
+#
+###############################################################################
+
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_endstop_type.cpp
+      1          #include "gui.h"
+      2          #include "button.h"
+      3          #include "draw_ui.h"
+
+  #define UNUSED(x) ((void)(x))
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 101 of
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../M
+          iddlewares/Third_Party/Marlin\macros.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Inc\mks_cfg.h",626  Warning[Pe083]: 
+          type qualifier specified more than once
+
+    #define FILAMENT_CHANGE_TEXT_EN				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_en.h",337  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_EN"
+          (declared at line 315)
+
+  #define DIALOG_UNBIND_PRINTER_CN            "Ëß£Èô§ÁªëÂÆö?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_s_cn.h",408  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_CN"
+          (declared at line 403)
+
+    #define FILAMENT_CHANGE_TEXT_T_CN				"ÂæÖÊâìÂç∞Ê©üÊö´ÂÅúÂêé,\nË´ãÊåâ<ÈÄ≤Êñô>Êàñ<ÈÄÄÊñô>"
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_t_cn.h",318  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_T_CN"
+          (declared at line 304)
+
+    #define FILAMENT_CHANGE_TEXT_RU				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_ru.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_RU"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_RU            "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_ru.h",231  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_RU"
+          (declared at line 226)
+
+    #define FILAMENT_CHANGE_TEXT_FR				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_fr.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_FR"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_FR        "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_fr.h",234  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_FR"
+          (declared at line 230)
+
+    #define FILAMENT_CHANGE_TEXT_SP				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_sp.h",133  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_SP"
+          (declared at line 114)
+
+    #define FILAMENT_CHANGE_TEXT_IT				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_it.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_IT"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_IT                "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_it.h",230  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_IT"
+          (declared at line 225)
+
+  #define FILAMENT_CHANGE_TEXT_JP				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Multi_language.h",899  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_JP"
+          (declared at line 892)
+
+  #define FILAMENT_CHANGE_TEXT_GN				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Multi_language.h",1107  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_GN"
+          (declared at line 1101)
+
+  #define Simple_Dec"ºı…Ÿ"
+                    ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",666  Warning[Pe1649]: 
+          white space is required between the macro name "Simple_Dec" and its
+          replacement text
+
+  #define Simple_Speed "ÀŸ∂»"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",721  Warning[Pe047]: 
+          incompatible redefinition of macro "Simple_Speed" (declared at line
+          718)
+
+  #define Complex_Speed "ÀŸ∂»"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",722  Warning[Pe047]: 
+          incompatible redefinition of macro "Complex_Speed" (declared at line
+          719)
+      4          
+      5          #ifndef GUI_FLASH
+      6          #define GUI_FLASH
+      7          #endif
+      8          
+
+   \                                 In section .bss, align 4
+      9          static GUI_HWIN hEndstopTypeWnd;
+     10          static BUTTON_STRUCT XEndstop_Min,YEndstop_Min,ZEndstop_Min,XEndstop_Max,YEndstop_Max,ZEndstop_Max,MT_Endstop,LevelingEndstop;
+     11          static BUTTON_STRUCT XEndstop_Min_text,YEndstop_Min_text,ZEndstop_Min_text,XEndstop_Max_text,YEndstop_Max_text,ZEndstop_Max_text,MT_Endstop_text,LevelingEndstop_text;
+     12          static BUTTON_STRUCT button_next,button_previous,button_back;
+     13          
+     14          static uint8_t current_page;//0:…œ“ª“≥£¨1:œ¬“ª“≥
+   \                     current_page:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 1
+   \   00000002                      DS8 2
+   \   00000004                      DS8 24
+   \   0000001C                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     ZEndstop_Min:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     YEndstop_Max:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     MT_Endstop:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     XEndstop_Min_text:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+   \   00000030                      DS8 24
+   \   00000048                      DS8 24
+   \   00000060                      DS8 24
+   \   00000078                      DS8 24
+   \   00000090                      DS8 24
+   \   000000A8                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     button_next:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     button_back:
+   \   00000000                      DS8 24
+     15          
+
+   \                                 In section .text, align 2, keep-with-next
+     16          static void cbEndstopTypeWin(WM_MESSAGE * pMsg) {
+     17          
+     18              struct PressEvt *press_event;
+                                      ^
+Warning[Pe550]: variable "press_event" was set but never used
+     19              switch (pMsg->MsgId)
+   \                     _Z16cbEndstopTypeWinP10WM_MESSAGE: (+1)
+   \   00000000   0x6801             LDR      R1,[R0, #+0]
+   \   00000002   0x290C             CMP      R1,#+12
+   \   00000004   0xD100             BNE.N    ??cbEndstopTypeWin_0
+   \   00000006   0x4770             BX       LR
+   \                     ??cbEndstopTypeWin_0: (+1)
+   \   00000008   0xB570             PUSH     {R4-R6,LR}
+   \   0000000A   0x290D             CMP      R1,#+13
+   \   0000000C   0xF000 0x821B      BEQ.W    ??cbEndstopTypeWin_1
+   \   00000010   0x290F             CMP      R1,#+15
+   \   00000012   0xD002             BEQ.N    ??cbEndstopTypeWin_2
+   \   00000014   0x2926             CMP      R1,#+38
+   \   00000016   0xD022             BEQ.N    ??cbEndstopTypeWin_3
+   \   00000018   0xE211             B.N      ??cbEndstopTypeWin_4
+     20              {
+     21              	case WM_PAINT:
+     22          			GUI_SetColor(0xff5449);
+   \                     ??cbEndstopTypeWin_2: (+1)
+   \   0000001A   0x.... 0x....      LDR.W    R0,??DataTable7  ;; 0xff5449
+   \   0000001E   0x.... 0x....      BL       GUI_SetColor
+     23          
+     24          			GUI_FillRect(10, 90, 470,90);         
+   \   00000022   0x235A             MOVS     R3,#+90
+   \   00000024   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000028   0x215A             MOVS     R1,#+90
+   \   0000002A   0x200A             MOVS     R0,#+10
+   \   0000002C   0x.... 0x....      BL       GUI_FillRect
+     25                      GUI_FillRect(10, 140, 470,140);
+   \   00000030   0x238C             MOVS     R3,#+140
+   \   00000032   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000036   0x4619             MOV      R1,R3
+   \   00000038   0x200A             MOVS     R0,#+10
+   \   0000003A   0x.... 0x....      BL       GUI_FillRect
+     26                      GUI_FillRect(10, 190, 470,190);
+   \   0000003E   0x23BE             MOVS     R3,#+190
+   \   00000040   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000044   0x4619             MOV      R1,R3
+   \   00000046   0x200A             MOVS     R0,#+10
+   \   00000048   0x.... 0x....      BL       GUI_FillRect
+     27                      //if(current_page != 1)
+     28                      {                 
+     29                          GUI_FillRect(10, 240, 470,240);
+   \   0000004C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000050   0x23F0             MOVS     R3,#+240
+   \   00000052   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000056   0x4619             MOV      R1,R3
+   \   00000058   0x200A             MOVS     R0,#+10
+   \   0000005A   0x.... 0x....      B.W      GUI_FillRect
+     30                      }
+     31          
+     32              		break;
+     33              	case WM_TOUCH:
+     34              	 	press_event = (struct PressEvt *)pMsg->Data.p;
+     35              		
+     36              		break;
+     37              	case WM_TOUCH_CHILD:
+     38              		press_event = (struct PressEvt *)pMsg->Data.p;
+     39          
+     40              		break;
+     41              		
+     42              	case WM_NOTIFY_PARENT:
+     43              		if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
+   \                     ??cbEndstopTypeWin_3: (+1)
+   \   0000005E   0x6881             LDR      R1,[R0, #+8]
+   \   00000060   0x2902             CMP      R1,#+2
+   \   00000062   0xF040 0x81F0      BNE.W    ??cbEndstopTypeWin_1
+     44              		{
+     45              			if(pMsg->hWinSrc == button_back.btnHandle)
+   \   00000066   0xF9B0 0x1006      LDRSH    R1,[R0, #+6]
+   \   0000006A   0x.... 0x....      LDR.W    R0,??DataTable7_1
+   \   0000006E   0x.... 0x....      LDR.W    R6,??DataTable7_2
+   \   00000072   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000076   0x4281             CMP      R1,R0
+   \   00000078   0xD117             BNE.N    ??cbEndstopTypeWin_5
+     46              			{
+     47              			    current_page = 0;
+   \   0000007A   0x2000             MOVS     R0,#+0
+   \   0000007C   0x7030             STRB     R0,[R6, #+0]
+     48              				last_disp_state = ENDSTOP_TYPE_UI;
+   \   0000007E   0x202C             MOVS     R0,#+44
+   \   00000080   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   00000084   0x7008             STRB     R0,[R1, #+0]
+     49              				Clear_EndstopType();
+   \   00000086   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   0000008A   0x6940             LDR      R0,[R0, #+20]
+   \   0000008C   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000090   0xF9B6 0x0002      LDRSH    R0,[R6, #+2]
+   \   00000094   0x.... 0x....      BL       WM_IsWindow
+   \   00000098   0xB118             CBZ.N    R0,??cbEndstopTypeWin_6
+   \   0000009A   0xF9B6 0x0002      LDRSH    R0,[R6, #+2]
+   \   0000009E   0x.... 0x....      BL       WM_DeleteWindow
+     50              				draw_return_ui();
+   \                     ??cbEndstopTypeWin_6: (+1)
+   \   000000A2   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   000000A6   0x.... 0x....      B.W      draw_return_ui
+     51              			}	
+     52                          else if(pMsg->hWinSrc == button_next.btnHandle)
+   \                     ??cbEndstopTypeWin_5: (+1)
+   \   000000AA   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \   000000AE   0xF9B0 0x2000      LDRSH    R2,[R0, #+0]
+   \   000000B2   0x4291             CMP      R1,R2
+   \   000000B4   0xBF08             IT       EQ 
+     53                          {
+     54                              current_page = 1;
+   \   000000B6   0x2001             MOVEQ    R0,#+1
+   \   000000B8   0xD004             BEQ.N    ??cbEndstopTypeWin_7
+     55                              last_disp_state = ENDSTOP_TYPE_UI;
+     56                              Clear_EndstopType();
+     57                              draw_EndstopType();
+     58                          }
+     59                          else if(pMsg->hWinSrc == button_previous.btnHandle)
+   \   000000BA   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000000BE   0x4281             CMP      R1,R0
+   \   000000C0   0xD116             BNE.N    ??cbEndstopTypeWin_8
+     60                          {
+     61                              current_page = 0;
+   \   000000C2   0x2000             MOVS     R0,#+0
+   \                     ??cbEndstopTypeWin_7: (+1)
+   \   000000C4   0x7030             STRB     R0,[R6, #+0]
+     62                              last_disp_state = ENDSTOP_TYPE_UI;
+   \   000000C6   0x202C             MOVS     R0,#+44
+   \   000000C8   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \   000000CC   0x7008             STRB     R0,[R1, #+0]
+     63                              Clear_EndstopType();
+   \   000000CE   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   000000D2   0x6940             LDR      R0,[R0, #+20]
+   \   000000D4   0x.... 0x....      BL       GUI_SetBkColor
+   \   000000D8   0xF9B6 0x0002      LDRSH    R0,[R6, #+2]
+   \   000000DC   0x.... 0x....      BL       WM_IsWindow
+   \   000000E0   0xB118             CBZ.N    R0,??cbEndstopTypeWin_9
+   \   000000E2   0xF9B6 0x0002      LDRSH    R0,[R6, #+2]
+   \   000000E6   0x.... 0x....      BL       WM_DeleteWindow
+     64                              draw_EndstopType();
+   \                     ??cbEndstopTypeWin_9: (+1)
+   \   000000EA   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   000000EE   0x....             B.N      draw_EndstopType
+     65                          }                
+     66              			else if(pMsg->hWinSrc == XEndstop_Min.btnHandle)
+   \                     ??cbEndstopTypeWin_8: (+1)
+   \   000000F0   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   000000F4   0x4281             CMP      R1,R0
+   \   000000F6   0xD12F             BNE.N    ??cbEndstopTypeWin_10
+     67              			{
+     68                              if(mksCfg.x_min_endstop_inverting == 1)
+   \   000000F8   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   000000FC   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   00000100   0x.... 0x....      LDR.W    R5,??DataTable7_6
+   \   00000104   0xF895 0x1039      LDRB     R1,[R5, #+57]
+   \   00000108   0x2901             CMP      R1,#+1
+   \   0000010A   0xD10E             BNE.N    ??cbEndstopTypeWin_11
+     69                              {
+     70                                  mksCfg.x_min_endstop_inverting=0;
+   \   0000010C   0x2100             MOVS     R1,#+0
+   \   0000010E   0xF885 0x1039      STRB     R1,[R5, #+57]
+     71                                  BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_enable.bin",1); 
+   \   00000112   0x2201             MOVS     R2,#+1
+   \   00000114   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   00000118   0x.... 0x....      BL       BUTTON_SetBmpFileName
+     72                                  if(gCfgItems.multiple_language != 0)
+   \   0000011C   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000011E   0xB1A8             CBZ.N    R0,??cbEndstopTypeWin_12
+     73                                      BUTTON_SetText(XEndstop_Min.btnHandle, machine_menu.opened);
+   \   00000120   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000124   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   00000128   0xE00C             B.N      ??cbEndstopTypeWin_13
+     74                                  
+     75                              }
+     76                              else
+     77                              {
+     78                                  mksCfg.x_min_endstop_inverting=1;
+   \                     ??cbEndstopTypeWin_11: (+1)
+   \   0000012A   0x2101             MOVS     R1,#+1
+   \   0000012C   0xF885 0x1039      STRB     R1,[R5, #+57]
+     79                                  BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_disable.bin",1);   
+   \   00000130   0x2201             MOVS     R2,#+1
+   \   00000132   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   00000136   0x.... 0x....      BL       BUTTON_SetBmpFileName
+     80                                  if(gCfgItems.multiple_language != 0)
+   \   0000013A   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000013C   0xB130             CBZ.N    R0,??cbEndstopTypeWin_12
+     81                                      BUTTON_SetText(XEndstop_Min.btnHandle, machine_menu.closed);
+   \   0000013E   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   00000142   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_13: (+1)
+   \   00000144   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   00000148   0x.... 0x....      BL       BUTTON_SetText
+     82                              }
+     83                              epr_write_data(EPR_X_MIN_ENDSTOP_INVERTING,&mksCfg.x_min_endstop_inverting,1);
+   \                     ??cbEndstopTypeWin_12: (+1)
+   \   0000014C   0x2201             MOVS     R2,#+1
+   \   0000014E   0xF105 0x0139      ADD      R1,R5,#+57
+   \   00000152   0xF240 0x50E3      MOVW     R0,#+1507
+   \   00000156   0xE16E             B.N      ??cbEndstopTypeWin_14
+     84          
+     85          
+     86              			}
+     87              			else if(pMsg->hWinSrc == YEndstop_Min.btnHandle)
+   \                     ??cbEndstopTypeWin_10: (+1)
+   \   00000158   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   0000015C   0x4281             CMP      R1,R0
+   \   0000015E   0xD12D             BNE.N    ??cbEndstopTypeWin_15
+     88              			{
+     89                              if(mksCfg.y_min_endstop_inverting == 1)
+   \   00000160   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   00000164   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   00000168   0x.... 0x....      LDR.W    R5,??DataTable7_6
+   \   0000016C   0xF205 0x0139      ADDW     R1,R5,#+57
+   \   00000170   0x784A             LDRB     R2,[R1, #+1]
+   \   00000172   0x2A01             CMP      R2,#+1
+   \   00000174   0xD10D             BNE.N    ??cbEndstopTypeWin_16
+     90                              {
+     91                                  mksCfg.y_min_endstop_inverting=0;
+   \   00000176   0x2200             MOVS     R2,#+0
+   \   00000178   0x704A             STRB     R2,[R1, #+1]
+     92                                  BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_enable.bin",1); 
+   \   0000017A   0x2201             MOVS     R2,#+1
+   \   0000017C   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   00000180   0x.... 0x....      BL       BUTTON_SetBmpFileName
+     93                                  if(gCfgItems.multiple_language != 0)
+   \   00000184   0x78A0             LDRB     R0,[R4, #+2]
+   \   00000186   0xB198             CBZ.N    R0,??cbEndstopTypeWin_17
+     94                                      BUTTON_SetText(YEndstop_Min.btnHandle, machine_menu.opened);
+   \   00000188   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   0000018C   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   00000190   0xE00A             B.N      ??cbEndstopTypeWin_18
+     95                                  
+     96                              }
+     97                              else
+     98                              {
+     99                                  mksCfg.y_min_endstop_inverting=1;
+   \                     ??cbEndstopTypeWin_16: (+1)
+   \   00000192   0x2201             MOVS     R2,#+1
+   \   00000194   0x704A             STRB     R2,[R1, #+1]
+    100                                  BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_disable.bin",1);   
+   \   00000196   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   0000019A   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    101                                  if(gCfgItems.multiple_language != 0)
+   \   0000019E   0x78A0             LDRB     R0,[R4, #+2]
+   \   000001A0   0xB130             CBZ.N    R0,??cbEndstopTypeWin_17
+    102                                      BUTTON_SetText(YEndstop_Min.btnHandle, machine_menu.closed);
+   \   000001A2   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   000001A6   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_18: (+1)
+   \   000001A8   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000001AC   0x.... 0x....      BL       BUTTON_SetText
+    103                              }
+    104                              epr_write_data(EPR_Y_MIN_ENDSTOP_INVERTING,&mksCfg.y_min_endstop_inverting,1);
+   \                     ??cbEndstopTypeWin_17: (+1)
+   \   000001B0   0x2201             MOVS     R2,#+1
+   \   000001B2   0xF105 0x013A      ADD      R1,R5,#+58
+   \   000001B6   0xF240 0x50E4      MOVW     R0,#+1508
+   \   000001BA   0xE13C             B.N      ??cbEndstopTypeWin_14
+    105          
+    106          
+    107              			}
+    108              			else if(pMsg->hWinSrc == ZEndstop_Min.btnHandle)
+   \                     ??cbEndstopTypeWin_15: (+1)
+   \   000001BC   0x.... 0x....      LDR.W    R6,??DataTable7_9
+   \   000001C0   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   000001C4   0x4281             CMP      R1,R0
+   \   000001C6   0xD12D             BNE.N    ??cbEndstopTypeWin_19
+    109              			{
+    110                              if(mksCfg.z_min_endstop_inverting == 1)
+   \   000001C8   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   000001CC   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   000001D0   0x.... 0x....      LDR.W    R5,??DataTable7_6
+   \   000001D4   0xF205 0x0139      ADDW     R1,R5,#+57
+   \   000001D8   0x788A             LDRB     R2,[R1, #+2]
+   \   000001DA   0x2A01             CMP      R2,#+1
+   \   000001DC   0xD10D             BNE.N    ??cbEndstopTypeWin_20
+    111                              {
+    112                                  mksCfg.z_min_endstop_inverting=0;
+   \   000001DE   0x2200             MOVS     R2,#+0
+   \   000001E0   0x708A             STRB     R2,[R1, #+2]
+    113                                  BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_enable.bin",1); 
+   \   000001E2   0x2201             MOVS     R2,#+1
+   \   000001E4   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   000001E8   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    114                                  if(gCfgItems.multiple_language != 0)
+   \   000001EC   0x78A0             LDRB     R0,[R4, #+2]
+   \   000001EE   0xB198             CBZ.N    R0,??cbEndstopTypeWin_21
+    115                                      BUTTON_SetText(ZEndstop_Min.btnHandle, machine_menu.opened);
+   \   000001F0   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000001F4   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   000001F8   0xE00A             B.N      ??cbEndstopTypeWin_22
+    116                                  
+    117                              }
+    118                              else
+    119                              {
+    120                                  mksCfg.z_min_endstop_inverting=1;
+   \                     ??cbEndstopTypeWin_20: (+1)
+   \   000001FA   0x2201             MOVS     R2,#+1
+   \   000001FC   0x708A             STRB     R2,[R1, #+2]
+    121                                  BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_disable.bin",1);   
+   \   000001FE   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   00000202   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    122                                  if(gCfgItems.multiple_language != 0)
+   \   00000206   0x78A0             LDRB     R0,[R4, #+2]
+   \   00000208   0xB130             CBZ.N    R0,??cbEndstopTypeWin_21
+    123                                      BUTTON_SetText(ZEndstop_Min.btnHandle, machine_menu.closed);
+   \   0000020A   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   0000020E   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_22: (+1)
+   \   00000210   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000214   0x.... 0x....      BL       BUTTON_SetText
+    124                              }
+    125                              epr_write_data(EPR_Z_MIN_ENDSTOP_INVERTING,&mksCfg.z_min_endstop_inverting,1);
+   \                     ??cbEndstopTypeWin_21: (+1)
+   \   00000218   0x2201             MOVS     R2,#+1
+   \   0000021A   0xF105 0x013B      ADD      R1,R5,#+59
+   \   0000021E   0xF240 0x50E5      MOVW     R0,#+1509
+   \   00000222   0xE108             B.N      ??cbEndstopTypeWin_14
+    126          
+    127              			} 
+    128              			else if(pMsg->hWinSrc == XEndstop_Max.btnHandle)
+   \                     ??cbEndstopTypeWin_19: (+1)
+   \   00000224   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000228   0x4281             CMP      R1,R0
+   \   0000022A   0xD12D             BNE.N    ??cbEndstopTypeWin_23
+    129              			{
+    130                              if(mksCfg.x_max_endstop_inverting == 1)
+   \   0000022C   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   00000230   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   00000234   0x.... 0x....      LDR.W    R5,??DataTable7_6
+   \   00000238   0xF205 0x0139      ADDW     R1,R5,#+57
+   \   0000023C   0x78CA             LDRB     R2,[R1, #+3]
+   \   0000023E   0x2A01             CMP      R2,#+1
+   \   00000240   0xD10D             BNE.N    ??cbEndstopTypeWin_24
+    131                              {
+    132                                  mksCfg.x_max_endstop_inverting=0;
+   \   00000242   0x2200             MOVS     R2,#+0
+   \   00000244   0x70CA             STRB     R2,[R1, #+3]
+    133                                  BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_enable.bin",1); 
+   \   00000246   0x2201             MOVS     R2,#+1
+   \   00000248   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   0000024C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    134                                  if(gCfgItems.multiple_language != 0)
+   \   00000250   0x78A0             LDRB     R0,[R4, #+2]
+   \   00000252   0xB198             CBZ.N    R0,??cbEndstopTypeWin_25
+    135                                      BUTTON_SetText(XEndstop_Max.btnHandle, machine_menu.opened);
+   \   00000254   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000258   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   0000025C   0xE00A             B.N      ??cbEndstopTypeWin_26
+    136                                  
+    137                              }
+    138                              else
+    139                              {
+    140                                  mksCfg.x_max_endstop_inverting=1;
+   \                     ??cbEndstopTypeWin_24: (+1)
+   \   0000025E   0x2201             MOVS     R2,#+1
+   \   00000260   0x70CA             STRB     R2,[R1, #+3]
+    141                                  BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_disable.bin",1);   
+   \   00000262   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   00000266   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    142                                  if(gCfgItems.multiple_language != 0)
+   \   0000026A   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000026C   0xB130             CBZ.N    R0,??cbEndstopTypeWin_25
+    143                                      BUTTON_SetText(XEndstop_Max.btnHandle, machine_menu.closed);
+   \   0000026E   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   00000272   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_26: (+1)
+   \   00000274   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000278   0x.... 0x....      BL       BUTTON_SetText
+    144                              }
+    145                              epr_write_data(EPR_X_MAX_ENDSTOP_INVERTING,&mksCfg.x_max_endstop_inverting,1);
+   \                     ??cbEndstopTypeWin_25: (+1)
+   \   0000027C   0x2201             MOVS     R2,#+1
+   \   0000027E   0xF105 0x013C      ADD      R1,R5,#+60
+   \   00000282   0xF240 0x50E6      MOVW     R0,#+1510
+   \   00000286   0xE0D6             B.N      ??cbEndstopTypeWin_14
+    146          
+    147          
+    148              			}
+    149              			else if(pMsg->hWinSrc == YEndstop_Max.btnHandle)
+   \                     ??cbEndstopTypeWin_23: (+1)
+   \   00000288   0x.... 0x....      LDR.W    R6,??DataTable7_10
+   \   0000028C   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000290   0x4281             CMP      R1,R0
+   \   00000292   0xD12D             BNE.N    ??cbEndstopTypeWin_27
+    150              			{
+    151                              if(mksCfg.y_max_endstop_inverting == 1)
+   \   00000294   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   00000298   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   0000029C   0x.... 0x....      LDR.W    R5,??DataTable7_6
+   \   000002A0   0xF205 0x0139      ADDW     R1,R5,#+57
+   \   000002A4   0x790A             LDRB     R2,[R1, #+4]
+   \   000002A6   0x2A01             CMP      R2,#+1
+   \   000002A8   0xD10D             BNE.N    ??cbEndstopTypeWin_28
+    152                              {
+    153                                  mksCfg.y_max_endstop_inverting=0;
+   \   000002AA   0x2200             MOVS     R2,#+0
+   \   000002AC   0x710A             STRB     R2,[R1, #+4]
+    154                                  BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_enable.bin",1); 
+   \   000002AE   0x2201             MOVS     R2,#+1
+   \   000002B0   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   000002B4   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    155                                  if(gCfgItems.multiple_language != 0)
+   \   000002B8   0x78A0             LDRB     R0,[R4, #+2]
+   \   000002BA   0xB198             CBZ.N    R0,??cbEndstopTypeWin_29
+    156                                      BUTTON_SetText(YEndstop_Max.btnHandle, machine_menu.opened);
+   \   000002BC   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   000002C0   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   000002C4   0xE00A             B.N      ??cbEndstopTypeWin_30
+    157                                  
+    158                              }
+    159                              else
+    160                              {
+    161                                  mksCfg.y_max_endstop_inverting=1;
+   \                     ??cbEndstopTypeWin_28: (+1)
+   \   000002C6   0x2201             MOVS     R2,#+1
+   \   000002C8   0x710A             STRB     R2,[R1, #+4]
+    162                                  BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_disable.bin",1);   
+   \   000002CA   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   000002CE   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    163                                  if(gCfgItems.multiple_language != 0)
+   \   000002D2   0x78A0             LDRB     R0,[R4, #+2]
+   \   000002D4   0xB130             CBZ.N    R0,??cbEndstopTypeWin_29
+    164                                      BUTTON_SetText(YEndstop_Max.btnHandle, machine_menu.closed);
+   \   000002D6   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   000002DA   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_30: (+1)
+   \   000002DC   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   000002E0   0x.... 0x....      BL       BUTTON_SetText
+    165                              }
+    166                              epr_write_data(EPR_Y_MAX_ENDSTOP_INVERTING,&mksCfg.y_max_endstop_inverting,1);
+   \                     ??cbEndstopTypeWin_29: (+1)
+   \   000002E4   0x2201             MOVS     R2,#+1
+   \   000002E6   0xF105 0x013D      ADD      R1,R5,#+61
+   \   000002EA   0xF240 0x50E7      MOVW     R0,#+1511
+   \   000002EE   0xE0A2             B.N      ??cbEndstopTypeWin_14
+    167          
+    168          
+    169              			}
+    170              			else if(pMsg->hWinSrc == ZEndstop_Max.btnHandle)
+   \                     ??cbEndstopTypeWin_27: (+1)
+   \   000002F0   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   000002F4   0x4281             CMP      R1,R0
+   \   000002F6   0xD12D             BNE.N    ??cbEndstopTypeWin_31
+    171              			{
+    172                              if(mksCfg.z_max_endstop_inverting == 1)
+   \   000002F8   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   000002FC   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   00000300   0x.... 0x....      LDR.W    R5,??DataTable7_6
+   \   00000304   0xF205 0x0139      ADDW     R1,R5,#+57
+   \   00000308   0x794A             LDRB     R2,[R1, #+5]
+   \   0000030A   0x2A01             CMP      R2,#+1
+   \   0000030C   0xD10D             BNE.N    ??cbEndstopTypeWin_32
+    173                              {
+    174                                  mksCfg.z_max_endstop_inverting=0;
+   \   0000030E   0x2200             MOVS     R2,#+0
+   \   00000310   0x714A             STRB     R2,[R1, #+5]
+    175                                  BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_enable.bin",1); 
+   \   00000312   0x2201             MOVS     R2,#+1
+   \   00000314   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   00000318   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    176                                  if(gCfgItems.multiple_language != 0)
+   \   0000031C   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000031E   0xB198             CBZ.N    R0,??cbEndstopTypeWin_33
+    177                                      BUTTON_SetText(ZEndstop_Max.btnHandle, machine_menu.opened);
+   \   00000320   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000324   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   00000328   0xE00A             B.N      ??cbEndstopTypeWin_34
+    178                                  
+    179                              }
+    180                              else
+    181                              {
+    182                                  mksCfg.z_max_endstop_inverting=1;
+   \                     ??cbEndstopTypeWin_32: (+1)
+   \   0000032A   0x2201             MOVS     R2,#+1
+   \   0000032C   0x714A             STRB     R2,[R1, #+5]
+    183                                  BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_disable.bin",1);   
+   \   0000032E   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   00000332   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    184                                  if(gCfgItems.multiple_language != 0)
+   \   00000336   0x78A0             LDRB     R0,[R4, #+2]
+   \   00000338   0xB130             CBZ.N    R0,??cbEndstopTypeWin_33
+    185                                      BUTTON_SetText(ZEndstop_Max.btnHandle, machine_menu.closed);
+   \   0000033A   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   0000033E   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_34: (+1)
+   \   00000340   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000344   0x.... 0x....      BL       BUTTON_SetText
+    186                              }
+    187                              epr_write_data(EPR_Z_MAX_ENDSTOP_INVERTING,&mksCfg.z_max_endstop_inverting,1);
+   \                     ??cbEndstopTypeWin_33: (+1)
+   \   00000348   0x2201             MOVS     R2,#+1
+   \   0000034A   0xF105 0x013E      ADD      R1,R5,#+62
+   \   0000034E   0xF44F 0x60BD      MOV      R0,#+1512
+   \   00000352   0xE070             B.N      ??cbEndstopTypeWin_14
+    188          
+    189          
+    190              		
+    191              			}                
+    192                          
+    193              			else if(pMsg->hWinSrc == MT_Endstop.btnHandle)
+   \                     ??cbEndstopTypeWin_31: (+1)
+   \   00000354   0x.... 0x....      LDR.W    R6,??DataTable7_11
+   \   00000358   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   0000035C   0x4281             CMP      R1,R0
+   \   0000035E   0xD139             BNE.N    ??cbEndstopTypeWin_35
+    194              			{
+    195                              	    if(gCfgItems.filament_det0_level_flg == 1 && gCfgItems.filament_det1_level_flg==1)
+   \   00000360   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   00000364   0xF895 0x11CD      LDRB     R1,[R5, #+461]
+   \   00000368   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   0000036C   0x2901             CMP      R1,#+1
+   \   0000036E   0xBF04             ITT      EQ 
+   \   00000370   0x7861             LDRBEQ   R1,[R4, #+1]
+   \   00000372   0x2901             CMPEQ    R1,#+1
+   \   00000374   0xD10F             BNE.N    ??cbEndstopTypeWin_36
+    196                                 {
+    197                                  	gCfgItems.filament_det0_level_flg=gCfgItems.filament_det1_level_flg=0;
+   \   00000376   0x2100             MOVS     R1,#+0
+   \   00000378   0x7061             STRB     R1,[R4, #+1]
+   \   0000037A   0xF885 0x11CD      STRB     R1,[R5, #+461]
+    198                                  	BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_enable.bin",1); 
+   \   0000037E   0x2201             MOVS     R2,#+1
+   \   00000380   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   00000384   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    199                                  	if(gCfgItems.multiple_language != 0)
+   \   00000388   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000038A   0xB1B0             CBZ.N    R0,??cbEndstopTypeWin_37
+    200                                     BUTTON_SetText(MT_Endstop.btnHandle, machine_menu.opened);
+   \   0000038C   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000390   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   00000394   0xE00D             B.N      ??cbEndstopTypeWin_38
+    201                              	   }
+    202                              	   else
+    203                              	   {
+    204                                 	 gCfgItems.filament_det0_level_flg=gCfgItems.filament_det1_level_flg=1;
+   \                     ??cbEndstopTypeWin_36: (+1)
+   \   00000396   0x2101             MOVS     R1,#+1
+   \   00000398   0x7061             STRB     R1,[R4, #+1]
+   \   0000039A   0xF885 0x11CD      STRB     R1,[R5, #+461]
+    205                                  	BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_disable.bin",1);   
+   \   0000039E   0x2201             MOVS     R2,#+1
+   \   000003A0   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   000003A4   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    206                                  	if(gCfgItems.multiple_language != 0)
+   \   000003A8   0x78A0             LDRB     R0,[R4, #+2]
+   \   000003AA   0xB130             CBZ.N    R0,??cbEndstopTypeWin_37
+    207                                      BUTTON_SetText(MT_Endstop.btnHandle, machine_menu.closed);
+   \   000003AC   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   000003B0   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_38: (+1)
+   \   000003B2   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   000003B6   0x.... 0x....      BL       BUTTON_SetText
+    208                             	   }
+    209                              		epr_write_data(EPR_FILAMENT_DET0_LEVEL,(uint8_t *)&gCfgItems.filament_det0_level_flg,1);	
+   \                     ??cbEndstopTypeWin_37: (+1)
+   \   000003BA   0x2201             MOVS     R2,#+1
+   \   000003BC   0xF205 0x11CD      ADDW     R1,R5,#+461
+   \   000003C0   0xF240 0x7009      MOVW     R0,#+1801
+   \   000003C4   0x.... 0x....      BL       epr_write_data
+    210          				epr_write_data(EPR_FILAMENT_DET1_LEVEL,(uint8_t *)&gCfgItems.filament_det1_level_flg,1);	
+   \   000003C8   0x2201             MOVS     R2,#+1
+   \   000003CA   0xF505 0x71E7      ADD      R1,R5,#+462
+   \   000003CE   0xF240 0x700A      MOVW     R0,#+1802
+   \   000003D2   0xE030             B.N      ??cbEndstopTypeWin_14
+    211              			}
+    212              			
+    213              			else if(pMsg->hWinSrc == LevelingEndstop.btnHandle)
+   \                     ??cbEndstopTypeWin_35: (+1)
+   \   000003D4   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   000003D8   0x4281             CMP      R1,R0
+   \   000003DA   0xD134             BNE.N    ??cbEndstopTypeWin_1
+    214              			{
+    215                              if(mksCfg.z_min_probe_endstop_inverting == 1)
+   \   000003DC   0x.... 0x....      LDR.W    R5,??DataTable7_4
+   \   000003E0   0xF205 0x14CD      ADDW     R4,R5,#+461
+   \   000003E4   0x.... 0x....      LDR.W    R5,??DataTable7_6
+   \   000003E8   0xF205 0x0139      ADDW     R1,R5,#+57
+   \   000003EC   0x798A             LDRB     R2,[R1, #+6]
+   \   000003EE   0x2A01             CMP      R2,#+1
+   \   000003F0   0xD10D             BNE.N    ??cbEndstopTypeWin_39
+    216                              {
+    217                                  mksCfg.z_min_probe_endstop_inverting=0;
+   \   000003F2   0x2200             MOVS     R2,#+0
+   \   000003F4   0x718A             STRB     R2,[R1, #+6]
+    218                                  BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_enable.bin",1); 
+   \   000003F6   0x2201             MOVS     R2,#+1
+   \   000003F8   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_enable.bin">`
+   \   000003FC   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    219                                  if(gCfgItems.multiple_language != 0)
+   \   00000400   0x78A0             LDRB     R0,[R4, #+2]
+   \   00000402   0xB198             CBZ.N    R0,??cbEndstopTypeWin_40
+    220                                      BUTTON_SetText(LevelingEndstop.btnHandle, machine_menu.opened);
+   \   00000404   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \   00000408   0xF8D0 0x1090      LDR      R1,[R0, #+144]
+   \   0000040C   0xE00A             B.N      ??cbEndstopTypeWin_41
+    221                                  
+    222                              }
+    223                              else
+    224                              {
+    225                                  mksCfg.z_min_probe_endstop_inverting=1;
+   \                     ??cbEndstopTypeWin_39: (+1)
+   \   0000040E   0x2201             MOVS     R2,#+1
+   \   00000410   0x718A             STRB     R2,[R1, #+6]
+    226                                  BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_disable.bin",1);   
+   \   00000412   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_disable.bin">`
+   \   00000416   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    227                                  if(gCfgItems.multiple_language != 0)
+   \   0000041A   0x78A0             LDRB     R0,[R4, #+2]
+   \   0000041C   0xB130             CBZ.N    R0,??cbEndstopTypeWin_40
+    228                                      BUTTON_SetText(LevelingEndstop.btnHandle, machine_menu.closed);
+   \   0000041E   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \   00000422   0x6841             LDR      R1,[R0, #+4]
+   \                     ??cbEndstopTypeWin_41: (+1)
+   \   00000424   0xF9B6 0x0018      LDRSH    R0,[R6, #+24]
+   \   00000428   0x.... 0x....      BL       BUTTON_SetText
+    229                              }
+    230                              epr_write_data(EPR_Z_MIN_PROBE_ENDSTOP_INVERTING,&mksCfg.z_min_probe_endstop_inverting,1);
+   \                     ??cbEndstopTypeWin_40: (+1)
+   \   0000042C   0x2201             MOVS     R2,#+1
+   \   0000042E   0xF105 0x013F      ADD      R1,R5,#+63
+   \   00000432   0xF240 0x50E9      MOVW     R0,#+1513
+   \                     ??cbEndstopTypeWin_14: (+1)
+   \   00000436   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   0000043A   0x.... 0x....      B.W      epr_write_data
+    231          
+    232          
+    233              				
+    234          
+    235              			}  
+    236                     
+    237              		}
+    238              		break;
+    239              		
+    240              	default:
+    241              		WM_DefaultProc(pMsg);
+   \                     ??cbEndstopTypeWin_4: (+1)
+   \   0000043E   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000442   0x.... 0x....      B.W      WM_DefaultProc
+    242              	}
+    243          }
+   \                     ??cbEndstopTypeWin_1: (+1)
+   \   00000446   0xBD70             POP      {R4-R6,PC}       ;; return
+    244          
+    245          
+
+   \                                 In section .text, align 2, keep-with-next
+    246          void draw_EndstopType()
+    247          {   
+   \                     draw_EndstopType: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+    248              int i;
+                         ^
+Warning[Pe177]: variable "i" was declared but never referenced
+    249              XEndstop_Min.btnHandle = 0;
+   \   00000004   0x.... 0x....      LDR.W    R4,??DataTable7_2
+    250              YEndstop_Min.btnHandle = 0;
+    251              ZEndstop_Min.btnHandle = 0;
+   \   00000008   0x.... 0x....      LDR.W    R8,??DataTable7_9
+    252              XEndstop_Max.btnHandle = 0;
+    253              YEndstop_Max.btnHandle = 0;
+   \   0000000C   0x.... 0x....      LDR.W    R10,??DataTable7_10
+    254              ZEndstop_Max.btnHandle = 0;
+    255              MT_Endstop.btnHandle = 0;
+   \   00000010   0x.... 0x....      LDR.W    R11,??DataTable7_11
+    256              LevelingEndstop.btnHandle = 0;
+    257              XEndstop_Min_text.btnHandle = 0;
+   \   00000014   0x.... 0x....      LDR.W    R5,??DataTable7_12
+    258              YEndstop_Min_text.btnHandle = 0;
+    259              ZEndstop_Min_text.btnHandle = 0;
+    260              XEndstop_Max_text.btnHandle = 0;
+    261              YEndstop_Max_text.btnHandle = 0;
+    262              ZEndstop_Max_text.btnHandle = 0;    
+    263              MT_Endstop_text.btnHandle = 0;
+    264              LevelingEndstop_text.btnHandle = 0;
+    265              button_previous.btnHandle = 0;
+   \   00000018   0x.... 0x....      LDR.W    R9,??DataTable7_5
+    266              button_next.btnHandle = 0;
+   \   0000001C   0x.... 0x....      LDR.W    R1,??DataTable7_1
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0xB087             SUB      SP,SP,#+28
+   \   00000024   0x80A0             STRH     R0,[R4, #+4]
+   \   00000026   0x83A0             STRH     R0,[R4, #+28]
+   \   00000028   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+   \   0000002C   0xF8A8 0x0018      STRH     R0,[R8, #+24]
+   \   00000030   0xF8AA 0x0000      STRH     R0,[R10, #+0]
+   \   00000034   0xF8AA 0x0018      STRH     R0,[R10, #+24]
+   \   00000038   0xF8AB 0x0000      STRH     R0,[R11, #+0]
+   \   0000003C   0xF8AB 0x0018      STRH     R0,[R11, #+24]
+   \   00000040   0x8028             STRH     R0,[R5, #+0]
+   \   00000042   0x8328             STRH     R0,[R5, #+24]
+   \   00000044   0x8628             STRH     R0,[R5, #+48]
+   \   00000046   0xF8A5 0x0048      STRH     R0,[R5, #+72]
+   \   0000004A   0xF8A5 0x0060      STRH     R0,[R5, #+96]
+   \   0000004E   0xF8A5 0x0078      STRH     R0,[R5, #+120]
+   \   00000052   0xF8A5 0x0090      STRH     R0,[R5, #+144]
+   \   00000056   0xF8A5 0x00A8      STRH     R0,[R5, #+168]
+   \   0000005A   0xF8A9 0x0018      STRH     R0,[R9, #+24]
+   \   0000005E   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+   \   00000062   0x8008             STRH     R0,[R1, #+0]
+    267              button_back.btnHandle = 0;
+    268              
+    269              if(disp_state_stack._disp_state[disp_state_stack._disp_index] != ENDSTOP_TYPE_UI)
+   \   00000064   0x.... 0x....      LDR.W    R0,??DataTable7_13
+   \   00000068   0xF990 0x1064      LDRSB    R1,[R0, #+100]
+   \   0000006C   0x560A             LDRSB    R2,[R1, R0]
+   \   0000006E   0x2A2C             CMP      R2,#+44
+   \   00000070   0xD005             BEQ.N    ??draw_EndstopType_0
+    270              {
+    271                  disp_state_stack._disp_index++;
+   \   00000072   0x1C49             ADDS     R1,R1,#+1
+   \   00000074   0xF880 0x1064      STRB     R1,[R0, #+100]
+    272                  disp_state_stack._disp_state[disp_state_stack._disp_index] = ENDSTOP_TYPE_UI;
+   \   00000078   0x222C             MOVS     R2,#+44
+   \   0000007A   0xB249             SXTB     R1,R1
+   \   0000007C   0x540A             STRB     R2,[R1, R0]
+    273              }
+    274              disp_state = ENDSTOP_TYPE_UI;
+   \                     ??draw_EndstopType_0: (+1)
+   \   0000007E   0x202C             MOVS     R0,#+44
+   \   00000080   0x.... 0x....      LDR.W    R1,??DataTable7_14
+   \   00000084   0x7008             STRB     R0,[R1, #+0]
+   \   00000086   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   0000008A   0x6940             LDR      R0,[R0, #+20]
+    275              
+    276              GUI_SetBkColor(gCfgItems.background_color);
+   \   0000008C   0x.... 0x....      BL       GUI_SetBkColor
+    277              GUI_SetColor(gCfgItems.title_color);
+   \   00000090   0x.... 0x....      LDR.W    R0,??DataTable7_15
+   \   00000094   0x9004             STR      R0,[SP, #+16]
+   \   00000096   0x6840             LDR      R0,[R0, #+4]
+   \   00000098   0x.... 0x....      BL       GUI_SetColor
+    278              GUI_Clear();
+   \   0000009C   0x.... 0x....      BL       GUI_Clear
+   \   000000A0   0x.... 0x....      LDR.W    R0,??DataTable7_16
+   \   000000A4   0x9005             STR      R0,[SP, #+20]
+   \   000000A6   0x2205             MOVS     R2,#+5
+   \   000000A8   0x6E80             LDR      R0,[R0, #+104]
+   \   000000AA   0x2103             MOVS     R1,#+3
+    279              
+    280              GUI_DispStringAt(machine_menu.EndstopConfTitle, TITLE_XPOS, TITLE_YPOS);
+   \   000000AC   0x.... 0x....      BL       GUI_DispStringAt
+    281          
+    282              hEndstopTypeWnd = WM_CreateWindow(0, 0, LCD_WIDTH, LCD_HEIGHT, WM_CF_SHOW, cbEndstopTypeWin, 0);
+   \   000000B0   0x2000             MOVS     R0,#+0
+   \   000000B2   0x9002             STR      R0,[SP, #+8]
+   \   000000B4   0xF44F 0x73A0      MOV      R3,#+320
+   \   000000B8   0x.... 0x....      LDR.W    R0,??DataTable7_17
+   \   000000BC   0x9001             STR      R0,[SP, #+4]
+   \   000000BE   0xF44F 0x72F0      MOV      R2,#+480
+   \   000000C2   0x2002             MOVS     R0,#+2
+   \   000000C4   0x9000             STR      R0,[SP, #+0]
+   \   000000C6   0x2100             MOVS     R1,#+0
+   \   000000C8   0x2000             MOVS     R0,#+0
+   \   000000CA   0x.... 0x....      BL       WM_CreateWindow
+   \   000000CE   0x8060             STRH     R0,[R4, #+2]
+   \   000000D0   0x.... 0x....      LDR.W    R6,??DataTable7_18
+   \   000000D4   0x7820             LDRB     R0,[R4, #+0]
+   \   000000D6   0x.... 0x....      ADR.W    R7,`?<Constant "bmp_enable.bin">`
+   \   000000DA   0x2801             CMP      R0,#+1
+   \   000000DC   0xF000 0x8144      BEQ.W    ??draw_EndstopType_1
+    283          
+    284              if(current_page != 1)
+    285              {
+    286                  XEndstop_Min_text.btnHandle = BUTTON_CreateEx(10,50,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000000E0   0x.... 0x....      BL       alloc_win_id
+   \   000000E4   0x9003             STR      R0,[SP, #+12]
+   \   000000E6   0x2328             MOVS     R3,#+40
+   \   000000E8   0x2000             MOVS     R0,#+0
+   \   000000EA   0x9002             STR      R0,[SP, #+8]
+   \   000000EC   0xF44F 0x72B4      MOV      R2,#+360
+   \   000000F0   0x2002             MOVS     R0,#+2
+   \   000000F2   0x9001             STR      R0,[SP, #+4]
+   \   000000F4   0x2132             MOVS     R1,#+50
+   \   000000F6   0x5E20             LDRSH    R0,[R4, R0]
+   \   000000F8   0x9000             STR      R0,[SP, #+0]
+   \   000000FA   0x200A             MOVS     R0,#+10
+   \   000000FC   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000100   0x8028             STRH     R0,[R5, #+0]
+    287                  XEndstop_Min.btnHandle = BUTTON_CreateEx(370,50,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000102   0x.... 0x....      BL       alloc_win_id
+   \   00000106   0x9003             STR      R0,[SP, #+12]
+   \   00000108   0x2328             MOVS     R3,#+40
+   \   0000010A   0x2000             MOVS     R0,#+0
+   \   0000010C   0x9002             STR      R0,[SP, #+8]
+   \   0000010E   0x225A             MOVS     R2,#+90
+   \   00000110   0x2002             MOVS     R0,#+2
+   \   00000112   0x9001             STR      R0,[SP, #+4]
+   \   00000114   0x2132             MOVS     R1,#+50
+   \   00000116   0x5E20             LDRSH    R0,[R4, R0]
+   \   00000118   0x9000             STR      R0,[SP, #+0]
+   \   0000011A   0xF44F 0x70B9      MOV      R0,#+370
+   \   0000011E   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000122   0x80A0             STRH     R0,[R4, #+4]
+    288          
+    289                  YEndstop_Min_text.btnHandle = BUTTON_CreateEx(10,100,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000124   0x.... 0x....      BL       alloc_win_id
+   \   00000128   0x9003             STR      R0,[SP, #+12]
+   \   0000012A   0x2328             MOVS     R3,#+40
+   \   0000012C   0x2000             MOVS     R0,#+0
+   \   0000012E   0x9002             STR      R0,[SP, #+8]
+   \   00000130   0xF44F 0x72B4      MOV      R2,#+360
+   \   00000134   0x2002             MOVS     R0,#+2
+   \   00000136   0x9001             STR      R0,[SP, #+4]
+   \   00000138   0x2164             MOVS     R1,#+100
+   \   0000013A   0x5E20             LDRSH    R0,[R4, R0]
+   \   0000013C   0x9000             STR      R0,[SP, #+0]
+   \   0000013E   0x200A             MOVS     R0,#+10
+   \   00000140   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000144   0x8328             STRH     R0,[R5, #+24]
+    290                  YEndstop_Min.btnHandle = BUTTON_CreateEx(370,100,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000146   0x.... 0x....      BL       alloc_win_id
+   \   0000014A   0x9003             STR      R0,[SP, #+12]
+   \   0000014C   0x2328             MOVS     R3,#+40
+   \   0000014E   0x2000             MOVS     R0,#+0
+   \   00000150   0x9002             STR      R0,[SP, #+8]
+   \   00000152   0x225A             MOVS     R2,#+90
+   \   00000154   0x2002             MOVS     R0,#+2
+   \   00000156   0x9001             STR      R0,[SP, #+4]
+   \   00000158   0x2164             MOVS     R1,#+100
+   \   0000015A   0x5E20             LDRSH    R0,[R4, R0]
+   \   0000015C   0x9000             STR      R0,[SP, #+0]
+   \   0000015E   0xF44F 0x70B9      MOV      R0,#+370
+   \   00000162   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000166   0x83A0             STRH     R0,[R4, #+28]
+    291          
+    292                  ZEndstop_Min_text.btnHandle = BUTTON_CreateEx(10,150,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000168   0x.... 0x....      BL       alloc_win_id
+   \   0000016C   0x9003             STR      R0,[SP, #+12]
+   \   0000016E   0x2328             MOVS     R3,#+40
+   \   00000170   0x2000             MOVS     R0,#+0
+   \   00000172   0x9002             STR      R0,[SP, #+8]
+   \   00000174   0xF44F 0x72B4      MOV      R2,#+360
+   \   00000178   0x2002             MOVS     R0,#+2
+   \   0000017A   0x9001             STR      R0,[SP, #+4]
+   \   0000017C   0x2196             MOVS     R1,#+150
+   \   0000017E   0x5E20             LDRSH    R0,[R4, R0]
+   \   00000180   0x9000             STR      R0,[SP, #+0]
+   \   00000182   0x200A             MOVS     R0,#+10
+   \   00000184   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000188   0x8628             STRH     R0,[R5, #+48]
+    293                  ZEndstop_Min.btnHandle = BUTTON_CreateEx(370,150,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000018A   0x.... 0x....      BL       alloc_win_id
+   \   0000018E   0x9003             STR      R0,[SP, #+12]
+   \   00000190   0x2328             MOVS     R3,#+40
+   \   00000192   0x2000             MOVS     R0,#+0
+   \   00000194   0x9002             STR      R0,[SP, #+8]
+   \   00000196   0x225A             MOVS     R2,#+90
+   \   00000198   0x2002             MOVS     R0,#+2
+   \   0000019A   0x9001             STR      R0,[SP, #+4]
+   \   0000019C   0x2196             MOVS     R1,#+150
+   \   0000019E   0x5E20             LDRSH    R0,[R4, R0]
+   \   000001A0   0x9000             STR      R0,[SP, #+0]
+   \   000001A2   0xF44F 0x70B9      MOV      R0,#+370
+   \   000001A6   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001AA   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+    294          
+    295                  XEndstop_Max_text.btnHandle = BUTTON_CreateEx(10,200,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000001AE   0x.... 0x....      BL       alloc_win_id
+   \   000001B2   0x9003             STR      R0,[SP, #+12]
+   \   000001B4   0x2328             MOVS     R3,#+40
+   \   000001B6   0x2000             MOVS     R0,#+0
+   \   000001B8   0x9002             STR      R0,[SP, #+8]
+   \   000001BA   0xF44F 0x72B4      MOV      R2,#+360
+   \   000001BE   0x2002             MOVS     R0,#+2
+   \   000001C0   0x9001             STR      R0,[SP, #+4]
+   \   000001C2   0x21C8             MOVS     R1,#+200
+   \   000001C4   0x5E20             LDRSH    R0,[R4, R0]
+   \   000001C6   0x9000             STR      R0,[SP, #+0]
+   \   000001C8   0x200A             MOVS     R0,#+10
+   \   000001CA   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001CE   0xF8A5 0x0048      STRH     R0,[R5, #+72]
+    296                  XEndstop_Max.btnHandle = BUTTON_CreateEx(370,200,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000001D2   0x.... 0x....      BL       alloc_win_id
+   \   000001D6   0x9003             STR      R0,[SP, #+12]
+   \   000001D8   0x2328             MOVS     R3,#+40
+   \   000001DA   0x2000             MOVS     R0,#+0
+   \   000001DC   0x9002             STR      R0,[SP, #+8]
+   \   000001DE   0x225A             MOVS     R2,#+90
+   \   000001E0   0x2002             MOVS     R0,#+2
+   \   000001E2   0x9001             STR      R0,[SP, #+4]
+   \   000001E4   0x21C8             MOVS     R1,#+200
+   \   000001E6   0x5E20             LDRSH    R0,[R4, R0]
+   \   000001E8   0x9000             STR      R0,[SP, #+0]
+   \   000001EA   0xF44F 0x70B9      MOV      R0,#+370
+   \   000001EE   0x.... 0x....      BL       BUTTON_CreateEx
+    297          
+    298                  if(mksCfg.x_min_endstop_inverting == 1)
+   \   000001F2   0x.... 0x....      LDR.W    R1,??DataTable7_6
+   \   000001F6   0xF891 0x1039      LDRB     R1,[R1, #+57]
+   \   000001FA   0xF8A8 0x0018      STRH     R0,[R8, #+24]
+   \   000001FE   0x2901             CMP      R1,#+1
+   \   00000200   0xF9B4 0x0004      LDRSH    R0,[R4, #+4]
+   \   00000204   0xBF07             ITTEE    EQ 
+    299                  {
+    300                      BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_disable.bin",1); 
+   \   00000206   0x2201             MOVEQ    R2,#+1
+   \   00000208   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    301                  }
+    302                  else
+    303                  {
+    304                      BUTTON_SetBmpFileName(XEndstop_Min.btnHandle, "bmp_enable.bin",1);   
+   \   0000020C   0x2201             MOVNE    R2,#+1
+   \   0000020E   0x4639             MOVNE    R1,R7
+   \   00000210   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    305                  }
+    306                  if(mksCfg.y_min_endstop_inverting == 1)
+   \   00000214   0x7871             LDRB     R1,[R6, #+1]
+   \   00000216   0xF9B4 0x001C      LDRSH    R0,[R4, #+28]
+   \   0000021A   0x2901             CMP      R1,#+1
+   \   0000021C   0xBF07             ITTEE    EQ 
+    307                  {
+    308                      BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_disable.bin",1);
+   \   0000021E   0x2201             MOVEQ    R2,#+1
+   \   00000220   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    309                  }
+    310                  else
+    311                  {
+    312                      BUTTON_SetBmpFileName(YEndstop_Min.btnHandle, "bmp_enable.bin",1);
+   \   00000224   0x2201             MOVNE    R2,#+1
+   \   00000226   0x4639             MOVNE    R1,R7
+   \   00000228   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    313                  }
+    314                  if(mksCfg.z_min_endstop_inverting == 1)
+   \   0000022C   0x78B1             LDRB     R1,[R6, #+2]
+   \   0000022E   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000232   0x2901             CMP      R1,#+1
+   \   00000234   0xBF07             ITTEE    EQ 
+    315                  {
+    316                      BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_disable.bin",1);
+   \   00000236   0x2201             MOVEQ    R2,#+1
+   \   00000238   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    317                  }
+    318                  else
+    319                  {
+    320                      BUTTON_SetBmpFileName(ZEndstop_Min.btnHandle, "bmp_enable.bin",1);
+   \   0000023C   0x2201             MOVNE    R2,#+1
+   \   0000023E   0x4639             MOVNE    R1,R7
+   \   00000240   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    321                  }
+    322                  if(mksCfg.x_max_endstop_inverting == 1)
+   \   00000244   0x78F1             LDRB     R1,[R6, #+3]
+   \   00000246   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   0000024A   0x2901             CMP      R1,#+1
+   \   0000024C   0xBF07             ITTEE    EQ 
+    323                  {
+    324                      BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_disable.bin",1);
+   \   0000024E   0x2201             MOVEQ    R2,#+1
+   \   00000250   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    325                  }
+    326                  else
+    327                  {
+    328                      BUTTON_SetBmpFileName(XEndstop_Max.btnHandle, "bmp_enable.bin",1);
+   \   00000254   0x2201             MOVNE    R2,#+1
+   \   00000256   0x4639             MOVNE    R1,R7
+   \   00000258   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    329                  }
+    330                  
+    331                  BUTTON_SetBmpFileName(XEndstop_Min_text.btnHandle,NULL,1);        
+   \   0000025C   0x2100             MOVS     R1,#+0
+   \   0000025E   0x2201             MOVS     R2,#+1
+   \   00000260   0x5E68             LDRSH    R0,[R5, R1]
+   \   00000262   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    332                  BUTTON_SetBmpFileName(YEndstop_Min_text.btnHandle,NULL,1);
+   \   00000266   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   0000026A   0x2201             MOVS     R2,#+1
+   \   0000026C   0x2100             MOVS     R1,#+0
+   \   0000026E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    333                  BUTTON_SetBmpFileName(ZEndstop_Min_text.btnHandle,NULL,1);
+   \   00000272   0xF9B5 0x0030      LDRSH    R0,[R5, #+48]
+   \   00000276   0x2201             MOVS     R2,#+1
+   \   00000278   0x2100             MOVS     R1,#+0
+   \   0000027A   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    334                  BUTTON_SetBmpFileName(XEndstop_Max_text.btnHandle,NULL,1);
+   \   0000027E   0xF9B5 0x0048      LDRSH    R0,[R5, #+72]
+   \   00000282   0x2201             MOVS     R2,#+1
+   \   00000284   0x2100             MOVS     R1,#+0
+   \   00000286   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    335                  
+    336                  BUTTON_SetBitmapEx(XEndstop_Min.btnHandle,0,&bmp_struct90X30,0,5);
+   \   0000028A   0x2005             MOVS     R0,#+5
+   \   0000028C   0x9000             STR      R0,[SP, #+0]
+   \   0000028E   0x2300             MOVS     R3,#+0
+   \   00000290   0x.... 0x....      LDR.W    R7,??DataTable7_19
+   \   00000294   0xF9B4 0x0004      LDRSH    R0,[R4, #+4]
+   \   00000298   0x463A             MOV      R2,R7
+   \   0000029A   0x2100             MOVS     R1,#+0
+   \   0000029C   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    337                  BUTTON_SetBitmapEx(YEndstop_Min.btnHandle,0,&bmp_struct90X30,0,5);
+   \   000002A0   0x2005             MOVS     R0,#+5
+   \   000002A2   0x9000             STR      R0,[SP, #+0]
+   \   000002A4   0x2300             MOVS     R3,#+0
+   \   000002A6   0xF9B4 0x001C      LDRSH    R0,[R4, #+28]
+   \   000002AA   0x463A             MOV      R2,R7
+   \   000002AC   0x4619             MOV      R1,R3
+   \   000002AE   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    338                  BUTTON_SetBitmapEx(ZEndstop_Min.btnHandle,0,&bmp_struct90X30,0,5);
+   \   000002B2   0x2005             MOVS     R0,#+5
+   \   000002B4   0x2300             MOVS     R3,#+0
+   \   000002B6   0x9000             STR      R0,[SP, #+0]
+   \   000002B8   0x4619             MOV      R1,R3
+   \   000002BA   0x463A             MOV      R2,R7
+   \   000002BC   0xF938 0x0001      LDRSH    R0,[R8, R1]
+   \   000002C0   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    339                  BUTTON_SetBitmapEx(XEndstop_Max.btnHandle,0,&bmp_struct90X30,0,5); 
+   \   000002C4   0x2005             MOVS     R0,#+5
+   \   000002C6   0x9000             STR      R0,[SP, #+0]
+   \   000002C8   0x2300             MOVS     R3,#+0
+   \   000002CA   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000002CE   0x463A             MOV      R2,R7
+   \   000002D0   0x4619             MOV      R1,R3
+   \   000002D2   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    340                  
+    341                  BUTTON_SetTextAlign(XEndstop_Min_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000002D6   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   000002DA   0x210C             MOVS     R1,#+12
+   \   000002DC   0x.... 0x....      BL       BUTTON_SetTextAlign
+    342                  BUTTON_SetTextAlign(YEndstop_Min_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000002E0   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   000002E4   0x210C             MOVS     R1,#+12
+   \   000002E6   0x.... 0x....      BL       BUTTON_SetTextAlign
+    343                  BUTTON_SetTextAlign(ZEndstop_Min_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000002EA   0xF9B5 0x0030      LDRSH    R0,[R5, #+48]
+   \   000002EE   0x210C             MOVS     R1,#+12
+   \   000002F0   0x.... 0x....      BL       BUTTON_SetTextAlign
+    344                  BUTTON_SetTextAlign(XEndstop_Max_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );  
+   \   000002F4   0xF9B5 0x0048      LDRSH    R0,[R5, #+72]
+   \   000002F8   0x210C             MOVS     R1,#+12
+   \   000002FA   0x.... 0x....      BL       BUTTON_SetTextAlign
+    345                  
+    346                  BUTTON_SetTextAlign(XEndstop_Min.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   000002FE   0xF9B4 0x0004      LDRSH    R0,[R4, #+4]
+   \   00000302   0x210E             MOVS     R1,#+14
+   \   00000304   0x.... 0x....      BL       BUTTON_SetTextAlign
+    347                  BUTTON_SetTextAlign(YEndstop_Min.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000308   0xF9B4 0x001C      LDRSH    R0,[R4, #+28]
+   \   0000030C   0x210E             MOVS     R1,#+14
+   \   0000030E   0x.... 0x....      BL       BUTTON_SetTextAlign
+    348                  BUTTON_SetTextAlign(ZEndstop_Min.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000312   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000316   0x210E             MOVS     R1,#+14
+   \   00000318   0x.... 0x....      BL       BUTTON_SetTextAlign
+    349                  BUTTON_SetTextAlign(XEndstop_Max.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER ); 
+   \   0000031C   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   00000320   0x210E             MOVS     R1,#+14
+   \   00000322   0x.... 0x....      BL       BUTTON_SetTextAlign
+    350          
+    351          
+    352                  button_next.btnHandle = BUTTON_CreateEx(320,270,70,40,hEndstopTypeWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   00000326   0x.... 0x....      BL       alloc_win_id
+   \   0000032A   0x9003             STR      R0,[SP, #+12]
+   \   0000032C   0x2328             MOVS     R3,#+40
+   \   0000032E   0x2000             MOVS     R0,#+0
+   \   00000330   0x9002             STR      R0,[SP, #+8]
+   \   00000332   0x2246             MOVS     R2,#+70
+   \   00000334   0x2002             MOVS     R0,#+2
+   \   00000336   0x9001             STR      R0,[SP, #+4]
+   \   00000338   0xF44F 0x7187      MOV      R1,#+270
+   \   0000033C   0x5E20             LDRSH    R0,[R4, R0]
+   \   0000033E   0x9000             STR      R0,[SP, #+0]
+   \   00000340   0xF44F 0x70A0      MOV      R0,#+320
+   \   00000344   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000348   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+    353                  BUTTON_SetBmpFileName(button_next.btnHandle, "bmp_next.bin",1); 
+   \   0000034C   0x2201             MOVS     R2,#+1
+   \   0000034E   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_next.bin">`
+   \   00000352   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    354              
+    355                  BUTTON_SetBitmapEx(button_next.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   00000356   0x.... 0x....      LDR.W    R2,??DataTable7_20
+   \   0000035A   0x2000             MOVS     R0,#+0
+   \   0000035C   0x9000             STR      R0,[SP, #+0]
+   \   0000035E   0x4603             MOV      R3,R0
+   \   00000360   0x4601             MOV      R1,R0
+   \   00000362   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000366   0xE14B             B.N      ??draw_EndstopType_2
+    356                  
+    357          
+    358              }
+    359              else
+    360              {
+    361                  YEndstop_Max_text.btnHandle = BUTTON_CreateEx(10,50,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \                     ??draw_EndstopType_1: (+1)
+   \   00000368   0x.... 0x....      BL       alloc_win_id
+   \   0000036C   0x9003             STR      R0,[SP, #+12]
+   \   0000036E   0x2328             MOVS     R3,#+40
+   \   00000370   0x2000             MOVS     R0,#+0
+   \   00000372   0x9002             STR      R0,[SP, #+8]
+   \   00000374   0xF44F 0x72B4      MOV      R2,#+360
+   \   00000378   0x2002             MOVS     R0,#+2
+   \   0000037A   0x9001             STR      R0,[SP, #+4]
+   \   0000037C   0x2132             MOVS     R1,#+50
+   \   0000037E   0x5E20             LDRSH    R0,[R4, R0]
+   \   00000380   0x9000             STR      R0,[SP, #+0]
+   \   00000382   0x200A             MOVS     R0,#+10
+   \   00000384   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000388   0xF8A5 0x0060      STRH     R0,[R5, #+96]
+    362                  YEndstop_Max.btnHandle = BUTTON_CreateEx(370,50,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000038C   0x.... 0x....      BL       alloc_win_id
+   \   00000390   0x9003             STR      R0,[SP, #+12]
+   \   00000392   0x2328             MOVS     R3,#+40
+   \   00000394   0x2000             MOVS     R0,#+0
+   \   00000396   0x9002             STR      R0,[SP, #+8]
+   \   00000398   0x225A             MOVS     R2,#+90
+   \   0000039A   0x2002             MOVS     R0,#+2
+   \   0000039C   0x9001             STR      R0,[SP, #+4]
+   \   0000039E   0x2132             MOVS     R1,#+50
+   \   000003A0   0x5E20             LDRSH    R0,[R4, R0]
+   \   000003A2   0x9000             STR      R0,[SP, #+0]
+   \   000003A4   0xF44F 0x70B9      MOV      R0,#+370
+   \   000003A8   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000003AC   0xF8AA 0x0000      STRH     R0,[R10, #+0]
+    363          
+    364                  ZEndstop_Max_text.btnHandle = BUTTON_CreateEx(10,100,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000003B0   0x.... 0x....      BL       alloc_win_id
+   \   000003B4   0x9003             STR      R0,[SP, #+12]
+   \   000003B6   0x2328             MOVS     R3,#+40
+   \   000003B8   0x2000             MOVS     R0,#+0
+   \   000003BA   0x9002             STR      R0,[SP, #+8]
+   \   000003BC   0xF44F 0x72B4      MOV      R2,#+360
+   \   000003C0   0x2002             MOVS     R0,#+2
+   \   000003C2   0x9001             STR      R0,[SP, #+4]
+   \   000003C4   0x2164             MOVS     R1,#+100
+   \   000003C6   0x5E20             LDRSH    R0,[R4, R0]
+   \   000003C8   0x9000             STR      R0,[SP, #+0]
+   \   000003CA   0x200A             MOVS     R0,#+10
+   \   000003CC   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000003D0   0xF8A5 0x0078      STRH     R0,[R5, #+120]
+    365                  ZEndstop_Max.btnHandle = BUTTON_CreateEx(370,100,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000003D4   0x.... 0x....      BL       alloc_win_id
+   \   000003D8   0x9003             STR      R0,[SP, #+12]
+   \   000003DA   0x2328             MOVS     R3,#+40
+   \   000003DC   0x2000             MOVS     R0,#+0
+   \   000003DE   0x9002             STR      R0,[SP, #+8]
+   \   000003E0   0x225A             MOVS     R2,#+90
+   \   000003E2   0x2002             MOVS     R0,#+2
+   \   000003E4   0x9001             STR      R0,[SP, #+4]
+   \   000003E6   0x2164             MOVS     R1,#+100
+   \   000003E8   0x5E20             LDRSH    R0,[R4, R0]
+   \   000003EA   0x9000             STR      R0,[SP, #+0]
+   \   000003EC   0xF44F 0x70B9      MOV      R0,#+370
+   \   000003F0   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000003F4   0xF8AA 0x0018      STRH     R0,[R10, #+24]
+    366          
+    367                  LevelingEndstop_text.btnHandle = BUTTON_CreateEx(10,150,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000003F8   0x.... 0x....      BL       alloc_win_id
+   \   000003FC   0x9003             STR      R0,[SP, #+12]
+   \   000003FE   0x2328             MOVS     R3,#+40
+   \   00000400   0x2000             MOVS     R0,#+0
+   \   00000402   0x9002             STR      R0,[SP, #+8]
+   \   00000404   0xF44F 0x72B4      MOV      R2,#+360
+   \   00000408   0x2002             MOVS     R0,#+2
+   \   0000040A   0x9001             STR      R0,[SP, #+4]
+   \   0000040C   0x2196             MOVS     R1,#+150
+   \   0000040E   0x5E20             LDRSH    R0,[R4, R0]
+   \   00000410   0x9000             STR      R0,[SP, #+0]
+   \   00000412   0x200A             MOVS     R0,#+10
+   \   00000414   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000418   0xF8A5 0x00A8      STRH     R0,[R5, #+168]
+    368                  LevelingEndstop.btnHandle = BUTTON_CreateEx(370,150,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000041C   0x.... 0x....      BL       alloc_win_id
+   \   00000420   0x9003             STR      R0,[SP, #+12]
+   \   00000422   0x2328             MOVS     R3,#+40
+   \   00000424   0x2000             MOVS     R0,#+0
+   \   00000426   0x9002             STR      R0,[SP, #+8]
+   \   00000428   0x225A             MOVS     R2,#+90
+   \   0000042A   0x2002             MOVS     R0,#+2
+   \   0000042C   0x9001             STR      R0,[SP, #+4]
+   \   0000042E   0x2196             MOVS     R1,#+150
+   \   00000430   0x5E20             LDRSH    R0,[R4, R0]
+   \   00000432   0x9000             STR      R0,[SP, #+0]
+   \   00000434   0xF44F 0x70B9      MOV      R0,#+370
+   \   00000438   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000043C   0xF8AB 0x0018      STRH     R0,[R11, #+24]
+    369          
+    370                  MT_Endstop_text.btnHandle = BUTTON_CreateEx(10,200,360,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000440   0x.... 0x....      BL       alloc_win_id
+   \   00000444   0x9003             STR      R0,[SP, #+12]
+   \   00000446   0x2328             MOVS     R3,#+40
+   \   00000448   0x2000             MOVS     R0,#+0
+   \   0000044A   0x9002             STR      R0,[SP, #+8]
+   \   0000044C   0xF44F 0x72B4      MOV      R2,#+360
+   \   00000450   0x2002             MOVS     R0,#+2
+   \   00000452   0x9001             STR      R0,[SP, #+4]
+   \   00000454   0x21C8             MOVS     R1,#+200
+   \   00000456   0x5E20             LDRSH    R0,[R4, R0]
+   \   00000458   0x9000             STR      R0,[SP, #+0]
+   \   0000045A   0x200A             MOVS     R0,#+10
+   \   0000045C   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000460   0xF8A5 0x0090      STRH     R0,[R5, #+144]
+    371                  MT_Endstop.btnHandle = BUTTON_CreateEx(370,200,90,40,hEndstopTypeWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000464   0x.... 0x....      BL       alloc_win_id
+   \   00000468   0x9003             STR      R0,[SP, #+12]
+   \   0000046A   0x2328             MOVS     R3,#+40
+   \   0000046C   0x2000             MOVS     R0,#+0
+   \   0000046E   0x9002             STR      R0,[SP, #+8]
+   \   00000470   0x225A             MOVS     R2,#+90
+   \   00000472   0x2002             MOVS     R0,#+2
+   \   00000474   0x9001             STR      R0,[SP, #+4]
+   \   00000476   0x21C8             MOVS     R1,#+200
+   \   00000478   0x5E20             LDRSH    R0,[R4, R0]
+   \   0000047A   0x9000             STR      R0,[SP, #+0]
+   \   0000047C   0xF44F 0x70B9      MOV      R0,#+370
+   \   00000480   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000484   0xF8AB 0x0000      STRH     R0,[R11, #+0]
+    372          
+    373                  if(mksCfg.y_max_endstop_inverting == 1)
+   \   00000488   0x7931             LDRB     R1,[R6, #+4]
+   \   0000048A   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   0000048E   0x2901             CMP      R1,#+1
+   \   00000490   0xBF07             ITTEE    EQ 
+    374                  {
+    375                      BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_disable.bin",1); 
+   \   00000492   0x2201             MOVEQ    R2,#+1
+   \   00000494   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    376                  }
+    377                  else
+    378                  {
+    379                      BUTTON_SetBmpFileName(YEndstop_Max.btnHandle, "bmp_enable.bin",1);   
+   \   00000498   0x2201             MOVNE    R2,#+1
+   \   0000049A   0x4639             MOVNE    R1,R7
+   \   0000049C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    380                  }
+    381                  if(mksCfg.z_max_endstop_inverting == 1)
+   \   000004A0   0x7971             LDRB     R1,[R6, #+5]
+   \   000004A2   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000004A6   0x2901             CMP      R1,#+1
+   \   000004A8   0xBF07             ITTEE    EQ 
+    382                  {
+    383                      BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_disable.bin",1);
+   \   000004AA   0x2201             MOVEQ    R2,#+1
+   \   000004AC   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    384                  }
+    385                  else
+    386                  {
+    387                      BUTTON_SetBmpFileName(ZEndstop_Max.btnHandle, "bmp_enable.bin",1);
+   \   000004B0   0x2201             MOVNE    R2,#+1
+   \   000004B2   0x4639             MOVNE    R1,R7
+   \   000004B4   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    388                  }
+    389                  
+    390                  if(gCfgItems.filament_det0_level_flg == 1 && gCfgItems.filament_det1_level_flg==1)
+   \   000004B8   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \   000004BC   0xF890 0x01CD      LDRB     R0,[R0, #+461]
+   \   000004C0   0x2801             CMP      R0,#+1
+   \   000004C2   0xBF02             ITTT     EQ 
+   \   000004C4   0x.... 0x....      LDREQ.W  R0,??DataTable7_21
+   \   000004C8   0x7840             LDRBEQ   R0,[R0, #+1]
+   \   000004CA   0x2801             CMPEQ    R0,#+1
+   \   000004CC   0xBF07             ITTEE    EQ 
+    391                  {
+    392                      BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_disable.bin",1);
+   \   000004CE   0x2201             MOVEQ    R2,#+1
+   \   000004D0   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    393                  }
+    394                  else
+    395                  {
+    396                      BUTTON_SetBmpFileName(MT_Endstop.btnHandle, "bmp_enable.bin",1);
+   \   000004D4   0x2201             MOVNE    R2,#+1
+   \   000004D6   0x4639             MOVNE    R1,R7
+   \   000004D8   0xF9BB 0x0000      LDRSH    R0,[R11, #+0]
+   \   000004DC   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    397                  }
+    398                  
+    399                  if(mksCfg.z_min_probe_endstop_inverting == 1)
+   \   000004E0   0x79B1             LDRB     R1,[R6, #+6]
+   \   000004E2   0xF9BB 0x0018      LDRSH    R0,[R11, #+24]
+   \   000004E6   0x2901             CMP      R1,#+1
+   \   000004E8   0xBF07             ITTEE    EQ 
+    400                  {
+    401                      BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_disable.bin",1);
+   \   000004EA   0x2201             MOVEQ    R2,#+1
+   \   000004EC   0x.... 0x....      ADREQ.W  R1,`?<Constant "bmp_disable.bin">`
+    402                  }
+    403                  else
+    404                  {
+    405                      BUTTON_SetBmpFileName(LevelingEndstop.btnHandle, "bmp_enable.bin",1);
+   \   000004F0   0x2201             MOVNE    R2,#+1
+   \   000004F2   0x4639             MOVNE    R1,R7
+   \   000004F4   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    406                  }
+    407          
+    408                   BUTTON_SetBmpFileName(YEndstop_Max_text.btnHandle,NULL,1);        
+   \   000004F8   0xF9B5 0x0060      LDRSH    R0,[R5, #+96]
+   \   000004FC   0x2201             MOVS     R2,#+1
+   \   000004FE   0x2100             MOVS     R1,#+0
+   \   00000500   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    409                   BUTTON_SetBmpFileName(ZEndstop_Max_text.btnHandle,NULL,1);
+   \   00000504   0xF9B5 0x0078      LDRSH    R0,[R5, #+120]
+   \   00000508   0x2201             MOVS     R2,#+1
+   \   0000050A   0x2100             MOVS     R1,#+0
+   \   0000050C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    410                   BUTTON_SetBmpFileName(LevelingEndstop_text.btnHandle,NULL,1);
+   \   00000510   0xF9B5 0x00A8      LDRSH    R0,[R5, #+168]
+   \   00000514   0x2201             MOVS     R2,#+1
+   \   00000516   0x2100             MOVS     R1,#+0
+   \   00000518   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    411          	  BUTTON_SetBmpFileName(MT_Endstop_text.btnHandle,NULL,1);
+   \   0000051C   0xF9B5 0x0090      LDRSH    R0,[R5, #+144]
+   \   00000520   0x2201             MOVS     R2,#+1
+   \   00000522   0x2100             MOVS     R1,#+0
+   \   00000524   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    412                   
+    413                   BUTTON_SetBitmapEx(YEndstop_Max.btnHandle,0,&bmp_struct90X30,0,5);
+   \   00000528   0x2005             MOVS     R0,#+5
+   \   0000052A   0x9000             STR      R0,[SP, #+0]
+   \   0000052C   0x2100             MOVS     R1,#+0
+   \   0000052E   0x....             LDR.N    R7,??DataTable7_19
+   \   00000530   0xF93A 0x0001      LDRSH    R0,[R10, R1]
+   \   00000534   0x2300             MOVS     R3,#+0
+   \   00000536   0x463A             MOV      R2,R7
+   \   00000538   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    414                   BUTTON_SetBitmapEx(ZEndstop_Max.btnHandle,0,&bmp_struct90X30,0,5);
+   \   0000053C   0x2005             MOVS     R0,#+5
+   \   0000053E   0x9000             STR      R0,[SP, #+0]
+   \   00000540   0x2300             MOVS     R3,#+0
+   \   00000542   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   00000546   0x463A             MOV      R2,R7
+   \   00000548   0x4619             MOV      R1,R3
+   \   0000054A   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    415                   BUTTON_SetBitmapEx(LevelingEndstop.btnHandle,0,&bmp_struct90X30,0,5);
+   \   0000054E   0x2005             MOVS     R0,#+5
+   \   00000550   0x9000             STR      R0,[SP, #+0]
+   \   00000552   0x2300             MOVS     R3,#+0
+   \   00000554   0xF9BB 0x0018      LDRSH    R0,[R11, #+24]
+   \   00000558   0x463A             MOV      R2,R7
+   \   0000055A   0x4619             MOV      R1,R3
+   \   0000055C   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    416                   BUTTON_SetBitmapEx(MT_Endstop.btnHandle,0,&bmp_struct90X30,0,5);
+   \   00000560   0x2005             MOVS     R0,#+5
+   \   00000562   0x2300             MOVS     R3,#+0
+   \   00000564   0x9000             STR      R0,[SP, #+0]
+   \   00000566   0x4619             MOV      R1,R3
+   \   00000568   0x463A             MOV      R2,R7
+   \   0000056A   0xF93B 0x0001      LDRSH    R0,[R11, R1]
+   \   0000056E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    417                   
+    418                   BUTTON_SetTextAlign(YEndstop_Max_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   00000572   0xF9B5 0x0060      LDRSH    R0,[R5, #+96]
+   \   00000576   0x210C             MOVS     R1,#+12
+   \   00000578   0x.... 0x....      BL       BUTTON_SetTextAlign
+    419                   BUTTON_SetTextAlign(ZEndstop_Max_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   0000057C   0xF9B5 0x0078      LDRSH    R0,[R5, #+120]
+   \   00000580   0x210C             MOVS     R1,#+12
+   \   00000582   0x.... 0x....      BL       BUTTON_SetTextAlign
+    420                   BUTTON_SetTextAlign(LevelingEndstop_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   00000586   0xF9B5 0x00A8      LDRSH    R0,[R5, #+168]
+   \   0000058A   0x210C             MOVS     R1,#+12
+   \   0000058C   0x.... 0x....      BL       BUTTON_SetTextAlign
+    421          	  BUTTON_SetTextAlign(MT_Endstop_text.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   00000590   0xF9B5 0x0090      LDRSH    R0,[R5, #+144]
+   \   00000594   0x210C             MOVS     R1,#+12
+   \   00000596   0x.... 0x....      BL       BUTTON_SetTextAlign
+    422                   
+    423                   BUTTON_SetTextAlign(YEndstop_Max.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   0000059A   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   0000059E   0x210E             MOVS     R1,#+14
+   \   000005A0   0x.... 0x....      BL       BUTTON_SetTextAlign
+    424                   BUTTON_SetTextAlign(ZEndstop_Max.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   000005A4   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000005A8   0x210E             MOVS     R1,#+14
+   \   000005AA   0x.... 0x....      BL       BUTTON_SetTextAlign
+    425                   BUTTON_SetTextAlign(LevelingEndstop.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER ); 
+   \   000005AE   0xF9BB 0x0018      LDRSH    R0,[R11, #+24]
+   \   000005B2   0x210E             MOVS     R1,#+14
+   \   000005B4   0x.... 0x....      BL       BUTTON_SetTextAlign
+    426          	  BUTTON_SetTextAlign(MT_Endstop.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   000005B8   0xF9BB 0x0000      LDRSH    R0,[R11, #+0]
+   \   000005BC   0x210E             MOVS     R1,#+14
+   \   000005BE   0x.... 0x....      BL       BUTTON_SetTextAlign
+    427          
+    428                  button_previous.btnHandle = BUTTON_CreateEx(320,270,70,40,hEndstopTypeWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   000005C2   0x.... 0x....      BL       alloc_win_id
+   \   000005C6   0x9003             STR      R0,[SP, #+12]
+   \   000005C8   0x2328             MOVS     R3,#+40
+   \   000005CA   0x2000             MOVS     R0,#+0
+   \   000005CC   0x9002             STR      R0,[SP, #+8]
+   \   000005CE   0x2246             MOVS     R2,#+70
+   \   000005D0   0x2002             MOVS     R0,#+2
+   \   000005D2   0x9001             STR      R0,[SP, #+4]
+   \   000005D4   0xF44F 0x7187      MOV      R1,#+270
+   \   000005D8   0x5E20             LDRSH    R0,[R4, R0]
+   \   000005DA   0x9000             STR      R0,[SP, #+0]
+   \   000005DC   0xF44F 0x70A0      MOV      R0,#+320
+   \   000005E0   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000005E4   0xF8A9 0x0018      STRH     R0,[R9, #+24]
+    429                  BUTTON_SetBmpFileName(button_previous.btnHandle, "bmp_previous.bin",1); 
+   \   000005E8   0x2201             MOVS     R2,#+1
+   \   000005EA   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_previous.bin">`
+   \   000005EE   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    430                  
+    431                  BUTTON_SetBitmapEx(button_previous.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   000005F2   0x....             LDR.N    R2,??DataTable7_20
+   \   000005F4   0x2000             MOVS     R0,#+0
+   \   000005F6   0x9000             STR      R0,[SP, #+0]
+   \   000005F8   0x4603             MOV      R3,R0
+   \   000005FA   0x4601             MOV      R1,R0
+   \   000005FC   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \                     ??draw_EndstopType_2: (+1)
+   \   00000600   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    432                  
+    433              }
+    434          
+    435               button_back.btnHandle = BUTTON_CreateEx(400,270,70,40,hEndstopTypeWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   00000604   0x.... 0x....      BL       alloc_win_id
+   \   00000608   0x9003             STR      R0,[SP, #+12]
+   \   0000060A   0x2328             MOVS     R3,#+40
+   \   0000060C   0x2000             MOVS     R0,#+0
+   \   0000060E   0x9002             STR      R0,[SP, #+8]
+   \   00000610   0x2246             MOVS     R2,#+70
+   \   00000612   0x2002             MOVS     R0,#+2
+   \   00000614   0x9001             STR      R0,[SP, #+4]
+   \   00000616   0xF44F 0x7187      MOV      R1,#+270
+   \   0000061A   0x5E20             LDRSH    R0,[R4, R0]
+   \   0000061C   0x9000             STR      R0,[SP, #+0]
+   \   0000061E   0xF44F 0x70C8      MOV      R0,#+400
+   \   00000622   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000626   0x....             LDR.N    R1,??DataTable7_1
+   \   00000628   0x8008             STRH     R0,[R1, #+0]
+    436               
+    437               BUTTON_SetBmpFileName(button_back.btnHandle, "bmp_back70x40.bin",1);        
+   \   0000062A   0x2201             MOVS     R2,#+1
+   \   0000062C   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_back70x40.bin">`
+   \   00000630   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    438               BUTTON_SetBitmapEx(button_back.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   00000634   0x....             LDR.N    R2,??DataTable7_20
+   \   00000636   0x2000             MOVS     R0,#+0
+   \   00000638   0x9000             STR      R0,[SP, #+0]
+   \   0000063A   0x4601             MOV      R1,R0
+   \   0000063C   0x....             LDR.N    R0,??DataTable7_1
+   \   0000063E   0x5E40             LDRSH    R0,[R0, R1]
+   \   00000640   0x2300             MOVS     R3,#+0
+   \   00000642   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    439                  
+    440               BUTTON_SetBkColor(button_next.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   00000646   0x9804             LDR      R0,[SP, #+16]
+   \   00000648   0x6B82             LDR      R2,[R0, #+56]
+   \   0000064A   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   0000064E   0x2101             MOVS     R1,#+1
+   \   00000650   0x.... 0x....      BL       BUTTON_SetBkColor
+    441               BUTTON_SetBkColor(button_next.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color); 
+   \   00000654   0x9804             LDR      R0,[SP, #+16]
+   \   00000656   0x6B82             LDR      R2,[R0, #+56]
+   \   00000658   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   0000065C   0x2100             MOVS     R1,#+0
+   \   0000065E   0x.... 0x....      BL       BUTTON_SetBkColor
+    442               BUTTON_SetTextColor(button_next.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   00000662   0x9804             LDR      R0,[SP, #+16]
+   \   00000664   0x6BC2             LDR      R2,[R0, #+60]
+   \   00000666   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   0000066A   0x2101             MOVS     R1,#+1
+   \   0000066C   0x.... 0x....      BL       BUTTON_SetTextColor
+    443               BUTTON_SetTextColor(button_next.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
+   \   00000670   0x9804             LDR      R0,[SP, #+16]
+   \   00000672   0x6BC2             LDR      R2,[R0, #+60]
+   \   00000674   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000678   0x2100             MOVS     R1,#+0
+   \   0000067A   0x.... 0x....      BL       BUTTON_SetTextColor
+    444               BUTTON_SetBkColor(button_previous.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   0000067E   0x9804             LDR      R0,[SP, #+16]
+   \   00000680   0x6B82             LDR      R2,[R0, #+56]
+   \   00000682   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   00000686   0x2101             MOVS     R1,#+1
+   \   00000688   0x.... 0x....      BL       BUTTON_SetBkColor
+    445               BUTTON_SetBkColor(button_previous.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);    
+   \   0000068C   0x9804             LDR      R0,[SP, #+16]
+   \   0000068E   0x6B82             LDR      R2,[R0, #+56]
+   \   00000690   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   00000694   0x2100             MOVS     R1,#+0
+   \   00000696   0x.... 0x....      BL       BUTTON_SetBkColor
+    446               BUTTON_SetTextColor(button_previous.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   0000069A   0x9804             LDR      R0,[SP, #+16]
+   \   0000069C   0x6BC2             LDR      R2,[R0, #+60]
+   \   0000069E   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000006A2   0x2101             MOVS     R1,#+1
+   \   000006A4   0x.... 0x....      BL       BUTTON_SetTextColor
+    447               BUTTON_SetTextColor(button_previous.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);    
+   \   000006A8   0x9804             LDR      R0,[SP, #+16]
+   \   000006AA   0x6BC2             LDR      R2,[R0, #+60]
+   \   000006AC   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000006B0   0x2100             MOVS     R1,#+0
+   \   000006B2   0x.... 0x....      BL       BUTTON_SetTextColor
+    448               BUTTON_SetBkColor(button_back.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   000006B6   0x9804             LDR      R0,[SP, #+16]
+   \   000006B8   0x6B82             LDR      R2,[R0, #+56]
+   \   000006BA   0x....             LDR.N    R0,??DataTable7_1
+   \   000006BC   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000006C0   0x2101             MOVS     R1,#+1
+   \   000006C2   0x.... 0x....      BL       BUTTON_SetBkColor
+    449               BUTTON_SetBkColor(button_back.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color); 
+   \   000006C6   0x9804             LDR      R0,[SP, #+16]
+   \   000006C8   0x6B82             LDR      R2,[R0, #+56]
+   \   000006CA   0x....             LDR.N    R0,??DataTable7_1
+   \   000006CC   0x2100             MOVS     R1,#+0
+   \   000006CE   0x5E40             LDRSH    R0,[R0, R1]
+   \   000006D0   0x.... 0x....      BL       BUTTON_SetBkColor
+    450               BUTTON_SetTextColor(button_back.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   000006D4   0x9804             LDR      R0,[SP, #+16]
+   \   000006D6   0x6BC2             LDR      R2,[R0, #+60]
+   \   000006D8   0x....             LDR.N    R0,??DataTable7_1
+   \   000006DA   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000006DE   0x2101             MOVS     R1,#+1
+   \   000006E0   0x.... 0x....      BL       BUTTON_SetTextColor
+    451               BUTTON_SetTextColor(button_back.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor); 
+   \   000006E4   0x9804             LDR      R0,[SP, #+16]
+   \   000006E6   0x6BC2             LDR      R2,[R0, #+60]
+   \   000006E8   0x....             LDR.N    R0,??DataTable7_1
+   \   000006EA   0x2100             MOVS     R1,#+0
+   \   000006EC   0x5E40             LDRSH    R0,[R0, R1]
+   \   000006EE   0x.... 0x....      BL       BUTTON_SetTextColor
+    452               
+    453               BUTTON_SetTextAlign(button_next.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   000006F2   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   000006F6   0x210E             MOVS     R1,#+14
+   \   000006F8   0x.... 0x....      BL       BUTTON_SetTextAlign
+    454               BUTTON_SetTextAlign(button_previous.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   000006FC   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   00000700   0x210E             MOVS     R1,#+14
+   \   00000702   0x.... 0x....      BL       BUTTON_SetTextAlign
+    455               BUTTON_SetTextAlign(button_back.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000706   0x....             LDR.N    R0,??DataTable7_1
+   \   00000708   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   0000070C   0x210E             MOVS     R1,#+14
+   \   0000070E   0x.... 0x....      BL       BUTTON_SetTextAlign
+    456          
+    457               if(gCfgItems.multiple_language != 0)
+   \   00000712   0x....             LDR.N    R0,??DataTable7_21
+   \   00000714   0x9000             STR      R0,[SP, #+0]
+   \   00000716   0x7880             LDRB     R0,[R0, #+2]
+   \   00000718   0x2800             CMP      R0,#+0
+   \   0000071A   0xF000 0x8097      BEQ.W    ??draw_EndstopType_3
+    458               {
+    459                  if(current_page != 1)
+   \   0000071E   0x7820             LDRB     R0,[R4, #+0]
+   \   00000720   0x....             LDR.N    R7,??DataTable7_22
+   \   00000722   0x2801             CMP      R0,#+1
+   \   00000724   0x9805             LDR      R0,[SP, #+20]
+   \   00000726   0xD041             BEQ.N    ??draw_EndstopType_4
+    460                  {
+    461                      /*
+    462                           BUTTON_SetText(buttonMachine.btnHandle, MachineSettings_menu.Machine);
+    463                           BUTTON_SetText(buttonStroke.btnHandle, MachineSettings_menu.Stroke);
+    464                           BUTTON_SetText(buttonHomeDirection.btnHandle, MachineSettings_menu.HomeDir);
+    465                           BUTTON_SetText(buttonEndstopType.btnHandle, MachineSettings_menu.EndStopType);
+    466                           BUTTON_SetText(buttonFilamant.btnHandle, MachineSettings_menu.filamet);
+    467                           BUTTON_SetText(buttonLeveling.btnHandle, MachineSettings_menu.leveling);   
+    468                           */
+    469                      BUTTON_SetText(XEndstop_Min_text.btnHandle, machine_menu.xEndstop_min);
+   \   00000728   0x6EC1             LDR      R1,[R0, #+108]
+   \   0000072A   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \   0000072E   0x.... 0x....      BL       BUTTON_SetText
+    470                      BUTTON_SetText(YEndstop_Min_text.btnHandle, machine_menu.yEndstop_min);
+   \   00000732   0x9805             LDR      R0,[SP, #+20]
+   \   00000734   0x6F01             LDR      R1,[R0, #+112]
+   \   00000736   0xF9B5 0x0018      LDRSH    R0,[R5, #+24]
+   \   0000073A   0x.... 0x....      BL       BUTTON_SetText
+    471                      BUTTON_SetText(ZEndstop_Min_text.btnHandle, machine_menu.zEndstop_min);
+   \   0000073E   0x9805             LDR      R0,[SP, #+20]
+   \   00000740   0x6F41             LDR      R1,[R0, #+116]
+   \   00000742   0xF9B5 0x0030      LDRSH    R0,[R5, #+48]
+   \   00000746   0x.... 0x....      BL       BUTTON_SetText
+    472                      BUTTON_SetText(XEndstop_Max_text.btnHandle, machine_menu.xEndstop_max);
+   \   0000074A   0x9805             LDR      R0,[SP, #+20]
+   \   0000074C   0x6F81             LDR      R1,[R0, #+120]
+   \   0000074E   0xF9B5 0x0048      LDRSH    R0,[R5, #+72]
+   \   00000752   0x.... 0x....      BL       BUTTON_SetText
+    473                      BUTTON_SetText(button_next.btnHandle,machine_menu.next);
+   \   00000756   0x....             LDR.N    R0,??DataTable7_7
+   \   00000758   0x6841             LDR      R1,[R0, #+4]
+   \   0000075A   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   0000075E   0x.... 0x....      BL       BUTTON_SetText
+    474          
+    475                      if(mksCfg.x_min_endstop_inverting == 1)
+   \   00000762   0x....             LDR.N    R1,??DataTable7_6
+   \   00000764   0xF9B4 0x0004      LDRSH    R0,[R4, #+4]
+   \   00000768   0xF891 0x1039      LDRB     R1,[R1, #+57]
+   \   0000076C   0x2901             CMP      R1,#+1
+   \   0000076E   0xBF0C             ITE      EQ 
+    476                      {
+    477                          BUTTON_SetText(XEndstop_Min.btnHandle, machine_menu.closed);
+   \   00000770   0x6939             LDREQ    R1,[R7, #+16]
+    478                      }
+    479                      else
+    480                      {
+    481                          BUTTON_SetText(XEndstop_Min.btnHandle, machine_menu.opened);
+   \   00000772   0x68F9             LDRNE    R1,[R7, #+12]
+   \   00000774   0x.... 0x....      BL       BUTTON_SetText
+    482                      }
+    483                      if(mksCfg.y_min_endstop_inverting == 1)
+   \   00000778   0x7871             LDRB     R1,[R6, #+1]
+   \   0000077A   0xF9B4 0x001C      LDRSH    R0,[R4, #+28]
+   \   0000077E   0x2901             CMP      R1,#+1
+   \   00000780   0xBF0C             ITE      EQ 
+    484                      {
+    485                          BUTTON_SetText(YEndstop_Min.btnHandle, machine_menu.closed);
+   \   00000782   0x6939             LDREQ    R1,[R7, #+16]
+    486                      }
+    487                      else
+    488                      {
+    489                          BUTTON_SetText(YEndstop_Min.btnHandle, machine_menu.opened);
+   \   00000784   0x68F9             LDRNE    R1,[R7, #+12]
+   \   00000786   0x.... 0x....      BL       BUTTON_SetText
+    490                      } 
+    491                      if(mksCfg.z_min_endstop_inverting == 1)
+   \   0000078A   0x78B1             LDRB     R1,[R6, #+2]
+   \   0000078C   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000790   0x2901             CMP      R1,#+1
+   \   00000792   0xBF0C             ITE      EQ 
+    492                      {
+    493                          BUTTON_SetText(ZEndstop_Min.btnHandle, machine_menu.closed);
+   \   00000794   0x6939             LDREQ    R1,[R7, #+16]
+    494                      }
+    495                      else
+    496                      {
+    497                          BUTTON_SetText(ZEndstop_Min.btnHandle, machine_menu.opened);
+   \   00000796   0x68F9             LDRNE    R1,[R7, #+12]
+   \   00000798   0x.... 0x....      BL       BUTTON_SetText
+    498                      } 
+    499                      if(mksCfg.x_max_endstop_inverting == 1)
+   \   0000079C   0x78F1             LDRB     R1,[R6, #+3]
+   \   0000079E   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000007A2   0x2901             CMP      R1,#+1
+   \   000007A4   0xBF14             ITE      NE 
+    500                      {
+    501                          BUTTON_SetText(XEndstop_Max.btnHandle, machine_menu.closed);
+    502                      }
+    503                      else
+    504                      {
+    505                          BUTTON_SetText(XEndstop_Max.btnHandle, machine_menu.opened);
+   \   000007A6   0x68F9             LDRNE    R1,[R7, #+12]
+    506                      }            
+   \   000007A8   0x6939             LDREQ    R1,[R7, #+16]
+   \   000007AA   0xE043             B.N      ??draw_EndstopType_5
+    507                  }
+    508                  else
+    509                  {
+    510                      BUTTON_SetText(YEndstop_Max_text.btnHandle, machine_menu.yEndstop_max);
+   \                     ??draw_EndstopType_4: (+1)
+   \   000007AC   0x6FC1             LDR      R1,[R0, #+124]
+   \   000007AE   0xF9B5 0x0060      LDRSH    R0,[R5, #+96]
+   \   000007B2   0x.... 0x....      BL       BUTTON_SetText
+    511                      BUTTON_SetText(ZEndstop_Max_text.btnHandle, machine_menu.zEndstop_max);        
+   \   000007B6   0x....             LDR.N    R0,??DataTable7_7
+   \   000007B8   0xF8D0 0x1084      LDR      R1,[R0, #+132]
+   \   000007BC   0xF9B5 0x0078      LDRSH    R0,[R5, #+120]
+   \   000007C0   0x.... 0x....      BL       BUTTON_SetText
+    512                      BUTTON_SetText(LevelingEndstop_text.btnHandle,machine_menu.LevelingEndstop);
+   \   000007C4   0x68B9             LDR      R1,[R7, #+8]
+   \   000007C6   0xF9B5 0x00A8      LDRSH    R0,[R5, #+168]
+   \   000007CA   0x.... 0x....      BL       BUTTON_SetText
+    513          	     BUTTON_SetText(MT_Endstop_text.btnHandle,machine_menu.FilamentEndstop);
+   \   000007CE   0x6879             LDR      R1,[R7, #+4]
+   \   000007D0   0xF9B5 0x0090      LDRSH    R0,[R5, #+144]
+   \   000007D4   0x.... 0x....      BL       BUTTON_SetText
+    514                      BUTTON_SetText(button_previous.btnHandle,machine_menu.previous);   
+   \   000007D8   0x9805             LDR      R0,[SP, #+20]
+   \   000007DA   0x6841             LDR      R1,[R0, #+4]
+   \   000007DC   0xF9B9 0x0018      LDRSH    R0,[R9, #+24]
+   \   000007E0   0x.... 0x....      BL       BUTTON_SetText
+    515          
+    516                      if(mksCfg.y_max_endstop_inverting == 1)
+   \   000007E4   0x7931             LDRB     R1,[R6, #+4]
+   \   000007E6   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   000007EA   0x2901             CMP      R1,#+1
+   \   000007EC   0xBF0C             ITE      EQ 
+    517                      {
+    518                          BUTTON_SetText(YEndstop_Max.btnHandle, machine_menu.closed);
+   \   000007EE   0x6939             LDREQ    R1,[R7, #+16]
+    519                      }
+    520                      else
+    521                      {
+    522                          BUTTON_SetText(YEndstop_Max.btnHandle, machine_menu.opened);
+   \   000007F0   0x68F9             LDRNE    R1,[R7, #+12]
+   \   000007F2   0x.... 0x....      BL       BUTTON_SetText
+    523                      }
+    524                      if(mksCfg.z_max_endstop_inverting == 1)
+   \   000007F6   0x7971             LDRB     R1,[R6, #+5]
+   \   000007F8   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000007FC   0x2901             CMP      R1,#+1
+   \   000007FE   0xBF0C             ITE      EQ 
+    525                      {
+    526                          BUTTON_SetText(ZEndstop_Max.btnHandle, machine_menu.closed);
+   \   00000800   0x6939             LDREQ    R1,[R7, #+16]
+    527                      }
+    528                      else
+    529                      {
+    530                          BUTTON_SetText(ZEndstop_Max.btnHandle, machine_menu.opened);
+   \   00000802   0x68F9             LDRNE    R1,[R7, #+12]
+   \   00000804   0x.... 0x....      BL       BUTTON_SetText
+    531                      } 
+    532                      if(mksCfg.z_min_probe_endstop_inverting == 1)
+   \   00000808   0x79B1             LDRB     R1,[R6, #+6]
+   \   0000080A   0xF9BB 0x0018      LDRSH    R0,[R11, #+24]
+   \   0000080E   0x2901             CMP      R1,#+1
+   \   00000810   0xBF0C             ITE      EQ 
+    533                      {
+    534                          BUTTON_SetText(LevelingEndstop.btnHandle, machine_menu.closed);
+   \   00000812   0x6939             LDREQ    R1,[R7, #+16]
+    535                      }
+    536                      else
+    537                      {
+    538                          BUTTON_SetText(LevelingEndstop.btnHandle, machine_menu.opened);
+   \   00000814   0x68F9             LDRNE    R1,[R7, #+12]
+   \   00000816   0x.... 0x....      BL       BUTTON_SetText
+    539                      }      
+    540          	     if(gCfgItems.filament_det0_level_flg == 1 && gCfgItems.filament_det1_level_flg==1)
+   \   0000081A   0x....             LDR.N    R0,??DataTable7_4
+   \   0000081C   0xF890 0x01CD      LDRB     R0,[R0, #+461]
+   \   00000820   0x2801             CMP      R0,#+1
+   \   00000822   0xBF02             ITTT     EQ 
+   \   00000824   0x9800             LDREQ    R0,[SP, #+0]
+   \   00000826   0x7840             LDRBEQ   R0,[R0, #+1]
+   \   00000828   0x2801             CMPEQ    R0,#+1
+   \   0000082A   0xBF0C             ITE      EQ 
+    541                      {
+    542                          BUTTON_SetText(MT_Endstop.btnHandle, machine_menu.closed);
+   \   0000082C   0x6939             LDREQ    R1,[R7, #+16]
+    543                      }
+    544                      else
+    545                      {
+    546                          BUTTON_SetText(MT_Endstop.btnHandle, machine_menu.opened);
+   \   0000082E   0x68F9             LDRNE    R1,[R7, #+12]
+   \   00000830   0xF9BB 0x0000      LDRSH    R0,[R11, #+0]
+   \                     ??draw_EndstopType_5: (+1)
+   \   00000834   0x.... 0x....      BL       BUTTON_SetText
+    547                      }
+    548                  }
+    549                   
+    550                  BUTTON_SetText(button_back.btnHandle,common_menu.text_back);
+   \   00000838   0xB007             ADD      SP,SP,#+28
+   \   0000083A   0xE8BD 0x4FF0      POP      {R4-R11,LR}
+   \   0000083E   0x....             LDR.N    R0,??DataTable7_23
+   \   00000840   0x6801             LDR      R1,[R0, #+0]
+   \   00000842   0x....             LDR.N    R0,??DataTable7_1
+   \   00000844   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000848   0x.... 0x....      B.W      BUTTON_SetText
+    551                  
+    552                        
+    553               }
+    554          
+    555          }
+   \                     ??draw_EndstopType_3: (+1)
+   \   0000084C   0xB007             ADD      SP,SP,#+28
+   \   0000084E   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    556          
+    557          
+
+   \                                 In section .text, align 2, keep-with-next
+    558          void Clear_EndstopType()
+    559          {
+   \                     Clear_EndstopType: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    560          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000002   0x....             LDR.N    R0,??DataTable7_4
+   \   00000004   0x6940             LDR      R0,[R0, #+20]
+   \   00000006   0x.... 0x....      BL       GUI_SetBkColor
+    561          	if(WM_IsWindow(hEndstopTypeWnd))
+   \   0000000A   0x....             LDR.N    R4,??DataTable7_2
+   \   0000000C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000010   0x.... 0x....      BL       WM_IsWindow
+   \   00000014   0xB128             CBZ.N    R0,??Clear_EndstopType_0
+    562          	{
+    563          		WM_DeleteWindow(hEndstopTypeWnd);
+   \   00000016   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000001A   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001E   0x.... 0x....      B.W      WM_DeleteWindow
+    564          	}
+    565          }
+   \                     ??Clear_EndstopType_0: (+1)
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x00FF5449         DC32     0xff5449
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \   00000000   0x........         DC32     button_back
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \   00000000   0x........         DC32     current_page
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \   00000000   0x........         DC32     last_disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \   00000000   0x........         DC32     button_next
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \   00000000   0x........         DC32     mksCfg
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \   00000000   0x........         DC32     machine_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \   00000000   0x........         DC32     machine_menu+0x90
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \   00000000   0x........         DC32     ZEndstop_Min
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \   00000000   0x........         DC32     YEndstop_Max
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \   00000000   0x........         DC32     MT_Endstop
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \   00000000   0x........         DC32     XEndstop_Min_text
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_13:
+   \   00000000   0x........         DC32     disp_state_stack
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_14:
+   \   00000000   0x........         DC32     disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_15:
+   \   00000000   0x........         DC32     gCfgItems+0x14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_16:
+   \   00000000   0x........         DC32     machine_menu+0x4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_17:
+   \   00000000   0x........         DC32     _Z16cbEndstopTypeWinP10WM_MESSAGE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_18:
+   \   00000000   0x........         DC32     mksCfg+0x39
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_19:
+   \   00000000   0x........         DC32     bmp_struct90X30
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_20:
+   \   00000000   0x........         DC32     bmp_struct70X40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_21:
+   \   00000000   0x........         DC32     gCfgItems+0x1CD
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_22:
+   \   00000000   0x........         DC32     machine_menu+0x84
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_23:
+   \   00000000   0x........         DC32     common_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_enable.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_enable.bin"
+   \              0x70 0x5F    
+   \              0x65 0x6E    
+   \              0x61 0x62    
+   \              0x6C 0x65    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000F   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_disable.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_disable.bin"
+   \              0x70 0x5F    
+   \              0x64 0x69    
+   \              0x73 0x61    
+   \              0x62 0x6C    
+   \              0x65 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_next.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_next.bin"
+   \              0x70 0x5F    
+   \              0x6E 0x65    
+   \              0x78 0x74    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_previous.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_previous.bin"
+   \              0x70 0x5F    
+   \              0x70 0x72    
+   \              0x65 0x76    
+   \              0x69 0x6F    
+   \              0x75 0x73    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_back70x40.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_back70x40.bin"
+   \              0x70 0x5F    
+   \              0x62 0x61    
+   \              0x63 0x6B    
+   \              0x37 0x30    
+   \              0x78 0x34    
+   \              0x30 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+    566          
+    567          
+    568          
+    569          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Clear_EndstopType
+         8   -> GUI_SetBkColor
+         0   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+      16   cbEndstopTypeWin(WM_MESSAGE *)
+        16   -> BUTTON_SetBmpFileName
+        16   -> BUTTON_SetText
+         0   -> GUI_FillRect
+        16   -> GUI_FillRect
+        16   -> GUI_SetBkColor
+        16   -> GUI_SetColor
+         0   -> WM_DefaultProc
+        16   -> WM_DeleteWindow
+        16   -> WM_IsWindow
+         0   -> draw_EndstopType
+         0   -> draw_return_ui
+         0   -> epr_write_data
+        16   -> epr_write_data
+      64   draw_EndstopType
+        64   -> BUTTON_CreateEx
+        64   -> BUTTON_SetBitmapEx
+        64   -> BUTTON_SetBkColor
+        64   -> BUTTON_SetBmpFileName
+         0   -> BUTTON_SetText
+        64   -> BUTTON_SetText
+        64   -> BUTTON_SetTextAlign
+        64   -> BUTTON_SetTextColor
+        64   -> GUI_Clear
+        64   -> GUI_DispStringAt
+        64   -> GUI_SetBkColor
+        64   -> GUI_SetColor
+        64   -> WM_CreateWindow
+        64   -> alloc_win_id
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      20  ?<Constant "bmp_back70x40.bin">
+      16  ?<Constant "bmp_disable.bin">
+      16  ?<Constant "bmp_enable.bin">
+      16  ?<Constant "bmp_next.bin">
+      20  ?<Constant "bmp_previous.bin">
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_13
+       4  ??DataTable7_14
+       4  ??DataTable7_15
+       4  ??DataTable7_16
+       4  ??DataTable7_17
+       4  ??DataTable7_18
+       4  ??DataTable7_19
+       4  ??DataTable7_2
+       4  ??DataTable7_20
+       4  ??DataTable7_21
+       4  ??DataTable7_22
+       4  ??DataTable7_23
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+      36  Clear_EndstopType
+      48  MT_Endstop
+          LevelingEndstop
+     192  XEndstop_Min_text
+          YEndstop_Min_text
+          ZEndstop_Min_text
+          XEndstop_Max_text
+          YEndstop_Max_text
+          ZEndstop_Max_text
+          MT_Endstop_text
+          LevelingEndstop_text
+      48  YEndstop_Max
+          ZEndstop_Max
+      48  ZEndstop_Min
+          XEndstop_Max
+      24  button_back
+      48  button_next
+          button_previous
+    1096  cbEndstopTypeWin(WM_MESSAGE *)
+      52  current_page
+          hEndstopTypeWnd
+          XEndstop_Min
+          YEndstop_Min
+    2130  draw_EndstopType
+
+ 
+   460 bytes in section .bss
+ 3 446 bytes in section .text
+ 
+ 3 446 bytes of CODE memory
+   460 bytes of DATA memory
+
+Errors: none
+Warnings: 19

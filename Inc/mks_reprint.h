@@ -128,6 +128,9 @@ extern uint16_t rgb888_2_rgb565(int32_t  color_rgb888);
 void mks_resume_extrude_speed();
 void mks_adjust_extrude_speed();
 
+void excute_m290(char *g_command);
+void excute_m500();
+
 #ifdef __cplusplus
 }
 #endif

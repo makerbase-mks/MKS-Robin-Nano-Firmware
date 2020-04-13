@@ -674,4 +674,6 @@
 
 #define TEXT_RECEIVING_DATA_EN "Receiving Data"
 
+#define TEXT_BABY_STEP_EN "Babystep"
+
 #endif

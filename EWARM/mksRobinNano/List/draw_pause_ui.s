@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:16
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:29
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_pause_ui.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_pause_ui.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_pause_ui.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_pause_ui.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\draw_pause_ui.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_pause_ui.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -93,8 +90,6 @@
         EXTERN BUTTON_SetTextColor
         EXTERN GUI_Clear
         EXTERN GUI_DispStringAt
-        EXTERN GUI_DrawRect
-        EXTERN GUI_FillRect
         EXTERN GUI_FontHZ16
         EXTERN GUI_FontHZ_fontHz14
         EXTERN GUI_SetBkColor
@@ -118,8 +113,6 @@
         EXTERN WM_DefaultProc
         EXTERN WM_DeleteWindow
         EXTERN WM_IsWindow
-        EXTERN X_ADD
-        EXTERN X_INTERVAL
         EXTERN _ZN11Temperature19current_temperatureE
         EXTERN _ZN11Temperature23current_temperature_bedE
         EXTERN __aeabi_f2iz
@@ -142,7 +135,6 @@
         EXTERN from_flash_pic
         EXTERN gCfgItems
         EXTERN last_disp_state
-        EXTERN memset
         EXTERN mksCfg
         EXTERN mksReprint
         EXTERN pause_from_high_level
@@ -184,7 +176,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_pause_ui.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_pause_ui.cpp
 //    1 #include "gui.h"
 //    2 #include "button.h"
 //    3 #include "PROGBAR.h"
@@ -275,55 +267,17 @@ _Z10cbPauseWinP10WM_MESSAGE:
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
         CMP      R1,#+13
+        IT       NE 
+        CMPNE    R1,#+15
         BEQ.W    ??cbPauseWin_1
-        CMP      R1,#+15
-        BEQ.N    ??cbPauseWin_2
         CMP      R1,#+38
-        BEQ.N    ??cbPauseWin_3
-        B.N      ??cbPauseWin_4
+        BNE.W    ??cbPauseWin_2
 //   54 	{
 //   55 		case WM_PAINT:
-//   56 			GUI_SetColor(gCfgItems.state_background_color);
-??cbPauseWin_2:
-        LDR.W    R4,??DataTable16_1
-        LDR      R0,[R4, #+12]
-          CFI FunCall GUI_SetColor
-        BL       GUI_SetColor
-//   57 			GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
-        LDR.W    R5,??DataTable16_2
-        LDR.W    R6,??DataTable16_3
-        MOVS     R3,#+127
-        LDR      R0,[R6, #+0]
-        RSB      R2,R0,#+360
-        MOVS     R1,#+0
-        LDR      R0,[R5, #+0]
-        ADDS     R0,R0,#+120
-          CFI FunCall GUI_DrawRect
-        BL       GUI_DrawRect
-//   58 			GUI_SetColor(gCfgItems.state_background_color);
-        LDR      R0,[R4, #+12]
-          CFI FunCall GUI_SetColor
-        BL       GUI_SetColor
-//   59 			GUI_FillRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
-        MOVS     R3,#+127
-        LDR      R0,[R6, #+0]
-        RSB      R2,R0,#+360
-        MOVS     R1,#+0
-        LDR      R0,[R5, #+0]
-        ADDS     R0,R0,#+120
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall GUI_FillRect
-        B.W      GUI_FillRect
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+//   56 			//GUI_SetColor(gCfgItems.state_background_color);
+//   57 			//GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
+//   58 			//GUI_SetColor(gCfgItems.state_background_color);
+//   59 			//GUI_FillRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
 //   60 			
 //   61 			break;
 //   62 		case WM_TOUCH:
@@ -335,98 +289,93 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //   68 			
 //   69 		case WM_NOTIFY_PARENT:
 //   70 			if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
-??cbPauseWin_3:
         LDR      R1,[R0, #+8]
         CMP      R1,#+2
         BNE.W    ??cbPauseWin_1
 //   71 			{
 //   72 				if(pMsg->hWinSrc == buttonStop.btnHandle)
+        LDR.W    R4,??DataTable16_1
         LDRSH    R0,[R0, #+6]
-        LDR.W    R1,??DataTable16_4
-        LDRSH    R2,[R1, #+32]
-        CMP      R0,R2
-        BNE.N    ??cbPauseWin_5
+        LDRSH    R1,[R4, #+32]
+        CMP      R0,R1
+        BNE.N    ??cbPauseWin_3
 //   73 				{
 //   74 					last_disp_state = PAUSE_UI;
+        LDR.W    R1,??DataTable16_2
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
         STRB     R0,[R1, #+0]
 //   75 					Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR.W    R0,??DataTable16_3
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbPauseWin_4
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //   76 				
 //   77 					draw_dialog(DIALOG_TYPE_STOP);
+??cbPauseWin_4:
         MOVS     R0,#+0
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall draw_dialog
-        B.W      draw_dialog
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        B.N      ??cbPauseWin_5
 //   78 					
 //   79 				}
 //   80 				else if(pMsg->hWinSrc == buttonRecover.btnHandle)
-??cbPauseWin_5:
-        LDRSH    R1,[R1, #+8]
+??cbPauseWin_3:
+        LDRSH    R1,[R4, #+8]
         CMP      R0,R1
         BNE.W    ??cbPauseWin_6
 //   81 				{
 //   82 				    if(mksReprint.mks_printer_state == MKS_PAUSED)
-        LDR.W    R5,??DataTable16_6
-        LDRB     R0,[R5, #+224]
+        LDR.W    R5,??DataTable16_4
+        LDRB     R0,[R5, #+172]
         CMP      R0,#+170
         BNE.N    ??cbPauseWin_7
 //   83                     {  
 //   84 					    //断料检测为高电平触发时，只有在装上料，
 //   85 					    //检测管脚为低电平时，按恢复按钮才有效。
 //   86                         if(mksCfg.extruders==2)
-        LDR.W    R4,??DataTable16_1
-        LDR.W    R0,??DataTable16_7
+        LDR.W    R0,??DataTable16_5
+        LDR.W    R6,??DataTable16_3
         LDRB     R0,[R0, #+247]
         CMP      R0,#+2
-        LDRB     R0,[R4, #+445]
+        LDRB     R0,[R6, #+461]
         BNE.N    ??cbPauseWin_8
 //   87                         {
 //   88                            if((gCfgItems.filament_det0_level_flg == 1)||(gCfgItems.filament_det1_level_flg == 1))
         CMP      R0,#+1
-        BEQ.N    ??cbPauseWin_9
-        ADDW     R0,R4,#+445
-        LDRB     R0,[R0, #+1]
-        CMP      R0,#+1
-        BNE.N    ??cbPauseWin_10
+        ITTT     NE 
+        ADDWNE   R0,R6,#+461
+        LDRBNE   R0,[R0, #+1]
+        CMPNE    R0,#+1
+        ITTT     EQ 
 //   89                            {
 //   90                               if(pause_from_high_level==1)
-??cbPauseWin_9:
-        LDR.W    R0,??DataTable16_8
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+1
-        BNE.N    ??cbPauseWin_10
+        LDREQ.W  R0,??DataTable16_6
+        LDRBEQ   R0,[R0, #+0]
+        CMPEQ    R0,#+1
+        BNE.N    ??cbPauseWin_9
 //   91                               {
 //   92                                 if(((MKS_MT_DET1_OP == Bit_RESET)&&(gCfgItems.filament_det0_level_flg == 1))
 //   93                                     ||((MKS_MT_DET2_OP == Bit_RESET)&&(gCfgItems.filament_det1_level_flg == 1)))
-        LDR.W    R0,??DataTable16_9  ;; 0x42210110
+        LDR.W    R0,??DataTable16_7  ;; 0x42210110
         LDR      R0,[R0, #+0]
         CMP      R0,#+0
-        BNE.N    ??cbPauseWin_11
-        LDRB     R0,[R4, #+445]
-        CMP      R0,#+1
-        BEQ.N    ??cbPauseWin_12
-??cbPauseWin_11:
-        LDR.W    R0,??DataTable16_10  ;; 0x42230118
+        ITT      EQ 
+        LDRBEQ   R0,[R6, #+461]
+        CMPEQ    R0,#+1
+        BEQ.N    ??cbPauseWin_10
+        LDR.W    R0,??DataTable16_8  ;; 0x42230118
         LDR      R0,[R0, #+0]
         CMP      R0,#+0
-        BNE.N    ??cbPauseWin_13
-        ADDW     R0,R4,#+445
-        LDRB     R0,[R0, #+1]
-        CMP      R0,#+1
-        BEQ.N    ??cbPauseWin_12
+        ITTT     EQ 
+        ADDWEQ   R0,R6,#+461
+        LDRBEQ   R0,[R0, #+1]
+        CMPEQ    R0,#+1
+        BEQ.N    ??cbPauseWin_10
 //   94                                 {
 //   95                                         pause_from_high_level=0;
 //   96                                         start_print_time();
@@ -482,15 +431,25 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //  146                                     else
 //  147                                     {
 //  148                                         last_disp_state = PAUSE_UI;
-??cbPauseWin_13:
+??cbPauseWin_11:
+        LDR.W    R1,??DataTable16_2
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
         STRB     R0,[R1, #+0]
 //  149                     					Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR      R0,[R6, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbPauseWin_12
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //  150                     					draw_dialog(DIALOG_TYPE_FILAMENT_NO_PRESS);   
+??cbPauseWin_12:
         MOVS     R0,#+18
+??cbPauseWin_5:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -507,44 +466,31 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //  151                                     }
 ??cbPauseWin_8:
         CMP      R0,#+1
-        BNE.N    ??cbPauseWin_10
-        LDR.W    R0,??DataTable16_8
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+1
-        BNE.N    ??cbPauseWin_10
-        LDR.W    R0,??DataTable16_9  ;; 0x42210110
+        ITTT     EQ 
+        LDREQ.W  R0,??DataTable16_6
+        LDRBEQ   R0,[R0, #+0]
+        CMPEQ    R0,#+1
+        BNE.N    ??cbPauseWin_9
+        LDR.W    R0,??DataTable16_7  ;; 0x42210110
         LDR      R0,[R0, #+0]
         CMP      R0,#+0
-        BNE.N    ??cbPauseWin_13
-??cbPauseWin_12:
+        BNE.N    ??cbPauseWin_11
+??cbPauseWin_10:
+        LDR.W    R1,??DataTable16_6
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable16_8
         STRB     R0,[R1, #+0]
           CFI FunCall start_print_time
         BL       start_print_time
         MOVS     R0,#+1
-        LDR.W    R1,??DataTable16_11
+        LDR.W    R1,??DataTable16_9
         STRB     R0,[R1, #+0]
         MOVS     R0,#+168
-        STRB     R0,[R5, #+224]
+        STRB     R0,[R5, #+172]
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
+        LDR.W    R1,??DataTable16_2
         STRB     R0,[R1, #+0]
-          CFI FunCall Clear_pause
-        BL       Clear_pause
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall draw_operate
-        B.W      draw_operate
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        LDR      R0,[R6, #+20]
+        B.N      ??cbPauseWin_13
 //  152                                 }
 //  153                                 else
 //  154                                 {
@@ -559,37 +505,24 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //  163                            else
 //  164                            {
 //  165                                 start_print_time();
-??cbPauseWin_10:
+??cbPauseWin_9:
           CFI FunCall start_print_time
         BL       start_print_time
 //  166                                 pause_resum = 1;
+        LDR.W    R1,??DataTable16_9
         MOVS     R0,#+1
-        LDR.W    R1,??DataTable16_11
         STRB     R0,[R1, #+0]
 //  167                                 mksReprint.mks_printer_state = MKS_RESUMING;//MKS_WORKING;
         MOVS     R0,#+168
-        STRB     R0,[R5, #+224]
+        STRB     R0,[R5, #+172]
 //  168                                 last_disp_state = PAUSE_UI;
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
+        LDR.W    R1,??DataTable16_2
         STRB     R0,[R1, #+0]
 //  169                                 Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR      R0,[R6, #+20]
+        B.N      ??cbPauseWin_13
 //  170                                 draw_operate();   
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall draw_operate
-        B.W      draw_operate
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
 //  171                            }                            
 //  172                         }
 //  173                         
@@ -597,23 +530,34 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //  175                     else if(mksReprint.mks_printer_state == MKS_REPRINTING)
 ??cbPauseWin_7:
         CMP      R0,#+171
-        BNE.N    ??cbPauseWin_1
+        BNE.W    ??cbPauseWin_1
 //  176                     {
 //  177 						start_print_time();
           CFI FunCall start_print_time
         BL       start_print_time
 //  178 						mksReprint.mks_printer_state = MKS_REPRINTED;
-        MOVS     R0,#+172
-        STRB     R0,[R5, #+224]
 //  179                         last_disp_state = PAUSE_UI;
+        LDR.W    R1,??DataTable16_2
+        MOVS     R0,#+172
+        STRB     R0,[R5, #+172]
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
         STRB     R0,[R1, #+0]
 //  180 						Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR.W    R0,??DataTable16_3
+        LDR      R0,[R0, #+20]
+??cbPauseWin_13:
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbPauseWin_14
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //  181 						//draw_return_ui();
 //  182 						draw_operate();
+??cbPauseWin_14:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -696,26 +640,35 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //  249 				}
 //  250 				else if(pMsg->hWinSrc == buttonExtruOut.btnHandle)
 ??cbPauseWin_6:
-        LDR.W    R1,??DataTable16_12
+        LDR.W    R1,??DataTable16_10
         LDRSH    R2,[R1, #+0]
         CMP      R0,R2
-        BNE.N    ??cbPauseWin_14
+        BNE.N    ??cbPauseWin_15
 //  251 				{
 //  252 				    gCfgItems.extruSpeed_bak = feedrate_mm_s;
-        LDR.W    R0,??DataTable16_13
+        LDR.W    R0,??DataTable16_11
+        LDR.W    R6,??DataTable16_3
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        LDR.W    R1,??DataTable16_1
-        STRB     R0,[R1, #+176]
+        LDR.W    R1,??DataTable16_2
+        STRB     R0,[R6, #+192]
 //  253 					last_disp_state = PAUSE_UI;
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
         STRB     R0,[R1, #+0]
 //  254 					Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR      R0,[R6, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbPauseWin_16
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //  255 					draw_extrusion();
+??cbPauseWin_16:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -731,27 +684,36 @@ _Z10cbPauseWinP10WM_MESSAGE:
           CFI CFA R13+16
 //  256 				}
 //  257 				else if(pMsg->hWinSrc == buttonMov.btnHandle)
-??cbPauseWin_14:
-        LDR.W    R2,??DataTable16_14
+??cbPauseWin_15:
+        LDR.W    R2,??DataTable16_12
         LDRSH    R3,[R2, #+0]
         CMP      R0,R3
-        BNE.N    ??cbPauseWin_15
+        BNE.N    ??cbPauseWin_17
 //  258 				{
 //  259 				    gCfgItems.moveSpeed_bak = feedrate_mm_s;
-        LDR.W    R0,??DataTable16_13
+        LDR.W    R0,??DataTable16_11
+        LDR.W    R6,??DataTable16_3
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        LDR.W    R1,??DataTable16_1
-        STRH     R0,[R1, #+178]
 //  260 					last_disp_state = PAUSE_UI;
+        LDR.W    R1,??DataTable16_2
+        STRH     R0,[R6, #+194]
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
         STRB     R0,[R1, #+0]
 //  261 					Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR      R0,[R6, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbPauseWin_18
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //  262 					draw_move_motor();
+??cbPauseWin_18:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -775,19 +737,29 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //  270 				}
 //  271 				*/
 //  272 				else if(pMsg->hWinSrc == buttonmore_pause.btnHandle)
-??cbPauseWin_15:
+??cbPauseWin_17:
         LDRSH    R2,[R2, #+24]
         CMP      R0,R2
-        BNE.N    ??cbPauseWin_16
+        BNE.N    ??cbPauseWin_19
 //  273 				{
 //  274 					last_disp_state = PAUSE_UI;
+        LDR.W    R1,??DataTable16_2
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
         STRB     R0,[R1, #+0]
 //  275 					Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR.W    R0,??DataTable16_3
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbPauseWin_20
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //  276 					draw_printmore();
+??cbPauseWin_20:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -803,19 +775,29 @@ _Z10cbPauseWinP10WM_MESSAGE:
           CFI CFA R13+16
 //  277 				}	
 //  278 				else if(pMsg->hWinSrc == buttonFilament_P.btnHandle)
-??cbPauseWin_16:
+??cbPauseWin_19:
         LDRSH    R1,[R1, #+24]
         CMP      R0,R1
         BNE.N    ??cbPauseWin_1
 //  279 				{
 //  280 					last_disp_state = PAUSE_UI;
+        LDR.W    R1,??DataTable16_2
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_5
         STRB     R0,[R1, #+0]
 //  281 					Clear_pause();
-          CFI FunCall Clear_pause
-        BL       Clear_pause
+        LDR.W    R0,??DataTable16_3
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbPauseWin_21
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //  282 					draw_FilamentChange();
+??cbPauseWin_21:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -835,7 +817,7 @@ _Z10cbPauseWinP10WM_MESSAGE:
 //  286 			
 //  287 		default:
 //  288 			WM_DefaultProc(pMsg);
-??cbPauseWin_4:
+??cbPauseWin_2:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -875,13 +857,13 @@ draw_pause:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+36
-        SUB      SP,SP,#+20
-          CFI CFA R13+56
 //  295 	int i;
 //  296 
 //  297 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != PAUSE_UI)
-        LDR.W    R0,??DataTable16_15
+        LDR.W    R0,??DataTable16_13
         LDRSB    R1,[R0, #+100]
+        SUB      SP,SP,#+20
+          CFI CFA R13+56
         LDRSB    R2,[R1, R0]
         CMP      R2,#+6
         BEQ.N    ??draw_pause_0
@@ -897,16 +879,16 @@ draw_pause:
 //  302 	disp_state = PAUSE_UI;
 ??draw_pause_0:
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable16_16
-        STRB     R0,[R1, #+0]
+        LDR.W    R1,??DataTable16_14
 //  303 		
 //  304 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.W    R4,??DataTable16_1
-        LDR      R0,[R4, #+4]
+        LDR.W    R4,??DataTable16_3
+        STRB     R0,[R1, #+0]
+        LDR      R0,[R4, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  305 	GUI_SetColor(gCfgItems.title_color);
-        ADDS     R5,R4,#+4
+        ADD      R5,R4,#+20
         LDR      R0,[R5, #+4]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
@@ -918,7 +900,7 @@ draw_pause:
           CFI FunCall GUI_UC_SetEncodeNone
         BL       GUI_UC_SetEncodeNone
 //  309 	GUI_SetFont(&GUI_FontHZ16);
-        LDR.W    R0,??DataTable16_17
+        LDR.W    R0,??DataTable16_15
           CFI FunCall GUI_SetFont
         BL       GUI_SetFont
 //  310 	GUI_DispStringAt(creat_title_text(), TITLE_XPOS, TITLE_YPOS);
@@ -928,7 +910,7 @@ draw_pause:
         MOVS     R1,#+3
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-        LDR.W    R0,??DataTable16_18
+        LDR.W    R0,??DataTable16_16
 //  311 	GUI_SetFont(&FONT_TITLE);
           CFI FunCall GUI_SetFont
         BL       GUI_SetFont
@@ -937,15 +919,15 @@ draw_pause:
         BL       GUI_UC_SetEncodeUTF8
 //  313 	
 //  314 	hPauseWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbPauseWin, 0);
-        LDR.W    R6,??DataTable16_4
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
-        LDR.W    R0,??DataTable16_19
+        MOV      R3,#+284
+        LDR.W    R0,??DataTable16_17
+        LDR.W    R6,??DataTable16_1
         STR      R0,[SP, #+4]
+        MOV      R2,#+480
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOV      R3,#+284
-        MOV      R2,#+480
         MOVS     R1,#+36
         MOVS     R0,#+0
           CFI FunCall WM_CreateWindow
@@ -956,15 +938,15 @@ draw_pause:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R1,#+0
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
-        MOVS     R1,#+0
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
@@ -972,51 +954,51 @@ draw_pause:
 //  317 	buttonStop.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL, hPauseWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
-        MOVW     R7,#+359
         STR      R0,[SP, #+12]
+        MOVW     R8,#+359
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R3,#+140
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R2,#+117
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
-        MOV      R0,R7
+        MOV      R0,R8
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
         STRH     R0,[R6, #+32]
 //  318 	buttonExtruOut.btnHandle = BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hPauseWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
-        LDR.W    R8,??DataTable16_12
         STR      R0,[SP, #+12]
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
         MOVS     R3,#+140
+        LDRSH    R0,[R6, #+0]
+        LDR.W    R7,??DataTable16_10
+        STR      R0,[SP, #+0]
         MOVS     R2,#+117
         MOVS     R1,#+142
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R8, #+0]
+        STRH     R0,[R7, #+0]
 //  319 	buttonMov.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hPauseWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
-        LDR.W    R9,??DataTable16_14
         STR      R0,[SP, #+12]
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
         MOVS     R3,#+140
+        LDRSH    R0,[R6, #+0]
+        LDR.W    R9,??DataTable16_12
+        STR      R0,[SP, #+0]
         MOVS     R2,#+117
         MOVS     R1,#+142
         MOVS     R0,#+121
@@ -1027,33 +1009,33 @@ draw_pause:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R1,#+142
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
-        MOVS     R1,#+142
         MOVS     R0,#+240
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R8, #+24]
+        STRH     R0,[R7, #+24]
 //  321 	buttonmore_pause.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL, hPauseWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R1,#+142
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
-        MOVS     R1,#+142
-        MOV      R0,R7
+        MOV      R0,R8
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
         STRH     R0,[R9, #+24]
@@ -1061,254 +1043,253 @@ draw_pause:
 //  323 	#if VERSION_WITH_PIC	
 //  324 	BUTTON_SetBmpFileName(buttonRecover.btnHandle, "bmp_resume.bin",1);
         MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_resume.bin">`
         LDRSH    R0,[R6, #+8]
+        ADR.W    R1,`?<Constant "bmp_resume.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  325 	BUTTON_SetBmpFileName(buttonStop.btnHandle, "bmp_stop.bin",1);
-        MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_stop.bin">`
         LDRSH    R0,[R6, #+32]
+        ADR.W    R1,`?<Constant "bmp_stop.bin">`
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  326 	BUTTON_SetBmpFileName(buttonExtruOut.btnHandle, "bmp_extruct.bin",1);
-        MOVS     R2,#+1
+        LDRSH    R0,[R7, #+0]
         ADR.W    R1,`?<Constant "bmp_extruct.bin">`
-        LDRSH    R0,[R8, #+0]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  327 	BUTTON_SetBmpFileName(buttonMov.btnHandle, "bmp_mov.bin",1);
-        MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_mov.bin">`
         LDRSH    R0,[R9, #+0]
+        ADR.W    R1,`?<Constant "bmp_mov.bin">`
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  328 	BUTTON_SetBmpFileName(buttonmore_pause.btnHandle, "bmp_more.bin",1);
-        MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_more.bin">`
         LDRSH    R0,[R9, #+24]
+        ADR.W    R1,`?<Constant "bmp_more.bin">`
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  329 	BUTTON_SetBmpFileName(buttonFilament_P.btnHandle, "bmp_filamentchange.bin",1); 
-        MOVS     R2,#+1
+        LDRSH    R0,[R7, #+24]
         ADR.W    R1,`?<Constant "bmp_filamentchange.bin">`
-        LDRSH    R0,[R8, #+24]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
 //  330 
 //  331 	BUTTON_SetBitmapEx(buttonRecover.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-        LDR.W    R7,??DataTable16_20
-        LDR.W    R10,??DataTable16_21
-        LDR.W    R11,??DataTable16_22
+        LDR.W    R11,??DataTable16_18
+        LDR.W    R10,??DataTable16_19
         LDRSB    R0,[R11, #+0]
-        STR      R0,[SP, #+0]
+        LDR.W    R8,??DataTable16_20
         LDRSB    R3,[R10, #+0]
-        MOV      R2,R7
-        MOVS     R1,#+0
+        STR      R0,[SP, #+0]
+        MOV      R2,R8
         LDRSH    R0,[R6, #+8]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  332 	BUTTON_SetBitmapEx(buttonStop.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R11, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R10, #+0]
-        MOV      R2,R7
-        MOVS     R1,#+0
+        STR      R0,[SP, #+0]
+        MOV      R2,R8
         LDRSH    R0,[R6, #+32]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  333 	BUTTON_SetBitmapEx(buttonExtruOut.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R11, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R10, #+0]
-        MOV      R2,R7
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
+        LDRSB    R3,[R10, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R8
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  334 	BUTTON_SetBitmapEx(buttonMov.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R11, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R10, #+0]
-        MOV      R2,R7
-        MOVS     R1,#+0
+        STR      R0,[SP, #+0]
+        MOV      R2,R8
         LDRSH    R0,[R9, #+0]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  335 	BUTTON_SetBitmapEx(buttonmore_pause.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R11, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R10, #+0]
-        MOV      R2,R7
-        MOVS     R1,#+0
+        STR      R0,[SP, #+0]
+        MOV      R2,R8
         LDRSH    R0,[R9, #+24]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  336 	BUTTON_SetBitmapEx(buttonFilament_P.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);	
         LDRSB    R0,[R11, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R10, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R8
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+24]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  337 
 //  338 
 //  339 	BUTTON_SetBkColor(buttonRecover.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+1
         LDRSH    R0,[R6, #+8]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  340 	BUTTON_SetBkColor(buttonRecover.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+0
         LDRSH    R0,[R6, #+8]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  341 	BUTTON_SetBkColor(buttonStop.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+1
         LDRSH    R0,[R6, #+32]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  342 	BUTTON_SetBkColor(buttonStop.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+0
         LDRSH    R0,[R6, #+32]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  343 	BUTTON_SetBkColor(buttonExtruOut.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
+        LDRSH    R0,[R7, #+0]
         MOVS     R1,#+1
-        LDRSH    R0,[R8, #+0]
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  344 	BUTTON_SetBkColor(buttonExtruOut.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-        LDR      R2,[R5, #+32]
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
+        LDR      R2,[R5, #+32]
+        LDRSH    R0,[R7, R1]
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  345 	BUTTON_SetBkColor(buttonMov.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+1
         LDRSH    R0,[R9, #+0]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  346 	BUTTON_SetBkColor(buttonMov.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+0
         LDRSH    R0,[R9, #+0]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  347 	BUTTON_SetBkColor(buttonmore_pause.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+1
         LDRSH    R0,[R9, #+24]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  348 	BUTTON_SetBkColor(buttonmore_pause.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
-        MOVS     R1,#+0
         LDRSH    R0,[R9, #+24]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  349 	BUTTON_SetBkColor(buttonFilament_P.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+1
-        LDRSH    R0,[R8, #+24]
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  350 	BUTTON_SetBkColor(buttonFilament_P.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
         LDR      R2,[R5, #+32]
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+24]
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
 //  351 
 //  352  	BUTTON_SetTextColor(buttonRecover.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+1
         LDRSH    R0,[R6, #+8]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  353 	BUTTON_SetTextColor(buttonRecover.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+0
         LDRSH    R0,[R6, #+8]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  354 	BUTTON_SetTextColor(buttonStop.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+1
         LDRSH    R0,[R6, #+32]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  355 	BUTTON_SetTextColor(buttonStop.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+0
         LDRSH    R0,[R6, #+32]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  356 	BUTTON_SetTextColor(buttonExtruOut.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
+        LDRSH    R0,[R7, #+0]
         MOVS     R1,#+1
-        LDRSH    R0,[R8, #+0]
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  357 	BUTTON_SetTextColor(buttonExtruOut.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
-        LDR      R2,[R5, #+36]
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+0]
+        LDR      R2,[R5, #+36]
+        LDRSH    R0,[R7, R1]
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  358 	BUTTON_SetTextColor(buttonMov.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+1
         LDRSH    R0,[R9, #+0]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  359 	BUTTON_SetTextColor(buttonMov.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+0
         LDRSH    R0,[R9, #+0]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  360 	BUTTON_SetTextColor(buttonmore_pause.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+1
         LDRSH    R0,[R9, #+24]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  361 	BUTTON_SetTextColor(buttonmore_pause.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
-        MOVS     R1,#+0
         LDRSH    R0,[R9, #+24]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  362 	BUTTON_SetTextColor(buttonFilament_P.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
         LDR      R2,[R5, #+36]
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+1
-        LDRSH    R0,[R8, #+24]
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  363 	BUTTON_SetTextColor(buttonFilament_P.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);       
         LDR      R2,[R5, #+36]
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R8, #+24]
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
 //  364     if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_pause_1
+        LDRB     R0,[R4, #+463]
+        CBZ.N    R0,??draw_pause_1
 //  365     {
 //  366         BUTTON_SetText(buttonRecover.btnHandle,pause_menu.resume);
-        LDR.N    R4,??DataTable16_23
-        LDR      R1,[R4, #+4]
+        LDR.N    R4,??DataTable16_21
         LDRSH    R0,[R6, #+8]
+        LDR      R1,[R4, #+4]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
 //  367         BUTTON_SetText(buttonStop.btnHandle,pause_menu.stop);
@@ -1318,7 +1299,7 @@ draw_pause:
         BL       BUTTON_SetText
 //  368         BUTTON_SetText(buttonExtruOut.btnHandle,pause_menu.extrude);
         LDR      R1,[R4, #+12]
-        LDRSH    R0,[R8, #+0]
+        LDRSH    R0,[R7, #+0]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
 //  369         BUTTON_SetText(buttonMov.btnHandle,pause_menu.move);
@@ -1333,7 +1314,7 @@ draw_pause:
         BL       BUTTON_SetText
 //  371         BUTTON_SetText(buttonFilament_P.btnHandle,pause_menu.filament);           
         LDR      R1,[R4, #+20]
-        LDRSH    R0,[R8, #+24]
+        LDRSH    R0,[R7, #+24]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
 //  372     }
@@ -1344,12 +1325,12 @@ draw_pause:
         MOVS     R0,#+0
         STR      R0,[SP, #+12]
         STR      R0,[SP, #+8]
+        MOVS     R3,#+30
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R2,#+230
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+30
-        MOVS     R2,#+230
         MOVS     R1,#+15
         MOVS     R0,#+125
           CFI FunCall PROGBAR_CreateEx
@@ -1357,17 +1338,17 @@ draw_pause:
         STRH     R0,[R6, #+6]
 //  376 	textPrintTemp1 = TEXT_CreateEx(LCD_WIDTH  / 4 + 5, 60, LCD_WIDTH / 4 - 4, 40, hPauseWnd, WM_CF_SHOW, TEXT_CF_LEFT,	GUI_ID_TEXT1, " ");
         ADR.N    R4,??DataTable16  ;; " "
-        STR      R4,[SP, #+16]
         MOVW     R0,#+353
         STR      R0,[SP, #+12]
+        STR      R4,[SP, #+16]
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R3,#+40
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R2,#+116
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+40
-        MOVS     R2,#+116
         MOVS     R1,#+60
         MOVS     R0,#+125
           CFI FunCall TEXT_CreateEx
@@ -1377,15 +1358,15 @@ draw_pause:
         STR      R4,[SP, #+16]
         MOV      R0,#+354
         STR      R0,[SP, #+12]
+        MOVS     R3,#+40
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+116
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R1,#+60
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+40
-        MOVS     R2,#+116
-        MOVS     R1,#+60
         MOVS     R0,#+240
           CFI FunCall TEXT_CreateEx
         BL       TEXT_CreateEx
@@ -1397,27 +1378,27 @@ draw_pause:
           CFI FunCall TEXT_SetTextAlign
         BL       TEXT_SetTextAlign
 //  380 	TEXT_SetTextAlign(textPrintTemp2,  GUI_TA_VCENTER | GUI_TA_LEFT);
-        MOVS     R1,#+12
         LDRSH    R0,[R6, #+4]
+        MOVS     R1,#+12
           CFI FunCall TEXT_SetTextAlign
         BL       TEXT_SetTextAlign
 //  381 	
 //  382 	PROGBAR_SetBarColor(printingBar, 0, GUI_GREEN);
+        LDRSH    R0,[R6, #+6]
         MOV      R2,#+65280
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+6]
           CFI FunCall PROGBAR_SetBarColor
         BL       PROGBAR_SetBarColor
 //  383 	
 //  384 	PROGBAR_SetTextColor(printingBar, 0, GUI_BLACK);
-        MOVS     R2,#+0
-        MOV      R1,R2
         LDRSH    R0,[R6, #+6]
+        MOVS     R2,#+0
+        MOVS     R1,#+0
           CFI FunCall PROGBAR_SetTextColor
         BL       PROGBAR_SetTextColor
 //  385 	PROGBAR_SetFont(printingBar, &GUI_FontHZ_fontHz14);
-        LDR.N    R1,??DataTable16_18
         LDRSH    R0,[R6, #+6]
+        LDR.N    R1,??DataTable16_16
           CFI FunCall PROGBAR_SetFont
         BL       PROGBAR_SetFont
 //  386 	
@@ -1464,8 +1445,6 @@ setProBarRatePause:
           CFI R6 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        SUB      SP,SP,#+16
-          CFI CFA R13+32
 //  400   //int rate = (long long)(sd.sdpos * 100) / sd.filesize;
 //  401     int rate;
 //  402   	volatile long long rate_tmp_pa;
@@ -1473,14 +1452,16 @@ setProBarRatePause:
 //  404     //rate = rate_tmp_pa / card.filesize;
 //  405 
 //  406 	if(from_flash_pic != 1)
-        LDR.N    R2,??DataTable16_24
+        LDR.N    R2,??DataTable16_22
+        LDR.N    R3,??DataTable16_23
+        LDRB     R3,[R3, #+0]
         ADDW     R0,R2,#+1116
-        LDR      R0,[R0, #+4]
         MOVS     R1,#+0
+        LDR      R0,[R0, #+4]
         LDR      R2,[R2, #+1116]
         MOVS     R4,#+100
-        LDR.N    R3,??DataTable16_25
-        LDRB     R3,[R3, #+0]
+        SUB      SP,SP,#+16
+          CFI CFA R13+32
         CMP      R3,#+1
         BEQ.N    ??setProBarRatePause_0
 //  407 	{
@@ -1489,9 +1470,6 @@ setProBarRatePause:
         STRD     R6,R7,[SP, #+0]
 //  409 		rate = rate_tmp_pa / card.filesize;
         LDRD     R0,R1,[SP, #+0]
-        MOVS     R3,#+0
-          CFI FunCall __aeabi_ldivmod
-        BL       __aeabi_ldivmod
         B.N      ??setProBarRatePause_1
 //  410 	}
 //  411 	else
@@ -1500,48 +1478,48 @@ setProBarRatePause:
 ??setProBarRatePause_0:
         STRD     R0,R1,[SP, #+0]
 //  414 		rate = (rate_tmp_pa-(PREVIEW_SIZE+To_pre_view))* 100 / (card.filesize-(PREVIEW_SIZE+To_pre_view));
-        LDR.N    R0,??DataTable16_26
+        LDR.N    R0,??DataTable16_24
         LDR      R3,[R0, #+0]
+        LDR.N    R0,??DataTable16_25  ;; 0x317e0
         LDRD     R6,R7,[SP, #+0]
-        LDR.N    R0,??DataTable16_27  ;; 0x317e0
         ADDS     R0,R0,R3
         SUBS     R6,R6,R0
         SBCS     R7,R7,R1
-        UMULL    R0,R1,R4,R6
-        MLA      R1,R4,R7,R1
         SUBS     R2,R2,R3
-        LDR.N    R3,??DataTable16_28  ;; 0xfffce820
+        UMULL    R0,R1,R4,R6
+        LDR.N    R3,??DataTable16_26  ;; 0xfffce820
+        MLA      R1,R4,R7,R1
         ADDS     R2,R3,R2
+??setProBarRatePause_1:
         MOVS     R3,#+0
           CFI FunCall __aeabi_ldivmod
         BL       __aeabi_ldivmod
 //  415 	}
 //  416 
 //  417 	if(rate <= 0)
-??setProBarRatePause_1:
         CMP      R0,#+1
         BLT.N    ??setProBarRatePause_2
 //  418 		return;
 //  419 	
 //  420 	
 //  421 	if(disp_state == PAUSE_UI)
-        LDR.N    R1,??DataTable16_16
+        LDR.N    R1,??DataTable16_14
         LDRSB    R1,[R1, #+0]
         CMP      R1,#+6
         BNE.N    ??setProBarRatePause_2
 //  422 	{
 //  423 		PROGBAR_SetValue(printingBar, rate );
-        MOV      R1,R0
-        LDR.N    R0,??DataTable16_4
-        LDRSH    R0,[R0, #+6]
         ADD      SP,SP,#+16
           CFI CFA R13+16
+        MOV      R1,R0
         POP      {R4,R6,R7,LR}
           CFI R4 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        LDR.N    R0,??DataTable16_1
+        LDRSH    R0,[R0, #+6]
           CFI FunCall PROGBAR_SetValue
         B.W      PROGBAR_SetValue
           CFI R4 Frame(CFA, -16)
@@ -1553,7 +1531,9 @@ setProBarRatePause:
 //  425 	
 //  426 }
 ??setProBarRatePause_2:
-        POP      {R0-R4,R6,R7,PC}  ;; return
+        ADD      SP,SP,#+16
+          CFI CFA R13+16
+        POP      {R4,R6,R7,PC}    ;; return
           CFI EndBlock cfiBlock2
 //  427 
 
@@ -1580,46 +1560,46 @@ disp_temp_pause:
           CFI FunCall __aeabi_memclr4
         BL       __aeabi_memclr4
 //  431 	
-//  432 	TEXT_SetTextColor(textPrintTemp1, gCfgItems.state_text_color);
-        LDR.N    R4,??DataTable16_4
-        LDR.N    R5,??DataTable16_1
-        LDR      R1,[R5, #+16]
+//  432 	TEXT_SetTextColor(textPrintTemp1, gCfgItems.title_color);
+        LDR.N    R4,??DataTable16_1
+        LDR.N    R5,??DataTable16_3
         LDRSH    R0,[R4, #+2]
+        LDR      R1,[R5, #+24]
           CFI FunCall TEXT_SetTextColor
         BL       TEXT_SetTextColor
-//  433 	TEXT_SetTextColor(textPrintTemp2, gCfgItems.state_text_color);
-        LDR      R1,[R5, #+16]
+//  433 	TEXT_SetTextColor(textPrintTemp2, gCfgItems.title_color);
+        LDR      R1,[R5, #+24]
         LDRSH    R0,[R4, #+4]
           CFI FunCall TEXT_SetTextColor
         BL       TEXT_SetTextColor
 //  434 
-//  435 	TEXT_SetBkColor(textPrintTemp1, gCfgItems.state_background_color);
-        LDR      R1,[R5, #+12]
+//  435 	TEXT_SetBkColor(textPrintTemp1, gCfgItems.background_color);
+        LDR      R1,[R5, #+20]
         LDRSH    R0,[R4, #+2]
           CFI FunCall TEXT_SetBkColor
         BL       TEXT_SetBkColor
-//  436 	TEXT_SetBkColor(textPrintTemp2, gCfgItems.state_background_color);
-        LDR      R1,[R5, #+12]
+//  436 	TEXT_SetBkColor(textPrintTemp2, gCfgItems.background_color);
+        LDR      R1,[R5, #+20]
         LDRSH    R0,[R4, #+4]
           CFI FunCall TEXT_SetBkColor
         BL       TEXT_SetBkColor
 //  437 
 //  438 	TEXT_SetFont(textPrintTemp1,&GUI_FontHZ_fontHz14);
-        LDR.N    R5,??DataTable16_18
-        MOV      R1,R5
+        LDR.N    R5,??DataTable16_16
         LDRSH    R0,[R4, #+2]
+        MOV      R1,R5
           CFI FunCall TEXT_SetFont
         BL       TEXT_SetFont
 //  439 	TEXT_SetFont(textPrintTemp2,&GUI_FontHZ_fontHz14);
-        MOV      R1,R5
         LDRSH    R0,[R4, #+4]
+        MOV      R1,R5
           CFI FunCall TEXT_SetFont
         BL       TEXT_SetFont
 //  440 
 //  441 	if(mksCfg.extruders == 2)
-        LDR.N    R6,??DataTable16_7
-        LDRB     R7,[R6, #+54]
-        LDR.N    R5,??DataTable16_29
+        LDR.N    R6,??DataTable16_5
+        LDR.N    R5,??DataTable16_27
+        LDRB     R7,[R6, #+56]
         LDR      R0,[R5, #+0]
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
@@ -1633,21 +1613,17 @@ disp_temp_pause:
         BNE.N    ??disp_temp_pause_1
 //  444 		{
 //  445 			sprintf(buf, " E1:%d\n B:%d", (int)thermalManager.current_temperature[0], (int)thermalManager.current_temperature_bed);
-        LDR.N    R0,??DataTable16_30
+        LDR.N    R0,??DataTable16_28
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
+        ADR.W    R1,`?<Constant " E1:%d\\n B:%d">`
         MOV      R3,R0
         MOV      R2,R8
-        ADR.W    R1,`?<Constant " E1:%d\\n B:%d">`
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
 //  446 			TEXT_SetText(textPrintTemp1, buf);
-        ADD      R1,SP,#+0
-        LDRSH    R0,[R4, #+2]
-          CFI FunCall TEXT_SetText
-        BL       TEXT_SetText
         B.N      ??disp_temp_pause_2
 //  447 		}
 //  448 		else
@@ -1660,36 +1636,30 @@ disp_temp_pause:
           CFI FunCall sprintf
         BL       sprintf
 //  451 			TEXT_SetText(textPrintTemp1, buf);			
-        ADD      R1,SP,#+0
+??disp_temp_pause_2:
         LDRSH    R0,[R4, #+2]
+        ADD      R1,SP,#+0
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
 //  452 		}
 //  453 		memset(buf, 0, sizeof(buf));
-??disp_temp_pause_2:
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        MOVS     R1,#+50
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 //  454 		sprintf(buf, "E2:%d\nFAN:%d", (int)thermalManager.current_temperature[1],fanSpeeds[0]);
-        LDR.N    R0,??DataTable16_31
-        LDR      R3,[R0, #+0]
-        MOV      R6,R3
+        LDR.N    R0,??DataTable16_29
+        LDR      R6,[R0, #+0]
         LDR      R0,[R5, #+4]
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
+        ADR.W    R1,`?<Constant "E2:%d\\nFAN:%d">`
         MOV      R2,R0
         MOV      R3,R6
-        ADR.W    R1,`?<Constant "E2:%d\\nFAN:%d">`
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
 //  455 		TEXT_SetText(textPrintTemp2, buf);
-        ADD      R1,SP,#+0
-        LDRSH    R0,[R4, #+4]
-          CFI FunCall TEXT_SetText
-        BL       TEXT_SetText
         B.N      ??disp_temp_pause_3
 //  456 		
 //  457 	}
@@ -1701,21 +1671,17 @@ disp_temp_pause:
         BNE.N    ??disp_temp_pause_4
 //  461 		{
 //  462 			sprintf(buf, " E1:%d\n B:%d", (int)thermalManager.current_temperature[0], (int)thermalManager.current_temperature_bed);
-        LDR.N    R0,??DataTable16_30
+        LDR.N    R0,??DataTable16_28
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
+        ADR.W    R1,`?<Constant " E1:%d\\n B:%d">`
         MOV      R3,R0
         MOV      R2,R8
-        ADR.W    R1,`?<Constant " E1:%d\\n B:%d">`
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
 //  463 			TEXT_SetText(textPrintTemp1, buf);
-        ADD      R1,SP,#+0
-        LDRSH    R0,[R4, #+2]
-          CFI FunCall TEXT_SetText
-        BL       TEXT_SetText
         B.N      ??disp_temp_pause_5
 //  464 		}
 //  465 		else
@@ -1728,28 +1694,28 @@ disp_temp_pause:
           CFI FunCall sprintf
         BL       sprintf
 //  468 			TEXT_SetText(textPrintTemp1, buf);			
-        ADD      R1,SP,#+0
+??disp_temp_pause_5:
         LDRSH    R0,[R4, #+2]
+        ADD      R1,SP,#+0
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
 //  469 		}
 //  470 		memset(buf, 0, sizeof(buf));
-??disp_temp_pause_5:
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        MOVS     R1,#+50
         ADD      R0,SP,#+0
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 //  471 		sprintf(buf, "FAN:%d\n", fanSpeeds[0]);
-        LDR.N    R0,??DataTable16_31
-        LDR      R2,[R0, #+0]
+        LDR.N    R0,??DataTable16_29
         ADR.W    R1,`?<Constant "FAN:%d\\n">`
+        LDR      R2,[R0, #+0]
         ADD      R0,SP,#+0
           CFI FunCall sprintf
         BL       sprintf
 //  472 		TEXT_SetText(textPrintTemp2, buf);
-        ADD      R1,SP,#+0
+??disp_temp_pause_3:
         LDRSH    R0,[R4, #+4]
+        ADD      R1,SP,#+0
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
 //  473 	}		
@@ -1757,7 +1723,6 @@ disp_temp_pause:
 //  475 
 //  476 
 //  477 }
-??disp_temp_pause_3:
         ADD      SP,SP,#+56
           CFI CFA R13+24
         POP      {R4-R8,PC}       ;; return
@@ -1776,17 +1741,16 @@ Clear_pause:
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 //  481 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R0,??DataTable16_1
-        LDR      R0,[R0, #+4]
+        LDR.N    R0,??DataTable16_3
+        LDR      R0,[R0, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  482 	if(WM_IsWindow(hPauseWnd))
-        LDR.N    R4,??DataTable16_4
+        LDR.N    R4,??DataTable16_1
         LDRSH    R0,[R4, #+0]
           CFI FunCall WM_IsWindow
         BL       WM_IsWindow
-        CMP      R0,#+0
-        BEQ.N    ??Clear_pause_0
+        CBZ.N    R0,??Clear_pause_0
 //  483 	{
 //  484 		WM_DeleteWindow(hPauseWnd);
         LDRSH    R0,[R4, #+0]
@@ -1818,115 +1782,115 @@ Clear_pause:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable16_1:
-        DC32     gCfgItems
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable16_2:
-        DC32     X_ADD
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable16_3:
-        DC32     X_INTERVAL
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable16_4:
         DC32     hPauseWnd
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_5:
+??DataTable16_2:
         DC32     last_disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_6:
+??DataTable16_3:
+        DC32     gCfgItems
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_4:
         DC32     mksReprint
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_7:
+??DataTable16_5:
         DC32     mksCfg
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_8:
+??DataTable16_6:
         DC32     pause_from_high_level
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_9:
+??DataTable16_7:
         DC32     0x42210110
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_10:
+??DataTable16_8:
         DC32     0x42230118
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_11:
+??DataTable16_9:
         DC32     pause_resum
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_12:
+??DataTable16_10:
         DC32     buttonExtruOut
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_13:
+??DataTable16_11:
         DC32     feedrate_mm_s
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_14:
+??DataTable16_12:
         DC32     buttonMov
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_15:
+??DataTable16_13:
         DC32     disp_state_stack
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_16:
+??DataTable16_14:
         DC32     disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_17:
+??DataTable16_15:
         DC32     GUI_FontHZ16
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_18:
+??DataTable16_16:
         DC32     GUI_FontHZ_fontHz14
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_19:
+??DataTable16_17:
         DC32     _Z10cbPauseWinP10WM_MESSAGE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_18:
+        DC32     BMP_PIC_Y
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_19:
+        DC32     BMP_PIC_X
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1938,66 +1902,54 @@ Clear_pause:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable16_21:
-        DC32     BMP_PIC_X
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable16_22:
-        DC32     BMP_PIC_Y
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable16_23:
         DC32     pause_menu
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_24:
+??DataTable16_22:
         DC32     card
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_25:
+??DataTable16_23:
         DC32     from_flash_pic
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_26:
+??DataTable16_24:
         DC32     To_pre_view
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_27:
+??DataTable16_25:
         DC32     0x317e0
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_28:
+??DataTable16_26:
         DC32     0xfffce820
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_29:
+??DataTable16_27:
         DC32     _ZN11Temperature19current_temperatureE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_30:
+??DataTable16_28:
         DC32     _ZN11Temperature23current_temperature_bedE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable16_31:
+??DataTable16_29:
         DC32     fanSpeeds
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -2102,9 +2054,9 @@ _ZTI5Print:
 // 
 //   152 bytes in section .bss
 //    55 bytes in section .rodata
-// 2 434 bytes in section .text
+// 2 446 bytes in section .text
 // 
-// 2 434 bytes of CODE  memory
+// 2 446 bytes of CODE  memory
 //    54 bytes of CONST memory (+ 1 byte shared)
 //   152 bytes of DATA  memory
 //

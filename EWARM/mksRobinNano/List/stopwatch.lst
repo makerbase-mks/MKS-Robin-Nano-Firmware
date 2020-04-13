@@ -1,80 +1,77 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:06:11
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:25:21
 # Copyright 1999-2014 IAR Systems AB.
 #
 #    Cpu mode     =  thumb
 #    Endian       =  little
 #    Source file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stopwatch.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stopwatch.cpp
 #    Command line =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stopwatch.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stopwatch.cpp
 #        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 #        MKS_ROBIN_NANO -D TFT35 -lC
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        -lA
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        --diag_suppress Pa050 -o
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
 #        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\INC\c\DLib_Config_Full.h" -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-#        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\CMSIS\Include\"
 #    List file    =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\stopwatch.lst
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\stopwatch.lst
 #    Object file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\stopwatch.o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\stopwatch.o
 #
 ###############################################################################
 
-E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\stopwatch.cpp
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\stopwatch.cpp
       1          /**
       2           * Marlin 3D Printer Firmware
       3           * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -101,51 +98,51 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
   #define UNUSED(x) ((void)(x))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
           incompatible redefinition of macro "UNUSED" (declared at line 101 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\macros.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\macros.h")
 
   		volatile volatile float desireBedTempBak;
   		         ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Inc\mks_cfg.h",613  Warning[Pe083]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Inc\mks_cfg.h",626  Warning[Pe083]: 
           type qualifier specified more than once
 
   #define strcpy_P(dest, src) strcpy((dest), (src))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
           incompatible redefinition of macro "strcpy_P" (declared at line 93
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define strstr_P(a, b) strstr((a), (b))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
           incompatible redefinition of macro "strstr_P" (declared at line 94
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define sprintf_P(s, f, ...) sprintf((s), (f), __VA_ARGS__)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
           incompatible redefinition of macro "sprintf_P" (declared at line 95
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define pgm_read_word_near(addr) pgm_read_word(addr)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
           incompatible redefinition of macro "pgm_read_word_near" (declared at
           line 65 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
     }
     ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
           missing return statement at end of non-void function
           "position_is_reachable_IS_KINEMATIC"
      24          #include "stopwatch.h"
@@ -154,13 +151,20 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    \                                 In section .text, align 2, keep-with-next
      26          Stopwatch::Stopwatch() {
    \                     _ZN9StopwatchC1Ev: (+1)
-   \   00000000   0xB510             PUSH     {R4,LR}
-   \   00000002   0x4604             MOV      R4,R0
+   \   00000000   0xBF00             Nop      
      27            this->reset();
-   \   00000004   0x.... 0x....      BL       _ZN9Stopwatch5resetEv
+   \   00000002                      REQUIRE ?Subroutine0
+   \   00000002                      ;; // Fall through to label ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x7001             STRB     R1,[R0, #+0]
+   \   00000004   0x6081             STR      R1,[R0, #+8]
+   \   00000006   0x60C1             STR      R1,[R0, #+12]
+   \   00000008   0x6041             STR      R1,[R0, #+4]
      28          }
-   \   00000008   0x4620             MOV      R0,R4
-   \   0000000A   0xBD10             POP      {R4,PC}          ;; return
+   \   0000000A   0x4770             BX       LR               ;; return
      29          
 
    \                                 In section .text, align 2, keep-with-next
@@ -173,29 +177,30 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
      33            #endif
      34          
      35            if (this->isRunning() || this->isPaused()) {
-   \   00000004   0x.... 0x....      BL       _ZN9Stopwatch9isRunningEv
-   \   00000008   0x2800             CMP      R0,#+0
-   \   0000000A   0xD104             BNE.N    ??stop_0
-   \   0000000C   0x4620             MOV      R0,R4
-   \   0000000E   0x.... 0x....      BL       _ZN9Stopwatch8isPausedEv
-   \   00000012   0x2800             CMP      R0,#+0
-   \   00000014   0xD006             BEQ.N    ??stop_1
+   \   00000004   0xF994 0x0000      LDRSB    R0,[R4, #+0]
+   \   00000008   0x2801             CMP      R0,#+1
+   \   0000000A   0xBF18             IT       NE 
+   \   0000000C   0x2802             CMPNE    R0,#+2
+   \   0000000E   0xD001             BEQ.N    ??stop_0
      36              this->state = STOPPED;
-   \                     ??stop_0: (+1)
-   \   00000016   0x2000             MOVS     R0,#+0
-   \   00000018   0x7020             STRB     R0,[R4, #+0]
      37              this->stopTimestamp = millis();
-   \   0000001A   0x.... 0x....      BL       HAL_GetTick
-   \   0000001E   0x60E0             STR      R0,[R4, #+12]
      38              return true;
-   \   00000020   0x2001             MOVS     R0,#+1
-   \   00000022   0xBD10             POP      {R4,PC}
      39            }
      40            else return false;
-   \                     ??stop_1: (+1)
-   \   00000024   0x2000             MOVS     R0,#+0
-   \   00000026   0xBD10             POP      {R4,PC}          ;; return
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0xBD10             POP      {R4,PC}
+   \                     ??stop_0: (+1)
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x....             B.N      ?Subroutine1
      41          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \   00000000   0x7020             STRB     R0,[R4, #+0]
+   \   00000002   0x.... 0x....      BL       HAL_GetTick
+   \   00000006   0x60E0             STR      R0,[R4, #+12]
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0xBD10             POP      {R4,PC}          ;; return
      42          
 
    \                                 In section .text, align 2, keep-with-next
@@ -208,23 +213,20 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
      46            #endif
      47          
      48            if (this->isRunning()) {
-   \   00000004   0x.... 0x....      BL       _ZN9Stopwatch9isRunningEv
-   \   00000008   0x2800             CMP      R0,#+0
-   \   0000000A   0xD006             BEQ.N    ??pause_0
+   \   00000004   0xF994 0x0000      LDRSB    R0,[R4, #+0]
+   \   00000008   0x2801             CMP      R0,#+1
+   \   0000000A   0xD001             BEQ.N    ??pause_0
      49              this->state = PAUSED;
-   \   0000000C   0x2002             MOVS     R0,#+2
-   \   0000000E   0x7020             STRB     R0,[R4, #+0]
      50              this->stopTimestamp = millis();
-   \   00000010   0x.... 0x....      BL       HAL_GetTick
-   \   00000014   0x60E0             STR      R0,[R4, #+12]
      51              return true;
-   \   00000016   0x2001             MOVS     R0,#+1
-   \   00000018   0xBD10             POP      {R4,PC}
      52            }
      53            else return false;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0xBD10             POP      {R4,PC}
    \                     ??pause_0: (+1)
-   \   0000001A   0x2000             MOVS     R0,#+0
-   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+   \   00000010   0x2002             MOVS     R0,#+2
+   \   00000012                      REQUIRE ?Subroutine1
+   \   00000012                      ;; // Fall through to label ?Subroutine1
      54          }
      55          
 
@@ -238,37 +240,43 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
      59            #endif
      60          
      61            if (!this->isRunning()) {
-   \   00000004   0x.... 0x....      BL       _ZN9Stopwatch9isRunningEv
-   \   00000008   0x2800             CMP      R0,#+0
-   \   0000000A   0xD112             BNE.N    ??start_0
+   \   00000004   0xF994 0x0000      LDRSB    R0,[R4, #+0]
+   \   00000008   0x2801             CMP      R0,#+1
+   \   0000000A   0xD017             BEQ.N    ??start_0
      62              if (this->isPaused()) this->accumulator = this->duration();
-   \   0000000C   0x4620             MOV      R0,R4
-   \   0000000E   0x.... 0x....      BL       _ZN9Stopwatch8isPausedEv
-   \   00000012   0x2800             CMP      R0,#+0
-   \   00000014   0x4620             MOV      R0,R4
-   \   00000016   0xD003             BEQ.N    ??start_1
-   \   00000018   0x.... 0x....      BL       _ZN9Stopwatch8durationEv
-   \   0000001C   0x6060             STR      R0,[R4, #+4]
-   \   0000001E   0xE001             B.N      ??start_2
+   \   0000000C   0x2802             CMP      R0,#+2
+   \   0000000E   0xD004             BEQ.N    ??start_1
      63              else this->reset();
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0x7020             STRB     R0,[R4, #+0]
+   \   00000014   0x60A0             STR      R0,[R4, #+8]
+   \   00000016   0x60E0             STR      R0,[R4, #+12]
+   \   00000018   0xE008             B.N      ??start_2
    \                     ??start_1: (+1)
-   \   00000020   0x.... 0x....      BL       _ZN9Stopwatch5resetEv
+   \   0000001A   0x68E1             LDR      R1,[R4, #+12]
+   \   0000001C   0x68A2             LDR      R2,[R4, #+8]
+   \   0000001E   0x6860             LDR      R0,[R4, #+4]
+   \   00000020   0x1A89             SUBS     R1,R1,R2
+   \   00000022   0xF44F 0x727A      MOV      R2,#+1000
+   \   00000026   0xFBB1 0xF1F2      UDIV     R1,R1,R2
+   \   0000002A   0x1808             ADDS     R0,R1,R0
+   \                     ??start_2: (+1)
+   \   0000002C   0x6060             STR      R0,[R4, #+4]
      64          
      65              this->state = RUNNING;
-   \                     ??start_2: (+1)
-   \   00000024   0x2001             MOVS     R0,#+1
-   \   00000026   0x7020             STRB     R0,[R4, #+0]
-     66              this->startTimestamp = millis();
-   \   00000028   0x.... 0x....      BL       HAL_GetTick
-   \   0000002C   0x60A0             STR      R0,[R4, #+8]
-     67              return true;
    \   0000002E   0x2001             MOVS     R0,#+1
-   \   00000030   0xBD10             POP      {R4,PC}
+   \   00000030   0x7020             STRB     R0,[R4, #+0]
+     66              this->startTimestamp = millis();
+   \   00000032   0x.... 0x....      BL       HAL_GetTick
+   \   00000036   0x60A0             STR      R0,[R4, #+8]
+     67              return true;
+   \   00000038   0x2001             MOVS     R0,#+1
+   \   0000003A   0xBD10             POP      {R4,PC}
      68            }
      69            else return false;
    \                     ??start_0: (+1)
-   \   00000032   0x2000             MOVS     R0,#+0
-   \   00000034   0xBD10             POP      {R4,PC}          ;; return
+   \   0000003C   0x2000             MOVS     R0,#+0
+   \   0000003E   0xBD10             POP      {R4,PC}          ;; return
      70          }
      71          
 
@@ -280,16 +288,11 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
      76          
      77            this->state = STOPPED;
    \                     _ZN9Stopwatch5resetEv: (+1)
-   \   00000000   0x2100             MOVS     R1,#+0
-   \   00000002   0x7001             STRB     R1,[R0, #+0]
+   \   00000000   0x....             B.N      ?Subroutine0
      78            this->startTimestamp = 0;
-   \   00000004   0x6081             STR      R1,[R0, #+8]
      79            this->stopTimestamp = 0;
-   \   00000006   0x60C1             STR      R1,[R0, #+12]
      80            this->accumulator = 0;
-   \   00000008   0x6041             STR      R1,[R0, #+4]
      81          }
-   \   0000000A   0x4770             BX       LR               ;; return
      82          
 
    \                                 In section .text, align 2, keep-with-next
@@ -298,12 +301,9 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    \                     _ZN9Stopwatch9isRunningEv: (+1)
    \   00000000   0xF990 0x0000      LDRSB    R0,[R0, #+0]
    \   00000004   0x2801             CMP      R0,#+1
-   \   00000006   0xD101             BNE.N    ??isRunning_0
-   \   00000008   0x2001             MOVS     R0,#+1
-   \   0000000A   0x4770             BX       LR
-   \                     ??isRunning_0: (+1)
-   \   0000000C   0x2000             MOVS     R0,#+0
-   \   0000000E   0x4770             BX       LR               ;; return
+   \   00000006   0xBF18             IT       NE 
+   \   00000008   0x2000             MOVNE    R0,#+0
+   \   0000000A   0x4770             BX       LR               ;; return
      85          }
      86          
 
@@ -329,40 +329,35 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    \   00000002   0x4604             MOV      R4,R0
      92            return (((this->isRunning()) ? millis() : this->stopTimestamp)
      93                    - this->startTimestamp) / 1000UL + this->accumulator;
-   \   00000004   0x.... 0x....      BL       _ZN9Stopwatch9isRunningEv
-   \   00000008   0x2800             CMP      R0,#+0
-   \   0000000A   0xD002             BEQ.N    ??duration_0
-   \   0000000C   0x.... 0x....      BL       HAL_GetTick
-   \   00000010   0xE000             B.N      ??duration_1
-   \                     ??duration_0: (+1)
-   \   00000012   0x68E0             LDR      R0,[R4, #+12]
-   \                     ??duration_1: (+1)
-   \   00000014   0x68A1             LDR      R1,[R4, #+8]
-   \   00000016   0x1A40             SUBS     R0,R0,R1
-   \   00000018   0xF44F 0x717A      MOV      R1,#+1000
-   \   0000001C   0xFBB0 0xF0F1      UDIV     R0,R0,R1
-   \   00000020   0x6861             LDR      R1,[R4, #+4]
-   \   00000022   0x1808             ADDS     R0,R1,R0
-   \   00000024   0xBD10             POP      {R4,PC}          ;; return
+   \   00000004   0xF994 0x0000      LDRSB    R0,[R4, #+0]
+   \   00000008   0x2801             CMP      R0,#+1
+   \   0000000A   0xBF14             ITE      NE 
+   \   0000000C   0x68E0             LDRNE    R0,[R4, #+12]
+   \   0000000E   0x.... 0x....      BLEQ     HAL_GetTick
+   \   00000012   0x68A1             LDR      R1,[R4, #+8]
+   \   00000014   0x1A40             SUBS     R0,R0,R1
+   \   00000016   0xF44F 0x717A      MOV      R1,#+1000
+   \   0000001A   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   0000001E   0x6861             LDR      R1,[R4, #+4]
+   \   00000020   0x1808             ADDS     R0,R1,R0
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
      94          }
      95          
 
    \                                 In section .text, align 2, keep-with-next
      96          void Stopwatch::getTime(millis_t *accu,millis_t *startTime,millis_t *stopTime)
      97          {
-   \                     _ZN9Stopwatch7getTimeEPmS0_S0_: (+1)
-   \   00000000   0xB410             PUSH     {R4}
      98          	*accu = accumulator;
-   \   00000002   0x6844             LDR      R4,[R0, #+4]
-   \   00000004   0x600C             STR      R4,[R1, #+0]
+   \                     _ZN9Stopwatch7getTimeEPmS0_S0_: (+1)
+   \   00000000   0xF8D0 0xC004      LDR      R12,[R0, #+4]
+   \   00000004   0xF8C1 0xC000      STR      R12,[R1, #+0]
      99          	*startTime = startTimestamp;
-   \   00000006   0x6881             LDR      R1,[R0, #+8]
-   \   00000008   0x6011             STR      R1,[R2, #+0]
+   \   00000008   0x6881             LDR      R1,[R0, #+8]
+   \   0000000A   0x6011             STR      R1,[R2, #+0]
     100          	*stopTime = stopTimestamp;
-   \   0000000A   0x68C0             LDR      R0,[R0, #+12]
-   \   0000000C   0x6018             STR      R0,[R3, #+0]
+   \   0000000C   0x68C0             LDR      R0,[R0, #+12]
+   \   0000000E   0x6018             STR      R0,[R3, #+0]
     101          }
-   \   0000000E   0xBC10             POP      {R4}
    \   00000010   0x4770             BX       LR               ;; return
     102          
 
@@ -385,9 +380,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    \                                 In section .text, align 2, keep-with-next
    \   __code __interwork __softfp Stopwatch::subobject Stopwatch()
    \                     _ZN9StopwatchC2Ev: (+1)
-   \   00000000   0xBF00             Nop      
-   \   00000002                      REQUIRE _ZN9StopwatchC1Ev
-   \   00000002                      ;; // Fall through to label Stopwatch::Stopwatch()
+   \   00000000   0x....             B.N      ?Subroutine0
     110          
     111          #if ENABLED(DEBUG_STOPWATCH)
     112          
@@ -405,55 +398,47 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
    .cstack Function
    ------- --------
-       8   Stopwatch::Stopwatch()
-         8   -> Stopwatch::reset()
+       0   Stopwatch::Stopwatch()
        8   Stopwatch::duration()
          8   -> HAL_GetTick
-         8   -> Stopwatch::isRunning()
-       4   Stopwatch::getTime(millis_t *, millis_t *, millis_t *)
+       0   Stopwatch::getTime(millis_t *, millis_t *, millis_t *)
        0   Stopwatch::isPaused()
        0   Stopwatch::isRunning()
        8   Stopwatch::pause()
          8   -> HAL_GetTick
-         8   -> Stopwatch::isRunning()
        0   Stopwatch::reset()
        0   Stopwatch::setTime(millis_t, millis_t, millis_t)
        8   Stopwatch::start()
          8   -> HAL_GetTick
-         8   -> Stopwatch::duration()
-         8   -> Stopwatch::isPaused()
-         8   -> Stopwatch::isRunning()
-         8   -> Stopwatch::reset()
        8   Stopwatch::stop()
          8   -> HAL_GetTick
-         8   -> Stopwatch::isPaused()
-         8   -> Stopwatch::isRunning()
        0   Stopwatch::subobject Stopwatch()
-         0   -> Stopwatch::Stopwatch()
 
 
    Section sizes:
 
    Bytes  Function/Label
    -----  --------------
-      12  Stopwatch::Stopwatch()
-      38  Stopwatch::duration()
+      12  ?Subroutine0
+      12  ?Subroutine1
+       2  Stopwatch::Stopwatch()
+      36  Stopwatch::duration()
       18  Stopwatch::getTime(millis_t *, millis_t *, millis_t *)
       16  Stopwatch::isPaused()
-      16  Stopwatch::isRunning()
-      30  Stopwatch::pause()
-      12  Stopwatch::reset()
+      12  Stopwatch::isRunning()
+      18  Stopwatch::pause()
+       2  Stopwatch::reset()
       12  Stopwatch::setTime(millis_t, millis_t, millis_t)
-      54  Stopwatch::start()
-      40  Stopwatch::stop()
+      64  Stopwatch::start()
+      24  Stopwatch::stop()
        2  Stopwatch::subobject Stopwatch()
        1  -- Other
 
  
    1 byte  in section .rodata
- 250 bytes in section .text
+ 230 bytes in section .text
  
- 250 bytes of CODE  memory
+ 230 bytes of CODE  memory
    0 bytes of CONST memory (+ 1 byte shared)
 
 Errors: none

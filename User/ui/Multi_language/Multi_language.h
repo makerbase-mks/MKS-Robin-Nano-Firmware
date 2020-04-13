@@ -301,6 +301,8 @@ typedef struct move_menu_disp
 	const char *y_dec;
 	const char *z_add;
 	const char *z_dec;
+	const char *step_001mm;
+	const char *step_005mm;
 	const char *step_01mm;
 	const char *step_1mm;
 	const char *step_10mm;
@@ -538,6 +540,7 @@ typedef struct operation_menu_disp
 	const char *auto_off;
 	const char *manual_off;
 	const char *back;
+	const char *babystep;
 }operation_menu_def;
 extern operation_menu_def operation_menu;
 typedef struct pause_menu_disp
@@ -703,6 +706,8 @@ extern TemperatureSettings_menu_def TemperatureSettings_menu;
 #define AXIS_Y_DEC_TEXT			    "Y-"
 #define AXIS_Z_ADD_TEXT			    "Z+"
 #define AXIS_Z_DEC_TEXT			    "Z-"
+#define TEXT_001MM					"0.01mm"
+#define TEXT_005MM					"0.05mm"
 #define TEXT_01MM					"0.1mm"
 #define TEXT_1MM					"1mm"
 #define TEXT_10MM					"10mm"

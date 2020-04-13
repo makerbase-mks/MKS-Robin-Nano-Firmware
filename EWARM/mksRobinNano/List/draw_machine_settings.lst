@@ -1,0 +1,1564 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:24:19
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_machine_settings.cpp
+#    Command line =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_machine_settings.cpp
+#        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
+#        MKS_ROBIN_NANO -D TFT35 -lC
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
+#        -lA
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
+#        --diag_suppress Pa050 -o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
+#        -I
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_machine_settings.lst
+#    Object file  =  
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\draw_machine_settings.o
+#
+###############################################################################
+
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_machine_settings.cpp
+      1          #include "gui.h"
+      2          #include "button.h"
+      3          #include "draw_ui.h"
+
+  #define UNUSED(x) ((void)(x))
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 101 of
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../M
+          iddlewares/Third_Party/Marlin\macros.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Inc\mks_cfg.h",626  Warning[Pe083]: 
+          type qualifier specified more than once
+
+    #define FILAMENT_CHANGE_TEXT_EN				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_en.h",337  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_EN"
+          (declared at line 315)
+
+  #define DIALOG_UNBIND_PRINTER_CN            "Ëß£Èô§ÁªëÂÆö?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_s_cn.h",408  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_CN"
+          (declared at line 403)
+
+    #define FILAMENT_CHANGE_TEXT_T_CN				"ÂæÖÊâìÂç∞Ê©üÊö´ÂÅúÂêé,\nË´ãÊåâ<ÈÄ≤Êñô>Êàñ<ÈÄÄÊñô>"
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_t_cn.h",318  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_T_CN"
+          (declared at line 304)
+
+    #define FILAMENT_CHANGE_TEXT_RU				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_ru.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_RU"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_RU            "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_ru.h",231  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_RU"
+          (declared at line 226)
+
+    #define FILAMENT_CHANGE_TEXT_FR				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_fr.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_FR"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_FR        "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_fr.h",234  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_FR"
+          (declared at line 230)
+
+    #define FILAMENT_CHANGE_TEXT_SP				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_sp.h",133  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_SP"
+          (declared at line 114)
+
+    #define FILAMENT_CHANGE_TEXT_IT				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_it.h",134  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_IT"
+          (declared at line 114)
+
+  #define DIALOG_UNBIND_PRINTER_IT                "Unbind the printer?"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Language_it.h",230  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_IT"
+          (declared at line 225)
+
+  #define FILAMENT_CHANGE_TEXT_JP				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Multi_language.h",899  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_JP"
+          (declared at line 892)
+
+  #define FILAMENT_CHANGE_TEXT_GN				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\Multi_language\Multi_language.h",1107  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_GN"
+          (declared at line 1101)
+
+  #define Simple_Dec"ºı…Ÿ"
+                    ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",666  Warning[Pe1649]: 
+          white space is required between the macro name "Simple_Dec" and its
+          replacement text
+
+  #define Simple_Speed "ÀŸ∂»"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",721  Warning[Pe047]: 
+          incompatible redefinition of macro "Simple_Speed" (declared at line
+          718)
+
+  #define Complex_Speed "ÀŸ∂»"
+          ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_ui.h",722  Warning[Pe047]: 
+          incompatible redefinition of macro "Complex_Speed" (declared at line
+          719)
+      4          
+      5          #ifndef GUI_FLASH
+      6          #define GUI_FLASH
+      7          #endif
+      8          
+
+   \                                 In section .bss, align 4
+      9          static GUI_HWIN hMachineSettingsWnd;
+     10          static BUTTON_STRUCT MachineArrow,StrokeArrow,HomeDirectionArrow,EndstopTypeArrow,FilamentArrow,LevelingArrow,DeltaLevelParaArrow;
+     11          static BUTTON_STRUCT buttonMachine,buttonStroke,buttonHomeDirection,buttonEndstopType,buttonFilament,buttonLeveling,DeltaLevelParaText;
+     12          static BUTTON_STRUCT button_next,button_previous,button_back;
+     13          
+     14          static uint8_t current_page;//0:…œ“ª“≥£¨1:œ¬“ª“≥
+   \                     current_page:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 1
+   \   00000002                      DS8 2
+   \   00000004                      DS8 24
+   \   0000001C                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     HomeDirectionArrow:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     FilamentArrow:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     buttonMachine:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     buttonHomeDirection:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     buttonFilament:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     button_next:
+   \   00000000                      DS8 24
+   \   00000018                      DS8 24
+
+   \                                 In section .bss, align 4
+   \                     button_back:
+   \   00000000                      DS8 24
+     15          
+
+   \                                 In section .text, align 2, keep-with-next
+     16          static void cbMachineSettingsWin(WM_MESSAGE * pMsg) {
+     17          
+     18              struct PressEvt *press_event;
+                                      ^
+Warning[Pe550]: variable "press_event" was set but never used
+     19              switch (pMsg->MsgId)
+   \                     _Z20cbMachineSettingsWinP10WM_MESSAGE: (+1)
+   \   00000000   0x6801             LDR      R1,[R0, #+0]
+   \   00000002   0x290C             CMP      R1,#+12
+   \   00000004   0xD100             BNE.N    ??cbMachineSettingsWin_0
+   \   00000006   0x4770             BX       LR
+   \                     ??cbMachineSettingsWin_0: (+1)
+   \   00000008   0xB510             PUSH     {R4,LR}
+   \   0000000A   0x290D             CMP      R1,#+13
+   \   0000000C   0xF000 0x8138      BEQ.W    ??cbMachineSettingsWin_1
+   \   00000010   0x290F             CMP      R1,#+15
+   \   00000012   0xD002             BEQ.N    ??cbMachineSettingsWin_2
+   \   00000014   0x2926             CMP      R1,#+38
+   \   00000016   0xD028             BEQ.N    ??cbMachineSettingsWin_3
+   \   00000018   0xE12E             B.N      ??cbMachineSettingsWin_4
+     20              {
+     21              	case WM_PAINT:
+     22          			//GUI_SetColor(gCfgItems.state_background_color);
+     23          			//GUI_DrawRect(LCD_WIDTH/4+X_ADD, 0, LCD_WIDTH *3 / 4-X_INTERVAL, imgHeight /2 -15);
+     24          			GUI_SetColor(0xff5449);
+   \                     ??cbMachineSettingsWin_2: (+1)
+   \   0000001A   0x.... 0x....      LDR.W    R0,??DataTable6  ;; 0xff5449
+   \   0000001E   0x.... 0x....      BL       GUI_SetColor
+     25          
+     26          			GUI_FillRect(10, 90, 470,90);
+   \   00000022   0x235A             MOVS     R3,#+90
+   \   00000024   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000028   0x215A             MOVS     R1,#+90
+   \   0000002A   0x200A             MOVS     R0,#+10
+   \   0000002C   0x.... 0x....      BL       GUI_FillRect
+     27                      GUI_FillRect(10, 140, 470,140);
+   \   00000030   0x238C             MOVS     R3,#+140
+   \   00000032   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000036   0x4619             MOV      R1,R3
+   \   00000038   0x200A             MOVS     R0,#+10
+   \   0000003A   0x.... 0x....      BL       GUI_FillRect
+     28          			
+     29                      if(current_page != 1)
+   \   0000003E   0x.... 0x....      LDR.W    R0,??DataTable6_1
+   \   00000042   0x7800             LDRB     R0,[R0, #+0]
+   \   00000044   0x2801             CMP      R0,#+1
+   \   00000046   0xF000 0x811B      BEQ.W    ??cbMachineSettingsWin_1
+     30                      {
+     31                          //GUI_FillRect(10, 190, 470,190);
+     32                          GUI_FillRect(10, 190, 470,190);
+   \   0000004A   0x23BE             MOVS     R3,#+190
+   \   0000004C   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000050   0x21BE             MOVS     R1,#+190
+   \   00000052   0x200A             MOVS     R0,#+10
+   \   00000054   0x.... 0x....      BL       GUI_FillRect
+     33                          GUI_FillRect(10, 240, 470,240);
+   \   00000058   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000005C   0x23F0             MOVS     R3,#+240
+   \   0000005E   0xF44F 0x72EB      MOV      R2,#+470
+   \   00000062   0x4619             MOV      R1,R3
+   \   00000064   0x200A             MOVS     R0,#+10
+   \   00000066   0x.... 0x....      B.W      GUI_FillRect
+     34                      }
+     35                      //GUI_FillRect(10, 264, 470,264);
+     36                      //GUI_FillRect(10, 310, 470,310);
+     37          
+     38              		break;
+     39              	case WM_TOUCH:
+     40              	 	press_event = (struct PressEvt *)pMsg->Data.p;
+     41              		
+     42              		break;
+     43              	case WM_TOUCH_CHILD:
+     44              		press_event = (struct PressEvt *)pMsg->Data.p;
+     45          
+     46              		break;
+     47              		
+     48              	case WM_NOTIFY_PARENT:
+     49              		if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
+   \                     ??cbMachineSettingsWin_3: (+1)
+   \   0000006A   0x6881             LDR      R1,[R0, #+8]
+   \   0000006C   0x2902             CMP      R1,#+2
+   \   0000006E   0xF040 0x8107      BNE.W    ??cbMachineSettingsWin_1
+     50              		{
+     51              			if(pMsg->hWinSrc == button_back.btnHandle)
+   \   00000072   0x.... 0x....      LDR.W    R1,??DataTable6_2
+   \   00000076   0xF9B0 0x0006      LDRSH    R0,[R0, #+6]
+   \   0000007A   0xF9B1 0x1000      LDRSH    R1,[R1, #+0]
+   \   0000007E   0x.... 0x....      LDR.W    R4,??DataTable6_1
+   \   00000082   0x4288             CMP      R0,R1
+   \   00000084   0xD117             BNE.N    ??cbMachineSettingsWin_5
+     52              			{
+     53              			    current_page = 0;
+   \   00000086   0x2000             MOVS     R0,#+0
+   \   00000088   0x7020             STRB     R0,[R4, #+0]
+     54              				last_disp_state = MACHINE_SETTINGS_UI;
+   \   0000008A   0x2026             MOVS     R0,#+38
+   \   0000008C   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   00000090   0x7008             STRB     R0,[R1, #+0]
+     55              				Clear_MachineSettings();
+   \   00000092   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   00000096   0x6940             LDR      R0,[R0, #+20]
+   \   00000098   0x.... 0x....      BL       GUI_SetBkColor
+   \   0000009C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000000A0   0x.... 0x....      BL       WM_IsWindow
+   \   000000A4   0xB118             CBZ.N    R0,??cbMachineSettingsWin_6
+   \   000000A6   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000000AA   0x.... 0x....      BL       WM_DeleteWindow
+     56              				draw_return_ui();
+   \                     ??cbMachineSettingsWin_6: (+1)
+   \   000000AE   0xE8BD 0x4010      POP      {R4,LR}
+   \   000000B2   0x.... 0x....      B.W      draw_return_ui
+     57              			}	
+     58                          else if(pMsg->hWinSrc == button_next.btnHandle)
+   \                     ??cbMachineSettingsWin_5: (+1)
+   \   000000B6   0x.... 0x....      LDR.W    R1,??DataTable6_5
+   \   000000BA   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   000000BE   0x4290             CMP      R0,R2
+   \   000000C0   0xBF08             IT       EQ 
+     59                          {
+     60                              current_page = 1;
+   \   000000C2   0x2001             MOVEQ    R0,#+1
+   \   000000C4   0xD004             BEQ.N    ??cbMachineSettingsWin_7
+     61                              last_disp_state = MACHINE_SETTINGS_UI;
+     62                              Clear_MachineSettings();
+     63                              draw_MachineSettings();
+     64                          }
+     65                          else if(pMsg->hWinSrc == button_previous.btnHandle)
+   \   000000C6   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   000000CA   0x4288             CMP      R0,R1
+   \   000000CC   0xD116             BNE.N    ??cbMachineSettingsWin_8
+     66                          {
+     67                              current_page = 0;
+   \   000000CE   0x2000             MOVS     R0,#+0
+   \                     ??cbMachineSettingsWin_7: (+1)
+   \   000000D0   0x7020             STRB     R0,[R4, #+0]
+     68                              last_disp_state = MACHINE_SETTINGS_UI;
+   \   000000D2   0x2026             MOVS     R0,#+38
+   \   000000D4   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   000000D8   0x7008             STRB     R0,[R1, #+0]
+     69                              Clear_MachineSettings();
+   \   000000DA   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   000000DE   0x6940             LDR      R0,[R0, #+20]
+   \   000000E0   0x.... 0x....      BL       GUI_SetBkColor
+   \   000000E4   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000000E8   0x.... 0x....      BL       WM_IsWindow
+   \   000000EC   0xB118             CBZ.N    R0,??cbMachineSettingsWin_9
+   \   000000EE   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000000F2   0x.... 0x....      BL       WM_DeleteWindow
+     70                              draw_MachineSettings();
+   \                     ??cbMachineSettingsWin_9: (+1)
+   \   000000F6   0xE8BD 0x4010      POP      {R4,LR}
+   \   000000FA   0x....             B.N      draw_MachineSettings
+     71                          }                
+     72              			else if((pMsg->hWinSrc == buttonMachine.btnHandle)||
+     73                              (pMsg->hWinSrc == MachineArrow.btnHandle))
+   \                     ??cbMachineSettingsWin_8: (+1)
+   \   000000FC   0x.... 0x....      LDR.W    R1,??DataTable6_6
+   \   00000100   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   00000104   0x4290             CMP      R0,R2
+   \   00000106   0xBF1C             ITT      NE 
+   \   00000108   0xF9B4 0x2004      LDRSHNE  R2,[R4, #+4]
+   \   0000010C   0x4290             CMPNE    R0,R2
+   \   0000010E   0xD115             BNE.N    ??cbMachineSettingsWin_10
+     74              			{
+     75              				last_disp_state = MACHINE_SETTINGS_UI;
+   \   00000110   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   00000114   0x2026             MOVS     R0,#+38
+   \   00000116   0x7008             STRB     R0,[R1, #+0]
+     76              				Clear_MachineSettings();
+   \   00000118   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   0000011C   0x6940             LDR      R0,[R0, #+20]
+   \   0000011E   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000122   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000126   0x.... 0x....      BL       WM_IsWindow
+   \   0000012A   0xB118             CBZ.N    R0,??cbMachineSettingsWin_11
+   \   0000012C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000130   0x.... 0x....      BL       WM_DeleteWindow
+     77              				draw_MachineType();
+   \                     ??cbMachineSettingsWin_11: (+1)
+   \   00000134   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000138   0x.... 0x....      B.W      draw_MachineType
+     78              			}
+     79              			else if((pMsg->hWinSrc == buttonStroke.btnHandle)||
+     80                              (pMsg->hWinSrc == StrokeArrow.btnHandle))
+   \                     ??cbMachineSettingsWin_10: (+1)
+   \   0000013C   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   00000140   0x4288             CMP      R0,R1
+   \   00000142   0xBF1C             ITT      NE 
+   \   00000144   0xF9B4 0x101C      LDRSHNE  R1,[R4, #+28]
+   \   00000148   0x4288             CMPNE    R0,R1
+   \   0000014A   0xD115             BNE.N    ??cbMachineSettingsWin_12
+     81          
+     82              			{
+     83              				last_disp_state = MACHINE_SETTINGS_UI;
+   \   0000014C   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   00000150   0x2026             MOVS     R0,#+38
+   \   00000152   0x7008             STRB     R0,[R1, #+0]
+     84              				Clear_MachineSettings();
+   \   00000154   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   00000158   0x6940             LDR      R0,[R0, #+20]
+   \   0000015A   0x.... 0x....      BL       GUI_SetBkColor
+   \   0000015E   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000162   0x.... 0x....      BL       WM_IsWindow
+   \   00000166   0xB118             CBZ.N    R0,??cbMachineSettingsWin_13
+   \   00000168   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000016C   0x.... 0x....      BL       WM_DeleteWindow
+     85              				draw_Stroke();
+   \                     ??cbMachineSettingsWin_13: (+1)
+   \   00000170   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000174   0x.... 0x....      B.W      draw_Stroke
+     86              			}
+     87              			else if((pMsg->hWinSrc == buttonHomeDirection.btnHandle)||
+     88                              (pMsg->hWinSrc == HomeDirectionArrow.btnHandle))
+   \                     ??cbMachineSettingsWin_12: (+1)
+   \   00000178   0x.... 0x....      LDR.W    R1,??DataTable6_7
+   \   0000017C   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   00000180   0x4290             CMP      R0,R2
+   \   00000182   0xBF1E             ITTT     NE 
+   \   00000184   0x.... 0x....      LDRNE.W  R2,??DataTable6_8
+   \   00000188   0xF9B2 0x3000      LDRSHNE  R3,[R2, #+0]
+   \   0000018C   0x4298             CMPNE    R0,R3
+   \   0000018E   0xD115             BNE.N    ??cbMachineSettingsWin_14
+     89          
+     90              			{
+     91              				last_disp_state = MACHINE_SETTINGS_UI;
+   \   00000190   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   00000194   0x2026             MOVS     R0,#+38
+   \   00000196   0x7008             STRB     R0,[R1, #+0]
+     92              				Clear_MachineSettings();
+   \   00000198   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   0000019C   0x6940             LDR      R0,[R0, #+20]
+   \   0000019E   0x.... 0x....      BL       GUI_SetBkColor
+   \   000001A2   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001A6   0x.... 0x....      BL       WM_IsWindow
+   \   000001AA   0xB118             CBZ.N    R0,??cbMachineSettingsWin_15
+   \   000001AC   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001B0   0x.... 0x....      BL       WM_DeleteWindow
+     93                              draw_HomeDir();
+   \                     ??cbMachineSettingsWin_15: (+1)
+   \   000001B4   0xE8BD 0x4010      POP      {R4,LR}
+   \   000001B8   0x.... 0x....      B.W      draw_HomeDir
+     94              		
+     95              			}       
+     96              			else if((pMsg->hWinSrc == buttonEndstopType.btnHandle)||
+     97                              (pMsg->hWinSrc == EndstopTypeArrow.btnHandle))
+   \                     ??cbMachineSettingsWin_14: (+1)
+   \   000001BC   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   000001C0   0x4288             CMP      R0,R1
+   \   000001C2   0xBF1C             ITT      NE 
+   \   000001C4   0xF9B2 0x1018      LDRSHNE  R1,[R2, #+24]
+   \   000001C8   0x4288             CMPNE    R0,R1
+   \   000001CA   0xD115             BNE.N    ??cbMachineSettingsWin_16
+     98          
+     99              			{
+    100              				last_disp_state = MACHINE_SETTINGS_UI;
+   \   000001CC   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   000001D0   0x2026             MOVS     R0,#+38
+   \   000001D2   0x7008             STRB     R0,[R1, #+0]
+    101              				Clear_MachineSettings();
+   \   000001D4   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   000001D8   0x6940             LDR      R0,[R0, #+20]
+   \   000001DA   0x.... 0x....      BL       GUI_SetBkColor
+   \   000001DE   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001E2   0x.... 0x....      BL       WM_IsWindow
+   \   000001E6   0xB118             CBZ.N    R0,??cbMachineSettingsWin_17
+   \   000001E8   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   000001EC   0x.... 0x....      BL       WM_DeleteWindow
+    102                              draw_EndstopType();
+   \                     ??cbMachineSettingsWin_17: (+1)
+   \   000001F0   0xE8BD 0x4010      POP      {R4,LR}
+   \   000001F4   0x.... 0x....      B.W      draw_EndstopType
+    103          
+    104              			}
+    105              			else if((pMsg->hWinSrc == buttonFilament.btnHandle)||
+    106                              (pMsg->hWinSrc == FilamentArrow.btnHandle))
+   \                     ??cbMachineSettingsWin_16: (+1)
+   \   000001F8   0x.... 0x....      LDR.W    R1,??DataTable6_9
+   \   000001FC   0xF9B1 0x2000      LDRSH    R2,[R1, #+0]
+   \   00000200   0x4290             CMP      R0,R2
+   \   00000202   0xBF1E             ITTT     NE 
+   \   00000204   0x.... 0x....      LDRNE.W  R2,??DataTable6_10
+   \   00000208   0xF9B2 0x3000      LDRSHNE  R3,[R2, #+0]
+   \   0000020C   0x4298             CMPNE    R0,R3
+   \   0000020E   0xD115             BNE.N    ??cbMachineSettingsWin_18
+    107          
+    108              			{
+    109              				last_disp_state = MACHINE_SETTINGS_UI;
+   \   00000210   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   00000214   0x2026             MOVS     R0,#+38
+   \   00000216   0x7008             STRB     R0,[R1, #+0]
+    110              				Clear_MachineSettings();
+   \   00000218   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   0000021C   0x6940             LDR      R0,[R0, #+20]
+   \   0000021E   0x.... 0x....      BL       GUI_SetBkColor
+   \   00000222   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000226   0x.... 0x....      BL       WM_IsWindow
+   \   0000022A   0xB118             CBZ.N    R0,??cbMachineSettingsWin_19
+   \   0000022C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000230   0x.... 0x....      BL       WM_DeleteWindow
+    111                              draw_FilamentSettings();
+   \                     ??cbMachineSettingsWin_19: (+1)
+   \   00000234   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000238   0x.... 0x....      B.W      draw_FilamentSettings
+    112          
+    113              			} 
+    114          			/*else if((pMsg->hWinSrc == DeltaLevelParaText.btnHandle)||
+    115                              (pMsg->hWinSrc == DeltaLevelParaArrow.btnHandle))
+    116              			{
+    117              				last_disp_state = MACHINE_SETTINGS_UI;
+    118              				Clear_LevelingSettings();
+    119                              draw_DeltaLevelPara();
+    120              				
+    121              			}*/
+    122              			else if((pMsg->hWinSrc == buttonLeveling.btnHandle)||
+    123                              (pMsg->hWinSrc == LevelingArrow.btnHandle))
+   \                     ??cbMachineSettingsWin_18: (+1)
+   \   0000023C   0xF9B1 0x1018      LDRSH    R1,[R1, #+24]
+   \   00000240   0x4288             CMP      R0,R1
+   \   00000242   0xBF1C             ITT      NE 
+   \   00000244   0xF9B2 0x1018      LDRSHNE  R1,[R2, #+24]
+   \   00000248   0x4288             CMPNE    R0,R1
+   \   0000024A   0xD119             BNE.N    ??cbMachineSettingsWin_1
+    124          
+    125              			{
+    126              				last_disp_state = MACHINE_SETTINGS_UI;
+   \   0000024C   0x.... 0x....      LDR.W    R1,??DataTable6_3
+   \   00000250   0x2026             MOVS     R0,#+38
+   \   00000252   0x7008             STRB     R0,[R1, #+0]
+    127              				Clear_MachineSettings();
+   \   00000254   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   00000258   0x6940             LDR      R0,[R0, #+20]
+   \   0000025A   0x.... 0x....      BL       GUI_SetBkColor
+   \   0000025E   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000262   0x.... 0x....      BL       WM_IsWindow
+   \   00000266   0xB118             CBZ.N    R0,??cbMachineSettingsWin_20
+   \   00000268   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000026C   0x.... 0x....      BL       WM_DeleteWindow
+    128                              draw_LevelingSettings();
+   \                     ??cbMachineSettingsWin_20: (+1)
+   \   00000270   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000274   0x.... 0x....      B.W      draw_LevelingSettings
+    129          
+    130              			}                 
+    131              		}
+    132              		break;
+    133              		
+    134              	default:
+    135              		WM_DefaultProc(pMsg);
+   \                     ??cbMachineSettingsWin_4: (+1)
+   \   00000278   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000027C   0x.... 0x....      B.W      WM_DefaultProc
+    136              	}
+    137          }
+   \                     ??cbMachineSettingsWin_1: (+1)
+   \   00000280   0xBD10             POP      {R4,PC}          ;; return
+    138          
+    139          
+
+   \                                 In section .text, align 2, keep-with-next
+    140          void draw_MachineSettings()
+    141          {   
+   \                     draw_MachineSettings: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+    142              int i;
+                         ^
+Warning[Pe177]: variable "i" was declared but never referenced
+
+  static BUTTON_STRUCT MachineArrow,StrokeArrow,HomeDirectionArrow,EndstopTypeArrow,FilamentArrow,LevelingArrow,DeltaLevelParaArrow;
+                                                                                                                ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_machine_settings.cpp",10  Warning[Pe550]: 
+          variable "DeltaLevelParaArrow" was set but never used
+
+  static BUTTON_STRUCT buttonMachine,buttonStroke,buttonHomeDirection,buttonEndstopType,buttonFilament,buttonLeveling,DeltaLevelParaText;
+                                                                                                                      ^
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_machine_settings.cpp",11  Warning[Pe550]: 
+          variable "DeltaLevelParaText" was set but never used
+    143          
+    144              buttonMachine.btnHandle = 0;
+    145              MachineArrow.btnHandle = 0;
+    146              buttonStroke.btnHandle = 0;
+    147              StrokeArrow.btnHandle = 0;
+    148              buttonHomeDirection.btnHandle = 0;
+   \   00000004   0x.... 0x....      LDR.W    R1,??DataTable6_8
+   \   00000008   0x.... 0x....      LDR.W    R4,??DataTable6_6
+   \   0000000C   0x.... 0x....      LDR.W    R5,??DataTable6_1
+   \   00000010   0x.... 0x....      LDR.W    R10,??DataTable6_7
+    149              HomeDirectionArrow.btnHandle = 0;
+    150              buttonEndstopType.btnHandle = 0;
+    151              EndstopTypeArrow.btnHandle = 0;
+    152              buttonFilament.btnHandle = 0;
+   \   00000014   0x.... 0x....      LDR.W    R11,??DataTable6_9
+    153              FilamentArrow.btnHandle = 0;   
+    154              buttonLeveling.btnHandle = 0;
+    155              LevelingArrow.btnHandle = 0;
+    156              button_previous.btnHandle = 0;
+   \   00000018   0x.... 0x....      LDR.W    R8,??DataTable6_5
+    157              button_next.btnHandle = 0;
+    158              button_back.btnHandle = 0;
+   \   0000001C   0x.... 0x....      LDR.W    R9,??DataTable6_2
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x8008             STRH     R0,[R1, #+0]
+   \   00000024   0x8308             STRH     R0,[R1, #+24]
+   \   00000026   0xB085             SUB      SP,SP,#+20
+   \   00000028   0x.... 0x....      LDR.W    R1,??DataTable6_10
+   \   0000002C   0x8020             STRH     R0,[R4, #+0]
+   \   0000002E   0x80A8             STRH     R0,[R5, #+4]
+   \   00000030   0x8320             STRH     R0,[R4, #+24]
+   \   00000032   0x83A8             STRH     R0,[R5, #+28]
+   \   00000034   0xF8AA 0x0000      STRH     R0,[R10, #+0]
+   \   00000038   0xF8AA 0x0018      STRH     R0,[R10, #+24]
+   \   0000003C   0xF8AB 0x0000      STRH     R0,[R11, #+0]
+   \   00000040   0x8008             STRH     R0,[R1, #+0]
+   \   00000042   0xF8AB 0x0018      STRH     R0,[R11, #+24]
+   \   00000046   0x8308             STRH     R0,[R1, #+24]
+   \   00000048   0xF8A8 0x0018      STRH     R0,[R8, #+24]
+   \   0000004C   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+   \   00000050   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+    159          	DeltaLevelParaText.btnHandle=0;
+    160          	DeltaLevelParaArrow.btnHandle=0;
+    161              
+    162              if(disp_state_stack._disp_state[disp_state_stack._disp_index] != MACHINE_SETTINGS_UI)
+   \   00000054   0x.... 0x....      LDR.W    R0,??DataTable6_11
+   \   00000058   0xF990 0x1064      LDRSB    R1,[R0, #+100]
+   \   0000005C   0x560A             LDRSB    R2,[R1, R0]
+   \   0000005E   0x2A26             CMP      R2,#+38
+   \   00000060   0xD005             BEQ.N    ??draw_MachineSettings_0
+    163              {
+    164                  disp_state_stack._disp_index++;
+   \   00000062   0x1C49             ADDS     R1,R1,#+1
+   \   00000064   0xF880 0x1064      STRB     R1,[R0, #+100]
+    165                  disp_state_stack._disp_state[disp_state_stack._disp_index] = MACHINE_SETTINGS_UI;
+   \   00000068   0x2226             MOVS     R2,#+38
+   \   0000006A   0xB249             SXTB     R1,R1
+   \   0000006C   0x540A             STRB     R2,[R1, R0]
+    166              }
+    167              disp_state = MACHINE_SETTINGS_UI;
+   \                     ??draw_MachineSettings_0: (+1)
+   \   0000006E   0x2026             MOVS     R0,#+38
+   \   00000070   0x.... 0x....      LDR.W    R1,??DataTable6_12
+   \   00000074   0x7008             STRB     R0,[R1, #+0]
+   \   00000076   0x.... 0x....      LDR.W    R0,??DataTable6_4
+   \   0000007A   0x6940             LDR      R0,[R0, #+20]
+    168              
+    169              GUI_SetBkColor(gCfgItems.background_color);
+   \   0000007C   0x.... 0x....      BL       GUI_SetBkColor
+    170              GUI_SetColor(gCfgItems.title_color);
+   \   00000080   0x.... 0x....      LDR.W    R6,??DataTable6_13
+   \   00000084   0x6870             LDR      R0,[R6, #+4]
+   \   00000086   0x.... 0x....      BL       GUI_SetColor
+    171              GUI_Clear();
+   \   0000008A   0x.... 0x....      BL       GUI_Clear
+    172              
+    173              GUI_DispStringAt(machine_menu.MachineConfigTitle, TITLE_XPOS, TITLE_YPOS);
+   \   0000008E   0x.... 0x....      LDR.W    R7,??DataTable6_14
+   \   00000092   0x68F8             LDR      R0,[R7, #+12]
+   \   00000094   0x2205             MOVS     R2,#+5
+   \   00000096   0x2103             MOVS     R1,#+3
+   \   00000098   0x.... 0x....      BL       GUI_DispStringAt
+    174          
+    175              hMachineSettingsWnd = WM_CreateWindow(0, 0, LCD_WIDTH, LCD_HEIGHT, WM_CF_SHOW, cbMachineSettingsWin, 0);
+   \   0000009C   0x2000             MOVS     R0,#+0
+   \   0000009E   0x9002             STR      R0,[SP, #+8]
+   \   000000A0   0xF44F 0x73A0      MOV      R3,#+320
+   \   000000A4   0x.... 0x....      LDR.W    R0,??DataTable6_15
+   \   000000A8   0x9001             STR      R0,[SP, #+4]
+   \   000000AA   0xF44F 0x72F0      MOV      R2,#+480
+   \   000000AE   0x2002             MOVS     R0,#+2
+   \   000000B0   0x9000             STR      R0,[SP, #+0]
+   \   000000B2   0x2100             MOVS     R1,#+0
+   \   000000B4   0x2000             MOVS     R0,#+0
+   \   000000B6   0x.... 0x....      BL       WM_CreateWindow
+   \   000000BA   0x8068             STRH     R0,[R5, #+2]
+   \   000000BC   0x7828             LDRB     R0,[R5, #+0]
+   \   000000BE   0x2801             CMP      R0,#+1
+   \   000000C0   0xF000 0x812A      BEQ.W    ??draw_MachineSettings_1
+    176          
+    177              if(current_page != 1)
+    178              {
+    179                  buttonMachine.btnHandle = BUTTON_CreateEx(10,50,450,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000000C4   0x.... 0x....      BL       alloc_win_id
+   \   000000C8   0x9003             STR      R0,[SP, #+12]
+   \   000000CA   0x2328             MOVS     R3,#+40
+   \   000000CC   0x2000             MOVS     R0,#+0
+   \   000000CE   0x9002             STR      R0,[SP, #+8]
+   \   000000D0   0xF44F 0x72E1      MOV      R2,#+450
+   \   000000D4   0x2002             MOVS     R0,#+2
+   \   000000D6   0x9001             STR      R0,[SP, #+4]
+   \   000000D8   0x2132             MOVS     R1,#+50
+   \   000000DA   0x5E28             LDRSH    R0,[R5, R0]
+   \   000000DC   0x9000             STR      R0,[SP, #+0]
+   \   000000DE   0x200A             MOVS     R0,#+10
+   \   000000E0   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000000E4   0x8020             STRH     R0,[R4, #+0]
+    180                  MachineArrow.btnHandle = BUTTON_CreateEx(460,50,10,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000000E6   0x.... 0x....      BL       alloc_win_id
+   \   000000EA   0x9003             STR      R0,[SP, #+12]
+   \   000000EC   0x2328             MOVS     R3,#+40
+   \   000000EE   0x2000             MOVS     R0,#+0
+   \   000000F0   0x9002             STR      R0,[SP, #+8]
+   \   000000F2   0x220A             MOVS     R2,#+10
+   \   000000F4   0x2002             MOVS     R0,#+2
+   \   000000F6   0x9001             STR      R0,[SP, #+4]
+   \   000000F8   0x2132             MOVS     R1,#+50
+   \   000000FA   0x5E28             LDRSH    R0,[R5, R0]
+   \   000000FC   0x9000             STR      R0,[SP, #+0]
+   \   000000FE   0xF44F 0x70E6      MOV      R0,#+460
+   \   00000102   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000106   0x80A8             STRH     R0,[R5, #+4]
+    181          
+    182                  buttonStroke.btnHandle = BUTTON_CreateEx(10,100,450,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000108   0x.... 0x....      BL       alloc_win_id
+   \   0000010C   0x9003             STR      R0,[SP, #+12]
+   \   0000010E   0x2328             MOVS     R3,#+40
+   \   00000110   0x2000             MOVS     R0,#+0
+   \   00000112   0x9002             STR      R0,[SP, #+8]
+   \   00000114   0xF44F 0x72E1      MOV      R2,#+450
+   \   00000118   0x2002             MOVS     R0,#+2
+   \   0000011A   0x9001             STR      R0,[SP, #+4]
+   \   0000011C   0x2164             MOVS     R1,#+100
+   \   0000011E   0x5E28             LDRSH    R0,[R5, R0]
+   \   00000120   0x9000             STR      R0,[SP, #+0]
+   \   00000122   0x200A             MOVS     R0,#+10
+   \   00000124   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000128   0x8320             STRH     R0,[R4, #+24]
+    183                  StrokeArrow.btnHandle = BUTTON_CreateEx(460,100,10,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000012A   0x.... 0x....      BL       alloc_win_id
+   \   0000012E   0x9003             STR      R0,[SP, #+12]
+   \   00000130   0x2328             MOVS     R3,#+40
+   \   00000132   0x2000             MOVS     R0,#+0
+   \   00000134   0x9002             STR      R0,[SP, #+8]
+   \   00000136   0x220A             MOVS     R2,#+10
+   \   00000138   0x2002             MOVS     R0,#+2
+   \   0000013A   0x9001             STR      R0,[SP, #+4]
+   \   0000013C   0x2164             MOVS     R1,#+100
+   \   0000013E   0x5E28             LDRSH    R0,[R5, R0]
+   \   00000140   0x9000             STR      R0,[SP, #+0]
+   \   00000142   0xF44F 0x70E6      MOV      R0,#+460
+   \   00000146   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000014A   0x83A8             STRH     R0,[R5, #+28]
+    184          
+    185                  buttonHomeDirection.btnHandle = BUTTON_CreateEx(10,150,450,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000014C   0x.... 0x....      BL       alloc_win_id
+   \   00000150   0x9003             STR      R0,[SP, #+12]
+   \   00000152   0x2328             MOVS     R3,#+40
+   \   00000154   0x2000             MOVS     R0,#+0
+   \   00000156   0x9002             STR      R0,[SP, #+8]
+   \   00000158   0xF44F 0x72E1      MOV      R2,#+450
+   \   0000015C   0x2002             MOVS     R0,#+2
+   \   0000015E   0x9001             STR      R0,[SP, #+4]
+   \   00000160   0x2196             MOVS     R1,#+150
+   \   00000162   0x5E28             LDRSH    R0,[R5, R0]
+   \   00000164   0x9000             STR      R0,[SP, #+0]
+   \   00000166   0x200A             MOVS     R0,#+10
+   \   00000168   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000016C   0xF8AA 0x0000      STRH     R0,[R10, #+0]
+    186                  HomeDirectionArrow.btnHandle = BUTTON_CreateEx(460,150,10,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000170   0x.... 0x....      BL       alloc_win_id
+   \   00000174   0x9003             STR      R0,[SP, #+12]
+   \   00000176   0x2328             MOVS     R3,#+40
+   \   00000178   0x2000             MOVS     R0,#+0
+   \   0000017A   0x9002             STR      R0,[SP, #+8]
+   \   0000017C   0x220A             MOVS     R2,#+10
+   \   0000017E   0x2002             MOVS     R0,#+2
+   \   00000180   0x9001             STR      R0,[SP, #+4]
+   \   00000182   0x2196             MOVS     R1,#+150
+   \   00000184   0x5E28             LDRSH    R0,[R5, R0]
+   \   00000186   0x9000             STR      R0,[SP, #+0]
+   \   00000188   0xF44F 0x70E6      MOV      R0,#+460
+   \   0000018C   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000190   0x.... 0x....      LDR.W    R1,??DataTable6_8
+   \   00000194   0x8008             STRH     R0,[R1, #+0]
+    187          
+    188                  buttonEndstopType.btnHandle = BUTTON_CreateEx(10,200,450,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000196   0x.... 0x....      BL       alloc_win_id
+   \   0000019A   0x9003             STR      R0,[SP, #+12]
+   \   0000019C   0x2328             MOVS     R3,#+40
+   \   0000019E   0x2000             MOVS     R0,#+0
+   \   000001A0   0x9002             STR      R0,[SP, #+8]
+   \   000001A2   0xF44F 0x72E1      MOV      R2,#+450
+   \   000001A6   0x2002             MOVS     R0,#+2
+   \   000001A8   0x9001             STR      R0,[SP, #+4]
+   \   000001AA   0x21C8             MOVS     R1,#+200
+   \   000001AC   0x5E28             LDRSH    R0,[R5, R0]
+   \   000001AE   0x9000             STR      R0,[SP, #+0]
+   \   000001B0   0x200A             MOVS     R0,#+10
+   \   000001B2   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001B6   0xF8AA 0x0018      STRH     R0,[R10, #+24]
+    189                  EndstopTypeArrow.btnHandle = BUTTON_CreateEx(460,200,10,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   000001BA   0x.... 0x....      BL       alloc_win_id
+   \   000001BE   0x9003             STR      R0,[SP, #+12]
+   \   000001C0   0x2328             MOVS     R3,#+40
+   \   000001C2   0x2000             MOVS     R0,#+0
+   \   000001C4   0x9002             STR      R0,[SP, #+8]
+   \   000001C6   0x220A             MOVS     R2,#+10
+   \   000001C8   0x2002             MOVS     R0,#+2
+   \   000001CA   0x9001             STR      R0,[SP, #+4]
+   \   000001CC   0x21C8             MOVS     R1,#+200
+   \   000001CE   0x5E28             LDRSH    R0,[R5, R0]
+   \   000001D0   0x9000             STR      R0,[SP, #+0]
+   \   000001D2   0xF44F 0x70E6      MOV      R0,#+460
+   \   000001D6   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000001DA   0x.... 0x....      LDR.W    R1,??DataTable6_8
+   \   000001DE   0x8308             STRH     R0,[R1, #+24]
+    190                  BUTTON_SetBmpFileName(MachineArrow.btnHandle, "bmp_arrow.bin",1);        
+   \   000001E0   0x2201             MOVS     R2,#+1
+   \   000001E2   0xF9B5 0x0004      LDRSH    R0,[R5, #+4]
+   \   000001E6   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_arrow.bin">`
+   \   000001EA   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    191                  BUTTON_SetBmpFileName(StrokeArrow.btnHandle, "bmp_arrow.bin",1);
+   \   000001EE   0xF9B5 0x001C      LDRSH    R0,[R5, #+28]
+   \   000001F2   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_arrow.bin">`
+   \   000001F6   0x2201             MOVS     R2,#+1
+   \   000001F8   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    192                  BUTTON_SetBmpFileName(HomeDirectionArrow.btnHandle, "bmp_arrow.bin",1);
+   \   000001FC   0x.... 0x....      LDR.W    R0,??DataTable6_8
+   \   00000200   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_arrow.bin">`
+   \   00000204   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000208   0x2201             MOVS     R2,#+1
+   \   0000020A   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    193                  BUTTON_SetBmpFileName(EndstopTypeArrow.btnHandle, "bmp_arrow.bin",1);
+   \   0000020E   0x.... 0x....      LDR.W    R0,??DataTable6_8
+   \   00000212   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_arrow.bin">`
+   \   00000216   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   0000021A   0x2201             MOVS     R2,#+1
+   \   0000021C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    194                  
+    195                  BUTTON_SetBmpFileName(buttonMachine.btnHandle,NULL,1);        
+   \   00000220   0x2100             MOVS     R1,#+0
+   \   00000222   0x2201             MOVS     R2,#+1
+   \   00000224   0x5E60             LDRSH    R0,[R4, R1]
+   \   00000226   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    196                  BUTTON_SetBmpFileName(buttonStroke.btnHandle,NULL,1);
+   \   0000022A   0xF9B4 0x0018      LDRSH    R0,[R4, #+24]
+   \   0000022E   0x2201             MOVS     R2,#+1
+   \   00000230   0x2100             MOVS     R1,#+0
+   \   00000232   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    197                  BUTTON_SetBmpFileName(buttonHomeDirection.btnHandle,NULL,1);
+   \   00000236   0x2100             MOVS     R1,#+0
+   \   00000238   0x2201             MOVS     R2,#+1
+   \   0000023A   0xF93A 0x0001      LDRSH    R0,[R10, R1]
+   \   0000023E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    198                  BUTTON_SetBmpFileName(buttonEndstopType.btnHandle,NULL,1);
+   \   00000242   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   00000246   0x2201             MOVS     R2,#+1
+   \   00000248   0x2100             MOVS     R1,#+0
+   \   0000024A   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    199                  
+    200                  BUTTON_SetBitmapEx(MachineArrow.btnHandle,0,&bmp_struct10x17,BMP_PIC_X,12);
+   \   0000024E   0x200C             MOVS     R0,#+12
+   \   00000250   0x9000             STR      R0,[SP, #+0]
+   \   00000252   0x2100             MOVS     R1,#+0
+   \   00000254   0x.... 0x....      LDR.W    R0,??DataTable6_16
+   \   00000258   0x.... 0x....      LDR.W    R2,??DataTable6_17
+   \   0000025C   0xF990 0x3000      LDRSB    R3,[R0, #+0]
+   \   00000260   0xF9B5 0x0004      LDRSH    R0,[R5, #+4]
+   \   00000264   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    201                  BUTTON_SetBitmapEx(StrokeArrow.btnHandle,0,&bmp_struct10x17,BMP_PIC_X,12);
+   \   00000268   0x.... 0x....      LDR.W    R2,??DataTable6_17
+   \   0000026C   0x200C             MOVS     R0,#+12
+   \   0000026E   0x9000             STR      R0,[SP, #+0]
+   \   00000270   0x2100             MOVS     R1,#+0
+   \   00000272   0x.... 0x....      LDR.W    R0,??DataTable6_16
+   \   00000276   0xF990 0x3000      LDRSB    R3,[R0, #+0]
+   \   0000027A   0xF9B5 0x001C      LDRSH    R0,[R5, #+28]
+   \   0000027E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    202                  BUTTON_SetBitmapEx(HomeDirectionArrow.btnHandle,0,&bmp_struct10x17,BMP_PIC_X,12);
+   \   00000282   0x....             LDR.N    R2,??DataTable6_17
+   \   00000284   0x200C             MOVS     R0,#+12
+   \   00000286   0x9000             STR      R0,[SP, #+0]
+   \   00000288   0x2100             MOVS     R1,#+0
+   \   0000028A   0x....             LDR.N    R0,??DataTable6_16
+   \   0000028C   0xF990 0x3000      LDRSB    R3,[R0, #+0]
+   \   00000290   0x....             LDR.N    R0,??DataTable6_8
+   \   00000292   0x5E40             LDRSH    R0,[R0, R1]
+   \   00000294   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    203                  BUTTON_SetBitmapEx(EndstopTypeArrow.btnHandle,0,&bmp_struct10x17,BMP_PIC_X,12); 
+   \   00000298   0x....             LDR.N    R2,??DataTable6_17
+   \   0000029A   0x200C             MOVS     R0,#+12
+   \   0000029C   0x9000             STR      R0,[SP, #+0]
+   \   0000029E   0x2100             MOVS     R1,#+0
+   \   000002A0   0x....             LDR.N    R0,??DataTable6_16
+   \   000002A2   0xF990 0x3000      LDRSB    R3,[R0, #+0]
+   \   000002A6   0x....             LDR.N    R0,??DataTable6_8
+   \   000002A8   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000002AC   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    204                  
+    205                  BUTTON_SetTextAlign(buttonMachine.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000002B0   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   000002B4   0x210C             MOVS     R1,#+12
+   \   000002B6   0x.... 0x....      BL       BUTTON_SetTextAlign
+    206                  BUTTON_SetTextAlign(buttonStroke.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000002BA   0xF9B4 0x0018      LDRSH    R0,[R4, #+24]
+   \   000002BE   0x210C             MOVS     R1,#+12
+   \   000002C0   0x.... 0x....      BL       BUTTON_SetTextAlign
+    207                  BUTTON_SetTextAlign(buttonHomeDirection.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   000002C4   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   000002C8   0x210C             MOVS     R1,#+12
+   \   000002CA   0x.... 0x....      BL       BUTTON_SetTextAlign
+    208                  BUTTON_SetTextAlign(buttonEndstopType.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );   
+   \   000002CE   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   000002D2   0x210C             MOVS     R1,#+12
+   \   000002D4   0x.... 0x....      BL       BUTTON_SetTextAlign
+    209          
+    210                  button_next.btnHandle = BUTTON_CreateEx(320,270,70,40,hMachineSettingsWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   000002D8   0x.... 0x....      BL       alloc_win_id
+   \   000002DC   0x9003             STR      R0,[SP, #+12]
+   \   000002DE   0x2328             MOVS     R3,#+40
+   \   000002E0   0x2000             MOVS     R0,#+0
+   \   000002E2   0x9002             STR      R0,[SP, #+8]
+   \   000002E4   0x2246             MOVS     R2,#+70
+   \   000002E6   0x2002             MOVS     R0,#+2
+   \   000002E8   0x9001             STR      R0,[SP, #+4]
+   \   000002EA   0xF44F 0x7187      MOV      R1,#+270
+   \   000002EE   0x5E28             LDRSH    R0,[R5, R0]
+   \   000002F0   0x9000             STR      R0,[SP, #+0]
+   \   000002F2   0xF44F 0x70A0      MOV      R0,#+320
+   \   000002F6   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000002FA   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+    211                  BUTTON_SetBmpFileName(button_next.btnHandle, "bmp_next.bin",1); 
+   \   000002FE   0x2201             MOVS     R2,#+1
+   \   00000300   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_next.bin">`
+   \   00000304   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    212              
+    213                  BUTTON_SetBitmapEx(button_next.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   00000308   0x....             LDR.N    R2,??DataTable6_18
+   \   0000030A   0x2000             MOVS     R0,#+0
+   \   0000030C   0x9000             STR      R0,[SP, #+0]
+   \   0000030E   0x4601             MOV      R1,R0
+   \   00000310   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000314   0x2300             MOVS     R3,#+0
+   \   00000316   0xE0A3             B.N      ??draw_MachineSettings_2
+    214                  
+    215          
+    216              }
+    217              else
+    218              {
+    219                  buttonFilament.btnHandle = BUTTON_CreateEx(10,50,450,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \                     ??draw_MachineSettings_1: (+1)
+   \   00000318   0x.... 0x....      BL       alloc_win_id
+   \   0000031C   0x9003             STR      R0,[SP, #+12]
+   \   0000031E   0x2328             MOVS     R3,#+40
+   \   00000320   0x2000             MOVS     R0,#+0
+   \   00000322   0x9002             STR      R0,[SP, #+8]
+   \   00000324   0xF44F 0x72E1      MOV      R2,#+450
+   \   00000328   0x2002             MOVS     R0,#+2
+   \   0000032A   0x9001             STR      R0,[SP, #+4]
+   \   0000032C   0x2132             MOVS     R1,#+50
+   \   0000032E   0x5E28             LDRSH    R0,[R5, R0]
+   \   00000330   0x9000             STR      R0,[SP, #+0]
+   \   00000332   0x200A             MOVS     R0,#+10
+   \   00000334   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000338   0xF8AB 0x0000      STRH     R0,[R11, #+0]
+    220                  FilamentArrow.btnHandle = BUTTON_CreateEx(460,50,10,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   0000033C   0x.... 0x....      BL       alloc_win_id
+   \   00000340   0x9003             STR      R0,[SP, #+12]
+   \   00000342   0x2328             MOVS     R3,#+40
+   \   00000344   0x2000             MOVS     R0,#+0
+   \   00000346   0x9002             STR      R0,[SP, #+8]
+   \   00000348   0x220A             MOVS     R2,#+10
+   \   0000034A   0x2002             MOVS     R0,#+2
+   \   0000034C   0x9001             STR      R0,[SP, #+4]
+   \   0000034E   0x2132             MOVS     R1,#+50
+   \   00000350   0x5E28             LDRSH    R0,[R5, R0]
+   \   00000352   0x9000             STR      R0,[SP, #+0]
+   \   00000354   0xF44F 0x70E6      MOV      R0,#+460
+   \   00000358   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000035C   0x....             LDR.N    R1,??DataTable6_10
+   \   0000035E   0x8008             STRH     R0,[R1, #+0]
+    221          
+    222          	 //DeltaLevelParaText.btnHandle = BUTTON_CreateEx(10,100,450,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+    223                  //DeltaLevelParaArrow.btnHandle = BUTTON_CreateEx(460,100,10,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+    224          
+    225          	 buttonLeveling.btnHandle = BUTTON_CreateEx(10,100,450,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000360   0x.... 0x....      BL       alloc_win_id
+   \   00000364   0x9003             STR      R0,[SP, #+12]
+   \   00000366   0x2328             MOVS     R3,#+40
+   \   00000368   0x2000             MOVS     R0,#+0
+   \   0000036A   0x9002             STR      R0,[SP, #+8]
+   \   0000036C   0xF44F 0x72E1      MOV      R2,#+450
+   \   00000370   0x2002             MOVS     R0,#+2
+   \   00000372   0x9001             STR      R0,[SP, #+4]
+   \   00000374   0x2164             MOVS     R1,#+100
+   \   00000376   0x5E28             LDRSH    R0,[R5, R0]
+   \   00000378   0x9000             STR      R0,[SP, #+0]
+   \   0000037A   0x200A             MOVS     R0,#+10
+   \   0000037C   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000380   0xF8AB 0x0018      STRH     R0,[R11, #+24]
+    226                  LevelingArrow.btnHandle = BUTTON_CreateEx(460,100,10,40,hMachineSettingsWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+   \   00000384   0x.... 0x....      BL       alloc_win_id
+   \   00000388   0x9003             STR      R0,[SP, #+12]
+   \   0000038A   0x2328             MOVS     R3,#+40
+   \   0000038C   0x2000             MOVS     R0,#+0
+   \   0000038E   0x9002             STR      R0,[SP, #+8]
+   \   00000390   0x220A             MOVS     R2,#+10
+   \   00000392   0x2002             MOVS     R0,#+2
+   \   00000394   0x9001             STR      R0,[SP, #+4]
+   \   00000396   0x2164             MOVS     R1,#+100
+   \   00000398   0x5E28             LDRSH    R0,[R5, R0]
+   \   0000039A   0x9000             STR      R0,[SP, #+0]
+   \   0000039C   0xF44F 0x70E6      MOV      R0,#+460
+   \   000003A0   0x.... 0x....      BL       BUTTON_CreateEx
+   \   000003A4   0x....             LDR.N    R1,??DataTable6_10
+   \   000003A6   0x8308             STRH     R0,[R1, #+24]
+    227          
+    228                  BUTTON_SetBmpFileName(FilamentArrow.btnHandle, "bmp_arrow.bin",1);
+   \   000003A8   0x2201             MOVS     R2,#+1
+   \   000003AA   0x....             LDR.N    R0,??DataTable6_10
+   \   000003AC   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_arrow.bin">`
+   \   000003B0   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   000003B4   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    229                  BUTTON_SetBmpFileName(LevelingArrow.btnHandle, "bmp_arrow.bin",1);
+   \   000003B8   0x....             LDR.N    R0,??DataTable6_10
+   \   000003BA   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_arrow.bin">`
+   \   000003BE   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   000003C2   0x2201             MOVS     R2,#+1
+   \   000003C4   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    230                  //BUTTON_SetBmpFileName(DeltaLevelParaArrow.btnHandle, "bmp_arrow.bin",1);
+    231          
+    232          	 BUTTON_SetBmpFileName(buttonFilament.btnHandle,NULL,1);
+   \   000003C8   0x2100             MOVS     R1,#+0
+   \   000003CA   0x2201             MOVS     R2,#+1
+   \   000003CC   0xF93B 0x0001      LDRSH    R0,[R11, R1]
+   \   000003D0   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    233                  BUTTON_SetBmpFileName(buttonLeveling.btnHandle,NULL,1);  
+   \   000003D4   0xF9BB 0x0018      LDRSH    R0,[R11, #+24]
+   \   000003D8   0x2201             MOVS     R2,#+1
+   \   000003DA   0x2100             MOVS     R1,#+0
+   \   000003DC   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    234          	 //BUTTON_SetBmpFileName(DeltaLevelParaText.btnHandle,NULL,1);
+    235                  
+    236                  BUTTON_SetBitmapEx(FilamentArrow.btnHandle,0,&bmp_struct10x17,BMP_PIC_X,12);
+   \   000003E0   0x200C             MOVS     R0,#+12
+   \   000003E2   0x9000             STR      R0,[SP, #+0]
+   \   000003E4   0x2100             MOVS     R1,#+0
+   \   000003E6   0x....             LDR.N    R0,??DataTable6_16
+   \   000003E8   0x....             LDR.N    R2,??DataTable6_17
+   \   000003EA   0xF990 0x3000      LDRSB    R3,[R0, #+0]
+   \   000003EE   0x....             LDR.N    R0,??DataTable6_10
+   \   000003F0   0x5E40             LDRSH    R0,[R0, R1]
+   \   000003F2   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    237                  BUTTON_SetBitmapEx(LevelingArrow.btnHandle,0,&bmp_struct10x17,BMP_PIC_X,12); 
+   \   000003F6   0x....             LDR.N    R2,??DataTable6_17
+   \   000003F8   0x200C             MOVS     R0,#+12
+   \   000003FA   0x9000             STR      R0,[SP, #+0]
+   \   000003FC   0x2100             MOVS     R1,#+0
+   \   000003FE   0x....             LDR.N    R0,??DataTable6_16
+   \   00000400   0xF990 0x3000      LDRSB    R3,[R0, #+0]
+   \   00000404   0x....             LDR.N    R0,??DataTable6_10
+   \   00000406   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   0000040A   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    238          	 //BUTTON_SetBitmapEx(DeltaLevelParaArrow.btnHandle,0,&bmp_struct10x17,BMP_PIC_X,12);
+    239                  
+    240                  BUTTON_SetTextAlign(buttonFilament.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER );
+   \   0000040E   0xF9BB 0x0000      LDRSH    R0,[R11, #+0]
+   \   00000412   0x210C             MOVS     R1,#+12
+   \   00000414   0x.... 0x....      BL       BUTTON_SetTextAlign
+    241                  BUTTON_SetTextAlign(buttonLeveling.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER ); 
+   \   00000418   0xF9BB 0x0018      LDRSH    R0,[R11, #+24]
+   \   0000041C   0x210C             MOVS     R1,#+12
+   \   0000041E   0x.... 0x....      BL       BUTTON_SetTextAlign
+    242          	 //BUTTON_SetTextAlign(DeltaLevelParaText.btnHandle,GUI_TA_LEFT|GUI_TA_VCENTER ); 
+    243          
+    244                  button_previous.btnHandle = BUTTON_CreateEx(320,270,70,40,hMachineSettingsWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   00000422   0x.... 0x....      BL       alloc_win_id
+   \   00000426   0x9003             STR      R0,[SP, #+12]
+   \   00000428   0x2328             MOVS     R3,#+40
+   \   0000042A   0x2000             MOVS     R0,#+0
+   \   0000042C   0x9002             STR      R0,[SP, #+8]
+   \   0000042E   0x2246             MOVS     R2,#+70
+   \   00000430   0x2002             MOVS     R0,#+2
+   \   00000432   0x9001             STR      R0,[SP, #+4]
+   \   00000434   0xF44F 0x7187      MOV      R1,#+270
+   \   00000438   0x5E28             LDRSH    R0,[R5, R0]
+   \   0000043A   0x9000             STR      R0,[SP, #+0]
+   \   0000043C   0xF44F 0x70A0      MOV      R0,#+320
+   \   00000440   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000444   0xF8A8 0x0018      STRH     R0,[R8, #+24]
+    245                  BUTTON_SetBmpFileName(button_previous.btnHandle, "bmp_previous.bin",1); 
+   \   00000448   0x2201             MOVS     R2,#+1
+   \   0000044A   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_previous.bin">`
+   \   0000044E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    246                  
+    247                  BUTTON_SetBitmapEx(button_previous.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   00000452   0x....             LDR.N    R2,??DataTable6_18
+   \   00000454   0x2000             MOVS     R0,#+0
+   \   00000456   0x9000             STR      R0,[SP, #+0]
+   \   00000458   0x4601             MOV      R1,R0
+   \   0000045A   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   0000045E   0x2300             MOVS     R3,#+0
+   \                     ??draw_MachineSettings_2: (+1)
+   \   00000460   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    248                  
+    249              }
+    250          
+    251               button_back.btnHandle = BUTTON_CreateEx(400,270,70,40,hMachineSettingsWnd,BUTTON_CF_SHOW,0,alloc_win_id());
+   \   00000464   0x.... 0x....      BL       alloc_win_id
+   \   00000468   0x9003             STR      R0,[SP, #+12]
+   \   0000046A   0x2328             MOVS     R3,#+40
+   \   0000046C   0x2000             MOVS     R0,#+0
+   \   0000046E   0x9002             STR      R0,[SP, #+8]
+   \   00000470   0x2246             MOVS     R2,#+70
+   \   00000472   0x2002             MOVS     R0,#+2
+   \   00000474   0x9001             STR      R0,[SP, #+4]
+   \   00000476   0xF44F 0x7187      MOV      R1,#+270
+   \   0000047A   0x5E28             LDRSH    R0,[R5, R0]
+   \   0000047C   0x9000             STR      R0,[SP, #+0]
+   \   0000047E   0xF44F 0x70C8      MOV      R0,#+400
+   \   00000482   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000486   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+    252               
+    253               BUTTON_SetBmpFileName(button_back.btnHandle, "bmp_back70x40.bin",1);        
+   \   0000048A   0x2201             MOVS     R2,#+1
+   \   0000048C   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_back70x40.bin">`
+   \   00000490   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    254               BUTTON_SetBitmapEx(button_back.btnHandle, 0, &bmp_struct70X40,0, 0);
+   \   00000494   0x....             LDR.N    R2,??DataTable6_18
+   \   00000496   0x2000             MOVS     R0,#+0
+   \   00000498   0x9000             STR      R0,[SP, #+0]
+   \   0000049A   0x4601             MOV      R1,R0
+   \   0000049C   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   000004A0   0x2300             MOVS     R3,#+0
+   \   000004A2   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    255                  
+    256               BUTTON_SetBkColor(button_next.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   000004A6   0x6BB2             LDR      R2,[R6, #+56]
+   \   000004A8   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000004AC   0x2101             MOVS     R1,#+1
+   \   000004AE   0x.... 0x....      BL       BUTTON_SetBkColor
+    257               BUTTON_SetBkColor(button_next.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color); 
+   \   000004B2   0x6BB2             LDR      R2,[R6, #+56]
+   \   000004B4   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000004B8   0x2100             MOVS     R1,#+0
+   \   000004BA   0x.... 0x....      BL       BUTTON_SetBkColor
+    258               BUTTON_SetTextColor(button_next.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   000004BE   0x6BF2             LDR      R2,[R6, #+60]
+   \   000004C0   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000004C4   0x2101             MOVS     R1,#+1
+   \   000004C6   0x.... 0x....      BL       BUTTON_SetTextColor
+    259               BUTTON_SetTextColor(button_next.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
+   \   000004CA   0x6BF2             LDR      R2,[R6, #+60]
+   \   000004CC   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   000004D0   0x2100             MOVS     R1,#+0
+   \   000004D2   0x.... 0x....      BL       BUTTON_SetTextColor
+    260               BUTTON_SetBkColor(button_previous.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   000004D6   0x6BB2             LDR      R2,[R6, #+56]
+   \   000004D8   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000004DC   0x2101             MOVS     R1,#+1
+   \   000004DE   0x.... 0x....      BL       BUTTON_SetBkColor
+    261               BUTTON_SetBkColor(button_previous.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);    
+   \   000004E2   0x6BB2             LDR      R2,[R6, #+56]
+   \   000004E4   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000004E8   0x2100             MOVS     R1,#+0
+   \   000004EA   0x.... 0x....      BL       BUTTON_SetBkColor
+    262               BUTTON_SetTextColor(button_previous.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   000004EE   0x6BF2             LDR      R2,[R6, #+60]
+   \   000004F0   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   000004F4   0x2101             MOVS     R1,#+1
+   \   000004F6   0x.... 0x....      BL       BUTTON_SetTextColor
+    263               BUTTON_SetTextColor(button_previous.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);    
+   \   000004FA   0x6BF2             LDR      R2,[R6, #+60]
+   \   000004FC   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   00000500   0x2100             MOVS     R1,#+0
+   \   00000502   0x.... 0x....      BL       BUTTON_SetTextColor
+    264               BUTTON_SetBkColor(button_back.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+   \   00000506   0x6BB2             LDR      R2,[R6, #+56]
+   \   00000508   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   0000050C   0x2101             MOVS     R1,#+1
+   \   0000050E   0x.... 0x....      BL       BUTTON_SetBkColor
+    265               BUTTON_SetBkColor(button_back.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color); 
+   \   00000512   0x6BB2             LDR      R2,[R6, #+56]
+   \   00000514   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000518   0x2100             MOVS     R1,#+0
+   \   0000051A   0x.... 0x....      BL       BUTTON_SetBkColor
+    266               BUTTON_SetTextColor(button_back.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+   \   0000051E   0x6BF2             LDR      R2,[R6, #+60]
+   \   00000520   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000524   0x2101             MOVS     R1,#+1
+   \   00000526   0x.... 0x....      BL       BUTTON_SetTextColor
+    267               BUTTON_SetTextColor(button_back.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor); 
+   \   0000052A   0x6BF2             LDR      R2,[R6, #+60]
+   \   0000052C   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   00000530   0x2100             MOVS     R1,#+0
+   \   00000532   0x.... 0x....      BL       BUTTON_SetTextColor
+    268               
+    269               BUTTON_SetTextAlign(button_next.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000536   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   0000053A   0x210E             MOVS     R1,#+14
+   \   0000053C   0x.... 0x....      BL       BUTTON_SetTextAlign
+    270               BUTTON_SetTextAlign(button_previous.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   00000540   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \   00000544   0x210E             MOVS     R1,#+14
+   \   00000546   0x.... 0x....      BL       BUTTON_SetTextAlign
+    271               BUTTON_SetTextAlign(button_back.btnHandle,GUI_TA_HCENTER|GUI_TA_VCENTER );
+   \   0000054A   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   0000054E   0x210E             MOVS     R1,#+14
+   \   00000550   0x.... 0x....      BL       BUTTON_SetTextAlign
+    272          
+    273               if(gCfgItems.multiple_language != 0)
+   \   00000554   0x....             LDR.N    R0,??DataTable6_4
+   \   00000556   0xF890 0x01CF      LDRB     R0,[R0, #+463]
+   \   0000055A   0xB390             CBZ.N    R0,??draw_MachineSettings_3
+    274               {
+    275                  if(current_page != 1)
+   \   0000055C   0x7828             LDRB     R0,[R5, #+0]
+   \   0000055E   0x2801             CMP      R0,#+1
+   \   00000560   0xD017             BEQ.N    ??draw_MachineSettings_4
+    276                  {
+    277                      BUTTON_SetText(buttonMachine.btnHandle, machine_menu.MachineType);
+   \   00000562   0x6939             LDR      R1,[R7, #+16]
+   \   00000564   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   00000568   0x.... 0x....      BL       BUTTON_SetText
+    278                      BUTTON_SetText(buttonStroke.btnHandle, machine_menu.Stroke);
+   \   0000056C   0x6979             LDR      R1,[R7, #+20]
+   \   0000056E   0xF9B4 0x0018      LDRSH    R0,[R4, #+24]
+   \   00000572   0x.... 0x....      BL       BUTTON_SetText
+    279                      BUTTON_SetText(buttonHomeDirection.btnHandle, machine_menu.HomeDir);
+   \   00000576   0x69B9             LDR      R1,[R7, #+24]
+   \   00000578   0xF9BA 0x0000      LDRSH    R0,[R10, #+0]
+   \   0000057C   0x.... 0x....      BL       BUTTON_SetText
+    280                      BUTTON_SetText(buttonEndstopType.btnHandle, machine_menu.EndStopType);
+   \   00000580   0x69F9             LDR      R1,[R7, #+28]
+   \   00000582   0xF9BA 0x0018      LDRSH    R0,[R10, #+24]
+   \   00000586   0x.... 0x....      BL       BUTTON_SetText
+    281                      BUTTON_SetText(button_next.btnHandle,machine_menu.next);
+   \   0000058A   0x6879             LDR      R1,[R7, #+4]
+   \   0000058C   0xF9B8 0x0000      LDRSH    R0,[R8, #+0]
+   \   00000590   0xE00C             B.N      ??draw_MachineSettings_5
+    282                  }
+    283                  else
+    284                  {
+    285                      BUTTON_SetText(buttonFilament.btnHandle,machine_menu.FilamentConf);
+   \                     ??draw_MachineSettings_4: (+1)
+   \   00000592   0x6A39             LDR      R1,[R7, #+32]
+   \   00000594   0xF9BB 0x0000      LDRSH    R0,[R11, #+0]
+   \   00000598   0x.... 0x....      BL       BUTTON_SetText
+    286                      BUTTON_SetText(buttonLeveling.btnHandle, machine_menu.LevelingConf); 
+   \   0000059C   0x6A79             LDR      R1,[R7, #+36]
+   \   0000059E   0xF9BB 0x0018      LDRSH    R0,[R11, #+24]
+   \   000005A2   0x.... 0x....      BL       BUTTON_SetText
+    287          	     //BUTTON_SetText(DeltaLevelParaText.btnHandle, machine_menu.DeltaLevelConf);
+    288                      BUTTON_SetText(button_previous.btnHandle,machine_menu.previous);   
+   \   000005A6   0x68B9             LDR      R1,[R7, #+8]
+   \   000005A8   0xF9B8 0x0018      LDRSH    R0,[R8, #+24]
+   \                     ??draw_MachineSettings_5: (+1)
+   \   000005AC   0x.... 0x....      BL       BUTTON_SetText
+    289                  }
+    290                   
+    291                  BUTTON_SetText(button_back.btnHandle,common_menu.text_back);
+   \   000005B0   0x....             LDR.N    R0,??DataTable6_19
+   \   000005B2   0x6801             LDR      R1,[R0, #+0]
+   \   000005B4   0xF9B9 0x0000      LDRSH    R0,[R9, #+0]
+   \   000005B8   0xB005             ADD      SP,SP,#+20
+   \   000005BA   0xE8BD 0x4FF0      POP      {R4-R11,LR}
+   \   000005BE   0x.... 0x....      B.W      BUTTON_SetText
+    292                  
+    293                        
+    294               }
+    295          
+    296          }
+   \                     ??draw_MachineSettings_3: (+1)
+   \   000005C2   0xB005             ADD      SP,SP,#+20
+   \   000005C4   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    297          
+    298          
+
+   \                                 In section .text, align 2, keep-with-next
+    299          void Clear_MachineSettings()
+    300          {
+   \                     Clear_MachineSettings: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    301          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000002   0x....             LDR.N    R0,??DataTable6_4
+   \   00000004   0x6940             LDR      R0,[R0, #+20]
+   \   00000006   0x.... 0x....      BL       GUI_SetBkColor
+    302          	if(WM_IsWindow(hMachineSettingsWnd))
+   \   0000000A   0x....             LDR.N    R4,??DataTable6_1
+   \   0000000C   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000010   0x.... 0x....      BL       WM_IsWindow
+   \   00000014   0xB128             CBZ.N    R0,??Clear_MachineSettings_0
+    303          	{
+    304          		WM_DeleteWindow(hMachineSettingsWnd);
+   \   00000016   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000001A   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001E   0x.... 0x....      B.W      WM_DeleteWindow
+    305          	}
+    306          }
+   \                     ??Clear_MachineSettings_0: (+1)
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \   00000000   0x00FF5449         DC32     0xff5449
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \   00000000   0x........         DC32     current_page
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \   00000000   0x........         DC32     button_back
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \   00000000   0x........         DC32     last_disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \   00000000   0x........         DC32     button_next
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \   00000000   0x........         DC32     buttonMachine
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \   00000000   0x........         DC32     buttonHomeDirection
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \   00000000   0x........         DC32     HomeDirectionArrow
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \   00000000   0x........         DC32     buttonFilament
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \   00000000   0x........         DC32     FilamentArrow
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_11:
+   \   00000000   0x........         DC32     disp_state_stack
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_12:
+   \   00000000   0x........         DC32     disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_13:
+   \   00000000   0x........         DC32     gCfgItems+0x14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_14:
+   \   00000000   0x........         DC32     machine_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_15:
+   \   00000000   0x........         DC32     _Z20cbMachineSettingsWinP10WM_MESSAGE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_16:
+   \   00000000   0x........         DC32     BMP_PIC_X
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_17:
+   \   00000000   0x........         DC32     bmp_struct10x17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_18:
+   \   00000000   0x........         DC32     bmp_struct70X40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_19:
+   \   00000000   0x........         DC32     common_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_arrow.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_arrow.bin"
+   \              0x70 0x5F    
+   \              0x61 0x72    
+   \              0x72 0x6F    
+   \              0x77 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_next.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_next.bin"
+   \              0x70 0x5F    
+   \              0x6E 0x65    
+   \              0x78 0x74    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_previous.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_previous.bin"
+   \              0x70 0x5F    
+   \              0x70 0x72    
+   \              0x65 0x76    
+   \              0x69 0x6F    
+   \              0x75 0x73    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_back70x40.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_back70x40.bin"
+   \              0x70 0x5F    
+   \              0x62 0x61    
+   \              0x63 0x6B    
+   \              0x37 0x30    
+   \              0x78 0x34    
+   \              0x30 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+    307          
+    308          
+    309          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Clear_MachineSettings
+         8   -> GUI_SetBkColor
+         0   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+       8   cbMachineSettingsWin(WM_MESSAGE *)
+         0   -> GUI_FillRect
+         8   -> GUI_FillRect
+         8   -> GUI_SetBkColor
+         8   -> GUI_SetColor
+         0   -> WM_DefaultProc
+         8   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+         0   -> draw_EndstopType
+         0   -> draw_FilamentSettings
+         0   -> draw_HomeDir
+         0   -> draw_LevelingSettings
+         0   -> draw_MachineSettings
+         0   -> draw_MachineType
+         0   -> draw_Stroke
+         0   -> draw_return_ui
+      56   draw_MachineSettings
+        56   -> BUTTON_CreateEx
+        56   -> BUTTON_SetBitmapEx
+        56   -> BUTTON_SetBkColor
+        56   -> BUTTON_SetBmpFileName
+         0   -> BUTTON_SetText
+        56   -> BUTTON_SetText
+        56   -> BUTTON_SetTextAlign
+        56   -> BUTTON_SetTextColor
+        56   -> GUI_Clear
+        56   -> GUI_DispStringAt
+        56   -> GUI_SetBkColor
+        56   -> GUI_SetColor
+        56   -> WM_CreateWindow
+        56   -> alloc_win_id
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      16  ?<Constant "bmp_arrow.bin">
+      20  ?<Constant "bmp_back70x40.bin">
+      16  ?<Constant "bmp_next.bin">
+      20  ?<Constant "bmp_previous.bin">
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_14
+       4  ??DataTable6_15
+       4  ??DataTable6_16
+       4  ??DataTable6_17
+       4  ??DataTable6_18
+       4  ??DataTable6_19
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      36  Clear_MachineSettings
+      24  DeltaLevelParaArrow
+      24  DeltaLevelParaText
+      48  FilamentArrow
+          LevelingArrow
+      48  HomeDirectionArrow
+          EndstopTypeArrow
+      48  buttonFilament
+          buttonLeveling
+      48  buttonHomeDirection
+          buttonEndstopType
+      48  buttonMachine
+          buttonStroke
+      24  button_back
+      48  button_next
+          button_previous
+     642  cbMachineSettingsWin(WM_MESSAGE *)
+      52  current_page
+          hMachineSettingsWnd
+          MachineArrow
+          StrokeArrow
+    1480  draw_MachineSettings
+
+ 
+   412 bytes in section .bss
+ 2 310 bytes in section .text
+ 
+ 2 310 bytes of CODE memory
+   412 bytes of DATA memory
+
+Errors: none
+Warnings: 21

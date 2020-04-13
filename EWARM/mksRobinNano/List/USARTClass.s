@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:06:19
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:28
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\USARTClass.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\USARTClass.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -93,13 +90,13 @@
         EXTERN USART_SendData
         EXTERN _ZN10RingBuffer10store_charEh
         EXTERN _ZN5Print5writeEPKhj
+        EXTERN __aeabi_memclr
         EXTERN __aeabi_memclr4
         EXTERN codebuff
         EXTERN codebufpoint
         EXTERN filamentchange_Process
         EXTERN gCfgItems
         EXTERN leveling_start_flg
-        EXTERN memset
         EXTERN next_cnt
         EXTERN sprintf
         EXTERN strlen
@@ -119,12 +116,6 @@
         PUBLIC _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
         PUBLIC _ZN10USARTClassC2EP13USART_TypeDef9IRQn_TypejP10RingBuffer
         PUBLIC _ZN10USARTClasscvbEv
-        PUBLIC _ZN14HardwareSerialC1Ev
-        PUBLIC _ZN14HardwareSerialC2Ev
-        PUBLIC _ZN5PrintC1Ev
-        PUBLIC _ZN5PrintC2Ev
-        PUBLIC _ZN6StreamC1Ev
-        PUBLIC _ZN6StreamC2Ev
         PUBLIC _ZTI10USARTClass
         PUBLIC _ZTI14HardwareSerial
         PUBLIC _ZTI5Print
@@ -162,22 +153,13 @@
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _ZN10USARTClassC2EP13USART_TypeDef9IRQn_TypejP10RingBuffer
+          CFI NoCalls
         THUMB
 // __code __interwork __softfp USARTClass::subobject USARTClass(USART_TypeDef *, IRQn_Type, uint32_t, RingBuffer *)
 _ZN10USARTClassC2EP13USART_TypeDef9IRQn_TypejP10RingBuffer:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        SUB      SP,SP,#+8
-          CFI CFA R13+16
-        LDR      R4,[SP, #+16]
-        STR      R4,[SP, #+0]
-          CFI FunCall _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
-        BL       _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
-        POP      {R1,R2,R4,PC}    ;; return
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock0
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\USARTClass.cpp
 //    1 /*
 //    2   Copyright (c) 2014 Makerbase & Andy Sze(andy.sze.mail@gmail.com)  All right reserved.
 //    3   Copyright (c) 2011 Arduino.  All right reserved.
@@ -202,22 +184,6 @@ _ZN10USARTClassC2EP13USART_TypeDef9IRQn_TypejP10RingBuffer:
 //   22 #include <string.h>
 //   23 
 //   24 #include "USARTClass.h"
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock1 Using cfiCommon0
-          CFI Function _Z14NVIC_EnableIRQ9IRQn_Type
-          CFI NoCalls
-        THUMB
-// static __interwork __softfp void NVIC_EnableIRQ(IRQn_Type)
-_Z14NVIC_EnableIRQ9IRQn_Type:
-        MOVS     R1,#+1
-        AND      R2,R0,#0x1F
-        LSLS     R1,R1,R2
-        LSRS     R0,R0,#+5
-        LDR.W    R2,??DataTable10  ;; 0xe000e100
-        STR      R1,[R2, R0, LSL #+2]
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock1
 //   25 #include "Arduino.h"
 //   26 #include "usart.h"
 //   27 #include "mks_cfg.h"
@@ -226,40 +192,49 @@ _Z14NVIC_EnableIRQ9IRQn_Type:
 //   30 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
+          CFI NoCalls
         THUMB
 //   31 USARTClass::USARTClass( USART_TypeDef* pUsart, IRQn_Type dwIrq, uint32_t dwId, RingBuffer* pRx_buffer )
 _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer:
-        PUSH     {R3-R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
-        MOV      R4,R0
-        MOV      R5,R1
-        MOV      R6,R2
-        MOV      R7,R3
+        Nop      
+          CFI EndBlock cfiBlock1
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock2 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN10USARTClassC1EP13USART_TypeDef9IRQn_TypejP10RingBuffer
+          CFI NoCalls _ZN10USARTClassC2EP13USART_TypeDef9IRQn_TypejP10RingBuffer
+        THUMB
+?Subroutine0:
+        PUSH     {R4}
+          CFI CFA R13+4
+          CFI R4 Frame(CFA, -4)
 //   32 {
-          CFI FunCall _ZN14HardwareSerialC2Ev
-        BL       _ZN14HardwareSerialC2Ev
-        LDR.W    R0,??DataTable10_1
-        STR      R0,[R4, #+0]
+        MOVS     R4,#+0
+        STR      R4,[R0, #+4]
+        MOV      R4,#+1000
+        STR      R4,[R0, #+8]
+        LDR.W    R4,??DataTable10
+        STR      R4,[R0, #+0]
 //   33   _rx_buffer = pRx_buffer ;
-        LDR      R0,[SP, #+24]
-        STR      R0,[R4, #+16]
+        LDR      R4,[SP, #+4]
+        STR      R4,[R0, #+16]
 //   34 
 //   35   _pUsart=pUsart ;
-        STR      R5,[R4, #+20]
+        STR      R1,[R0, #+20]
 //   36   _dwIrq=dwIrq ;
-        STRB     R6,[R4, #+40]
+        STRB     R2,[R0, #+40]
 //   37   _dwId=dwId ;
-        STR      R7,[R4, #+44]
+        STR      R3,[R0, #+44]
 //   38 }
-        MOV      R0,R4
-        POP      {R1,R4-R7,PC}    ;; return
+        POP      {R4}
+          CFI CFA R13+0
+          CFI R4 SameValue
+        BX       LR               ;; return
           CFI EndBlock cfiBlock2
 //   39 
 //   40 // Public Methods //////////////////////////////////////////////////////////////
@@ -389,15 +364,19 @@ _ZN10USARTClass5beginEj:
 //  153   /* Enable USART Receive interrupts */
 //  154   USART_ITConfig(_pUsart, USART_IT_RXNE, ENABLE);
         MOVS     R2,#+1
-        MOVW     R1,#+1317
         LDR      R0,[R4, #+20]
+        MOVW     R1,#+1317
           CFI FunCall USART_ITConfig
         BL       USART_ITConfig
 //  155   // Enable UART interrupt in NVIC
 //  156   NVIC_EnableIRQ( _dwIrq ) ;
         LDRSB    R0,[R4, #+40]
-          CFI FunCall _Z14NVIC_EnableIRQ9IRQn_Type
-        BL       _Z14NVIC_EnableIRQ9IRQn_Type
+        MOVS     R1,#+1
+        AND      R2,R0,#0x1F
+        LSLS     R1,R1,R2
+        LDR.W    R2,??DataTable10_1  ;; 0xe000e100
+        LSRS     R0,R0,#+5
+        STR      R1,[R2, R0, LSL #+2]
 //  157 
 //  158 	// Enable the USART
 //  159 	USART_Cmd(_pUsart, ENABLE);
@@ -474,8 +453,8 @@ _ZN10USARTClass3endEv:
 _ZN10USARTClass9availableEv:
         LDR      R0,[R0, #+16]
         LDR      R1,[R0, #+96]
-        ADDS     R1,R1,#+96
         LDR      R0,[R0, #+100]
+        ADDS     R1,R1,#+96
         SUBS     R0,R1,R0
         MOVS     R1,#+96
         UDIV     R1,R0,R1
@@ -501,8 +480,7 @@ _ZN10USARTClass4peekEv:
         CMP      R2,R1
         BNE.N    ??peek_0
 //  211     return -1 ;
-        MOV      R0,#-1
-        BX       LR
+        B.N      ?Subroutine1
 //  212   
 //  213   
 //  214 
@@ -521,20 +499,16 @@ _ZN10USARTClass4peekEv:
         THUMB
 //  218 int16_t USARTClass::read( void )
 //  219 {
-_ZN10USARTClass4readEv:
-        PUSH     {R4}
-          CFI R4 Frame(CFA, -4)
-          CFI CFA R13+4
 //  220   // if the head isn't ahead of the tail, we don't have any characters
 //  221   if ( _rx_buffer->_iHead == _rx_buffer->_iTail )
+_ZN10USARTClass4readEv:
         LDR      R1,[R0, #+16]
         LDR      R2,[R1, #+100]
         LDR      R0,[R1, #+96]
         CMP      R0,R2
         BNE.N    ??read_0
 //  222     return -1 ;
-        MOV      R0,#-1
-        B.N      ??read_1
+        B.N      ?Subroutine1
 //  223 
 //  224   uint8_t uc = _rx_buffer->_aucBuffer[_rx_buffer->_iTail] ;
 ??read_0:
@@ -543,21 +517,28 @@ _ZN10USARTClass4readEv:
         ADDS     R2,R2,#+1
         MOVS     R3,#+96
         UDIV     R3,R2,R3
-        ADD      R4,R3,R3, LSL #+1
-        SUB      R2,R2,R4, LSL #+5
+        ADD      R12,R3,R3, LSL #+1
+        SUB      R2,R2,R12, LSL #+5
         STR      R2,[R1, #+100]
 //  226   return uc ;
-??read_1:
-        POP      {R4}
-          CFI R4 SameValue
-          CFI CFA R13+0
         BX       LR               ;; return
           CFI EndBlock cfiBlock7
 //  227 }
-//  228 
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock8 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN10USARTClass4peekEv
+          CFI NoCalls _ZN10USARTClass4readEv
+        THUMB
+?Subroutine1:
+        MOV      R0,#-1
+        BX       LR
+          CFI EndBlock cfiBlock8
+//  228 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN10USARTClass5flushEv
           CFI NoCalls
         THUMB
@@ -575,11 +556,11 @@ _ZN10USARTClass5flushEv:
         STR      R1,[R0, #+100]
 //  237 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock9
 //  238 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _ZN10USARTClass5writeEh
         THUMB
 //  239 size_t USARTClass::write( const uint8_t uc_data )
@@ -599,8 +580,8 @@ _ZN10USARTClass5writeEh:
 //  244 	// Loop until USART DR register is empty
 //  245 	while(USART_GetFlagStatus(_pUsart, USART_FLAG_TXE) == RESET)
 ??write_0:
-        MOVS     R1,#+128
         LDR      R0,[R4, #+20]
+        MOVS     R1,#+128
           CFI FunCall USART_GetFlagStatus
         BL       USART_GetFlagStatus
         CMP      R0,#+0
@@ -611,12 +592,12 @@ _ZN10USARTClass5writeEh:
 //  249 	return 1;
         MOVS     R0,#+1
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock10
 //  250 } 
 //  251 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _ZN10USARTClass10IrqHandlerEv
         THUMB
 //  252 void USARTClass::IrqHandler( void )
@@ -633,56 +614,53 @@ _ZN10USARTClass10IrqHandlerEv:
         LDR      R0,[R4, #+20]
           CFI FunCall USART_GetFlagStatus
         BL       USART_GetFlagStatus
-        CMP      R0,#+0
-        BEQ.N    ??IrqHandler_0
+        CBZ.N    R0,??IrqHandler_0
 //  255    {  
 //  256        USART_ReceiveData(_pUsart);  
         LDR      R0,[R4, #+20]
           CFI FunCall USART_ReceiveData
         BL       USART_ReceiveData
 //  257      USART_ClearFlag(_pUsart, USART_FLAG_PE);  
-        MOVS     R1,#+1
         LDR      R0,[R4, #+20]
+        MOVS     R1,#+1
           CFI FunCall USART_ClearFlag
         BL       USART_ClearFlag
 //  258    }  
 //  259       
 //  260    if (USART_GetFlagStatus(_pUsart, USART_FLAG_ORE) != RESET)  
 ??IrqHandler_0:
-        MOVS     R1,#+8
         LDR      R0,[R4, #+20]
+        MOVS     R1,#+8
           CFI FunCall USART_GetFlagStatus
         BL       USART_GetFlagStatus
-        CMP      R0,#+0
-        BEQ.N    ??IrqHandler_1
+        CBZ.N    R0,??IrqHandler_1
 //  261    {  
 //  262        USART_ReceiveData(_pUsart);  
         LDR      R0,[R4, #+20]
           CFI FunCall USART_ReceiveData
         BL       USART_ReceiveData
 //  263      USART_ClearFlag(_pUsart, USART_FLAG_ORE);  
-        MOVS     R1,#+8
         LDR      R0,[R4, #+20]
+        MOVS     R1,#+8
           CFI FunCall USART_ClearFlag
         BL       USART_ClearFlag
 //  264    }  
 //  265       
 //  266     if (USART_GetFlagStatus(_pUsart, USART_FLAG_FE) != RESET)  
 ??IrqHandler_1:
-        MOVS     R1,#+2
         LDR      R0,[R4, #+20]
+        MOVS     R1,#+2
           CFI FunCall USART_GetFlagStatus
         BL       USART_GetFlagStatus
-        CMP      R0,#+0
-        BEQ.N    ??IrqHandler_2
+        CBZ.N    R0,??IrqHandler_2
 //  267    {  
 //  268        USART_ReceiveData(_pUsart);  
         LDR      R0,[R4, #+20]
           CFI FunCall USART_ReceiveData
         BL       USART_ReceiveData
 //  269       USART_ClearFlag(_pUsart, USART_FLAG_FE);  
-        MOVS     R1,#+2
         LDR      R0,[R4, #+20]
+        MOVS     R1,#+2
           CFI FunCall USART_ClearFlag
         BL       USART_ClearFlag
 //  270    }  
@@ -692,23 +670,22 @@ _ZN10USARTClass10IrqHandlerEv:
 //  274   if(USART_GetITStatus(_pUsart, USART_IT_RXNE) != RESET)
 ??IrqHandler_2:
         MOVW     R5,#+1317
-        MOV      R1,R5
         LDR      R0,[R4, #+20]
+        MOV      R1,R5
           CFI FunCall USART_GetITStatus
         BL       USART_GetITStatus
-        CMP      R0,#+0
-        BEQ.N    ??IrqHandler_3
+        CBZ.N    R0,??IrqHandler_3
 //  275   {
 //  276     /* Read one byte from the receive data register */
 //  277     uint8_t RxBuffer;
 //  278     USART_ClearFlag(_pUsart, USART_FLAG_RXNE);  
-        MOVS     R1,#+32
         LDR      R0,[R4, #+20]
+        MOVS     R1,#+32
           CFI FunCall USART_ClearFlag
         BL       USART_ClearFlag
 //  279     USART_ClearITPendingBit(_pUsart, USART_IT_RXNE);  
-        MOV      R1,R5
         LDR      R0,[R4, #+20]
+        MOV      R1,R5
           CFI FunCall USART_ClearITPendingBit
         BL       USART_ClearITPendingBit
 //  280     RxBuffer = USART_ReceiveData(_pUsart);
@@ -717,8 +694,7 @@ _ZN10USARTClass10IrqHandlerEv:
         BL       USART_ReceiveData
 //  281 
 //  282     _rx_buffer->store_char( RxBuffer ) ;
-        MOV      R1,R0
-        UXTB     R1,R1
+        UXTB     R1,R0
         LDR      R0,[R4, #+16]
         POP      {R2,R4,R5,LR}
           CFI R4 SameValue
@@ -747,7 +723,7 @@ _ZN10USARTClass10IrqHandlerEv:
 //  296 }
 ??IrqHandler_3:
         POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 //  297 #if 0
 //  298 
 //  299 void USARTClass::sdPause( void )
@@ -779,7 +755,7 @@ _ZN10USARTClass10IrqHandlerEv:
 //  325 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN10USARTClass11MoremenuCmdEv
         THUMB
 //  326 void USARTClass::MoremenuCmd(void)
@@ -793,86 +769,71 @@ _ZN10USARTClass11MoremenuCmdEv:
           CFI R5 Frame(CFA, -20)
           CFI R4 Frame(CFA, -24)
           CFI CFA R13+24
-        MOV      R4,R0
 //  328 	uint8_t i = 0,j=0;
-        MOVS     R5,#+0
-        MOV      R6,R5
 //  329 	
 //  330 	if(*(codebufpoint) != '\0')
         LDR.N    R7,??DataTable10_2
+        MOV      R4,R0
         LDR      R0,[R7, #+0]
-        LDRSB    R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??MoremenuCmd_0
+        MOVS     R5,#+0
+        MOVS     R6,#+0
+        LDRSB    R0,[R0, R5]
+        CBZ.N    R0,??MoremenuCmd_0
 //  331 	{
 //  332 		memset(codebuff,0,sizeof(codebuff));
         LDR.W    R8,??DataTable10_3
-        MOVS     R2,#+100
-        MOV      R1,R5
+        MOVS     R1,#+100
         MOV      R0,R8
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr
+        BL       __aeabi_memclr
+        MOV      R0,R8
         B.N      ??MoremenuCmd_1
 //  333 		
 //  334 		while((*(codebufpoint) != 0x3b)&&(i<=96))//?üá?DDò?·?o??a?áê?·??￡
 //  335 		{
 //  336 			codebuff[i] = *codebufpoint;
 ??MoremenuCmd_2:
-        LDRB     R1,[R0, #+0]
-        STRB     R1,[R5, R8]
+        LDRB     R2,[R1], #+1
+        STRB     R2,[R0], #+1
 //  337 			i++;
         ADDS     R5,R5,#+1
         UXTB     R5,R5
 //  338 			codebufpoint++;
-        ADDS     R0,R0,#+1
-        STR      R0,[R7, #+0]
+        STR      R1,[R7, #+0]
 //  339 		}
 ??MoremenuCmd_1:
-        LDR      R0,[R7, #+0]
-        LDRSB    R1,[R0, #+0]
-        CMP      R1,#+59
+        LDR      R1,[R7, #+0]
+        LDRSB    R2,[R1, R6]
+        CMP      R2,#+59
         BEQ.N    ??MoremenuCmd_3
         CMP      R5,#+97
         BLT.N    ??MoremenuCmd_2
 //  340 		
 //  341 		codebuff[i] = '\n';
 ??MoremenuCmd_3:
-        MOVS     R1,#+10
-        STRB     R1,[R5, R8]
+        MOVS     R0,#+10
+        STRB     R0,[R5, R8]
 //  342 		
 //  343 		codebufpoint += 1;		
-        ADDS     R0,R0,#+1
+        ADDS     R0,R1,#+1
         STR      R0,[R7, #+0]
 //  344 		if(USARTClass::check())
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
         BEQ.N    ??MoremenuCmd_4
 //  345 		{
 //  346 			for(j=0;j<i+1;j++)
-??MoremenuCmd_5:
-        UXTB     R6,R6
-        MOV      R0,R6
-        ADDS     R1,R5,#+1
-        CMP      R0,R1
-        BGE.N    ??MoremenuCmd_0
 //  347 			{
 //  348       			_rx_buffer->store_char(codebuff[j]) ;
-        LDRB     R1,[R0, R8]
-        LDR      R0,[R4, #+16]
-          CFI FunCall _ZN10RingBuffer10store_charEh
-        BL       _ZN10RingBuffer10store_charEh
 //  349 			}
-        ADDS     R6,R6,#+1
-        B.N      ??MoremenuCmd_5
 //  350 		}
 //  351 		else
 //  352 		{
 //  353 			codebufpoint = codebufpoint - i - 1;
-??MoremenuCmd_4:
-        RSBS     R0,R5,#+0
         LDR      R1,[R7, #+0]
+        RSBS     R0,R5,#+0
         ADDS     R0,R0,R1
         SUBS     R0,R0,#+1
         STR      R0,[R7, #+0]
@@ -881,13 +842,24 @@ _ZN10USARTClass11MoremenuCmdEv:
 //  356 	}
 //  357 	
 //  358 }
+        POP      {R4-R8,PC}
+??MoremenuCmd_4:
+        LDRB     R1,[R6, R8]
+        LDR      R0,[R4, #+16]
+          CFI FunCall _ZN10RingBuffer10store_charEh
+        BL       _ZN10RingBuffer10store_charEh
+        ADDS     R6,R6,#+1
+        UXTB     R6,R6
+        ADDS     R0,R5,#+1
+        CMP      R6,R0
+        BLT.N    ??MoremenuCmd_4
 ??MoremenuCmd_0:
         POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock12
 //  359 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function _ZN10USARTClass5checkEv
           CFI NoCalls
         THUMB
@@ -908,25 +880,26 @@ _ZN10USARTClass5checkEv:
 ??check_0:
         MOVS     R0,#+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock12
+          CFI EndBlock cfiBlock13
 //  366 }
 //  367 #if 1
 //  368 extern uint8_t next_cnt;
 //  369 extern uint8_t leveling_start_flg;
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function _ZN10USARTClass20Leveling_move_actionEv
         THUMB
 //  370 void USARTClass::Leveling_move_action(void)
 //  371 {
 _ZN10USARTClass20Leveling_move_actionEv:
-        PUSH     {R4,R5,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
-        SUB      SP,SP,#+60
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
+        SUB      SP,SP,#+56
           CFI CFA R13+72
         MOV      R4,R0
 //  372 	uint8_t i;
@@ -947,18 +920,17 @@ _ZN10USARTClass20Leveling_move_actionEv:
         MOVS     R1,#+0
         STRB     R1,[R0, #+0]
 //  379 		if(USARTClass::check())
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.N    ??Leveling_move_action_0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.N    ??Leveling_move_action_0
 //  380 		{
 //  381 			memset(move_point_temp,0,sizeof(move_point_temp));
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        MOVS     R1,#+50
         ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
 //  382 			sprintf((char*)move_point_temp,"G28\n");
         ADR.W    R1,`?<Constant "G28\\n">`
         ADD      R0,SP,#+4
@@ -966,12 +938,12 @@ _ZN10USARTClass20Leveling_move_actionEv:
         BL       sprintf
 //  383 			for(i=0;i<strlen(move_point_temp);i++)
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
         B.N      ??Leveling_move_action_1
 //  384 			{
 //  385       			_rx_buffer->store_char(move_point_temp[i]) ;
 ??Leveling_move_action_2:
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
@@ -1000,7 +972,6 @@ _ZN10USARTClass20Leveling_move_actionEv:
         CMP      R0,#+5
         BEQ.W    ??Leveling_move_action_7
         BCC.N    ??Leveling_move_action_8
-        B.N      ??Leveling_move_action_4
 //  391 	{
 //  392 	case 1:
 //  393 			/*
@@ -1021,32 +992,89 @@ _ZN10USARTClass20Leveling_move_actionEv:
 //  408 			*/
 //  409 			{
 //  410 				if(USARTClass::check())
-??Leveling_move_action_3:
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.W    ??Leveling_move_action_4
 //  411 				{
 //  412 					memset(move_point_temp,0,sizeof(move_point_temp));
-        MOVS     R2,#+50
-        MOVS     R1,#+0
-        ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
 //  413 					sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point1_x,gCfgItems.leveling_point1_y);
+//  414 					for(i=0;i<strlen(move_point_temp);i++)
+//  415 					{
+//  416 		      			_rx_buffer->store_char(move_point_temp[i]) ;
+//  417 					}
+//  418 				}
+//  419 			}
+//  420 
+//  421 		break;
+//  422 	case 2:
+//  423 		if(USARTClass::check())
+//  424 		{
+//  425 			memset(move_point_temp,0,sizeof(move_point_temp));
+//  426 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
+//  427 			for(i=0;i<strlen(move_point_temp);i++)
+//  428 			{
+//  429       			_rx_buffer->store_char(move_point_temp[i]) ;
+//  430 			}
+//  431 		}		
+//  432 		break;
+//  433 	case 3:
+//  434 		if(USARTClass::check())
+//  435 		{
+//  436 			memset(move_point_temp,0,sizeof(move_point_temp));
+//  437 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
+//  438 			for(i=0;i<strlen(move_point_temp);i++)
+//  439 			{
+//  440       			_rx_buffer->store_char(move_point_temp[i]) ;
+//  441 			}
+//  442 		}		
+//  443 		break;
+//  444 	case 4:
+//  445 		if(USARTClass::check())
+//  446 		{
+//  447 			memset(move_point_temp,0,sizeof(move_point_temp));
+//  448 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
+//  449 			for(i=0;i<strlen(move_point_temp);i++)
+//  450 			{
+//  451       			_rx_buffer->store_char(move_point_temp[i]) ;
+//  452 			}
+//  453 		}		
+//  454 		break;
+//  455 	case 5:
+//  456 		if(USARTClass::check())
+//  457 		{
+//  458 			memset(move_point_temp,0,sizeof(move_point_temp));
+//  459 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
+//  460 			for(i=0;i<strlen(move_point_temp);i++)
+//  461 			{
+//  462       			_rx_buffer->store_char(move_point_temp[i]) ;
+//  463 			}
+//  464 		}		
+//  465 		break;
+//  466 	}
+//  467 }
+        ADD      SP,SP,#+56
+          CFI CFA R13+16
+        POP      {R4-R6,PC}
+          CFI CFA R13+72
+??Leveling_move_action_3:
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.W    ??Leveling_move_action_4
+        MOVS     R1,#+50
+        ADD      R0,SP,#+4
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
         LDR.N    R0,??DataTable10_6
-        ADDW     R1,R0,#+210
+        ADDW     R1,R0,#+226
         LDRSH    R2,[R1, #+46]
         LDRSH    R3,[R1, #+44]
-        STR      R2,[SP, #+0]
-        LDRSH    R2,[R0, #+210]
         ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+        STR      R2,[SP, #+0]
+        LDRSH    R2,[R0, #+226]
         ADD      R0,SP,#+4
           CFI FunCall sprintf
         BL       sprintf
-//  414 					for(i=0;i<strlen(move_point_temp);i++)
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
 ??Leveling_move_action_9:
         ADD      R0,SP,#+4
           CFI FunCall strlen
@@ -1054,48 +1082,34 @@ _ZN10USARTClass20Leveling_move_actionEv:
         UXTB     R5,R5
         CMP      R5,R0
         BCS.W    ??Leveling_move_action_4
-//  415 					{
-//  416 		      			_rx_buffer->store_char(move_point_temp[i]) ;
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
-//  417 					}
         ADDS     R5,R5,#+1
         B.N      ??Leveling_move_action_9
-//  418 				}
-//  419 			}
-//  420 
-//  421 		break;
-//  422 	case 2:
-//  423 		if(USARTClass::check())
 ??Leveling_move_action_6:
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.W    ??Leveling_move_action_4
-//  424 		{
-//  425 			memset(move_point_temp,0,sizeof(move_point_temp));
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.W    ??Leveling_move_action_4
+        MOVS     R1,#+50
         ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
-//  426 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point2_x,gCfgItems.leveling_point2_y);
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
         LDR.N    R0,??DataTable10_6
-        ADDW     R1,R0,#+210
+        ADDW     R1,R0,#+226
         LDRSH    R2,[R1, #+50]
         LDRSH    R3,[R1, #+48]
-        STR      R2,[SP, #+0]
-        LDRSH    R2,[R0, #+210]
         ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+        STR      R2,[SP, #+0]
+        LDRSH    R2,[R0, #+226]
         ADD      R0,SP,#+4
           CFI FunCall sprintf
         BL       sprintf
-//  427 			for(i=0;i<strlen(move_point_temp);i++)
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
 ??Leveling_move_action_10:
         ADD      R0,SP,#+4
           CFI FunCall strlen
@@ -1103,46 +1117,34 @@ _ZN10USARTClass20Leveling_move_actionEv:
         UXTB     R5,R5
         CMP      R5,R0
         BCS.N    ??Leveling_move_action_4
-//  428 			{
-//  429       			_rx_buffer->store_char(move_point_temp[i]) ;
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
-//  430 			}
         ADDS     R5,R5,#+1
         B.N      ??Leveling_move_action_10
-//  431 		}		
-//  432 		break;
-//  433 	case 3:
-//  434 		if(USARTClass::check())
 ??Leveling_move_action_5:
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.N    ??Leveling_move_action_4
-//  435 		{
-//  436 			memset(move_point_temp,0,sizeof(move_point_temp));
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.N    ??Leveling_move_action_4
+        MOVS     R1,#+50
         ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
-//  437 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point3_x,gCfgItems.leveling_point3_y);
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
         LDR.N    R0,??DataTable10_6
-        ADDW     R1,R0,#+210
+        ADDW     R1,R0,#+226
         LDRSH    R2,[R1, #+54]
         LDRSH    R3,[R1, #+52]
-        STR      R2,[SP, #+0]
-        LDRSH    R2,[R0, #+210]
         ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+        STR      R2,[SP, #+0]
+        LDRSH    R2,[R0, #+226]
         ADD      R0,SP,#+4
           CFI FunCall sprintf
         BL       sprintf
-//  438 			for(i=0;i<strlen(move_point_temp);i++)
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
 ??Leveling_move_action_11:
         ADD      R0,SP,#+4
           CFI FunCall strlen
@@ -1150,46 +1152,34 @@ _ZN10USARTClass20Leveling_move_actionEv:
         UXTB     R5,R5
         CMP      R5,R0
         BCS.N    ??Leveling_move_action_4
-//  439 			{
-//  440       			_rx_buffer->store_char(move_point_temp[i]) ;
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
-//  441 			}
         ADDS     R5,R5,#+1
         B.N      ??Leveling_move_action_11
-//  442 		}		
-//  443 		break;
-//  444 	case 4:
-//  445 		if(USARTClass::check())
 ??Leveling_move_action_8:
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.N    ??Leveling_move_action_4
-//  446 		{
-//  447 			memset(move_point_temp,0,sizeof(move_point_temp));
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.N    ??Leveling_move_action_4
+        MOVS     R1,#+50
         ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
-//  448 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point4_x,gCfgItems.leveling_point4_y);
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
         LDR.N    R0,??DataTable10_6
-        ADDW     R1,R0,#+210
+        ADDW     R1,R0,#+226
         LDRSH    R2,[R1, #+58]
         LDRSH    R3,[R1, #+56]
-        STR      R2,[SP, #+0]
-        LDRSH    R2,[R0, #+210]
         ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+        STR      R2,[SP, #+0]
+        LDRSH    R2,[R0, #+226]
         ADD      R0,SP,#+4
           CFI FunCall sprintf
         BL       sprintf
-//  449 			for(i=0;i<strlen(move_point_temp);i++)
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
 ??Leveling_move_action_12:
         ADD      R0,SP,#+4
           CFI FunCall strlen
@@ -1197,56 +1187,40 @@ _ZN10USARTClass20Leveling_move_actionEv:
         UXTB     R5,R5
         CMP      R5,R0
         BCS.N    ??Leveling_move_action_4
-//  450 			{
-//  451       			_rx_buffer->store_char(move_point_temp[i]) ;
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
-//  452 			}
         ADDS     R5,R5,#+1
         B.N      ??Leveling_move_action_12
-//  453 		}		
-//  454 		break;
-//  455 	case 5:
-//  456 		if(USARTClass::check())
 ??Leveling_move_action_7:
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.N    ??Leveling_move_action_4
-//  457 		{
-//  458 			memset(move_point_temp,0,sizeof(move_point_temp));
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.N    ??Leveling_move_action_4
+        MOVS     R1,#+50
         ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
-//  459 			sprintf((char*)move_point_temp,"G91\nG1 Z%d\nG90\nG1 X%d Y%d\nG28 Z0\n",gCfgItems.pause_zpos,gCfgItems.leveling_point5_x,gCfgItems.leveling_point5_y);
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
         LDR.N    R0,??DataTable10_6
-        ADDW     R1,R0,#+210
+        ADDW     R1,R0,#+226
         LDRSH    R2,[R1, #+62]
         LDRSH    R3,[R1, #+60]
-        STR      R2,[SP, #+0]
-        LDRSH    R2,[R0, #+210]
         ADR.W    R1,`?<Constant "G91\\nG1 Z%d\\nG90\\nG1 X%d...">`
+        STR      R2,[SP, #+0]
+        LDRSH    R2,[R0, #+226]
         ADD      R0,SP,#+4
           CFI FunCall sprintf
         BL       sprintf
-//  460 			for(i=0;i<strlen(move_point_temp);i++)
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
         B.N      ??Leveling_move_action_13
-//  461 			{
-//  462       			_rx_buffer->store_char(move_point_temp[i]) ;
 ??Leveling_move_action_14:
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
-//  463 			}
         ADDS     R5,R5,#+1
 ??Leveling_move_action_13:
         ADD      R0,SP,#+4
@@ -1255,27 +1229,24 @@ _ZN10USARTClass20Leveling_move_actionEv:
         UXTB     R5,R5
         CMP      R5,R0
         BCC.N    ??Leveling_move_action_14
-//  464 		}		
-//  465 		break;
-//  466 	}
-//  467 }
 ??Leveling_move_action_4:
-        ADD      SP,SP,#+60
-          CFI CFA R13+12
-        POP      {R4,R5,PC}       ;; return
-          CFI EndBlock cfiBlock13
+        ADD      SP,SP,#+56
+          CFI CFA R13+16
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock14
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function _ZN10USARTClass14filamentchangeEv
         THUMB
 _ZN10USARTClass14filamentchangeEv:
-        PUSH     {R4,R5,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
-        SUB      SP,SP,#+60
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
+        SUB      SP,SP,#+56
           CFI CFA R13+72
         MOV      R4,R0
         ADD      R0,SP,#+4
@@ -1288,29 +1259,32 @@ _ZN10USARTClass14filamentchangeEv:
         BEQ.N    ??filamentchange_0
         CMP      R0,#+2
         BEQ.N    ??filamentchange_1
-        B.N      ??filamentchange_2
+        ADD      SP,SP,#+56
+          CFI CFA R13+16
+        POP      {R4-R6,PC}
+          CFI CFA R13+72
 ??filamentchange_0:
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.N    ??filamentchange_2
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.N    ??filamentchange_2
+        MOVS     R1,#+50
         ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
         LDR.N    R0,??DataTable10_6
-        ADD      R1,R0,#+156
+        ADD      R1,R0,#+172
         LDR      R2,[R1, #+64]
-        STR      R2,[SP, #+0]
         LDR      R3,[R1, #+72]
-        LDRSB    R2,[R0, #+156]
         ADR.W    R1,`?<Constant "T%d\\nG91\\nG1 E%d F%d\\nG90\\n">`
+        STR      R2,[SP, #+0]
+        LDRSB    R2,[R0, #+172]
         ADD      R0,SP,#+4
           CFI FunCall sprintf
         BL       sprintf
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
 ??filamentchange_3:
         ADD      R0,SP,#+4
           CFI FunCall strlen
@@ -1318,39 +1292,37 @@ _ZN10USARTClass14filamentchangeEv:
         UXTB     R5,R5
         CMP      R5,R0
         BCS.N    ??filamentchange_2
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
         ADDS     R5,R5,#+1
         B.N      ??filamentchange_3
 ??filamentchange_1:
-        MOV      R0,R4
-          CFI FunCall _ZN10USARTClass5checkEv
-        BL       _ZN10USARTClass5checkEv
-        CMP      R0,#+0
-        BEQ.N    ??filamentchange_2
-        MOVS     R2,#+50
-        MOVS     R1,#+0
+        LDR      R0,[R4, #+16]
+        LDR      R1,[R0, #+96]
+        LDR      R0,[R0, #+100]
+        CMP      R1,R0
+        BNE.N    ??filamentchange_2
+        MOVS     R1,#+50
         ADD      R0,SP,#+4
-          CFI FunCall memset
-        BL       memset
+          CFI FunCall __aeabi_memclr4
+        BL       __aeabi_memclr4
         LDR.N    R0,??DataTable10_6
-        ADD      R1,R0,#+156
+        ADD      R1,R0,#+172
         LDR      R2,[R1, #+68]
-        STR      R2,[SP, #+0]
         LDR      R3,[R1, #+76]
-        LDRSB    R2,[R0, #+156]
         ADR.W    R1,`?<Constant "T%d\\nG91\\nG1 E-%d F%d\\nG90\\n">`
+        STR      R2,[SP, #+0]
+        LDRSB    R2,[R0, #+172]
         ADD      R0,SP,#+4
           CFI FunCall sprintf
         BL       sprintf
         MOVS     R5,#+0
+        ADD      R6,SP,#+4
         B.N      ??filamentchange_4
 ??filamentchange_5:
-        ADD      R0,SP,#+4
-        LDRB     R1,[R5, R0]
+        LDRB     R1,[R6], #+1
         LDR      R0,[R4, #+16]
           CFI FunCall _ZN10RingBuffer10store_charEh
         BL       _ZN10RingBuffer10store_charEh
@@ -1363,22 +1335,22 @@ _ZN10USARTClass14filamentchangeEv:
         CMP      R5,R0
         BCC.N    ??filamentchange_5
 ??filamentchange_2:
-        ADD      SP,SP,#+60
-          CFI CFA R13+12
-        POP      {R4,R5,PC}       ;; return
-          CFI EndBlock cfiBlock14
+        ADD      SP,SP,#+56
+          CFI CFA R13+16
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock15
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10:
-        DC32     0xe000e100
+        DC32     _ZTV10USARTClass+0x8
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10_1:
-        DC32     _ZTV10USARTClass+0x8
+        DC32     0xe000e100
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1444,59 +1416,8 @@ _ZN10USARTClass14filamentchangeEv:
         DC8 0, 0, 0
 
         SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN5PrintC1Ev
-          CFI Block cfiBlock15 Using cfiCommon0
-          CFI Function _ZN5PrintC1Ev
-          CFI NoCalls
-        THUMB
-// __code __interwork __softfp Print::Print()
-_ZN5PrintC1Ev:
-        MOVS     R1,#+0
-        STR      R1,[R0, #+4]
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock15
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN6StreamC1Ev
-          CFI Block cfiBlock16 Using cfiCommon0
-          CFI Function _ZN6StreamC1Ev
-        THUMB
-// __code __interwork __softfp Stream::Stream()
-_ZN6StreamC1Ev:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-          CFI FunCall _ZN5PrintC2Ev
-        BL       _ZN5PrintC2Ev
-        MOV      R0,#+1000
-        STR      R0,[R4, #+8]
-        MOV      R0,R4
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock16
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN14HardwareSerialC1Ev
-          CFI Block cfiBlock17 Using cfiCommon0
-          CFI Function _ZN14HardwareSerialC1Ev
-        THUMB
-// __code __interwork __softfp HardwareSerial::HardwareSerial()
-_ZN14HardwareSerialC1Ev:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-          CFI FunCall _ZN6StreamC2Ev
-        BL       _ZN6StreamC2Ev
-        MOV      R0,R4
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock17
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
         SECTION_GROUP _ZN10USARTClasscvbEv
-          CFI Block cfiBlock18 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function _ZN10USARTClasscvbEv
           CFI NoCalls
         THUMB
@@ -1504,7 +1425,7 @@ _ZN14HardwareSerialC1Ev:
 _ZN10USARTClasscvbEv:
         MOVS     R0,#+1
         BX       LR               ;; return
-          CFI EndBlock cfiBlock18
+          CFI EndBlock cfiBlock16
 
         SECTION `.iar_vfe_vtableinfo_ZTV10USARTClass`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1565,39 +1486,6 @@ _ZN10USARTClasscvbEv:
 _ZTI5Print:
         DATA
         DC8 0
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN5PrintC2Ev
-          CFI Block cfiBlock19 Using cfiCommon0
-          CFI Function _ZN5PrintC2Ev
-          CFI FunCall _ZN5PrintC1Ev
-        THUMB
-// __code __interwork __softfp Print::subobject Print()
-_ZN5PrintC2Ev:
-        B.W      _ZN5PrintC1Ev
-          CFI EndBlock cfiBlock19
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN6StreamC2Ev
-          CFI Block cfiBlock20 Using cfiCommon0
-          CFI Function _ZN6StreamC2Ev
-          CFI FunCall _ZN6StreamC1Ev
-        THUMB
-// __code __interwork __softfp Stream::subobject Stream()
-_ZN6StreamC2Ev:
-        B.W      _ZN6StreamC1Ev
-          CFI EndBlock cfiBlock20
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN14HardwareSerialC2Ev
-          CFI Block cfiBlock21 Using cfiCommon0
-          CFI Function _ZN14HardwareSerialC2Ev
-          CFI FunCall _ZN14HardwareSerialC1Ev
-        THUMB
-// __code __interwork __softfp HardwareSerial::subobject HardwareSerial()
-_ZN14HardwareSerialC2Ev:
-        B.W      _ZN14HardwareSerialC1Ev
-          CFI EndBlock cfiBlock21
 
         SECTION `.rodata`:CONST:REORDER:NOROOT(2)
         SECTION_GROUP _ZTV10USARTClass
@@ -1686,9 +1574,9 @@ _ZTI6Stream:
 //  506 
 // 
 //   144 bytes in section .rodata
-// 1 380 bytes in section .text
+// 1 296 bytes in section .text
 // 
-// 1 328 bytes of CODE  memory (+ 52 bytes shared)
+// 1 292 bytes of CODE  memory (+  4 bytes shared)
 //   104 bytes of CONST memory (+ 40 bytes shared)
 //
 //Errors: none

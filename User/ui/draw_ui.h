@@ -465,7 +465,8 @@ typedef enum
 	ADVANCED_UI,
 	DOUBLE_Z_UI,
 	ENABLE_INVERT_UI,
-	NUMBER_KEY_UI
+	NUMBER_KEY_UI,
+	BABY_STEP_UI
 } DISP_STATE;
 
 typedef struct

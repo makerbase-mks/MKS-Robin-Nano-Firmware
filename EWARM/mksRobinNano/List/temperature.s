@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:06:14
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:22
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\temperature.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\temperature.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\temperature.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\temperature.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\temperature.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\temperature.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -101,6 +98,7 @@
         EXTERN _ZN5Print5printEdi
         EXTERN _ZN5Print5printEii
         EXTERN _ZN7Planner16autotemp_enabledE
+        EXTERN _ZN7Stepper8babystepE8AxisEnumb
         EXTERN _ZN9Stopwatch4stopEv
         EXTERN __aeabi_cdcmple
         EXTERN __aeabi_cfcmpeq
@@ -125,7 +123,6 @@
         EXTERN gCfgItems
         EXTERN htim4
         EXTERN loop_start
-        EXTERN memset
         EXTERN mksCfg
         EXTERN mksTmp
         EXTERN print_job_timer
@@ -135,22 +132,17 @@
         EXTERN wait_for_heatup
 
         PUBLIC IsrTemperatureHandler
-        PUBLIC _Z10lcd_updatev
-        PUBLIC _Z14serialprintPGMPKc
-        PUBLIC _Z18lcd_buttons_updatev
         PUBLIC _Z18print_heater_stateRKfS0_a
-        PUBLIC _Z9IsRunningv
         PUBLIC _ZN11Temperature11_temp_errorEaPKcS1_
         PUBLIC _ZN11Temperature11analog2tempEih
         PUBLIC _ZN11Temperature11in_temp_isrE
         PUBLIC _ZN11Temperature11temp_dStateE
         PUBLIC _ZN11Temperature11temp_iStateE
         PUBLIC _ZN11Temperature12PID_autotuneEfaab
-        PUBLIC _ZN11Temperature12degTargetBedEv
         PUBLIC _ZN11Temperature12maxttemp_rawE
         PUBLIC _ZN11Temperature12minttemp_rawE
         PUBLIC _ZN11Temperature12read_max6675Ev
-        PUBLIC _ZN11Temperature12setTargetBedEf
+        PUBLIC _ZN11Temperature13babystepsTodoE
         PUBLIC _ZN11Temperature13manage_heaterEv
         PUBLIC _ZN11Temperature13pid_error_bedE
         PUBLIC _ZN11Temperature14analog2tempBedEi
@@ -159,8 +151,6 @@
         PUBLIC _ZN11Temperature14max_temp_errorEa
         PUBLIC _ZN11Temperature14min_temp_errorEa
         PUBLIC _ZN11Temperature14raw_temp_valueE
-        PUBLIC _ZN11Temperature15degTargetHotendEh
-        PUBLIC _ZN11Temperature15setTargetHotendEfh
         PUBLIC _ZN11Temperature15soft_pwm_amountE
         PUBLIC _ZN11Temperature15temp_dState_bedE
         PUBLIC _ZN11Temperature15temp_iState_bedE
@@ -208,16 +198,13 @@
         PUBLIC _ZN11Temperature5dTermE
         PUBLIC _ZN11Temperature5iTermE
         PUBLIC _ZN11Temperature5pTermE
-        PUBLIC _ZN11Temperature6degBedEv
         PUBLIC _ZN11Temperature8maxttempE
         PUBLIC _ZN11Temperature8minttempE
         PUBLIC _ZN11Temperature9dTerm_bedE
-        PUBLIC _ZN11Temperature9degHotendEh
         PUBLIC _ZN11Temperature9iTerm_bedE
         PUBLIC _ZN11Temperature9pTerm_bedE
         PUBLIC _ZN11Temperature9pid_errorE
         PUBLIC _ZN11Temperature9pid_resetE
-        PUBLIC _ZN11Temperature9updatePIDEv
         PUBLIC _ZN11TemperatureC1Ev
         PUBLIC _ZN11TemperatureC2Ev
         PUBLIC _ZTI5Print
@@ -251,7 +238,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\temperature.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\temperature.cpp
 //    1 /**
 //    2  * Marlin 3D Printer Firmware
 //    3  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -355,7 +342,13 @@ thermalManager:
 //   90 
 //   91 // Initialized by settings.load()
 //   92 #if 1//ENABLED(PIDTEMPBED)
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
 //   93   float Temperature::bedKp, Temperature::bedKi, Temperature::bedKd;
+_ZN11Temperature5bedKiE:
+        DS8 4
+_ZN11Temperature5bedKdE:
+        DS8 4
 //   94 #endif
 //   95 
 //   96 #if ENABLED(BABYSTEPPING)
@@ -373,16 +366,8 @@ thermalManager:
 //  108 #endif
 //  109 
 //  110 #if ENABLED(PREVENT_COLD_EXTRUSION)
-
-        SECTION `.bss`:DATA:REORDER:NOROOT(0)
 //  111   bool Temperature::allow_cold_extrude = false;
-_ZN11Temperature18allow_cold_extrudeE:
-        DS8 1
-
-        SECTION `.bss`:DATA:REORDER:NOROOT(1)
 //  112   int16_t Temperature::extrude_min_temp = EXTRUDE_MINTEMP;
-_ZN11Temperature16extrude_min_tempE:
-        DS8 2
 //  113 #endif
 //  114 
 //  115 // private:
@@ -395,8 +380,6 @@ _ZN11Temperature16extrude_min_tempE:
 //  122 volatile bool Temperature::temp_meas_ready = false;
 //  123 
 //  124 #if 1//ENABLED(PIDTEMP)
-
-        SECTION `.bss`:DATA:REORDER:NOROOT(2)
 //  125   float Temperature::temp_iState[HOTENDS] = { 0 },
 //  126         Temperature::temp_dState[HOTENDS] = { 0 },
 //  127         Temperature::pTerm[HOTENDS],
@@ -412,21 +395,6 @@ _ZN11Temperature16extrude_min_tempE:
 //  137 
 //  138   float Temperature::pid_error[HOTENDS];
 //  139   bool Temperature::pid_reset[HOTENDS];
-_ZN11Temperature9pid_resetE:
-        DS8 2
-        DS8 2
-_ZN11Temperature11temp_iStateE:
-        DS8 8
-_ZN11Temperature11temp_dStateE:
-        DS8 8
-_ZN11Temperature5pTermE:
-        DS8 8
-_ZN11Temperature5iTermE:
-        DS8 8
-_ZN11Temperature5dTermE:
-        DS8 8
-_ZN11Temperature9pid_errorE:
-        DS8 8
 //  140 #endif
 //  141 #if 0
 //  142 #if ENABLED(PIDTEMPBED)
@@ -440,8 +408,6 @@ _ZN11Temperature9pid_errorE:
 //  150   millis_t Temperature::next_bed_check_ms;
 //  151 #endif
 //  152 #endif
-
-        SECTION `.bss`:DATA:REORDER:NOROOT(2)
 //  153 float Temperature::temp_iState_bed = { 0 },
 _ZN11Temperature15temp_iState_bedE:
         DS8 4
@@ -461,14 +427,39 @@ _ZN11Temperature9dTerm_bedE:
 _ZN11Temperature13pid_error_bedE:
         DS8 4
 
+        SECTION `.bss`:DATA:REORDER:NOROOT(0)
+_ZN11Temperature18allow_cold_extrudeE:
+        DS8 1
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(1)
+_ZN11Temperature16extrude_min_tempE:
+        DS8 2
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
+_ZN11Temperature9pid_resetE:
+        DS8 2
+        DS8 2
+_ZN11Temperature11temp_iStateE:
+        DS8 8
+_ZN11Temperature11temp_dStateE:
+        DS8 8
+_ZN11Temperature5pTermE:
+        DS8 8
+_ZN11Temperature5iTermE:
+        DS8 8
+_ZN11Temperature5dTermE:
+        DS8 8
+_ZN11Temperature9pid_errorE:
+        DS8 8
+
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _ZN11TemperatureC2Ev
-          CFI FunCall _ZN11TemperatureC1Ev
+          CFI NoCalls
         THUMB
 // __code __interwork __softfp Temperature::subobject Temperature()
 _ZN11TemperatureC2Ev:
-        B.W      _ZN11TemperatureC1Ev
+        BX       LR               ;; return
           CFI EndBlock cfiBlock0
 
         SECTION `.text`:CODE:NOROOT(1)
@@ -480,11 +471,11 @@ __sti__routine:
         PUSH     {R7,LR}
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
-        LDR.W    R0,??DataTable56
+        LDR.W    R0,??DataTable55
         LDR      R0,[R0, #+44]
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        LDR.W    R1,??DataTable57
+        LDR.W    R1,??DataTable55_1
         STRH     R0,[R1, #+0]
         POP      {R0,PC}          ;; return
           CFI EndBlock cfiBlock1
@@ -580,102 +571,72 @@ _ZN11Temperature12PID_autotuneEfaab:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+52
-        SUB      SP,SP,#+68
-          CFI CFA R13+120
 //  234     float input = 0.0;
-        MOV      R10,#+0
+        MOV      R9,#+0
+        SUB      SP,SP,#+84
+          CFI CFA R13+136
 //  235     int cycles = 0;
-        MOV      R0,R10
-        STR      R0,[SP, #+16]
+        MOV      R11,R9
 //  236     bool heating = true;
-        MOVS     R0,#+1
-        STRB     R0,[SP, #+32]
+        MOV      R10,#+1
 //  237 
 //  238     millis_t next_temp_ms = millis(), t1 = next_temp_ms, t2 = next_temp_ms;
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
-        STR      R0,[SP, #+12]
-        STR      R0,[SP, #+48]
-        LDR      R0,[SP, #+12]
+        STR      R0,[SP, #+28]
         STR      R0,[SP, #+44]
 //  239     long t_high = 0, t_low = 0;
-        MOV      R0,R10
-        STR      R0,[SP, #+40]
+        STR      R9,[SP, #+36]
 //  240 
 //  241     long bias, d;
 //  242     float Ku, Tu,
 //  243           workKp = 0, workKi = 0, workKd = 0,
-        MOV      R8,R0
-        MOV      R9,R0
-        MOV      R11,R0
+        MOV      R8,R9
+        LDR      R0,[SP, #+28]
 //  244           max = 0, min = 10000;
-        STR      R0,[SP, #+8]
-        LDR.W    R0,??DataTable57_1  ;; 0x461c4000
-        STR      R0,[SP, #+4]
-        LDR.W    R0,??DataTable57_2
-        STR      R0,[SP, #+0]
+        LDR.W    R6,??DataTable55_2
+        STR      R0,[SP, #+40]
+        STR      R9,[SP, #+4]
+        STR      R9,[SP, #+0]
+        STR      R9,[SP, #+24]
+        LDR.W    R0,??DataTable55_3  ;; 0x461c4000
+        STR      R0,[SP, #+20]
+        LDR.W    R0,??DataTable55_4
         LDRB     R4,[R0, #+1]
-        LDR.W    R5,??DataTable57_3
+        STR      R0,[SP, #+12]
         CMP      R4,#+0
+        LDR.W    R0,??DataTable55
+        LDRB     R5,[R0, #+54]
         BEQ.N    ??PID_autotune_0
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_0
+        CMP      R5,#+0
+        BEQ.N    ??PID_autotune_1
 //  245 
 //  246     #if WATCH_THE_BED || WATCH_HOTENDS
 //  247       float watch_temp_target ;//= temp -
 //  248         #if ENABLED(THERMAL_PROTECTION_BED) /*&& ENABLED(PIDTEMPBED) */&& ENABLED(THERMAL_PROTECTION_HOTENDS) /*&& ENABLED(PIDTEMP)*/
 //  249             if((PIDTEMPBED)&&(PIDTEMP))
 //  250                 watch_temp_target = temp - (hotend < 0 ? (WATCH_BED_TEMP_INCREASE + TEMP_BED_HYSTERESIS + 1) : (WATCH_TEMP_INCREASE + TEMP_HYSTERESIS + 1));
-        LDRSB    R0,[SP, #+72]
+        LDRSB    R0,[SP, #+88]
+        STR      R0,[SP, #+8]
         CMP      R0,#+0
-        BPL.N    ??PID_autotune_1
-        LDRB     R0,[R5, #+10]
+        ITE      MI 
+        LDRBMI   R0,[R6, #+10]
+        LDRBPL   R0,[R6, #+2]
         ADDS     R0,R0,#+3
-        B.N      ??PID_autotune_2
-??PID_autotune_1:
-        LDRB     R0,[R5, #+2]
-        ADDS     R0,R0,#+3
-??PID_autotune_2:
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        LDR      R0,[SP, #+68]
+        LDR      R0,[SP, #+84]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        STR      R0,[SP, #+36]
-        B.N      ??PID_autotune_3
+        STR      R0,[SP, #+32]
 //  251             else
 //  252             {
 //  253              #if ENABLED(THERMAL_PROTECTION_BED) /*&& ENABLED(PIDTEMPBED)*/
 //  254                 if(PIDTEMPBED)
-??PID_autotune_0:
-        CMP      R4,#+0
-        BEQ.N    ??PID_autotune_4
 //  255                     watch_temp_target = temp - (WATCH_BED_TEMP_INCREASE + TEMP_BED_HYSTERESIS + 1);
-        LDRB     R0,[R5, #+10]
-        ADDS     R0,R0,#+3
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        LDR      R0,[SP, #+68]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        STR      R0,[SP, #+36]
-        B.N      ??PID_autotune_3
 //  256                 else
 //  257                     watch_temp_target = temp - (WATCH_TEMP_INCREASE + TEMP_HYSTERESIS + 1);
-??PID_autotune_4:
-        LDRB     R0,[R5, #+2]
-        ADDS     R0,R0,#+3
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        LDR      R0,[SP, #+68]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-        STR      R0,[SP, #+36]
 //  258              #else
 //  259                 watch_temp_target = temp - (WATCH_TEMP_INCREASE + TEMP_HYSTERESIS + 1);
 //  260              #endif
@@ -686,44 +647,25 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  265          uint32_t watch_temp_period;
 //  266         #if ENABLED(THERMAL_PROTECTION_BED)/* && ENABLED(PIDTEMPBED)*/ && ENABLED(THERMAL_PROTECTION_HOTENDS) /*&& ENABLED(PIDTEMP)*/
 //  267             if((PIDTEMPBED)&&(PIDTEMP))
-??PID_autotune_3:
-        CMP      R4,#+0
-        BEQ.N    ??PID_autotune_5
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_5
 //  268             {
 //  269                 watch_temp_period = hotend < 0 ? WATCH_BED_TEMP_PERIOD : WATCH_TEMP_PERIOD;
-        LDRSB    R0,[SP, #+72]
+        LDR      R0,[SP, #+8]
         CMP      R0,#+0
-        BPL.N    ??PID_autotune_6
-        LDRSH    R0,[R5, #+8]
-        B.N      ??PID_autotune_7
-??PID_autotune_6:
-        LDR.W    R0,??DataTable56
-        LDRSH    R0,[R0, #+228]
-??PID_autotune_7:
-        STR      R0,[SP, #+28]
-        B.N      ??PID_autotune_8
+        BPL.N    ??PID_autotune_2
+        LDRSH    R0,[R6, #+8]
+        LDRSB    R7,[R6, #+10]
+        STR      R0,[SP, #+16]
+??PID_autotune_3:
+        LDR      R0,[SP, #+28]
+        LDR      R1,[SP, #+16]
 //  270             }
 //  271             else
 //  272             {
 //  273                 #if ENABLED(THERMAL_PROTECTION_BED)/* && ENABLED(PIDTEMPBED)*/
 //  274                     if(PIDTEMPBED)
-??PID_autotune_5:
-        CMP      R4,#+0
-        BEQ.N    ??PID_autotune_9
 //  275                       watch_temp_period = WATCH_BED_TEMP_PERIOD;
-        LDRSH    R0,[R5, #+8]
-        STR      R0,[SP, #+28]
-        B.N      ??PID_autotune_8
 //  276                     else
 //  277                       watch_temp_period = WATCH_TEMP_PERIOD;  
-??PID_autotune_9:
-        LDR.W    R0,??DataTable56
-        LDRSH    R0,[R0, #+228]
-        STR      R0,[SP, #+28]
 //  278                 #else
 //  279                     watch_temp_period = WATCH_TEMP_PERIOD;
 //  280                 #endif
@@ -732,48 +674,16 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  283       int8_t watch_temp_increase; //=
 //  284         #if ENABLED(THERMAL_PROTECTION_BED) /*&& ENABLED(PIDTEMPBED) */&& ENABLED(THERMAL_PROTECTION_HOTENDS) /*&& ENABLED(PIDTEMP)*/
 //  285             if((PIDTEMPBED)&&(PIDTEMP))
-??PID_autotune_8:
-        CMP      R4,#+0
-        BEQ.N    ??PID_autotune_10
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_10
 //  286             {
 //  287                 watch_temp_increase = hotend < 0 ? WATCH_BED_TEMP_INCREASE : WATCH_TEMP_INCREASE;
-        LDRSB    R0,[SP, #+72]
-        CMP      R0,#+0
-        BPL.N    ??PID_autotune_11
-        LDRSB    R0,[R5, #+10]
-        STR      R0,[SP, #+24]
-        B.N      ??PID_autotune_12
-??PID_autotune_11:
-        LDRSB    R0,[R5, #+2]
-        STR      R0,[SP, #+24]
-        B.N      ??PID_autotune_12
 //  288             }
 //  289             else
 //  290             {
 //  291                 #if ENABLED(THERMAL_PROTECTION_BED)
 //  292                     if(PIDTEMPBED)
-??PID_autotune_10:
-        CMP      R4,#+0
-        BEQ.N    ??PID_autotune_13
 //  293                         watch_temp_increase = WATCH_BED_TEMP_INCREASE;
-        LDRSB    R0,[R5, #+10]
-        STR      R0,[SP, #+24]
-        B.N      ??PID_autotune_12
 //  294                      else
 //  295                         watch_temp_increase = WATCH_TEMP_INCREASE;
-??PID_autotune_13:
-        LDRSB    R0,[R5, #+2]
-        STR      R0,[SP, #+24]
-??PID_autotune_12:
-        LDR      R0,[SP, #+12]
-        LDR      R1,[SP, #+28]
-        MOV      R2,#+1000
-        MLA      R0,R2,R1,R0
-        STR      R0,[SP, #+60]
 //  296                 #else
 //  297                     watch_temp_increase = WATCH_TEMP_INCREASE;
 //  298                 #endif
@@ -781,10 +691,12 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  300       #endif
 //  301       millis_t temp_change_ms = next_temp_ms + watch_temp_period * 1000UL;
 //  302       float next_watch_temp = 0.0;
-        MOV      R0,R8
-        STR      R0,[SP, #+56]
+        STR      R8,[SP, #+56]
+        MOV      R2,#+1000
+        MLA      R0,R2,R1,R0
+        STR      R0,[SP, #+60]
 //  303       bool heated = false;
-        STR      R0,[SP, #+20]
+        STR      R8,[SP, #+52]
 //  304     #endif
 //  305 
 //  306     #if HAS_AUTO_FAN
@@ -810,52 +722,35 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  326     }
 //  327 #endif	
 //  328 	if(PIDTEMP == 0 && PIDTEMPBED == 0) if(hotend >= 0 || hotend < 0) {SERIAL_ECHOLN(MSG_PID_BAD_EXTRUDER_NUM);return;}
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BNE.N    ??PID_autotune_14
-        CMP      R4,#+0
-        BNE.N    ??PID_autotune_14
-        LDRSB    R1,[SP, #+72]
-        CMP      R1,#+0
-        BPL.N    ??PID_autotune_15
-        BMI.N    ??PID_autotune_15
+        CMP      R5,#+0
+        BNE.N    ??PID_autotune_4
+        CBZ.N    R4,??PID_autotune_5
+        CMP      R4,#+1
+        BNE.N    ??PID_autotune_4
 //  329 	if(PIDTEMP == 0 && PIDTEMPBED == 1) if(hotend >= 0 || hotend < -1) {SERIAL_ECHOLN(MSG_PID_BAD_EXTRUDER_NUM);return;}
-??PID_autotune_14:
-        CMP      R0,#+0
-        BNE.N    ??PID_autotune_16
-        CMP      R4,#+1
-        BNE.N    ??PID_autotune_16
-        LDRSB    R1,[SP, #+72]
-        ADDS     R1,R1,#+1
-        BNE.N    ??PID_autotune_15
+        LDRSB    R0,[SP, #+88]
+        ADDS     R0,R0,#+1
+        BNE.N    ??PID_autotune_5
 //  330 	if(PIDTEMP == 1 && PIDTEMPBED == 0) if(hotend >= HOTENDS|| hotend < 0) {SERIAL_ECHOLN(MSG_PID_BAD_EXTRUDER_NUM);return;}
-??PID_autotune_16:
-        CMP      R0,#+1
-        BNE.N    ??PID_autotune_17
-        CMP      R4,#+0
-        BNE.N    ??PID_autotune_17
-        LDRSB    R1,[SP, #+72]
-        CMP      R1,#+2
-        BCS.N    ??PID_autotune_15
 //  331 	if(PIDTEMP == 1 && PIDTEMPBED == 1) if(hotend >= HOTENDS|| hotend < -1) {SERIAL_ECHOLN(MSG_PID_BAD_EXTRUDER_NUM);return;}
-??PID_autotune_17:
-        CMP      R0,#+1
-        BNE.N    ??PID_autotune_18
+??PID_autotune_6:
+        CMP      R5,#+1
+        BNE.N    ??PID_autotune_7
+??PID_autotune_8:
         CMP      R4,#+1
-        BNE.N    ??PID_autotune_18
-        LDRSB    R0,[SP, #+72]
+        BNE.N    ??PID_autotune_7
+        LDRSB    R0,[SP, #+88]
         ADDS     R0,R0,#+1
         CMP      R0,#+3
-        BCC.N    ??PID_autotune_18
-??PID_autotune_15:
+        BCC.N    ??PID_autotune_7
+??PID_autotune_5:
+        LDR.W    R4,??DataTable55_5
         ADR.W    R1,`?<Constant "PID Autotune failed! ...">`
-        LDR.W    R0,??DataTable57_4
+        MOV      R0,R4
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-        ADD      SP,SP,#+84
+        MOV      R0,R4
+        ADD      SP,SP,#+100
           CFI CFA R13+36
         POP      {R4-R11,LR}
           CFI R4 SameValue
@@ -868,6 +763,7 @@ _ZN11Temperature12PID_autotuneEfaab:
           CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R1,#+10
           CFI FunCall _ZN10USARTClass5writeEh
         B.W      _ZN10USARTClass5writeEh
           CFI R4 Frame(CFA, -36)
@@ -879,16 +775,60 @@ _ZN11Temperature12PID_autotuneEfaab:
           CFI R10 Frame(CFA, -12)
           CFI R11 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+120
-??PID_autotune_18:
-        ADR.W    R1,`?<Constant "PID Autotune start">`
-        LDR.W    R0,??DataTable57_4
+          CFI CFA R13+136
+??PID_autotune_1:
+        LDRB     R7,[R6, #+10]
+        ADDS     R0,R7,#+3
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R0
+        LDR      R0,[SP, #+84]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[SP, #+32]
+        LDRSH    R0,[R6, #+8]
+??PID_autotune_9:
+        STR      R0,[SP, #+16]
+        SXTB     R7,R7
+        B.N      ??PID_autotune_3
+??PID_autotune_0:
+        LDRB     R7,[R6, #+2]
+        ADDS     R0,R7,#+3
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R0
+        LDR      R0,[SP, #+84]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+        STR      R0,[SP, #+32]
+        LDR.W    R0,??DataTable55
+        LDRSH    R0,[R0, #+228]
+        B.N      ??PID_autotune_9
+??PID_autotune_2:
+        LDR.W    R0,??DataTable55
+        LDRSH    R0,[R0, #+228]
+        LDRSB    R7,[R6, #+2]
+        STR      R0,[SP, #+16]
+        B.N      ??PID_autotune_3
+??PID_autotune_4:
+        CMP      R5,#+1
+        BNE.N    ??PID_autotune_6
+        CMP      R4,#+0
+        BNE.N    ??PID_autotune_8
+        LDRSB    R0,[SP, #+88]
+        CMP      R0,#+2
+        BCC.N    ??PID_autotune_8
+        B.N      ??PID_autotune_5
 //  332 
 //  333     SERIAL_ECHOLN(MSG_PID_AUTOTUNE_START);
+??PID_autotune_7:
+        LDR.W    R4,??DataTable55_5
+        ADR.W    R1,`?<Constant "PID Autotune start">`
+        MOV      R0,R4
           CFI FunCall _ZN5Print5printEPKc
         BL       _ZN5Print5printEPKc
         MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
+        MOV      R0,R4
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
 //  334 
@@ -908,65 +848,80 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  346     #endif
 //  347 #endif
 //  348 	if (HAS_PID_FOR_BOTH) {
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_19
-        LDR      R1,[SP, #+0]
-        LDRB     R1,[R1, #+1]
-        CMP      R1,#+0
-        BEQ.N    ??PID_autotune_19
+        LDR.W    R0,??DataTable55
+        LDRB     R0,[R0, #+54]
+        CBZ.N    R0,??PID_autotune_10
+        LDRSB    R0,[SP, #+88]
+        STR      R0,[SP, #+8]
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+1]
+        CBZ.N    R0,??PID_autotune_11
 //  349       if (hotend < 0)
-        LDRSB    R1,[SP, #+72]
-        LDR.W    R4,??DataTable58
-        CMP      R1,#+0
-        BPL.N    ??PID_autotune_20
+        LDR      R0,[SP, #+8]
+        CMP      R0,#+0
+        BMI.N    ??PID_autotune_10
 //  350         soft_pwm_amount_bed = bias = d = (MAX_BED_POWER) >> 1;
-        MOVS     R5,#+127
-        MOV      R6,R5
-        MOV      R0,R5
-        STRB     R0,[R4, #+3]
-        B.N      ??PID_autotune_21
 //  351       else
 //  352         soft_pwm_amount[hotend] = bias = d = (PID_MAX) >> 1;}
-??PID_autotune_20:
-        MOVS     R5,#+127
-        MOV      R6,R5
-        MOV      R0,R5
-        STRB     R0,[R1, R4]
-        B.N      ??PID_autotune_21
 //  353 	else if(PIDTEMP)	soft_pwm_amount[hotend] = bias = d = (PID_MAX) >> 1;
-??PID_autotune_19:
-        LDR.W    R4,??DataTable58
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_22
+??PID_autotune_11:
+        LDR      R1,[SP, #+8]
+        LDR.W    R2,??DataTable55_6
         MOVS     R5,#+127
-        MOV      R6,R5
-        MOV      R0,R5
-        LDRSB    R1,[SP, #+72]
-        STRB     R0,[R1, R4]
-        B.N      ??PID_autotune_21
+        STRB     R5,[R1, R2]
+        MOVS     R6,#+127
+        B.N      ??PID_autotune_12
 //  354 	else soft_pwm_amount_bed = bias = d = (MAX_BED_POWER) >> 1;
-??PID_autotune_22:
+??PID_autotune_10:
+        LDR.W    R1,??DataTable55_6
         MOVS     R5,#+127
-        MOV      R6,R5
-        MOV      R0,R5
-        STRB     R0,[R4, #+3]
-??PID_autotune_21:
-        MOVS     R0,#+1
-        LDR.W    R1,??DataTable57_5
-        STRB     R0,[R1, #+0]
-        B.N      ??PID_autotune_23
+        MOVS     R6,#+127
+        STRB     R5,[R1, #+3]
+??PID_autotune_12:
+        MOV      R0,R7
+        LDR.W    R1,??DataTable55_7
+        STRB     R10,[R1, #+0]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        STR      R0,[SP, #+76]
+        LDR.W    R1,??DataTable55_8  ;; 0xc1a00000
+        LDRSB    R0,[SP, #+92]
+        STR      R0,[SP, #+72]
+        LDR      R0,[SP, #+84]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        LDR.W    R1,??DataTable55_9  ;; 0x41a00000
+        STR      R0,[SP, #+68]
+        LDR      R0,[SP, #+84]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        STR      R0,[SP, #+64]
+        LDRSB    R0,[SP, #+88]
+        STR      R0,[SP, #+8]
 //  355 
 //  356     wait_for_heatup = true;
 //  357 
 //  358     // PID Tuning loop
 //  359     while (wait_for_heatup) {
+??PID_autotune_13:
+        LDR.W    R0,??DataTable55_7
+        LDRB     R0,[R0, #+0]
+        CMP      R0,#+0
+        BEQ.W    ??PID_autotune_14
 //  360 
 //  361       const millis_t ms = millis();
+          CFI FunCall HAL_GetTick
+        BL       HAL_GetTick
+        MOV      R7,R0
 //  362 
 //  363       if (temp_meas_ready) { // temp sample ready
+        LDR.W    R0,??DataTable55_6
+        LDRB     R0,[R0, #+2]
+        CMP      R0,#+0
+        BEQ.W    ??PID_autotune_15
 //  364         updateTemperaturesFromRawValues();
+          CFI FunCall _ZN11Temperature31updateTemperaturesFromRawValuesEv
+        BL       _ZN11Temperature31updateTemperaturesFromRawValuesEv
 //  365 #if 0
 //  366         input =
 //  367           #if HAS_PID_FOR_BOTH
@@ -979,11 +934,41 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  374         ;
 //  375 #endif
 //  376 		if(HAS_PID_FOR_BOTH) 	input = hotend < 0 ? current_temperature_bed : current_temperature[hotend];
+        LDR.W    R0,??DataTable55
+        LDRB     R2,[R0, #+54]
+        CBZ.N    R2,??PID_autotune_16
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+1]
+        CBZ.N    R0,??PID_autotune_17
+        LDR      R0,[SP, #+8]
+        CMP      R0,#+0
+        BMI.N    ??PID_autotune_16
 //  377 		else if(PIDTEMP) 		input = current_temperature[hotend];
+??PID_autotune_17:
+        LDR      R0,[SP, #+8]
+        LDR.W    R1,??DataTable55_10
+        LDR      R9,[R1, R0, LSL #+2]
+        B.N      ??PID_autotune_18
 //  378 		else					input = current_temperature_bed;
+??PID_autotune_16:
+        LDR.W    R0,??DataTable55_6
+        LDR      R9,[R0, #+76]
 //  379 
 //  380         NOLESS(max, input);
+??PID_autotune_18:
+        LDR      R0,[SP, #+24]
+        MOV      R1,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CC 
+        STRCC    R9,[SP, #+24]
 //  381         NOMORE(min, input);
+        LDR      R1,[SP, #+20]
+        MOV      R0,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        IT       CC 
+        STRCC    R9,[SP, #+20]
 //  382 
 //  383         #if HAS_AUTO_FAN
 //  384           if (ELAPSED(ms, next_auto_fan_check_ms)) {
@@ -993,8 +978,21 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  388         #endif
 //  389 
 //  390         if (heating && input > temp) {
+        CMP      R10,#+0
+        BEQ.N    ??PID_autotune_19
+        LDR      R0,[SP, #+84]
+        MOV      R1,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.W    ??PID_autotune_15
 //  391           if (ELAPSED(ms, t2 + 5000UL)) {
+        LDR      R0,[SP, #+40]
+        LDR.W    R1,??DataTable55_11  ;; 0xffffec78
+        SUBS     R0,R7,R0
+        ADDS     R1,R1,R0
+        BMI.W    ??PID_autotune_15
 //  392             heating = false;
+        MOV      R10,#+0
 //  393 			#if 0
 //  394             #if HAS_PID_FOR_BOTH
 //  395               if (hotend < 0)
@@ -1008,21 +1006,60 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  403             #endif
 //  404 			#endif
 //  405 			if(HAS_PID_FOR_BOTH)	{if (hotend < 0) soft_pwm_amount_bed = (bias - d) >> 1; else soft_pwm_amount[hotend] = (bias - d) >> 1;}
+        CBZ.N    R2,??PID_autotune_20
+        LDR      R1,[SP, #+12]
+        LDRB     R1,[R1, #+1]
+        CBZ.N    R1,??PID_autotune_21
+        LDR      R1,[SP, #+8]
+        CMP      R1,#+0
+        BMI.N    ??PID_autotune_20
 //  406 			else if(PIDTEMP)		soft_pwm_amount[hotend] = (bias - d) >> 1;
+??PID_autotune_21:
+        LDR      R2,[SP, #+8]
+        LDR.W    R3,??DataTable55_6
+        SUBS     R1,R6,R5
+        ASRS     R1,R1,#+1
+        STRB     R1,[R2, R3]
+        B.N      ??PID_autotune_22
 //  407 			else					soft_pwm_amount_bed = (bias - d) >> 1;
+??PID_autotune_20:
+        SUBS     R1,R6,R5
+        LDR.W    R2,??DataTable55_6
+        ASRS     R1,R1,#+1
+        STRB     R1,[R2, #+3]
 //  408 			
 //  409             t1 = ms;
 //  410             t_high = t1 - t2;
+??PID_autotune_22:
+        STR      R0,[SP, #+36]
+        STR      R7,[SP, #+44]
 //  411             max = temp;
+        LDR      R0,[SP, #+84]
+        STR      R0,[SP, #+24]
+??PID_autotune_19:
+        MOV      R0,R9
+        LDR      R1,[SP, #+84]
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.W    ??PID_autotune_15
 //  412           }
 //  413         }
 //  414 
 //  415         if (!heating && input < temp) {
 //  416           if (ELAPSED(ms, t1 + 5000UL)) {
+        LDR      R0,[SP, #+44]
+        LDR.W    R1,??DataTable55_11  ;; 0xffffec78
+        SUBS     R0,R7,R0
+        ADDS     R1,R1,R0
+        BMI.W    ??PID_autotune_15
 //  417             heating = true;
+        MOV      R10,#+1
 //  418             t2 = ms;
+        STR      R7,[SP, #+40]
 //  419             t_low = t2 - t1;
 //  420             if (cycles > 0) {
+        CMP      R11,#+1
+        BLT.W    ??PID_autotune_23
 //  421 			  #if 0
 //  422               long max_pow =
 //  423                 #if HAS_PID_FOR_BOTH
@@ -1041,25 +1078,173 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  436               else 			 max_pow = MAX_BED_POWER;
 //  437 			  
 //  438               bias += (d * (t_high - t_low)) / (t_low + t_high);
+        LDR      R1,[SP, #+36]
+        ADDS     R1,R1,R0
+        STR      R1,[SP, #+48]
+        LDR      R1,[SP, #+36]
+        SUBS     R0,R1,R0
+        LDR      R1,[SP, #+48]
+        MULS     R0,R0,R5
+        SDIV     R0,R0,R1
+        ADDS     R6,R0,R6
 //  439               bias = constrain(bias, 20, max_pow - 20);
+        CMP      R6,#+20
+        BGE.N    ??PID_autotune_24
+        MOVS     R6,#+20
+??PID_autotune_25:
+        MOV      R5,R6
 //  440               d = (bias > max_pow >> 1) ? max_pow - 1 - bias : bias;
 //  441 
 //  442               SERIAL_PROTOCOLPAIR(MSG_BIAS, bias);
+??PID_autotune_26:
+        MOV      R1,R6
+        ADR.W    R0,`?<Constant " bias: ">`
+          CFI FunCall _Z17serial_echopair_PPKcl
+        BL       _Z17serial_echopair_PPKcl
 //  443               SERIAL_PROTOCOLPAIR(MSG_D, d);
+        ADR.W    R0,`?<Constant " d: ">`
+        MOV      R1,R5
+          CFI FunCall _Z17serial_echopair_PPKcl
+        BL       _Z17serial_echopair_PPKcl
 //  444               SERIAL_PROTOCOLPAIR(MSG_T_MIN, min);
+        LDR      R1,[SP, #+20]
+        ADR.W    R0,`?<Constant " min: ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
 //  445               SERIAL_PROTOCOLPAIR(MSG_T_MAX, max);
+        LDR      R1,[SP, #+24]
+        ADR.W    R0,`?<Constant " max: ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
 //  446               if (cycles > 2) {
+        CMP      R11,#+3
+        BLT.W    ??PID_autotune_23
 //  447                 Ku = (4.0 * d) / (M_PI * (max - min) * 0.5);
+        MOV      R0,R5
+          CFI FunCall __aeabi_i2d
+        BL       __aeabi_i2d
+        LDR.W    R3,??DataTable55_12  ;; 0x40100000
+        MOVS     R2,#+0
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        STRD     R0,R1,[SP, #+0]
+        LDR      R0,[SP, #+24]
+        LDR      R1,[SP, #+20]
+          CFI FunCall __aeabi_fsub
+        BL       __aeabi_fsub
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDR.W    R2,??DataTable55_13  ;; 0x54442d18
+        LDR.W    R3,??DataTable55_14  ;; 0x400921fb
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        LDR.W    R3,??DataTable55_15  ;; 0x3fe00000
+        MOVS     R2,#+0
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+        MOV      R2,R0
+        MOV      R3,R1
+        LDRD     R0,R1,[SP, #+0]
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        MOV      R8,R0
 //  448                 Tu = ((float)(t_low + t_high) * 0.001);
+        LDR      R0,[SP, #+48]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDR.W    R2,??DataTable55_16  ;; 0xd2f1a9fc
+        LDR.W    R3,??DataTable55_17  ;; 0x3f50624d
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        STR      R0,[SP, #+20]
 //  449                 SERIAL_PROTOCOLPAIR(MSG_KU, Ku);
+        MOV      R1,R8
+        ADR.W    R0,`?<Constant " Ku: ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
 //  450                 SERIAL_PROTOCOLPAIR(MSG_TU, Tu);
+        LDR      R1,[SP, #+20]
+        ADR.W    R0,`?<Constant " Tu: ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
 //  451                 workKp = 0.6 * Ku;
+        MOV      R0,R8
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDR.W    R3,??DataTable55_18  ;; 0x3fe33333
+        MOV      R2,#+858993459
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        MOV      R8,R0
 //  452                 workKi = 2 * workKp / Tu;
+        MOV      R0,#+1073741824
+        MOV      R1,R8
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        LDR      R1,[SP, #+20]
+          CFI FunCall __aeabi_fdiv
+        BL       __aeabi_fdiv
+        STR      R0,[SP, #+4]
 //  453                 workKd = workKp * Tu * 0.125;
+        MOV      R1,R8
+        LDR      R0,[SP, #+20]
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        MOV      R1,#+1040187392
+          CFI FunCall __aeabi_fmul
+        BL       __aeabi_fmul
+        STR      R0,[SP, #+0]
 //  454                 SERIAL_PROTOCOLLNPGM("\n" MSG_CLASSIC_PID);
+        ADR.W    R0,`?<Constant "\\n Classic PID \\n">`
+        STR      R0,[SP, #+20]
+        B.N      ??PID_autotune_27
+??PID_autotune_24:
+        CMP      R6,#+236
+        ITE      GE 
+        MOVGE    R6,#+235
+        CMPLT    R6,#+128
+        BLT.N    ??PID_autotune_25
+        RSB      R5,R6,#+254
+        B.N      ??PID_autotune_26
+??PID_autotune_28:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??PID_autotune_27:
+        LDR      R0,[SP, #+20]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+20]
+        LDRSB    R1,[R0, #-1]!
+        MOVS     R0,R1
+        BNE.N    ??PID_autotune_28
 //  455                 SERIAL_PROTOCOLPAIR(MSG_KP, workKp);
+        MOV      R1,R8
+        ADR.W    R0,`?<Constant " Kp: ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
 //  456                 SERIAL_PROTOCOLPAIR(MSG_KI, workKi);
+        LDR      R1,[SP, #+4]
+        ADR.W    R0,`?<Constant " Ki: ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
 //  457                 SERIAL_PROTOCOLLNPAIR(MSG_KD, workKd);
+        LDR      R1,[SP, #+0]
+        ADR.W    R0,`?<Constant " Kd: ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  458                 /**
 //  459                 workKp = 0.33*Ku;
 //  460                 workKi = workKp/Tu;
@@ -1091,46 +1276,174 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  486             #endif
 //  487             */
 //  488 		if(HAS_PID_FOR_BOTH)	{if (hotend < 0) soft_pwm_amount_bed = (bias + d) >> 1; else soft_pwm_amount[hotend] = (bias + d) >> 1;}
+??PID_autotune_23:
+        LDR.W    R0,??DataTable55
+        LDRB     R0,[R0, #+54]
+        CBZ.N    R0,??PID_autotune_29
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+1]
+        CBZ.N    R0,??PID_autotune_30
+        LDR      R0,[SP, #+8]
+        CMP      R0,#+0
+        BMI.N    ??PID_autotune_29
 //  489 		else if(PIDTEMP)		soft_pwm_amount[hotend] = (bias + d) >> 1;
+??PID_autotune_30:
+        LDR      R1,[SP, #+8]
+        LDR.W    R2,??DataTable55_6
+        ADDS     R0,R5,R6
+        ASRS     R0,R0,#+1
+        STRB     R0,[R1, R2]
+        B.N      ??PID_autotune_31
 //  490 		else					soft_pwm_amount_bed = (bias + d) >> 1;            
+??PID_autotune_29:
+        ADDS     R0,R5,R6
+        LDR.W    R1,??DataTable55_6
+        ASRS     R0,R0,#+1
+        STRB     R0,[R1, #+3]
 //  491             cycles++;
+??PID_autotune_31:
+        ADD      R11,R11,#+1
 //  492             min = temp;
+        LDR      R0,[SP, #+84]
+        STR      R0,[SP, #+20]
 //  493           }
 //  494         }
 //  495       }
 //  496       #define MAX_OVERSHOOT_PID_AUTOTUNE 20
 //  497       if (input > temp + MAX_OVERSHOOT_PID_AUTOTUNE) {
+??PID_autotune_15:
+        MOV      R1,R9
+        LDR      R0,[SP, #+64]
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.N    ??PID_autotune_32
 //  498         SERIAL_PROTOCOLLNPGM(MSG_PID_TEMP_TOO_HIGH);
+        ADR.W    R5,`?<Constant "PID Autotune failed! ...">_1`
+??PID_autotune_33:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BEQ.W    ??PID_autotune_14
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??PID_autotune_33
 //  499         break;
 //  500       }
 //  501       // Every 2 seconds...
 //  502       if (ELAPSED(ms, next_temp_ms)) {
+??PID_autotune_32:
+        LDR      R0,[SP, #+28]
+        SUBS     R0,R7,R0
+        BMI.N    ??PID_autotune_34
 //  503         #if HAS_TEMP_HOTEND //|| HAS_TEMP_BED
 //  504           print_heaterstates();
+          CFI FunCall _ZN11Temperature18print_heaterstatesEv
+        BL       _ZN11Temperature18print_heaterstatesEv
 //  505           SERIAL_EOL();
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  506         #endif
 //  507 
 //  508         next_temp_ms = ms + 2000UL;
+        ADD      R0,R7,#+2000
+        STR      R0,[SP, #+28]
 //  509 
 //  510         #if WATCH_THE_BED || WATCH_HOTENDS
 //  511           if (!heated && input > next_watch_temp) {
+        LDR      R0,[SP, #+52]
+        CBNZ.N   R0,??PID_autotune_35
+        LDR      R0,[SP, #+56]
+        MOV      R1,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.N    ??PID_autotune_36
 //  512             if (input > watch_temp_target) heated = true;
+        LDR      R0,[SP, #+32]
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        ITT      CC 
+        MOVCC    R0,#+1
+        STRCC    R0,[SP, #+52]
 //  513             next_watch_temp = input + watch_temp_increase;
+        LDR      R0,[SP, #+76]
+          CFI FunCall __aeabi_fadd
+        BL       __aeabi_fadd
+        STR      R0,[SP, #+56]
 //  514             temp_change_ms = ms + watch_temp_period * 1000UL;
+        MOV      R1,#+1000
+        LDR      R0,[SP, #+16]
+        MLA      R0,R1,R0,R7
+        STR      R0,[SP, #+60]
+        B.N      ??PID_autotune_34
 //  515           }
+??PID_autotune_36:
+        LDR      R0,[SP, #+60]
+        SUBS     R0,R7,R0
+        BMI.N    ??PID_autotune_34
 //  516           else if (!heated && ELAPSED(ms, temp_change_ms))
 //  517             _temp_error(hotend, PSTR(MSG_T_HEATING_FAILED), PSTR(MSG_HEATING_FAILED_LCD));
+        ADR.W    R2,`?<Constant "Heating failed">`
+        MOV      R1,R2
+        B.N      ??PID_autotune_37
+??PID_autotune_35:
+        LDR      R1,[SP, #+68]
+        MOV      R0,R9
+          CFI FunCall __aeabi_cfcmple
+        BL       __aeabi_cfcmple
+        BCS.N    ??PID_autotune_34
 //  518           else if (heated && input < temp - MAX_OVERSHOOT_PID_AUTOTUNE)
 //  519             _temp_error(hotend, PSTR(MSG_T_THERMAL_RUNAWAY), PSTR(MSG_THERMAL_RUNAWAY));
+        LDR.W    R2,??DataTable56
+        LDR.W    R1,??DataTable56_1
+??PID_autotune_37:
+        LDRSB    R0,[SP, #+88]
+          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
+        BL       _ZN11Temperature11_temp_errorEaPKcS1_
 //  520         #endif
 //  521       } // every 2 seconds
 //  522       // Timeout after 20 minutes since the last undershoot/overshoot cycle
 //  523       if (((ms - t1) + (ms - t2)) > (20L * 60L * 1000L)) {
+??PID_autotune_34:
+        LDR      R0,[SP, #+44]
+        LDR      R1,[SP, #+40]
+        RSB      R0,R0,R7, LSL #+1
+        SUBS     R0,R0,R1
+        LDR.W    R1,??DataTable56_2  ;; 0x124f81
+        CMP      R0,R1
+        BCC.N    ??PID_autotune_38
 //  524         SERIAL_PROTOCOLLNPGM(MSG_PID_TIMEOUT);
+        ADR.W    R5,`?<Constant "PID Autotune failed! ...">_2`
+??PID_autotune_39:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BEQ.W    ??PID_autotune_14
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??PID_autotune_39
 //  525         break;
 //  526       }
 //  527       if (cycles > ncycles) {
+??PID_autotune_38:
+        LDR      R0,[SP, #+72]
+        CMP      R0,R11
+        BGE.W    ??PID_autotune_13
 //  528         SERIAL_PROTOCOLLNPGM(MSG_PID_AUTOTUNE_FINISHED);
+        ADR.W    R5,`?<Constant "PID Autotune finished...">`
+        B.N      ??PID_autotune_40
+??PID_autotune_41:
+        UXTB     R1,R1
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??PID_autotune_40:
+        LDRSB    R1,[R5], #+1
+        MOVS     R0,R1
+        BNE.N    ??PID_autotune_41
 //  529 /*
 //  530         #if HAS_PID_FOR_BOTH
 //  531           const char* estring = hotend < 0 ? "bed" : "";
@@ -1148,23 +1461,113 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  543         #endif
 //  544 */
 //  545 		if(HAS_PID_FOR_BOTH)
+        LDR.W    R0,??DataTable55
+        LDRB     R0,[R0, #+54]
+        CMP      R0,#+0
+        BEQ.N    ??PID_autotune_42
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+1]
+        CBZ.N    R0,??PID_autotune_43
 //  546 		{
 //  547 			const char* estring = hotend < 0 ? "bed" : "";
+        LDRSB    R0,[SP, #+88]
+        CMP      R0,#+0
+        ITE      MI 
+        ADRMI.N  R5,??DataTable51  ;; "bed"
+        ADRPL.N  R5,??DataTable51_1  ;; ""
 //  548 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_", estring); SERIAL_PROTOCOLPAIR("Kp ", workKp); SERIAL_EOL();
+        ADR.W    R6,`?<Constant "#define  DEFAULT_">`
+        MOV      R1,R5
+        MOV      R0,R6
+          CFI FunCall _Z17serial_echopair_PPKcS0_
+        BL       _Z17serial_echopair_PPKcS0_
+        MOV      R1,R8
+        ADR.N    R0,??DataTable51_2  ;; "Kp "
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  549 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_", estring); SERIAL_PROTOCOLPAIR("Ki ", workKi); SERIAL_EOL();
+        MOV      R1,R5
+        MOV      R0,R6
+          CFI FunCall _Z17serial_echopair_PPKcS0_
+        BL       _Z17serial_echopair_PPKcS0_
+        LDR      R1,[SP, #+4]
+        ADR.N    R0,??DataTable51_3  ;; "Ki "
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  550 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_", estring); SERIAL_PROTOCOLPAIR("Kd ", workKd); SERIAL_EOL();
+        MOV      R1,R5
+        MOV      R0,R6
+          CFI FunCall _Z17serial_echopair_PPKcS0_
+        BL       _Z17serial_echopair_PPKcS0_
+        LDR      R1,[SP, #+0]
+        ADR.N    R0,??DataTable51_4  ;; "Kd "
+        B.N      ??PID_autotune_44
 //  551 		}
 //  552 		else if(PIDTEMP)
 //  553 		{
 //  554 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_Kp ", workKp); SERIAL_EOL();
+??PID_autotune_43:
+        MOV      R1,R8
+        ADR.W    R0,`?<Constant "#define  DEFAULT_Kp ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  555 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_Ki ", workKi); SERIAL_EOL();
+        LDR      R1,[SP, #+4]
+        ADR.W    R0,`?<Constant "#define  DEFAULT_Ki ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  556 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_Kd ", workKd); SERIAL_EOL();
+        LDR      R1,[SP, #+0]
+        ADR.W    R0,`?<Constant "#define  DEFAULT_Kd ">`
+        B.N      ??PID_autotune_44
 //  557 		}
 //  558 		else
 //  559 		{
 //  560 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_bedKp ", workKp); SERIAL_EOL();
+??PID_autotune_42:
+        ADR.W    R0,`?<Constant "#define  DEFAULT_bedKp ">`
+        MOV      R1,R8
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  561 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_bedKi ", workKi); SERIAL_EOL();
+        LDR      R1,[SP, #+4]
+        ADR.W    R0,`?<Constant "#define  DEFAULT_bedKi ">`
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  562 			SERIAL_PROTOCOLPAIR("#define  DEFAULT_bedKd ", workKd); SERIAL_EOL();
+        LDR      R1,[SP, #+0]
+        ADR.W    R0,`?<Constant "#define  DEFAULT_bedKd ">`
+??PID_autotune_44:
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+        MOVS     R1,#+10
+        MOV      R0,R4
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 //  563 		}
 //  564 
 //  565         #define _SET_BED_PID() do { \ 
@@ -1181,6 +1584,9 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  576 
 //  577         // Use the result? (As with "M303 U1")
 //  578         if (set_result) {
+        LDRB     R0,[SP, #+96]
+        CMP      R0,#+0
+        ITTT     NE 
 //  579 			/*
 //  580           #if HAS_PID_FOR_BOTH
 //  581             if (hotend < 0)
@@ -1194,310 +1600,60 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  589           #endif
 //  590           */
 //  591 			if(HAS_PID_FOR_BOTH)	if (set_result) {if (hotend < 0) _SET_BED_PID(); else _SET_EXTRUDER_PID();}
+        LDRNE.W  R0,??DataTable55
+        LDRBNE   R0,[R0, #+54]
+        CMPNE    R0,#+0
+        BEQ.N    ??PID_autotune_45
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+1]
+        CBZ.N    R0,??PID_autotune_45
+        LDR      R0,[SP, #+0]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDR.W    R2,??DataTable57  ;; 0x88e368f1
+        LDR.W    R3,??DataTable57_1  ;; 0x3fc4f8b5
+          CFI FunCall __aeabi_ddiv
+        BL       __aeabi_ddiv
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        MOV      R4,R0
+        LDR      R0,[SP, #+4]
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        LDR.W    R2,??DataTable57  ;; 0x88e368f1
+        LDR.W    R3,??DataTable57_1  ;; 0x3fc4f8b5
+          CFI FunCall __aeabi_dmul
+        BL       __aeabi_dmul
+          CFI FunCall __aeabi_d2f
+        BL       __aeabi_d2f
+        LDRSB    R1,[SP, #+88]
+        CMP      R1,#+0
+        LDR.W    R1,??DataTable55_6
+        BPL.N    ??PID_autotune_46
+        STR      R8,[R1, #+96]
 //  592 			else if(PIDTEMP)		if (set_result)  _SET_EXTRUDER_PID();
 //  593 			else 					if (set_result)  _SET_BED_PID();          
 //  594         }
 //  595         return;
 //  596       }
 //  597       lcd_update();
-??PID_autotune_24:
-          CFI FunCall _Z10lcd_updatev
-        BL       _Z10lcd_updatev
-??PID_autotune_23:
-        LDR.W    R0,??DataTable57_5
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.W    ??PID_autotune_25
-          CFI FunCall HAL_GetTick
-        BL       HAL_GetTick
-        MOV      R7,R0
-        LDRB     R0,[R4, #+2]
-        CMP      R0,#+0
-        BEQ.W    ??PID_autotune_26
-          CFI FunCall _ZN11Temperature31updateTemperaturesFromRawValuesEv
-        BL       _ZN11Temperature31updateTemperaturesFromRawValuesEv
-        LDR.W    R0,??DataTable56
-        LDRB     R2,[R0, #+52]
-        CMP      R2,#+0
-        BEQ.N    ??PID_autotune_27
-        LDR      R0,[SP, #+0]
-        LDRB     R0,[R0, #+1]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_27
-        LDRSB    R1,[SP, #+72]
-        CMP      R1,#+0
-        BPL.N    ??PID_autotune_28
-        LDR      R10,[R4, #+68]
-        B.N      ??PID_autotune_29
-??PID_autotune_28:
-        ADD      R0,R4,R1, LSL #+2
-        LDR      R10,[R0, #+60]
-        B.N      ??PID_autotune_29
-??PID_autotune_27:
-        CMP      R2,#+0
-        BEQ.N    ??PID_autotune_30
-        LDRSB    R0,[SP, #+72]
-        ADD      R0,R4,R0, LSL #+2
-        LDR      R10,[R0, #+60]
-        B.N      ??PID_autotune_29
-??PID_autotune_30:
-        LDR      R10,[R4, #+68]
-??PID_autotune_29:
-        LDR      R0,[SP, #+8]
-        MOV      R1,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??PID_autotune_31
-        STR      R10,[SP, #+8]
-??PID_autotune_31:
-        MOV      R0,R10
-        LDR      R1,[SP, #+4]
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??PID_autotune_32
-        STR      R10,[SP, #+4]
-??PID_autotune_32:
-        LDRB     R0,[SP, #+32]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_33
-        LDR      R0,[SP, #+68]
-        MOV      R1,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??PID_autotune_33
-        LDR      R0,[SP, #+44]
-        SUBS     R0,R7,R0
-        LDR.W    R1,??DataTable58_1  ;; 0xffffec78
-        ADDS     R1,R1,R0
-        BMI.N    ??PID_autotune_33
-        MOVS     R1,#+0
-        STRB     R1,[SP, #+32]
-        CMP      R2,#+0
-        BEQ.N    ??PID_autotune_34
-        LDR      R1,[SP, #+0]
-        LDRB     R1,[R1, #+1]
-        CMP      R1,#+0
-        BEQ.N    ??PID_autotune_34
-        LDRSB    R1,[SP, #+72]
-        CMP      R1,#+0
-        BPL.N    ??PID_autotune_35
-??PID_autotune_36:
-        SUBS     R1,R6,R5
-        ASRS     R1,R1,#+1
-        STRB     R1,[R4, #+3]
-??PID_autotune_37:
-        STR      R7,[SP, #+48]
-        STR      R0,[SP, #+40]
-        LDR      R0,[SP, #+68]
-        STR      R0,[SP, #+8]
-??PID_autotune_33:
-        LDRB     R0,[SP, #+32]
-        CMP      R0,#+0
-        BNE.W    ??PID_autotune_26
-        MOV      R0,R10
-        LDR      R1,[SP, #+68]
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.W    ??PID_autotune_26
-        LDR      R0,[SP, #+48]
-        SUBS     R0,R7,R0
-        LDR.W    R1,??DataTable58_1  ;; 0xffffec78
-        ADDS     R1,R1,R0
-        BMI.W    ??PID_autotune_26
-        MOVS     R1,#+1
-        STRB     R1,[SP, #+32]
-        STR      R7,[SP, #+44]
-        LDR      R1,[SP, #+16]
-        CMP      R1,#+1
-        BLT.W    ??PID_autotune_38
-        LDR      R1,[SP, #+40]
-        ADDS     R1,R1,R0
-        STR      R1,[SP, #+52]
-        LDR      R1,[SP, #+40]
-        SUBS     R0,R1,R0
-        MULS     R0,R0,R5
-        LDR      R1,[SP, #+52]
-        SDIV     R0,R0,R1
-        ADDS     R6,R0,R6
-        CMP      R6,#+20
-        BGE.N    ??PID_autotune_39
-        MOVS     R6,#+20
-        B.N      ??PID_autotune_40
-??PID_autotune_34:
-        CMP      R2,#+0
-        BEQ.N    ??PID_autotune_36
-??PID_autotune_35:
-        SUBS     R1,R6,R5
-        ASRS     R1,R1,#+1
-        LDRSB    R2,[SP, #+72]
-        STRB     R1,[R2, R4]
-        B.N      ??PID_autotune_37
-??PID_autotune_39:
-        CMP      R6,#+236
-        BLT.N    ??PID_autotune_40
-        MOVS     R6,#+235
-??PID_autotune_40:
-        CMP      R6,#+128
-        BLT.N    ??PID_autotune_41
-        RSB      R5,R6,#+254
-        B.N      ??PID_autotune_42
-??PID_autotune_41:
-        MOV      R5,R6
-??PID_autotune_42:
-        MOV      R1,R6
-        ADR.W    R0,`?<Constant " bias: ">`
-          CFI FunCall _Z17serial_echopair_PPKcl
-        BL       _Z17serial_echopair_PPKcl
-        MOV      R1,R5
-        ADR.W    R0,`?<Constant " d: ">`
-          CFI FunCall _Z17serial_echopair_PPKcl
-        BL       _Z17serial_echopair_PPKcl
-        LDR      R1,[SP, #+4]
-        ADR.W    R0,`?<Constant " min: ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        LDR      R1,[SP, #+8]
-        ADR.W    R0,`?<Constant " max: ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        LDR      R0,[SP, #+16]
-        CMP      R0,#+3
-        BLT.N    ??PID_autotune_38
-        MOV      R0,R5
-          CFI FunCall __aeabi_i2d
-        BL       __aeabi_i2d
-        MOVS     R2,#+0
-        LDR.W    R3,??DataTable58_2  ;; 0x40100000
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R8,R0
-        MOV      R9,R1
-        LDR      R0,[SP, #+8]
-        LDR      R1,[SP, #+4]
-          CFI FunCall __aeabi_fsub
-        BL       __aeabi_fsub
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        LDR.W    R2,??DataTable58_3  ;; 0x54442d18
-        LDR.W    R3,??DataTable58_4  ;; 0x400921fb
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOVS     R2,#+0
-        LDR.W    R3,??DataTable59  ;; 0x3fe00000
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        MOV      R2,R0
-        MOV      R3,R1
-        MOV      R0,R8
-        MOV      R1,R9
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R8,R0
-        LDR      R0,[SP, #+52]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        LDR.W    R2,??DataTable59_1  ;; 0xd2f1a9fc
-        LDR.W    R3,??DataTable59_2  ;; 0x3f50624d
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R11,R0
-        MOV      R1,R8
-        ADR.W    R0,`?<Constant " Ku: ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOV      R1,R11
-        ADR.W    R0,`?<Constant " Tu: ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOV      R0,R8
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        MOV      R2,#+858993459
-        LDR.W    R3,??DataTable59_3  ;; 0x3fe33333
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R8,R0
-        MOV      R0,#+1073741824
-        MOV      R1,R8
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,R11
-          CFI FunCall __aeabi_fdiv
-        BL       __aeabi_fdiv
-        MOV      R9,R0
-        MOV      R0,R8
-        MOV      R1,R11
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R1,#+1040187392
-          CFI FunCall __aeabi_fmul
-        BL       __aeabi_fmul
-        MOV      R11,R0
-        ADR.W    R0,`?<Constant "\\n Classic PID \\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        MOV      R1,R8
-        ADR.W    R0,`?<Constant " Kp: ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOV      R1,R9
-        ADR.W    R0,`?<Constant " Ki: ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOV      R1,R11
-        ADR.W    R0,`?<Constant " Kd: ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-??PID_autotune_38:
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_43
-        LDR      R1,[SP, #+0]
-        LDRB     R1,[R1, #+1]
-        CMP      R1,#+0
-        BEQ.N    ??PID_autotune_43
-        LDRSB    R0,[SP, #+72]
-        CMP      R0,#+0
-        BPL.N    ??PID_autotune_44
-??PID_autotune_45:
-        ADDS     R0,R5,R6
-        ASRS     R0,R0,#+1
-        STRB     R0,[R4, #+3]
-??PID_autotune_46:
-        LDR      R0,[SP, #+16]
-        ADDS     R0,R0,#+1
-        STR      R0,[SP, #+16]
-        LDR      R0,[SP, #+68]
-        STR      R0,[SP, #+4]
-??PID_autotune_26:
-        LDR      R0,[SP, #+68]
-        LDR.W    R1,??DataTable61  ;; 0x41a00000
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??PID_autotune_47
-        ADR.W    R0,`?<Constant "PID Autotune failed! ...">_1`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
 //  598     }
 //  599     disable_all_heaters();
-??PID_autotune_25:
-        ADD      SP,SP,#+84
+//  600   }
+        ADD      SP,SP,#+100
+          CFI CFA R13+36
+        LDR.W    R1,??DataTable58
+        STR      R0,[R1, #+0]
+        STR      R4,[R1, #+4]
+        POP      {R4-R11,PC}
+          CFI CFA R13+136
+??PID_autotune_46:
+        STR      R8,[R1, #+84]
+        STR      R0,[R1, #+88]
+        STR      R4,[R1, #+92]
+        B.N      ?Subroutine0
+??PID_autotune_14:
+        ADD      SP,SP,#+100
           CFI CFA R13+36
         POP      {R4-R11,LR}
           CFI R4 SameValue
@@ -1521,273 +1677,17 @@ _ZN11Temperature12PID_autotuneEfaab:
           CFI R10 Frame(CFA, -12)
           CFI R11 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+120
-??PID_autotune_48:
-        ADD      SP,SP,#+84
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
-          CFI CFA R13+120
-??PID_autotune_43:
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_45
-??PID_autotune_44:
-        ADDS     R0,R5,R6
-        ASRS     R0,R0,#+1
-        LDRSB    R1,[SP, #+72]
-        STRB     R0,[R1, R4]
-        B.N      ??PID_autotune_46
-??PID_autotune_47:
-        LDR      R0,[SP, #+12]
-        SUBS     R0,R7,R0
-        BMI.N    ??PID_autotune_49
-          CFI FunCall _ZN11Temperature18print_heaterstatesEv
-        BL       _ZN11Temperature18print_heaterstatesEv
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        ADD      R0,R7,#+2000
-        STR      R0,[SP, #+12]
-        LDR      R0,[SP, #+20]
-        CMP      R0,#+0
-        BNE.N    ??PID_autotune_50
-        LDR      R0,[SP, #+56]
-        MOV      R1,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??PID_autotune_50
-        LDR      R0,[SP, #+36]
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??PID_autotune_51
-        MOVS     R0,#+1
-        STR      R0,[SP, #+20]
-??PID_autotune_51:
-        ADD      R0,SP,#+24
-        LDRSB    R0,[R0, #+0]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R10
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        STR      R0,[SP, #+56]
-        LDR      R0,[SP, #+28]
-        MOV      R1,#+1000
-        MLA      R0,R1,R0,R7
-        STR      R0,[SP, #+60]
-        B.N      ??PID_autotune_49
-??PID_autotune_50:
-        LDR      R0,[SP, #+20]
-        CMP      R0,#+0
-        BNE.N    ??PID_autotune_52
-        LDR      R0,[SP, #+60]
-        SUBS     R0,R7,R0
-        BMI.N    ??PID_autotune_52
-        ADR.W    R1,`?<Constant "Heating failed">`
-        MOV      R2,R1
-        LDRSB    R0,[SP, #+72]
-          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
-        BL       _ZN11Temperature11_temp_errorEaPKcS1_
-        B.N      ??PID_autotune_49
-??PID_autotune_52:
-        LDR      R0,[SP, #+20]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_49
-        LDR      R0,[SP, #+68]
-        LDR.W    R1,??DataTable61_1  ;; 0xc1a00000
-          CFI FunCall __aeabi_fadd
-        BL       __aeabi_fadd
-        MOV      R1,R0
-        MOV      R0,R10
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??PID_autotune_49
-        LDR.W    R2,??DataTable61_2
-        LDR.W    R1,??DataTable61_3
-        LDRSB    R0,[SP, #+72]
-          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
-        BL       _ZN11Temperature11_temp_errorEaPKcS1_
-??PID_autotune_49:
-        LDR      R0,[SP, #+48]
-        RSB      R0,R0,R7, LSL #+1
-        LDR      R1,[SP, #+44]
-        SUBS     R0,R0,R1
-        LDR.W    R1,??DataTable61_4  ;; 0x124f81
-        CMP      R0,R1
-        BCC.N    ??PID_autotune_53
-        ADR.W    R0,`?<Constant "PID Autotune failed! ...">_2`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??PID_autotune_25
-??PID_autotune_53:
-        LDRSB    R0,[SP, #+76]
-        LDR      R1,[SP, #+16]
-        CMP      R0,R1
-        BGE.W    ??PID_autotune_24
-        ADR.W    R0,`?<Constant "PID Autotune finished...">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BEQ.N    ??PID_autotune_54
-        LDR      R1,[SP, #+0]
-        LDRB     R1,[R1, #+1]
-        CMP      R1,#+0
-        BEQ.N    ??PID_autotune_54
-        LDRSB    R0,[SP, #+72]
-        CMP      R0,#+0
-        BPL.N    ??PID_autotune_55
-        ADR.N    R5,??DataTable52  ;; "bed"
-        B.N      ??PID_autotune_56
-??PID_autotune_55:
-        ADR.N    R5,??DataTable52_1  ;; ""
-??PID_autotune_56:
-        ADR.W    R6,`?<Constant "#define  DEFAULT_">`
-        MOV      R1,R5
-        MOV      R0,R6
-          CFI FunCall _Z17serial_echopair_PPKcS0_
-        BL       _Z17serial_echopair_PPKcS0_
-        MOV      R1,R8
-        ADR.N    R0,??DataTable52_2  ;; "Kp "
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        MOV      R1,R5
-        MOV      R0,R6
-          CFI FunCall _Z17serial_echopair_PPKcS0_
-        BL       _Z17serial_echopair_PPKcS0_
-        MOV      R1,R9
-        ADR.N    R0,??DataTable52_3  ;; "Ki "
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        MOV      R1,R5
-        MOV      R0,R6
-          CFI FunCall _Z17serial_echopair_PPKcS0_
-        BL       _Z17serial_echopair_PPKcS0_
-        MOV      R1,R11
-        ADR.N    R0,??DataTable53  ;; "Kd "
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        B.N      ??PID_autotune_57
-??PID_autotune_54:
-        CMP      R0,#+0
-        MOV      R1,R8
-        BEQ.N    ??PID_autotune_58
-        ADR.W    R0,`?<Constant "#define  DEFAULT_Kp ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        MOV      R1,R9
-        ADR.W    R0,`?<Constant "#define  DEFAULT_Ki ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        MOV      R1,R11
-        ADR.W    R0,`?<Constant "#define  DEFAULT_Kd ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        B.N      ??PID_autotune_57
-??PID_autotune_58:
-        ADR.W    R0,`?<Constant "#define  DEFAULT_bedKp ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        MOV      R1,R9
-        ADR.W    R0,`?<Constant "#define  DEFAULT_bedKi ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        MOV      R1,R11
-        ADR.W    R0,`?<Constant "#define  DEFAULT_bedKd ">`
-          CFI FunCall _Z17serial_echopair_PPKcf
-        BL       _Z17serial_echopair_PPKcf
-        MOVS     R1,#+10
-        LDR.W    R0,??DataTable57_4
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-??PID_autotune_57:
-        LDRB     R0,[SP, #+80]
-        CMP      R0,#+0
-        BEQ.W    ??PID_autotune_48
-        LDR.W    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
-        CMP      R0,#+0
-        BEQ.W    ??PID_autotune_48
-        LDR      R0,[SP, #+0]
-        LDRB     R0,[R0, #+1]
-        CMP      R0,#+0
-        BEQ.W    ??PID_autotune_48
-        LDRB     R0,[SP, #+80]
-        CMP      R0,#+0
-        BEQ.W    ??PID_autotune_48
-        MOV      R0,R11
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        LDR.W    R2,??DataTable64  ;; 0x88e368f1
-        LDR.W    R3,??DataTable65  ;; 0x3fc4f8b5
-          CFI FunCall __aeabi_ddiv
-        BL       __aeabi_ddiv
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        MOV      R5,R0
-        MOV      R0,R9
-          CFI FunCall __aeabi_f2d
-        BL       __aeabi_f2d
-        LDR.W    R2,??DataTable64  ;; 0x88e368f1
-        LDR.W    R3,??DataTable65  ;; 0x3fc4f8b5
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-          CFI FunCall __aeabi_d2f
-        BL       __aeabi_d2f
-        LDRSB    R1,[SP, #+72]
-        CMP      R1,#+0
-        BMI.N    ??PID_autotune_59
-        STR      R8,[R4, #+84]
-        STR      R0,[R4, #+88]
-        STR      R5,[R4, #+92]
-        ADD      SP,SP,#+84
-          CFI CFA R13+36
-        POP      {R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN11Temperature9updatePIDEv
-        B.W      _ZN11Temperature9updatePIDEv
+          CFI CFA R13+136
+          CFI EndBlock cfiBlock2
+??PID_autotune_45:
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock3 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN11Temperature12PID_autotuneEfaab
+          CFI CFA R13+136
           CFI R4 Frame(CFA, -36)
           CFI R5 Frame(CFA, -32)
           CFI R6 Frame(CFA, -28)
@@ -1797,14 +1697,12 @@ _ZN11Temperature12PID_autotuneEfaab:
           CFI R10 Frame(CFA, -12)
           CFI R11 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+120
-??PID_autotune_59:
-        STR      R8,[R4, #+96]
-        STR      R0,[R4, #+100]
-        STR      R5,[R4, #+104]
-        B.N      ??PID_autotune_48
-          CFI EndBlock cfiBlock2
-//  600   }
+        THUMB
+?Subroutine0:
+        ADD      SP,SP,#+100
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1974,25 +1872,25 @@ _ZN11Temperature12PID_autotuneEfaab:
 //  607 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN11TemperatureC1Ev
           CFI NoCalls
         THUMB
 //  608 Temperature::Temperature() { }
 _ZN11TemperatureC1Ev:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock3
+          CFI EndBlock cfiBlock4
 //  609 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function _ZN11Temperature14getHeaterPowerEi
           CFI NoCalls
         THUMB
 //  610 int Temperature::getHeaterPower(int heater) {
 //  611   return heater < 0 ? soft_pwm_amount_bed : soft_pwm_amount[heater];
 _ZN11Temperature14getHeaterPowerEi:
-        LDR.W    R1,??DataTable58
+        LDR.W    R1,??DataTable55_6
         CMP      R0,#+0
         BPL.N    ??getHeaterPower_0
         LDRB     R0,[R1, #+3]
@@ -2000,32 +1898,38 @@ _ZN11Temperature14getHeaterPowerEi:
 ??getHeaterPower_0:
         LDRB     R0,[R0, R1]
         BX       LR               ;; return
-          CFI EndBlock cfiBlock4
+          CFI EndBlock cfiBlock5
 //  612 }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable52:
+??DataTable51:
         DC8      "bed"
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable52_1:
+??DataTable51_1:
         DC8      "",0x0,0x0,0x0
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable52_2:
+??DataTable51_2:
         DC8      "Kp "
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable52_3:
+??DataTable51_3:
         DC8      "Ki "
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable51_4:
+        DC8      "Kd "
 //  613 
 //  614 #if HAS_AUTO_FAN
 //  615 
@@ -2068,178 +1972,177 @@ _ZN11Temperature14getHeaterPowerEi:
 //  652 //
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _ZN11Temperature11_temp_errorEaPKcS1_
         THUMB
 //  653 void Temperature::_temp_error(const int8_t e, const char * const serial_msg, const char * const lcd_msg) {
 _ZN11Temperature11_temp_errorEaPKcS1_:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        MOV      R4,R0
-        MOV      R5,R1
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
 //  654   static bool killed = false;
 //  655   if (IsRunning()) {
-          CFI FunCall _Z9IsRunningv
-        BL       _Z9IsRunningv
-        CMP      R0,#+0
-        BEQ.N    ??_temp_error_0
+        LDR.W    R5,??DataTable61
+        MOV      R4,R0
+        LDRB     R0,[R5, #+0]
+        MOV      R7,R1
+        CBZ.N    R0,??_temp_error_0
 //  656     SERIAL_ERROR_START();
-        LDR.W    R0,??DataTable66
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R8,??DataTable61_1
+        LDR.N    R6,??DataTable55_5
+        B.N      ??_temp_error_1
+??_temp_error_2:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_temp_error_1:
+        LDRSB    R1,[R8], #+1
+        MOVS     R0,R1
+        BNE.N    ??_temp_error_2
 //  657     serialprintPGM(serial_msg);
-        MOV      R0,R5
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        B.N      ??_temp_error_3
+??_temp_error_4:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_temp_error_3:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??_temp_error_4
 //  658     SERIAL_ERRORPGM(MSG_STOPPED_HEATER);
-        ADR.W    R0,`?<Constant ", system stopped! Hea...">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+        LDR.W    R7,??DataTable61_2
+        B.N      ??_temp_error_5
+??_temp_error_6:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_temp_error_5:
+        LDRSB    R1,[R7], #+1
+        MOVS     R0,R1
+        BNE.N    ??_temp_error_6
 //  659     if (e >= 0) {SERIAL_ERRORLN((int)e);} else {SERIAL_ERRORLNPGM(MSG_HEATER_BED);}
         CMP      R4,#+0
-        BMI.N    ??_temp_error_1
-        LDR.W    R5,??DataTable57_4
+        BMI.N    ??_temp_error_7
         MOVS     R2,#+10
         MOV      R1,R4
-        MOV      R0,R5
+        MOV      R0,R6
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
         MOVS     R1,#+10
-        MOV      R0,R5
+        MOV      R0,R6
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
         B.N      ??_temp_error_0
-??_temp_error_1:
-        ADR.W    R0,`?<Constant "bed\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
+??_temp_error_7:
+        LDR.W    R4,??DataTable61_3
+        B.N      ??_temp_error_8
+??_temp_error_9:
+        UXTB     R1,R1
+        MOV      R0,R6
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??_temp_error_8:
+        LDRSB    R1,[R4], #+1
+        MOVS     R0,R1
+        BNE.N    ??_temp_error_9
 //  660   }
 //  661   #if DISABLED(BOGUS_TEMPERATURE_FAILSAFE_OVERRIDE)
 //  662     if (!killed) {
 ??_temp_error_0:
-        LDR.W    R0,??DataTable68
-        LDRB     R1,[R0, #+0]
+        LDR.N    R0,??DataTable55_6
+        LDRB     R1,[R0, #+4]
         CMP      R1,#+0
-        BNE.N    ??_temp_error_2
+        ITT      NE 
 //  663       Running = false;
-        MOVS     R1,#+0
-        LDR.W    R2,??DataTable68_1
-        STRB     R1,[R2, #+0]
 //  664       killed = true;
-        MOVS     R1,#+1
-        STRB     R1,[R0, #+0]
 //  665       //kill(lcd_msg);
 //  666       #if 1
 //  667       temper_error_kill();
-        POP      {R0,R4,R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _Z17temper_error_killv
-        B.W      _Z17temper_error_killv
-          CFI R4 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
 //  668       #endif
 //  669     }
 //  670     else
 //  671       disable_all_heaters(); // paranoia
-??_temp_error_2:
-        POP      {R0,R4,R5,LR}
+        POPNE    {R4-R8,LR}
+          CFI FunCall _ZN11Temperature19disable_all_heatersEv
+        BNE.W    _ZN11Temperature19disable_all_heatersEv
+        STRB     R1,[R5, #+0]
+        MOVS     R1,#+1
+        STRB     R1,[R0, #+4]
+        POP      {R4-R8,LR}
           CFI R4 SameValue
           CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall _ZN11Temperature19disable_all_heatersEv
-        B.W      _ZN11Temperature19disable_all_heatersEv
-          CFI EndBlock cfiBlock5
+          CFI FunCall _Z17temper_error_killv
+        B.W      _Z17temper_error_killv
+          CFI EndBlock cfiBlock6
 //  672   #endif
 //  673 }
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable53:
-        DC8      "Kd "
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant ", system stopped! Hea...">`:
-        DC8 ", system stopped! Heater_ID: "
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "bed\\n">`:
-        DC8 "bed\012"
-        DC8 0, 0, 0
-
-        SECTION `.bss`:DATA:REORDER:NOROOT(0)
-??killed:
-        DS8 1
 //  674 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN11Temperature14max_temp_errorEa
         THUMB
 //  675 void Temperature::max_temp_error(const int8_t e) {
 _ZN11Temperature14max_temp_errorEa:
-        PUSH     {R7,LR}
+        PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 //  676   //#if HAS_TEMP_BED
 //  677   if(HAS_TEMP_BED)
-        LDR.N    R1,??DataTable56
-        LDRB     R1,[R1, #+54]
-        CMP      R1,#+0
-        BEQ.N    ??max_temp_error_0
+        LDR.N    R1,??DataTable55
+        LDRB     R1,[R1, #+56]
+        MOV      R4,R0
+        CBZ.N    R1,??max_temp_error_0
 //  678   {
 //  679     _temp_error(e, PSTR(MSG_T_MAXTEMP), e >= 0 ? PSTR(MSG_ERR_MAXTEMP) : PSTR(MSG_ERR_MAXTEMP_BED));
-        CMP      R0,#+0
-        BMI.N    ??max_temp_error_1
-        ADR.W    R2,`?<Constant "Err: MAXTEMP">`
-        B.N      ??max_temp_error_2
-??max_temp_error_1:
-        ADR.W    R2,`?<Constant "Err: MAXTEMP BED">`
-??max_temp_error_2:
-        ADR.W    R1,`?<Constant "MAXTEMP triggered">`
-          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
-        BL       _ZN11Temperature11_temp_errorEaPKcS1_
-//  680     temper_error_type=1;
-        MOVS     R0,#+1
-        LDR.W    R1,??DataTable68_2
-        STRB     R0,[R1, #+0]
-        POP      {R0,PC}
+        CMP      R4,#+0
+        ITE      MI 
+        ADRMI.W  R2,`?<Constant "Err: MAXTEMP BED">`
+        LDRPL.W  R2,??DataTable62
+        B.N      ??max_temp_error_1
+//  680     //temper_error_type=1;
 //  681   }
 //  682   //#else
 //  683   else
 //  684   {
 //  685     _temp_error(HOTEND_INDEX, PSTR(MSG_T_MAXTEMP), PSTR(MSG_ERR_MAXTEMP));
 ??max_temp_error_0:
-        ADR.W    R2,`?<Constant "Err: MAXTEMP">`
-        ADR.W    R1,`?<Constant "MAXTEMP triggered">`
+        LDR.W    R2,??DataTable62
+??max_temp_error_1:
+        LDR.W    R1,??DataTable62_1
           CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
         BL       _ZN11Temperature11_temp_errorEaPKcS1_
 //  686     #if HOTENDS == 1
 //  687       UNUSED(e);
 //  688     #endif
-//  689     temper_error_type=2;
-        MOVS     R0,#+2
-        LDR.W    R1,??DataTable68_2
-        STRB     R0,[R1, #+0]
+//  689     //temper_error_type=2;
 //  690    }
-//  691   //#endif
-//  692 }
-        POP      {R0,PC}          ;; return
-          CFI EndBlock cfiBlock6
+//  691    if(e>=0)temper_error_type=2;
+        LDR.W    R0,??DataTable63
+        CMP      R4,#+0
+        ITE      PL 
+        MOVPL    R1,#+2
+//  692    else temper_error_type=1;
+        MOVMI    R1,#+1
+        STRB     R1,[R0, #+0]
+//  693   //#endif
+//  694 }
+        POP      {R4,PC}          ;; return
+          CFI EndBlock cfiBlock7
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -2248,102 +2151,65 @@ _ZN11Temperature14max_temp_errorEa:
         DC8 "Err: MAXTEMP BED"
         DC8 0, 0, 0
 
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "Err: MAXTEMP">`:
-        DC8 "Err: MAXTEMP"
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "MAXTEMP triggered">`:
-        DC8 "MAXTEMP triggered"
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
-          CFI Function _ZN11Temperature14min_temp_errorEa
-        THUMB
-//  693 void Temperature::min_temp_error(const int8_t e) {
-_ZN11Temperature14min_temp_errorEa:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-//  694   //#if HAS_TEMP_BED
-//  695   if(HAS_TEMP_BED)
-        LDR.N    R1,??DataTable56
-        LDRB     R1,[R1, #+54]
-        CMP      R1,#+0
-        BEQ.N    ??min_temp_error_0
-//  696   {
-//  697     _temp_error(e, PSTR(MSG_T_MINTEMP), e >= 0 ? PSTR(MSG_ERR_MINTEMP) : PSTR(MSG_ERR_MINTEMP_BED));
-        CMP      R0,#+0
-        BMI.N    ??min_temp_error_1
-        ADR.W    R2,`?<Constant "Err: MINTEMP">`
-        B.N      ??min_temp_error_2
-??min_temp_error_1:
-        ADR.W    R2,`?<Constant "Err: MINTEMP BED">`
-??min_temp_error_2:
-        ADR.W    R1,`?<Constant "MINTEMP triggered">`
-          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
-        BL       _ZN11Temperature11_temp_errorEaPKcS1_
-//  698     temper_error_type=3;
-        MOVS     R0,#+3
-        LDR.W    R1,??DataTable68_2
-        STRB     R0,[R1, #+0]
-        POP      {R0,PC}
-//  699   }
-//  700   //#else
-//  701   else
-//  702   {
-//  703     _temp_error(HOTEND_INDEX, PSTR(MSG_T_MINTEMP), PSTR(MSG_ERR_MINTEMP));
-??min_temp_error_0:
-        ADR.W    R2,`?<Constant "Err: MINTEMP">`
-        ADR.W    R1,`?<Constant "MINTEMP triggered">`
-          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
-        BL       _ZN11Temperature11_temp_errorEaPKcS1_
-//  704     #if HOTENDS == 1
-//  705       UNUSED(e);
-//  706     #endif
-//  707     temper_error_type=4;
-        MOVS     R0,#+4
-        LDR.W    R1,??DataTable68_2
-        STRB     R0,[R1, #+0]
-//  708   }
-//  709   //#endif
-//  710 }
-        POP      {R0,PC}          ;; return
-          CFI EndBlock cfiBlock7
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "Err: MINTEMP BED">`:
-        DC8 "Err: MINTEMP BED"
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "Err: MINTEMP">`:
-        DC8 "Err: MINTEMP"
-        DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "MINTEMP triggered">`:
-        DC8 "MINTEMP triggered"
-        DC8 0, 0
-//  711 
-
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock8 Using cfiCommon0
+          CFI Function _ZN11Temperature14min_temp_errorEa
+        THUMB
+//  695 void Temperature::min_temp_error(const int8_t e) {
+_ZN11Temperature14min_temp_errorEa:
+        PUSH     {R4,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
+//  696   //#if HAS_TEMP_BED
+//  697   if(HAS_TEMP_BED)
+        LDR.N    R1,??DataTable55
+        LDRB     R1,[R1, #+56]
+        MOV      R4,R0
+        CBZ.N    R1,??min_temp_error_0
+//  698   {
+//  699     _temp_error(e, PSTR(MSG_T_MINTEMP), e >= 0 ? PSTR(MSG_ERR_MINTEMP) : PSTR(MSG_ERR_MINTEMP_BED));
+        CMP      R4,#+0
+        ITE      MI 
+        LDRMI.W  R2,??DataTable62_2
+        LDRPL.W  R2,??DataTable62_3
+        B.N      ??min_temp_error_1
+//  700     //temper_error_type=3;
+//  701   }
+//  702   //#else
+//  703   else
+//  704   {
+//  705     _temp_error(HOTEND_INDEX, PSTR(MSG_T_MINTEMP), PSTR(MSG_ERR_MINTEMP));
+??min_temp_error_0:
+        LDR.W    R2,??DataTable62_3
+??min_temp_error_1:
+        LDR.W    R1,??DataTable62_4
+          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
+        BL       _ZN11Temperature11_temp_errorEaPKcS1_
+//  706     #if HOTENDS == 1
+//  707       UNUSED(e);
+//  708     #endif
+//  709     //temper_error_type=4;
+//  710   }
+//  711   if(e>=0)temper_error_type=4;
+        LDR.W    R0,??DataTable63
+        CMP      R4,#+0
+        ITE      PL 
+        MOVPL    R1,#+4
+//  712    else temper_error_type=3;
+        MOVMI    R1,#+3
+        STRB     R1,[R0, #+0]
+//  713   //#endif
+//  714 }
+        POP      {R4,PC}          ;; return
+          CFI EndBlock cfiBlock8
+//  715 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN11Temperature14get_pid_outputEa
         THUMB
-//  712 float Temperature::get_pid_output(const int8_t e) {
+//  716 float Temperature::get_pid_output(const int8_t e) {
 _ZN11Temperature14get_pid_outputEa:
         PUSH     {R4-R11,LR}
           CFI R14 Frame(CFA, -4)
@@ -2356,51 +2222,51 @@ _ZN11Temperature14get_pid_outputEa:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+36
+//  717   #if HOTENDS == 1
+//  718     UNUSED(e);
+//  719     #define _HOTEND_TEST     true
+//  720   #else
+//  721     #define _HOTEND_TEST     e == active_extruder
+//  722   #endif
+//  723   float pid_output;
+//  724   //#if ENABLED(PIDTEMP)
+//  725   if(PIDTEMP) {
+        MOV      R4,R0
+        LDR.N    R5,??DataTable55_6
+        ADD      R6,R5,R4, LSL #+2
         SUB      SP,SP,#+12
           CFI CFA R13+48
-//  713   #if HOTENDS == 1
-//  714     UNUSED(e);
-//  715     #define _HOTEND_TEST     true
-//  716   #else
-//  717     #define _HOTEND_TEST     e == active_extruder
-//  718   #endif
-//  719   float pid_output;
-//  720   //#if ENABLED(PIDTEMP)
-//  721   if(PIDTEMP) {
-        MOV      R4,R0
-        LDR.W    R9,??DataTable58
-        ADD      R5,R9,R4, LSL #+2
-        LDR      R10,[R5, #+72]
+        LDR      R10,[R6, #+60]
         MOV      R0,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        LDR      R8,[R5, #+60]
-        LDR.N    R0,??DataTable56
-        LDRB     R0,[R0, #+52]
+        LDR.N    R0,??DataTable55
+        LDR      R8,[R6, #+68]
+        LDRB     R0,[R0, #+54]
         CMP      R0,#+0
         BEQ.W    ??get_pid_output_0
-//  722     #if DISABLED(PID_OPENLOOP)
-//  723       pid_error[HOTEND_INDEX] = target_temperature[HOTEND_INDEX] - current_temperature[HOTEND_INDEX];
+//  726     #if DISABLED(PID_OPENLOOP)
+//  727       pid_error[HOTEND_INDEX] = target_temperature[HOTEND_INDEX] - current_temperature[HOTEND_INDEX];
         MOV      R0,R1
         MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R5,R0
-        LDR.W    R6,??DataTable68_3
+        LDR.W    R6,??DataTable63_1
         ADD      R7,R6,R4, LSL #+2
-        STR      R5,[R7, #+44]
-//  724       dTerm[HOTEND_INDEX] = PID_K2 * PID_PARAM(Kd, HOTEND_INDEX) * (current_temperature[HOTEND_INDEX] - temp_dState[HOTEND_INDEX]) + PID_K1 * dTerm[HOTEND_INDEX];
-        LDR      R0,[R9, #+92]
+        MOV      R9,R0
+        STR      R9,[R7, #+44]
+//  728       dTerm[HOTEND_INDEX] = PID_K2 * PID_PARAM(Kd, HOTEND_INDEX) * (current_temperature[HOTEND_INDEX] - temp_dState[HOTEND_INDEX]) + PID_K1 * dTerm[HOTEND_INDEX];
+        LDR      R0,[R5, #+92]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.W    R2,??DataTable68_4  ;; 0x999999a0
-        LDR.W    R3,??DataTable68_5  ;; 0x3fa99999
+        LDR.W    R2,??DataTable63_2  ;; 0x999999a0
+        LDR.W    R3,??DataTable63_3  ;; 0x3fa99999
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         STRD     R0,R1,[SP, #+0]
-        MOV      R0,R8
         LDR      R1,[R7, #+12]
+        MOV      R0,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
@@ -2412,8 +2278,8 @@ _ZN11Temperature14get_pid_outputEa:
         LDR      R0,[R7, #+36]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
+        LDR.W    R3,??DataTable63_4  ;; 0x3fee6666
         MOV      R2,#+1717986918
-        LDR.W    R3,??DataTable68_6  ;; 0x3fee6666
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         LDRD     R2,R3,[SP, #+0]
@@ -2422,211 +2288,221 @@ _ZN11Temperature14get_pid_outputEa:
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
         MOV      R11,R0
+//  729       temp_dState[HOTEND_INDEX] = current_temperature[HOTEND_INDEX];
+//  730       #if HEATER_IDLE_HANDLER
+//  731         if (heater_idle_timeout_exceeded[HOTEND_INDEX]) {
+//  732           pid_output = 0;
+//  733           pid_reset[HOTEND_INDEX] = true;
+//  734         }
+//  735         else
+//  736       #endif
+//  737       if (pid_error[HOTEND_INDEX] > PID_FUNCTIONAL_RANGE) {
+        MOV      R0,R9
+        LDR.W    R1,??DataTable63_5  ;; 0x42200001
         STR      R11,[R7, #+36]
-//  725       temp_dState[HOTEND_INDEX] = current_temperature[HOTEND_INDEX];
-        STR      R8,[R7, #+12]
-//  726       #if HEATER_IDLE_HANDLER
-//  727         if (heater_idle_timeout_exceeded[HOTEND_INDEX]) {
-//  728           pid_output = 0;
-//  729           pid_reset[HOTEND_INDEX] = true;
-//  730         }
-//  731         else
-//  732       #endif
-//  733       if (pid_error[HOTEND_INDEX] > PID_FUNCTIONAL_RANGE) {
-        MOV      R0,R5
-        LDR.W    R1,??DataTable68_7  ;; 0x42200001
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.N    ??get_pid_output_1
-//  734         pid_output = BANG_MAX;
-        LDR.W    R0,??DataTable68_8  ;; 0x437f0000
-//  735         pid_reset[HOTEND_INDEX] = true;
-        MOVS     R1,#+1
-        STRB     R1,[R4, R6]
-        B.N      ??get_pid_output_2
-//  736       }
-//  737       else if (pid_error[HOTEND_INDEX] < -(PID_FUNCTIONAL_RANGE) || target_temperature[HOTEND_INDEX] == 0
-//  738         #if HEATER_IDLE_HANDLER
-//  739           || heater_idle_timeout_exceeded[HOTEND_INDEX]
-//  740         #endif
-//  741         ) {
-??get_pid_output_1:
-        LDR.W    R1,??DataTable68_9  ;; 0xc2200000
+        STR      R8,[R7, #+12]
+        IT       LS 
+//  738         pid_output = BANG_MAX;
+        LDRLS.W  R0,??DataTable63_6  ;; 0x437f0000
+//  739         pid_reset[HOTEND_INDEX] = true;
+        BLS.N    ??get_pid_output_1
+//  740       }
+//  741       else if (pid_error[HOTEND_INDEX] < -(PID_FUNCTIONAL_RANGE) || target_temperature[HOTEND_INDEX] == 0
+//  742         #if HEATER_IDLE_HANDLER
+//  743           || heater_idle_timeout_exceeded[HOTEND_INDEX]
+//  744         #endif
+//  745         ) {
+        LDR.W    R1,??DataTable63_7  ;; 0xc2200000
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??get_pid_output_3
+        BCC.N    ??get_pid_output_2
         CMP      R10,#+0
-        BNE.N    ??get_pid_output_4
-//  742         pid_output = 0;
-??get_pid_output_3:
+        BNE.N    ??get_pid_output_3
+//  746         pid_output = 0;
+??get_pid_output_2:
         MOVS     R0,#+0
-//  743         pid_reset[HOTEND_INDEX] = true;
+//  747         pid_reset[HOTEND_INDEX] = true;
+??get_pid_output_1:
         MOVS     R1,#+1
         STRB     R1,[R4, R6]
-        B.N      ??get_pid_output_2
-//  744       }
-//  745       else {
-//  746         if (pid_reset[HOTEND_INDEX]) {
-??get_pid_output_4:
+//  748       }
+//  749       else {
+//  750         if (pid_reset[HOTEND_INDEX]) {
+//  751           temp_iState[HOTEND_INDEX] = 0.0;
+//  752           pid_reset[HOTEND_INDEX] = false;
+//  753         }
+//  754         pTerm[HOTEND_INDEX] = PID_PARAM(Kp, HOTEND_INDEX) * pid_error[HOTEND_INDEX];
+//  755         temp_iState[HOTEND_INDEX] += pid_error[HOTEND_INDEX];
+//  756         iTerm[HOTEND_INDEX] = PID_PARAM(Ki, HOTEND_INDEX) * temp_iState[HOTEND_INDEX];
+//  757 
+//  758         pid_output = pTerm[HOTEND_INDEX] + iTerm[HOTEND_INDEX] - dTerm[HOTEND_INDEX];
+//  759 
+//  760         #if ENABLED(PID_EXTRUSION_SCALING)
+//  761           cTerm[HOTEND_INDEX] = 0;
+//  762           if (_HOTEND_TEST) {
+//  763             long e_position = stepper.position(E_AXIS);
+//  764             if (e_position > last_e_position) {
+//  765               lpq[lpq_ptr] = e_position - last_e_position;
+//  766               last_e_position = e_position;
+//  767             }
+//  768             else {
+//  769               lpq[lpq_ptr] = 0;
+//  770             }
+//  771             if (++lpq_ptr >= lpq_len) lpq_ptr = 0;
+//  772             cTerm[HOTEND_INDEX] = (lpq[lpq_ptr] * planner.steps_to_mm[E_AXIS]) * PID_PARAM(Kc, HOTEND_INDEX);
+//  773             pid_output += cTerm[HOTEND_INDEX];
+//  774           }
+//  775         #endif // PID_EXTRUSION_SCALING
+//  776 
+//  777         if (pid_output > PID_MAX) {
+//  778           if (pid_error[HOTEND_INDEX] > 0) temp_iState[HOTEND_INDEX] -= pid_error[HOTEND_INDEX]; // conditional un-integration
+//  779           pid_output = PID_MAX;
+//  780         }
+//  781         else if (pid_output < 0) {
+//  782           if (pid_error[HOTEND_INDEX] < 0) temp_iState[HOTEND_INDEX] -= pid_error[HOTEND_INDEX]; // conditional un-integration
+//  783           pid_output = 0;
+//  784         }
+//  785       }
+//  786   	}
+//  787     #else
+//  788       pid_output = constrain(target_temperature[HOTEND_INDEX], 0, PID_MAX);
+//  789     #endif // PID_OPENLOOP
+//  790 
+//  791     #if ENABLED(PID_DEBUG)
+//  792       SERIAL_ECHO_START();
+//  793       SERIAL_ECHOPAIR(MSG_PID_DEBUG, HOTEND_INDEX);
+//  794       SERIAL_ECHOPAIR(MSG_PID_DEBUG_INPUT, current_temperature[HOTEND_INDEX]);
+//  795       SERIAL_ECHOPAIR(MSG_PID_DEBUG_OUTPUT, pid_output);
+//  796       SERIAL_ECHOPAIR(MSG_PID_DEBUG_PTERM, pTerm[HOTEND_INDEX]);
+//  797       SERIAL_ECHOPAIR(MSG_PID_DEBUG_ITERM, iTerm[HOTEND_INDEX]);
+//  798       SERIAL_ECHOPAIR(MSG_PID_DEBUG_DTERM, dTerm[HOTEND_INDEX]);
+//  799       #if ENABLED(PID_EXTRUSION_SCALING)
+//  800         SERIAL_ECHOPAIR(MSG_PID_DEBUG_CTERM, cTerm[HOTEND_INDEX]);
+//  801       #endif
+//  802       SERIAL_EOL();
+//  803     #endif // PID_DEBUG
+//  804 
+//  805   //#else /* PID off */
+//  806   else
+//  807   {
+//  808     #if HEATER_IDLE_HANDLER
+//  809       if (heater_idle_timeout_exceeded[HOTEND_INDEX])
+//  810         pid_output = 0;
+//  811       else
+//  812     #endif
+//  813     pid_output = (current_temperature[HOTEND_INDEX] < target_temperature[HOTEND_INDEX]) ? PID_MAX : 0;
+//  814   }
+//  815   //#endif
+//  816 
+//  817   return pid_output;
+        B.N      ?Subroutine1
+??get_pid_output_3:
         LDRB     R0,[R4, R6]
-        CMP      R0,#+0
-        BEQ.N    ??get_pid_output_5
-//  747           temp_iState[HOTEND_INDEX] = 0.0;
+        CBZ.N    R0,??get_pid_output_4
         MOVS     R0,#+0
         STR      R0,[R7, #+4]
-//  748           pid_reset[HOTEND_INDEX] = false;
         STRB     R0,[R4, R6]
-//  749         }
-//  750         pTerm[HOTEND_INDEX] = PID_PARAM(Kp, HOTEND_INDEX) * pid_error[HOTEND_INDEX];
-??get_pid_output_5:
-        LDR      R0,[R9, #+84]
-        MOV      R1,R5
+??get_pid_output_4:
+        MOV      R1,R9
+        LDR      R0,[R5, #+84]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R4,R0
         STR      R4,[R7, #+20]
-//  751         temp_iState[HOTEND_INDEX] += pid_error[HOTEND_INDEX];
+        MOV      R1,R9
         LDR      R0,[R7, #+4]
-        MOV      R1,R5
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R6,R0
         STR      R6,[R7, #+4]
-//  752         iTerm[HOTEND_INDEX] = PID_PARAM(Ki, HOTEND_INDEX) * temp_iState[HOTEND_INDEX];
-        LDR      R0,[R9, #+88]
         MOV      R1,R6
+        LDR      R0,[R5, #+88]
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R1,R0
         STR      R1,[R7, #+28]
-//  753 
-//  754         pid_output = pTerm[HOTEND_INDEX] + iTerm[HOTEND_INDEX] - dTerm[HOTEND_INDEX];
         MOV      R0,R4
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R1,R11
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-//  755 
-//  756         #if ENABLED(PID_EXTRUSION_SCALING)
-//  757           cTerm[HOTEND_INDEX] = 0;
-//  758           if (_HOTEND_TEST) {
-//  759             long e_position = stepper.position(E_AXIS);
-//  760             if (e_position > last_e_position) {
-//  761               lpq[lpq_ptr] = e_position - last_e_position;
-//  762               last_e_position = e_position;
-//  763             }
-//  764             else {
-//  765               lpq[lpq_ptr] = 0;
-//  766             }
-//  767             if (++lpq_ptr >= lpq_len) lpq_ptr = 0;
-//  768             cTerm[HOTEND_INDEX] = (lpq[lpq_ptr] * planner.steps_to_mm[E_AXIS]) * PID_PARAM(Kc, HOTEND_INDEX);
-//  769             pid_output += cTerm[HOTEND_INDEX];
-//  770           }
-//  771         #endif // PID_EXTRUSION_SCALING
-//  772 
-//  773         if (pid_output > PID_MAX) {
-        LDR.W    R1,??DataTable68_10  ;; 0x437f0001
+        LDR.W    R1,??DataTable63_8  ;; 0x437f0001
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.N    ??get_pid_output_6
-//  774           if (pid_error[HOTEND_INDEX] > 0) temp_iState[HOTEND_INDEX] -= pid_error[HOTEND_INDEX]; // conditional un-integration
-        MOV      R0,R5
+        BHI.N    ??get_pid_output_5
+        MOV      R0,R9
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BCS.N    ??get_pid_output_7
+        BCS.N    ??get_pid_output_6
         MOV      R0,R6
-        MOV      R1,R5
+        MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         STR      R0,[R7, #+4]
-//  775           pid_output = PID_MAX;
-??get_pid_output_7:
-        LDR.W    R0,??DataTable68_8  ;; 0x437f0000
-        B.N      ??get_pid_output_2
-//  776         }
-//  777         else if (pid_output < 0) {
-??get_pid_output_6:
+        B.N      ??get_pid_output_6
+??get_pid_output_5:
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??get_pid_output_2
-//  778           if (pid_error[HOTEND_INDEX] < 0) temp_iState[HOTEND_INDEX] -= pid_error[HOTEND_INDEX]; // conditional un-integration
-        MOV      R0,R5
+        BCS.N    ??get_pid_output_7
+        MOV      R0,R9
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCS.N    ??get_pid_output_8
         MOV      R0,R6
-        MOV      R1,R5
+        MOV      R1,R9
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         STR      R0,[R7, #+4]
-//  779           pid_output = 0;
-??get_pid_output_8:
-        MOVS     R0,#+0
-        B.N      ??get_pid_output_2
-//  780         }
-//  781       }
-//  782   	}
-//  783     #else
-//  784       pid_output = constrain(target_temperature[HOTEND_INDEX], 0, PID_MAX);
-//  785     #endif // PID_OPENLOOP
-//  786 
-//  787     #if ENABLED(PID_DEBUG)
-//  788       SERIAL_ECHO_START();
-//  789       SERIAL_ECHOPAIR(MSG_PID_DEBUG, HOTEND_INDEX);
-//  790       SERIAL_ECHOPAIR(MSG_PID_DEBUG_INPUT, current_temperature[HOTEND_INDEX]);
-//  791       SERIAL_ECHOPAIR(MSG_PID_DEBUG_OUTPUT, pid_output);
-//  792       SERIAL_ECHOPAIR(MSG_PID_DEBUG_PTERM, pTerm[HOTEND_INDEX]);
-//  793       SERIAL_ECHOPAIR(MSG_PID_DEBUG_ITERM, iTerm[HOTEND_INDEX]);
-//  794       SERIAL_ECHOPAIR(MSG_PID_DEBUG_DTERM, dTerm[HOTEND_INDEX]);
-//  795       #if ENABLED(PID_EXTRUSION_SCALING)
-//  796         SERIAL_ECHOPAIR(MSG_PID_DEBUG_CTERM, cTerm[HOTEND_INDEX]);
-//  797       #endif
-//  798       SERIAL_EOL();
-//  799     #endif // PID_DEBUG
-//  800 
-//  801   //#else /* PID off */
-//  802   else
-//  803   {
-//  804     #if HEATER_IDLE_HANDLER
-//  805       if (heater_idle_timeout_exceeded[HOTEND_INDEX])
-//  806         pid_output = 0;
-//  807       else
-//  808     #endif
-//  809     pid_output = (current_temperature[HOTEND_INDEX] < target_temperature[HOTEND_INDEX]) ? PID_MAX : 0;
+        B.N      ??get_pid_output_8
 ??get_pid_output_0:
         MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??get_pid_output_9
-        LDR.W    R0,??DataTable68_8  ;; 0x437f0000
-        B.N      ??get_pid_output_2
-??get_pid_output_9:
+        BCS.N    ??get_pid_output_8
+??get_pid_output_6:
+        LDR.W    R0,??DataTable63_6  ;; 0x437f0000
+        B.N      ?Subroutine1
+??get_pid_output_8:
         MOVS     R0,#+0
-//  810   }
-//  811   //#endif
-//  812 
-//  813   return pid_output;
-??get_pid_output_2:
-        POP      {R1-R11,PC}      ;; return
-          CFI EndBlock cfiBlock8
-//  814 }
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable56:
-        DC32     mksCfg
-//  815 
-//  816 #if 1//ENABLED(PIDTEMPBED)
+          CFI EndBlock cfiBlock9
+??get_pid_output_7:
+        REQUIRE ?Subroutine1
+        ;; // Fall through to label ?Subroutine1
+//  818 }
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN11Temperature14get_pid_outputEa
+          CFI CFA R13+48
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine1:
+        ADD      SP,SP,#+12
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock10
+//  819 
+//  820 #if 1//ENABLED(PIDTEMPBED)
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _ZN11Temperature18get_pid_output_bedEv
         THUMB
-//  817   float Temperature::get_pid_output_bed() {
+//  821   float Temperature::get_pid_output_bed() {
 _ZN11Temperature18get_pid_output_bedEv:
         PUSH     {R3-R11,LR}
           CFI R14 Frame(CFA, -4)
@@ -2639,54 +2515,54 @@ _ZN11Temperature18get_pid_output_bedEv:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+40
-//  818     float pid_output;
-//  819     #if DISABLED(PID_OPENLOOP)
-//  820       pid_error_bed = target_temperature_bed - current_temperature_bed;
-        LDR.W    R10,??DataTable58
-        LDR      R8,[R10, #+68]
-        LDRSH    R0,[R10, #+36]
+//  822     float pid_output;
+//  823     #if DISABLED(PID_OPENLOOP)
+//  824       pid_error_bed = target_temperature_bed - current_temperature_bed;
+        LDR.N    R6,??DataTable55_6
+        LDR      R4,[R6, #+76]
+        LDRSH    R0,[R6, #+36]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R1,R8
+        MOV      R1,R4
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        MOV      R4,R0
-        LDR.W    R5,??DataTable68_11
-        STR      R4,[R5, #+20]
-//  821       pTerm_bed = bedKp * pid_error_bed;
-        LDR      R0,[R10, #+96]
-        MOV      R1,R4
+        LDR.W    R5,??DataTable58
+        MOV      R8,R0
+//  825       pTerm_bed = bedKp * pid_error_bed;
+        LDR      R0,[R6, #+96]
+        STR      R8,[R5, #+28]
+        MOV      R1,R8
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R6,R0
-        STR      R6,[R5, #+8]
-//  822       temp_iState_bed += pid_error_bed;
-        LDR      R0,[R5, #+0]
-        MOV      R1,R4
+//  826       temp_iState_bed += pid_error_bed;
+        LDR      R0,[R5, #+8]
+        STR      R6,[R5, #+16]
+        MOV      R1,R8
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
         MOV      R7,R0
-        STR      R7,[R5, #+0]
-//  823       iTerm_bed = bedKi * temp_iState_bed;
-        LDR      R0,[R10, #+100]
+//  827       iTerm_bed = bedKi * temp_iState_bed;
+        LDR      R0,[R5, #+0]
+        STR      R7,[R5, #+8]
         MOV      R1,R7
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R9,R0
-        STR      R9,[R5, #+12]
-//  824 
-//  825       dTerm_bed = PID_K2 * bedKd * (current_temperature_bed - temp_dState_bed) + PID_K1 * dTerm_bed;
-        LDR      R0,[R10, #+104]
+//  828 
+//  829       dTerm_bed = PID_K2 * bedKd * (current_temperature_bed - temp_dState_bed) + PID_K1 * dTerm_bed;
+        LDR      R0,[R5, #+4]
+        STR      R9,[R5, #+20]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
-        LDR.W    R2,??DataTable68_4  ;; 0x999999a0
-        LDR.W    R3,??DataTable68_5  ;; 0x3fa99999
+        LDR.W    R2,??DataTable63_2  ;; 0x999999a0
+        LDR.W    R3,??DataTable63_3  ;; 0x3fa99999
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
-        MOV      R10,R0
         MOV      R11,R1
-        MOV      R0,R8
-        LDR      R1,[R5, #+4]
+        MOV      R10,R0
+        LDR      R1,[R5, #+12]
+        MOV      R0,R4
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
           CFI FunCall __aeabi_f2d
@@ -2696,12 +2572,12 @@ _ZN11Temperature18get_pid_output_bedEv:
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         MOV      R10,R0
+        LDR      R0,[R5, #+24]
         MOV      R11,R1
-        LDR      R0,[R5, #+16]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R2,#+1717986918
-        LDR.W    R3,??DataTable68_6  ;; 0x3fee6666
+        LDR.W    R3,??DataTable63_4  ;; 0x3fee6666
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         MOV      R2,R10
@@ -2711,11 +2587,11 @@ _ZN11Temperature18get_pid_output_bedEv:
           CFI FunCall __aeabi_d2f
         BL       __aeabi_d2f
         MOV      R10,R0
-        STR      R10,[R5, #+16]
-//  826       temp_dState_bed = current_temperature_bed;
-        STR      R8,[R5, #+4]
-//  827 
-//  828       pid_output = pTerm_bed + iTerm_bed - dTerm_bed;
+        STR      R10,[R5, #+24]
+//  830       temp_dState_bed = current_temperature_bed;
+        STR      R4,[R5, #+12]
+//  831 
+//  832       pid_output = pTerm_bed + iTerm_bed - dTerm_bed;
         MOV      R0,R6
         MOV      R1,R9
           CFI FunCall __aeabi_fadd
@@ -2723,128 +2599,207 @@ _ZN11Temperature18get_pid_output_bedEv:
         MOV      R1,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-//  829       if (pid_output > MAX_BED_POWER) {
-        LDR.W    R1,??DataTable68_10  ;; 0x437f0001
+//  833       if (pid_output > MAX_BED_POWER) {
+        LDR.W    R1,??DataTable63_8  ;; 0x437f0001
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
         BHI.N    ??get_pid_output_bed_0
-//  830         if (pid_error_bed > 0) temp_iState_bed -= pid_error_bed; // conditional un-integration
-        MOV      R0,R4
+//  834         if (pid_error_bed > 0) temp_iState_bed -= pid_error_bed; // conditional un-integration
+        MOV      R0,R8
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
         BCS.N    ??get_pid_output_bed_1
         MOV      R0,R7
-        MOV      R1,R4
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        STR      R0,[R5, #+0]
-//  831         pid_output = MAX_BED_POWER;
+        MOV      R7,R0
+//  835         pid_output = MAX_BED_POWER;
 ??get_pid_output_bed_1:
-        LDR.W    R0,??DataTable68_8  ;; 0x437f0000
+        LDR.W    R0,??DataTable63_6  ;; 0x437f0000
         B.N      ??get_pid_output_bed_2
-//  832       }
-//  833       else if (pid_output < 0) {
+//  836       }
+//  837       else if (pid_output < 0) {
 ??get_pid_output_bed_0:
         MOVS     R1,#+0
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCS.N    ??get_pid_output_bed_2
-//  834         if (pid_error_bed < 0) temp_iState_bed -= pid_error_bed; // conditional un-integration
-        MOV      R0,R4
+//  838         if (pid_error_bed < 0) temp_iState_bed -= pid_error_bed; // conditional un-integration
+        MOV      R0,R8
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCS.N    ??get_pid_output_bed_3
         MOV      R0,R7
-        MOV      R1,R4
+        MOV      R1,R8
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
-        STR      R0,[R5, #+0]
-//  835         pid_output = 0;
+        MOV      R7,R0
+//  839         pid_output = 0;
 ??get_pid_output_bed_3:
         MOVS     R0,#+0
-//  836       }
-//  837     #else
-//  838       pid_output = constrain(target_temperature_bed, 0, MAX_BED_POWER);
-//  839     #endif // PID_OPENLOOP
-//  840 
-//  841     #if ENABLED(PID_BED_DEBUG)
-//  842       SERIAL_ECHO_START();
-//  843       SERIAL_ECHOPGM(" PID_BED_DEBUG ");
-//  844       SERIAL_ECHOPGM(": Input ");
-//  845       SERIAL_ECHO(current_temperature_bed);
-//  846       SERIAL_ECHOPGM(" Output ");
-//  847       SERIAL_ECHO(pid_output);
-//  848       SERIAL_ECHOPGM(" pTerm ");
-//  849       SERIAL_ECHO(pTerm_bed);
-//  850       SERIAL_ECHOPGM(" iTerm ");
-//  851       SERIAL_ECHO(iTerm_bed);
-//  852       SERIAL_ECHOPGM(" dTerm ");
-//  853       SERIAL_ECHOLN(dTerm_bed);
-//  854     #endif // PID_BED_DEBUG
-//  855 
-//  856     return pid_output;
 ??get_pid_output_bed_2:
+        STR      R7,[R5, #+8]
+//  840       }
+//  841     #else
+//  842       pid_output = constrain(target_temperature_bed, 0, MAX_BED_POWER);
+//  843     #endif // PID_OPENLOOP
+//  844 
+//  845     #if ENABLED(PID_BED_DEBUG)
+//  846       SERIAL_ECHO_START();
+//  847       SERIAL_ECHOPGM(" PID_BED_DEBUG ");
+//  848       SERIAL_ECHOPGM(": Input ");
+//  849       SERIAL_ECHO(current_temperature_bed);
+//  850       SERIAL_ECHOPGM(" Output ");
+//  851       SERIAL_ECHO(pid_output);
+//  852       SERIAL_ECHOPGM(" pTerm ");
+//  853       SERIAL_ECHO(pTerm_bed);
+//  854       SERIAL_ECHOPGM(" iTerm ");
+//  855       SERIAL_ECHO(iTerm_bed);
+//  856       SERIAL_ECHOPGM(" dTerm ");
+//  857       SERIAL_ECHOLN(dTerm_bed);
+//  858     #endif // PID_BED_DEBUG
+//  859 
+//  860     return pid_output;
         POP      {R1,R4-R11,PC}   ;; return
-          CFI EndBlock cfiBlock9
-//  857   }
+          CFI EndBlock cfiBlock11
+//  861   }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable57:
+??DataTable55:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_1:
         DC32     _ZN11Temperature16extrude_min_tempE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable57_1:
-        DC32     0x461c4000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable57_2:
-        DC32     mksCfg+0x34
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable57_3:
+??DataTable55_2:
         DC32     mksCfg+0xE4
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable57_4:
+??DataTable55_3:
+        DC32     0x461c4000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_4:
+        DC32     mksCfg+0x36
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_5:
         DC32     Serial3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable57_5:
+??DataTable55_6:
+        DC32     _ZN11Temperature15soft_pwm_amountE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_7:
         DC32     wait_for_heatup
-//  858 #endif // PIDTEMPBED
-//  859 
-//  860 /**
-//  861  * Manage heating activities for extruder hot-ends and a heated bed
-//  862  *  - Acquire updated temperature readings
-//  863  *    - Also resets the watchdog timer
-//  864  *  - Invoke thermal runaway protection
-//  865  *  - Manage extruder auto-fan
-//  866  *  - Apply filament width to the extrusion rate (may move)
-//  867  *  - Update the heated bed PID output value
-//  868  */
-//  869 static float current_temper_bak;
-//  870 
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_8:
+        DC32     0xc1a00000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_9:
+        DC32     0x41a00000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_10:
+        DC32     _ZN11Temperature15soft_pwm_amountE+0x44
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_11:
+        DC32     0xffffec78
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_12:
+        DC32     0x40100000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_13:
+        DC32     0x54442d18
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_14:
+        DC32     0x400921fb
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_15:
+        DC32     0x3fe00000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_16:
+        DC32     0xd2f1a9fc
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_17:
+        DC32     0x3f50624d
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable55_18:
+        DC32     0x3fe33333
+//  862 #endif // PIDTEMPBED
+//  863 
+//  864 /**
+//  865  * Manage heating activities for extruder hot-ends and a heated bed
+//  866  *  - Acquire updated temperature readings
+//  867  *    - Also resets the watchdog timer
+//  868  *  - Invoke thermal runaway protection
+//  869  *  - Manage extruder auto-fan
+//  870  *  - Apply filament width to the extrusion rate (may move)
+//  871  *  - Update the heated bed PID output value
+//  872  */
+//  873 static float current_temper_bak;
+//  874 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function _ZN11Temperature13manage_heaterEv
         THUMB
-//  871 void Temperature::manage_heater() {
+//  875 void Temperature::manage_heater() {
 _ZN11Temperature13manage_heaterEv:
-        PUSH     {R1-R11,LR}
+        PUSH     {R4-R11,LR}
           CFI R14 Frame(CFA, -4)
           CFI R11 Frame(CFA, -8)
           CFI R10 Frame(CFA, -12)
@@ -2854,28 +2809,31 @@ _ZN11Temperature13manage_heaterEv:
           CFI R6 Frame(CFA, -28)
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
-          CFI CFA R13+48
-//  872 
-//  873   if (!temp_meas_ready) return;
-        LDR.N    R6,??DataTable58
+          CFI CFA R13+36
+//  876 
+//  877   if (!temp_meas_ready) return;
+        LDR.W    R6,??DataTable62_5
+        SUB      SP,SP,#+36
+          CFI CFA R13+72
         LDRB     R0,[R6, #+2]
         CMP      R0,#+0
         BEQ.W    ??manage_heater_0
-//  874 
-//  875   updateTemperaturesFromRawValues(); // also resets the watchdog
+//  878 
+//  879   updateTemperaturesFromRawValues(); // also resets the watchdog
           CFI FunCall _ZN11Temperature31updateTemperaturesFromRawValuesEv
         BL       _ZN11Temperature31updateTemperaturesFromRawValuesEv
-//  876 
-//  877   //#if ENABLED(HEATER_0_USES_MAX6675)
-//  878    if(TEMP_SENSOR_0 == sensors_MAX31855)
-        LDR.W    R7,??DataTable72
-        ADD      R8,R7,#+224
-        LDRSB    R0,[R8, #+22]
+        LDR.W    R0,??DataTable65
+        STR      R0,[SP, #+12]
+        LDRSB    R0,[R0, #+22]
         CMN      R0,#+3
         BNE.N    ??manage_heater_1
-//  879    {
-//  880     if (current_temperature[0] > min(HEATER_0_MAXTEMP, MAX6675_TMAX - 1.0)) 
-        LDRSH    R0,[R7, #+48]
+//  880 
+//  881   //#if ENABLED(HEATER_0_USES_MAX6675)
+//  882    if(TEMP_SENSOR_0 == sensors_MAX31855)
+//  883    {
+//  884     if (current_temperature[0] > min(HEATER_0_MAXTEMP, MAX6675_TMAX - 1.0)) 
+        LDR.W    R0,??DataTable65_1
+        LDRSH    R0,[R0, #+48]
         MOVW     R1,#+1799
         CMP      R0,R1
         BGE.N    ??manage_heater_2
@@ -2886,10 +2844,11 @@ _ZN11Temperature13manage_heaterEv:
         B.N      ??manage_heater_3
 ??manage_heater_2:
         MOVS     R4,#+0
-        LDR.W    R5,??DataTable70  ;; 0x409c1c00
+        LDR.W    R5,??DataTable65_2  ;; 0x409c1c00
 ??manage_heater_3:
-        LDR      R9,[R6, #+60]
-        MOV      R0,R9
+        LDR      R8,[R6, #+68]
+        LDR.W    R7,??DataTable65_3
+        MOV      R0,R8
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R2,R0
@@ -2899,44 +2858,53 @@ _ZN11Temperature13manage_heaterEv:
           CFI FunCall __aeabi_cdcmple
         BL       __aeabi_cdcmple
         BCS.N    ??manage_heater_4
-//  881     {
-//  882         if(current_temperature[0] == 1800)
-        MOV      R0,R9
-        LDR.W    R1,??DataTable70_1  ;; 0x44e10000
+//  885     {
+//  886         if(current_temperature[0] == 1800)
+        MOV      R0,R8
+        LDR.W    R1,??DataTable65_4  ;; 0x44e10000
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
         BNE.N    ??manage_heater_5
-//  883         {
-//  884            current_temperature[0] = current_temper_bak;
-        LDR      R0,[R6, #+124]
-        STR      R0,[R6, #+60]
-        B.N      ??manage_heater_4
-//  885         }
-//  886         else
 //  887         {
-//  888             max_temp_error(0);
-??manage_heater_5:
-        MOVS     R0,#+0
-          CFI FunCall _ZN11Temperature14max_temp_errorEa
-        BL       _ZN11Temperature14max_temp_errorEa
+//  888            current_temperature[0] = current_temper_bak;
+        LDR      R0,[R6, #+128]
+        STR      R0,[R6, #+68]
+        B.N      ??manage_heater_4
 //  889         }
-//  890     }
-//  891     if (current_temperature[0] < max(HEATER_0_MINTEMP, MAX6675_TMIN + .01)) min_temp_error(0);
+//  890         else
+//  891         {
+//  892             max_temp_error(0);
+??manage_heater_5:
+        LDRB     R0,[R7, #+8]
+        LDR.W    R1,??DataTable62_1
+        LDR.W    R2,??DataTable62
+        CBZ.N    R0,??manage_heater_6
+        MOVS     R0,#+0
+??manage_heater_6:
+          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
+        BL       _ZN11Temperature11_temp_errorEaPKcS1_
+        LDR.W    R1,??DataTable63
+        MOVS     R0,#+2
+        STRB     R0,[R1, #+0]
+//  893         }
+//  894     }
+//  895     if (current_temperature[0] < max(HEATER_0_MINTEMP, MAX6675_TMIN + .01)) min_temp_error(0);
 ??manage_heater_4:
-        LDRSH    R0,[R8, #+16]
         MVN      R1,#+268
+        LDR      R0,[SP, #+12]
+        LDRSH    R0,[R0, #+16]
         CMP      R0,R1
-        BLT.N    ??manage_heater_6
+        BLT.N    ??manage_heater_7
           CFI FunCall __aeabi_i2d
         BL       __aeabi_i2d
         MOV      R4,R0
         MOV      R5,R1
-        B.N      ??manage_heater_7
-??manage_heater_6:
-        LDR.W    R4,??DataTable70_2  ;; 0xa3d70a4
-        LDR.W    R5,??DataTable70_3  ;; 0xc070dfd7
+        B.N      ??manage_heater_8
 ??manage_heater_7:
-        LDR      R0,[R6, #+60]
+        LDR.W    R4,??DataTable65_5  ;; 0xa3d70a4
+        LDR.W    R5,??DataTable65_6  ;; 0xc070dfd7
+??manage_heater_8:
+        LDR      R0,[R6, #+68]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
         MOV      R2,R4
@@ -2944,389 +2912,482 @@ _ZN11Temperature13manage_heaterEv:
           CFI FunCall __aeabi_cdcmple
         BL       __aeabi_cdcmple
         BCS.N    ??manage_heater_1
+        LDRB     R0,[R7, #+8]
+        LDR.W    R1,??DataTable62_4
+        LDR.W    R2,??DataTable62_3
+        CBZ.N    R0,??manage_heater_9
         MOVS     R0,#+0
-          CFI FunCall _ZN11Temperature14min_temp_errorEa
-        BL       _ZN11Temperature14min_temp_errorEa
-//  892    }
-//  893    current_temper_bak = current_temperature[0];
+??manage_heater_9:
+          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
+        BL       _ZN11Temperature11_temp_errorEaPKcS1_
+        LDR.W    R1,??DataTable63
+        MOVS     R0,#+4
+        STRB     R0,[R1, #+0]
+//  896    }
+//  897    current_temper_bak = current_temperature[0];
 ??manage_heater_1:
-        LDR      R0,[R6, #+60]
-        STR      R0,[R6, #+124]
-//  894   //#endif
-//  895 
-//  896   //#if WATCH_HOTENDS || WATCH_THE_BED || DISABLED(PIDTEMPBED) || HAS_AUTO_FAN || HEATER_IDLE_HANDLER
-//  897     millis_t ms = millis();
+        LDR      R0,[R6, #+68]
+        STR      R0,[R6, #+128]
+//  898   //#endif
+//  899 
+//  900   //#if WATCH_HOTENDS || WATCH_THE_BED || DISABLED(PIDTEMPBED) || HAS_AUTO_FAN || HEATER_IDLE_HANDLER
+//  901     millis_t ms = millis();
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
         MOV      R4,R0
-//  898   //#endif
-//  899 
-//  900   HOTEND_LOOP() {
+//  902   //#endif
+//  903 
+//  904   HOTEND_LOOP() {
+        ADDW     R0,R6,#+134
+        STR      R0,[SP, #+32]
         MOVS     R5,#+0
-        B.N      ??manage_heater_8
-//  901 
-//  902     #if HEATER_IDLE_HANDLER
-//  903       if (!heater_idle_timeout_exceeded[e] && heater_idle_timeout_ms[e] && ELAPSED(ms, heater_idle_timeout_ms[e]))
-//  904         heater_idle_timeout_exceeded[e] = true;
-//  905     #endif
-//  906 
-//  907     #if ENABLED(THERMAL_PROTECTION_HOTENDS)
-//  908       // Check for thermal runaway
-//  909       thermal_runaway_protection(&thermal_runaway_state_machine[e], &thermal_runaway_timer[e], current_temperature[e], target_temperature[e], e, THERMAL_PROTECTION_PERIOD, THERMAL_PROTECTION_HYSTERESIS);
-//  910     #endif
-//  911 
-//  912     soft_pwm_amount[e] = (current_temperature[e] > minttemp[e] || is_preheating(e)) && current_temperature[e] < maxttemp[e] ? (int)get_pid_output(e) >> 1 : 0;
-//  913 
-//  914     #if WATCH_HOTENDS
+        ADD      R0,R6,#+28
+        STR      R0,[SP, #+24]
+        STR      R6,[SP, #+28]
+        ADD      R0,R6,#+32
+        STR      R0,[SP, #+20]
+        ADD      R10,R6,#+60
+        ADD      R0,R6,#+48
+        STR      R0,[SP, #+16]
+        ADD      R9,R6,#+68
+        ADD      R8,R6,#+136
+        ADD      R7,R6,#+112
+        B.N      ??manage_heater_10
+//  905 
+//  906     #if HEATER_IDLE_HANDLER
+//  907       if (!heater_idle_timeout_exceeded[e] && heater_idle_timeout_ms[e] && ELAPSED(ms, heater_idle_timeout_ms[e]))
+//  908         heater_idle_timeout_exceeded[e] = true;
+//  909     #endif
+//  910 
+//  911     #if ENABLED(THERMAL_PROTECTION_HOTENDS)
+//  912       // Check for thermal runaway
+//  913       thermal_runaway_protection(&thermal_runaway_state_machine[e], &thermal_runaway_timer[e], current_temperature[e], target_temperature[e], e, THERMAL_PROTECTION_PERIOD, THERMAL_PROTECTION_HYSTERESIS);
+//  914     #endif
 //  915 
-//  916       // Make sure temperature is increasing
-//  917       if (watch_heater_next_ms[e] && ELAPSED(ms, watch_heater_next_ms[e])) { // Time to check this extruder?
-//  918         if (degHotend(e) < watch_target_temp[e])                             // Failed to increase enough?
-//  919         {
-//  920           _temp_error(e, PSTR(MSG_T_HEATING_FAILED), PSTR(MSG_HEATING_FAILED_LCD));
-//  921           temper_error_type=5;
-//  922         }
-//  923         else                                                                 // Start again if the target is still far off
-//  924           start_watching_heater(e);
-??manage_heater_9:
-        MOV      R0,R5
-        UXTB     R0,R0
+//  916     soft_pwm_amount[e] = (current_temperature[e] > minttemp[e] || is_preheating(e)) && current_temperature[e] < maxttemp[e] ? (int)get_pid_output(e) >> 1 : 0;
+//  917 
+//  918     #if WATCH_HOTENDS
+//  919 
+//  920       // Make sure temperature is increasing
+//  921       if (watch_heater_next_ms[e] && ELAPSED(ms, watch_heater_next_ms[e])) { // Time to check this extruder?
+//  922         if (degHotend(e) < watch_target_temp[e])                             // Failed to increase enough?
+//  923         {
+//  924           _temp_error(e, PSTR(MSG_T_HEATING_FAILED), PSTR(MSG_HEATING_FAILED_LCD));
+//  925           temper_error_type=5;
+//  926         }
+//  927         else                                                                 // Start again if the target is still far off
+//  928           start_watching_heater(e);
+??manage_heater_11:
+        UXTB     R0,R5
           CFI FunCall _ZN11Temperature21start_watching_heaterEh
         BL       _ZN11Temperature21start_watching_heaterEh
-??manage_heater_10:
+??manage_heater_12:
+        LDR      R0,[SP, #+16]
+        ADDS     R0,R0,#+2
+        STR      R0,[SP, #+16]
         ADDS     R5,R5,#+1
+        LDR      R0,[SP, #+20]
+        ADDS     R0,R0,#+2
+        STR      R0,[SP, #+20]
         SXTB     R5,R5
-??manage_heater_8:
-        LDRB     R0,[R8, #+23]
+        LDR      R0,[SP, #+24]
+        ADDS     R0,R0,#+2
+        STR      R0,[SP, #+24]
+        ADDS     R7,R7,#+4
+        LDR      R0,[SP, #+28]
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+28]
+        ADD      R8,R8,#+4
+        LDR      R0,[SP, #+32]
+        ADDS     R0,R0,#+1
+        ADD      R9,R9,#+4
+        ADD      R10,R10,#+4
+        STR      R0,[SP, #+32]
+??manage_heater_10:
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+23]
         CMP      R5,R0
-        BGE.N    ??manage_heater_11
-        ADD      R9,R6,R5, LSL #+2
-        LDRB     R0,[R8, #+2]
+        BGE.N    ??manage_heater_13
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+2]
         STR      R0,[SP, #+8]
-        LDRH     R0,[R7, #+224]
+        STR      R5,[SP, #+0]
+        LDR.W    R0,??DataTable65_1
+        LDRH     R0,[R0, #+224]
         STR      R0,[SP, #+4]
-        MOV      R0,R5
-        STR      R0,[SP, #+0]
-        LDR      R0,[R9, #+72]
+        LDR      R0,[R10, #+0]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
+        LDR      R2,[R9, #+0]
         MOV      R3,R0
-        LDR      R2,[R9, #+60]
-        ADD      R1,R9,#+132
-        ADDS     R0,R5,R6
-        ADDS     R0,R0,#+130
+        LDR      R0,[SP, #+32]
+        MOV      R1,R8
           CFI FunCall _ZN11Temperature26thermal_runaway_protectionEPNS_7TRStateEPmffatt
         BL       _ZN11Temperature26thermal_runaway_protectionEPNS_7TRStateEPmffatt
-        LDR      R11,[R9, #+60]
-        ADD      R10,R6,R5, LSL #+1
-        LDRSH    R0,[R10, #+28]
+        LDR      R0,[SP, #+24]
+        LDR      R11,[R9, #+0]
+        LDRSH    R0,[R0, #+0]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??manage_heater_12
-        LDRSH    R0,[R10, #+32]
+        BCS.N    ??manage_heater_14
+        LDR      R0,[SP, #+20]
+        LDRSH    R0,[R0, #+0]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
         MOV      R0,R11
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??manage_heater_12
+        BCS.N    ??manage_heater_14
         MOV      R0,R5
           CFI FunCall _ZN11Temperature14get_pid_outputEa
         BL       _ZN11Temperature14get_pid_outputEa
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
         ASRS     R0,R0,#+1
-        B.N      ??manage_heater_13
-??manage_heater_12:
+        B.N      ??manage_heater_15
+??manage_heater_14:
         MOVS     R0,#+0
-??manage_heater_13:
-        STRB     R0,[R5, R6]
-        LDR      R0,[R9, #+108]
+??manage_heater_15:
+        LDR      R1,[SP, #+28]
+        STRB     R0,[R1, #+0]
+        LDR      R0,[R7, #+0]
         CMP      R0,#+0
-        BEQ.N    ??manage_heater_10
+        BEQ.N    ??manage_heater_12
         SUBS     R0,R4,R0
-        BMI.N    ??manage_heater_10
-        LDRH     R0,[R10, #+48]
+        BMI.N    ??manage_heater_12
+        LDR      R0,[SP, #+16]
+        LDRH     R0,[R0, #+0]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R1,R0
-        MOV      R9,R1
-        MOV      R0,R5
-        UXTB     R0,R0
-          CFI FunCall _ZN11Temperature9degHotendEh
-        BL       _ZN11Temperature9degHotendEh
-        MOV      R1,R9
+        UXTB     R0,R5
+        ADD      R0,R6,R0, LSL #+2
+        LDR      R0,[R0, #+68]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??manage_heater_9
-        ADR.W    R1,`?<Constant "Heating failed">`
-        MOV      R2,R1
+        BCS.N    ??manage_heater_11
+        ADR.W    R2,`?<Constant "Heating failed">`
+        MOV      R1,R2
         MOV      R0,R5
           CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
         BL       _ZN11Temperature11_temp_errorEaPKcS1_
+        LDR.W    R1,??DataTable63
         MOVS     R0,#+5
-        LDR.W    R1,??DataTable68_2
         STRB     R0,[R1, #+0]
-        B.N      ??manage_heater_10
-//  925       }
-//  926       
-//  927     #endif
-//  928 
-//  929     #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
-//  930       // Make sure measured temperatures are close together
-//  931       if (FABS(current_temperature[0] - redundant_temperature) > MAX_REDUNDANT_TEMP_SENSOR_DIFF)
-//  932         _temp_error(0, PSTR(MSG_REDUNDANCY), PSTR(MSG_ERR_REDUNDANT_TEMP));
-//  933     #endif
-//  934 
-//  935   } // HOTEND_LOOP
-//  936 
-//  937   #if HAS_AUTO_FAN
-//  938     if (ELAPSED(ms, next_auto_fan_check_ms)) { // only need to check fan state very infrequently
-//  939       checkExtruderAutoFans();
-//  940       next_auto_fan_check_ms = ms + 2500UL;
-//  941     }
-//  942   #endif
-//  943 
-//  944   #if ENABLED(FILAMENT_WIDTH_SENSOR)
-//  945     /**
-//  946      * Filament Width Sensor dynamically sets the volumetric multiplier
-//  947      * based on a delayed measurement of the filament diameter.
-//  948      */
-//  949     if (filament_sensor) {
-//  950       meas_shift_index = filwidth_delay_index[0] - meas_delay_cm;
-//  951       if (meas_shift_index < 0) meas_shift_index += MAX_MEASUREMENT_DELAY + 1;  //loop around buffer if needed
-//  952       meas_shift_index = constrain(meas_shift_index, 0, MAX_MEASUREMENT_DELAY);
-//  953       planner.calculate_volumetric_for_width_sensor(measurement_delay[meas_shift_index]);
-//  954     }
-//  955   #endif // FILAMENT_WIDTH_SENSOR
-//  956 
-//  957   #if WATCH_THE_BED
-//  958     // Make sure temperature is increasing
-//  959     if (watch_bed_next_ms && ELAPSED(ms, watch_bed_next_ms)) {        // Time to check the bed?
-??manage_heater_11:
-        LDR      R0,[R6, #+116]
+        B.N      ??manage_heater_12
+//  929       }
+//  930       
+//  931     #endif
+//  932 
+//  933     #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
+//  934       // Make sure measured temperatures are close together
+//  935       if (FABS(current_temperature[0] - redundant_temperature) > MAX_REDUNDANT_TEMP_SENSOR_DIFF)
+//  936         _temp_error(0, PSTR(MSG_REDUNDANCY), PSTR(MSG_ERR_REDUNDANT_TEMP));
+//  937     #endif
+//  938 
+//  939   } // HOTEND_LOOP
+//  940 
+//  941   #if HAS_AUTO_FAN
+//  942     if (ELAPSED(ms, next_auto_fan_check_ms)) { // only need to check fan state very infrequently
+//  943       checkExtruderAutoFans();
+//  944       next_auto_fan_check_ms = ms + 2500UL;
+//  945     }
+//  946   #endif
+//  947 
+//  948   #if ENABLED(FILAMENT_WIDTH_SENSOR)
+//  949     /**
+//  950      * Filament Width Sensor dynamically sets the volumetric multiplier
+//  951      * based on a delayed measurement of the filament diameter.
+//  952      */
+//  953     if (filament_sensor) {
+//  954       meas_shift_index = filwidth_delay_index[0] - meas_delay_cm;
+//  955       if (meas_shift_index < 0) meas_shift_index += MAX_MEASUREMENT_DELAY + 1;  //loop around buffer if needed
+//  956       meas_shift_index = constrain(meas_shift_index, 0, MAX_MEASUREMENT_DELAY);
+//  957       planner.calculate_volumetric_for_width_sensor(measurement_delay[meas_shift_index]);
+//  958     }
+//  959   #endif // FILAMENT_WIDTH_SENSOR
+//  960 
+//  961   #if WATCH_THE_BED
+//  962     // Make sure temperature is increasing
+//  963     if (watch_bed_next_ms && ELAPSED(ms, watch_bed_next_ms)) {        // Time to check the bed?
+??manage_heater_13:
+        LDR      R0,[R6, #+120]
         CMP      R0,#+0
-        BEQ.N    ??manage_heater_14
+        BEQ.N    ??manage_heater_16
         SUBS     R0,R4,R0
-        BMI.N    ??manage_heater_14
-//  960       if (degBed() < watch_target_bed_temp)                           // Failed to increase enough?
+        BMI.N    ??manage_heater_16
+//  964       if (degBed() < watch_target_bed_temp)                           // Failed to increase enough?
         LDRH     R0,[R6, #+38]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R1,R0
-        MOV      R5,R1
-          CFI FunCall _ZN11Temperature6degBedEv
-        BL       _ZN11Temperature6degBedEv
-        MOV      R1,R5
+        LDR      R0,[R6, #+76]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??manage_heater_15
-//  961       {
-//  962         _temp_error(-1, PSTR(MSG_T_HEATING_FAILED), PSTR(MSG_HEATING_FAILED_LCD));
-        ADR.W    R1,`?<Constant "Heating failed">`
-        MOV      R2,R1
-        MOV      R0,#-1
-          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
-        BL       _ZN11Temperature11_temp_errorEaPKcS1_
-//  963         temper_error_type=6;
+        BCS.N    ??manage_heater_17
+//  965       {
+//  966         _temp_error(-1, PSTR(MSG_T_HEATING_FAILED), PSTR(MSG_HEATING_FAILED_LCD));
+        LDR.W    R5,??DataTable61
+        LDRB     R0,[R5, #+0]
+        CBZ.N    R0,??manage_heater_18
+        LDR.W    R8,??DataTable61_1
+        LDR.W    R7,??DataTable66
+        B.N      ??manage_heater_19
+??manage_heater_20:
+        UXTB     R1,R1
+        MOV      R0,R7
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??manage_heater_19:
+        LDRSB    R1,[R8], #+1
+        MOVS     R0,R1
+        BNE.N    ??manage_heater_20
+        ADR.W    R8,`?<Constant "Heating failed">`
+        B.N      ??manage_heater_21
+??manage_heater_22:
+        UXTB     R1,R1
+        MOV      R0,R7
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??manage_heater_21:
+        LDRSB    R1,[R8], #+1
+        MOVS     R0,R1
+        BNE.N    ??manage_heater_22
+        LDR.W    R8,??DataTable61_2
+        B.N      ??manage_heater_23
+??manage_heater_24:
+        UXTB     R1,R1
+        MOV      R0,R7
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??manage_heater_23:
+        LDRSB    R1,[R8], #+1
+        MOVS     R0,R1
+        BNE.N    ??manage_heater_24
+        LDR.W    R8,??DataTable61_3
+        B.N      ??manage_heater_25
+??manage_heater_26:
+        UXTB     R1,R1
+        MOV      R0,R7
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??manage_heater_25:
+        LDRSB    R1,[R8], #+1
+        MOVS     R0,R1
+        BNE.N    ??manage_heater_26
+??manage_heater_18:
+        LDRB     R0,[R6, #+4]
+        CBNZ.N   R0,??manage_heater_27
+        STRB     R0,[R5, #+0]
+        MOVS     R0,#+1
+        STRB     R0,[R6, #+4]
+          CFI FunCall _Z17temper_error_killv
+        BL       _Z17temper_error_killv
+        B.N      ??manage_heater_28
+??manage_heater_27:
+          CFI FunCall _ZN11Temperature19disable_all_heatersEv
+        BL       _ZN11Temperature19disable_all_heatersEv
+//  967         temper_error_type=6;
+??manage_heater_28:
         MOVS     R0,#+6
-        LDR.W    R1,??DataTable68_2
+        LDR.W    R1,??DataTable63
         STRB     R0,[R1, #+0]
-        B.N      ??manage_heater_14
-//  964       }
-//  965       else                                                            // Start again if the target is still far off
-//  966         start_watching_bed();
-??manage_heater_15:
+        B.N      ??manage_heater_16
+//  968       }
+//  969       else                                                            // Start again if the target is still far off
+//  970         start_watching_bed();
+??manage_heater_17:
           CFI FunCall _ZN11Temperature18start_watching_bedEv
         BL       _ZN11Temperature18start_watching_bedEv
-//  967     }
-//  968   #endif // WATCH_THE_BED
-//  969 
-//  970   //#if DISABLED(PIDTEMPBED)
-//  971 	if(PIDTEMPBED == 0) {  
-??manage_heater_14:
-        ADD      R5,R7,#+48
-        LDRB     R0,[R5, #+5]
-        CMP      R0,#+0
-        BNE.N    ??manage_heater_16
-//  972     	if (PENDING(ms, next_bed_check_ms)) return;
-        LDR      R0,[R6, #+120]
+//  971     }
+//  972   #endif // WATCH_THE_BED
+//  973 
+//  974   //#if DISABLED(PIDTEMPBED)
+//  975 	if(PIDTEMPBED == 0) {  
+??manage_heater_16:
+        LDR.W    R7,??DataTable65_3
+        LDRB     R0,[R7, #+7]
+        CBNZ.N   R0,??manage_heater_29
+//  976     	if (PENDING(ms, next_bed_check_ms)) return;
+        LDR      R0,[R6, #+124]
         SUBS     R0,R4,R0
         BMI.N    ??manage_heater_0
-//  973     	next_bed_check_ms = ms + BED_CHECK_INTERVAL;
+//  977     	next_bed_check_ms = ms + BED_CHECK_INTERVAL;
         ADD      R0,R4,#+4864
         ADDS     R0,R0,#+136
-        STR      R0,[R6, #+120]
-//  974 	}
-//  975   //#endif
-//  976 
-//  977   //#if HAS_TEMP_BED
-//  978   if (HAS_TEMP_BED)
-??manage_heater_16:
-        LDRB     R0,[R5, #+6]
+        STR      R0,[R6, #+124]
+//  978 	}
+//  979   //#endif
+//  980 
+//  981   //#if HAS_TEMP_BED
+//  982   if (HAS_TEMP_BED)
+??manage_heater_29:
+        LDRB     R0,[R7, #+8]
         CMP      R0,#+0
         BEQ.N    ??manage_heater_0
-//  979   	{
-//  980     #if HEATER_IDLE_HANDLER
-//  981       if (!bed_idle_timeout_exceeded && bed_idle_timeout_ms && ELAPSED(ms, bed_idle_timeout_ms))
-//  982         bed_idle_timeout_exceeded = true;
-//  983     #endif
-//  984 
-//  985     #if HAS_THERMALLY_PROTECTED_BED
-//  986 	if(HAS_TEMP_BED)
-        BEQ.N    ??manage_heater_17
-//  987       thermal_runaway_protection(&thermal_runaway_bed_state_machine, &thermal_runaway_bed_timer, current_temperature_bed, target_temperature_bed, -1, THERMAL_PROTECTION_BED_PERIOD, THERMAL_PROTECTION_BED_HYSTERESIS);
-        LDRB     R0,[R8, #+10]
+//  983   	{
+//  984     #if HEATER_IDLE_HANDLER
+//  985       if (!bed_idle_timeout_exceeded && bed_idle_timeout_ms && ELAPSED(ms, bed_idle_timeout_ms))
+//  986         bed_idle_timeout_exceeded = true;
+//  987     #endif
+//  988 
+//  989     #if HAS_THERMALLY_PROTECTED_BED
+//  990 	if(HAS_TEMP_BED)
+//  991       thermal_runaway_protection(&thermal_runaway_bed_state_machine, &thermal_runaway_bed_timer, current_temperature_bed, target_temperature_bed, -1, THERMAL_PROTECTION_BED_PERIOD, THERMAL_PROTECTION_BED_HYSTERESIS);
+        LDR      R0,[SP, #+12]
+        LDRB     R0,[R0, #+10]
         STR      R0,[SP, #+8]
-        LDRH     R0,[R8, #+8]
+        LDR      R0,[SP, #+12]
+        LDRH     R0,[R0, #+8]
         STR      R0,[SP, #+4]
         MOV      R0,#-1
         STR      R0,[SP, #+0]
         LDRSH    R0,[R6, #+36]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
+        LDR      R2,[R6, #+76]
         MOV      R3,R0
-        LDR      R2,[R6, #+68]
-        ADD      R1,R6,#+140
-        ADD      R0,R6,#+128
+        ADD      R1,R6,#+144
+        ADD      R0,R6,#+132
           CFI FunCall _ZN11Temperature26thermal_runaway_protectionEPNS_7TRStateEPmffatt
         BL       _ZN11Temperature26thermal_runaway_protectionEPNS_7TRStateEPmffatt
-//  988     #endif
-//  989 
-//  990     #if HEATER_IDLE_HANDLER
-//  991       if (bed_idle_timeout_exceeded)
-//  992       {
-//  993         soft_pwm_amount_bed = 0;
-//  994 
-//  995         //#if DISABLED(PIDTEMPBED)
-//  996         if(PIDTEMPBED == 0)
-//  997         {
-//  998           WRITE_HEATER_BED(LOW);
-//  999         }
-// 1000         //#endif
-// 1001       }
-// 1002       else
-// 1003     #endif
-// 1004     {
-// 1005     #if 0
-// 1006       #if ENABLED(PIDTEMPBED)
-// 1007         soft_pwm_amount_bed = WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP) ? (int)get_pid_output_bed() >> 1 : 0;
-// 1008 
-// 1009       #elif ENABLED(BED_LIMIT_SWITCHING)
-// 1010         // Check if temperature is within the correct band
-// 1011         if (WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP)) {
-// 1012           if (current_temperature_bed >= target_temperature_bed + BED_HYSTERESIS)
-// 1013             soft_pwm_amount_bed = 0;
-// 1014           else if (current_temperature_bed <= target_temperature_bed - (BED_HYSTERESIS))
-// 1015             soft_pwm_amount_bed = MAX_BED_POWER >> 1;
-// 1016         }
-// 1017         else {
-// 1018           soft_pwm_amount_bed = 0;
-// 1019           WRITE_HEATER_BED(LOW);
+        LDRSH    R0,[R7, #+4]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R4,R0
+        LDR      R5,[R6, #+76]
+        LDRB     R0,[R7, #+7]
+        CBZ.N    R0,??manage_heater_30
+//  992     #endif
+//  993 
+//  994     #if HEATER_IDLE_HANDLER
+//  995       if (bed_idle_timeout_exceeded)
+//  996       {
+//  997         soft_pwm_amount_bed = 0;
+//  998 
+//  999         //#if DISABLED(PIDTEMPBED)
+// 1000         if(PIDTEMPBED == 0)
+// 1001         {
+// 1002           WRITE_HEATER_BED(LOW);
+// 1003         }
+// 1004         //#endif
+// 1005       }
+// 1006       else
+// 1007     #endif
+// 1008     {
+// 1009     #if 0
+// 1010       #if ENABLED(PIDTEMPBED)
+// 1011         soft_pwm_amount_bed = WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP) ? (int)get_pid_output_bed() >> 1 : 0;
+// 1012 
+// 1013       #elif ENABLED(BED_LIMIT_SWITCHING)
+// 1014         // Check if temperature is within the correct band
+// 1015         if (WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP)) {
+// 1016           if (current_temperature_bed >= target_temperature_bed + BED_HYSTERESIS)
+// 1017             soft_pwm_amount_bed = 0;
+// 1018           else if (current_temperature_bed <= target_temperature_bed - (BED_HYSTERESIS))
+// 1019             soft_pwm_amount_bed = MAX_BED_POWER >> 1;
 // 1020         }
-// 1021       #else // !PIDTEMPBED && !BED_LIMIT_SWITCHING
-// 1022         // Check if temperature is within the correct range
-// 1023         if (WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP)) {
-// 1024           soft_pwm_amount_bed = current_temperature_bed < target_temperature_bed ? MAX_BED_POWER >> 1 : 0;
-// 1025         }
-// 1026         else {
-// 1027           soft_pwm_amount_bed = 0;
-// 1028           WRITE_HEATER_BED(LOW);
+// 1021         else {
+// 1022           soft_pwm_amount_bed = 0;
+// 1023           WRITE_HEATER_BED(LOW);
+// 1024         }
+// 1025       #else // !PIDTEMPBED && !BED_LIMIT_SWITCHING
+// 1026         // Check if temperature is within the correct range
+// 1027         if (WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP)) {
+// 1028           soft_pwm_amount_bed = current_temperature_bed < target_temperature_bed ? MAX_BED_POWER >> 1 : 0;
 // 1029         }
-// 1030       #endif
-// 1031 	  #endif
-// 1032 		if(PIDTEMPBED)
-??manage_heater_17:
-        LDR      R4,[R6, #+68]
-        LDR.W    R7,??DataTable72_1  ;; 0x40a00000
-        LDRB     R0,[R5, #+5]
-        CMP      R0,#+0
-        BEQ.N    ??manage_heater_18
-// 1033 		{
-// 1034 			float pid_output = get_pid_output_bed();
+// 1030         else {
+// 1031           soft_pwm_amount_bed = 0;
+// 1032           WRITE_HEATER_BED(LOW);
+// 1033         }
+// 1034       #endif
+// 1035 	  #endif
+// 1036 		if(PIDTEMPBED)
+// 1037 		{
+// 1038 			float pid_output = get_pid_output_bed();
           CFI FunCall _ZN11Temperature18get_pid_output_bedEv
         BL       _ZN11Temperature18get_pid_output_bedEv
         MOV      R8,R0
-// 1035 			soft_pwm_amount_bed = WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP) ? (int)pid_output >> 1 : 0;
-        MOV      R0,R4
-        MOV      R1,R7
-          CFI FunCall __aeabi_cfrcmple
-        BL       __aeabi_cfrcmple
-        BHI.N    ??manage_heater_19
-        LDRSH    R0,[R5, #+2]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
+// 1039 			soft_pwm_amount_bed = WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP) ? (int)pid_output >> 1 : 0;
+        MOV      R0,R5
         MOV      R1,R4
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.N    ??manage_heater_19
+        BHI.N    ??manage_heater_31
+        LDRSH    R0,[R7, #+2]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R5
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        BHI.N    ??manage_heater_31
         MOV      R0,R8
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
         ASRS     R0,R0,#+1
-        B.N      ??manage_heater_20
-??manage_heater_19:
+        B.N      ??manage_heater_32
+??manage_heater_31:
         MOVS     R0,#+0
-??manage_heater_20:
-        STRB     R0,[R6, #+3]
-        B.N      ??manage_heater_0
-// 1036 		}
-// 1037 		else
-// 1038 		{
-// 1039 			// Check if temperature is within the correct range
-// 1040 			if (WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP)) 
-??manage_heater_18:
-        MOV      R0,R4
-        MOV      R1,R7
-          CFI FunCall __aeabi_cfrcmple
-        BL       __aeabi_cfrcmple
-        BHI.N    ??manage_heater_21
-        LDRSH    R0,[R5, #+2]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
+        B.N      ??manage_heater_32
+// 1040 		}
+// 1041 		else
+// 1042 		{
+// 1043 			// Check if temperature is within the correct range
+// 1044 			if (WITHIN(current_temperature_bed, BED_MINTEMP, BED_MAXTEMP)) 
+??manage_heater_30:
+        MOV      R0,R5
         MOV      R1,R4
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.N    ??manage_heater_21
-// 1041 			{
-// 1042 		  		soft_pwm_amount_bed = current_temperature_bed < target_temperature_bed ? MAX_BED_POWER >> 1 : 0;
+        BHI.N    ??manage_heater_33
+        LDRSH    R0,[R7, #+2]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R1,R5
+          CFI FunCall __aeabi_cfrcmple
+        BL       __aeabi_cfrcmple
+        BHI.N    ??manage_heater_33
+// 1045 			{
+// 1046 		  		soft_pwm_amount_bed = current_temperature_bed < target_temperature_bed ? MAX_BED_POWER >> 1 : 0;
         LDRSH    R0,[R6, #+36]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R4
+        MOV      R0,R5
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCS.N    ??manage_heater_22
-        MOVS     R0,#+127
-        B.N      ??manage_heater_23
-??manage_heater_22:
-        MOVS     R0,#+0
-??manage_heater_23:
+        ITE      CC 
+        MOVCC    R0,#+127
+        MOVCS    R0,#+0
+??manage_heater_32:
         STRB     R0,[R6, #+3]
-        B.N      ??manage_heater_0
-// 1043 			}
-// 1044 			else 
-// 1045 			{
-// 1046 		  		soft_pwm_amount_bed = 0;
-??manage_heater_21:
+// 1047 			}
+// 1048 			else 
+// 1049 			{
+// 1050 		  		soft_pwm_amount_bed = 0;
+// 1051 		  		WRITE_HEATER_BED(LOW);
+// 1052 			}
+// 1053 		}	  
+// 1054     }
+// 1055   }
+// 1056   //#endif // HAS_TEMP_BED
+// 1057 }
+        B.N      ?Subroutine2
+??manage_heater_33:
         MOVS     R0,#+0
         STRB     R0,[R6, #+3]
-// 1047 		  		WRITE_HEATER_BED(LOW);
-        LDR.W    R0,??DataTable72_3
+        LDR.W    R0,??DataTable67
         LDRB     R0,[R0, #+19]
-        CMP      R0,#+0
-        BNE.N    ??manage_heater_0
-        MOVS     R2,#+0
-        LDR.W    R0,??DataTable72_4
+        CBNZ.N   R0,??manage_heater_0
+        LDR.W    R0,??DataTable67_1
         LDRH     R1,[R0, #+42]
-        LDR.W    R0,??DataTable72_5
+        LDR.W    R0,??DataTable67_2
         LDR      R0,[R0, #+84]
-        ADD      SP,SP,#+12
+        ADD      SP,SP,#+36
           CFI CFA R13+36
         POP      {R4-R11,LR}
           CFI R4 SameValue
@@ -3339,8 +3400,7 @@ _ZN11Temperature13manage_heaterEv:
           CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall HAL_GPIO_WritePin
-        B.W      HAL_GPIO_WritePin
+        B.N      ?Subroutine3
           CFI R4 Frame(CFA, -36)
           CFI R5 Frame(CFA, -32)
           CFI R6 Frame(CFA, -28)
@@ -3350,46 +3410,32 @@ _ZN11Temperature13manage_heaterEv:
           CFI R10 Frame(CFA, -12)
           CFI R11 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+48
-// 1048 			}
-// 1049 		}	  
-// 1050     }
-// 1051   }
-// 1052   //#endif // HAS_TEMP_BED
-// 1053 }
+          CFI CFA R13+72
+          CFI EndBlock cfiBlock12
 ??manage_heater_0:
-        POP      {R0-R2,R4-R11,PC}  ;; return
-          CFI EndBlock cfiBlock10
+        REQUIRE ?Subroutine2
+        ;; // Fall through to label ?Subroutine2
 
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable58:
-        DC32     _ZN11Temperature15soft_pwm_amountE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable58_1:
-        DC32     0xffffec78
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable58_2:
-        DC32     0x40100000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable58_3:
-        DC32     0x54442d18
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable58_4:
-        DC32     0x400921fb
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock13 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _ZN11Temperature13manage_heaterEv
+          CFI CFA R13+72
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine2:
+        ADD      SP,SP,#+36
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock13
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -3397,18 +3443,18 @@ _ZN11Temperature13manage_heaterEv:
 `?<Constant "Heating failed">`:
         DC8 "Heating failed"
         DC8 0
-// 1054 
-// 1055 //#define PGM_RD_W(x)   (short)pgm_read_word(&x)
-// 1056 #define PGM_RD_W(x)   (short)(x)
-// 1057 
-// 1058 // Derived from RepRap FiveD extruder::getTemperature()
-// 1059 // For hot end temperature measurement.
+// 1058 
+// 1059 //#define PGM_RD_W(x)   (short)pgm_read_word(&x)
+// 1060 #define PGM_RD_W(x)   (short)(x)
+// 1061 
+// 1062 // Derived from RepRap FiveD extruder::getTemperature()
+// 1063 // For hot end temperature measurement.
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function _ZN11Temperature11analog2tempEih
         THUMB
-// 1060 float Temperature::analog2temp(const int raw, const uint8_t e) {
+// 1064 float Temperature::analog2temp(const int raw, const uint8_t e) {
 _ZN11Temperature11analog2tempEih:
         PUSH     {R3-R11,LR}
           CFI R14 Frame(CFA, -4)
@@ -3421,128 +3467,121 @@ _ZN11Temperature11analog2tempEih:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+40
-        MOV      R4,R0
-// 1061   #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
-// 1062     if (e > HOTENDS)
-// 1063   #else
-// 1064     if (e >= HOTENDS)
-        MOV      R9,R1
-        CMP      R9,#+2
+// 1065   #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
+// 1066     if (e > HOTENDS)
+// 1067   #else
+// 1068     if (e >= HOTENDS)
+        MOV      R4,R1
+        MOV      R9,R0
+        CMP      R4,#+2
         BLT.N    ??analog2temp_0
-// 1065   #endif
-// 1066     {
-// 1067       SERIAL_ERROR_START();
-        LDR.W    R0,??DataTable66
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 1068       SERIAL_ERROR((int)e);
+// 1069   #endif
+// 1070     {
+// 1071       SERIAL_ERROR_START();
+        LDR.W    R9,??DataTable61_1
+        LDR.W    R5,??DataTable66
+        B.N      ??analog2temp_1
+??analog2temp_2:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??analog2temp_1:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??analog2temp_2
+// 1072       SERIAL_ERROR((int)e);
         MOVS     R2,#+10
-        MOV      R1,R9
-        LDR.W    R0,??DataTable72_8
+        MOV      R1,R4
+        MOV      R0,R5
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
-// 1069       SERIAL_ERRORLNPGM(MSG_INVALID_EXTRUDER_NUM);
-        ADR.W    R0,`?<Constant " - Invalid extruder n...">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 1070       kill(PSTR(MSG_KILLED));
+// 1073       SERIAL_ERRORLNPGM(MSG_INVALID_EXTRUDER_NUM);
+        ADR.W    R9,`?<Constant " - Invalid extruder n...">`
+        B.N      ??analog2temp_3
+??analog2temp_4:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??analog2temp_3:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??analog2temp_4
+// 1074       kill(PSTR(MSG_KILLED));
         ADR.W    R0,`?<Constant "KILLED. ">`
           CFI FunCall _Z4killPKc
         BL       _Z4killPKc
-// 1071       return 0.0;
+// 1075       return 0.0;
         MOVS     R0,#+0
-        B.N      ??analog2temp_1
-// 1072     }
-// 1073 
-// 1074   //#if ENABLED(HEATER_0_USES_MAX6675)
-// 1075   if(TEMP_SENSOR_0 == sensors_MAX31855)
+        POP      {R1,R4-R11,PC}
+// 1076     }
+// 1077 
+// 1078   //#if ENABLED(HEATER_0_USES_MAX6675)
+// 1079   if(TEMP_SENSOR_0 == sensors_MAX31855)
 ??analog2temp_0:
-        LDR.W    R0,??DataTable72
+        LDR.W    R0,??DataTable65_1
         LDRSB    R0,[R0, #+246]
         CMN      R0,#+3
-        BNE.N    ??analog2temp_2
-// 1076     if (e == 0) return 0.25 * raw;
-        CMP      R1,#+0
-        BNE.N    ??analog2temp_2
-        MOV      R0,R4
+        IT       EQ 
+// 1080     if (e == 0) return 0.25 * raw;
+        CMPEQ    R1,#+0
+        BNE.N    ??analog2temp_5
+        MOV      R0,R9
           CFI FunCall __aeabi_i2d
         BL       __aeabi_i2d
         MOVS     R2,#+0
-        LDR.W    R3,??DataTable72_9  ;; 0x3fd00000
-          CFI FunCall __aeabi_dmul
-        BL       __aeabi_dmul
-        POP      {R2,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall __aeabi_d2f
-        B.W      __aeabi_d2f
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
-// 1077   //#endif
-// 1078 
-// 1079   if (heater_ttbl_map[e] != NULL) {
-??analog2temp_2:
-        LDR.W    R1,??DataTable72_10
-        ADD      R0,R1,R9, LSL #+2
+        LDR.W    R3,??DataTable67_3  ;; 0x3fd00000
+        B.N      ??analog2temp_6
+// 1081   //#endif
+// 1082 
+// 1083   if (heater_ttbl_map[e] != NULL) {
+??analog2temp_5:
+        LDR.W    R1,??DataTable67_4
+        ADD      R0,R1,R4, LSL #+2
         LDR      R5,[R0, #+4]
         CMP      R5,#+0
-        BEQ.N    ??analog2temp_3
-// 1080     float celsius = 0;
+        BEQ.N    ??analog2temp_7
+// 1084     float celsius = 0;
         MOVS     R0,#+0
-// 1081     uint8_t i;
-// 1082     short(*tt)[][2] = (short(*)[][2])(heater_ttbl_map[e]);
-// 1083 
-// 1084     for (i = 1; i < heater_ttbllen_map[e]; i++) {
+// 1085     uint8_t i;
+// 1086     short(*tt)[][2] = (short(*)[][2])(heater_ttbl_map[e]);
+// 1087 
+// 1088     for (i = 1; i < heater_ttbllen_map[e]; i++) {
         MOVS     R6,#+1
-        B.N      ??analog2temp_4
-??analog2temp_5:
+        B.N      ??analog2temp_8
+??analog2temp_9:
         ADDS     R6,R6,#+1
         UXTB     R6,R6
-??analog2temp_4:
-        LDRB     R7,[R9, R1]
+??analog2temp_8:
+        LDRB     R7,[R4, R1]
         CMP      R6,R7
-        BGE.N    ??analog2temp_6
+        BGE.N    ??analog2temp_10
         LDRSH    R8,[R5, R6, LSL #+2]
-        CMP      R4,R8
-        BGE.N    ??analog2temp_5
-// 1085       if (PGM_RD_W((*tt)[i][0]) > raw) {
-// 1086         celsius = PGM_RD_W((*tt)[i - 1][1]) +
-// 1087                   (raw - PGM_RD_W((*tt)[i - 1][0])) *
-// 1088                   (float)(PGM_RD_W((*tt)[i][1]) - PGM_RD_W((*tt)[i - 1][1])) /
-// 1089                   (float)(PGM_RD_W((*tt)[i][0]) - PGM_RD_W((*tt)[i - 1][0]));
-        ADD      R9,R5,R6, LSL #+2
-        LDRSH    R10,[R9, #-4]
-        SUB      R0,R9,#+4
+        CMP      R9,R8
+        BGE.N    ??analog2temp_9
+// 1089       if (PGM_RD_W((*tt)[i][0]) > raw) {
+// 1090         celsius = PGM_RD_W((*tt)[i - 1][1]) +
+// 1091                   (raw - PGM_RD_W((*tt)[i - 1][0])) *
+// 1092                   (float)(PGM_RD_W((*tt)[i][1]) - PGM_RD_W((*tt)[i - 1][1])) /
+// 1093                   (float)(PGM_RD_W((*tt)[i][0]) - PGM_RD_W((*tt)[i - 1][0]));
+        ADD      R4,R5,R6, LSL #+2
+        SUBS     R0,R4,#+4
         LDRSH    R11,[R0, #+2]
+        LDRSH    R10,[R4, #-4]
         MOV      R0,R11
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         STR      R0,[SP, #+0]
-        SUB      R0,R4,R10
+        SUB      R0,R9,R10
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R4,R0
-        LDRSH    R0,[R9, #+2]
+        MOV      R9,R0
+        LDRSH    R0,[R4, #+2]
         SUB      R0,R0,R11
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R1,R4
+        MOV      R1,R9
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
         MOV      R4,R0
@@ -3556,18 +3595,16 @@ _ZN11Temperature11analog2tempEih:
         LDR      R1,[SP, #+0]
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-// 1090         break;
-// 1091       }
-// 1092     }
-// 1093 
-// 1094     // Overflow: Set to last value in the table
-// 1095     if (i == heater_ttbllen_map[e]) celsius = PGM_RD_W((*tt)[i - 1][1]);
-??analog2temp_6:
+// 1094         break;
+// 1095       }
+// 1096     }
+// 1097 
+// 1098     // Overflow: Set to last value in the table
+// 1099     if (i == heater_ttbllen_map[e]) celsius = PGM_RD_W((*tt)[i - 1][1]);
+??analog2temp_10:
         CMP      R6,R7
-        BNE.N    ??analog2temp_1
+        BNE.N    ??analog2temp_11
         ADD      R0,R5,R6, LSL #+2
-        SUBS     R0,R0,#+4
-        LDRSH    R0,[R0, #+2]
         POP      {R1,R4-R11,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -3579,6 +3616,8 @@ _ZN11Temperature11analog2tempEih:
           CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        SUBS     R0,R0,#+4
+        LDRSH    R0,[R0, #+2]
           CFI FunCall __aeabi_i2f
         B.W      __aeabi_i2f
           CFI R4 Frame(CFA, -36)
@@ -3591,16 +3630,17 @@ _ZN11Temperature11analog2tempEih:
           CFI R11 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+40
-// 1096 
-// 1097     return celsius;
-// 1098   }
-// 1099   return ((raw * ((5.0 * 100.0) / 1024.0) / OVERSAMPLENR) * (TEMP_SENSOR_AD595_GAIN)) + TEMP_SENSOR_AD595_OFFSET;
-??analog2temp_3:
-        MOV      R0,R4
+// 1100 
+// 1101     return celsius;
+// 1102   }
+// 1103   return ((raw * ((5.0 * 100.0) / 1024.0) / OVERSAMPLENR) * (TEMP_SENSOR_AD595_GAIN)) + TEMP_SENSOR_AD595_OFFSET;
+??analog2temp_7:
+        MOV      R0,R9
           CFI FunCall __aeabi_i2d
         BL       __aeabi_i2d
+        LDR.W    R3,??DataTable69  ;; 0x3f9f4000
         MOVS     R2,#+0
-        LDR.W    R3,??DataTable72_11  ;; 0x3f9f4000
+??analog2temp_6:
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         POP      {R2,R4-R11,LR}
@@ -3626,44 +3666,52 @@ _ZN11Temperature11analog2tempEih:
           CFI R11 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+40
-??analog2temp_1:
+??analog2temp_11:
         POP      {R1,R4-R11,PC}   ;; return
-          CFI EndBlock cfiBlock11
-// 1100 }
+          CFI EndBlock cfiBlock14
+// 1104 }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable59:
-        DC32     0x3fe00000
+??DataTable56:
+        DC32     `?<Constant "THERMAL RUNAWAY">`
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable59_1:
-        DC32     0xd2f1a9fc
+??DataTable56_1:
+        DC32     `?<Constant "Thermal Runaway">`
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable59_2:
-        DC32     0x3f50624d
+??DataTable56_2:
+        DC32     0x124f81
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable59_3:
-        DC32     0x3fe33333
-// 1101 
-// 1102 #if 1//HAS_TEMP_BED
-// 1103   // Derived from RepRap FiveD extruder::getTemperature()
-// 1104   // For bed temperature measurement.
+`?<Constant " - Invalid extruder n...">`:
+        DC8 " - Invalid extruder number !\012"
+        DC8 0, 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+`?<Constant "KILLED. ">`:
+        DC8 "KILLED. "
+        DC8 0, 0, 0
+// 1105 
+// 1106 #if 1//HAS_TEMP_BED
+// 1107   // Derived from RepRap FiveD extruder::getTemperature()
+// 1108   // For bed temperature measurement.
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function _ZN11Temperature14analog2tempBedEi
         THUMB
-// 1105   float Temperature::analog2tempBed(const int raw) {
+// 1109   float Temperature::analog2tempBed(const int raw) {
 _ZN11Temperature14analog2tempBedEi:
         PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
@@ -3674,255 +3722,271 @@ _ZN11Temperature14analog2tempBedEi:
           CFI R5 Frame(CFA, -24)
           CFI R4 Frame(CFA, -28)
           CFI CFA R13+32
-        MOV      R9,R0
-// 1106     #if ENABLED(BED_USES_THERMISTOR)
-// 1107       float celsius = 0;
-        MOVS     R0,#+0
-// 1108       byte i;
-// 1109 
-// 1110       for (i = 1; i < BEDTEMPTABLE_LEN; i++) {
-        MOVS     R4,#+1
+        MOV      R6,R0
+// 1110     #if ENABLED(BED_USES_THERMISTOR)
+// 1111       float celsius = 0;
+// 1112       byte i;
+// 1113 
+// 1114       for (i = 1; i < BEDTEMPTABLE_LEN; i++) {
         ADR.W    R5,temptable_1
-        B.N      ??analog2tempBed_0
-??analog2tempBed_1:
-        ADDS     R4,R4,#+1
-        UXTB     R4,R4
+        MOVS     R0,#+0
+        MOVS     R4,#+1
+        ADDS     R1,R5,#+4
+// 1115         if (PGM_RD_W(BEDTEMPTABLE[i][0]) > raw) {
 ??analog2tempBed_0:
-        CMP      R4,#+64
-        BCS.N    ??analog2tempBed_2
-// 1111         if (PGM_RD_W(BEDTEMPTABLE[i][0]) > raw) {
-        LDRSH    R1,[R5, R4, LSL #+2]
-        CMP      R9,R1
+        LDRSH    R2,[R1], #+4
+        CMP      R6,R2
         BGE.N    ??analog2tempBed_1
-// 1112           celsius  = PGM_RD_W(BEDTEMPTABLE[i - 1][1]) +
-// 1113                      (raw - PGM_RD_W(BEDTEMPTABLE[i - 1][0])) *
-// 1114                      (float)(PGM_RD_W(BEDTEMPTABLE[i][1]) - PGM_RD_W(BEDTEMPTABLE[i - 1][1])) /
-// 1115                      (float)(PGM_RD_W(BEDTEMPTABLE[i][0]) - PGM_RD_W(BEDTEMPTABLE[i - 1][0]));
-        ADD      R6,R5,R4, LSL #+2
-        SUBS     R7,R6,#+4
-        LDRSH    R0,[R7, #+2]
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R8,R0
-        LDRSH    R0,[R6, #-4]
-        SUB      R0,R9,R0
+// 1116           celsius  = PGM_RD_W(BEDTEMPTABLE[i - 1][1]) +
+// 1117                      (raw - PGM_RD_W(BEDTEMPTABLE[i - 1][0])) *
+// 1118                      (float)(PGM_RD_W(BEDTEMPTABLE[i][1]) - PGM_RD_W(BEDTEMPTABLE[i - 1][1])) /
+// 1119                      (float)(PGM_RD_W(BEDTEMPTABLE[i][0]) - PGM_RD_W(BEDTEMPTABLE[i - 1][0]));
+??analog2tempBed_2:
+        ADD      R7,R5,R4, LSL #+2
+        SUB      R8,R7,#+4
+        LDRSH    R0,[R8, #+2]
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R9,R0
-        LDRSH    R0,[R6, #+2]
-        LDRSH    R1,[R7, #+2]
+        LDRSH    R0,[R7, #-4]
+        SUBS     R0,R6,R0
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R6,R0
+        LDRSH    R0,[R7, #+2]
+        LDRSH    R1,[R8, #+2]
         SUBS     R0,R0,R1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
-        MOV      R1,R9
+        MOV      R1,R6
           CFI FunCall __aeabi_fmul
         BL       __aeabi_fmul
-        MOV      R7,R0
+        MOV      R6,R0
         LDRSH    R0,[R5, R4, LSL #+2]
-        LDRSH    R1,[R6, #-4]
+        LDRSH    R1,[R7, #-4]
         SUBS     R0,R0,R1
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R7
+        MOV      R0,R6
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
-        MOV      R1,R8
+        MOV      R1,R9
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
-// 1116           break;
-// 1117         }
-// 1118       }
-// 1119 
-// 1120       // Overflow: Set to last value in the table
-// 1121       if (i == BEDTEMPTABLE_LEN) celsius = PGM_RD_W(BEDTEMPTABLE[i - 1][1]);
-??analog2tempBed_2:
+// 1120           break;
+        B.N      ??analog2tempBed_3
+// 1121         }
+??analog2tempBed_1:
+        LDRSH    R2,[R1], #+4
+        ADDS     R4,R4,#+1
+        UXTB     R4,R4
+        CMP      R6,R2
+        ITTTT    GE 
+        ADDGE    R4,R4,#+1
+        UXTBGE   R4,R4
+        LDRSHGE  R2,[R1], #+4
+        CMPGE    R6,R2
+        BLT.N    ??analog2tempBed_2
+// 1122       }
+        ADDS     R4,R4,#+1
+        UXTB     R4,R4
         CMP      R4,#+64
-        BNE.N    ??analog2tempBed_3
-        LDR.W    R0,??DataTable72_12  ;; 0xc1c80000
-// 1122 
-// 1123       return celsius;
+        BCC.N    ??analog2tempBed_0
+// 1123 
+// 1124       // Overflow: Set to last value in the table
+// 1125       if (i == BEDTEMPTABLE_LEN) celsius = PGM_RD_W(BEDTEMPTABLE[i - 1][1]);
 ??analog2tempBed_3:
-        POP      {R1,R4-R9,PC}    ;; return
-          CFI EndBlock cfiBlock12
-// 1124 
-// 1125     #elif defined(BED_USES_AD595)
+        CMP      R4,#+64
+        IT       EQ 
+        LDREQ.W  R0,??DataTable69_2  ;; 0xc1c80000
 // 1126 
-// 1127       return ((raw * ((5.0 * 100.0) / 1024.0) / OVERSAMPLENR) * (TEMP_SENSOR_AD595_GAIN)) + TEMP_SENSOR_AD595_OFFSET;
+// 1127       return celsius;
+        POP      {R1,R4-R9,PC}    ;; return
+          CFI EndBlock cfiBlock15
 // 1128 
-// 1129     #else
+// 1129     #elif defined(BED_USES_AD595)
 // 1130 
-// 1131       UNUSED(raw);
-// 1132       return 0;
-// 1133 
-// 1134     #endif
-// 1135   }
-// 1136 #endif // HAS_TEMP_BED
+// 1131       return ((raw * ((5.0 * 100.0) / 1024.0) / OVERSAMPLENR) * (TEMP_SENSOR_AD595_GAIN)) + TEMP_SENSOR_AD595_OFFSET;
+// 1132 
+// 1133     #else
+// 1134 
+// 1135       UNUSED(raw);
+// 1136       return 0;
 // 1137 
-// 1138 /**
-// 1139  * Get the raw values into the actual temperatures.
-// 1140  * The raw values are created in interrupt context,
-// 1141  * and this function is called from normal context
-// 1142  * as it would block the stepper routine.
-// 1143  */
+// 1138     #endif
+// 1139   }
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock13 Using cfiCommon0
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable57:
+        DC32     0x88e368f1
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable57_1:
+        DC32     0x3fc4f8b5
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+// static __absolute short const temptable_1[64][2]
+temptable_1:
+        DC16 368, 290, 400, 285, 432, 280, 448, 275, 496, 270, 528, 265, 560
+        DC16 260, 608, 255, 656, 250, 704, 245, 768, 240, 832, 235, 896, 230
+        DC16 976, 225, 1056, 220, 1136, 215, 1248, 210, 1344, 205, 1472, 200
+        DC16 1600, 195, 1744, 190, 1920, 185, 2096, 180, 2288, 175, 2496, 170
+        DC16 2736, 165, 2992, 160, 3280, 155, 3584, 150, 3920, 145, 4288, 140
+        DC16 4688, 135, 5120, 130, 5568, 125, 6064, 120, 6576, 115, 7120, 110
+        DC16 7680, 105, 8256, 100, 8848, 95, 9456, 90, 10048, 85, 10640, 80
+        DC16 11232, 75, 11792, 70, 12320, 65, 12816, 60, 13280, 55, 13712, 50
+        DC16 14096, 45, 14448, 40, 14752, 35, 15024, 30, 15264, 25, 15456, 20
+        DC16 15632, 15, 15760, 10, 15888, 5, 15984, 0, 16064, -5, 16128, -10
+        DC16 16192, -15, 16256, -20, 16320, -25
+// 1140 #endif // HAS_TEMP_BED
+// 1141 
+// 1142 /**
+// 1143  * Get the raw values into the actual temperatures.
+// 1144  * The raw values are created in interrupt context,
+// 1145  * and this function is called from normal context
+// 1146  * as it would block the stepper routine.
+// 1147  */
+
+        SECTION `.text`:CODE:NOROOT(2)
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function _ZN11Temperature31updateTemperaturesFromRawValuesEv
         THUMB
-// 1144 void Temperature::updateTemperaturesFromRawValues() {
+// 1148 void Temperature::updateTemperaturesFromRawValues() {
 _ZN11Temperature31updateTemperaturesFromRawValuesEv:
-        PUSH     {R4-R6,LR}
+        PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-// 1145   //#if ENABLED(HEATER_0_USES_MAX6675)
-// 1146 	if(TEMP_SENSOR_0 == sensors_MAX31855)
-        LDR.W    R4,??DataTable72
-        LDRSB    R0,[R4, #+246]
+          CFI R8 Frame(CFA, -8)
+          CFI R7 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -20)
+          CFI R4 Frame(CFA, -24)
+          CFI CFA R13+24
+// 1149   //#if ENABLED(HEATER_0_USES_MAX6675)
+// 1150 	if(TEMP_SENSOR_0 == sensors_MAX31855)
+        LDR.W    R5,??DataTable65_1
+        LDR.W    R4,??DataTable69_3
+        LDRSB    R0,[R5, #+246]
         CMN      R0,#+3
         BNE.N    ??updateTemperaturesFromRawValues_0
-// 1147 	{
-// 1148     	current_temperature_raw[0] = read_max6675();
+// 1151 	{
+// 1152     	current_temperature_raw[0] = read_max6675();
           CFI FunCall _ZN11Temperature12read_max6675Ev
         BL       _ZN11Temperature12read_max6675Ev
-        LDR.W    R1,??DataTable72_13
-        STR      R0,[R1, #+52]
-// 1149 	}
-// 1150   //#endif
-// 1151   HOTEND_LOOP()
+        STR      R0,[R4, #+52]
+// 1153 	}
+// 1154   //#endif
+// 1155   HOTEND_LOOP()
 ??updateTemperaturesFromRawValues_0:
-        MOVS     R5,#+0
+        MOVS     R6,#+0
+        ADD      R7,R4,#+52
+        ADD      R8,R4,#+68
         B.N      ??updateTemperaturesFromRawValues_1
-// 1152     current_temperature[e] = Temperature::analog2temp(current_temperature_raw[e], e);
+// 1156     current_temperature[e] = Temperature::analog2temp(current_temperature_raw[e], e);
 ??updateTemperaturesFromRawValues_2:
-        ADD      R6,R6,R5, LSL #+2
-        MOV      R1,R5
-        UXTB     R1,R1
-        LDR      R0,[R6, #+52]
+        LDR      R0,[R7], #+4
+        UXTB     R1,R6
           CFI FunCall _ZN11Temperature11analog2tempEih
         BL       _ZN11Temperature11analog2tempEih
-        STR      R0,[R6, #+60]
-        ADDS     R5,R5,#+1
-        SXTB     R5,R5
+        ADDS     R6,R6,#+1
+        STR      R0,[R8], #+4
+        SXTB     R6,R6
 ??updateTemperaturesFromRawValues_1:
-        LDR.W    R6,??DataTable72_13
-        LDRB     R0,[R4, #+247]
-        CMP      R5,R0
+        LDRB     R0,[R5, #+247]
+        CMP      R6,R0
         BLT.N    ??updateTemperaturesFromRawValues_2
-// 1153   //#if HAS_TEMP_BED
-// 1154   if(HAS_TEMP_BED)
-        LDRB     R0,[R4, #+54]
-        CMP      R0,#+0
-        BEQ.N    ??updateTemperaturesFromRawValues_3
-// 1155   {
-// 1156     current_temperature_bed = Temperature::analog2tempBed(current_temperature_bed_raw);
-        LDR      R0,[R6, #+80]
+// 1157   //#if HAS_TEMP_BED
+// 1158   if(HAS_TEMP_BED)
+        LDRB     R0,[R5, #+56]
+        CBZ.N    R0,??updateTemperaturesFromRawValues_3
+// 1159   {
+// 1160     current_temperature_bed = Temperature::analog2tempBed(current_temperature_bed_raw);
+        LDR      R0,[R4, #+80]
           CFI FunCall _ZN11Temperature14analog2tempBedEi
         BL       _ZN11Temperature14analog2tempBedEi
-        STR      R0,[R6, #+68]
-// 1157   }
-// 1158   //#endif
-// 1159   #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
-// 1160     redundant_temperature = Temperature::analog2temp(redundant_temperature_raw, 1);
-// 1161   #endif
-// 1162   #if ENABLED(FILAMENT_WIDTH_SENSOR)
-// 1163     filament_width_meas = analog2widthFil();
-// 1164   #endif
-// 1165 
-// 1166   #if ENABLED(USE_WATCHDOG)
-// 1167     // Reset the watchdog after we know we have a temperature measurement.
-// 1168     watchdog_reset();
-// 1169   #endif
-// 1170 
-// 1171   CRITICAL_SECTION_START;
+        STR      R0,[R4, #+76]
+// 1161   }
+// 1162   //#endif
+// 1163   #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
+// 1164     redundant_temperature = Temperature::analog2temp(redundant_temperature_raw, 1);
+// 1165   #endif
+// 1166   #if ENABLED(FILAMENT_WIDTH_SENSOR)
+// 1167     filament_width_meas = analog2widthFil();
+// 1168   #endif
+// 1169 
+// 1170   #if ENABLED(USE_WATCHDOG)
+// 1171     // Reset the watchdog after we know we have a temperature measurement.
+// 1172     watchdog_reset();
+// 1173   #endif
+// 1174 
+// 1175   CRITICAL_SECTION_START;
 ??updateTemperaturesFromRawValues_3:
         cpsid i
-// 1172   temp_meas_ready = false;
+// 1176   temp_meas_ready = false;
         MOVS     R0,#+0
-        STRB     R0,[R6, #+2]
-// 1173   CRITICAL_SECTION_END;
+        STRB     R0,[R4, #+2]
+// 1177   CRITICAL_SECTION_END;
         cpsie i
-// 1174 }
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock13
+// 1178 }
+        POP      {R4-R8,PC}       ;; return
+          CFI EndBlock cfiBlock16
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable61:
-        DC32     0x41a00000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable61_1:
-        DC32     0xc1a00000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable61_2:
-        DC32     `?<Constant "THERMAL RUNAWAY">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable61_3:
-        DC32     `?<Constant "Thermal Runaway">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable61_4:
-        DC32     0x124f81
-// 1175 
-// 1176 
-// 1177 #if ENABLED(FILAMENT_WIDTH_SENSOR)
-// 1178 
-// 1179   // Convert raw Filament Width to millimeters
-// 1180   float Temperature::analog2widthFil() {
-// 1181     return current_raw_filwidth * 5.0 * (1.0 / 16383.0);
-// 1182   }
-// 1183 
-// 1184   /**
-// 1185    * Convert Filament Width (mm) to a simple ratio
-// 1186    * and reduce to an 8 bit value.
-// 1187    *
-// 1188    * A nominal width of 1.75 and measured width of 1.73
-// 1189    * gives (100 * 1.75 / 1.73) for a ratio of 101 and
-// 1190    * a return value of 1.
-// 1191    */
-// 1192   int8_t Temperature::widthFil_to_size_ratio() {
-// 1193     if (FABS(filament_width_nominal - filament_width_meas) <= FILWIDTH_ERROR_MARGIN)
-// 1194       return int(100.0 * filament_width_nominal / filament_width_meas) - 100;
-// 1195     return 0;
-// 1196   }
-// 1197 
-// 1198 #endif
-// 1199 
-// 1200 #if 0//ENABLED(HEATER_0_USES_MAX6675)
-// 1201   #ifndef MAX6675_SCK_PIN
-// 1202     #define MAX6675_SCK_PIN SCK_PIN
-// 1203   #endif
-// 1204   #ifndef MAX6675_DO_PIN
-// 1205     #define MAX6675_DO_PIN MISO_PIN
-// 1206   #endif
-// 1207   SPI<MAX6675_DO_PIN, MOSI_PIN, MAX6675_SCK_PIN> max6675_spi;
-// 1208 #endif
-// 1209 
-// 1210 /**
-// 1211  * Initialize the temperature manager
-// 1212  * The manager is implemented by periodic calls to manage_heater()
-// 1213  */
+??DataTable58:
+        DC32     _ZN11Temperature5bedKiE
+// 1179 
+// 1180 
+// 1181 #if ENABLED(FILAMENT_WIDTH_SENSOR)
+// 1182 
+// 1183   // Convert raw Filament Width to millimeters
+// 1184   float Temperature::analog2widthFil() {
+// 1185     return current_raw_filwidth * 5.0 * (1.0 / 16383.0);
+// 1186   }
+// 1187 
+// 1188   /**
+// 1189    * Convert Filament Width (mm) to a simple ratio
+// 1190    * and reduce to an 8 bit value.
+// 1191    *
+// 1192    * A nominal width of 1.75 and measured width of 1.73
+// 1193    * gives (100 * 1.75 / 1.73) for a ratio of 101 and
+// 1194    * a return value of 1.
+// 1195    */
+// 1196   int8_t Temperature::widthFil_to_size_ratio() {
+// 1197     if (FABS(filament_width_nominal - filament_width_meas) <= FILWIDTH_ERROR_MARGIN)
+// 1198       return int(100.0 * filament_width_nominal / filament_width_meas) - 100;
+// 1199     return 0;
+// 1200   }
+// 1201 
+// 1202 #endif
+// 1203 
+// 1204 #if 0//ENABLED(HEATER_0_USES_MAX6675)
+// 1205   #ifndef MAX6675_SCK_PIN
+// 1206     #define MAX6675_SCK_PIN SCK_PIN
+// 1207   #endif
+// 1208   #ifndef MAX6675_DO_PIN
+// 1209     #define MAX6675_DO_PIN MISO_PIN
+// 1210   #endif
+// 1211   SPI<MAX6675_DO_PIN, MOSI_PIN, MAX6675_SCK_PIN> max6675_spi;
+// 1212 #endif
+// 1213 
+// 1214 /**
+// 1215  * Initialize the temperature manager
+// 1216  * The manager is implemented by periodic calls to manage_heater()
+// 1217  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock17 Using cfiCommon0
           CFI Function _ZN11Temperature4initEv
         THUMB
-// 1214 void Temperature::init() {
+// 1218 void Temperature::init() {
 _ZN11Temperature4initEv:
         PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
@@ -3931,202 +3995,219 @@ _ZN11Temperature4initEv:
           CFI R5 Frame(CFA, -16)
           CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
-// 1215 
-// 1216   #if 0//MB(RUMBA) && (TEMP_SENSOR_0 == -1 || TEMP_SENSOR_1 == -1 || TEMP_SENSOR_2 == -1 || TEMP_SENSOR_BED == -1)
-// 1217     // Disable RUMBA JTAG in case the thermocouple extension is plugged on top of JTAG connector
-// 1218     MCUCR = _BV(JTD);
-// 1219     MCUCR = _BV(JTD);
-// 1220   #endif
-// 1221 
-// 1222   // Finish init of mult hotend arrays
-// 1223   HOTEND_LOOP() maxttemp[e] = maxttemp[0];
-        MOVS     R0,#+0
-        LDR.W    R4,??DataTable68_12
-        LDR.W    R5,??DataTable72
+// 1219 
+// 1220   #if 0//MB(RUMBA) && (TEMP_SENSOR_0 == -1 || TEMP_SENSOR_1 == -1 || TEMP_SENSOR_2 == -1 || TEMP_SENSOR_BED == -1)
+// 1221     // Disable RUMBA JTAG in case the thermocouple extension is plugged on top of JTAG connector
+// 1222     MCUCR = _BV(JTD);
+// 1223     MCUCR = _BV(JTD);
+// 1224   #endif
+// 1225   //sean 19.12.30
+// 1226   #if 1
+// 1227 	  minttemp_raw[0] = HEATER_0_RAW_LO_TEMP;//ARRAY_BY_HOTENDS( , HEATER_1_RAW_LO_TEMP , HEATER_2_RAW_LO_TEMP, HEATER_3_RAW_LO_TEMP, HEATER_4_RAW_LO_TEMP);
+        LDR.N    R4,??DataTable62_5
+// 1228 	  minttemp_raw[1] = HEATER_1_RAW_LO_TEMP;
+// 1229 	  maxttemp_raw[0] = HEATER_0_RAW_HI_TEMP;// ARRAY_BY_HOTENDS( , HEATER_1_RAW_HI_TEMP , HEATER_2_RAW_HI_TEMP, HEATER_3_RAW_HI_TEMP, HEATER_4_RAW_HI_TEMP);
+// 1230 	  maxttemp_raw[1] = HEATER_1_RAW_HI_TEMP; 
+// 1231 
+// 1232 	  #ifdef BED_MINTEMP
+// 1233 	  bed_minttemp_raw = HEATER_BED_RAW_LO_TEMP;
+// 1234 	  #endif
+// 1235 
+// 1236 	  #ifdef BED_MAXTEMP
+// 1237 	   bed_maxttemp_raw = HEATER_BED_RAW_HI_TEMP;
+// 1238 	  #endif
+// 1239   #endif
+// 1240   // Finish init of mult hotend arrays
+// 1241   HOTEND_LOOP() maxttemp[e] = maxttemp[0];
+        LDR.W    R5,??DataTable69_5
+        MOVW     R0,#+16383
+        STRH     R0,[R4, #+20]
+        STRH     R0,[R4, #+22]
+        STRH     R0,[R4, #+42]
         ADD      R6,R5,#+240
-        B.N      ??init_0
+        MOVS     R1,#+0
+        LDRB     R0,[R6, #+7]
+        STRH     R1,[R4, #+24]
+        STRH     R1,[R4, #+26]
+        STRH     R1,[R4, #+44]
+        CBZ.N    R0,??init_0
+        ADD      R1,R4,#+32
 ??init_1:
-        LDRH     R1,[R4, #+32]
-        SXTB     R0,R0
-        ADD      R2,R4,R0, LSL #+1
-        STRH     R1,[R2, #+32]
-        ADDS     R0,R0,#+1
-??init_0:
-        MOV      R1,R0
-        SXTB     R1,R1
-        LDRB     R2,[R6, #+7]
-        CMP      R1,R2
-        BLT.N    ??init_1
-// 1224 
-// 1225   #if 0//ENABLED(PIDTEMP) && ENABLED(PID_EXTRUSION_SCALING)
-// 1226     last_e_position = 0;
-// 1227   #endif
-// 1228 
-// 1229   #if HAS_HEATER_0
-// 1230     SET_OUTPUT(HEATER_0_PIN);
-// 1231   #endif
-// 1232   #if HAS_HEATER_1
-// 1233     SET_OUTPUT(HEATER_1_PIN);
-// 1234   #endif
-// 1235   #if HAS_HEATER_2
-// 1236     SET_OUTPUT(HEATER_2_PIN);
-// 1237   #endif
-// 1238   #if HAS_HEATER_3
-// 1239     SET_OUTPUT(HEATER_3_PIN);
-// 1240   #endif
-// 1241   #if HAS_HEATER_4
-// 1242     SET_OUTPUT(HEATER_3_PIN);
-// 1243   #endif
-// 1244   #if HAS_HEATER_BED
-// 1245     SET_OUTPUT(HEATER_BED_PIN);
-// 1246   #endif
-// 1247 
-// 1248   #if HAS_FAN0
-// 1249     SET_OUTPUT(FAN_PIN);
-// 1250     #if ENABLED(FAST_PWM_FAN)
-// 1251       setPwmFrequency(FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1252     #endif
-// 1253   #endif
-// 1254 
-// 1255   #if HAS_FAN1
-// 1256     SET_OUTPUT(FAN1_PIN);
-// 1257     #if ENABLED(FAST_PWM_FAN)
-// 1258       setPwmFrequency(FAN1_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1259     #endif
-// 1260   #endif
-// 1261 
-// 1262   #if HAS_FAN2
-// 1263     SET_OUTPUT(FAN2_PIN);
-// 1264     #if ENABLED(FAST_PWM_FAN)
-// 1265       setPwmFrequency(FAN2_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1266     #endif
-// 1267   #endif
-// 1268 
-// 1269   #if 0//ENABLED(HEATER_0_USES_MAX6675)
-// 1270 
-// 1271     OUT_WRITE(SCK_PIN, LOW);
-// 1272     OUT_WRITE(MOSI_PIN, HIGH);
-// 1273     SET_INPUT_PULLUP(MISO_PIN);
-// 1274 
-// 1275     max6675_spi.init();
-// 1276 
-// 1277     OUT_WRITE(SS_PIN, HIGH);
-// 1278     OUT_WRITE(MAX6675_SS, HIGH);
+        LDRH     R2,[R4, #+32]
+        STRH     R2,[R1], #+2
+        SUBS     R0,R0,#+1
+        BNE.N    ??init_1
+// 1242 
+// 1243   #if 0//ENABLED(PIDTEMP) && ENABLED(PID_EXTRUSION_SCALING)
+// 1244     last_e_position = 0;
+// 1245   #endif
+// 1246 
+// 1247   #if HAS_HEATER_0
+// 1248     SET_OUTPUT(HEATER_0_PIN);
+// 1249   #endif
+// 1250   #if HAS_HEATER_1
+// 1251     SET_OUTPUT(HEATER_1_PIN);
+// 1252   #endif
+// 1253   #if HAS_HEATER_2
+// 1254     SET_OUTPUT(HEATER_2_PIN);
+// 1255   #endif
+// 1256   #if HAS_HEATER_3
+// 1257     SET_OUTPUT(HEATER_3_PIN);
+// 1258   #endif
+// 1259   #if HAS_HEATER_4
+// 1260     SET_OUTPUT(HEATER_3_PIN);
+// 1261   #endif
+// 1262   #if HAS_HEATER_BED
+// 1263     SET_OUTPUT(HEATER_BED_PIN);
+// 1264   #endif
+// 1265 
+// 1266   #if HAS_FAN0
+// 1267     SET_OUTPUT(FAN_PIN);
+// 1268     #if ENABLED(FAST_PWM_FAN)
+// 1269       setPwmFrequency(FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1270     #endif
+// 1271   #endif
+// 1272 
+// 1273   #if HAS_FAN1
+// 1274     SET_OUTPUT(FAN1_PIN);
+// 1275     #if ENABLED(FAST_PWM_FAN)
+// 1276       setPwmFrequency(FAN1_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1277     #endif
+// 1278   #endif
 // 1279 
-// 1280   #endif // HEATER_0_USES_MAX6675
-// 1281 
-// 1282   #ifdef DIDR2
-// 1283     #define ANALOG_SELECT(pin) do{ if (pin < 8) SBI(DIDR0, pin); else SBI(DIDR2, pin - 8); }while(0)
-// 1284   #else
-// 1285     #define ANALOG_SELECT(pin) do{ SBI(DIDR0, pin); }while(0)
-// 1286   #endif
-// 1287 #if 0
-// 1288   // Set analog inputs
-// 1289   ADCSRA = _BV(ADEN) | _BV(ADSC) | _BV(ADIF) | 0x07;
-// 1290   DIDR0 = 0;
-// 1291   #ifdef DIDR2
-// 1292     DIDR2 = 0;
-// 1293   #endif
-// 1294   #if HAS_TEMP_0
-// 1295     ANALOG_SELECT(TEMP_0_PIN);
-// 1296   #endif
-// 1297   #if HAS_TEMP_1
-// 1298     ANALOG_SELECT(TEMP_1_PIN);
-// 1299   #endif
-// 1300   #if HAS_TEMP_2
-// 1301     ANALOG_SELECT(TEMP_2_PIN);
-// 1302   #endif
-// 1303   #if HAS_TEMP_3
-// 1304     ANALOG_SELECT(TEMP_3_PIN);
-// 1305   #endif
-// 1306   #if HAS_TEMP_4
-// 1307     ANALOG_SELECT(TEMP_4_PIN);
-// 1308   #endif
-// 1309   #if HAS_TEMP_BED
-// 1310     ANALOG_SELECT(TEMP_BED_PIN);
+// 1280   #if HAS_FAN2
+// 1281     SET_OUTPUT(FAN2_PIN);
+// 1282     #if ENABLED(FAST_PWM_FAN)
+// 1283       setPwmFrequency(FAN2_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1284     #endif
+// 1285   #endif
+// 1286 
+// 1287   #if 0//ENABLED(HEATER_0_USES_MAX6675)
+// 1288 
+// 1289     OUT_WRITE(SCK_PIN, LOW);
+// 1290     OUT_WRITE(MOSI_PIN, HIGH);
+// 1291     SET_INPUT_PULLUP(MISO_PIN);
+// 1292 
+// 1293     max6675_spi.init();
+// 1294 
+// 1295     OUT_WRITE(SS_PIN, HIGH);
+// 1296     OUT_WRITE(MAX6675_SS, HIGH);
+// 1297 
+// 1298   #endif // HEATER_0_USES_MAX6675
+// 1299 
+// 1300   #ifdef DIDR2
+// 1301     #define ANALOG_SELECT(pin) do{ if (pin < 8) SBI(DIDR0, pin); else SBI(DIDR2, pin - 8); }while(0)
+// 1302   #else
+// 1303     #define ANALOG_SELECT(pin) do{ SBI(DIDR0, pin); }while(0)
+// 1304   #endif
+// 1305 #if 0
+// 1306   // Set analog inputs
+// 1307   ADCSRA = _BV(ADEN) | _BV(ADSC) | _BV(ADIF) | 0x07;
+// 1308   DIDR0 = 0;
+// 1309   #ifdef DIDR2
+// 1310     DIDR2 = 0;
 // 1311   #endif
-// 1312   #if ENABLED(FILAMENT_WIDTH_SENSOR)
-// 1313     ANALOG_SELECT(FILWIDTH_PIN);
+// 1312   #if HAS_TEMP_0
+// 1313     ANALOG_SELECT(TEMP_0_PIN);
 // 1314   #endif
-// 1315 
-// 1316   #if HAS_AUTO_FAN_0
-// 1317     #if E0_AUTO_FAN_PIN == FAN1_PIN
-// 1318       SET_OUTPUT(E0_AUTO_FAN_PIN);
-// 1319       #if ENABLED(FAST_PWM_FAN)
-// 1320         setPwmFrequency(E0_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1321       #endif
-// 1322     #else
-// 1323       SET_OUTPUT(E0_AUTO_FAN_PIN);
-// 1324     #endif
-// 1325   #endif
-// 1326   #if HAS_AUTO_FAN_1 && !AUTO_1_IS_0
-// 1327     #if E1_AUTO_FAN_PIN == FAN1_PIN
-// 1328       SET_OUTPUT(E1_AUTO_FAN_PIN);
-// 1329       #if ENABLED(FAST_PWM_FAN)
-// 1330         setPwmFrequency(E1_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1331       #endif
-// 1332     #else
-// 1333       SET_OUTPUT(E1_AUTO_FAN_PIN);
-// 1334     #endif
-// 1335   #endif
-// 1336   #if HAS_AUTO_FAN_2 && !AUTO_2_IS_0 && !AUTO_2_IS_1
-// 1337     #if E2_AUTO_FAN_PIN == FAN1_PIN
-// 1338       SET_OUTPUT(E2_AUTO_FAN_PIN);
-// 1339       #if ENABLED(FAST_PWM_FAN)
-// 1340         setPwmFrequency(E2_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1341       #endif
-// 1342     #else
-// 1343       SET_OUTPUT(E2_AUTO_FAN_PIN);
-// 1344     #endif
-// 1345   #endif
-// 1346   #if HAS_AUTO_FAN_3 && !AUTO_3_IS_0 && !AUTO_3_IS_1 && !AUTO_3_IS_2
-// 1347     #if E3_AUTO_FAN_PIN == FAN1_PIN
-// 1348       SET_OUTPUT(E3_AUTO_FAN_PIN);
-// 1349       #if ENABLED(FAST_PWM_FAN)
-// 1350         setPwmFrequency(E3_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1351       #endif
-// 1352     #else
-// 1353       SET_OUTPUT(E3_AUTO_FAN_PIN);
-// 1354     #endif
-// 1355   #endif
-// 1356   #if HAS_AUTO_FAN_4 && !AUTO_4_IS_0 && !AUTO_4_IS_1 && !AUTO_4_IS_2 && !AUTO_4_IS_3
-// 1357     #if E4_AUTO_FAN_PIN == FAN1_PIN
-// 1358       SET_OUTPUT(E4_AUTO_FAN_PIN);
-// 1359       #if ENABLED(FAST_PWM_FAN)
-// 1360         setPwmFrequency(E4_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
-// 1361       #endif
-// 1362     #else
-// 1363       SET_OUTPUT(E4_AUTO_FAN_PIN);
-// 1364     #endif
-// 1365   #endif
-// 1366 
-// 1367   // Use timer0 for temperature measurement
-// 1368   // Interleave temperature interrupt with millies interrupt
-// 1369   OCR0B = 128;
-// 1370   SBI(TIMSK0, OCIE0B);
-// 1371 
-// 1372   // Wait for temperature measurement to settle
-// 1373   delay(250);
-// 1374 #endif
-// 1375   #define TEMP_MIN_ROUTINE(NR) \ 
-// 1376     minttemp[NR] = HEATER_ ##NR## _MINTEMP; \ 
-// 1377     while (analog2temp(minttemp_raw[NR], NR) < HEATER_ ##NR## _MINTEMP) { \ 
-// 1378       if (HEATER_ ##NR## _RAW_LO_TEMP < HEATER_ ##NR## _RAW_HI_TEMP) \ 
-// 1379         minttemp_raw[NR] += OVERSAMPLENR; \ 
-// 1380       else \ 
-// 1381         minttemp_raw[NR] -= OVERSAMPLENR; \ 
-// 1382     }
-// 1383   #define TEMP_MAX_ROUTINE(NR) \ 
-// 1384     maxttemp[NR] = HEATER_ ##NR## _MAXTEMP; \ 
-// 1385     while (analog2temp(maxttemp_raw[NR], NR) > HEATER_ ##NR## _MAXTEMP) { \ 
-// 1386       if (HEATER_ ##NR## _RAW_LO_TEMP < HEATER_ ##NR## _RAW_HI_TEMP) \ 
-// 1387         maxttemp_raw[NR] -= OVERSAMPLENR; \ 
-// 1388       else \ 
-// 1389         maxttemp_raw[NR] += OVERSAMPLENR; \ 
-// 1390     }
-// 1391 
-// 1392   #ifdef HEATER_0_MINTEMP
-// 1393     TEMP_MIN_ROUTINE(0);
+// 1315   #if HAS_TEMP_1
+// 1316     ANALOG_SELECT(TEMP_1_PIN);
+// 1317   #endif
+// 1318   #if HAS_TEMP_2
+// 1319     ANALOG_SELECT(TEMP_2_PIN);
+// 1320   #endif
+// 1321   #if HAS_TEMP_3
+// 1322     ANALOG_SELECT(TEMP_3_PIN);
+// 1323   #endif
+// 1324   #if HAS_TEMP_4
+// 1325     ANALOG_SELECT(TEMP_4_PIN);
+// 1326   #endif
+// 1327   #if HAS_TEMP_BED
+// 1328     ANALOG_SELECT(TEMP_BED_PIN);
+// 1329   #endif
+// 1330   #if ENABLED(FILAMENT_WIDTH_SENSOR)
+// 1331     ANALOG_SELECT(FILWIDTH_PIN);
+// 1332   #endif
+// 1333 
+// 1334   #if HAS_AUTO_FAN_0
+// 1335     #if E0_AUTO_FAN_PIN == FAN1_PIN
+// 1336       SET_OUTPUT(E0_AUTO_FAN_PIN);
+// 1337       #if ENABLED(FAST_PWM_FAN)
+// 1338         setPwmFrequency(E0_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1339       #endif
+// 1340     #else
+// 1341       SET_OUTPUT(E0_AUTO_FAN_PIN);
+// 1342     #endif
+// 1343   #endif
+// 1344   #if HAS_AUTO_FAN_1 && !AUTO_1_IS_0
+// 1345     #if E1_AUTO_FAN_PIN == FAN1_PIN
+// 1346       SET_OUTPUT(E1_AUTO_FAN_PIN);
+// 1347       #if ENABLED(FAST_PWM_FAN)
+// 1348         setPwmFrequency(E1_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1349       #endif
+// 1350     #else
+// 1351       SET_OUTPUT(E1_AUTO_FAN_PIN);
+// 1352     #endif
+// 1353   #endif
+// 1354   #if HAS_AUTO_FAN_2 && !AUTO_2_IS_0 && !AUTO_2_IS_1
+// 1355     #if E2_AUTO_FAN_PIN == FAN1_PIN
+// 1356       SET_OUTPUT(E2_AUTO_FAN_PIN);
+// 1357       #if ENABLED(FAST_PWM_FAN)
+// 1358         setPwmFrequency(E2_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1359       #endif
+// 1360     #else
+// 1361       SET_OUTPUT(E2_AUTO_FAN_PIN);
+// 1362     #endif
+// 1363   #endif
+// 1364   #if HAS_AUTO_FAN_3 && !AUTO_3_IS_0 && !AUTO_3_IS_1 && !AUTO_3_IS_2
+// 1365     #if E3_AUTO_FAN_PIN == FAN1_PIN
+// 1366       SET_OUTPUT(E3_AUTO_FAN_PIN);
+// 1367       #if ENABLED(FAST_PWM_FAN)
+// 1368         setPwmFrequency(E3_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1369       #endif
+// 1370     #else
+// 1371       SET_OUTPUT(E3_AUTO_FAN_PIN);
+// 1372     #endif
+// 1373   #endif
+// 1374   #if HAS_AUTO_FAN_4 && !AUTO_4_IS_0 && !AUTO_4_IS_1 && !AUTO_4_IS_2 && !AUTO_4_IS_3
+// 1375     #if E4_AUTO_FAN_PIN == FAN1_PIN
+// 1376       SET_OUTPUT(E4_AUTO_FAN_PIN);
+// 1377       #if ENABLED(FAST_PWM_FAN)
+// 1378         setPwmFrequency(E4_AUTO_FAN_PIN, 1); // No prescaling. Pwm frequency = F_CPU/256/8
+// 1379       #endif
+// 1380     #else
+// 1381       SET_OUTPUT(E4_AUTO_FAN_PIN);
+// 1382     #endif
+// 1383   #endif
+// 1384 
+// 1385   // Use timer0 for temperature measurement
+// 1386   // Interleave temperature interrupt with millies interrupt
+// 1387   OCR0B = 128;
+// 1388   SBI(TIMSK0, OCIE0B);
+// 1389 
+// 1390   // Wait for temperature measurement to settle
+// 1391   delay(250);
+// 1392 #endif
+// 1393   #define TEMP_MIN_ROUTINE(NR) \ 
+// 1394     minttemp[NR] = HEATER_ ##NR## _MINTEMP; \ 
+// 1395     while (analog2temp(minttemp_raw[NR], NR) < HEATER_ ##NR## _MINTEMP) { \ 
+// 1396       if (HEATER_ ##NR## _RAW_LO_TEMP < HEATER_ ##NR## _RAW_HI_TEMP) \ 
+// 1397         minttemp_raw[NR] += OVERSAMPLENR; \ 
+// 1398       else \ 
+// 1399         minttemp_raw[NR] -= OVERSAMPLENR; \ 
+// 1400     }
+// 1401   #define TEMP_MAX_ROUTINE(NR) \ 
+// 1402     maxttemp[NR] = HEATER_ ##NR## _MAXTEMP; \ 
+// 1403     while (analog2temp(maxttemp_raw[NR], NR) > HEATER_ ##NR## _MAXTEMP) { \ 
+// 1404       if (HEATER_ ##NR## _RAW_LO_TEMP < HEATER_ ##NR## _RAW_HI_TEMP) \ 
+// 1405         maxttemp_raw[NR] -= OVERSAMPLENR; \ 
+// 1406       else \ 
+// 1407         maxttemp_raw[NR] += OVERSAMPLENR; \ 
+// 1408     }
+// 1409 
+// 1410   #ifdef HEATER_0_MINTEMP
+// 1411     TEMP_MIN_ROUTINE(0);
+??init_0:
         LDRH     R0,[R5, #+240]
         STRH     R0,[R4, #+28]
         B.N      ??init_2
@@ -4148,9 +4229,9 @@ _ZN11Temperature4initEv:
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCC.N    ??init_3
-// 1394   #endif
-// 1395   #ifdef HEATER_0_MAXTEMP
-// 1396     TEMP_MAX_ROUTINE(0);
+// 1412   #endif
+// 1413   #ifdef HEATER_0_MAXTEMP
+// 1414     TEMP_MAX_ROUTINE(0);
         LDRH     R0,[R5, #+48]
         STRH     R0,[R4, #+32]
         B.N      ??init_4
@@ -4171,10 +4252,10 @@ _ZN11Temperature4initEv:
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCC.N    ??init_5
-// 1397   #endif
-// 1398   #if HOTENDS > 1
-// 1399     #ifdef HEATER_1_MINTEMP
-// 1400       TEMP_MIN_ROUTINE(1);
+// 1415   #endif
+// 1416   #if HOTENDS > 1
+// 1417     #ifdef HEATER_1_MINTEMP
+// 1418       TEMP_MIN_ROUTINE(1);
         LDRSB    R0,[R6, #+2]
         STRH     R0,[R4, #+30]
         B.N      ??init_6
@@ -4196,9 +4277,9 @@ _ZN11Temperature4initEv:
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCC.N    ??init_7
-// 1401     #endif
-// 1402     #ifdef HEATER_1_MAXTEMP
-// 1403       TEMP_MAX_ROUTINE(1);
+// 1419     #endif
+// 1420     #ifdef HEATER_1_MAXTEMP
+// 1421       TEMP_MAX_ROUTINE(1);
         LDRH     R0,[R6, #+4]
         STRH     R0,[R4, #+34]
         B.N      ??init_8
@@ -4219,80 +4300,83 @@ _ZN11Temperature4initEv:
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCC.N    ??init_9
-// 1404     #endif
-// 1405     #if HOTENDS > 2
-// 1406       #ifdef HEATER_2_MINTEMP
-// 1407         TEMP_MIN_ROUTINE(2);
-// 1408       #endif
-// 1409       #ifdef HEATER_2_MAXTEMP
-// 1410         TEMP_MAX_ROUTINE(2);
-// 1411       #endif
-// 1412       #if HOTENDS > 3
-// 1413         #ifdef HEATER_3_MINTEMP
-// 1414           TEMP_MIN_ROUTINE(3);
-// 1415         #endif
-// 1416         #ifdef HEATER_3_MAXTEMP
-// 1417           TEMP_MAX_ROUTINE(3);
-// 1418         #endif
-// 1419         #if HOTENDS > 4
-// 1420           #ifdef HEATER_4_MINTEMP
-// 1421             TEMP_MIN_ROUTINE(4);
-// 1422           #endif
-// 1423           #ifdef HEATER_4_MAXTEMP
-// 1424             TEMP_MAX_ROUTINE(4);
-// 1425           #endif
-// 1426         #endif // HOTENDS > 4
-// 1427       #endif // HOTENDS > 3
-// 1428     #endif // HOTENDS > 2
-// 1429   #endif // HOTENDS > 1
-// 1430 
-// 1431   //#if HAS_TEMP_BED
-// 1432   if(HAS_TEMP_BED)
+// 1422     #endif
+// 1423     #if HOTENDS > 2
+// 1424       #ifdef HEATER_2_MINTEMP
+// 1425         TEMP_MIN_ROUTINE(2);
+// 1426       #endif
+// 1427       #ifdef HEATER_2_MAXTEMP
+// 1428         TEMP_MAX_ROUTINE(2);
+// 1429       #endif
+// 1430       #if HOTENDS > 3
+// 1431         #ifdef HEATER_3_MINTEMP
+// 1432           TEMP_MIN_ROUTINE(3);
+// 1433         #endif
+// 1434         #ifdef HEATER_3_MAXTEMP
+// 1435           TEMP_MAX_ROUTINE(3);
+// 1436         #endif
+// 1437         #if HOTENDS > 4
+// 1438           #ifdef HEATER_4_MINTEMP
+// 1439             TEMP_MIN_ROUTINE(4);
+// 1440           #endif
+// 1441           #ifdef HEATER_4_MAXTEMP
+// 1442             TEMP_MAX_ROUTINE(4);
+// 1443           #endif
+// 1444         #endif // HOTENDS > 4
+// 1445       #endif // HOTENDS > 3
+// 1446     #endif // HOTENDS > 2
+// 1447   #endif // HOTENDS > 1
+// 1448 
+// 1449   //#if HAS_TEMP_BED
+// 1450   if(HAS_TEMP_BED)
         ADDS     R5,R5,#+48
-        LDRB     R0,[R5, #+6]
-        CMP      R0,#+0
-        BNE.N    ??init_10
-        POP      {R0,R4-R7,PC}
-// 1433     {
-// 1434     #ifdef BED_MINTEMP
-// 1435       while (analog2tempBed(bed_minttemp_raw) < BED_MINTEMP) {
-// 1436         #if HEATER_BED_RAW_LO_TEMP < HEATER_BED_RAW_HI_TEMP
-// 1437           bed_minttemp_raw += OVERSAMPLENR;
-// 1438         #else
-// 1439           bed_minttemp_raw -= OVERSAMPLENR;
-??init_11:
-        SUB      R0,R6,#+16
-        STRH     R0,[R4, #+42]
-// 1440         #endif
-// 1441       }
-??init_10:
+        LDRB     R0,[R5, #+8]
+        CBZ.N    R0,??init_10
         LDRSH    R6,[R4, #+42]
+        LDRSH    R0,[R5, #+4]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R7,R0
+        B.N      ??init_11
+// 1451     {
+// 1452     #ifdef BED_MINTEMP
+// 1453       while (analog2tempBed(bed_minttemp_raw) < BED_MINTEMP) {
+// 1454         #if HEATER_BED_RAW_LO_TEMP < HEATER_BED_RAW_HI_TEMP
+// 1455           bed_minttemp_raw += OVERSAMPLENR;
+// 1456         #else
+// 1457           bed_minttemp_raw -= OVERSAMPLENR;
+??init_12:
+        SUBS     R6,R6,#+16
+// 1458         #endif
+// 1459       }
+??init_11:
+        SXTH     R6,R6
         MOV      R0,R6
           CFI FunCall _ZN11Temperature14analog2tempBedEi
         BL       _ZN11Temperature14analog2tempBedEi
-        LDR.W    R1,??DataTable72_1  ;; 0x40a00000
+        MOV      R1,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??init_11
-// 1442     #endif // BED_MINTEMP
-// 1443     //#ifdef BED_MAXTEMP
-// 1444     if(BED_MAXTEMP)
+        BCC.N    ??init_12
+// 1460     #endif // BED_MINTEMP
+// 1461     //#ifdef BED_MAXTEMP
+// 1462     if(BED_MAXTEMP)
         LDRSH    R0,[R5, #+2]
-        CMP      R0,#+0
-        BNE.N    ??init_12
+        STRH     R6,[R4, #+42]
+        CBNZ.N   R0,??init_13
         POP      {R0,R4-R7,PC}
-// 1445     {
-// 1446       while (analog2tempBed(bed_maxttemp_raw) > BED_MAXTEMP) {
-// 1447         #if HEATER_BED_RAW_LO_TEMP < HEATER_BED_RAW_HI_TEMP
-// 1448           bed_maxttemp_raw -= OVERSAMPLENR;
-// 1449         #else
-// 1450           bed_maxttemp_raw += OVERSAMPLENR;
-??init_13:
+// 1463     {
+// 1464       while (analog2tempBed(bed_maxttemp_raw) > BED_MAXTEMP) {
+// 1465         #if HEATER_BED_RAW_LO_TEMP < HEATER_BED_RAW_HI_TEMP
+// 1466           bed_maxttemp_raw -= OVERSAMPLENR;
+// 1467         #else
+// 1468           bed_maxttemp_raw += OVERSAMPLENR;
+??init_14:
         ADD      R0,R6,#+16
         STRH     R0,[R4, #+44]
-// 1451         #endif
-// 1452       }
-??init_12:
+// 1469         #endif
+// 1470       }
+??init_13:
         LDRSH    R6,[R4, #+44]
         MOV      R0,R6
           CFI FunCall _ZN11Temperature14analog2tempBedEi
@@ -4304,120 +4388,112 @@ _ZN11Temperature4initEv:
         MOV      R1,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??init_13
-// 1453     }
-// 1454     //#endif // BED_MAXTEMP
-// 1455     }
-// 1456   //#endif //HAS_TEMP_BED
-// 1457 
-// 1458   #if ENABLED(PROBING_HEATERS_OFF)
-// 1459     paused = false;
-// 1460   #endif
-// 1461 }
+        BCC.N    ??init_14
+// 1471     }
+// 1472     //#endif // BED_MAXTEMP
+// 1473     }
+// 1474   //#endif //HAS_TEMP_BED
+// 1475 
+// 1476   #if ENABLED(PROBING_HEATERS_OFF)
+// 1477     paused = false;
+// 1478   #endif
+// 1479 }
+??init_10:
         POP      {R0,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock14
-// 1462 
-// 1463 #if WATCH_HOTENDS
-// 1464   /**
-// 1465    * Start Heating Sanity Check for hotends that are below
-// 1466    * their target temperature by a configurable margin.
-// 1467    * This is called when the temperature is set. (M104, M109)
-// 1468    */
+          CFI EndBlock cfiBlock17
+// 1480 
+// 1481 #if WATCH_HOTENDS
+// 1482   /**
+// 1483    * Start Heating Sanity Check for hotends that are below
+// 1484    * their target temperature by a configurable margin.
+// 1485    * This is called when the temperature is set. (M104, M109)
+// 1486    */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock18 Using cfiCommon0
           CFI Function _ZN11Temperature21start_watching_heaterEh
         THUMB
-// 1469   void Temperature::start_watching_heater(const uint8_t e) {
+// 1487   void Temperature::start_watching_heater(const uint8_t e) {
 _ZN11Temperature21start_watching_heaterEh:
-        PUSH     {R3-R11,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
-// 1470     #if HOTENDS == 1
-// 1471       UNUSED(e);
-// 1472     #endif
-// 1473     if (degHotend(HOTEND_INDEX) < degTargetHotend(HOTEND_INDEX) - (WATCH_TEMP_INCREASE + TEMP_HYSTERESIS + 1)) {
-          CFI FunCall _ZN11Temperature9degHotendEh
-        BL       _ZN11Temperature9degHotendEh
-        MOV      R5,R0
-        MOV      R6,R4
-        LDR.N    R7,??DataTable68_12
-        ADD      R8,R7,R6, LSL #+2
-        LDR.W    R9,??DataTable72
-        ADD      R0,R9,#+228
-        LDRB     R10,[R0, #+2]
-        MOV      R0,R4
-          CFI FunCall _ZN11Temperature15degTargetHotendEh
-        BL       _ZN11Temperature15degTargetHotendEh
-        MOV      R11,R0
-        ADD      R0,R10,#+3
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
+        MOV      R8,R0
+// 1488     #if HOTENDS == 1
+// 1489       UNUSED(e);
+// 1490     #endif
+// 1491     if (degHotend(HOTEND_INDEX) < degTargetHotend(HOTEND_INDEX) - (WATCH_TEMP_INCREASE + TEMP_HYSTERESIS + 1)) {
+        LDR.W    R5,??DataTable65_1
+        LDR.W    R9,??DataTable69_3
+        ADD      R0,R5,#+228
+        ADD      R4,R9,R8, LSL #+2
+        LDRB     R7,[R0, #+2]
+        LDR      R6,[R4, #+68]
+        LDR      R0,[R4, #+60]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R10,R0
+        ADDS     R0,R7,#+3
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
-        MOV      R0,R11
+        MOV      R0,R10
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R0
-        MOV      R0,R5
+        MOV      R0,R6
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCS.N    ??start_watching_heater_0
-// 1474       watch_target_temp[HOTEND_INDEX] = degHotend(HOTEND_INDEX) + WATCH_TEMP_INCREASE;
-        MOV      R0,R10
+// 1492       watch_target_temp[HOTEND_INDEX] = degHotend(HOTEND_INDEX) + WATCH_TEMP_INCREASE;
+        MOV      R0,R7
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R5,R0
-        MOV      R0,R4
-          CFI FunCall _ZN11Temperature9degHotendEh
-        BL       _ZN11Temperature9degHotendEh
-        MOV      R1,R5
+        MOV      R1,R6
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        ADD      R1,R7,R6, LSL #+1
+        ADD      R1,R9,R8, LSL #+1
         STRH     R0,[R1, #+48]
-// 1475       watch_heater_next_ms[HOTEND_INDEX] = millis() + (WATCH_TEMP_PERIOD) * 1000UL;
+// 1493       watch_heater_next_ms[HOTEND_INDEX] = millis() + (WATCH_TEMP_PERIOD) * 1000UL;
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
-        LDRSH    R1,[R9, #+228]
         MOV      R2,#+1000
+        LDRSH    R1,[R5, #+228]
         MLA      R0,R2,R1,R0
-        STR      R0,[R8, #+108]
         B.N      ??start_watching_heater_1
-// 1476     }
-// 1477     else
-// 1478       watch_heater_next_ms[HOTEND_INDEX] = 0;
+// 1494     }
+// 1495     else
+// 1496       watch_heater_next_ms[HOTEND_INDEX] = 0;
 ??start_watching_heater_0:
         MOVS     R0,#+0
-        STR      R0,[R8, #+108]
-// 1479   }
 ??start_watching_heater_1:
-        POP      {R0,R4-R11,PC}   ;; return
-          CFI EndBlock cfiBlock15
-// 1480 #endif
-// 1481 
-// 1482 #if WATCH_THE_BED
-// 1483   /**
-// 1484    * Start Heating Sanity Check for hotends that are below
-// 1485    * their target temperature by a configurable margin.
-// 1486    * This is called when the temperature is set. (M140, M190)
-// 1487    */
+        STR      R0,[R4, #+112]
+// 1497   }
+        POP      {R4-R10,PC}      ;; return
+          CFI EndBlock cfiBlock18
+// 1498 #endif
+// 1499 
+// 1500 #if WATCH_THE_BED
+// 1501   /**
+// 1502    * Start Heating Sanity Check for hotends that are below
+// 1503    * their target temperature by a configurable margin.
+// 1504    * This is called when the temperature is set. (M140, M190)
+// 1505    */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock19 Using cfiCommon0
           CFI Function _ZN11Temperature18start_watching_bedEv
         THUMB
-// 1488   void Temperature::start_watching_bed() {
+// 1506   void Temperature::start_watching_bed() {
 _ZN11Temperature18start_watching_bedEv:
         PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
@@ -4427,18 +4503,17 @@ _ZN11Temperature18start_watching_bedEv:
           CFI R5 Frame(CFA, -20)
           CFI R4 Frame(CFA, -24)
           CFI CFA R13+24
-// 1489     if (degBed() < degTargetBed() - (WATCH_BED_TEMP_INCREASE + TEMP_BED_HYSTERESIS + 1)) {
-          CFI FunCall _ZN11Temperature6degBedEv
-        BL       _ZN11Temperature6degBedEv
-        MOV      R5,R0
-        LDR.W    R6,??DataTable72
-        ADD      R0,R6,#+236
-        LDRB     R7,[R0, #+2]
-        LDR.W    R4,??DataTable72_13
-          CFI FunCall _ZN11Temperature12degTargetBedEv
-        BL       _ZN11Temperature12degTargetBedEv
+// 1507     if (degBed() < degTargetBed() - (WATCH_BED_TEMP_INCREASE + TEMP_BED_HYSTERESIS + 1)) {
+        LDR.N    R4,??DataTable65_1
+        LDR.N    R6,??DataTable62_5
+        LDR      R7,[R6, #+76]
+        ADD      R0,R4,#+236
+        LDRB     R5,[R0, #+2]
+        LDRSH    R0,[R6, #+36]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
         MOV      R8,R0
-        ADDS     R0,R7,#+3
+        ADDS     R0,R5,#+3
           CFI FunCall __aeabi_i2f
         BL       __aeabi_i2f
         MOV      R1,R0
@@ -4446,67 +4521,81 @@ _ZN11Temperature18start_watching_bedEv:
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R0
-        MOV      R0,R5
+        MOV      R0,R7
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
         BCS.N    ??start_watching_bed_0
-// 1490       watch_target_bed_temp = degBed() + WATCH_BED_TEMP_INCREASE;
-        MOV      R0,R7
+// 1508       watch_target_bed_temp = degBed() + WATCH_BED_TEMP_INCREASE;
+        MOV      R0,R5
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
-        MOV      R5,R0
-          CFI FunCall _ZN11Temperature6degBedEv
-        BL       _ZN11Temperature6degBedEv
-        MOV      R1,R5
+        MOV      R1,R7
           CFI FunCall __aeabi_fadd
         BL       __aeabi_fadd
           CFI FunCall __aeabi_f2iz
         BL       __aeabi_f2iz
-        STRH     R0,[R4, #+38]
-// 1491       watch_bed_next_ms = millis() + (WATCH_BED_TEMP_PERIOD) * 1000UL;
+        STRH     R0,[R6, #+38]
+// 1509       watch_bed_next_ms = millis() + (WATCH_BED_TEMP_PERIOD) * 1000UL;
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
-        LDRSH    R1,[R6, #+236]
+        LDRSH    R1,[R4, #+236]
         MOV      R2,#+1000
         MLA      R0,R2,R1,R0
-        STR      R0,[R4, #+116]
         B.N      ??start_watching_bed_1
-// 1492     }
-// 1493     else
-// 1494       watch_bed_next_ms = 0;
+// 1510     }
+// 1511     else
+// 1512       watch_bed_next_ms = 0;
 ??start_watching_bed_0:
         MOVS     R0,#+0
-        STR      R0,[R4, #+116]
-// 1495   }
 ??start_watching_bed_1:
+        STR      R0,[R6, #+120]
+// 1513   }
         POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock16
+          CFI EndBlock cfiBlock19
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable64:
-        DC32     0x88e368f1
-// 1496 #endif
-// 1497 
-// 1498 #if ENABLED(THERMAL_PROTECTION_HOTENDS) || HAS_THERMALLY_PROTECTED_BED
-// 1499 
-// 1500   #if ENABLED(THERMAL_PROTECTION_HOTENDS)
-// 1501     Temperature::TRState Temperature::thermal_runaway_state_machine[HOTENDS] = { TRInactive };
-// 1502     millis_t Temperature::thermal_runaway_timer[HOTENDS] = { 0 };
-// 1503   #endif
-// 1504 
-// 1505   #if HAS_THERMALLY_PROTECTED_BED
-// 1506     Temperature::TRState Temperature::thermal_runaway_bed_state_machine = TRInactive;
-// 1507     millis_t Temperature::thermal_runaway_bed_timer;
-// 1508   #endif
-// 1509 
+??DataTable61:
+        DC32     Running
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable61_1:
+        DC32     errormagic
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable61_2:
+        DC32     `?<Constant ", system stopped! Hea...">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable61_3:
+        DC32     `?<Constant "bed\\n">`
+// 1514 #endif
+// 1515 
+// 1516 #if ENABLED(THERMAL_PROTECTION_HOTENDS) || HAS_THERMALLY_PROTECTED_BED
+// 1517 
+// 1518   #if ENABLED(THERMAL_PROTECTION_HOTENDS)
+// 1519     Temperature::TRState Temperature::thermal_runaway_state_machine[HOTENDS] = { TRInactive };
+// 1520     millis_t Temperature::thermal_runaway_timer[HOTENDS] = { 0 };
+// 1521   #endif
+// 1522 
+// 1523   #if HAS_THERMALLY_PROTECTED_BED
+// 1524     Temperature::TRState Temperature::thermal_runaway_bed_state_machine = TRInactive;
+// 1525     millis_t Temperature::thermal_runaway_bed_timer;
+// 1526   #endif
+// 1527 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock17 Using cfiCommon0
+          CFI Block cfiBlock20 Using cfiCommon0
           CFI Function _ZN11Temperature26thermal_runaway_protectionEPNS_7TRStateEPmffatt
         THUMB
-// 1510   void Temperature::thermal_runaway_protection(Temperature::TRState * const state, millis_t * const timer, const float current, const float target, const int8_t heater_id, const uint16_t period_seconds, const uint16_t hysteresis_degc) {
+// 1528   void Temperature::thermal_runaway_protection(Temperature::TRState * const state, millis_t * const timer, const float current, const float target, const int8_t heater_id, const uint16_t period_seconds, const uint16_t hysteresis_degc) {
 _ZN11Temperature26thermal_runaway_protectionEPNS_7TRStateEPmffatt:
         PUSH     {R3-R9,LR}
           CFI R14 Frame(CFA, -4)
@@ -4517,169 +4606,195 @@ _ZN11Temperature26thermal_runaway_protectionEPNS_7TRStateEPmffatt:
           CFI R5 Frame(CFA, -24)
           CFI R4 Frame(CFA, -28)
           CFI CFA R13+32
+        LDRSB    R9,[SP, #+32]
+// 1529 
+// 1530     static float tr_target_temperature[HOTENDS + 1] = { 0.0 };
+// 1531 
+// 1532     /**
+// 1533         SERIAL_ECHO_START();
+// 1534         SERIAL_ECHOPGM("Thermal Thermal Runaway Running. Heater ID: ");
+// 1535         if (heater_id < 0) SERIAL_ECHOPGM("bed"); else SERIAL_ECHO(heater_id);
+// 1536         SERIAL_ECHOPAIR(" ;  State:", *state);
+// 1537         SERIAL_ECHOPAIR(" ;  Timer:", *timer);
+// 1538         SERIAL_ECHOPAIR(" ;  Temperature:", current);
+// 1539         SERIAL_ECHOPAIR(" ;  Target Temp:", target);
+// 1540         if (heater_id >= 0)
+// 1541           SERIAL_ECHOPAIR(" ;  Idle Timeout:", heater_idle_timeout_exceeded[heater_id]);
+// 1542         else
+// 1543           SERIAL_ECHOPAIR(" ;  Idle Timeout:", bed_idle_timeout_exceeded);
+// 1544         SERIAL_EOL();
+// 1545     */
+// 1546 
+// 1547     const int heater_index = heater_id >= 0 ? heater_id : HOTENDS;
+        MOV      R7,R9
         MOV      R5,R0
         MOV      R4,R1
         MOV      R6,R2
-        LDRSB    R7,[SP, #+32]
-// 1511 
-// 1512     static float tr_target_temperature[HOTENDS + 1] = { 0.0 };
-// 1513 
-// 1514     /**
-// 1515         SERIAL_ECHO_START();
-// 1516         SERIAL_ECHOPGM("Thermal Thermal Runaway Running. Heater ID: ");
-// 1517         if (heater_id < 0) SERIAL_ECHOPGM("bed"); else SERIAL_ECHO(heater_id);
-// 1518         SERIAL_ECHOPAIR(" ;  State:", *state);
-// 1519         SERIAL_ECHOPAIR(" ;  Timer:", *timer);
-// 1520         SERIAL_ECHOPAIR(" ;  Temperature:", current);
-// 1521         SERIAL_ECHOPAIR(" ;  Target Temp:", target);
-// 1522         if (heater_id >= 0)
-// 1523           SERIAL_ECHOPAIR(" ;  Idle Timeout:", heater_idle_timeout_exceeded[heater_id]);
-// 1524         else
-// 1525           SERIAL_ECHOPAIR(" ;  Idle Timeout:", bed_idle_timeout_exceeded);
-// 1526         SERIAL_EOL();
-// 1527     */
-// 1528 
-// 1529     const int heater_index = heater_id >= 0 ? heater_id : HOTENDS;
-        MOV      R9,R7
-        CMP      R9,#+0
-        BPL.N    ??thermal_runaway_protection_0
-        MOV      R9,#+2
-// 1530 
-// 1531     #if HEATER_IDLE_HANDLER
-// 1532       // If the heater idle timeout expires, restart
-// 1533       if (heater_id >= 0 && heater_idle_timeout_exceeded[heater_id]) {
-// 1534         *state = TRInactive;
-// 1535         tr_target_temperature[heater_index] = 0;
-// 1536       }
-// 1537       #if HAS_TEMP_BED
-// 1538         else if (heater_id < 0 && bed_idle_timeout_exceeded) {
-// 1539           *state = TRInactive;
-// 1540           tr_target_temperature[heater_index] = 0;
-// 1541         }
-// 1542       #endif
-// 1543       else
-// 1544     #endif
-// 1545     // If the target temperature changes, restart
-// 1546     if (tr_target_temperature[heater_index] != target) {
-??thermal_runaway_protection_0:
-        LDR.W    R8,??DataTable72_14
-        LDR      R0,[R8, R9, LSL #+2]
+        CMP      R7,#+0
+        IT       MI 
+        MOVMI    R7,#+2
+// 1548 
+// 1549     #if HEATER_IDLE_HANDLER
+// 1550       // If the heater idle timeout expires, restart
+// 1551       if (heater_id >= 0 && heater_idle_timeout_exceeded[heater_id]) {
+// 1552         *state = TRInactive;
+// 1553         tr_target_temperature[heater_index] = 0;
+// 1554       }
+// 1555       #if HAS_TEMP_BED
+// 1556         else if (heater_id < 0 && bed_idle_timeout_exceeded) {
+// 1557           *state = TRInactive;
+// 1558           tr_target_temperature[heater_index] = 0;
+// 1559         }
+// 1560       #endif
+// 1561       else
+// 1562     #endif
+// 1563     // If the target temperature changes, restart
+// 1564     if (tr_target_temperature[heater_index] != target) {
+        LDR.W    R8,??DataTable69_7
+        LDR      R0,[R8, R7, LSL #+2]
         MOV      R1,R3
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
-        BEQ.N    ??thermal_runaway_protection_1
-// 1547       tr_target_temperature[heater_index] = target;
-        STR      R3,[R8, R9, LSL #+2]
-// 1548       *state = target > 0 ? TRFirstHeating : TRInactive;
+        BEQ.N    ??thermal_runaway_protection_0
+// 1565       tr_target_temperature[heater_index] = target;
+// 1566       *state = target > 0 ? TRFirstHeating : TRInactive;
         MOV      R0,R3
         MOVS     R1,#+0
+        STR      R3,[R8, R7, LSL #+2]
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BCS.N    ??thermal_runaway_protection_2
-        MOVS     R0,#+1
-        B.N      ??thermal_runaway_protection_3
-??thermal_runaway_protection_2:
-        MOV      R0,R1
-??thermal_runaway_protection_3:
+        ITE      CC 
+        MOVCC    R0,#+1
+        MOVCS    R0,#+0
         STRB     R0,[R5, #+0]
-// 1549     }
-// 1550 
-// 1551     switch (*state) {
-??thermal_runaway_protection_1:
+// 1567     }
+// 1568 
+// 1569     switch (*state) {
+??thermal_runaway_protection_0:
         LDRSB    R0,[R5, #+0]
         CMP      R0,#+1
-        BEQ.N    ??thermal_runaway_protection_4
-        BCC.N    ??thermal_runaway_protection_5
+        BEQ.N    ??thermal_runaway_protection_1
+        BCC.N    ??thermal_runaway_protection_2
         CMP      R0,#+3
-        BEQ.N    ??thermal_runaway_protection_6
-        BCC.N    ??thermal_runaway_protection_7
-        B.N      ??thermal_runaway_protection_5
-// 1552       // Inactive state waits for a target temperature to be set
-// 1553       case TRInactive: break;
-// 1554       // When first heating, wait for the temperature to be reached then go to Stable state
-// 1555       case TRFirstHeating:
-// 1556         if (current < tr_target_temperature[heater_index]) break;
-??thermal_runaway_protection_4:
+        BEQ.N    ??thermal_runaway_protection_3
+        BCC.N    ??thermal_runaway_protection_4
+// 1570       // Inactive state waits for a target temperature to be set
+// 1571       case TRInactive: break;
+// 1572       // When first heating, wait for the temperature to be reached then go to Stable state
+// 1573       case TRFirstHeating:
+// 1574         if (current < tr_target_temperature[heater_index]) break;
+// 1575         *state = TRStable;
+// 1576       // While the temperature is stable watch for a bad temperature
+// 1577       case TRStable:
+// 1578         if (current >= tr_target_temperature[heater_index] - hysteresis_degc) {
+// 1579           *timer = millis() + period_seconds * 1000UL;
+// 1580           break;
+// 1581         }
+// 1582         else if (PENDING(millis(), *timer)) break;
+// 1583         *state = TRRunaway;
+// 1584       case TRRunaway:
+// 1585         _temp_error(heater_id, PSTR(MSG_T_THERMAL_RUNAWAY), PSTR(MSG_THERMAL_RUNAWAY));
+// 1586         temper_error_type=7;
+// 1587     }
+// 1588   }
+        POP      {R0,R4-R9,PC}
+??thermal_runaway_protection_1:
+        LDR      R1,[R8, R7, LSL #+2]
         MOV      R0,R6
-        LDR      R1,[R8, R9, LSL #+2]
           CFI FunCall __aeabi_cfcmple
         BL       __aeabi_cfcmple
-        BCC.N    ??thermal_runaway_protection_5
-// 1557         *state = TRStable;
+        BCC.N    ??thermal_runaway_protection_2
         MOVS     R0,#+2
         STRB     R0,[R5, #+0]
-// 1558       // While the temperature is stable watch for a bad temperature
-// 1559       case TRStable:
-// 1560         if (current >= tr_target_temperature[heater_index] - hysteresis_degc) {
-??thermal_runaway_protection_7:
+??thermal_runaway_protection_4:
         LDR      R0,[SP, #+40]
           CFI FunCall __aeabi_ui2f
         BL       __aeabi_ui2f
         MOV      R1,R0
-        LDR      R0,[R8, R9, LSL #+2]
+        LDR      R0,[R8, R7, LSL #+2]
           CFI FunCall __aeabi_fsub
         BL       __aeabi_fsub
         MOV      R1,R0
         MOV      R0,R6
           CFI FunCall __aeabi_cfrcmple
         BL       __aeabi_cfrcmple
-        BHI.N    ??thermal_runaway_protection_8
-// 1561           *timer = millis() + period_seconds * 1000UL;
+        BHI.N    ??thermal_runaway_protection_5
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
         LDR      R1,[SP, #+36]
         MOV      R2,#+1000
         MLA      R0,R2,R1,R0
         STR      R0,[R4, #+0]
-// 1562           break;
-        B.N      ??thermal_runaway_protection_5
-// 1563         }
-// 1564         else if (PENDING(millis(), *timer)) break;
-??thermal_runaway_protection_8:
+        POP      {R0,R4-R9,PC}
+??thermal_runaway_protection_5:
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
         LDR      R1,[R4, #+0]
         SUBS     R0,R0,R1
-        BMI.N    ??thermal_runaway_protection_5
-// 1565         *state = TRRunaway;
+        BMI.N    ??thermal_runaway_protection_2
         MOVS     R0,#+3
         STRB     R0,[R5, #+0]
-// 1566       case TRRunaway:
-// 1567         _temp_error(heater_id, PSTR(MSG_T_THERMAL_RUNAWAY), PSTR(MSG_THERMAL_RUNAWAY));
-??thermal_runaway_protection_6:
+??thermal_runaway_protection_3:
+        MOV      R0,R9
         ADR.W    R2,`?<Constant "THERMAL RUNAWAY">`
         ADR.W    R1,`?<Constant "Thermal Runaway">`
-        MOV      R0,R7
           CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
         BL       _ZN11Temperature11_temp_errorEaPKcS1_
-// 1568         temper_error_type=7;
+        LDR.N    R1,??DataTable63
         MOVS     R0,#+7
-        LDR.N    R1,??DataTable68_2
         STRB     R0,[R1, #+0]
-// 1569     }
-// 1570   }
-??thermal_runaway_protection_5:
+??thermal_runaway_protection_2:
         POP      {R0,R4-R9,PC}    ;; return
-          CFI EndBlock cfiBlock17
+          CFI EndBlock cfiBlock20
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable65:
-        DC32     0x3fc4f8b5
+??DataTable62:
+        DC32     `?<Constant "Err: MAXTEMP">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable62_1:
+        DC32     `?<Constant "MAXTEMP triggered">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable62_2:
+        DC32     `?<Constant "Err: MINTEMP BED">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable62_3:
+        DC32     `?<Constant "Err: MINTEMP">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable62_4:
+        DC32     `?<Constant "MINTEMP triggered">`
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable62_5:
+        DC32     _ZN11Temperature15soft_pwm_amountE
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 ??tr_target_temperature:
         DS8 12
-// 1571 
-// 1572 #endif // THERMAL_PROTECTION_HOTENDS || THERMAL_PROTECTION_BED
-// 1573 
+// 1589 
+// 1590 #endif // THERMAL_PROTECTION_HOTENDS || THERMAL_PROTECTION_BED
+// 1591 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock18 Using cfiCommon0
+          CFI Block cfiBlock21 Using cfiCommon0
           CFI Function _ZN11Temperature19disable_all_heatersEv
         THUMB
-// 1574 void Temperature::disable_all_heaters() {
+// 1592 void Temperature::disable_all_heaters() {
 _ZN11Temperature19disable_all_heatersEv:
         PUSH     {R4-R8,LR}
           CFI R14 Frame(CFA, -4)
@@ -4689,115 +4804,118 @@ _ZN11Temperature19disable_all_heatersEv:
           CFI R5 Frame(CFA, -20)
           CFI R4 Frame(CFA, -24)
           CFI CFA R13+24
-// 1575 
-// 1576   #if ENABLED(AUTOTEMP)
-// 1577     planner.autotemp_enabled = false;
+// 1593 
+// 1594   #if ENABLED(AUTOTEMP)
+// 1595     planner.autotemp_enabled = false;
+        LDR.W    R1,??DataTable69_8
+// 1596   #endif
+// 1597 
+// 1598   HOTEND_LOOP() setTargetHotend(0, e);
+        LDR.W    R8,??DataTable65_1
         MOVS     R0,#+0
-        LDR.W    R1,??DataTable72_15
         STRB     R0,[R1, #+0]
-// 1578   #endif
-// 1579 
-// 1580   HOTEND_LOOP() setTargetHotend(0, e);
-        MOV      R5,R0
-        LDR.W    R4,??DataTable72
+        MOVS     R5,#+0
         B.N      ??disable_all_heaters_0
 ??disable_all_heaters_1:
-        MOV      R1,R5
-        UXTB     R1,R1
+        UXTB     R5,R5
+        LDR.W    R1,??DataTable69_3
+        ADD      R1,R1,R5, LSL #+2
         MOVS     R0,#+0
-          CFI FunCall _ZN11Temperature15setTargetHotendEfh
-        BL       _ZN11Temperature15setTargetHotendEfh
+        STR      R0,[R1, #+60]
+        MOV      R0,R5
+          CFI FunCall _ZN11Temperature21start_watching_heaterEh
+        BL       _ZN11Temperature21start_watching_heaterEh
         ADDS     R5,R5,#+1
 ??disable_all_heaters_0:
-        MOV      R0,R5
-        SXTB     R0,R0
-        LDRB     R1,[R4, #+247]
+        LDRB     R1,[R8, #+247]
+        SXTB     R0,R5
         CMP      R0,R1
         BLT.N    ??disable_all_heaters_1
-// 1581   setTargetBed(0);
-        MOVS     R0,#+0
-          CFI FunCall _ZN11Temperature12setTargetBedEf
-        BL       _ZN11Temperature12setTargetBedEf
-// 1582 
-// 1583   // Unpause and reset everything
-// 1584   #if ENABLED(PROBING_HEATERS_OFF)
-// 1585     pause(false);
-// 1586   #endif
-// 1587 
-// 1588   // If all heaters go down then for sure our print job has stopped
-// 1589   print_job_timer.stop();
-        LDR.W    R0,??DataTable72_16
+// 1599   setTargetBed(0);
+        LDRSH    R0,[R8, #+50]
+        CMP      R0,#+1
+        IT       GE 
+        MOVGE    R0,#+0
+        LDR.W    R5,??DataTable69_3
+        STRH     R0,[R5, #+36]
+          CFI FunCall _ZN11Temperature18start_watching_bedEv
+        BL       _ZN11Temperature18start_watching_bedEv
+// 1600 
+// 1601   // Unpause and reset everything
+// 1602   #if ENABLED(PROBING_HEATERS_OFF)
+// 1603     pause(false);
+// 1604   #endif
+// 1605 
+// 1606   // If all heaters go down then for sure our print job has stopped
+// 1607   print_job_timer.stop();
+        LDR.W    R0,??DataTable69_9
           CFI FunCall _ZN9Stopwatch4stopEv
         BL       _ZN9Stopwatch4stopEv
-// 1590 
-// 1591   #define DISABLE_HEATER(NR) { \ 
-// 1592     setTargetHotend(0, NR); \ 
-// 1593     soft_pwm_amount[NR] = 0; \ 
-// 1594     WRITE_HEATER_ ##NR (LOW); \ 
-// 1595   }
-// 1596 
-// 1597   #if HAS_TEMP_HOTEND
-// 1598     DISABLE_HEATER(0);
-        MOVS     R1,#+0
-        MOV      R0,R1
-          CFI FunCall _ZN11Temperature15setTargetHotendEfh
-        BL       _ZN11Temperature15setTargetHotendEfh
-        LDR.N    R5,??DataTable68_12
+// 1608 
+// 1609   #define DISABLE_HEATER(NR) { \ 
+// 1610     setTargetHotend(0, NR); \ 
+// 1611     soft_pwm_amount[NR] = 0; \ 
+// 1612     WRITE_HEATER_ ##NR (LOW); \ 
+// 1613   }
+// 1614 
+// 1615   #if HAS_TEMP_HOTEND
+// 1616     DISABLE_HEATER(0);
+        MOVS     R0,#+0
+        STR      R0,[R5, #+60]
+          CFI FunCall _ZN11Temperature21start_watching_heaterEh
+        BL       _ZN11Temperature21start_watching_heaterEh
         MOVS     R0,#+0
         STRB     R0,[R5, #+0]
-        LDR.W    R6,??DataTable72_5
-        LDR.W    R7,??DataTable72_4
-        LDR.W    R8,??DataTable72_3
-        LDRB     R0,[R8, #+19]
-        CMP      R0,#+0
-        BNE.N    ??disable_all_heaters_2
-        MOVS     R2,#+0
-        LDRH     R1,[R7, #+44]
+        LDR.W    R4,??DataTable67
+        LDR.W    R6,??DataTable67_2
+        LDRB     R0,[R4, #+19]
+        LDR.W    R7,??DataTable67_1
+        CBNZ.N   R0,??disable_all_heaters_2
         LDR      R0,[R6, #+88]
+        LDRH     R1,[R7, #+44]
+        MOVS     R2,#+0
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-// 1599     #if HOTENDS > 1
-// 1600       DISABLE_HEATER(1);
+// 1617     #if HOTENDS > 1
+// 1618       DISABLE_HEATER(1);
 ??disable_all_heaters_2:
-        MOVS     R1,#+1
         MOVS     R0,#+0
-          CFI FunCall _ZN11Temperature15setTargetHotendEfh
-        BL       _ZN11Temperature15setTargetHotendEfh
+        STR      R0,[R5, #+64]
+        MOVS     R0,#+1
+          CFI FunCall _ZN11Temperature21start_watching_heaterEh
+        BL       _ZN11Temperature21start_watching_heaterEh
         MOVS     R0,#+0
         STRB     R0,[R5, #+1]
-        MOV      R2,R0
+        MOVS     R2,#+0
         LDRH     R1,[R7, #+46]
         LDR      R0,[R6, #+92]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-// 1601       #if HOTENDS > 2
-// 1602         DISABLE_HEATER(2);
-// 1603         #if HOTENDS > 3
-// 1604           DISABLE_HEATER(3);
-// 1605           #if HOTENDS > 4
-// 1606             DISABLE_HEATER(4);
-// 1607           #endif // HOTENDS > 4
-// 1608         #endif // HOTENDS > 3
-// 1609       #endif // HOTENDS > 2
-// 1610     #endif // HOTENDS > 1
-// 1611   #endif
-// 1612 
-// 1613   //#if HAS_TEMP_BED
-// 1614   if(HAS_TEMP_BED) {
-        LDRB     R0,[R4, #+54]
-        CMP      R0,#+0
-        BEQ.N    ??disable_all_heaters_3
-// 1615     target_temperature_bed = 0;
+// 1619       #if HOTENDS > 2
+// 1620         DISABLE_HEATER(2);
+// 1621         #if HOTENDS > 3
+// 1622           DISABLE_HEATER(3);
+// 1623           #if HOTENDS > 4
+// 1624             DISABLE_HEATER(4);
+// 1625           #endif // HOTENDS > 4
+// 1626         #endif // HOTENDS > 3
+// 1627       #endif // HOTENDS > 2
+// 1628     #endif // HOTENDS > 1
+// 1629   #endif
+// 1630 
+// 1631   //#if HAS_TEMP_BED
+// 1632   if(HAS_TEMP_BED) {
+        LDRB     R0,[R8, #+56]
+        CBZ.N    R0,??disable_all_heaters_3
+// 1633     target_temperature_bed = 0;
         MOVS     R0,#+0
         STRH     R0,[R5, #+36]
-// 1616     soft_pwm_amount_bed = 0;
+// 1634     soft_pwm_amount_bed = 0;
         STRB     R0,[R5, #+3]
-// 1617     #if HAS_HEATER_BED
-// 1618       WRITE_HEATER_BED(LOW);
-        LDRB     R0,[R8, #+19]
-        CMP      R0,#+0
-        BNE.N    ??disable_all_heaters_3
-        MOVS     R2,#+0
+// 1635     #if HAS_HEATER_BED
+// 1636       WRITE_HEATER_BED(LOW);
+        LDRB     R0,[R4, #+19]
+        CBNZ.N   R0,??disable_all_heaters_3
         LDRH     R1,[R7, #+42]
         LDR      R0,[R6, #+84]
         POP      {R4-R8,LR}
@@ -4808,8 +4926,7 @@ _ZN11Temperature19disable_all_heatersEv:
           CFI R8 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall HAL_GPIO_WritePin
-        B.W      HAL_GPIO_WritePin
+        B.N      ?Subroutine3
           CFI R4 Frame(CFA, -24)
           CFI R5 Frame(CFA, -20)
           CFI R6 Frame(CFA, -16)
@@ -4817,68 +4934,127 @@ _ZN11Temperature19disable_all_heatersEv:
           CFI R8 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+24
-// 1619     #endif
-// 1620   	}
-// 1621   //#endif
-// 1622 }
+// 1637     #endif
+// 1638   	}
+// 1639   //#endif
+// 1640 }
 ??disable_all_heaters_3:
         POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock18
+          CFI EndBlock cfiBlock21
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable66:
-        DC32     errormagic
-// 1623 
-// 1624 #if ENABLED(PROBING_HEATERS_OFF)
-// 1625 
-// 1626   void Temperature::pause(const bool p) {
-// 1627     if (p != paused) {
-// 1628       paused = p;
-// 1629       if (p) {
-// 1630         HOTEND_LOOP() start_heater_idle_timer(e, 0); // timeout immediately
-// 1631         //#if HAS_TEMP_BED
-// 1632 		if(HAS_TEMP_BED) {
-// 1633           start_bed_idle_timer(0); // timeout immediately
-// 1634 		}
-// 1635         //#endif
-// 1636       }
-// 1637       else {
-// 1638         HOTEND_LOOP() reset_heater_idle_timer(e);
-// 1639         //#if HAS_TEMP_BED
-// 1640         if(HAS_TEMP_BED) {
-// 1641           reset_bed_idle_timer();
-// 1642         }
-// 1643         //#endif
-// 1644       }
-// 1645     }
-// 1646   }
-// 1647 
-// 1648 #endif // PROBING_HEATERS_OFF
-// 1649 
-// 1650 #if 1//ENABLED(HEATER_0_USES_MAX6675)
-// 1651 
-// 1652   #define MAX6675_HEAT_INTERVAL 250u
-// 1653 
-// 1654   #if ENABLED(MAX6675_IS_MAX31855)
-// 1655     uint32_t max6675_temp = 2000;
-// 1656     #define MAX6675_ERROR_MASK 7
-// 1657     #define MAX6675_DISCARD_BITS 18
-// 1658     #define MAX6675_SPEED_BITS (_BV(SPR1)) // clock 梅 64
-// 1659   #else
-// 1660     uint16_t max6675_temp = 2000;
-// 1661     #define MAX6675_ERROR_MASK 4
-// 1662     #define MAX6675_DISCARD_BITS 3
-// 1663     #define MAX6675_SPEED_BITS (_BV(SPR0)) // clock 梅 16
-// 1664   #endif
-// 1665 
+??DataTable63:
+        DC32     temper_error_type
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock19 Using cfiCommon0
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_1:
+        DC32     _ZN11Temperature9pid_resetE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_2:
+        DC32     0x999999a0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_3:
+        DC32     0x3fa99999
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_4:
+        DC32     0x3fee6666
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_5:
+        DC32     0x42200001
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_6:
+        DC32     0x437f0000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_7:
+        DC32     0xc2200000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable63_8:
+        DC32     0x437f0001
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock22 Using cfiCommon0
+          CFI NoFunction
+        THUMB
+?Subroutine3:
+        MOVS     R2,#+0
+          CFI FunCall _ZN11Temperature13manage_heaterEv HAL_GPIO_WritePin
+          CFI FunCall _ZN11Temperature19disable_all_heatersEv HAL_GPIO_WritePin
+        B.W      HAL_GPIO_WritePin
+          CFI EndBlock cfiBlock22
+// 1641 
+// 1642 #if ENABLED(PROBING_HEATERS_OFF)
+// 1643 
+// 1644   void Temperature::pause(const bool p) {
+// 1645     if (p != paused) {
+// 1646       paused = p;
+// 1647       if (p) {
+// 1648         HOTEND_LOOP() start_heater_idle_timer(e, 0); // timeout immediately
+// 1649         //#if HAS_TEMP_BED
+// 1650 		if(HAS_TEMP_BED) {
+// 1651           start_bed_idle_timer(0); // timeout immediately
+// 1652 		}
+// 1653         //#endif
+// 1654       }
+// 1655       else {
+// 1656         HOTEND_LOOP() reset_heater_idle_timer(e);
+// 1657         //#if HAS_TEMP_BED
+// 1658         if(HAS_TEMP_BED) {
+// 1659           reset_bed_idle_timer();
+// 1660         }
+// 1661         //#endif
+// 1662       }
+// 1663     }
+// 1664   }
+// 1665 
+// 1666 #endif // PROBING_HEATERS_OFF
+// 1667 
+// 1668 #if 1//ENABLED(HEATER_0_USES_MAX6675)
+// 1669 
+// 1670   #define MAX6675_HEAT_INTERVAL 250u
+// 1671 
+// 1672   #if ENABLED(MAX6675_IS_MAX31855)
+// 1673     uint32_t max6675_temp = 2000;
+// 1674     #define MAX6675_ERROR_MASK 7
+// 1675     #define MAX6675_DISCARD_BITS 18
+// 1676     #define MAX6675_SPEED_BITS (_BV(SPR1)) // clock 梅 64
+// 1677   #else
+// 1678     uint16_t max6675_temp = 2000;
+// 1679     #define MAX6675_ERROR_MASK 4
+// 1680     #define MAX6675_DISCARD_BITS 3
+// 1681     #define MAX6675_SPEED_BITS (_BV(SPR0)) // clock 梅 16
+// 1682   #endif
+// 1683 
+
+        SECTION `.text`:CODE:NOROOT(2)
+          CFI Block cfiBlock23 Using cfiCommon0
           CFI Function _ZN11Temperature12read_max6675Ev
         THUMB
-// 1666   int Temperature::read_max6675() {
+// 1684   int Temperature::read_max6675() {
 _ZN11Temperature12read_max6675Ev:
         PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
@@ -4886,412 +5062,414 @@ _ZN11Temperature12read_max6675Ev:
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-// 1667 
-// 1668     static millis_t next_max6675_ms = 0;
-// 1669 
-// 1670     millis_t ms = millis();
+// 1685 
+// 1686     static millis_t next_max6675_ms = 0;
+// 1687 
+// 1688     millis_t ms = millis();
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
-// 1671 
-// 1672     if (PENDING(ms, next_max6675_ms)) return (int)max6675_temp;
-        LDR.W    R4,??DataTable72_17
+// 1689 
+// 1690     if (PENDING(ms, next_max6675_ms)) return (int)max6675_temp;
+        LDR.W    R4,??DataTable69_10
         LDR      R1,[R4, #+4]
         SUBS     R1,R0,R1
         BMI.N    ??read_max6675_0
-// 1673 
-// 1674     next_max6675_ms = ms + MAX6675_HEAT_INTERVAL;
+// 1691 
+// 1692     next_max6675_ms = ms + MAX6675_HEAT_INTERVAL;
         ADDS     R0,R0,#+250
         STR      R0,[R4, #+4]
-// 1675 #if 0
-// 1676     CBI(
-// 1677       #ifdef PRR
-// 1678         PRR
-// 1679       #elif defined(PRR0)
-// 1680         PRR0
-// 1681       #endif
-// 1682         , PRSPI);
-// 1683     SPCR = _BV(MSTR) | _BV(SPE) | MAX6675_SPEED_BITS;
-// 1684 #endif
-// 1685     //WRITE(MAX6675_SS, 0); // enable TT_MAX6675
-// 1686 	TC1_CS_OP = 0;
-        LDR.W    R5,??DataTable72_18  ;; 0x42230194
+// 1693 #if 0
+// 1694     CBI(
+// 1695       #ifdef PRR
+// 1696         PRR
+// 1697       #elif defined(PRR0)
+// 1698         PRR0
+// 1699       #endif
+// 1700         , PRSPI);
+// 1701     SPCR = _BV(MSTR) | _BV(SPE) | MAX6675_SPEED_BITS;
+// 1702 #endif
+// 1703     //WRITE(MAX6675_SS, 0); // enable TT_MAX6675
+// 1704 	TC1_CS_OP = 0;
         MOVS     R0,#+0
+        LDR.W    R5,??DataTable69_11  ;; 0x42230194
         STR      R0,[R5, #+0]
-// 1687 
-// 1688     // ensure 100ns delay - a bit extra is fine
-// 1689     asm("nop");//50ns on 20Mhz, 62.5ns on 16Mhz
+// 1705 
+// 1706     // ensure 100ns delay - a bit extra is fine
+// 1707     asm("nop");//50ns on 20Mhz, 62.5ns on 16Mhz
         nop
-// 1690     asm("nop");//50ns on 20Mhz, 62.5ns on 16Mhz
+// 1708     asm("nop");//50ns on 20Mhz, 62.5ns on 16Mhz
         nop
-// 1691 
-// 1692     // Read a big-endian temperature value
-// 1693     max6675_temp = 0;
+// 1709 
+// 1710     // Read a big-endian temperature value
+// 1711     max6675_temp = 0;
         STR      R0,[R4, #+0]
-// 1694     for (uint8_t i = sizeof(max6675_temp); i--;) {
+// 1712     for (uint8_t i = sizeof(max6675_temp); i--;) {
         MOVS     R6,#+4
         B.N      ??read_max6675_1
-// 1695       //max6675_temp |= max6675_spi.receive();
-// 1696       max6675_temp |= SPI2_ReadWriteByte(0x00);
+// 1713       //max6675_temp |= max6675_spi.receive();
+// 1714       max6675_temp |= SPI2_ReadWriteByte(0x00);
+// 1715       if (i > 0) max6675_temp <<= 8; // shift left if not the last byte
 ??read_max6675_2:
+        LSLS     R0,R1,#+8
+        STR      R0,[R4, #+0]
+??read_max6675_1:
+        SUBS     R6,R6,#+1
         MOVS     R0,#+0
           CFI FunCall SPI2_ReadWriteByte
         BL       SPI2_ReadWriteByte
         LDR      R1,[R4, #+0]
-        ORRS     R0,R0,R1
-        STR      R0,[R4, #+0]
-// 1697       if (i > 0) max6675_temp <<= 8; // shift left if not the last byte
-        UXTB     R6,R6
+        ORRS     R1,R0,R1
         CMP      R6,#+0
-        BEQ.N    ??read_max6675_1
-        LSLS     R0,R0,#+8
-        STR      R0,[R4, #+0]
-// 1698     }
-??read_max6675_1:
-        MOV      R0,R6
-        SUBS     R6,R0,#+1
-        CMP      R0,#+0
         BNE.N    ??read_max6675_2
-// 1699 
-// 1700     //WRITE(MAX6675_SS, 1); // disable TT_MAX6675
-// 1701 	TC1_CS_OP = 1;
+        STR      R1,[R4, #+0]
+// 1716     }
+// 1717 
+// 1718     //WRITE(MAX6675_SS, 1); // disable TT_MAX6675
+// 1719 	TC1_CS_OP = 1;
         MOVS     R0,#+1
         STR      R0,[R5, #+0]
-// 1702 
-// 1703     if (max6675_temp & MAX6675_ERROR_MASK) {
-        LDR      R0,[R4, #+0]
-        TST      R0,#0x7
+// 1720 
+// 1721     if (max6675_temp & MAX6675_ERROR_MASK) {
+        TST      R1,#0x7
         BEQ.N    ??read_max6675_3
-// 1704       SERIAL_ERROR_START();
-        LDR.W    R0,??DataTable72_19
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 1705       SERIAL_ERRORPGM("Temp measurement error! ");
-        ADR.W    R0,`?<Constant "Temp measurement error! ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 1706       #if MAX6675_ERROR_MASK == 7
-// 1707         SERIAL_ERRORPGM("MAX31855 ");
-        ADR.W    R0,`?<Constant "MAX31855 ">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 1708         if (max6675_temp & 1)
+// 1722       SERIAL_ERROR_START();
+        LDR.W    R6,??DataTable69_12
+        LDR.W    R5,??DataTable66
+        B.N      ??read_max6675_4
+??read_max6675_5:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??read_max6675_4:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??read_max6675_5
+// 1723       SERIAL_ERRORPGM("Temp measurement error! ");
+        ADR.W    R6,`?<Constant "Temp measurement error! ">`
+        B.N      ??read_max6675_6
+??read_max6675_7:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??read_max6675_6:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??read_max6675_7
+// 1724       #if MAX6675_ERROR_MASK == 7
+// 1725         SERIAL_ERRORPGM("MAX31855 ");
+        ADR.W    R6,`?<Constant "MAX31855 ">`
+        B.N      ??read_max6675_8
+??read_max6675_9:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??read_max6675_8:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??read_max6675_9
+// 1726         if (max6675_temp & 1)
         LDR      R0,[R4, #+0]
         LSLS     R1,R0,#+31
-        BPL.N    ??read_max6675_4
-// 1709           SERIAL_ERRORLNPGM("Open Circuit");
-        ADR.W    R0,`?<Constant "Open Circuit\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??read_max6675_5
-// 1710         else if (max6675_temp & 2)
-??read_max6675_4:
+        BPL.N    ??read_max6675_10
+// 1727           SERIAL_ERRORLNPGM("Open Circuit");
+        ADR.W    R6,`?<Constant "Open Circuit\\n">`
+??read_max6675_11:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BEQ.N    ??read_max6675_12
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??read_max6675_11
+// 1728         else if (max6675_temp & 2)
+??read_max6675_10:
         LSLS     R1,R0,#+30
-        BPL.N    ??read_max6675_6
-// 1711           SERIAL_ERRORLNPGM("Short to GND");
-        ADR.W    R0,`?<Constant "Short to GND\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-        B.N      ??read_max6675_5
-// 1712         else if (max6675_temp & 4)
-??read_max6675_6:
+        BPL.N    ??read_max6675_13
+// 1729           SERIAL_ERRORLNPGM("Short to GND");
+        ADR.W    R6,`?<Constant "Short to GND\\n">`
+??read_max6675_14:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BEQ.N    ??read_max6675_12
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        B.N      ??read_max6675_14
+// 1730         else if (max6675_temp & 4)
+??read_max6675_13:
         LSLS     R0,R0,#+29
-        BPL.N    ??read_max6675_5
-// 1713           SERIAL_ERRORLNPGM("Short to VCC");
-        ADR.W    R0,`?<Constant "Short to VCC\\n">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 1714       #else
-// 1715         SERIAL_ERRORLNPGM("MAX6675");
-// 1716       #endif
-// 1717       max6675_temp = MAX6675_TMAX * 4; // thermocouple open
-??read_max6675_5:
+        BPL.N    ??read_max6675_12
+// 1731           SERIAL_ERRORLNPGM("Short to VCC");
+        ADR.W    R6,`?<Constant "Short to VCC\\n">`
+        B.N      ??read_max6675_15
+??read_max6675_16:
+        UXTB     R1,R1
+        MOV      R0,R5
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??read_max6675_15:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??read_max6675_16
+// 1732       #else
+// 1733         SERIAL_ERRORLNPGM("MAX6675");
+// 1734       #endif
+// 1735       max6675_temp = MAX6675_TMAX * 4; // thermocouple open
+??read_max6675_12:
         MOV      R0,#+7200
-        STR      R0,[R4, #+0]
-        B.N      ??read_max6675_7
-// 1718     }
-// 1719     else
-// 1720       max6675_temp >>= MAX6675_DISCARD_BITS;
+        B.N      ??read_max6675_17
+// 1736     }
+// 1737     else
+// 1738       max6675_temp >>= MAX6675_DISCARD_BITS;
 ??read_max6675_3:
-        LSRS     R0,R0,#+18
+        LSRS     R0,R1,#+18
+??read_max6675_17:
         STR      R0,[R4, #+0]
-// 1721       #if ENABLED(MAX6675_IS_MAX31855)
-// 1722         // Support negative temperature
-// 1723         if (max6675_temp & 0x00002000) max6675_temp |= 0xFFFFC000;
-??read_max6675_7:
+// 1739       #if ENABLED(MAX6675_IS_MAX31855)
+// 1740         // Support negative temperature
+// 1741         if (max6675_temp & 0x00002000) max6675_temp |= 0xFFFFC000;
         LDR      R0,[R4, #+0]
         LSLS     R1,R0,#+18
         BPL.N    ??read_max6675_0
-        LDR.W    R1,??DataTable72_20  ;; 0xffffc000
+        LDR.W    R1,??DataTable69_13  ;; 0xffffc000
         ORRS     R0,R1,R0
         STR      R0,[R4, #+0]
-// 1724       #endif
-// 1725 
-// 1726     return (int)max6675_temp;
+// 1742       #endif
+// 1743 
+// 1744     return (int)max6675_temp;
 ??read_max6675_0:
         LDR      R0,[R4, #+0]
         POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock19
-// 1727   }
-// 1728 
-// 1729 #endif // HEATER_0_USES_MAX6675
-// 1730 
-// 1731 /**
-// 1732  * Get raw temperatures
-// 1733  */
+          CFI EndBlock cfiBlock23
+// 1745   }
+// 1746 
+// 1747 #endif // HEATER_0_USES_MAX6675
+// 1748 
+// 1749 /**
+// 1750  * Get raw temperatures
+// 1751  */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock20 Using cfiCommon0
+          CFI Block cfiBlock24 Using cfiCommon0
           CFI Function _ZN11Temperature20set_current_temp_rawEv
           CFI NoCalls
         THUMB
-// 1734 void Temperature::set_current_temp_raw() {
-// 1735   //#if HAS_TEMP_0 && DISABLED(HEATER_0_USES_MAX6675)
-// 1736   if(TEMP_SENSOR_0 == sensors_100k)
+// 1752 void Temperature::set_current_temp_raw() {
+// 1753   //#if HAS_TEMP_0 && DISABLED(HEATER_0_USES_MAX6675)
+// 1754   if(TEMP_SENSOR_0 == sensors_100k)
 _ZN11Temperature20set_current_temp_rawEv:
-        LDR.N    R0,??DataTable68_12
-        LDR.W    R1,??DataTable72
+        LDR.W    R1,??DataTable67_5
+        LDR.W    R0,??DataTable69_3
         LDRSB    R1,[R1, #+246]
         CMP      R1,#+1
-        BNE.N    ??set_current_temp_raw_0
-// 1737     current_temperature_raw[0] = raw_temp_value[0];
-        LDRH     R1,[R0, #+16]
-        STR      R1,[R0, #+52]
-// 1738   //#endif
-// 1739   #if HAS_TEMP_1
-// 1740     #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
-// 1741       redundant_temperature_raw = raw_temp_value[1];
-// 1742     #else
-// 1743       current_temperature_raw[1] = raw_temp_value[1];
-??set_current_temp_raw_0:
+        ITT      EQ 
+// 1755     current_temperature_raw[0] = raw_temp_value[0];
+        LDRHEQ   R1,[R0, #+16]
+        STREQ    R1,[R0, #+52]
+// 1756   //#endif
+// 1757   #if HAS_TEMP_1
+// 1758     #if ENABLED(TEMP_SENSOR_1_AS_REDUNDANT)
+// 1759       redundant_temperature_raw = raw_temp_value[1];
+// 1760     #else
+// 1761       current_temperature_raw[1] = raw_temp_value[1];
         LDRH     R1,[R0, #+18]
         STR      R1,[R0, #+56]
-// 1744     #endif
-// 1745     #if HAS_TEMP_2
-// 1746       current_temperature_raw[2] = raw_temp_value[2];
-// 1747       #if HAS_TEMP_3
-// 1748         current_temperature_raw[3] = raw_temp_value[3];
-// 1749         #if HAS_TEMP_4
-// 1750           current_temperature_raw[4] = raw_temp_value[4];
-// 1751         #endif
-// 1752       #endif
-// 1753     #endif
-// 1754   #endif
-// 1755   current_temperature_bed_raw = raw_temp_bed_value;
+// 1762     #endif
+// 1763     #if HAS_TEMP_2
+// 1764       current_temperature_raw[2] = raw_temp_value[2];
+// 1765       #if HAS_TEMP_3
+// 1766         current_temperature_raw[3] = raw_temp_value[3];
+// 1767         #if HAS_TEMP_4
+// 1768           current_temperature_raw[4] = raw_temp_value[4];
+// 1769         #endif
+// 1770       #endif
+// 1771     #endif
+// 1772   #endif
+// 1773   current_temperature_bed_raw = raw_temp_bed_value;
         LDRH     R1,[R0, #+40]
         STR      R1,[R0, #+80]
-// 1756   temp_meas_ready = true;
+// 1774   temp_meas_ready = true;
         MOVS     R1,#+1
         STRB     R1,[R0, #+2]
-// 1757 }
+// 1775 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock20
+          CFI EndBlock cfiBlock24
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable68:
-        DC32     ??killed
+??DataTable65:
+        DC32     mksCfg+0xE0
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable68_1:
-        DC32     Running
+??DataTable65_1:
+        DC32     mksCfg
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable68_2:
-        DC32     temper_error_type
+??DataTable65_2:
+        DC32     0x409c1c00
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable68_3:
-        DC32     _ZN11Temperature9pid_resetE
+??DataTable65_3:
+        DC32     mksCfg+0x30
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable68_4:
-        DC32     0x999999a0
+??DataTable65_4:
+        DC32     0x44e10000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable68_5:
-        DC32     0x3fa99999
+??DataTable65_5:
+        DC32     0xa3d70a4
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable68_6:
-        DC32     0x3fee6666
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable68_7:
-        DC32     0x42200001
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable68_8:
-        DC32     0x437f0000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable68_9:
-        DC32     0xc2200000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable68_10:
-        DC32     0x437f0001
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable68_11:
-        DC32     _ZN11Temperature15temp_iState_bedE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable68_12:
-        DC32     _ZN11Temperature15soft_pwm_amountE
-// 1758 
-// 1759 #if ENABLED(PINS_DEBUGGING)
-// 1760   /**
-// 1761    * monitors endstops & Z probe for changes
-// 1762    *
-// 1763    * If a change is detected then the LED is toggled and
-// 1764    * a message is sent out the serial port
-// 1765    *
-// 1766    * Yes, we could miss a rapid back & forth change but
-// 1767    * that won't matter because this is all manual.
-// 1768    *
-// 1769    */
-// 1770   void endstop_monitor() {
-// 1771     static uint16_t old_endstop_bits_local = 0;
-// 1772     static uint8_t local_LED_status = 0;
-// 1773     uint16_t current_endstop_bits_local = 0;
-// 1774     #if HAS_X_MIN	if(mksCfg.use_xmin_plug)
-// 1775       if (READ(X_MIN_PIN)) SBI(current_endstop_bits_local, X_MIN);
-// 1776     #endif
-// 1777     #if HAS_X_MAX	if(mksCfg.use_xmax_plug)
-// 1778       if (READ(X_MAX_PIN)) SBI(current_endstop_bits_local, X_MAX);
-// 1779     #endif
-// 1780     #if HAS_Y_MIN	if(mksCfg.use_ymin_plug)
-// 1781       if (READ(Y_MIN_PIN)) SBI(current_endstop_bits_local, Y_MIN);
-// 1782     #endif
-// 1783     #if HAS_Y_MAX	if(mksCfg.use_ymax_plug)
-// 1784       if (READ(Y_MAX_PIN)) SBI(current_endstop_bits_local, Y_MAX);
-// 1785     #endif
-// 1786     #if HAS_Z_MIN	if(mksCfg.use_zmin_plug)
-// 1787       if (READ(Z_MIN_PIN)) SBI(current_endstop_bits_local, Z_MIN);
-// 1788     #endif
-// 1789     #if HAS_Z_MAX
-// 1790 	if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)
-// 1791 	{
-// 1792 		if(mksCfg.use_zmax_plug)	
-// 1793       		if (READ(Z_MAX_PIN)) SBI(current_endstop_bits_local, Z_MAX);
-// 1794 	}
-// 1795     #endif
-// 1796     #if HAS_Z_MIN_PROBE_PIN
-// 1797       if (READ(Z_MIN_PROBE_PIN)) SBI(current_endstop_bits_local, Z_MIN_PROBE);
-// 1798     #endif
-// 1799     #if HAS_Z2_MIN
-// 1800       if (READ(Z2_MIN_PIN)) SBI(current_endstop_bits_local, Z2_MIN);
-// 1801     #endif
-// 1802     #if HAS_Z2_MAX
-// 1803       if (READ(Z2_MAX_PIN)) SBI(current_endstop_bits_local, Z2_MAX);
-// 1804     #endif
-// 1805 
-// 1806     uint16_t endstop_change = current_endstop_bits_local ^ old_endstop_bits_local;
-// 1807 
-// 1808     if (endstop_change) {
-// 1809       #if HAS_X_MIN	if(mksCfg.use_xmin_plug)
-// 1810         if (TEST(endstop_change, X_MIN)) SERIAL_PROTOCOLPAIR("  X_MIN:", !!TEST(current_endstop_bits_local, X_MIN));
-// 1811       #endif
-// 1812       #if HAS_X_MAX	if(mksCfg.use_xmax_plug)
-// 1813         if (TEST(endstop_change, X_MAX)) SERIAL_PROTOCOLPAIR("  X_MAX:", !!TEST(current_endstop_bits_local, X_MAX));
-// 1814       #endif
-// 1815       #if HAS_Y_MIN	if(mksCfg.use_ymin_plug)
-// 1816         if (TEST(endstop_change, Y_MIN)) SERIAL_PROTOCOLPAIR("  Y_MIN:", !!TEST(current_endstop_bits_local, Y_MIN));
-// 1817       #endif
-// 1818       #if HAS_Y_MAX	if(mksCfg.use_ymax_plug)
-// 1819         if (TEST(endstop_change, Y_MAX)) SERIAL_PROTOCOLPAIR("  Y_MAX:", !!TEST(current_endstop_bits_local, Y_MAX));
-// 1820       #endif
-// 1821       #if HAS_Z_MIN	if(mksCfg.use_zmin_plug)
-// 1822         if (TEST(endstop_change, Z_MIN)) SERIAL_PROTOCOLPAIR("  Z_MIN:", !!TEST(current_endstop_bits_local, Z_MIN));
-// 1823       #endif
-// 1824       #if HAS_Z_MAX
-// 1825 	  if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)
-// 1826 	  	{
-// 1827 	 	 	if(mksCfg.use_zmax_plug)	 
-// 1828 	 	 	{
-// 1829         		if (TEST(endstop_change, Z_MAX)) SERIAL_PROTOCOLPAIR("  Z_MAX:", !!TEST(current_endstop_bits_local, Z_MAX));
-// 1830 	 	 	}
-// 1831 	  	}
+??DataTable65_6:
+        DC32     0xc070dfd7
+// 1776 
+// 1777 #if ENABLED(PINS_DEBUGGING)
+// 1778   /**
+// 1779    * monitors endstops & Z probe for changes
+// 1780    *
+// 1781    * If a change is detected then the LED is toggled and
+// 1782    * a message is sent out the serial port
+// 1783    *
+// 1784    * Yes, we could miss a rapid back & forth change but
+// 1785    * that won't matter because this is all manual.
+// 1786    *
+// 1787    */
+// 1788   void endstop_monitor() {
+// 1789     static uint16_t old_endstop_bits_local = 0;
+// 1790     static uint8_t local_LED_status = 0;
+// 1791     uint16_t current_endstop_bits_local = 0;
+// 1792     #if HAS_X_MIN	if(mksCfg.use_xmin_plug)
+// 1793       if (READ(X_MIN_PIN)) SBI(current_endstop_bits_local, X_MIN);
+// 1794     #endif
+// 1795     #if HAS_X_MAX	if(mksCfg.use_xmax_plug)
+// 1796       if (READ(X_MAX_PIN)) SBI(current_endstop_bits_local, X_MAX);
+// 1797     #endif
+// 1798     #if HAS_Y_MIN	if(mksCfg.use_ymin_plug)
+// 1799       if (READ(Y_MIN_PIN)) SBI(current_endstop_bits_local, Y_MIN);
+// 1800     #endif
+// 1801     #if HAS_Y_MAX	if(mksCfg.use_ymax_plug)
+// 1802       if (READ(Y_MAX_PIN)) SBI(current_endstop_bits_local, Y_MAX);
+// 1803     #endif
+// 1804     #if HAS_Z_MIN	if(mksCfg.use_zmin_plug)
+// 1805       if (READ(Z_MIN_PIN)) SBI(current_endstop_bits_local, Z_MIN);
+// 1806     #endif
+// 1807     #if HAS_Z_MAX
+// 1808 	if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)
+// 1809 	{
+// 1810 		if(mksCfg.use_zmax_plug)	
+// 1811       		if (READ(Z_MAX_PIN)) SBI(current_endstop_bits_local, Z_MAX);
+// 1812 	}
+// 1813     #endif
+// 1814     #if HAS_Z_MIN_PROBE_PIN
+// 1815       if (READ(Z_MIN_PROBE_PIN)) SBI(current_endstop_bits_local, Z_MIN_PROBE);
+// 1816     #endif
+// 1817     #if HAS_Z2_MIN
+// 1818       if (READ(Z2_MIN_PIN)) SBI(current_endstop_bits_local, Z2_MIN);
+// 1819     #endif
+// 1820     #if HAS_Z2_MAX
+// 1821       if (READ(Z2_MAX_PIN)) SBI(current_endstop_bits_local, Z2_MAX);
+// 1822     #endif
+// 1823 
+// 1824     uint16_t endstop_change = current_endstop_bits_local ^ old_endstop_bits_local;
+// 1825 
+// 1826     if (endstop_change) {
+// 1827       #if HAS_X_MIN	if(mksCfg.use_xmin_plug)
+// 1828         if (TEST(endstop_change, X_MIN)) SERIAL_PROTOCOLPAIR("  X_MIN:", !!TEST(current_endstop_bits_local, X_MIN));
+// 1829       #endif
+// 1830       #if HAS_X_MAX	if(mksCfg.use_xmax_plug)
+// 1831         if (TEST(endstop_change, X_MAX)) SERIAL_PROTOCOLPAIR("  X_MAX:", !!TEST(current_endstop_bits_local, X_MAX));
 // 1832       #endif
-// 1833       #if HAS_Z_MIN_PROBE_PIN
-// 1834         if (TEST(endstop_change, Z_MIN_PROBE)) SERIAL_PROTOCOLPAIR("  PROBE:", !!TEST(current_endstop_bits_local, Z_MIN_PROBE));
+// 1833       #if HAS_Y_MIN	if(mksCfg.use_ymin_plug)
+// 1834         if (TEST(endstop_change, Y_MIN)) SERIAL_PROTOCOLPAIR("  Y_MIN:", !!TEST(current_endstop_bits_local, Y_MIN));
 // 1835       #endif
-// 1836       #if HAS_Z2_MIN
-// 1837         if (TEST(endstop_change, Z2_MIN)) SERIAL_PROTOCOLPAIR("  Z2_MIN:", !!TEST(current_endstop_bits_local, Z2_MIN));
+// 1836       #if HAS_Y_MAX	if(mksCfg.use_ymax_plug)
+// 1837         if (TEST(endstop_change, Y_MAX)) SERIAL_PROTOCOLPAIR("  Y_MAX:", !!TEST(current_endstop_bits_local, Y_MAX));
 // 1838       #endif
-// 1839       #if HAS_Z2_MAX
-// 1840         if (TEST(endstop_change, Z2_MAX)) SERIAL_PROTOCOLPAIR("  Z2_MAX:", !!TEST(current_endstop_bits_local, Z2_MAX));
+// 1839       #if HAS_Z_MIN	if(mksCfg.use_zmin_plug)
+// 1840         if (TEST(endstop_change, Z_MIN)) SERIAL_PROTOCOLPAIR("  Z_MIN:", !!TEST(current_endstop_bits_local, Z_MIN));
 // 1841       #endif
-// 1842       SERIAL_PROTOCOLPGM("\n\n");
-// 1843       analogWrite(LED_PIN, local_LED_status);
-// 1844       local_LED_status ^= 255;
-// 1845       old_endstop_bits_local = current_endstop_bits_local;
-// 1846     }
-// 1847   }
-// 1848 #endif // PINS_DEBUGGING
-// 1849 
-// 1850 /**
-// 1851  * Timer 0 is shared with millies so don't change the prescaler.
-// 1852  *
-// 1853  * This ISR uses the compare method so it runs at the base
-// 1854  * frequency (16 MHz / 64 / 256 = 976.5625 Hz), but at the TCNT0 set
-// 1855  * in OCR0B above (128 or halfway between OVFs).
-// 1856  *
-// 1857  *  - Manage PWM to all the heaters and fan
-// 1858  *  - Prepare or Measure one of the raw ADC sensor values
-// 1859  *  - Check new temperature values for MIN/MAX errors (kill on error)
-// 1860  *  - Step the babysteps value for each axis towards 0
-// 1861  *  - For PINS_DEBUGGING, monitor and report endstop pins
-// 1862  *  - For ENDSTOP_INTERRUPTS_FEATURE check endstops if flagged
-// 1863  */
-// 1864 //ISR(TIMER0_COMPB_vect) { Temperature::isr(); }
-// 1865 
-// 1866 volatile bool Temperature::in_temp_isr = false;
+// 1842       #if HAS_Z_MAX
+// 1843 	  if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)
+// 1844 	  	{
+// 1845 	 	 	if(mksCfg.use_zmax_plug)	 
+// 1846 	 	 	{
+// 1847         		if (TEST(endstop_change, Z_MAX)) SERIAL_PROTOCOLPAIR("  Z_MAX:", !!TEST(current_endstop_bits_local, Z_MAX));
+// 1848 	 	 	}
+// 1849 	  	}
+// 1850       #endif
+// 1851       #if HAS_Z_MIN_PROBE_PIN
+// 1852         if (TEST(endstop_change, Z_MIN_PROBE)) SERIAL_PROTOCOLPAIR("  PROBE:", !!TEST(current_endstop_bits_local, Z_MIN_PROBE));
+// 1853       #endif
+// 1854       #if HAS_Z2_MIN
+// 1855         if (TEST(endstop_change, Z2_MIN)) SERIAL_PROTOCOLPAIR("  Z2_MIN:", !!TEST(current_endstop_bits_local, Z2_MIN));
+// 1856       #endif
+// 1857       #if HAS_Z2_MAX
+// 1858         if (TEST(endstop_change, Z2_MAX)) SERIAL_PROTOCOLPAIR("  Z2_MAX:", !!TEST(current_endstop_bits_local, Z2_MAX));
+// 1859       #endif
+// 1860       SERIAL_PROTOCOLPGM("\n\n");
+// 1861       analogWrite(LED_PIN, local_LED_status);
+// 1862       local_LED_status ^= 255;
+// 1863       old_endstop_bits_local = current_endstop_bits_local;
+// 1864     }
+// 1865   }
+// 1866 #endif // PINS_DEBUGGING
 // 1867 
-// 1868 //void Temperature::isr() {
+// 1868 /**
+// 1869  * Timer 0 is shared with millies so don't change the prescaler.
+// 1870  *
+// 1871  * This ISR uses the compare method so it runs at the base
+// 1872  * frequency (16 MHz / 64 / 256 = 976.5625 Hz), but at the TCNT0 set
+// 1873  * in OCR0B above (128 or halfway between OVFs).
+// 1874  *
+// 1875  *  - Manage PWM to all the heaters and fan
+// 1876  *  - Prepare or Measure one of the raw ADC sensor values
+// 1877  *  - Check new temperature values for MIN/MAX errors (kill on error)
+// 1878  *  - Step the babysteps value for each axis towards 0
+// 1879  *  - For PINS_DEBUGGING, monitor and report endstop pins
+// 1880  *  - For ENDSTOP_INTERRUPTS_FEATURE check endstops if flagged
+// 1881  */
+// 1882 //ISR(TIMER0_COMPB_vect) { Temperature::isr(); }
+// 1883 
+// 1884 volatile bool Temperature::in_temp_isr = false;
+// 1885 
+// 1886 //void Temperature::isr() {
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock21 Using cfiCommon0
+          CFI Block cfiBlock25 Using cfiCommon0
           CFI Function IsrTemperatureHandler
           CFI FunCall _ZN11Temperature18TemperatureHandlerEv
         THUMB
-// 1869   void IsrTemperatureHandler() { Temperature::TemperatureHandler(); }
+// 1887   void IsrTemperatureHandler() { Temperature::TemperatureHandler(); }
 IsrTemperatureHandler:
         Nop      
-          CFI EndBlock cfiBlock21
+          CFI EndBlock cfiBlock25
         REQUIRE _ZN11Temperature18TemperatureHandlerEv
         ;; // Fall through to label Temperature::TemperatureHandler()
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock22 Using cfiCommon0
+          CFI Block cfiBlock26 Using cfiCommon0
           CFI Function _ZN11Temperature18TemperatureHandlerEv
         THUMB
-// 1870   void Temperature::TemperatureHandler(void)  {
+// 1888   void Temperature::TemperatureHandler(void)  {
 _ZN11Temperature18TemperatureHandlerEv:
         PUSH     {R4-R11,LR}
           CFI R14 Frame(CFA, -4)
@@ -5304,920 +5482,1015 @@ _ZN11Temperature18TemperatureHandlerEv:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+36
-        SUB      SP,SP,#+12
-          CFI CFA R13+48
-// 1871 
-// 1872   // The stepper ISR can interrupt this ISR. When it does it re-enables this ISR
-// 1873   // at the end of its run, potentially causing re-entry. This flag prevents it.
-// 1874   if (in_temp_isr) return;
-        LDR.W    R4,??DataTable72_13
-        LDRB     R0,[R4, #+4]
+// 1889 
+// 1890   // The stepper ISR can interrupt this ISR. When it does it re-enables this ISR
+// 1891   // at the end of its run, potentially causing re-entry. This flag prevents it.
+// 1892   if (in_temp_isr) return;
+        LDR.W    R4,??DataTable69_3
+        SUB      SP,SP,#+20
+          CFI CFA R13+56
+        LDRB     R0,[R4, #+5]
         CMP      R0,#+0
         BNE.W    ??TemperatureHandler_0
-// 1875   in_temp_isr = true;
+// 1893   in_temp_isr = true;
         MOVS     R0,#+1
-        STRB     R0,[R4, #+4]
-        LDR.W    R0,??DataTable72_21
-// 1876 
-// 1877   // Allow UART and stepper ISRs
-// 1878   //CBI(TIMSK0, OCIE0B); //Disable Temperature ISR
-// 1879   //sei();
-// 1880   HAL_TIM_Base_Stop_IT(&htim4);
+        STRB     R0,[R4, #+5]
+        LDR.W    R0,??DataTable69_14
+// 1894 
+// 1895   // Allow UART and stepper ISRs
+// 1896   //CBI(TIMSK0, OCIE0B); //Disable Temperature ISR
+// 1897   //sei();
+// 1898   HAL_TIM_Base_Stop_IT(&htim4);
           CFI FunCall HAL_TIM_Base_Stop_IT
         BL       HAL_TIM_Base_Stop_IT
-// 1881 
-// 1882   static int8_t temp_count = -1;
-// 1883   static ADCSensorState adc_sensor_state = StartupDelay;
-// 1884   static uint8_t pwm_count = _BV(SOFT_PWM_SCALE);
-// 1885   // avoid multiple loads of pwm_count
-// 1886   uint8_t pwm_count_tmp = pwm_count;
-        LDRB     R5,[R4, #+7]
-// 1887   #if ENABLED(ADC_KEYPAD)
-// 1888     static unsigned int raw_ADCKey_value = 0;
-// 1889   #endif
-// 1890 
-// 1891   // Static members for each heater
-// 1892   #if ENABLED(SLOW_PWM_HEATERS)
-// 1893     static uint8_t slow_pwm_count = 0;
-// 1894     #define ISR_STATICS(n) \ 
-// 1895       static uint8_t soft_pwm_count_ ## n, \ 
-// 1896                      state_heater_ ## n = 0, \ 
-// 1897                      state_timer_heater_ ## n = 0
-// 1898   #else
-// 1899     #define ISR_STATICS(n) static uint8_t soft_pwm_count_ ## n = 0
-// 1900   #endif
-// 1901 
-// 1902   // Statics per heater
-// 1903   ISR_STATICS(0);
-// 1904   #if HOTENDS > 1
-// 1905     ISR_STATICS(1);
-// 1906     #if HOTENDS > 2
-// 1907       ISR_STATICS(2);
-// 1908       #if HOTENDS > 3
-// 1909         ISR_STATICS(3);
-// 1910         #if HOTENDS > 4
-// 1911           ISR_STATICS(4);
-// 1912         #endif // HOTENDS > 4
-// 1913       #endif // HOTENDS > 3
-// 1914     #endif // HOTENDS > 2
-// 1915   #endif // HOTENDS > 1
-// 1916   #if HAS_HEATER_BED
-// 1917     ISR_STATICS(BED);
+// 1899 
+// 1900   static int8_t temp_count = -1;
+// 1901   static ADCSensorState adc_sensor_state = StartupDelay;
+// 1902   static uint8_t pwm_count = _BV(SOFT_PWM_SCALE);
+// 1903   // avoid multiple loads of pwm_count
+// 1904   uint8_t pwm_count_tmp = pwm_count;
+        LDRB     R5,[R4, #+8]
+// 1905   #if ENABLED(ADC_KEYPAD)
+// 1906     static unsigned int raw_ADCKey_value = 0;
+// 1907   #endif
+// 1908 
+// 1909   // Static members for each heater
+// 1910   #if ENABLED(SLOW_PWM_HEATERS)
+// 1911     static uint8_t slow_pwm_count = 0;
+// 1912     #define ISR_STATICS(n) \ 
+// 1913       static uint8_t soft_pwm_count_ ## n, \ 
+// 1914                      state_heater_ ## n = 0, \ 
+// 1915                      state_timer_heater_ ## n = 0
+// 1916   #else
+// 1917     #define ISR_STATICS(n) static uint8_t soft_pwm_count_ ## n = 0
 // 1918   #endif
 // 1919 
-// 1920   #if ENABLED(FILAMENT_WIDTH_SENSOR)
-// 1921     static unsigned long raw_filwidth_value = 0;
-// 1922   #endif
-// 1923 
-// 1924   #if DISABLED(SLOW_PWM_HEATERS)
-// 1925     constexpr uint8_t pwm_mask =
-// 1926       #if ENABLED(SOFT_PWM_DITHER)
-// 1927         _BV(SOFT_PWM_SCALE) - 1
-// 1928       #else
-// 1929         0
-// 1930       #endif
-// 1931     ;
-// 1932 
-// 1933     /**
-// 1934      * Standard PWM modulation
-// 1935      */
-// 1936     if (pwm_count_tmp >= 127) {
+// 1920   // Statics per heater
+// 1921   ISR_STATICS(0);
+// 1922   #if HOTENDS > 1
+// 1923     ISR_STATICS(1);
+// 1924     #if HOTENDS > 2
+// 1925       ISR_STATICS(2);
+// 1926       #if HOTENDS > 3
+// 1927         ISR_STATICS(3);
+// 1928         #if HOTENDS > 4
+// 1929           ISR_STATICS(4);
+// 1930         #endif // HOTENDS > 4
+// 1931       #endif // HOTENDS > 3
+// 1932     #endif // HOTENDS > 2
+// 1933   #endif // HOTENDS > 1
+// 1934   #if HAS_HEATER_BED
+// 1935     ISR_STATICS(BED);
+// 1936   #endif
+// 1937 
+// 1938   #if ENABLED(FILAMENT_WIDTH_SENSOR)
+// 1939     static unsigned long raw_filwidth_value = 0;
+// 1940   #endif
+// 1941 
+// 1942   #if DISABLED(SLOW_PWM_HEATERS)
+// 1943     constexpr uint8_t pwm_mask =
+// 1944       #if ENABLED(SOFT_PWM_DITHER)
+// 1945         _BV(SOFT_PWM_SCALE) - 1
+// 1946       #else
+// 1947         0
+// 1948       #endif
+// 1949     ;
+// 1950 
+// 1951     /**
+// 1952      * Standard PWM modulation
+// 1953      */
+// 1954     if (pwm_count_tmp >= 127) {
         CMP      R5,#+127
         BLT.N    ??TemperatureHandler_1
-// 1937       pwm_count_tmp -= 127;
+// 1955       pwm_count_tmp -= 127;
+// 1956       soft_pwm_count_0 = (soft_pwm_count_0 & pwm_mask) + soft_pwm_amount[0];
+        LDRB     R0,[R4, #+0]
+        STRB     R0,[R4, #+9]
         SUBS     R5,R5,#+127
         UXTB     R5,R5
-// 1938       soft_pwm_count_0 = (soft_pwm_count_0 & pwm_mask) + soft_pwm_amount[0];
-        LDRB     R0,[R4, #+0]
-        STRB     R0,[R4, #+8]
-// 1939       //WRITE_HEATER_0(soft_pwm_count_0 > pwm_mask ? HIGH : LOW);
-// 1940 	  if(soft_pwm_count_0 > pwm_mask) WRITE_HEATER_0(HIGH);
-        CMP      R0,#+0
-        BEQ.N    ??TemperatureHandler_2
-        LDR.W    R0,??DataTable72_3
+// 1957       //WRITE_HEATER_0(soft_pwm_count_0 > pwm_mask ? HIGH : LOW);
+// 1958 	  if(soft_pwm_count_0 > pwm_mask) WRITE_HEATER_0(HIGH);
+        CBZ.N    R0,??TemperatureHandler_2
+        LDR.W    R0,??DataTable67
         LDRB     R0,[R0, #+19]
-        LDR.W    R6,??DataTable72_5
-        LDR.W    R7,??DataTable72_4
-        CMP      R0,#+0
-        BNE.N    ??TemperatureHandler_2
+        CBNZ.N   R0,??TemperatureHandler_2
+        LDR.W    R0,??DataTable67_1
+        LDRH     R1,[R0, #+44]
+        LDR.W    R0,??DataTable67_2
+        LDR      R0,[R0, #+88]
         MOVS     R2,#+1
-        LDRH     R1,[R7, #+44]
-        LDR      R0,[R6, #+88]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-// 1941 	  else WRITE_HEATER_0(LOW);      
-// 1942       #if HOTENDS > 1
-// 1943         soft_pwm_count_1 = (soft_pwm_count_1 & pwm_mask) + soft_pwm_amount[1];
+// 1959 	  else WRITE_HEATER_0(LOW);      
+// 1960       #if HOTENDS > 1
+// 1961         soft_pwm_count_1 = (soft_pwm_count_1 & pwm_mask) + soft_pwm_amount[1];
 ??TemperatureHandler_2:
         LDRB     R0,[R4, #+1]
-        STRB     R0,[R4, #+9]
-// 1944         WRITE_HEATER_1(soft_pwm_count_1 > pwm_mask ? HIGH : LOW);
+        STRB     R0,[R4, #+10]
+// 1962         WRITE_HEATER_1(soft_pwm_count_1 > pwm_mask ? HIGH : LOW);
         SXTB     R0,R0
         CMP      R0,#+1
-        BLT.N    ??TemperatureHandler_3
-        MOVS     R2,#+1
-        B.N      ??TemperatureHandler_4
-??TemperatureHandler_3:
-        MOVS     R2,#+0
-??TemperatureHandler_4:
-        LDR.W    R6,??DataTable72_5
-        LDR.W    R7,??DataTable72_4
-        LDRH     R1,[R7, #+46]
+        ITE      GE 
+        MOVGE    R2,#+1
+        MOVLT    R2,#+0
+        LDR.W    R6,??DataTable67_2
+        LDR.W    R7,??DataTable67_1
         LDR      R0,[R6, #+92]
+        LDRH     R1,[R7, #+46]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-// 1945         #if HOTENDS > 2
-// 1946           soft_pwm_count_2 = (soft_pwm_count_2 & pwm_mask) + soft_pwm_amount[2];
-// 1947           WRITE_HEATER_2(soft_pwm_count_2 > pwm_mask ? HIGH : LOW);
-// 1948           #if HOTENDS > 3
-// 1949             soft_pwm_count_3 = (soft_pwm_count_3 & pwm_mask) + soft_pwm_amount[3];
-// 1950             WRITE_HEATER_3(soft_pwm_count_3 > pwm_mask ? HIGH : LOW);
-// 1951             #if HOTENDS > 4
-// 1952               soft_pwm_count_4 = (soft_pwm_count_4 & pwm_mask) + soft_pwm_amount[4];
-// 1953               WRITE_HEATER_4(soft_pwm_count_4 > pwm_mask ? HIGH : LOW);
-// 1954             #endif // HOTENDS > 4
-// 1955           #endif // HOTENDS > 3
-// 1956         #endif // HOTENDS > 2
-// 1957       #endif // HOTENDS > 1
-// 1958 
-// 1959       #if HAS_HEATER_BED
-// 1960         soft_pwm_count_BED = (soft_pwm_count_BED & pwm_mask) + soft_pwm_amount_bed;
+// 1963         #if HOTENDS > 2
+// 1964           soft_pwm_count_2 = (soft_pwm_count_2 & pwm_mask) + soft_pwm_amount[2];
+// 1965           WRITE_HEATER_2(soft_pwm_count_2 > pwm_mask ? HIGH : LOW);
+// 1966           #if HOTENDS > 3
+// 1967             soft_pwm_count_3 = (soft_pwm_count_3 & pwm_mask) + soft_pwm_amount[3];
+// 1968             WRITE_HEATER_3(soft_pwm_count_3 > pwm_mask ? HIGH : LOW);
+// 1969             #if HOTENDS > 4
+// 1970               soft_pwm_count_4 = (soft_pwm_count_4 & pwm_mask) + soft_pwm_amount[4];
+// 1971               WRITE_HEATER_4(soft_pwm_count_4 > pwm_mask ? HIGH : LOW);
+// 1972             #endif // HOTENDS > 4
+// 1973           #endif // HOTENDS > 3
+// 1974         #endif // HOTENDS > 2
+// 1975       #endif // HOTENDS > 1
+// 1976 
+// 1977       #if HAS_HEATER_BED
+// 1978         soft_pwm_count_BED = (soft_pwm_count_BED & pwm_mask) + soft_pwm_amount_bed;
         LDRB     R0,[R4, #+3]
-        STRB     R0,[R4, #+10]
-// 1961         //WRITE_HEATER_BED(soft_pwm_count_BED > pwm_mask ? HIGH : LOW);
-// 1962 		if(soft_pwm_count_BED > pwm_mask) WRITE_HEATER_BED(HIGH);
-        CMP      R0,#+0
-        BEQ.N    ??TemperatureHandler_5
-        LDR.W    R0,??DataTable72_3
+        STRB     R0,[R4, #+11]
+// 1979         //WRITE_HEATER_BED(soft_pwm_count_BED > pwm_mask ? HIGH : LOW);
+// 1980 		if(soft_pwm_count_BED > pwm_mask) WRITE_HEATER_BED(HIGH);
+        CBZ.N    R0,??TemperatureHandler_3
+        LDR.W    R0,??DataTable67
         LDRB     R0,[R0, #+19]
-        CMP      R0,#+0
-        BNE.N    ??TemperatureHandler_6
-        MOVS     R2,#+1
+        CBNZ.N   R0,??TemperatureHandler_4
         LDRH     R1,[R7, #+42]
         LDR      R0,[R6, #+84]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
+        MOVS     R2,#+1
         B.N      ??TemperatureHandler_5
-// 1963 		else WRITE_HEATER_BED(LOW);        
-// 1964       #endif
-// 1965 
-// 1966       #if ENABLED(FAN_SOFT_PWM)
-// 1967         #if HAS_FAN0
-// 1968           soft_pwm_count_fan[0] = (soft_pwm_count_fan[0] & pwm_mask) + (soft_pwm_amount_fan[0] >> 1);
-// 1969           WRITE_FAN(soft_pwm_count_fan[0] > pwm_mask ? HIGH : LOW);
-// 1970         #endif
-// 1971         #if HAS_FAN1
-// 1972           soft_pwm_count_fan[1] = (soft_pwm_count_fan[1] & pwm_mask) + (soft_pwm_amount_fan[1] >> 1);
-// 1973           WRITE_FAN1(soft_pwm_count_fan[1] > pwm_mask ? HIGH : LOW);
-// 1974         #endif
-// 1975         #if HAS_FAN2
-// 1976           soft_pwm_count_fan[2] = (soft_pwm_count_fan[2] & pwm_mask) + (soft_pwm_amount_fan[2] >> 1);
-// 1977           WRITE_FAN2(soft_pwm_count_fan[2] > pwm_mask ? HIGH : LOW);
-// 1978         #endif
-// 1979       #endif
-// 1980     }
-// 1981     else {
-// 1982       if (soft_pwm_count_0 <= pwm_count_tmp) WRITE_HEATER_0(LOW);
+// 1981 		else WRITE_HEATER_BED(LOW);        
+// 1982       #endif
+// 1983 
+// 1984       #if ENABLED(FAN_SOFT_PWM)
+// 1985         #if HAS_FAN0
+// 1986           soft_pwm_count_fan[0] = (soft_pwm_count_fan[0] & pwm_mask) + (soft_pwm_amount_fan[0] >> 1);
+// 1987           WRITE_FAN(soft_pwm_count_fan[0] > pwm_mask ? HIGH : LOW);
+// 1988         #endif
+// 1989         #if HAS_FAN1
+// 1990           soft_pwm_count_fan[1] = (soft_pwm_count_fan[1] & pwm_mask) + (soft_pwm_amount_fan[1] >> 1);
+// 1991           WRITE_FAN1(soft_pwm_count_fan[1] > pwm_mask ? HIGH : LOW);
+// 1992         #endif
+// 1993         #if HAS_FAN2
+// 1994           soft_pwm_count_fan[2] = (soft_pwm_count_fan[2] & pwm_mask) + (soft_pwm_amount_fan[2] >> 1);
+// 1995           WRITE_FAN2(soft_pwm_count_fan[2] > pwm_mask ? HIGH : LOW);
+// 1996         #endif
+// 1997       #endif
+// 1998     }
+// 1999     else {
+// 2000       if (soft_pwm_count_0 <= pwm_count_tmp) WRITE_HEATER_0(LOW);
 ??TemperatureHandler_1:
-        LDRB     R0,[R4, #+8]
-        CMP      R5,R0
-        BLT.N    ??TemperatureHandler_7
-        LDR.W    R0,??DataTable72_3
-        LDRB     R0,[R0, #+19]
-        CMP      R0,#+0
-        BNE.N    ??TemperatureHandler_7
-        MOVS     R2,#+0
-        LDR.W    R0,??DataTable72_4
-        LDRH     R1,[R0, #+44]
-        LDR.W    R0,??DataTable72_5
-        LDR      R0,[R0, #+88]
-          CFI FunCall HAL_GPIO_WritePin
-        BL       HAL_GPIO_WritePin
-// 1983       #if HOTENDS > 1
-// 1984         if (soft_pwm_count_1 <= pwm_count_tmp) WRITE_HEATER_1(LOW);
-??TemperatureHandler_7:
         LDRB     R0,[R4, #+9]
         CMP      R5,R0
-        BLT.N    ??TemperatureHandler_8
+        BLT.N    ??TemperatureHandler_6
+        LDR.W    R0,??DataTable67
+        LDRB     R0,[R0, #+19]
+        CBNZ.N   R0,??TemperatureHandler_6
+        LDR.W    R0,??DataTable67_1
+        LDRH     R1,[R0, #+44]
+        LDR.W    R0,??DataTable67_2
+        LDR      R0,[R0, #+88]
         MOVS     R2,#+0
-        LDR.W    R0,??DataTable72_4
-        LDRH     R1,[R0, #+46]
-        LDR.W    R0,??DataTable72_5
-        LDR      R0,[R0, #+92]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-// 1985         #if HOTENDS > 2
-// 1986           if (soft_pwm_count_2 <= pwm_count_tmp) WRITE_HEATER_2(LOW);
-// 1987           #if HOTENDS > 3
-// 1988             if (soft_pwm_count_3 <= pwm_count_tmp) WRITE_HEATER_3(LOW);
-// 1989             #if HOTENDS > 4
-// 1990               if (soft_pwm_count_4 <= pwm_count_tmp) WRITE_HEATER_4(LOW);
-// 1991             #endif // HOTENDS > 4
-// 1992           #endif // HOTENDS > 3
-// 1993         #endif // HOTENDS > 2
-// 1994       #endif // HOTENDS > 1
-// 1995 
-// 1996       #if HAS_HEATER_BED
-// 1997         if (soft_pwm_count_BED <= pwm_count_tmp) WRITE_HEATER_BED(LOW);
-??TemperatureHandler_8:
+// 2001       #if HOTENDS > 1
+// 2002         if (soft_pwm_count_1 <= pwm_count_tmp) WRITE_HEATER_1(LOW);
+??TemperatureHandler_6:
         LDRB     R0,[R4, #+10]
         CMP      R5,R0
-        BLT.N    ??TemperatureHandler_5
-??TemperatureHandler_6:
-        LDR.W    R0,??DataTable72_3
-        LDRB     R0,[R0, #+19]
-        CMP      R0,#+0
-        BNE.N    ??TemperatureHandler_5
+        BLT.N    ??TemperatureHandler_7
+        LDR.N    R0,??DataTable67_1
+        LDRH     R1,[R0, #+46]
+        LDR.N    R0,??DataTable67_2
+        LDR      R0,[R0, #+92]
         MOVS     R2,#+0
-        LDR.W    R0,??DataTable72_4
-        LDRH     R1,[R0, #+42]
-        LDR.W    R0,??DataTable72_5
-        LDR      R0,[R0, #+84]
           CFI FunCall HAL_GPIO_WritePin
         BL       HAL_GPIO_WritePin
-// 1998       #endif
-// 1999 
-// 2000       #if ENABLED(FAN_SOFT_PWM)
-// 2001         #if HAS_FAN0
-// 2002           if (soft_pwm_count_fan[0] <= pwm_count_tmp) WRITE_FAN(LOW);
-// 2003         #endif
-// 2004         #if HAS_FAN1
-// 2005           if (soft_pwm_count_fan[1] <= pwm_count_tmp) WRITE_FAN1(LOW);
-// 2006         #endif
-// 2007         #if HAS_FAN2
-// 2008           if (soft_pwm_count_fan[2] <= pwm_count_tmp) WRITE_FAN2(LOW);
-// 2009         #endif
-// 2010       #endif
-// 2011     }
-// 2012 
-// 2013     // SOFT_PWM_SCALE to frequency:
-// 2014     //
-// 2015     // 0: 16000000/64/256/128 =   7.6294 Hz
-// 2016     // 1:                / 64 =  15.2588 Hz
-// 2017     // 2:                / 32 =  30.5176 Hz
-// 2018     // 3:                / 16 =  61.0352 Hz
-// 2019     // 4:                /  8 = 122.0703 Hz
-// 2020     // 5:                /  4 = 244.1406 Hz
-// 2021     pwm_count = pwm_count_tmp + _BV(SOFT_PWM_SCALE);
-??TemperatureHandler_5:
-        ADDS     R0,R5,#+1
-        STRB     R0,[R4, #+7]
-// 2022 
-// 2023   #else // SLOW_PWM_HEATERS
-// 2024 
-// 2025     /**
-// 2026      * SLOW PWM HEATERS
-// 2027      *
-// 2028      * For relay-driven heaters
-// 2029      */
-// 2030     #ifndef MIN_STATE_TIME
-// 2031       #define MIN_STATE_TIME 16 // MIN_STATE_TIME * 65.5 = time in milliseconds
-// 2032     #endif
-// 2033 
-// 2034     // Macros for Slow PWM timer logic
-// 2035     #define _SLOW_PWM_ROUTINE(NR, src) \ 
-// 2036       soft_pwm_count_ ##NR = src; \ 
-// 2037       if (soft_pwm_count_ ##NR > 0) { \ 
-// 2038         if (state_timer_heater_ ##NR == 0) { \ 
-// 2039           if (state_heater_ ##NR == 0) state_timer_heater_ ##NR = MIN_STATE_TIME; \ 
-// 2040           state_heater_ ##NR = 1; \ 
-// 2041           WRITE_HEATER_ ##NR(1); \ 
-// 2042         } \ 
-// 2043       } \ 
-// 2044       else { \ 
-// 2045         if (state_timer_heater_ ##NR == 0) { \ 
-// 2046           if (state_heater_ ##NR == 1) state_timer_heater_ ##NR = MIN_STATE_TIME; \ 
-// 2047           state_heater_ ##NR = 0; \ 
-// 2048           WRITE_HEATER_ ##NR(0); \ 
-// 2049         } \ 
-// 2050       }
-// 2051     #define SLOW_PWM_ROUTINE(n) _SLOW_PWM_ROUTINE(n, soft_pwm_amount[n])
-// 2052 
-// 2053     #define PWM_OFF_ROUTINE(NR) \ 
-// 2054       if (soft_pwm_count_ ##NR < slow_pwm_count) { \ 
-// 2055         if (state_timer_heater_ ##NR == 0) { \ 
-// 2056           if (state_heater_ ##NR == 1) state_timer_heater_ ##NR = MIN_STATE_TIME; \ 
-// 2057           state_heater_ ##NR = 0; \ 
-// 2058           WRITE_HEATER_ ##NR (0); \ 
-// 2059         } \ 
-// 2060       }
-// 2061 
-// 2062     if (slow_pwm_count == 0) {
-// 2063 
-// 2064       SLOW_PWM_ROUTINE(0);
-// 2065       #if HOTENDS > 1
-// 2066         SLOW_PWM_ROUTINE(1);
-// 2067         #if HOTENDS > 2
-// 2068           SLOW_PWM_ROUTINE(2);
-// 2069           #if HOTENDS > 3
-// 2070             SLOW_PWM_ROUTINE(3);
-// 2071             #if HOTENDS > 4
-// 2072               SLOW_PWM_ROUTINE(4);
-// 2073             #endif // HOTENDS > 4
-// 2074           #endif // HOTENDS > 3
-// 2075         #endif // HOTENDS > 2
-// 2076       #endif // HOTENDS > 1
-// 2077       #if HAS_HEATER_BED
-// 2078         _SLOW_PWM_ROUTINE(BED, soft_pwm_amount_bed); // BED
-// 2079       #endif
-// 2080 
-// 2081     } // slow_pwm_count == 0
-// 2082 
-// 2083     PWM_OFF_ROUTINE(0);
-// 2084     #if HOTENDS > 1
-// 2085       PWM_OFF_ROUTINE(1);
-// 2086       #if HOTENDS > 2
-// 2087         PWM_OFF_ROUTINE(2);
-// 2088         #if HOTENDS > 3
-// 2089           PWM_OFF_ROUTINE(3);
-// 2090           #if HOTENDS > 4
-// 2091             PWM_OFF_ROUTINE(4);
-// 2092           #endif // HOTENDS > 4
-// 2093         #endif // HOTENDS > 3
-// 2094       #endif // HOTENDS > 2
-// 2095     #endif // HOTENDS > 1
-// 2096     #if HAS_HEATER_BED
-// 2097       PWM_OFF_ROUTINE(BED); // BED
-// 2098     #endif
-// 2099 
-// 2100     #if ENABLED(FAN_SOFT_PWM)
-// 2101       if (pwm_count_tmp >= 127) {
-// 2102         pwm_count_tmp = 0;
-// 2103         #if HAS_FAN0
-// 2104           soft_pwm_count_fan[0] = soft_pwm_amount_fan[0] >> 1;
-// 2105           WRITE_FAN(soft_pwm_count_fan[0] > 0 ? HIGH : LOW);
-// 2106         #endif
-// 2107         #if HAS_FAN1
-// 2108           soft_pwm_count_fan[1] = soft_pwm_amount_fan[1] >> 1;
-// 2109           WRITE_FAN1(soft_pwm_count_fan[1] > 0 ? HIGH : LOW);
-// 2110         #endif
-// 2111         #if HAS_FAN2
-// 2112           soft_pwm_count_fan[2] = soft_pwm_amount_fan[2] >> 1;
-// 2113           WRITE_FAN2(soft_pwm_count_fan[2] > 0 ? HIGH : LOW);
-// 2114         #endif
-// 2115       }
-// 2116       #if HAS_FAN0
-// 2117         if (soft_pwm_count_fan[0] <= pwm_count_tmp) WRITE_FAN(LOW);
-// 2118       #endif
-// 2119       #if HAS_FAN1
-// 2120         if (soft_pwm_count_fan[1] <= pwm_count_tmp) WRITE_FAN1(LOW);
-// 2121       #endif
-// 2122       #if HAS_FAN2
-// 2123         if (soft_pwm_count_fan[2] <= pwm_count_tmp) WRITE_FAN2(LOW);
-// 2124       #endif
-// 2125     #endif // FAN_SOFT_PWM
-// 2126 
-// 2127     // SOFT_PWM_SCALE to frequency:
-// 2128     //
-// 2129     // 0: 16000000/64/256/128 =   7.6294 Hz
-// 2130     // 1:                / 64 =  15.2588 Hz
-// 2131     // 2:                / 32 =  30.5176 Hz
-// 2132     // 3:                / 16 =  61.0352 Hz
-// 2133     // 4:                /  8 = 122.0703 Hz
-// 2134     // 5:                /  4 = 244.1406 Hz
-// 2135     pwm_count = pwm_count_tmp + _BV(SOFT_PWM_SCALE);
-// 2136 
-// 2137     // increment slow_pwm_count only every 64th pwm_count,
-// 2138     // i.e. yielding a PWM frequency of 16/128 Hz (8s).
-// 2139     if (((pwm_count >> SOFT_PWM_SCALE) & 0x3F) == 0) {
-// 2140       slow_pwm_count++;
-// 2141       slow_pwm_count &= 0x7F;
-// 2142 
-// 2143       if (state_timer_heater_0 > 0) state_timer_heater_0--;
-// 2144       #if HOTENDS > 1
-// 2145         if (state_timer_heater_1 > 0) state_timer_heater_1--;
-// 2146         #if HOTENDS > 2
-// 2147           if (state_timer_heater_2 > 0) state_timer_heater_2--;
-// 2148           #if HOTENDS > 3
-// 2149             if (state_timer_heater_3 > 0) state_timer_heater_3--;
-// 2150             #if HOTENDS > 4
-// 2151               if (state_timer_heater_4 > 0) state_timer_heater_4--;
-// 2152             #endif // HOTENDS > 4
-// 2153           #endif // HOTENDS > 3
-// 2154         #endif // HOTENDS > 2
-// 2155       #endif // HOTENDS > 1
-// 2156       #if HAS_HEATER_BED
-// 2157         if (state_timer_heater_BED > 0) state_timer_heater_BED--;
-// 2158       #endif
-// 2159     } // ((pwm_count >> SOFT_PWM_SCALE) & 0x3F) == 0
-// 2160 
-// 2161   #endif // SLOW_PWM_HEATERS
-// 2162 
-// 2163   //
-// 2164   // Update lcd buttons 488 times per second
-// 2165   //
-// 2166   static bool do_buttons;
-// 2167   if ((do_buttons ^= true)) lcd_buttons_update();
+// 2003         #if HOTENDS > 2
+// 2004           if (soft_pwm_count_2 <= pwm_count_tmp) WRITE_HEATER_2(LOW);
+// 2005           #if HOTENDS > 3
+// 2006             if (soft_pwm_count_3 <= pwm_count_tmp) WRITE_HEATER_3(LOW);
+// 2007             #if HOTENDS > 4
+// 2008               if (soft_pwm_count_4 <= pwm_count_tmp) WRITE_HEATER_4(LOW);
+// 2009             #endif // HOTENDS > 4
+// 2010           #endif // HOTENDS > 3
+// 2011         #endif // HOTENDS > 2
+// 2012       #endif // HOTENDS > 1
+// 2013 
+// 2014       #if HAS_HEATER_BED
+// 2015         if (soft_pwm_count_BED <= pwm_count_tmp) WRITE_HEATER_BED(LOW);
+??TemperatureHandler_7:
         LDRB     R0,[R4, #+11]
+        CMP      R5,R0
+        BLT.N    ??TemperatureHandler_3
+??TemperatureHandler_4:
+        LDR.N    R0,??DataTable67
+        LDRB     R0,[R0, #+19]
+        CBNZ.N   R0,??TemperatureHandler_3
+        LDR.N    R0,??DataTable67_1
+        LDRH     R1,[R0, #+42]
+        LDR.N    R0,??DataTable67_2
+        LDR      R0,[R0, #+84]
+        MOVS     R2,#+0
+??TemperatureHandler_5:
+          CFI FunCall HAL_GPIO_WritePin
+        BL       HAL_GPIO_WritePin
+// 2016       #endif
+// 2017 
+// 2018       #if ENABLED(FAN_SOFT_PWM)
+// 2019         #if HAS_FAN0
+// 2020           if (soft_pwm_count_fan[0] <= pwm_count_tmp) WRITE_FAN(LOW);
+// 2021         #endif
+// 2022         #if HAS_FAN1
+// 2023           if (soft_pwm_count_fan[1] <= pwm_count_tmp) WRITE_FAN1(LOW);
+// 2024         #endif
+// 2025         #if HAS_FAN2
+// 2026           if (soft_pwm_count_fan[2] <= pwm_count_tmp) WRITE_FAN2(LOW);
+// 2027         #endif
+// 2028       #endif
+// 2029     }
+// 2030 
+// 2031     // SOFT_PWM_SCALE to frequency:
+// 2032     //
+// 2033     // 0: 16000000/64/256/128 =   7.6294 Hz
+// 2034     // 1:                / 64 =  15.2588 Hz
+// 2035     // 2:                / 32 =  30.5176 Hz
+// 2036     // 3:                / 16 =  61.0352 Hz
+// 2037     // 4:                /  8 = 122.0703 Hz
+// 2038     // 5:                /  4 = 244.1406 Hz
+// 2039     pwm_count = pwm_count_tmp + _BV(SOFT_PWM_SCALE);
+??TemperatureHandler_3:
+        ADDS     R0,R5,#+1
+        STRB     R0,[R4, #+8]
+// 2040 
+// 2041   #else // SLOW_PWM_HEATERS
+// 2042 
+// 2043     /**
+// 2044      * SLOW PWM HEATERS
+// 2045      *
+// 2046      * For relay-driven heaters
+// 2047      */
+// 2048     #ifndef MIN_STATE_TIME
+// 2049       #define MIN_STATE_TIME 16 // MIN_STATE_TIME * 65.5 = time in milliseconds
+// 2050     #endif
+// 2051 
+// 2052     // Macros for Slow PWM timer logic
+// 2053     #define _SLOW_PWM_ROUTINE(NR, src) \ 
+// 2054       soft_pwm_count_ ##NR = src; \ 
+// 2055       if (soft_pwm_count_ ##NR > 0) { \ 
+// 2056         if (state_timer_heater_ ##NR == 0) { \ 
+// 2057           if (state_heater_ ##NR == 0) state_timer_heater_ ##NR = MIN_STATE_TIME; \ 
+// 2058           state_heater_ ##NR = 1; \ 
+// 2059           WRITE_HEATER_ ##NR(1); \ 
+// 2060         } \ 
+// 2061       } \ 
+// 2062       else { \ 
+// 2063         if (state_timer_heater_ ##NR == 0) { \ 
+// 2064           if (state_heater_ ##NR == 1) state_timer_heater_ ##NR = MIN_STATE_TIME; \ 
+// 2065           state_heater_ ##NR = 0; \ 
+// 2066           WRITE_HEATER_ ##NR(0); \ 
+// 2067         } \ 
+// 2068       }
+// 2069     #define SLOW_PWM_ROUTINE(n) _SLOW_PWM_ROUTINE(n, soft_pwm_amount[n])
+// 2070 
+// 2071     #define PWM_OFF_ROUTINE(NR) \ 
+// 2072       if (soft_pwm_count_ ##NR < slow_pwm_count) { \ 
+// 2073         if (state_timer_heater_ ##NR == 0) { \ 
+// 2074           if (state_heater_ ##NR == 1) state_timer_heater_ ##NR = MIN_STATE_TIME; \ 
+// 2075           state_heater_ ##NR = 0; \ 
+// 2076           WRITE_HEATER_ ##NR (0); \ 
+// 2077         } \ 
+// 2078       }
+// 2079 
+// 2080     if (slow_pwm_count == 0) {
+// 2081 
+// 2082       SLOW_PWM_ROUTINE(0);
+// 2083       #if HOTENDS > 1
+// 2084         SLOW_PWM_ROUTINE(1);
+// 2085         #if HOTENDS > 2
+// 2086           SLOW_PWM_ROUTINE(2);
+// 2087           #if HOTENDS > 3
+// 2088             SLOW_PWM_ROUTINE(3);
+// 2089             #if HOTENDS > 4
+// 2090               SLOW_PWM_ROUTINE(4);
+// 2091             #endif // HOTENDS > 4
+// 2092           #endif // HOTENDS > 3
+// 2093         #endif // HOTENDS > 2
+// 2094       #endif // HOTENDS > 1
+// 2095       #if HAS_HEATER_BED
+// 2096         _SLOW_PWM_ROUTINE(BED, soft_pwm_amount_bed); // BED
+// 2097       #endif
+// 2098 
+// 2099     } // slow_pwm_count == 0
+// 2100 
+// 2101     PWM_OFF_ROUTINE(0);
+// 2102     #if HOTENDS > 1
+// 2103       PWM_OFF_ROUTINE(1);
+// 2104       #if HOTENDS > 2
+// 2105         PWM_OFF_ROUTINE(2);
+// 2106         #if HOTENDS > 3
+// 2107           PWM_OFF_ROUTINE(3);
+// 2108           #if HOTENDS > 4
+// 2109             PWM_OFF_ROUTINE(4);
+// 2110           #endif // HOTENDS > 4
+// 2111         #endif // HOTENDS > 3
+// 2112       #endif // HOTENDS > 2
+// 2113     #endif // HOTENDS > 1
+// 2114     #if HAS_HEATER_BED
+// 2115       PWM_OFF_ROUTINE(BED); // BED
+// 2116     #endif
+// 2117 
+// 2118     #if ENABLED(FAN_SOFT_PWM)
+// 2119       if (pwm_count_tmp >= 127) {
+// 2120         pwm_count_tmp = 0;
+// 2121         #if HAS_FAN0
+// 2122           soft_pwm_count_fan[0] = soft_pwm_amount_fan[0] >> 1;
+// 2123           WRITE_FAN(soft_pwm_count_fan[0] > 0 ? HIGH : LOW);
+// 2124         #endif
+// 2125         #if HAS_FAN1
+// 2126           soft_pwm_count_fan[1] = soft_pwm_amount_fan[1] >> 1;
+// 2127           WRITE_FAN1(soft_pwm_count_fan[1] > 0 ? HIGH : LOW);
+// 2128         #endif
+// 2129         #if HAS_FAN2
+// 2130           soft_pwm_count_fan[2] = soft_pwm_amount_fan[2] >> 1;
+// 2131           WRITE_FAN2(soft_pwm_count_fan[2] > 0 ? HIGH : LOW);
+// 2132         #endif
+// 2133       }
+// 2134       #if HAS_FAN0
+// 2135         if (soft_pwm_count_fan[0] <= pwm_count_tmp) WRITE_FAN(LOW);
+// 2136       #endif
+// 2137       #if HAS_FAN1
+// 2138         if (soft_pwm_count_fan[1] <= pwm_count_tmp) WRITE_FAN1(LOW);
+// 2139       #endif
+// 2140       #if HAS_FAN2
+// 2141         if (soft_pwm_count_fan[2] <= pwm_count_tmp) WRITE_FAN2(LOW);
+// 2142       #endif
+// 2143     #endif // FAN_SOFT_PWM
+// 2144 
+// 2145     // SOFT_PWM_SCALE to frequency:
+// 2146     //
+// 2147     // 0: 16000000/64/256/128 =   7.6294 Hz
+// 2148     // 1:                / 64 =  15.2588 Hz
+// 2149     // 2:                / 32 =  30.5176 Hz
+// 2150     // 3:                / 16 =  61.0352 Hz
+// 2151     // 4:                /  8 = 122.0703 Hz
+// 2152     // 5:                /  4 = 244.1406 Hz
+// 2153     pwm_count = pwm_count_tmp + _BV(SOFT_PWM_SCALE);
+// 2154 
+// 2155     // increment slow_pwm_count only every 64th pwm_count,
+// 2156     // i.e. yielding a PWM frequency of 16/128 Hz (8s).
+// 2157     if (((pwm_count >> SOFT_PWM_SCALE) & 0x3F) == 0) {
+// 2158       slow_pwm_count++;
+// 2159       slow_pwm_count &= 0x7F;
+// 2160 
+// 2161       if (state_timer_heater_0 > 0) state_timer_heater_0--;
+// 2162       #if HOTENDS > 1
+// 2163         if (state_timer_heater_1 > 0) state_timer_heater_1--;
+// 2164         #if HOTENDS > 2
+// 2165           if (state_timer_heater_2 > 0) state_timer_heater_2--;
+// 2166           #if HOTENDS > 3
+// 2167             if (state_timer_heater_3 > 0) state_timer_heater_3--;
+// 2168             #if HOTENDS > 4
+// 2169               if (state_timer_heater_4 > 0) state_timer_heater_4--;
+// 2170             #endif // HOTENDS > 4
+// 2171           #endif // HOTENDS > 3
+// 2172         #endif // HOTENDS > 2
+// 2173       #endif // HOTENDS > 1
+// 2174       #if HAS_HEATER_BED
+// 2175         if (state_timer_heater_BED > 0) state_timer_heater_BED--;
+// 2176       #endif
+// 2177     } // ((pwm_count >> SOFT_PWM_SCALE) & 0x3F) == 0
+// 2178 
+// 2179   #endif // SLOW_PWM_HEATERS
+// 2180 
+// 2181   //
+// 2182   // Update lcd buttons 488 times per second
+// 2183   //
+// 2184   static bool do_buttons;
+// 2185   if ((do_buttons ^= true)) lcd_buttons_update();
+        LDRB     R0,[R4, #+12]
         EOR      R0,R0,#0x1
         SUBS     R0,R0,#+1
         SBCS     R0,R0,R0
         MVNS     R0,R0
         LSRS     R0,R0,#+31
-        STRB     R0,[R4, #+11]
-        LDRB     R0,[R4, #+11]
-        CMP      R0,#+0
-        BEQ.N    ??TemperatureHandler_9
-          CFI FunCall _Z18lcd_buttons_updatev
-        BL       _Z18lcd_buttons_updatev
-// 2168 
-// 2169   /**
-// 2170    * One sensor is sampled on every other call of the ISR.
-// 2171    * Each sensor is read 16 (OVERSAMPLENR) times, taking the average.
-// 2172    *
-// 2173    * On each Prepare pass, ADC is started for a sensor pin.
-// 2174    * On the next pass, the ADC value is read and accumulated.
-// 2175    *
-// 2176    * This gives each ADC 0.9765ms to charge up.
-// 2177    */
-// 2178 #if 0
-// 2179   #define SET_ADMUX_ADCSRA(pin) ADMUX = _BV(REFS0) | (pin & 0x07); SBI(ADCSRA, ADSC)
-// 2180   #ifdef MUX5
-// 2181     #define START_ADC(pin) if (pin > 7) ADCSRB = _BV(MUX5); else ADCSRB = 0; SET_ADMUX_ADCSRA(pin)
-// 2182   #else
-// 2183     #define START_ADC(pin) ADCSRB = 0; SET_ADMUX_ADCSRA(pin)
-// 2184   #endif
-// 2185 #endif
-// 2186   switch (adc_sensor_state) {
-??TemperatureHandler_9:
-        LDRSB    R0,[R4, #+6]
+        STRB     R0,[R4, #+12]
+// 2186 
+// 2187   /**
+// 2188    * One sensor is sampled on every other call of the ISR.
+// 2189    * Each sensor is read 16 (OVERSAMPLENR) times, taking the average.
+// 2190    *
+// 2191    * On each Prepare pass, ADC is started for a sensor pin.
+// 2192    * On the next pass, the ADC value is read and accumulated.
+// 2193    *
+// 2194    * This gives each ADC 0.9765ms to charge up.
+// 2195    */
+// 2196 #if 0
+// 2197   #define SET_ADMUX_ADCSRA(pin) ADMUX = _BV(REFS0) | (pin & 0x07); SBI(ADCSRA, ADSC)
+// 2198   #ifdef MUX5
+// 2199     #define START_ADC(pin) if (pin > 7) ADCSRB = _BV(MUX5); else ADCSRB = 0; SET_ADMUX_ADCSRA(pin)
+// 2200   #else
+// 2201     #define START_ADC(pin) ADCSRB = 0; SET_ADMUX_ADCSRA(pin)
+// 2202   #endif
+// 2203 #endif
+// 2204   switch (adc_sensor_state) {
+        LDRSB    R0,[R4, #+7]
         CMP      R0,#+1
-        BEQ.N    ??TemperatureHandler_10
+        BEQ.N    ??TemperatureHandler_8
         CMP      R0,#+3
-        BEQ.N    ??TemperatureHandler_11
+        BEQ.N    ??TemperatureHandler_9
         CMP      R0,#+5
-        BEQ.N    ??TemperatureHandler_12
+        BEQ.N    ??TemperatureHandler_10
         CMP      R0,#+6
-        BNE.N    ??TemperatureHandler_13
-// 2187 
-// 2188     case SensorsReady: {
-// 2189       // All sensors have been read. Stay in this state for a few
-// 2190       // ISRs to save on calls to temp update/checking code below.
-// 2191       constexpr int8_t extra_loops = MIN_ADC_ISR_LOOPS - (int8_t)SensorsReady;
-// 2192       static uint8_t delay_count = 0;
-// 2193       if (extra_loops > 0) {
-// 2194         if (delay_count == 0) delay_count = extra_loops;   // Init this delay
-        LDRB     R0,[R4, #+12]
-        CMP      R0,#+0
-        BNE.N    ??TemperatureHandler_14
+        BNE.N    ??TemperatureHandler_11
+// 2205 
+// 2206     case SensorsReady: {
+// 2207       // All sensors have been read. Stay in this state for a few
+// 2208       // ISRs to save on calls to temp update/checking code below.
+// 2209       constexpr int8_t extra_loops = MIN_ADC_ISR_LOOPS - (int8_t)SensorsReady;
+// 2210       static uint8_t delay_count = 0;
+// 2211       if (extra_loops > 0) {
+// 2212         if (delay_count == 0) delay_count = extra_loops;   // Init this delay
+        LDRB     R0,[R4, #+13]
+        CBNZ.N   R0,??TemperatureHandler_12
         MOVS     R0,#+4
-        STRB     R0,[R4, #+12]
-// 2195         if (--delay_count)                                 // While delaying...
-??TemperatureHandler_14:
-        LDRB     R0,[R4, #+12]
+        STRB     R0,[R4, #+13]
+// 2213         if (--delay_count)                                 // While delaying...
+??TemperatureHandler_12:
+        LDRB     R0,[R4, #+13]
         SUBS     R0,R0,#+1
-        STRB     R0,[R4, #+12]
+        STRB     R0,[R4, #+13]
         UXTB     R0,R0
         CMP      R0,#+0
-        BEQ.N    ??TemperatureHandler_13
-// 2196           adc_sensor_state = (ADCSensorState)(int(SensorsReady) - 1); // retain this state (else, next state will be 0)
+        BEQ.W    ??TemperatureHandler_13
+// 2214           adc_sensor_state = (ADCSensorState)(int(SensorsReady) - 1); // retain this state (else, next state will be 0)
         MOVS     R0,#+5
-        STRB     R0,[R4, #+6]
+        STRB     R0,[R4, #+7]
         B.N      ??TemperatureHandler_13
-// 2197         break;
-// 2198       }
-// 2199       else
-// 2200         adc_sensor_state = (ADCSensorState)0; // Fall-through to start first sensor now
-// 2201     }
-// 2202 
-// 2203     #if HAS_TEMP_0
-// 2204       case PrepareTemp_0:
-// 2205         //START_ADC(TEMP_0_PIN);
-// 2206         break;
-// 2207       case MeasureTemp_0:
-// 2208 		#if defined(MKS_ROBIN_LITE) || defined(MKS_ROBIN) || defined(MKS_ROBINMINI)|| defined(MKS_ROBIN_NANO)
-// 2209 			raw_temp_value[0] += uhADCxConvertedValue[1]>>2;	//TH1
-??TemperatureHandler_10:
+// 2215         break;
+// 2216       }
+// 2217       else
+// 2218         adc_sensor_state = (ADCSensorState)0; // Fall-through to start first sensor now
+// 2219     }
+// 2220 
+// 2221     #if HAS_TEMP_0
+// 2222       case PrepareTemp_0:
+// 2223         //START_ADC(TEMP_0_PIN);
+// 2224         break;
+// 2225       case MeasureTemp_0:
+// 2226 		#if defined(MKS_ROBIN_LITE) || defined(MKS_ROBIN) || defined(MKS_ROBINMINI)|| defined(MKS_ROBIN_NANO)
+// 2227 			raw_temp_value[0] += uhADCxConvertedValue[1]>>2;	//TH1
+??TemperatureHandler_8:
+        LDR.W    R1,??DataTable69_15
         LDRH     R0,[R4, #+16]
-        LDR.N    R1,??DataTable72_22
         LDRH     R1,[R1, #+2]
         ADD      R0,R0,R1, LSR #+2
         STRH     R0,[R4, #+16]
-// 2210 		#elif defined(MKS_ROBINPRO) || defined(MKS_ROBIN2) || defined(MKS_ROBIN2MINI)
-// 2211 			raw_temp_value[0] += uhADCxConvertedValue[1];   	//TH1
-// 2212 		#endif 
-// 2213 
-// 2214         break;
+// 2228 		#elif defined(MKS_ROBINPRO) || defined(MKS_ROBIN2) || defined(MKS_ROBIN2MINI)
+// 2229 			raw_temp_value[0] += uhADCxConvertedValue[1];   	//TH1
+// 2230 		#endif 
+// 2231 
+// 2232         break;
         B.N      ??TemperatureHandler_13
-// 2215     #endif
-// 2216 
-// 2217     #if 1//HAS_TEMP_BED
-// 2218       case PrepareTemp_BED:
-// 2219         //START_ADC(TEMP_BED_PIN);
-// 2220         break;
-// 2221       case MeasureTemp_BED:
-// 2222 			#if defined(MKS_ROBIN_LITE) || defined(MKS_ROBIN) || defined(MKS_ROBINMINI)|| defined(MKS_ROBIN_NANO)
-// 2223 				raw_temp_bed_value += uhADCxConvertedValue[0]>>2;	//TB
-??TemperatureHandler_12:
+// 2233     #endif
+// 2234 
+// 2235     #if 1//HAS_TEMP_BED
+// 2236       case PrepareTemp_BED:
+// 2237         //START_ADC(TEMP_BED_PIN);
+// 2238         break;
+// 2239       case MeasureTemp_BED:
+// 2240 			#if defined(MKS_ROBIN_LITE) || defined(MKS_ROBIN) || defined(MKS_ROBINMINI)|| defined(MKS_ROBIN_NANO)
+// 2241 				raw_temp_bed_value += uhADCxConvertedValue[0]>>2;	//TB
+??TemperatureHandler_10:
+        LDR.W    R1,??DataTable69_15
         LDRH     R0,[R4, #+40]
-        LDR.N    R1,??DataTable72_22
         LDRH     R1,[R1, #+0]
         ADD      R0,R0,R1, LSR #+2
         STRH     R0,[R4, #+40]
-// 2224 			#elif defined(MKS_ROBINPRO) || defined(MKS_ROBIN2) || defined(MKS_ROBIN2MINI)
-// 2225 				raw_temp_bed_value += uhADCxConvertedValue[0];	//TB
-// 2226 			#endif 		
-// 2227         break;
-        B.N      ??TemperatureHandler_13
-// 2228     #endif
-// 2229 
-// 2230     #if HAS_TEMP_1
-// 2231       case PrepareTemp_1:
-// 2232         //START_ADC(TEMP_1_PIN);
-// 2233         break;
-// 2234       case MeasureTemp_1:
-// 2235 		#if defined(MKS_ROBIN_LITE) || defined(MKS_ROBIN) || defined(MKS_ROBINMINI)|| defined(MKS_ROBIN_NANO)
-// 2236 			
-// 2237 			if(gCfgItems.singleNozzle == 1)
-??TemperatureHandler_11:
-        LDRH     R0,[R4, #+18]
-        LDR.N    R1,??DataTable72_22
-        LDR.N    R2,??DataTable72_23
-        LDRB     R2,[R2, #+674]
-        CMP      R2,#+1
-        BNE.N    ??TemperatureHandler_15
-// 2238 				raw_temp_value[1] += uhADCxConvertedValue[1]>>2;		//TH2
-        LDRH     R1,[R1, #+2]
-        ADD      R0,R0,R1, LSR #+2
-        STRH     R0,[R4, #+18]
-        B.N      ??TemperatureHandler_13
-// 2239 			else
-// 2240 				raw_temp_value[1] += uhADCxConvertedValue[2]>>2;		//TH2
-??TemperatureHandler_15:
-        LDRH     R1,[R1, #+4]
-        ADD      R0,R0,R1, LSR #+2
-        STRH     R0,[R4, #+18]
-// 2241 		#elif defined(MKS_ROBINPRO) || defined(MKS_ROBIN2) || defined(MKS_ROBIN2MINI)
-// 2242 			raw_temp_value[1] += uhADCxConvertedValue[2];   //TH2
-// 2243 		#endif 
-// 2244 
+// 2242 			#elif defined(MKS_ROBINPRO) || defined(MKS_ROBIN2) || defined(MKS_ROBIN2MINI)
+// 2243 				raw_temp_bed_value += uhADCxConvertedValue[0];	//TB
+// 2244 			#endif 		
 // 2245         break;
+        B.N      ??TemperatureHandler_13
 // 2246     #endif
 // 2247 
-// 2248     #if HAS_TEMP_2
-// 2249       case PrepareTemp_2:
-// 2250         START_ADC(TEMP_2_PIN);
+// 2248     #if HAS_TEMP_1
+// 2249       case PrepareTemp_1:
+// 2250         //START_ADC(TEMP_1_PIN);
 // 2251         break;
-// 2252       case MeasureTemp_2:
-// 2253         raw_temp_value[2] += ADC;
-// 2254         break;
-// 2255     #endif
-// 2256 
-// 2257     #if HAS_TEMP_3
-// 2258       case PrepareTemp_3:
-// 2259         START_ADC(TEMP_3_PIN);
-// 2260         break;
-// 2261       case MeasureTemp_3:
-// 2262         raw_temp_value[3] += ADC;
+// 2252       case MeasureTemp_1:
+// 2253 		#if defined(MKS_ROBIN_LITE) || defined(MKS_ROBIN) || defined(MKS_ROBINMINI)|| defined(MKS_ROBIN_NANO)
+// 2254 			
+// 2255 			if(gCfgItems.singleNozzle == 1)
+??TemperatureHandler_9:
+        LDRH     R0,[R4, #+18]
+        LDR.W    R2,??DataTable69_16
+        LDR.W    R1,??DataTable69_15
+        LDRB     R2,[R2, #+690]
+        CMP      R2,#+1
+        ITE      EQ 
+// 2256 				raw_temp_value[1] += uhADCxConvertedValue[1]>>2;		//TH2
+        LDRHEQ   R1,[R1, #+2]
+// 2257 			else
+// 2258 				raw_temp_value[1] += uhADCxConvertedValue[2]>>2;		//TH2
+        LDRHNE   R1,[R1, #+4]
+        ADD      R0,R0,R1, LSR #+2
+        STRH     R0,[R4, #+18]
+        B.N      ??TemperatureHandler_13
+// 2259 		#elif defined(MKS_ROBINPRO) || defined(MKS_ROBIN2) || defined(MKS_ROBIN2MINI)
+// 2260 			raw_temp_value[1] += uhADCxConvertedValue[2];   //TH2
+// 2261 		#endif 
+// 2262 
 // 2263         break;
 // 2264     #endif
 // 2265 
-// 2266     #if HAS_TEMP_4
-// 2267       case PrepareTemp_4:
-// 2268         START_ADC(TEMP_4_PIN);
+// 2266     #if HAS_TEMP_2
+// 2267       case PrepareTemp_2:
+// 2268         START_ADC(TEMP_2_PIN);
 // 2269         break;
-// 2270       case MeasureTemp_4:
-// 2271         raw_temp_value[4] += ADC;
+// 2270       case MeasureTemp_2:
+// 2271         raw_temp_value[2] += ADC;
 // 2272         break;
 // 2273     #endif
 // 2274 
-// 2275     #if ENABLED(FILAMENT_WIDTH_SENSOR)
-// 2276       case Prepare_FILWIDTH:
-// 2277         START_ADC(FILWIDTH_PIN);
-// 2278       break;
-// 2279       case Measure_FILWIDTH:
-// 2280         if (ADC > 102) { // Make sure ADC is reading > 0.5 volts, otherwise don't read.
-// 2281           raw_filwidth_value -= (raw_filwidth_value >> 7); // Subtract 1/128th of the raw_filwidth_value
-// 2282           raw_filwidth_value += ((unsigned long)ADC << 7); // Add new ADC reading, scaled by 128
-// 2283         }
-// 2284       break;
-// 2285     #endif
-// 2286 
-// 2287     #if ENABLED(ADC_KEYPAD)
-// 2288       case Prepare_ADC_KEY:
-// 2289         START_ADC(ADC_KEYPAD_PIN);
+// 2275     #if HAS_TEMP_3
+// 2276       case PrepareTemp_3:
+// 2277         START_ADC(TEMP_3_PIN);
+// 2278         break;
+// 2279       case MeasureTemp_3:
+// 2280         raw_temp_value[3] += ADC;
+// 2281         break;
+// 2282     #endif
+// 2283 
+// 2284     #if HAS_TEMP_4
+// 2285       case PrepareTemp_4:
+// 2286         START_ADC(TEMP_4_PIN);
+// 2287         break;
+// 2288       case MeasureTemp_4:
+// 2289         raw_temp_value[4] += ADC;
 // 2290         break;
-// 2291       case Measure_ADC_KEY:
-// 2292         if (ADCKey_count < 16) {
-// 2293           raw_ADCKey_value = ADC;
-// 2294           if (raw_ADCKey_value > 900) {
-// 2295             //ADC Key release
-// 2296             ADCKey_count = 0;
-// 2297             current_ADCKey_raw = 0;
-// 2298           }
-// 2299           else {
-// 2300             current_ADCKey_raw += raw_ADCKey_value;
-// 2301             ADCKey_count++;
-// 2302           }
-// 2303         }
-// 2304         break;
-// 2305     #endif // ADC_KEYPAD
-// 2306 
-// 2307     case StartupDelay: break;
-// 2308 
-// 2309   } // switch(adc_sensor_state)
-// 2310 
-// 2311   if (!adc_sensor_state && ++temp_count >= OVERSAMPLENR) { // 10 * 16 * 1/(16000000/64/256)  = 164ms.
-??TemperatureHandler_13:
-        LDRSB    R0,[R4, #+6]
+// 2291     #endif
+// 2292 
+// 2293     #if ENABLED(FILAMENT_WIDTH_SENSOR)
+// 2294       case Prepare_FILWIDTH:
+// 2295         START_ADC(FILWIDTH_PIN);
+// 2296       break;
+// 2297       case Measure_FILWIDTH:
+// 2298         if (ADC > 102) { // Make sure ADC is reading > 0.5 volts, otherwise don't read.
+// 2299           raw_filwidth_value -= (raw_filwidth_value >> 7); // Subtract 1/128th of the raw_filwidth_value
+// 2300           raw_filwidth_value += ((unsigned long)ADC << 7); // Add new ADC reading, scaled by 128
+// 2301         }
+// 2302       break;
+// 2303     #endif
+// 2304 
+// 2305     #if ENABLED(ADC_KEYPAD)
+// 2306       case Prepare_ADC_KEY:
+// 2307         START_ADC(ADC_KEYPAD_PIN);
+// 2308         break;
+// 2309       case Measure_ADC_KEY:
+// 2310         if (ADCKey_count < 16) {
+// 2311           raw_ADCKey_value = ADC;
+// 2312           if (raw_ADCKey_value > 900) {
+// 2313             //ADC Key release
+// 2314             ADCKey_count = 0;
+// 2315             current_ADCKey_raw = 0;
+// 2316           }
+// 2317           else {
+// 2318             current_ADCKey_raw += raw_ADCKey_value;
+// 2319             ADCKey_count++;
+// 2320           }
+// 2321         }
+// 2322         break;
+// 2323     #endif // ADC_KEYPAD
+// 2324 
+// 2325     case StartupDelay: break;
+// 2326 
+// 2327   } // switch(adc_sensor_state)
+// 2328 
+// 2329   if (!adc_sensor_state && ++temp_count >= OVERSAMPLENR) { // 10 * 16 * 1/(16000000/64/256)  = 164ms.
+??TemperatureHandler_11:
         CMP      R0,#+0
-        BNE.W    ??TemperatureHandler_16
-        LDRB     R0,[R4, #+5]
-        ADDS     R0,R0,#+1
-        STRB     R0,[R4, #+5]
-        SXTB     R0,R0
-        CMP      R0,#+16
-        BLT.W    ??TemperatureHandler_16
-// 2312 
-// 2313     temp_count = 0;
-        MOVS     R0,#+0
-        STRB     R0,[R4, #+5]
-// 2314 
-// 2315     // Update the raw values if they've been read. Else we could be updating them during reading.
-// 2316     if (!temp_meas_ready) set_current_temp_raw();
-        LDRB     R0,[R4, #+2]
-        CMP      R0,#+0
-        BNE.N    ??TemperatureHandler_17
-          CFI FunCall _ZN11Temperature20set_current_temp_rawEv
-        BL       _ZN11Temperature20set_current_temp_rawEv
-// 2317 
-// 2318     // Filament Sensor - can be read any time since IIR filtering is used
-// 2319     #if ENABLED(FILAMENT_WIDTH_SENSOR)
-// 2320       current_raw_filwidth = raw_filwidth_value >> 10;  // Divide to get to 0-16384 range since we used 1/128 IIR filter approach
-// 2321     #endif
-// 2322 
-// 2323     ZERO(raw_temp_value);
-??TemperatureHandler_17:
-        MOVS     R2,#+4
-        MOVS     R1,#+0
-        ADD      R0,R4,#+16
-          CFI FunCall memset
-        BL       memset
-// 2324     raw_temp_bed_value = 0;
-        MOVS     R0,#+0
-        STRH     R0,[R4, #+40]
-// 2325 
-// 2326     #define TEMPDIR(N) ((HEATER_##N##_RAW_LO_TEMP) > (HEATER_##N##_RAW_HI_TEMP) ? -1 : 1)
-// 2327 #if 0
-// 2328     int constexpr temp_dir[] = {
-// 2329       #if ENABLED(HEATER_0_USES_MAX6675)
-// 2330          0
-// 2331       #else
-// 2332         TEMPDIR(0)
-// 2333       #endif
-// 2334       #if HOTENDS > 1
-// 2335         , TEMPDIR(1)
-// 2336         #if HOTENDS > 2
-// 2337           , TEMPDIR(2)
-// 2338           #if HOTENDS > 3
-// 2339             , TEMPDIR(3)
-// 2340             #if HOTENDS > 4
-// 2341               , TEMPDIR(4)
-// 2342             #endif // HOTENDS > 4
-// 2343           #endif // HOTENDS > 3
-// 2344         #endif // HOTENDS > 2
-// 2345       #endif // HOTENDS > 1
-// 2346     };
-// 2347 #endif
-// 2348 	int  temp_dir[2];
-// 2349 	if(TEMP_SENSOR_0 == sensors_MAX31855)
-        MOV      R0,#-1
-        LDR.N    R5,??DataTable72
-        ADD      R6,SP,#+0
-        LDRSB    R1,[R5, #+246]
-        CMN      R1,#+3
-        BNE.N    ??TemperatureHandler_18
-// 2350 		{
-// 2351 		temp_dir[0]=0;
-        MOVS     R1,#+0
-        STR      R1,[SP, #+0]
-// 2352 		temp_dir[1]=TEMPDIR(1);       //mks_TC
-        STR      R0,[R6, #+4]
-        B.N      ??TemperatureHandler_19
-// 2353 		}
-// 2354 	else
-// 2355 		{
-// 2356 		temp_dir[0]=TEMPDIR(0);
-??TemperatureHandler_18:
-        STR      R0,[SP, #+0]
-// 2357 		temp_dir[1]=TEMPDIR(1);       //mks_TC
-        STR      R0,[R6, #+4]
-// 2358 		}
-// 2359 	
-// 2360 
-// 2361     for (uint8_t e = 0; e < COUNT(temp_dir); e++) {
-??TemperatureHandler_19:
-        MOVS     R7,#+0
-        B.N      ??TemperatureHandler_20
-// 2362       const int16_t tdir = temp_dir[e], rawtemp = current_temperature_raw[e] * tdir;
-// 2363       //const 
-// 2364        bool heater_on; //= 0 <
-// 2365         /*
-// 2366         #if ENABLED(PIDTEMP)
-// 2367           soft_pwm_amount[e]
-// 2368         #else
-// 2369           target_temperature[e]
-// 2370         #endif
-// 2371       ;
-// 2372       */
-// 2373       if(PIDTEMP)
-// 2374         heater_on = 0 < soft_pwm_amount[e];
-// 2375       else
-// 2376         heater_on = 0 < target_temperature[e];
-??TemperatureHandler_21:
-        MOV      R10,#+0
-// 2377       
-// 2378       //if (rawtemp > maxttemp_raw[e] * tdir && heater_on) max_temp_error(e);
-// 2379       if (rawtemp > maxttemp_raw[e] * tdir && loop_start) max_temp_error(e);
-??TemperatureHandler_22:
-        ADD      R11,R4,R7, LSL #+1
-        LDRSH    R0,[R11, #+24]
-        MUL      R0,R8,R0
-        CMP      R0,R9
-        BGE.N    ??TemperatureHandler_23
-        LDR.N    R0,??DataTable72_24
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??TemperatureHandler_23
-        MOV      R0,R7
-        SXTB     R0,R0
-          CFI FunCall _ZN11Temperature14max_temp_errorEa
-        BL       _ZN11Temperature14max_temp_errorEa
-// 2380       if (rawtemp < minttemp_raw[e] * tdir && !is_preheating(e) && heater_on) {
-??TemperatureHandler_23:
-        LDRSH    R0,[R11, #+20]
-        MUL      R0,R8,R0
-        CMP      R9,R0
-        BGE.N    ??TemperatureHandler_24
-        CMP      R10,#+0
-        BEQ.N    ??TemperatureHandler_24
-// 2381         #ifdef MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED
-// 2382           if (++consecutive_low_temperature_error[e] >= MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED)
-// 2383         #endif
-// 2384             min_temp_error(e);
-        MOV      R0,R7
-        SXTB     R0,R0
-          CFI FunCall _ZN11Temperature14min_temp_errorEa
-        BL       _ZN11Temperature14min_temp_errorEa
-// 2385       }
-??TemperatureHandler_24:
-        ADDS     R7,R7,#+1
-??TemperatureHandler_20:
-        CMP      R7,#+2
-        BCS.N    ??TemperatureHandler_25
-        LDRSH    R8,[R6, R7, LSL #+2]
-        ADD      R0,R4,R7, LSL #+2
-        LDR      R1,[R0, #+52]
-        MUL      R9,R8,R1
-        SXTH     R9,R9
-        LDRB     R1,[R5, #+52]
-        CMP      R1,#+0
-        BEQ.N    ??TemperatureHandler_26
-        LDRB     R0,[R7, R4]
-        SUBS     R10,R0,#+1
-        SBC      R10,R10,R10
-        MVN      R10,R10
-        LSR      R10,R10,#+31
-        B.N      ??TemperatureHandler_22
-??TemperatureHandler_26:
-        LDR      R0,[R0, #+72]
-        CMP      R0,#+1
-        BLT.N    ??TemperatureHandler_21
-        MOV      R10,#+1
-        B.N      ??TemperatureHandler_22
-// 2386       #ifdef MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED
-// 2387         else
-// 2388           consecutive_low_temperature_error[e] = 0;
-// 2389       #endif
-// 2390     }
-// 2391 
-// 2392     #if 1//HAS_TEMP_BED
-// 2393       #if HEATER_BED_RAW_LO_TEMP > HEATER_BED_RAW_HI_TEMP
-// 2394         #define GEBED <=
-// 2395       #else
-// 2396         #define GEBED >=
-// 2397       #endif
-// 2398       //const 
-// 2399       bool bed_on;// = 0 <
-// 2400       /*
-// 2401         #if ENABLED(PIDTEMPBED)
-// 2402           soft_pwm_amount_bed
-// 2403         #else
-// 2404           target_temperature_bed
-// 2405         #endif
-// 2406       ;
-// 2407       */
-// 2408       if(PIDTEMPBED)
-??TemperatureHandler_25:
-        LDRB     R0,[R5, #+53]
-        CMP      R0,#+0
-        BEQ.N    ??TemperatureHandler_27
-// 2409         bed_on = 0 < soft_pwm_amount_bed;
-        LDRB     R0,[R4, #+3]
-        SUBS     R5,R0,#+1
-        SBCS     R5,R5,R5
-        MVNS     R5,R5
-        LSRS     R5,R5,#+31
-        B.N      ??TemperatureHandler_28
-// 2410       else
-// 2411         bed_on = 0 < target_temperature_bed;
-??TemperatureHandler_27:
-        LDRSH    R0,[R4, #+36]
-        CMP      R0,#+1
-        BLT.N    ??TemperatureHandler_29
-        MOVS     R5,#+1
-        B.N      ??TemperatureHandler_28
-??TemperatureHandler_29:
-        MOVS     R5,#+0
-// 2412       
-// 2413       //if (current_temperature_bed_raw GEBED bed_maxttemp_raw && bed_on) max_temp_error(-1);
-// 2414       if (current_temperature_bed_raw GEBED bed_maxttemp_raw && loop_start) max_temp_error(-1);
-??TemperatureHandler_28:
-        LDRSH    R0,[R4, #+44]
-        LDR      R1,[R4, #+80]
-        CMP      R0,R1
-        BLT.N    ??TemperatureHandler_30
-        LDR.N    R0,??DataTable72_24
-        LDRB     R0,[R0, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??TemperatureHandler_30
-        MOV      R0,#-1
-          CFI FunCall _ZN11Temperature14max_temp_errorEa
-        BL       _ZN11Temperature14max_temp_errorEa
-// 2415       if (bed_minttemp_raw GEBED current_temperature_bed_raw && bed_on) min_temp_error(-1);
-??TemperatureHandler_30:
-        LDR      R0,[R4, #+80]
-        LDRSH    R1,[R4, #+42]
-        CMP      R0,R1
-        BLT.N    ??TemperatureHandler_16
-        CMP      R5,#+0
-        BEQ.N    ??TemperatureHandler_16
-        MOV      R0,#-1
-          CFI FunCall _ZN11Temperature14min_temp_errorEa
-        BL       _ZN11Temperature14min_temp_errorEa
-// 2416     #endif
-// 2417 
-// 2418   } // temp_count >= OVERSAMPLENR
-// 2419 
-// 2420   // Go to the next state, up to SensorsReady
-// 2421   adc_sensor_state = (ADCSensorState)(int(adc_sensor_state) + 1);
-??TemperatureHandler_16:
+        BNE.W    ??TemperatureHandler_13
         LDRB     R0,[R4, #+6]
         ADDS     R0,R0,#+1
         STRB     R0,[R4, #+6]
-// 2422   if (adc_sensor_state > SensorsReady) adc_sensor_state = (ADCSensorState)0;
         SXTB     R0,R0
-        CMP      R0,#+7
-        BLT.N    ??TemperatureHandler_31
+        CMP      R0,#+16
+        BLT.W    ??TemperatureHandler_13
+// 2330 
+// 2331     temp_count = 0;
         MOVS     R0,#+0
         STRB     R0,[R4, #+6]
-// 2423 
-// 2424   #if ENABLED(BABYSTEPPING)
-// 2425     LOOP_XYZ(axis) {
-// 2426       const int curTodo = babystepsTodo[axis]; // get rid of volatile for performance
-// 2427       if (curTodo) {
-// 2428         stepper.babystep((AxisEnum)axis, curTodo > 0);
-// 2429         if (curTodo > 0) babystepsTodo[axis]--;
-// 2430                     else babystepsTodo[axis]++;
-// 2431       }
-// 2432     }
-// 2433   #endif // BABYSTEPPING
-// 2434 
-// 2435   #if ENABLED(PINS_DEBUGGING)
-// 2436     extern bool endstop_monitor_flag;
-// 2437     // run the endstop monitor at 15Hz
-// 2438     static uint8_t endstop_monitor_count = 16;  // offset this check from the others
-// 2439     if (endstop_monitor_flag) {
-// 2440       endstop_monitor_count += _BV(1);  //  15 Hz
-// 2441       endstop_monitor_count &= 0x7F;
-// 2442       if (!endstop_monitor_count) endstop_monitor();  // report changes in endstop status
-// 2443     }
-// 2444   #endif
-// 2445 
-// 2446   #if ENABLED(ENDSTOP_INTERRUPTS_FEATURE)
-// 2447 
-// 2448     extern volatile uint8_t e_hit;
-// 2449 
-// 2450     if (e_hit && ENDSTOPS_ENABLED) {
-// 2451       endstops.update();  // call endstop update routine
-// 2452       e_hit--;
-// 2453     }
-// 2454   #endif
-// 2455 
-// 2456   //cli();
-// 2457   in_temp_isr = false;
+// 2332 
+// 2333     // Update the raw values if they've been read. Else we could be updating them during reading.
+// 2334     if (!temp_meas_ready) set_current_temp_raw();
+        LDRB     R0,[R4, #+2]
+        CBNZ.N   R0,??TemperatureHandler_14
+          CFI FunCall _ZN11Temperature20set_current_temp_rawEv
+        BL       _ZN11Temperature20set_current_temp_rawEv
+// 2335 
+// 2336     // Filament Sensor - can be read any time since IIR filtering is used
+// 2337     #if ENABLED(FILAMENT_WIDTH_SENSOR)
+// 2338       current_raw_filwidth = raw_filwidth_value >> 10;  // Divide to get to 0-16384 range since we used 1/128 IIR filter approach
+// 2339     #endif
+// 2340 
+// 2341     ZERO(raw_temp_value);
+// 2342     raw_temp_bed_value = 0;
+// 2343 
+// 2344     #define TEMPDIR(N) ((HEATER_##N##_RAW_LO_TEMP) > (HEATER_##N##_RAW_HI_TEMP) ? -1 : 1)
+// 2345 #if 0
+// 2346     int constexpr temp_dir[] = {
+// 2347       #if ENABLED(HEATER_0_USES_MAX6675)
+// 2348          0
+// 2349       #else
+// 2350         TEMPDIR(0)
+// 2351       #endif
+// 2352       #if HOTENDS > 1
+// 2353         , TEMPDIR(1)
+// 2354         #if HOTENDS > 2
+// 2355           , TEMPDIR(2)
+// 2356           #if HOTENDS > 3
+// 2357             , TEMPDIR(3)
+// 2358             #if HOTENDS > 4
+// 2359               , TEMPDIR(4)
+// 2360             #endif // HOTENDS > 4
+// 2361           #endif // HOTENDS > 3
+// 2362         #endif // HOTENDS > 2
+// 2363       #endif // HOTENDS > 1
+// 2364     };
+// 2365 #endif
+// 2366 	int  temp_dir[2];
+// 2367 	if(TEMP_SENSOR_0 == sensors_MAX31855)
+??TemperatureHandler_14:
+        LDR.N    R2,??DataTable67_5
+        LDRSB    R2,[R2, #+246]
+        ADD      R0,R4,#+16
+        MOVS     R1,#+0
+        STR      R1,[R0, #+0]
+        STRH     R1,[R4, #+40]
+        MOV      R0,#-1
+        ADD      R1,SP,#+12
+        CMN      R2,#+3
+        ITTE     EQ 
+// 2368 		{
+// 2369 		temp_dir[0]=0;
+        MOVEQ    R2,#+0
+        STREQ    R2,[SP, #+12]
+// 2370 		temp_dir[1]=TEMPDIR(1);       //mks_TC
+// 2371 		}
+// 2372 	else
+// 2373 		{
+// 2374 		temp_dir[0]=TEMPDIR(0);
+        STRNE    R0,[SP, #+12]
+// 2375 		temp_dir[1]=TEMPDIR(1);       //mks_TC
+        STR      R0,[R1, #+4]
+// 2376 		}
+// 2377 	
+// 2378 
+// 2379     for (uint8_t e = 0; e < COUNT(temp_dir); e++) {
+        MOVS     R5,#+0
+        STR      R4,[SP, #+4]
+        ADD      R6,R4,#+24
+        ADD      R7,R4,#+20
+        ADD      R8,SP,#+12
+        ADD      R9,R4,#+52
+        ADD      R10,R4,#+60
+// 2380       const int16_t tdir = temp_dir[e], rawtemp = current_temperature_raw[e] * tdir;
+??TemperatureHandler_15:
+        LDRSH    R0,[R8, #+0]
+        STR      R0,[SP, #+0]
+        LDR      R1,[SP, #+0]
+        LDR      R0,[R9, #+0]
+        MULS     R0,R1,R0
+        SXTH     R0,R0
+        STR      R0,[SP, #+8]
+// 2381       //const 
+// 2382        bool heater_on; //= 0 <
+// 2383         /*
+// 2384         #if ENABLED(PIDTEMP)
+// 2385           soft_pwm_amount[e]
+// 2386         #else
+// 2387           target_temperature[e]
+// 2388         #endif
+// 2389       ;
+// 2390       */
+// 2391       if(PIDTEMP)
+        LDR.N    R0,??DataTable67_5
+        LDRB     R0,[R0, #+54]
+        CBZ.N    R0,??TemperatureHandler_16
+// 2392         heater_on = 0 < soft_pwm_amount[e];
+        LDR      R0,[SP, #+4]
+        LDRB     R0,[R0, #+0]
+        SUBS     R11,R0,#+1
+        SBC      R11,R11,R11
+        MVN      R0,R11
+        LSR      R11,R0,#+31
+        B.N      ??TemperatureHandler_17
+// 2393       else
+// 2394         heater_on = 0 < target_temperature[e];
+??TemperatureHandler_16:
+        LDR      R0,[R10, #+0]
+        CMP      R0,#+1
+        ITE      GE 
+        MOVGE    R11,#+1
+        MOVLT    R11,#+0
+// 2395       
+// 2396       //if (rawtemp > maxttemp_raw[e] * tdir && heater_on) max_temp_error(e);
+// 2397       if (rawtemp > maxttemp_raw[e] * tdir && loop_start) max_temp_error(e);
+??TemperatureHandler_17:
+        LDRSH    R0,[R6, #+0]
+        LDR      R1,[SP, #+0]
+        MULS     R0,R1,R0
+        LDR      R1,[SP, #+8]
+        CMP      R0,R1
+        BGE.N    ??TemperatureHandler_18
+        LDR.W    R0,??DataTable69_17
+        LDRB     R0,[R0, #+0]
+        CBZ.N    R0,??TemperatureHandler_18
+        ADR.W    R2,`?<Constant "Err: MAXTEMP">`
+        ADR.W    R1,`?<Constant "MAXTEMP triggered">`
+        SXTB     R0,R5
+          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
+        BL       _ZN11Temperature11_temp_errorEaPKcS1_
+        LDR.W    R1,??DataTable69_18
+        MOVS     R0,#+2
+        STRB     R0,[R1, #+0]
+// 2398       if (rawtemp < minttemp_raw[e] * tdir && !is_preheating(e) && heater_on) {
+??TemperatureHandler_18:
+        LDRSH    R1,[R7, #+0]
+        LDR      R2,[SP, #+0]
+        LDR      R0,[SP, #+8]
+        MULS     R1,R2,R1
+        CMP      R0,R1
+        BGE.N    ??TemperatureHandler_19
+        CMP      R11,#+0
+        ITT      NE 
+// 2399         #ifdef MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED
+// 2400           if (++consecutive_low_temperature_error[e] >= MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED)
+// 2401         #endif
+// 2402             min_temp_error(e);
+        SXTBNE   R0,R5
+          CFI FunCall _ZN11Temperature14min_temp_errorEa
+        BLNE     _ZN11Temperature14min_temp_errorEa
+// 2403       }
+// 2404       #ifdef MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED
+// 2405         else
+// 2406           consecutive_low_temperature_error[e] = 0;
+// 2407       #endif
+// 2408     }
+??TemperatureHandler_19:
+        LDR      R0,[SP, #+4]
+        ADDS     R5,R5,#+1
+        ADDS     R7,R7,#+2
+        ADDS     R6,R6,#+2
+        ADDS     R0,R0,#+1
+        ADD      R10,R10,#+4
+        ADD      R9,R9,#+4
+        ADD      R8,R8,#+4
+        STR      R0,[SP, #+4]
+        CMP      R5,#+2
+        BCC.N    ??TemperatureHandler_15
+// 2409 
+// 2410     #if 1//HAS_TEMP_BED
+// 2411       #if HEATER_BED_RAW_LO_TEMP > HEATER_BED_RAW_HI_TEMP
+// 2412         #define GEBED <=
+// 2413       #else
+// 2414         #define GEBED >=
+// 2415       #endif
+// 2416       //const 
+// 2417       bool bed_on;// = 0 <
+// 2418       /*
+// 2419         #if ENABLED(PIDTEMPBED)
+// 2420           soft_pwm_amount_bed
+// 2421         #else
+// 2422           target_temperature_bed
+// 2423         #endif
+// 2424       ;
+// 2425       */
+// 2426       if(PIDTEMPBED)
+        LDR.W    R5,??DataTable69_19
+        LDRB     R0,[R5, #+1]
+        CBZ.N    R0,??TemperatureHandler_20
+// 2427         bed_on = 0 < soft_pwm_amount_bed;
+        LDRB     R0,[R4, #+3]
+        SUBS     R6,R0,#+1
+        SBCS     R6,R6,R6
+        MVNS     R6,R6
+        LSRS     R6,R6,#+31
+        B.N      ??TemperatureHandler_21
+// 2428       else
+// 2429         bed_on = 0 < target_temperature_bed;
+??TemperatureHandler_20:
+        LDRSH    R0,[R4, #+36]
+        CMP      R0,#+1
+        ITE      GE 
+        MOVGE    R6,#+1
+        MOVLT    R6,#+0
+// 2430       
+// 2431       //if (current_temperature_bed_raw GEBED bed_maxttemp_raw && bed_on) max_temp_error(-1);
+// 2432       if (current_temperature_bed_raw GEBED bed_maxttemp_raw && loop_start) max_temp_error(-1);
+??TemperatureHandler_21:
+        LDRSH    R0,[R4, #+44]
+        LDR      R1,[R4, #+80]
+        CMP      R0,R1
+        BLT.N    ??TemperatureHandler_22
+        LDR.W    R0,??DataTable69_17
+        LDRB     R0,[R0, #+0]
+        CMP      R0,#+0
+        BEQ.N    ??TemperatureHandler_22
+        LDRB     R0,[R5, #+2]
+        CMP      R0,#+0
+        BEQ.N    ??TemperatureHandler_23
+        LDR.W    R7,??DataTable69_20
+        LDRB     R0,[R7, #+0]
+        CBZ.N    R0,??TemperatureHandler_24
+        LDR.W    R9,??DataTable69_12
+        LDR.W    R8,??DataTable67_6
+        B.N      ??TemperatureHandler_25
+??TemperatureHandler_26:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??TemperatureHandler_25:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??TemperatureHandler_26
+        ADR.W    R9,`?<Constant "MAXTEMP triggered">`
+        B.N      ??TemperatureHandler_27
+??TemperatureHandler_28:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??TemperatureHandler_27:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??TemperatureHandler_28
+        ADR.W    R9,`?<Constant ", system stopped! Hea...">`
+        B.N      ??TemperatureHandler_29
+??TemperatureHandler_30:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??TemperatureHandler_29:
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??TemperatureHandler_30
+        ADR.W    R9,`?<Constant "bed\\n">`
+        B.N      ??TemperatureHandler_31
+??TemperatureHandler_32:
+        UXTB     R1,R1
+        MOV      R0,R8
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
 ??TemperatureHandler_31:
-        MOVS     R0,#+0
+        LDRSB    R1,[R9], #+1
+        MOVS     R0,R1
+        BNE.N    ??TemperatureHandler_32
+??TemperatureHandler_24:
+        LDRB     R0,[R4, #+4]
+        CBNZ.N   R0,??TemperatureHandler_33
+        STRB     R0,[R7, #+0]
+        MOVS     R0,#+1
         STRB     R0,[R4, #+4]
-// 2458   //SBI(TIMSK0, OCIE0B); //re-enable Temperature ISR
-// 2459   HAL_TIM_Base_Start_IT(&htim4);
-        LDR.N    R0,??DataTable72_21
+          CFI FunCall _Z17temper_error_killv
+        BL       _Z17temper_error_killv
+        B.N      ??TemperatureHandler_34
+??TemperatureHandler_33:
+          CFI FunCall _ZN11Temperature19disable_all_heatersEv
+        BL       _ZN11Temperature19disable_all_heatersEv
+        B.N      ??TemperatureHandler_34
+??TemperatureHandler_23:
+        MOV      R0,#-1
+        ADR.W    R2,`?<Constant "Err: MAXTEMP">`
+        ADR.W    R1,`?<Constant "MAXTEMP triggered">`
+          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
+        BL       _ZN11Temperature11_temp_errorEaPKcS1_
+??TemperatureHandler_34:
+        LDR.N    R1,??DataTable69_18
+        MOVS     R0,#+1
+        STRB     R0,[R1, #+0]
+// 2433       if (bed_minttemp_raw GEBED current_temperature_bed_raw && bed_on) min_temp_error(-1);
+??TemperatureHandler_22:
+        LDR      R0,[R4, #+80]
+        LDRSH    R1,[R4, #+42]
+        CMP      R0,R1
+        BLT.N    ??TemperatureHandler_13
+        CBZ.N    R6,??TemperatureHandler_13
+        LDRB     R0,[R5, #+2]
+        ADR.W    R1,`?<Constant "MINTEMP triggered">`
+        CMP      R0,#+0
+        ITE      NE 
+        ADRNE.W  R2,`?<Constant "Err: MINTEMP BED">`
+        ADREQ.W  R2,`?<Constant "Err: MINTEMP">`
+        MOV      R0,#-1
+          CFI FunCall _ZN11Temperature11_temp_errorEaPKcS1_
+        BL       _ZN11Temperature11_temp_errorEaPKcS1_
+        LDR.N    R1,??DataTable69_18
+        MOVS     R0,#+3
+        STRB     R0,[R1, #+0]
+// 2434     #endif
+// 2435 
+// 2436   } // temp_count >= OVERSAMPLENR
+// 2437 
+// 2438   // Go to the next state, up to SensorsReady
+// 2439   adc_sensor_state = (ADCSensorState)(int(adc_sensor_state) + 1);
+??TemperatureHandler_13:
+        LDRB     R0,[R4, #+7]
+        ADDS     R0,R0,#+1
+// 2440   if (adc_sensor_state > SensorsReady) adc_sensor_state = (ADCSensorState)0;
+        SXTB     R0,R0
+        CMP      R0,#+7
+        IT       GE 
+        MOVGE    R0,#+0
+        STRB     R0,[R4, #+7]
+// 2441 
+// 2442   #if ENABLED(BABYSTEPPING)
+// 2443     LOOP_XYZ(axis) {
+        MOVS     R5,#+0
+        ADD      R6,R4,#+100
+// 2444       const int curTodo = babystepsTodo[axis]; // get rid of volatile for performance
+??TemperatureHandler_35:
+        LDR      R7,[R6, #+0]
+// 2445       if (curTodo) {
+        CBZ.N    R7,??TemperatureHandler_36
+// 2446         stepper.babystep((AxisEnum)axis, curTodo > 0);
+        CMP      R7,#+1
+        ITE      GE 
+        MOVGE    R1,#+1
+        MOVLT    R1,#+0
+        SXTB     R0,R5
+          CFI FunCall _ZN7Stepper8babystepE8AxisEnumb
+        BL       _ZN7Stepper8babystepE8AxisEnumb
+// 2447         if (curTodo > 0) babystepsTodo[axis]--;
+        LDR      R0,[R6, #+0]
+        CMP      R7,#+1
+        ITE      GE 
+        SUBGE    R0,R0,#+1
+// 2448                     else babystepsTodo[axis]++;
+        ADDLT    R0,R0,#+1
+        STR      R0,[R6, #+0]
+// 2449       }
+// 2450     }
+??TemperatureHandler_36:
+        ADDS     R5,R5,#+1
+        ADDS     R6,R6,#+4
+        CMP      R5,#+3
+        BLT.N    ??TemperatureHandler_35
+// 2451   #endif // BABYSTEPPING
+// 2452 
+// 2453   #if ENABLED(PINS_DEBUGGING)
+// 2454     extern bool endstop_monitor_flag;
+// 2455     // run the endstop monitor at 15Hz
+// 2456     static uint8_t endstop_monitor_count = 16;  // offset this check from the others
+// 2457     if (endstop_monitor_flag) {
+// 2458       endstop_monitor_count += _BV(1);  //  15 Hz
+// 2459       endstop_monitor_count &= 0x7F;
+// 2460       if (!endstop_monitor_count) endstop_monitor();  // report changes in endstop status
+// 2461     }
+// 2462   #endif
+// 2463 
+// 2464   #if ENABLED(ENDSTOP_INTERRUPTS_FEATURE)
+// 2465 
+// 2466     extern volatile uint8_t e_hit;
+// 2467 
+// 2468     if (e_hit && ENDSTOPS_ENABLED) {
+// 2469       endstops.update();  // call endstop update routine
+// 2470       e_hit--;
+// 2471     }
+// 2472   #endif
+// 2473 
+// 2474   //cli();
+// 2475   in_temp_isr = false;
+        MOVS     R0,#+0
+        STRB     R0,[R4, #+5]
+// 2476   //SBI(TIMSK0, OCIE0B); //re-enable Temperature ISR
+// 2477   HAL_TIM_Base_Start_IT(&htim4);
+        LDR.N    R0,??DataTable69_14
           CFI FunCall HAL_TIM_Base_Start_IT
         BL       HAL_TIM_Base_Start_IT
-// 2460 }
+// 2478 }
 ??TemperatureHandler_0:
-        POP      {R0-R2,R4-R11,PC}  ;; return
-          CFI EndBlock cfiBlock22
+        ADD      SP,SP,#+20
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock26
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable66:
+        DC32     Serial3
 
         SECTION `.data`:DATA:REORDER:NOROOT(2)
 _ZN11Temperature15soft_pwm_amountE:
@@ -6226,6 +6499,7 @@ _ZN11Temperature15soft_pwm_amountE:
 _ZN11Temperature15temp_meas_readyE:
         DC8 0
 _ZN11Temperature19soft_pwm_amount_bedE:
+        DC8 0
         DC8 0
 _ZN11Temperature11in_temp_isrE:
         DC8 0
@@ -6237,7 +6511,7 @@ _ZN11Temperature11in_temp_isrE:
         DC8 0
         DC8 0
         DC8 0
-        DC8 0, 0, 0
+        DC8 0, 0
 _ZN11Temperature14raw_temp_valueE:
         DC16 0, 0
 _ZN11Temperature12minttemp_rawE:
@@ -6263,13 +6537,13 @@ _ZN11Temperature17watch_target_tempE:
         DC16 0, 0
 _ZN11Temperature23current_temperature_rawE:
         DC32 0, 0
+_ZN11Temperature18target_temperatureE:
+        DC32 0, 0
 _ZN11Temperature19current_temperatureE:
         DC32 0H
         DC8 0, 0, 0, 0
 _ZN11Temperature23current_temperature_bedE:
         DC32 0H
-_ZN11Temperature18target_temperatureE:
-        DC32 0, 0
 _ZN11Temperature27current_temperature_bed_rawE:
         DC32 0
 _ZN11Temperature2KpE:
@@ -6280,10 +6554,8 @@ _ZN11Temperature2KdE:
         DC8 0, 0, 0, 0
 _ZN11Temperature5bedKpE:
         DC8 0, 0, 0, 0
-_ZN11Temperature5bedKiE:
-        DC8 0, 0, 0, 0
-_ZN11Temperature5bedKdE:
-        DC8 0, 0, 0, 0
+_ZN11Temperature13babystepsTodoE:
+        DC32 0, 0, 0
 _ZN11Temperature20watch_heater_next_msE:
         DC32 0, 0
 _ZN11Temperature17watch_bed_next_msE:
@@ -6306,111 +6578,102 @@ max6675_temp:
         DATA
         DC32 2000
         DC32 0
-// 2461 
-// 2462 #if 1//HAS_TEMP_HOTEND || HAS_TEMP_BED
-// 2463 
+// 2479 
+// 2480 #if 1//HAS_TEMP_HOTEND || HAS_TEMP_BED
+// 2481 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock23 Using cfiCommon0
+          CFI Block cfiBlock27 Using cfiCommon0
           CFI Function _Z18print_heater_stateRKfS0_a
         THUMB
-// 2464   void print_heater_state(const float &c, const float &t,
-// 2465     #if ENABLED(SHOW_TEMP_ADC_VALUES)
-// 2466       const float r,
-// 2467     #endif
-// 2468     const int8_t e=-2
-// 2469   ) {
+// 2482   void print_heater_state(const float &c, const float &t,
+// 2483     #if ENABLED(SHOW_TEMP_ADC_VALUES)
+// 2484       const float r,
+// 2485     #endif
+// 2486     const int8_t e=-2
+// 2487   ) {
 _Z18print_heater_stateRKfS0_a:
-        PUSH     {R4-R8,LR}
+        PUSH     {R4-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
-          CFI CFA R13+24
-        SUB      SP,SP,#+8
-          CFI CFA R13+32
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+20
         MOV      R6,R0
         MOV      R4,R1
+// 2488     //#if !(HAS_TEMP_BED && HAS_TEMP_HOTEND) && HOTENDS <= 1
+// 2489     // UNUSED(e);
+// 2490     //#endif
+// 2491     if(!(HAS_TEMP_BED))
+// 2492     {
+// 2493         #if !(HAS_TEMP_HOTEND) && HOTENDS <= 1
+// 2494         UNUSED(e);
+// 2495         #endif
+// 2496     }
+// 2497     
+// 2498     SERIAL_PROTOCOLCHAR(' ');
+        LDR.N    R5,??DataTable67_6
+        SUB      SP,SP,#+12
+          CFI CFA R13+32
         MOV      R7,R2
-// 2470     //#if !(HAS_TEMP_BED && HAS_TEMP_HOTEND) && HOTENDS <= 1
-// 2471     // UNUSED(e);
-// 2472     //#endif
-// 2473     if(!(HAS_TEMP_BED))
-// 2474     {
-// 2475         #if !(HAS_TEMP_HOTEND) && HOTENDS <= 1
-// 2476         UNUSED(e);
-// 2477         #endif
-// 2478     }
-// 2479     
-// 2480     SERIAL_PROTOCOLCHAR(' ');
-        LDR.N    R5,??DataTable72_8
         MOVS     R1,#+32
         MOV      R0,R5
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-// 2481     /*
-// 2482     SERIAL_PROTOCOLCHAR(
-// 2483       #if HAS_TEMP_BED && HAS_TEMP_HOTEND
-// 2484         e == -1 ? 'B' : 'T'
-// 2485       #elif HAS_TEMP_HOTEND
-// 2486         'T'
-// 2487       #else
-// 2488         'B'
-// 2489       #endif
-// 2490       );
-// 2491       */
-// 2492       #if HAS_TEMP_HOTEND
-// 2493           if(HAS_TEMP_BED)
-        MOV      R8,R7
-        LDR.N    R0,??DataTable72
-        LDRB     R0,[R0, #+54]
-        CMP      R0,#+0
-        BEQ.N    ??print_heater_state_0
-// 2494             SERIAL_PROTOCOLCHAR(e == -1 ? 'B' : 'T');
-        CMN      R8,#+1
-        BNE.N    ??print_heater_state_1
-        MOVS     R1,#+66
-        B.N      ??print_heater_state_2
-??print_heater_state_1:
-        MOVS     R1,#+84
-??print_heater_state_2:
-        MOV      R0,R5
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-        B.N      ??print_heater_state_3
-// 2495           else
-// 2496           {
-// 2497             SERIAL_PROTOCOLCHAR('T');
+// 2499     /*
+// 2500     SERIAL_PROTOCOLCHAR(
+// 2501       #if HAS_TEMP_BED && HAS_TEMP_HOTEND
+// 2502         e == -1 ? 'B' : 'T'
+// 2503       #elif HAS_TEMP_HOTEND
+// 2504         'T'
+// 2505       #else
+// 2506         'B'
+// 2507       #endif
+// 2508       );
+// 2509       */
+// 2510       #if HAS_TEMP_HOTEND
+// 2511           if(HAS_TEMP_BED)
+        LDR.N    R0,??DataTable67_5
+        LDRB     R0,[R0, #+56]
+        CBZ.N    R0,??print_heater_state_0
+// 2512             SERIAL_PROTOCOLCHAR(e == -1 ? 'B' : 'T');
+        CMN      R7,#+1
+        ITE      NE 
+        MOVNE    R1,#+84
+        MOVEQ    R1,#+66
+        B.N      ??print_heater_state_1
+// 2513           else
+// 2514           {
+// 2515             SERIAL_PROTOCOLCHAR('T');
 ??print_heater_state_0:
         MOVS     R1,#+84
+??print_heater_state_1:
         MOV      R0,R5
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-// 2498           }
-// 2499       #else
-// 2500           SERIAL_PROTOCOLCHAR('B');
-// 2501       #endif
-// 2502     
-// 2503     #if HOTENDS > 1
-// 2504       if (e >= 0) SERIAL_PROTOCOLCHAR('0' + e);
-??print_heater_state_3:
-        CMP      R8,#+0
-        BMI.N    ??print_heater_state_4
+// 2516           }
+// 2517       #else
+// 2518           SERIAL_PROTOCOLCHAR('B');
+// 2519       #endif
+// 2520     
+// 2521     #if HOTENDS > 1
+// 2522       if (e >= 0) SERIAL_PROTOCOLCHAR('0' + e);
+        CMP      R7,#+0
+        BMI.N    ??print_heater_state_2
         ADD      R1,R7,#+48
         UXTB     R1,R1
         MOV      R0,R5
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-// 2505     #endif
-// 2506     SERIAL_PROTOCOLCHAR(':');
-??print_heater_state_4:
+// 2523     #endif
+// 2524     SERIAL_PROTOCOLCHAR(':');
+??print_heater_state_2:
         MOVS     R1,#+58
         MOV      R0,R5
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-// 2507     SERIAL_PROTOCOL(c);
+// 2525     SERIAL_PROTOCOL(c);
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
         LDR      R0,[R6, #+0]
@@ -6421,448 +6684,546 @@ _Z18print_heater_stateRKfS0_a:
         MOV      R0,R5
           CFI FunCall _ZN5Print5printEdi
         BL       _ZN5Print5printEdi
-// 2508     SERIAL_PROTOCOLPAIR(" /" , t);
+// 2526     SERIAL_PROTOCOLPAIR(" /" , t);
         LDR      R1,[R4, #+0]
-        ADR.N    R0,??DataTable72_2  ;; 0x20, 0x2F, 0x00, 0x00
-        POP      {R2-R8,LR}
+        ADD      SP,SP,#+12
+          CFI CFA R13+20
+        POP      {R4-R7,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
           CFI R7 SameValue
-          CFI R8 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        ADR.N    R0,??DataTable69_1  ;; 0x20, 0x2F, 0x00, 0x00
           CFI FunCall _Z17serial_echopair_PPKcf
         B.W      _Z17serial_echopair_PPKcf
-          CFI EndBlock cfiBlock23
-// 2509     #if ENABLED(SHOW_TEMP_ADC_VALUES)
-// 2510       SERIAL_PROTOCOLPAIR(" (", r / OVERSAMPLENR);
-// 2511       SERIAL_PROTOCOLCHAR(')');
-// 2512     #endif
-// 2513   }
+          CFI EndBlock cfiBlock27
+// 2527     #if ENABLED(SHOW_TEMP_ADC_VALUES)
+// 2528       SERIAL_PROTOCOLPAIR(" (", r / OVERSAMPLENR);
+// 2529       SERIAL_PROTOCOLCHAR(')');
+// 2530     #endif
+// 2531   }
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable70:
-        DC32     0x409c1c00
+??DataTable67:
+        DC32     mksTmp
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable70_1:
-        DC32     0x44e10000
+??DataTable67_1:
+        DC32     gArrayGpioPin
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable70_2:
-        DC32     0xa3d70a4
+??DataTable67_2:
+        DC32     gArrayGpioPort
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable70_3:
-        DC32     0xc070dfd7
-// 2514 
-// 2515   extern uint8_t target_extruder;
-// 2516 
+??DataTable67_3:
+        DC32     0x3fd00000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable67_4:
+        DC32     heater_ttbllen_map
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable67_5:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable67_6:
+        DC32     Serial3
+// 2532 
+// 2533   extern uint8_t target_extruder;
+// 2534 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock24 Using cfiCommon0
+          CFI Block cfiBlock28 Using cfiCommon0
           CFI Function _ZN11Temperature18print_heaterstatesEv
         THUMB
-// 2517   void Temperature::print_heaterstates() {
+// 2535   void Temperature::print_heaterstates() {
 _ZN11Temperature18print_heaterstatesEv:
-        PUSH     {R2-R6,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+24
-// 2518     #if HAS_TEMP_HOTEND
-// 2519       print_heater_state(degHotend(target_extruder), degTargetHotend(target_extruder)
-// 2520         #if ENABLED(SHOW_TEMP_ADC_VALUES)
-// 2521           , rawHotendTemp(target_extruder)
-// 2522         #endif
-// 2523       );
-        LDR.N    R4,??DataTable72_25
-        LDRB     R5,[R4, #+0]
-        MOV      R0,R5
-          CFI FunCall _ZN11Temperature9degHotendEh
-        BL       _ZN11Temperature9degHotendEh
-        STR      R0,[SP, #+4]
-        MOV      R0,R5
-          CFI FunCall _ZN11Temperature15degTargetHotendEh
-        BL       _ZN11Temperature15degTargetHotendEh
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
+        LDR.N    R0,??DataTable69_21
+        LDR.N    R4,??DataTable69_3
+        LDRB     R0,[R0, #+0]
+        ADD      R0,R4,R0, LSL #+2
+        SUB      SP,SP,#+8
+          CFI CFA R13+40
+        LDR      R7,[R0, #+68]
+// 2536     #if HAS_TEMP_HOTEND
+// 2537       print_heater_state(degHotend(target_extruder), degTargetHotend(target_extruder)
+// 2538         #if ENABLED(SHOW_TEMP_ADC_VALUES)
+// 2539           , rawHotendTemp(target_extruder)
+// 2540         #endif
+// 2541       );
+        LDR      R0,[R0, #+60]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        LDR.W    R9,??DataTable69_22
+        MOV      R6,R0
+        MOVS     R1,#+32
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        LDR.W    R8,??DataTable69_5
+        MOVS     R1,#+84
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R1,#+58
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MVN      R2,#+1
-        ADD      R1,SP,#+0
-        ADD      R0,SP,#+4
-          CFI FunCall _Z18print_heater_stateRKfS0_a
-        BL       _Z18print_heater_stateRKfS0_a
-// 2524     #endif
-// 2525     //#if HAS_TEMP_BED
-// 2526     if(HAS_TEMP_BED)
-        LDR.N    R5,??DataTable72
-        LDRB     R0,[R5, #+54]
+        MOV      R0,R7
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOV      R0,R9
+          CFI FunCall _ZN5Print5printEdi
+        BL       _ZN5Print5printEdi
+        ADR.N    R5,??DataTable69_1  ;; 0x20, 0x2F, 0x00, 0x00
+        MOV      R1,R6
+        MOV      R0,R5
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+// 2542     #endif
+// 2543     //#if HAS_TEMP_BED
+// 2544     if(HAS_TEMP_BED)
+        LDRB     R0,[R8, #+56]
+        CBZ.N    R0,??print_heaterstates_0
+// 2545     {
+// 2546       print_heater_state(degBed(), degTargetBed()
+// 2547         #if ENABLED(SHOW_TEMP_ADC_VALUES)
+// 2548           , rawBedTemp()
+// 2549         #endif
+// 2550         , -1 // BED
+// 2551       );
+        LDR      R7,[R4, #+76]
+        LDRSH    R0,[R4, #+36]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R6,R0
+        MOVS     R1,#+32
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        LDRB     R0,[R8, #+56]
         CMP      R0,#+0
-        BEQ.N    ??print_heaterstates_0
-// 2527     {
-// 2528       print_heater_state(degBed(), degTargetBed()
-// 2529         #if ENABLED(SHOW_TEMP_ADC_VALUES)
-// 2530           , rawBedTemp()
-// 2531         #endif
-// 2532         , -1 // BED
-// 2533       );
-          CFI FunCall _ZN11Temperature6degBedEv
-        BL       _ZN11Temperature6degBedEv
+        ITE      NE 
+        MOVNE    R1,#+66
+        MOVEQ    R1,#+84
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R1,#+58
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R0,#+2
         STR      R0,[SP, #+0]
-          CFI FunCall _ZN11Temperature12degTargetBedEv
-        BL       _ZN11Temperature12degTargetBedEv
-        STR      R0,[SP, #+4]
-        MOV      R2,#-1
-        ADD      R1,SP,#+4
-        ADD      R0,SP,#+0
-          CFI FunCall _Z18print_heater_stateRKfS0_a
-        BL       _Z18print_heater_stateRKfS0_a
-// 2534     }
-// 2535     //#endif
-// 2536     #if HOTENDS > 1
-// 2537       HOTEND_LOOP() print_heater_state(degHotend(e), degTargetHotend(e)
+        MOV      R0,R7
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOV      R0,R9
+          CFI FunCall _ZN5Print5printEdi
+        BL       _ZN5Print5printEdi
+        MOV      R1,R6
+        MOV      R0,R5
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+// 2552     }
+// 2553     //#endif
+// 2554     #if HOTENDS > 1
+// 2555       HOTEND_LOOP() print_heater_state(degHotend(e), degTargetHotend(e)
 ??print_heaterstates_0:
         MOVS     R6,#+0
         B.N      ??print_heaterstates_1
-// 2538         #if ENABLED(SHOW_TEMP_ADC_VALUES)
-// 2539           , rawHotendTemp(e)
-// 2540         #endif
-// 2541         , e
-// 2542       );
 ??print_heaterstates_2:
-        MOV      R0,R6
-        UXTB     R0,R0
-          CFI FunCall _ZN11Temperature9degHotendEh
-        BL       _ZN11Temperature9degHotendEh
-        STR      R0,[SP, #+4]
-        MOV      R0,R6
-        UXTB     R0,R0
-          CFI FunCall _ZN11Temperature15degTargetHotendEh
-        BL       _ZN11Temperature15degTargetHotendEh
-        STR      R0,[SP, #+0]
-        MOV      R2,R6
-        SXTB     R2,R2
-        ADD      R1,SP,#+0
-        ADD      R0,SP,#+4
-          CFI FunCall _Z18print_heater_stateRKfS0_a
-        BL       _Z18print_heater_stateRKfS0_a
-        ADDS     R6,R6,#+1
-??print_heaterstates_1:
-        MOV      R0,R6
-        SXTB     R0,R0
-        LDRB     R1,[R5, #+247]
-        CMP      R0,R1
-        BLT.N    ??print_heaterstates_2
-// 2543     #endif
-// 2544     SERIAL_PROTOCOLPGM(" @:");
-        ADR.N    R0,??DataTable72_6  ;; " @:"
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 2545     SERIAL_PROTOCOL(getHeaterPower(target_extruder));
-        LDRB     R0,[R4, #+0]
-          CFI FunCall _ZN11Temperature14getHeaterPowerEi
-        BL       _ZN11Temperature14getHeaterPowerEi
-        MOV      R1,R0
-        LDR.N    R4,??DataTable72_8
-        MOVS     R2,#+10
-        MOV      R0,R4
-          CFI FunCall _ZN5Print5printEii
-        BL       _ZN5Print5printEii
-// 2546     //#if HAS_TEMP_BED
-// 2547     if(HAS_TEMP_BED)
-        LDRB     R0,[R5, #+54]
-        CMP      R0,#+0
-        BEQ.N    ??print_heaterstates_3
-// 2548     {
-// 2549       SERIAL_PROTOCOLPGM(" B@:");
-        ADR.W    R0,`?<Constant " B@:">`
-          CFI FunCall _Z14serialprintPGMPKc
-        BL       _Z14serialprintPGMPKc
-// 2550       SERIAL_PROTOCOL(getHeaterPower(-1));
-        MOV      R0,#-1
-          CFI FunCall _ZN11Temperature14getHeaterPowerEi
-        BL       _ZN11Temperature14getHeaterPowerEi
-        MOVS     R2,#+10
-        MOV      R1,R0
-        MOV      R0,R4
-          CFI FunCall _ZN5Print5printEii
-        BL       _ZN5Print5printEii
-// 2551     }
-// 2552     //#endif
-// 2553     #if HOTENDS > 1
-// 2554       HOTEND_LOOP() {
+        MOVS     R1,#+84
 ??print_heaterstates_3:
-        MOVS     R6,#+0
-        B.N      ??print_heaterstates_4
-// 2555         SERIAL_PROTOCOLPAIR(" @", e);
-??print_heaterstates_5:
-        MOV      R1,R6
-        ADR.N    R0,??DataTable72_7  ;; 0x20, 0x40, 0x00, 0x00
-          CFI FunCall _Z17serial_echopair_PPKci
-        BL       _Z17serial_echopair_PPKci
-// 2556         SERIAL_PROTOCOLCHAR(':');
-        MOVS     R1,#+58
-        MOV      R0,R4
+        MOV      R0,R9
           CFI FunCall _ZN10USARTClass5writeEh
         BL       _ZN10USARTClass5writeEh
-// 2557         SERIAL_PROTOCOL(getHeaterPower(e));
-        MOV      R0,R6
-          CFI FunCall _ZN11Temperature14getHeaterPowerEi
-        BL       _ZN11Temperature14getHeaterPowerEi
+        CMP      R6,#+0
+        BMI.N    ??print_heaterstates_4
+        ADD      R1,R6,#+48
+        UXTB     R1,R1
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??print_heaterstates_4:
+        MOVS     R1,#+58
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        MOVS     R0,#+2
+        STR      R0,[SP, #+0]
+        MOV      R0,R10
+          CFI FunCall __aeabi_f2d
+        BL       __aeabi_f2d
+        MOV      R2,R0
+        MOV      R3,R1
+        MOV      R0,R9
+          CFI FunCall _ZN5Print5printEdi
+        BL       _ZN5Print5printEdi
+        MOV      R1,R7
+        MOV      R0,R5
+          CFI FunCall _Z17serial_echopair_PPKcf
+        BL       _Z17serial_echopair_PPKcf
+// 2556         #if ENABLED(SHOW_TEMP_ADC_VALUES)
+// 2557           , rawHotendTemp(e)
+// 2558         #endif
+// 2559         , e
+// 2560       );
+        ADDS     R6,R6,#+1
+??print_heaterstates_1:
+        LDRB     R1,[R8, #+247]
+        SXTB     R0,R6
+        CMP      R0,R1
+        BGE.N    ??print_heaterstates_5
+        UXTB     R0,R6
+        ADD      R0,R4,R0, LSL #+2
+        LDR      R10,[R0, #+68]
+        LDR      R0,[R0, #+60]
+          CFI FunCall __aeabi_i2f
+        BL       __aeabi_i2f
+        MOV      R7,R0
+        MOVS     R1,#+32
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        LDRB     R0,[R8, #+56]
+        SXTB     R6,R6
+        CMP      R0,#+0
+        BEQ.N    ??print_heaterstates_2
+        CMN      R6,#+1
+        ITE      NE 
+        MOVNE    R1,#+84
+        MOVEQ    R1,#+66
+        B.N      ??print_heaterstates_3
+// 2561     #endif
+// 2562     SERIAL_PROTOCOLPGM(" @:");
+??print_heaterstates_5:
+        ADR.N    R6,??DataTable69_4  ;; " @:"
+        B.N      ??print_heaterstates_6
+??print_heaterstates_7:
+        UXTB     R1,R1
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??print_heaterstates_6:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??print_heaterstates_7
+// 2563     SERIAL_PROTOCOL(getHeaterPower(target_extruder));
+        LDR.N    R0,??DataTable69_21
+        LDRB     R0,[R0, #+0]
+        CMP      R0,#+0
+        ITE      MI 
+        LDRBMI   R1,[R4, #+3]
+        LDRBPL   R1,[R0, R4]
         MOVS     R2,#+10
-        MOV      R1,R0
-        MOV      R0,R4
+        MOV      R0,R9
           CFI FunCall _ZN5Print5printEii
         BL       _ZN5Print5printEii
-// 2558       }
+// 2564     //#if HAS_TEMP_BED
+// 2565     if(HAS_TEMP_BED)
+        LDRB     R0,[R8, #+56]
+        CBZ.N    R0,??print_heaterstates_8
+// 2566     {
+// 2567       SERIAL_PROTOCOLPGM(" B@:");
+        ADR.W    R6,`?<Constant " B@:">`
+        B.N      ??print_heaterstates_9
+??print_heaterstates_10:
+        UXTB     R1,R1
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+??print_heaterstates_9:
+        LDRSB    R1,[R6], #+1
+        MOVS     R0,R1
+        BNE.N    ??print_heaterstates_10
+// 2568       SERIAL_PROTOCOL(getHeaterPower(-1));
+// 2569     }
+        LDRB     R1,[R4, #+3]
+        MOVS     R2,#+10
+        MOV      R0,R9
+          CFI FunCall _ZN5Print5printEii
+        BL       _ZN5Print5printEii
+// 2570     //#endif
+// 2571     #if HOTENDS > 1
+// 2572       HOTEND_LOOP() {
+??print_heaterstates_8:
+        MOVS     R6,#+0
+        MOV      R7,R4
+        ADR.N    R5,??DataTable69_6  ;; 0x20, 0x40, 0x00, 0x00
+        B.N      ??print_heaterstates_11
+// 2573         SERIAL_PROTOCOLPAIR(" @", e);
+// 2574         SERIAL_PROTOCOLCHAR(':');
+// 2575         SERIAL_PROTOCOL(getHeaterPower(e));
+??print_heaterstates_12:
+        MOVS     R2,#+10
+        MOV      R0,R9
+          CFI FunCall _ZN5Print5printEii
+        BL       _ZN5Print5printEii
         ADDS     R6,R6,#+1
         SXTB     R6,R6
-??print_heaterstates_4:
-        LDRB     R0,[R5, #+247]
+        ADDS     R7,R7,#+1
+??print_heaterstates_11:
+        LDRB     R0,[R8, #+247]
         CMP      R6,R0
-        BLT.N    ??print_heaterstates_5
-// 2559     #endif
-// 2560   }
-        POP      {R0,R1,R4-R6,PC}  ;; return
-          CFI EndBlock cfiBlock24
-// 2561 
-// 2562   #if ENABLED(AUTO_REPORT_TEMPERATURES)
-// 2563 
+        BGE.N    ??print_heaterstates_13
+        MOV      R1,R6
+        MOV      R0,R5
+          CFI FunCall _Z17serial_echopair_PPKci
+        BL       _Z17serial_echopair_PPKci
+        MOVS     R1,#+58
+        MOV      R0,R9
+          CFI FunCall _ZN10USARTClass5writeEh
+        BL       _ZN10USARTClass5writeEh
+        CMP      R6,#+0
+        ITE      MI 
+        LDRBMI   R1,[R4, #+3]
+        LDRBPL   R1,[R7, #+0]
+        B.N      ??print_heaterstates_12
+// 2576       }
+// 2577     #endif
+// 2578   }
+??print_heaterstates_13:
+        POP      {R0,R1,R4-R10,PC}  ;; return
+          CFI EndBlock cfiBlock28
+// 2579 
+// 2580   #if ENABLED(AUTO_REPORT_TEMPERATURES)
+// 2581 
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
-// 2564     uint8_t Temperature::auto_report_temp_interval;
+// 2582     uint8_t Temperature::auto_report_temp_interval;
 _ZN11Temperature25auto_report_temp_intervalE:
         DS8 1
         DS8 3
-// 2565     millis_t Temperature::next_temp_report_ms;
+// 2583     millis_t Temperature::next_temp_report_ms;
 _ZN11Temperature19next_temp_report_msE:
         DS8 4
+// 2584 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock25 Using cfiCommon0
+          CFI Block cfiBlock29 Using cfiCommon0
           CFI Function _ZN11Temperature24auto_report_temperaturesEv
         THUMB
+// 2585     void Temperature::auto_report_temperatures() {
 _ZN11Temperature24auto_report_temperaturesEv:
         PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-        LDR.N    R4,??DataTable72_26
+// 2586       if (auto_report_temp_interval && ELAPSED(millis(), next_temp_report_ms)) {
+        LDR.N    R4,??DataTable69_23
         LDRB     R0,[R4, #+0]
-        CMP      R0,#+0
-        BEQ.N    ??auto_report_temperatures_0
+        CBZ.N    R0,??auto_report_temperatures_0
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
         LDR      R1,[R4, #+4]
         SUBS     R0,R0,R1
         BMI.N    ??auto_report_temperatures_0
+// 2587         next_temp_report_ms = millis() + 1000UL * auto_report_temp_interval;
           CFI FunCall HAL_GetTick
         BL       HAL_GetTick
         LDRB     R1,[R4, #+0]
         MOV      R2,#+1000
         MLA      R0,R2,R1,R0
         STR      R0,[R4, #+4]
+// 2588         print_heaterstates();
           CFI FunCall _ZN11Temperature18print_heaterstatesEv
         BL       _ZN11Temperature18print_heaterstatesEv
+// 2589         SERIAL_EOL();
         MOVS     R1,#+10
-        LDR.N    R0,??DataTable72_8
         POP      {R4,LR}
           CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        LDR.N    R0,??DataTable69_22
           CFI FunCall _ZN10USARTClass5writeEh
         B.W      _ZN10USARTClass5writeEh
           CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
+// 2590       }
+// 2591     }
 ??auto_report_temperatures_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock25
+          CFI EndBlock cfiBlock29
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72:
-        DC32     mksCfg
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_1:
-        DC32     0x40a00000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_2:
-        DC8      0x20, 0x2F, 0x00, 0x00
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_3:
-        DC32     mksTmp
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_4:
-        DC32     gArrayGpioPin
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_5:
-        DC32     gArrayGpioPort
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_6:
-        DC8      " @:"
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_7:
-        DC8      0x20, 0x40, 0x00, 0x00
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_8:
-        DC32     Serial3
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_9:
-        DC32     0x3fd00000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_10:
-        DC32     heater_ttbllen_map
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable72_11:
+??DataTable69:
         DC32     0x3f9f4000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_12:
+??DataTable69_1:
+        DC8      0x20, 0x2F, 0x00, 0x00
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_2:
         DC32     0xc1c80000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_13:
+??DataTable69_3:
         DC32     _ZN11Temperature15soft_pwm_amountE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_14:
+??DataTable69_4:
+        DC8      " @:"
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_5:
+        DC32     mksCfg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_6:
+        DC8      0x20, 0x40, 0x00, 0x00
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_7:
         DC32     ??tr_target_temperature
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_15:
+??DataTable69_8:
         DC32     _ZN7Planner16autotemp_enabledE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_16:
+??DataTable69_9:
         DC32     print_job_timer
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_17:
+??DataTable69_10:
         DC32     max6675_temp
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_18:
+??DataTable69_11:
         DC32     0x42230194
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_19:
+??DataTable69_12:
         DC32     errormagic
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_20:
+??DataTable69_13:
         DC32     0xffffc000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_21:
+??DataTable69_14:
         DC32     htim4
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_22:
+??DataTable69_15:
         DC32     uhADCxConvertedValue
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_23:
+??DataTable69_16:
         DC32     gCfgItems
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_24:
+??DataTable69_17:
         DC32     loop_start
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_25:
+??DataTable69_18:
+        DC32     temper_error_type
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_19:
+        DC32     mksCfg+0x36
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_20:
+        DC32     Running
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_21:
         DC32     target_extruder
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable72_26:
+??DataTable69_22:
+        DC32     Serial3
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable69_23:
         DC32     _ZN11Temperature25auto_report_temp_intervalE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant " - Invalid extruder n...">`:
-        DC8 " - Invalid extruder number !\012"
-        DC8 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant "KILLED. ">`:
-        DC8 "KILLED. "
-        DC8 0, 0, 0
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -6921,238 +7282,51 @@ _ZN11Temperature24auto_report_temperaturesEv:
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-// static __absolute short const temptable_1[64][2]
-temptable_1:
-        DC16 368, 290, 400, 285, 432, 280, 448, 275, 496, 270, 528, 265, 560
-        DC16 260, 608, 255, 656, 250, 704, 245, 768, 240, 832, 235, 896, 230
-        DC16 976, 225, 1056, 220, 1136, 215, 1248, 210, 1344, 205, 1472, 200
-        DC16 1600, 195, 1744, 190, 1920, 185, 2096, 180, 2288, 175, 2496, 170
-        DC16 2736, 165, 2992, 160, 3280, 155, 3584, 150, 3920, 145, 4288, 140
-        DC16 4688, 135, 5120, 130, 5568, 125, 6064, 120, 6576, 115, 7120, 110
-        DC16 7680, 105, 8256, 100, 8848, 95, 9456, 90, 10048, 85, 10640, 80
-        DC16 11232, 75, 11792, 70, 12320, 65, 12816, 60, 13280, 55, 13712, 50
-        DC16 14096, 45, 14448, 40, 14752, 35, 15024, 30, 15264, 25, 15456, 20
-        DC16 15632, 15, 15760, 10, 15888, 5, 15984, 0, 16064, -5, 16128, -10
-        DC16 16192, -15, 16256, -20, 16320, -25
+`?<Constant ", system stopped! Hea...">`:
+        DC8 ", system stopped! Heater_ID: "
+        DC8 0, 0
 
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z14serialprintPGMPKc
-          CFI Block cfiBlock26 Using cfiCommon0
-          CFI Function _Z14serialprintPGMPKc
-        THUMB
-// __interwork __softfp void serialprintPGM(char const *)
-_Z14serialprintPGMPKc:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R0
-        B.N      ??serialprintPGM_0
-??serialprintPGM_1:
-        UXTB     R1,R1
-        LDR.N    R0,??serialprintPGM_2
-          CFI FunCall _ZN10USARTClass5writeEh
-        BL       _ZN10USARTClass5writeEh
-??serialprintPGM_0:
-        LDRSB    R1,[R4], #+1
-        MOVS     R0,R1
-        BNE.N    ??serialprintPGM_1
-        POP      {R4,PC}          ;; return
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??serialprintPGM_2:
-        DC32     Serial3
-          CFI EndBlock cfiBlock26
+`?<Constant "bed\\n">`:
+        DC8 "bed\012"
+        DC8 0, 0, 0
 
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _Z9IsRunningv
-          CFI Block cfiBlock27 Using cfiCommon0
-          CFI Function _Z9IsRunningv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp bool IsRunning()
-_Z9IsRunningv:
-        LDR.N    R0,??IsRunning_0
-        LDRB     R0,[R0, #+0]
-        BX       LR               ;; return
-        Nop      
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??IsRunning_0:
-        DC32     Running
-          CFI EndBlock cfiBlock27
+`?<Constant "MINTEMP triggered">`:
+        DC8 "MINTEMP triggered"
+        DC8 0, 0
 
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature9degHotendEh
-          CFI Block cfiBlock28 Using cfiCommon0
-          CFI Function _ZN11Temperature9degHotendEh
-          CFI NoCalls
-        THUMB
-// __interwork __softfp float Temperature::degHotend(uint8_t)
-_ZN11Temperature9degHotendEh:
-        LDR.N    R1,??degHotend_0
-        ADD      R0,R1,R0, LSL #+2
-        LDR      R0,[R0, #+60]
-        BX       LR               ;; return
-        Nop      
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??degHotend_0:
-        DC32     _ZN11Temperature15soft_pwm_amountE
-          CFI EndBlock cfiBlock28
+`?<Constant "Err: MINTEMP">`:
+        DC8 "Err: MINTEMP"
+        DC8 0, 0, 0
 
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature6degBedEv
-          CFI Block cfiBlock29 Using cfiCommon0
-          CFI Function _ZN11Temperature6degBedEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp float Temperature::degBed()
-_ZN11Temperature6degBedEv:
-        LDR.N    R0,??degBed_0
-        LDR      R0,[R0, #+68]
-        BX       LR               ;; return
-        Nop      
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??degBed_0:
-        DC32     _ZN11Temperature15soft_pwm_amountE
-          CFI EndBlock cfiBlock29
+`?<Constant "Err: MINTEMP BED">`:
+        DC8 "Err: MINTEMP BED"
+        DC8 0, 0, 0
 
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature15degTargetHotendEh
-          CFI Block cfiBlock30 Using cfiCommon0
-          CFI Function _ZN11Temperature15degTargetHotendEh
-        THUMB
-// __interwork __softfp float Temperature::degTargetHotend(uint8_t)
-_ZN11Temperature15degTargetHotendEh:
-        LDR.N    R1,??degTargetHotend_0
-        ADD      R0,R1,R0, LSL #+2
-        LDR      R0,[R0, #+72]
-          CFI FunCall __aeabi_i2f
-        B.W      __aeabi_i2f
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??degTargetHotend_0:
-        DC32     _ZN11Temperature15soft_pwm_amountE
-          CFI EndBlock cfiBlock30
+`?<Constant "MAXTEMP triggered">`:
+        DC8 "MAXTEMP triggered"
+        DC8 0, 0
 
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature12degTargetBedEv
-          CFI Block cfiBlock31 Using cfiCommon0
-          CFI Function _ZN11Temperature12degTargetBedEv
-        THUMB
-// __interwork __softfp float Temperature::degTargetBed()
-_ZN11Temperature12degTargetBedEv:
-        LDR.N    R0,??degTargetBed_0
-        LDRSH    R0,[R0, #+36]
-          CFI FunCall __aeabi_i2f
-        B.W      __aeabi_i2f
-        Nop      
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??degTargetBed_0:
-        DC32     _ZN11Temperature15soft_pwm_amountE
-          CFI EndBlock cfiBlock31
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature15setTargetHotendEfh
-          CFI Block cfiBlock32 Using cfiCommon0
-          CFI Function _ZN11Temperature15setTargetHotendEfh
-        THUMB
-// __interwork __softfp void Temperature::setTargetHotend(float, uint8_t)
-_ZN11Temperature15setTargetHotendEfh:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
-        MOV      R4,R1
-          CFI FunCall __aeabi_f2iz
-        BL       __aeabi_f2iz
-        LDR.N    R1,??setTargetHotend_0
-        ADD      R1,R1,R4, LSL #+2
-        STR      R0,[R1, #+72]
-        MOV      R0,R4
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN11Temperature21start_watching_heaterEh
-        B.W      _ZN11Temperature21start_watching_heaterEh
-        Nop      
-        DATA
-??setTargetHotend_0:
-        DC32     _ZN11Temperature15soft_pwm_amountE
-          CFI EndBlock cfiBlock32
-
-        SECTION `.text`:CODE:REORDER:NOROOT(2)
-        SECTION_GROUP _ZN11Temperature12setTargetBedEf
-          CFI Block cfiBlock33 Using cfiCommon0
-          CFI Function _ZN11Temperature12setTargetBedEf
-        THUMB
-// __interwork __softfp void Temperature::setTargetBed(float)
-_ZN11Temperature12setTargetBedEf:
-        PUSH     {R3-R5,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+16
-        MOV      R4,R0
-        LDR.N    R0,??setTargetBed_0
-        LDRSH    R5,[R0, #+50]
-        MOV      R0,R5
-          CFI FunCall __aeabi_i2f
-        BL       __aeabi_i2f
-        MOV      R1,R0
-        MOV      R0,R4
-          CFI FunCall __aeabi_cfcmple
-        BL       __aeabi_cfcmple
-        BCS.N    ??setTargetBed_1
-          CFI FunCall __aeabi_f2iz
-        BL       __aeabi_f2iz
-        MOV      R5,R0
-??setTargetBed_1:
-        LDR.N    R0,??setTargetBed_0+0x4
-        STRH     R5,[R0, #+36]
-        POP      {R0,R4,R5,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN11Temperature18start_watching_bedEv
-        B.W      _ZN11Temperature18start_watching_bedEv
-        DATA
-??setTargetBed_0:
-        DC32     mksCfg
-        DC32     _ZN11Temperature15soft_pwm_amountE
-          CFI EndBlock cfiBlock33
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZN11Temperature9updatePIDEv
-          CFI Block cfiBlock34 Using cfiCommon0
-          CFI Function _ZN11Temperature9updatePIDEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void Temperature::updatePID()
-_ZN11Temperature9updatePIDEv:
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock34
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _Z10lcd_updatev
-          CFI Block cfiBlock35 Using cfiCommon0
-          CFI Function _Z10lcd_updatev
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void lcd_update()
-_Z10lcd_updatev:
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock35
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _Z18lcd_buttons_updatev
-          CFI Block cfiBlock36 Using cfiCommon0
-          CFI Function _Z18lcd_buttons_updatev
-          CFI NoCalls
-        THUMB
-// __interwork __softfp void lcd_buttons_update()
-_Z18lcd_buttons_updatev:
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock36
+`?<Constant "Err: MAXTEMP">`:
+        DC8 "Err: MAXTEMP"
+        DC8 0, 0, 0
 
         SECTION `.init_array`:CODE:ROOT(2)
         SECTION_TYPE SHT_INIT_ARRAY, 0
@@ -7220,28 +7394,20 @@ _ZTI5Print:
         DC8 0
 
         END
-// 2566 
-// 2567     void Temperature::auto_report_temperatures() {
-// 2568       if (auto_report_temp_interval && ELAPSED(millis(), next_temp_report_ms)) {
-// 2569         next_temp_report_ms = millis() + 1000UL * auto_report_temp_interval;
-// 2570         print_heaterstates();
-// 2571         SERIAL_EOL();
-// 2572       }
-// 2573     }
-// 2574 
-// 2575   #endif // AUTO_REPORT_TEMPERATURES
-// 2576 
-// 2577 #endif // HAS_TEMP_HOTEND || HAS_TEMP_BED
+// 2592 
+// 2593   #endif // AUTO_REPORT_TEMPERATURES
+// 2594 
+// 2595 #endif // HAS_TEMP_HOTEND || HAS_TEMP_BED
 // 
-//   104 bytes in section .bss
-//   164 bytes in section .data
+//   111 bytes in section .bss
+//   168 bytes in section .data
 //     4 bytes in section .init_array
 //    30 bytes in section .rodata
-// 7 524 bytes in section .text
+// 7 936 bytes in section .text
 // 
-// 7 338 bytes of CODE  memory (+ 190 bytes shared)
-//    29 bytes of CONST memory (+   1 byte  shared)
-//   268 bytes of DATA  memory
+// 7 940 bytes of CODE  memory
+//    29 bytes of CONST memory (+ 1 byte shared)
+//   279 bytes of DATA  memory
 //
 //Errors: none
 //Warnings: 14

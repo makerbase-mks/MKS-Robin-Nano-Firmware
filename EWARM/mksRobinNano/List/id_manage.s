@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:32
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:51
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\id_manage.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\id_manage.c
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\id_manage.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\id_manage.c
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
 //        Workbench 7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\id_manage.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\id_manage.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -110,7 +107,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\id_manage.c
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\id_manage.c
 //    1 #include "stdint.h"
 //    2 #include "gui.h"
 //    3 #include "id_manage.h"
@@ -139,21 +136,34 @@ gId_stack:
 init_win_id:
         MOVS     R0,#+0
         LDR.N    R1,??DataTable2
-        B.N      ??init_win_id_0
 //   16 	{
 //   17 		gId_stack[i].flag = ID_NOT_USED;
-??init_win_id_1:
+??init_win_id_0:
         MOVS     R2,#+0
-        ADD      R3,R1,R0, LSL #+3
-        STRB     R2,[R3, #+4]
+        STRB     R2,[R1, #+4]
 //   18 		gId_stack[i].id = GUI_ID_USER + i;
         ADD      R2,R0,#+2048
-        STR      R2,[R1, R0, LSL #+3]
+        STR      R2,[R1, #+0]
+        ADDS     R0,R0,#+1
+        MOVS     R2,#+0
+        STRB     R2,[R1, #+12]
+        ADD      R2,R0,#+2048
+        STR      R2,[R1, #+8]
+        ADDS     R0,R0,#+1
+        MOVS     R2,#+0
+        STRB     R2,[R1, #+20]
+        ADD      R2,R0,#+2048
+        STR      R2,[R1, #+16]
+        ADDS     R0,R0,#+1
+        MOVS     R2,#+0
+        STRB     R2,[R1, #+28]
+        ADD      R2,R0,#+2048
+        STR      R2,[R1, #+24]
 //   19 	}
         ADDS     R0,R0,#+1
-??init_win_id_0:
+        ADDS     R1,R1,#+32
         CMP      R0,#+100
-        BCC.N    ??init_win_id_1
+        BCC.N    ??init_win_id_0
 //   20 	//HAL_Delay(50);
 //   21 }
         BX       LR               ;; return
@@ -172,29 +182,39 @@ init_win_id:
 //   27 	
 //   28 	for(i = 0; i < sizeof(gId_stack) / sizeof(ID_STACK); i++)
 alloc_win_id:
-        MOVS     R0,#+0
         LDR.N    R1,??DataTable2
-        B.N      ??alloc_win_id_0
-??alloc_win_id_1:
-        ADDS     R0,R0,#+1
-??alloc_win_id_0:
-        CMP      R0,#+100
-        BCS.N    ??alloc_win_id_2
+        MOVS     R0,#+0
+        ADDS     R2,R1,#+4
 //   29 	{
 //   30 		if(gId_stack[i].flag == ID_NOT_USED)
-        ADD      R2,R1,R0, LSL #+3
-        LDRB     R2,[R2, #+4]
-        CMP      R2,#+0
-        BNE.N    ??alloc_win_id_1
+??alloc_win_id_0:
+        LDRB     R3,[R2], #+8
+        CBNZ.N   R3,??alloc_win_id_1
 //   31 		{
 //   32 			gId_stack[i].flag == ID_USED;
 //   33 			return gId_stack[i].id;
+??alloc_win_id_2:
         LDR      R0,[R1, R0, LSL #+3]
         BX       LR
 //   34 		}
+??alloc_win_id_1:
+        LDRB     R3,[R2], #+8
+        ADDS     R0,R0,#+1
+        CMP      R3,#+0
+        ITTT     NE 
+        ADDNE    R0,R0,#+1
+        LDRBNE   R3,[R2], #+8
+        CMPNE    R3,#+0
+        ITTT     NE 
+        ADDNE    R0,R0,#+1
+        LDRBNE   R3,[R2], #+8
+        CMPNE    R3,#+0
+        BEQ.N    ??alloc_win_id_2
 //   35 	}
+        ADDS     R0,R0,#+1
+        CMP      R0,#+100
+        BCC.N    ??alloc_win_id_0
 //   36 	return 0;
-??alloc_win_id_2:
         MOVS     R0,#+0
         BX       LR               ;; return
           CFI EndBlock cfiBlock1
@@ -213,26 +233,41 @@ alloc_win_id:
 //   43 	for(i = 0; i < sizeof(gId_stack) / sizeof(ID_STACK); i++)
 del_win_id:
         MOVS     R1,#+0
-        B.N      ??del_win_id_0
+        LDR.N    R2,??DataTable2
 //   44 	{
 //   45 		if(gId_stack[i].id == id)
-??del_win_id_1:
-        LDR.N    R2,??DataTable2
-        LDR      R3,[R2, R1, LSL #+3]
+??del_win_id_0:
+        LDR      R3,[R2, #+0]
         CMP      R3,R0
-        BNE.N    ??del_win_id_2
+        ITT      EQ 
 //   46 		{
 //   47 			gId_stack[i].flag = ID_NOT_USED;
-        MOVS     R3,#+0
-        ADD      R2,R2,R1, LSL #+3
-        STRB     R3,[R2, #+4]
+        MOVEQ    R3,#+0
+        STRBEQ   R3,[R2, #+4]
+        LDR      R3,[R2, #+8]
+        ADDS     R1,R1,#+1
+        CMP      R3,R0
+        ITT      EQ 
+        MOVEQ    R3,#+0
+        STRBEQ   R3,[R2, #+12]
+        LDR      R3,[R2, #+16]
+        ADDS     R1,R1,#+1
+        CMP      R3,R0
+        ITT      EQ 
+        MOVEQ    R3,#+0
+        STRBEQ   R3,[R2, #+20]
+        LDR      R3,[R2, #+24]
+        ADDS     R1,R1,#+1
+        CMP      R3,R0
+        ITT      EQ 
+        MOVEQ    R3,#+0
+        STRBEQ   R3,[R2, #+28]
 //   48 		}
 //   49 	}
-??del_win_id_2:
         ADDS     R1,R1,#+1
-??del_win_id_0:
+        ADDS     R2,R2,#+32
         CMP      R1,#+100
-        BCC.N    ??del_win_id_1
+        BCC.N    ??del_win_id_0
 //   50 }
         BX       LR               ;; return
           CFI EndBlock cfiBlock2
@@ -259,9 +294,9 @@ del_win_id:
 //   52 
 // 
 // 800 bytes in section .bss
-//  96 bytes in section .text
+// 182 bytes in section .text
 // 
-//  96 bytes of CODE memory
+// 182 bytes of CODE memory
 // 800 bytes of DATA memory
 //
 //Errors: none

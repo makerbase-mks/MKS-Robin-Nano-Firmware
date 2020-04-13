@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:42
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:06
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\mks_test.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\mks_test.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\mks_test.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\mks_test.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\mks_test.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\mks_test.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -91,6 +88,7 @@
         EXTERN BUTTON_SetBitmapEx
         EXTERN BUTTON_SetBkColor
         EXTERN BUTTON_SetBmpFileName
+        EXTERN BUTTON_SetDefaultFont
         EXTERN BUTTON_SetTextColor
         EXTERN Error_Handler
         EXTERN GUI_Clear
@@ -106,6 +104,7 @@
         EXTERN HAL_GPIO_ReadPin
         EXTERN HAL_GPIO_WritePin
         EXTERN SD_Path
+        EXTERN TEXT_SetDefaultFont
         EXTERN WM_CreateWindow
         EXTERN WM_DefaultProc
         EXTERN WM_DeleteWindow
@@ -115,7 +114,6 @@
         EXTERN _ZN11Temperature23current_temperature_bedE
         EXTERN _ZN11Temperature4initEv
         EXTERN __aeabi_f2d
-        EXTERN __aeabi_memcpy4
         EXTERN alloc_win_id
         EXTERN bmp_struct
         EXTERN disp_state
@@ -188,7 +186,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\mks_test.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\mks_test.cpp
 //    1 /* Includes ------------------------------------------------------------------*/
 //    2 #include "main.h"
 //    3 #include "stm32f1xx_hal.h"
@@ -262,12 +260,12 @@ _Z21test_gpio_readlevel_Lv:
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        SUB      SP,SP,#+8
-          CFI CFA R13+24
 //   58 	volatile uint32_t itest;
 //   59 
 //   60     HAL_GPIO_WritePin(WIFI_IO2_GPIO_Port, WIFI_IO2_Pin, GPIO_PIN_SET);
-        LDR.W    R4,??DataTable19  ;; 0x40010800
+        LDR.W    R4,??DataTable18  ;; 0x40010800
+        SUB      SP,SP,#+8
+          CFI CFA R13+24
         MOVS     R2,#+1
         MOV      R1,#+256
         MOV      R0,R4
@@ -311,13 +309,13 @@ _Z21test_gpio_readlevel_Lv:
 //   88 	}
 //   89 	*/
 //   90 	if(HAL_GPIO_ReadPin(PW_DET_GPIO_Port, PW_DET_Pin)==GPIO_PIN_RESET)
-        LDR.W    R5,??DataTable19_1
         MOVS     R1,#+4
         MOV      R0,R4
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
         SUBS     R0,R0,#+1
         SBCS     R0,R0,R0
+        LDR.W    R5,??DataTable18_1
         LSRS     R0,R0,#+31
         STRB     R0,[R5, #+0]
 //   91 	{
@@ -354,8 +352,8 @@ _Z21test_gpio_readlevel_Lv:
 //  114 		GPIO_TEST_STATE.mt_det_sta = 0;
 //  115 	}
 //  116 	if(HAL_GPIO_ReadPin(MT_DET2_GPIO_Port, MT_DET2_Pin)==GPIO_PIN_RESET)
-        LDR.W    R6,??DataTable19_2  ;; 0x40011800
         MOVS     R1,#+64
+        LDR.W    R6,??DataTable18_2  ;; 0x40011800
         MOV      R0,R6
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
@@ -440,7 +438,7 @@ _Z21test_gpio_readlevel_Lv:
 //  167 	}
 //  168 	if(HAL_GPIO_ReadPin(ZMAX_GPIO_Port, ZMAX_Pin)==GPIO_PIN_RESET)
         MOVS     R1,#+16
-        LDR.W    R0,??DataTable19_3  ;; 0x40011000
+        LDR.W    R0,??DataTable18_3  ;; 0x40011000
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
         SUBS     R0,R0,#+1
@@ -461,8 +459,8 @@ _Z21test_gpio_readlevel_Lv:
         BL       HAL_GPIO_ReadPin
         SUBS     R0,R0,#+1
         SBCS     R0,R0,R0
-        LSRS     R0,R0,#+31
-        STRB     R0,[R5, #+7]
+        B.N      ?Subroutine0
+          CFI EndBlock cfiBlock0
 //  177 	{
 //  178 		GPIO_TEST_STATE.t1_cs_sta= 1;
 //  179 	}
@@ -481,8 +479,6 @@ _Z21test_gpio_readlevel_Lv:
 //  192 	}
 //  193 	*/
 //  194 }
-        POP      {R0,R1,R4-R6,PC}  ;; return
-          CFI EndBlock cfiBlock0
 //  195 
 
         SECTION `.text`:CODE:NOROOT(1)
@@ -498,11 +494,11 @@ _Z21test_gpio_readlevel_Hv:
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        SUB      SP,SP,#+8
-          CFI CFA R13+24
 //  198 	volatile uint32_t itesth;
 //  199 	HAL_GPIO_WritePin(WIFI_IO2_GPIO_Port, WIFI_IO2_Pin, GPIO_PIN_RESET);
-        LDR.W    R4,??DataTable19  ;; 0x40010800
+        LDR.W    R4,??DataTable18  ;; 0x40010800
+        SUB      SP,SP,#+8
+          CFI CFA R13+24
         MOVS     R2,#+0
         MOV      R1,#+256
         MOV      R0,R4
@@ -546,7 +542,6 @@ _Z21test_gpio_readlevel_Hv:
 //  227 	}
 //  228 	*/
 //  229 	if(HAL_GPIO_ReadPin(PW_DET_GPIO_Port, PW_DET_Pin)!=GPIO_PIN_RESET)
-        LDR.W    R5,??DataTable19_1
         MOVS     R1,#+4
         MOV      R0,R4
           CFI FunCall HAL_GPIO_ReadPin
@@ -554,6 +549,7 @@ _Z21test_gpio_readlevel_Hv:
         SUBS     R0,R0,#+1
         SBCS     R0,R0,R0
         MVNS     R0,R0
+        LDR.W    R5,??DataTable18_1
         LSRS     R0,R0,#+31
         STRB     R0,[R5, #+0]
 //  230 	{
@@ -591,8 +587,8 @@ _Z21test_gpio_readlevel_Hv:
 //  253 		GPIO_TEST_STATE.mt_det_sta = 0;
 //  254 	}
 //  255 	if(HAL_GPIO_ReadPin(MT_DET2_GPIO_Port, MT_DET2_Pin)!=GPIO_PIN_RESET)
-        LDR.W    R6,??DataTable19_2  ;; 0x40011800
         MOVS     R1,#+64
+        LDR.W    R6,??DataTable18_2  ;; 0x40011800
         MOV      R0,R6
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
@@ -681,7 +677,7 @@ _Z21test_gpio_readlevel_Hv:
 //  306 	}
 //  307 	if(HAL_GPIO_ReadPin(ZMAX_GPIO_Port, ZMAX_Pin)!=GPIO_PIN_RESET)
         MOVS     R1,#+16
-        LDR.W    R0,??DataTable19_3  ;; 0x40011000
+        LDR.W    R0,??DataTable18_3  ;; 0x40011000
           CFI FunCall HAL_GPIO_ReadPin
         BL       HAL_GPIO_ReadPin
         SUBS     R0,R0,#+1
@@ -704,8 +700,9 @@ _Z21test_gpio_readlevel_Hv:
         SUBS     R0,R0,#+1
         SBCS     R0,R0,R0
         MVNS     R0,R0
-        LSRS     R0,R0,#+31
-        STRB     R0,[R5, #+7]
+          CFI EndBlock cfiBlock1
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
 //  316 	{
 //  317 		GPIO_TEST_STATE.t1_cs_sta= 1;
 //  318 	}
@@ -724,19 +721,36 @@ _Z21test_gpio_readlevel_Hv:
 //  331 	}
 //  332 	*/
 //  333 }
-        POP      {R0,R1,R4-R6,PC}  ;; return
-          CFI EndBlock cfiBlock1
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock2 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls _Z21test_gpio_readlevel_Hv
+          CFI NoCalls _Z21test_gpio_readlevel_Lv
+          CFI CFA R13+24
+          CFI R4 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine0:
+        LSRS     R0,R0,#+31
+        STRB     R0,[R5, #+7]
+        POP      {R0,R1,R4-R6,PC}  ;; return
+          CFI EndBlock cfiBlock2
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _Z14Test_GPIO_Initv
         THUMB
 //  334 void Test_GPIO_Init()
 //  335 {
 _Z14Test_GPIO_Initv:
-        PUSH     {R0-R4,LR}
+        PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
+        SUB      SP,SP,#+16
           CFI CFA R13+24
 //  336  	GPIO_InitTypeDef GPIO_InitStructure;
 //  337 	
@@ -752,8 +766,8 @@ _Z14Test_GPIO_Initv:
         MOVS     R0,#+3
         STR      R0,[SP, #+12]
 //  343 	HAL_GPIO_Init(WIFI_IO2_GPIO_Port, &GPIO_InitStructure);
-        LDR.W    R4,??DataTable19  ;; 0x40010800
         ADD      R1,SP,#+0
+        LDR.W    R4,??DataTable18  ;; 0x40010800
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
@@ -769,10 +783,10 @@ _Z14Test_GPIO_Initv:
         MOVS     R0,#+4
         STR      R0,[SP, #+0]
 //  348 	GPIO_InitStructure.Mode =GPIO_MODE_INPUT ;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  349 	HAL_GPIO_Init(PW_DET_GPIO_Port, &GPIO_InitStructure);
         ADD      R1,SP,#+0
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
@@ -780,10 +794,10 @@ _Z14Test_GPIO_Initv:
         MOVS     R0,#+16
         STR      R0,[SP, #+0]
 //  351 	GPIO_InitStructure.Mode =GPIO_MODE_INPUT ;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  352 	HAL_GPIO_Init(MT_DET_GPIO_Port, &GPIO_InitStructure);
         ADD      R1,SP,#+0
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
@@ -791,11 +805,11 @@ _Z14Test_GPIO_Initv:
         MOVS     R0,#+64
         STR      R0,[SP, #+0]
 //  354 	GPIO_InitStructure.Mode =GPIO_MODE_INPUT ;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  355 	HAL_GPIO_Init(MT_DET2_GPIO_Port, &GPIO_InitStructure); 
         ADD      R1,SP,#+0
-        LDR.W    R0,??DataTable19_2  ;; 0x40011800
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
+        LDR.W    R0,??DataTable18_2  ;; 0x40011800
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
 //  356   
@@ -804,10 +818,10 @@ _Z14Test_GPIO_Initv:
         MOV      R0,#+32768
         STR      R0,[SP, #+0]
 //  359 	GPIO_InitStructure.Mode =GPIO_MODE_INPUT ;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  360 	HAL_GPIO_Init(XMIN_GPIO_Port, &GPIO_InitStructure);
         ADD      R1,SP,#+0
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
@@ -816,10 +830,10 @@ _Z14Test_GPIO_Initv:
         MOV      R0,#+4096
         STR      R0,[SP, #+0]
 //  363 	GPIO_InitStructure.Mode =GPIO_MODE_INPUT ;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  364 	HAL_GPIO_Init(YMIN_GPIO_Port, &GPIO_InitStructure);
         ADD      R1,SP,#+0
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
@@ -828,10 +842,10 @@ _Z14Test_GPIO_Initv:
         MOV      R0,#+2048
         STR      R0,[SP, #+0]
 //  367 	GPIO_InitStructure.Mode =GPIO_MODE_INPUT ;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  368 	HAL_GPIO_Init(ZMIN_GPIO_Port, &GPIO_InitStructure);
         ADD      R1,SP,#+0
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
         MOV      R0,R4
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
@@ -839,11 +853,11 @@ _Z14Test_GPIO_Initv:
         MOVS     R0,#+16
         STR      R0,[SP, #+0]
 //  370 	GPIO_InitStructure.Mode =GPIO_MODE_INPUT ;
-        MOVS     R0,#+0
-        STR      R0,[SP, #+4]
 //  371 	HAL_GPIO_Init(ZMAX_GPIO_Port, &GPIO_InitStructure);
         ADD      R1,SP,#+0
-        LDR.W    R0,??DataTable19_3  ;; 0x40011000
+        MOVS     R0,#+0
+        STR      R0,[SP, #+4]
+        LDR.W    R0,??DataTable18_3  ;; 0x40011000
           CFI FunCall HAL_GPIO_Init
         BL       HAL_GPIO_Init
 //  372 	//T1_CS(PE5)
@@ -852,11 +866,13 @@ _Z14Test_GPIO_Initv:
 //  375 	//HAL_GPIO_Init(TC1_CS_GPIO_Port, &GPIO_InitStructure);	   
 //  376 
 //  377 }
-        POP      {R0-R4,PC}       ;; return
-          CFI EndBlock cfiBlock2
+        ADD      SP,SP,#+16
+          CFI CFA R13+8
+        POP      {R4,PC}          ;; return
+          CFI EndBlock cfiBlock3
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function Test_GPIO
         THUMB
 //  378 void Test_GPIO()
@@ -882,15 +898,14 @@ Test_GPIO:
         BL       _Z21test_gpio_readlevel_Lv
 //  385 
 //  386     if((GPIO_TEST_STATE.pw_det_sta == 1)&&(GPIO_TEST_STATE.mt_det_sta == 1)&&(GPIO_TEST_STATE.mt_det2_sta == 1))
-        LDR.W    R4,??DataTable19_1
+        LDR.W    R4,??DataTable18_1
         LDRB     R0,[R4, #+0]
         CMP      R0,#+1
-        BNE.N    ??Test_GPIO_0
-        LDRB     R0,[R4, #+2]
-        CMP      R0,#+1
-        BNE.N    ??Test_GPIO_0
-        LDRB     R0,[R4, #+3]
-        CMP      R0,#+1
+        ITTTT    EQ 
+        LDRBEQ   R0,[R4, #+2]
+        CMPEQ    R0,#+1
+        LDRBEQ   R0,[R4, #+3]
+        CMPEQ    R0,#+1
         BNE.N    ??Test_GPIO_0
 //  387 	{
 //  388 		GUI_DispStringAt("断电断料接口正常", 10, 60);
@@ -905,8 +920,8 @@ Test_GPIO:
 //  391 	{
 //  392 		GUI_SetBkColor(gCfgItems.background_color);
 ??Test_GPIO_0:
-        LDR.W    R5,??DataTable19_4
-        LDR      R0,[R5, #+4]
+        LDR.W    R5,??DataTable18_4
+        LDR      R0,[R5, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  393 		GUI_SetColor(0X0000ff);//	红色字体
@@ -914,17 +929,17 @@ Test_GPIO:
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  394 		GUI_DispStringAt("断电断料接口异常", 10, 60);
+        ADR.W    R0,`?<Constant "\\266\\317\\265\\347\\266\\317\\301\\317\\2_1`
         MOVS     R2,#+60
         MOVS     R1,#+10
-        ADR.W    R0,`?<Constant "\\266\\317\\265\\347\\266\\317\\301\\317\\2_1`
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  395 		GUI_SetBkColor(gCfgItems.background_color);
-        LDR      R0,[R5, #+4]
+        LDR      R0,[R5, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  396 		GUI_SetColor(gCfgItems.title_color);		
-        LDR      R0,[R5, #+8]
+        LDR      R0,[R5, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  397 	}
@@ -949,26 +964,26 @@ Test_GPIO:
 ??Test_GPIO_1:
         LDRB     R0,[R4, #+9]
         CMP      R0,#+1
-        BNE.N    ??Test_GPIO_2
-        LDRB     R0,[R4, #+11]
-        CMP      R0,#+1
+        ITT      EQ 
+        LDRBEQ   R0,[R4, #+11]
+        CMPEQ    R0,#+1
         BNE.N    ??Test_GPIO_2
         LDRB     R0,[R4, #+13]
         CMP      R0,#+1
-        BNE.N    ??Test_GPIO_2
-        LDRB     R0,[R4, #+14]
-        CMP      R0,#+1
+        ITT      EQ 
+        LDRBEQ   R0,[R4, #+14]
+        CMPEQ    R0,#+1
         BNE.N    ??Test_GPIO_2
 //  416 	{
 //  417 		GUI_DispStringAt("限位接口正常", 10, 90);
-        MOVS     R2,#+90
-        MOVS     R1,#+10
-        ADR.W    R0,`?<Constant "\\317\\336\\316\\273\\275\\323\\277\\332\\3`
         POP      {R3-R5,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R2,#+90
+        MOVS     R1,#+10
+        ADR.W    R0,`?<Constant "\\317\\336\\316\\273\\275\\323\\277\\332\\3`
           CFI FunCall GUI_DispStringAt
         B.W      GUI_DispStringAt
           CFI R4 Frame(CFA, -12)
@@ -980,8 +995,8 @@ Test_GPIO:
 //  420 	{
 //  421 		GUI_SetBkColor(gCfgItems.background_color);
 ??Test_GPIO_2:
-        LDR.W    R5,??DataTable19_4
-        LDR      R0,[R5, #+4]
+        LDR.W    R5,??DataTable18_4
+        LDR      R0,[R5, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  422 		GUI_SetColor(0X0000ff);//	红色字体
@@ -989,17 +1004,17 @@ Test_GPIO:
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  423 		GUI_DispStringAt("限位接口异常", 10, 90);
+        ADR.W    R0,`?<Constant "\\317\\336\\316\\273\\275\\323\\277\\332\\3_1`
         MOVS     R2,#+90
         MOVS     R1,#+10
-        ADR.W    R0,`?<Constant "\\317\\336\\316\\273\\275\\323\\277\\332\\3_1`
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
 //  424 		GUI_SetBkColor(gCfgItems.background_color);
-        LDR      R0,[R5, #+4]
+        LDR      R0,[R5, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  425 		GUI_SetColor(gCfgItems.title_color);
-        LDR      R0,[R5, #+8]
+        LDR      R0,[R5, #+24]
         POP      {R1,R4,R5,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -1007,7 +1022,7 @@ Test_GPIO:
           CFI CFA R13+0
           CFI FunCall GUI_SetColor
         B.W      GUI_SetColor
-          CFI EndBlock cfiBlock3
+          CFI EndBlock cfiBlock4
 //  426 	}
 //  427 		
 //  428 }
@@ -1019,82 +1034,105 @@ Test_GPIO:
 //  434 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function mksEeprom_test
         THUMB
 //  435 bool mksEeprom_test()
 //  436 {
 mksEeprom_test:
-        PUSH     {R4,R5,LR}
+        PUSH     {R2-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
-        SUB      SP,SP,#+28
-          CFI CFA R13+40
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+24
 //  437 		int i;
 //  438 		int eppr_add[4] = {0,1536,1537,2047};
-        ADD      R0,SP,#+8
-        ADR.W    R1,`?<Constant {0, 1536, 1537, 2047}>`
-        MOVS     R2,#+16
-          CFI FunCall __aeabi_memcpy4
-        BL       __aeabi_memcpy4
 //  439 		volatile uint8_t eppr_w[4]={0xa1,0xb2,0xc3,0xd4};
-        ADD      R0,SP,#+4
         ADR.W    R1,`?<Constant {(unsigned char)'\\241', (unsigned c`
         LDR      R2,[R1, #0]
-        STR      R2,[R0, #+0]
+        ADD      R0,SP,#+4
 //  440         volatile uint8_t eppr_r[4];
 //  441 
 //  442 	for(i=0;i<4;i++)
-        MOVS     R4,#+0
-        B.N      ??mksEeprom_test_0
-??mksEeprom_test_1:
-        ADDS     R4,R4,#+1
-??mksEeprom_test_0:
-        CMP      R4,#+4
-        BGE.N    ??mksEeprom_test_2
-        ADD      R0,SP,#+8
-        LDR      R5,[R0, R4, LSL #+2]
-        MOVS     R2,#+1
-        ADD      R0,SP,#+4
-        ADDS     R1,R4,R0
-        MOV      R0,R5
-        UXTH     R0,R0
+        ADD      R5,SP,#+0
+        STR      R2,[R0, #+0]
+        ADD      R4,SP,#+4
 //  443 		{
 //  444 		AT24CXX_Write(eppr_add[i], (uint8_t *)&eppr_w[i],1); 
+        MOVS     R2,#+1
+        ADD      R1,SP,#+4
+        MOVS     R0,#+0
           CFI FunCall AT24CXX_Write
         BL       AT24CXX_Write
 //  445 		AT24CXX_Read(eppr_add[i],(u8 *)&eppr_r[i],1);
         MOVS     R2,#+1
-        ADD      R0,SP,#+0
-        ADDS     R1,R4,R0
-        MOV      R0,R5
-        UXTH     R0,R0
+        ADD      R1,SP,#+0
+        MOVS     R0,#+0
           CFI FunCall AT24CXX_Read
         BL       AT24CXX_Read
 //  446 		if(eppr_r[i] != eppr_w[i])
-        ADD      R0,SP,#+0
-        LDRB     R0,[R4, R0]
-        ADD      R1,SP,#+4
-        LDRB     R1,[R4, R1]
+        LDRB     R0,[SP, #+0]
+        LDRB     R1,[SP, #+4]
         CMP      R0,R1
-        BEQ.N    ??mksEeprom_test_1
+        BEQ.N    ??mksEeprom_test_0
 //  447 			{
 //  448 			return false;
+??mksEeprom_test_1:
         MOVS     R0,#+0
-        B.N      ??mksEeprom_test_3
+        POP      {R1,R2,R4-R6,PC}
 //  449 			}
+??mksEeprom_test_0:
+        MOVS     R2,#+1
+        ADD      R1,SP,#+5
+        MOV      R0,#+1536
+          CFI FunCall AT24CXX_Write
+        BL       AT24CXX_Write
+        MOVS     R2,#+1
+        ADD      R1,SP,#+1
+        MOV      R0,#+1536
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[R5, #+1]
+        LDRB     R1,[R4, #+1]
+        CMP      R0,R1
+        BNE.N    ??mksEeprom_test_1
+        MOVW     R6,#+1537
+        MOVS     R2,#+1
+        ADD      R1,SP,#+6
+        MOV      R0,R6
+          CFI FunCall AT24CXX_Write
+        BL       AT24CXX_Write
+        MOVS     R2,#+1
+        ADD      R1,SP,#+2
+        MOV      R0,R6
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[R5, #+2]
+        LDRB     R1,[R4, #+2]
+        CMP      R0,R1
+        BNE.N    ??mksEeprom_test_1
+        MOVW     R6,#+2047
+        MOVS     R2,#+1
+        ADD      R1,SP,#+7
+        MOV      R0,R6
+          CFI FunCall AT24CXX_Write
+        BL       AT24CXX_Write
+        MOVS     R2,#+1
+        ADD      R1,SP,#+3
+        MOV      R0,R6
+          CFI FunCall AT24CXX_Read
+        BL       AT24CXX_Read
+        LDRB     R0,[R5, #+3]
+        LDRB     R1,[R4, #+3]
+        CMP      R0,R1
+        BNE.N    ??mksEeprom_test_1
 //  450 		}
 //  451 	  
 //  452 	return true;	
-??mksEeprom_test_2:
         MOVS     R0,#+1
-??mksEeprom_test_3:
-        ADD      SP,SP,#+28
-          CFI CFA R13+12
-        POP      {R4,R5,PC}       ;; return
-          CFI EndBlock cfiBlock4
+        POP      {R1,R2,R4-R6,PC}  ;; return
+          CFI EndBlock cfiBlock5
 //  453 }  
 //  454 /*---------------------AT24C16 TEST END--------------------------*/
 //  455 
@@ -1158,7 +1196,7 @@ TransferStatus2:
 //  475 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function mksW25Q64Test
           CFI NoCalls
         THUMB
@@ -1253,7 +1291,7 @@ TransferStatus2:
 //  564 }
 mksW25Q64Test:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock5
+          CFI EndBlock cfiBlock6
 //  565 /*******************************************************************************
 //  566 * Function Name  : Buffercmp
 //  567 * Description    : Compares two buffers.
@@ -1265,52 +1303,39 @@ mksW25Q64Test:
 //  573 *******************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _Z9BuffercmpPhS_t
           CFI NoCalls
         THUMB
 //  574 TestStatus Buffercmp(u8* pBuffer1, u8* pBuffer2, u16 BufferLength)
 //  575 {
-_Z9BuffercmpPhS_t:
-        PUSH     {R4}
-          CFI R4 Frame(CFA, -4)
-          CFI CFA R13+4
-        B.N      ??Buffercmp_0
 //  576   while(BufferLength--)
+_Z9BuffercmpPhS_t:
+??Buffercmp_0:
+        UXTH     R2,R2
+        CBZ.N    R2,??Buffercmp_1
 //  577   {
 //  578     if(*pBuffer1 != *pBuffer2)
+        LDRB     R3,[R0], #+1
+        LDRB     R12,[R1], #+1
+        SUBS     R2,R2,#+1
+        CMP      R3,R12
+        BEQ.N    ??Buffercmp_0
 //  579     {
 //  580       return FAILED;
+        MOVS     R0,#+0
+        BX       LR
 //  581     }
 //  582 
 //  583     pBuffer1++;
-??Buffercmp_1:
-        ADDS     R0,R0,#+1
 //  584     pBuffer2++;
-        ADDS     R1,R1,#+1
-??Buffercmp_0:
-        MOV      R3,R2
-        SUBS     R2,R3,#+1
-        UXTH     R3,R3
-        CMP      R3,#+0
-        BEQ.N    ??Buffercmp_2
-        LDRB     R3,[R0, #+0]
-        LDRB     R4,[R1, #+0]
-        CMP      R3,R4
-        BEQ.N    ??Buffercmp_1
-        MOVS     R0,#+0
-        B.N      ??Buffercmp_3
 //  585   }
 //  586 
 //  587   return PASSED;
-??Buffercmp_2:
+??Buffercmp_1:
         MOVS     R0,#+1
-??Buffercmp_3:
-        POP      {R4}
-          CFI R4 SameValue
-          CFI CFA R13+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock6
+          CFI EndBlock cfiBlock7
 //  588 }
 //  589 
 //  590 
@@ -1330,6 +1355,33 @@ TransferStatusSD:
         DATA
         DC8 0
         DC8 0, 0, 0
+wtext:
+        DC8 77H, 77H, 77H, 2EH, 6DH, 61H, 6BH, 65H
+        DC8 72H, 62H, 61H, 73H, 65H, 2EH, 63H, 6FH
+        DC8 6DH, 20H, 53H, 54H, 4DH, 33H, 32H, 46H
+        DC8 34H, 30H, 37H, 5AH, 45H, 54H, 36H, 20H
+        DC8 53H, 44H, 49H, 4FH, 2BH, 46H, 41H, 54H
+        DC8 46H, 53H, 20H, 44H, 4DH, 41H, 20H, 4DH
+        DC8 6FH, 64H, 65H, 20H, 54H, 65H, 73H, 74H
+        DC8 20H, 45H, 78H, 61H, 6DH, 70H, 6CH, 65H
+        DC8 3AH, 0DH, 0AH, 54H, 68H, 69H, 73H, 20H
+        DC8 69H, 73H, 20H, 6DH, 6BH, 73H, 52H, 6FH
+        DC8 62H, 69H, 6EH, 50H, 72H, 6FH, 20H, 53H
+        DC8 54H, 4DH, 33H, 32H, 46H, 34H, 30H, 37H
+        DC8 5AH, 45H, 54H, 36H, 20H, 77H, 6FH, 72H
+        DC8 6BH, 69H, 6EH, 67H, 20H, 77H, 69H, 74H
+        DC8 68H, 20H, 46H, 61H, 74H, 46H, 73H, 0DH
+        DC8 0AH, 0
+        DC8 0, 0
+rtext:
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 SDFatFs:
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
@@ -1402,50 +1454,20 @@ MyFile:
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-wtext:
-        DC8 77H, 77H, 77H, 2EH, 6DH, 61H, 6BH, 65H
-        DC8 72H, 62H, 61H, 73H, 65H, 2EH, 63H, 6FH
-        DC8 6DH, 20H, 53H, 54H, 4DH, 33H, 32H, 46H
-        DC8 34H, 30H, 37H, 5AH, 45H, 54H, 36H, 20H
-        DC8 53H, 44H, 49H, 4FH, 2BH, 46H, 41H, 54H
-        DC8 46H, 53H, 20H, 44H, 4DH, 41H, 20H, 4DH
-        DC8 6FH, 64H, 65H, 20H, 54H, 65H, 73H, 74H
-        DC8 20H, 45H, 78H, 61H, 6DH, 70H, 6CH, 65H
-        DC8 3AH, 0DH, 0AH, 54H, 68H, 69H, 73H, 20H
-        DC8 69H, 73H, 20H, 6DH, 6BH, 73H, 52H, 6FH
-        DC8 62H, 69H, 6EH, 50H, 72H, 6FH, 20H, 53H
-        DC8 54H, 4DH, 33H, 32H, 46H, 34H, 30H, 37H
-        DC8 5AH, 45H, 54H, 36H, 20H, 77H, 6FH, 72H
-        DC8 6BH, 69H, 6EH, 67H, 20H, 77H, 69H, 74H
-        DC8 68H, 20H, 46H, 61H, 74H, 46H, 73H, 0DH
-        DC8 0AH, 0
-        DC8 0, 0
-rtext:
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function mksSdCardTest
         THUMB
 //  601 bool mksSdCardTest()
 //  602 {
 mksSdCardTest:
-        PUSH     {R4-R7,LR}
+        PUSH     {R2-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+20
-        SUB      SP,SP,#+12
-          CFI CFA R13+32
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+24
 //  603 	bool testStatus = false;
 //  604 
 //  605   FRESULT res;                                          /* FatFs function common result code */
@@ -1457,14 +1479,13 @@ mksSdCardTest:
 //  611   {
 //  612     /*##-2- Register the file system object to the FatFs module ##############*/
 //  613     if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK)
-        LDR.N    R4,??DataTable19_5
+        LDR.W    R4,??DataTable18_5
+        LDR.W    R1,??DataTable18_6
         MOVS     R2,#+0
-        LDR.N    R1,??DataTable19_6
-        ADDS     R0,R4,#+4
+        ADD      R0,R4,#+252
           CFI FunCall f_mount
         BL       f_mount
-        CMP      R0,#+0
-        BNE.N    ??mksSdCardTest_0
+        CBNZ.N   R0,??mksSdCardTest_0
 //  614     {
 //  615       /* FatFs Initialization Error */
 //  616       Error_Handler();
@@ -1485,15 +1506,14 @@ mksSdCardTest:
 //  631       {       
 //  632         /*##-4- Create and Open a new text file object with write access #####*/
 //  633         if(f_open(&MyFile, "1:\STM32.TXT", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK)
-        ADD      R5,R4,#+564
+        ADD      R5,R4,#+812
         ADR.W    R6,`?<Constant "1:STM32.TXT">`
         MOVS     R2,#+10
         MOV      R1,R6
         MOV      R0,R5
           CFI FunCall f_open
         BL       f_open
-        CMP      R0,#+0
-        BNE.N    ??mksSdCardTest_0
+        CBNZ.N   R0,??mksSdCardTest_0
 //  634         {
 //  635           /* 'STM32.TXT' file Open for write Error */
 //  636           Error_Handler();
@@ -1502,20 +1522,17 @@ mksSdCardTest:
 //  639         {
 //  640           /*##-5- Write data to the text file ################################*/
 //  641           res = f_write(&MyFile, wtext, sizeof(wtext), (uint32_t *)&byteswritten);
-        ADDW     R7,R4,#+1120
         ADD      R3,SP,#+4
         MOVS     R2,#+122
-        MOV      R1,R7
+        ADDS     R1,R4,#+4
         MOV      R0,R5
           CFI FunCall f_write
         BL       f_write
 //  642           
 //  643           if((byteswritten == 0) || (res != FR_OK))
         LDR      R1,[SP, #+4]
-        CMP      R1,#+0
-        BEQ.N    ??mksSdCardTest_0
-        CMP      R0,#+0
-        BNE.N    ??mksSdCardTest_0
+        CBZ.N    R1,??mksSdCardTest_0
+        CBNZ.N   R0,??mksSdCardTest_0
 //  644           {
 //  645             /* 'STM32.TXT' file Write or EOF Error */
 //  646             Error_Handler();
@@ -1535,8 +1552,7 @@ mksSdCardTest:
         MOV      R0,R5
           CFI FunCall f_open
         BL       f_open
-        CMP      R0,#+0
-        BNE.N    ??mksSdCardTest_0
+        CBNZ.N   R0,??mksSdCardTest_0
 //  655             {
 //  656               /* 'STM32.TXT' file Open for read Error */
 //  657               Error_Handler();
@@ -1545,27 +1561,24 @@ mksSdCardTest:
 //  660             {
 //  661               /*##-8- Read data from the text file ###########################*/
 //  662               res = f_read(&MyFile, rtext, sizeof(rtext), (UINT*)&bytesread);
-        ADDW     R6,R4,#+1244
         ADD      R3,SP,#+0
         MOVS     R2,#+121
-        MOV      R1,R6
+        ADD      R1,R4,#+128
         MOV      R0,R5
           CFI FunCall f_read
         BL       f_read
 //  663               
 //  664               if((bytesread == 0) || (res != FR_OK))
         LDR      R1,[SP, #+0]
-        CMP      R1,#+0
-        BEQ.N    ??mksSdCardTest_0
-        CMP      R0,#+0
-        BEQ.N    ??mksSdCardTest_1
+        CBZ.N    R1,??mksSdCardTest_0
+        CBZ.N    R0,??mksSdCardTest_1
 //  665               {
 //  666                 /* 'STM32.TXT' file Read or EOF Error */
 //  667                 Error_Handler();
 ??mksSdCardTest_0:
           CFI FunCall Error_Handler
         BL       Error_Handler
-        POP      {R1-R7,PC}
+        POP      {R1,R2,R4-R6,PC}
 //  668               }
 //  669               else
 //  670               {
@@ -1578,11 +1591,36 @@ mksSdCardTest:
 //  673                 
 //  674                 /*##-10- Compare read data with the expected data ############*/
 //  675                 TransferStatusSD = Buffercmp(wtext, rtext, sdBufferSize);
-        MOVS     R2,#+121
-        MOV      R1,R6
-        MOV      R0,R7
-          CFI FunCall _Z9BuffercmpPhS_t
-        BL       _Z9BuffercmpPhS_t
+        LDRB     R1,[R4, #+4]
+        LDRB     R2,[R4, #+128]
+        MOVS     R0,#+120
+        CMP      R1,R2
+        BNE.N    ??mksSdCardTest_2
+        ADDW     R1,R4,#+5
+        ADDW     R2,R4,#+129
+??mksSdCardTest_3:
+        LDRB     R3,[R1], #+1
+        LDRB     R5,[R2], #+1
+        CMP      R3,R5
+        ITTT     EQ 
+        LDRBEQ   R3,[R1], #+1
+        LDRBEQ   R5,[R2], #+1
+        CMPEQ    R3,R5
+        ITTT     EQ 
+        LDRBEQ   R3,[R1], #+1
+        LDRBEQ   R5,[R2], #+1
+        CMPEQ    R3,R5
+        BNE.N    ??mksSdCardTest_2
+        LDRB     R3,[R1], #+1
+        LDRB     R5,[R2], #+1
+        SUBS     R0,R0,#+4
+        CMP      R3,R5
+        BNE.N    ??mksSdCardTest_2
+        UXTH     R0,R0
+        CMP      R0,#+0
+        BNE.N    ??mksSdCardTest_3
+        MOVS     R0,#+1
+??mksSdCardTest_4:
         STRB     R0,[R4, #+0]
 //  676                 if(PASSED == TransferStatusSD)
         LDRSB    R0,[R4, #+0]
@@ -1605,8 +1643,11 @@ mksSdCardTest:
 //  693   }
 //  694 
 //  695 }
-        POP      {R1-R7,PC}       ;; return
-          CFI EndBlock cfiBlock7
+        POP      {R1,R2,R4-R6,PC}  ;; return
+??mksSdCardTest_2:
+        MOVS     R0,#+0
+        B.N      ??mksSdCardTest_4
+          CFI EndBlock cfiBlock8
 //  696 /*---------------------SDIO+FATFS TEST END--------------------------*/
 //  697 
 //  698 #if 0
@@ -1784,7 +1825,7 @@ mksSdCardTest:
 //  870 /*---------------------TFT-LCD TEST BEGIN--------------------------*/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _Z13mksTFTLCDTestv
           CFI NoCalls
         THUMB
@@ -1794,7 +1835,7 @@ mksSdCardTest:
 //  874 }
 _Z13mksTFTLCDTestv:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock9
 //  875 /*---------------------TFT-LCD TEST END--------------------------*/
 //  876 
 //  877 /*---------------------mksHardwareTest BEGIN--------------------------*/
@@ -1804,7 +1845,7 @@ _Z13mksTFTLCDTestv:
 //  881 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function mksStepperTest
           CFI NoCalls
         THUMB
@@ -1816,28 +1857,23 @@ mksStepperTest:
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
 //  884 	if(mksStepperState == 0)
-        LDR.N    R1,??DataTable19_7  ;; 0x42210198
-        LDR.N    R2,??DataTable19_8  ;; 0x42228198
-        LDR.N    R3,??DataTable19_9  ;; 0x42218194
-        LDR.N    R4,??DataTable19_10  ;; 0x42230180
-        LDR.N    R0,??DataTable19_11
+        LDR.N    R0,??DataTable18_7
+        LDR.N    R1,??DataTable18_8  ;; 0x42210198
         LDRSB    R5,[R0, #+0]
-        CMP      R5,#+0
-        BNE.N    ??mksStepperTest_0
+        LDR.N    R2,??DataTable18_9  ;; 0x42228198
+        LDR.N    R3,??DataTable18_10  ;; 0x42218194
+        LDR.N    R4,??DataTable18_11  ;; 0x42230180
+        CBNZ.N   R5,??mksStepperTest_0
 //  885 	{
 //  886 		XSTEP_OP =0;YSTEP_OP =0;ZSTEP_OP =0;E0STEP_OP =0;E1STEP_OP =0;
-        MOVS     R5,#+0
         STR      R5,[R4, #+12]
         STR      R5,[R4, #+0]
-        MOV      R4,R5
+        MOVS     R4,#+0
         STR      R4,[R3, #+0]
-        MOV      R3,R4
-        STR      R3,[R2, #+0]
-        MOV      R2,R3
-        STR      R2,[R1, #+0]
+        STR      R4,[R2, #+0]
+        STR      R4,[R1, #+0]
 //  887 		mksStepperState = 1;
         MOVS     R1,#+1
-        STRB     R1,[R0, #+0]
         B.N      ??mksStepperTest_1
 //  888 	}
 //  889 	else
@@ -1847,18 +1883,15 @@ mksStepperTest:
         MOVS     R5,#+1
         STR      R5,[R4, #+12]
         STR      R5,[R4, #+0]
-        MOV      R4,R5
-        STR      R4,[R3, #+0]
-        MOV      R3,R4
-        STR      R3,[R2, #+0]
-        MOV      R2,R3
-        STR      R2,[R1, #+0]
+        STR      R5,[R3, #+0]
+        STR      R5,[R2, #+0]
+        STR      R5,[R1, #+0]
 //  892 		mksStepperState = 0;
         MOVS     R1,#+0
+??mksStepperTest_1:
         STRB     R1,[R0, #+0]
 //  893 	}
 //  894 	testCnt++;
-??mksStepperTest_1:
         LDR      R1,[R0, #+4]
         ADDS     R1,R1,#+1
         STR      R1,[R0, #+4]
@@ -1868,11 +1901,11 @@ mksStepperTest:
           CFI R5 SameValue
           CFI CFA R13+0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock10
 //  896 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock11 Using cfiCommon0
           CFI Function _Z11mksGpioTestv
           CFI NoCalls
         THUMB
@@ -1931,13 +1964,13 @@ mksStepperTest:
 //  949 }
 _Z11mksGpioTestv:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 //  950 
 //  951 static int cnt_test=0;
 //  952 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function mksHardwareTest
         THUMB
 //  953 void mksHardwareTest()
@@ -1950,8 +1983,6 @@ mksHardwareTest:
           CFI R5 Frame(CFA, -16)
           CFI R4 Frame(CFA, -20)
           CFI CFA R13+20
-        SUB      SP,SP,#+20
-          CFI CFA R13+40
 //  955 
 //  956 
 //  957     static char buf_test[50];
@@ -2008,18 +2039,20 @@ mksHardwareTest:
 // 1008 
 // 1009 
 // 1010 		XENA_OP = 0;YENA_OP = 0;ZENA_OP = 0;E0ENA_OP = 0;E1ENA_OP = 0;
-        LDR.N    R7,??DataTable19_12  ;; 0x42230184
+        LDR.N    R7,??DataTable18_12  ;; 0x42230184
+        SUB      SP,SP,#+20
+          CFI CFA R13+40
         MOVS     R0,#+0
         STR      R0,[R7, #+12]
         STR      R0,[R7, #+0]
-        LDR.N    R5,??DataTable19_13  ;; 0x42218180
+        LDR.N    R5,??DataTable18_13  ;; 0x42218180
+        LDR.N    R6,??DataTable18_14  ;; 0x42210180
         STR      R0,[R5, #+32]
         STR      R0,[R5, #+12]
-        LDR.N    R6,??DataTable19_14  ;; 0x42210180
         STR      R0,[R6, #+12]
 // 1011 		
 // 1012         thermalManager.init();
-        LDR.N    R0,??DataTable19_15
+        LDR.N    R0,??DataTable18_15
           CFI FunCall _ZN11Temperature4initEv
         BL       _ZN11Temperature4initEv
 // 1013 
@@ -2029,67 +2062,56 @@ mksHardwareTest:
 // 1017 		  //cnt_test++;
 // 1018           
 // 1019 		  if(testCnt % 2000 > 1000)	//电机方向控制
-        LDR.N    R4,??DataTable19_11
+        LDR.N    R4,??DataTable18_7
+        LDR.N    R2,??DataTable18_16  ;; 0x4222818c
         LDR      R3,[R4, #+4]
-        LDR.N    R2,??DataTable19_16  ;; 0x4222818c
-        MOVW     R0,#+1001
         MOV      R1,#+2000
         MOV      R12,R1
         UDIV     R12,R3,R12
+        MOVW     R0,#+1001
         MLS      R3,R1,R12,R3
         CMP      R3,R0
-        BCC.N    ??mksHardwareTest_0
+        ITE      CS 
 // 1020 			{XDIR_OP = 0;YDIR_OP = 0;ZDIR_OP = 0;E0DIR_OP = 0;E1DIR_OP = 0;}
-        MOVS     R3,#+0
-        STR      R3,[R7, #+4]
-        STR      R3,[R5, #+36]
-        STR      R3,[R5, #+16]
-        STR      R3,[R2, #+0]
-        MOV      R2,R3
-        STR      R2,[R6, #+4]
-        B.N      ??mksHardwareTest_1
+        MOVCS    R3,#+0
 // 1021 		  else
 // 1022 			  {XDIR_OP = 1;YDIR_OP = 1;ZDIR_OP = 1;E0DIR_OP = 1;E1DIR_OP = 1;}
-??mksHardwareTest_0:
-        MOVS     R3,#+1
+        MOVCC    R3,#+1
         STR      R3,[R7, #+4]
         STR      R3,[R5, #+36]
         STR      R3,[R5, #+16]
         STR      R3,[R2, #+0]
-        MOV      R2,R3
-        STR      R2,[R6, #+4]
+        STR      R3,[R6, #+4]
 // 1023 		  //因为挤出头2控温管脚与风扇定时器复用，
 // 1024 		  //所以喷头2控温指示灯会闪烁
 // 1025 		  if(testCnt % 2000 > 1000)   //MOS控制
-??mksHardwareTest_1:
-        LDR      R7,[R4, #+4]
-        LDR.N    R2,??DataTable19_17  ;; 0x40000440
-        LDR.N    R3,??DataTable19_18  ;; 0x4222018c
         MOV      R12,R1
+        LDR      R7,[R4, #+4]
+        LDR.N    R2,??DataTable18_17  ;; 0x40000440
+        LDR.N    R3,??DataTable18_18  ;; 0x4222018c
         UDIV     R12,R7,R12
         MLS      R1,R1,R12,R7
         CMP      R1,R0
-        BCC.N    ??mksHardwareTest_2
+        BCC.N    ??mksHardwareTest_0
 // 1026 			{BED_OP=1;HEATER1_OP=1;HEATER2_OP=1;MKS_FAN_TIM = 10000;}
         MOVS     R0,#+1
         STR      R0,[R6, #+0]
         STR      R0,[R3, #+0]
         STR      R0,[R5, #+0]
         MOVW     R0,#+10000
-        STR      R0,[R2, #+0]
-        B.N      ??mksHardwareTest_3
+        B.N      ??mksHardwareTest_1
 // 1027 		  else
 // 1028 			{BED_OP=0;HEATER1_OP=0;HEATER2_OP=0;MKS_FAN_TIM = 0;}
-??mksHardwareTest_2:
+??mksHardwareTest_0:
         MOVS     R0,#+0
         STR      R0,[R6, #+0]
         STR      R0,[R3, #+0]
         STR      R0,[R5, #+0]
+??mksHardwareTest_1:
         STR      R0,[R2, #+0]
 // 1029 
 // 1030 		  //mksGpioTest();
 // 1031           Test_GPIO();
-??mksHardwareTest_3:
           CFI FunCall Test_GPIO
         BL       Test_GPIO
 // 1032 
@@ -2100,8 +2122,8 @@ mksHardwareTest:
 // 1035           //while(ix--)
 // 1036           //{;}
 // 1037           sprintf(buf_test, "T0:%0.3f T1:%0.3f B:%0.3f",thermalManager.current_temperature[0],thermalManager.current_temperature[1],thermalManager.current_temperature_bed);
-        LDR.N    R5,??DataTable19_19
-        LDR.N    R0,??DataTable19_20
+        LDR.N    R0,??DataTable18_19
+        LDR.N    R5,??DataTable18_20
         LDR      R0,[R0, #+0]
           CFI FunCall __aeabi_f2d
         BL       __aeabi_f2d
@@ -2121,8 +2143,6 @@ mksHardwareTest:
         BL       sprintf
 // 1038           
 // 1039           GUI_DispStringAt(buf_test, 10, 30);
-        MOVS     R2,#+30
-        MOVS     R1,#+10
         ADD      R0,R4,#+8
         ADD      SP,SP,#+20
           CFI CFA R13+20
@@ -2133,9 +2153,11 @@ mksHardwareTest:
           CFI R7 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R2,#+30
+        MOVS     R1,#+10
           CFI FunCall GUI_DispStringAt
         B.W      GUI_DispStringAt
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock12
 // 1040 	      //test_screen();
 // 1041 
 // 1042 		}
@@ -2164,7 +2186,7 @@ hHardwaretestWnd:
 // 1051 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock13 Using cfiCommon0
           CFI Function _Z17cbHardwaretestWinP10WM_MESSAGE
         THUMB
 // 1052 static void cbHardwaretestWin(WM_MESSAGE * pMsg) {
@@ -2176,12 +2198,15 @@ _Z17cbHardwaretestWinP10WM_MESSAGE:
         BNE.N    ??cbHardwaretestWin_0
         BX       LR
 ??cbHardwaretestWin_0:
-        PUSH     {R7,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
         CMP      R1,#+13
-        BEQ.N    ??cbHardwaretestWin_1
-        CMP      R1,#+15
+        IT       NE 
+        CMPNE    R1,#+15
         BEQ.N    ??cbHardwaretestWin_1
         CMP      R1,#+38
         BNE.N    ??cbHardwaretestWin_2
@@ -2200,235 +2225,303 @@ _Z17cbHardwaretestWinP10WM_MESSAGE:
 // 1067 			if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
         LDR      R1,[R0, #+8]
         CMP      R1,#+2
-        BNE.N    ??cbHardwaretestWin_1
+        ITTTT    EQ 
 // 1068 			{
 // 1069 				if(pMsg->hWinSrc == buttonRet.btnHandle)
-        LDRSH    R0,[R0, #+6]
-        LDR.N    R1,??DataTable19_21
-        LDRSH    R1,[R1, #+4]
-        CMP      R0,R1
+        LDREQ.N  R4,??DataTable18_21
+        LDRSHEQ  R0,[R0, #+6]
+        LDRSHEQ  R1,[R4, #+4]
+        CMPEQ    R0,R1
         BNE.N    ??cbHardwaretestWin_1
 // 1070 				{
 // 1071 				    //cnt_test=0;
 // 1072 				    XENA_OP = 0;YENA_OP = 0;ZENA_OP = 0;E0ENA_OP = 0;E1ENA_OP = 0;
-        LDR.N    R0,??DataTable19_12  ;; 0x42230184
+        LDR.N    R0,??DataTable18_12  ;; 0x42230184
+        LDR.N    R5,??DataTable18_4
         MOVS     R1,#+0
         STR      R1,[R0, #+12]
         STR      R1,[R0, #+0]
-        LDR.N    R0,??DataTable19_13  ;; 0x42218180
+        MOVS     R2,#+0
+        LDR.N    R0,??DataTable18_13  ;; 0x42218180
         STR      R1,[R0, #+32]
         STR      R1,[R0, #+12]
-        LDR.N    R1,??DataTable19_14  ;; 0x42210180
-        MOVS     R2,#+0
+        LDR.N    R1,??DataTable18_14  ;; 0x42210180
         STR      R2,[R1, #+12]
 // 1073                     BED_OP=0;HEATER1_OP=0;HEATER2_OP=0;MKS_FAN_TIM = 0;
         STR      R2,[R1, #+0]
-        MOV      R1,R2
-        LDR.N    R2,??DataTable19_18  ;; 0x4222018c
+        MOVS     R1,#+0
+        LDR.N    R2,??DataTable18_18  ;; 0x4222018c
         STR      R1,[R2, #+0]
         STR      R1,[R0, #+0]
         MOV      R0,R1
-        LDR.N    R1,??DataTable19_17  ;; 0x40000440
+        LDR.N    R1,??DataTable18_17  ;; 0x40000440
         STR      R0,[R1, #+0]
 // 1074 				    mksTmp.cfg_hardware_test_enable=0;
-        LDR.N    R1,??DataTable19_22
+        LDR.N    R1,??DataTable18_22
         STRB     R0,[R1, #+19]
 // 1075                     last_disp_state = HARDWARE_TEST_UI;
         MOVS     R0,#+33
-        LDR.N    R1,??DataTable19_23
+        LDR.N    R1,??DataTable18_23
         STRB     R0,[R1, #+0]
-// 1076 					GUI_UC_SetEncodeUTF8();
-          CFI FunCall GUI_UC_SetEncodeUTF8
-        BL       GUI_UC_SetEncodeUTF8
-// 1077 					GUI_SetFont(&FONT_TITLE);
-        LDR.N    R0,??DataTable19_24
+// 1076 					//GUI_UC_SetEncodeUTF8();
+// 1077 					//GUI_SetFont(&FONT_TITLE);
+// 1078 					if((gCfgItems.language == LANG_SIMPLE_CHINESE)||(gCfgItems.language == LANG_COMPLEX_CHINESE))
+        LDRSB    R0,[R5, #+200]
+        CMP      R0,#+1
+        ITT      NE 
+        LDRSBNE  R0,[R5, #+200]
+        CMPNE    R0,#+2
+        BNE.N    ??cbHardwaretestWin_3
+// 1079 				    {
+// 1080 				      GUI_SetFont(&GUI_FontHZ16);
+        LDR.N    R6,??DataTable18_24
+        MOV      R0,R6
           CFI FunCall GUI_SetFont
         BL       GUI_SetFont
-// 1078 					Clear_Hardwaretest();
-          CFI FunCall Clear_Hardwaretest
-        BL       Clear_Hardwaretest
-// 1079 					draw_ready_print();
-        POP      {R0,LR}
+// 1081 				      BUTTON_SetDefaultFont(&GUI_FontHZ16);
+        MOV      R0,R6
+          CFI FunCall BUTTON_SetDefaultFont
+        BL       BUTTON_SetDefaultFont
+// 1082 				      TEXT_SetDefaultFont(&GUI_FontHZ16);  
+        MOV      R0,R6
+          CFI FunCall TEXT_SetDefaultFont
+        BL       TEXT_SetDefaultFont
+// 1083 				      GUI_UC_SetEncodeNone();
+          CFI FunCall GUI_UC_SetEncodeNone
+        BL       GUI_UC_SetEncodeNone
+        B.N      ??cbHardwaretestWin_4
+// 1084 				    }
+// 1085 				    else
+// 1086 				    {
+// 1087 				      GUI_SetFont(&FONT_TITLE);
+??cbHardwaretestWin_3:
+        LDR.N    R6,??DataTable18_25
+        MOV      R0,R6
+          CFI FunCall GUI_SetFont
+        BL       GUI_SetFont
+// 1088 				      BUTTON_SetDefaultFont(&FONT_TITLE);
+        MOV      R0,R6
+          CFI FunCall BUTTON_SetDefaultFont
+        BL       BUTTON_SetDefaultFont
+// 1089 				      TEXT_SetDefaultFont(&FONT_TITLE);                    
+        MOV      R0,R6
+          CFI FunCall TEXT_SetDefaultFont
+        BL       TEXT_SetDefaultFont
+// 1090 				      GUI_UC_SetEncodeUTF8();
+          CFI FunCall GUI_UC_SetEncodeUTF8
+        BL       GUI_UC_SetEncodeUTF8
+// 1091 				    }
+// 1092 					Clear_Hardwaretest();
+??cbHardwaretestWin_4:
+        LDR      R0,[R5, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbHardwaretestWin_5
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
+// 1093 					draw_ready_print();
+??cbHardwaretestWin_5:
+        POP      {R4-R6,LR}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall draw_ready_print
         B.W      draw_ready_print
+          CFI R4 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-// 1080 				}
-// 1081 				
-// 1082 			}
-// 1083 			break;
-// 1084 			
-// 1085 		default:
-// 1086 			WM_DefaultProc(pMsg);
+          CFI CFA R13+16
+// 1094 				}
+// 1095 				
+// 1096 			}
+// 1097 			break;
+// 1098 			
+// 1099 		default:
+// 1100 			WM_DefaultProc(pMsg);
 ??cbHardwaretestWin_2:
-        POP      {R1,LR}
+        POP      {R4-R6,LR}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall WM_DefaultProc
         B.W      WM_DefaultProc
+          CFI R4 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
-// 1087 		}
-// 1088 	}
+          CFI CFA R13+16
+// 1101 		}
+// 1102 	}
 ??cbHardwaretestWin_1:
-        POP      {R0,PC}          ;; return
-          CFI EndBlock cfiBlock12
-// 1089 
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock13
+// 1103 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function draw_Hardwaretest
         THUMB
-// 1090 void draw_Hardwaretest()
-// 1091 {
+// 1104 void draw_Hardwaretest()
+// 1105 {
 draw_Hardwaretest:
-        PUSH     {R0-R6,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
           CFI R6 Frame(CFA, -8)
           CFI R5 Frame(CFA, -12)
           CFI R4 Frame(CFA, -16)
-          CFI CFA R13+32
-// 1092 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != HARDWARE_TEST_UI)
-        LDR.N    R0,??DataTable19_25
+          CFI CFA R13+16
+// 1106 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != HARDWARE_TEST_UI)
+        LDR.N    R0,??DataTable18_26
         LDRSB    R1,[R0, #+100]
+        SUB      SP,SP,#+16
+          CFI CFA R13+32
         LDRSB    R2,[R1, R0]
         CMP      R2,#+33
         BEQ.N    ??draw_Hardwaretest_0
-// 1093 	{
-// 1094 		disp_state_stack._disp_index++;
+// 1107 	{
+// 1108 		disp_state_stack._disp_index++;
         ADDS     R1,R1,#+1
         STRB     R1,[R0, #+100]
-// 1095 		disp_state_stack._disp_state[disp_state_stack._disp_index] = HARDWARE_TEST_UI;
+// 1109 		disp_state_stack._disp_state[disp_state_stack._disp_index] = HARDWARE_TEST_UI;
         MOVS     R2,#+33
         SXTB     R1,R1
         STRB     R2,[R1, R0]
-// 1096 	}
-// 1097 	disp_state = HARDWARE_TEST_UI;
+// 1110 	}
+// 1111 	disp_state = HARDWARE_TEST_UI;
 ??draw_Hardwaretest_0:
         MOVS     R0,#+33
-        LDR.N    R1,??DataTable19_26
+        LDR.N    R1,??DataTable18_27
+// 1112 
+// 1113     GUI_SetBkColor(gCfgItems.background_color);
+        LDR.N    R4,??DataTable18_4
         STRB     R0,[R1, #+0]
-// 1098 
-// 1099     GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R4,??DataTable19_4
-        LDR      R0,[R4, #+4]
+        LDR      R0,[R4, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
-// 1100 	GUI_SetColor(gCfgItems.title_color);
-        ADDS     R5,R4,#+4
+// 1114 	GUI_SetColor(gCfgItems.title_color);
+        ADD      R5,R4,#+20
         LDR      R0,[R5, #+4]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
-// 1101 	GUI_Clear();
+// 1115 	GUI_Clear();
           CFI FunCall GUI_Clear
         BL       GUI_Clear
-// 1102 
-// 1103 	GUI_UC_SetEncodeNone();
+// 1116 
+// 1117 	GUI_UC_SetEncodeNone();
           CFI FunCall GUI_UC_SetEncodeNone
         BL       GUI_UC_SetEncodeNone
-// 1104 	GUI_SetFont(&GUI_FontHZ16);
-        LDR.N    R0,??DataTable19_27
+// 1118 	GUI_SetFont(&GUI_FontHZ16);
+        LDR.N    R0,??DataTable18_24
           CFI FunCall GUI_SetFont
         BL       GUI_SetFont
-// 1105 
-// 1106 /*---------------------------------------------------------------------------*/
-// 1107 //管脚测试
-// 1108 	Test_GPIO();
+// 1119 
+// 1120 /*---------------------------------------------------------------------------*/
+// 1121 //管脚测试
+// 1122 	Test_GPIO();
           CFI FunCall Test_GPIO
         BL       Test_GPIO
-// 1109 	
-// 1110 /*---------------------------------------------------------------------------*/
-// 1111 	hHardwaretestWnd = WM_CreateWindow(LCD_WIDTH * 3 / 4 , titleHeight + imgHeight / 2, LCD_WIDTH / 4 - 1, imgHeight / 2 - 1, WM_CF_SHOW, cbHardwaretestWin, 0);
-        LDR.N    R6,??DataTable19_21
+// 1123 	
+// 1124 /*---------------------------------------------------------------------------*/
+// 1125 	hHardwaretestWnd = WM_CreateWindow(LCD_WIDTH * 3 / 4 , titleHeight + imgHeight / 2, LCD_WIDTH / 4 - 1, imgHeight / 2 - 1, WM_CF_SHOW, cbHardwaretestWin, 0);
+        LDR.N    R6,??DataTable18_21
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
-        LDR.N    R0,??DataTable19_28
+        MOVS     R3,#+141
+        LDR.N    R0,??DataTable18_28
         STR      R0,[SP, #+4]
+        MOVS     R2,#+119
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOVS     R3,#+141
-        MOVS     R2,#+119
         MOVS     R1,#+178
         MOV      R0,#+360
           CFI FunCall WM_CreateWindow
         BL       WM_CreateWindow
         STRH     R0,[R6, #+0]
-// 1112 	
-// 1113 	buttonRet.btnHandle = BUTTON_CreateEx(0 , 0, LCD_WIDTH / 4 - 2, imgHeight / 2 - 1, hHardwaretestWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+// 1126 	
+// 1127 	buttonRet.btnHandle = BUTTON_CreateEx(0 , 0, LCD_WIDTH / 4 - 2, imgHeight / 2 - 1, hHardwaretestWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+141
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+118
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R1,#+0
         LDRSH    R0,[R6, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+141
-        MOVS     R2,#+118
-        MOVS     R1,#+0
-        MOV      R0,R1
+        MOVS     R0,#+0
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
         STRH     R0,[R6, #+4]
-// 1114 
-// 1115 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);	
+// 1128 
+// 1129 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);	
         MOVS     R2,#+1
         ADR.W    R1,`?<Constant "bmp_return.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-// 1116 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y); 
-        LDR.N    R0,??DataTable19_29
+// 1130 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y); 
+        LDR.N    R0,??DataTable18_29
+        LDR.N    R2,??DataTable18_30
         LDRSB    R0,[R0, #+0]
         STR      R0,[SP, #+0]
-        LDR.N    R0,??DataTable19_30
-        LDRSB    R3,[R0, #+0]
-        LDR.N    R2,??DataTable19_31
         MOVS     R1,#+0
+        LDR.N    R0,??DataTable18_31
+        LDRSB    R3,[R0, #+0]
         LDRSH    R0,[R6, #+4]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-// 1117     
-// 1118 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
+// 1131     
+// 1132 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
         LDR      R2,[R5, #+56]
-        MOVS     R1,#+1
         LDRSH    R0,[R6, #+4]
+        MOVS     R1,#+1
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
-// 1119 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
+// 1133 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
         LDR      R2,[R5, #+56]
-        MOVS     R1,#+0
         LDRSH    R0,[R6, #+4]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetBkColor
         BL       BUTTON_SetBkColor
-// 1120 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
+// 1134 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
         LDR      R2,[R5, #+60]
+        LDRSH    R0,[R6, #+4]
         MOVS     R1,#+1
-        LDRSH    R0,[R6, #+4]
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
-// 1121 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);  
+// 1135 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);  
         LDR      R2,[R5, #+60]
-        MOVS     R1,#+0
         LDRSH    R0,[R6, #+4]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_SetTextColor
         BL       BUTTON_SetTextColor
-// 1122     
-// 1123     if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-// 1124     {
-// 1125         //BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
-// 1126     }
-// 1127     GUI_DispStringAt("硬件测试-(软件内部版本V1.0.1_001)", 20, 0);
+// 1136     
+// 1137     if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R4, #+463]
+// 1138     {
+// 1139         //BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
+// 1140     }
+// 1141     GUI_DispStringAt("硬件测试-(软件内部版本V1.0.1_001)", 20, 0);
+        ADR.W    R0,`?<Constant "\\323\\262\\274\\376\\262\\342\\312\\324-(`
         MOVS     R2,#+0
         MOVS     R1,#+20
-        ADR.W    R0,`?<Constant "\\323\\262\\274\\376\\262\\342\\312\\324-(`
           CFI FunCall GUI_DispStringAt
         BL       GUI_DispStringAt
-// 1128     mksHardwareTest();
-        POP      {R0-R6,LR}
+// 1142     mksHardwareTest();
+        ADD      SP,SP,#+16
+          CFI CFA R13+16
+        POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
@@ -2436,36 +2529,35 @@ draw_Hardwaretest:
           CFI CFA R13+0
           CFI FunCall mksHardwareTest
         B.N      mksHardwareTest
-          CFI EndBlock cfiBlock13
-// 1129 
-// 1130 }
-// 1131 
+          CFI EndBlock cfiBlock14
+// 1143 
+// 1144 }
+// 1145 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function Clear_Hardwaretest
         THUMB
-// 1132 void Clear_Hardwaretest()
-// 1133 {
+// 1146 void Clear_Hardwaretest()
+// 1147 {
 Clear_Hardwaretest:
         PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-// 1134 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R0,??DataTable19_4
-        LDR      R0,[R0, #+4]
+// 1148 	GUI_SetBkColor(gCfgItems.background_color);
+        LDR.N    R0,??DataTable18_4
+        LDR      R0,[R0, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
-// 1135 	if(WM_IsWindow(hHardwaretestWnd))
-        LDR.N    R4,??DataTable19_21
+// 1149 	if(WM_IsWindow(hHardwaretestWnd))
+        LDR.N    R4,??DataTable18_21
         LDRSH    R0,[R4, #+0]
           CFI FunCall WM_IsWindow
         BL       WM_IsWindow
-        CMP      R0,#+0
-        BEQ.N    ??Clear_Hardwaretest_0
-// 1136 	{
-// 1137 		WM_DeleteWindow(hHardwaretestWnd);
+        CBZ.N    R0,??Clear_Hardwaretest_0
+// 1150 	{
+// 1151 		WM_DeleteWindow(hHardwaretestWnd);
         LDRSH    R0,[R4, #+0]
         POP      {R4,LR}
           CFI R4 SameValue
@@ -2476,205 +2568,205 @@ Clear_Hardwaretest:
           CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
-// 1138 		//GUI_Exec();
-// 1139 	}
-// 1140 	//GUI_Clear();
-// 1141 }
+// 1152 		//GUI_Exec();
+// 1153 	}
+// 1154 	//GUI_Clear();
+// 1155 }
 ??Clear_Hardwaretest_0:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock14
+          CFI EndBlock cfiBlock15
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19:
+??DataTable18:
         DC32     0x40010800
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_1:
+??DataTable18_1:
         DC32     GPIO_TEST_STATE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_2:
+??DataTable18_2:
         DC32     0x40011800
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_3:
+??DataTable18_3:
         DC32     0x40011000
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_4:
+??DataTable18_4:
         DC32     gCfgItems
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_5:
+??DataTable18_5:
         DC32     TransferStatusSD
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_6:
+??DataTable18_6:
         DC32     SD_Path
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_7:
-        DC32     0x42210198
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_8:
-        DC32     0x42228198
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_9:
-        DC32     0x42218194
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_10:
-        DC32     0x42230180
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_11:
+??DataTable18_7:
         DC32     mksStepperState
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_12:
+??DataTable18_8:
+        DC32     0x42210198
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_9:
+        DC32     0x42228198
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_10:
+        DC32     0x42218194
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_11:
+        DC32     0x42230180
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_12:
         DC32     0x42230184
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_13:
+??DataTable18_13:
         DC32     0x42218180
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_14:
+??DataTable18_14:
         DC32     0x42210180
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_15:
+??DataTable18_15:
         DC32     thermalManager
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_16:
+??DataTable18_16:
         DC32     0x4222818c
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_17:
+??DataTable18_17:
         DC32     0x40000440
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_18:
+??DataTable18_18:
         DC32     0x4222018c
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_19:
-        DC32     _ZN11Temperature19current_temperatureE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_20:
+??DataTable18_19:
         DC32     _ZN11Temperature23current_temperature_bedE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_21:
+??DataTable18_20:
+        DC32     _ZN11Temperature19current_temperatureE
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_21:
         DC32     hHardwaretestWnd
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_22:
+??DataTable18_22:
         DC32     mksTmp
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_23:
+??DataTable18_23:
         DC32     last_disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_24:
-        DC32     GUI_FontHZ_fontHz14
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_25:
-        DC32     disp_state_stack
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_26:
-        DC32     disp_state
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable19_27:
+??DataTable18_24:
         DC32     GUI_FontHZ16
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_28:
+??DataTable18_25:
+        DC32     GUI_FontHZ_fontHz14
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_26:
+        DC32     disp_state_stack
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_27:
+        DC32     disp_state
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable18_28:
         DC32     _Z17cbHardwaretestWinP10WM_MESSAGE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_29:
+??DataTable18_29:
         DC32     BMP_PIC_Y
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_30:
-        DC32     BMP_PIC_X
+??DataTable18_30:
+        DC32     bmp_struct
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
-??DataTable19_31:
-        DC32     bmp_struct
+??DataTable18_31:
+        DC32     BMP_PIC_X
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -2703,12 +2795,6 @@ Clear_Hardwaretest:
 `?<Constant "\\317\\336\\316\\273\\275\\323\\277\\332\\3_1`:
         DC8 "\317\336\316\273\275\323\277\332\322\354\263\243"
         DC8 0, 0, 0
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-`?<Constant {0, 1536, 1537, 2047}>`:
-        DC32 0, 1536, 1537, 2047
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -2761,17 +2847,22 @@ _ZTI5Print:
         DATA
         DC8 0
 
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+`?<Constant {0, 1536, 1537, 2047}>`:
+        DC32 0, 1536, 1537, 2047
+
         END
-// 1142 
-// 1143 /* USER CODE END 0 */
+// 1156 
+// 1157 /* USER CODE END 0 */
 // 
 //   235 bytes in section .bss
 // 1 497 bytes in section .data
-//     1 byte  in section .rodata
-// 1 986 bytes in section .text
+//    17 bytes in section .rodata
+// 2 134 bytes in section .text
 // 
-// 1 986 bytes of CODE  memory
-//     0 bytes of CONST memory (+ 1 byte shared)
+// 2 134 bytes of CODE  memory
+//    16 bytes of CONST memory (+ 1 byte shared)
 // 1 732 bytes of DATA  memory
 //
 //Errors: none

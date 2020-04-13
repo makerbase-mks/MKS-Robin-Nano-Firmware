@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:48
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:14
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\Print.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\Print.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\Print.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\Print.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\Print.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\Print.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -124,7 +121,6 @@
         PUBLIC _ZN5Print7printlnEli
         PUBLIC _ZN5Print7printlnEmi
         PUBLIC _ZN5Print7printlnEv
-        PUBLIC _ZNK6String6lengthEv
         PUBLIC _ZTI5Print
         PUBLIC _ZTI9Printable
         PUBLIC _ZTV5Print
@@ -156,7 +152,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\Print.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\Print.cpp
 //    1 /*
 //    2  Print.cpp - Base class that provides print() and println()
 //    3  Copyright (c) 2008 David A. Mellis.  All right reserved.
@@ -185,20 +181,8 @@
 //   26 #include "Print.h"
 
         SECTION `.text`:CODE:REORDER:NOROOT(1)
-        SECTION_GROUP _ZNK6String6lengthEv
-          CFI Block cfiBlock0 Using cfiCommon0
-          CFI Function _ZNK6String6lengthEv
-          CFI NoCalls
-        THUMB
-// __interwork __softfp unsigned int String::length() const
-_ZNK6String6lengthEv:
-        LDR      R0,[R0, #+8]
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock0
-
-        SECTION `.text`:CODE:REORDER:NOROOT(1)
         SECTION_GROUP _ZN5Print5writeEPKc
-          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Block cfiBlock0 Using cfiCommon0
           CFI Function _ZN5Print5writeEPKc
         THUMB
 // __interwork __softfp size_t Print::write(char const *)
@@ -217,11 +201,11 @@ _ZN5Print5writeEPKc:
         MOV      R0,R5
           CFI FunCall strlen
         BL       strlen
+        LDR      R3,[R4, #+0]
+        LDR      R3,[R3, #+4]
         MOV      R2,R0
         MOV      R1,R5
         MOV      R0,R4
-        LDR      R3,[R4, #+0]
-        LDR      R3,[R3, #+4]
         ADD      SP,SP,#+4
           CFI CFA R13+12
         POP      {R4,R5,LR}
@@ -232,14 +216,14 @@ _ZN5Print5writeEPKc:
           CFI FunCall
         ANOTE "tailcall"
         BX       R3
-          CFI EndBlock cfiBlock1
+          CFI EndBlock cfiBlock0
 //   27 
 //   28 // Public Methods //////////////////////////////////////////////////////////////
 //   29 
 //   30 /* default implementation: may be overridden */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Block cfiBlock1 Using cfiCommon0
           CFI Function _ZN5Print5writeEPKhj
         THUMB
 //   31 size_t Print::write(const uint8_t *buffer, size_t size)
@@ -257,77 +241,72 @@ _ZN5Print5writeEPKhj:
         MOV      R6,R2
 //   33   size_t n = 0;
         MOVS     R7,#+0
-        B.N      ??write_1
+        CBZ.N    R6,??write_1
 //   34   while (size--) {
 //   35     n += write(*buffer++);
 ??write_2:
-        LDRB     R1,[R5], #+1
-        MOV      R0,R4
         LDR      R2,[R4, #+0]
+        LDRB     R1,[R5], #+1
         LDR      R2,[R2, #+0]
+        MOV      R0,R4
           CFI FunCall
         BLX      R2
         ADDS     R7,R0,R7
+        SUBS     R6,R6,#+1
 //   36   }
-??write_1:
-        MOV      R0,R6
-        SUBS     R6,R0,#+1
-        CMP      R0,#+0
         BNE.N    ??write_2
 //   37   return n;
+??write_1:
         MOV      R0,R7
         POP      {R1,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock2
+          CFI EndBlock cfiBlock1
 //   38 }
 //   39 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Block cfiBlock2 Using cfiCommon0
           CFI Function _ZN5Print5printEPK19__FlashStringHelper
-          CFI FunCall _ZN5Print5printEPKc
+          CFI FunCall _ZN5Print5writeEPKc
         THUMB
 //   40 size_t Print::print(const __FlashStringHelper *ifsh)
 //   41 {
 //   42   return print(reinterpret_cast<const char *>(ifsh));
 _ZN5Print5printEPK19__FlashStringHelper:
-        B.N      _ZN5Print5printEPKc
-          CFI EndBlock cfiBlock3
+        B.W      _ZN5Print5writeEPKc
+          CFI EndBlock cfiBlock2
 //   43 }
 //   44 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Block cfiBlock3 Using cfiCommon0
           CFI Function _ZN5Print5printERK6String
         THUMB
 //   45 size_t Print::print(const String &s)
 //   46 {
 _ZN5Print5printERK6String:
-        PUSH     {R4-R8,LR}
+        PUSH     {R3-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R8 Frame(CFA, -8)
-          CFI R7 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -20)
-          CFI R4 Frame(CFA, -24)
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
           CFI CFA R13+24
         MOV      R4,R0
         MOV      R5,R1
 //   47   size_t n = 0;
         MOVS     R6,#+0
 //   48   for (uint16_t i = 0; i < s.length(); i++) {
-        MOV      R7,R6
+        MOVS     R7,#+0
         B.N      ??print_0
 //   49     n += write(s[i]);
 ??print_1:
-        MOV      R1,R8
         MOV      R0,R5
           CFI FunCall _ZNK6StringixEj
         BL       _ZNK6StringixEj
-        MOV      R1,R0
-        UXTB     R1,R1
-        MOV      R0,R4
         LDR      R2,[R4, #+0]
         LDR      R2,[R2, #+0]
+        UXTB     R1,R0
+        MOV      R0,R4
           CFI FunCall
         BLX      R2
         ADDS     R6,R0,R6
@@ -335,53 +314,74 @@ _ZN5Print5printERK6String:
         ADDS     R7,R7,#+1
 ??print_0:
         UXTH     R7,R7
-        MOV      R8,R7
-        MOV      R0,R5
-          CFI FunCall _ZNK6String6lengthEv
-        BL       _ZNK6String6lengthEv
-        CMP      R8,R0
+        LDR      R0,[R5, #+8]
+        MOV      R1,R7
+        CMP      R1,R0
         BCC.N    ??print_1
 //   51   return n;
         MOV      R0,R6
-        POP      {R4-R8,PC}       ;; return
-          CFI EndBlock cfiBlock4
+        POP      {R1,R4-R7,PC}    ;; return
+          CFI EndBlock cfiBlock3
 //   52 }
 //   53 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Block cfiBlock4 Using cfiCommon0
           CFI Function _ZN5Print5printEPKc
-          CFI FunCall _ZN5Print5writeEPKc
         THUMB
 //   54 size_t Print::print(const char str[])
 //   55 {
-//   56   return write(str);
 _ZN5Print5printEPKc:
-        B.W      _ZN5Print5writeEPKc
-          CFI EndBlock cfiBlock5
+        PUSH     {R3-R5,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
+        MOV      R4,R0
+        MOVS     R5,R1
+//   56   return write(str);
+        BNE.N    ??print_2
+        MOVS     R0,#+0
+        POP      {R1,R4,R5,PC}
+??print_2:
+        MOV      R0,R5
+          CFI FunCall strlen
+        BL       strlen
+        LDR      R3,[R4, #+0]
+        LDR      R3,[R3, #+4]
+        MOV      R2,R0
+        MOV      R1,R5
+        MOV      R0,R4
+        ADD      SP,SP,#+4
+          CFI CFA R13+12
+        POP      {R4,R5,LR}
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R14 SameValue
+          CFI CFA R13+0
+          CFI FunCall
+        ANOTE "tailcall"
+        BX       R3
+          CFI EndBlock cfiBlock4
 //   57 }
 //   58 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Block cfiBlock5 Using cfiCommon0
           CFI Function _ZN5Print5printEc
+          CFI NoCalls
         THUMB
 //   59 size_t Print::print(char c)
 //   60 {
 //   61   return write(c);
 _ZN5Print5printEc:
-        UXTB     R1,R1
-        LDR      R2,[R0, #+0]
-        LDR      R2,[R2, #+0]
-          CFI FunCall
-        ANOTE "tailcall"
-        BX       R2
-          CFI EndBlock cfiBlock6
+        B.N      ?Subroutine1
+          CFI EndBlock cfiBlock5
 //   62 }
 //   63 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock7 Using cfiCommon0
+          CFI Block cfiBlock6 Using cfiCommon0
           CFI Function _ZN5Print5printEhi
           CFI FunCall _ZN5Print5printEmi
         THUMB
@@ -390,12 +390,12 @@ _ZN5Print5printEc:
 //   66   return print((unsigned long) b, base);
 _ZN5Print5printEhi:
         B.N      _ZN5Print5printEmi
-          CFI EndBlock cfiBlock7
+          CFI EndBlock cfiBlock6
 //   67 }
 //   68 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock8 Using cfiCommon0
+          CFI Block cfiBlock7 Using cfiCommon0
           CFI Function _ZN5Print5printEii
           CFI FunCall _ZN5Print5printEli
         THUMB
@@ -404,12 +404,12 @@ _ZN5Print5printEhi:
 //   71   return print((long) n, base);
 _ZN5Print5printEii:
         B.N      _ZN5Print5printEli
-          CFI EndBlock cfiBlock8
+          CFI EndBlock cfiBlock7
 //   72 }
 //   73 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock9 Using cfiCommon0
+          CFI Block cfiBlock8 Using cfiCommon0
           CFI Function _ZN5Print5printEji
           CFI FunCall _ZN5Print5printEmi
         THUMB
@@ -418,12 +418,12 @@ _ZN5Print5printEii:
 //   76   return print((unsigned long) n, base);
 _ZN5Print5printEji:
         B.N      _ZN5Print5printEmi
-          CFI EndBlock cfiBlock9
+          CFI EndBlock cfiBlock8
 //   77 }
 //   78 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock10 Using cfiCommon0
+          CFI Block cfiBlock9 Using cfiCommon0
           CFI Function _ZN5Print5printEli
         THUMB
 //   79 size_t Print::print(long n, int base)
@@ -438,10 +438,8 @@ _ZN5Print5printEli:
         MOV      R4,R0
         MOV      R5,R1
 //   81   if (base == 0) {
-        CMP      R2,#+0
-        BNE.N    ??print_2
+        CBNZ.N   R2,??print_3
 //   82     return write(n);
-        UXTB     R1,R1
         LDR      R2,[R4, #+0]
         LDR      R2,[R2, #+0]
         POP      {R4-R6,LR}
@@ -450,6 +448,7 @@ _ZN5Print5printEli:
           CFI R6 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        UXTB     R1,R1
           CFI FunCall
         ANOTE "tailcall"
         BX       R2
@@ -459,16 +458,18 @@ _ZN5Print5printEli:
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+16
 //   83   } else if (base == 10) {
-??print_2:
+??print_3:
         CMP      R2,#+10
-        BNE.N    ??print_3
+        BNE.N    ??print_4
 //   84     if (n < 0) {
         CMP      R5,#+0
-        BPL.N    ??print_4
+        BPL.N    ??print_5
 //   85       int t = print('-');
+        LDR      R2,[R4, #+0]
+        LDR      R2,[R2, #+0]
         MOVS     R1,#+45
-          CFI FunCall _ZN5Print5printEc
-        BL       _ZN5Print5printEc
+          CFI FunCall
+        BLX      R2
         MOV      R6,R0
 //   86       n = -n;
 //   87       return printNumber(n, 10) + t;
@@ -481,25 +482,11 @@ _ZN5Print5printEli:
         POP      {R4-R6,PC}
 //   88     }
 //   89     return printNumber(n, 10);
-??print_4:
-        MOVS     R2,#+10
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN5Print11printNumberEmh
-        B.N      _ZN5Print11printNumberEmh
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
 //   90   } else {
 //   91     return printNumber(n, base);
-??print_3:
+??print_4:
         UXTB     R2,R2
+??print_5:
         POP      {R4-R6,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -508,13 +495,13 @@ _ZN5Print5printEli:
           CFI CFA R13+0
           CFI FunCall _ZN5Print11printNumberEmh
         B.N      _ZN5Print11printNumberEmh
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock9
 //   92   }
 //   93 }
 //   94 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock10 Using cfiCommon0
           CFI Function _ZN5Print5printEmi
         THUMB
 //   95 size_t Print::print(unsigned long n, int base)
@@ -522,20 +509,29 @@ _ZN5Print5printEli:
 //   97   if (base == 0) return write(n);
 _ZN5Print5printEmi:
         CMP      R2,#+0
-        BNE.N    ??print_5
-        UXTB     R1,R1
+        ITT      NE 
+//   98   else return printNumber(n, base);
+        UXTBNE   R2,R2
+          CFI FunCall _ZN5Print11printNumberEmh
+        BNE.W    _ZN5Print11printNumberEmh
+          CFI EndBlock cfiBlock10
+        REQUIRE ?Subroutine1
+        ;; // Fall through to label ?Subroutine1
+//   99 }
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock11 Using cfiCommon0
+          CFI NoFunction
+        THUMB
+?Subroutine1:
         LDR      R2,[R0, #+0]
         LDR      R2,[R2, #+0]
-          CFI FunCall
+        UXTB     R1,R1
+          CFI FunCall _ZN5Print5printEc
+          CFI FunCall _ZN5Print5printEmi
         ANOTE "tailcall"
         BX       R2
-//   98   else return printNumber(n, base);
-??print_5:
-        UXTB     R2,R2
-          CFI FunCall _ZN5Print11printNumberEmh
-        B.N      _ZN5Print11printNumberEmh
           CFI EndBlock cfiBlock11
-//   99 }
 //  100 
 
         SECTION `.text`:CODE:NOROOT(1)
@@ -573,15 +569,15 @@ _ZN5Print7printlnEPK19__FlashStringHelper:
           CFI CFA R13+16
         MOV      R4,R0
 //  108   size_t n = print(ifsh);
-          CFI FunCall _ZN5Print5printEPK19__FlashStringHelper
-        BL       _ZN5Print5printEPK19__FlashStringHelper
+          CFI FunCall _ZN5Print5writeEPKc
+        BL       _ZN5Print5writeEPKc
         MOV      R5,R0
 //  109   n += println();
+//  110   return n;
         MOV      R0,R4
           CFI FunCall _ZN5Print7printlnEv
         BL       _ZN5Print7printlnEv
         ADDS     R0,R0,R5
-//  110   return n;
         POP      {R1,R4,R5,PC}    ;; return
           CFI EndBlock cfiBlock13
 //  111 }
@@ -622,16 +618,20 @@ _ZN5Print7printlnEv:
         MOV      R4,R0
 //  120   size_t n = print('\r');
         MOVS     R1,#+13
-          CFI FunCall _ZN5Print5printEc
-        BL       _ZN5Print5printEc
-        MOV      R5,R0
+        LDR      R2,[R4, #+0]
+        LDR      R2,[R2, #+0]
+          CFI FunCall
+        BLX      R2
 //  121   n += print('\n');
+//  122   return n;
+        LDR      R2,[R4, #+0]
+        LDR      R2,[R2, #+0]
+        MOV      R5,R0
         MOVS     R1,#+10
         MOV      R0,R4
-          CFI FunCall _ZN5Print5printEc
-        BL       _ZN5Print5printEc
+          CFI FunCall
+        BLX      R2
         ADDS     R0,R0,R5
-//  122   return n;
         POP      {R1,R4,R5,PC}    ;; return
           CFI EndBlock cfiBlock15
 //  123 }
@@ -653,15 +653,10 @@ _ZN5Print7printlnERK6String:
 //  127   size_t n = print(s);
           CFI FunCall _ZN5Print5printERK6String
         BL       _ZN5Print5printERK6String
-        MOV      R5,R0
-//  128   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
-//  129   return n;
-        POP      {R1,R4,R5,PC}    ;; return
+        B.N      ??Subroutine2_0
           CFI EndBlock cfiBlock16
+//  128   n += println();
+//  129   return n;
 //  130 }
 //  131 
 
@@ -679,17 +674,12 @@ _ZN5Print7printlnEPKc:
           CFI CFA R13+16
         MOV      R4,R0
 //  134   size_t n = print(c);
-          CFI FunCall _ZN5Print5printEPKc
-        BL       _ZN5Print5printEPKc
-        MOV      R5,R0
-//  135   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
-//  136   return n;
-        POP      {R1,R4,R5,PC}    ;; return
+          CFI FunCall _ZN5Print5writeEPKc
+        BL       _ZN5Print5writeEPKc
+        B.N      ??Subroutine2_0
           CFI EndBlock cfiBlock17
+//  135   n += println();
+//  136   return n;
 //  137 }
 //  138 
 
@@ -707,45 +697,36 @@ _ZN5Print7printlnEc:
           CFI CFA R13+16
         MOV      R4,R0
 //  141   size_t n = print(c);
-          CFI FunCall _ZN5Print5printEc
-        BL       _ZN5Print5printEc
-        MOV      R5,R0
-//  142   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
-//  143   return n;
-        POP      {R1,R4,R5,PC}    ;; return
+        UXTB     R1,R1
+        LDR      R2,[R4, #+0]
+        LDR      R2,[R2, #+0]
+          CFI FunCall
+        BLX      R2
+        B.N      ??Subroutine2_0
           CFI EndBlock cfiBlock18
+//  142   n += println();
+//  143   return n;
 //  144 }
 //  145 
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock19 Using cfiCommon0
           CFI Function _ZN5Print7printlnEhi
+          CFI NoCalls
         THUMB
 //  146 size_t Print::println(unsigned char b, int base)
-//  147 {
 _ZN5Print7printlnEhi:
         PUSH     {R3-R5,LR}
           CFI R14 Frame(CFA, -4)
           CFI R5 Frame(CFA, -8)
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
-        MOV      R4,R0
-//  148   size_t n = print(b, base);
-          CFI FunCall _ZN5Print5printEhi
-        BL       _ZN5Print5printEhi
-        MOV      R5,R0
-//  149   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
-//  150   return n;
-        POP      {R1,R4,R5,PC}    ;; return
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock19
+//  147 {
+//  148   size_t n = print(b, base);
+//  149   n += println();
+//  150   return n;
 //  151 }
 //  152 
 
@@ -763,50 +744,78 @@ _ZN5Print7printlnEii:
           CFI CFA R13+16
         MOV      R4,R0
 //  155   size_t n = print(num, base);
-          CFI FunCall _ZN5Print5printEii
-        BL       _ZN5Print5printEii
-        MOV      R5,R0
-//  156   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
-//  157   return n;
-        POP      {R1,R4,R5,PC}    ;; return
+          CFI FunCall _ZN5Print5printEli
+        BL       _ZN5Print5printEli
+        B.N      ??Subroutine2_0
           CFI EndBlock cfiBlock20
+//  156   n += println();
+//  157   return n;
 //  158 }
 //  159 
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock21 Using cfiCommon0
           CFI Function _ZN5Print7printlnEji
+          CFI NoCalls
         THUMB
 //  160 size_t Print::println(unsigned int num, int base)
-//  161 {
 _ZN5Print7printlnEji:
         PUSH     {R3-R5,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
+          CFI EndBlock cfiBlock21
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock22 Using cfiCommon0
+          CFI NoFunction
           CFI CFA R13+16
+          CFI R4 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+//  161 {
+?Subroutine0:
         MOV      R4,R0
 //  162   size_t n = print(num, base);
-          CFI FunCall _ZN5Print5printEji
-        BL       _ZN5Print5printEji
+          CFI FunCall _ZN5Print7printlnEhi _ZN5Print5printEmi
+          CFI FunCall _ZN5Print7printlnEji _ZN5Print5printEmi
+        BL       _ZN5Print5printEmi
+          CFI EndBlock cfiBlock22
+        REQUIRE ??Subroutine2_0
+        ;; // Fall through to label ??Subroutine2_0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock23 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA R13+16
+          CFI R4 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+??Subroutine2_0:
         MOV      R5,R0
 //  163   n += println();
+//  164   return n;
         MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnERK6String _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEPKc _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEc _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEii _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEli _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEmi _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEdi _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnERK9Printable _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEhi _ZN5Print7printlnEv
+          CFI FunCall _ZN5Print7printlnEji _ZN5Print7printlnEv
         BL       _ZN5Print7printlnEv
         ADDS     R0,R0,R5
-//  164   return n;
         POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock21
+          CFI EndBlock cfiBlock23
 //  165 }
 //  166 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock22 Using cfiCommon0
+          CFI Block cfiBlock24 Using cfiCommon0
           CFI Function _ZN5Print7printlnEli
         THUMB
 //  167 size_t Print::println(long num, int base)
@@ -821,20 +830,15 @@ _ZN5Print7printlnEli:
 //  169   size_t n = print(num, base);
           CFI FunCall _ZN5Print5printEli
         BL       _ZN5Print5printEli
-        MOV      R5,R0
+        B.N      ??Subroutine2_0
+          CFI EndBlock cfiBlock24
 //  170   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
 //  171   return n;
-        POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock22
 //  172 }
 //  173 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock23 Using cfiCommon0
+          CFI Block cfiBlock25 Using cfiCommon0
           CFI Function _ZN5Print7printlnEmi
         THUMB
 //  174 size_t Print::println(unsigned long num, int base)
@@ -849,20 +853,15 @@ _ZN5Print7printlnEmi:
 //  176   size_t n = print(num, base);
           CFI FunCall _ZN5Print5printEmi
         BL       _ZN5Print5printEmi
-        MOV      R5,R0
+        B.N      ??Subroutine2_0
+          CFI EndBlock cfiBlock25
 //  177   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
 //  178   return n;
-        POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock23
 //  179 }
 //  180 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock24 Using cfiCommon0
+          CFI Block cfiBlock26 Using cfiCommon0
           CFI Function _ZN5Print7printlnEdi
         THUMB
 //  181 size_t Print::println(double num, int digits)
@@ -876,24 +875,20 @@ _ZN5Print7printlnEdi:
         MOV      R4,R0
 //  183   size_t n = print(num, digits);
         LDR      R0,[SP, #+16]
+        UXTB     R0,R0
         STR      R0,[SP, #+0]
         MOV      R0,R4
-          CFI FunCall _ZN5Print5printEdi
-        BL       _ZN5Print5printEdi
-        MOV      R5,R0
+          CFI FunCall _ZN5Print10printFloatEdh
+        BL       _ZN5Print10printFloatEdh
+        B.N      ??Subroutine2_0
+          CFI EndBlock cfiBlock26
 //  184   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
 //  185   return n;
-        POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock24
 //  186 }
 //  187 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock25 Using cfiCommon0
+          CFI Block cfiBlock27 Using cfiCommon0
           CFI Function _ZN5Print7printlnERK9Printable
         THUMB
 //  188 size_t Print::println(const Printable& x)
@@ -905,89 +900,98 @@ _ZN5Print7printlnERK9Printable:
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
         MOV      R4,R0
+        MOV      R0,R1
 //  190   size_t n = print(x);
-          CFI FunCall _ZN5Print5printERK9Printable
-        BL       _ZN5Print5printERK9Printable
-        MOV      R5,R0
+        MOV      R1,R4
+        LDR      R2,[R0, #+0]
+        LDR      R2,[R2, #+0]
+          CFI FunCall
+        BLX      R2
+        B.N      ??Subroutine2_0
+          CFI EndBlock cfiBlock27
 //  191   n += println();
-        MOV      R0,R4
-          CFI FunCall _ZN5Print7printlnEv
-        BL       _ZN5Print7printlnEv
-        ADDS     R0,R0,R5
 //  192   return n;
-        POP      {R1,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock25
 //  193 }
 //  194 
 //  195 // Private Methods /////////////////////////////////////////////////////////////
 //  196 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock26 Using cfiCommon0
+          CFI Block cfiBlock28 Using cfiCommon0
           CFI Function _ZN5Print11printNumberEmh
         THUMB
 //  197 size_t Print::printNumber(unsigned long n, uint8_t base) {
 _ZN5Print11printNumberEmh:
-        PUSH     {R4-R6,LR}
+        PUSH     {R4,R5,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        SUB      SP,SP,#+40
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+12
+        SUB      SP,SP,#+44
           CFI CFA R13+56
+        MOV      R4,R0
 //  198   char buf[8 * sizeof(long) + 1]; // Assumes 8-bit chars plus zero byte.
 //  199   char *str = &buf[sizeof(buf) - 1];
-        ADD      R3,SP,#+32
 //  200 
 //  201   *str = '\0';
-        MOVS     R4,#+0
-        STRB     R4,[SP, #+32]
+        MOVS     R0,#+0
+        ADD      R5,SP,#+32
+        STRB     R0,[SP, #+32]
 //  202 
 //  203   // prevent crash if called with base == 1
 //  204   if (base < 2) base = 10;
         CMP      R2,#+2
-        BGE.N    ??printNumber_0
-        MOVS     R2,#+10
+        IT       LT 
+        MOVLT    R2,#+10
 //  205 
 //  206   do {
 //  207     unsigned long m = n;
 ??printNumber_0:
-        MOV      R4,R1
+        MOV      R0,R1
 //  208     n /= base;
         UDIV     R1,R1,R2
 //  209     char c = m - base * n;
-        MLS      R4,R1,R2,R4
-        SXTB     R4,R4
+        MLS      R0,R1,R2,R0
+        SXTB     R0,R0
 //  210     *--str = c < 10 ? c + '0' : c + 'A' - 10;
-        SUBS     R5,R3,#+1
-        MOV      R3,R5
-        MOV      R6,R4
-        CMP      R6,#+10
-        BGE.N    ??printNumber_1
-        ADDS     R4,R4,#+48
-        B.N      ??printNumber_2
-??printNumber_1:
-        ADDS     R4,R4,#+55
-??printNumber_2:
-        STRB     R4,[R5, #+0]
+        SUBS     R3,R5,#+1
+        MOV      R5,R3
+        CMP      R0,#+10
+        ITE      LT 
+        ADDLT    R0,R0,#+48
+        ADDGE    R0,R0,#+55
+        STRB     R0,[R3, #+0]
 //  211   } while(n);
         CMP      R1,#+0
         BNE.N    ??printNumber_0
 //  212 
 //  213   return write(str);
-        MOV      R1,R3
-          CFI FunCall _ZN5Print5writeEPKc
-        BL       _ZN5Print5writeEPKc
-        ADD      SP,SP,#+40
-          CFI CFA R13+16
-        POP      {R4-R6,PC}       ;; return
-          CFI EndBlock cfiBlock26
+        CBNZ.N   R5,??printNumber_1
+        MOVS     R0,#+0
+        ADD      SP,SP,#+44
+          CFI CFA R13+12
+        POP      {R4,R5,PC}
+          CFI CFA R13+56
+??printNumber_1:
+        MOV      R0,R5
+          CFI FunCall strlen
+        BL       strlen
+        LDR      R3,[R4, #+0]
+        LDR      R3,[R3, #+4]
+        MOV      R2,R0
+        MOV      R1,R5
+        MOV      R0,R4
+          CFI FunCall
+        BLX      R3
+        ADD      SP,SP,#+44
+          CFI CFA R13+12
+        POP      {R4,R5,PC}       ;; return
+          CFI EndBlock cfiBlock28
 //  214 }
 //  215 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock27 Using cfiCommon0
+          CFI Block cfiBlock29 Using cfiCommon0
           CFI Function _ZN5Print10printFloatEdh
         THUMB
 //  216 size_t Print::printFloat(double number, uint8_t digits) 
@@ -1002,80 +1006,41 @@ _ZN5Print10printFloatEdh:
           CFI R5 Frame(CFA, -24)
           CFI R4 Frame(CFA, -28)
           CFI CFA R13+32
-        MOV      R8,R0
+        MOV      R5,R0
         MOV      R4,R2
-        MOV      R5,R3
+        MOV      R8,R3
 //  218   size_t n = 0;
-        MOVS     R6,#+0
+        MOV      R9,#+0
 //  219   
 //  220   if (isnan(number)) return print("nan");
         MOV      R0,R4
-        MOV      R1,R5
+        MOV      R1,R8
           CFI FunCall __iar_Dtest
         BL       __iar_Dtest
         CMP      R0,#+2
-        BNE.N    ??printFloat_0
-        ADR.N    R1,??DataTable4  ;; "nan"
-        MOV      R0,R8
-        POP      {R2,R4-R9,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN5Print5printEPKc
-        B.N      _ZN5Print5printEPKc
-          CFI R4 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+32
+        IT       EQ 
+        ADREQ.N  R1,??DataTable4  ;; "nan"
+        BEQ.N    ??printFloat_0
 //  221   if (isinf(number)) return print("inf");
-??printFloat_0:
         MOV      R0,R4
-        MOV      R1,R5
+        MOV      R1,R8
           CFI FunCall __iar_Dtest
         BL       __iar_Dtest
         CMP      R0,#+1
-        BNE.N    ??printFloat_1
-        ADR.N    R1,??DataTable4_1  ;; "inf"
-        MOV      R0,R8
-        POP      {R2,R4-R9,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall _ZN5Print5printEPKc
-        B.N      _ZN5Print5printEPKc
-          CFI R4 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+32
+        IT       EQ 
+        ADREQ.N  R1,??DataTable4_1  ;; "inf"
+        BEQ.N    ??printFloat_0
 //  222   if (number > 4294967040.0) return print ("ovf");  // constant determined empirically
-??printFloat_1:
         MOV      R0,R4
-        MOV      R1,R5
+        MOV      R1,R8
         LDR.N    R2,??DataTable4_4  ;; 0xe0000001
         LDR.N    R3,??DataTable4_5  ;; 0x41efffff
           CFI FunCall __aeabi_cdrcmple
         BL       __aeabi_cdrcmple
-        BHI.N    ??printFloat_2
+        BHI.N    ??printFloat_1
         ADR.N    R1,??DataTable4_2  ;; "ovf"
-        MOV      R0,R8
+??printFloat_0:
+        MOV      R0,R5
         POP      {R2,R4-R9,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -1085,8 +1050,8 @@ _ZN5Print10printFloatEdh:
           CFI R9 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall _ZN5Print5printEPKc
-        B.N      _ZN5Print5printEPKc
+          CFI FunCall _ZN5Print5writeEPKc
+        B.W      _ZN5Print5writeEPKc
           CFI R4 Frame(CFA, -28)
           CFI R5 Frame(CFA, -24)
           CFI R6 Frame(CFA, -20)
@@ -1096,15 +1061,24 @@ _ZN5Print10printFloatEdh:
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+32
 //  223   if (number <-4294967040.0) return print ("ovf");  // constant determined empirically
-??printFloat_2:
+??printFloat_1:
         MOV      R2,#-536870912
         LDR.N    R3,??DataTable4_6  ;; 0xc1efffff
           CFI FunCall __aeabi_cdcmple
         BL       __aeabi_cdcmple
-        BCS.N    ??printFloat_3
-        ADR.N    R1,??DataTable4_2  ;; "ovf"
-        MOV      R0,R8
-        POP      {R2,R4-R9,LR}
+        BCS.N    ??printFloat_2
+        ADR.N    R4,??DataTable4_2  ;; "ovf"
+        MOV      R0,R4
+          CFI FunCall strlen
+        BL       strlen
+        LDR      R3,[R5, #+0]
+        LDR      R3,[R3, #+4]
+        MOV      R2,R0
+        MOV      R1,R4
+        MOV      R0,R5
+        ADD      SP,SP,#+4
+          CFI CFA R13+28
+        POP      {R4-R9,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
@@ -1113,8 +1087,9 @@ _ZN5Print10printFloatEdh:
           CFI R9 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall _ZN5Print5printEPKc
-        B.N      _ZN5Print5printEPKc
+          CFI FunCall
+        ANOTE "tailcall"
+        BX       R3
           CFI R4 Frame(CFA, -28)
           CFI R5 Frame(CFA, -24)
           CFI R6 Frame(CFA, -20)
@@ -1126,34 +1101,36 @@ _ZN5Print10printFloatEdh:
 //  224   
 //  225   // Handle negative numbers
 //  226   if (number < 0.0)
-??printFloat_3:
-        MOV      R2,R6
+??printFloat_2:
+        MOVS     R2,#+0
         MOV      R3,R2
           CFI FunCall __aeabi_cdcmple
         BL       __aeabi_cdcmple
-        BCS.N    ??printFloat_4
+        BCS.N    ??printFloat_3
 //  227   {
 //  228      n += print('-');
+        LDR      R2,[R5, #+0]
+        LDR      R2,[R2, #+0]
         MOVS     R1,#+45
-        MOV      R0,R8
-          CFI FunCall _ZN5Print5printEc
-        BL       _ZN5Print5printEc
-        MOV      R6,R0
+        MOV      R0,R5
+          CFI FunCall
+        BLX      R2
+        MOV      R9,R0
 //  229      number = -number;
-        EOR      R5,R5,#0x80000000
+        EOR      R8,R8,#0x80000000
 //  230   }
 //  231 
 //  232   // Round correctly so that print(1.999, 2) prints as "2.00"
 //  233   double rounding = 0.5;
-??printFloat_4:
-        MOVS     R2,#+0
-        LDR.N    R3,??DataTable4_7  ;; 0x3fe00000
-//  234   for (uint8_t i=0; i<digits; ++i)
-        MOV      R9,R2
+??printFloat_3:
         LDR      R7,[SP, #+32]
-        B.N      ??printFloat_5
+        LDR.N    R3,??DataTable4_7  ;; 0x3fe00000
+        MOVS     R2,#+0
+//  234   for (uint8_t i=0; i<digits; ++i)
+        CBZ.N    R7,??printFloat_4
+        MOV      R6,R7
 //  235     rounding /= 10.0;
-??printFloat_6:
+??printFloat_5:
         MOV      R0,R2
         MOV      R1,R3
         MOVS     R2,#+0
@@ -1162,105 +1139,107 @@ _ZN5Print10printFloatEdh:
         BL       __aeabi_ddiv
         MOV      R2,R0
         MOV      R3,R1
-        ADD      R9,R9,#+1
-??printFloat_5:
-        UXTB     R9,R9
-        CMP      R9,R7
-        BCC.N    ??printFloat_6
+        SUBS     R6,R6,#+1
+        BNE.N    ??printFloat_5
 //  236   
 //  237   number += rounding;
+??printFloat_4:
         MOV      R0,R4
-        MOV      R1,R5
+        MOV      R1,R8
           CFI FunCall __aeabi_dadd
         BL       __aeabi_dadd
         MOV      R4,R0
-        MOV      R5,R1
+        MOV      R8,R1
 //  238 
 //  239   // Extract the integer part of the number and print it
 //  240   unsigned long int_part = (unsigned long)number;
           CFI FunCall __aeabi_d2uiz
         BL       __aeabi_d2uiz
-        MOV      R9,R0
+        MOV      R6,R0
 //  241   double remainder = number - (double)int_part;
           CFI FunCall __aeabi_ui2d
         BL       __aeabi_ui2d
         MOV      R2,R0
         MOV      R3,R1
         MOV      R0,R4
-        MOV      R1,R5
+        MOV      R1,R8
           CFI FunCall __aeabi_dsub
         BL       __aeabi_dsub
         MOV      R4,R0
-        MOV      R5,R1
+        MOV      R8,R1
 //  242   n += print(int_part);
         MOVS     R2,#+10
-        MOV      R1,R9
-        MOV      R0,R8
-          CFI FunCall _ZN5Print5printEmi
-        BL       _ZN5Print5printEmi
-        ADDS     R6,R0,R6
+        MOV      R1,R6
+        MOV      R0,R5
+          CFI FunCall _ZN5Print11printNumberEmh
+        BL       _ZN5Print11printNumberEmh
+        ADD      R9,R0,R9
 //  243 
 //  244   // Print the decimal point, but only if there are digits beyond
 //  245   if (digits > 0) {
-        CMP      R7,#+0
-        BEQ.N    ??printFloat_7
+        CBZ.N    R7,??printFloat_6
 //  246     n += print("."); 
-        ADR.N    R1,??DataTable4_3  ;; "."
-        MOV      R0,R8
-          CFI FunCall _ZN5Print5printEPKc
-        BL       _ZN5Print5printEPKc
-        ADDS     R6,R0,R6
-        B.N      ??printFloat_7
+        ADR.N    R6,??DataTable4_3  ;; "."
+        MOV      R0,R6
+          CFI FunCall strlen
+        BL       strlen
+        LDR      R3,[R5, #+0]
+        LDR      R3,[R3, #+4]
+        MOV      R2,R0
+        MOV      R1,R6
+        MOV      R0,R5
+          CFI FunCall
+        BLX      R3
+        ADD      R9,R0,R9
+??printFloat_7:
+        SUBS     R7,R7,#+1
 //  247   }
 //  248 
 //  249   // Extract digits from the remainder one at a time
 //  250   while (digits-- > 0)
 //  251   {
 //  252     remainder *= 10.0;
-??printFloat_8:
         MOVS     R0,#+0
         LDR.N    R1,??DataTable4_8  ;; 0x40240000
         MOV      R2,R4
-        MOV      R3,R5
+        MOV      R3,R8
           CFI FunCall __aeabi_dmul
         BL       __aeabi_dmul
         MOV      R4,R0
-        MOV      R5,R1
+        MOV      R8,R1
 //  253     int toPrint = int(remainder);
           CFI FunCall __aeabi_d2iz
         BL       __aeabi_d2iz
-        MOV      R9,R0
+        MOV      R6,R0
 //  254     n += print(toPrint);
         MOVS     R2,#+10
-        MOV      R1,R9
-        MOV      R0,R8
-          CFI FunCall _ZN5Print5printEii
-        BL       _ZN5Print5printEii
-        ADDS     R6,R0,R6
+        MOV      R1,R6
+        MOV      R0,R5
+          CFI FunCall _ZN5Print5printEli
+        BL       _ZN5Print5printEli
+        ADD      R9,R0,R9
 //  255     remainder -= toPrint; 
-        MOV      R0,R9
+        MOV      R0,R6
           CFI FunCall __aeabi_i2d
         BL       __aeabi_i2d
         MOV      R2,R0
         MOV      R3,R1
         MOV      R0,R4
-        MOV      R1,R5
+        MOV      R1,R8
           CFI FunCall __aeabi_dsub
         BL       __aeabi_dsub
-        MOV      R4,R0
-        MOV      R5,R1
 //  256   } 
-??printFloat_7:
-        MOV      R0,R7
-        SUBS     R7,R0,#+1
-        UXTB     R0,R0
-        CMP      R0,#+0
-        BNE.N    ??printFloat_8
+        UXTB     R7,R7
+        MOV      R4,R0
+        MOV      R8,R1
+        CMP      R7,#+0
+        BNE.N    ??printFloat_7
 //  257   
 //  258   return n;
-        MOV      R0,R6
+??printFloat_6:
+        MOV      R0,R9
         POP      {R1,R4-R9,PC}    ;; return
-          CFI EndBlock cfiBlock27
+          CFI EndBlock cfiBlock29
 //  259 }
 
         SECTION `.text`:CODE:NOROOT(2)
@@ -1371,6 +1350,20 @@ _ZN5Print10printFloatEdh:
         DC32    0
         DC32    0
 
+        SECTION `.iar_vfe_vcallinfo_ZN5Print5printEPKc`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN5Print5printEPKc
+        DATA
+        DC32    _ZN5Print5printEPKc
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI5Print
+        DC32    1
+        DC32    2
+        DC32    0
+        DC32    0
+
         SECTION `.iar_vfe_vcallinfo_ZN5Print5printEc`:DATA:NOALLOC:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         SECTION_GROUP _ZN5Print5printEc
@@ -1424,6 +1417,76 @@ _ZN5Print10printFloatEdh:
         DC32    _ZTI9Printable
         DC32    1
         DC32    1
+        DC32    0
+        DC32    0
+
+        SECTION `.iar_vfe_vcallinfo_ZN5Print7printlnEv`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN5Print7printlnEv
+        DATA
+        DC32    _ZN5Print7printlnEv
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI5Print
+        DC32    1
+        DC32    1
+        DC32    0
+        DC32    0
+
+        SECTION `.iar_vfe_vcallinfo_ZN5Print7printlnEc`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN5Print7printlnEc
+        DATA
+        DC32    _ZN5Print7printlnEc
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI5Print
+        DC32    1
+        DC32    1
+        DC32    0
+        DC32    0
+
+        SECTION `.iar_vfe_vcallinfo_ZN5Print7printlnERK9Printable`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN5Print7printlnERK9Printable
+        DATA
+        DC32    _ZN5Print7printlnERK9Printable
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI9Printable
+        DC32    1
+        DC32    1
+        DC32    0
+        DC32    0
+
+        SECTION `.iar_vfe_vcallinfo_ZN5Print11printNumberEmh`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN5Print11printNumberEmh
+        DATA
+        DC32    _ZN5Print11printNumberEmh
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI5Print
+        DC32    1
+        DC32    2
+        DC32    0
+        DC32    0
+
+        SECTION `.iar_vfe_vcallinfo_ZN5Print10printFloatEdh`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        SECTION_GROUP _ZN5Print10printFloatEdh
+        DATA
+        DC32    _ZN5Print10printFloatEdh
+        DC32    0
+        DC32    0
+        DC32    1
+        DC32    _ZTI5Print
+        DC32    1
+        DC32    3
         DC32    0
         DC32    0
 
@@ -1482,9 +1545,9 @@ _ZTI9Printable:
         END
 // 
 //  32 bytes in section .rodata
-// 916 bytes in section .text
+// 864 bytes in section .text
 // 
-// 876 bytes of CODE  memory (+ 40 bytes shared)
+// 828 bytes of CODE  memory (+ 36 bytes shared)
 //  14 bytes of CONST memory (+ 18 bytes shared)
 //
 //Errors: none

@@ -1,80 +1,78 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:13
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:23
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_more.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_more.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_more.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_more.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\draw_more.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_more.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
         RTMODEL "__CPP_Language", "EC++"
         RTMODEL "__SystemLibrary", "DLib"
         RTMODEL "__dlib_file_descriptor", "1"
+        RTMODEL "__dlib_full_locale_support", "1"
         AAPCS BASE,INTERWORK
         PRESERVE8
         REQUIRE8
@@ -85,10 +83,8 @@
         EXTERN BMP_PIC_Y
         EXTERN BUTTON_CreateEx
         EXTERN BUTTON_SetBitmapEx
-        EXTERN BUTTON_SetBkColor
         EXTERN BUTTON_SetBmpFileName
         EXTERN BUTTON_SetText
-        EXTERN BUTTON_SetTextColor
         EXTERN GUI_Clear
         EXTERN GUI_DispStringAt
         EXTERN GUI_SetBkColor
@@ -144,7 +140,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_more.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_more.cpp
 //    1 #include "draw_more.h"
 //    2 #include "gui.h"
 //    3 #include "button.h"
@@ -164,17 +160,17 @@
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
 //   17 static BUTTON_STRUCT buttonzoffset,buttonCustom1, buttonCustom2, buttonCustom3, buttonCustom4, buttonCustom5, buttonCustom6, buttonCustom7,  buttonRet;
-buttonzoffset:
+buttonCustom3:
         DS8 24
         DS8 24
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
-buttonCustom4:
+buttonCustom5:
         DS8 24
         DS8 24
 
         SECTION `.bss`:DATA:REORDER:NOROOT(2)
-buttonCustom6:
+buttonCustom7:
         DS8 24
         DS8 24
 //   18 GUI_HWIN hMoreWnd;
@@ -288,9 +284,9 @@ _Z9cbMoreWinP10WM_MESSAGE:
           CFI R4 Frame(CFA, -12)
           CFI CFA R13+16
         CMP      R1,#+13
-        BEQ.W    ??cbMoreWin_1
-        CMP      R1,#+15
-        BEQ.W    ??cbMoreWin_1
+        IT       NE 
+        CMPNE    R1,#+15
+        BEQ.N    ??cbMoreWin_1
         CMP      R1,#+38
         BNE.N    ??cbMoreWin_2
 //   90 	case WM_PAINT:
@@ -317,9 +313,9 @@ _Z9cbMoreWinP10WM_MESSAGE:
 //  108 
 //  109 		
 //  110 			if(pMsg->hWinSrc == buttonCustom1.btnHandle)
-        LDRSH    R0,[R0, #+6]
         LDR.W    R4,??DataTable10
-        LDRSH    R1,[R4, #+4]
+        LDRSH    R0,[R0, #+6]
+        LDRSH    R1,[R4, #+28]
         CMP      R0,R1
         BNE.N    ??cbMoreWin_3
 //  111 			{
@@ -327,114 +323,92 @@ _Z9cbMoreWinP10WM_MESSAGE:
         LDR.W    R5,??DataTable10_1
         MOVS     R2,#+201
         MOVS     R1,#+4
-        MOV      R0,R5
-          CFI FunCall SPI_FLASH_BufferRead
-        BL       SPI_FLASH_BufferRead
+        B.N      ??cbMoreWin_4
 //  113 				codebufpoint = cmd_code;
-        STR      R5,[R4, #+76]
-        POP      {R0,R4,R5,PC}
 //  114 			}
 //  115 			else if(pMsg->hWinSrc == buttonCustom2.btnHandle)
 ??cbMoreWin_3:
-        LDRSH    R1,[R4, #+28]
+        LDRSH    R1,[R4, #+52]
         CMP      R0,R1
-        BNE.N    ??cbMoreWin_4
+        BNE.N    ??cbMoreWin_5
 //  116 			{
 //  117 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD2_ADDR,201);
         LDR.W    R5,??DataTable10_1
         MOVS     R2,#+201
         MOVS     R1,#+208
-        MOV      R0,R5
-          CFI FunCall SPI_FLASH_BufferRead
-        BL       SPI_FLASH_BufferRead
+        B.N      ??cbMoreWin_4
 //  118 				codebufpoint = cmd_code;
-        STR      R5,[R4, #+76]
-        POP      {R0,R4,R5,PC}
 //  119 
 //  120 			}
 //  121 			else if(pMsg->hWinSrc == buttonCustom3.btnHandle)
-??cbMoreWin_4:
-        LDRSH    R1,[R4, #+52]
-        CMP      R0,R1
-        BNE.N    ??cbMoreWin_5
-//  122 			{
-//  123 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD3_ADDR,201);
-        LDR.W    R5,??DataTable10_1
-        MOVS     R2,#+201
-        MOV      R1,#+412
-        MOV      R0,R5
-          CFI FunCall SPI_FLASH_BufferRead
-        BL       SPI_FLASH_BufferRead
-//  124 				codebufpoint = cmd_code;				
-        STR      R5,[R4, #+76]
-        POP      {R0,R4,R5,PC}
-//  125 			}
-//  126 			else if(pMsg->hWinSrc == buttonCustom4.btnHandle)
 ??cbMoreWin_5:
         LDR.W    R1,??DataTable10_2
         LDRSH    R2,[R1, #+0]
         CMP      R0,R2
         BNE.N    ??cbMoreWin_6
+//  122 			{
+//  123 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD3_ADDR,201);
+        LDR.W    R5,??DataTable10_1
+        MOVS     R2,#+201
+        MOV      R1,#+412
+        B.N      ??cbMoreWin_4
+//  124 				codebufpoint = cmd_code;				
+//  125 			}
+//  126 			else if(pMsg->hWinSrc == buttonCustom4.btnHandle)
+??cbMoreWin_6:
+        LDRSH    R1,[R1, #+24]
+        CMP      R0,R1
+        BNE.N    ??cbMoreWin_7
 //  127 			{
 //  128 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD4_ADDR,201);
         LDR.W    R5,??DataTable10_1
         MOVS     R2,#+201
         MOV      R1,#+616
-        MOV      R0,R5
-          CFI FunCall SPI_FLASH_BufferRead
-        BL       SPI_FLASH_BufferRead
+        B.N      ??cbMoreWin_4
 //  129 				codebufpoint = cmd_code;
-        STR      R5,[R4, #+76]
-        POP      {R0,R4,R5,PC}
 //  130 
 //  131 			}
 //  132 			else if(pMsg->hWinSrc == buttonCustom5.btnHandle)
-??cbMoreWin_6:
-        LDRSH    R1,[R1, #+24]
-        CMP      R0,R1
-        BNE.N    ??cbMoreWin_7
-//  133 			{
-//  134 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD5_ADDR,201);
-        LDR.W    R5,??DataTable10_1
-        MOVS     R2,#+201
-        MOV      R1,#+820
-        MOV      R0,R5
-          CFI FunCall SPI_FLASH_BufferRead
-        BL       SPI_FLASH_BufferRead
-//  135 				codebufpoint = cmd_code;
-        STR      R5,[R4, #+76]
-        POP      {R0,R4,R5,PC}
-//  136 
-//  137 			}
-//  138 			else if(pMsg->hWinSrc == buttonCustom6.btnHandle)
 ??cbMoreWin_7:
         LDR.W    R1,??DataTable10_3
         LDRSH    R2,[R1, #+0]
         CMP      R0,R2
         BNE.N    ??cbMoreWin_8
+//  133 			{
+//  134 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD5_ADDR,201);
+        LDR.W    R5,??DataTable10_1
+        MOVS     R2,#+201
+        MOV      R1,#+820
+        B.N      ??cbMoreWin_4
+//  135 				codebufpoint = cmd_code;
+//  136 
+//  137 			}
+//  138 			else if(pMsg->hWinSrc == buttonCustom6.btnHandle)
+??cbMoreWin_8:
+        LDRSH    R1,[R1, #+24]
+        CMP      R0,R1
+        BNE.N    ??cbMoreWin_9
 //  139 			{
 //  140 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD6_ADDR,201);
         LDR.W    R5,??DataTable10_1
         MOVS     R2,#+201
         MOV      R1,#+1024
-        MOV      R0,R5
-          CFI FunCall SPI_FLASH_BufferRead
-        BL       SPI_FLASH_BufferRead
+        B.N      ??cbMoreWin_4
 //  141 				codebufpoint = cmd_code;
-        STR      R5,[R4, #+76]
-        POP      {R0,R4,R5,PC}
 //  142 
 //  143 			}
 //  144 			else if(pMsg->hWinSrc == buttonCustom7.btnHandle)
-??cbMoreWin_8:
-        LDRSH    R1,[R1, #+24]
-        CMP      R0,R1
-        BNE.N    ??cbMoreWin_9
+??cbMoreWin_9:
+        LDR.W    R1,??DataTable10_4
+        LDRSH    R2,[R1, #+0]
+        CMP      R0,R2
+        BNE.N    ??cbMoreWin_10
 //  145 			{
 //  146 				SPI_FLASH_BufferRead((u8 *)cmd_code,BUTTON_CMD7_ADDR,201);
         LDR.W    R5,??DataTable10_1
         MOVS     R2,#+201
         MOVW     R1,#+1228
+??cbMoreWin_4:
         MOV      R0,R5
           CFI FunCall SPI_FLASH_BufferRead
         BL       SPI_FLASH_BufferRead
@@ -453,20 +427,29 @@ _Z9cbMoreWinP10WM_MESSAGE:
 //  157 			}	
 //  158 #endif
 //  159 			else if(pMsg->hWinSrc == buttonRet.btnHandle)
-??cbMoreWin_9:
-        LDR.W    R1,??DataTable10_4
+??cbMoreWin_10:
         LDRSH    R1,[R1, #+24]
         CMP      R0,R1
         BNE.N    ??cbMoreWin_1
 //  160 			{
 //  161 				last_disp_state = MORE_UI;
-        MOVS     R0,#+23
         LDR.W    R1,??DataTable10_5
+        MOVS     R0,#+23
         STRB     R0,[R1, #+0]
 //  162 				Clear_more();
-          CFI FunCall Clear_more
-        BL       Clear_more
+        LDR.W    R0,??DataTable10_6
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbMoreWin_11
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //  163 				draw_return_ui();		
+??cbMoreWin_11:
         POP      {R0,R4,R5,LR}
           CFI R4 SameValue
           CFI R5 SameValue
@@ -511,22 +494,21 @@ _Z9cbMoreWinP10WM_MESSAGE:
 //  174 void draw_More()
 //  175 {
 draw_More:
-        PUSH     {R4-R11,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+36
-        SUB      SP,SP,#+20
-          CFI CFA R13+56
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
 //  176 if(disp_state_stack._disp_state[disp_state_stack._disp_index] != MORE_UI)
-        LDR.W    R0,??DataTable10_6
+        LDR.W    R0,??DataTable10_7
         LDRSB    R1,[R0, #+100]
+        SUB      SP,SP,#+16
+          CFI CFA R13+48
         LDRSB    R2,[R1, R0]
         CMP      R2,#+23
         BEQ.N    ??draw_More_2
@@ -542,18 +524,17 @@ draw_More:
 //  181 	disp_state = MORE_UI;
 ??draw_More_2:
         MOVS     R0,#+23
-        LDR.W    R1,??DataTable10_7
-        STRB     R0,[R1, #+0]
+        LDR.W    R1,??DataTable10_8
 //  182 	
 //  183 	//GUI_SetFont(&GUI_Font8x18);
 //  184 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.W    R4,??DataTable10_8
-        LDR      R0,[R4, #+4]
+        LDR.W    R4,??DataTable10_6
+        STRB     R0,[R1, #+0]
+        LDR      R0,[R4, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //  185 	GUI_SetColor(gCfgItems.title_color);
-        ADDS     R5,R4,#+4
-        LDR      R0,[R5, #+4]
+        LDR      R0,[R4, #+24]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
 //  186 	GUI_Clear();
@@ -585,28 +566,26 @@ draw_More:
 //  204 	
 //  205 
 //  206 	hMoreWnd = WM_CreateWindow(0, titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbMoreWin, 0);
-        LDR.W    R6,??DataTable10
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOV      R3,#+284
         LDR.W    R0,??DataTable10_9
+        LDR.W    R5,??DataTable10
         STR      R0,[SP, #+4]
+        MOV      R2,#+480
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOV      R3,#+284
-        MOV      R2,#+480
         MOVS     R1,#+36
         MOVS     R0,#+0
           CFI FunCall WM_CreateWindow
         BL       WM_CreateWindow
-        STRH     R0,[R6, #+0]
+        STRH     R0,[R5, #+0]
 //  207 	if(gCfgItems.zoffset_display_flg == 1)
-        ADDW     R0,R4,#+447
-        STR      R0,[SP, #+16]
-        LDR.W    R7,??DataTable10_10
+        ADDW     R6,R4,#+463
+        LDR.W    R10,??DataTable10_10
+        LDRB     R0,[R6, #+9]
         LDR.W    R8,??DataTable10_11
         LDR.W    R9,??DataTable10_12
-        LDR.W    R10,??DataTable10_4
-        LDRB     R0,[R0, #+9]
         CMP      R0,#+1
         BNE.W    ??draw_More_3
 //  208 	{
@@ -614,796 +593,579 @@ draw_More:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R10, #+0]
+        STRH     R0,[R5, #+4]
 //  210 		BUTTON_SetBmpFileName(buttonzoffset.btnHandle, "bmp_zoffset.bin",1);
         MOVS     R2,#+1
         ADR.W    R1,`?<Constant "bmp_zoffset.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  211 		BUTTON_SetBkColor(buttonzoffset.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
-        LDR      R2,[R5, #+32]
-        MOVS     R1,#+1
-        LDRSH    R0,[R10, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  212 		BUTTON_SetBkColor(buttonzoffset.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
-        LDR      R2,[R5, #+32]
-        MOVS     R1,#+0
-        LDRSH    R0,[R10, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  213 		BUTTON_SetTextColor(buttonzoffset.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
-        LDR      R2,[R5, #+36]
-        MOVS     R1,#+1
-        LDRSH    R0,[R10, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  214 		BUTTON_SetTextColor(buttonzoffset.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);	
-        LDR      R2,[R5, #+36]
-        MOVS     R1,#+0
-        LDRSH    R0,[R10, #+0]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  215 		BUTTON_SetBitmapEx(buttonzoffset.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  211 		BUTTON_SetBitmapEx(buttonzoffset.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R5, #+4]
         MOVS     R1,#+0
-        LDRSH    R0,[R10, #+0]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  216 		if(gCfgItems.MoreItem_pic_cnt > 6)
-        LDRB     R0,[R4, #+212]
+//  212 		if(gCfgItems.MoreItem_pic_cnt > 6)
+        LDRB     R0,[R4, #+228]
         CMP      R0,#+7
         BLT.N    ??draw_More_4
-//  217 			gCfgItems.MoreItem_pic_cnt = 6;
+//  213 			gCfgItems.MoreItem_pic_cnt = 6;
         MOVS     R0,#+6
-        STRB     R0,[R4, #+212]
-//  218 		
-//  219 		switch(gCfgItems.MoreItem_pic_cnt)
+        STRB     R0,[R4, #+228]
+        B.N      ??draw_More_5
+//  214 		
+//  215 		switch(gCfgItems.MoreItem_pic_cnt)
 ??draw_More_4:
-        LDRB     R0,[R4, #+212]
         SUBS     R0,R0,#+1
         CMP      R0,#+5
-        BHI.W    ??draw_More_5
+        BHI.W    ??draw_More_6
         TBH      [PC, R0, LSL #+1]
         DATA
 ??draw_More_0:
-        DC16     0xF2,0xC5,0x96,0x66
-        DC16     0x36,0x6
+        DC16     0xB0,0x8F,0x6C,0x4A
+        DC16     0x29,0x6
           CFI FunCall alloc_win_id
         THUMB
-//  220 		{
-//  221 			case 6:
-//  222 			   buttonCustom6.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-??draw_More_6:
+//  216 		{
+//  217 			case 6:
+//  218 			   buttonCustom6.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+??draw_More_5:
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+240
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        LDR.W    R11,??DataTable10_3
-        STRH     R0,[R11, #+0]
-//  223 			   BUTTON_SetBmpFileName(buttonCustom6.btnHandle, "bmp_custom6.bin",1);
-        MOVS     R2,#+1
+        LDR.W    R7,??DataTable10_3
+//  219 			   BUTTON_SetBmpFileName(buttonCustom6.btnHandle, "bmp_custom6.bin",1);
         ADR.W    R1,`?<Constant "bmp_custom6.bin">`
+        STRH     R0,[R7, #+24]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  224 			   BUTTON_SetBkColor(buttonCustom6.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  225 			   BUTTON_SetBkColor(buttonCustom6.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  226 			   BUTTON_SetBitmapEx(buttonCustom6.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  220 			   BUTTON_SetBitmapEx(buttonCustom6.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  227 			case 5:
-//  228 			   buttonCustom5.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  221 			case 5:
+//  222 			   buttonCustom5.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_7:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+121
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        LDR.W    R11,??DataTable10_2
-        STRH     R0,[R11, #+24]
-//  229 			   BUTTON_SetBmpFileName(buttonCustom5.btnHandle, "bmp_custom5.bin",1);
-        MOVS     R2,#+1
+        LDR.N    R7,??DataTable10_3
+//  223 			   BUTTON_SetBmpFileName(buttonCustom5.btnHandle, "bmp_custom5.bin",1);
         ADR.W    R1,`?<Constant "bmp_custom5.bin">`
+        STRH     R0,[R7, #+0]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  230 			   BUTTON_SetBkColor(buttonCustom5.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R11, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  231 			   BUTTON_SetBkColor(buttonCustom5.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  232 			   BUTTON_SetBitmapEx(buttonCustom5.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  224 			   BUTTON_SetBitmapEx(buttonCustom5.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
         MOVS     R1,#+0
-        LDRSH    R0,[R11, #+24]
+        LDRSB    R3,[R8, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R10
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  233 			case 4:
-//  234 			   buttonCustom4.btnHandle= BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  225 			case 4:
+//  226 			   buttonCustom4.btnHandle= BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_8:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        LDR.W    R11,??DataTable10_2
-        STRH     R0,[R11, #+0]
-//  235 			   BUTTON_SetBmpFileName(buttonCustom4.btnHandle, "bmp_custom4.bin",1);
-        MOVS     R2,#+1
+        LDR.N    R7,??DataTable10_2
+//  227 			   BUTTON_SetBmpFileName(buttonCustom4.btnHandle, "bmp_custom4.bin",1);
         ADR.W    R1,`?<Constant "bmp_custom4.bin">`
+        STRH     R0,[R7, #+24]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  236 			   BUTTON_SetBkColor(buttonCustom4.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  237 			   BUTTON_SetBkColor(buttonCustom4.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  238 			   BUTTON_SetBitmapEx(buttonCustom4.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  228 			   BUTTON_SetBitmapEx(buttonCustom4.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  239 			case 3:
-//  240 			   buttonCustom3.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  229 			case 3:
+//  230 			   buttonCustom3.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_9:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         MOV      R1,R0
-        MOVW     R0,#+359
         STR      R1,[SP, #+12]
+        MOVW     R0,#+359
         MOVS     R1,#+0
         STR      R1,[SP, #+8]
+        MOVS     R3,#+140
         MOVS     R1,#+2
         STR      R1,[SP, #+4]
-        LDRSH    R1,[R6, #+0]
-        STR      R1,[SP, #+0]
-        MOVS     R3,#+140
         MOVS     R2,#+117
+        LDRSH    R1,[R5, #+0]
+        STR      R1,[SP, #+0]
         MOVS     R1,#+0
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+52]
-//  241 			   BUTTON_SetBmpFileName(buttonCustom3.btnHandle, "bmp_custom3.bin",1);
-        MOVS     R2,#+1
+        LDR.N    R7,??DataTable10_2
+//  231 			   BUTTON_SetBmpFileName(buttonCustom3.btnHandle, "bmp_custom3.bin",1);
         ADR.W    R1,`?<Constant "bmp_custom3.bin">`
+        STRH     R0,[R7, #+0]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  242 			   BUTTON_SetBkColor(buttonCustom3.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  243 			   BUTTON_SetBkColor(buttonCustom3.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  244 			   BUTTON_SetBitmapEx(buttonCustom3.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  232 			   BUTTON_SetBitmapEx(buttonCustom3.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+52]
+        LDRSB    R3,[R8, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R10
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  245 			case 2:
-//  246 			   buttonCustom2.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  233 			case 2:
+//  234 			   buttonCustom2.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_10:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+240
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+28]
-//  247 			   BUTTON_SetBmpFileName(buttonCustom2.btnHandle, "bmp_custom2.bin",1);
+        STRH     R0,[R5, #+52]
+//  235 			   BUTTON_SetBmpFileName(buttonCustom2.btnHandle, "bmp_custom2.bin",1);
         MOVS     R2,#+1
         ADR.W    R1,`?<Constant "bmp_custom2.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  248 			   BUTTON_SetBkColor(buttonCustom2.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  249 			   BUTTON_SetBkColor(buttonCustom2.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  250 			   BUTTON_SetBitmapEx(buttonCustom2.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  236 			   BUTTON_SetBitmapEx(buttonCustom2.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R5, #+52]
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  251 			case 1:
-//  252 			   buttonCustom1.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id()); 	   
+//  237 			case 1:
+//  238 			   buttonCustom1.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id()); 	   
 ??draw_More_11:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+121
-          CFI FunCall BUTTON_CreateEx
-        BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+4]
-//  253 			   BUTTON_SetBmpFileName(buttonCustom1.btnHandle, "bmp_custom1.bin",1);
-        MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_custom1.bin">`
-          CFI FunCall BUTTON_SetBmpFileName
-        BL       BUTTON_SetBmpFileName
-//  254 			   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  255 			   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  256 			   BUTTON_SetBitmapEx(buttonCustom1.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
-        LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBitmapEx
-        BL       BUTTON_SetBitmapEx
-//  257 			//case 1:
-//  258 			//   buttonCustom1.btnHandle= BUTTON_CreateEx(INTERVAL_V, 0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, 101);
-//  259 			//   BUTTON_SetBmpFileName(buttonCustom1.btnHandle, "bmp_custom1.bin",1);
-//  260 			//   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-//  261 			//   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-//  262 			//   BUTTON_SetBitmapEx(buttonCustom1.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-//  263 			break;
-        B.N      ??draw_More_5
-//  264 			default:break;
-//  265 			}
-//  266 		}
-//  267 		else
-//  268 		{
-//  269 			if(gCfgItems.MoreItem_pic_cnt > 7)
+        B.N      ??draw_More_12
+//  239 			   BUTTON_SetBmpFileName(buttonCustom1.btnHandle, "bmp_custom1.bin",1);
+//  240 			   BUTTON_SetBitmapEx(buttonCustom1.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  241 			//case 1:
+//  242 			//   buttonCustom1.btnHandle= BUTTON_CreateEx(INTERVAL_V, 0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, 101);
+//  243 			//   BUTTON_SetBmpFileName(buttonCustom1.btnHandle, "bmp_custom1.bin",1);
+//  244 			//   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
+//  245 			//   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
+//  246 			//   BUTTON_SetBitmapEx(buttonCustom1.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  247 			break;
+//  248 			default:break;
+//  249 			}
+//  250 		}
+//  251 		else
+//  252 		{
+//  253 			if(gCfgItems.MoreItem_pic_cnt > 7)
 ??draw_More_3:
-        LDRB     R0,[R4, #+212]
+        LDRB     R0,[R4, #+228]
         CMP      R0,#+8
-        BLT.N    ??draw_More_12
-//  270 				gCfgItems.MoreItem_pic_cnt = 7;
+        BLT.N    ??draw_More_13
+//  254 				gCfgItems.MoreItem_pic_cnt = 7;
         MOVS     R0,#+7
-        STRB     R0,[R4, #+212]
-//  271 			
-//  272 			switch(gCfgItems.MoreItem_pic_cnt)
-??draw_More_12:
-        LDRB     R0,[R4, #+212]
+        STRB     R0,[R4, #+228]
+        B.N      ??draw_More_14
+//  255 			
+//  256 			switch(gCfgItems.MoreItem_pic_cnt)
+??draw_More_13:
         SUBS     R0,R0,#+1
         CMP      R0,#+6
-        BHI.W    ??draw_More_5
-        TBH      [PC, R0, LSL #+1]
+        BHI.W    ??draw_More_6
+        TBB      [PC, R0]
         DATA
 ??draw_More_1:
-        DC16     0x123,0xF6,0xC9,0x97
-        DC16     0x67,0x37,0x7
+        DC8      0xCE,0xAD,0x8C,0x68
+        DC8      0x47,0x25,0x4,0x0
           CFI FunCall alloc_win_id
         THUMB
-//  273 			{
-//  274 				case 7:
-//  275 				   buttonCustom7.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-??draw_More_13:
+//  257 			{
+//  258 				case 7:
+//  259 				   buttonCustom7.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+??draw_More_14:
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
         MOVS     R0,#+240
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        LDR.W    R11,??DataTable10_3
-        STRH     R0,[R11, #+24]
-//  276 				   BUTTON_SetBmpFileName(buttonCustom7.btnHandle, "bmp_custom6.bin",1);
-        MOVS     R2,#+1
+        LDR.N    R7,??DataTable10_4
+//  260 				   BUTTON_SetBmpFileName(buttonCustom7.btnHandle, "bmp_custom6.bin",1);
         ADR.W    R1,`?<Constant "bmp_custom6.bin">`
-          CFI FunCall BUTTON_SetBmpFileName
-        BL       BUTTON_SetBmpFileName
-//  277 				   BUTTON_SetBkColor(buttonCustom7.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R11, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  278 				   BUTTON_SetBkColor(buttonCustom7.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  279 				   BUTTON_SetBitmapEx(buttonCustom7.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
-        LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
-        LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+24]
-          CFI FunCall BUTTON_SetBitmapEx
-        BL       BUTTON_SetBitmapEx
-//  280 				case 6:
-//  281 				   buttonCustom6.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-??draw_More_14:
-          CFI FunCall alloc_win_id
-        BL       alloc_win_id
-        STR      R0,[SP, #+12]
-        MOVS     R0,#+0
-        STR      R0,[SP, #+8]
-        MOVS     R0,#+2
-        STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
-        MOVS     R1,#+142
-        MOVS     R0,#+121
-          CFI FunCall BUTTON_CreateEx
-        BL       BUTTON_CreateEx
-        LDR.W    R11,??DataTable10_3
-        STRH     R0,[R11, #+0]
-//  282 				   BUTTON_SetBmpFileName(buttonCustom6.btnHandle, "bmp_custom5.bin",1);
+        STRH     R0,[R7, #+0]
         MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_custom5.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  283 				   BUTTON_SetBkColor(buttonCustom6.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  284 				   BUTTON_SetBkColor(buttonCustom6.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  285 				   BUTTON_SetBitmapEx(buttonCustom6.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  261 				   BUTTON_SetBitmapEx(buttonCustom7.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
         MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
+        LDRSB    R3,[R8, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R10
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  286 				case 5:
-//  287 				   buttonCustom5.btnHandle= BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  262 				case 6:
+//  263 				   buttonCustom6.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_15:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+142
-        MOVS     R0,#+2
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
+        MOVS     R0,#+121
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        LDR.W    R11,??DataTable10_2
-        STRH     R0,[R11, #+24]
-//  288 				   BUTTON_SetBmpFileName(buttonCustom5.btnHandle, "bmp_custom4.bin",1);
+        LDR.N    R7,??DataTable10_3
+//  264 				   BUTTON_SetBmpFileName(buttonCustom6.btnHandle, "bmp_custom5.bin",1);
+        ADR.W    R1,`?<Constant "bmp_custom5.bin">`
+        STRH     R0,[R7, #+24]
         MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_custom4.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  289 				   BUTTON_SetBkColor(buttonCustom5.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R11, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  290 				   BUTTON_SetBkColor(buttonCustom5.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  291 				   BUTTON_SetBitmapEx(buttonCustom5.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  265 				   BUTTON_SetBitmapEx(buttonCustom6.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R11, #+24]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  292 				case 4:
-//  293 				   buttonCustom4.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  266 				case 5:
+//  267 				   buttonCustom5.btnHandle= BUTTON_CreateEx(INTERVAL_V,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_16:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
-        MOV      R1,R0
-        MOVW     R0,#+359
-        STR      R1,[SP, #+12]
-        MOVS     R1,#+0
-        STR      R1,[SP, #+8]
-        MOVS     R1,#+2
-        STR      R1,[SP, #+4]
-        LDRSH    R1,[R6, #+0]
-        STR      R1,[SP, #+0]
+        STR      R0,[SP, #+12]
         MOVS     R3,#+140
+        MOVS     R0,#+0
+        STR      R0,[SP, #+8]
         MOVS     R2,#+117
-        MOVS     R1,#+0
+        MOVS     R0,#+2
+        STR      R0,[SP, #+4]
+        MOVS     R1,#+142
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
+        MOVS     R0,#+2
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        LDR.W    R11,??DataTable10_2
-        STRH     R0,[R11, #+0]
-//  294 				   BUTTON_SetBmpFileName(buttonCustom4.btnHandle, "bmp_custom3.bin",1);
+        LDR.N    R7,??DataTable10_3
+//  268 				   BUTTON_SetBmpFileName(buttonCustom5.btnHandle, "bmp_custom4.bin",1);
+        ADR.W    R1,`?<Constant "bmp_custom4.bin">`
+        STRH     R0,[R7, #+0]
         MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_custom3.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  295 				   BUTTON_SetBkColor(buttonCustom4.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  296 				   BUTTON_SetBkColor(buttonCustom4.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  297 				   BUTTON_SetBitmapEx(buttonCustom4.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  269 				   BUTTON_SetBitmapEx(buttonCustom5.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
         MOVS     R1,#+0
-        LDRSH    R0,[R11, #+0]
+        LDRSB    R3,[R8, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R10
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  298 				case 3:
-//  299 				   buttonCustom3.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  270 				case 4:
+//  271 				   buttonCustom4.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_17:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
-        STR      R0,[SP, #+12]
-        MOVS     R0,#+0
-        STR      R0,[SP, #+8]
-        MOVS     R0,#+2
-        STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
+        MOV      R1,R0
+        STR      R1,[SP, #+12]
+        MOVW     R0,#+359
         MOVS     R1,#+0
-        MOVS     R0,#+240
+        STR      R1,[SP, #+8]
+        MOVS     R3,#+140
+        MOVS     R1,#+2
+        STR      R1,[SP, #+4]
+        MOVS     R2,#+117
+        LDRSH    R1,[R5, #+0]
+        STR      R1,[SP, #+0]
+        MOVS     R1,#+0
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+52]
-//  300 				   BUTTON_SetBmpFileName(buttonCustom3.btnHandle, "bmp_custom2.bin",1);
+        LDR.N    R7,??DataTable10_2
+//  272 				   BUTTON_SetBmpFileName(buttonCustom4.btnHandle, "bmp_custom3.bin",1);
+        ADR.W    R1,`?<Constant "bmp_custom3.bin">`
+        STRH     R0,[R7, #+24]
         MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_custom2.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  301 				   BUTTON_SetBkColor(buttonCustom3.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  302 				   BUTTON_SetBkColor(buttonCustom3.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+52]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  303 				   BUTTON_SetBitmapEx(buttonCustom3.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  273 				   BUTTON_SetBitmapEx(buttonCustom4.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+52]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  304 				case 2:
-//  305 				   buttonCustom2.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id()); 	   
+//  274 				case 3:
+//  275 				   buttonCustom3.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_V*3,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
 ??draw_More_18:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
-        MOVS     R0,#+121
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
+        MOVS     R0,#+240
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+28]
-//  306 				   BUTTON_SetBmpFileName(buttonCustom2.btnHandle, "bmp_custom1.bin",1);
+        LDR.N    R7,??DataTable10_2
+//  276 				   BUTTON_SetBmpFileName(buttonCustom3.btnHandle, "bmp_custom2.bin",1);
+        ADR.W    R1,`?<Constant "bmp_custom2.bin">`
+        STRH     R0,[R7, #+0]
         MOVS     R2,#+1
-        ADR.W    R1,`?<Constant "bmp_custom1.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  307 				   BUTTON_SetBkColor(buttonCustom2.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  308 				   BUTTON_SetBkColor(buttonCustom2.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  309 				   BUTTON_SetBitmapEx(buttonCustom2.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  277 				   BUTTON_SetBitmapEx(buttonCustom3.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
         STR      R0,[SP, #+0]
-        LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+28]
+        LDRSB    R3,[R8, #+0]
+        LDRSH    R0,[R7, R1]
+        MOV      R2,R10
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  310 				case 1:
-//  311 				   buttonCustom1.btnHandle= BUTTON_CreateEx(INTERVAL_V, 0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+//  278 				case 2:
+//  279 				   buttonCustom2.btnHandle= BUTTON_CreateEx(BTN_X_PIXEL+INTERVAL_V*2,  0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id()); 	   
 ??draw_More_19:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
-        LDRSH    R0,[R6, #+0]
-        STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
         MOVS     R1,#+0
-        MOVS     R0,#+2
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
+        MOVS     R0,#+121
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R6, #+4]
-//  312 				   BUTTON_SetBmpFileName(buttonCustom1.btnHandle, "bmp_custom1.bin",1);
+        STRH     R0,[R5, #+52]
+//  280 				   BUTTON_SetBmpFileName(buttonCustom2.btnHandle, "bmp_custom1.bin",1);
         MOVS     R2,#+1
         ADR.W    R1,`?<Constant "bmp_custom1.bin">`
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  313 				   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+1
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  314 				   BUTTON_SetBkColor(buttonCustom1.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_state_color);
-        LDR      R2,[R5, #+40]
-        MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  315 				   BUTTON_SetBitmapEx(buttonCustom1.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  281 				   BUTTON_SetBitmapEx(buttonCustom2.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R5, #+52]
         MOVS     R1,#+0
-        LDRSH    R0,[R6, #+4]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  316 				break;
-//  317 				default:break;
-//  318 			 
-//  319 			}		
-//  320 		}
-//  321 	buttonRet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
-??draw_More_5:
+//  282 				case 1:
+//  283 				   buttonCustom1.btnHandle= BUTTON_CreateEx(INTERVAL_V, 0,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+??draw_More_20:
+          CFI FunCall alloc_win_id
+        BL       alloc_win_id
+        STR      R0,[SP, #+12]
+        MOVS     R3,#+140
+        MOVS     R0,#+0
+        STR      R0,[SP, #+8]
+        MOVS     R2,#+117
+        MOVS     R0,#+2
+        STR      R0,[SP, #+4]
+        MOVS     R1,#+0
+        LDRSH    R0,[R5, #+0]
+        STR      R0,[SP, #+0]
+        MOVS     R0,#+2
+??draw_More_12:
+          CFI FunCall BUTTON_CreateEx
+        BL       BUTTON_CreateEx
+        STRH     R0,[R5, #+28]
+//  284 				   BUTTON_SetBmpFileName(buttonCustom1.btnHandle, "bmp_custom1.bin",1);
+        MOVS     R2,#+1
+        ADR.W    R1,`?<Constant "bmp_custom1.bin">`
+          CFI FunCall BUTTON_SetBmpFileName
+        BL       BUTTON_SetBmpFileName
+//  285 				   BUTTON_SetBitmapEx(buttonCustom1.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+        LDRSB    R0,[R9, #+0]
+        LDRSB    R3,[R8, #+0]
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R5, #+28]
+        MOVS     R1,#+0
+          CFI FunCall BUTTON_SetBitmapEx
+        BL       BUTTON_SetBitmapEx
+//  286 				break;
+//  287 				default:break;
+//  288 			 
+//  289 			}		
+//  290 		}
+//  291 	buttonRet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*3+INTERVAL_V*4,  BTN_Y_PIXEL+INTERVAL_H,BTN_X_PIXEL, BTN_Y_PIXEL,hMoreWnd, BUTTON_CF_SHOW, 0, alloc_win_id());
+??draw_More_6:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         MOV      R1,R0
-        MOVW     R0,#+359
         STR      R1,[SP, #+12]
+        MOVW     R0,#+359
         MOVS     R1,#+0
         STR      R1,[SP, #+8]
+        MOVS     R3,#+140
         MOVS     R1,#+2
         STR      R1,[SP, #+4]
-        LDRSH    R1,[R6, #+0]
-        STR      R1,[SP, #+0]
-        MOVS     R3,#+140
         MOVS     R2,#+117
+        LDRSH    R1,[R5, #+0]
+        STR      R1,[SP, #+0]
         MOVS     R1,#+142
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
-        STRH     R0,[R10, #+24]
-//  322 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
-        MOVS     R2,#+1
+        LDR.N    R7,??DataTable10_4
+//  292 	BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_return.bin",1);
         ADR.W    R1,`?<Constant "bmp_return.bin">`
+        STRH     R0,[R7, #+24]
+        MOVS     R2,#+1
           CFI FunCall BUTTON_SetBmpFileName
         BL       BUTTON_SetBmpFileName
-//  323 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
+//  293 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct, BMP_PIC_X, BMP_PIC_Y);
         LDRSB    R0,[R9, #+0]
-        STR      R0,[SP, #+0]
         LDRSB    R3,[R8, #+0]
-        MOV      R2,R7
+        STR      R0,[SP, #+0]
+        MOV      R2,R10
+        LDRSH    R0,[R7, #+24]
         MOVS     R1,#+0
-        LDRSH    R0,[R10, #+24]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
-//  324 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+1
-        LDRSH    R0,[R10, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  325 	BUTTON_SetBkColor(buttonRet.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R5, #+56]
-        MOVS     R1,#+0
-        LDRSH    R0,[R10, #+24]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  326 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+1
-        LDRSH    R0,[R10, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  327 	BUTTON_SetTextColor(buttonRet.btnHandle,BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R5, #+60]
-        MOVS     R1,#+0
-        LDRSH    R0,[R10, #+24]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  328 
-//  329 	if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_More_20
-//  330 	{
-//  331 		if(gCfgItems.zoffset_display_flg == 1)
-        LDR      R0,[SP, #+16]
-        LDRB     R0,[R0, #+9]
+//  294 
+//  295 	if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R4, #+463]
+        CBZ.N    R0,??draw_More_21
+//  296 	{
+//  297 		if(gCfgItems.zoffset_display_flg == 1)
+        LDRB     R0,[R6, #+9]
         CMP      R0,#+1
-        BNE.N    ??draw_More_21
-//  332 		{
-//  333 			BUTTON_SetText(buttonzoffset.btnHandle, more_menu.zoffset);
+        BNE.N    ??draw_More_22
+//  298 		{
+//  299 			BUTTON_SetText(buttonzoffset.btnHandle, more_menu.zoffset);
         LDR.N    R0,??DataTable10_13
         LDR      R1,[R0, #+4]
-        LDRSH    R0,[R10, #+0]
+        LDRSH    R0,[R5, #+4]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  334 		}
-//  335 		BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
-??draw_More_21:
+//  300 		}
+//  301 		BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
+??draw_More_22:
         LDR.N    R0,??DataTable10_14
         LDR      R1,[R0, #+0]
-        LDRSH    R0,[R10, #+24]
-        ADD      SP,SP,#+20
-          CFI CFA R13+36
-        POP      {R4-R11,LR}
+        LDRSH    R0,[R7, #+24]
+        ADD      SP,SP,#+16
+          CFI CFA R13+32
+        POP      {R4-R10,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
@@ -1411,60 +1173,57 @@ draw_More:
           CFI R8 SameValue
           CFI R9 SameValue
           CFI R10 SameValue
-          CFI R11 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall BUTTON_SetText
         B.W      BUTTON_SetText
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -32)
+          CFI R5 Frame(CFA, -28)
+          CFI R6 Frame(CFA, -24)
+          CFI R7 Frame(CFA, -20)
+          CFI R8 Frame(CFA, -16)
+          CFI R9 Frame(CFA, -12)
+          CFI R10 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
-          CFI CFA R13+56
-//  336 	}
-//  337 	
-//  338 
-//  339 	//GUI_Exec();
-//  340 
-//  341 	
-//  342 }
-??draw_More_20:
-        ADD      SP,SP,#+20
-          CFI CFA R13+36
-        POP      {R4-R11,PC}      ;; return
+          CFI CFA R13+48
+//  302 	}
+//  303 	
+//  304 
+//  305 	//GUI_Exec();
+//  306 
+//  307 	
+//  308 }
+??draw_More_21:
+        ADD      SP,SP,#+16
+          CFI CFA R13+32
+        POP      {R4-R10,PC}      ;; return
           CFI EndBlock cfiBlock1
-//  343 
+//  309 
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock2 Using cfiCommon0
           CFI Function Clear_more
         THUMB
-//  344 void Clear_more()
-//  345 {
+//  310 void Clear_more()
+//  311 {
 Clear_more:
         PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-//  346 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R0,??DataTable10_8
-        LDR      R0,[R0, #+4]
+//  312 	GUI_SetBkColor(gCfgItems.background_color);
+        LDR.N    R0,??DataTable10_6
+        LDR      R0,[R0, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
-//  347 	if(WM_IsWindow(hMoreWnd))
+//  313 	if(WM_IsWindow(hMoreWnd))
         LDR.N    R4,??DataTable10
         LDRSH    R0,[R4, #+0]
           CFI FunCall WM_IsWindow
         BL       WM_IsWindow
-        CMP      R0,#+0
-        BEQ.N    ??Clear_more_0
-//  348 	{
-//  349 		WM_DeleteWindow(hMoreWnd);
+        CBZ.N    R0,??Clear_more_0
+//  314 	{
+//  315 		WM_DeleteWindow(hMoreWnd);
         LDRSH    R0,[R4, #+0]
         POP      {R4,LR}
           CFI R4 SameValue
@@ -1475,11 +1234,11 @@ Clear_more:
           CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
-//  350 		//GUI_Exec();
-//  351 	}
-//  352 	
-//  353 	//GUI_Clear();
-//  354 }
+//  316 		//GUI_Exec();
+//  317 	}
+//  318 	
+//  319 	//GUI_Clear();
+//  320 }
 ??Clear_more_0:
         POP      {R4,PC}          ;; return
           CFI EndBlock cfiBlock2
@@ -1500,19 +1259,19 @@ Clear_more:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10_2:
-        DC32     buttonCustom4
+        DC32     buttonCustom3
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10_3:
-        DC32     buttonCustom6
+        DC32     buttonCustom5
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10_4:
-        DC32     buttonzoffset
+        DC32     buttonCustom7
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1524,19 +1283,19 @@ Clear_more:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10_6:
-        DC32     disp_state_stack
+        DC32     gCfgItems
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10_7:
-        DC32     disp_state
+        DC32     disp_state_stack
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable10_8:
-        DC32     gCfgItems
+        DC32     disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -1635,14 +1394,14 @@ Clear_more:
         SECTION_TYPE SHT_PROGBITS, 0
 
         END
-//  355 
-//  356 
+//  321 
+//  322 
 // 
 //   245 bytes in section .bss
 //    80 bytes in section .data
-// 2 244 bytes in section .text
+// 1 712 bytes in section .text
 // 
-// 2 244 bytes of CODE memory
+// 1 712 bytes of CODE memory
 //   325 bytes of DATA memory
 //
 //Errors: none

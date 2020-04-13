@@ -1,80 +1,77 @@
 ###############################################################################
 #
-# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        14/Feb/2020  17:05:31
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        13/Apr/2020  09:24:51
 # Copyright 1999-2014 IAR Systems AB.
 #
 #    Cpu mode     =  thumb
 #    Endian       =  little
 #    Source file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
 #    Command line =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
 #        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 #        MKS_ROBIN_NANO -D TFT35 -lC
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        -lA
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 #        --diag_suppress Pa050 -o
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-#        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+#        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
 #        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\INC\c\DLib_Config_Full.h" -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 #        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-#        -I
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+#        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.0\arm\CMSIS\Include\"
 #    List file    =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\hex_print_routines.lst
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\hex_print_routines.lst
 #    Object file  =  
-#        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\hex_print_routines.o
+#        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\hex_print_routines.o
 #
 ###############################################################################
 
-E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
+D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\hex_print_routines.cpp
       1          /**
       2           * Marlin 3D Printer Firmware
       3           * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -100,58 +97,58 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
   #define UNUSED(x) ((void)(x))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h",87  Warning[Pe047]: 
           incompatible redefinition of macro "UNUSED" (declared at line 101 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\macros.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\macros.h")
 
   		volatile volatile float desireBedTempBak;
   		         ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Inc\mks_cfg.h",613  Warning[Pe083]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Inc\mks_cfg.h",626  Warning[Pe083]: 
           type qualifier specified more than once
 
   #define strcpy_P(dest, src) strcpy((dest), (src))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",23  Warning[Pe047]: 
           incompatible redefinition of macro "strcpy_P" (declared at line 93
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define strstr_P(a, b) strstr((a), (b))
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",26  Warning[Pe047]: 
           incompatible redefinition of macro "strstr_P" (declared at line 94
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define sprintf_P(s, f, ...) sprintf((s), (f), __VA_ARGS__)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",28  Warning[Pe047]: 
           incompatible redefinition of macro "sprintf_P" (declared at line 95
           of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
   #define pgm_read_word_near(addr) pgm_read_word(addr)
           ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\arduino\stm32\cores\arduino\avr\pgmspace.h",38  Warning[Pe047]: 
           incompatible redefinition of macro "pgm_read_word_near" (declared at
           line 65 of
-          "E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4
-          _source\Middlewares\Third_Party\Marlin\Marlin_export.h")
+          "D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middleware
+          s\Third_Party\Marlin\Marlin_export.h")
 
     }
     ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\Marlin.h",537  Warning[Pe940]: 
           missing return statement at end of non-void function
           "position_is_reachable_IS_KINEMATIC"
      23          #include "gcode.h"
 
     FORCE_INLINE static millis_t value_millis_from_seconds() { return value_float() * 1000UL; }
                                                                       ^
-"E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Middlewares\Third_Party\Marlin\gcode.h",207  Warning[Pa093]: 
+"D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Middlewares\Third_Party\Marlin\gcode.h",207  Warning[Pa093]: 
           implicit conversion from floating point to integer
      24          
      25          //#if ENABLED(AUTO_BED_LEVELING_UBL) || ENABLED(M100_FREE_MEMORY_WATCHER) || ENABLED(DEBUG_GCODE_PARSER)
@@ -163,15 +160,12 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    \                     _Z10hex_nybbleh: (+1)
    \   00000000   0xF000 0x010F      AND      R1,R0,#0xF
    \   00000004   0x290A             CMP      R1,#+10
-   \   00000006   0xDA01             BGE.N    ??hex_nybble_0
-   \   00000008   0x2130             MOVS     R1,#+48
-   \   0000000A   0xE000             B.N      ??hex_nybble_1
-   \                     ??hex_nybble_0: (+1)
-   \   0000000C   0x2137             MOVS     R1,#+55
-   \                     ??hex_nybble_1: (+1)
-   \   0000000E   0xF000 0x000F      AND      R0,R0,#0xF
-   \   00000012   0x1808             ADDS     R0,R1,R0
-   \   00000014   0x4770             BX       LR               ;; return
+   \   00000006   0xBFB4             ITE      LT 
+   \   00000008   0x2130             MOVLT    R1,#+48
+   \   0000000A   0x2137             MOVGE    R1,#+55
+   \   0000000C   0xF000 0x000F      AND      R0,R0,#0xF
+   \   00000010   0x1808             ADDS     R0,R1,R0
+   \   00000012   0x4770             BX       LR               ;; return
      28          
 
    \                                 In section .data, align 4
@@ -186,21 +180,28 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
    \                                 In section .text, align 2, keep-with-next
      31          char* hex_byte(const uint8_t b) {
-   \                     _Z8hex_byteh: (+1)
-   \   00000000   0xB538             PUSH     {R3-R5,LR}
-   \   00000002   0x4604             MOV      R4,R0
      32            _hex[4] = hex_nybble(b >> 4);
-   \   00000004   0x....             LDR.N    R5,??DataTable5
-   \   00000006   0x0920             LSRS     R0,R4,#+4
-   \   00000008   0x.... 0x....      BL       _Z10hex_nybbleh
-   \   0000000C   0x7128             STRB     R0,[R5, #+4]
+   \                     _Z8hex_byteh: (+1)
+   \   00000000   0x0901             LSRS     R1,R0,#+4
+   \   00000002   0x290A             CMP      R1,#+10
+   \   00000004   0xBFB4             ITE      LT 
+   \   00000006   0x2230             MOVLT    R2,#+48
+   \   00000008   0x2237             MOVGE    R2,#+55
+   \   0000000A   0x....             LDR.N    R3,??DataTable4
+   \   0000000C   0x1851             ADDS     R1,R2,R1
+   \   0000000E   0x7119             STRB     R1,[R3, #+4]
      33            _hex[5] = hex_nybble(b);
-   \   0000000E   0x4620             MOV      R0,R4
-   \   00000010   0x.... 0x....      BL       _Z10hex_nybbleh
-   \   00000014   0x7168             STRB     R0,[R5, #+5]
+   \   00000010   0xF000 0x010F      AND      R1,R0,#0xF
+   \   00000014   0x290A             CMP      R1,#+10
+   \   00000016   0xBFB4             ITE      LT 
+   \   00000018   0x2130             MOVLT    R1,#+48
+   \   0000001A   0x2137             MOVGE    R1,#+55
+   \   0000001C   0xF000 0x000F      AND      R0,R0,#0xF
+   \   00000020   0x1808             ADDS     R0,R1,R0
+   \   00000022   0x7158             STRB     R0,[R3, #+5]
      34            return &_hex[4];
-   \   00000016   0x1D28             ADDS     R0,R5,#+4
-   \   00000018   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+   \   00000024   0x1D18             ADDS     R0,R3,#+4
+   \   00000026   0x4770             BX       LR               ;; return
      35          }
      36          
 
@@ -208,29 +209,37 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
      37          char* hex_word(const uint16_t w) {
    \                     _Z8hex_wordt: (+1)
    \   00000000   0xB538             PUSH     {R3-R5,LR}
-   \   00000002   0x4604             MOV      R4,R0
+   \   00000002   0x4605             MOV      R5,R0
      38            _hex[2] = hex_nybble(w >> 12);
-   \   00000004   0x....             LDR.N    R5,??DataTable5
-   \   00000006   0x0B20             LSRS     R0,R4,#+12
+   \   00000004   0x....             LDR.N    R4,??DataTable4
+   \   00000006   0x0B28             LSRS     R0,R5,#+12
    \   00000008   0x.... 0x....      BL       _Z10hex_nybbleh
-   \   0000000C   0x70A8             STRB     R0,[R5, #+2]
+   \   0000000C   0x70A0             STRB     R0,[R4, #+2]
      39            _hex[3] = hex_nybble(w >> 8);
-   \   0000000E   0x0A20             LSRS     R0,R4,#+8
+   \   0000000E   0x0A28             LSRS     R0,R5,#+8
    \   00000010   0x.... 0x....      BL       _Z10hex_nybbleh
-   \   00000014   0x70E8             STRB     R0,[R5, #+3]
+   \   00000014   0x70E0             STRB     R0,[R4, #+3]
      40            _hex[4] = hex_nybble(w >> 4);
-   \   00000016   0x0920             LSRS     R0,R4,#+4
-   \   00000018   0xB2C0             UXTB     R0,R0
-   \   0000001A   0x.... 0x....      BL       _Z10hex_nybbleh
-   \   0000001E   0x7128             STRB     R0,[R5, #+4]
+   \   00000016   0x0628             LSLS     R0,R5,#+24
+   \   00000018   0x0F00             LSRS     R0,R0,#+28
+   \   0000001A   0x280A             CMP      R0,#+10
+   \   0000001C   0xBFB4             ITE      LT 
+   \   0000001E   0x2130             MOVLT    R1,#+48
+   \   00000020   0x2137             MOVGE    R1,#+55
+   \   00000022   0x1808             ADDS     R0,R1,R0
+   \   00000024   0x7120             STRB     R0,[R4, #+4]
      41            _hex[5] = hex_nybble(w);
-   \   00000020   0x4620             MOV      R0,R4
-   \   00000022   0xB2C0             UXTB     R0,R0
-   \   00000024   0x.... 0x....      BL       _Z10hex_nybbleh
-   \   00000028   0x7168             STRB     R0,[R5, #+5]
+   \   00000026   0xF005 0x000F      AND      R0,R5,#0xF
+   \   0000002A   0x280A             CMP      R0,#+10
+   \   0000002C   0xBFB4             ITE      LT 
+   \   0000002E   0x2030             MOVLT    R0,#+48
+   \   00000030   0x2037             MOVGE    R0,#+55
+   \   00000032   0xF005 0x010F      AND      R1,R5,#0xF
+   \   00000036   0x1840             ADDS     R0,R0,R1
+   \   00000038   0x7160             STRB     R0,[R4, #+5]
      42            return &_hex[2];
-   \   0000002A   0x1CA8             ADDS     R0,R5,#+2
-   \   0000002C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+   \   0000003A   0x1CA0             ADDS     R0,R4,#+2
+   \   0000003C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
      43          }
      44          
 
@@ -241,7 +250,7 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
      46            (void)hex_word((uint16_t)w);
    \   00000002   0x.... 0x....      BL       _Z8hex_wordt
      47            return _hex;
-   \   00000006   0x....             LDR.N    R0,??DataTable5
+   \   00000006   0x....             LDR.N    R0,??DataTable4
    \   00000008   0xBD02             POP      {R1,PC}          ;; return
      48          }
      49          
@@ -249,40 +258,45 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    \                                 In section .text, align 2, keep-with-next
      50          void print_hex_nybble(const uint8_t n)       { SERIAL_CHAR(hex_nybble(n));  }
    \                     _Z16print_hex_nybbleh: (+1)
-   \   00000000   0xB580             PUSH     {R7,LR}
-   \   00000002   0x.... 0x....      BL       _Z10hex_nybbleh
-   \   00000006   0x4601             MOV      R1,R0
-   \   00000008   0xB2C9             UXTB     R1,R1
-   \   0000000A   0x....             LDR.N    R0,??DataTable5_1
-   \   0000000C   0xE8BD 0x4004      POP      {R2,LR}
-   \   00000010   0x.... 0x....      B.W      _ZN10USARTClass5writeEh
+   \   00000000   0xF000 0x010F      AND      R1,R0,#0xF
+   \   00000004   0x290A             CMP      R1,#+10
+   \   00000006   0xBFB4             ITE      LT 
+   \   00000008   0x2130             MOVLT    R1,#+48
+   \   0000000A   0x2137             MOVGE    R1,#+55
+   \   0000000C   0xF000 0x000F      AND      R0,R0,#0xF
+   \   00000010   0x1809             ADDS     R1,R1,R0
+   \   00000012   0xB2C9             UXTB     R1,R1
+   \   00000014   0x....             LDR.N    R0,??DataTable4_1
+   \   00000016   0x.... 0x....      B.W      _ZN10USARTClass5writeEh
 
    \                                 In section .text, align 2, keep-with-next
      51          void print_hex_byte(const uint8_t b)         { SERIAL_ECHO(hex_byte(b));    }
    \                     _Z14print_hex_byteh: (+1)
    \   00000000   0xB580             PUSH     {R7,LR}
    \   00000002   0x.... 0x....      BL       _Z8hex_byteh
-   \   00000006   0x4601             MOV      R1,R0
-   \   00000008   0x....             LDR.N    R0,??DataTable5_1
-   \   0000000A   0xE8BD 0x4004      POP      {R2,LR}
-   \   0000000E   0x.... 0x....      B.W      _ZN5Print5printEPKc
+   \   00000006   0x....             B.N      ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0xE8BD 0x4004      POP      {R2,LR}
+   \   00000004   0x4601             MOV      R1,R0
+   \   00000006   0x....             LDR.N    R0,??DataTable4_1
+   \   00000008   0x.... 0x....      B.W      _ZN5Print5printEPKc
 
    \                                 In section .text, align 2, keep-with-next
      52          void print_hex_word(const uint16_t w)        { SERIAL_ECHO(hex_word(w));    }
    \                     _Z14print_hex_wordt: (+1)
    \   00000000   0xB580             PUSH     {R7,LR}
    \   00000002   0x.... 0x....      BL       _Z8hex_wordt
-   \   00000006   0x4601             MOV      R1,R0
-   \   00000008   0x....             LDR.N    R0,??DataTable5_1
-   \   0000000A   0xE8BD 0x4004      POP      {R2,LR}
-   \   0000000E   0x.... 0x....      B.W      _ZN5Print5printEPKc
+   \   00000006                      REQUIRE ?Subroutine0
+   \   00000006                      ;; // Fall through to label ?Subroutine0
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5:
+   \                     ??DataTable4:
    \   00000000   0x........         DC32     _hex
 
    \                                 In section .text, align 4, keep-with-next
-   \                     ??DataTable5_1:
+   \                     ??DataTable4_1:
    \   00000000   0x........         DC32     Serial3
      53          //void print_hex_address(const void * const w) { SERIAL_ECHO(hex_address(w)); }
      54          
@@ -294,17 +308,15 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
    ------- --------
        8   hex_address(uint16_t)
          8   -> hex_word(uint16_t)
-      16   hex_byte(uint8_t)
-        16   -> hex_nybble(uint8_t)
+       0   hex_byte(uint8_t)
        0   hex_nybble(uint8_t)
       16   hex_word(uint16_t)
         16   -> hex_nybble(uint8_t)
        8   print_hex_byte(uint8_t)
          0   -> Print::print(char const *)
          8   -> hex_byte(uint8_t)
-       8   print_hex_nybble(uint8_t)
+       0   print_hex_nybble(uint8_t)
          0   -> USARTClass::write(uint8_t)
-         8   -> hex_nybble(uint8_t)
        8   print_hex_word(uint16_t)
          0   -> Print::print(char const *)
          8   -> hex_word(uint16_t)
@@ -314,24 +326,25 @@ E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Midd
 
    Bytes  Function/Label
    -----  --------------
-       4  ??DataTable5
-       4  ??DataTable5_1
+       4  ??DataTable4
+       4  ??DataTable4_1
+      12  ?Subroutine0
        8  _hex
       10  hex_address(uint16_t)
-      26  hex_byte(uint8_t)
-      22  hex_nybble(uint8_t)
-      46  hex_word(uint16_t)
-      18  print_hex_byte(uint8_t)
-      20  print_hex_nybble(uint8_t)
-      18  print_hex_word(uint16_t)
+      40  hex_byte(uint8_t)
+      20  hex_nybble(uint8_t)
+      62  hex_word(uint16_t)
+       8  print_hex_byte(uint8_t)
+      26  print_hex_nybble(uint8_t)
+       6  print_hex_word(uint16_t)
        1  -- Other
 
  
    8 bytes in section .data
    1 byte  in section .rodata
- 168 bytes in section .text
+ 192 bytes in section .text
  
- 146 bytes of CODE  memory (+ 22 bytes shared)
+ 172 bytes of CODE  memory (+ 20 bytes shared)
    0 bytes of CONST memory (+  1 byte  shared)
    8 bytes of DATA  memory
 

@@ -1,74 +1,71 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:32
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:52
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\ili9320.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\ili9320.c
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\ili9320.c
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\ili9320.c
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
 //        Workbench 7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\ili9320.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\ili9320.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -160,7 +157,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\Src\ili9320.c
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\Src\ili9320.c
 //    1 /**
 //    2   ******************************************************************************
 //    3   * @file    stm3210e_eval_lcd.c
@@ -285,21 +282,18 @@ DeviceCode:
 //  112 
 //  113 	if (NewState != DISABLE)
 RCC_AHBPeriphClockCmd_tft:
-        LDR.W    R2,??DataTable20  ;; 0x40021014
+        LDR.W    R2,??DataTable16  ;; 0x40021014
         CMP      R1,#+0
         LDR      R1,[R2, #+0]
-        BEQ.N    ??RCC_AHBPeriphClockCmd_tft_0
+        ITE      NE 
 //  114 	{
 //  115 		RCC->AHBENR |= RCC_AHBPeriph;
-        ORRS     R0,R0,R1
-        STR      R0,[R2, #+0]
-        BX       LR
+        ORRNE    R0,R0,R1
 //  116 	}
 //  117 	else
 //  118 	{
 //  119 		RCC->AHBENR &= ~RCC_AHBPeriph;
-??RCC_AHBPeriphClockCmd_tft_0:
-        BIC      R0,R1,R0
+        BICEQ    R0,R1,R0
         STR      R0,[R2, #+0]
 //  120 	}
 //  121 
@@ -320,21 +314,18 @@ RCC_AHBPeriphClockCmd_tft:
 //  128   assert_param(IS_FUNCTIONAL_STATE(NewState));
 //  129   if (NewState != DISABLE)
 RCC_APB2PeriphClockCmd_tft:
-        LDR.W    R2,??DataTable20_1  ;; 0x40021018
+        LDR.W    R2,??DataTable16_1  ;; 0x40021018
         CMP      R1,#+0
         LDR      R1,[R2, #+0]
-        BEQ.N    ??RCC_APB2PeriphClockCmd_tft_0
+        ITE      NE 
 //  130   {
 //  131     RCC->APB2ENR |= RCC_APB2Periph;
-        ORRS     R0,R0,R1
-        STR      R0,[R2, #+0]
-        BX       LR
+        ORRNE    R0,R0,R1
 //  132   }
 //  133   else
 //  134   {
 //  135     RCC->APB2ENR &= ~RCC_APB2Periph;
-??RCC_APB2PeriphClockCmd_tft_0:
-        BIC      R0,R1,R0
+        BICEQ    R0,R1,R0
         STR      R0,[R2, #+0]
 //  136   }
 //  137 }
@@ -414,14 +405,14 @@ RCC_APB2PeriphClockCmd_tft:
 //  203 void GPIO_Init_TFT(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct)
 //  204 {
 GPIO_Init_TFT:
-        PUSH     {R4-R7}
-          CFI R7 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
+        PUSH     {R4-R7,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+20
 //  205   uint32_t currentmode = 0x00, currentpin = 0x00, pinpos = 0x00, pos = 0x00;
-        MOVS     R2,#+0
 //  206   uint32_t tmpreg = 0x00, pinmask = 0x00;
 //  207   /* Check the parameters */
 //  208   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -431,166 +422,152 @@ GPIO_Init_TFT:
 //  212 /*---------------------------- GPIO Mode Configuration -----------------------*/
 //  213   currentmode = ((uint32_t)GPIO_InitStruct->Mode) & ((uint32_t)0x0F);
         LDR      R4,[R1, #+4]
+        MOVS     R2,#+0
         AND      R3,R4,#0xF
 //  214   if ((((uint32_t)GPIO_InitStruct->Mode) & ((uint32_t)0x10)) != 0x00)
         LSLS     R4,R4,#+27
-        BPL.N    ??GPIO_Init_TFT_0
+        ITT      MI 
 //  215   { 
 //  216     /* Check the parameters */
 //  217     assert_param(IS_GPIO_SPEED(GPIO_InitStruct->Speed));
 //  218     /* Output mode */
 //  219     currentmode |= (uint32_t)GPIO_InitStruct->Speed;
-        LDR      R4,[R1, #+12]
-        ORRS     R3,R4,R3
+        LDRMI    R4,[R1, #+12]
+        ORRMI    R3,R4,R3
 //  220   }
 //  221 /*---------------------------- GPIO CRL Configuration ------------------------*/
 //  222   /* Configure the eight low port pins */
 //  223   if (((uint32_t)GPIO_InitStruct->Pin & ((uint32_t)0x00FF)) != 0x00)
-??GPIO_Init_TFT_0:
         LDRB     R4,[R1, #+0]
         LSLS     R4,R4,#+24
-        BEQ.N    ??GPIO_Init_TFT_1
+        BEQ.N    ??GPIO_Init_TFT_0
 //  224   {
 //  225     tmpreg = GPIOx->CRL;
-        LDR      R4,[R0, #+0]
+        LDR      R7,[R0, #+0]
 //  226     for (pinpos = 0x00; pinpos < 0x08; pinpos++)
-        B.N      ??GPIO_Init_TFT_2
+        MOVS     R4,#+1
+        MOVS     R5,#+15
 //  227     {
 //  228       pos = ((uint32_t)0x01) << pinpos;
 //  229       /* Get the port pins position */
 //  230       currentpin = (GPIO_InitStruct->Pin) & pos;
 //  231       if (currentpin == pos)
+??GPIO_Init_TFT_1:
+        LDR      LR,[R1, #+0]
+        LSL      R6,R4,R2
+        AND      LR,R6,LR
+        CMP      LR,R6
+        BNE.N    ??GPIO_Init_TFT_2
 //  232       {
 //  233         pos = pinpos << 2;
+        LSL      R12,R2,#+2
 //  234         /* Clear the corresponding low control register bits */
 //  235         pinmask = ((uint32_t)0x0F) << pos;
 //  236         tmpreg &= ~pinmask;
 //  237         /* Write the mode configuration in the corresponding bits */
 //  238         tmpreg |= (currentmode << pos);
+        LSL      LR,R5,R12
+        BIC      R7,R7,LR
+        LSL      R12,R3,R12
+        ORR      R7,R12,R7
 //  239         /* Reset the corresponding ODR bit */
 //  240         if (GPIO_InitStruct->Mode == GPIO_Mode_IPD)
+        LDR      R12,[R1, #+4]
+        CMP      R12,#+40
+        IT       EQ 
 //  241         {
 //  242           GPIOx->BRR = (((uint32_t)0x01) << pinpos);
+        STREQ    R6,[R0, #+20]
+        BEQ.N    ??GPIO_Init_TFT_2
 //  243         }
 //  244         else
 //  245         {
 //  246           /* Set the corresponding ODR bit */
 //  247           if (GPIO_InitStruct->Mode == GPIO_Mode_IPU)
-??GPIO_Init_TFT_3:
-        CMP      R5,#+72
-        BNE.N    ??GPIO_Init_TFT_4
+        CMP      R12,#+72
+        IT       EQ 
 //  248           {
 //  249             GPIOx->BSRR = (((uint32_t)0x01) << pinpos);
-        STR      R6,[R0, #+16]
+        STREQ    R6,[R0, #+16]
 //  250           }
 //  251         }
-??GPIO_Init_TFT_4:
-        ADDS     R2,R2,#+1
-??GPIO_Init_TFT_2:
-        CMP      R2,#+8
-        BCS.N    ??GPIO_Init_TFT_5
-        MOVS     R5,#+1
-        LSL      R6,R5,R2
-        MOV      R5,R6
-        LDR      R7,[R1, #+0]
-        ANDS     R7,R5,R7
-        CMP      R7,R5
-        BNE.N    ??GPIO_Init_TFT_4
-        LSLS     R5,R2,#+2
-        MOVS     R7,#+15
-        LSLS     R7,R7,R5
-        BICS     R4,R4,R7
-        LSL      R5,R3,R5
-        ORRS     R4,R5,R4
-        LDR      R5,[R1, #+4]
-        CMP      R5,#+40
-        BNE.N    ??GPIO_Init_TFT_3
-        STR      R6,[R0, #+20]
-        B.N      ??GPIO_Init_TFT_4
 //  252       }
 //  253     }
+??GPIO_Init_TFT_2:
+        ADDS     R2,R2,#+1
+        CMP      R2,#+8
+        BCC.N    ??GPIO_Init_TFT_1
 //  254     GPIOx->CRL = tmpreg;
-??GPIO_Init_TFT_5:
-        STR      R4,[R0, #+0]
+        STR      R7,[R0, #+0]
 //  255   }
 //  256 /*---------------------------- GPIO CRH Configuration ------------------------*/
 //  257   /* Configure the eight high port pins */
 //  258   if (GPIO_InitStruct->Pin > 0x00FF)
-??GPIO_Init_TFT_1:
+??GPIO_Init_TFT_0:
         LDR      R2,[R1, #+0]
         CMP      R2,#+255
-        BLS.N    ??GPIO_Init_TFT_6
+        BLS.N    ??GPIO_Init_TFT_3
 //  259   {
 //  260     tmpreg = GPIOx->CRH;
-        LDR      R4,[R0, #+4]
+        LDR      R7,[R0, #+4]
 //  261     for (pinpos = 0x00; pinpos < 0x08; pinpos++)
         MOVS     R2,#+0
-        B.N      ??GPIO_Init_TFT_7
+        MOVS     R4,#+1
+        MOVS     R5,#+15
 //  262     {
 //  263       pos = (((uint32_t)0x01) << (pinpos + 0x08));
-??GPIO_Init_TFT_8:
-        MOVS     R5,#+1
+??GPIO_Init_TFT_4:
         ADD      R6,R2,#+8
-        LSL      R6,R5,R6
-        MOV      R5,R6
 //  264       /* Get the port pins position */
 //  265       currentpin = ((GPIO_InitStruct->Pin) & pos);
 //  266       if (currentpin == pos)
-        LDR      R7,[R1, #+0]
-        ANDS     R7,R5,R7
-        CMP      R7,R5
-        BNE.N    ??GPIO_Init_TFT_9
+        LDR      LR,[R1, #+0]
+        LSL      R6,R4,R6
+        AND      LR,R6,LR
+        CMP      LR,R6
+        BNE.N    ??GPIO_Init_TFT_5
 //  267       {
 //  268         pos = pinpos << 2;
-        LSLS     R5,R2,#+2
+        LSL      R12,R2,#+2
 //  269         /* Clear the corresponding high control register bits */
 //  270         pinmask = ((uint32_t)0x0F) << pos;
 //  271         tmpreg &= ~pinmask;
 //  272         /* Write the mode configuration in the corresponding bits */
 //  273         tmpreg |= (currentmode << pos);
-        MOVS     R7,#+15
-        LSLS     R7,R7,R5
-        BICS     R4,R4,R7
-        LSL      R5,R3,R5
-        ORRS     R4,R5,R4
+        LSL      LR,R5,R12
+        BIC      R7,R7,LR
+        LSL      R12,R3,R12
+        ORR      R7,R12,R7
 //  274         /* Reset the corresponding ODR bit */
 //  275         if (GPIO_InitStruct->Mode == GPIO_Mode_IPD)
-        LDR      R5,[R1, #+4]
-        CMP      R5,#+40
-        BNE.N    ??GPIO_Init_TFT_10
+        LDR      R12,[R1, #+4]
+        CMP      R12,#+40
+        IT       EQ 
 //  276         {
 //  277           GPIOx->BRR = (((uint32_t)0x01) << (pinpos + 0x08));
-        STR      R6,[R0, #+20]
+        STREQ    R6,[R0, #+20]
 //  278         }
 //  279         /* Set the corresponding ODR bit */
 //  280         if (GPIO_InitStruct->Mode == GPIO_Mode_IPU)
-??GPIO_Init_TFT_10:
-        LDR      R5,[R1, #+4]
-        CMP      R5,#+72
-        BNE.N    ??GPIO_Init_TFT_9
+        LDR      R12,[R1, #+4]
+        CMP      R12,#+72
+        IT       EQ 
 //  281         {
 //  282           GPIOx->BSRR = (((uint32_t)0x01) << (pinpos + 0x08));
-        STR      R6,[R0, #+16]
+        STREQ    R6,[R0, #+16]
 //  283         }
 //  284       }
 //  285     }
-??GPIO_Init_TFT_9:
+??GPIO_Init_TFT_5:
         ADDS     R2,R2,#+1
-??GPIO_Init_TFT_7:
         CMP      R2,#+8
-        BCC.N    ??GPIO_Init_TFT_8
+        BCC.N    ??GPIO_Init_TFT_4
 //  286     GPIOx->CRH = tmpreg;
-        STR      R4,[R0, #+4]
+        STR      R7,[R0, #+4]
 //  287   }
 //  288 }
-??GPIO_Init_TFT_6:
-        POP      {R4-R7}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI CFA R13+0
-        BX       LR               ;; return
+??GPIO_Init_TFT_3:
+        POP      {R4-R7,PC}       ;; return
           CFI EndBlock cfiBlock2
 //  289 
 //  290 #endif
@@ -632,8 +609,6 @@ LCD_CtrlLinesConfig:
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-        SUB      SP,SP,#+24
-          CFI CFA R13+32
 //  319 #if 0
 //  320 
 //  321 	vu32 i=0;
@@ -715,17 +690,20 @@ LCD_CtrlLinesConfig:
 //  397 
 //  398   /* Enable FSMC, GPIOD, GPIOE, GPIOF, GPIOG and AFIO clocks */
 //  399   RCC_AHBPeriphClockCmd_tft(RCC_AHBPeriph_FSMC, ENABLE);
-        MOVS     R1,#+1
-        MOV      R0,#+256
-          CFI FunCall RCC_AHBPeriphClockCmd_tft
-        BL       RCC_AHBPeriphClockCmd_tft
+        LDR.W    R0,??DataTable16  ;; 0x40021014
+        LDR.W    R4,??DataTable16_2  ;; 0x40011400
+        SUB      SP,SP,#+24
+          CFI CFA R13+32
+        LDR      R1,[R0, #+0]
+        ORR      R1,R1,#0x100
+        STR      R1,[R0, #+0]
 //  400   RCC_APB2PeriphClockCmd_tft(RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOE |
 //  401                          RCC_APB2Periph_GPIOF | RCC_APB2Periph_GPIOG | RCC_APB2Periph_GPIOC |
 //  402                          RCC_APB2Periph_AFIO, ENABLE); 
-        MOVS     R1,#+1
-        MOVW     R0,#+497
-          CFI FunCall RCC_APB2PeriphClockCmd_tft
-        BL       RCC_APB2PeriphClockCmd_tft
+        MOVW     R2,#+497
+        LDR      R1,[R0, #+4]
+        ORRS     R1,R2,R1
+        STR      R1,[R0, #+4]
 //  403 
 //  404    //禁止norflash
 //  405  /* GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
@@ -743,14 +721,13 @@ LCD_CtrlLinesConfig:
         MOVW     R0,#+50995
         STR      R0,[SP, #+0]
 //  417   GPIO_InitStructure.Speed = GPIO_Speed_50MHz;
+//  418   GPIO_InitStructure.Mode = GPIO_Mode_AF_PP;
+//  419   GPIO_Init_TFT(GPIOD, &GPIO_InitStructure);
+        ADD      R1,SP,#+0
         MOVS     R0,#+3
         STR      R0,[SP, #+12]
-//  418   GPIO_InitStructure.Mode = GPIO_Mode_AF_PP;
         MOVS     R0,#+24
         STR      R0,[SP, #+4]
-//  419   GPIO_Init_TFT(GPIOD, &GPIO_InitStructure);
-        LDR.W    R4,??DataTable20_2  ;; 0x40011400
-        ADD      R1,SP,#+0
         MOV      R0,R4
           CFI FunCall GPIO_Init_TFT
         BL       GPIO_Init_TFT
@@ -764,7 +741,7 @@ LCD_CtrlLinesConfig:
         STR      R0,[SP, #+0]
 //  426   GPIO_Init_TFT(GPIOE, &GPIO_InitStructure);
         ADD      R1,SP,#+0
-        LDR.W    R0,??DataTable20_3  ;; 0x40011800
+        LDR.N    R0,??DataTable16_3  ;; 0x40011800
           CFI FunCall GPIO_Init_TFT
         BL       GPIO_Init_TFT
 //  427 
@@ -831,13 +808,13 @@ LCD_CtrlLinesConfig:
         MOV      R0,#+8192
         STR      R0,[SP, #+0]
 //  476 	  GPIO_InitStructure.Mode = GPIO_Mode_Out_PP ;   
-        MOVS     R0,#+16
-        STR      R0,[SP, #+4]
 //  477 	  GPIO_InitStructure.Speed = GPIO_Speed_50MHz;
-        MOVS     R0,#+3
-        STR      R0,[SP, #+12]
 //  478 	  GPIO_Init_TFT(GPIOD, &GPIO_InitStructure);
         ADD      R1,SP,#+0
+        MOVS     R0,#+16
+        STR      R0,[SP, #+4]
+        MOVS     R0,#+3
+        STR      R0,[SP, #+12]
         MOV      R0,R4
           CFI FunCall GPIO_Init_TFT
         BL       GPIO_Init_TFT
@@ -876,8 +853,8 @@ LCD_CtrlLinesConfig:
         MOVS     R0,#+3
         STR      R0,[SP, #+12]
 //  503 	GPIO_Init_TFT(GPIOC, &GPIO_InitStructure);	
-        LDR.W    R4,??DataTable20_4  ;; 0x40011000
         ADD      R1,SP,#+0
+        LDR.N    R4,??DataTable16_4  ;; 0x40011000
         MOV      R0,R4
           CFI FunCall GPIO_Init_TFT
         BL       GPIO_Init_TFT
@@ -889,15 +866,15 @@ LCD_CtrlLinesConfig:
 //  505 	for(volatile uint32_t time_tick = 0; time_tick < 400000; time_tick++);
         MOVS     R0,#+0
         STR      R0,[SP, #+16]
-        LDR.W    R1,??DataTable20_5  ;; 0x61a80
+        LDR.N    R0,??DataTable16_5  ;; 0x61a80
         B.N      ??LCD_CtrlLinesConfig_0
 ??LCD_CtrlLinesConfig_1:
-        LDR      R0,[SP, #+16]
-        ADDS     R0,R0,#+1
-        STR      R0,[SP, #+16]
+        LDR      R1,[SP, #+16]
+        ADDS     R1,R1,#+1
+        STR      R1,[SP, #+16]
 ??LCD_CtrlLinesConfig_0:
-        LDR      R0,[SP, #+16]
-        CMP      R0,R1
+        LDR      R1,[SP, #+16]
+        CMP      R1,R0
         BCC.N    ??LCD_CtrlLinesConfig_1
 //  506 	GPIO_SetBits(GPIOC, GPIO_Pin_6);	
         MOVS     R1,#+64
@@ -1138,11 +1115,9 @@ LCD_X_Init:
 //  646   u16 data;	  /* Write 16-bit Index (then Read Reg) */
 //  647   data = LCD->LCD_RAM; 
 ILI9488_ReadRAM:
-        LDR.N    R0,??DataTable20_6  ;; 0x60020000
-        LDRH     R0,[R0, #+0]
-//  648   return    data;
-        BX       LR               ;; return
+        B.N      ?Subroutine0
           CFI EndBlock cfiBlock6
+//  648   return    data;
 //  649 }
 
         SECTION `.text`:CODE:NOROOT(1)
@@ -1155,11 +1130,9 @@ ILI9488_ReadRAM:
 //  652   /* Write 16-bit Index (then Read Reg) */
 //  653   LCD->LCD_RAM = data; 
 ILI9488_WriteData:
-        LDR.N    R1,??DataTable20_6  ;; 0x60020000
-        STRH     R0,[R1, #+0]
-//  654 }
-        BX       LR               ;; return
+        B.N      ?Subroutine1
           CFI EndBlock cfiBlock7
+//  654 }
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock8 Using cfiCommon0
@@ -1171,11 +1144,9 @@ ILI9488_WriteData:
 //  657   /* Write 16-bit Index, then Write Reg */
 //  658   LCD->LCD_REG = LCD_RegValue;
 ILI9488_WriteCmd:
-        LDR.N    R1,??DataTable20_7  ;; 0x6001fffe
-        STRH     R0,[R1, #+0]
-//  659 }
-        BX       LR               ;; return
+        B.N      ?Subroutine2
           CFI EndBlock cfiBlock8
+//  659 }
 //  660 
 //  661 /*******************************************************************************
 //  662 * Function Name  : LCD_WriteReg
@@ -1197,7 +1168,7 @@ ILI9488_WriteCmd:
 //  672   ClrCs
 //  673   LCD->LCD_REG = (vu16)LCD_Reg;
 LCD_WriteReg:
-        LDR.N    R2,??DataTable20_7  ;; 0x6001fffe
+        LDR.N    R2,??DataTable16_6  ;; 0x6001fffe
         STRH     R0,[R2, #+0]
 //  674   /* Write 16-bit Reg */
 //  675   LCD->LCD_RAM = (vu16)LCD_RegValue;
@@ -1213,18 +1184,32 @@ LCD_WriteReg:
           CFI NoCalls
         THUMB
 //  678 void LCD_WrtReg(u16 LCD_Reg)
+LCD_WrtReg:
+        Nop      
+          CFI EndBlock cfiBlock10
 //  679 {
 //  680   /* Write 16-bit Index, then Write Reg */
 //  681   //ClrCs
 //  682   LCD_Reg=LCD_Reg;
 //  683   LCD->LCD_REG = (vu16)LCD_Reg;
-LCD_WrtReg:
-        LDR.N    R1,??DataTable20_7  ;; 0x6001fffe
+        REQUIRE ?Subroutine2
+        ;; // Fall through to label ?Subroutine2
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock11 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls LCD_WriteRAM_Prepare
+          CFI NoCalls LCD_WrtReg
+          CFI NoCalls ILI9488_WriteCmd
+          CFI NoCalls LCD_WriteCommand
+        THUMB
+?Subroutine2:
+        LDR.N    R1,??DataTable16_6  ;; 0x6001fffe
         STRH     R0,[R1, #+0]
 //  684   //SetCs
 //  685 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock10
+          CFI EndBlock cfiBlock11
 //  686 /*******************************************************************************
 //  687 * Function Name  : LCD_ReadReg
 //  688 * Description    : Reads the selected LCD Register.
@@ -1234,28 +1219,41 @@ LCD_WrtReg:
 //  692 *******************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock11 Using cfiCommon0
+          CFI Block cfiBlock12 Using cfiCommon0
           CFI Function LCD_ReadReg
           CFI NoCalls
         THUMB
 //  693 u16 LCD_ReadReg(u8 LCD_Reg)
+LCD_ReadReg:
+        Nop      
+          CFI EndBlock cfiBlock12
 //  694 {
 //  695   u16 data;	  /* Write 16-bit Index (then Read Reg) */
 //  696   ClrCs
 //  697   //LCD->LCD_REG = LCD_Reg;
 //  698   data = LCD->LCD_RAM; 
-LCD_ReadReg:
-        LDR.N    R0,??DataTable20_6  ;; 0x60020000
+        REQUIRE ?Subroutine0
+        ;; // Fall through to label ?Subroutine0
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock13 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls LCD_RD_DATA
+          CFI NoCalls ILI9488_ReadRAM
+          CFI NoCalls LCD_ReadReg
+        THUMB
+?Subroutine0:
+        LDR.N    R0,??DataTable16_7  ;; 0x60020000
         LDRH     R0,[R0, #+0]
 //  699     SetCs
 //  700      return    data;
         BX       LR               ;; return
-          CFI EndBlock cfiBlock11
+          CFI EndBlock cfiBlock13
 //  701 }
 //  702 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Block cfiBlock14 Using cfiCommon0
           CFI Function LCD_ReadSta
           CFI NoCalls
         THUMB
@@ -1266,17 +1264,17 @@ LCD_ReadReg:
 //  707   ClrCs
 //  708   data = LCD->LCD_REG;
 LCD_ReadSta:
-        LDR.N    R0,??DataTable20_7  ;; 0x6001fffe
+        LDR.N    R0,??DataTable16_6  ;; 0x6001fffe
         LDRH     R0,[R0, #+0]
 //  709   SetCs
 //  710   return    data;
         BX       LR               ;; return
-          CFI EndBlock cfiBlock12
+          CFI EndBlock cfiBlock14
 //  711 }
 //  712 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Block cfiBlock15 Using cfiCommon0
           CFI Function LCD_WriteCommand
           CFI NoCalls
         THUMB
@@ -1286,12 +1284,10 @@ LCD_ReadSta:
 //  716   ClrCs
 //  717   LCD->LCD_REG = LCD_RegValue;
 LCD_WriteCommand:
-        LDR.N    R1,??DataTable20_7  ;; 0x6001fffe
-        STRH     R0,[R1, #+0]
+        B.N      ?Subroutine2
+          CFI EndBlock cfiBlock15
 //  718   SetCs
 //  719 }
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock13
 //  720 
 //  721 /*******************************************************************************
 //  722 * Function Name  : LCD_WriteRAM_Prepare
@@ -1302,8 +1298,9 @@ LCD_WriteCommand:
 //  727 *******************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Block cfiBlock16 Using cfiCommon0
           CFI Function LCD_WriteRAM_Prepare
+          CFI NoCalls
         THUMB
 //  728 void LCD_WriteRAM_Prepare(void)
 //  729 {
@@ -1312,28 +1309,26 @@ LCD_WriteCommand:
 //  732   //**SetCs
 //  733   if((DeviceCode==0x9325)||(DeviceCode==0x9328)||(DeviceCode==0x8989)||(DeviceCode==0x1505))
 LCD_WriteRAM_Prepare:
-        LDR.N    R0,??DataTable20_8
+        LDR.N    R0,??DataTable16_8
         LDRH     R0,[R0, #+0]
         MOVW     R1,#+37669
         CMP      R0,R1
-        BEQ.N    ??LCD_WriteRAM_Prepare_0
-        MOVW     R1,#+37672
-        CMP      R0,R1
+        ITT      NE 
+        MOVWNE   R1,#+37672
+        CMPNE    R0,R1
         BEQ.N    ??LCD_WriteRAM_Prepare_0
         MOVW     R1,#+35209
         CMP      R0,R1
-        BEQ.N    ??LCD_WriteRAM_Prepare_0
-        MOVW     R1,#+5381
-        CMP      R0,R1
+        ITT      NE 
+        MOVWNE   R1,#+5381
+        CMPNE    R0,R1
         BNE.N    ??LCD_WriteRAM_Prepare_1
 //  734 	{
 //  735   	ClrCs
 //  736   	LCD->LCD_REG = R34;
 ??LCD_WriteRAM_Prepare_0:
         MOVS     R0,#+34
-        LDR.N    R1,??DataTable20_7  ;; 0x6001fffe
-        STRH     R0,[R1, #+0]
-        BX       LR
+        B.N      ??LCD_WriteRAM_Prepare_2
 //  737   	SetCs
 //  738 	}
 //  739 	else
@@ -1341,10 +1336,10 @@ LCD_WriteRAM_Prepare:
 //  741   	LCD_WrtReg(0x002C);
 ??LCD_WriteRAM_Prepare_1:
         MOVS     R0,#+44
-          CFI FunCall LCD_WrtReg
-        B.N      LCD_WrtReg
-          CFI EndBlock cfiBlock14
 //  742 	}
+??LCD_WriteRAM_Prepare_2:
+        B.N      ?Subroutine2
+          CFI EndBlock cfiBlock16
 //  743 }                                //**
 //  744 
 //  745 /*******************************************************************************
@@ -1356,25 +1351,38 @@ LCD_WriteRAM_Prepare:
 //  751 *******************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Block cfiBlock17 Using cfiCommon0
           CFI Function LCD_WriteRAM
           CFI NoCalls
         THUMB
 //  752 void LCD_WriteRAM(u16 RGB_Code)					 
+LCD_WriteRAM:
+        Nop      
+          CFI EndBlock cfiBlock17
 //  753 {
 //  754   ClrCs
 //  755   /* Write 16-bit GRAM Reg */
 //  756   LCD->LCD_RAM = RGB_Code;
-LCD_WriteRAM:
-        LDR.N    R1,??DataTable20_6  ;; 0x60020000
+        REQUIRE ?Subroutine1
+        ;; // Fall through to label ?Subroutine1
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock18 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls LCD_WrtRAM
+          CFI NoCalls LCD_WriteRAM
+          CFI NoCalls ILI9488_WriteData
+        THUMB
+?Subroutine1:
+        LDR.N    R1,??DataTable16_7  ;; 0x60020000
         STRH     R0,[R1, #+0]
 //  757   SetCs
 //  758 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock15
+          CFI EndBlock cfiBlock18
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Block cfiBlock19 Using cfiCommon0
           CFI Function LCD_WrtRAM
           CFI NoCalls
         THUMB
@@ -1384,12 +1392,10 @@ LCD_WriteRAM:
 //  762   LCD_Ram=LCD_Ram;
 //  763   LCD->LCD_RAM = LCD_Ram;
 LCD_WrtRAM:
-        LDR.N    R1,??DataTable20_6  ;; 0x60020000
-        STRH     R0,[R1, #+0]
+        B.N      ?Subroutine1
+          CFI EndBlock cfiBlock19
 //  764   
 //  765 }
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock16
 //  766 
 //  767 
 //  768 
@@ -1402,7 +1408,7 @@ LCD_WrtRAM:
 //  775 *******************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock17 Using cfiCommon0
+          CFI Block cfiBlock20 Using cfiCommon0
           CFI Function LCD_ReadRAM
           CFI NoCalls
         THUMB
@@ -1423,13 +1429,13 @@ LCD_WrtRAM:
 //  790   u16 temp;	   //**
 //  791   temp = LCD->LCD_RAM;
 LCD_ReadRAM:
-        LDR.N    R0,??DataTable20_6  ;; 0x60020000
+        LDR.N    R0,??DataTable16_7  ;; 0x60020000
         LDRH     R1,[R0, #+0]
 //  792   temp = LCD->LCD_RAM;
         LDRH     R0,[R0, #+0]
 //  793   return temp;
         BX       LR               ;; return
-          CFI EndBlock cfiBlock17
+          CFI EndBlock cfiBlock20
 //  794 }
 //  795 
 //  796 /*******************************************************************************
@@ -1444,87 +1450,54 @@ LCD_ReadRAM:
 //  805 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock18 Using cfiCommon0
+          CFI Block cfiBlock21 Using cfiCommon0
           CFI Function LCD_SetCursor
+          CFI NoCalls
         THUMB
 //  806 void LCD_SetCursor(u16 Xpos, u16 Ypos)
 //  807 {
 LCD_SetCursor:
-        PUSH     {R3-R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
-        MOV      R5,R0
-        MOV      R6,R1
+        PUSH     {R4-R6}
+          CFI R6 Frame(CFA, -4)
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+12
 //  808 		if(DeviceCode == 0x9488)
-        LSRS     R4,R6,#+8
-        LSRS     R7,R5,#+8
-        LDR.N    R0,??DataTable20_8
-        LDRH     R0,[R0, #+0]
-        MOVW     R1,#+38024
-        CMP      R0,R1
+        LDR.N    R5,??DataTable16_8
+        LDR.N    R2,??DataTable16_6  ;; 0x6001fffe
+        LDRH     R5,[R5, #+0]
+        LSRS     R3,R1,#+8
+        LSRS     R4,R0,#+8
+        MOVW     R6,#+38024
+        CMP      R5,R6
         BNE.N    ??LCD_SetCursor_0
 //  809 		{
 //  810 				ILI9488_WriteCmd(0X002A); 
-        MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        MOVS     R5,#+42
+        STRH     R5,[R2, #+0]
 //  811 				ILI9488_WriteData(Xpos>>8); 
-        MOV      R0,R7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R4,[R2, #+2]
 //  812 				ILI9488_WriteData(Xpos&0X00FF); 
-        UXTB     R5,R5
-        MOV      R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        UXTB     R0,R0
+        STRH     R0,[R2, #+2]
 //  813 				ILI9488_WriteData(Xpos>>8); 
-        MOV      R0,R7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R4,[R2, #+2]
 //  814 				ILI9488_WriteData(Xpos&0X00FF);			
-        MOV      R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R2, #+2]
 //  815 				//ILI9488_WriteData(0X01); 
 //  816 				//ILI9488_WriteData(0XDF);			
 //  817 				ILI9488_WriteCmd(0X002B); 
         MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R2, #+0]
 //  818 				ILI9488_WriteData(Ypos>>8); 
-        MOV      R0,R4
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R3,[R2, #+2]
 //  819 				ILI9488_WriteData(Ypos&0X00FF);
-        UXTB     R5,R6
-        MOV      R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        UXTB     R0,R1
+        STRH     R0,[R2, #+2]
 //  820 				ILI9488_WriteData(Ypos>>8); 
-        MOV      R0,R4
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R3,[R2, #+2]
 //  821 				ILI9488_WriteData(Ypos&0X00FF);			
-        MOV      R0,R5
-        POP      {R1,R4-R7,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall ILI9488_WriteData
-        B.N      ILI9488_WriteData
-          CFI R4 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+24
+        B.N      ??LCD_SetCursor_1
 //  822 				//ILI9488_WriteData(0X01); 
 //  823 				//ILI9488_WriteData(0X3F);			
 //  824 		} 			
@@ -1532,40 +1505,37 @@ LCD_SetCursor:
 //  826 		{
 //  827   		LCD_WriteReg(0x06,Ypos>>8);
 ??LCD_SetCursor_0:
-        MOV      R1,R4
-        MOVS     R0,#+6
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R5,#+6
+        STRH     R5,[R2, #+0]
+        STRH     R3,[R2, #+2]
 //  828   		LCD_WriteReg(0x07,Ypos);
-        MOV      R1,R6
-        MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R3,#+7
+        STRH     R3,[R2, #+0]
+        STRH     R1,[R2, #+2]
 //  829   
 //  830   		LCD_WriteReg(0x02,Xpos>>8);
-        MOV      R1,R7
-        MOVS     R0,#+2
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+2
+        STRH     R1,[R2, #+0]
+        STRH     R4,[R2, #+2]
 //  831   		LCD_WriteReg(0x03,Xpos);  
-        MOV      R1,R5
-        MOVS     R0,#+3
-        POP      {R2,R4-R7,LR}
+        MOVS     R1,#+3
+        STRH     R1,[R2, #+0]
+??LCD_SetCursor_1:
+        STRH     R0,[R2, #+2]
+//  832 		}
+//  833 }			 
+        POP      {R4-R6}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall LCD_WriteReg
-        B.N      LCD_WriteReg
-          CFI EndBlock cfiBlock18
-//  832 		}
-//  833 }			 
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock21
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock19 Using cfiCommon0
+          CFI Block cfiBlock22 Using cfiCommon0
           CFI Function LCD_setWindowArea
+          CFI NoCalls
         THUMB
 //  834 void LCD_setWindowArea(uint16_t StartX, uint16_t StartY, uint16_t Width, uint16_t Height)
 //  835 {
@@ -1581,179 +1551,94 @@ LCD_setWindowArea:
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
           CFI CFA R13+48
-        MOV      R4,R0
-        MOV      R5,R2
+        ADDS     R3,R2,R0
+        SUBS     R7,R3,#+1
 //  836   volatile uint16_t s_h,s_l, e_h, e_l;
 //  837 	
 //  838   uint16_t xEnd, yEnd;
 //  839 	
 //  840 	xEnd = StartX + Width-1;
-        ADDS     R0,R5,R4
-        SUBS     R0,R0,#+1
-        UXTH     R0,R0
-        STR      R0,[SP, #+8]
 //  841 	yEnd = StartY + Height-1;   
-        ADDS     R2,R3,R1
-        SUBS     R6,R2,#+1
-        UXTH     R6,R6
-        MOV      R7,R6
+        LDRH     R3,[SP, #+8]
+        ADDS     R3,R3,R1
+        SUBS     R4,R3,#+1
 //  842 	if((DeviceCode==0x9325)||(DeviceCode==0x9328)||(DeviceCode==0x1505))
-        LDR.N    R2,??DataTable20_8
-        LDRH     R2,[R2, #+0]
-        MOVW     R12,#+37669
-        CMP      R2,R12
-        BEQ.N    ??LCD_setWindowArea_0
-        MOVW     R12,#+37672
-        CMP      R2,R12
-        BEQ.N    ??LCD_setWindowArea_0
-        MOVW     R12,#+5381
-        CMP      R2,R12
-        BNE.N    ??LCD_setWindowArea_1
+        LDR.N    R3,??DataTable16_8
+        LDRH     R12,[R3, #+0]
+        MOVW     R3,#+37669
+        MOV      R10,R4
+        CMP      R12,R3
+        ITTTT    NE 
+        MOVWNE   R3,#+37672
+        CMPNE    R12,R3
+        MOVWNE   R3,#+5381
+        CMPNE    R12,R3
+        BNE.N    ??LCD_setWindowArea_0
 //  843    {
 //  844             LCD_WriteReg(0x0050,StartY);        //Specify the start/end positions of the window address in the horizontal direction by an address unit
-??LCD_setWindowArea_0:
-        MOVS     R0,#+80
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        LDR.N    R3,??DataTable16_6  ;; 0x6001fffe
+        MOVS     R5,#+80
+        STRH     R5,[R3, #+0]
+        STRH     R1,[R3, #+2]
 //  845             LCD_WriteReg(0x0051,StartY + Height -1);        //Specify the start positions of the window address in the vertical direction by an address unit 
-        MOV      R1,R6
-        MOVS     R0,#+81
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+81
+        STRH     R1,[R3, #+0]
+        STRH     R4,[R3, #+2]
 //  846             LCD_WriteReg(0x0052,320 - StartX - Width); 
-        RSB      R0,R4,#+320
-        SUBS     R1,R0,R5
-        UXTH     R1,R1
-        MOVS     R0,#+82
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+82
+        STRH     R1,[R3, #+0]
+        RSB      R1,R0,#+320
+        SUBS     R1,R1,R2
+        STRH     R1,[R3, #+2]
 //  847             LCD_WriteReg(0x0053,320 - StartX - 1 );        //Specify the end positions of the window address in the vertical direction by an address unit
-        MOVW     R0,#+319
-        SUBS     R1,R0,R4
-        UXTH     R1,R1
-        MOVS     R0,#+83
-        ADD      SP,SP,#+12
-          CFI CFA R13+36
-        POP      {R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WriteReg
-        B.N      LCD_WriteReg
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+48
+        MOVS     R1,#+83
+        STRH     R1,[R3, #+0]
+        MOVW     R1,#+319
+        SUBS     R0,R1,R0
+        B.N      ??LCD_setWindowArea_1
 //  848 	 }    
 //  849     else  if(DeviceCode==0x5761)    //** 
-??LCD_setWindowArea_1:
-        UXTB     R8,R1
+??LCD_setWindowArea_0:
+        MOVW     R11,#+22369
+        UXTB     R4,R10
+        UXTB     R5,R7
+        UXTB     R6,R1
         LSR      R9,R1,#+8
-        UXTB     R10,R4
-        LSR      R11,R4,#+8
-        MOVW     R12,#+22369
-        CMP      R2,R12
+        UXTB     LR,R0
+        LSR      R8,R0,#+8
+        LDR.N    R3,??DataTable16_6  ;; 0x6001fffe
+        CMP      R12,R11
         BNE.N    ??LCD_setWindowArea_2
 //  850     {
 //  851           LCD_WrtReg(0X2A);
         MOVS     R0,#+42
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R3, #+0]
 //  852           LCD_WrtRAM(StartX>>8);
-        MOV      R0,R11
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R8,[R3, #+2]
+        LSLS     R1,R7,#+16
 //  853           LCD_WrtRAM(StartX&0XFF);
-        MOV      R0,R10
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     LR,[R3, #+2]
 //  854           LCD_WrtRAM(xEnd>>8);
-        LDR      R0,[SP, #+8]
-        UXTH     R0,R0
-        LSRS     R0,R0,#+8
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R0,R1,#+24
+        STRH     R0,[R3, #+2]
 //  855           LCD_WrtRAM(xEnd&0XFF);
-        LDR      R0,[SP, #+8]
-        UXTB     R0,R0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R5,[R3, #+2]
 //  856 		
 //  857           LCD_WrtReg(0X2B);	
         MOVS     R0,#+43
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R3, #+0]
 //  858           LCD_WrtRAM(StartY>>8);	
-        MOV      R0,R9
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R9,[R3, #+2]
+        LSL      R1,R10,#+16
 //  859           LCD_WrtRAM(StartY&0XFF);
-        MOV      R0,R8
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R6,[R3, #+2]
 //  860           LCD_WrtRAM(yEnd>>8);	
-        MOV      R0,R7
-        LSRS     R0,R0,#+8
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R0,R1,#+24
+        STRH     R0,[R3, #+2]
 //  861           LCD_WrtRAM(yEnd&0XFF);                   
-        UXTB     R0,R7
-        POP      {R1-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WrtRAM
-        B.N      LCD_WrtRAM
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+48
+        STRH     R4,[R3, #+2]
 //  862     }
 //  863 		else if(DeviceCode == 0X9488)
-??LCD_setWindowArea_2:
-        ADDS     R1,R3,R1
-        SUBS     R1,R1,#+1
-        ASRS     R1,R1,#+8
-        UXTB     R7,R1
-        ADDS     R1,R5,R4
-        SUBS     R1,R1,#+1
-        ASRS     R1,R1,#+8
-        UXTB     R1,R1
-        UXTB     R4,R6
-        UXTB     R0,R0
-        MOVW     R3,#+38024
-        CMP      R2,R3
-        STRH     R11,[SP, #+6]
-        STRH     R10,[SP, #+4]
-        STRH     R1,[SP, #+2]
-        STRH     R0,[SP, #+0]
-        BNE.N    ??LCD_setWindowArea_3
 //  864 		{
 //  865 			s_h = (StartX >> 8) & 0X00ff;
 //  866 			s_l = StartX & 0X00ff;
@@ -1761,76 +1646,21 @@ LCD_setWindowArea:
 //  868 			e_l = (StartX + Width - 1) & 0X00ff;
 //  869 			
 //  870 			ILI9488_WriteCmd(0x002A);
-        MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
 //  871 			ILI9488_WriteData(s_h);
-        LDRH     R0,[SP, #+6]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  872 			ILI9488_WriteData(s_l);
-        LDRH     R0,[SP, #+4]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  873 			ILI9488_WriteData(e_h);
-        LDRH     R0,[SP, #+2]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  874 			ILI9488_WriteData(e_l);
-        LDRH     R0,[SP, #+0]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  875 		
 //  876 			s_h = (StartY >> 8) & 0X00ff;
-        STRH     R9,[SP, #+6]
 //  877 			s_l = StartY & 0X00ff;
-        STRH     R8,[SP, #+4]
 //  878 			e_h = ((StartY + Height - 1) >> 8) & 0X00ff;
-        STRH     R7,[SP, #+2]
 //  879 			e_l = (StartY + Height - 1) & 0X00ff;
-        STRH     R4,[SP, #+0]
 //  880 			
 //  881 			ILI9488_WriteCmd(0x002B);
-        MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
 //  882 			ILI9488_WriteData(s_h);
-        LDRH     R0,[SP, #+6]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  883 			ILI9488_WriteData(s_l);
-        LDRH     R0,[SP, #+4]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  884 			ILI9488_WriteData(e_h);
-        LDRH     R0,[SP, #+2]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  885 			ILI9488_WriteData(e_l); 	
-        LDRH     R0,[SP, #+0]
-        POP      {R1-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall ILI9488_WriteData
-        B.N      ILI9488_WriteData
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+48
 //  886 		}  
 //  887 		else
 //  888 		{
@@ -1840,76 +1670,93 @@ LCD_setWindowArea:
 //  892 		 e_l = (StartX + Width - 1) & 0Xff;
 //  893 		 
 //  894 		 ILI9488_WriteCmd(0x2A);
-??LCD_setWindowArea_3:
-        MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
 //  895 		 ILI9488_WriteData(s_h);
-        LDRH     R0,[SP, #+6]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  896 		 ILI9488_WriteData(s_l);
-        LDRH     R0,[SP, #+4]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  897 		 ILI9488_WriteData(e_h);
-        LDRH     R0,[SP, #+2]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  898 		 ILI9488_WriteData(e_l);
-        LDRH     R0,[SP, #+0]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  899 		
 //  900 		 s_h = (StartY >> 8) & 0Xff;
-        STRH     R9,[SP, #+6]
 //  901 		 s_l = StartY & 0Xff;
-        STRH     R8,[SP, #+4]
 //  902 		 e_h = ((StartY + Height - 1) >> 8) & 0Xff;
-        STRH     R7,[SP, #+2]
 //  903 		 e_l = (StartY + Height - 1) & 0Xff;
-        STRH     R4,[SP, #+0]
 //  904 		 
 //  905 		 ILI9488_WriteCmd(0x2B);
-        MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
 //  906 		 ILI9488_WriteData(s_h);
-        LDRH     R0,[SP, #+6]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  907 		 ILI9488_WriteData(s_l);
-        LDRH     R0,[SP, #+4]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  908 		 ILI9488_WriteData(e_h);
-        LDRH     R0,[SP, #+2]
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 //  909 		 ILI9488_WriteData(e_l);	 
-        LDRH     R0,[SP, #+0]
-        POP      {R1-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall ILI9488_WriteData
-        B.N      ILI9488_WriteData
-          CFI EndBlock cfiBlock19
 //  910 		}
 //  911 
 //  912 
 //  913 }	
+        B.N      ?Subroutine3
+??LCD_setWindowArea_2:
+        LDRH     R7,[SP, #+8]
+        STRH     R8,[SP, #+6]
+        ADDS     R0,R2,R0
+        SUBS     R0,R0,#+1
+        LSLS     R0,R0,#+16
+        LSRS     R0,R0,#+24
+        STRH     LR,[SP, #+4]
+        STRH     R0,[SP, #+2]
+        STRH     R5,[SP, #+0]
+        MOVS     R0,#+42
+        STRH     R0,[R3, #+0]
+        ADDS     R1,R7,R1
+        LDRH     R0,[SP, #+6]
+        STRH     R0,[R3, #+2]
+        SUBS     R1,R1,#+1
+        LDRH     R0,[SP, #+4]
+        STRH     R0,[R3, #+2]
+        LSLS     R1,R1,#+16
+        LDRH     R0,[SP, #+2]
+        STRH     R0,[R3, #+2]
+        LSRS     R1,R1,#+24
+        LDRH     R0,[SP, #+0]
+        STRH     R0,[R3, #+2]
+        STRH     R9,[SP, #+6]
+        STRH     R6,[SP, #+4]
+        STRH     R1,[SP, #+2]
+        STRH     R4,[SP, #+0]
+        MOVS     R0,#+43
+        STRH     R0,[R3, #+0]
+        LDRH     R0,[SP, #+6]
+        STRH     R0,[R3, #+2]
+        LDRH     R0,[SP, #+4]
+        STRH     R0,[R3, #+2]
+        LDRH     R0,[SP, #+2]
+        STRH     R0,[R3, #+2]
+        LDRH     R0,[SP, #+0]
+??LCD_setWindowArea_1:
+        STRH     R0,[R3, #+2]
+          CFI EndBlock cfiBlock22
+        REQUIRE ?Subroutine3
+        ;; // Fall through to label ?Subroutine3
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock23 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls LCD_setWindowArea
+          CFI CFA R13+48
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine3:
+        ADD      SP,SP,#+12
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock23
 //  914 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock20 Using cfiCommon0
+          CFI Block cfiBlock24 Using cfiCommon0
           CFI Function Delay_nms
           CFI NoCalls
         THUMB
@@ -1917,59 +1764,33 @@ LCD_setWindowArea:
 //  916 {
 //  917   
 //  918   u32 f=n,k;
-Delay_nms:
-        CMP      R0,#+0
-        B.N      ??Delay_nms_0
 //  919   for (; f!=0; f--)
 //  920   {
 //  921     for(k=0xFFF; k!=0; k--);
-??Delay_nms_1:
-        SUBS     R1,R1,#+1
-??Delay_nms_2:
-        BNE.N    ??Delay_nms_1
-        SUBS     R0,R0,#+1
-??Delay_nms_0:
-        BEQ.N    ??Delay_nms_3
-        MOVW     R1,#+4095
-        CMP      R1,#+0
-        B.N      ??Delay_nms_2
 //  922   }
 //  923   
 //  924 }
-??Delay_nms_3:
+Delay_nms:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock20
+          CFI EndBlock cfiBlock24
 //  925 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock21 Using cfiCommon0
+          CFI Block cfiBlock25 Using cfiCommon0
           CFI Function Delay
           CFI NoCalls
         THUMB
 //  926 void Delay(u32 nCount)
 //  927 {
-Delay:
-        MOVW     R2,#+10000
 //  928  u32 TimingDelay; 
 //  929  while(nCount--)
-??Delay_0:
-        MOV      R1,R0
-        SUBS     R0,R1,#+1
-        CMP      R1,#+0
-        BEQ.N    ??Delay_1
 //  930    {
 //  931     for(TimingDelay=0;TimingDelay<10000;TimingDelay++);
-        MOVS     R1,#+0
-??Delay_2:
-        CMP      R1,R2
-        BCS.N    ??Delay_0
-        ADDS     R1,R1,#+1
-        B.N      ??Delay_2
 //  932    }
 //  933 }
-??Delay_1:
+Delay:
         BX       LR               ;; return
-          CFI EndBlock cfiBlock21
+          CFI EndBlock cfiBlock25
 //  934 
 //  935 /**
 //  936   * @brief  Draws a chinacharacter on LCD.
@@ -1980,107 +1801,113 @@ Delay:
 //  941   */
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock22 Using cfiCommon0
+          CFI Block cfiBlock26 Using cfiCommon0
           CFI Function LCD_DrawChinaChar
         THUMB
 //  942 void LCD_DrawChinaChar(u8 Xpos, u16 Ypos, const u8 *c)
 //  943 {
 LCD_DrawChinaChar:
-        PUSH     {R3-R9,LR}
+        PUSH     {R3-R11,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R9 Frame(CFA, -8)
-          CFI R8 Frame(CFA, -12)
-          CFI R7 Frame(CFA, -16)
-          CFI R6 Frame(CFA, -20)
-          CFI R5 Frame(CFA, -24)
-          CFI R4 Frame(CFA, -28)
-          CFI CFA R13+32
-        MOV      R9,R0
-        MOV      R4,R1
-        MOV      R5,R2
+          CFI R11 Frame(CFA, -8)
+          CFI R10 Frame(CFA, -12)
+          CFI R9 Frame(CFA, -16)
+          CFI R8 Frame(CFA, -20)
+          CFI R7 Frame(CFA, -24)
+          CFI R6 Frame(CFA, -28)
+          CFI R5 Frame(CFA, -32)
+          CFI R4 Frame(CFA, -36)
+          CFI CFA R13+40
+        MOV      R11,R1
 //  944   u32 index = 0, i = 0, j = 0;
-        MOVS     R6,#+0
 //  945   u8 Xaddress = 0;
 //  946    
 //  947   Xaddress = Xpos;
+        MOV      R4,R0
+        MOV      R7,R2
 //  948   
 //  949   //ili9320_SetCursor(Xaddress, Ypos);
 //  950   ili9320_SetCursor(Ypos,Xaddress);
-        MOV      R1,R9
-        MOV      R0,R4
+        MOV      R1,R4
+        MOV      R0,R11
           CFI FunCall ili9320_SetCursor
         BL       ili9320_SetCursor
 //  951 
 //  952   for(index = 0; index < 24; index++)
-        B.N      ??LCD_DrawChinaChar_0
+        MOVS     R5,#+24
+        MOVW     R9,#+65504
+        MOV      R10,#+63488
+        MOV      R8,#+128
+        LDR.N    R6,??DataTable16_6  ;; 0x6001fffe
 //  953   {
 //  954     LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
+??LCD_DrawChinaChar_0:
+        LDR.N    R0,??DataTable16_8
+        LDRH     R0,[R0, #+0]
+        MOVW     R1,#+37669
+        CMP      R0,R1
+        ITT      NE 
+        MOVWNE   R1,#+37672
+        CMPNE    R0,R1
+        BEQ.N    ??LCD_DrawChinaChar_1
+        MOVW     R1,#+35209
+        CMP      R0,R1
+        ITTT     NE 
+        MOVWNE   R1,#+5381
+        CMPNE    R0,R1
+        MOVNE    R0,#+44
+        BNE.N    ??LCD_DrawChinaChar_2
+??LCD_DrawChinaChar_1:
+        MOVS     R0,#+34
+??LCD_DrawChinaChar_2:
+        STRH     R0,[R6, #+0]
 //  955     for(j = 0; j < 3; j++)
+        MOVS     R1,#+3
 //  956     {
 //  957         for(i = 0; i < 8; i++)
+??LCD_DrawChinaChar_3:
+        MOVS     R2,#+0
 //  958         {
 //  959           if((c[3*index + j] & (0x80 >> i)) == 0x00)
+??LCD_DrawChinaChar_4:
+        LDRB     R0,[R7, #+0]
+        LSR      R3,R8,R2
+        TST      R0,R3
+        ITE      EQ 
 //  960           {
 //  961               LCD_WriteRAM(0xF800);
+        STRHEQ   R10,[R6, #+2]
 //  962           }
 //  963           else
 //  964           {
 //  965             LCD_WriteRAM(0xFFE0);
+        STRHNE   R9,[R6, #+2]
+        ADDS     R2,R2,#+1
+        CMP      R2,#+8
+        BCC.N    ??LCD_DrawChinaChar_4
+        ADDS     R7,R7,#+1
+        SUBS     R1,R1,#+1
+        BNE.N    ??LCD_DrawChinaChar_3
 //  966           }
 //  967         }   
 //  968      }
 //  969     Xaddress++;
-??LCD_DrawChinaChar_1:
-        ADD      R9,R9,#+1
+        ADDS     R4,R4,#+1
 //  970     ili9320_SetCursor(Ypos, Xaddress);
-        UXTB     R9,R9
-        MOV      R1,R9
-        MOV      R0,R4
+        UXTB     R4,R4
+        MOV      R1,R4
+        MOV      R0,R11
           CFI FunCall ili9320_SetCursor
         BL       ili9320_SetCursor
-        ADDS     R6,R6,#+1
-??LCD_DrawChinaChar_0:
-        CMP      R6,#+24
-        BCS.N    ??LCD_DrawChinaChar_2
-          CFI FunCall LCD_WriteRAM_Prepare
-        BL       LCD_WriteRAM_Prepare
-        MOVS     R7,#+0
-        B.N      ??LCD_DrawChinaChar_3
-??LCD_DrawChinaChar_4:
-        ADDS     R7,R7,#+1
-??LCD_DrawChinaChar_3:
-        CMP      R7,#+3
-        BCS.N    ??LCD_DrawChinaChar_1
-        MOV      R8,#+0
-        B.N      ??LCD_DrawChinaChar_5
-??LCD_DrawChinaChar_6:
-        MOVW     R0,#+65504
-          CFI FunCall LCD_WriteRAM
-        BL       LCD_WriteRAM
-??LCD_DrawChinaChar_7:
-        ADD      R8,R8,#+1
-??LCD_DrawChinaChar_5:
-        CMP      R8,#+8
-        BCS.N    ??LCD_DrawChinaChar_4
-        ADD      R0,R6,R6, LSL #+1
-        ADDS     R0,R7,R0
-        LDRB     R0,[R0, R5]
-        MOVS     R1,#+128
-        ASR      R1,R1,R8
-        TST      R0,R1
-        BNE.N    ??LCD_DrawChinaChar_6
-        MOV      R0,#+63488
-          CFI FunCall LCD_WriteRAM
-        BL       LCD_WriteRAM
-        B.N      ??LCD_DrawChinaChar_7
 //  971   }
+        SUBS     R5,R5,#+1
+        BNE.N    ??LCD_DrawChinaChar_0
 //  972 }
-??LCD_DrawChinaChar_2:
-        POP      {R0,R4-R9,PC}    ;; return
-          CFI EndBlock cfiBlock22
+        POP      {R0,R4-R11,PC}   ;; return
+          CFI EndBlock cfiBlock26
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock23 Using cfiCommon0
+          CFI Block cfiBlock27 Using cfiCommon0
           CFI Function LCD_RD_DATA
           CFI NoCalls
         THUMB
@@ -2089,134 +1916,118 @@ LCD_DrawChinaChar:
 //  975 	u16 ram;			//防止被优化
 //  976 	ram=LCD->LCD_RAM;	
 LCD_RD_DATA:
-        LDR.N    R0,??DataTable20_6  ;; 0x60020000
-        LDRH     R0,[R0, #+0]
+        B.N      ?Subroutine0
+          CFI EndBlock cfiBlock27
 //  977 	return ram;	 
-        BX       LR               ;; return
-          CFI EndBlock cfiBlock23
 //  978 }
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20:
-        DC32     0x40021014
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_1:
-        DC32     0x40021018
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_2:
-        DC32     0x40011400
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_3:
-        DC32     0x40011800
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_4:
-        DC32     0x40011000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_5:
-        DC32     0x61a80
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_6:
-        DC32     0x60020000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_7:
-        DC32     0x6001fffe
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable20_8:
-        DC32     DeviceCode
 //  979 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock24 Using cfiCommon0
+          CFI Block cfiBlock28 Using cfiCommon0
           CFI Function Read_ID
+          CFI NoCalls
         THUMB
 //  980 u16 Read_ID(void)      //**读取SSD1963ID    
 //  981 {
-Read_ID:
-        PUSH     {R4,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R4 Frame(CFA, -8)
-          CFI CFA R13+8
 //  982     u16 Lcd_ID;
 //  983     LCD_WrtReg(0XA1); 
-        MOVS     R0,#+161
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+Read_ID:
+        LDR.N    R0,??DataTable16_6  ;; 0x6001fffe
+        MOVS     R1,#+161
+        STRH     R1,[R0, #+0]
 //  984     Lcd_ID=LCD_RD_DATA(); 
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
+        LDRH     R1,[R0, #+2]
 //  985     Lcd_ID=LCD_RD_DATA();  //读回0X57 
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
-        MOV      R4,R0
+        LDRH     R1,[R0, #+2]
 //  986     Lcd_ID<<=8;     
 //  987     Lcd_ID|=LCD_RD_DATA();  //读回0X61
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
-        ORR      R0,R0,R4, LSL #+8
+        LDRH     R0,[R0, #+2]
 //  988     return Lcd_ID;
+        ORR      R0,R0,R1, LSL #+8
         UXTH     R0,R0
-        POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock24
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock28
 //  989 }
 //  990 
 //  991 //获得当前的时钟频率
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock25 Using cfiCommon0
+          CFI Block cfiBlock29 Using cfiCommon0
           CFI Function get_lshift_freq
+          CFI NoCalls
         THUMB
 //  992 u16 get_lshift_freq(void)
 //  993 {	
-get_lshift_freq:
-        PUSH     {R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
 //  994 	u16 data;
 //  995 	LCD_WrtReg(0xE7);
-        MOVS     R0,#+231
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+get_lshift_freq:
+        LDR.N    R0,??DataTable16_6  ;; 0x6001fffe
+        MOVS     R1,#+231
+        STRH     R1,[R0, #+0]
 //  996 	data=LCD_RD_DATA();
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
+        LDRH     R1,[R0, #+2]
 //  997 	data=LCD_RD_DATA();
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
+        LDRH     R1,[R0, #+2]
 //  998 	data=LCD_RD_DATA();
+        LDRH     R0,[R0, #+2]
 //  999 	return data;
-        POP      {R0,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_RD_DATA
-        B.N      LCD_RD_DATA
-          CFI EndBlock cfiBlock25
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock29
 // 1000 }
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16:
+        DC32     0x40021014
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_1:
+        DC32     0x40021018
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_2:
+        DC32     0x40011400
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_3:
+        DC32     0x40011800
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_4:
+        DC32     0x40011000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_5:
+        DC32     0x61a80
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_6:
+        DC32     0x6001fffe
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_7:
+        DC32     0x60020000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable16_8:
+        DC32     DeviceCode
 // 1001 
 // 1002 /****************************************************************************
 // 1003 * 名    称：void LCD_Initializtion()
@@ -2228,23 +2039,30 @@ get_lshift_freq:
 // 1009 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(2)
-          CFI Block cfiBlock26 Using cfiCommon0
+          CFI Block cfiBlock30 Using cfiCommon0
           CFI Function LCD_Initializtion
         THUMB
 // 1010 void LCD_Initializtion(void)
 // 1011 {
 LCD_Initializtion:
-        PUSH     {R2-R6,LR}
+        PUSH     {R4-R9,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+24
+          CFI R9 Frame(CFA, -8)
+          CFI R8 Frame(CFA, -12)
+          CFI R7 Frame(CFA, -16)
+          CFI R6 Frame(CFA, -20)
+          CFI R5 Frame(CFA, -24)
+          CFI R4 Frame(CFA, -28)
+          CFI CFA R13+28
+        SUB      SP,SP,#+12
+          CFI CFA R13+40
 // 1012    volatile u16 i;
 // 1013    volatile u16 data1,data2,data3;
 // 1014    LCD_X_Init();  //初始化连接LCD彩色液晶屏上的管脚，比如这里连接的是FSMC总线
-          CFI FunCall LCD_X_Init
-        BL       LCD_X_Init
+          CFI FunCall LCD_CtrlLinesConfig
+        BL       LCD_CtrlLinesConfig
+          CFI FunCall LCD_FSMCConfig
+        BL       LCD_FSMCConfig
 // 1015 
 // 1016 
 // 1017 	 Lcd_SET();
@@ -2273,94 +2091,84 @@ LCD_Initializtion:
           CFI FunCall HAL_Delay
         BL       HAL_Delay
 // 1026 	   LCD_WriteReg(0x0000,0x0001);  
-        MOVS     R1,#+1
+        LDR.N    R4,??LCD_Initializtion_0+0x4  ;; 0x6001fffe
         MOVS     R0,#+0
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1027 	   HAL_Delay(200);//Delay(5); /* delay 50 ms */			//start internal osc
         MOVS     R0,#+200
           CFI FunCall HAL_Delay
         BL       HAL_Delay
 // 1028 	   DeviceCode = LCD_ReadReg(0x0000);
-        LDR.N    R4,??LCD_Initializtion_0+0x4
-        MOVS     R0,#+0
-          CFI FunCall LCD_ReadReg
-        BL       LCD_ReadReg
-        STRH     R0,[R4, #+0]
+        LDRH     R0,[R4, #+2]
+        LDR.N    R5,??LCD_Initializtion_0+0x8
+        STRH     R0,[R5, #+0]
 // 1029 	   HAL_Delay(200);//Delay(5); /* delay 50 ms */
         MOVS     R0,#+200
           CFI FunCall HAL_Delay
         BL       HAL_Delay
+        LDRH     R0,[R5, #+0]
+        CMP      R0,#+255
+        BLT.N    ??LCD_Initializtion_1
+        MOVW     R1,#+65535
+        CMP      R0,R1
+        BNE.N    ??LCD_Initializtion_2
 // 1030    	 //DeviceCode=Read_ID();                                        //**读SSD1963ID
 // 1031 		 
 // 1032    }
 // 1033    //if(DeviceCode!=0x5761)DeviceCode = LCD_ReadReg(0x0000);  
 // 1034 
 // 1035 	 if(DeviceCode<0XFF||DeviceCode==0XFFFF||DeviceCode==0)//读到ID不正确,新增lcddev.id==0X9300判断，因为9341在未被复位的情况下会被读成9300
-        LDRH     R0,[R4, #+0]
-        MOV      R1,R0
-        CMP      R1,#+255
-        BLT.N    ??LCD_Initializtion_1
-        MOVW     R2,#+65535
-        CMP      R1,R2
-        BEQ.N    ??LCD_Initializtion_1
-        CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_2
 // 1036 	 {
 // 1037 			LCD_WriteCommand(0XD3);				   
 ??LCD_Initializtion_1:
         MOVS     R0,#+211
-          CFI FunCall LCD_WriteCommand
-        BL       LCD_WriteCommand
+        STRH     R0,[R4, #+0]
 // 1038 			DeviceCode=ILI9488_ReadRAM();	//dummy read 	
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
-        STRH     R0,[R4, #+0]
+        LDRH     R0,[R4, #+2]
+        STRH     R0,[R5, #+0]
 // 1039  			DeviceCode=ILI9488_ReadRAM();	//读到0X00
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
-        STRH     R0,[R4, #+0]
+        LDRH     R0,[R4, #+2]
+        STRH     R0,[R5, #+0]
 // 1040   		DeviceCode=ILI9488_ReadRAM();   	//读取93								   
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
-        STRH     R0,[R4, #+0]
+        LDRH     R0,[R4, #+2]
 // 1041  			DeviceCode<<=8;
-        LSLS     R5,R0,#+8
-        STRH     R5,[R4, #+0]
+        LSLS     R0,R0,#+8
+        STRH     R0,[R5, #+0]
 // 1042 			DeviceCode|=ILI9488_ReadRAM();  	//读取41 		 		
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
-        ORRS     R0,R0,R5
-        STRH     R0,[R4, #+0]
+        LDRH     R1,[R4, #+2]
+// 1043 	 }	
+        ORRS     R0,R1,R0
+        STRH     R0,[R5, #+0]
 ??LCD_Initializtion_2:
-        LDRH     R0,[R4, #+0]
-        MOVW     R5,#+37664
-        CMP      R0,R5
-        BEQ.N    ??LCD_Initializtion_3
-        CMP      R0,#+37632
+        MOVW     R0,#+37664
+        LDRH     R7,[R5, #+0]
+        CMP      R7,R0
+        IT       NE 
+        CMPNE    R7,#+37632
         BEQ.N    ??LCD_Initializtion_3
         MOVW     R1,#+37681
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_3
-        MOVW     R1,#+35209
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_3
-        MOVW     R1,#+37669
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_3
-        MOVW     R1,#+37672
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_3
-        MOVW     R1,#+37697
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_3
-        MOVW     R1,#+5381
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_3
-        MOVW     R1,#+38024
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_3
-// 1043 	 }	
+        CMP      R7,R1
+        BEQ.W    ??LCD_Initializtion_4
+        MOVW     R2,#+35209
+        CMP      R7,R2
+        BEQ.W    ??LCD_Initializtion_5
+        MOVW     R3,#+37669
+        CMP      R7,R3
+        ITT      NE 
+        MOVWNE   R6,#+37672
+        CMPNE    R7,R6
+        BEQ.W    ??LCD_Initializtion_6
+        MOVW     R8,#+37697
+        CMP      R7,R8
+        BEQ.W    ??LCD_Initializtion_7
+        MOVW     R12,#+5381
+        CMP      R7,R12
+        BEQ.W    ??LCD_Initializtion_8
+        MOVW     LR,#+38024
+        CMP      R7,LR
+        BEQ.W    ??LCD_Initializtion_9
 // 1044 	 
 // 1045 	 if((DeviceCode != 0x9320)&&(DeviceCode != 0x9300)
 // 1046 	 	&&(DeviceCode != 0x9331)&&(DeviceCode != 0x8989)
@@ -2369,1280 +2177,1262 @@ LCD_Initializtion:
 // 1049 	 	&&(DeviceCode != 0x9488))
 // 1050 	 {
 // 1051 	 			LCD_WriteCommand(0X04);						//读取0x8552			   
-        MOVS     R0,#+4
-          CFI FunCall LCD_WriteCommand
-        BL       LCD_WriteCommand
+        MOVS     R7,#+4
+        STRH     R7,[R4, #+0]
 // 1052 				ILI9488_ReadRAM(); 							//dummy read 	
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
+        LDRH     R7,[R4, #+2]
 // 1053 		 		ILI9488_ReadRAM();   	    			//读到0X00
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
+        LDRH     R7,[R4, #+2]
 // 1054 		  	DeviceCode=ILI9488_ReadRAM();   	
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
-        STRH     R0,[R4, #+0]
+        LDRH     R7,[R4, #+2]
 // 1055 		 		DeviceCode<<=8;
-        LSLS     R6,R0,#+8
-        STRH     R6,[R4, #+0]
+        LSLS     R7,R7,#+8
+        STRH     R7,[R5, #+0]
 // 1056 				DeviceCode|=ILI9488_ReadRAM(); 
-          CFI FunCall ILI9488_ReadRAM
-        BL       ILI9488_ReadRAM
-        ORRS     R0,R0,R6
-        STRH     R0,[R4, #+0]
-??LCD_Initializtion_3:
-        LDRH     R0,[R4, #+0]
-        CMP      R0,R5
-        BEQ.N    ??LCD_Initializtion_4
-        CMP      R0,#+37632
-        BNE.W    ??LCD_Initializtion_5
+        LDRH     R9,[R4, #+2]
 // 1057 	 }
+        ORR      R7,R9,R7
+        STRH     R7,[R5, #+0]
 // 1058 
 // 1059    if(DeviceCode==0x9320||DeviceCode==0x9300)
+        UXTH     R7,R7
+        CMP      R7,R0
+        IT       NE 
+        CMPNE    R7,#+37632
+        BNE.W    ??LCD_Initializtion_10
 // 1060    {
 // 1061 		LCD_WriteReg(0x00,0x0000);
-??LCD_Initializtion_4:
-        MOVS     R1,#+0
-        MOV      R0,R1
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+??LCD_Initializtion_3:
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1062 		LCD_WriteReg(0x01,0x0100);	//Driver Output Contral.
-        MOV      R1,#+256
         MOVS     R0,#+1
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+256
+        STRH     R0,[R4, #+2]
 // 1063 		LCD_WriteReg(0x02,0x0700);	//LCD Driver Waveform Contral.
-        MOV      R1,#+1792
         MOVS     R0,#+2
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+1792
+        STRH     R0,[R4, #+2]
 // 1064 		LCD_WriteReg(0x03,0x1018);	//Entry Mode Set.
-        MOVW     R1,#+4120
         MOVS     R0,#+3
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+4120
+        STRH     R0,[R4, #+2]
 // 1065 	
 // 1066 		LCD_WriteReg(0x04,0x0000);	//Scalling Contral.
-        MOVS     R1,#+0
         MOVS     R0,#+4
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1067 		LCD_WriteReg(0x08,0x0202);	//Display Contral 2.(0x0207)
-        MOVW     R1,#+514
         MOVS     R0,#+8
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+514
+        STRH     R0,[R4, #+2]
 // 1068 		LCD_WriteReg(0x09,0x0000);	//Display Contral 3.(0x0000)
-        MOVS     R1,#+0
         MOVS     R0,#+9
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1069 		LCD_WriteReg(0x0a,0x0000);	//Frame Cycle Contal.(0x0000)
-        MOVS     R1,#+0
         MOVS     R0,#+10
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1070 		LCD_WriteReg(0x0c,(1<<0));	//Extern Display Interface Contral 1.(0x0000)
-        MOVS     R1,#+1
         MOVS     R0,#+12
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1071 		LCD_WriteReg(0x0d,0x0000);	//Frame Maker Position.
-        MOVS     R1,#+0
         MOVS     R0,#+13
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1072 		LCD_WriteReg(0x0f,0x0000);	//Extern Display Interface Contral 2.
-        MOVS     R1,#+0
         MOVS     R0,#+15
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1073 	
 // 1074 		for(i=50000;i>0;i--);
-        MOVW     R5,#+50000
-        STRH     R5,[SP, #+0]
-        B.N      ??LCD_Initializtion_6
+        MOVW     R0,#+50000
+        STRH     R0,[SP, #+0]
+        B.N      ??LCD_Initializtion_11
+        Nop      
         DATA
 ??LCD_Initializtion_0:
         DC32     0x42220198
+        DC32     0x6001fffe
         DC32     DeviceCode
         THUMB
-??LCD_Initializtion_7:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
-??LCD_Initializtion_6:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_7
-// 1075 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
-        B.N      ??LCD_Initializtion_8
-??LCD_Initializtion_9:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
-??LCD_Initializtion_8:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_9
-// 1076 		LCD_WriteReg(0x07,0x0101);	//Display Contral.
-        MOVW     R1,#+257
-        MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1077 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
-        B.N      ??LCD_Initializtion_10
-??LCD_Initializtion_11:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
-??LCD_Initializtion_10:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_11
-// 1078 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
-        B.N      ??LCD_Initializtion_12
-??LCD_Initializtion_13:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
 ??LCD_Initializtion_12:
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
+??LCD_Initializtion_11:
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
+        BNE.N    ??LCD_Initializtion_12
+// 1075 		for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
+        B.N      ??LCD_Initializtion_13
+??LCD_Initializtion_14:
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
+??LCD_Initializtion_13:
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
+        BNE.N    ??LCD_Initializtion_14
+// 1076 		LCD_WriteReg(0x07,0x0101);	//Display Contral.
+        MOVS     R1,#+7
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+257
+        STRH     R1,[R4, #+2]
+// 1077 		for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
+        B.N      ??LCD_Initializtion_15
+??LCD_Initializtion_16:
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
+??LCD_Initializtion_15:
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
+        BNE.N    ??LCD_Initializtion_16
+// 1078 		for(i=50000;i>0;i--);
+        B.N      ??LCD_Initializtion_17
+??LCD_Initializtion_18:
+        LDRH     R0,[SP, #+0]
+        SUBS     R0,R0,#+1
+??LCD_Initializtion_17:
+        STRH     R0,[SP, #+0]
         LDRH     R0,[SP, #+0]
         CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_13
+        BNE.N    ??LCD_Initializtion_18
 // 1079 	
 // 1080 		LCD_WriteReg(0x10,(1<<12)|(0<<8)|(1<<7)|(1<<6)|(0<<4));	//Power Control 1.(0x16b0)
-        MOV      R1,#+4288
         MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R1,#+19
+        MOV      R0,#+4288
+        STRH     R0,[R4, #+2]
 // 1081 		LCD_WriteReg(0x11,0x0007);								//Power Control 2.(0x0001)
-        MOVS     R1,#+7
         MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+7
+        STRH     R0,[R4, #+2]
 // 1082 		LCD_WriteReg(0x12,(1<<8)|(1<<4)|(0<<0));					//Power Control 3.(0x0138)
-        MOV      R1,#+272
         MOVS     R0,#+18
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+272
+        STRH     R0,[R4, #+2]
 // 1083 		LCD_WriteReg(0x13,0x0b00);								//Power Control 4.
+        STRH     R1,[R4, #+0]
         MOV      R1,#+2816
-        MOVS     R0,#+19
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1084 		LCD_WriteReg(0x29,0x0000);								//Power Control 7.
+        MOVS     R1,#+41
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+41
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1085 	
 // 1086 		LCD_WriteReg(0x2b,(1<<14)|(1<<4));
+        MOVS     R1,#+43
+        STRH     R1,[R4, #+0]
         MOVW     R1,#+16400
-        MOVS     R0,#+43
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1087 		
 // 1088 		LCD_WriteReg(0x50,0);		//Set X Start.
+        MOVS     R1,#+80
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+80
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1089 		LCD_WriteReg(0x51,239);	//Set X End.
+        MOVS     R1,#+81
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+239
-        MOVS     R0,#+81
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1090 		LCD_WriteReg(0x52,0);		//Set Y Start.
+        MOVS     R1,#+82
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+82
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1091 		LCD_WriteReg(0x53,319);	//Set Y End.
+        MOVS     R1,#+83
+        STRH     R1,[R4, #+0]
         MOVW     R1,#+319
-        MOVS     R0,#+83
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1092 	
 // 1093 		LCD_WriteReg(0x60,0x2700);	//Driver Output Control.
+        MOVS     R1,#+96
+        STRH     R1,[R4, #+0]
         MOV      R1,#+9984
-        MOVS     R0,#+96
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1094 		LCD_WriteReg(0x61,0x0001);	//Driver Output Control.
+        MOVS     R1,#+97
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+1
-        MOVS     R0,#+97
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1095 		LCD_WriteReg(0x6a,0x0000);	//Vertical Srcoll Control.
+        MOVS     R1,#+106
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+106
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1096 	
 // 1097 		LCD_WriteReg(0x80,0x0000);	//Display Position? Partial Display 1.
+        MOVS     R1,#+128
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+128
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1098 		LCD_WriteReg(0x81,0x0000);	//RAM Address Start? Partial Display 1.
+        MOVS     R1,#+129
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+129
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1099 		LCD_WriteReg(0x82,0x0000);	//RAM Address End-Partial Display 1.
+        MOVS     R1,#+130
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+130
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1100 		LCD_WriteReg(0x83,0x0000);	//Displsy Position? Partial Display 2.
+        MOVS     R1,#+131
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+131
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1101 		LCD_WriteReg(0x84,0x0000);	//RAM Address Start? Partial Display 2.
+        MOVS     R1,#+132
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+132
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1102 		LCD_WriteReg(0x85,0x0000);	//RAM Address End? Partial Display 2.
+        MOVS     R1,#+133
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+133
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1103 	
 // 1104 		LCD_WriteReg(0x90,(0<<7)|(16<<0));	//Frame Cycle Contral.(0x0013)
+        MOVS     R1,#+144
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+16
-        MOVS     R0,#+144
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1105 		LCD_WriteReg(0x92,0x0000);	//Panel Interface Contral 2.(0x0000)
+        MOVS     R1,#+146
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+146
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1106 		LCD_WriteReg(0x93,0x0001);	//Panel Interface Contral 3.
+        MOVS     R1,#+147
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+1
-        MOVS     R0,#+147
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1107 		LCD_WriteReg(0x95,0x0110);	//Frame Cycle Contral.(0x0110)
-        MOV      R1,#+272
-        MOVS     R0,#+149
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+149
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1108 		LCD_WriteReg(0x97,(0<<8));	//
-        MOVS     R1,#+0
         MOVS     R0,#+151
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1109 		LCD_WriteReg(0x98,0x0000);	//Frame Cycle Contral.	
-        MOVS     R1,#+0
         MOVS     R0,#+152
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1110 		LCD_WriteReg(0x07,0x0173);	//(0x0173)
-        MOVW     R1,#+371
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-        B.W      ??LCD_Initializtion_14
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+371
+        B.N      ??LCD_Initializtion_19
 // 1111 	}
 // 1112 	else if(DeviceCode==0x9331)
-??LCD_Initializtion_5:
-        MOVW     R1,#+37681
-        CMP      R0,R1
-        BNE.W    ??LCD_Initializtion_15
+??LCD_Initializtion_10:
+        CMP      R7,R1
+        BNE.W    ??LCD_Initializtion_20
 // 1113 	{
 // 1114 		LCD_WriteReg(0x00E7, 0x1014);
-        MOVW     R1,#+4116
+??LCD_Initializtion_4:
         MOVS     R0,#+231
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+4116
+        STRH     R0,[R4, #+2]
 // 1115 		LCD_WriteReg(0x0001, 0x0100); // set SS and SM bit   0x0100
-        MOV      R1,#+256
         MOVS     R0,#+1
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+256
+        STRH     R0,[R4, #+2]
 // 1116 		LCD_WriteReg(0x0002, 0x0200); // set 1 line inversion
-        MOV      R1,#+512
         MOVS     R0,#+2
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+512
+        STRH     R0,[R4, #+2]
 // 1117 		LCD_WriteReg(0x0003, 0x1030); // set GRAM write direction and BGR=1.     0x1030
-        MOVW     R1,#+4144
         MOVS     R0,#+3
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+4144
+        STRH     R0,[R4, #+2]
 // 1118 		LCD_WriteReg(0x0008, 0x0202); // set the back porch and front porch
-        MOVW     R1,#+514
         MOVS     R0,#+8
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+514
+        STRH     R0,[R4, #+2]
 // 1119 		LCD_WriteReg(0x0009, 0x0000); // set non-display area refresh cycle ISC[3:0]
-        MOVS     R1,#+0
         MOVS     R0,#+9
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1120 		LCD_WriteReg(0x000A, 0x0000); // FMARK function
-        MOVS     R1,#+0
         MOVS     R0,#+10
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1121 		LCD_WriteReg(0x000C, 0x0000); // RGB interface setting
-        MOVS     R1,#+0
         MOVS     R0,#+12
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1122 		LCD_WriteReg(0x000D, 0x0000); // Frame marker Position
-        MOVS     R1,#+0
         MOVS     R0,#+13
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1123 		LCD_WriteReg(0x000F, 0x0000); // RGB interface polarity*/
-        MOVS     R1,#+0
         MOVS     R0,#+15
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1124 		//*************Power On sequence ****************//
 // 1125 		LCD_WriteReg(0x0010, 0x0000); // SAP, BT[3:0], AP, DSTB, SLP, STB
-        MOVS     R1,#+0
         MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1126 		LCD_WriteReg(0x0011, 0x0007); // DC1[2:0], DC0[2:0], VC[2:0]
-        MOVS     R1,#+7
         MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+7
+        STRH     R0,[R4, #+2]
 // 1127 		LCD_WriteReg(0x0012, 0x0000); // VREG1OUT voltage
-        MOVS     R1,#+0
         MOVS     R0,#+18
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1128 		LCD_WriteReg(0x0013, 0x0000); // VDV[4:0] for VCOM amplitude
-        MOVS     R1,#+0
         MOVS     R0,#+19
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1129 		ili9320_Delay(200); // Dis-charge capacitor power voltage
         MOVS     R0,#+200
-          CFI FunCall ili9320_Delay
-        BL       ili9320_Delay
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+4]
+          CFI FunCall Delay
+        BL       Delay
 // 1130 		LCD_WriteReg(0x0010, 0x1690); // SAP, BT[3:0], AP, DSTB, SLP, STB
-        MOVW     R1,#+5776
         MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+5776
+        STRH     R0,[R4, #+2]
 // 1131 		LCD_WriteReg(0x0011, 0x0227); // DC1[2:0], DC0[2:0], VC[2:0]
-        MOVW     R1,#+551
         MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+551
+        STRH     R0,[R4, #+2]
 // 1132 		ili9320_Delay(50); // Delay 50ms
         MOVS     R0,#+50
-          CFI FunCall ili9320_Delay
-        BL       ili9320_Delay
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+4]
+          CFI FunCall Delay
+        BL       Delay
 // 1133 		LCD_WriteReg(0x0012, 0x000C); // Internal reference voltage= Vci;
-        MOVS     R1,#+12
         MOVS     R0,#+18
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+12
+        STRH     R0,[R4, #+2]
 // 1134 		ili9320_Delay(50); // Delay 50ms
         MOVS     R0,#+50
-          CFI FunCall ili9320_Delay
-        BL       ili9320_Delay
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+4]
+          CFI FunCall Delay
+        BL       Delay
 // 1135 		LCD_WriteReg(0x0013, 0x0800); // Set VDV[4:0] for VCOM amplitude
-        MOV      R1,#+2048
         MOVS     R0,#+19
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+2048
+        STRH     R0,[R4, #+2]
 // 1136 		LCD_WriteReg(0x0029, 0x0011); // Set VCM[5:0] for VCOMH
-        MOVS     R1,#+17
         MOVS     R0,#+41
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+17
+        STRH     R0,[R4, #+2]
 // 1137 		LCD_WriteReg(0x002B, 0x000B); // Set Frame Rate
-        MOVS     R1,#+11
         MOVS     R0,#+43
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+11
+        STRH     R0,[R4, #+2]
 // 1138 		ili9320_Delay(50); // Delay 50ms
         MOVS     R0,#+50
-          CFI FunCall ili9320_Delay
-        BL       ili9320_Delay
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+4]
+          CFI FunCall Delay
+        BL       Delay
 // 1139 		LCD_WriteReg(0x0020, 0x0000); // GRAM horizontal Address
-        MOVS     R1,#+0
         MOVS     R0,#+32
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R1,#+262
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
+        MOVS     R2,#+56
 // 1140 		LCD_WriteReg(0x0021, 0x0000); // GRAM Vertical Address
-        MOVS     R1,#+0
         MOVS     R0,#+33
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1141 		// ----------- Adjust the Gamma Curve ----------//
 // 1142 		LCD_WriteReg(0x0030, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+48
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1143 		LCD_WriteReg(0x0031, 0x0106);
-        MOV      R1,#+262
         MOVS     R0,#+49
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        STRH     R1,[R4, #+2]
 // 1144 		LCD_WriteReg(0x0032, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+50
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1145 		LCD_WriteReg(0x0035, 0x0204);
-        MOV      R1,#+516
         MOVS     R0,#+53
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+516
+        STRH     R0,[R4, #+2]
 // 1146 		LCD_WriteReg(0x0036, 0x160A);
-        MOVW     R1,#+5642
         MOVS     R0,#+54
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+5642
+        STRH     R0,[R4, #+2]
 // 1147 		LCD_WriteReg(0x0037, 0x0707);
-        MOVW     R4,#+1799
-        MOV      R1,R4
         MOVS     R0,#+55
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+1799
+        STRH     R0,[R4, #+2]
 // 1148 		LCD_WriteReg(0x0038, 0x0106);
-        MOV      R1,#+262
-        MOVS     R0,#+56
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R2,[R4, #+0]
+        STRH     R1,[R4, #+2]
 // 1149 		LCD_WriteReg(0x0039, 0x0707);
-        MOV      R1,R4
-        MOVS     R0,#+57
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+57
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1150 		LCD_WriteReg(0x003C, 0x0402);
-        MOVW     R1,#+1026
         MOVS     R0,#+60
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+1026
+        STRH     R0,[R4, #+2]
 // 1151 		LCD_WriteReg(0x003D, 0x0C0F);
-        MOVW     R1,#+3087
         MOVS     R0,#+61
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+3087
+        STRH     R0,[R4, #+2]
 // 1152 		//------------------ Set GRAM area ---------------//
 // 1153 		LCD_WriteReg(0x0050, 0x0000); // Horizontal GRAM Start Address
-        MOVS     R1,#+0
         MOVS     R0,#+80
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1154 		LCD_WriteReg(0x0051, 0x00EF); // Horizontal GRAM End Address
-        MOVS     R1,#+239
         MOVS     R0,#+81
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+239
+        STRH     R0,[R4, #+2]
 // 1155 		LCD_WriteReg(0x0052, 0x0000); // Vertical GRAM Start Address
-        MOVS     R1,#+0
         MOVS     R0,#+82
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1156 		LCD_WriteReg(0x0053, 0x013F); // Vertical GRAM Start Address
-        MOVW     R1,#+319
         MOVS     R0,#+83
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+319
+        STRH     R0,[R4, #+2]
 // 1157 		LCD_WriteReg(0x0060, 0x2700); // Gate Scan Line
-        MOV      R1,#+9984
         MOVS     R0,#+96
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+9984
+        STRH     R0,[R4, #+2]
 // 1158 		LCD_WriteReg(0x0061, 0x0001); // NDL,VLE, REV
-        MOVS     R1,#+1
         MOVS     R0,#+97
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1159 		LCD_WriteReg(0x006A, 0x0000); // set scrolling line
-        MOVS     R1,#+0
         MOVS     R0,#+106
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1160 		//-------------- Partial Display Control ---------//
 // 1161 		LCD_WriteReg(0x0080, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+128
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1162 		LCD_WriteReg(0x0081, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+129
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1163 		LCD_WriteReg(0x0082, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+130
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1164 		LCD_WriteReg(0x0083, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+131
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1165 		LCD_WriteReg(0x0084, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+132
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1166 		LCD_WriteReg(0x0085, 0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+133
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1167 		//-------------- Panel Control -------------------//
 // 1168 		LCD_WriteReg(0x0090, 0x0010);
-        MOVS     R1,#+16
         MOVS     R0,#+144
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+16
+        STRH     R0,[R4, #+2]
 // 1169 		LCD_WriteReg(0x0092, 0x0600);
-        MOV      R1,#+1536
         MOVS     R0,#+146
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+1536
+        STRH     R0,[R4, #+2]
 // 1170 		LCD_WriteReg(0x0007,0x0021);		
-        MOVS     R1,#+33
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+33
+        STRH     R0,[R4, #+2]
 // 1171 		ili9320_Delay(50);
         MOVS     R0,#+50
-          CFI FunCall ili9320_Delay
-        BL       ili9320_Delay
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+4]
+          CFI FunCall Delay
+        BL       Delay
 // 1172 		LCD_WriteReg(0x0007,0x0061);
-        MOVS     R1,#+97
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+97
+        STRH     R0,[R4, #+2]
 // 1173 		ili9320_Delay(50);
         MOVS     R0,#+50
-          CFI FunCall ili9320_Delay
-        BL       ili9320_Delay
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+4]
+          CFI FunCall Delay
+        BL       Delay
 // 1174 		LCD_WriteReg(0x0007,0x0133);  // 262K color and display ON
-        MOVW     R1,#+307
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+307
+        STRH     R0,[R4, #+2]
 // 1175 		ili9320_Delay(50);
         MOVS     R0,#+50
-          CFI FunCall ili9320_Delay
-        BL       ili9320_Delay
-        B.W      ??LCD_Initializtion_14
+        STR      R0,[SP, #+4]
+        LDR      R0,[SP, #+4]
+        B.W      ??LCD_Initializtion_21
 // 1176 	}
 // 1177 	else if(DeviceCode==0x8989)
-??LCD_Initializtion_15:
-        MOVW     R1,#+35209
-        CMP      R0,R1
-        BNE.W    ??LCD_Initializtion_16
+??LCD_Initializtion_20:
+        CMP      R7,R2
+        BNE.W    ??LCD_Initializtion_22
 // 1178 	{   
 // 1179           LCD_WriteReg(0x0000,0x0001);   //打开晶振         
-        MOVS     R1,#+1
+??LCD_Initializtion_5:
         MOVS     R0,#+0
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1180           LCD_WriteReg(0x0010,0x0000);                     
-        MOVS     R1,#+0
         MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1181           Delay(5); // Wait 30ms            
         MOVS     R0,#+5
           CFI FunCall Delay
         BL       Delay
 // 1182           LCD_WriteReg(0x0007,0x0233);                
-        MOVW     R4,#+563
-        MOV      R1,R4
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R1,#+17
+        MOVW     R0,#+563
+        STRH     R0,[R4, #+2]
 // 1183           LCD_WriteReg(0x0011,0x6078); //定义数据格式  16位色 		横屏 0x6058           
+        STRH     R1,[R4, #+0]
+        MOVS     R2,#+52
         MOVW     R1,#+24696
-        MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1184           LCD_WriteReg(0x0002,0x0600);       
+        MOVS     R1,#+2
+        STRH     R1,[R4, #+0]
         MOV      R1,#+1536
-        MOVS     R0,#+2
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1185           LCD_WriteReg(0x0003,0xA8A4);//0x0804  
-        MOVW     R1,#+43172
-        MOVS     R0,#+3
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1186           LCD_WriteReg(0x000C,0x0000);
-        MOVS     R1,#+0
-        MOVS     R0,#+12
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1187           LCD_WriteReg(0x000D,0x080C);       
-        MOVW     R1,#+2060
-        MOVS     R0,#+13
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1188           LCD_WriteReg(0x000E,0x2900);       
-        MOV      R1,#+10496
-        MOVS     R0,#+14
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1189           LCD_WriteReg(0x001E,0x00B8);       
-        MOVS     R1,#+184
-        MOVS     R0,#+30
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1190           LCD_WriteReg(0x0001,0x293F);
-        MOVW     R1,#+10559
-        MOVS     R0,#+1
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1191           LCD_WriteReg(0x0010,0x0000);       
-        MOVS     R1,#+0
-        MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1192           LCD_WriteReg(0x0005,0x0000);       
-        MOVS     R1,#+0
-        MOVS     R0,#+5
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1193           LCD_WriteReg(0x0006,0x0000);       
-        MOVS     R1,#+0
-        MOVS     R0,#+6
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1194           LCD_WriteReg(0x0016,0xEF1C);     
-        MOVW     R1,#+61212
-        MOVS     R0,#+22
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1195           LCD_WriteReg(0x0017,0x0003);     
         MOVS     R1,#+3
-        MOVS     R0,#+23
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+43172
+        STRH     R1,[R4, #+2]
+// 1186           LCD_WriteReg(0x000C,0x0000);
+        MOVS     R1,#+12
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+0
+        STRH     R1,[R4, #+2]
+// 1187           LCD_WriteReg(0x000D,0x080C);       
+        MOVS     R1,#+13
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+2060
+        STRH     R1,[R4, #+2]
+// 1188           LCD_WriteReg(0x000E,0x2900);       
+        MOVS     R1,#+14
+        STRH     R1,[R4, #+0]
+        MOV      R1,#+10496
+        STRH     R1,[R4, #+2]
+// 1189           LCD_WriteReg(0x001E,0x00B8);       
+        MOVS     R1,#+30
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+184
+        STRH     R1,[R4, #+2]
+// 1190           LCD_WriteReg(0x0001,0x293F);
+        MOVS     R1,#+1
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+10559
+        STRH     R1,[R4, #+2]
+// 1191           LCD_WriteReg(0x0010,0x0000);       
+        MOVS     R1,#+16
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+0
+        STRH     R1,[R4, #+2]
+// 1192           LCD_WriteReg(0x0005,0x0000);       
+        MOVS     R1,#+5
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+0
+        STRH     R1,[R4, #+2]
+// 1193           LCD_WriteReg(0x0006,0x0000);       
+        MOVS     R1,#+6
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+0
+        STRH     R1,[R4, #+2]
+// 1194           LCD_WriteReg(0x0016,0xEF1C);     
+        MOVS     R1,#+22
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+61212
+        STRH     R1,[R4, #+2]
+// 1195           LCD_WriteReg(0x0017,0x0003);     
+        MOVS     R1,#+23
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+3
+        STRH     R1,[R4, #+2]
 // 1196           LCD_WriteReg(0x0007,0x0233);		//0x0233       
-        MOV      R1,R4
-        MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+7
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
+        MOVS     R1,#+74
 // 1197           LCD_WriteReg(0x000B,0x0000|(3<<6));     
-        MOVS     R1,#+192
         MOVS     R0,#+11
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+192
+        STRH     R0,[R4, #+2]
 // 1198           LCD_WriteReg(0x000F,0x0000);		//扫描开始地址
-        MOVS     R1,#+0
         MOVS     R0,#+15
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1199 	  LCD_WriteReg(0x0041,0x0000);     
-        MOVS     R1,#+0
         MOVS     R0,#+65
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1200 	  LCD_WriteReg(0x0042,0x0000);     
-        MOVS     R1,#+0
         MOVS     R0,#+66
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1201 	  LCD_WriteReg(0x0048,0x0000);     
-        MOVS     R1,#+0
         MOVS     R0,#+72
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1202 	  LCD_WriteReg(0x0049,0x013F);     
-        MOVW     R4,#+319
-        MOV      R1,R4
         MOVS     R0,#+73
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+319
+        STRH     R0,[R4, #+2]
 // 1203 	  LCD_WriteReg(0x004A,0x0000);     
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+74
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1204 	  LCD_WriteReg(0x004B,0x0000);     
+        MOVS     R1,#+75
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+75
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1205 	  LCD_WriteReg(0x0044,0xEF00);     
+        MOVS     R1,#+68
+        STRH     R1,[R4, #+0]
         MOV      R1,#+61184
-        MOVS     R0,#+68
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1206 	  LCD_WriteReg(0x0045,0x0000);     
+        MOVS     R1,#+69
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+69
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1207 	  LCD_WriteReg(0x0046,0x013F);     
-        MOV      R1,R4
-        MOVS     R0,#+70
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+70
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
+        MOVS     R1,#+50
 // 1208 	  LCD_WriteReg(0x0030,0x0707);     
-        MOVW     R1,#+1799
         MOVS     R0,#+48
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+1799
+        STRH     R0,[R4, #+2]
 // 1209 	  LCD_WriteReg(0x0031,0x0204);     
-        MOV      R1,#+516
         MOVS     R0,#+49
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+516
+        STRH     R0,[R4, #+2]
 // 1210 	  LCD_WriteReg(0x0032,0x0204);     
-        MOV      R1,#+516
-        MOVS     R0,#+50
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1211 	  LCD_WriteReg(0x0033,0x0502);     
-        MOVW     R4,#+1282
-        MOV      R1,R4
-        MOVS     R0,#+51
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+51
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+1282
+        STRH     R1,[R4, #+2]
 // 1212 	  LCD_WriteReg(0x0034,0x0507);     
-        MOVW     R1,#+1287
-        MOVS     R0,#+52
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R2,[R4, #+0]
+        MOVW     R2,#+1287
+        STRH     R2,[R4, #+2]
 // 1213 	  LCD_WriteReg(0x0035,0x0204);     
-        MOV      R1,#+516
-        MOVS     R0,#+53
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R2,#+53
+        STRH     R2,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1214 	  LCD_WriteReg(0x0036,0x0204);     
-        MOV      R1,#+516
-        MOVS     R0,#+54
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R2,#+54
+        STRH     R2,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1215 	  LCD_WriteReg(0x0037,0x0502);     
-        MOV      R1,R4
         MOVS     R0,#+55
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        STRH     R1,[R4, #+2]
 // 1216 	  LCD_WriteReg(0x003A,0x0302);     
-        MOVW     R4,#+770
-        MOV      R1,R4
         MOVS     R0,#+58
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R1,#+59
+        MOVW     R0,#+770
+        STRH     R0,[R4, #+2]
 // 1217 	  LCD_WriteReg(0x003B,0x0302);     
-        MOV      R1,R4
-        MOVS     R0,#+59
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1218 	  LCD_WriteReg(0x0023,0x0000);     
-        MOVS     R1,#+0
         MOVS     R0,#+35
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1219 	  LCD_WriteReg(0x0024,0x0000);     
-        MOVS     R1,#+0
         MOVS     R0,#+36
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1220 	  LCD_WriteReg(0x0025,0x8000);     
-        MOV      R1,#+32768
         MOVS     R0,#+37
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+32768
+        STRH     R0,[R4, #+2]
 // 1221 	  LCD_WriteReg(0x004e,0);        //列(X)首址0
-        MOVS     R1,#+0
         MOVS     R0,#+78
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1222 	  LCD_WriteReg(0x004f,0);        //行(Y)首址0*/
-        MOVS     R1,#+0
         MOVS     R0,#+79
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-        B.W      ??LCD_Initializtion_14
+        B.N      ??LCD_Initializtion_23
 // 1223 	}else if(DeviceCode==0x9325||DeviceCode==0x9328)
-??LCD_Initializtion_16:
-        MOVW     R1,#+37669
-        CMP      R0,R1
-        BEQ.N    ??LCD_Initializtion_17
-        MOVW     R1,#+37672
-        CMP      R0,R1
-        BNE.W    ??LCD_Initializtion_18
+??LCD_Initializtion_22:
+        CMP      R7,R3
+        IT       NE 
+        CMPNE    R7,R6
+        BNE.W    ??LCD_Initializtion_24
 // 1224 	{
 // 1225           LCD_WriteReg(0x00e3,0x3008);
-??LCD_Initializtion_17:
-        MOVW     R1,#+12296
+??LCD_Initializtion_6:
         MOVS     R0,#+227
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+12296
+        STRH     R0,[R4, #+2]
 // 1226           LCD_WriteReg(0x00e7,0x0012);
-        MOVS     R1,#+18
         MOVS     R0,#+231
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+18
+        STRH     R0,[R4, #+2]
 // 1227           LCD_WriteReg(0x00ef,0x1231);        //Set the internal vcore voltage
-        MOVW     R1,#+4657
         MOVS     R0,#+239
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+4657
+        STRH     R0,[R4, #+2]
 // 1228           // LCD_WriteReg(0x00e7,0x0010);      
 // 1229           LCD_WriteReg(0x0000,0x0001);        //start internal osc
-        MOVS     R1,#+1
         MOVS     R0,#+0
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1230           LCD_WriteReg(0x0001,0x0100);     
-        MOV      R1,#+256
+        STRH     R0,[R4, #+0]
         MOVS     R0,#+1
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+2]
+// 1230           LCD_WriteReg(0x0001,0x0100);     
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+256
+        STRH     R0,[R4, #+2]
 // 1231           LCD_WriteReg(0x0002,0x0700);        //Driving Wave Control                   
-        MOV      R1,#+1792
         MOVS     R0,#+2
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+1792
+        STRH     R0,[R4, #+2]
 // 1232           LCD_WriteReg(0x0003,(1<<12)|(0<<5)|(1<<4)|(1<<3) );// );    (1<<12)|(1<<4)|(1 << 3) //65K 
-        MOVW     R1,#+4120
         MOVS     R0,#+3
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+4120
+        STRH     R0,[R4, #+2]
 // 1233           LCD_WriteReg(0x0004,0x0000);                                   
-        MOVS     R1,#+0
         MOVS     R0,#+4
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1234           LCD_WriteReg(0x0008,0x0207);               
-        MOVW     R1,#+519
         MOVS     R0,#+8
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+519
+        STRH     R0,[R4, #+2]
 // 1235           LCD_WriteReg(0x0009,0x0000);         
-        MOVS     R1,#+0
         MOVS     R0,#+9
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1236           LCD_WriteReg(0x000a,0x0000);        //display setting         
-        MOVS     R1,#+0
         MOVS     R0,#+10
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1237           LCD_WriteReg(0x000c,0x0001);        //display setting          
-        MOVS     R1,#+1
         MOVS     R0,#+12
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1238           LCD_WriteReg(0x000d,0x0000);        //0f3c          
-        MOVS     R1,#+0
         MOVS     R0,#+13
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1239           LCD_WriteReg(0x000f,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+15
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1240           //Power On sequence //
 // 1241           LCD_WriteReg(0x0010,0x0000);   
-        MOVS     R1,#+0
         MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1242           LCD_WriteReg(0x0011,0x0007);
-        MOVS     R1,#+7
         MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+7
+        STRH     R0,[R4, #+2]
 // 1243           LCD_WriteReg(0x0012,0x0000);                                                                 
-        MOVS     R1,#+0
         MOVS     R0,#+18
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1244           LCD_WriteReg(0x0013,0x0000);                 
-        MOVS     R1,#+0
         MOVS     R0,#+19
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1245           for(i=50000;i>0;i--);
-        MOVW     R5,#+50000
-        STRH     R5,[SP, #+0]
-        B.N      ??LCD_Initializtion_19
-??LCD_Initializtion_20:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
+        MOVW     R0,#+50000
         STRH     R0,[SP, #+0]
-??LCD_Initializtion_19:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_20
-// 1246 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
-        B.N      ??LCD_Initializtion_21
-??LCD_Initializtion_22:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
-??LCD_Initializtion_21:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_22
-// 1247           LCD_WriteReg(0x0010,0x1590);   
-        MOVW     R1,#+5520
-        MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1248           LCD_WriteReg(0x0011,0x0227);
-        MOVW     R1,#+551
-        MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1249           for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
-        B.N      ??LCD_Initializtion_23
-??LCD_Initializtion_24:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
-??LCD_Initializtion_23:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_24
-// 1250 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
         B.N      ??LCD_Initializtion_25
 ??LCD_Initializtion_26:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_25:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_26
-// 1251           LCD_WriteReg(0x0012,0x009c);                  
-        MOVS     R1,#+156
-        MOVS     R0,#+18
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1252           for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1246 		for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_27
 ??LCD_Initializtion_28:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_27:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_28
-// 1253 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1247           LCD_WriteReg(0x0010,0x1590);   
+        MOVS     R1,#+16
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+5520
+        STRH     R1,[R4, #+2]
+// 1248           LCD_WriteReg(0x0011,0x0227);
+        MOVS     R1,#+17
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+551
+        STRH     R1,[R4, #+2]
+// 1249           for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_29
 ??LCD_Initializtion_30:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_29:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_30
-// 1254           LCD_WriteReg(0x0013,0x1900);   
-        MOV      R1,#+6400
-        MOVS     R0,#+19
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1255           LCD_WriteReg(0x0029,0x0023);
-        MOVS     R1,#+35
-        MOVS     R0,#+41
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1256           LCD_WriteReg(0x002b,0x000e);
-        MOVS     R1,#+14
-        MOVS     R0,#+43
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1257           for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1250 		for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_31
 ??LCD_Initializtion_32:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_31:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_32
-// 1258 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1251           LCD_WriteReg(0x0012,0x009c);                  
+        MOVS     R1,#+18
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+156
+        STRH     R1,[R4, #+2]
+// 1252           for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_33
 ??LCD_Initializtion_34:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_33:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_34
-// 1259           LCD_WriteReg(0x0020,0x0000);                                                            
-        MOVS     R1,#+0
-        MOVS     R0,#+32
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1260           LCD_WriteReg(0x0021,0x0000);           
-        MOVS     R1,#+0
-        MOVS     R0,#+33
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1261 ///////////////////////////////////////////////////////      
-// 1262           for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1253 		for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_35
 ??LCD_Initializtion_36:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_35:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_36
-// 1263 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1254           LCD_WriteReg(0x0013,0x1900);   
+        MOVS     R1,#+19
+        STRH     R1,[R4, #+0]
+        MOV      R1,#+6400
+        STRH     R1,[R4, #+2]
+// 1255           LCD_WriteReg(0x0029,0x0023);
+        MOVS     R1,#+41
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+35
+        STRH     R1,[R4, #+2]
+// 1256           LCD_WriteReg(0x002b,0x000e);
+        MOVS     R1,#+43
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+14
+        STRH     R1,[R4, #+2]
+// 1257           for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_37
 ??LCD_Initializtion_38:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_37:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_38
-// 1264           LCD_WriteReg(0x0030,0x0007); 
-        MOVS     R1,#+7
-        MOVS     R0,#+48
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1265           LCD_WriteReg(0x0031,0x0707);   
-        MOVW     R1,#+1799
-        MOVS     R0,#+49
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1266           LCD_WriteReg(0x0032,0x0006);
-        MOVS     R1,#+6
-        MOVS     R0,#+50
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1267           LCD_WriteReg(0x0035,0x0704);
-        MOVW     R1,#+1796
-        MOVS     R0,#+53
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1268           LCD_WriteReg(0x0036,0x1f04); 
-        MOVW     R1,#+7940
-        MOVS     R0,#+54
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1269           LCD_WriteReg(0x0037,0x0004);
-        MOVS     R1,#+4
-        MOVS     R0,#+55
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1270           LCD_WriteReg(0x0038,0x0000);        
-        MOVS     R1,#+0
-        MOVS     R0,#+56
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1271           LCD_WriteReg(0x0039,0x0706);     
-        MOVW     R1,#+1798
-        MOVS     R0,#+57
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1272           LCD_WriteReg(0x003c,0x0701);
-        MOVW     R1,#+1793
-        MOVS     R0,#+60
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1273           LCD_WriteReg(0x003d,0x000f);
-        MOVS     R1,#+15
-        MOVS     R0,#+61
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-// 1274           for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1258 		for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_39
 ??LCD_Initializtion_40:
-        LDRH     R0,[SP, #+0]
-        SUBS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
 ??LCD_Initializtion_39:
-        LDRH     R0,[SP, #+0]
-        CMP      R0,#+0
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
         BNE.N    ??LCD_Initializtion_40
-// 1275 		for(i=50000;i>0;i--);
-        STRH     R5,[SP, #+0]
+// 1259           LCD_WriteReg(0x0020,0x0000);                                                            
+        MOVS     R1,#+32
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+0
+        STRH     R1,[R4, #+2]
+// 1260           LCD_WriteReg(0x0021,0x0000);           
+        MOVS     R1,#+33
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+0
+        STRH     R1,[R4, #+2]
+// 1261 ///////////////////////////////////////////////////////      
+// 1262           for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
         B.N      ??LCD_Initializtion_41
 ??LCD_Initializtion_42:
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
+??LCD_Initializtion_41:
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
+        BNE.N    ??LCD_Initializtion_42
+// 1263 		for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
+        B.N      ??LCD_Initializtion_43
+??LCD_Initializtion_44:
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
+??LCD_Initializtion_43:
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
+        BNE.N    ??LCD_Initializtion_44
+// 1264           LCD_WriteReg(0x0030,0x0007); 
+        MOVS     R1,#+48
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+7
+        STRH     R1,[R4, #+2]
+// 1265           LCD_WriteReg(0x0031,0x0707);   
+        MOVS     R1,#+49
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+1799
+        STRH     R1,[R4, #+2]
+// 1266           LCD_WriteReg(0x0032,0x0006);
+        MOVS     R1,#+50
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+6
+        STRH     R1,[R4, #+2]
+// 1267           LCD_WriteReg(0x0035,0x0704);
+        MOVS     R1,#+53
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+1796
+        STRH     R1,[R4, #+2]
+// 1268           LCD_WriteReg(0x0036,0x1f04); 
+        MOVS     R1,#+54
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+7940
+        STRH     R1,[R4, #+2]
+// 1269           LCD_WriteReg(0x0037,0x0004);
+        MOVS     R1,#+55
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+4
+        STRH     R1,[R4, #+2]
+// 1270           LCD_WriteReg(0x0038,0x0000);        
+        MOVS     R1,#+56
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+0
+        STRH     R1,[R4, #+2]
+// 1271           LCD_WriteReg(0x0039,0x0706);     
+        MOVS     R1,#+57
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+1798
+        STRH     R1,[R4, #+2]
+// 1272           LCD_WriteReg(0x003c,0x0701);
+        MOVS     R1,#+60
+        STRH     R1,[R4, #+0]
+        MOVW     R1,#+1793
+        STRH     R1,[R4, #+2]
+// 1273           LCD_WriteReg(0x003d,0x000f);
+        MOVS     R1,#+61
+        STRH     R1,[R4, #+0]
+        MOVS     R1,#+15
+        STRH     R1,[R4, #+2]
+// 1274           for(i=50000;i>0;i--);
+        STRH     R0,[SP, #+0]
+        B.N      ??LCD_Initializtion_45
+??LCD_Initializtion_46:
+        LDRH     R1,[SP, #+0]
+        SUBS     R1,R1,#+1
+        STRH     R1,[SP, #+0]
+??LCD_Initializtion_45:
+        LDRH     R1,[SP, #+0]
+        CMP      R1,#+0
+        BNE.N    ??LCD_Initializtion_46
+// 1275 		for(i=50000;i>0;i--);
+        B.N      ??LCD_Initializtion_47
+??LCD_Initializtion_48:
         LDRH     R0,[SP, #+0]
         SUBS     R0,R0,#+1
+??LCD_Initializtion_47:
         STRH     R0,[SP, #+0]
-??LCD_Initializtion_41:
         LDRH     R0,[SP, #+0]
         CMP      R0,#+0
-        BNE.N    ??LCD_Initializtion_42
+        BNE.N    ??LCD_Initializtion_48
 // 1276           LCD_WriteReg(0x0050,0x0000);        
-        MOVS     R1,#+0
         MOVS     R0,#+80
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R1,#+37672
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1277           LCD_WriteReg(0x0051,0x00ef);   
-        MOVS     R1,#+239
         MOVS     R0,#+81
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+239
+        STRH     R0,[R4, #+2]
 // 1278           LCD_WriteReg(0x0052,0x0000);     
-        MOVS     R1,#+0
         MOVS     R0,#+82
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1279           LCD_WriteReg(0x0053,0x013f);
-        MOVW     R1,#+319
         MOVS     R0,#+83
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+319
+        STRH     R0,[R4, #+2]
 // 1280           LCD_WriteReg(0x0060,0xa700);        
-        MOV      R1,#+42752
         MOVS     R0,#+96
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+42752
+        STRH     R0,[R4, #+2]
 // 1281           LCD_WriteReg(0x0061,0x0001); 
-        MOVS     R1,#+1
         MOVS     R0,#+97
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1282           LCD_WriteReg(0x006a,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+106
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1283           LCD_WriteReg(0x0080,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+128
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1284           LCD_WriteReg(0x0081,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+129
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1285           LCD_WriteReg(0x0082,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+130
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1286           LCD_WriteReg(0x0083,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+131
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1287           LCD_WriteReg(0x0084,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+132
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1288           LCD_WriteReg(0x0085,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+133
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1289       
 // 1290           LCD_WriteReg(0x0090,0x0010);     
-        MOVS     R1,#+16
         MOVS     R0,#+144
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+16
+        STRH     R0,[R4, #+2]
 // 1291           LCD_WriteReg(0x0092,0x0600);  
-        MOV      R1,#+1536
         MOVS     R0,#+146
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+1536
+        STRH     R0,[R4, #+2]
 // 1292           if(DeviceCode==0x9328)
-        LDRH     R0,[R4, #+0]
-        MOVW     R1,#+37672
+        LDRH     R0,[R5, #+0]
         CMP      R0,R1
-        BNE.N    ??LCD_Initializtion_43
+        BNE.N    ??LCD_Initializtion_49
 // 1293           {   
 // 1294             LCD_WriteReg(0x0093,0x0003);
-        MOVS     R1,#+3
         MOVS     R0,#+147
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+3
+        STRH     R0,[R4, #+2]
 // 1295             LCD_WriteReg(0x0095,0x0110);
-        MOV      R1,#+272
         MOVS     R0,#+149
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+272
+        STRH     R0,[R4, #+2]
 // 1296             LCD_WriteReg(0x0097,0x0000);        
-        MOVS     R1,#+0
         MOVS     R0,#+151
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1297             LCD_WriteReg(0x0098,0x0000);  
-        MOVS     R1,#+0
         MOVS     R0,#+152
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1298           }
 // 1299           //display on sequence     
 // 1300           LCD_WriteReg(0x0007,0x0133);
-??LCD_Initializtion_43:
-        MOVW     R1,#+307
+??LCD_Initializtion_49:
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+307
+        STRH     R0,[R4, #+2]
 // 1301     
 // 1302           LCD_WriteReg(0x0020,0x0000);                                                            
-        MOVS     R1,#+0
         MOVS     R0,#+32
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1303           LCD_WriteReg(0x0021,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+33
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
-        B.W      ??LCD_Initializtion_14
+??LCD_Initializtion_23:
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+??LCD_Initializtion_19:
+        STRH     R0,[R4, #+2]
 // 1304           }else if(DeviceCode==0x5761){                              //**SSD1963
-??LCD_Initializtion_18:
-        MOVW     R1,#+22369
-        CMP      R0,R1
-        BNE.W    ??LCD_Initializtion_44
+        B.N      ??LCD_Initializtion_50
+??LCD_Initializtion_24:
+        MOVW     R0,#+22369
+        CMP      R7,R0
+        BNE.W    ??LCD_Initializtion_51
 // 1305           #if 1
 // 1306 	   for(i=0;i<100;i++)
         MOVS     R0,#+0
+??LCD_Initializtion_52:
         STRH     R0,[SP, #+0]
-??LCD_Initializtion_45:
         LDRH     R0,[SP, #+0]
         CMP      R0,#+100
-        BGE.W    ??LCD_Initializtion_14
+        BGE.W    ??LCD_Initializtion_50
 // 1307 	   {
 // 1308 	          LCD_WrtReg(0x002b);	
         MOVS     R0,#+43
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1309 	          LCD_WrtRAM(0);
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1310 
 // 1311 	          //for(i=50000;i>0;i--); // delay 50 ms 
 // 1312 	          HAL_Delay(50);
@@ -3651,22 +3441,18 @@ LCD_Initializtion:
         BL       HAL_Delay
 // 1313 	          LCD_WrtReg(0x00E2);					//PLL multiplier, set PLL clock to 120M
         MOVS     R0,#+226
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1314 	          //**LCD_WrtRAM(0x0023);					//N=0x36 for 6.5M, 0x23 for 10M crystal
 // 1315 	          LCD_WrtRAM(0x002C);
         MOVS     R0,#+44
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1316 	          //LCD_WrtRAM(0x0024);
 // 1317 	          LCD_WrtRAM(0x0002);
         MOVS     R0,#+2
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1318 	          LCD_WrtRAM(0x0004);
         MOVS     R0,#+4
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1319 		   HAL_Delay(50);
         MOVS     R0,#+50
           CFI FunCall HAL_Delay
@@ -3674,56 +3460,46 @@ LCD_Initializtion:
 // 1320 		   
 // 1321 	          LCD_WrtReg(0x00E0);					//PLL enable
         MOVS     R0,#+224
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1322 	          LCD_WrtRAM(0x0001);
         MOVS     R0,#+1
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1323 	          HAL_Delay(1);
-        MOVS     R0,#+1
           CFI FunCall HAL_Delay
         BL       HAL_Delay
 // 1324 	          LCD_WrtReg(0x00E0);
         MOVS     R0,#+224
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1325 	          LCD_WrtRAM(0x0003);
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1326 	          HAL_Delay(7);
         MOVS     R0,#+7
           CFI FunCall HAL_Delay
         BL       HAL_Delay
 // 1327 	          LCD_WrtReg(0x0001);  					//软复位
         MOVS     R0,#+1
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1328 	          HAL_Delay(12);
         MOVS     R0,#+12
           CFI FunCall HAL_Delay
         BL       HAL_Delay
 // 1329 	          LCD_WrtReg(0x00E6);					//设置像素频率
         MOVS     R0,#+230
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1330 	  //	  LCD_WriteRAM(0x0001);
 // 1331 	  //	  LCD_WriteRAM(0x0033);
 // 1332 	  //	  LCD_WriteRAM(0x0032);
 // 1333 	          LCD_WrtRAM(0x0004);
         MOVS     R0,#+4
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1334 	          //LCD_WrtRAM(0x0005);
 // 1335 	          LCD_WrtRAM(0x0093);
         MOVS     R0,#+147
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1336 	          LCD_WrtRAM(0x00E0);
         MOVS     R0,#+224
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1337 		   HAL_Delay(50);
         MOVS     R0,#+50
           CFI FunCall HAL_Delay
@@ -3731,110 +3507,85 @@ LCD_Initializtion:
 // 1338 		   
 // 1339 	          LCD_WrtReg(0x00B0);					//设置 LCD模式 
         MOVS     R0,#+176
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1340 	          LCD_WrtRAM(0x0020);                                   //24 位模式
         MOVS     R0,#+32
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1341 	          //**LCD_WrtRAM(0x0000);                                   
 // 1342 	          LCD_WrtRAM(0x0000);                                   //TFT  模式
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1343 	          LCD_WrtRAM((HDP>>8)&0X00FF);			//设置 LCD水平像素
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1344 	          LCD_WrtRAM(HDP&0X00FF);
         MOVS     R0,#+31
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1345 	          LCD_WrtRAM((VDP>>8)&0X00FF);			//设置 LCD垂直像素
         MOVS     R0,#+1
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1346 	          LCD_WrtRAM(VDP&0X00FF);
         MOVS     R0,#+223
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1347 	          LCD_WrtRAM(0x0000);
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1348 		   HAL_Delay(5);
         MOVS     R0,#+5
           CFI FunCall HAL_Delay
         BL       HAL_Delay
 // 1349 	          LCD_WrtReg(0x00B4);					//Set horizontal period
         MOVS     R0,#+180
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1350 	          LCD_WrtRAM((HT>>8)&0X00FF); 			//Set HT
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1351 	          LCD_WrtRAM(HT&0X00FF);
         MOVS     R0,#+232
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1352 	          LCD_WrtRAM((HPS>>8)&0X00FF);			//Set HPS
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1353 	          LCD_WrtRAM(HPS&0X00FF);
         MOVS     R0,#+51
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1354 	          LCD_WrtRAM(HPW);						//Set HPW
         MOVS     R0,#+8
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1355 	          LCD_WrtRAM((LPS>>8)&0X00FF); 			//Set HPS
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1356 	          LCD_WrtRAM(LPS&0X00FF);
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1357 	          LCD_WrtRAM(0x0000);
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1358 
 // 1359 	          LCD_WrtReg(0x00B6);					//Set vertical period 
         MOVS     R0,#+182
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1360 	          LCD_WrtRAM((VT>>8)&0X00FF);   		//Set VT
         MOVS     R0,#+2
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1361 	          LCD_WrtRAM(VT&0X00FF);
         MOVS     R0,#+18
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1362 	          LCD_WrtRAM((VPS>>8)&0X00FF); 			//Set VPS
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1363 	          LCD_WrtRAM(VPS&0X00FF);
         MOVS     R0,#+24
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1364 	          LCD_WrtRAM(VPW);						//Set VPW
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1365 	          LCD_WrtRAM((FPS>>8)&0X00FF);			//Set FPS
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1366 	          LCD_WrtRAM(FPS&0X00FF);
         MOVS     R0,#+23
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1367 		   HAL_Delay(5);
         MOVS     R0,#+5
           CFI FunCall HAL_Delay
@@ -3844,34 +3595,27 @@ LCD_Initializtion:
 // 1370 	          //=============================================
 // 1371 	          LCD_WrtReg(0x00BA);
         MOVS     R0,#+186
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1372 	          LCD_WrtRAM(0x0005);//0x000F);    //GPIO[3:0] out 1
         MOVS     R0,#+5
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1373 
 // 1374 	          LCD_WrtReg(0x00B8);
         MOVS     R0,#+184
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1375 	          LCD_WrtRAM(0x0007);    //GPIO3=input, GPIO[2:0]=output
         MOVS     R0,#+7
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1376 	          LCD_WrtRAM(0x0001);    //GPIO0 normal
         MOVS     R0,#+1
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1377 
 // 1378 	          LCD_WrtReg(0x0036); //rotation
         MOVS     R0,#+54
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1379 	          LCD_WrtRAM(0x0000);
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1380 			  
 // 1381 		   
 // 1382 	          HAL_Delay(50);
@@ -3882,59 +3626,46 @@ LCD_Initializtion:
 // 1384 
 // 1385 	          LCD_WrtReg(0x00BE); //set PWM for B/L
         MOVS     R0,#+190
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1386 	          LCD_WrtRAM(0x0006);
         MOVS     R0,#+6
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1387 	          LCD_WrtRAM(0x0080);
         MOVS     R0,#+128
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1388 		
 // 1389 	          LCD_WrtRAM(0x0001);
         MOVS     R0,#+1
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1390 	          LCD_WrtRAM(0x00f0);
         MOVS     R0,#+240
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1391 	          LCD_WrtRAM(0x0000);
         MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1392 	          LCD_WrtRAM(0x0000);
-        MOVS     R0,#+0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1393 
 // 1394 	          LCD_WrtReg(0x00d0); 
         MOVS     R0,#+208
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1395 	          LCD_WrtRAM(0x000d);
         MOVS     R0,#+13
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1396 	   
 // 1397 	          LCD_WrtReg(0x00F0); //设置 SSD1963与 CPU接口为 16bit
         MOVS     R0,#+240
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1398 	          LCD_WrtRAM(0x0003); //16-bit(565 format) data for 16bpp 
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R4, #+2]
 // 1399 		   ili9320_Clear(0x000000);	                            //显示
         MOVS     R0,#+0
           CFI FunCall ili9320_Clear
         BL       ili9320_Clear
 // 1400 	          LCD_WrtReg(0x0029); //开启显示
         MOVS     R0,#+41
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1401 
 // 1402 	          //lcd_data_bus_test();
 // 1403 	          ili9320_Clear(0x000000);	                            //显示
@@ -3943,30 +3674,25 @@ LCD_Initializtion:
         BL       ili9320_Clear
 // 1404 	                 LCD_WrtReg(0xE7);
         MOVS     R0,#+231
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 1405 			   data1=LCD_RD_DATA();
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
-        STRH     R0,[SP, #+6]
+        LDRH     R0,[R4, #+2]
+        STRH     R0,[SP, #+10]
 // 1406 			   data2=LCD_RD_DATA();
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
-        STRH     R0,[SP, #+4]
+        LDRH     R0,[R4, #+2]
+        STRH     R0,[SP, #+8]
 // 1407 			   data3=LCD_RD_DATA();
-          CFI FunCall LCD_RD_DATA
-        BL       LCD_RD_DATA
+        LDRH     R0,[R4, #+2]
         STRH     R0,[SP, #+2]
 // 1408 			   if(data1==0x0004 && data2==0x0093 && data3==0x00E0){
-        LDRH     R0,[SP, #+6]
+        LDRH     R0,[SP, #+10]
         CMP      R0,#+4
-        BNE.N    ??LCD_Initializtion_46
-        LDRH     R0,[SP, #+4]
-        CMP      R0,#+147
-        BNE.N    ??LCD_Initializtion_46
-        LDRH     R0,[SP, #+2]
-        CMP      R0,#+224
-        BEQ.W    ??LCD_Initializtion_14
+        ITTTT    EQ 
+        LDRHEQ   R0,[SP, #+8]
+        CMPEQ    R0,#+147
+        LDRHEQ   R0,[SP, #+2]
+        CMPEQ    R0,#+224
+        BEQ.W    ??LCD_Initializtion_50
 // 1409 			   	  break;
 // 1410 			   }
 // 1411 			   else{
@@ -3981,11 +3707,9 @@ LCD_Initializtion:
 // 1420 			         continue;
 // 1421 			   }
 // 1422 	   }
-??LCD_Initializtion_46:
         LDRH     R0,[SP, #+0]
         ADDS     R0,R0,#+1
-        STRH     R0,[SP, #+0]
-        B.N      ??LCD_Initializtion_45
+        B.N      ??LCD_Initializtion_52
 // 1423 	   #else
 // 1424 	   	LCD_WrtReg(0xE2);		//Set PLL with OSC = 10MHz (hardware),	Multiplier N = 35, 250MHz < VCO < 800MHz = OSC*(N+1), VCO = 300MHz
 // 1425 		LCD_WrtRAM(0x1D);		//2?êy1 
@@ -4080,267 +3804,203 @@ LCD_Initializtion:
 // 1514 	#endif
 // 1515 	}
 // 1516 		else if(DeviceCode==0x9488)
-??LCD_Initializtion_44:
-        MOVW     R1,#+38024
-        CMP      R0,R1
-        BNE.W    ??LCD_Initializtion_47
+??LCD_Initializtion_51:
+        CMP      R7,LR
+        BNE.W    ??LCD_Initializtion_53
 // 1517 		{
 // 1518 		#if 1
 // 1519 			//************* Start Initial Sequence **********//
 // 1520 			ILI9488_WriteCmd(0x00E0); 
+??LCD_Initializtion_9:
         MOVS     R0,#+224
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1521 			ILI9488_WriteData(0x0000); 
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1522 			ILI9488_WriteData(0x0007); 
         MOVS     R0,#+7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1523 			ILI9488_WriteData(0x000f); 
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1524 			ILI9488_WriteData(0x000D); 
         MOVS     R0,#+13
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1525 			ILI9488_WriteData(0x001B); 
         MOVS     R0,#+27
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1526 			ILI9488_WriteData(0x000A); 
         MOVS     R0,#+10
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1527 			ILI9488_WriteData(0x003c); 
         MOVS     R0,#+60
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1528 			ILI9488_WriteData(0x0078); 
         MOVS     R0,#+120
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1529 			ILI9488_WriteData(0x004A); 
         MOVS     R0,#+74
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1530 			ILI9488_WriteData(0x0007); 
         MOVS     R0,#+7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1531 			ILI9488_WriteData(0x000E); 
         MOVS     R0,#+14
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1532 			ILI9488_WriteData(0x0009); 
         MOVS     R0,#+9
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1533 			ILI9488_WriteData(0x001B); 
         MOVS     R0,#+27
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1534 			ILI9488_WriteData(0x001e); 
         MOVS     R0,#+30
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1535 			ILI9488_WriteData(0x000f);  
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1536 
 // 1537 			ILI9488_WriteCmd(0x00E1); 
         MOVS     R0,#+225
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1538 			ILI9488_WriteData(0x0000); 
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1539 			ILI9488_WriteData(0x0022); 
         MOVS     R0,#+34
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1540 			ILI9488_WriteData(0x0024); 
         MOVS     R0,#+36
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1541 			ILI9488_WriteData(0x0006); 
         MOVS     R0,#+6
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1542 			ILI9488_WriteData(0x0012); 
         MOVS     R0,#+18
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1543 			ILI9488_WriteData(0x0007); 
         MOVS     R0,#+7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1544 			ILI9488_WriteData(0x0036); 
         MOVS     R0,#+54
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1545 			ILI9488_WriteData(0x0047); 
         MOVS     R0,#+71
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1546 			ILI9488_WriteData(0x0047); 
-        MOVS     R0,#+71
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1547 			ILI9488_WriteData(0x0006); 
         MOVS     R0,#+6
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1548 			ILI9488_WriteData(0x000a); 
         MOVS     R0,#+10
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1549 			ILI9488_WriteData(0x0007); 
         MOVS     R0,#+7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1550 			ILI9488_WriteData(0x0030); 
         MOVS     R0,#+48
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1551 			ILI9488_WriteData(0x0037); 
         MOVS     R0,#+55
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1552 			ILI9488_WriteData(0x000f); 
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1553 
 // 1554 			ILI9488_WriteCmd(0x00C0); 
         MOVS     R0,#+192
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1555 			ILI9488_WriteData(0x0010); 
         MOVS     R0,#+16
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1556 			ILI9488_WriteData(0x0010); 
-        MOVS     R0,#+16
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1557 
 // 1558 			ILI9488_WriteCmd(0x00C1); 
         MOVS     R0,#+193
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1559 			ILI9488_WriteData(0x0041); 
         MOVS     R0,#+65
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1560 
 // 1561 			LCD_WriteCommand(0x00C5); 
         MOVS     R0,#+197
-          CFI FunCall LCD_WriteCommand
-        BL       LCD_WriteCommand
+        STRH     R0,[R4, #+0]
 // 1562 			ILI9488_WriteData(0x0000); 
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1563 			ILI9488_WriteData(0x0022); 
         MOVS     R0,#+34
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1564 			ILI9488_WriteData(0x0080); 
         MOVS     R0,#+128
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1565 
 // 1566 			ILI9488_WriteCmd(0x0036); 
         MOVS     R0,#+54
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1567 			//ILI9488_WriteData(0x0068);
 // 1568 			if(gCfgItems.overturn_180 != 0xEE)
-        LDR.W    R0,??DataTable26
-        LDRB     R0,[R0, #+675]
+        LDR.W    R0,??DataTable25
+        LDRB     R0,[R0, #+691]
         CMP      R0,#+238
-        BEQ.N    ??LCD_Initializtion_48
+        ITE      NE 
 // 1569 			{
 // 1570 				ILI9488_WriteData(0x0068); 
-        MOVS     R0,#+104
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
-        B.N      ??LCD_Initializtion_49
+        MOVNE    R0,#+104
 // 1571 			}
 // 1572 			else
 // 1573 			{
 // 1574 				ILI9488_WriteData(0x00A8);
-??LCD_Initializtion_48:
-        MOVS     R0,#+168
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        MOVEQ    R0,#+168
+        STRH     R0,[R4, #+2]
 // 1575 			}
 // 1576 
 // 1577 			ILI9488_WriteCmd(0x003A); //Interface Mode Control
-??LCD_Initializtion_49:
         MOVS     R0,#+58
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1578 			ILI9488_WriteData(0x0055);
         MOVS     R0,#+85
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1579 
 // 1580 			ILI9488_WriteCmd(0X00B0);  //Interface Mode Control  
         MOVS     R0,#+176
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1581 			ILI9488_WriteData(0x0000); 
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1582 			ILI9488_WriteCmd(0x00B1);   //Frame rate 70HZ  
         MOVS     R0,#+177
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1583 			ILI9488_WriteData(0x00B0); 
         MOVS     R0,#+176
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1584 			ILI9488_WriteData(0x0011); 
         MOVS     R0,#+17
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1585 			ILI9488_WriteCmd(0x00B4); 
         MOVS     R0,#+180
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1586 			ILI9488_WriteData(0x0002);   
         MOVS     R0,#+2
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1587 			ILI9488_WriteCmd(0x00B6); //RGB/MCU Interface Control
         MOVS     R0,#+182
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1588 			ILI9488_WriteData(0x0002); 
         MOVS     R0,#+2
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1589 			ILI9488_WriteData(0x0042); 
         MOVS     R0,#+66
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1590 
 // 1591 			ILI9488_WriteCmd(0x00B7); 
         MOVS     R0,#+183
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1592 			ILI9488_WriteData(0x00C6); 
         MOVS     R0,#+198
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1593 
 // 1594 			//WriteComm(0XBE);
 // 1595 			//WriteData(0x00);
@@ -4348,59 +4008,50 @@ LCD_Initializtion:
 // 1597 
 // 1598 			ILI9488_WriteCmd(0x00E9); 
         MOVS     R0,#+233
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1599 			ILI9488_WriteData(0x0000);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1600 
 // 1601 			ILI9488_WriteCmd(0X00F7);    
         MOVS     R0,#+247
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1602 			ILI9488_WriteData(0x00A9); 
         MOVS     R0,#+169
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1603 			ILI9488_WriteData(0x0051); 
         MOVS     R0,#+81
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1604 			ILI9488_WriteData(0x002C); 
         MOVS     R0,#+44
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1605 			ILI9488_WriteData(0x0082);
         MOVS     R0,#+130
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1606 
 // 1607 			ILI9488_WriteCmd(0x0011); 
         MOVS     R0,#+17
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1608 			HAL_Delay(120); 
         MOVS     R0,#+120
           CFI FunCall HAL_Delay
         BL       HAL_Delay
 // 1609 			ILI9488_WriteCmd(0x0029); 	
         MOVS     R0,#+41
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1610 
 // 1611 			ili9320_SetWindows(0,0,480,320);
         MOV      R3,#+320
         MOV      R2,#+480
         MOVS     R1,#+0
-        MOV      R0,R1
+        MOVS     R0,#+0
           CFI FunCall ili9320_SetWindows
         BL       ili9320_SetWindows
 // 1612 			ili9320_Clear(0x0000);
         MOVS     R0,#+0
           CFI FunCall ili9320_Clear
         BL       ili9320_Clear
-        B.N      ??LCD_Initializtion_14
+        B.N      ??LCD_Initializtion_50
 // 1613 
 // 1614 #else
 // 1615 	//************* Start Initial Sequence **********//
@@ -4518,344 +4169,264 @@ LCD_Initializtion:
 // 1727             //ili9320_Clear(0x0000);
 // 1728 		}
 // 1729 	else if(DeviceCode==0x9341)
-??LCD_Initializtion_47:
-        MOVW     R1,#+37697
-        CMP      R0,R1
-        BNE.W    ??LCD_Initializtion_50
+??LCD_Initializtion_53:
+        CMP      R7,R8
+        BNE.W    ??LCD_Initializtion_54
 // 1730 	{
 // 1731 		ILI9488_WriteCmd(0X01);//RESET
+??LCD_Initializtion_7:
         MOVS     R0,#+1
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1732 		Delay(150);
         MOVS     R0,#+150
           CFI FunCall Delay
         BL       Delay
 // 1733 		ILI9488_WriteCmd(0xCF);
         MOVS     R0,#+207
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1734 		ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1735 		ILI9488_WriteData(0xDB);//83
         MOVS     R0,#+219
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1736 		ILI9488_WriteData(0X30);
         MOVS     R0,#+48
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1737 
 // 1738 		ILI9488_WriteCmd(0xB1);           
         MOVS     R0,#+177
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1739 		ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1740 		ILI9488_WriteData(0x18);
         MOVS     R0,#+24
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1741 
 // 1742 		ILI9488_WriteCmd(0xED);
         MOVS     R0,#+237
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1743 		ILI9488_WriteData(0x64);
         MOVS     R0,#+100
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1744 		ILI9488_WriteData(0x03);
         MOVS     R0,#+3
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1745 		ILI9488_WriteData(0X12);
         MOVS     R0,#+18
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1746 		ILI9488_WriteData(0x81);
         MOVS     R0,#+129
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1747 
 // 1748 		ILI9488_WriteCmd(0xE8);
         MOVS     R0,#+232
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1749 		ILI9488_WriteData(0x85); 
         MOVS     R0,#+133
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1750 		ILI9488_WriteData(0x00); 
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1751 		ILI9488_WriteData(0x70); 
         MOVS     R0,#+112
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1752 
 // 1753 		ILI9488_WriteCmd(0xCB);
         MOVS     R0,#+203
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1754 		ILI9488_WriteData(0x39);
         MOVS     R0,#+57
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1755 		ILI9488_WriteData(0x2C);
         MOVS     R0,#+44
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1756 		ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1757 		ILI9488_WriteData(0x34);
         MOVS     R0,#+52
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1758 		ILI9488_WriteData(0x02);
         MOVS     R0,#+2
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1759 
 // 1760 		ILI9488_WriteCmd(0xF7);
         MOVS     R0,#+247
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1761 		ILI9488_WriteData(0x20);
         MOVS     R0,#+32
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1762 
 // 1763 		ILI9488_WriteCmd(0xEA);
         MOVS     R0,#+234
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1764 		ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1765 		ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1766 
 // 1767 		ILI9488_WriteCmd(0xC0);
         MOVS     R0,#+192
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1768 		ILI9488_WriteData(0x22);
         MOVS     R0,#+34
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1769 
 // 1770 		ILI9488_WriteCmd(0xC1);
         MOVS     R0,#+193
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1771 		ILI9488_WriteData(0x12);
         MOVS     R0,#+18
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1772 
 // 1773 		ILI9488_WriteCmd(0xC5);
         MOVS     R0,#+197
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1774 		ILI9488_WriteData(0x5C);
         MOVS     R0,#+92
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1775 		ILI9488_WriteData(0x4C);
         MOVS     R0,#+76
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1776 
 // 1777 		ILI9488_WriteCmd(0xC7);
         MOVS     R0,#+199
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1778 		ILI9488_WriteData(0x8F);
         MOVS     R0,#+143
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1779 
 // 1780 		ILI9488_WriteCmd(0x36);
         MOVS     R0,#+54
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1781 		ILI9488_WriteData(0xe8);//use this to use ucgui
         MOVS     R0,#+232
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1782 
 // 1783 
 // 1784 		ILI9488_WriteCmd(0x3A);
         MOVS     R0,#+58
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1785 		ILI9488_WriteData(0x55);
         MOVS     R0,#+85
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1786 
 // 1787 		ILI9488_WriteCmd(0xF2);
         MOVS     R0,#+242
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1788 		ILI9488_WriteData(0x02);
         MOVS     R0,#+2
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1789 
 // 1790 		ILI9488_WriteCmd(0x26);
         MOVS     R0,#+38
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1791 		ILI9488_WriteData(0x01);
         MOVS     R0,#+1
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1792 
 // 1793 		ILI9488_WriteCmd(0xE0);
         MOVS     R0,#+224
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1794 		ILI9488_WriteData(0x0F);
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1795 		ILI9488_WriteData(0x20);
         MOVS     R0,#+32
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1796 		ILI9488_WriteData(0x19);
         MOVS     R0,#+25
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1797 		ILI9488_WriteData(0x0F);
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1798 		ILI9488_WriteData(0x10);
         MOVS     R0,#+16
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1799 		ILI9488_WriteData(0x08);
         MOVS     R0,#+8
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1800 		ILI9488_WriteData(0x4A);
         MOVS     R0,#+74
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1801 		ILI9488_WriteData(0xF6);
         MOVS     R0,#+246
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1802 		ILI9488_WriteData(0x3A);
         MOVS     R0,#+58
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1803 		ILI9488_WriteData(0x0F);
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1804 		ILI9488_WriteData(0x14);
         MOVS     R0,#+20
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1805 		ILI9488_WriteData(0x09);
         MOVS     R0,#+9
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1806 		ILI9488_WriteData(0x18);
         MOVS     R0,#+24
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1807 		ILI9488_WriteData(0x0B);
         MOVS     R0,#+11
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1808 		ILI9488_WriteData(0x08);
         MOVS     R0,#+8
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1809 		ILI9488_WriteData(0xE1);
         MOVS     R0,#+225
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1810 		ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1811 		ILI9488_WriteData(0x1E);
         MOVS     R0,#+30
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1812 		ILI9488_WriteData(0x1E);
-        MOVS     R0,#+30
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1813 		ILI9488_WriteData(0x05);
         MOVS     R0,#+5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1814 		ILI9488_WriteData(0x0F);
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1815 		ILI9488_WriteData(0x04);
         MOVS     R0,#+4
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1816 		ILI9488_WriteData(0x31);
         MOVS     R0,#+49
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1817 		ILI9488_WriteData(0x33);
         MOVS     R0,#+51
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1818 		ILI9488_WriteData(0x43);
         MOVS     R0,#+67
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1819 		ILI9488_WriteData(0x04);
         MOVS     R0,#+4
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1820 		ILI9488_WriteData(0x0B);
         MOVS     R0,#+11
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1821 		ILI9488_WriteData(0x06);
         MOVS     R0,#+6
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1822 		ILI9488_WriteData(0x27);
         MOVS     R0,#+39
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1823 		ILI9488_WriteData(0x34);
         MOVS     R0,#+52
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1824 		ILI9488_WriteData(0x0F);
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1825 
 // 1826 		ILI9488_WriteCmd(0x11);
         MOVS     R0,#+17
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1827 
 // 1828 		Delay(5);
         MOVS     R0,#+5
@@ -4863,84 +4434,47 @@ LCD_Initializtion:
         BL       Delay
 // 1829 
 // 1830 		ILI9488_WriteCmd(0x29);
-        MOVS     R0,#+41
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        B.N      ??LCD_Initializtion_55
 // 1831 
 // 1832 		ILI9488_WriteCmd(0x2A);
-        MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
 // 1833 		ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1834 		ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1835 		// LCD_WR_DATA(0x00);
 // 1836 		// LCD_WR_DATA(0xEF);
 // 1837 		ILI9488_WriteData(0x01);
-        MOVS     R0,#+1
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1838 		ILI9488_WriteData(0x3F);
-        MOVS     R0,#+63
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1839 		ILI9488_WriteCmd(0x2B);
-        MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
 // 1840 		ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1841 		ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1842 		//  LCD_WR_DATA(0x01);
 // 1843 		ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1844 		ILI9488_WriteData(0xEF);
-        MOVS     R0,#+239
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
 // 1845 		ILI9488_WriteCmd(0x2C);	
-        MOVS     R0,#+44
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
-        B.N      ??LCD_Initializtion_14
 // 1846 	}		
 // 1847 		else if(DeviceCode==0x1505)
-??LCD_Initializtion_50:
-        MOVW     R1,#+5381
-        CMP      R0,R1
-        BNE.W    ??LCD_Initializtion_51
+??LCD_Initializtion_54:
+        CMP      R7,R12
+        BNE.W    ??LCD_Initializtion_56
 // 1848 			{
 // 1849 			//HC-chen 2017.12.14
 // 1850 			LCD_WriteReg(0x00e5,0x8000);
-        MOV      R1,#+32768
+??LCD_Initializtion_8:
         MOVS     R0,#+229
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+32768
+        STRH     R0,[R4, #+2]
 // 1851 			LCD_WriteReg(0x0000,0x0001);
-        MOVS     R1,#+1
         MOVS     R0,#+0
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1852 			//HC-chen 2017.10.11
 // 1853 			//if(gCfgItems.OVERTURN_180==0) //不翻转
 // 1854 			//{
 // 1855 			LCD_WriteReg(0x0001,0x0100);
-        MOV      R1,#+256
-        MOVS     R0,#+1
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+256
+        STRH     R0,[R4, #+2]
 // 1856 			// }
 // 1857 			//else
 // 1858 			//{
@@ -4952,124 +4486,124 @@ LCD_Initializtion:
         BL       Delay
 // 1862 			//LCD_WriteReg(0x0001,0x0100);
 // 1863 			LCD_WriteReg(0x0002,0x0700);
-        MOV      R1,#+1792
         MOVS     R0,#+2
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R5,#+1792
+        STRH     R5,[R4, #+2]
 // 1864 			//LCD_WriteReg(0x0003,0x1030);
 // 1865 			LCD_WriteReg(0x0003,0x1018);
-        MOVW     R1,#+4120
         MOVS     R0,#+3
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R6,#+514
+        MOVW     R0,#+4120
+        STRH     R0,[R4, #+2]
 // 1866 			LCD_WriteReg(0x0004,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+4
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1867 			LCD_WriteReg(0x0008,0x0202);
-        MOVW     R5,#+514
-        MOV      R1,R5
         MOVS     R0,#+8
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        STRH     R6,[R4, #+2]
 // 1868 			LCD_WriteReg(0x0009,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+9
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1869 			LCD_WriteReg(0x000a,0x0000);	
-        MOVS     R1,#+0
         MOVS     R0,#+10
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1870 			LCD_WriteReg(0x000c,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+12
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1871 			LCD_WriteReg(0x000d,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+13
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1872 			LCD_WriteReg(0x000f,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+15
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1873 			//*********************************************Power On
 // 1874 			LCD_WriteReg(0x0010,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1875 			LCD_WriteReg(0x0011,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1876 			LCD_WriteReg(0x0012,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+18
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1877 			LCD_WriteReg(0x0013,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+19
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1878 			Delay(50);
         MOVS     R0,#+50
           CFI FunCall Delay
         BL       Delay
 // 1879 			LCD_WriteReg(0x0010,0x17b0);
-        MOVW     R1,#+6064
         MOVS     R0,#+16
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+6064
+        STRH     R0,[R4, #+2]
 // 1880 			LCD_WriteReg(0x0011,0x0037);
-        MOVS     R1,#+55
         MOVS     R0,#+17
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+55
+        STRH     R0,[R4, #+2]
 // 1881 			Delay(50);
         MOVS     R0,#+50
           CFI FunCall Delay
         BL       Delay
 // 1882 			LCD_WriteReg(0x0012,0x0138);
-        MOV      R1,#+312
         MOVS     R0,#+18
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+312
+        STRH     R0,[R4, #+2]
 // 1883 			Delay(50);
         MOVS     R0,#+50
           CFI FunCall Delay
         BL       Delay
 // 1884 			LCD_WriteReg(0x0013,0x1700);
-        MOV      R1,#+5888
         MOVS     R0,#+19
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+5888
+        STRH     R0,[R4, #+2]
 // 1885 			LCD_WriteReg(0x0029,0x001f);//0x000d
-        MOVS     R1,#+31
         MOVS     R0,#+41
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+31
+        STRH     R0,[R4, #+2]
 // 1886 			Delay(50);
         MOVS     R0,#+50
           CFI FunCall Delay
         BL       Delay
 // 1887 			LCD_WriteReg(0x0020,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+32
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R1,#+49
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1888 			LCD_WriteReg(0x0021,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+33
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1889 			//*********************************************Set gamma
 // 1890 			//LCD_WriteReg(0x0030,0x0001);
 // 1891 			//LCD_WriteReg(0x0031,0x0606);
@@ -5084,182 +4618,177 @@ LCD_Initializtion:
 // 1900 			//LCD_WriteReg(0x003c,0x0700);
 // 1901 			//LCD_WriteReg(0x003d,0x0a1f);
 // 1902 			LCD_WriteReg(0x0030,0x0707);
-        MOVW     R4,#+1799
-        MOV      R1,R4
         MOVS     R0,#+48
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+1799
+        STRH     R0,[R4, #+2]
 // 1903 			LCD_WriteReg(0x0031,0x0007); //0x0707
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+7
-        MOVS     R0,#+49
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1904 			LCD_WriteReg(0x0032,0x0603); 
+        MOVS     R1,#+50
+        STRH     R1,[R4, #+0]
         MOVW     R1,#+1539
-        MOVS     R0,#+50
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1905 			LCD_WriteReg(0x0033,0x0700); 
-        MOV      R1,#+1792
-        MOVS     R0,#+51
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+51
+        STRH     R1,[R4, #+0]
+        STRH     R5,[R4, #+2]
 // 1906 			LCD_WriteReg(0x0034,0x0202); 
-        MOV      R1,R5
-        MOVS     R0,#+52
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+52
+        STRH     R1,[R4, #+0]
+        STRH     R6,[R4, #+2]
 // 1907 			LCD_WriteReg(0x0035,0x0002); //?0x0606
+        MOVS     R1,#+53
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+2
-        MOVS     R0,#+53
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1908 			LCD_WriteReg(0x0036,0x1F0F);
+        MOVS     R1,#+54
+        STRH     R1,[R4, #+0]
         MOVW     R1,#+7951
-        MOVS     R0,#+54
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1909 			LCD_WriteReg(0x0037,0x0707); //0x0f0f  0x0105
-        MOV      R1,R4
-        MOVS     R0,#+55
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+55
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1910 			LCD_WriteReg(0x0038,0x0000); 
+        MOVS     R1,#+56
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+56
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1911 			LCD_WriteReg(0x0039,0x0000); 
+        MOVS     R1,#+57
+        STRH     R1,[R4, #+0]
         MOVS     R1,#+0
-        MOVS     R0,#+57
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R1,[R4, #+2]
 // 1912 			LCD_WriteReg(0x003A,0x0707); 
-        MOV      R1,R4
-        MOVS     R0,#+58
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+58
+        STRH     R1,[R4, #+0]
+        STRH     R0,[R4, #+2]
 // 1913 			LCD_WriteReg(0x003B,0x0000); //0x0303
-        MOVS     R1,#+0
         MOVS     R0,#+59
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1914 			LCD_WriteReg(0x003C,0x0007); //?0x0707
-        MOVS     R1,#+7
         MOVS     R0,#+60
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+7
+        STRH     R0,[R4, #+2]
 // 1915 			LCD_WriteReg(0x003D,0x0000); //0x1313//0x1f08
-        MOVS     R1,#+0
         MOVS     R0,#+61
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1916 		
 // 1917 			//**********************************************Set Gram aera
 // 1918 			LCD_WriteReg(0x0050,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+80
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1919 			LCD_WriteReg(0x0051,0x00ef);
-        MOVS     R1,#+239
         MOVS     R0,#+81
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+239
+        STRH     R0,[R4, #+2]
 // 1920 			LCD_WriteReg(0x0052,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+82
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1921 			LCD_WriteReg(0x0053,0x013f);
-        MOVW     R1,#+319
         MOVS     R0,#+83
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+319
+        STRH     R0,[R4, #+2]
 // 1922 			//LCD_WriteReg(0x0060,0x2700);
 // 1923 			//HC-chen 2017.10.11
 // 1924 			//if(gCfgItems.OVERTURN_180==0) //不翻转
 // 1925 			//{
 // 1926 			LCD_WriteReg(0x0060,0x2700);
-        MOV      R1,#+9984
         MOVS     R0,#+96
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOV      R0,#+9984
+        STRH     R0,[R4, #+2]
 // 1927 			//}
 // 1928 			//else
 // 1929 			//{
 // 1930 			//LCD_WriteReg(0x0060,0xA700);
 // 1931 			//}
 // 1932 			LCD_WriteReg(0x0061,0x0001);
-        MOVS     R1,#+1
         MOVS     R0,#+97
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+1
+        STRH     R0,[R4, #+2]
 // 1933 			LCD_WriteReg(0x006a,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+106
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1934 			//*********************************************Paratial display
 // 1935 			LCD_WriteReg(0x0090,0x0010);
-        MOVS     R1,#+16
         MOVS     R0,#+144
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+16
+        STRH     R0,[R4, #+2]
 // 1936 			LCD_WriteReg(0x0092,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+146
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1937 			LCD_WriteReg(0x0093,0x0003);
-        MOVS     R1,#+3
         MOVS     R0,#+147
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+3
+        STRH     R0,[R4, #+2]
 // 1938 			LCD_WriteReg(0x0095,0x0101);
-        MOVW     R1,#+257
         MOVS     R0,#+149
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+257
+        STRH     R0,[R4, #+2]
 // 1939 			LCD_WriteReg(0x0097,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+151
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1940 			LCD_WriteReg(0x0098,0x0000);
-        MOVS     R1,#+0
         MOVS     R0,#+152
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R4, #+2]
 // 1941 			//******************************************** Plan Control
 // 1942 			LCD_WriteReg(0x0007,0x0021);
-        MOVS     R1,#+33
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+33
+        STRH     R0,[R4, #+2]
 // 1943 			Delay(50);
         MOVS     R0,#+50
           CFI FunCall Delay
         BL       Delay
 // 1944 			LCD_WriteReg(0x0007,0x0031);
-        MOVS     R1,#+49
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVS     R0,#+49
+        STRH     R0,[R4, #+2]
 // 1945 			Delay(50);
         MOVS     R0,#+50
           CFI FunCall Delay
         BL       Delay
 // 1946 			LCD_WriteReg(0x0007,0x0173);
-        MOVW     R1,#+371
         MOVS     R0,#+7
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        STRH     R0,[R4, #+0]
+        MOVW     R0,#+371
+        STRH     R0,[R4, #+2]
 // 1947 			Delay(50);
         MOVS     R0,#+50
+??LCD_Initializtion_21:
           CFI FunCall Delay
         BL       Delay
-        B.N      ??LCD_Initializtion_14
+        B.N      ??LCD_Initializtion_50
 // 1948 			//LLCD_WRITE_CMD(0x0022);
 // 1949 			}
 // 1950 			else //if(DeviceCode == 0x8552)//ST7789
@@ -5267,10 +4796,9 @@ LCD_Initializtion:
 // 1952 						
 // 1953 				//---------------------------------------------------------------------------------------------------//
 // 1954 				ILI9488_WriteCmd(0x11);
-??LCD_Initializtion_51:
+??LCD_Initializtion_56:
         MOVS     R0,#+17
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1955 				Delay(120); //Delay 120ms
         MOVS     R0,#+120
           CFI FunCall Delay
@@ -5278,15 +4806,13 @@ LCD_Initializtion:
 // 1956 				//------------------------------display and color format setting--------------------------------//
 // 1957 				ILI9488_WriteCmd(0x36);
         MOVS     R0,#+54
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1958 				//LCD_WR_DATA(0x00);
 // 1959 				//if(gCfgItems.OVERTURN_180 != 1) //不翻转
 // 1960 				//{
 // 1961 					ILI9488_WriteData(0xA4);//
         MOVS     R0,#+164
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1962 				//}
 // 1963 				//else
 // 1964 				//{
@@ -5295,276 +4821,205 @@ LCD_Initializtion:
 // 1967 		
 // 1968 				ILI9488_WriteCmd(0x3a);
         MOVS     R0,#+58
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1969 				ILI9488_WriteData(0x05);
         MOVS     R0,#+5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1970 				//--------------------------------ST7789V Frame rate setting----------------------------------//
 // 1971 				ILI9488_WriteCmd(0xb2);
         MOVS     R0,#+178
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1972 				ILI9488_WriteData(0x0c);
         MOVS     R0,#+12
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1973 				ILI9488_WriteData(0x0c);
-        MOVS     R0,#+12
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1974 				ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1975 				ILI9488_WriteData(0x33);
         MOVS     R0,#+51
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1976 				ILI9488_WriteData(0x33);
-        MOVS     R0,#+51
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1977 				ILI9488_WriteCmd(0xb7);
         MOVS     R0,#+183
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1978 				ILI9488_WriteData(0x35);
         MOVS     R0,#+53
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1979 				//---------------------------------ST7789V Power setting--------------------------------------//
 // 1980 				ILI9488_WriteCmd(0xbb);
         MOVS     R0,#+187
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1981 				ILI9488_WriteData(0x29);
         MOVS     R0,#+41
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1982 				ILI9488_WriteCmd(0xc0);
         MOVS     R0,#+192
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1983 				ILI9488_WriteData(0x2c);
         MOVS     R0,#+44
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1984 				ILI9488_WriteCmd(0xc2);
         MOVS     R0,#+194
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1985 				ILI9488_WriteData(0x01);
         MOVS     R0,#+1
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1986 				ILI9488_WriteCmd(0xc3);
         MOVS     R0,#+195
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1987 				ILI9488_WriteData(0x10);
         MOVS     R0,#+16
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1988 				ILI9488_WriteCmd(0xc4);
         MOVS     R0,#+196
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1989 				ILI9488_WriteCmd(0x20);
         MOVS     R0,#+32
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1990 				ILI9488_WriteCmd(0xc6);
         MOVS     R0,#+198
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1991 				ILI9488_WriteData(0x0f);
         MOVS     R0,#+15
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1992 				ILI9488_WriteCmd(0xd0);
         MOVS     R0,#+208
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1993 				ILI9488_WriteData(0xa4);
         MOVS     R0,#+164
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1994 				ILI9488_WriteData(0xa1);
         MOVS     R0,#+161
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1995 				//--------------------------------ST7789V gamma setting---------------------------------------//
 // 1996 				ILI9488_WriteCmd(0xe0);
         MOVS     R0,#+224
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 1997 				ILI9488_WriteData(0xd0);
         MOVS     R0,#+208
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1998 				ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 1999 				ILI9488_WriteData(0x02);
         MOVS     R0,#+2
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2000 				ILI9488_WriteData(0x07);
         MOVS     R0,#+7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2001 				ILI9488_WriteData(0x0a);
         MOVS     R0,#+10
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2002 				ILI9488_WriteData(0x28);
         MOVS     R0,#+40
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2003 				ILI9488_WriteData(0x32);
         MOVS     R0,#+50
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2004 				ILI9488_WriteData(0x44);
         MOVS     R0,#+68
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2005 				ILI9488_WriteData(0x42);
         MOVS     R0,#+66
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2006 				ILI9488_WriteData(0x06);
         MOVS     R0,#+6
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2007 				ILI9488_WriteData(0x0e);
         MOVS     R0,#+14
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2008 				ILI9488_WriteData(0x12);
         MOVS     R0,#+18
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2009 				ILI9488_WriteData(0x14);
         MOVS     R0,#+20
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2010 				ILI9488_WriteData(0x17);
         MOVS     R0,#+23
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2011 				ILI9488_WriteCmd(0xe1);
         MOVS     R0,#+225
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 2012 				ILI9488_WriteData(0xd0);
         MOVS     R0,#+208
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2013 				ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2014 				ILI9488_WriteData(0x02);
         MOVS     R0,#+2
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2015 				ILI9488_WriteData(0x07);
         MOVS     R0,#+7
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2016 				ILI9488_WriteData(0x0a);
         MOVS     R0,#+10
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2017 				ILI9488_WriteData(0x28);
         MOVS     R0,#+40
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2018 				ILI9488_WriteData(0x31);
         MOVS     R0,#+49
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2019 				ILI9488_WriteData(0x54);
         MOVS     R0,#+84
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2020 				ILI9488_WriteData(0x47);
         MOVS     R0,#+71
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2021 				ILI9488_WriteData(0x0e);
         MOVS     R0,#+14
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2022 				ILI9488_WriteData(0x1c);
         MOVS     R0,#+28
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2023 				ILI9488_WriteData(0x17);
         MOVS     R0,#+23
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2024 				ILI9488_WriteData(0x1b);
         MOVS     R0,#+27
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2025 				ILI9488_WriteData(0x1e);
         MOVS     R0,#+30
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2026 				ILI9488_WriteCmd(0x29); 		
+??LCD_Initializtion_55:
         MOVS     R0,#+41
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 2027 
 // 2028 				ILI9488_WriteCmd(0x2A);
         MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 2029 				ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2030 				ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2031 				ILI9488_WriteData(0x01);
         MOVS     R0,#+1
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2032 				ILI9488_WriteData(0x3F);
         MOVS     R0,#+63
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2033 				ILI9488_WriteCmd(0x2B);
         MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 2034 				ILI9488_WriteData(0x00);
         MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2035 				ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2036 				ILI9488_WriteData(0x00);
-        MOVS     R0,#+0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2037 				ILI9488_WriteData(0xEF);
         MOVS     R0,#+239
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R4, #+2]
 // 2038 				ILI9488_WriteCmd(0x2C);		
         MOVS     R0,#+44
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R4, #+0]
 // 2039 			
 // 2040 			} 
 // 2041 
@@ -5574,17 +5029,22 @@ LCD_Initializtion:
 // 2045 			//ili9320_Clear(Green);
 // 2046 			//Delay(1200); 
 // 2047 			ili9320_Clear(Black);
-??LCD_Initializtion_14:
-        MOVS     R0,#+0
-        POP      {R1,R2,R4-R6,LR}
+??LCD_Initializtion_50:
+        ADD      SP,SP,#+12
+          CFI CFA R13+28
+        POP      {R4-R9,LR}
           CFI R4 SameValue
           CFI R5 SameValue
           CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
+        MOVS     R0,#+0
           CFI FunCall ili9320_Clear
         B.N      ili9320_Clear
-          CFI EndBlock cfiBlock26
+          CFI EndBlock cfiBlock30
 // 2048 			//Delay(1200);
 // 2049       
 // 2050 }
@@ -5601,279 +5061,179 @@ LCD_Initializtion:
 // 2061 //inline void ili9320_SetCursor(u16 x,u16 y)
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock27 Using cfiCommon0
+          CFI Block cfiBlock31 Using cfiCommon0
           CFI Function ili9320_SetCursor
+          CFI NoCalls
         THUMB
 // 2062 void ili9320_SetCursor(u16 x,u16 y)
 // 2063 {
-ili9320_SetCursor:
-        PUSH     {R4-R6,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+16
-        MOV      R5,R0
-        MOV      R4,R1
 // 2064 	if(DeviceCode==0x8989)
-        LDR.W    R0,??DataTable26_1
-        LDRH     R0,[R0, #+0]
-        MOVW     R1,#+35209
-        CMP      R0,R1
+ili9320_SetCursor:
+        LDR.W    R2,??DataTable25_1
+        LDRH     R2,[R2, #+0]
+        MOVW     R3,#+35209
+        CMP      R2,R3
         BNE.N    ??ili9320_SetCursor_0
 // 2065 	{
 // 2066 	 	LCD_WriteReg(0x004e,y);        //行
-        MOV      R1,R4
-        MOVS     R0,#+78
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        LDR.W    R2,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R3,#+78
+        STRH     R3,[R2, #+0]
+        STRH     R1,[R2, #+2]
 // 2067     	LCD_WriteReg(0x004f,0x13f-x);  //列
-        MOVW     R0,#+319
-        SUBS     R1,R0,R5
-        UXTH     R1,R1
-        MOVS     R0,#+79
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WriteReg
-        B.W      LCD_WriteReg
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        MOVS     R1,#+79
+        STRH     R1,[R2, #+0]
+        MOVW     R1,#+319
+        SUBS     R0,R1,R0
+        B.N      ??ili9320_SetCursor_1
 // 2068 	}
 // 2069 	else if((DeviceCode==0x9919))
 ??ili9320_SetCursor_0:
-        MOVW     R1,#+39193
-        CMP      R0,R1
-        BNE.N    ??ili9320_SetCursor_1
+        MOVW     R3,#+39193
+        CMP      R2,R3
+        BNE.N    ??ili9320_SetCursor_2
 // 2070 	{
 // 2071 		LCD_WriteReg(0x004e,x); // 行
-        MOV      R1,R5
-        MOVS     R0,#+78
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        LDR.W    R2,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R3,#+78
+        STRH     R3,[R2, #+0]
+        STRH     R0,[R2, #+2]
 // 2072   		LCD_WriteReg(0x004f,y); // 列	
-        MOV      R1,R4
         MOVS     R0,#+79
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WriteReg
-        B.W      LCD_WriteReg
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        STRH     R0,[R2, #+0]
+        B.N      ??ili9320_SetCursor_3
 // 2073 	}
 // 2074   else if((DeviceCode==0x5761))      //SSD1963
-??ili9320_SetCursor_1:
-        MOVW     R1,#+22369
-        CMP      R0,R1
-        BNE.N    ??ili9320_SetCursor_2
+??ili9320_SetCursor_2:
+        MOVW     R3,#+22369
+        CMP      R2,R3
+        BNE.N    ??ili9320_SetCursor_4
 // 2075 	{
 // 2076 		LCD_WrtReg(0x002A);	
-        MOVS     R0,#+42
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        LDR.W    R2,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R3,#+42
+        STRH     R3,[R2, #+0]
 // 2077     LCD_WrtRAM(x>>8);	    
-        LSRS     R0,R5,#+8
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R3,R0,#+8
+        STRH     R3,[R2, #+2]
 // 2078     LCD_WrtRAM(x&0x00ff);
-        UXTB     R0,R5
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        UXTB     R0,R0
+        STRH     R0,[R2, #+2]
 // 2079     LCD_WrtRAM(HDP>>8);	    
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R2, #+2]
 // 2080     LCD_WrtRAM(HDP&0x00ff);
         MOVS     R0,#+31
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R2, #+2]
 // 2081     LCD_WrtReg(0x002b);	
         MOVS     R0,#+43
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R2, #+0]
 // 2082     LCD_WrtRAM(y>>8);	    
-        LSRS     R0,R4,#+8
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R0,R1,#+8
+        STRH     R0,[R2, #+2]
 // 2083     LCD_WrtRAM(y&0x00ff);
-        UXTB     R0,R4
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        UXTB     R0,R1
+        STRH     R0,[R2, #+2]
 // 2084     LCD_WrtRAM(VDP>>8);	    
         MOVS     R0,#+1
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R2, #+2]
 // 2085     LCD_WrtRAM(VDP&0x00ff);	
         MOVS     R0,#+223
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WrtRAM
-        B.W      LCD_WrtRAM
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        B.N      ??ili9320_SetCursor_1
 // 2086 	}
 // 2087 	else if(DeviceCode == 0x9488)
-??ili9320_SetCursor_2:
-        MOVW     R1,#+38024
-        CMP      R0,R1
-        BNE.N    ??ili9320_SetCursor_3
+??ili9320_SetCursor_4:
+        MOVW     R3,#+38024
+        CMP      R2,R3
+        BNE.N    ??ili9320_SetCursor_5
 // 2088 		{
 // 2089 			ILI9488_WriteCmd(0X002A); 
-        MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        LDR.W    R2,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R3,#+42
+        STRH     R3,[R2, #+0]
 // 2090 			ILI9488_WriteData(x>>8); 
-        LSRS     R6,R5,#+8
-        MOV      R0,R6
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSRS     R3,R0,#+8
+        STRH     R3,[R2, #+2]
 // 2091 			ILI9488_WriteData(x&0X00FF); 
-        UXTB     R5,R5
-        MOV      R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        UXTB     R0,R0
+        STRH     R0,[R2, #+2]
 // 2092 			ILI9488_WriteData(x>>8); 
-        MOV      R0,R6
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R3,[R2, #+2]
 // 2093 			ILI9488_WriteData(x&0X00FF);			
-        MOV      R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R2, #+2]
 // 2094 			//ILI9488_WriteData(0X01); 
 // 2095 			//ILI9488_WriteData(0XDF);			
 // 2096 			ILI9488_WriteCmd(0X002B); 
         MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R2, #+0]
 // 2097 			ILI9488_WriteData(y>>8); 
-        LSRS     R5,R4,#+8
-        MOV      R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSRS     R0,R1,#+8
+        STRH     R0,[R2, #+2]
 // 2098 			ILI9488_WriteData(y&0X00FF);
-        UXTB     R4,R4
-        MOV      R0,R4
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        UXTB     R1,R1
+        STRH     R1,[R2, #+2]
 // 2099 			ILI9488_WriteData(y>>8); 
-        MOV      R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R2, #+2]
 // 2100 			ILI9488_WriteData(y&0X00FF);			
-        MOV      R0,R4
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall ILI9488_WriteData
-        B.W      ILI9488_WriteData
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+??ili9320_SetCursor_3:
+        STRH     R1,[R2, #+2]
 // 2101 			//ILI9488_WriteData(0X01); 
 // 2102 			//ILI9488_WriteData(0X3F);			
 // 2103 		}				
+        BX       LR
 // 2104 	else if((DeviceCode==0x9325)||(DeviceCode==0x9328)||(DeviceCode==0x1505))
-??ili9320_SetCursor_3:
-        MOVW     R1,#+37669
-        CMP      R0,R1
-        BEQ.N    ??ili9320_SetCursor_4
-        MOVW     R1,#+37672
-        CMP      R0,R1
-        BEQ.N    ??ili9320_SetCursor_4
-        MOVW     R1,#+5381
-        CMP      R0,R1
-        BNE.N    ??ili9320_SetCursor_5
+??ili9320_SetCursor_5:
+        MOVW     R3,#+37669
+        CMP      R2,R3
+        ITTTT    NE 
+        MOVWNE   R3,#+37672
+        CMPNE    R2,R3
+        MOVWNE   R3,#+5381
+        CMPNE    R2,R3
+        BNE.N    ??ili9320_SetCursor_6
 // 2105 	{
 // 2106   		LCD_WriteReg(0x0020,y); // 行
-??ili9320_SetCursor_4:
-        MOV      R1,R4
-        MOVS     R0,#+32
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        LDR.W    R2,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R3,#+32
+        STRH     R3,[R2, #+0]
+        STRH     R1,[R2, #+2]
 // 2107   		LCD_WriteReg(0x0021,0x13f-x); // 列
-        MOVW     R0,#+319
-        SUBS     R1,R0,R5
-        UXTH     R1,R1
-        MOVS     R0,#+33
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WriteReg
-        B.W      LCD_WriteReg
-          CFI R4 Frame(CFA, -16)
-          CFI R5 Frame(CFA, -12)
-          CFI R6 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+16
+        MOVS     R1,#+33
+        STRH     R1,[R2, #+0]
+        MOVW     R1,#+319
+        SUBS     R0,R1,R0
+        B.N      ??ili9320_SetCursor_1
 // 2108 	}
 // 2109 	else
 // 2110 	{
 // 2111 		ILI9488_WriteCmd(0X2A); 
-??ili9320_SetCursor_5:
-        MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+??ili9320_SetCursor_6:
+        LDR.W    R2,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R3,#+42
+        STRH     R3,[R2, #+0]
 // 2112 		ILI9488_WriteData(x>>8); 
-        LSRS     R0,R5,#+8
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSRS     R3,R0,#+8
+        STRH     R3,[R2, #+2]
 // 2113 		ILI9488_WriteData(x&0XFF);  
-        UXTB     R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        UXTB     R0,R0
+        STRH     R0,[R2, #+2]
 // 2114 		
 // 2115 		ILI9488_WriteCmd(0X2B); 
         MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R2, #+0]
 // 2116 		ILI9488_WriteData(y>>8); 
-        LSRS     R0,R4,#+8
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSRS     R0,R1,#+8
+        STRH     R0,[R2, #+2]
 // 2117 		ILI9488_WriteData(y&0XFF);
-        UXTB     R0,R4
-        POP      {R4-R6,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall ILI9488_WriteData
-        B.W      ILI9488_WriteData
-          CFI EndBlock cfiBlock27
+        UXTB     R0,R1
+??ili9320_SetCursor_1:
+        STRH     R0,[R2, #+2]
 // 2118 	}  
 // 2119   
 // 2120       	
 // 2121 }
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock31
 // 2122 /****************************************************************************
 // 2123 * 名    称：void ili9320_SetWindows(u16 StartX,u16 StartY,u16 EndX,u16 EndY)
 // 2124 * 功    能：设置窗口区域
@@ -5888,42 +5248,33 @@ ili9320_SetCursor:
 // 2133 //inline void ili9320_SetWindows(u16 StartX,u16 StartY,u16 EndX,u16 EndY)
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock28 Using cfiCommon0
+          CFI Block cfiBlock32 Using cfiCommon0
           CFI Function ili9320_SetWindows
+          CFI NoCalls
         THUMB
 // 2134 void ili9320_SetWindows(u16 StartX,u16 StartY,u16 width,u16 heigh)
 // 2135 {
 ili9320_SetWindows:
-        PUSH     {R3-R11,LR}
+        PUSH     {R4-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R4,R0
-        MOV      R5,R1
-        MOV      R6,R2
-        MOV      R7,R3
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+20
 // 2136 	u16 s_h,s_l, e_h, e_l;
 // 2137 	
 // 2138 	u16 xEnd, yEnd;
 // 2139 	xEnd = StartX + width;
-        ADD      R8,R6,R4
-        MOV      R9,R8
 // 2140   yEnd = StartY + heigh-1;
-        ADDS     R0,R7,R5
-        SUB      R10,R0,#+1
-        MOV      R11,R10
 // 2141   if(DeviceCode==0x8989)
-        LDR.W    R0,??DataTable26_1
-        LDRH     R0,[R0, #+0]
-        MOVW     R1,#+35209
-        CMP      R0,R1
+        LDR.W    R7,??DataTable25_1
+        LDRH     R7,[R7, #+0]
+        ADDS     R5,R3,R1
+        ADDS     R6,R2,R0
+        SUBS     R5,R5,#+1
+        MOVW     LR,#+35209
+        CMP      R7,LR
         BNE.N    ??ili9320_SetWindows_0
 // 2142   {
 // 2143   	
@@ -5931,50 +5282,27 @@ ili9320_SetWindows:
 // 2145 	 LCD_WriteReg(0x0045, StartY);
 // 2146 	 LCD_WriteReg(0x0046, yEnd);*/
 // 2147 	 LCD_WriteReg(0x0044, (StartY& 0xff) | (yEnd << 8));
-        UXTB     R0,R5
-        ORR      R1,R0,R11, LSL #+8
-        UXTH     R1,R1
-        MOVS     R0,#+68
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        LDR.W    R7,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R2,#+68
+        UXTB     R1,R1
+        STRH     R2,[R7, #+0]
+        ORR      R1,R1,R5, LSL #+8
+        STRH     R1,[R7, #+2]
 // 2148 	 LCD_WriteReg(0x0045, StartX);
-        MOV      R1,R4
-        MOVS     R0,#+69
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+69
+        STRH     R1,[R7, #+0]
+        STRH     R0,[R7, #+2]
 // 2149 	 LCD_WriteReg(0x0046, xEnd);
-        MOV      R1,R9
-        UXTH     R1,R1
         MOVS     R0,#+70
-        POP      {R2,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WriteReg
-        B.W      LCD_WriteReg
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
+        STRH     R0,[R7, #+0]
+        STRH     R6,[R7, #+2]
 // 2150     
 // 2151   }
+        POP      {R4-R7,PC}
 // 2152 	else if(DeviceCode == 0X9488)
 ??ili9320_SetWindows_0:
-        MOVW     R1,#+38024
-        CMP      R0,R1
+        MOVW     LR,#+38024
+        CMP      R7,LR
         BEQ.N    ??ili9320_SetWindows_1
 // 2153 	{
 // 2154 	 	s_h = (StartX >> 8) & 0X00ff;
@@ -6000,14 +5328,13 @@ ili9320_SetWindows:
 // 2174 		ILI9488_WriteData(e_l);		
 // 2175 	}	
 // 2176   else if((DeviceCode==0x9325)||(DeviceCode==0x9328)||(DeviceCode==0x1505))
-        MOVW     R1,#+37669
-        CMP      R0,R1
-        BEQ.N    ??ili9320_SetWindows_2
-        MOVW     R1,#+37672
-        CMP      R0,R1
-        BEQ.N    ??ili9320_SetWindows_2
-        MOVW     R1,#+5381
-        CMP      R0,R1
+        MOVW     LR,#+37669
+        CMP      R7,LR
+        ITTTT    NE 
+        MOVWNE   LR,#+37672
+        CMPNE    R7,LR
+        MOVWNE   LR,#+5381
+        CMPNE    R7,LR
         BNE.N    ??ili9320_SetWindows_1
 // 2177   {
 // 2178 	 /* LCD_WriteReg(0x0050, StartX);
@@ -6015,51 +5342,25 @@ ili9320_SetWindows:
 // 2180 	  LCD_WriteReg(0x0051, xEnd);
 // 2181 	  LCD_WriteReg(0x0053, yEnd);*/
 // 2182 	  LCD_WriteReg(0x0050,StartY);        //Specify the start/end positions of the window address in the horizontal direction by an address unit
-??ili9320_SetWindows_2:
-        MOV      R1,R5
-        MOVS     R0,#+80
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        LDR.W    R7,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R2,#+80
+        STRH     R2,[R7, #+0]
+        STRH     R1,[R7, #+2]
 // 2183 		LCD_WriteReg(0x0051,yEnd);        //Specify the start positions of the window address in the vertical direction by an address unit 
-        MOV      R1,R11
-        UXTH     R1,R1
-        MOVS     R0,#+81
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+81
+        STRH     R1,[R7, #+0]
+        STRH     R5,[R7, #+2]
 // 2184 		LCD_WriteReg(0x0052,320 - xEnd); 
-        RSB      R1,R9,#+320
-        UXTH     R1,R1
-        MOVS     R0,#+82
-          CFI FunCall LCD_WriteReg
-        BL       LCD_WriteReg
+        MOVS     R1,#+82
+        STRH     R1,[R7, #+0]
+        RSB      R1,R6,#+320
+        STRH     R1,[R7, #+2]
 // 2185 		LCD_WriteReg(0x0053,320 - StartX - 1);        //Specify the end positions of the window address in the vertical direction by an address unit
-        MOVW     R0,#+319
-        SUBS     R1,R0,R4
-        UXTH     R1,R1
-        MOVS     R0,#+83
-        POP      {R2,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WriteReg
-        B.W      LCD_WriteReg
-          CFI R4 Frame(CFA, -36)
-          CFI R5 Frame(CFA, -32)
-          CFI R6 Frame(CFA, -28)
-          CFI R7 Frame(CFA, -24)
-          CFI R8 Frame(CFA, -20)
-          CFI R9 Frame(CFA, -16)
-          CFI R10 Frame(CFA, -12)
-          CFI R11 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+40
+        MOVS     R1,#+83
+        STRH     R1,[R7, #+0]
+        MOVW     R1,#+319
+        SUBS     R0,R1,R0
+        B.N      ??ili9320_SetWindows_2
 // 2186 	
 // 2187   }	
 // 2188 	else
@@ -6071,29 +5372,25 @@ ili9320_SetWindows:
 // 2194 		
 // 2195 		ILI9488_WriteCmd(0x2A);
 ??ili9320_SetWindows_1:
-        MOVS     R0,#+42
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        LDR.W    R7,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R4,#+42
+        STRH     R4,[R7, #+0]
 // 2196 		ILI9488_WriteData(s_h);
-        LSRS     R0,R4,#+8
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSRS     R4,R0,#+8
+        STRH     R4,[R7, #+2]
 // 2197 		ILI9488_WriteData(s_l);
-        UXTB     R0,R4
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        UXTB     R4,R0
 // 2198 		ILI9488_WriteData(e_h);
-        ADDS     R0,R6,R4
+        ADDS     R0,R2,R0
         SUBS     R0,R0,#+1
-        ASRS     R0,R0,#+8
-        UXTB     R0,R0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSLS     R0,R0,#+16
+        STRH     R4,[R7, #+2]
+        LSRS     R0,R0,#+24
+        STRH     R0,[R7, #+2]
 // 2199 		ILI9488_WriteData(e_l);
-        SUB      R0,R8,#+1
+        SUBS     R0,R6,#+1
         UXTB     R0,R0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        STRH     R0,[R7, #+2]
 // 2200 
 // 2201 		s_h = (StartY >> 8) & 0Xff;
 // 2202 		s_l = StartY & 0Xff;
@@ -6102,39 +5399,23 @@ ili9320_SetWindows:
 // 2205 		
 // 2206 		ILI9488_WriteCmd(0x2B);
         MOVS     R0,#+43
-          CFI FunCall ILI9488_WriteCmd
-        BL       ILI9488_WriteCmd
+        STRH     R0,[R7, #+0]
 // 2207 		ILI9488_WriteData(s_h);
-        LSRS     R0,R5,#+8
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSRS     R0,R1,#+8
+        STRH     R0,[R7, #+2]
 // 2208 		ILI9488_WriteData(s_l);
-        UXTB     R0,R5
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        UXTB     R0,R1
+        STRH     R0,[R7, #+2]
 // 2209 		ILI9488_WriteData(e_h);
-        ADDS     R0,R7,R5
+        ADDS     R0,R3,R1
         SUBS     R0,R0,#+1
-        ASRS     R0,R0,#+8
-        UXTB     R0,R0
-          CFI FunCall ILI9488_WriteData
-        BL       ILI9488_WriteData
+        LSLS     R0,R0,#+16
+        LSRS     R0,R0,#+24
+        STRH     R0,[R7, #+2]
 // 2210 		ILI9488_WriteData(e_l);
-        UXTB     R0,R10
-        POP      {R1,R4-R11,LR}
-          CFI R4 SameValue
-          CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R8 SameValue
-          CFI R9 SameValue
-          CFI R10 SameValue
-          CFI R11 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall ILI9488_WriteData
-        B.W      ILI9488_WriteData
-          CFI EndBlock cfiBlock28
+        UXTB     R0,R5
+??ili9320_SetWindows_2:
+        STRH     R0,[R7, #+2]
 // 2211 	 }
 // 2212 	#if 0
 // 2213   else
@@ -6162,6 +5443,8 @@ ili9320_SetWindows:
 // 2235   }
 // 2236 	#endif
 // 2237 }
+        POP      {R4-R7,PC}       ;; return
+          CFI EndBlock cfiBlock32
 // 2238 
 // 2239 /****************************************************************************
 // 2240 * 名    称：void ili9320_Clear(u16 dat)
@@ -6173,20 +5456,19 @@ ili9320_SetWindows:
 // 2246 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock29 Using cfiCommon0
+          CFI Block cfiBlock33 Using cfiCommon0
           CFI Function ili9320_Clear
         THUMB
 // 2247 void ili9320_Clear(u16 Color)
 // 2248 {
 ili9320_Clear:
-        PUSH     {R3-R5,LR}
+        PUSH     {R4-R6,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
           CFI CFA R13+16
-        MOV      R4,R0
 // 2249   u32 index=0;
-        MOVS     R5,#+0
 // 2250   //**ili9320_SetCursor(0,0); 
 // 2251   //**LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */    
 // 2252   //**for(index=0;index<76800;index++)
@@ -6197,135 +5479,199 @@ ili9320_Clear:
 // 2257   unsigned int count; 
 // 2258 	
 // 2259 	if(DeviceCode ==0x9488)
-        LDR.N    R0,??DataTable26_1
-        LDRH     R0,[R0, #+0]
-        MOVW     R1,#+38024
-        CMP      R0,R1
+        LDR.W    R5,??DataTable25_1
+        MOV      R4,R0
+        LDRH     R0,[R5, #+0]
+        MOVW     R6,#+38024
+        CMP      R0,R6
         BNE.N    ??ili9320_Clear_0
 // 2260 	{
 // 2261 		ili9320_SetCursor(0,0);
-        MOV      R1,R5
-        MOV      R0,R1
+        MOVS     R1,#+0
+        MOVS     R0,#+0
           CFI FunCall ili9320_SetCursor
         BL       ili9320_SetCursor
+        LDRH     R0,[R5, #+0]
+        MOVW     R1,#+35209
+        CMP      R0,R1
+        BNE.N    ??ili9320_Clear_1
 // 2262     ili9320_SetWindows(0,0,480,320);
-        MOV      R3,#+320
-        MOV      R2,#+480
-        MOV      R1,R5
-        MOV      R0,R1
-          CFI FunCall ili9320_SetWindows
-        BL       ili9320_SetWindows
+        LDR.W    R5,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R0,#+68
+        STRH     R0,[R5, #+0]
+        MOV      R0,#+16128
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+69
+        STRH     R0,[R5, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+70
+        STRH     R0,[R5, #+0]
+        MOV      R0,#+480
+        B.N      ??ili9320_Clear_2
+??ili9320_Clear_1:
+        CMP      R0,R6
+        BNE.N    ??ili9320_Clear_3
+        LDR.W    R5,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R0,#+42
+        STRH     R0,[R5, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+1
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+223
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+43
+        STRH     R0,[R5, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+1
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+63
+        B.N      ??ili9320_Clear_2
+??ili9320_Clear_3:
+        MOVW     R1,#+37669
+        CMP      R0,R1
+        ITTTT    NE 
+        MOVWNE   R1,#+37672
+        CMPNE    R0,R1
+        MOVWNE   R1,#+5381
+        CMPNE    R0,R1
+        BEQ.N    ??ili9320_Clear_4
+        LDR.W    R5,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R0,#+42
+        STRH     R0,[R5, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+1
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+223
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+43
+        STRH     R0,[R5, #+0]
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+1
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+63
+        B.N      ??ili9320_Clear_2
+??ili9320_Clear_4:
+        LDR.W    R5,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R0,#+80
+        STRH     R0,[R5, #+0]
+        MOVS     R1,#+82
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
+        MOVS     R0,#+81
+        STRH     R0,[R5, #+0]
+        MOVW     R0,#+319
+        STRH     R0,[R5, #+2]
+        STRH     R1,[R5, #+0]
+        MOVW     R1,#+65376
+        STRH     R1,[R5, #+2]
+        MOVS     R1,#+83
+        STRH     R1,[R5, #+0]
+??ili9320_Clear_2:
+        STRH     R0,[R5, #+2]
 // 2263 		LCD_WriteRAM_Prepare();
           CFI FunCall LCD_WriteRAM_Prepare
         BL       LCD_WriteRAM_Prepare
-        LDR.N    R0,??DataTable26_2  ;; 0x60020000
 // 2264     for(index=0;index<320*480;index++)
-??ili9320_Clear_1:
-        CMP      R5,#+153600
-        BCS.N    ??ili9320_Clear_2
+        MOV      R0,#+153600
+        B.N      ?Subroutine5
 // 2265     {
 // 2266         LCD->LCD_RAM=Color;
-        STRH     R4,[R0, #+0]
 // 2267     }
-        ADDS     R5,R5,#+1
-        B.N      ??ili9320_Clear_1
 // 2268 	}
 // 2269 	else if(DeviceCode == 0x5761)
 ??ili9320_Clear_0:
         MOVW     R1,#+22369
+        LDR.W    R5,??DataTable25_2  ;; 0x6001fffe
         CMP      R0,R1
-        BNE.N    ??ili9320_Clear_3
+        BNE.N    ??ili9320_Clear_5
 // 2270 	{
 // 2271 	    LCD_WrtReg(0x002a);	
         MOVS     R0,#+42
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R5, #+0]
 // 2272 	    LCD_WrtRAM(0);	    
-        MOV      R0,R5
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
 // 2273 	    LCD_WrtRAM(0);
-        MOV      R0,R5
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R5, #+2]
 // 2274 	    LCD_WrtRAM(HDP>>8);	    
         MOVS     R0,#+3
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R5, #+2]
 // 2275 	    LCD_WrtRAM(HDP&0x00ff);
         MOVS     R0,#+31
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R5, #+2]
 // 2276 	    LCD_WrtReg(0x002b);	
         MOVS     R0,#+43
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R5, #+0]
 // 2277 	    LCD_WrtRAM(0);	    
-        MOV      R0,R5
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        MOVS     R0,#+0
+        STRH     R0,[R5, #+2]
 // 2278 	    LCD_WrtRAM(0);
-        MOV      R0,R5
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R5, #+2]
 // 2279 	    LCD_WrtRAM(VDP>>8);	    
         MOVS     R0,#+1
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R5, #+2]
 // 2280 	    LCD_WrtRAM(VDP&0x00ff);
         MOVS     R0,#+223
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        STRH     R0,[R5, #+2]
 // 2281 	    LCD_WrtReg(0x002c);	
         MOVS     R0,#+44
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R5, #+0]
 // 2282 	    LCD_WrtReg(0x002c);
-        MOVS     R0,#+44
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R5, #+0]
 // 2283 	    for(count=0;count<(HDP+1)*(VDP+1);count++)
-??ili9320_Clear_4:
-        LDR.N    R0,??DataTable26_3  ;; 0x5dc00
-        CMP      R5,R0
-        BCS.N    ??ili9320_Clear_2
+        LDR.W    R0,??DataTable25_3  ;; 0x5dc00
+        B.N      ?Subroutine5
 // 2284 			{
 // 2285 	       LCD_WrtRAM(Color);
-        MOV      R0,R4
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
 // 2286 			}
-        ADDS     R5,R5,#+1
-        B.N      ??ili9320_Clear_4
 // 2287 	}
 // 2288 	else
 // 2289 	{
 // 2290 		  ili9320_SetCursor(0,0); 
-??ili9320_Clear_3:
-        MOV      R1,R5
-        MOV      R0,R1
+??ili9320_Clear_5:
+        MOVS     R1,#+0
+        MOVS     R0,#+0
           CFI FunCall ili9320_SetCursor
         BL       ili9320_SetCursor
 // 2291 		  LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */
           CFI FunCall LCD_WriteRAM_Prepare
         BL       LCD_WriteRAM_Prepare
 // 2292 		  for(index=0;index<76800;index++)
-        LDR.N    R0,??DataTable26_2  ;; 0x60020000
-        B.N      ??ili9320_Clear_5
+        MOV      R0,#+76800
+          CFI EndBlock cfiBlock33
+        REQUIRE ?Subroutine5
+        ;; // Fall through to label ?Subroutine5
 // 2293 		  {
 // 2294 		     LCD->LCD_RAM=Color;
-??ili9320_Clear_6:
-        STRH     R4,[R0, #+0]
 // 2295 		  }		
-        ADDS     R5,R5,#+1
-??ili9320_Clear_5:
-        CMP      R5,#+76800
-        BCC.N    ??ili9320_Clear_6
 // 2296 	}
 // 2297 }    //**
-??ili9320_Clear_2:
-        POP      {R0,R4,R5,PC}    ;; return
-          CFI EndBlock cfiBlock29
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock34 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls ili9320_Clear
+          CFI CFA R13+16
+          CFI R4 Frame(CFA, -16)
+          CFI R5 Frame(CFA, -12)
+          CFI R6 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine5:
+        STRH     R4,[R5, #+2]
+        SUBS     R0,R0,#+1
+        BNE.N    ?Subroutine5
+        POP      {R4-R6,PC}       ;; return
+          CFI EndBlock cfiBlock34
 // 2298 
 // 2299 /****************************************************************************
 // 2300 * 名    称：u16 ili9320_GetPoint(u16 x,u16 y)
@@ -6338,7 +5684,7 @@ ili9320_Clear:
 // 2307 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock30 Using cfiCommon0
+          CFI Block cfiBlock35 Using cfiCommon0
           CFI Function ili9320_GetPoint
         THUMB
 // 2308 u16 ili9320_GetPoint(u16 x,u16 y)
@@ -6351,14 +5697,15 @@ ili9320_GetPoint:
           CFI FunCall ili9320_SetCursor
         BL       ili9320_SetCursor
 // 2311   return (ili9320_BGR2RGB(LCD_ReadRAM()));
-          CFI FunCall LCD_ReadRAM
-        BL       LCD_ReadRAM
-        POP      {R1,LR}
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall ili9320_BGR2RGB
-        B.N      ili9320_BGR2RGB
-          CFI EndBlock cfiBlock30
+        LDR.W    R0,??DataTable25_4  ;; 0x60020000
+        LDRH     R1,[R0, #+0]
+        LDRH     R0,[R0, #+0]
+        AND      R1,R0,#0x7E0
+        ADD      R1,R1,R0, LSL #+11
+        ADD      R0,R1,R0, LSR #+11
+        UXTH     R0,R0
+        POP      {R1,PC}          ;; return
+          CFI EndBlock cfiBlock35
 // 2312 }
 // 2313 /****************************************************************************
 // 2314 * 名    称：void ili9320_SetPoint(u16 x,u16 y,u16 point)
@@ -6372,7 +5719,7 @@ ili9320_GetPoint:
 // 2322 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock31 Using cfiCommon0
+          CFI Block cfiBlock36 Using cfiCommon0
           CFI Function ili9320_SetPoint
         THUMB
 // 2323 void ili9320_SetPoint(u16 x,u16 y,u16 point)
@@ -6384,7 +5731,7 @@ ili9320_SetPoint:
           CFI CFA R13+8
         MOV      R4,R2
 // 2325 	if(DeviceCode == 0x9488)
-        LDR.N    R2,??DataTable26_1
+        LDR.N    R2,??DataTable25_1
         LDRH     R2,[R2, #+0]
         MOVW     R3,#+38024
         CMP      R2,R3
@@ -6392,8 +5739,8 @@ ili9320_SetPoint:
 // 2326 	{
 // 2327 		if ( (x>480)||(y>320) ) return;
         CMP      R0,#+480
-        BGT.N    ??ili9320_SetPoint_1
-        CMP      R1,#+320
+        IT       LE 
+        CMPLE    R1,#+320
         BGT.N    ??ili9320_SetPoint_1
 // 2328 	}
 // 2329   //**if ( (x>320)||(y>240) ) return;
@@ -6406,20 +5753,12 @@ ili9320_SetPoint:
           CFI FunCall LCD_WriteRAM_Prepare
         BL       LCD_WriteRAM_Prepare
 // 2333   LCD_WriteRAM(point);
-        MOV      R0,R4
-        POP      {R4,LR}
-          CFI R4 SameValue
-          CFI R14 SameValue
-          CFI CFA R13+0
-          CFI FunCall LCD_WriteRAM
-        B.W      LCD_WriteRAM
-          CFI R4 Frame(CFA, -8)
-          CFI R14 Frame(CFA, -4)
-          CFI CFA R13+8
+        LDR.N    R0,??DataTable25_4  ;; 0x60020000
+        STRH     R4,[R0, #+0]
+// 2334 }
 ??ili9320_SetPoint_1:
         POP      {R4,PC}          ;; return
-          CFI EndBlock cfiBlock31
-// 2334 }
+          CFI EndBlock cfiBlock36
 // 2335 
 // 2336 
 // 2337 /****************************************************************************
@@ -6437,130 +5776,125 @@ ili9320_SetPoint:
 // 2349 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock32 Using cfiCommon0
+          CFI Block cfiBlock37 Using cfiCommon0
           CFI Function ili9320_DrawPicture
         THUMB
 // 2350 void ili9320_DrawPicture(u16 StartX,u16 StartY,u16 EndX,u16 EndY,u16 *pic)
 // 2351 {
 ili9320_DrawPicture:
-        PUSH     {R3-R11,LR}
+        PUSH     {R4-R10,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R11 Frame(CFA, -8)
-          CFI R10 Frame(CFA, -12)
-          CFI R9 Frame(CFA, -16)
-          CFI R8 Frame(CFA, -20)
-          CFI R7 Frame(CFA, -24)
-          CFI R6 Frame(CFA, -28)
-          CFI R5 Frame(CFA, -32)
-          CFI R4 Frame(CFA, -36)
+          CFI R10 Frame(CFA, -8)
+          CFI R9 Frame(CFA, -12)
+          CFI R8 Frame(CFA, -16)
+          CFI R7 Frame(CFA, -20)
+          CFI R6 Frame(CFA, -24)
+          CFI R5 Frame(CFA, -28)
+          CFI R4 Frame(CFA, -32)
+          CFI CFA R13+32
+        SUB      SP,SP,#+8
           CFI CFA R13+40
-        MOV      R9,R0
-        MOV      R4,R1
-        MOV      R5,R3
+        MOV      R7,R0
+        MOV      R10,R1
+        MOV      R9,R3
 // 2352   u32  i, total;
 // 2353   u16 data1,data2,data3;
 // 2354   u16 *picturepointer = pic;
-        LDR      R6,[SP, #+40]
+        LDR      R8,[SP, #+40]
 // 2355   u16 x,y;
 // 2356   
 // 2357   printf("ili9320_DrawPicture StartX %d StartY %d EndX %d EndY %d \n\r", StartX, StartY, EndX, EndY);
-        MOV      R7,R2
-        STR      R5,[SP, #+0]
-        MOV      R3,R7
-        MOV      R2,R4
-        MOV      R1,R9
         ADR.W    R0,`?<Constant "ili9320_DrawPicture S...">`
+        STR      R9,[SP, #+0]
+        MOV      R4,R2
+        MOV      R3,R4
+        MOV      R2,R10
+        MOV      R1,R7
           CFI FunCall printf
         BL       printf
 // 2358 
 // 2359   x=StartX;
 // 2360   y=StartY;
-        MOV      R10,R4
 // 2361   
 // 2362   total = (EndX - StartX + 1)*(EndY - StartY + 1 )/2;
-        SUB      R0,R7,R9
+        SUBS     R0,R4,R7
+        SUB      R1,R9,R10
         ADDS     R0,R0,#+1
-        SUBS     R1,R5,R4
         ADDS     R1,R1,#+1
         MULS     R0,R1,R0
         ADD      R0,R0,R0, LSR #+31
-        ASRS     R7,R0,#+1
+        MOV      R5,R10
+        ASRS     R6,R0,#+1
 // 2363 
 // 2364   for (i=0;i<total;i++)
-        MOV      R8,#+0
-        B.N      ??ili9320_DrawPicture_0
+        BEQ.N    ??ili9320_DrawPicture_0
 // 2365   {
 // 2366       data1 = *picturepointer++;
 ??ili9320_DrawPicture_1:
-        LDRH     R0,[R6], #+2
+        LDRH     R0,[R8], #+2
 // 2367       data2 = *picturepointer++;
-        LDRH     R11,[R6], #+2
+        LDRH     R4,[R8], #+2
 // 2368       data3 = ((data1 >>3)& 0x001f) |((data1>>5) & 0x07E0) | ((data2<<8) & 0xF800);
 // 2369       ili9320_SetPoint(x,y,data3);
         UBFX     R1,R0,#+3,#+5
         LSRS     R0,R0,#+5
         AND      R0,R0,#0x7E0
         ORRS     R0,R0,R1
-        LSL      R1,R11,#+8
+        LSLS     R1,R4,#+8
         AND      R1,R1,#0xF800
         ORR      R2,R1,R0
-        MOV      R1,R10
-        MOV      R0,R9
-        UXTH     R0,R0
+        MOV      R1,R5
+        UXTH     R0,R7
           CFI FunCall ili9320_SetPoint
         BL       ili9320_SetPoint
 // 2370       y++;
-        ADD      R10,R10,#+1
+        ADDS     R0,R5,#+1
 // 2371       if(y > EndY)
-        UXTH     R10,R10
-        CMP      R5,R10
-        BCS.N    ??ili9320_DrawPicture_2
+        UXTH     R5,R0
+        CMP      R9,R5
+        ITT      CC 
 // 2372       {
 // 2373           x++;
-        ADD      R9,R9,#+1
+        ADDCC    R7,R7,#+1
 // 2374           y=StartY;
-        MOV      R10,R4
+        MOVCC    R5,R10
 // 2375       }
 // 2376 
 // 2377 
 // 2378       data1 = data2;
 // 2379       data2 = *picturepointer++;
-??ili9320_DrawPicture_2:
-        LDRH     R0,[R6], #+2
+        LDRH     R0,[R8], #+2
 // 2380       data3 = ((data1 >>11)& 0x001f) |((data2<<3) & 0x07E0) | ((data2) & 0xF800);
 // 2381       ili9320_SetPoint(x,y,data3);
         LSLS     R1,R0,#+3
         AND      R1,R1,#0x7E0
-        ORR      R1,R1,R11, LSR #+11
+        ORR      R1,R1,R4, LSR #+11
         AND      R0,R0,#0xF800
         ORR      R2,R0,R1
-        MOV      R1,R10
-        MOV      R0,R9
-        UXTH     R0,R0
+        MOV      R1,R5
+        UXTH     R0,R7
           CFI FunCall ili9320_SetPoint
         BL       ili9320_SetPoint
 // 2382       y++;
-        ADD      R10,R10,#+1
+        ADDS     R0,R5,#+1
 // 2383       if(y > EndY)
-        UXTH     R10,R10
-        CMP      R5,R10
-        BCS.N    ??ili9320_DrawPicture_3
+        UXTH     R5,R0
+        CMP      R9,R5
+        ITT      CC 
 // 2384       {
 // 2385           x++;
-        ADD      R9,R9,#+1
+        ADDCC    R7,R7,#+1
 // 2386           y=StartY;
-        MOV      R10,R4
+        MOVCC    R5,R10
 // 2387       }
 // 2388   }
-??ili9320_DrawPicture_3:
-        ADD      R8,R8,#+1
-??ili9320_DrawPicture_0:
-        CMP      R8,R7
-        BCC.N    ??ili9320_DrawPicture_1
+        SUBS     R6,R6,#+1
+        BNE.N    ??ili9320_DrawPicture_1
 // 2389 
 // 2390 }
-        POP      {R0,R4-R11,PC}   ;; return
-          CFI EndBlock cfiBlock32
+??ili9320_DrawPicture_0:
+        POP      {R0,R1,R4-R10,PC}  ;; return
+          CFI EndBlock cfiBlock37
 // 2391 
 // 2392 /****************************************************************************
 // 2393 * 名    称：void ili9320_PutChar(u16 x,u16 y,u8 c,u16 charColor,u16 bkColor)
@@ -6575,13 +5909,13 @@ ili9320_DrawPicture:
 // 2402 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock33 Using cfiCommon0
+          CFI Block cfiBlock38 Using cfiCommon0
           CFI Function ili9320_PutChar
         THUMB
 // 2403 void ili9320_PutChar(u16 x,u16 y,u8 c,u16 charColor,u16 bkColor)  // Lihao
 // 2404 {
 ili9320_PutChar:
-        PUSH     {R3-R11,LR}
+        PUSH     {R0,R3-R11,LR}
           CFI R14 Frame(CFA, -4)
           CFI R11 Frame(CFA, -8)
           CFI R10 Frame(CFA, -12)
@@ -6591,43 +5925,68 @@ ili9320_PutChar:
           CFI R6 Frame(CFA, -28)
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R5,R0
-        MOV      R6,R1
-        MOV      R7,R2
-        MOV      R8,R3
-        LDR      R4,[SP, #+40]
+          CFI CFA R13+44
+        SUB      SP,SP,#+12
+          CFI CFA R13+56
+        MOV      R5,R1
 // 2405   u16 i=0;
 // 2406   u16 j=0;
 // 2407   
 // 2408   u8 tmp_char=0;
 // 2409   
 // 2410   if(HyalineBackColor == bkColor)
-        CMP      R4,#+1
-        MOV      R9,#+0
+        ADR.W    R0,ascii_8x16
+        LDRH     R1,[SP, #+56]
+        ADD      R0,R0,R2, LSL #+4
+        SUB      R0,R0,#+512
+        CMP      R1,#+1
         BNE.N    ??ili9320_PutChar_0
 // 2411   {
 // 2412     for (i=0;i<16;i++)
-        B.N      ??ili9320_PutChar_1
+        MOVS     R4,#+0
+        STR      R0,[SP, #+0]
+        MOVW     R10,#+321
+        LDR.W    R9,??DataTable25_4  ;; 0x60020000
+        MOVW     R11,#+481
+        MOVW     R8,#+38024
 // 2413     {
 // 2414       tmp_char=ascii_8x16[((c-0x20)*16)+i];
+??ili9320_PutChar_1:
+        LDR      R0,[SP, #+0]
+        LDRB     R0,[R0, #+0]
 // 2415       for (j=0;j<8;j++)
+        LDRH     R7,[SP, #+12]
+        STR      R0,[SP, #+4]
+        MOVS     R6,#+0
 // 2416       {
 // 2417         if ( (tmp_char >> 7-j) & 0x01 == 0x01)
 ??ili9320_PutChar_2:
-        RSB      R0,R11,#+7
-        ASR      R0,R10,R0
+        LDR      R0,[SP, #+4]
+        RSB      R1,R6,#+7
+        ASRS     R0,R0,R1
         LSLS     R0,R0,#+31
         BPL.N    ??ili9320_PutChar_3
 // 2418           {
 // 2419             ili9320_SetPoint(x+j,y+i,charColor); // 字符颜色
-        MOV      R2,R8
-        ADD      R1,R9,R6
-        UXTH     R1,R1
-        ADD      R0,R11,R5
-        UXTH     R0,R0
-          CFI FunCall ili9320_SetPoint
-        BL       ili9320_SetPoint
+        LDR.N    R0,??DataTable25_1
+        LDRH     R0,[R0, #+0]
+        CMP      R0,R8
+        BNE.N    ??ili9320_PutChar_4
+        UXTH     R7,R7
+        CMP      R7,R11
+        ITT      LT 
+        UXTHLT   R5,R5
+        CMPLT    R5,R10
+        BGE.N    ??ili9320_PutChar_3
+??ili9320_PutChar_4:
+        UXTH     R1,R5
+        UXTH     R0,R7
+          CFI FunCall ili9320_SetCursor
+        BL       ili9320_SetCursor
+          CFI FunCall LCD_WriteRAM_Prepare
+        BL       LCD_WriteRAM_Prepare
+        LDRH     R0,[SP, #+16]
+        STRH     R0,[R9, #+0]
 // 2420           }
 // 2421           else
 // 2422           {
@@ -6635,80 +5994,111 @@ ili9320_PutChar:
 // 2424           }
 // 2425       }
 ??ili9320_PutChar_3:
-        ADD      R11,R11,#+1
-??ili9320_PutChar_4:
-        CMP      R11,#+8
+        ADDS     R6,R6,#+1
+        ADDS     R7,R7,#+1
+        CMP      R6,#+8
         BLT.N    ??ili9320_PutChar_2
-        ADD      R9,R9,#+1
-??ili9320_PutChar_1:
-        CMP      R9,#+16
-        BGE.N    ??ili9320_PutChar_5
-        ADD      R0,R9,R7, LSL #+4
-        ADR.W    R1,ascii_8x16
-        ADDS     R0,R0,R1
-        SUB      R0,R0,#+512
-        LDRB     R10,[R0, #+0]
-        MOV      R11,#+0
-        B.N      ??ili9320_PutChar_4
 // 2426     }
+        LDR      R0,[SP, #+0]
+        ADDS     R4,R4,#+1
+        ADDS     R5,R5,#+1
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+0]
+        CMP      R4,#+16
+        BGE.N    ??ili9320_PutChar_5
+        B.N      ??ili9320_PutChar_1
 // 2427   }
 // 2428   else
 // 2429   {
 // 2430         for (i=0;i<16;i++)
-??ili9320_PutChar_6:
-        ADD      R9,R9,#+1
 ??ili9320_PutChar_0:
-        CMP      R9,#+16
-        BGE.N    ??ili9320_PutChar_5
+        MOVS     R4,#+0
+        STR      R0,[SP, #+0]
+        MOVW     R10,#+321
+        LDR.W    R9,??DataTable25_4  ;; 0x60020000
+        MOVW     R11,#+481
+        MOVW     R8,#+38024
 // 2431     {
 // 2432       tmp_char=ascii_8x16[((c-0x20)*16)+i];
-        ADD      R0,R9,R7, LSL #+4
-        ADR.W    R1,ascii_8x16
-        ADDS     R0,R0,R1
-        SUB      R0,R0,#+512
-        LDRB     R10,[R0, #+0]
+??ili9320_PutChar_6:
+        LDR      R0,[SP, #+0]
+        LDRB     R0,[R0, #+0]
 // 2433       for (j=0;j<8;j++)
-        MOV      R11,#+0
-        B.N      ??ili9320_PutChar_7
+        LDRH     R7,[SP, #+12]
+        STR      R0,[SP, #+4]
+        MOVS     R6,#+0
+??ili9320_PutChar_7:
+        LDR.N    R0,??DataTable25_1
+        LDR      R1,[SP, #+4]
+        LDRH     R0,[R0, #+0]
+        RSB      R2,R6,#+7
+        ASRS     R1,R1,R2
+        LSLS     R1,R1,#+31
+        BPL.N    ??ili9320_PutChar_8
 // 2434       {
 // 2435         if ( (tmp_char >> 7-j) & 0x01 == 0x01)
 // 2436           {
 // 2437             ili9320_SetPoint(x+j,y+i,charColor); // 字符颜色
+        CMP      R0,R8
+        BNE.N    ??ili9320_PutChar_9
+        UXTH     R7,R7
+        CMP      R7,R11
+        ITT      LT 
+        UXTHLT   R5,R5
+        CMPLT    R5,R10
+        BGE.N    ??ili9320_PutChar_10
+??ili9320_PutChar_9:
+        UXTH     R1,R5
+        UXTH     R0,R7
+          CFI FunCall ili9320_SetCursor
+        BL       ili9320_SetCursor
+          CFI FunCall LCD_WriteRAM_Prepare
+        BL       LCD_WriteRAM_Prepare
+        LDRH     R0,[SP, #+16]
+        B.N      ??ili9320_PutChar_11
 // 2438           }
 // 2439           else
 // 2440           {
 // 2441             ili9320_SetPoint(x+j,y+i,bkColor); // 背景颜色
 ??ili9320_PutChar_8:
-        MOV      R2,R4
-        UXTH     R1,R1
-        UXTH     R0,R0
-          CFI FunCall ili9320_SetPoint
-        BL       ili9320_SetPoint
+        CMP      R0,R8
+        BNE.N    ??ili9320_PutChar_12
+        UXTH     R7,R7
+        CMP      R7,R11
+        ITT      LT 
+        UXTHLT   R5,R5
+        CMPLT    R5,R10
+        BGE.N    ??ili9320_PutChar_10
+??ili9320_PutChar_12:
+        UXTH     R1,R5
+        UXTH     R0,R7
+          CFI FunCall ili9320_SetCursor
+        BL       ili9320_SetCursor
+          CFI FunCall LCD_WriteRAM_Prepare
+        BL       LCD_WriteRAM_Prepare
+        LDRH     R0,[SP, #+56]
+??ili9320_PutChar_11:
+        STRH     R0,[R9, #+0]
 // 2442           }
-??ili9320_PutChar_9:
-        ADD      R11,R11,#+1
-??ili9320_PutChar_7:
-        CMP      R11,#+8
-        BGE.N    ??ili9320_PutChar_6
-        ADD      R0,R11,R5
-        ADD      R1,R9,R6
-        RSB      R2,R11,#+7
-        ASR      R2,R10,R2
-        LSLS     R2,R2,#+31
-        BPL.N    ??ili9320_PutChar_8
-        MOV      R2,R8
-        UXTH     R1,R1
-        UXTH     R0,R0
-          CFI FunCall ili9320_SetPoint
-        BL       ili9320_SetPoint
-        B.N      ??ili9320_PutChar_9
 // 2443       }
+??ili9320_PutChar_10:
+        ADDS     R6,R6,#+1
+        ADDS     R7,R7,#+1
+        CMP      R6,#+8
+        BLT.N    ??ili9320_PutChar_7
 // 2444     }
+        LDR      R0,[SP, #+0]
+        ADDS     R4,R4,#+1
+        ADDS     R5,R5,#+1
+        ADDS     R0,R0,#+1
+        STR      R0,[SP, #+0]
+        CMP      R4,#+16
+        BLT.N    ??ili9320_PutChar_6
 // 2445   }			
 // 2446 }
 ??ili9320_PutChar_5:
-        POP      {R0,R4-R11,PC}   ;; return
-          CFI EndBlock cfiBlock33
+        B.N      ?Subroutine4
+          CFI EndBlock cfiBlock38
 // 2447 
 // 2448 /****************************************************************************
 // 2449 * 名    称：void ili9320_PutChar(u16 x,u16 y,u8 c,u16 charColor,u16 bkColor)
@@ -6723,13 +6113,13 @@ ili9320_PutChar:
 // 2458 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock34 Using cfiCommon0
+          CFI Block cfiBlock39 Using cfiCommon0
           CFI Function ili9320_PutChar_16x24
         THUMB
 // 2459 void ili9320_PutChar_16x24(u16 x,u16 y,u8 c,u16 charColor,u16 bkColor)
 // 2460 {
 ili9320_PutChar_16x24:
-        PUSH     {R3-R11,LR}
+        PUSH     {R0,R2-R11,LR}
           CFI R14 Frame(CFA, -4)
           CFI R11 Frame(CFA, -8)
           CFI R10 Frame(CFA, -12)
@@ -6739,12 +6129,18 @@ ili9320_PutChar_16x24:
           CFI R6 Frame(CFA, -28)
           CFI R5 Frame(CFA, -32)
           CFI R4 Frame(CFA, -36)
-          CFI CFA R13+40
-        MOV      R5,R0
-        MOV      R6,R1
-        MOV      R7,R2
-        MOV      R8,R3
-        LDR      R4,[SP, #+40]
+          CFI CFA R13+48
+        MOV      R4,R1
+        ADD      R1,R2,R2, LSL #+1
+        LSLS     R0,R1,#+3
+        SUB      SP,SP,#+8
+          CFI CFA R13+56
+        ADR.W    R1,ASCII_Table_16x24
+        ADD      R0,R1,R0, LSL #+1
+        LDRH     R1,[SP, #+56]
+        SUB      R0,R0,#+1536
+        CMP      R1,#+1
+        BNE.N    ??ili9320_PutChar_16x24_0
 // 2461 
 // 2462   u16 i=0;
 // 2463   u16 j=0;
@@ -6752,30 +6148,49 @@ ili9320_PutChar_16x24:
 // 2465   u16 tmp_char=0;
 // 2466 
 // 2467   if(HyalineBackColor == bkColor)
-        CMP      R4,#+1
-        MOV      R9,#+0
-        BNE.N    ??ili9320_PutChar_16x24_0
 // 2468   {
 // 2469     for (i=0;i<24;i++)
-        B.N      ??ili9320_PutChar_16x24_1
+        MOVS     R5,#+0
+        STR      R0,[SP, #+0]
+        MOVW     R10,#+321
+        MOVW     R11,#+481
+        MOVW     R8,#+38024
 // 2470     {
 // 2471       tmp_char=ASCII_Table_16x24[((c-0x20)*24)+i];
+??ili9320_PutChar_16x24_1:
+        LDR      R0,[SP, #+0]
 // 2472       for (j=0;j<16;j++)
+        LDRH     R7,[SP, #+8]
+        LDRH     R9,[R0, #+0]
+        MOVS     R6,#+0
 // 2473       {
 // 2474         if ( (tmp_char >> j) & 0x01 == 0x01)
 ??ili9320_PutChar_16x24_2:
-        ASR      R0,R10,R11
+        LSR      R0,R9,R6
         LSLS     R0,R0,#+31
         BPL.N    ??ili9320_PutChar_16x24_3
 // 2475           {
 // 2476             ili9320_SetPoint(x+j,y+i,charColor); // 字符颜色
-        MOV      R2,R8
-        ADD      R1,R9,R6
-        UXTH     R1,R1
-        ADD      R0,R11,R5
-        UXTH     R0,R0
-          CFI FunCall ili9320_SetPoint
-        BL       ili9320_SetPoint
+        LDR.N    R0,??DataTable25_1
+        LDRH     R0,[R0, #+0]
+        CMP      R0,R8
+        BNE.N    ??ili9320_PutChar_16x24_4
+        UXTH     R7,R7
+        CMP      R7,R11
+        ITT      LT 
+        UXTHLT   R4,R4
+        CMPLT    R4,R10
+        BGE.N    ??ili9320_PutChar_16x24_3
+??ili9320_PutChar_16x24_4:
+        UXTH     R1,R4
+        UXTH     R0,R7
+          CFI FunCall ili9320_SetCursor
+        BL       ili9320_SetCursor
+          CFI FunCall LCD_WriteRAM_Prepare
+        BL       LCD_WriteRAM_Prepare
+        LDRH     R0,[SP, #+16]
+        LDR.N    R1,??DataTable25_4  ;; 0x60020000
+        STRH     R0,[R1, #+0]
 // 2477           }
 // 2478           else
 // 2479           {
@@ -6783,81 +6198,131 @@ ili9320_PutChar_16x24:
 // 2481           }
 // 2482       }
 ??ili9320_PutChar_16x24_3:
-        ADD      R11,R11,#+1
-??ili9320_PutChar_16x24_4:
-        CMP      R11,#+16
+        ADDS     R6,R6,#+1
+        ADDS     R7,R7,#+1
+        CMP      R6,#+16
         BLT.N    ??ili9320_PutChar_16x24_2
-        ADD      R9,R9,#+1
-??ili9320_PutChar_16x24_1:
-        CMP      R9,#+24
-        BGE.N    ??ili9320_PutChar_16x24_5
-        ADD      R0,R7,R7, LSL #+1
-        ADD      R0,R9,R0, LSL #+3
-        ADR.W    R1,ASCII_Table_16x24
-        ADD      R0,R1,R0, LSL #+1
-        SUB      R0,R0,#+1536
-        LDRH     R10,[R0, #+0]
-        MOV      R11,#+0
-        B.N      ??ili9320_PutChar_16x24_4
 // 2483     }
+        LDR      R0,[SP, #+0]
+        ADDS     R5,R5,#+1
+        ADDS     R0,R0,#+2
+        ADDS     R4,R4,#+1
+        STR      R0,[SP, #+0]
+        CMP      R5,#+24
+        BGE.N    ??ili9320_PutChar_16x24_5
+        B.N      ??ili9320_PutChar_16x24_1
 // 2484   }
 // 2485   else
 // 2486   {
 // 2487     for (i=0;i<24;i++)
-??ili9320_PutChar_16x24_6:
-        ADD      R9,R9,#+1
 ??ili9320_PutChar_16x24_0:
-        CMP      R9,#+24
-        BGE.N    ??ili9320_PutChar_16x24_5
+        MOVS     R5,#+0
+        STR      R0,[SP, #+0]
+        MOVW     R10,#+321
+        MOVW     R11,#+481
+        MOVW     R8,#+38024
 // 2488     {
 // 2489       tmp_char=ASCII_Table_16x24[((c-0x20)*24)+i];
-        ADD      R0,R7,R7, LSL #+1
-        ADD      R0,R9,R0, LSL #+3
-        ADR.W    R1,ASCII_Table_16x24
-        ADD      R0,R1,R0, LSL #+1
-        SUB      R0,R0,#+1536
-        LDRH     R10,[R0, #+0]
+??ili9320_PutChar_16x24_6:
+        LDR      R0,[SP, #+0]
 // 2490       for (j=0;j<16;j++)
-        MOV      R11,#+0
-        B.N      ??ili9320_PutChar_16x24_7
+        LDRH     R7,[SP, #+8]
+        LDRH     R9,[R0, #+0]
+        MOVS     R6,#+0
+??ili9320_PutChar_16x24_7:
+        LDR.N    R0,??DataTable25_1
+        LDRH     R0,[R0, #+0]
+        LSR      R1,R9,R6
+        LSLS     R1,R1,#+31
+        BPL.N    ??ili9320_PutChar_16x24_8
 // 2491       {
 // 2492         if ( (tmp_char >> j) & 0x01 == 0x01)
 // 2493           {
 // 2494             ili9320_SetPoint(x+j,y+i,charColor); // 字符颜色
+        CMP      R0,R8
+        BNE.N    ??ili9320_PutChar_16x24_9
+        UXTH     R7,R7
+        CMP      R7,R11
+        ITT      LT 
+        UXTHLT   R4,R4
+        CMPLT    R4,R10
+        BGE.N    ??ili9320_PutChar_16x24_10
+??ili9320_PutChar_16x24_9:
+        UXTH     R1,R4
+        UXTH     R0,R7
+          CFI FunCall ili9320_SetCursor
+        BL       ili9320_SetCursor
+          CFI FunCall LCD_WriteRAM_Prepare
+        BL       LCD_WriteRAM_Prepare
+        LDRH     R0,[SP, #+16]
+        B.N      ??ili9320_PutChar_16x24_11
 // 2495           }
 // 2496           else
 // 2497           {
 // 2498             ili9320_SetPoint(x+j,y+i,bkColor); // 背景颜色
 ??ili9320_PutChar_16x24_8:
-        MOV      R2,R4
-        UXTH     R1,R1
-        UXTH     R0,R0
-          CFI FunCall ili9320_SetPoint
-        BL       ili9320_SetPoint
+        CMP      R0,R8
+        BNE.N    ??ili9320_PutChar_16x24_12
+        UXTH     R7,R7
+        CMP      R7,R11
+        ITT      LT 
+        UXTHLT   R4,R4
+        CMPLT    R4,R10
+        BGE.N    ??ili9320_PutChar_16x24_10
+??ili9320_PutChar_16x24_12:
+        UXTH     R1,R4
+        UXTH     R0,R7
+          CFI FunCall ili9320_SetCursor
+        BL       ili9320_SetCursor
+          CFI FunCall LCD_WriteRAM_Prepare
+        BL       LCD_WriteRAM_Prepare
+        LDRH     R0,[SP, #+56]
+??ili9320_PutChar_16x24_11:
+        LDR.N    R1,??DataTable25_4  ;; 0x60020000
+        STRH     R0,[R1, #+0]
 // 2499           }
-??ili9320_PutChar_16x24_9:
-        ADD      R11,R11,#+1
-??ili9320_PutChar_16x24_7:
-        CMP      R11,#+16
-        BGE.N    ??ili9320_PutChar_16x24_6
-        ADD      R0,R11,R5
-        ADD      R1,R9,R6
-        ASR      R2,R10,R11
-        LSLS     R2,R2,#+31
-        BPL.N    ??ili9320_PutChar_16x24_8
-        MOV      R2,R8
-        UXTH     R1,R1
-        UXTH     R0,R0
-          CFI FunCall ili9320_SetPoint
-        BL       ili9320_SetPoint
-        B.N      ??ili9320_PutChar_16x24_9
 // 2500       }
+??ili9320_PutChar_16x24_10:
+        ADDS     R6,R6,#+1
+        ADDS     R7,R7,#+1
+        CMP      R6,#+16
+        BLT.N    ??ili9320_PutChar_16x24_7
 // 2501     }
+        LDR      R0,[SP, #+0]
+        ADDS     R5,R5,#+1
+        ADDS     R0,R0,#+2
+        ADDS     R4,R4,#+1
+        STR      R0,[SP, #+0]
+        CMP      R5,#+24
+        BLT.N    ??ili9320_PutChar_16x24_6
+          CFI EndBlock cfiBlock39
 // 2502   }
 // 2503 }
 ??ili9320_PutChar_16x24_5:
-        POP      {R0,R4-R11,PC}   ;; return
-          CFI EndBlock cfiBlock34
+        REQUIRE ?Subroutine4
+        ;; // Fall through to label ?Subroutine4
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock40 Using cfiCommon0
+          CFI NoFunction
+          CFI NoCalls ili9320_PutChar
+          CFI NoCalls ili9320_PutChar_16x24
+          CFI CFA R13+56
+          CFI R4 Frame(CFA, -36)
+          CFI R5 Frame(CFA, -32)
+          CFI R6 Frame(CFA, -28)
+          CFI R7 Frame(CFA, -24)
+          CFI R8 Frame(CFA, -20)
+          CFI R9 Frame(CFA, -16)
+          CFI R10 Frame(CFA, -12)
+          CFI R11 Frame(CFA, -8)
+          CFI R14 Frame(CFA, -4)
+        THUMB
+?Subroutine4:
+        ADD      SP,SP,#+20
+          CFI CFA R13+36
+        POP      {R4-R11,PC}      ;; return
+          CFI EndBlock cfiBlock40
 // 2504 /****************************************************************************
 // 2505 * 名    称：u16 ili9320_BGR2RGB(u16 c)
 // 2506 * 功    能：RRRRRGGGGGGBBBBB 改为 BBBBBGGGGGGRRRRR 格式
@@ -6868,7 +6333,7 @@ ili9320_PutChar_16x24:
 // 2511 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock35 Using cfiCommon0
+          CFI Block cfiBlock41 Using cfiCommon0
           CFI Function ili9320_BGR2RGB
           CFI NoCalls
         THUMB
@@ -6889,7 +6354,7 @@ ili9320_BGR2RGB:
         ADD      R0,R1,R0, LSR #+11
         UXTH     R0,R0
         BX       LR               ;; return
-          CFI EndBlock cfiBlock35
+          CFI EndBlock cfiBlock41
 // 2523 }
 // 2524 
 // 2525 /****************************************************************************
@@ -6902,7 +6367,7 @@ ili9320_BGR2RGB:
 // 2532 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock36 Using cfiCommon0
+          CFI Block cfiBlock42 Using cfiCommon0
           CFI Function ili9320_BackLight
           CFI NoCalls
         THUMB
@@ -6911,12 +6376,11 @@ ili9320_BGR2RGB:
 // 2535 //#if 0 //skyblue 2016-12-13 
 // 2536   if ( status >= 1 )
 ili9320_BackLight:
-        MOV      R1,R0
-        SUBS     R1,R1,#+1
+        SUBS     R1,R0,#+1
         SBCS     R1,R1,R1
         MVNS     R1,R1
+        LDR.N    R0,??DataTable25_5  ;; 0x422281b4
         LSRS     R1,R1,#+31
-        LDR.N    R0,??DataTable26_4  ;; 0x422281b4
         STR      R1,[R0, #+0]
 // 2537   {
 // 2538     Lcd_Light_ON;
@@ -6928,37 +6392,7 @@ ili9320_BackLight:
 // 2544 //#endif  //skyblue 2016-12-13   
 // 2545 }
         BX       LR               ;; return
-          CFI EndBlock cfiBlock36
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable26:
-        DC32     gCfgItems
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable26_1:
-        DC32     DeviceCode
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable26_2:
-        DC32     0x60020000
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable26_3:
-        DC32     0x5dc00
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable26_4:
-        DC32     0x422281b4
+          CFI EndBlock cfiBlock42
 // 2546 
 // 2547 /****************************************************************************
 // 2548 * 名    称：void ili9320_Delay(vu32 nCount)
@@ -6970,103 +6404,80 @@ ili9320_BackLight:
 // 2554 ****************************************************************************/
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock37 Using cfiCommon0
+          CFI Block cfiBlock43 Using cfiCommon0
           CFI Function ili9320_Delay
+          CFI NoCalls
         THUMB
 // 2555 void ili9320_Delay(vu32 nCount)
 // 2556 {
 ili9320_Delay:
-        SUB      SP,SP,#+4
-          CFI CFA R13+4
         PUSH     {R0}
-          CFI CFA R13+8
+          CFI CFA R13+4
 // 2557    Delay(nCount);
         LDR      R0,[SP, #+0]
-        ADD      SP,SP,#+8
-          CFI CFA R13+0
-          CFI FunCall Delay
-        B.W      Delay
-          CFI EndBlock cfiBlock37
 // 2558   //for(; nCount != 0; nCount--);
 // 2559 }
+        ADD      SP,SP,#+4
+          CFI CFA R13+0
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock43
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock38 Using cfiCommon0
+          CFI Block cfiBlock44 Using cfiCommon0
           CFI Function LCD_WindowMax
+          CFI NoCalls
         THUMB
 // 2560 void LCD_WindowMax (unsigned int xsta,unsigned int ysta,unsigned int xend,unsigned int yend)  //**
 // 2561 {
 LCD_WindowMax:
-        PUSH     {R3-R7,LR}
-          CFI R14 Frame(CFA, -4)
-          CFI R7 Frame(CFA, -8)
-          CFI R6 Frame(CFA, -12)
-          CFI R5 Frame(CFA, -16)
-          CFI R4 Frame(CFA, -20)
-          CFI CFA R13+24
-        MOV      R4,R0
-        MOV      R5,R1
-        MOV      R6,R2
-        MOV      R7,R3
+        PUSH     {R4,R5}
+          CFI R5 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
+          CFI CFA R13+8
 // 2562 	LCD_WrtReg(0X002A);
-        MOVS     R0,#+42
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        LDR.N    R4,??DataTable25_2  ;; 0x6001fffe
+        MOVS     R5,#+42
+        STRH     R5,[R4, #+0]
 // 2563 	LCD_WrtRAM(xsta>>8);
-        LSRS     R0,R4,#+8
-        UXTH     R0,R0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R5,R0,#+8
+        STRH     R5,[R4, #+2]
 // 2564 	LCD_WrtRAM(xsta&0X00FF);
-        UXTB     R0,R4
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        UXTB     R0,R0
+        STRH     R0,[R4, #+2]
 // 2565 	LCD_WrtRAM(xend>>8);
-        LSRS     R0,R6,#+8
-        UXTH     R0,R0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R0,R2,#+8
+        STRH     R0,[R4, #+2]
 // 2566 	LCD_WrtRAM(xend&0X00FF);
-        UXTB     R0,R6
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        UXTB     R0,R2
+        STRH     R0,[R4, #+2]
 // 2567 		
 // 2568 	LCD_WrtReg(0X002B);	
         MOVS     R0,#+43
-          CFI FunCall LCD_WrtReg
-        BL       LCD_WrtReg
+        STRH     R0,[R4, #+0]
 // 2569 	LCD_WrtRAM(ysta>>8);	
-        LSRS     R0,R5,#+8
-        UXTH     R0,R0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R0,R1,#+8
+        STRH     R0,[R4, #+2]
 // 2570 	LCD_WrtRAM(ysta&0X00FF);
-        UXTB     R0,R5
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        UXTB     R0,R1
+        STRH     R0,[R4, #+2]
 // 2571 	LCD_WrtRAM(yend>>8);	
-        LSRS     R0,R7,#+8
-        UXTH     R0,R0
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
+        LSRS     R0,R3,#+8
+        STRH     R0,[R4, #+2]
 // 2572 	LCD_WrtRAM(yend&0X00FF);			
-        UXTB     R0,R7
-        POP      {R1,R4-R7,LR}
+        UXTB     R0,R3
+        STRH     R0,[R4, #+2]
+// 2573 }
+        POP      {R4,R5}
           CFI R4 SameValue
           CFI R5 SameValue
-          CFI R6 SameValue
-          CFI R7 SameValue
-          CFI R14 SameValue
           CFI CFA R13+0
-          CFI FunCall LCD_WrtRAM
-        B.W      LCD_WrtRAM
-          CFI EndBlock cfiBlock38
-// 2573 }
+        BX       LR               ;; return
+          CFI EndBlock cfiBlock44
 // 2574 
 // 2575 
 
         SECTION `.text`:CODE:NOROOT(1)
-          CFI Block cfiBlock39 Using cfiCommon0
+          CFI Block cfiBlock45 Using cfiCommon0
           CFI Function LCD_Fill2
         THUMB
 // 2576 void LCD_Fill2(uint8_t xsta, uint16_t ysta, uint8_t xend, uint16_t yend, uint16_t colour)   //**
@@ -7092,25 +6503,58 @@ LCD_Fill2:
         BL       LCD_WriteRAM_Prepare
 // 2581     n=(u32)(yend-ysta+1)*(xend-xsta+1);    
         SUBS     R0,R7,R5
-        ADDS     R0,R0,#+1
         SUBS     R1,R6,R4
+        ADDS     R0,R0,#+1
         ADDS     R1,R1,#+1
-        MUL      R5,R1,R0
-        LDR      R4,[SP, #+24]
-        B.N      ??LCD_Fill2_0
+        MULS     R1,R1,R0
+        BEQ.N    ??LCD_Fill2_0
+        LDR      R0,[SP, #+24]
+        LDR.N    R2,??DataTable25_4  ;; 0x60020000
 // 2582     while(n--){LCD_WrtRAM(colour);}  
 ??LCD_Fill2_1:
-        MOV      R0,R4
-          CFI FunCall LCD_WrtRAM
-        BL       LCD_WrtRAM
-??LCD_Fill2_0:
-        MOV      R0,R5
-        SUBS     R5,R0,#+1
-        CMP      R0,#+0
+        STRH     R0,[R2, #+0]
+        SUBS     R1,R1,#+1
         BNE.N    ??LCD_Fill2_1
 // 2583 }
+??LCD_Fill2_0:
         POP      {R0,R4-R7,PC}    ;; return
-          CFI EndBlock cfiBlock39
+          CFI EndBlock cfiBlock45
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable25:
+        DC32     gCfgItems
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable25_1:
+        DC32     DeviceCode
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable25_2:
+        DC32     0x6001fffe
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable25_3:
+        DC32     0x5dc00
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable25_4:
+        DC32     0x60020000
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable25_5:
+        DC32     0x422281b4
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -7398,9 +6842,9 @@ ASCII_Table_16x24:
         END
 // 
 //      2 bytes in section .bss
-// 14 050 bytes in section .text
+// 13 148 bytes in section .text
 // 
-// 14 050 bytes of CODE memory
+// 13 148 bytes of CODE memory
 //      2 bytes of DATA memory
 //
 //Errors: none

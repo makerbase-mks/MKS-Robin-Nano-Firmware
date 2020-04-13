@@ -300,9 +300,10 @@ EEPROM 2K byte ·ÖÅä
 #define EPR_PRINT_FINESH_COUNT								EPR_PULSE_DELAY_TIME + 2
 
 #define EPR_BED_MINTEMP			EPR_PRINT_FINESH_COUNT + 2
+#define EPR_Z_SAVE_HOMING               EPR_BED_MINTEMP + 2
 
 
-#define EPR_END_ADDR			EPR_BED_MINTEMP + 2
+#define EPR_END_ADDR			EPR_Z_SAVE_HOMING + 1
 //#define EPR_END_ADDR EPR_PRINT_FINESH_COUNT + 2//EPR_END_ADDR=1852
 
 #if EPR_END_ADDR > 2048
@@ -441,6 +442,8 @@ typedef struct
 	uint8_t   y_enable_on;
 	uint8_t   z_enable_on;
 	uint8_t   e_enable_on;		
+
+	uint8_t   z_save_homing;
 
 	//int16_t x_home_bump_mm;
 	//int16_t y_home_bump_mm;

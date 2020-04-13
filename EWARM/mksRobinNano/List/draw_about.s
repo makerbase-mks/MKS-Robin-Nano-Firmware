@@ -1,80 +1,78 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       14/Feb/2020  17:05:05
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:24:01
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
 //    Endian       =  little
 //    Source file  =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_about.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_about.cpp
 //    Command line =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_about.cpp
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_about.cpp
 //        -D USE_HAL_DRIVER -D STM32F103xE -D STM32F10X_HD -D USE_HAL_LIB -D
 //        MKS_ROBIN_NANO -D TFT35 -lC
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        -lA
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\
 //        --diag_suppress Pa050 -o
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/Obj\
-//        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
-//        --endian=little --cpu=Cortex-M3 -e --char_is_signed --fpu=None
-//        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-//        7.0\arm\INC\c\DLib_Config_Full.h" -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/Obj\
+//        --debug --endian=little --cpu=Cortex-M3 -e --char_is_signed
+//        --fpu=None --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded
+//        Workbench 7.0\arm\INC\c\DLib_Config_Full.h" -I
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Device/ST/STM32F1xx/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/Third_Party/FatFs/src\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/FatFs/src\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/CMSIS/Include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/Third_Party/Marlin\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/variant\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/CMSIS/Include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/at24cxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/variant\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/w25qxx\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/at24cxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/BSP/Components/lcd\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/w25qxx\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/BSP/Components/lcd\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Drivers/libstmf4/include\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/STM32F10x_StdPeriph_Driver/inc\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Drivers/libstmf4/include\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../Middlewares/arduino/stm32/cores/arduino\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/Multi_language\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM/../User/ui/QRENCODE\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/Multi_language\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM/../User/ui/QRENCODE\
 //        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\GUI\
-//        -I
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\..\Middlewares\Third_Party\Marlin\
-//        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\..\Middlewares\GUI\
+//        -Oh --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 //        7.0\arm\CMSIS\Include\"
 //    List file    =  
-//        E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\EWARM\mksRobinNano/List\draw_about.s
+//        D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\EWARM\mksRobinNano/List\draw_about.s
 //
 ///////////////////////////////////////////////////////////////////////////////
 
         RTMODEL "__CPP_Language", "EC++"
         RTMODEL "__SystemLibrary", "DLib"
         RTMODEL "__dlib_file_descriptor", "1"
+        RTMODEL "__dlib_full_locale_support", "1"
         AAPCS BASE,INTERWORK
         PRESERVE8
         REQUIRE8
@@ -85,10 +83,8 @@
         EXTERN BMP_PIC_Y
         EXTERN BUTTON_CreateEx
         EXTERN BUTTON_SetBitmapEx
-        EXTERN BUTTON_SetBkColor
         EXTERN BUTTON_SetBmpFileName
         EXTERN BUTTON_SetText
-        EXTERN BUTTON_SetTextColor
         EXTERN GUI_Clear
         EXTERN GUI_DispStringAt
         EXTERN GUI_SetBkColor
@@ -103,6 +99,7 @@
         EXTERN WM_DefaultProc
         EXTERN WM_DeleteWindow
         EXTERN WM_IsWindow
+        EXTERN __aeabi_memset
         EXTERN about_menu
         EXTERN alloc_win_id
         EXTERN bmp_struct
@@ -113,7 +110,6 @@
         EXTERN disp_state_stack
         EXTERN draw_return_ui
         EXTERN gCfgItems
-        EXTERN memset
         EXTERN strcat
         EXTERN strcpy
 
@@ -147,7 +143,7 @@
           CFI R14 SameValue
           CFI EndCommon cfiCommon0
         
-// E:\code\Robin_Nano_SVN\branches\robin_nano35源码\robin_nano35_v1.0.4_source\User\ui\draw_about.cpp
+// D:\MKS-Robin-Nano-Firmware-v2.x.x\MKS-Robin-Nano-Firmware\User\ui\draw_about.cpp
 //    1 #include "draw_about.h"
 //    2 #include "draw_ui.h"
 //    3 #include <string.h>
@@ -195,12 +191,13 @@ _Z10cbAboutWinP10WM_MESSAGE:
         BNE.N    ??cbAboutWin_0
         BX       LR
 ??cbAboutWin_0:
-        PUSH     {R7,LR}
+        PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
+          CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
         CMP      R1,#+13
-        BEQ.N    ??cbAboutWin_1
-        CMP      R1,#+15
+        IT       NE 
+        CMPNE    R1,#+15
         BEQ.N    ??cbAboutWin_1
         CMP      R1,#+38
         BNE.N    ??cbAboutWin_2
@@ -221,25 +218,37 @@ _Z10cbAboutWinP10WM_MESSAGE:
 //   41 			if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
         LDR      R1,[R0, #+8]
         CMP      R1,#+2
-        BNE.N    ??cbAboutWin_1
+        ITTTT    EQ 
 //   42 			{
 //   43 				if(pMsg->hWinSrc == buttonRet.btnHandle)
-        LDRSH    R0,[R0, #+6]
-        LDR.N    R1,??DataTable6_1
-        LDRSH    R1,[R1, #+12]
-        CMP      R0,R1
+        LDREQ.N  R4,??DataTable6_1
+        LDRSHEQ  R0,[R0, #+6]
+        LDRSHEQ  R1,[R4, #+12]
+        CMPEQ    R0,R1
         BNE.N    ??cbAboutWin_1
 //   44 				{
 //   45 					
 //   46 					Clear_About();
-          CFI FunCall Clear_About
-        BL       Clear_About
+        LDR.N    R0,??DataTable6_2
+        LDR      R0,[R0, #+20]
+          CFI FunCall GUI_SetBkColor
+        BL       GUI_SetBkColor
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_IsWindow
+        BL       WM_IsWindow
+        CBZ.N    R0,??cbAboutWin_3
+        LDRSH    R0,[R4, #+0]
+          CFI FunCall WM_DeleteWindow
+        BL       WM_DeleteWindow
 //   47 					draw_return_ui();
-        POP      {R0,LR}
+??cbAboutWin_3:
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall draw_return_ui
         B.W      draw_return_ui
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //   48 				}
@@ -250,17 +259,19 @@ _Z10cbAboutWinP10WM_MESSAGE:
 //   53 		default:
 //   54 			WM_DefaultProc(pMsg);
 ??cbAboutWin_2:
-        POP      {R1,LR}
+        POP      {R4,LR}
+          CFI R4 SameValue
           CFI R14 SameValue
           CFI CFA R13+0
           CFI FunCall WM_DefaultProc
         B.W      WM_DefaultProc
+          CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
 //   55 		}
 //   56 	}
 ??cbAboutWin_1:
-        POP      {R0,PC}          ;; return
+        POP      {R4,PC}          ;; return
           CFI EndBlock cfiBlock0
 //   57 
 //   58 #define ESP_WIFI		0x02
@@ -283,19 +294,19 @@ draw_About:
           CFI R5 Frame(CFA, -24)
           CFI R4 Frame(CFA, -28)
           CFI CFA R13+28
-        SUB      SP,SP,#+124
-          CFI CFA R13+152
 //   63 		
 //   64 //	int titleHeight = 30;
 //   65 
 //   66 //	int imgHeight = LCD_HEIGHT - titleHeight;	
 //   67 	
 //   68 	int i;
-//   69 	char buf[101];
+//   69 	uint8_t buf[101];
 //   70 	
 //   71 	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != ABOUT_UI)
-        LDR.N    R0,??DataTable6_2
+        LDR.N    R0,??DataTable6_3
         LDRSB    R1,[R0, #+100]
+        SUB      SP,SP,#+124
+          CFI CFA R13+152
         LDRSB    R2,[R1, R0]
         CMP      R2,#+17
         BEQ.N    ??draw_About_0
@@ -311,20 +322,20 @@ draw_About:
 //   76 	disp_state = ABOUT_UI;
 ??draw_About_0:
         MOVS     R0,#+17
-        LDR.N    R1,??DataTable6_3
-        STRB     R0,[R1, #+0]
+        LDR.N    R1,??DataTable6_4
 //   77 /*
 //   78 	GUI_SetBkColor(gCfgItems.state_background_color);
 //   79 	GUI_SetColor(gCfgItems.state_text_color);
 //   80 	GUI_Clear();
 //   81 */
 //   82 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R4,??DataTable6_4
-        LDR      R0,[R4, #+4]
+        LDR.N    R4,??DataTable6_2
+        STRB     R0,[R1, #+0]
+        LDR      R0,[R4, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
 //   83 	GUI_SetColor(gCfgItems.title_color);
-        ADDS     R6,R4,#+4
+        ADD      R6,R4,#+20
         LDR      R0,[R6, #+4]
           CFI FunCall GUI_SetColor
         BL       GUI_SetColor
@@ -348,50 +359,50 @@ draw_About:
 //   93 	hAboutWnd = WM_CreateWindow(0,titleHeight, LCD_WIDTH, imgHeight, WM_CF_SHOW, cbAboutWin, 0);
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOV      R3,#+284
         LDR.N    R0,??DataTable6_5
         STR      R0,[SP, #+4]
+        MOV      R2,#+480
         MOVS     R0,#+2
         STR      R0,[SP, #+0]
-        MOV      R3,#+284
-        MOV      R2,#+480
         MOVS     R1,#+36
         MOVS     R0,#+0
           CFI FunCall WM_CreateWindow
         BL       WM_CreateWindow
         LDR.N    R5,??DataTable6_1
-        STRH     R0,[R5, #+0]
 //   94 
 //   95 	TFT_Type_text = TEXT_CreateEx(BTN_X_PIXEL-25,BTN_Y_PIXEL-90, LCD_WIDTH-BTN_X_PIXEL, 30, hAboutWnd, WM_CF_SHOW,TEXT_CF_LEFT|GUI_TA_VCENTER, GUI_ID_TEXT1, "Type:MKS TFT");
-        MOVW     R7,#+363
-        MOVW     R8,#+353
         ADR.W    R1,`?<Constant "Type:MKS TFT">`
         STR      R1,[SP, #+16]
-        STR      R8,[SP, #+12]
+        STRH     R0,[R5, #+0]
+        MOVW     R7,#+353
+        STR      R7,[SP, #+12]
         MOVS     R1,#+12
         STR      R1,[SP, #+8]
+        STR      R0,[SP, #+0]
         MOVS     R1,#+2
         STR      R1,[SP, #+4]
-        STR      R0,[SP, #+0]
+        MOVW     R8,#+363
         MOVS     R3,#+30
-        MOV      R2,R7
+        MOV      R2,R8
         MOVS     R1,#+50
         MOVS     R0,#+92
           CFI FunCall TEXT_CreateEx
         BL       TEXT_CreateEx
         STRH     R0,[R5, #+4]
 //   96 	TFT_Version_text = TEXT_CreateEx(BTN_X_PIXEL-25,BTN_Y_PIXEL-60, LCD_WIDTH-BTN_X_PIXEL, 30, hAboutWnd, WM_CF_SHOW,TEXT_CF_LEFT|GUI_TA_VCENTER, GUI_ID_TEXT1, "Version:1.0.0");
+        MOVS     R3,#+30
         ADR.W    R0,`?<Constant "Version:1.0.0">`
         STR      R0,[SP, #+16]
-        STR      R8,[SP, #+12]
+        STR      R7,[SP, #+12]
         MOVS     R0,#+12
         STR      R0,[SP, #+8]
+        MOV      R2,R8
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R1,#+80
         LDRSH    R0,[R5, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+30
-        MOV      R2,R7
-        MOVS     R1,#+80
         MOVS     R0,#+92
           CFI FunCall TEXT_CreateEx
         BL       TEXT_CreateEx
@@ -399,15 +410,15 @@ draw_About:
 //   97 	Wifi_Ver_text = TEXT_CreateEx(BTN_X_PIXEL-25,BTN_Y_PIXEL-30, LCD_WIDTH-BTN_X_PIXEL, 30, hAboutWnd, WM_CF_SHOW,TEXT_CF_LEFT|GUI_TA_VCENTER, GUI_ID_TEXT1, "");
         ADR.W    R9,??DataTable6  ;; ""
         STR      R9,[SP, #+16]
-        STR      R8,[SP, #+12]
+        STR      R7,[SP, #+12]
         MOVS     R0,#+12
         STR      R0,[SP, #+8]
+        MOVS     R3,#+30
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOV      R2,R8
         LDRSH    R0,[R5, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+30
-        MOV      R2,R7
         MOVS     R1,#+110
         MOVS     R0,#+92
           CFI FunCall TEXT_CreateEx
@@ -415,15 +426,15 @@ draw_About:
         STRH     R0,[R5, #+6]
 //   98 	Shengma_text = TEXT_CreateEx(BTN_X_PIXEL-25,BTN_Y_PIXEL, LCD_WIDTH-2*BTN_X_PIXEL, 30, hAboutWnd, WM_CF_SHOW,TEXT_CF_LEFT|GUI_TA_VCENTER, GUI_ID_TEXT1, "");
         STR      R9,[SP, #+16]
-        STR      R8,[SP, #+12]
+        STR      R7,[SP, #+12]
         MOVS     R0,#+12
         STR      R0,[SP, #+8]
+        MOVS     R3,#+30
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R2,#+246
         LDRSH    R0,[R5, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+30
-        MOVS     R2,#+246
         MOVS     R1,#+140
         MOVS     R0,#+92
           CFI FunCall TEXT_CreateEx
@@ -434,15 +445,15 @@ draw_About:
           CFI FunCall alloc_win_id
         BL       alloc_win_id
         STR      R0,[SP, #+12]
+        MOVS     R3,#+140
         MOVS     R0,#+0
         STR      R0,[SP, #+8]
+        MOVS     R2,#+117
         MOVS     R0,#+2
         STR      R0,[SP, #+4]
+        MOVS     R1,#+142
         LDRSH    R0,[R5, #+0]
         STR      R0,[SP, #+0]
-        MOVS     R3,#+140
-        MOVS     R2,#+117
-        MOVS     R1,#+142
         MOVW     R0,#+359
           CFI FunCall BUTTON_CreateEx
         BL       BUTTON_CreateEx
@@ -456,256 +467,231 @@ draw_About:
         BL       BUTTON_SetBmpFileName
 //  104 	BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct,BMP_PIC_X, BMP_PIC_Y);
         LDR.N    R0,??DataTable6_6
+        LDR.N    R2,??DataTable6_7
         LDRSB    R0,[R0, #+0]
         STR      R0,[SP, #+0]
-        LDR.N    R0,??DataTable6_7
-        LDRSB    R3,[R0, #+0]
-        LDR.N    R2,??DataTable6_8
         MOVS     R1,#+0
+        LDR.N    R0,??DataTable6_8
+        LDRSB    R3,[R0, #+0]
         LDRSH    R0,[R5, #+12]
           CFI FunCall BUTTON_SetBitmapEx
         BL       BUTTON_SetBitmapEx
 //  105 
-//  106 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R6, #+56]
-        MOVS     R1,#+1
-        LDRSH    R0,[R5, #+12]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  107 	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_color);
-        LDR      R2,[R6, #+56]
-        MOVS     R1,#+0
-        LDRSH    R0,[R5, #+12]
-          CFI FunCall BUTTON_SetBkColor
-        BL       BUTTON_SetBkColor
-//  108 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R6, #+60]
-        MOVS     R1,#+1
-        LDRSH    R0,[R5, #+12]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  109 	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.back_btn_textcolor);
-        LDR      R2,[R6, #+60]
-        MOVS     R1,#+0
-        LDRSH    R0,[R5, #+12]
-          CFI FunCall BUTTON_SetTextColor
-        BL       BUTTON_SetTextColor
-//  110 
-//  111 	TEXT_SetBkColor(TFT_Type_text, gCfgItems.state_background_color);
-        LDR      R1,[R6, #+8]
+//  106 	TEXT_SetBkColor(TFT_Type_text, gCfgItems.background_color);
+        LDR      R1,[R4, #+20]
         LDRSH    R0,[R5, #+4]
           CFI FunCall TEXT_SetBkColor
         BL       TEXT_SetBkColor
-//  112 	TEXT_SetTextColor(TFT_Type_text, gCfgItems.state_text_color);
-        LDR      R1,[R6, #+12]
+//  107 	TEXT_SetTextColor(TFT_Type_text, gCfgItems.title_color);
+        LDR      R1,[R6, #+4]
         LDRSH    R0,[R5, #+4]
           CFI FunCall TEXT_SetTextColor
         BL       TEXT_SetTextColor
-//  113 	TEXT_SetBkColor(TFT_Version_text, gCfgItems.state_background_color);
-        LDR      R1,[R6, #+8]
+//  108 	TEXT_SetBkColor(TFT_Version_text, gCfgItems.background_color);
+        LDR      R1,[R4, #+20]
         LDRSH    R0,[R5, #+2]
           CFI FunCall TEXT_SetBkColor
         BL       TEXT_SetBkColor
-//  114 	TEXT_SetTextColor(TFT_Version_text, gCfgItems.state_text_color);
-        LDR      R1,[R6, #+12]
+//  109 	TEXT_SetTextColor(TFT_Version_text, gCfgItems.title_color);
+        LDR      R1,[R6, #+4]
         LDRSH    R0,[R5, #+2]
           CFI FunCall TEXT_SetTextColor
         BL       TEXT_SetTextColor
-//  115 	TEXT_SetBkColor(Wifi_Ver_text, gCfgItems.state_background_color);
-        LDR      R1,[R6, #+8]
+//  110 	TEXT_SetBkColor(Wifi_Ver_text, gCfgItems.background_color);
+        LDR      R1,[R4, #+20]
         LDRSH    R0,[R5, #+6]
           CFI FunCall TEXT_SetBkColor
         BL       TEXT_SetBkColor
-//  116 	TEXT_SetTextColor(Wifi_Ver_text, gCfgItems.state_text_color);
-        LDR      R1,[R6, #+12]
+//  111 	TEXT_SetTextColor(Wifi_Ver_text, gCfgItems.title_color);
+        LDR      R1,[R6, #+4]
         LDRSH    R0,[R5, #+6]
           CFI FunCall TEXT_SetTextColor
         BL       TEXT_SetTextColor
-//  117 	TEXT_SetBkColor(Shengma_text, gCfgItems.state_background_color);
-        LDR      R1,[R6, #+8]
+//  112 	TEXT_SetBkColor(Shengma_text, gCfgItems.background_color);
+        LDR      R1,[R4, #+20]
         LDRSH    R0,[R5, #+8]
           CFI FunCall TEXT_SetBkColor
         BL       TEXT_SetBkColor
-//  118 	TEXT_SetTextColor(Shengma_text, gCfgItems.state_text_color);
-        LDR      R1,[R6, #+12]
+//  113 	TEXT_SetTextColor(Shengma_text, gCfgItems.title_color);
+        LDR      R1,[R6, #+4]
         LDRSH    R0,[R5, #+8]
           CFI FunCall TEXT_SetTextColor
         BL       TEXT_SetTextColor
-//  119 
-//  120 	
-//  121        //HAL_Delay(10);
-//  122        memset(cmd_code,0,sizeof(cmd_code));
+//  114 
+//  115 	
+//  116        //HAL_Delay(10);
+//  117        memset(cmd_code,0,sizeof(cmd_code));
         LDR.N    R6,??DataTable6_9
-        MOVS     R2,#+201
-        MOVS     R1,#+0
+        MOV      R8,#+201
+        MOVS     R7,#+0
+        MOVS     R2,#+0
+        MOV      R1,R8
         MOV      R0,R6
-          CFI FunCall memset
-        BL       memset
-//  123 	strcpy((char*)cmd_code,(const char *)about_menu.type);
-        LDR.N    R7,??DataTable6_10
-        LDR      R1,[R7, #+12]
+          CFI FunCall __aeabi_memset
+        BL       __aeabi_memset
+//  118 	strcpy((char*)cmd_code,(const char *)about_menu.type);
+        LDR.W    R9,??DataTable6_10
+        LDR      R1,[R9, #+12]
         MOV      R0,R6
           CFI FunCall strcpy
         BL       strcpy
-//  124 	SPI_FLASH_BufferRead((u8 *)buf,ABOUT_TYPE_ADDR,100);
+//  119 	SPI_FLASH_BufferRead((u8 *)buf,ABOUT_TYPE_ADDR,100);
         MOVS     R2,#+100
         MOVW     R1,#+4600
         ADD      R0,SP,#+20
           CFI FunCall SPI_FLASH_BufferRead
         BL       SPI_FLASH_BufferRead
-//  125 	//strcat((char*)cmd_code,(const char *)about_menu.type_name);
-//  126 	strcat((char*)cmd_code,(const char *)buf);
+//  120 	//strcat((char*)cmd_code,(const char *)about_menu.type_name);
+//  121 	strcat((char*)cmd_code,(const char *)buf);
         ADD      R1,SP,#+20
         MOV      R0,R6
           CFI FunCall strcat
         BL       strcat
         MOV      R1,R0
-//  127 	TEXT_SetText(TFT_Type_text,(char *)cmd_code);
+//  122 	TEXT_SetText(TFT_Type_text,(char *)cmd_code);
         LDRSH    R0,[R5, #+4]
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
-//  128 	HAL_Delay(10);
+//  123 	HAL_Delay(10);
         MOVS     R0,#+10
           CFI FunCall HAL_Delay
         BL       HAL_Delay
-//  129 	memset(cmd_code,0,sizeof(cmd_code));
-        MOVS     R2,#+201
-        MOVS     R1,#+0
+//  124 	memset(cmd_code,0,sizeof(cmd_code));
+        MOV      R2,R7
+        MOV      R1,R8
         MOV      R0,R6
-          CFI FunCall memset
-        BL       memset
-//  130 	strcpy((char*)cmd_code,(const char *)about_menu.version);
-        LDR      R1,[R7, #+16]
+          CFI FunCall __aeabi_memset
+        BL       __aeabi_memset
+//  125 	strcpy((char*)cmd_code,(const char *)about_menu.version);
+        LDR      R1,[R9, #+16]
         MOV      R0,R6
           CFI FunCall strcpy
         BL       strcpy
-//  131 	SPI_FLASH_BufferRead((u8 *)buf,ABOUT_VERSION_ADDR,100);
+//  126 	SPI_FLASH_BufferRead((u8 *)buf,ABOUT_VERSION_ADDR,100);
         MOVS     R2,#+100
         MOVW     R1,#+4700
         ADD      R0,SP,#+20
           CFI FunCall SPI_FLASH_BufferRead
         BL       SPI_FLASH_BufferRead
-//  132 	//strcat((char*)cmd_code,(const char *)about_menu.firmware_v);	
-//  133 	strcat((char*)cmd_code,(const char *)buf);	
+//  127 	//strcat((char*)cmd_code,(const char *)about_menu.firmware_v);	
+//  128 	strcat((char*)cmd_code,(const char *)buf);	
         ADD      R1,SP,#+20
         MOV      R0,R6
           CFI FunCall strcat
         BL       strcat
-//  134 	TEXT_SetText(TFT_Version_text,(char *)cmd_code);
+//  129 	TEXT_SetText(TFT_Version_text,(char *)cmd_code);
         MOV      R1,R0
         LDRSH    R0,[R5, #+2]
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
-//  135 
-//  136 	//GUI_DispStringAt(about_menu.type, 40, titleHeight  + 50);
-//  137 	//GUI_DispStringAt(about_menu.version, 40, titleHeight + 75); 
-//  138 	HAL_Delay(100);
+//  130 
+//  131 	//GUI_DispStringAt(about_menu.type, 40, titleHeight  + 50);
+//  132 	//GUI_DispStringAt(about_menu.version, 40, titleHeight + 75); 
+//  133 	HAL_Delay(100);
         MOVS     R0,#+100
           CFI FunCall HAL_Delay
         BL       HAL_Delay
-//  139 	SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_COMPANY_ADDR,100);
+//  134 	SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_COMPANY_ADDR,100);
         MOVS     R2,#+100
         MOV      R1,#+4800
         MOV      R0,R6
           CFI FunCall SPI_FLASH_BufferRead
         BL       SPI_FLASH_BufferRead
-//  140 	TEXT_SetText(Wifi_Ver_text,(char*)cmd_code);
-        MOV      R1,R6
+//  135 	TEXT_SetText(Wifi_Ver_text,(char*)cmd_code);
         LDRSH    R0,[R5, #+6]
+        MOV      R1,R6
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
-//  141 	
-//  142 	HAL_Delay(100);
+//  136 	
+//  137 	HAL_Delay(100);
         MOVS     R0,#+100
           CFI FunCall HAL_Delay
         BL       HAL_Delay
-//  143 	SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_EMAINL_ADDR,100);
+//  138 	SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_EMAINL_ADDR,100);
         MOVS     R2,#+100
         MOVW     R1,#+4900
         MOV      R0,R6
           CFI FunCall SPI_FLASH_BufferRead
         BL       SPI_FLASH_BufferRead
-//  144 	TEXT_SetText(Shengma_text,(char*)cmd_code);
-        MOV      R1,R6
+//  139 	TEXT_SetText(Shengma_text,(char*)cmd_code);
         LDRSH    R0,[R5, #+8]
+        MOV      R1,R6
           CFI FunCall TEXT_SetText
         BL       TEXT_SetText
-//  145 	
-//  146 	if(gCfgItems.wifi_type == ESP_WIFI)
-        LDRB     R0,[R4, #+556]
-//  147 	{
-//  148 		//GUI_DispStringAt(about_menu.wifi, 40, titleHeight + 100);
-//  149 		//TEXT_SetText(TFT_Version_text,about_menu.wifi);
-//  150 		if(wifi_firm_ver[0] != 0)
-//  151 		{
-//  152 			/*memset(cmd_code,0,sizeof(cmd_code));
-//  153 			//GUI_DispStringAt((const char *)wifi_firm_ver, 90, titleHeight + 100); 
-//  154 			strcpy((char*)cmd_code,(const char *)about_menu.wifi);
-//  155 			strcat((char*)cmd_code,(const char *)wifi_firm_ver);
-//  156 			TEXT_SetText(Wifi_Ver_text,(char*)cmd_code);*/
-//  157 			//memset(buf,0,sizeof(buf));
-//  158 			//SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_COMPANY_ADDR,100);
-//  159 			//strncpy(buf,(const char *)&cmd_code[37],100-37);
-//  160 			//cmd_code[36]='\n';
-//  161 			//cmd_code[37]=0;
-//  162 			//strcat(cmd_code,buf);
-//  163 			//TEXT_SetText(Wifi_Ver_text,(char*)SHENMA_MASSEGE_TEXT);
-//  164 			//TEXT_SetText(Shengma_text,(char*)SHENMA_MASSEGE2_TEXT);
-//  165 			//TEXT_SetText(Wifi_Ver_text,(char*)cmd_code);
-//  166 			
-//  167 			//SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_EMAINL_ADDR,100);
-//  168 			//TEXT_SetText(Shengma_text,(char*)cmd_code);
-//  169 		}
-//  170 	}
-//  171 
-//  172 	if(gCfgItems.multiple_language != 0)
-        LDRB     R0,[R4, #+447]
-        CMP      R0,#+0
-        BEQ.N    ??draw_About_1
-//  173 	{
-//  174     	BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
+//  140 	
+//  141 	if(gCfgItems.wifi_type == ESP_WIFI)
+        LDRB     R0,[R4, #+572]
+//  142 	{
+//  143 		//GUI_DispStringAt(about_menu.wifi, 40, titleHeight + 100);
+//  144 		//TEXT_SetText(TFT_Version_text,about_menu.wifi);
+//  145 		if(wifi_firm_ver[0] != 0)
+//  146 		{
+//  147 			/*memset(cmd_code,0,sizeof(cmd_code));
+//  148 			//GUI_DispStringAt((const char *)wifi_firm_ver, 90, titleHeight + 100); 
+//  149 			strcpy((char*)cmd_code,(const char *)about_menu.wifi);
+//  150 			strcat((char*)cmd_code,(const char *)wifi_firm_ver);
+//  151 			TEXT_SetText(Wifi_Ver_text,(char*)cmd_code);*/
+//  152 			//memset(buf,0,sizeof(buf));
+//  153 			//SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_COMPANY_ADDR,100);
+//  154 			//strncpy(buf,(const char *)&cmd_code[37],100-37);
+//  155 			//cmd_code[36]='\n';
+//  156 			//cmd_code[37]=0;
+//  157 			//strcat(cmd_code,buf);
+//  158 			//TEXT_SetText(Wifi_Ver_text,(char*)SHENMA_MASSEGE_TEXT);
+//  159 			//TEXT_SetText(Shengma_text,(char*)SHENMA_MASSEGE2_TEXT);
+//  160 			//TEXT_SetText(Wifi_Ver_text,(char*)cmd_code);
+//  161 			
+//  162 			//SPI_FLASH_BufferRead((u8 *)cmd_code,ABOUT_EMAINL_ADDR,100);
+//  163 			//TEXT_SetText(Shengma_text,(char*)cmd_code);
+//  164 		}
+//  165 	}
+//  166 
+//  167 	if(gCfgItems.multiple_language != 0)
+        LDRB     R0,[R4, #+463]
+        CBZ.N    R0,??draw_About_1
+//  168 	{
+//  169     	BUTTON_SetText(buttonRet.btnHandle, common_menu.text_back);
         LDR.N    R0,??DataTable6_11
         LDR      R1,[R0, #+0]
         LDRSH    R0,[R5, #+12]
           CFI FunCall BUTTON_SetText
         BL       BUTTON_SetText
-//  175 	}
-//  176 
-//  177 	
-//  178 	
-//  179 }
+//  170 	}
+//  171 
+//  172 	
+//  173 	
+//  174 }
 ??draw_About_1:
         ADD      SP,SP,#+124
           CFI CFA R13+28
         POP      {R4-R9,PC}       ;; return
           CFI EndBlock cfiBlock1
-//  180 
+//  175 
 
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock2 Using cfiCommon0
           CFI Function Clear_About
         THUMB
-//  181 void Clear_About()
-//  182 {
+//  176 void Clear_About()
+//  177 {
 Clear_About:
         PUSH     {R4,LR}
           CFI R14 Frame(CFA, -4)
           CFI R4 Frame(CFA, -8)
           CFI CFA R13+8
-//  183 	GUI_SetBkColor(gCfgItems.background_color);
-        LDR.N    R0,??DataTable6_4
-        LDR      R0,[R0, #+4]
+//  178 	GUI_SetBkColor(gCfgItems.background_color);
+        LDR.N    R0,??DataTable6_2
+        LDR      R0,[R0, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
-//  184 	if(WM_IsWindow(hAboutWnd))
+//  179 	if(WM_IsWindow(hAboutWnd))
         LDR.N    R4,??DataTable6_1
         LDRSH    R0,[R4, #+0]
           CFI FunCall WM_IsWindow
         BL       WM_IsWindow
-        CMP      R0,#+0
-        BEQ.N    ??Clear_About_0
-//  185 	{
-//  186 		WM_DeleteWindow(hAboutWnd);
+        CBZ.N    R0,??Clear_About_0
+//  180 	{
+//  181 		WM_DeleteWindow(hAboutWnd);
         LDRSH    R0,[R4, #+0]
         POP      {R4,LR}
           CFI R4 SameValue
@@ -716,10 +702,10 @@ Clear_About:
           CFI R4 Frame(CFA, -8)
           CFI R14 Frame(CFA, -4)
           CFI CFA R13+8
-//  187 		//GUI_Exec();
-//  188 	}
-//  189 	//GUI_Clear();
-//  190 }
+//  182 		//GUI_Exec();
+//  183 	}
+//  184 	//GUI_Clear();
+//  185 }
 ??Clear_About_0:
         POP      {R4,PC}          ;; return
           CFI EndBlock cfiBlock2
@@ -740,19 +726,19 @@ Clear_About:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable6_2:
-        DC32     disp_state_stack
+        DC32     gCfgItems
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable6_3:
-        DC32     disp_state
+        DC32     disp_state_stack
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable6_4:
-        DC32     gCfgItems
+        DC32     disp_state
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -770,13 +756,13 @@ Clear_About:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable6_7:
-        DC32     BMP_PIC_X
+        DC32     bmp_struct
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable6_8:
-        DC32     bmp_struct
+        DC32     BMP_PIC_X
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
@@ -834,14 +820,14 @@ Clear_About:
         DC8 ""
 
         END
-//  191 
-//  192 
+//  186 
+//  187 
 // 
 //  36 bytes in section .bss
 //   1 byte  in section .rodata
-// 846 bytes in section .text
+// 822 bytes in section .text
 // 
-// 846 bytes of CODE  memory
+// 822 bytes of CODE  memory
 //   1 byte  of CONST memory
 //  36 bytes of DATA  memory
 //

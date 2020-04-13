@@ -61,6 +61,7 @@
 #include "draw_keyboard.h"
 #include "draw_Tips.h"
 #include "wifi_module.h"
+#include "draw_babyStep.h"
 //Screen TFT_screen;
 
 value_state value;
@@ -384,6 +385,9 @@ char *getDispText(int index)
         case MACHINE_PARA_UI:
             strcpy(TitleText, MachinePara_menu.title);
             break;
+	case BABY_STEP_UI:
+            strcpy(TitleText, operation_menu.babystep);
+            break;
 		default:
 			break;
 	}
@@ -685,6 +689,9 @@ void clear_cur_ui()
     case NUMBER_KEY_UI:
         Clear_NumberKey();
         break;
+	case BABY_STEP_UI:
+            Clear_babyStep();
+            break;
 		default:
 			break;
 	}
@@ -906,6 +913,10 @@ void draw_return_ui()
 	case DIALOG_UI:
             draw_dialog(DialogType);
             break;
+	case BABY_STEP_UI:
+            draw_babyStep();
+            break;
+	
 			default:
 				break;
 		}
@@ -1345,6 +1356,13 @@ void GUI_RefreshPage()
 			   	break;
 	            }
             break;
+		case BABY_STEP_UI:
+			if(temperature_change_frequency == 1)
+			{
+				temperature_change_frequency = 0;
+				disp_z_offset_value();
+			}
+			break;
 	    default:
 				break;
 				

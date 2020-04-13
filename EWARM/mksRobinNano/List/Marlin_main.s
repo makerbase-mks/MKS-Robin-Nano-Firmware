@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:25:01
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  10:56:54
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
@@ -2836,7 +2836,7 @@ _Z16display_sd_errorv:
         BNE.N    ??display_sd_error_0
 // 1301   {
 // 1302       GUI_SetBkColor(gCfgItems.background_color);
-        LDR.W    R5,??DataTable122_2
+        LDR.W    R5,??DataTable121_7
         LDR      R0,[R5, #+20]
           CFI FunCall GUI_SetBkColor
         BL       GUI_SetBkColor
@@ -3193,7 +3193,7 @@ _Z32get_target_extruder_from_commandt:
         BL       _ZN11GCodeParser4seenEc
         CMP      R0,#+0
         ITTT     NE 
-        LDRNE.W  R0,??DataTable122_3
+        LDRNE.W  R0,??DataTable122_2
         LDRNE    R0,[R0, #+0]
         CMPNE    R0,#+0
         BEQ.N    ??get_target_extruder_from_command_0
@@ -3222,7 +3222,7 @@ _Z32get_target_extruder_from_commandt:
         BL       _ZN5Print5printEii
 // 1593       SERIAL_ECHOLNPAIR(" " MSG_INVALID_EXTRUDER " ", e);
         MOV      R1,R5
-        LDR.W    R0,??DataTable123_2
+        LDR.W    R0,??DataTable122_3
           CFI FunCall _Z17serial_echopair_PPKci
         BL       _Z17serial_echopair_PPKci
         MOVS     R1,#+10
@@ -4154,7 +4154,7 @@ _Z19do_blocking_move_toRKfS0_S0_S0_:
           CFI FunCall __aeabi_cfcmpeq
         BL       __aeabi_cfcmpeq
         ITT      EQ 
-        LDREQ.N  R0,??DataTable119_4
+        LDREQ.W  R0,??DataTable119_4
         LDREQ    R2,[R0, #+100]
         MOV      R0,R2
           CFI FunCall _Z42prepare_uninterpolated_move_to_destinationf
@@ -4796,9 +4796,9 @@ _Z15bltouch_commandi:
         B.N      ??bltouch_command_4
 // 2429 	  {
 // 2430 		 case 10:
-// 2431 			 mksAngle = 700/2;
+// 2431 			 mksAngle = 647/2;
 ??bltouch_command_0:
-        MOV      R0,#+350
+        MOVW     R0,#+323
 // 2432 			 break;
         B.N      ??bltouch_command_5
 // 2433 		 case 90:
@@ -4808,24 +4808,24 @@ _Z15bltouch_commandi:
 // 2435 			 break;
         B.N      ??bltouch_command_5
 // 2436 		 case 120:
-// 2437 			 mksAngle = 1800/2;
+// 2437 			 mksAngle = 1782/2;
 ??bltouch_command_3:
-        MOV      R0,#+900
+        MOVW     R0,#+891
 // 2438 			 break;
         B.N      ??bltouch_command_5
 // 2439 		 case 160:
-// 2440 			 mksAngle = 2200/2;
+// 2440 			 mksAngle = 2194/2;
 // 2441 			 break;
 // 2442 		 case 60:
-// 2443 			 mksAngle = 1200/2;
+// 2443 			 mksAngle = 1162/2;
 ??bltouch_command_1:
-        MOV      R0,#+600
+        MOVW     R0,#+581
 // 2444 			 break;
         B.N      ??bltouch_command_5
 // 2445 		 default:
-// 2446 			 mksAngle = 2200/2;
+// 2446 			 mksAngle = 2194/2;
 ??bltouch_command_4:
-        MOVW     R0,#+1100
+        MOVW     R0,#+1097
 // 2447 			 break;
 // 2448 	  }
 // 2449       MKS_TOUCH_TIM = mksAngle;	  
@@ -5183,12 +5183,13 @@ _Z18set_probe_deployedb:
         THUMB
 // 2613   static bool do_probe_move(const float z, const float fr_mm_m) {
 _Z13do_probe_moveff:
-        PUSH     {R0,R4-R6,LR}
+        PUSH     {R0,R4-R7,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R6 Frame(CFA, -8)
-          CFI R5 Frame(CFA, -12)
-          CFI R4 Frame(CFA, -16)
-          CFI CFA R13+20
+          CFI R7 Frame(CFA, -8)
+          CFI R6 Frame(CFA, -12)
+          CFI R5 Frame(CFA, -16)
+          CFI R4 Frame(CFA, -20)
+          CFI CFA R13+24
 // 2614     #if ENABLED(DEBUG_LEVELING_FEATURE)
 // 2615       if (DEBUGGING(LEVELING)) DEBUG_POS(">>> do_probe_move", current_position);
 // 2616     #endif
@@ -5198,8 +5199,8 @@ _Z13do_probe_moveff:
 // 2620     if(MKSTOUCH == 1)
         LDR.N    R4,??DataTable119_6
         LDRB     R0,[R4, #+256]
-        SUB      SP,SP,#+4
-          CFI CFA R13+24
+        SUB      SP,SP,#+8
+          CFI CFA R13+32
         MOV      R5,R1
         CMP      R0,#+1
         BNE.N    ??do_probe_move_0
@@ -5220,11 +5221,14 @@ _Z13do_probe_moveff:
         LDR.N    R1,??DataTable119_7  ;; 0x42700000
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
+        LDR.N    R5,??DataTable120_1
         STR      R0,[SP, #+0]
-        ADD      R1,SP,#+0
-        ADD      R0,SP,#+4
-          CFI FunCall _Z21do_blocking_move_to_zRKfS0_
-        BL       _Z21do_blocking_move_to_zRKfS0_
+        ADD      R3,SP,#+0
+        ADD      R2,SP,#+8
+        ADD      R1,R5,#+20
+        ADD      R0,R5,#+16
+          CFI FunCall _Z19do_blocking_move_toRKfS0_S0_S0_
+        BL       _Z19do_blocking_move_toRKfS0_S0_S0_
 // 2630    /*
 // 2631     // Check to see if the probe was triggered
 // 2632     const bool probe_triggered = TEST(Endstops::endstop_hit_bits,
@@ -5238,9 +5242,9 @@ _Z13do_probe_moveff:
 // 2640       bool probe_triggered;
 // 2641       if(Z_MIN_PROBE_PIN_MODE != Z_MIN_PROBE_USES_Z_MAX_ENDSTOP_PIN)
         LDRB     R0,[R4, #+153]
-        LDR.W    R5,??DataTable129_9
+        LDR.W    R6,??DataTable131
         CMP      R0,#+2
-        LDRSB    R0,[R5, #+0]
+        LDRSB    R0,[R6, #+0]
         UXTB     R0,R0
         ITE      NE 
 // 2642       {
@@ -5251,7 +5255,7 @@ _Z13do_probe_moveff:
 // 2646       {
 // 2647         probe_triggered = TEST(Endstops::endstop_hit_bits,Z_MIN_PROBE);
         LSREQ    R0,R0,#+3
-        AND      R6,R0,#0x1
+        AND      R7,R0,#0x1
 // 2648       }
 // 2649 
 // 2650     #if QUIET_PROBING
@@ -5265,21 +5269,24 @@ _Z13do_probe_moveff:
         CMP      R0,#+1
         BNE.N    ??do_probe_move_2
 // 2657       {if (probe_triggered && set_bltouch_deployed(false)) return true;}
-        CBZ.N    R6,??do_probe_move_2
+        CBZ.N    R7,??do_probe_move_2
         MOVS     R0,#+0
           CFI FunCall _Z20set_bltouch_deployedb
         BL       _Z20set_bltouch_deployedb
         CBZ.N    R0,??do_probe_move_2
 ??do_probe_move_1:
         MOVS     R0,#+1
-        POP      {R1,R2,R4-R6,PC}
+        ADD      SP,SP,#+12
+          CFI CFA R13+20
+        POP      {R4-R7,PC}
+          CFI CFA R13+32
 // 2658     //#endif
 // 2659 
 // 2660     // Clear endstop flags
 // 2661     endstops.hit_on_purpose();
 ??do_probe_move_2:
         MOVS     R0,#+0
-        STRB     R0,[R5, #+0]
+        STRB     R0,[R6, #+0]
 // 2662 
 // 2663     // Get Z where the steppers were interrupted
 // 2664     set_current_from_steppers_for_axis(Z_AXIS);
@@ -5287,7 +5294,6 @@ _Z13do_probe_moveff:
         BL       _Z27get_cartesian_from_steppersv
         MOVS     R1,#+46
         LDRB     R0,[R4, #+66]
-        LDR.N    R5,??DataTable120_1
         TST      R0,R1
         ITT      NE 
         ADDNE    R0,R5,#+96
@@ -5306,8 +5312,10 @@ _Z13do_probe_moveff:
 // 2671     #endif
 // 2672 
 // 2673     return !probe_triggered;
-        EOR      R0,R6,#0x1
-        POP      {R1,R2,R4-R6,PC}  ;; return
+        EOR      R0,R7,#0x1
+        ADD      SP,SP,#+12
+          CFI CFA R13+20
+        POP      {R4-R7,PC}       ;; return
           CFI EndBlock cfiBlock34
 // 2674   }
 
@@ -5665,10 +5673,12 @@ _Z8probe_ptRKfS0_bhb:
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         STR      R0,[SP, #+0]
-        ADD      R1,SP,#+0
-        ADD      R0,SP,#+16
-          CFI FunCall _Z21do_blocking_move_to_zRKfS0_
-        BL       _Z21do_blocking_move_to_zRKfS0_
+        ADD      R3,SP,#+0
+        ADD      R2,SP,#+16
+        ADD      R1,R5,#+20
+        ADD      R0,R5,#+16
+          CFI FunCall _Z19do_blocking_move_toRKfS0_S0_S0_
+        BL       _Z19do_blocking_move_toRKfS0_S0_S0_
 ??probe_pt_11:
         LDR      R1,[R7, #+124]
         LDR.W    R0,??DataTable132_1  ;; 0xc1200000
@@ -5697,10 +5707,12 @@ _Z8probe_ptRKfS0_bhb:
           CFI FunCall __aeabi_fdiv
         BL       __aeabi_fdiv
         STR      R0,[SP, #+0]
-        ADD      R1,SP,#+0
-        ADD      R0,SP,#+16
-          CFI FunCall _Z21do_blocking_move_to_zRKfS0_
-        BL       _Z21do_blocking_move_to_zRKfS0_
+        ADD      R3,SP,#+0
+        ADD      R2,SP,#+16
+        ADD      R1,R5,#+20
+        ADD      R0,R5,#+16
+          CFI FunCall _Z19do_blocking_move_toRKfS0_S0_S0_
+        BL       _Z19do_blocking_move_toRKfS0_S0_S0_
         B.N      ??probe_pt_9
 // 2841       else
 // 2842         if (STOW_PROBE()) measured_z = NAN;
@@ -5813,8 +5825,8 @@ _Z8probe_ptRKfS0_bhb:
           CFI Block cfiBlock36 Using cfiCommon0
           CFI NoFunction
           CFI NoCalls mks_getPositionXYZE
-          CFI NoCalls _Z22process_parsed_commandv
           CFI NoCalls _Z8probe_ptRKfS0_bhb
+          CFI NoCalls _Z22process_parsed_commandv
           CFI CFA R13+64
           CFI R4 Frame(CFA, -36)
           CFI R5 Frame(CFA, -32)
@@ -6190,6 +6202,12 @@ _Z24set_bed_leveling_enabledb:
         DATA
 ??DataTable121_6:
         DC32     filament_loading_time_flg
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable121_7:
+        DC32     gCfgItems
 // 2996 
 // 2997   #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
 // 2998 
@@ -6382,13 +6400,13 @@ _Z17set_z_fade_heightfb:
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable122_2:
-        DC32     gCfgItems
+        DC32     _ZN11GCodeParser9value_ptrE
 
         SECTION `.text`:CODE:NOROOT(2)
         SECTION_TYPE SHT_PROGBITS, 0
         DATA
 ??DataTable122_3:
-        DC32     _ZN11GCodeParser9value_ptrE
+        DC32     `?<Constant " Invalid extruder ">`
 // 3045 
 // 3046   #endif // LEVELING_FADE_HEIGHT
 // 3047 
@@ -6515,12 +6533,6 @@ _Z15reset_bed_levelv:
         DATA
 ??DataTable123_1:
         DC32     `?<Constant "sd:%d">`
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable123_2:
-        DC32     `?<Constant " Invalid extruder ">`
 // 3081 
 // 3082 #endif // HAS_LEVELING
 // 3083 
@@ -7518,7 +7530,7 @@ _Z14do_homing_move8AxisEnumff:
 // 3465 
 // 3466   endstops.hit_on_purpose();
 ??do_homing_move_8:
-        LDR.N    R1,??DataTable129_9
+        LDR.W    R1,??DataTable131
         MOVS     R0,#+0
         STRB     R0,[R1, #+0]
 // 3467 
@@ -7586,12 +7598,6 @@ _Z14do_homing_move8AxisEnumff:
         DATA
 ??DataTable129_8:
         DC32     _ZN8Endstops15z_probe_enabledE
-
-        SECTION `.text`:CODE:NOROOT(2)
-        SECTION_TYPE SHT_PROGBITS, 0
-        DATA
-??DataTable129_9:
-        DC32     _ZN8Endstops16endstop_hit_bitsE
 // 3476 
 // 3477 /**
 // 3478  * TMC2130 specific sensorless homing using stallGuard2.
@@ -8535,6 +8541,12 @@ _Z14host_keepalivev:
 ??host_keepalive_1:
         POP      {R0,R4,R5,PC}    ;; return
           CFI EndBlock cfiBlock50
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable131:
+        DC32     _ZN8Endstops16endstop_hit_bitsE
 // 3949 
 // 3950 #endif // HOST_KEEPALIVE_FEATURE
 // 3951 
@@ -27903,8 +27915,8 @@ _Z24mesh_line_to_destinationfhh:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock77 Using cfiCommon0
           CFI NoFunction
-          CFI NoCalls _Z24mesh_line_to_destinationfhh
           CFI NoCalls _Z14do_homing_move8AxisEnumff
+          CFI NoCalls _Z24mesh_line_to_destinationfhh
           CFI CFA R13+48
           CFI R4 Frame(CFA, -32)
           CFI R5 Frame(CFA, -28)
@@ -38910,8 +38922,11 @@ _ZN7Planner11buffer_lineEfffRKfS1_h:
         MOV      R4,R3
         TST      R1,R2
         BEQ.N    ??buffer_line_1
-        LDRSH    R0,[R0, #+88]
+        ADDS     R0,R0,#+66
+        LDRSH    R0,[R0, #+22]
         CMP      R0,#+1
+        IT       NE 
+        CMPNE    R0,#+4
         BNE.N    ??buffer_line_1
         ADD      R2,SP,#+16
         ADD      R1,SP,#+12
@@ -38931,6 +38946,7 @@ _ZN7Planner11buffer_lineEfffRKfS1_h:
         ADD      SP,SP,#+20
           CFI CFA R13+12
         POP      {R4,R5,PC}       ;; return
+        Nop      
         DATA
 ??buffer_line_0:
         DC32     mksCfg
@@ -41425,51 +41441,29 @@ _Z17get_wifi_commandsv:
           CFI Function _Z31buffer_line_to_current_positionv
         THUMB
 _Z31buffer_line_to_current_positionv:
-        PUSH     {R4,R5,LR}
+        PUSH     {LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
-          CFI CFA R13+12
-        LDR.N    R4,??buffer_line_to_current_position_0
-        LDRB     R5,[R4, #+10]
-        LDR      R0,[R4, #+24]
-        SUB      SP,SP,#+20
-          CFI CFA R13+32
-        MOVS     R2,#+46
-        STR      R0,[SP, #+16]
-        LDR      R0,[R4, #+20]
-        STR      R0,[SP, #+12]
-        LDR      R0,[R4, #+16]
-        STR      R0,[SP, #+8]
-        LDR.N    R0,??buffer_line_to_current_position_0+0x4
-        LDRB     R1,[R0, #+66]
-        TST      R1,R2
-        BEQ.N    ??buffer_line_to_current_position_1
-        LDRSH    R0,[R0, #+88]
-        CMP      R0,#+1
-        BNE.N    ??buffer_line_to_current_position_1
-        ADD      R2,SP,#+16
-        ADD      R1,SP,#+12
-        ADD      R0,SP,#+8
-          CFI FunCall _ZN7Planner14apply_levelingERfS0_S0_
-        BL       _ZN7Planner14apply_levelingERfS0_S0_
-??buffer_line_to_current_position_1:
-        ADD      R0,R4,#+112
-        STR      R0,[SP, #+0]
-        STR      R5,[SP, #+4]
-        ADD      R3,R4,#+28
-        ADD      R2,SP,#+16
-        ADD      R1,SP,#+12
-        ADD      R0,SP,#+8
-          CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-        BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-        ADD      SP,SP,#+20
-          CFI CFA R13+12
-        POP      {R4,R5,PC}       ;; return
+          CFI CFA R13+4
+        LDR.N    R0,??buffer_line_to_current_position_0
+        LDRB     R1,[R0, #+10]
+        LDR      R2,[R0, #+24]
+        SUB      SP,SP,#+12
+          CFI CFA R13+16
+        ADD      R3,R0,#+28
+        STR      R1,[SP, #+4]
+        ADD      R1,R0,#+112
+        STR      R1,[SP, #+0]
+        LDR      R1,[R0, #+20]
+        LDR      R0,[R0, #+16]
+          CFI FunCall _ZN7Planner11buffer_lineEfffRKfS1_h
+        BL       _ZN7Planner11buffer_lineEfffRKfS1_h
+        ADD      SP,SP,#+12
+          CFI CFA R13+4
+        POP      {PC}             ;; return
+        Nop      
         DATA
 ??buffer_line_to_current_position_0:
         DC32     axis_relative_modes
-        DC32     mksCfg
           CFI EndBlock cfiBlock166
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
@@ -41478,52 +41472,28 @@ _Z31buffer_line_to_current_positionv:
           CFI Function _Z26buffer_line_to_destinationf
         THUMB
 _Z26buffer_line_to_destinationf:
-        PUSH     {R0,R4,R5,LR}
+        PUSH     {R0,LR}
           CFI R14 Frame(CFA, -4)
-          CFI R5 Frame(CFA, -8)
-          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+8
+        LDR.N    R0,??buffer_line_to_destination_0
+        LDRB     R1,[R0, #+10]
+        LDR      R2,[R0, #+40]
+        SUB      SP,SP,#+8
           CFI CFA R13+16
-        LDR.N    R4,??buffer_line_to_destination_0
-        LDRB     R5,[R4, #+10]
-        LDR      R0,[R4, #+40]
-        SUB      SP,SP,#+24
-          CFI CFA R13+40
-        MOVS     R2,#+46
-        STR      R0,[SP, #+16]
-        LDR      R0,[R4, #+36]
-        STR      R0,[SP, #+12]
-        LDR      R0,[R4, #+32]
-        STR      R0,[SP, #+8]
-        LDR.N    R0,??buffer_line_to_destination_0+0x4
-        LDRB     R1,[R0, #+66]
-        TST      R1,R2
-        BEQ.N    ??buffer_line_to_destination_1
-        LDRSH    R0,[R0, #+88]
-        CMP      R0,#+1
-        BNE.N    ??buffer_line_to_destination_1
-        ADD      R2,SP,#+16
-        ADD      R1,SP,#+12
-        ADD      R0,SP,#+8
-          CFI FunCall _ZN7Planner14apply_levelingERfS0_S0_
-        BL       _ZN7Planner14apply_levelingERfS0_S0_
-??buffer_line_to_destination_1:
-        ADD      R0,SP,#+24
-        STR      R0,[SP, #+0]
-        STR      R5,[SP, #+4]
-        ADD      R3,R4,#+44
-        ADD      R2,SP,#+16
-        ADD      R1,SP,#+12
-        ADD      R0,SP,#+8
-          CFI FunCall _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-        BL       _ZN7Planner14buffer_segmentERKfS1_S1_S1_S1_h
-        ADD      SP,SP,#+28
-          CFI CFA R13+12
-        POP      {R4,R5,PC}       ;; return
-        Nop      
+        ADD      R3,R0,#+44
+        STR      R1,[SP, #+4]
+        ADD      R1,SP,#+8
+        STR      R1,[SP, #+0]
+        LDR      R1,[R0, #+36]
+        LDR      R0,[R0, #+32]
+          CFI FunCall _ZN7Planner11buffer_lineEfffRKfS1_h
+        BL       _ZN7Planner11buffer_lineEfffRKfS1_h
+        ADD      SP,SP,#+12
+          CFI CFA R13+4
+        POP      {PC}             ;; return
         DATA
 ??buffer_line_to_destination_0:
         DC32     axis_relative_modes
-        DC32     mksCfg
           CFI EndBlock cfiBlock167
 
         SECTION `.text`:CODE:REORDER:NOROOT(2)
@@ -41934,11 +41904,12 @@ _Z13home_z_safelyv:
         CBZ.N    R0,??home_z_safely_6
         MOVS     R0,#+0
         STR      R0,[SP, #+0]
-        ADD      R2,SP,#+0
+        ADD      R3,SP,#+0
+        ADD      R2,R4,#+24
         ADD      R1,R4,#+36
         ADD      R0,R4,#+32
-          CFI FunCall _Z22do_blocking_move_to_xyRKfS0_S0_
-        BL       _Z22do_blocking_move_to_xyRKfS0_S0_
+          CFI FunCall _Z19do_blocking_move_toRKfS0_S0_S0_
+        BL       _Z19do_blocking_move_toRKfS0_S0_S0_
         MOVS     R0,#+2
           CFI FunCall _Z8homeaxis8AxisEnum
         BL       _Z8homeaxis8AxisEnum
@@ -42398,17 +42369,16 @@ _Z27gcode_G29_MESH_BED_LEVELINGv:
         ADD      R2,SP,#+8
         ADD      R1,R6,#+20
         ADD      R0,R6,#+16
-          CFI FunCall _Z19do_blocking_move_toRKfS0_S0_S0_
-        BL       _Z19do_blocking_move_toRKfS0_S0_S0_
         B.N      ??gcode_G29_MESH_BED_LEVELING_15
 ??gcode_G29_MESH_BED_LEVELING_14:
         STR      R1,[SP, #+0]
-        ADD      R2,SP,#+0
+        ADD      R3,SP,#+0
+        ADD      R2,R6,#+24
         MOV      R1,R4
         MOV      R0,R5
-          CFI FunCall _Z22do_blocking_move_to_xyRKfS0_S0_
-        BL       _Z22do_blocking_move_to_xyRKfS0_S0_
 ??gcode_G29_MESH_BED_LEVELING_15:
+          CFI FunCall _Z19do_blocking_move_toRKfS0_S0_S0_
+        BL       _Z19do_blocking_move_toRKfS0_S0_S0_
         LDR      R0,[R5, #+0]
         LDR.N    R1,??gcode_G29_MESH_BED_LEVELING_2+0x20
         STR      R0,[R6, #+16]
@@ -47665,9 +47635,9 @@ _Z25prepare_kinematic_move_toRA4_Kf:
 //    485 bytes in section .data
 //      4 bytes in section .init_array
 //  4 787 bytes in section .rodata
-// 51 512 bytes in section .text
+// 51 464 bytes in section .text
 // 
-// 34 030 bytes of CODE  memory (+ 17 486 bytes shared)
+// 34 062 bytes of CODE  memory (+ 17 406 bytes shared)
 //  1 540 bytes of CONST memory (+  3 247 bytes shared)
 //  4 382 bytes of DATA  memory (+    210 bytes shared)
 //

@@ -460,7 +460,7 @@ class Planner {
 			}
 */
 			//#if PLANNER_LEVELING && IS_CARTESIAN
-      if((BED_LEVELING_METHOD&PLANNER_LEVELING) &&  (MACHINETPYE == Cartesian))
+      if((BED_LEVELING_METHOD&PLANNER_LEVELING) &&  ((MACHINETPYE == Cartesian)  || (MACHINETPYE == COREXY)))
         apply_leveling(rx, ry, rz);
       //#endif
       buffer_segment(rx, ry, rz, e, fr_mm_s, extruder);

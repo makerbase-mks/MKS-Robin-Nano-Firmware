@@ -2428,22 +2428,22 @@ static void clean_up_after_endstop_or_probe_move() {
  	  switch(angle)
 	  {
 		 case 10:
-			 mksAngle = 700/2;
+			 mksAngle = 647/2;
 			 break;
 		 case 90:
 			 mksAngle = 1500/2;
 			 break;
 		 case 120:
-			 mksAngle = 1800/2;
+			 mksAngle = 1782/2;
 			 break;
 		 case 160:
-			 mksAngle = 2200/2;
+			 mksAngle = 2194/2;
 			 break;
 		 case 60:
-			 mksAngle = 1200/2;
+			 mksAngle = 1162/2;
 			 break;
 		 default:
-			 mksAngle = 2200/2;
+			 mksAngle = 2194/2;
 			 break;
 	  }
       MKS_TOUCH_TIM = mksAngle;	  

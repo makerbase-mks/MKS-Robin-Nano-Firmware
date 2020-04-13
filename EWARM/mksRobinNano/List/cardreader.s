@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  09:23:56
+// IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM       13/Apr/2020  10:56:20
 // Copyright 1999-2014 IAR Systems AB.
 //
 //    Cpu mode     =  thumb
@@ -849,8 +849,8 @@ _ZN10CardReader7releaseEv:
         SECTION `.text`:CODE:NOROOT(1)
           CFI Block cfiBlock10 Using cfiCommon0
           CFI NoFunction
-          CFI NoCalls _ZN10CardReader7unmountEv
           CFI NoCalls _ZN10CardReader7releaseEv
+          CFI NoCalls _ZN10CardReader7unmountEv
         THUMB
 ?Subroutine0:
         MOVS     R1,#+0

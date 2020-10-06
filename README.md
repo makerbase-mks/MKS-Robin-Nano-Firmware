@@ -1,5 +1,5 @@
 # MKS-Robin-Nano-Firmware
-Include Nano-firmware-v2.x.x and Nano-firmware-v1.x.x, can run on MKS Robin Nano motherboard.
+Include Nano-firmware-v2.x.x and Nano-firmware-v1.x.x, can run on MKS Robin Nano V1.x motherboard(Not support Robin Nano V2.x).
 ## Nano-firmware-v2.x.x
 - Parameters are set directly through the screen
 - After the parameter is set, it will work directly without restarting

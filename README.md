@@ -1,5 +1,6 @@
 # MKS-Robin-Nano-Firmware
 Include Nano-firmware-v2.x.x and Nano-firmware-v1.x.x, can run on MKS Robin Nano V1.x motherboard(Not support Robin Nano V2.x).
+As the IAR Embedded Workbench is not free, this PR will be ignored slowly. Now we mainly promote the Marlin V2.x firmware: [https://github.com/makerbase-mks/Mks-Robin-Nano-Marlin2.0-Firmware](https://github.com/makerbase-mks/Mks-Robin-Nano-Marlin2.0-Firmware)
 ## Nano-firmware-v2.x.x
 - Parameters are set directly through the screen
 - After the parameter is set, it will work directly without restarting
